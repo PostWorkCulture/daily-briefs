@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:32pm",
+  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:33pm",
   "weather": {
     "temp": "26°",
     "summary": "Partly cloudy",
@@ -83,20 +83,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -108,6 +94,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "St Pauls Camp 8.15 - 5.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "0964keure928mhs30mr5v8as47",
       "calendarColorSource": "google"
     },
     {
@@ -293,20 +293,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -318,6 +304,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -454,7 +454,7 @@
       "title": "Silo - S3E7 - Radio",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "podcasts.apple.com",
+      "source": "Apple Podcasts",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ28yNzB0NmhWcUJXQVVwTjBPcUsyOXVOODU2b1lEbzVrbUtqQlBfXzlMMENqdHRhcEh6aHRqRW5vVWtrSU43NVJrUXVEdnFCZTI4cHdHREoxSTVhaTlFU0pBdHVMckYxT2tTMGNfV0pRZzY3dV9MNGF6MHRFZW5uU2lCLUI2TWhLbkE?oc=5",
       "preferenceScore": 130
     },
@@ -462,7 +462,7 @@
       "title": "Silo",
       "summary": "",
       "meta": "Mon 3 Aug",
-      "source": "books.apple.com",
+      "source": "Apple",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51blZSeEVPRnExdzJBRmRvSjVIaGV6NzZpMWRTbDRVM0Nfd1NHZjhxR1RxZG96V2RETG95dU9YZW1tWENZT1pxcURRd3REYjBuWnF4VzE0ZU1pVDFqd2c?oc=5",
       "preferenceScore": 130
     },
@@ -494,7 +494,7 @@
       "title": "Silo season three: Find out more about the new season",
       "summary": "",
       "meta": "Tue 4 Aug",
-      "source": "Rayo",
+      "source": "hellorayo.co.uk",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwdHJyNmZDek4yaGNRRklFdlMtcjBJaGt3cXF2dTROTUFVa0hiZDFjdkpzXzVYeU5YY0NkcFF2ZG5GNF8yaXkwS2haT29KaHVpbkxvYkZEU0JfX3BOOE1HZHN4MzA1cnhuUERRUHBFd3dGNHF2cGhhQjRHOXIwaFk?oc=5",
       "preferenceScore": 100
     },
@@ -520,7 +520,7 @@
         "title": "Surrey Lebanese restaurant voted in UK's top ten boasts near-perfect rating",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "getsurrey.co.uk",
+        "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQb016Y0NQcjcyRHZITFZOb2NlQ1BOY2VpRUtyeTJ5aXlxdUxSeDIxc0Y2QWFkMHR1eTZURVBkUnhscUF6UXN5TlNXUnp3NHBUMUQ0ODdMUVdHSHZIRFlBSldyU0hJWU9lQnRhakNYUnBHUkRjVDFLWkxLajhfaXhyWnFJSEpMc0Rob0p6NFI2UE93Z3ZWZ1ZyTkd0WVDSAaIBQVVfeXFMTlV1cnVnSmhienBGTlFHYjhHTDlHQ0Y4QTRCaWdMb1RvaUJnelYtLTFJS1d3Y1BpQmUyY093UTExWUZOaEdSSl9GalJhcUFxUl91cmZFVnZ0NlBGMVFFRkRWMUF2S2czb2UwamNETEctbmtKb0hJNk9lbkZQNVNISkJkNEF2RWVzX3FzbHRTekFQUDBnNnVlVlFYWVNORnZPWFlR?oc=5"
       },
       {
@@ -531,6 +531,13 @@
         "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQSGljR2hxZC1RcExxMjV5V3VmUTkycXVTQ0ZaSjBGY281THVzd21xdmpMbVgzVHBJUl9oVHVQOFBHcmlKbjIwQ2NQNk45UzUzdm1YSk05Vk5iX1I4OFVkVVJGYnZCQUlZUjYwRmxUS3ZuOU9sT0xHWWh2T1l2VEFneEFuRE8tY0xIMkJaRVBULXZTcVlDRi1vUUhobU50cXNrLWxnSHVaRXhlYTZZT1BGX1k3Y1pON3BTZVhKVzBUS1R1eHFmbHlldHAtY2VVVEJaOGE3Wl90Y0NhZUI0LTNudGpSLXFsYXNMQUhwVDlHOXJLcDRhdUFmWWc1cGNmdw?oc=5"
       },
       {
+        "title": "Two inmates charged with attempted murder after Sara Sharif’s father attacked | News - KISSTORY",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "source": "hellorayo.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUUVSSXJTRktweHI4WE1ZVzdjODItd0hfVDNNUzBJS1JJdEtiZlRRSW1PdndXNi1hSkkzVDBXTmxkclJMVXpvUV9xaDVGU3RuZjhmeVVDM3VBS0JMNEJWSUFhNWQwc2E3M21ZZ0h0cE96UkY2MmtYSU5semRIc2diekwzRU9oOU9zOFhUNVgwdUlNT2tIcktFY056cHRENnk0YlJNclZXV29kMmZ2ZU4xWnJlVldKbzBB?oc=5"
+      },
+      {
         "title": "London's best private dining rooms for 30 people",
         "summary": "",
         "meta": "Tue 11 Aug",
@@ -538,17 +545,10 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMmZBQ0JEUDFoLXpQQmNrTHBSOU1wM1JuOTZHMWNobVhrSERReXB3emxuWUsyMXRyc0wwaVQzTUpDbUJRWDFGTk56ZzJFblJ0aGpVTmc4TC1zQk1td29qd2tfaUhaV0E3RVpMS3ozbTNCVkN3dUdpaXd1OUlRajZzbHZ2ZHVhSEhFX04wRzFyS3VNVGhzOTgzLQ?oc=5"
       },
       {
-        "title": "Two inmates charged with attempted murder after Sara Sharif’s father attacked | News - KISSTORY",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "source": "Rayo",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUUVSSXJTRktweHI4WE1ZVzdjODItd0hfVDNNUzBJS1JJdEtiZlRRSW1PdndXNi1hSkkzVDBXTmxkclJMVXpvUV9xaDVGU3RuZjhmeVVDM3VBS0JMNEJWSUFhNWQwc2E3M21ZZ0h0cE96UkY2MmtYSU5semRIc2diekwzRU9oOU9zOFhUNVgwdUlNT2tIcktFY056cHRENnk0YlJNclZXV29kMmZ2ZU4xWnJlVldKbzBB?oc=5"
-      },
-      {
         "title": "20 fantastic things to do in Vancouver this week: Aug. 3 to 9",
         "summary": "",
         "meta": "Sun 2 Aug",
-        "source": "dailyhive.com",
+        "source": "Daily Hive",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TSTJhakljVG1SWEZ5SHNoQ01SWnk4LWZZTWUyamxnZEtwcTRVT2V6dTlzVWNhV09uRVFRT0EtaEFkalJKcGxBNEdQeUxxeHB1Zk9NZlVfNU1za3h2LXZhMXpVNEVSSzE1Rmxr?oc=5"
       },
       {
@@ -578,15 +578,8 @@
         "title": "London's 'smartest' borough where nearly half of students get top A level grades",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "mylondon.news",
+        "source": "My London",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXRReFlwNHhKTjdIT0o3ZXJwenV4UHYwTjJLRU1FeGNnbzhYdll5WkMxZkM3eGxWZmN2WnlyWlR0SUlCVDFnSzBRUU93R0RjWDBQcmdVT1NFY2hmWVJ0TGFpTTRHeHNYV3A1aVJTOHliNDdoNEpCcUJSZjZuQVNwM0xWU216Q0pyZXM0S2VyVkszZXlOTy03SQ?oc=5"
-      },
-      {
-        "title": "Guildford gets England's top A Level grades as Surrey students do exceptionally well",
-        "summary": "",
-        "meta": "Thu 13 Aug",
-        "source": "getsurrey.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYWdPbktiWE14c1dfSVg4ZGN6SGV3dU5TWlN6MlhvZi1xUDlZMUU2Qm9JOUNnQktud2pLSkQ0Y1ZiNG8zeWtIOXdXWkVBOWFMSkhyZ01iNEU1bngyRjNHdW1aZmxlTjZQTkR5T08yVlhYOEtOY1RKRVZyY3JXaklUUmROaklGZDVTQjJNUlZ0R0PSAZYBQVVfeXFMTXI2aDVEZjBtcjdZdlU4VnM0N1Y3MU13OVVKaGdZQTVZSmNqTV9hTUtZQUtRN3JlSTN6NlFRS1RCTlh1SnRQcnM0eDhNakViLTZxZ3NmMGtYcXNIaXh3cWNMdl9MSG5ycWlzSGZ0akJ6NlZFTFRkYUFKSE9vNWpIYmxYYTBrZVJoT2xOZGVac3NxSGt4NEx3?oc=5"
       },
       {
         "title": "Two large home extensions proposed in the borough this week",
@@ -622,6 +615,13 @@
         "meta": "Wed 12 Aug",
         "source": "Secret London",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM0JOa0NZLUtRTHUwOGpsaW9YMGJXMG02SFMzYjltTzJnNGd4Z0pfWTVhRHdNazd6eFM5Y2ZsWnJ4bURoU3VXSFJsS0hqSUpiV0kyY1BRY2NPZHJIa2tBenh3TjNub0hqb1VrS0NjU1RjMV9fbUtKS2FETEc4QTZmZkdiSDk?oc=5"
+      },
+      {
+        "title": "Residents of 'pin-drop quiet' South London neighbourhood worry about KFC 2am plans",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "My London",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTDh1R0FvRmtyY1dLdXJUU1FMRk5Ia3RNNl9FMDJvWmxXb2RLTXZ1M2phRnRiNnFjVXRJeEJ5RXd6OVRsRkFqU3E3OGFHOG9FcHVNanFtNUNtOFhaSm1LVHoxQTBrYy04TVlKQ0MtRnBISHdKWXZSM3hKdEZ3dEtJTGdpc1ZERmd5UXlJcnpES200eGM4UlJV0gGXAUFVX3lxTE5MOHVHQW9Ga3JjV0t1clRTUUxGTkhrdE02X0UwMm9abFdvZEtNdnUzamFGdGI2cWNVdEl4QnlFd3o5VGxGQWpTcTc4YUc4b0VwdU1qcW01Q204WFpKbUtUejFBMGtjLThNWUpDQy1GcEhId0pZdlIzeEp0Rnd0S0lMZ2lzVkRGZ3lReUlyekRLbTR4YzhSUlU?oc=5"
       }
     ],
     "UK news": [
