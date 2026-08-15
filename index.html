@@ -31,6 +31,26 @@
       </div>
     </section>
 
+    <section class="panel-block weather-block" id="weatherPanel">
+      <div class="section-head"><h2>Weather</h2><span class="section-kicker" id="outdoorWindow"></span></div>
+      <div class="weather-hero">
+        <div class="weather-now-icon" id="weatherNowIcon"></div>
+        <div><div class="weather-now-temp" id="weatherHeroTemp">—</div><div class="weather-now-copy" id="weatherHeroSummary">Loading forecast…</div></div>
+        <div class="outdoor-card"><span>Best time to go out</span><strong id="outdoorTime">—</strong><small id="outdoorDetail">Checking today’s hourly forecast</small></div>
+      </div>
+      <div class="forecast-strip" id="forecastStrip"></div>
+    </section>
+
+    <section class="arsenal-panel panel-block" id="arsenalPanel" hidden>
+      <div class="section-head"><h2>Arsenal</h2><span class="section-kicker">Club snapshot</span></div>
+      <div class="arsenal-grid">
+        <article class="match-card" id="lastResultCard"><span>Last result</span><strong>—</strong><small>Loading</small></article>
+        <article class="match-card next" id="nextFixtureCard"><span>Next fixture</span><strong>—</strong><small>Loading</small></article>
+        <article class="table-card" id="leagueCard"><span>Premier League</span><strong>—</strong><small>Position</small></article>
+      </div>
+      <div class="arsenal-news" id="arsenalNews"></div>
+    </section>
+
     <section class="dashboard-grid">
       <div class="main-column">
         <section class="panel-block">
@@ -58,8 +78,8 @@
           <div class="interest-grid" id="interestGrid"></div>
         </section>
 
-        <section class="panel-block">
-          <div class="section-head"><h2>Tonight</h2></div>
+        <section class="panel-block tonight-block">
+          <div class="section-head"><h2>Tonight</h2><span class="section-kicker">Crime · Docs · Apple</span></div>
           <div class="watch-strip" id="watchStrip"></div>
         </section>
       </aside>
