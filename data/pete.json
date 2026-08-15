@@ -1,281 +1,537 @@
 {
-  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:12pm",
+  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:19pm",
   "weather": {
     "temp": "26°",
-    "summary": "Cloudy",
+    "summary": "Partly cloudy",
     "daily": [
       {
         "date": "2026-08-15",
         "high": 27,
         "low": 20,
-        "summary": "Cloudy"
+        "summary": "Cloudy",
+        "rainChance": 47
       },
       {
         "date": "2026-08-16",
         "high": 26,
         "low": 19,
-        "summary": "Cloudy"
+        "summary": "Cloudy",
+        "rainChance": 37
       },
       {
         "date": "2026-08-17",
         "high": 27,
         "low": 20,
-        "summary": "Cloudy"
+        "summary": "Cloudy",
+        "rainChance": 2
       },
       {
         "date": "2026-08-18",
         "high": 23,
         "low": 19,
-        "summary": "Light drizzle"
+        "summary": "Light drizzle",
+        "rainChance": 37
       },
       {
         "date": "2026-08-19",
         "high": 23,
         "low": 16,
-        "summary": "Light drizzle"
+        "summary": "Light drizzle",
+        "rainChance": 23
       },
       {
         "date": "2026-08-20",
         "high": 21,
         "low": 14,
-        "summary": "Drizzle"
+        "summary": "Drizzle",
+        "rainChance": 51
       },
       {
         "date": "2026-08-21",
         "high": 21,
         "low": 14,
-        "summary": "Cloudy"
+        "summary": "Cloudy",
+        "rainChance": 43
       }
     ]
   },
   "calendar": [
     {
-      "title": "9.30-16.30",
+      "title": "Sweden",
       "summary": "",
-      "meta": "Tue 1 Sep",
-      "url": ""
+      "url": "",
+      "start": "2026-08-07T00:00:00+01:00",
+      "end": "2026-08-18T00:00:00+01:00",
+      "date": "2026-08-07",
+      "time": "All day",
+      "allDay": true,
+      "color": "#8b5cf6",
+      "calendarColorSource": "fallback"
     },
     {
-      "title": "Kids",
+      "title": "WFH",
       "summary": "",
-      "meta": "Fri 4 Sep · 4pm",
-      "url": ""
-    },
-    {
-      "title": "BANK HOLIDAY",
-      "summary": "",
-      "meta": "Mon 31 Aug",
-      "url": ""
-    },
-    {
-      "title": "Footy - PU 4.15pm",
-      "summary": "",
-      "meta": "Mon 14 Sep",
-      "url": ""
-    },
-    {
-      "title": "9.30-16.30",
-      "summary": "",
-      "meta": "Wed 26 Aug",
-      "url": ""
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-22T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#3b82f6",
+      "calendarColorSource": "fallback"
     },
     {
       "title": "St Pauls Camp 8.15 - 5.45",
       "summary": "",
-      "meta": "Tue 18 Aug",
-      "url": ""
-    },
-    {
-      "title": "Dentist",
-      "summary": "",
-      "meta": "Fri 18 Sep · 3:15pm",
-      "url": ""
-    },
-    {
-      "title": "St Pauls Camp 9.30 - 4.30",
-      "summary": "",
-      "meta": "Wed 19 Aug",
-      "url": ""
-    },
-    {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "meta": "Thu 10 Sep",
-      "url": ""
-    },
-    {
-      "title": "Crafts - PU 4.15PM",
-      "summary": "",
-      "meta": "Wed 16 Sep",
-      "url": ""
-    },
-    {
-      "title": "Sweden",
-      "summary": "",
-      "meta": "Fri 7 Aug",
-      "url": ""
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
     },
     {
       "title": "Gas Engineer Coming",
       "summary": "",
-      "meta": "Tue 18 Aug · 8am",
-      "url": ""
+      "url": "",
+      "start": "2026-08-18T08:00:00+01:00",
+      "end": "2026-08-18T13:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "8am",
+      "allDay": false,
+      "color": "#14b8a6",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "St Pauls Camp 9.30 - 4.30",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-19T00:00:00+01:00",
+      "end": "2026-08-22T00:00:00+01:00",
+      "date": "2026-08-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "WFH",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-24T00:00:00+01:00",
+      "end": "2026-08-25T00:00:00+01:00",
+      "date": "2026-08-24",
+      "time": "All day",
+      "allDay": true,
+      "color": "#3b82f6",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "8.15-17.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-25T00:00:00+01:00",
+      "end": "2026-08-26T00:00:00+01:00",
+      "date": "2026-08-25",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "9.30-16.30",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-26T00:00:00+01:00",
+      "end": "2026-08-29T00:00:00+01:00",
+      "date": "2026-08-26",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Sample",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-27T14:15:00+01:00",
+      "end": "2026-08-27T14:45:00+01:00",
+      "date": "2026-08-27",
+      "time": "2:15pm",
+      "allDay": false,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "BANK HOLIDAY",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-31T00:00:00+01:00",
+      "end": "2026-09-01T00:00:00+01:00",
+      "date": "2026-08-31",
+      "time": "All day",
+      "allDay": true,
+      "color": "#8b5cf6",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "9.30-16.30",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-01T00:00:00+01:00",
+      "end": "2026-09-03T00:00:00+01:00",
+      "date": "2026-09-01",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Full Day",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-03T00:00:00+01:00",
+      "end": "2026-09-04T00:00:00+01:00",
+      "date": "2026-09-03",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-04T16:00:00+01:00",
+      "end": "2026-09-06T16:00:00+01:00",
+      "date": "2026-09-04",
+      "time": "4pm",
+      "allDay": false,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Full Day",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-07T00:00:00+01:00",
+      "end": "2026-09-09T00:00:00+01:00",
+      "date": "2026-09-07",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Holly Class - Home Visit",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-07T09:00:00+01:00",
+      "end": "2026-09-07T09:30:00+01:00",
+      "date": "2026-09-07",
+      "time": "9am",
+      "allDay": false,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Blag Day",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-09T00:00:00+01:00",
+      "end": "2026-09-10T00:00:00+01:00",
+      "date": "2026-09-09",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Footy - PU 4.15pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-14T00:00:00+01:00",
+      "end": "2026-09-15T00:00:00+01:00",
+      "date": "2026-09-14",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Playball - PU 3.45PM",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-15T00:00:00+01:00",
+      "end": "2026-09-16T00:00:00+01:00",
+      "date": "2026-09-15",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7dd7ff",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Crafts - PU 4.15PM",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-16T00:00:00+01:00",
+      "end": "2026-09-17T00:00:00+01:00",
+      "date": "2026-09-16",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Dentist",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-18T15:15:00+01:00",
+      "end": "2026-09-18T16:00:00+01:00",
+      "date": "2026-09-18",
+      "time": "3:15pm",
+      "allDay": false,
+      "color": "#ef4444",
+      "calendarColorSource": "fallback"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-19T00:00:00+01:00",
+      "end": "2026-09-21T00:00:00+01:00",
+      "date": "2026-09-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#f59e0b",
+      "calendarColorSource": "fallback"
     }
   ],
   "lead": {
-    "title": "Putting frontier cyber models in more trusted hands",
+    "title": "OpenAI upheaval mounts as Sam Altman readies IPO push",
     "summary": "",
-    "meta": "Mon 10 Aug",
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONTMxN3pScDV4Ul81eXN1anAzOXJmVnV0Y09SZ0l2a1JGd2ZVSjY4eVkyUVprUU1WN25MdzViaEc3SmYyOGd5N0R1MUNKaU1aem9uakRjYmljMkNIbE9ib0RlMzZ3TVphRE51REFMSGlQQXpSOHlneW4ySWlzQW4xUXRBVQ?oc=5"
+    "meta": "Sat 15 Aug",
+    "source": "Financial Times",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXcxN1ZMZG0wZzNlYWtTUVRkS1lJeW52eWh6clBCRWxNWkVXdmlzSHdZQ3lxc1o1a0t6VllWbURuYzNSOUM2ajRlQmVWMUZ5b0lRV3VRV09pNFdWSDdRNEtjUWhDWDBRWDA3WVNyN3hEQVJKdzl0dFAzdzcyOVZMb0VqR0M?oc=5"
   },
   "interests": [
     {
-      "title": "Putting frontier cyber models in more trusted hands",
+      "title": "OpenAI upheaval mounts as Sam Altman readies IPO push",
       "summary": "",
-      "meta": "Mon 10 Aug",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONTMxN3pScDV4Ul81eXN1anAzOXJmVnV0Y09SZ0l2a1JGd2ZVSjY4eVkyUVprUU1WN25MdzViaEc3SmYyOGd5N0R1MUNKaU1aem9uakRjYmljMkNIbE9ib0RlMzZ3TVphRE51REFMSGlQQXpSOHlneW4ySWlzQW4xUXRBVQ?oc=5",
+      "meta": "Sat 15 Aug",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXcxN1ZMZG0wZzNlYWtTUVRkS1lJeW52eWh6clBCRWxNWkVXdmlzSHdZQ3lxc1o1a0t6VllWbURuYzNSOUM2ajRlQmVWMUZ5b0lRV3VRV09pNFdWSDdRNEtjUWhDWDBRWDA3WVNyN3hEQVJKdzl0dFAzdzcyOVZMb0VqR0M?oc=5",
       "section": "AI"
     },
     {
-      "title": "Arsenal lead £51m transfer race for England U21 star Jack Hinshelwood but could face Man Utd competition",
+      "title": "Community Shield preview: Arsenal v Man City",
       "summary": "",
-      "meta": "Fri 14 Aug",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTDFBa3pXR2RhVjFXalZLQU42VnVXWTRibi1VQlpmdE4zc2JkQThtX09aLU5aNWQxYkVfUXNqRnlraHRWMDd0UHgzTEtKZGRQcW1tQnlDZlZObTZkUHN2TThOeHcwMV9TRkw2NWpEa1d2YnhoTy10TURsWnVqMUhXSXhuaWpOVFM0U3FCOXdKZk9GNkU?oc=5",
+      "meta": "Sat 15 Aug",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDJuSXdPb2o2RW1XZEV0d2hPSlowazVaVV9kWFFqZVBOYml3RjlhMHZLMXBmZ2hFblFBNXhGZVBERTl0SnM4bzV0RkE4X1pWUWpyTGVTZTg1c0lHdTh1NnRQcFh1RHpvVmVLb3pxVkdiekNOc3NyUUxWT1JQeW92OHNjSTdLQkZvLW1tYXhn?oc=5",
       "section": "Arsenal"
     },
     {
       "title": "Who runs Kingston upon Thames?",
       "summary": "",
       "meta": "Thu 13 Aug",
+      "source": "southlondon.co.uk",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TRXNjamxFSk1CUjdKQWprbnZ5LW5IdExuczVZc21SbnlrQ0JFQURhM1I3RVYyLTNHc2xhb3hEVlgwS3E1Wm5YTENPa0tpUDU4bnhsMnpVYjRncGl5Q3JralZPVGp2YXYybU1ybnR3?oc=5",
       "section": "Local"
     }
   ],
   "watch": [
     {
+      "title": "2026 film and high-end TV productions shooting in the UK and Ireland: latest updates",
+      "summary": "",
+      "meta": "Sat 15 Aug",
+      "source": "Screen Daily",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZmNMRTBhWHdsbFo0WHUtenBKUWJ0Z09LVVBuTjVUb1R6dnYyV0UwSEluX01NUXJuVzhuVlZCTUlHanpOQ0hpT1p4N2xGSnIyaEg3eGRKQ3BZVlJWT0hPREU4dmd2azc2VGVhQVl2emFKVmpENnNrT3BJNGVDY2xlNDVSUV95dzdPcHFtOHhqcG9WbUdYYU9odjhUTHp2b0dzMTZ6Yzh4U1VGNVVfeVl5RmQ1eDJpLU91MHlMUS1kZlZNNng3LTE1VHNIb1o?oc=5"
+    },
+    {
       "title": "What To Watch This Weekend: New Shows And Movies To Stream On Netflix, Hulu, Prime Video, Apple TV And More",
       "summary": "",
-      "meta": "Sun 9 Aug",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdS1lcm9Nc2t2VVkzLS1tOVpoeEV5M3NPMTktNUJFUFozanZtcFJZTFhJZ0ZkSFVJMk1yMExqanpQRlAtVGhXUHlEZ0JlQU1Ud3hjM2ZQMjduWWQzQThLeDhCMEJTWTQ4dzdnZ3NSY1VJVHlnOGJBSFNaMFEyVE9fMmVKSWJZM2FvdHp4ODVmZGJlZ25EZXFCWHZ0eVdUNTJRRFlNLXNMMmR2Y3lYcjdHS1BnU3dsVjBJVUVMd1M3cHRSVFdCRVVOekVoeUI0UVh5SHpPS3p3d1Fxby1iVkg3aVBubGc5Q1I4?oc=5"
-    },
-    {
-      "title": "Mint",
-      "summary": "",
-      "meta": "Tue 11 Aug",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5GN3R2SUIwSnR1X1dqNVVCZGJoZ054UUJTS3VLOXV0TXJtd3k5MDhGNFp5RzdIaHJGTDJEUnRlLV91X3AzSlU4TkVaaXhDaG5j?oc=5"
-    },
-    {
-      "title": "Best BBC shows: All the best dramas on BBC iPlayer",
-      "summary": "",
-      "meta": "Mon 10 Aug",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNXVWSWtqTG5VM2tuMk9iLVVlWlNqSENhZnB4dXhLRDhldHlEOG1qMERyNGdESFNtYnlFN2R4czg4TlRqUDA3MFlEdXF5eWpCTUpMX2xmeVhjWG1pWHprSnZaR09UZEp6S3hhcGN1allMV0M2bDZXdDk2UElQa3BsdUNldmFkbF9XdEpLYmMxS0dyZ21K?oc=5"
-    },
-    {
-      "title": "North Berwick RNLI to feature on new series of BBC Two’s Saving Lives at Sea",
-      "summary": "",
-      "meta": "Mon 10 Aug",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdVBqaUVWRGg0SmtyakptaGRTT1FHTDQyMTNuc00weHRyU0oyTTdGRlpHZWxqWVZjWWotNDF6RUQ1eDNjUnB5ZnM5NWJQLWhTejFmVmphX0NJR3dJb1VnclVDUW14TGczZFBFSTBXWEc0cUxveldUZDFQZU5pOUdmMGtMWE05ODBPbmJoYlZOT0hfX3VpLVExb3BhdXh6Y2NYV2hMR05uXzhJMWRIYlFTMjZZVDNpQ3Buc3hVSHVXYw?oc=5"
+      "meta": "Fri 14 Aug",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeDNrMHQteEROTWdsdWVFaGFIOEt3QXM1T0F6TUtuMjhBSnNUWVhVMDYzbXRiWjFBYWFXQ2tVVVdCQXVtMDgySjVoTE9Yd2Y1VHpkcVFMbUNuVVZVLUk0SnQ1bWptc3FvME8wV0tCZ2UzekV6RGlBOHl5Q1h1N3ZlZWZTdldkY1pBaklNVXQyU1RYaWw3cWFaaHV4Zk1PMmh4TkswYXVKUmQxbkFrdUlWX3N5UU1ieUhaUTJoMW14eEFkSnZsMk9qSlNsdHNFc0N3OGxSYnFlWVg4SUU0WTNacjNXdEZ0SHdS?oc=5"
     },
     {
       "title": "60 Best Movies To Watch On Netflix UK In August 2026 — Your Ultimate Summer Watchlist",
       "summary": "",
       "meta": "Thu 13 Aug",
+      "source": "empireonline.com",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcWdRN0gtQjFyTmdORERqTkRQWmtiMXdianZFWTV5dHMxWG15M205Z2owY3YyOEtiUktfWm5RREd3cS1ESmUxbnRtRE5qbXF1TDVWUW5uck5TTE5Jb1Jjc1YzOU9PNGRZVmtURVY4VXYwY3N3a1Zj?oc=5"
     },
     {
-      "title": "The best films to watch on BBC iPlayer",
+      "title": "What to watch on streaming: what's new today on Netflix, Prime Video, Disney+ and more",
       "summary": "",
-      "meta": "Mon 10 Aug",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRlVET0JBQ1BubXdsbHRXaTBibl9HZEt6QUIxaDhQODQ0dnliWTdncUZUMkFEcHRkZDJucUZNenpRN0c5cjdIdjAzNkJPSFRsZVhJRkkwdFN2am9kN2Y0ZEFNZkQtd1QycF9rU0FjakRCZVY5VjI4bkFMX3dLc09RajJjbmlhamxRZzNSMVU2dU5ZNzFSaWxZajNWNVRBVFhRWWZHTA?oc=5"
+      "meta": "Fri 14 Aug",
+      "source": "Radio Times",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUl9hZ0JSTlNzd0FCRVRQWGhEeDdDenlvRVRTQnJXWW41bjRXSDhCc2wzYzdvbnhuRVE5eFlhX3J5RFZkaUNiU3lNVldURzlGajBmN0FSZWd3YWZfeThaajk4akc2SWk4d3pKeFVkV2xGMnl2QjRDWVpFX0hJcUVoVkdHbFFuN1VWMmlVUEhwVTM4WG03anM5bVozYlM1OUZ0UllLa0NFeGFRaXUzdGw2dWVNZDNTcUtEcVhR?oc=5"
+    },
+    {
+      "title": "DISNEY+ REVS UP AS THE GLOBAL STREAMING HOME OF FORMULA E",
+      "summary": "",
+      "meta": "Thu 13 Aug",
+      "source": "Disney UK",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2VSSGpfblNvVEhMWHlaQlZOWWhXa3FkR0ZidE1aOEhtWTFhaV9CWHg2WUNKOXVCU3VOUkJlQUphNFdGRWFEQnBGbl9rZDJnbXBCRVVfRTg3YTZoMHRCLUE5TGQxdTVzTGJHTHgtWlRfQkNqdFIwOE5jR3F4VG1oY1c3ZUw3emt1bnMtc3JnWWVfRmQyNGI0Ng?oc=5"
+    },
+    {
+      "title": "D23 2026: Disney's 24 Big Entertainment Announcements Shaping TV, Film & Theatre",
+      "summary": "",
+      "meta": "Sat 15 Aug",
+      "source": "ridingthemagic.uk",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSHlNZU5ITHBQRkRMcXJ0VC10MVBpaHNwRlZpM0YtaFBEd1VwcDFtUkd1T1dZUTYyeGJ4aXhFT1VEVktsdWluWXRuQnlWYXJVNjBXOGd0RHhlNHc4LUw1NzdzRTQyNFdjZjVpN3hBY2w1OVZaSHVpYW5OYmVidUY1bmVKQlhLYXMyOUJScmtJcEFOeUpOUEZxV2VrVmowWE81ampWdVlnMGNtQQ?oc=5"
+    },
+    {
+      "title": "\"Irresistible\" new Netflix drama debuts with 100% Rotten Tomatoes rating",
+      "summary": "",
+      "meta": "Sat 15 Aug",
+      "source": "Digital Spy",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT0Z2OE41dzlvQzduZDJ1WDE4WUNlTWpuV3lYYzRHSTMzNEtaUnJEdW9aQ1BmZGszQW4zMUlIQ2JOTXN2aElpcHQ5cXZwQVZZX3hwdnN5alpQQktqWlBPb2ZpSzJHM1pfbDhjdHF1czBoUUdDNTNVUmk0NG9RdzBXT0VOcmNOZDZjWERXUk9SU3Baa3lPb1BkbVF6cnNtRG5OclhWeg?oc=5"
     }
   ],
   "sections": {
     "AI": [
       {
-        "title": "Putting frontier cyber models in more trusted hands",
-        "summary": "",
-        "meta": "Mon 10 Aug",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONTMxN3pScDV4Ul81eXN1anAzOXJmVnV0Y09SZ0l2a1JGd2ZVSjY4eVkyUVprUU1WN25MdzViaEc3SmYyOGd5N0R1MUNKaU1aem9uakRjYmljMkNIbE9ib0RlMzZ3TVphRE51REFMSGlQQXpSOHlneW4ySWlzQW4xUXRBVQ?oc=5"
-      },
-      {
-        "title": "Putting sign language AI into users’ hands",
-        "summary": "",
-        "meta": "Wed 12 Aug",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1KVXNiQ3JHU1hzMG1la1dyWTRUenFiaF9NelVKYUgxd2RteUhHQWlUSC1FdUtIeFVpTkl1TnAyclE0cUFQclFQVG45M0MtYnkyOXZaMDhaSjNhekV0ZGhWTE84ckdXM3NHcWJHX1MyWGVNTjJ0UktFRXVBZw?oc=5"
-      },
-      {
-        "title": "AI bootcamp launched in north-west to combat youth unemployment",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ0VJZGlYNEFvS3V0bFVwekJjZEZCcHpvS042Uk50Mk9iVkR0dGxnOWIyNEUydWxlM0U1S01jNnY2U0Q3c2FCN2RDcVJUdVNxdEtQM2w0WXl1blhyRGtYOUxvRzREMzZtMV9Fdmp6eXdYSEFRRVdRUXJ3Yk9MWDFCZFZOQWxhVnRhOUdjMm11QkJyc0lBUF9JekF0VjBHelE?oc=5"
-      },
-      {
-        "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQenJmNmtJVlBpd3MxYW1iN0hVSmlsT19lbHBQbTE1SnlsNG1zSm9QX2dFVWdKVnlKakE0SDVnQnRwYWxrdnd2UzJIZS12U0FMdlJYVEpab3NLNS03YzZweEI1Wkpmb1NxVVJYNXdGaDB6U0ZSTkxscm5ScURqeXlDZ0dGYlM?oc=5"
-      },
-      {
-        "title": "As AI guzzles water and energy, we are already facing a choice: datacentres or homes? | John Harris",
-        "summary": "",
-        "meta": "Mon 10 Aug",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd1VtRHpneHRsbGttc2ZDMWc4MUp0ZXpZN1l0aEJ5dVBoLTVFTm9jZFN2R01TTWE3RzhmTkNGOHhiX2hYbVdvTkhnNWpjQ09SY3UtZzJQTjhKenlYYzBDZVdQeWU2NGlERk8zdmZaMG5NOXRKZzBIVVNvYTFWaTZpWkRNa253V3QzOWJweUs0M0FOR2VGVmd4VzRMMmpoUVJLQ2hEWGZtX3ZYeHR0?oc=5"
-      },
-      {
-        "title": "Twitch faces backlash over Amazon using content to train AI",
-        "summary": "",
-        "meta": "Thu 13 Aug",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE11c1lhMWFUOVRBSGJNWHBwOGR6UVpQaWlPSjAxUWMwc3ZxQ2t5NVFpUHd3S0hHUDlEUFdaLXBTTVljODlRLVVMdnhoQWZDSHFaVjRfTXpQN3hvTHVx?oc=5"
-      },
-      {
         "title": "OpenAI upheaval mounts as Sam Altman readies IPO push",
         "summary": "",
         "meta": "Sat 15 Aug",
+        "source": "Financial Times",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXcxN1ZMZG0wZzNlYWtTUVRkS1lJeW52eWh6clBCRWxNWkVXdmlzSHdZQ3lxc1o1a0t6VllWbURuYzNSOUM2ajRlQmVWMUZ5b0lRV3VRV09pNFdWSDdRNEtjUWhDWDBRWDA3WVNyN3hEQVJKdzl0dFAzdzcyOVZMb0VqR0M?oc=5"
+      },
+      {
+        "title": "Anthropic says Claude AI hacked three companies during tests",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeENSNk5wMnlGV25SZ3o0X0dnTVZNdjNiUlRHVnlERGdkYWc0UF8zQVozSlFzSmh1Z01OWEQ5b0R6cmJ2dEdjNGw0NGhOVlZEc1NSOWZleEZxYkFiRE5kSnBpOWRnTEI3NXRCNHpNemRSakN2UWV5RDM0Ymdhc0ltcnVHTFk5ZUFQTjFCbm9nX1ZPN0NJRUpueNIBmAFBVV95cUxPdmhpbmEwS3NqaHFmNU1xZklSY0xUck9Dd1ZiZkFYa3ZLT29uTHNmS3dpbUJHSllQMWhMRzNwZ1pid3ZCSG9qVVU5TUswTFMyek5ockgzRVd3TnVDaVJUdjN5Mll0SDc1ZE8zQXd3OWVmWUdEc0dfSFhoUnl2emlLTmt6bW9WR0ZtWVFZeUVOdWRMQWg3LXZhdA?oc=5"
+      },
+      {
+        "title": "How Claude's text watermarking works",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xMjZ5Ynd3TkptcUFtRGZxalN0VUxKTWRxSktRTkhsa1llV0w0OUphLXRYWDkyaGJvendtY0drMTRCTWV1QjJxeVc5MzFxb2NXQVpXRWhRZDY3eC1Zak5QZWV3?oc=5"
+      },
+      {
+        "title": "Exclusive-Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Euronext Markets: Real-time Stock Market Data | live",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlpKMEdCR0ZkdTFjUFNwajZwUEI4dlE4Z2c4WHFWaTd4a21BR1VUMmpockpiX0tacnEyVmMtdjBPVXNEQ2UzbjJCVHZpcDNWOFVtRENseEl5akJlRGtTcFBUTHl6T2ZIbEplTDdnU0k3YUdUWHdtNnp2emtyU2xYcElpUFc3Sjh6OG5CRHFWX2wwbThnVkd5eFRMakxsd21hdS1aVkx5WHZWN3ZDdnVkZFFDdl9ITkN2YkxhSWdIMA?oc=5"
+      },
+      {
+        "title": "Researchers watched OpenAI, Anthropic models take extreme measures in hacking test",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Mashable",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMGdxMnViZzRydUJsTDNnUVJWdmRCUG9XRXQ1eTlDUUVhdE90MWdBWk9kRkxFNm9qSVlKQlBGMWg4MS12QzRDTkx5cUZJTmlnWnFCUmp5cnZHZjk4dTFXV2NCVEtDQnZaYWtubkZudmFYSGY0WldaTGUxVWU1QjBfbzRPdzhUdw?oc=5"
+      },
+      {
+        "title": "Anthropic | History, Controversies, & Claude AI",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5"
+      },
+      {
+        "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+        "summary": "",
+        "meta": "Thu 13 Aug",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vZ014TTBMWjk5ZkxNRkhScXlJakpYU3FzYlpxdnpPMXhwQTJIbnhDYTVXcll3Y0xUTU9WYlM5Sm5Jbnp4MGlVTGd6dlY0MUdrRnVJODdqbEVuTEFadkdBMTRsdlVVLXRmc0E?oc=5"
+      },
+      {
+        "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNOGFTR2NEWkd0UXZ2Y3pITjZ4MXRQZEREU3A0LU9GXy1aY0Z1bzNUY083NE4xN21wc2V3czEtWC1idGliQzZxM2h4WTRuSzRSVGFUN2tMS2VFN0k2QTlHSEhaWHd3ekpSSS16YTVSdTFwMUtkX1lZYVZGdjA1NEx2aFdQUVJnSXZWRE11RGxJSGpsWG9qZWxYY2s4bGNFSWfSAaQBQVVfeXFMTXllMzRNcmVRZTZib3pmRjVWZHg0ZEoxSkx0VTM2dnR1dWFOOGlxQWZqRVh1dXB5b1BuUjVaaUlCRURqclhkbDZpd3l1V3VnR3RSazBJYUdSYW5zaS1LbnpGNllGakRId1FFYkRWNlZfeGNYUkxUbTl3bzN0eDdZUWdqSVA2eDh4RVQ0NHhmcTlfemp4Tzc2blFNWVNsa2lGSDBJSnU?oc=5"
       }
     ],
     "Arsenal": [
       {
-        "title": "Arsenal lead £51m transfer race for England U21 star Jack Hinshelwood but could face Man Utd competition",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTDFBa3pXR2RhVjFXalZLQU42VnVXWTRibi1VQlpmdE4zc2JkQThtX09aLU5aNWQxYkVfUXNqRnlraHRWMDd0UHgzTEtKZGRQcW1tQnlDZlZObTZkUHN2TThOeHcwMV9TRkw2NWpEa1d2YnhoTy10TURsWnVqMUhXSXhuaWpOVFM0U3FCOXdKZk9GNkU?oc=5"
-      },
-      {
-        "title": "Report: Arsenal 1-1 Como 1907 (4-3 pens)",
-        "summary": "",
-        "meta": "Wed 12 Aug",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN2pxcWxjMVVvQXZYVjBnWkM1RTdJTl9oS2RpUHJ2X05KSXJkaHFteG1JdkhzT3lJSVdwcVRyQUo3R0VxZGNmV2pvWkRTM3dXVllpa0xuTkZwUFV1SHVKYmpVUFNfNTU5QjgtUGZsN3hCX2pTTzhyNHo0aWRDcXJCV09sOUlnZw?oc=5"
-      },
-      {
-        "title": "Arsenal vs Borussia Dortmund LIVE! Pre-season friendly team news, preview, score updates and live blog",
-        "summary": "",
-        "meta": "Mon 10 Aug",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOVDJvNHQ1c1JNTXhmWUxRUlBLODB5c0FmcmRYUGdkajNyTjZEbUpzLVh0c1FQNXRiSXVWNk1BVFE2T3RtaHpBMmROZ1dsUlB3dk8tVEtid185NW0tQ3U0NWpFWnRKTjJabm1KTGt5UFpILWg1aEJTSk1xODJOTUM1TnVpeURjSVZXMXMydDVEZjJsWExEZjdxbzlmV0lWN0gzS3psM3I0QlhDS3FYQk9ob1V1RmdvaEJ2NHVvNkVvQllJdExkZnl1aFRCSFQwT3hGczVoMVQ2Rndmcy1tUmdDR3kwaVAyNS1RTzdmYTM3Y0I?oc=5"
-      },
-      {
-        "title": "Report: Arsenal 2-3 Borussia Dortmund",
-        "summary": "",
-        "meta": "Sun 9 Aug",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbWF3dlR3SGZHZ242Yy1qdkFNRkYtUGtGc2dHUjBORzJhUHdpNzFZVzdGeERrTFB3bnZ4VVVkcy1FanZ6cmZrQ3hmUkpUMjhRRU9FWHI2bTlIeUZuRDVnbU5DU1ZvaU9jai16WG1qLVNYdWhOSkFiTTlnSFBFNUo0eGY2LUI?oc=5"
-      },
-      {
-        "title": "Arteta on Emirates Cup, Tzolis and Guimaraes",
-        "summary": "",
-        "meta": "Sun 9 Aug",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdGFGVE1sVDd0aF9lTTFKM001X0pHTXRLX2FURWlWMEtvSktrVG96RFVVd0VsMU9MS3U4OFVXSEUwVWRUWGFtQmp4UE1pTDNQOTdwRlVSOGxKWkVqLUw2aUEyWVk3RExqVUw0TGFGdEUzSXo1V3NnUnZkaVVFckQ0cWdRdGd5U0ZNY3BrMjRR?oc=5"
-      },
-      {
         "title": "Community Shield preview: Arsenal v Man City",
         "summary": "",
         "meta": "Sat 15 Aug",
+        "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDJuSXdPb2o2RW1XZEV0d2hPSlowazVaVV9kWFFqZVBOYml3RjlhMHZLMXBmZ2hFblFBNXhGZVBERTl0SnM4bzV0RkE4X1pWUWpyTGVTZTg1c0lHdTh1NnRQcFh1RHpvVmVLb3pxVkdiekNOc3NyUUxWT1JQeW92OHNjSTdLQkZvLW1tYXhn?oc=5"
       },
       {
-        "title": "How to watch the Community Shield live on TV",
+        "title": "Arsenal vs Man City: Community Shield prediction, kick-off time, team news, odds, h2h",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPSk9HRThBTF84MUEzaXBxeGFkSnFyZGJjcWlsWjVneTkxVld4MGNpOE1SSlZVak12SmxXVnpXb2Z2WlVQTDZ0VUhVWDAtOVhLd0JadVFJbTdCYzF1Z1NkLVMyeU9Jb3YzbWF5amI4T1BZeUpzVlNEc2FLenUxcjhWTFJUaS1LWkVOTW1WZXZPU25ISGF5b3JfNWUtSVVfQWp4M0t5Szk0YjJtR1FvWHJDTlh2UDk4QUxKb0stLVNRT3RMLUZXMFlvbC00d0o2NW1NYUEzcC1jME5pcWxrRVJtSVpFdFNTbzlBU2pzendmMkY1M0ViSnZ6RlByZ24zVFMxT0lhLS0zLTBNMmJNSi1R?oc=5"
+      },
+      {
+        "title": "Arsenal lead £51m transfer race for England U21 star Jack Hinshelwood but could face Man Utd competition",
         "summary": "",
         "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXg2dTRKU3FMMjVIOEI1T09oYWtnQldqSXNBeThNMk02YVIxOHB6bUJzMlpjTUZMNkxkMmNxeEJ1bjF4QU1vemptNW5kZ2Mxd2Q3dVg1ZDV0UkhnU3RrcDJnQWs0NnhnUDZRcHZHX0dBeFUwTnd0cDJfUTFJRWtvcXJ5cThKM0g3NWtZTUVlMA?oc=5"
+        "source": "The Sun",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTDFBa3pXR2RhVjFXalZLQU42VnVXWTRibi1VQlpmdE4zc2JkQThtX09aLU5aNWQxYkVfUXNqRnlraHRWMDd0UHgzTEtKZGRQcW1tQnlDZlZObTZkUHN2TThOeHcwMV9TRkw2NWpEa1d2YnhoTy10TURsWnVqMUhXSXhuaWpOVFM0U3FCOXdKZk9GNkU?oc=5"
+      },
+      {
+        "title": "The best snaps from pre-Community Shield training",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQ0FLNEZYMlZSdmNqZWR2V25FeEwzY2lPN3BBaFdQT2M3bmJmNkJWWHplWm1GelFFcXRFMzZTSkgyN2gxVzFPR3EzMnNnMllqaTVCZGRQaVV5R2o4UDFJUnNmUlAxcndwSUp5bE9IODUwd3hNNDQ0OUZUcmlBeDR6cDA3ZnNiTGwxMGtfWElXZUlKdkFGZVE?oc=5"
+      },
+      {
+        "title": "Arsenal take big step towards Gabriel Jesus deal as £5.1m transfer is confirmed",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd2Y5M0JuQkxnUG4zYkl1aU1KVm1oSVQwaVZ4SGtKZU5EMXNNOGlxcjFuZHQ3ZVQxR3JOVWFILVhmOVRmX2MzcFBvWklvUUN6ekFJWmxkTXdWYzlDcjVNcXBNNS1PY2FiWE81TGpwMTlSbXFseHpCLXR1Y3pOQWFZTVlEckd6YzF1RzF2V3lrZVdwLWxZdWNaWjF4QTR0QV9EYmc?oc=5"
+      },
+      {
+        "title": "Go Inside Training ahead of the Community Shield",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVTBSeHVJTDUtM214OGJZMmZrNFpoVHRQaG5lLVVBcV9CUHQ3OXRzU3M1QmV2Z1R3V05UX3E5OV9kQVBKRmV4WGVzR0RkeG1RQURQS3pBb1A2NXU1T1diNTBRcmxDVHRQVVM2MWstQnpfaWdUcnpOWVp3UHNZVUFwUWhBUklGcGduMkdzalZpbGM5d0lx?oc=5"
+      },
+      {
+        "title": "Arsenal XI vs Man City: Confirmed team news and predicted lineup",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdXMxY1RFNWdoNTlpRk1tMnowbGFEY29vUVlRSC15alJKdmZGbmljVEVFUnlDWFM0ZS1mVVUzWTgwWUdNa2JvU1RMc25wZjY5RHJnSFB6T3VaZ2N2eC1GSFc4ZWNEVXFHcmg3QnFpVjg5SFFfSC1YMWxQZU9LUTNrcVN6TzBLQ0t5YUNWbEpJRGtmQk9Fc3JkdXJtRFpIVXpyRmh0cXZYZkJJYXdIWVpyejY0MExqVHV6VERhRHlrU3BnbmVLNFBpY1I1b3NUS3FwcmVaRGRmQ1Y4N3planBtMUY4YzdOTzVNUEE?oc=5"
+      },
+      {
+        "title": "U18s report: West Bromwich Albion 0-0 Arsenal",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQajctRmljT25MS1EyMXRWQVZLUTVEMkt4OEJzVUltNWl4TDBfUFkxUUhDRUhUWUp3SHlEeEF4cno3TUtCVl9SMDJtZHV1MVM2Nlp3dXZEX2pqVWI0OVZTcjBieDZmSW1jRW9BQjJUbW9tTFpXNkxwWWY3eEhCOG9BS1d5TXRDMlB4eVE3OU12aw?oc=5"
       }
     ],
     "Local news": [
@@ -283,113 +539,110 @@
         "title": "Who runs Kingston upon Thames?",
         "summary": "",
         "meta": "Thu 13 Aug",
+        "source": "southlondon.co.uk",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TRXNjamxFSk1CUjdKQWprbnZ5LW5IdExuczVZc21SbnlrQ0JFQURhM1I3RVYyLTNHc2xhb3hEVlgwS3E1Wm5YTENPa0tpUDU4bnhsMnpVYjRncGl5Q3JralZPVGp2YXYybU1ybnR3?oc=5"
       },
       {
         "title": "London's 'smartest' borough where nearly half of students get top A level grades",
         "summary": "",
         "meta": "Thu 13 Aug",
+        "source": "My London",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXRReFlwNHhKTjdIT0o3ZXJwenV4UHYwTjJLRU1FeGNnbzhYdll5WkMxZkM3eGxWZmN2WnlyWlR0SUlCVDFnSzBRUU93R0RjWDBQcmdVT1NFY2hmWVJ0TGFpTTRHeHNYV3A1aVJTOHliNDdoNEpCcUJSZjZuQVNwM0xWU216Q0pyZXM0S2VyVkszZXlOTy03SQ?oc=5"
-      },
-      {
-        "title": "Sewage spill from failing treatment plant blights first T...",
-        "summary": "",
-        "meta": "Sat 8 Aug",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMzJsZW5EYVI5dmoyenpXdHNhcmE4MWp1NlQ0Z3hLZmJURmF3cUJCT3hwZjlHRW5XNzQ1Ukd6YjlydHlzM1M3bGNPTUlDS2wyOF9xQS1lOU5nTDc0a1hzSjZObncyUDJkejFDUTFlMkExOTBjVlB0SC13RjkwV0RKdXpvQVVfY1pPVHpTZ3lSRE1jSmR6VTN4cEV5NWJ2bHkta2FOV0Q3clBPVWlXajZMdy1UUHgzYm16Wk5aNg?oc=5"
       },
       {
         "title": "Guildford gets England's top A Level grades as Surrey students do exceptionally well",
         "summary": "",
         "meta": "Thu 13 Aug",
+        "source": "getsurrey.co.uk",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYWdPbktiWE14c1dfSVg4ZGN6SGV3dU5TWlN6MlhvZi1xUDlZMUU2Qm9JOUNnQktud2pLSkQ0Y1ZiNG8zeWtIOXdXWkVBOWFMSkhyZ01iNEU1bngyRjNHdW1aZmxlTjZQTkR5T08yVlhYOEtOY1RKRVZyY3JXaklUUmROaklGZDVTQjJNUlZ0R0PSAZYBQVVfeXFMTXI2aDVEZjBtcjdZdlU4VnM0N1Y3MU13OVVKaGdZQTVZSmNqTV9hTUtZQUtRN3JlSTN6NlFRS1RCTlh1SnRQcnM0eDhNakViLTZxZ3NmMGtYcXNIaXh3cWNMdl9MSG5ycWlzSGZ0akJ6NlZFTFRkYUFKSE9vNWpIYmxYYTBrZVJoT2xOZGVac3NxSGt4NEx3?oc=5"
       },
       {
         "title": "Two large home extensions proposed in the borough this week",
         "summary": "",
         "meta": "Thu 13 Aug",
+        "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR0o4M184dFF6alhySnJsX2pfU2ExWTdnR0hhT0JQYy1Hc0RHcFBYb3gtR01ZemZTek5JUnFDTVdPWlhod1ZCaWZMeWhhVmctbzVTR3NBR2ZOaVdubXlTWnlkYVR2eW9HRDdXaFhadnhaaUhKcGx3RExKaEZiS3NVTGt2U3AyY2Zaa1FZY3ltQ094ckdxODZCXw?oc=5"
-      },
-      {
-        "title": "Chessington World of Adventures closed because of water outage",
-        "summary": "",
-        "meta": "Mon 10 Aug",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1URGlvOFQzSGFmOWtmclFaMHAtc1JlYWt5THpMdXhGZ0hfbWJmMTJ4d3FGVWFpWnpCVGxzdlU1RHVKdEltR3luTGJxQmZHbUxSNDA1N2NWUTVROHZi?oc=5"
       },
       {
         "title": "Record number of children are living in temporary accommodation",
         "summary": "",
         "meta": "Fri 14 Aug",
+        "source": "NewStartMag",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMEdJS090eElqNGNudEhhejBWRGtTVW8xX2ZsZXRHaUdIS05ZTl9xTGFscU85ZGM0T0xUQzZ5YVlpOHBQV1FFTURyYVl0TnMwdmJJRkMzM3ZoanFxcVVNdVB3dS1xVlU3STMtem8xVENMRG5tRWE2VTZlZkZ1Y2ljWXYwUWdjZ2tyR3JqdEdnMXpsbkR2WHlLWHBrbkdSZGk1?oc=5"
+      },
+      {
+        "title": "Students set new records for A-level grades in bumper year | A-levels",
+        "summary": "",
+        "meta": "Thu 13 Aug",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkc2LW42QWt2bWd5QlY3MjlFbndkdnFaNi00VlpQMnY5dGktcUhXb2xHazJtQnpvREFlQThtLVBJdFVPSHBPZ1BwNmFacWhGVGtkRjJGSmxacklJWDNPWURsNExqZkpDWEY3VTE4V0hmb2QtRm5IUVJqSVNENnpXSG5jS0VJVTR1bDh1ZU9YNGVZTlU2SzBzYzZ3?oc=5"
+      },
+      {
+        "title": "London's smartest boroughs according to A-level grades revealed - how does your area fare?",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXg3ejRIMHNrbEp4VmJnMllldk8wVktMUnk5VkRjeE5IR003ZlA1NEY3SkpIOU1MTTVnelg0b21YOUVvRkV6VXFLRmtTRXdoMUhxTlowZE9LNG5vV0RoZzVCUEwyMUxzZ3pDZXdlZzNIdDFxNGlzZEF6QnZGY3pMZU5fYkxsejFNR01V?oc=5"
+      },
+      {
+        "title": "This secretive Thai kitchen in London is officially one of Tom Holland's favourite places to eat in the city - and it's tucked away in a charming dog-friendly pub",
+        "summary": "",
+        "meta": "Wed 12 Aug",
+        "source": "Secret London",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM0JOa0NZLUtRTHUwOGpsaW9YMGJXMG02SFMzYjltTzJnNGd4Z0pfWTVhRHdNazd6eFM5Y2ZsWnJ4bURoU3VXSFJsS0hqSUpiV0kyY1BRY2NPZHJIa2tBenh3TjNub0hqb1VrS0NjU1RjMV9fbUtKS2FETEc4QTZmZkdiSDk?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "How birdwatching has become an unexpected hit with Gen Z",
-        "summary": "",
-        "meta": "Mon 10 Aug",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYWNJNzR4c1Jrczk4VFFpVEk1eklZai1QQ1IzSXdOUHJKSmNoblBIVkNpT1UxcDZkLXB4Sl9sdjZZZGRKaWZjRlNsVjg4c1IwaWd5Z0NFcjNOd183TzF2bldlUll1RkJOQnFoRmdaOVpWWkctTFZIT0RBSlJGOVhHTlh4U09Ba3VQX2tLZ3Nrdw?oc=5"
+        "title": "Jason Arday death 'tragedy on so many levels' says PM",
+        "summary": "Andy Burnham says the former Cambridge professor's death is a \"really sad, sad and sorry state of affairs\".",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c9982znvyk4o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "UK economy grows but experts warn of challenging months ahead",
-        "summary": "",
-        "meta": "Thu 13 Aug",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAza2R1UUtRZnIwRS1zUldHM3pYWFIwZkJQMm5CUFdDVmpvUmRVTXVZaVRNb2VOcWg2eTdYajB2STR6MVpQWVBUU2I3MUdNN01XamJfems3dlN3VWdu?oc=5"
+        "title": "Analysis: Arday's death will send shockwaves through a divided academia",
+        "summary": "Barely 1% of professors at UK universities are black, so he was joining a small and highly visible minority in academia, writes Education Editor Branwen Jeffreys.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cr59jg1ypd3o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "UK Anti-Doping sees rise in doping reports and encourages the positive trend to continue across elite sport",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWGJJQkNnd2RPNmFQTk1OMG5Tc0RqdnNOeGxMZE1KMVpkT2hVSXBRVl81cmt5Q3BFRktDTldFdGp4SzFyNVVpdTE3QW93bThPOXRDTWpUUmZDcW82b3ROMHhvc01TSUdRRWJjaEN1dng4N0dBTTZDdW9hZ1BOckJiQTNoTExNLXc?oc=5"
+        "title": "Fire services stretched as residents still not home",
+        "summary": "Major incidents are declared across the UK including in Stourbridge, Sandwell and Pershore.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwyjjvd4g0qo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Bringing the thrill of live music to deaf audiences – with the help of air guitar",
-        "summary": "",
-        "meta": "Thu 13 Aug",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWFXZFBhRVc2Qkc3QWpxbWZIMGttMExYWFBMRU5nZWRyZlkxMmNxc1pkeGNDTnhkWDhQY25OVzNDRWdSajBHQ1V3N2RHQVBobXhUT21QckJYRDJUYmZvUDZReTFfU2YyNE5LbXhHdEJ0Wm5wUjVXaXM4bkgzTU9hRWRfQUpnOFc2TUI1TW5EV3UwSE1xVE5KclNVaGo3WXdjcVp6c3dIZGdqY2p0LS1QcmZlblI?oc=5"
+        "title": "Powerful magnitude 7.7 earthquake kills at least 47 in Indonesia",
+        "summary": "A search and rescue operation is under way to find survivors in Flores, an island in eastern Indonesia.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c5y0zz63gero?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "UK economy set for another quarter of growth as ‘big picture’ shows resilience",
-        "summary": "",
-        "meta": "Sun 9 Aug",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTS1xSk9zdm9sR01ZNVBGaW1JRHhad0ZvSWwwT0M3WENsUXdCTFFCWEQ4LUxhZURMTkRCZktjNHg1WjZ2Vkx3YmpmdE96NFlzaFhoMHY3YWIyVlNtUFNiTGZYc3JSdGJtaDdENzYxbl9kVi1yN3ZESlNyZk1JR0h3bHlkVjBSQQ?oc=5"
+        "title": "Met Police apologises for data breach involving alleged Al Fayed victims",
+        "summary": "Scotland Yard copied in all those who had signed up to receive a monthly update.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c1w1yv987jqo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Young Scots’ game time rises fourfold in KDM Evolution Trophy",
-        "summary": "",
-        "meta": "Mon 10 Aug",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mVF9FUHVtbno2ZXpPcXZjMENjVU1kcWNYeUtUWXdVcmI0MTRuMHQzQUJwMGZyZU1pWGt5d1JfeEx2ZkUtWXVYc0w3YXI0al9CVEZXVUtkTjF2YXNtNDdiMEl6RWh0alVpcFJwajExTGp6SFZDcXM5d3dTZnY?oc=5"
+        "title": "Thousands of Bonnie Tyler fans line the streets as coffin taken to Swansea home",
+        "summary": "The Total Eclipse of the Heart singer died last month in a hospital in Portugal.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c9v43zry802o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
       {
-        "title": "Special advisers",
+        "title": "Bright minds, wrong jobs",
         "summary": "",
         "meta": "Tue 11 Aug",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8wOVRaNWtDWlhnVUdfSG5MNFZnV1VVTDQxeDY1S3N2elVuRzlzLTFrd19YdXE3ZnJfMlM3eFBJMFBXc1RZdXg4QnBBRG5QVm83RnctSDRiZkV4anhITEJZSlZXOHdqSFhGajlva3dnUlEyVU14LWdV?oc=5"
-      },
-      {
-        "title": "AI bootcamp launched in north-west to combat youth unemployment",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ0VJZGlYNEFvS3V0bFVwekJjZEZCcHpvS042Uk50Mk9iVkR0dGxnOWIyNEUydWxlM0U1S01jNnY2U0Q3c2FCN2RDcVJUdVNxdEtQM2w0WXl1blhyRGtYOUxvRzREMzZtMV9Fdmp6eXdYSEFRRVdRUXJ3Yk9MWDFCZFZOQWxhVnRhOUdjMm11QkJyc0lBUF9JekF0VjBHelE?oc=5"
-      },
-      {
-        "title": "Twelve jobs you can do with a law degree",
-        "summary": "",
-        "meta": "Tue 11 Aug",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY0lYeUtPaGJIclBOWGZ2dnVaaDQ3VS1SamRLUkpxUFpDVU5qN3BZWGZCT2JkdzI5ajlBS1ExWVlBVTZvZnNQd2E3a0xEcWFPbzFLT24tZ0pMMlUxOFhWLW1ZYVFQNlUtZFdESWUzZmRBaUlISUNIUndXLUUwREtSOFpNSQ?oc=5"
-      },
-      {
-        "title": "Unemployed young people to join AI boot camps to get job-ready",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQlR5NXpSWFFxdXNjNnZYcUJoWFdVVk1yNUlYa1FOanAyOGluZTZselMydjZ0cEhLdjNlampUY2Yxa05YZXdaR0ZpeFRwTERqMVNnV3FFUVJkSVd3MllvRTFOXzVsWEtsVV9hOHpwQVJOZE9kYzN5YlFjU213OU5ZNW00Q3NLUFRBZlpuQ3J1cnZDMjBzNmdJLS1LSDRsamFUOTYwNnhnVEpDR1JVTG9R?oc=5"
-      },
-      {
-        "title": "Stormont suggests AI could automate public sector admin",
-        "summary": "",
-        "meta": "Wed 12 Aug",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tV3lRTmhrVUZWT0lyOUU4aFV4cENuSWNkY1BNSFNxNTdrN3FHSnZkWjZDWkE0QTBIRGhVOE5uX1hnc0t2UnFsTWIwVW85QVF5MjBOWTJTZ21sakZt?oc=5"
+        "source": "New Age BD",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAzY3dRWHFiN1FETFJGUzNHNEJsNzFDYmRQV3VudTNMbFNsbkY3VGJYRkE2MkE3LUl2N3VCenlwWDZRVkJVcGYySGFLbTl5VXlFZWJ6dmc2TkFKbTBvdUI0OEpDNDNNMThUTDg5aXVWbGpYRnNNRWxZ?oc=5"
       }
     ]
   }
