@@ -12,8 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 TZ = ZoneInfo("Europe/London")
 NOW = datetime.now(TZ)
-UA = {"User-Agent": "DailyBriefs/3.0 (+https://github.com/PostWorkCulture/daily-briefs)"}
-ARSENAL_ID = "359"
+UA = {"User-Agent": "DailyBriefs/3.1 (+https://github.com/PostWorkCulture/daily-briefs)"}
+ARSENAL_ESPN_ID = "359"
+ARSENAL_SPORTSDB_ID = "133604"
 SEASON = NOW.year
 
 
@@ -57,6 +58,48 @@ def parse_fixture(event: dict, competition: str) -> dict | None:
     }
 
 
+def parse_sportsdb(event: dict, completed: bool) -> dict | None:
+    if not event:
+        return None
+    home = event.get("strHomeTeam") or ""
+    away = event.get("strAwayTeam") or ""
+    if "arsenal" not in home.lower() and "arsenal" not in away.lower():
+        return None
+    try:
+        dt = dateparser.parse(f"{event.get('dateEvent')}T{event.get('strTime') or '00:00:00'}Z").astimezone(TZ)
+    except Exception:
+        try:
+            dt = dateparser.parse(event.get("dateEvent", "")).replace(tzinfo=TZ)
+        except Exception:
+            return None
+    arsenal_home = "arsenal" in home.lower()
+    opponent = away if arsenal_home else home
+    a_score = event.get("intHomeScore") if arsenal_home else event.get("intAwayScore")
+    o_score = event.get("intAwayScore") if arsenal_home else event.get("intHomeScore")
+    return {
+        "date": dt.isoformat(),
+        "dateLabel": dt.strftime("%a %-d %b"),
+        "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+        "opponent": opponent,
+        "competition": event.get("strLeague") or event.get("strEvent") or "Fixture",
+        "homeAway": "home" if arsenal_home else "away",
+        "completed": completed,
+        "arsenalScore": a_score,
+        "opponentScore": o_score,
+        "result": f"{a_score}–{o_score}" if completed and a_score is not None and o_score is not None else "",
+        "url": event.get("strVideo") or "",
+    }
+
+
+def sportsdb_fallback() -> tuple[dict | None, dict | None]:
+    base = "https://www.thesportsdb.com/api/v1/json/123"
+    next_data = get_json(f"{base}/eventsnext.php?id={ARSENAL_SPORTSDB_ID}")
+    last_data = get_json(f"{base}/eventslast.php?id={ARSENAL_SPORTSDB_ID}")
+    next_event = next((parse_sportsdb(e, False) for e in (next_data.get("events") or []) if e), None)
+    last_event = next((parse_sportsdb(e, True) for e in (last_data.get("results") or last_data.get("events") or []) if e), None)
+    return last_event, next_event
+
+
 def snapshot(existing_news: list[dict]) -> dict:
     competitions = {
         "eng.1": "Premier League",
@@ -68,7 +111,7 @@ def snapshot(existing_news: list[dict]) -> dict:
     fixtures = []
     for code, name in competitions.items():
         urls = [
-            f"https://site.api.espn.com/apis/site/v2/sports/soccer/{code}/teams/{ARSENAL_ID}/schedule?season={SEASON}",
+            f"https://site.api.espn.com/apis/site/v2/sports/soccer/{code}/teams/{ARSENAL_ESPN_ID}/schedule?season={SEASON}",
             f"https://site.api.espn.com/apis/site/v2/sports/soccer/{code}/teams/arsenal/schedule?season={SEASON}",
         ]
         for url in urls:
@@ -86,6 +129,13 @@ def snapshot(existing_news: list[dict]) -> dict:
     past = [x for x in fixtures if x["completed"]]
     future = [x for x in fixtures if not x["completed"] and dateparser.parse(x["date"]) >= NOW - timedelta(hours=3)]
 
+    last_result = past[-1] if past else None
+    next_fixture = future[0] if future else None
+    if not last_result or not next_fixture:
+        fallback_last, fallback_next = sportsdb_fallback()
+        last_result = last_result or fallback_last
+        next_fixture = next_fixture or fallback_next
+
     position = points = played = None
     table = get_json(f"https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings?season={SEASON}")
     entries = []
@@ -101,8 +151,8 @@ def snapshot(existing_news: list[dict]) -> dict:
         break
 
     return {
-        "lastResult": past[-1] if past else None,
-        "nextFixture": future[0] if future else None,
+        "lastResult": last_result,
+        "nextFixture": next_fixture,
         "leaguePosition": position,
         "points": points,
         "played": played,
