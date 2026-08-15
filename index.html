@@ -26,7 +26,7 @@
       <p id="intro">Your day, filtered down to the things worth knowing.</p>
       <div class="status-grid">
         <article class="status-card"><span>Weather</span><strong id="weatherTemp">—</strong><small id="weatherSummary">Loading</small></article>
-        <article class="status-card"><span>Calendar</span><strong id="calendarCount">—</strong><small>upcoming</small></article>
+        <article class="status-card"><span>Next up</span><strong id="calendarCount">—</strong><small id="calendarSummary">calendar</small></article>
         <article class="status-card"><span>Stories</span><strong id="storyCount">—</strong><small>fresh items</small></article>
       </div>
     </section>
@@ -38,9 +38,17 @@
           <article class="hero-card" id="leadCard"><div class="tag">Top story</div><h3>Loading today’s brief…</h3><p></p></article>
         </section>
 
-        <section class="panel-block">
-          <div class="section-head"><h2>Coming up</h2></div>
-          <div class="list-card" id="calendarList"></div>
+        <section class="panel-block calendar-block" id="calendarSection">
+          <div class="section-head"><h2>Calendar</h2><button class="text-button" id="monthToggle">Full month</button></div>
+          <div class="calendar-tabs" role="tablist" aria-label="Calendar range">
+            <button class="active" data-calendar-range="soon">Soon</button>
+            <button data-calendar-range="today">Today</button>
+            <button data-calendar-range="tomorrow">Tomorrow</button>
+            <button data-calendar-range="week">This week</button>
+            <button data-calendar-range="month">Month</button>
+          </div>
+          <div class="calendar-summary" id="calendarSummaryCards"></div>
+          <div class="list-card calendar-list" id="calendarList"></div>
         </section>
       </div>
 
@@ -67,7 +75,7 @@
     <button class="active" data-scroll="top"><b>⌂</b>Home</button>
     <button data-scroll="contentGroups"><b>◇</b>Discover</button>
     <button data-scroll="watchStrip"><b>▶</b>Watch</button>
-    <button data-scroll="calendarList"><b>◷</b>Calendar</button>
+    <button data-scroll="calendarSection"><b>◷</b>Calendar</button>
   </nav>
 
   <script src="js/app.js" defer></script>
