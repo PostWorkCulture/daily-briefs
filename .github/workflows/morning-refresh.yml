@@ -38,7 +38,9 @@ jobs:
       - name: Refresh brief data
         env:
           GOOGLE_CALENDAR_ICS_URL: ${{ secrets.GOOGLE_CALENDAR_ICS_URL }}
-        run: python scripts/refresh.py
+        run: |
+          python scripts/refresh.py
+          python scripts/enrich_arsenal.py
 
       - name: Commit refreshed data
         run: |
