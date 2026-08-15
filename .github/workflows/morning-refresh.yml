@@ -7,6 +7,8 @@ on:
   push:
     paths:
       - '.github/workflows/morning-refresh.yml'
+      - 'scripts/**'
+      - 'requirements.txt'
 
 permissions:
   contents: write
@@ -50,5 +52,3 @@ jobs:
           git commit -m "Morning refresh: $(TZ=Europe/London date '+%Y-%m-%d')"
           git pull --rebase origin main
           git push origin main
-
-# Verification touch: calendar secret added 2026-08-15
