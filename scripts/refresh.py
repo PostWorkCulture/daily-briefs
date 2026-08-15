@@ -96,18 +96,20 @@ def rss(url: str, section: str, limit: int = 6, max_age_days: int = 4) -> list[d
     return items
 
 
-def fallback_colour(title: str) -> str:
-    t=title.lower()
-    rules=[
-        (("school","camp","kids","choir","craft","footy","football"),"#f59e0b"),
-        (("dentist","doctor","hospital","health"),"#ef4444"),
-        (("work","wfh","office","meeting"),"#3b82f6"),
-        (("holiday","sweden","trip","flight","hotel"),"#8b5cf6"),
-        (("engineer","gas","repair","delivery"),"#14b8a6"),
-    ]
-    for words,colour in rules:
-        if any(w in t for w in words): return colour
-    return "#7dd7ff"
+def calendar_colour_data() -> dict:
+    path = DATA / "calendar-colors.json"
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {"eventPalette": {}, "events": {}}
+
+
+def normalize_google_uid(component) -> str:
+    uid = clean_html(str(component.get("uid", "")))
+    if "@" in uid:
+        uid = uid.split("@", 1)[0]
+    # Recurring ICS instances typically use the series UID; keep that stable.
+    return uid
 
 
 def calendar_events() -> list[dict]:
@@ -117,8 +119,11 @@ def calendar_events() -> list[dict]:
         r=requests.get(url,headers=UA,timeout=30); r.raise_for_status(); cal=Calendar.from_ical(r.content)
     except Exception: return []
 
+    colours = calendar_colour_data()
+    palette = colours.get("eventPalette", {})
+    event_colours = colours.get("events", {})
+
     start_window=NOW.replace(hour=0,minute=0,second=0,microsecond=0)
-    # Through end of next month so the month view remains useful near month-end.
     next_month=(start_window.replace(day=28)+timedelta(days=4)).replace(day=1)
     following=(next_month.replace(day=28)+timedelta(days=4)).replace(day=1)
     end_window=following-timedelta(seconds=1)
@@ -134,14 +139,17 @@ def calendar_events() -> list[dict]:
         elif end.tzinfo is None: end=end.replace(tzinfo=TZ)
         else: end=end.astimezone(TZ)
         if end<start_window or start>end_window: continue
+
         title=clean_html(str(component.get("summary","Calendar event"))) or "Calendar event"
-        raw_colour=clean_html(str(component.get("color","")))
-        colour=raw_colour if re.fullmatch(r"#[0-9a-fA-F]{6}",raw_colour) else fallback_colour(title)
+        event_id = normalize_google_uid(component)
+        color_id = event_colours.get(event_id)
+        colour = palette.get(str(color_id)) if color_id else None
         time_label="All day" if all_day else start.strftime("%-I:%M%p").lower().replace(":00","")
         events.append({
             "title":title,"summary":"","url":"","start":start.isoformat(),"end":end.isoformat(),
-            "date":start.date().isoformat(),"time":time_label,"allDay":all_day,"color":colour,
-            "calendarColorSource":"ics" if raw_colour else "fallback"
+            "date":start.date().isoformat(),"time":time_label,"allDay":all_day,
+            "color":colour,"colorId":color_id,"googleEventId":event_id,
+            "calendarColorSource":"google" if color_id else "calendar-default"
         })
     events.sort(key=lambda x:x["start"])
     return events
@@ -150,7 +158,6 @@ def calendar_events() -> list[dict]:
 def build_profiles() -> dict[str,dict]:
     wx=weather(); cal=calendar_events()
 
-    # Tighter, fresher searches. Direct BBC feeds supplement Google News to reduce generic SEO/news-aggregator noise.
     ai=google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d',8,3)
     arsenal=google_news('Arsenal FC when:3d',8,3)
     local=google_news('(Kingston upon Thames OR Molesey OR Esher OR Walton-on-Thames OR Elmbridge) when:4d',8,4)
