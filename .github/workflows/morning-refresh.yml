@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: daily-briefs-refresh
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   refresh:
@@ -46,11 +46,19 @@ jobs:
         run: |
           git config user.name "Daily Briefs Bot"
           git config user.email "actions@users.noreply.github.com"
+
+          mkdir -p /tmp/daily-briefs-data
+          cp data/*.json /tmp/daily-briefs-data/
+
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/daily-briefs-data/*.json data/
+
           git add data/*.json
           if git diff --cached --quiet; then
             echo "No data changes to commit"
             exit 0
           fi
+
           git commit -m "Morning refresh: $(TZ=Europe/London date '+%Y-%m-%d')"
-          git pull --rebase origin main
           git push origin main
