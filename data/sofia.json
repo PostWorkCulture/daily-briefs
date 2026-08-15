@@ -1,59 +1,71 @@
 {
-  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:24pm",
+  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:27pm",
   "weather": {
     "temp": "26°",
     "summary": "Partly cloudy",
+    "weatherCode": 2,
     "daily": [
       {
         "date": "2026-08-15",
         "high": 27,
         "low": 20,
         "summary": "Cloudy",
-        "rainChance": 47
+        "rainChance": 47,
+        "weatherCode": 3
       },
       {
         "date": "2026-08-16",
         "high": 26,
         "low": 19,
         "summary": "Cloudy",
-        "rainChance": 37
+        "rainChance": 37,
+        "weatherCode": 3
       },
       {
         "date": "2026-08-17",
         "high": 27,
         "low": 20,
         "summary": "Cloudy",
-        "rainChance": 2
+        "rainChance": 2,
+        "weatherCode": 3
       },
       {
         "date": "2026-08-18",
         "high": 23,
         "low": 19,
         "summary": "Light drizzle",
-        "rainChance": 37
+        "rainChance": 37,
+        "weatherCode": 51
       },
       {
         "date": "2026-08-19",
         "high": 23,
         "low": 16,
         "summary": "Light drizzle",
-        "rainChance": 23
+        "rainChance": 23,
+        "weatherCode": 51
       },
       {
         "date": "2026-08-20",
         "high": 21,
         "low": 14,
         "summary": "Drizzle",
-        "rainChance": 51
+        "rainChance": 51,
+        "weatherCode": 53
       },
       {
         "date": "2026-08-21",
         "high": 21,
         "low": 14,
         "summary": "Cloudy",
-        "rainChance": 43
+        "rainChance": 43,
+        "weatherCode": 3
       }
-    ]
+    ],
+    "bestOutdoor": {
+      "label": "8am–2pm",
+      "detail": "Best window today · cloudy · about 3% rain chance"
+    }
   },
   "calendar": [
     {
@@ -71,20 +83,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "WFH",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-22T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "St Pauls Camp 8.15 - 5.45",
       "summary": "",
       "url": "",
@@ -96,6 +94,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "0964keure928mhs30mr5v8as47",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "WFH",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-22T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#fbd75b",
+      "colorId": "5",
+      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
       "calendarColorSource": "google"
     },
     {
@@ -404,63 +416,95 @@
       "section": "Local"
     },
     {
-      "title": "2026 film and high-end TV productions shooting in the UK and Ireland: latest updates",
+      "title": "Apple TV+ series Silo reveals central mystery in latest episode",
       "summary": "",
-      "meta": "Sat 15 Aug",
-      "source": "Screen Daily",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZmNMRTBhWHdsbFo0WHUtenBKUWJ0Z09LVVBuTjVUb1R6dnYyV0UwSEluX01NUXJuVzhuVlZCTUlHanpOQ0hpT1p4N2xGSnIyaEg3eGRKQ3BZVlJWT0hPREU4dmd2azc2VGVhQVl2emFKVmpENnNrT3BJNGVDY2xlNDVSUV95dzdPcHFtOHhqcG9WbUdYYU9odjhUTHp2b0dzMTZ6Yzh4U1VGNVVfeVl5RmQ1eDJpLU91MHlMUS1kZlZNNng3LTE1VHNIb1o?oc=5",
+      "meta": "Fri 14 Aug",
+      "source": "The Independent",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSG51TFFPVFpHSVpKS3NBems2UExUUkNJd2N1T2Jlc21sb1p5UEhESmhZS0lOLVZEX21mS2FMSDV3R2VpaFU3VFdkVEUxTUFnQ1lBbngwb1JiS3N2aE1xdlJyY01hSHhfQVUwU3hWMzlnUlZLOXNIWUVfQkIxOGs2YU5jeVBGdHVHVG9KVXBpcUZtaUFkc3dnMXFhdTExOEF3VnRxa0RuUjRpZWlzVEs4?oc=5",
+      "preferenceScore": 140,
       "section": "Watch"
     }
   ],
   "watch": [
     {
-      "title": "2026 film and high-end TV productions shooting in the UK and Ireland: latest updates",
-      "summary": "",
-      "meta": "Sat 15 Aug",
-      "source": "Screen Daily",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZmNMRTBhWHdsbFo0WHUtenBKUWJ0Z09LVVBuTjVUb1R6dnYyV0UwSEluX01NUXJuVzhuVlZCTUlHanpOQ0hpT1p4N2xGSnIyaEg3eGRKQ3BZVlJWT0hPREU4dmd2azc2VGVhQVl2emFKVmpENnNrT3BJNGVDY2xlNDVSUV95dzdPcHFtOHhqcG9WbUdYYU9odjhUTHp2b0dzMTZ6Yzh4U1VGNVVfeVl5RmQ1eDJpLU91MHlMUS1kZlZNNng3LTE1VHNIb1o?oc=5"
-    },
-    {
-      "title": "What To Watch This Weekend: New Shows And Movies To Stream On Netflix, Hulu, Prime Video, Apple TV And More",
+      "title": "Apple TV+ series Silo reveals central mystery in latest episode",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "Forbes",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeDNrMHQteEROTWdsdWVFaGFIOEt3QXM1T0F6TUtuMjhBSnNUWVhVMDYzbXRiWjFBYWFXQ2tVVVdCQXVtMDgySjVoTE9Yd2Y1VHpkcVFMbUNuVVZVLUk0SnQ1bWptc3FvME8wV0tCZ2UzekV6RGlBOHl5Q1h1N3ZlZWZTdldkY1pBaklNVXQyU1RYaWw3cWFaaHV4Zk1PMmh4TkswYXVKUmQxbkFrdUlWX3N5UU1ieUhaUTJoMW14eEFkSnZsMk9qSlNsdHNFc0N3OGxSYnFlWVg4SUU0WTNacjNXdEZ0SHdS?oc=5"
+      "source": "The Independent",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSG51TFFPVFpHSVpKS3NBems2UExUUkNJd2N1T2Jlc21sb1p5UEhESmhZS0lOLVZEX21mS2FMSDV3R2VpaFU3VFdkVEUxTUFnQ1lBbngwb1JiS3N2aE1xdlJyY01hSHhfQVUwU3hWMzlnUlZLOXNIWUVfQkIxOGs2YU5jeVBGdHVHVG9KVXBpcUZtaUFkc3dnMXFhdTExOEF3VnRxa0RuUjRpZWlzVEs4?oc=5",
+      "preferenceScore": 140
     },
     {
-      "title": "60 Best Movies To Watch On Netflix UK In August 2026 — Your Ultimate Summer Watchlist",
-      "summary": "",
-      "meta": "Thu 13 Aug",
-      "source": "empireonline.com",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xcWdRN0gtQjFyTmdORERqTkRQWmtiMXdianZFWTV5dHMxWG15M205Z2owY3YyOEtiUktfWm5RREd3cS1ESmUxbnRtRE5qbXF1TDVWUW5uck5TTE5Jb1Jjc1YzOU9PNGRZVmtURVY4VXYwY3N3a1Zj?oc=5"
-    },
-    {
-      "title": "What to watch on streaming: what's new today on Netflix, Prime Video, Disney+ and more",
+      "title": "Silo season 3 release schedule: When is episode 7 out on Apple TV?",
       "summary": "",
       "meta": "Fri 14 Aug",
       "source": "Radio Times",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUl9hZ0JSTlNzd0FCRVRQWGhEeDdDenlvRVRTQnJXWW41bjRXSDhCc2wzYzdvbnhuRVE5eFlhX3J5RFZkaUNiU3lNVldURzlGajBmN0FSZWd3YWZfeThaajk4akc2SWk4d3pKeFVkV2xGMnl2QjRDWVpFX0hJcUVoVkdHbFFuN1VWMmlVUEhwVTM4WG03anM5bVozYlM1OUZ0UllLa0NFeGFRaXUzdGw2dWVNZDNTcUtEcVhR?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4ODhaRXdvSTcweEdwSm9keXprVnBtbGlvRHd4MGxqejktX2FRWVBidmpGcG1yZnJIQTNrNHlBMHd3NEN2ZWVjSXRxbGxsUlBtdzBhTkpnVEplT0w0WXo2Tmc5Um0xWDgwbFlhZ2d2aVBibnYzRGFv?oc=5",
+      "preferenceScore": 130
     },
     {
-      "title": "DISNEY+ REVS UP AS THE GLOBAL STREAMING HOME OF FORMULA E",
+      "title": "SILO Season 3 Episode 7 Sneak Peek Clip Released Ahead of Apple TV Premiere",
+      "summary": "",
+      "meta": "Wed 12 Aug",
+      "source": "BroadwayWorld",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcGZpUUwzaHpFRDZvQlI4X1pYOWFobDEzV0hXMVlrYlpUSWFvazN1cTdDSXl1U1NPMGNaVWt2OVkxLXQ0VlN1bE5EdDhKSWlLSGNDOG93YTRaRFhGbzRIUUFRcUhNRGtuMThabzAwd2pnMEFMQThqRzBLQ050OHpnamNMMzdMQkpUb3hrcllJWXctNHBVLW1oX0VRUHVnVWhBQ1VtRXNlekh3Tm1ZcHVFeEI1SlMxX29ZQjdOYVQxV2YteFJ1Sk1n?oc=5",
+      "preferenceScore": 130
+    },
+    {
+      "title": "Silo - S3E7 - Radio",
+      "summary": "",
+      "meta": "Fri 14 Aug",
+      "source": "podcasts.apple.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ28yNzB0NmhWcUJXQVVwTjBPcUsyOXVOODU2b1lEbzVrbUtqQlBfXzlMMENqdHRhcEh6aHRqRW5vVWtrSU43NVJrUXVEdnFCZTI4cHdHREoxSTVhaTlFU0pBdHVMckYxT2tTMGNfV0pRZzY3dV9MNGF6MHRFZW5uU2lCLUI2TWhLbkE?oc=5",
+      "preferenceScore": 130
+    },
+    {
+      "title": "Silo",
+      "summary": "",
+      "meta": "Mon 3 Aug",
+      "source": "books.apple.com",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51blZSeEVPRnExdzJBRmRvSjVIaGV6NzZpMWRTbDRVM0Nfd1NHZjhxR1RxZG96V2RETG95dU9YZW1tWENZT1pxcURRd3REYjBuWnF4VzE0ZU1pVDFqd2c?oc=5",
+      "preferenceScore": 130
+    },
+    {
+      "title": "True crime doc exploring mystery behind infamous triple murder hits Netflix",
+      "summary": "",
+      "meta": "Mon 10 Aug",
+      "source": "Wales Online",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOHBmMjBuZWJUU2I0UVRHV3p2SENkWXA2SGk0V2NVNWllN1Q1eXd2b3Q5dG0xWF9JWExpQzNocGl3MzUzTDlPM0Z1ZE1EQ1NMSTMyQlhmMWlHcW9rLWhWdXhMNFpPREc5aFlBSzM5aW5Dd2FLYXU1REVnRW5RRnc0X3YxcWlMb2tVckFhWNIBkgFBVV95cUxPQXF1a2gwYldvTlZWa2lDNkxTdDctejBBMGRQa0NoOUczeS1FTFZFQkU1M0FkRzdjVkJFOWY2VU94bWNPYTFCNWo4bko0RXRjRjBZVWRIV3B4Qkk0SnNiRl9tbTlzazAxSm93WmwxaU55NTBfeUF4djI2WHJ2MkNIZ3g3RzJmUzJzV19VRU5tdFdxdw?oc=5",
+      "preferenceScore": 125
+    },
+    {
+      "title": "'More Watchable Than Making A Murderer': 30 'Unmissable' True Crime Documentaries To Watch On Netflix Tonight",
+      "summary": "",
+      "meta": "Mon 3 Aug",
+      "source": "ELLE",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc1BOY3FUcnRxUVoxbWY4aXd4dTYzSGp5OFNYdkN0QnZ0X3psV0JGYm9PeXBKTzVhYkxvMHBKQWN6a1BwbkxHZ2xpa3VYNjY2RW83X044c1R4Q2M1VzE4VHVqV1dHWDlsUmlaM0ZlcFp4M181WXI4b1pPa0NrbGtmSW45cVhuRTJzVm83blJSQkNzbmpFNHMyazROd2ZTdw?oc=5",
+      "preferenceScore": 115
+    },
+    {
+      "title": "A \"Shockingly Callous\" Murder: BBC's Newest True-Crime Documentary Will Break Your Heart",
       "summary": "",
       "meta": "Thu 13 Aug",
-      "source": "Disney UK",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2VSSGpfblNvVEhMWHlaQlZOWWhXa3FkR0ZidE1aOEhtWTFhaV9CWHg2WUNKOXVCU3VOUkJlQUphNFdGRWFEQnBGbl9rZDJnbXBCRVVfRTg3YTZoMHRCLUE5TGQxdTVzTGJHTHgtWlRfQkNqdFIwOE5jR3F4VG1oY1c3ZUw3emt1bnMtc3JnWWVfRmQyNGI0Ng?oc=5"
+      "source": "Esquire",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeG02RXg1OHNiRDlwRkd0djBHaGlQcTVScGhWYTY5NkdoeE4zUVlsbmo3cEtrcmJ0U19MTlVlcHd2WHZsSXdaZy1WVHFRQ0g0ZEhqdHNNYjZpbVJkNHZHcjBFMlhTeHNzYzN1MThBM0xCQW9PdnVXZzRrMWRyTnhEYzhEY2R5bVpOSXlB?oc=5",
+      "preferenceScore": 105
     },
     {
-      "title": "D23 2026: Disney's 24 Big Entertainment Announcements Shaping TV, Film & Theatre",
+      "title": "Silo season three: Find out more about the new season",
       "summary": "",
-      "meta": "Sat 15 Aug",
-      "source": "ridingthemagic.uk",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSHlNZU5ITHBQRkRMcXJ0VC10MVBpaHNwRlZpM0YtaFBEd1VwcDFtUkd1T1dZUTYyeGJ4aXhFT1VEVktsdWluWXRuQnlWYXJVNjBXOGd0RHhlNHc4LUw1NzdzRTQyNFdjZjVpN3hBY2w1OVZaSHVpYW5OYmVidUY1bmVKQlhLYXMyOUJScmtJcEFOeUpOUEZxV2VrVmowWE81ampWdVlnMGNtQQ?oc=5"
+      "meta": "Tue 4 Aug",
+      "source": "Rayo",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwdHJyNmZDek4yaGNRRklFdlMtcjBJaGt3cXF2dTROTUFVa0hiZDFjdkpzXzVYeU5YY0NkcFF2ZG5GNF8yaXkwS2haT29KaHVpbkxvYkZEU0JfX3BOOE1HZHN4MzA1cnhuUERRUHBFd3dGNHF2cGhhQjRHOXIwaFk?oc=5",
+      "preferenceScore": 100
     },
     {
-      "title": "\"Irresistible\" new Netflix drama debuts with 100% Rotten Tomatoes rating",
+      "title": "Review & recap: Silo season 3 episode 6 takes us to the doorstep of the story's original antagonist",
       "summary": "",
-      "meta": "Sat 15 Aug",
-      "source": "Digital Spy",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT0Z2OE41dzlvQzduZDJ1WDE4WUNlTWpuV3lYYzRHSTMzNEtaUnJEdW9aQ1BmZGszQW4zMUlIQ2JOTXN2aElpcHQ5cXZwQVZZX3hwdnN5alpQQktqWlBPb2ZpSzJHM1pfbDhjdHF1czBoUUdDNTNVUmk0NG9RdzBXT0VOcmNOZDZjWERXUk9SU3Baa3lPb1BkbVF6cnNtRG5OclhWeg?oc=5"
+      "meta": "Fri 7 Aug",
+      "source": "Winter is Coming",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44dWRfWmtnUG5jS0Znb09sTF90SE5OUHhTRGNNZ3pSdHNFa1NTSGgyNHdmMWd3cnRHZWlUQTFsaGdrbkRSUHlGNUxPdDZBOXR4RWJVV1p5TjBPaVI1V01wSnd2bkU0SUF4b09HVlVuZmE?oc=5",
+      "preferenceScore": 100
     }
   ],
   "sections": {
@@ -622,7 +666,7 @@
         "title": "OpenAI upheaval mounts as Sam Altman readies IPO push",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Financial Times",
+        "source": "ft.com",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXcxN1ZMZG0wZzNlYWtTUVRkS1lJeW52eWh6clBCRWxNWkVXdmlzSHdZQ3lxc1o1a0t6VllWbURuYzNSOUM2ajRlQmVWMUZ5b0lRV3VRV09pNFdWSDdRNEtjUWhDWDBRWDA3WVNyN3hEQVJKdzl0dFAzdzcyOVZMb0VqR0M?oc=5"
       },
       {
@@ -633,18 +677,18 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeENSNk5wMnlGV25SZ3o0X0dnTVZNdjNiUlRHVnlERGdkYWc0UF8zQVozSlFzSmh1Z01OWEQ5b0R6cmJ2dEdjNGw0NGhOVlZEc1NSOWZleEZxYkFiRE5kSnBpOWRnTEI3NXRCNHpNemRSakN2UWV5RDM0Ymdhc0ltcnVHTFk5ZUFQTjFCbm9nX1ZPN0NJRUpueNIBmAFBVV95cUxPdmhpbmEwS3NqaHFmNU1xZklSY0xUck9Dd1ZiZkFYa3ZLT29uTHNmS3dpbUJHSllQMWhMRzNwZ1pid3ZCSG9qVVU5TUswTFMyek5ockgzRVd3TnVDaVJUdjN5Mll0SDc1ZE8zQXd3OWVmWUdEc0dfSFhoUnl2emlLTmt6bW9WR0ZtWVFZeUVOdWRMQWg3LXZhdA?oc=5"
       },
       {
-        "title": "How Claude's text watermarking works",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xMjZ5Ynd3TkptcUFtRGZxalN0VUxKTWRxSktRTkhsa1llV0w0OUphLXRYWDkyaGJvendtY0drMTRCTWV1QjJxeVc5MzFxb2NXQVpXRWhRZDY3eC1Zak5QZWV3?oc=5"
-      },
-      {
         "title": "Exclusive-Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
         "summary": "",
         "meta": "Sat 15 Aug",
         "source": "Euronext Markets: Real-time Stock Market Data | live",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlpKMEdCR0ZkdTFjUFNwajZwUEI4dlE4Z2c4WHFWaTd4a21BR1VUMmpockpiX0tacnEyVmMtdjBPVXNEQ2UzbjJCVHZpcDNWOFVtRENseEl5akJlRGtTcFBUTHl6T2ZIbEplTDdnU0k3YUdUWHdtNnp2emtyU2xYcElpUFc3Sjh6OG5CRHFWX2wwbThnVkd5eFRMakxsd21hdS1aVkx5WHZWN3ZDdnVkZFFDdl9ITkN2YkxhSWdIMA?oc=5"
+      },
+      {
+        "title": "How Claude's text watermarking works",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xMjZ5Ynd3TkptcUFtRGZxalN0VUxKTWRxSktRTkhsa1llV0w0OUphLXRYWDkyaGJvendtY0drMTRCTWV1QjJxeVc5MzFxb2NXQVpXRWhRZDY3eC1Zak5QZWV3?oc=5"
       },
       {
         "title": "Researchers watched OpenAI, Anthropic models take extreme measures in hacking test",
