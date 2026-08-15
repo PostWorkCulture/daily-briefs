@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:57pm",
+  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:58pm",
   "weather": {
     "temp": "25°",
     "summary": "Cloudy",
@@ -392,11 +392,37 @@
     }
   ],
   "arsenal": {
-    "lastResult": null,
-    "nextFixture": null,
-    "leaguePosition": 2,
-    "points": 0,
-    "played": 0,
+    "lastResult": {
+      "date": "2026-08-31T00:00:00+01:00",
+      "dateLabel": "Mon 31 Aug",
+      "kickoff": "",
+      "opponent": "Latest Premier League Odds Get Sky Sports Get a NOW Sports Membership Watch Live Stats Table Betting More Form Aston Villa",
+      "competition": "Friendly Match",
+      "homeAway": "home",
+      "completed": true,
+      "arsenalScore": 0,
+      "opponentScore": 1,
+      "result": "0–1",
+      "url": "https://www.skysports.com/football/aston-villa-vs-arsenal/559454",
+      "source": "Sky Sports"
+    },
+    "nextFixture": {
+      "date": "2026-08-21T20:00:00+01:00",
+      "dateLabel": "Fri 21 Aug",
+      "kickoff": "8pm",
+      "opponent": "C",
+      "competition": "Premier League",
+      "homeAway": "home",
+      "completed": false,
+      "arsenalScore": null,
+      "opponentScore": null,
+      "result": "",
+      "url": "https://www.premierleague.com/en/news/4675132/all-of-arsenals-fixtures-for-202627-premier-league-season",
+      "source": "PremierLeague.com"
+    },
+    "leaguePosition": null,
+    "points": null,
+    "played": null,
     "news": [
       {
         "title": "Community Shield preview: Arsenal v Man City",
@@ -433,6 +459,12 @@
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdXMxY1RFNWdoNTlpRk1tMnowbGFEY29vUVlRSC15alJKdmZGbmljVEVFUnlDWFM0ZS1mVVUzWTgwWUdNa2JvU1RMc25wZjY5RHJnSFB6T3VaZ2N2eC1GSFc4ZWNEVXFHcmg3QnFpVjg5SFFfSC1YMWxQZU9LUTNrcVN6TzBLQ0t5YUNWbEpJRGtmQk9Fc3JkdXJtRFpIVXpyRmh0cXZYZkJJYXdIWVpyejY0MExqVHV6VERhRHlrU3BnbmVLNFBpY1I1b3NUS3FwcmVaRGRmQ1Y4N3planBtMUY4YzdOTzVNUEE?oc=5"
       }
+    ],
+    "sources": [
+      "Sky Sports",
+      "PremierLeague.com",
+      "Arsenal.com",
+      "ESPN"
     ]
   },
   "lead": {
