@@ -25,7 +25,7 @@
       <div class="eyebrow" id="briefDate">Loading brief…</div>
       <h1 id="greeting">Morning, Pete.</h1>
       <p id="intro">Your day, filtered down to the things worth knowing.</p>
-      <div class="status-grid">
+      <div class="status-grid" hidden>
         <article class="status-card"><span>Weather</span><strong id="weatherTemp">—</strong><small id="weatherSummary">Loading</small></article>
         <article class="status-card"><span>Next up</span><strong id="calendarCount">—</strong><small id="calendarSummary">calendar</small></article>
         <article class="status-card"><span>Stories</span><strong id="storyCount">—</strong><small>fresh items</small></article>
@@ -40,8 +40,7 @@
     <section class="panel-block calendar-block calendar-priority" id="calendarSection">
       <div class="section-head"><h2>Calendar</h2><button class="text-button" id="monthToggle">Full month</button></div>
       <div class="calendar-tabs" role="tablist" aria-label="Calendar range">
-        <button class="active" data-calendar-range="soon">Soon</button>
-        <button data-calendar-range="today">Today</button>
+        <button class="active" data-calendar-range="today">Today</button>
         <button data-calendar-range="tomorrow">Tomorrow</button>
         <button data-calendar-range="week">This week</button>
         <button data-calendar-range="month">Month</button>
@@ -73,30 +72,22 @@
       </article>
     </section>
 
-    <section class="dashboard-grid">
-      <div class="main-column">
-        <section class="panel-block">
-          <div class="section-head"><h2>Morning brief</h2></div>
-          <article class="hero-card" id="leadCard"><div class="tag">Top story</div><h3>Loading today’s brief…</h3><p></p></article>
-        </section>
-      </div>
+    <section class="panel-block" hidden>
+      <div id="interestGrid"></div>
+    </section>
 
-      <aside class="side-column">
-        <section class="panel-block">
-          <div class="section-head"><h2>For you</h2></div>
-          <div class="interest-grid" id="interestGrid"></div>
-        </section>
-
-        <section class="panel-block tonight-block">
-          <div class="section-head"><h2>Tonight</h2><span class="section-kicker">Crime · Docs · Apple</span></div>
-          <div class="watch-strip" id="watchStrip"></div>
-        </section>
-      </aside>
+    <section class="panel-block tonight-block">
+      <div class="section-head"><h2>Tonight</h2><span class="section-kicker">Crime · Docs · Apple</span></div>
+      <div class="watch-strip" id="watchStrip"></div>
     </section>
 
     <section class="panel-block full-width">
       <div class="section-head"><h2>Everything else</h2></div>
       <div class="content-groups" id="contentGroups"></div>
+    </section>
+
+    <section hidden>
+      <article id="leadCard"><h3></h3><p></p></article>
     </section>
   </main>
 
@@ -108,6 +99,7 @@
   </nav>
 
   <script src="js/app.js" defer></script>
+  <script src="js/calendar-cleanup.js" defer></script>
   <script src="js/weather-met.js" defer></script>
   <script src="js/scenery-facts.js" defer></script>
 </body>
