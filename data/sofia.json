@@ -1,70 +1,70 @@
 {
-  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:58pm",
+  "updatedLabel": "Sunday, 16 August 2026 · refreshed 5:58am",
   "weather": {
-    "temp": "25°",
+    "temp": "19°",
     "summary": "Cloudy",
     "weatherCode": 3,
     "daily": [
       {
-        "date": "2026-08-15",
-        "high": 27,
-        "low": 20,
-        "summary": "Cloudy",
-        "rainChance": 47,
-        "weatherCode": 3
-      },
-      {
         "date": "2026-08-16",
         "high": 26,
         "low": 19,
-        "summary": "Cloudy",
-        "rainChance": 37,
-        "weatherCode": 3
+        "summary": "Light drizzle",
+        "rainChance": 73,
+        "weatherCode": 51
       },
       {
         "date": "2026-08-17",
         "high": 27,
         "low": 20,
         "summary": "Cloudy",
-        "rainChance": 2,
+        "rainChance": 12,
         "weatherCode": 3
       },
       {
         "date": "2026-08-18",
-        "high": 23,
-        "low": 19,
+        "high": 24,
+        "low": 18,
         "summary": "Light drizzle",
-        "rainChance": 37,
+        "rainChance": 56,
         "weatherCode": 51
       },
       {
         "date": "2026-08-19",
-        "high": 23,
-        "low": 16,
-        "summary": "Light drizzle",
-        "rainChance": 23,
-        "weatherCode": 51
+        "high": 22,
+        "low": 17,
+        "summary": "Cloudy",
+        "rainChance": 41,
+        "weatherCode": 3
       },
       {
         "date": "2026-08-20",
         "high": 21,
         "low": 14,
-        "summary": "Drizzle",
-        "rainChance": 51,
-        "weatherCode": 53
+        "summary": "Light drizzle",
+        "rainChance": 88,
+        "weatherCode": 51
       },
       {
         "date": "2026-08-21",
-        "high": 21,
-        "low": 14,
+        "high": 18,
+        "low": 13,
         "summary": "Cloudy",
-        "rainChance": 43,
+        "rainChance": 55,
         "weatherCode": 3
+      },
+      {
+        "date": "2026-08-22",
+        "high": 19,
+        "low": 13,
+        "summary": "Light drizzle",
+        "rainChance": 37,
+        "weatherCode": 51
       }
     ],
     "bestOutdoor": {
-      "label": "8am–2pm",
-      "detail": "Best window today · cloudy · about 3% rain chance"
+      "label": "7pm–9pm",
+      "detail": "Best window today · cloudy · about 6% rain chance"
     }
   },
   "calendar": [
@@ -83,20 +83,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -108,6 +94,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "St Pauls Camp 8.15 - 5.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "0964keure928mhs30mr5v8as47",
       "calendarColorSource": "google"
     },
     {
@@ -293,20 +293,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -318,6 +304,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -454,7 +454,7 @@
       "title": "Silo - S3E7 - Radio",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "podcasts.apple.com",
+      "source": "Apple Podcasts",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ28yNzB0NmhWcUJXQVVwTjBPcUsyOXVOODU2b1lEbzVrbUtqQlBfXzlMMENqdHRhcEh6aHRqRW5vVWtrSU43NVJrUXVEdnFCZTI4cHdHREoxSTVhaTlFU0pBdHVMckYxT2tTMGNfV0pRZzY3dV9MNGF6MHRFZW5uU2lCLUI2TWhLbkE?oc=5",
       "preferenceScore": 130
     },
@@ -462,7 +462,7 @@
       "title": "Silo",
       "summary": "",
       "meta": "Mon 3 Aug",
-      "source": "books.apple.com",
+      "source": "Apple",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51blZSeEVPRnExdzJBRmRvSjVIaGV6NzZpMWRTbDRVM0Nfd1NHZjhxR1RxZG96V2RETG95dU9YZW1tWENZT1pxcURRd3REYjBuWnF4VzE0ZU1pVDFqd2c?oc=5",
       "preferenceScore": 130
     },
@@ -517,6 +517,13 @@
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ012N3ppZ1JkZjdiamZyNGlFazdDZHZNM1N1UzNwUjlMUGV1TjBtRU9NSUhWRFBaYU5lOE9EamVjTm9OU0U5T3JMTFRmVDZZN1B6TnpBRXNtVE5JUm1jMlpkcFRXQ1lFZHVyODc2ZWdyM1M3ekszMjFPRXdvNGpYRGJ1LURka2l2ajdROVBkRF9WV25tRUdHYXR1S2QzbndBMHd0Q1UyZGYwRFNkUXY4cWhDYkNMQQ?oc=5"
       },
       {
+        "title": "HERLINGS & LÄNGENFELDER ROCK TO QUALIFYING WINS AT THE MXGP OF SWEDEN!",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Home | MXGP",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaFQ4WExyZEdIWXYyOF9QX2Z6UHRtWXFjNFNsUjJLdFZoUjJhVWRvVVpRaGloU2JqaGRJd0E3a2VqNUVyQTV2Ym1nVmRKYndUUWRMSXI5aTdSM25WMjdKQmx3ZExCRGd2dEJPbkdqa3NCSVRmNWdkbzdULTBGR2loNm5NaHdJQnNpRUpfVTFn?oc=5"
+      },
+      {
         "title": "NEWS HIGHLIGHTS – MXGP & MX2 Qualifying Races Sweden",
         "summary": "",
         "meta": "Sat 15 Aug",
@@ -524,32 +531,11 @@
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQemd1UnFvcDBfMHo0NmVXM21qOERfbUx0VnNjbWM4M0tIbEw2UVg0ZGlVS2RQZUpNcFFTMV9xeUJ4VUY2Y18tN2Q3RG5JRE5uaTFCZXZfQ0FESk95Y0ZHbmFtazhoM2lpN2RlVVZVN3llUVo5VWpnbDBwNjVGQW1Bd3dtbGZvUQ?oc=5"
       },
       {
-        "title": "Finn Class WTF Grand Slam continues with Swedish, Danish and Swiss Championships",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Sail-World.com",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE45OHY4aFJGanlHWlhKdVdKWnJwbTVtM2liWDZhQ0JtSW5nM2ZpTTktTHhzbTM5VFhoNGFBdkJqUXlVWjFtQTZ2SERERlNfVVZxdHpia1UzSFE3SXZOUHZ6QV9hTEhqeEhhT0swZllzZ21ra2w0S3ZBQlc3ZXJQV0E?oc=5"
-      },
-      {
-        "title": "2026 MXGP of Sweden: MXGP MXGP Results",
+        "title": "Watch: MXGP of Sweden Qualifying Race Highlights - Farres Crashes Out, Längenfelder and Herlings Win",
         "summary": "",
         "meta": "Sat 15 Aug",
         "source": "Racer X",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9CVzBDZkI0Tm9sVXEzempiZXN6MVMxMEtYTEg4QUl3WjNESTlTd2Z3ODdTcTNfRExFUWN1MWwyUTA3MU9UNWRpbmloSFJoVlFoUlVhVU81T0J1Nzk2Nk9OYVkyWQ?oc=5"
-      },
-      {
-        "title": "Sweden Will Consider Transitioning to Corps-Division Structure For Its Army",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Мілітарний",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQR0F6Tm1ZYk1SQzBRaWFJaTVENmNHZzZTcGRCeUhNSTBaQU1qNVVjTFlmUHFrRVlIdmRtYlcyTzlpOG9nb0pjT2FIWlNFZWp4X3pYU2tqeEdqTXNTR0VKbzJVTkNPZ2ZoSmRGWFdDcjZNeE05cDRDb05TVy1EUGhOc1JMa2pIbG85R1pTbWNhWmJVanFyWllqSUIxaGRYaWVMTElrNE9VeXc4blU?oc=5"
-      },
-      {
-        "title": "Swedish Orphan Biovitrum (OM:SOBI) Following Its Lacutamab Deal And The Undervalued Narrative",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Yahoo Finance UK",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOanYzWFlUZXEwMzBuUC0zeVpVcnZGT2JJclZ3U2JDQjdLZklrUGtyUkVvWWhIWUhBVGVjMGlXWnlTbW0yT2RPWjRxOWxDcUJkcUNPSUVPczRucVJhUmM0N3RZOWpzU0h1X0FaVVpSTGdEWjEzdnVJdmEyM1FrU2J6cF9OY1JMTmEz?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWHJZV2pCZk85UFZOc0tjY1N3TGlYU0RQNk1GZ005Mk1hcXU3RmV2TzZqOU1vX3dWanl2WkVaM0hWMm5tVkdHcDZ3Z1hLR0t6RUl1akVJbVQwd2tUM3BIQzFibm91WkJNOHRyTHkxNUVLOUt0Q1FoRjZ2SWQwbXVCeXQxeWExNUpFbnZ3?oc=5"
       },
       {
         "title": "Swedish lawmakers cut age of criminal responsibility to 14 ahead of general election",
@@ -557,6 +543,20 @@
         "meta": "Thu 13 Aug",
         "source": "Euronews.com",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTnhiaEEzb0VIbkh0SU93elY1MndCZmJDbW1CdE52OEdJb0QwdElrUlAtSm1ncnI5YlJKbjc4TDJDUjJXeExiWU1NQ1pNOHE4YzEwcnEzT2NZVVhaSUpQNndQZnhyUXgzU0F2M3FCbHhpbUdKWkNHdUVsUG4yT3FEel9WMHJ3bVNzc29qMXJpNDhVMWJhOGhPQVpKZE1DT2xMcDNSRkUySDBXTDZKUlNZcUJtUjFMX1lWWnI1czBxTERUcHdzM1Q5eVp3?oc=5"
+      },
+      {
+        "title": "Inside the Estonian jail taking in Sweden’s prisoners",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "source": "channel4.com",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNXUwYlFYaktERFpfY2VwbXczbzFjSHpyMFFvY0tMOUVldzdqZ2VhY0NmamJsaHF4X2Q1ZVQzcWUyT3I2V1lHY2RGVk1lSXppcUM3TEJrYU1SbWtnczFBWGwybnNjZmx3Z2piTlNzUWFiZ3VFSFpRQWJKS3VTQ2xOWHRpTlhvZmtsNlE?oc=5"
+      },
+      {
+        "title": "Record run from Almgren wins Sweden 10,000m gold as Pihlstrom takes 1500m silver",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Flashscore.com",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUkZVX1l0Z0hXd25fSXJHR19kbnljbUo4ZWh1eEN3LWtKZHVwUXBJMjlkUWFCaEkycVJTRXNwQTRkU2F4X2J3MVZoeDBLWWhhc1BZYXVYQTFUZmZ3cHRBTEpwakpEMkxkU3M2RTl4cmtfT1FOdXdxOUtvaGh4LWJMclEwMVFLTUJSNUtwSWZGUkQ3c0hHNE1yVEtOOEpEZEtMSWVSSGNMeVBMY3VuMXRieUpZdnJ1bkhMNGFTYjhodjhmajU1Nm5CajFMNE5FSGRuZGFsd3pMRHhCNTk5N3AzNzQyNzlXUQ?oc=5"
       }
     ],
     "Local news": [
@@ -571,14 +571,14 @@
         "title": "London's 'smartest' borough where nearly half of students get top A level grades",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "mylondon.news",
+        "source": "My London",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXRReFlwNHhKTjdIT0o3ZXJwenV4UHYwTjJLRU1FeGNnbzhYdll5WkMxZkM3eGxWZmN2WnlyWlR0SUlCVDFnSzBRUU93R0RjWDBQcmdVT1NFY2hmWVJ0TGFpTTRHeHNYV3A1aVJTOHliNDdoNEpCcUJSZjZuQVNwM0xWU216Q0pyZXM0S2VyVkszZXlOTy03SQ?oc=5"
       },
       {
         "title": "Guildford gets England's top A Level grades as Surrey students do exceptionally well",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "getsurrey.co.uk",
+        "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYWdPbktiWE14c1dfSVg4ZGN6SGV3dU5TWlN6MlhvZi1xUDlZMUU2Qm9JOUNnQktud2pLSkQ0Y1ZiNG8zeWtIOXdXWkVBOWFMSkhyZ01iNEU1bngyRjNHdW1aZmxlTjZQTkR5T08yVlhYOEtOY1RKRVZyY3JXaklUUmROaklGZDVTQjJNUlZ0R0PSAZYBQVVfeXFMTXI2aDVEZjBtcjdZdlU4VnM0N1Y3MU13OVVKaGdZQTVZSmNqTV9hTUtZQUtRN3JlSTN6NlFRS1RCTlh1SnRQcnM0eDhNakViLTZxZ3NmMGtYcXNIaXh3cWNMdl9MSG5ycWlzSGZ0akJ6NlZFTFRkYUFKSE9vNWpIYmxYYTBrZVJoT2xOZGVac3NxSGt4NEx3?oc=5"
       },
       {
@@ -605,7 +605,7 @@
       {
         "title": "London's smartest boroughs according to A-level grades revealed - how does your area fare?",
         "summary": "",
-        "meta": "Sat 15 Aug",
+        "meta": "Fri 14 Aug",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXg3ejRIMHNrbEp4VmJnMllldk8wVktMUnk5VkRjeE5IR003ZlA1NEY3SkpIOU1MTTVnelg0b21YOUVvRkV6VXFLRmtTRXdoMUhxTlowZE9LNG5vV0RoZzVCUEwyMUxzZ3pDZXdlZzNIdDFxNGlzZEF6QnZGY3pMZU5fYkxsejFNR01V?oc=5"
       },
@@ -619,6 +619,27 @@
     ],
     "UK news": [
       {
+        "title": "Reform UK plan would overhaul welfare system with £50bn in savings",
+        "summary": "The party plans to release a full 50-page plan on Monday outlining their proposed changes were they to come to power.",
+        "meta": "Sun 16 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cz977nxww1jo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Major incidents across UK putting firefighters under 'incredible pressure', fire chief says",
+        "summary": "Major incidents declared across England and Wales with blazes in Stourbridge, Sandwell and Pershore.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwyjjvd4g0qo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Ariana Grande leaves problems at home as her tour hits the UK",
+        "summary": "The star plays the first of 10 dates in London, after which she will \"step back\" from public life.",
+        "meta": "Sun 16 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cn0n7rln2rno?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Jason Arday death 'tragedy on so many levels' says PM",
         "summary": "Andy Burnham says the former Cambridge professor's death is a \"really sad, sad and sorry state of affairs\".",
         "meta": "Sat 15 Aug",
@@ -626,39 +647,18 @@
         "url": "https://www.bbc.co.uk/news/articles/c9982znvyk4o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Analysis: Arday's death will send shockwaves through a divided academia",
-        "summary": "Barely 1% of professors at UK universities are black, so he was joining a small and highly visible minority in academia, writes Education Editor Branwen Jeffreys.",
-        "meta": "Sat 15 Aug",
+        "title": "Rescuers search for survivors of powerful Indonesia earthquake",
+        "summary": "Officials say a rapid assessment into the impact of the earthquake that destroyed hundreds of buildings and killed 47 is under way.",
+        "meta": "Sun 16 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cr59jg1ypd3o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Fire services stretched as residents still not home",
-        "summary": "Major incidents are declared across the UK including in Stourbridge, Sandwell and Pershore.",
+        "title": "Hunt wins third gold as Asher-Smith makes history",
+        "summary": "Amy Hunt claims the third gold medal of her bid for a historic quadruple and Dina Asher-Smith makes history as Great Britain win two relay golds at the European Athletics Championships.",
         "meta": "Sat 15 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwyjjvd4g0qo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Powerful magnitude 7.7 earthquake kills at least 47 in Indonesia",
-        "summary": "A search and rescue operation is under way to find survivors in Flores, an island in eastern Indonesia.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5y0zz63gero?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Met Police apologises for data breach involving alleged Al Fayed victims",
-        "summary": "Scotland Yard copied in all those who had signed up to receive a monthly update.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c1w1yv987jqo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Thousands of Bonnie Tyler fans line the streets as coffin taken to Swansea home",
-        "summary": "The Total Eclipse of the Heart singer died last month in a hospital in Portugal.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c9v43zry802o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/sport/athletics/articles/cqjxxd0j844o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
@@ -677,11 +677,18 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeENSNk5wMnlGV25SZ3o0X0dnTVZNdjNiUlRHVnlERGdkYWc0UF8zQVozSlFzSmh1Z01OWEQ5b0R6cmJ2dEdjNGw0NGhOVlZEc1NSOWZleEZxYkFiRE5kSnBpOWRnTEI3NXRCNHpNemRSakN2UWV5RDM0Ymdhc0ltcnVHTFk5ZUFQTjFCbm9nX1ZPN0NJRUpueNIBmAFBVV95cUxPdmhpbmEwS3NqaHFmNU1xZklSY0xUck9Dd1ZiZkFYa3ZLT29uTHNmS3dpbUJHSllQMWhMRzNwZ1pid3ZCSG9qVVU5TUswTFMyek5ockgzRVd3TnVDaVJUdjN5Mll0SDc1ZE8zQXd3OWVmWUdEc0dfSFhoUnl2emlLTmt6bW9WR0ZtWVFZeUVOdWRMQWg3LXZhdA?oc=5"
       },
       {
-        "title": "Exclusive-Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
+        "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Euronext Markets: Real-time Stock Market Data | live",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlpKMEdCR0ZkdTFjUFNwajZwUEI4dlE4Z2c4WHFWaTd4a21BR1VUMmpockpiX0tacnEyVmMtdjBPVXNEQ2UzbjJCVHZpcDNWOFVtRENseEl5akJlRGtTcFBUTHl6T2ZIbEplTDdnU0k3YUdUWHdtNnp2emtyU2xYcElpUFc3Sjh6OG5CRHFWX2wwbThnVkd5eFRMakxsd21hdS1aVkx5WHZWN3ZDdnVkZFFDdl9ITkN2YkxhSWdIMA?oc=5"
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNOGFTR2NEWkd0UXZ2Y3pITjZ4MXRQZEREU3A0LU9GXy1aY0Z1bzNUY083NE4xN21wc2V3czEtWC1idGliQzZxM2h4WTRuSzRSVGFUN2tMS2VFN0k2QTlHSEhaWHd3ekpSSS16YTVSdTFwMUtkX1lZYVZGdjA1NEx2aFdQUVJnSXZWRE11RGxJSGpsWG9qZWxYY2s4bGNFSWfSAaQBQVVfeXFMTXllMzRNcmVRZTZib3pmRjVWZHg0ZEoxSkx0VTM2dnR1dWFOOGlxQWZqRVh1dXB5b1BuUjVaaUlCRURqclhkbDZpd3l1V3VnR3RSazBJYUdSYW5zaS1LbnpGNllGakRId1FFYkRWNlZfeGNYUkxUbTl3bzN0eDdZUWdqSVA2eDh4RVQ0NHhmcTlfemp4Tzc2blFNWVNsa2lGSDBJSnU?oc=5"
+      },
+      {
+        "title": "Anthropic closes in on $7 billion Decart deal after beating Nvidia to the table",
+        "summary": "",
+        "meta": "Sun 16 Aug",
+        "source": "calcalistech.com",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54bFFPYzZPY0xRUVFIVjBzN3ZTYlJqcVp5Mnk0MjdtdHpwZm02ZElpY2kwNVFTbGhNZWo4a2d6NExDRkRIMG9KdlhJQzdLTklBdGh4V1I2bURlUjlaSHJ3NHFfLUVidHdq?oc=5"
       },
       {
         "title": "How Claude's text watermarking works",
@@ -691,32 +698,25 @@
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xMjZ5Ynd3TkptcUFtRGZxalN0VUxKTWRxSktRTkhsa1llV0w0OUphLXRYWDkyaGJvendtY0drMTRCTWV1QjJxeVc5MzFxb2NXQVpXRWhRZDY3eC1Zak5QZWV3?oc=5"
       },
       {
-        "title": "Researchers watched OpenAI, Anthropic models take extreme measures in hacking test",
+        "title": "Exclusive-Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Mashable",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMGdxMnViZzRydUJsTDNnUVJWdmRCUG9XRXQ1eTlDUUVhdE90MWdBWk9kRkxFNm9qSVlKQlBGMWg4MS12QzRDTkx5cUZJTmlnWnFCUmp5cnZHZjk4dTFXV2NCVEtDQnZaYWtubkZudmFYSGY0WldaTGUxVWU1QjBfbzRPdzhUdw?oc=5"
+        "source": "Euronext Markets: Real-time Stock Market Data | live",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlpKMEdCR0ZkdTFjUFNwajZwUEI4dlE4Z2c4WHFWaTd4a21BR1VUMmpockpiX0tacnEyVmMtdjBPVXNEQ2UzbjJCVHZpcDNWOFVtRENseEl5akJlRGtTcFBUTHl6T2ZIbEplTDdnU0k3YUdUWHdtNnp2emtyU2xYcElpUFc3Sjh6OG5CRHFWX2wwbThnVkd5eFRMakxsd21hdS1aVkx5WHZWN3ZDdnVkZFFDdl9ITkN2YkxhSWdIMA?oc=5"
       },
       {
-        "title": "Words Matter. Damnit.. In an AI panic, the EU and Anthropic… | by Jeff Jarvis | Whither news? | Aug, 2026",
+        "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
         "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Medium",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE41OGFUaF9MZXNUMmFOZWpJcG0xdWI3emhzdms1MjBUYkgyZVRsMzJfOEZNODF3cDFNbFlUb0pBeGtfTkFvdkV5THF1LW9ZOXFUR3JMc0FtYlNsT1J5RmpCYkphbDFfYTZiSW5LZlc5b3Y5dw?oc=5"
+        "meta": "Thu 13 Aug",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZMFhmQ0dtWnYzRnVhcnM5ZUI5NjJWLXgtT0dSbExsWWZqQmw0a0tuN1ZXVUdIUXl2Y3JVUC0wMGRhdVJrVFdITEV4c2VnYTl4dzFORjVSOGVUZw?oc=5"
       },
       {
-        "title": "Anthropic | History, Controversies, & Claude AI",
+        "title": "Anthropic says its AI agents are killing rivals and hiding their tracks",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Encyclopedia Britannica",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5"
-      },
-      {
-        "title": "Anthropic Is Watermarking Text Generated By Claude To Comply With EU Law",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Engadget",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ0pJMFBkcFBaX19GSFVscXlKeGdQdnJUdjVLZXNFRVRIaFUwV1AwbUNJdVoyck10dnlaWVd2OGFEOC1kUHY2OGtLQ21sdXdJaS1na2FXNUQ2RzlrUTBBMEJFcHdFbFNRbTgxblFKc0pJMmItSVFINklFbTdkWGlURTFQVzJ2M3Ra?oc=5"
+        "source": "Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeGVwQ3JiUlNPS3Q4QUJjTXA0WWo4OGVfTm1qOVdPbGFIUnFueExrTldXdzZsTjJFVTdXTWsyanJGWjUxQ29IeFJqVWVHNUJtdW9oTFRzSmNtbm05S1VlWVlkZ1lDVnNWOXFPbTVCT2JIZU5aR3M4WHktMmhjNjVrNjZUNERyU2ZnV2pJTWVPTnc3SWs?oc=5"
       }
     ],
     "Career": [

@@ -1,70 +1,70 @@
 {
-  "updatedLabel": "Saturday, 15 August 2026 · refreshed 7:58pm",
+  "updatedLabel": "Sunday, 16 August 2026 · refreshed 5:58am",
   "weather": {
-    "temp": "25°",
+    "temp": "19°",
     "summary": "Cloudy",
     "weatherCode": 3,
     "daily": [
       {
-        "date": "2026-08-15",
-        "high": 27,
-        "low": 20,
-        "summary": "Cloudy",
-        "rainChance": 47,
-        "weatherCode": 3
-      },
-      {
         "date": "2026-08-16",
         "high": 26,
         "low": 19,
-        "summary": "Cloudy",
-        "rainChance": 37,
-        "weatherCode": 3
+        "summary": "Light drizzle",
+        "rainChance": 73,
+        "weatherCode": 51
       },
       {
         "date": "2026-08-17",
         "high": 27,
         "low": 20,
         "summary": "Cloudy",
-        "rainChance": 2,
+        "rainChance": 12,
         "weatherCode": 3
       },
       {
         "date": "2026-08-18",
-        "high": 23,
-        "low": 19,
+        "high": 24,
+        "low": 18,
         "summary": "Light drizzle",
-        "rainChance": 37,
+        "rainChance": 56,
         "weatherCode": 51
       },
       {
         "date": "2026-08-19",
-        "high": 23,
-        "low": 16,
-        "summary": "Light drizzle",
-        "rainChance": 23,
-        "weatherCode": 51
+        "high": 22,
+        "low": 17,
+        "summary": "Cloudy",
+        "rainChance": 41,
+        "weatherCode": 3
       },
       {
         "date": "2026-08-20",
         "high": 21,
         "low": 14,
-        "summary": "Drizzle",
-        "rainChance": 51,
-        "weatherCode": 53
+        "summary": "Light drizzle",
+        "rainChance": 88,
+        "weatherCode": 51
       },
       {
         "date": "2026-08-21",
-        "high": 21,
-        "low": 14,
+        "high": 18,
+        "low": 13,
         "summary": "Cloudy",
-        "rainChance": 43,
+        "rainChance": 55,
         "weatherCode": 3
+      },
+      {
+        "date": "2026-08-22",
+        "high": 19,
+        "low": 13,
+        "summary": "Light drizzle",
+        "rainChance": 37,
+        "weatherCode": 51
       }
     ],
     "bestOutdoor": {
-      "label": "8am–2pm",
-      "detail": "Best window today · cloudy · about 3% rain chance"
+      "label": "7pm–9pm",
+      "detail": "Best window today · cloudy · about 6% rain chance"
     }
   },
   "calendar": [
@@ -83,20 +83,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -108,6 +94,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "St Pauls Camp 8.15 - 5.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "0964keure928mhs30mr5v8as47",
       "calendarColorSource": "google"
     },
     {
@@ -293,20 +293,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -318,6 +304,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -432,18 +432,11 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDJuSXdPb2o2RW1XZEV0d2hPSlowazVaVV9kWFFqZVBOYml3RjlhMHZLMXBmZ2hFblFBNXhGZVBERTl0SnM4bzV0RkE4X1pWUWpyTGVTZTg1c0lHdTh1NnRQcFh1RHpvVmVLb3pxVkdiekNOc3NyUUxWT1JQeW92OHNjSTdLQkZvLW1tYXhn?oc=5"
       },
       {
-        "title": "Arsenal vs Man City: Community Shield prediction, kick-off time, team news, odds, h2h",
+        "title": "Arsenal vs Man City: Community Shield prediction, kick-off time, TV, live stream, team news, h2h results, odds",
         "summary": "",
-        "meta": "Sat 15 Aug",
+        "meta": "Sun 16 Aug",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPSk9HRThBTF84MUEzaXBxeGFkSnFyZGJjcWlsWjVneTkxVld4MGNpOE1SSlZVak12SmxXVnpXb2Z2WlVQTDZ0VUhVWDAtOVhLd0JadVFJbTdCYzF1Z1NkLVMyeU9Jb3YzbWF5amI4T1BZeUpzVlNEc2FLenUxcjhWTFJUaS1LWkVOTW1WZXZPU25ISGF5b3JfNWUtSVVfQWp4M0t5Szk0YjJtR1FvWHJDTlh2UDk4QUxKb0stLVNRT3RMLUZXMFlvbC00d0o2NW1NYUEzcC1jME5pcWxrRVJtSVpFdFNTbzlBU2pzendmMkY1M0ViSnZ6RlByZ24zVFMxT0lhLS0zLTBNMmJNSi1R?oc=5"
-      },
-      {
-        "title": "Arsenal take big step towards Gabriel Jesus deal as £5.1m transfer is confirmed",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd2Y5M0JuQkxnUG4zYkl1aU1KVm1oSVQwaVZ4SGtKZU5EMXNNOGlxcjFuZHQ3ZVQxR3JOVWFILVhmOVRmX2MzcFBvWklvUUN6ekFJWmxkTXdWYzlDcjVNcXBNNS1PY2FiWE81TGpwMTlSbXFseHpCLXR1Y3pOQWFZTVlEckd6YzF1RzF2V3lrZVdwLWxZdWNaWjF4QTR0QV9EYmc?oc=5"
       },
       {
         "title": "The best snaps from pre-Community Shield training",
@@ -453,11 +446,18 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQ0FLNEZYMlZSdmNqZWR2V25FeEwzY2lPN3BBaFdQT2M3bmJmNkJWWHplWm1GelFFcXRFMzZTSkgyN2gxVzFPR3EzMnNnMllqaTVCZGRQaVV5R2o4UDFJUnNmUlAxcndwSUp5bE9IODUwd3hNNDQ0OUZUcmlBeDR6cDA3ZnNiTGwxMGtfWElXZUlKdkFGZVE?oc=5"
       },
       {
-        "title": "Arsenal XI vs Man City: Confirmed team news and predicted lineup",
+        "title": "Arsenal in talks with Liverpool after reaching agreement to sign forward",
+        "summary": "",
+        "meta": "Sun 16 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSm5YdnVBMU5Wa2JueWc1SExJVFIwelhxZXVHWW9PMVlBU09ISDBUb1pMaGx3ZFRhYjh6YXZtTFNiZUN1Um9OQjh0OTRRN1Y4SDZucUd2eHlwbnd6RHNpb0NkREQtcHdoYkFlQlVkRV8xWXVJYnFHcmtCWTlIaFNTeG5zNkpmamVyUHNHREM1b1FEcW1yM1JlcDE2ZGRfbHY2RENYZEl5NTY?oc=5"
+      },
+      {
+        "title": "U18s report: West Bromwich Albion 0-0 Arsenal",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdXMxY1RFNWdoNTlpRk1tMnowbGFEY29vUVlRSC15alJKdmZGbmljVEVFUnlDWFM0ZS1mVVUzWTgwWUdNa2JvU1RMc25wZjY5RHJnSFB6T3VaZ2N2eC1GSFc4ZWNEVXFHcmg3QnFpVjg5SFFfSC1YMWxQZU9LUTNrcVN6TzBLQ0t5YUNWbEpJRGtmQk9Fc3JkdXJtRFpIVXpyRmh0cXZYZkJJYXdIWVpyejY0MExqVHV6VERhRHlrU3BnbmVLNFBpY1I1b3NUS3FwcmVaRGRmQ1Y4N3planBtMUY4YzdOTzVNUEE?oc=5"
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQajctRmljT25MS1EyMXRWQVZLUTVEMkt4OEJzVUltNWl4TDBfUFkxUUhDRUhUWUp3SHlEeEF4cno3TUtCVl9SMDJtZHV1MVM2Nlp3dXZEX2pqVWI0OVZTcjBieDZmSW1jRW9BQjJUbW9tTFpXNkxwWWY3eEhCOG9BS1d5TXRDMlB4eVE3OU12aw?oc=5"
       }
     ],
     "sources": [
@@ -529,7 +529,7 @@
       "title": "Silo - S3E7 - Radio",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "podcasts.apple.com",
+      "source": "Apple Podcasts",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ28yNzB0NmhWcUJXQVVwTjBPcUsyOXVOODU2b1lEbzVrbUtqQlBfXzlMMENqdHRhcEh6aHRqRW5vVWtrSU43NVJrUXVEdnFCZTI4cHdHREoxSTVhaTlFU0pBdHVMckYxT2tTMGNfV0pRZzY3dV9MNGF6MHRFZW5uU2lCLUI2TWhLbkE?oc=5",
       "preferenceScore": 130
     },
@@ -537,7 +537,7 @@
       "title": "Silo",
       "summary": "",
       "meta": "Mon 3 Aug",
-      "source": "books.apple.com",
+      "source": "Apple",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51blZSeEVPRnExdzJBRmRvSjVIaGV6NzZpMWRTbDRVM0Nfd1NHZjhxR1RxZG96V2RETG95dU9YZW1tWENZT1pxcURRd3REYjBuWnF4VzE0ZU1pVDFqd2c?oc=5",
       "preferenceScore": 130
     },
@@ -599,11 +599,18 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeENSNk5wMnlGV25SZ3o0X0dnTVZNdjNiUlRHVnlERGdkYWc0UF8zQVozSlFzSmh1Z01OWEQ5b0R6cmJ2dEdjNGw0NGhOVlZEc1NSOWZleEZxYkFiRE5kSnBpOWRnTEI3NXRCNHpNemRSakN2UWV5RDM0Ymdhc0ltcnVHTFk5ZUFQTjFCbm9nX1ZPN0NJRUpueNIBmAFBVV95cUxPdmhpbmEwS3NqaHFmNU1xZklSY0xUck9Dd1ZiZkFYa3ZLT29uTHNmS3dpbUJHSllQMWhMRzNwZ1pid3ZCSG9qVVU5TUswTFMyek5ockgzRVd3TnVDaVJUdjN5Mll0SDc1ZE8zQXd3OWVmWUdEc0dfSFhoUnl2emlLTmt6bW9WR0ZtWVFZeUVOdWRMQWg3LXZhdA?oc=5"
       },
       {
-        "title": "Exclusive-Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
+        "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Euronext Markets: Real-time Stock Market Data | live",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlpKMEdCR0ZkdTFjUFNwajZwUEI4dlE4Z2c4WHFWaTd4a21BR1VUMmpockpiX0tacnEyVmMtdjBPVXNEQ2UzbjJCVHZpcDNWOFVtRENseEl5akJlRGtTcFBUTHl6T2ZIbEplTDdnU0k3YUdUWHdtNnp2emtyU2xYcElpUFc3Sjh6OG5CRHFWX2wwbThnVkd5eFRMakxsd21hdS1aVkx5WHZWN3ZDdnVkZFFDdl9ITkN2YkxhSWdIMA?oc=5"
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNOGFTR2NEWkd0UXZ2Y3pITjZ4MXRQZEREU3A0LU9GXy1aY0Z1bzNUY083NE4xN21wc2V3czEtWC1idGliQzZxM2h4WTRuSzRSVGFUN2tMS2VFN0k2QTlHSEhaWHd3ekpSSS16YTVSdTFwMUtkX1lZYVZGdjA1NEx2aFdQUVJnSXZWRE11RGxJSGpsWG9qZWxYY2s4bGNFSWfSAaQBQVVfeXFMTXllMzRNcmVRZTZib3pmRjVWZHg0ZEoxSkx0VTM2dnR1dWFOOGlxQWZqRVh1dXB5b1BuUjVaaUlCRURqclhkbDZpd3l1V3VnR3RSazBJYUdSYW5zaS1LbnpGNllGakRId1FFYkRWNlZfeGNYUkxUbTl3bzN0eDdZUWdqSVA2eDh4RVQ0NHhmcTlfemp4Tzc2blFNWVNsa2lGSDBJSnU?oc=5"
+      },
+      {
+        "title": "Anthropic closes in on $7 billion Decart deal after beating Nvidia to the table",
+        "summary": "",
+        "meta": "Sun 16 Aug",
+        "source": "calcalistech.com",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54bFFPYzZPY0xRUVFIVjBzN3ZTYlJqcVp5Mnk0MjdtdHpwZm02ZElpY2kwNVFTbGhNZWo4a2d6NExDRkRIMG9KdlhJQzdLTklBdGh4V1I2bURlUjlaSHJ3NHFfLUVidHdq?oc=5"
       },
       {
         "title": "How Claude's text watermarking works",
@@ -613,32 +620,25 @@
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xMjZ5Ynd3TkptcUFtRGZxalN0VUxKTWRxSktRTkhsa1llV0w0OUphLXRYWDkyaGJvendtY0drMTRCTWV1QjJxeVc5MzFxb2NXQVpXRWhRZDY3eC1Zak5QZWV3?oc=5"
       },
       {
-        "title": "Researchers watched OpenAI, Anthropic models take extreme measures in hacking test",
+        "title": "Exclusive-Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Mashable",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMGdxMnViZzRydUJsTDNnUVJWdmRCUG9XRXQ1eTlDUUVhdE90MWdBWk9kRkxFNm9qSVlKQlBGMWg4MS12QzRDTkx5cUZJTmlnWnFCUmp5cnZHZjk4dTFXV2NCVEtDQnZaYWtubkZudmFYSGY0WldaTGUxVWU1QjBfbzRPdzhUdw?oc=5"
+        "source": "Euronext Markets: Real-time Stock Market Data | live",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlpKMEdCR0ZkdTFjUFNwajZwUEI4dlE4Z2c4WHFWaTd4a21BR1VUMmpockpiX0tacnEyVmMtdjBPVXNEQ2UzbjJCVHZpcDNWOFVtRENseEl5akJlRGtTcFBUTHl6T2ZIbEplTDdnU0k3YUdUWHdtNnp2emtyU2xYcElpUFc3Sjh6OG5CRHFWX2wwbThnVkd5eFRMakxsd21hdS1aVkx5WHZWN3ZDdnVkZFFDdl9ITkN2YkxhSWdIMA?oc=5"
       },
       {
-        "title": "Words Matter. Damnit.. In an AI panic, the EU and Anthropic… | by Jeff Jarvis | Whither news? | Aug, 2026",
+        "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
         "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Medium",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE41OGFUaF9MZXNUMmFOZWpJcG0xdWI3emhzdms1MjBUYkgyZVRsMzJfOEZNODF3cDFNbFlUb0pBeGtfTkFvdkV5THF1LW9ZOXFUR3JMc0FtYlNsT1J5RmpCYkphbDFfYTZiSW5LZlc5b3Y5dw?oc=5"
+        "meta": "Thu 13 Aug",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZMFhmQ0dtWnYzRnVhcnM5ZUI5NjJWLXgtT0dSbExsWWZqQmw0a0tuN1ZXVUdIUXl2Y3JVUC0wMGRhdVJrVFdITEV4c2VnYTl4dzFORjVSOGVUZw?oc=5"
       },
       {
-        "title": "Anthropic | History, Controversies, & Claude AI",
+        "title": "Anthropic says its AI agents are killing rivals and hiding their tracks",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "Encyclopedia Britannica",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5"
-      },
-      {
-        "title": "Anthropic Is Watermarking Text Generated By Claude To Comply With EU Law",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Engadget",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ0pJMFBkcFBaX19GSFVscXlKeGdQdnJUdjVLZXNFRVRIaFUwV1AwbUNJdVoyck10dnlaWVd2OGFEOC1kUHY2OGtLQ21sdXdJaS1na2FXNUQ2RzlrUTBBMEJFcHdFbFNRbTgxblFKc0pJMmItSVFINklFbTdkWGlURTFQVzJ2M3Ra?oc=5"
+        "source": "Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeGVwQ3JiUlNPS3Q4QUJjTXA0WWo4OGVfTm1qOVdPbGFIUnFueExrTldXdzZsTjJFVTdXTWsyanJGWjUxQ29IeFJqVWVHNUJtdW9oTFRzSmNtbm05S1VlWVlkZ1lDVnNWOXFPbTVCT2JIZU5aR3M4WHktMmhjNjVrNjZUNERyU2ZnV2pJTWVPTnc3SWs?oc=5"
       }
     ],
     "Arsenal news": [
@@ -650,18 +650,11 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDJuSXdPb2o2RW1XZEV0d2hPSlowazVaVV9kWFFqZVBOYml3RjlhMHZLMXBmZ2hFblFBNXhGZVBERTl0SnM4bzV0RkE4X1pWUWpyTGVTZTg1c0lHdTh1NnRQcFh1RHpvVmVLb3pxVkdiekNOc3NyUUxWT1JQeW92OHNjSTdLQkZvLW1tYXhn?oc=5"
       },
       {
-        "title": "Arsenal vs Man City: Community Shield prediction, kick-off time, team news, odds, h2h",
+        "title": "Arsenal vs Man City: Community Shield prediction, kick-off time, TV, live stream, team news, h2h results, odds",
         "summary": "",
-        "meta": "Sat 15 Aug",
+        "meta": "Sun 16 Aug",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPSk9HRThBTF84MUEzaXBxeGFkSnFyZGJjcWlsWjVneTkxVld4MGNpOE1SSlZVak12SmxXVnpXb2Z2WlVQTDZ0VUhVWDAtOVhLd0JadVFJbTdCYzF1Z1NkLVMyeU9Jb3YzbWF5amI4T1BZeUpzVlNEc2FLenUxcjhWTFJUaS1LWkVOTW1WZXZPU25ISGF5b3JfNWUtSVVfQWp4M0t5Szk0YjJtR1FvWHJDTlh2UDk4QUxKb0stLVNRT3RMLUZXMFlvbC00d0o2NW1NYUEzcC1jME5pcWxrRVJtSVpFdFNTbzlBU2pzendmMkY1M0ViSnZ6RlByZ24zVFMxT0lhLS0zLTBNMmJNSi1R?oc=5"
-      },
-      {
-        "title": "Arsenal take big step towards Gabriel Jesus deal as £5.1m transfer is confirmed",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd2Y5M0JuQkxnUG4zYkl1aU1KVm1oSVQwaVZ4SGtKZU5EMXNNOGlxcjFuZHQ3ZVQxR3JOVWFILVhmOVRmX2MzcFBvWklvUUN6ekFJWmxkTXdWYzlDcjVNcXBNNS1PY2FiWE81TGpwMTlSbXFseHpCLXR1Y3pOQWFZTVlEckd6YzF1RzF2V3lrZVdwLWxZdWNaWjF4QTR0QV9EYmc?oc=5"
       },
       {
         "title": "The best snaps from pre-Community Shield training",
@@ -671,11 +664,25 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQ0FLNEZYMlZSdmNqZWR2V25FeEwzY2lPN3BBaFdQT2M3bmJmNkJWWHplWm1GelFFcXRFMzZTSkgyN2gxVzFPR3EzMnNnMllqaTVCZGRQaVV5R2o4UDFJUnNmUlAxcndwSUp5bE9IODUwd3hNNDQ0OUZUcmlBeDR6cDA3ZnNiTGwxMGtfWElXZUlKdkFGZVE?oc=5"
       },
       {
-        "title": "Arsenal XI vs Man City: Confirmed team news and predicted lineup",
+        "title": "Arsenal in talks with Liverpool after reaching agreement to sign forward",
+        "summary": "",
+        "meta": "Sun 16 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSm5YdnVBMU5Wa2JueWc1SExJVFIwelhxZXVHWW9PMVlBU09ISDBUb1pMaGx3ZFRhYjh6YXZtTFNiZUN1Um9OQjh0OTRRN1Y4SDZucUd2eHlwbnd6RHNpb0NkREQtcHdoYkFlQlVkRV8xWXVJYnFHcmtCWTlIaFNTeG5zNkpmamVyUHNHREM1b1FEcW1yM1JlcDE2ZGRfbHY2RENYZEl5NTY?oc=5"
+      },
+      {
+        "title": "U18s report: West Bromwich Albion 0-0 Arsenal",
         "summary": "",
         "meta": "Sat 15 Aug",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQajctRmljT25MS1EyMXRWQVZLUTVEMkt4OEJzVUltNWl4TDBfUFkxUUhDRUhUWUp3SHlEeEF4cno3TUtCVl9SMDJtZHV1MVM2Nlp3dXZEX2pqVWI0OVZTcjBieDZmSW1jRW9BQjJUbW9tTFpXNkxwWWY3eEhCOG9BS1d5TXRDMlB4eVE3OU12aw?oc=5"
+      },
+      {
+        "title": "Arsenal take big step towards Gabriel Jesus deal as £5.1m transfer is confirmed",
+        "summary": "",
+        "meta": "Sun 16 Aug",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdXMxY1RFNWdoNTlpRk1tMnowbGFEY29vUVlRSC15alJKdmZGbmljVEVFUnlDWFM0ZS1mVVUzWTgwWUdNa2JvU1RMc25wZjY5RHJnSFB6T3VaZ2N2eC1GSFc4ZWNEVXFHcmg3QnFpVjg5SFFfSC1YMWxQZU9LUTNrcVN6TzBLQ0t5YUNWbEpJRGtmQk9Fc3JkdXJtRFpIVXpyRmh0cXZYZkJJYXdIWVpyejY0MExqVHV6VERhRHlrU3BnbmVLNFBpY1I1b3NUS3FwcmVaRGRmQ1Y4N3planBtMUY4YzdOTzVNUEE?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd2Y5M0JuQkxnUG4zYkl1aU1KVm1oSVQwaVZ4SGtKZU5EMXNNOGlxcjFuZHQ3ZVQxR3JOVWFILVhmOVRmX2MzcFBvWklvUUN6ekFJWmxkTXdWYzlDcjVNcXBNNS1PY2FiWE81TGpwMTlSbXFseHpCLXR1Y3pOQWFZTVlEckd6YzF1RzF2V3lrZVdwLWxZdWNaWjF4QTR0QV9EYmc?oc=5"
       },
       {
         "title": "Go Inside Training ahead of the Community Shield",
@@ -687,16 +694,9 @@
       {
         "title": "Man City XI vs Arsenal: Confirmed team news and predicted lineup",
         "summary": "",
-        "meta": "Sat 15 Aug",
+        "meta": "Sun 16 Aug",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWlNmeG1sa2wyWmV0YnB2TjR4aXFDb3diZ0pZUUdkYzhFaGV3WlBTblNvQjBPZ3RHeVhnbnRQV3NvU19NSFJpbTd0YTB1dzAycUFuMTZEWF8yNmNOYWNoRUEyVm1rNDJRbnJ2d1NyNzFUcHFvLUxGRmFPb3pCWE1NRWNQWkVabU5OLVk1ZGlPUkliM3VrUmwtcTdIVUZwQ21velF0aFltQjRaLWs0T0ZIbW9iTGhDRUFpR3ZjNENRS1dfY1VYempIZzIwMkM4ZWE3Qy11aXFZYU5jOUtJUFAxYkVSUjIxczlWcEE?oc=5"
-      },
-      {
-        "title": "U18s report: West Bromwich Albion 0-0 Arsenal",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQajctRmljT25MS1EyMXRWQVZLUTVEMkt4OEJzVUltNWl4TDBfUFkxUUhDRUhUWUp3SHlEeEF4cno3TUtCVl9SMDJtZHV1MVM2Nlp3dXZEX2pqVWI0OVZTcjBieDZmSW1jRW9BQjJUbW9tTFpXNkxwWWY3eEhCOG9BS1d5TXRDMlB4eVE3OU12aw?oc=5"
       }
     ],
     "Local news": [
@@ -711,14 +711,14 @@
         "title": "London's 'smartest' borough where nearly half of students get top A level grades",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "mylondon.news",
+        "source": "My London",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXRReFlwNHhKTjdIT0o3ZXJwenV4UHYwTjJLRU1FeGNnbzhYdll5WkMxZkM3eGxWZmN2WnlyWlR0SUlCVDFnSzBRUU93R0RjWDBQcmdVT1NFY2hmWVJ0TGFpTTRHeHNYV3A1aVJTOHliNDdoNEpCcUJSZjZuQVNwM0xWU216Q0pyZXM0S2VyVkszZXlOTy03SQ?oc=5"
       },
       {
         "title": "Guildford gets England's top A Level grades as Surrey students do exceptionally well",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "getsurrey.co.uk",
+        "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYWdPbktiWE14c1dfSVg4ZGN6SGV3dU5TWlN6MlhvZi1xUDlZMUU2Qm9JOUNnQktud2pLSkQ0Y1ZiNG8zeWtIOXdXWkVBOWFMSkhyZ01iNEU1bngyRjNHdW1aZmxlTjZQTkR5T08yVlhYOEtOY1RKRVZyY3JXaklUUmROaklGZDVTQjJNUlZ0R0PSAZYBQVVfeXFMTXI2aDVEZjBtcjdZdlU4VnM0N1Y3MU13OVVKaGdZQTVZSmNqTV9hTUtZQUtRN3JlSTN6NlFRS1RCTlh1SnRQcnM0eDhNakViLTZxZ3NmMGtYcXNIaXh3cWNMdl9MSG5ycWlzSGZ0akJ6NlZFTFRkYUFKSE9vNWpIYmxYYTBrZVJoT2xOZGVac3NxSGt4NEx3?oc=5"
       },
       {
@@ -745,7 +745,7 @@
       {
         "title": "London's smartest boroughs according to A-level grades revealed - how does your area fare?",
         "summary": "",
-        "meta": "Sat 15 Aug",
+        "meta": "Fri 14 Aug",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXg3ejRIMHNrbEp4VmJnMllldk8wVktMUnk5VkRjeE5IR003ZlA1NEY3SkpIOU1MTTVnelg0b21YOUVvRkV6VXFLRmtTRXdoMUhxTlowZE9LNG5vV0RoZzVCUEwyMUxzZ3pDZXdlZzNIdDFxNGlzZEF6QnZGY3pMZU5fYkxsejFNR01V?oc=5"
       },
@@ -759,6 +759,27 @@
     ],
     "UK news": [
       {
+        "title": "Reform UK plan would overhaul welfare system with £50bn in savings",
+        "summary": "The party plans to release a full 50-page plan on Monday outlining their proposed changes were they to come to power.",
+        "meta": "Sun 16 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cz977nxww1jo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Major incidents across UK putting firefighters under 'incredible pressure', fire chief says",
+        "summary": "Major incidents declared across England and Wales with blazes in Stourbridge, Sandwell and Pershore.",
+        "meta": "Sat 15 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwyjjvd4g0qo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Ariana Grande leaves problems at home as her tour hits the UK",
+        "summary": "The star plays the first of 10 dates in London, after which she will \"step back\" from public life.",
+        "meta": "Sun 16 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cn0n7rln2rno?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Jason Arday death 'tragedy on so many levels' says PM",
         "summary": "Andy Burnham says the former Cambridge professor's death is a \"really sad, sad and sorry state of affairs\".",
         "meta": "Sat 15 Aug",
@@ -766,39 +787,18 @@
         "url": "https://www.bbc.co.uk/news/articles/c9982znvyk4o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Analysis: Arday's death will send shockwaves through a divided academia",
-        "summary": "Barely 1% of professors at UK universities are black, so he was joining a small and highly visible minority in academia, writes Education Editor Branwen Jeffreys.",
-        "meta": "Sat 15 Aug",
+        "title": "Rescuers search for survivors of powerful Indonesia earthquake",
+        "summary": "Officials say a rapid assessment into the impact of the earthquake that destroyed hundreds of buildings and killed 47 is under way.",
+        "meta": "Sun 16 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cr59jg1ypd3o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Fire services stretched as residents still not home",
-        "summary": "Major incidents are declared across the UK including in Stourbridge, Sandwell and Pershore.",
+        "title": "Hunt wins third gold as Asher-Smith makes history",
+        "summary": "Amy Hunt claims the third gold medal of her bid for a historic quadruple and Dina Asher-Smith makes history as Great Britain win two relay golds at the European Athletics Championships.",
         "meta": "Sat 15 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwyjjvd4g0qo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Powerful magnitude 7.7 earthquake kills at least 47 in Indonesia",
-        "summary": "A search and rescue operation is under way to find survivors in Flores, an island in eastern Indonesia.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5y0zz63gero?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Met Police apologises for data breach involving alleged Al Fayed victims",
-        "summary": "Scotland Yard copied in all those who had signed up to receive a monthly update.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c1w1yv987jqo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Thousands of Bonnie Tyler fans line the streets as coffin taken to Swansea home",
-        "summary": "The Total Eclipse of the Heart singer died last month in a hospital in Portugal.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c9v43zry802o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/sport/athletics/articles/cqjxxd0j844o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
