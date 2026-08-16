@@ -1,71 +1,84 @@
 {
-  "updatedLabel": "Sunday, 16 August 2026 · refreshed 6:24am",
+  "updatedLabel": "Sunday, 16 August 2026 · refreshed 6:25am",
   "weather": {
-    "temp": "19°",
-    "summary": "Cloudy",
-    "weatherCode": 3,
+    "temp": "18°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-08-16",
         "high": 26,
-        "low": 19,
-        "summary": "Light drizzle",
-        "rainChance": 73,
-        "weatherCode": 51
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
       },
       {
         "date": "2026-08-17",
-        "high": 27,
-        "low": 20,
-        "summary": "Cloudy",
-        "rainChance": 12,
-        "weatherCode": 3
+        "high": 28,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
       },
       {
         "date": "2026-08-18",
-        "high": 24,
-        "low": 18,
-        "summary": "Light drizzle",
-        "rainChance": 56,
-        "weatherCode": 51
+        "high": 27,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
+        "source": "Met Office"
       },
       {
         "date": "2026-08-19",
-        "high": 22,
-        "low": 17,
-        "summary": "Cloudy",
-        "rainChance": 41,
-        "weatherCode": 3
+        "high": 23,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
       },
       {
         "date": "2026-08-20",
-        "high": 21,
-        "low": 14,
-        "summary": "Light drizzle",
-        "rainChance": 88,
-        "weatherCode": 51
+        "high": 22,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
       },
       {
         "date": "2026-08-21",
-        "high": 18,
-        "low": 13,
-        "summary": "Cloudy",
-        "rainChance": 55,
-        "weatherCode": 3
+        "high": 21,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
       },
       {
         "date": "2026-08-22",
-        "high": 19,
-        "low": 13,
-        "summary": "Light drizzle",
-        "rainChance": 37,
-        "weatherCode": 51
+        "high": 21,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "7pm–9pm",
-      "detail": "Best window today · cloudy · about 6% rain chance"
-    }
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 20%",
+      "source": "Met Office"
+    },
+    "source": "Met Office",
+    "sourceUrl": "https://weather.metoffice.gov.uk/forecast/gcpsrrk8m?nearestTo=West+Molesey+%28Surrey%29",
+    "location": "West Molesey, KT8 2LE",
+    "forecastPoint": "Hampton W Wks"
   },
   "calendar": [
     {
@@ -83,20 +96,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "WFH",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-22T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "St Pauls Camp 8.15 - 5.45",
       "summary": "",
       "url": "",
@@ -108,6 +107,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "0964keure928mhs30mr5v8as47",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "WFH",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-22T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#fbd75b",
+      "colorId": "5",
+      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
       "calendarColorSource": "google"
     },
     {
@@ -541,7 +554,7 @@
         "title": "London's best private dining rooms for 30 people",
         "summary": "",
         "meta": "Tue 11 Aug",
-        "source": "squaremeal.co.uk",
+        "source": "SquareMeal",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMmZBQ0JEUDFoLXpQQmNrTHBSOU1wM1JuOTZHMWNobVhrSERReXB3emxuWUsyMXRyc0wwaVQzTUpDbUJRWDFGTk56ZzJFblJ0aGpVTmc4TC1zQk1td29qd2tfaUhaV0E3RVpMS3ozbTNCVkN3dUdpaXd1OUlRajZzbHZ2ZHVhSEhFX04wRzFyS3VNVGhzOTgzLQ?oc=5"
       },
       {
@@ -592,7 +605,7 @@
         "title": "Two large home extensions proposed in the borough this week",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "surreycomet.co.uk",
+        "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR0o4M184dFF6alhySnJsX2pfU2ExWTdnR0hhT0JQYy1Hc0RHcFBYb3gtR01ZemZTek5JUnFDTVdPWlhod1ZCaWZMeWhhVmctbzVTR3NBR2ZOaVdubXlTWnlkYVR2eW9HRDdXaFhadnhaaUhKcGx3RExKaEZiS3NVTGt2U3AyY2Zaa1FZY3ltQ094ckdxODZCXw?oc=5"
       },
       {
@@ -606,7 +619,7 @@
         "title": "Students set new records for A-level grades in bumper year | A-levels",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "theguardian.com",
+        "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkc2LW42QWt2bWd5QlY3MjlFbndkdnFaNi00VlpQMnY5dGktcUhXb2xHazJtQnpvREFlQThtLVBJdFVPSHBPZ1BwNmFacWhGVGtkRjJGSmxacklJWDNPWURsNExqZkpDWEY3VTE4V0hmb2QtRm5IUVJqSVNENnpXSG5jS0VJVTR1bDh1ZU9YNGVZTlU2SzBzYzZ3?oc=5"
       },
       {
