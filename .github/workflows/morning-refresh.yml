@@ -40,6 +40,7 @@ jobs:
           GOOGLE_CALENDAR_ICS_URL: ${{ secrets.GOOGLE_CALENDAR_ICS_URL }}
         run: |
           python scripts/refresh.py
+          python scripts/enrich_weather_metoffice.py
           python scripts/enrich_arsenal.py
           python scripts/finalize_arsenal.py
 
