@@ -29,25 +29,17 @@ function weatherIcon(condition,size='large'){
 }
 
 function renderWeather(wx={}){
-  $('#weatherHeroTemp').textContent=wx.temp||'—';
-  $('#weatherHeroSummary').textContent=wx.summary||'Forecast unavailable';
-  $('#weatherNowIcon').innerHTML=weatherIcon(wx.condition||wx.summary);
-  const out=wx.bestOutdoor||{};
-  $('#outdoorTime').textContent=out.label||'—';
-  $('#outdoorDetail').textContent=out.detail||'Met Office forecast unavailable';
-  $('#outdoorWindow').textContent=wx.source?`${wx.source} · ${wx.location||'KT8 2LE'}`:'';
-  const box=$('#forecastStrip');box.innerHTML='';
+  const box=$('#forecastStrip');
+  if(!box) return;
+  box.innerHTML='';
   (wx.daily||[]).slice(0,7).forEach((d,i)=>{
     const el=document.createElement('article');
     el.className='forecast-day'+(i===0?' today':'');
     const date=new Date(`${d.date}T12:00:00`);
-    const rain=d.rainChance==null?'':` · ${d.rainChance}% rain`;
-    const low=d.low==null?'':`${d.low}°`;
-    el.innerHTML=`<span>${i===0?'Today':date.toLocaleDateString('en-GB',{weekday:'short'})}</span>${weatherIcon(d.condition||d.summary,'small')}<strong>${d.high??'—'}°</strong><small>${low}${rain}</small><em>${d.summary||''}</em>`;
+    const low=d.low==null?'':`<small>${d.low}° low</small>`;
+    el.innerHTML=`<span>${i===0?'Today':date.toLocaleDateString('en-GB',{weekday:'short'})}</span>${weatherIcon(d.condition||d.summary,'small')}<strong>${d.high??'—'}°</strong>${low}<em>${d.summary||''}</em>`;
     box.appendChild(el);
   });
 }
 
-// app.js starts loading profile data before this override is evaluated. If the
-// data has already landed, immediately redraw weather with the Met Office icon map.
 if(typeof state!=='undefined'&&state.data?.weather){renderWeather(state.data.weather)}
