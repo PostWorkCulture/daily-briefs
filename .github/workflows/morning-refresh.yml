@@ -41,6 +41,7 @@ jobs:
         run: |
           python scripts/refresh.py
           python scripts/enrich_arsenal.py
+          python scripts/finalize_arsenal.py
 
       - name: Commit refreshed data
         run: |
