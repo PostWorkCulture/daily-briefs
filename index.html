@@ -33,17 +33,25 @@
     </section>
 
     <section class="panel-block weather-block" id="weatherPanel">
-      <div class="section-head"><h2>Weather</h2><span class="section-kicker" id="outdoorWindow"></span></div>
-      <div class="weather-hero">
-        <div class="weather-now-icon" id="weatherNowIcon"></div>
-        <div><div class="weather-now-temp" id="weatherHeroTemp">—</div><div class="weather-now-copy" id="weatherHeroSummary">Loading forecast…</div></div>
-        <div class="outdoor-card"><span>Best time to go out</span><strong id="outdoorTime">—</strong><small id="outdoorDetail">Checking today’s hourly forecast</small></div>
-      </div>
+      <div class="section-head"><h2>Weather</h2><span class="section-kicker">Met Office · KT8 2LE</span></div>
       <div class="forecast-strip" id="forecastStrip"></div>
     </section>
 
+    <section class="panel-block calendar-block calendar-priority" id="calendarSection">
+      <div class="section-head"><h2>Calendar</h2><button class="text-button" id="monthToggle">Full month</button></div>
+      <div class="calendar-tabs" role="tablist" aria-label="Calendar range">
+        <button class="active" data-calendar-range="soon">Soon</button>
+        <button data-calendar-range="today">Today</button>
+        <button data-calendar-range="tomorrow">Tomorrow</button>
+        <button data-calendar-range="week">This week</button>
+        <button data-calendar-range="month">Month</button>
+      </div>
+      <div class="calendar-summary" id="calendarSummaryCards"></div>
+      <div class="list-card calendar-list" id="calendarList"></div>
+    </section>
+
     <section class="arsenal-panel panel-block" id="arsenalPanel" hidden>
-      <div class="section-head"><h2>Arsenal</h2><span class="section-kicker">Club snapshot</span></div>
+      <div class="section-head"><h2>Arsenal</h2><span class="section-kicker">Men's first team · all competitions</span></div>
       <div class="arsenal-grid">
         <article class="match-card" id="lastResultCard"><span>Last result</span><strong>—</strong><small>Loading</small></article>
         <article class="match-card next" id="nextFixtureCard"><span>Next fixture</span><strong>—</strong><small>Loading</small></article>
@@ -59,6 +67,10 @@
         <div class="scenery-shade"></div>
         <div class="scenery-copy"><span id="sceneryCountry">Explore</span><strong id="sceneryPlace">Somewhere beautiful</strong><small id="sceneryCredit"></small></div>
       </a>
+      <article class="scenery-fact" id="sceneryFact">
+        <span>Amazing fact of the day</span>
+        <p id="sceneryFactText">Loading today’s fact…</p>
+      </article>
     </section>
 
     <section class="dashboard-grid">
@@ -66,19 +78,6 @@
         <section class="panel-block">
           <div class="section-head"><h2>Morning brief</h2></div>
           <article class="hero-card" id="leadCard"><div class="tag">Top story</div><h3>Loading today’s brief…</h3><p></p></article>
-        </section>
-
-        <section class="panel-block calendar-block" id="calendarSection">
-          <div class="section-head"><h2>Calendar</h2><button class="text-button" id="monthToggle">Full month</button></div>
-          <div class="calendar-tabs" role="tablist" aria-label="Calendar range">
-            <button class="active" data-calendar-range="soon">Soon</button>
-            <button data-calendar-range="today">Today</button>
-            <button data-calendar-range="tomorrow">Tomorrow</button>
-            <button data-calendar-range="week">This week</button>
-            <button data-calendar-range="month">Month</button>
-          </div>
-          <div class="calendar-summary" id="calendarSummaryCards"></div>
-          <div class="list-card calendar-list" id="calendarList"></div>
         </section>
       </div>
 
@@ -110,5 +109,6 @@
 
   <script src="js/app.js" defer></script>
   <script src="js/weather-met.js" defer></script>
+  <script src="js/scenery-facts.js" defer></script>
 </body>
 </html>
