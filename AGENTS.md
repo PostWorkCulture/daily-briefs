@@ -37,4 +37,13 @@ Hard rules:
 - Never invent data, sources, URLs, test results, or completion claims.
 - Do not add Anthropic/OpenAI API dependencies or paid API requirements.
 
+## Required live output
+
+After every completed build, deployment, refresh, or QA task, include a **Live briefs** section containing exactly these two clickable links:
+
+- Pete: https://postworkculture.github.io/daily-briefs/pete/
+- Sofia: https://postworkculture.github.io/daily-briefs/sofia/
+
+Do not include the shared root brief in that output. Keep LIVE-LINKS.md aligned with these URLs.
+
 If work pauses or is blocked, explain why, what is complete, what remains, and the exact next step.
