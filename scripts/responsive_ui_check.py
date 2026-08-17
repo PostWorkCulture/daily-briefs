@@ -12,9 +12,10 @@ VIEWPORTS = {
 
 def check_viewport(page, name: str) -> None:
     page.set_viewport_size(VIEWPORTS[name])
-    page.goto(BASE_URL, wait_until="networkidle")
+    page.goto(BASE_URL, wait_until="domcontentloaded", timeout=15000)
+    page.wait_for_timeout(1200)
     page.locator('[data-view-target="arsenal"]').click()
-    page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible")
+    page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
 
     result = page.evaluate(
         """
@@ -69,6 +70,7 @@ def main() -> int:
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
+        page.set_default_timeout(10000)
         try:
             for name in VIEWPORTS:
                 check_viewport(page, name)
