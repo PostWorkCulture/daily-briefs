@@ -40,9 +40,32 @@ jobs:
           GOOGLE_CALENDAR_ICS_URL: ${{ secrets.GOOGLE_CALENDAR_ICS_URL }}
         run: |
           python scripts/refresh.py
-          python scripts/enrich_weather_metoffice.py
+          python scripts/enrich_weather_v2.py
           python scripts/enrich_arsenal.py
           python scripts/finalize_arsenal.py
+          python scripts/refresh_story_images.py
+
+      - name: Validate protected brief rules
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for profile in ('pete','sofia'):
+              p=Path('data')/f'{profile}.json'
+              data=json.loads(p.read_text())
+              assert data.get('weather',{}).get('source')=='Met Office', f'{profile}: weather source changed'
+              ext=data.get('weather',{}).get('yesterdayExtremes',{})
+              assert ext.get('source')=='Met Office', f'{profile}: extremes source changed'
+          rules=json.loads(Path('data/story-images.json').read_text())
+          seen={}
+          for article,rule in rules.items():
+              src=rule.get('src') if isinstance(rule,dict) else None
+              assert src, f'missing image src for {article}'
+              key=src.split('#',1)[0]
+              assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
+              seen[key]=article
+          print(f'Validated {len(rules)} unique story image rules')
+          PY
 
       - name: Commit refreshed data
         run: |
