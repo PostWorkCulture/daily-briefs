@@ -298,12 +298,10 @@ def build_profiles() -> dict[str, dict]:
     stamp = NOW.strftime("%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
     pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": career}
     sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": career}
-    us_sections = {"Local ideas": family, "Local news": local, "UK news": uk}
     def first(items, fallback): return items[0] if items else {"title": fallback, "summary": "", "meta": "", "source": "", "url": ""}
     return {
         "pete": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
         "sofia": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "lead": first(sweden or local or tonight, "Your morning brief is ready."), "interests": [dict(first(sweden, "Sweden"), section="Sweden"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": sofia_sections},
-        "us": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "lead": first(family or local, "Your shared day is ready."), "interests": [dict(first(family, "Family ideas"), section="Family"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": us_sections},
     }
 
 
