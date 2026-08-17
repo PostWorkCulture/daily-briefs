@@ -1,0 +1,226 @@
+from __future__ import annotations
+
+import html
+import json
+import re
+from pathlib import Path
+from urllib.parse import quote
+
+import requests
+from bs4 import BeautifulSoup
+
+from enrich_weather_metoffice import met_weather, UA
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+EXTREMES_URL = "https://weather.metoffice.gov.uk/observations/weather-extremes"
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+NOMINATIM = "https://nominatim.openstreetmap.org/search"
+
+# Known, manually verified exact-place photos from the approved Daily Briefs build.
+KNOWN_PHOTOS = {
+    "teddington": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Diana_Fountain%2C_Bushy_Park.jpeg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Diana_Fountain,_Bushy_Park.jpeg",
+        "credit": "Jonathan Cardy · CC BY 3.0",
+        "alt": "Diana Fountain in Bushy Park, Teddington, Greater London",
+    },
+    "sennybridge": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bridge_over_the_River_Usk_at_Sennybridge_-_geograph.org.uk_-_3953802.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Bridge_over_the_River_Usk_at_Sennybridge_-_geograph.org.uk_-_3953802.jpg",
+        "credit": "Rod Allday · CC BY-SA 2.0",
+        "alt": "Bridge over the River Usk at Sennybridge",
+    },
+    "wiggonholt": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg",
+        "credit": "Ian Hawfinch · CC BY-SA 2.0",
+        "alt": "Wiggonholt Parish Church, West Sussex",
+    },
+    "topcliffe": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Church_Street_from_above%2C_Topcliffe_-_geograph.org.uk_-_6405522.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Church_Street_from_above,_Topcliffe_-_geograph.org.uk_-_6405522.jpg",
+        "credit": "Gordon Hatton · CC BY-SA 2.0",
+        "alt": "Church Street in Topcliffe, North Yorkshire",
+    },
+}
+
+KNOWN_ENGLISH_COUNTIES = {
+    "teddington": "Greater London",
+    "wiggonholt": "West Sussex",
+    "topcliffe": "North Yorkshire",
+    "pershore": "Worcestershire",
+    "writtle": "Essex",
+    "holbeach": "Lincolnshire",
+    "shobdon": "Herefordshire",
+    "boscombe down": "Wiltshire",
+    "south newington": "Oxfordshire",
+    "benson": "Oxfordshire",
+    "brize norton": "Oxfordshire",
+    "exeter": "Devon",
+    "langdon bay": "Kent",
+    "heathrow": "Greater London",
+    "kew": "Greater London",
+}
+
+
+def clean(value: str) -> str:
+    return re.sub(r"\s+", " ", value or "").strip()
+
+
+def plain(value: str) -> str:
+    return clean(BeautifulSoup(html.unescape(value or ""), "html.parser").get_text(" ", strip=True))
+
+
+def core_place(location: str) -> str:
+    value = re.sub(r"\bNo\s*\d+\b", "", location, flags=re.I)
+    value = re.sub(r"\bNumber\s*\d+\b", "", value, flags=re.I)
+    return clean(value.split(",", 1)[0])
+
+
+def england_county(location: str) -> str | None:
+    low = location.lower()
+    for key, county in KNOWN_ENGLISH_COUNTIES.items():
+        if key in low:
+            return county
+    try:
+        r = requests.get(
+            NOMINATIM,
+            params={"q": f"{core_place(location)}, United Kingdom", "format": "jsonv2", "addressdetails": 1, "limit": 1},
+            headers={**UA, "Accept-Language": "en-GB,en"},
+            timeout=15,
+        )
+        r.raise_for_status()
+        hits = r.json()
+        if not hits:
+            return None
+        address = hits[0].get("address", {})
+        values = " ".join(str(x) for x in address.values()).lower()
+        if "england" not in values:
+            return None
+        county = address.get("county") or address.get("state_district")
+        if county and county.lower() != core_place(location).lower():
+            return clean(county)
+    except Exception:
+        return None
+    return None
+
+
+def display_location(location: str) -> str:
+    county = england_county(location)
+    if county and county.lower() not in location.lower():
+        return f"{location}, {county}"
+    return location
+
+
+def exact_commons_photo(location: str) -> dict | None:
+    low = location.lower()
+    for key, photo in KNOWN_PHOTOS.items():
+        if key in low:
+            return dict(photo)
+
+    place = core_place(location)
+    if len(place) < 3:
+        return None
+    try:
+        params = {
+            "action": "query",
+            "generator": "search",
+            "gsrsearch": f'"{place}"',
+            "gsrnamespace": 6,
+            "gsrlimit": 10,
+            "prop": "imageinfo",
+            "iiprop": "url|extmetadata",
+            "iiurlwidth": 1600,
+            "format": "json",
+            "origin": "*",
+        }
+        r = requests.get(COMMONS_API, params=params, headers=UA, timeout=20)
+        r.raise_for_status()
+        pages = (r.json().get("query") or {}).get("pages", {})
+        needle = re.sub(r"\W+", "", place.lower())
+        for page in pages.values():
+            info = (page.get("imageinfo") or [{}])[0]
+            meta = info.get("extmetadata") or {}
+            title = page.get("title", "")
+            desc = plain((meta.get("ImageDescription") or {}).get("value", ""))
+            hay = re.sub(r"\W+", "", f"{title} {desc}".lower())
+            # Exact-location safety rule: the place name itself must be present in
+            # the Commons file title/description. Otherwise we deliberately show no photo.
+            if needle not in hay:
+                continue
+            src = info.get("thumburl") or info.get("url")
+            if not src:
+                continue
+            artist = plain((meta.get("Artist") or {}).get("value", "")) or "Wikimedia Commons contributor"
+            licence = plain((meta.get("LicenseShortName") or {}).get("value", ""))
+            credit = " · ".join(x for x in (artist, licence) if x)
+            filename = title.removeprefix("File:")
+            return {
+                "src": src,
+                "page": "https://commons.wikimedia.org/wiki/File:" + quote(filename.replace(" ", "_"), safe="()_,.-"),
+                "credit": credit,
+                "alt": desc or f"{place}, United Kingdom",
+            }
+    except Exception:
+        return None
+    return None
+
+
+def parse_extremes() -> dict | None:
+    try:
+        r = requests.get(EXTREMES_URL, headers=UA, timeout=30)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        heading = next((h for h in soup.find_all(["h2", "h3", "h4"]) if clean(h.get_text(" ", strip=True)).lower() == "extremes for united kingdom"), None)
+        if not heading:
+            raise ValueError("UK extremes heading not found")
+        table = heading.find_next("table")
+        if not table:
+            raise ValueError("UK extremes table not found")
+        values = {}
+        for row in table.find_all("tr"):
+            cells = [clean(c.get_text(" ", strip=True)) for c in row.find_all(["th", "td"])]
+            if len(cells) >= 3:
+                values[cells[0].lower()] = {"location": cells[1], "value": cells[2]}
+        hot = values.get("highest maximum temperature")
+        cold = values.get("lowest minimum temperature")
+        if not hot or not cold:
+            raise ValueError("required UK temperature extremes not found")
+
+        date_heading = heading.find_previous("h2")
+        date_label = clean(date_heading.get_text(" ", strip=True)) if date_heading else "Yesterday"
+
+        def enrich(item: dict) -> dict:
+            loc = clean(item["location"])
+            return {
+                "location": loc,
+                "displayLocation": display_location(loc),
+                "value": clean(item["value"]).replace(" °C", "°C"),
+                "photo": exact_commons_photo(loc),
+            }
+
+        return {
+            "dateLabel": date_label,
+            "source": "Met Office",
+            "sourceUrl": EXTREMES_URL,
+            "hot": enrich(hot),
+            "cold": enrich(cold),
+        }
+    except Exception as exc:
+        return {"source": "Met Office", "sourceUrl": EXTREMES_URL, "error": str(exc)}
+
+
+def main() -> None:
+    wx = met_weather()
+    wx["yesterdayExtremes"] = parse_extremes()
+    for name in ("pete", "sofia"):
+        path = DATA / f"{name}.json"
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        payload["weather"] = wx
+        path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("Met Office weather + UK yesterday extremes applied to Pete and Sofia")
+
+
+if __name__ == "__main__":
+    main()
