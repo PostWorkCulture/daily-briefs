@@ -43,6 +43,7 @@ jobs:
           python scripts/enrich_weather_v2.py
           python scripts/enrich_arsenal.py
           python scripts/finalize_arsenal.py
+          python scripts/enrich_tv_picks.py
           python scripts/refresh_story_images.py
 
       - name: Validate protected brief rules
@@ -56,6 +57,9 @@ jobs:
               assert data.get('weather',{}).get('source')=='Met Office', f'{profile}: weather source changed'
               ext=data.get('weather',{}).get('yesterdayExtremes',{})
               assert ext.get('source')=='Met Office', f'{profile}: extremes source changed'
+              picks=data.get('watch') or []
+              assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
+              assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
           rules=json.loads(Path('data/story-images.json').read_text())
           seen={}
           for article,rule in rules.items():
@@ -64,7 +68,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} unique story image rules')
+          print(f'Validated {len(rules)} unique story image rules and programme-first TV Picks')
           PY
 
       - name: Commit refreshed data
