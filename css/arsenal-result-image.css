@@ -1,0 +1,5 @@
+#lastResultCard.has-match-image{position:relative;overflow:hidden;padding-top:150px!important;min-height:230px}
+#lastResultCard .match-result-photo{position:absolute;top:0;left:0;right:0;height:132px;background:#101d2c center/cover no-repeat;border-bottom:1px solid rgba(255,255,255,.08)}
+#lastResultCard.has-match-image:hover{border-color:rgba(255,84,67,.9);box-shadow:0 0 24px rgba(255,84,67,.18);transform:none!important}
+#lastResultCard.has-match-image .match-result-photo{transform:none!important}
+@media(max-width:680px){#lastResultCard.has-match-image{padding-top:142px!important}#lastResultCard .match-result-photo{height:126px}}
