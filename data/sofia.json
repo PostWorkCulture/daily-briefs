@@ -1,7 +1,7 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 9:31pm",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 10:01pm",
   "weather": {
-    "temp": "23°",
+    "temp": "22°",
     "summary": "Clear",
     "condition": "Clear",
     "currentRainChance": 4,
@@ -12,7 +12,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -72,7 +72,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 10%",
+      "detail": "Sunny intervals · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -123,20 +123,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -148,6 +134,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "St Pauls Camp 8.15 - 5.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "0964keure928mhs30mr5v8as47",
       "calendarColorSource": "google"
     },
     {
@@ -451,7 +451,7 @@
       "title": "Revealed: The south-west London boroughs hit by the most crime in July",
       "summary": "",
       "meta": "Mon 17 Aug",
-      "source": "London Now",
+      "source": "london-now.co.uk",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5",
       "section": "Local"
     },
@@ -459,7 +459,7 @@
       "title": "Apple TV+ series Silo reveals central mystery in latest episode",
       "summary": "",
       "meta": "Mon 17 Aug",
-      "source": "The Independent",
+      "source": "independent.co.uk",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdjB1bGRWVWdhNmJxVXlNcU1pdzZhLWZsTDVOLUNlNTZOUVFWYXdMMm5aUThyY0dMMThTbUs2U20zZVVIaTdrSENZWFhOb3FFUUJDRDNWTHN2ODVhRXFXREVrV21CUFA2TjR5aVhITlI2SVVuMnZPVU41dUFwZVFkVGVzT2t0REtOSW5GaVllWVZ2cG9qaWRkSFFITXppZGUtSDBRQXRBMC1SVUsyZnpz?oc=5",
       "preferenceScore": 140,
       "section": "Watch"
@@ -545,18 +545,18 @@
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrX0lBeWVOemdBTVJnTXFoVFMzbFNwdDl5d0E5bXg4dGp3NTg2ZFk5OG9WdVRxMENnUjREMDlOSWJEbHZaQnVJUUJJY1ZyTnRGMlRZbjB3MUhPa05pZTlfcE5nSFdWM2ZLcFlV?oc=5"
       },
       {
-        "title": "School shooting leaves boy seriously injured as teen girl arrested",
+        "title": "Sweden school shooting leaves boy seriously injured as girl, 14, arrested",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "manchestereveningnews.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRnU4dnZmalA0MEpvaFVMUHFKclRKUVEySlZFVUlwRXozTVVieDN5OGphVDEzYmRZekhPSDBWTE5kUnJvLUpPSHNYZVNlbXkwVnFkV1BmdE9EYlVMb01WeGdUTEgycU1sUWNDbktjeTRRdFNVVDF3LXZWSkZJcDZyQ1ozUFVqaEl6a1FRNDVydlpZbmdURlU5akYxOGJjQm8?oc=5"
+        "source": "Manchester Evening News",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRnU4dnZmalA0MEpvaFVMUHFKclRKUVEySlZFVUlwRXozTVVieDN5OGphVDEzYmRZekhPSDBWTE5kUnJvLUpPSHNYZVNlbXkwVnFkV1BmdE9EYlVMb01WeGdUTEgycU1sUWNDbktjeTRRdFNVVDF3LXZWSkZJcDZyQ1ozUFVqaEl6a1FRNDVydlpZbmdURlU5akYxOGJjQm_SAaQBQVVfeXFMTnFOU09ncThFbzhEbnlMLWVfbWpPWUZ0OXVBWDZUV2hjbGxxX2dpcDVNRGhMODEzSzhXeHNhTGUyTUFKSTFLM3lmdXUzQURVX3p4d21lMUM0MExTMnhMV3NZVERkaGdtSmJMeEkyUDZMSUh6bzhqZWozYmZDVDBiOGVXWDlDWFhGTHpNQ0hnY0hXcUxtX0NyejM1TnhFZERGUUZ5X2I?oc=5"
       },
       {
-        "title": "Eurovision: Sweden: SVT implements new Melodifestivalen age limit | ESCToday",
+        "title": "This Dreamy Swedish Island Has Perfected the Art of Summer",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "esctoday.com",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMXBYN0VETFA2THhVX1NIQTBfR28xVVVnY0x2M0lmdWZlV0Y2Rm9wMkhNMmQ5RndJN0FDSTBMaHp1VUVCdlJzTkNwLU9LVzkyblRqckhKaHNZYTR6VVhXWmhJMG1Ya0ZNcHcybGVoSEhrVlNJWHRpWjBGYVBrWTBieEV0NDRjM1FJNVRWNU13?oc=5"
+        "source": "AFAR",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9JTmJBY3EyZ3JhQnhVR3Fqb2hjeGZfWEV6RENLVm5Ldk8yMVNDVmxqcmItMWpjdUcxR05IWXl4bFExU3ZpdXh1Mm1UY3JlQjZlSnpxcmxkQ21UMXo3WERRNVJpTDdvbHA5VGZPeUwtSnlNUVlyR1p3ZFBxVQ?oc=5"
       }
     ],
     "Local news": [
@@ -564,7 +564,7 @@
         "title": "Revealed: The south-west London boroughs hit by the most crime in July",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "London Now",
+        "source": "london-now.co.uk",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5"
       },
       {
@@ -606,7 +606,7 @@
       },
       {
         "title": "Fifa executive leaves job three weeks after speaking out against Infantino plan",
-        "summary": "A senior Fifa figure leaves football's world governing body three weeks after criticising its president Gianni Infantino.",
+        "summary": "Senior Fifa figure Kevin Lamour is sacked football's world governing body three weeks after criticising its president Gianni Infantino.",
         "meta": "Mon 17 Aug",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/sport/football/articles/cn7n4d6vy03o?at_medium=RSS&at_campaign=rss"
@@ -642,18 +642,18 @@
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50c2tWanNsR0xvM0w1d2hzSFJHS1FXenprdUZCQmNfZVQ2WlNNenprcEczaUcwMm9nYlAyQUwxQ05LY2UwMXpXM1ZRWHNieF91dVYtcklTRG8wQ28wc1VpRFNnSE91M0tDRTFPTHBzRWNiUHJVZVE?oc=5"
       },
       {
-        "title": "Securing the Infrastructure of Intelligence",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "NVIDIA Blog",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fSFBydWFKWkl3TU5YbTZnTF9WMTJCVUZldEY2VmNHMi1KM2s2Q0ZrSW9MZE1oU1N3ZFh6UjhZZDVlZkU0QUNub0NFR2VjSWNud1dYdjZ4bDRuR0JkSXR1SWJUWHd5NFk0ZExJQUhldXo4QUd5Y2lmaXJEM0RWX2c?oc=5"
-      },
-      {
         "title": "Claude to start watermarking AI-generated text – but will it make quality worse?",
         "summary": "",
         "meta": "Mon 17 Aug",
         "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdDhaNEwwSzdEUkZjTjdIb1JyTkl4T2JMZ2V1REVTaEhvd3owenhXallWRk5UOGltM3d0d3dqelFNV1hjbHljTDBYc0xVbWJCZTZIQWc1aHUwZFA0ZVlXZlozUGZBNEdJQmhhR3BpRmdSZHFnaF93X3V0aVp6ZnVPQnY5T3BXamdHcG1ZVHdGeGRjNUk?oc=5"
+      },
+      {
+        "title": "Securing the Infrastructure of Intelligence",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "NVIDIA Blog",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fSFBydWFKWkl3TU5YbTZnTF9WMTJCVUZldEY2VmNHMi1KM2s2Q0ZrSW9MZE1oU1N3ZFh6UjhZZDVlZkU0QUNub0NFR2VjSWNud1dYdjZ4bDRuR0JkSXR1SWJUWHd5NFk0ZExJQUhldXo4QUd5Y2lmaXJEM0RWX2c?oc=5"
       },
       {
         "title": "Anthropic Revenue Run Rate Surpasses $65 Billion Ahead of IPO",
@@ -670,13 +670,6 @@
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHM2Y1Z2ZE9vWWloeE00N0hsUE53d1RkQXc1Y3hGMHcxbklvZDJOVmZUc1Z6emxsNUU0c0lGT3kxOWltaFJ5Tmp2Q0JTeURlNnp4SS13a0c4R0ljSG9uU2Q1TnBCYkZCbV92Z1c4RmJUUm0yOVdKUnd0SGlQaTYxNjFQT0cwSUdDeURqVExOajZxS0tyMk50Z2x1STVzdm1NWGxRRU9KdmFGSE5PT0MtakduMWdQMER1?oc=5"
       },
       {
-        "title": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "CNET",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTVhQkpPVGFnb3lvVXZ1UHRHOXFVNTB5eVIxUXc4b2xiNFpOVFY1QVBpN18tMm1sVDdwSTlGcEljQ2tIazZkMFlWZjM1bURnT2xmT0s4UWJlWTdVUHVTQ2ZtcVI5UW5FVkluZGpVREFoT29SMGNMaVlYRUVPZDFnX2hVdVlCQ2FBWVVnRTk4MGgyOXZFdmFXa2E0U1p1YmdLSDQ2bEFWTzJ2MDdoQnhvVUd2bVp3dFdu?oc=5"
-      },
-      {
         "title": "Nvidia to provide up to $105 billion guarantee for OpenAI's Ohio data center",
         "summary": "",
         "meta": "Mon 17 Aug",
@@ -687,15 +680,22 @@
         "title": "Anthropic Is Reportedly Aiming for a Valuation of $2 Trillion or More. Is It Justifiable?",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Yahoo Finance",
+        "source": "finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSXdRLVdObm0xYkdCdldVQXJaZ3ZlbThjMnloQkhkSThWMlRINDhzVG5Lc2FxNEhQaGNFcHB3VFpfcUZpVEhfeU4tWkpkNTRMOHdfNmZfRXl3SmlOQ0xWRG5feVAyWUpBSEphQWFNdlNXQmVaTV8zamNqNHVMTHZ5eVpQWnlCMERnVjZqdFd4a0hDOVhsbFZYcHI5YndOc1VWWXBCN2ZKUQ?oc=5"
+      },
+      {
+        "title": "Anthropic’s New AI Watermark Sparks Backlash From Claude Subscribers",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "inc.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNl8zdzQ1TXlVR2tELXloWjVYNWN2a0NGQ054eEQxMEdhRnRrWFpkOUFpLV8tNFJ3LXZyWjV5anl2SDJGMXJRZlZSMTBKQ1R2S1BtWVJzQVE4NFNNMUl5dUlYalZIT2VEaW9NTlk0bFF2WjNKZHFXQTdBb0hIaV9DeERPRHRsMUpqTEdOT1lrU3oyZ0N0ZkFpSm1vdUpTUm1vSXBHMFhOaVlSSGxLRUE?oc=5"
       }
     ],
     "Career": [
       {
         "title": "Head of Product",
         "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Mon 10 Aug",
+        "meta": "Remote · Posted Tue 11 Aug",
         "source": "LinkedIn",
         "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442775538",
         "contentType": "job",
@@ -703,12 +703,12 @@
         "company": "Foundation Partners",
         "location": "London, England, United Kingdom",
         "countryFocus": "UK",
-        "postedAt": "2026-08-10"
+        "postedAt": "2026-08-11"
       },
       {
         "title": "Head of Product",
         "summary": "PlannerPal · United Kingdom",
-        "meta": "Remote · Posted Sat 25 Jul",
+        "meta": "Remote · Posted Sun 26 Jul",
         "source": "LinkedIn",
         "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-plannerpal-4442376111",
         "contentType": "job",
@@ -716,20 +716,7 @@
         "company": "PlannerPal",
         "location": "United Kingdom",
         "countryFocus": "UK",
-        "postedAt": "2026-07-25"
-      },
-      {
-        "title": "Head of Product",
-        "summary": "sAInaptic · United Kingdom",
-        "meta": "Remote · Posted Sun 19 Jul",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-sainaptic-4442738099",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "sAInaptic",
-        "location": "United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-07-19"
+        "postedAt": "2026-07-26"
       },
       {
         "title": "Senior Product Manager, Customer Insights",
@@ -745,35 +732,9 @@
         "postedAt": "2026-08-15"
       },
       {
-        "title": "Product Lead",
-        "summary": "Street Group · Manchester, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Sun 16 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "Street Group",
-        "location": "Manchester, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-16"
-      },
-      {
-        "title": "Head of Product",
-        "summary": "LocalStack · London, England, United Kingdom",
-        "meta": "Remote · Posted Thu 6 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-localstack-4450702579",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "LocalStack",
-        "location": "London, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-06"
-      },
-      {
         "title": "Product Lead (Pre booking experience)",
         "summary": "British Airways Holidays · Crawley, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Tue 4 Aug",
+        "meta": "3+ WFH days · Posted Wed 5 Aug",
         "source": "LinkedIn",
         "url": "https://uk.linkedin.com/jobs/view/product-lead-pre-booking-experience-at-british-airways-holidays-4449472670",
         "contentType": "job",
@@ -781,12 +742,12 @@
         "company": "British Airways Holidays",
         "location": "Crawley, England, United Kingdom",
         "countryFocus": "UK",
-        "postedAt": "2026-08-04"
+        "postedAt": "2026-08-05"
       },
       {
         "title": "Senior Product Manager",
         "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
-        "meta": "3+ WFH days · Posted Thu 30 Jul",
+        "meta": "3+ WFH days · Posted Fri 31 Jul",
         "source": "LinkedIn",
         "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
         "contentType": "job",
@@ -794,12 +755,12 @@
         "company": "Quinyx",
         "location": "Stockholm, Stockholm County, Sweden",
         "countryFocus": "Sweden",
-        "postedAt": "2026-07-30"
+        "postedAt": "2026-07-31"
       },
       {
         "title": "Senior Product Manager - Analytics",
         "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
-        "meta": "3+ WFH days · Posted Sun 26 Jul",
+        "meta": "3+ WFH days · Posted Mon 27 Jul",
         "source": "LinkedIn",
         "url": "https://se.linkedin.com/jobs/view/senior-product-manager-analytics-at-quinyx-4445934880",
         "contentType": "job",
@@ -807,7 +768,7 @@
         "company": "Quinyx",
         "location": "Stockholm, Stockholm County, Sweden",
         "countryFocus": "Sweden",
-        "postedAt": "2026-07-26"
+        "postedAt": "2026-07-27"
       },
       {
         "title": "Senior Product Manager",
@@ -821,6 +782,19 @@
         "location": "Remote job",
         "countryFocus": "Europe/remote",
         "postedAt": "2026-08-17"
+      },
+      {
+        "title": "Senior Product Manager, Remote Build",
+        "summary": "Remote · EMEA",
+        "meta": "Remote · Posted Sat 15 Aug",
+        "source": "Jobicy",
+        "url": "https://jobicy.com/jobs/146023-senior-product-manager-remote-build",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "Remote",
+        "location": "EMEA",
+        "countryFocus": "Europe/remote",
+        "postedAt": "2026-08-15"
       }
     ]
   }
