@@ -1,5 +1,5 @@
-/* Restore programme/story artwork for Tonight. Exact known programme art wins;
-   otherwise use the same verified unique-image map as story cards. */
+/* Restore programme/story artwork for TV Picks. Exact known programme art wins;
+   otherwise use a verified story image or a capture of the exact linked pick. */
 (function(){
   const KNOWN={
     'Conversations with a Killer: The Charles Manson Tapes':'https://image.tmdb.org/t/p/w1280/yRuUGw1zFd3IyayCwHv8gInDVeT.jpg',
@@ -8,13 +8,18 @@
   };
   let map={};
   function titleOf(card){return (card.querySelector('b')?.textContent||'').trim()}
+  function screenshotFor(url){return 'https://image.thum.io/get/width/1200/crop/720/noanimate/'+url}
   function ruleFor(card){
     const title=titleOf(card);
     if(KNOWN[title])return {src:KNOWN[title],alt:title};
     const url=card.href||'';
     let rule=map[url];
     if(!rule&&url){const key=Object.keys(map).find(k=>url===k||url.startsWith(k));if(key)rule=map[key]}
-    return typeof rule==='string'?{src:rule,alt:title}:rule;
+    if(typeof rule==='string')rule={src:rule,alt:title};
+    /* Always show a visual. If no curated/programme image exists, capture the exact
+       linked recommendation rather than inserting unrelated stock imagery. */
+    if(!rule?.src&&url)rule={src:screenshotFor(url),alt:title||'TV pick'};
+    return rule;
   }
   function enhance(){
     const used=new Set();
@@ -24,7 +29,7 @@
       const key=String(rule.src).replace(/[?#].*$/,'').toLowerCase();if(used.has(key))return;used.add(key);
       card.classList.add('artwork');
       card.style.setProperty('--pick-image',`url("${String(rule.src).replace(/"/g,'%22')}")`);
-      card.setAttribute('aria-label',(rule.alt||titleOf(card)||'Tonight pick')+' artwork');
+      card.setAttribute('aria-label',(rule.alt||titleOf(card)||'TV pick')+' artwork');
     });
   }
   const base=window.renderWatch;
