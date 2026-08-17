@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 9:15am",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 9:32am",
   "weather": {
     "temp": "22°",
     "summary": "Sunny intervals",
@@ -333,20 +333,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -358,6 +344,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -432,19 +432,19 @@
     }
   ],
   "lead": {
-    "title": "Sweden introduces new safeguards for funds facing large withdrawals",
+    "title": "Man with dementia given days to leave Sweden",
     "summary": "",
-    "meta": "Mon 17 Aug",
-    "source": "AMWatch",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5"
+    "meta": "Sun 16 Aug",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5"
   },
   "interests": [
     {
-      "title": "Sweden introduces new safeguards for funds facing large withdrawals",
+      "title": "Man with dementia given days to leave Sweden",
       "summary": "",
-      "meta": "Mon 17 Aug",
-      "source": "AMWatch",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5",
+      "meta": "Sun 16 Aug",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5",
       "section": "Sweden"
     },
     {
@@ -467,95 +467,48 @@
   ],
   "watch": [
     {
-      "title": "Apple TV+ series Silo reveals central mystery in latest episode",
-      "summary": "",
-      "meta": "Fri 14 Aug",
-      "source": "The Independent",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSG51TFFPVFpHSVpKS3NBems2UExUUkNJd2N1T2Jlc21sb1p5UEhESmhZS0lOLVZEX21mS2FMSDV3R2VpaFU3VFdkVEUxTUFnQ1lBbngwb1JiS3N2aE1xdlJyY01hSHhfQVUwU3hWMzlnUlZLOXNIWUVfQkIxOGs2YU5jeVBGdHVHVG9KVXBpcUZtaUFkc3dnMXFhdTExOEF3VnRxa0RuUjRpZWlzVEs4?oc=5",
+      "title": "Silo",
+      "summary": "Season three is currently rolling out weekly on Apple TV.",
+      "meta": "Apple TV · Season 3",
+      "source": "Apple TV",
+      "url": "https://www.apple.com/uk/tv-pr/originals/silo/",
+      "preferenceScore": 150
+    },
+    {
+      "title": "Murder Trial: Death of a Dog Walker",
+      "summary": "BBC true-crime documentary following the Brian Low murder case and trial.",
+      "meta": "BBC · True crime",
+      "source": "BBC",
+      "url": "https://www.womanandhome.com/life/news-entertainment/death-of-a-dog-walker-david-campbell-now/",
+      "preferenceScore": 145
+    },
+    {
+      "title": "Spy Next Door: The Anna Chapman Story",
+      "summary": "Channel 4 documentary about Russian spy Anna Chapman and the people caught in her orbit.",
+      "meta": "Channel 4 · Documentary",
+      "source": "Channel 4",
+      "url": "https://www.theguardian.com/tv-and-radio/2026/aug/12/tv-tonight-fascinating-documentary-explores-the-rise-and-fall-of-a-russian-spy",
       "preferenceScore": 140
     },
     {
-      "title": "Silo season 3 release schedule: When is episode 7 out on Apple TV?",
-      "summary": "",
-      "meta": "Fri 14 Aug",
-      "source": "radiotimes.com",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4ODhaRXdvSTcweEdwSm9keXprVnBtbGlvRHd4MGxqejktX2FRWVBidmpGcG1yZnJIQTNrNHlBMHd3NEN2ZWVjSXRxbGxsUlBtdzBhTkpnVEplT0w0WXo2Tmc5Um0xWDgwbFlhZ2d2aVBibnYzRGFv?oc=5",
+      "title": "Mourinho",
+      "summary": "New three-part Netflix documentary series on José Mourinho's career and contradictions.",
+      "meta": "Netflix · 3 episodes",
+      "source": "Netflix",
+      "url": "https://about.netflix.com/en/news/limited-netflix-documentary-series-mourinho-reveals-trailer",
+      "preferenceScore": 135
+    },
+    {
+      "title": "Conversations with a Killer: The Charles Manson Tapes",
+      "summary": "Three-part Netflix docuseries built around rare audio and the Manson Family story.",
+      "meta": "Netflix · True crime",
+      "source": "Netflix",
+      "url": "https://decider.com/2026/08/12/the-charles-manson-tapes-netflix-review/",
       "preferenceScore": 130
-    },
-    {
-      "title": "Silo - S3E7 - Radio",
-      "summary": "",
-      "meta": "Fri 14 Aug",
-      "source": "Apple Podcasts",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ28yNzB0NmhWcUJXQVVwTjBPcUsyOXVOODU2b1lEbzVrbUtqQlBfXzlMMENqdHRhcEh6aHRqRW5vVWtrSU43NVJrUXVEdnFCZTI4cHdHREoxSTVhaTlFU0pBdHVMckYxT2tTMGNfV0pRZzY3dV9MNGF6MHRFZW5uU2lCLUI2TWhLbkE?oc=5",
-      "preferenceScore": 130
-    },
-    {
-      "title": "Silo",
-      "summary": "",
-      "meta": "Mon 3 Aug",
-      "source": "Apple",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51blZSeEVPRnExdzJBRmRvSjVIaGV6NzZpMWRTbDRVM0Nfd1NHZjhxR1RxZG96V2RETG95dU9YZW1tWENZT1pxcURRd3REYjBuWnF4VzE0ZU1pVDFqd2c?oc=5",
-      "preferenceScore": 130
-    },
-    {
-      "title": "True crime doc exploring mystery behind infamous triple murder hits Netflix",
-      "summary": "",
-      "meta": "Mon 10 Aug",
-      "source": "Wales Online",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOHBmMjBuZWJUU2I0UVRHV3p2SENkWXA2SGk0V2NVNWllN1Q1eXd2b3Q5dG0xWF9JWExpQzNocGl3MzUzTDlPM0Z1ZE1EQ1NMSTMyQlhmMWlHcW9rLWhWdXhMNFpPREc5aFlBSzM5aW5Dd2FLYXU1REVnRW5RRnc0X3YxcWlMb2tVckFhWNIBkgFBVV95cUxPQXF1a2gwYldvTlZWa2lDNkxTdDctejBBMGRQa0NoOUczeS1FTFZFQkU1M0FkRzdjVkJFOWY2VU94bWNPYTFCNWo4bko0RXRjRjBZVWRIV3B4Qkk0SnNiRl9tbTlzazAxSm93WmwxaU55NTBfeUF4djI2WHJ2MkNIZ3g3RzJmUzJzV19VRU5tdFdxdw?oc=5",
-      "preferenceScore": 125
-    },
-    {
-      "title": "A \"Shockingly Callous\" Murder: BBC's Newest True-Crime Documentary Will Break Your Heart",
-      "summary": "",
-      "meta": "Thu 13 Aug",
-      "source": "Esquire",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeG02RXg1OHNiRDlwRkd0djBHaGlQcTVScGhWYTY5NkdoeE4zUVlsbmo3cEtrcmJ0U19MTlVlcHd2WHZsSXdaZy1WVHFRQ0g0ZEhqdHNNYjZpbVJkNHZHcjBFMlhTeHNzYzN1MThBM0xCQW9PdnVXZzRrMWRyTnhEYzhEY2R5bVpOSXlB?oc=5",
-      "preferenceScore": 105
-    },
-    {
-      "title": "Silo season three: Find out more about the new season",
-      "summary": "",
-      "meta": "Thu 13 Aug",
-      "source": "Rayo",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwdHJyNmZDek4yaGNRRklFdlMtcjBJaGt3cXF2dTROTUFVa0hiZDFjdkpzXzVYeU5YY0NkcFF2ZG5GNF8yaXkwS2haT29KaHVpbkxvYkZEU0JfX3BOOE1HZHN4MzA1cnhuUERRUHBFd3dGNHF2cGhhQjRHOXIwaFk?oc=5",
-      "preferenceScore": 100
-    },
-    {
-      "title": "Review & recap: Silo season 3 episode 6 takes us to the doorstep of the story's original antagonist",
-      "summary": "",
-      "meta": "Fri 7 Aug",
-      "source": "Winter is Coming",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44dWRfWmtnUG5jS0Znb09sTF90SE5OUHhTRGNNZ3pSdHNFa1NTSGgyNHdmMWd3cnRHZWlUQTFsaGdrbkRSUHlGNUxPdDZBOXR4RWJVV1p5TjBPaVI1V01wSnd2bkU0SUF4b09HVlVuZmE?oc=5",
-      "preferenceScore": 100
-    },
-    {
-      "title": "Silo S3E6 Recap: \"The Drive\" --- Standing in the Way of Control",
-      "summary": "",
-      "meta": "Fri 7 Aug",
-      "source": "TV Obsessive",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdEFiOUdlVFQtNDVGVDl3RzZOTWNFYkFXSF9KeU1QUGE1cE5QTzNPN0hvUWhHLUxUOUxVYWZRTHJxbFJZb1RFUnpMVTFjM1prOVRrYmVLbmxyMmFwN1RvRlFaX2EyUno2c040Tk9QQng1Z1Q1enlpckhEUXNobUxBTk9abTQ3LW9aSXJtQkYtUFBhVjFlMmww?oc=5",
-      "preferenceScore": 100
-    },
-    {
-      "title": "New documentary now available about Edradynate Estate gamekeeper David Campbell’s conviction for murder",
-      "summary": "",
-      "meta": "Tue 11 Aug",
-      "source": "Raptor Persecution UK",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOU2pNS0N2OGpuYlByNm83OC1aTXNWT3hYT0E1b09RbG5BT2U1ZUlINk4tT2ZhaWR0RlE2bjQxS1doZTRvZ0M0WUxaZmEwTThzRzNjNUREX2FNaWo5SEdiWWRTMHdwYWNxR0JHS1ZDN1A5cDFNbkVUMFlubHE2VUNtV05KZGtNc3FlTTFETmFkOXBMV1JZMkFpcjZmdXFVMWxiajBrMlJzWV9UTkNiamJKeFBLdVJMVldmdExfa3ppX0NkQ0phcFR3dXF0bzBtT2tlUEZRMVVNN190aVdMVkdr?oc=5",
-      "preferenceScore": 85
     }
   ],
   "sections": {
     "Sweden": [
-      {
-        "title": "Sweden introduces new safeguards for funds facing large withdrawals",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "AMWatch",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5"
-      },
       {
         "title": "Man with dementia given days to leave Sweden",
         "summary": "",
@@ -564,11 +517,25 @@
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5"
       },
       {
+        "title": "Sweden introduces new safeguards for funds facing large withdrawals",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "AMWatch",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5"
+      },
+      {
         "title": "Post-Brexit rights for British citizens are being undermined in Sweden",
         "summary": "",
         "meta": "Sat 15 Aug",
         "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ012N3ppZ1JkZjdiamZyNGlFazdDZHZNM1N1UzNwUjlMUGV1TjBtRU9NSUhWRFBaYU5lOE9EamVjTm9OU0U5T3JMTFRmVDZZN1B6TnpBRXNtVE5JUm1jMlpkcFRXQ1lFZHVyODc2ZWdyM1M3ekszMjFPRXdvNGpYRGJ1LURka2l2ajdROVBkRF9WV25tRUdHYXR1S2QzbndBMHd0Q1UyZGYwRFNkUXY4cWhDYkNMQQ?oc=5"
+      },
+      {
+        "title": "British dementia patient facing 'inhumane' deportation from Sweden",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "lbc.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlZyZjUyUnR0WGFCSDd1dTJoaFJoclFjc0VLcXB5a2FpdG1Mb1JYcThCOWtOSXFKT1RaQXJubjhNM2FZaWRqZEdFdDliRkU4ODdIcGIyejFFaGFXT3RkcGRUeU1JX2dBaHRYMnBKaEdPcnB4SzdidzJUN0Y3cXh5b3pHUlN0SU4yb09YeWNxSmZxN0JpQU9Eckc1MDU?oc=5"
       },
       {
         "title": "Swedish group strikes deal for cybersecurity software specialist",
@@ -585,18 +552,11 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRUF5SVAwWWl5bDk5YWhiaF8tYy03bUs2T25kVWRRRS10WjBjelQyS3pFR054UFd3NmcwanFUY0NfYkphNE14SFQ0bFQzMFMwcWZlZlBnQW5vcDYta0tHWnkzMVZ6Tm1yYks4c2hXQUVVZ0NsVndFMjRKSzN2M3MtTXdndFk5M0hsdVptUXRYM2xldw?oc=5"
       },
       {
-        "title": "British dementia patient facing 'inhumane' deportation from Sweden",
+        "title": "Sweden's Systematic Growth acquires UK cyber firm 4Secure",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "lbc.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlZyZjUyUnR0WGFCSDd1dTJoaFJoclFjc0VLcXB5a2FpdG1Mb1JYcThCOWtOSXFKT1RaQXJubjhNM2FZaWRqZEdFdDliRkU4ODdIcGIyejFFaGFXT3RkcGRUeU1JX2dBaHRYMnBKaEdPcnB4SzdidzJUN0Y3cXh5b3pHUlN0SU4yb09YeWNxSmZxN0JpQU9Eckc1MDU?oc=5"
-      },
-      {
-        "title": "Herlings And Sacha Coenen Light Up Uddevalla At The MXGP of Sweden",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "superbike-news.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcGgxbHBCWGFZRHZKQmpsRUNObVNqeVluWHBmUzloSUpHdlJ6ZXh2Q21GaW1vSTdVZjFIYzdZYTd2NExHQW5KRE5QMHNoSDE3NEVLZXBzaHF4WkNrdmRpb0J2N05kVEFZMVRLWFBnbW5pWkhBRnNLekN2ZjRpTXNzRENPbnBOVWpUQm9KNUNXX2I4Nnowd1Y1d2IxcFhQMlZQQlE?oc=5"
+        "source": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNV0dvN2FVUUk1bDJlbHFKRmlIVWVodUVvcDYzVVFqOHpWbnJaRzhqWmpoSTFiMGJmdlg2WGFwYWhieUZMY245YXo0WFAwdXlYWmNWRzB5RVBUM1dUVWEzb3hDR25VRjdSZjE4R2VCYS1PSk15ZzNsQ1dHN2VSS19OazFjQjg4OG4xb0JzZlhacUVOTnRRblE?oc=5"
       }
     ],
     "Local news": [
@@ -611,7 +571,7 @@
         "title": "London's 'smartest' borough where nearly half of students get top A level grades",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "My London",
+        "source": "mylondon.news",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXRReFlwNHhKTjdIT0o3ZXJwenV4UHYwTjJLRU1FeGNnbzhYdll5WkMxZkM3eGxWZmN2WnlyWlR0SUlCVDFnSzBRUU93R0RjWDBQcmdVT1NFY2hmWVJ0TGFpTTRHeHNYV3A1aVJTOHliNDdoNEpCcUJSZjZuQVNwM0xWU216Q0pyZXM0S2VyVkszZXlOTy03SQ?oc=5"
       },
       {
@@ -680,18 +640,18 @@
         "url": "https://www.bbc.co.uk/weather/articles/cy8eevy3zzxo?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Burnham exchanged messages with White House imposter",
+        "summary": "Downing Street has declined to comment on the security breach, first reported by Politico.",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/clyvj5zdjj2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Post-mortems due on five boys killed in crash on wrong side of motorway that injured four in Ireland",
         "summary": "Three women and a child who were in a second car are being treated in hospital for serious injuries.",
         "meta": "Mon 17 Aug",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/ce8lx172kero?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
-        "summary": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
-        "meta": "Mon 17 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "History for Hunt and Asher-Smith in golden finish for GB",
@@ -731,18 +691,18 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dTVDemdEenVhTkxBR21iTDlOVEZsUTZHOTZ5MFZUaDNPdmJKcDRzQ0ZzZlZNM210Sk9oTmkzR2dyREg1ZFBWLTJwbEVfdzVlWFNSWVM5UXF3clZDbzZ2RzBkX0NhZzA?oc=5"
       },
       {
-        "title": "IBM, OpenAI Partner to Accelerate Secure Enterprise AI Deployment",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "The Fast Mode",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZVR2Mk5iczJ0LXM4NGppNXFOcHRwc3U3bjlVN0N3SDZ2eDdhVVhOb2N2cnd0WGdQWl8yNUJET25xdzhFTkJIMUF6VXREX2dXQ1FsY2JUNHVwaTQybWNRaXpodkZNT2M1NXhaQWltQ1hoU29ROWxzN0NYVnF4WE5vVV93VzhFN2lpX3pyX0NGT0dMUkloVUhlUUtDZEdCSy05NGkyVElmRmNpZEM0bU1yU01NTjB2UGRkZS1v?oc=5"
-      },
-      {
         "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
         "summary": "",
         "meta": "Sun 16 Aug",
         "source": "TechCrunch",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZGtCM3JXUkxNNHZZZU45ckJ6VHZRd2NxUWxUZWRVeGZKVFFWc3pYWFl4eDRtbV9BWVFLdFpBVkxCVllBdG01d3cxdmxfZXRKZjI3bU1fM2FDa1htRnJKNy1DR3pwRTgxY0gzY2oxSjl2eVBXd2hKWjRLMy10SzY5N1N1akYybGhlejFMRmJ4dkRfZENQWUtQb0RMV2czSUs2TWc?oc=5"
+      },
+      {
+        "title": "IBM, OpenAI Partner to Accelerate Secure Enterprise AI Deployment",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "The Fast Mode",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZVR2Mk5iczJ0LXM4NGppNXFOcHRwc3U3bjlVN0N3SDZ2eDdhVVhOb2N2cnd0WGdQWl8yNUJET25xdzhFTkJIMUF6VXREX2dXQ1FsY2JUNHVwaTQybWNRaXpodkZNT2M1NXhaQWltQ1hoU29ROWxzN0NYVnF4WE5vVV93VzhFN2lpX3pyX0NGT0dMUkloVUhlUUtDZEdCSy05NGkyVElmRmNpZEM0bU1yU01NTjB2UGRkZS1v?oc=5"
       },
       {
         "title": "OpenAI reportedly disbanded its preparedness team",
@@ -752,11 +712,11 @@
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSHRPU0RWLUlmU1FiVnYzSUoxN29PMnpHY3hmQ1pkUGREeDZZNmY5ZzA0R1hDdmgzWlBqNmNhaF9haVZ1YjM4SVlXRXRvSmQyZmFQTEdZMXhGalBMSXdwWVJGcTVhVExKZzFITG5yV2NDOVhfRGNoVUdhakFfYlc4emhZc0xLZTJZcnpVa1d4OTdoUVdmSVpR?oc=5"
       },
       {
-        "title": "Chinese AI company Zhipu claims its new is a better bug-finder than Anthropic, OpenAI",
+        "title": "Anthropic could be valued at more than $2trn in record IPO",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "The Register",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNa2JLdmJWM2ZvaDJJRTJZTXU3Rl91d3ZQQ2hWWmFfQ3RqcHRfQld2TnBid2h4dkRhUFBQTjkxNVpVRXViRnY1Ym9OMkVpMV9rRVhxSGFVLTVrcUpsU2ZDNGNUSVZrcDZoRU9vNzJQUElnRlpqd2oyUHNJZFBfNFRKWkd4OUNCaExiUTNjVDdQV2U3bzFLYy14OVRjcUlFUmxWa01lcjhmOGx6Y0hsR2dndW5ENmdmeFpCUFFSNVFUVm0zU1JiMVhacDdlVkJWRGVpM1JtazNnWQ?oc=5"
+        "source": "bmmagazine.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuZFZtZ0N6dzliOTVDdzhKY1Jib3VLSlBNNkJUQ2lyYXAxWjAyWjdKNjFIMjNjWldiNngxMFlwOG5zOVFEeVNVLWJCVTUyYzY5QUw0WDRjSVpSSzdkTVJFZ2M3VVJHUEpNWk93dDlGQzY?oc=5"
       }
     ],
     "Career": [
