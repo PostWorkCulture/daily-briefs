@@ -1,0 +1,44 @@
+name: Responsive UI check
+
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'pete/**'
+      - 'sofia/**'
+      - 'css/**'
+      - 'js/**'
+      - 'scripts/responsive_ui_check.py'
+      - '.github/workflows/responsive-ui-check.yml'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/responsive_ui_check.py'
+      - '.github/workflows/responsive-ui-check.yml'
+
+jobs:
+  responsive-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install browser test dependencies
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Start local site
+        run: |
+          python -m http.server 4173 >/tmp/daily-briefs-http.log 2>&1 &
+          sleep 2
+
+      - name: Check mobile and desktop layouts
+        run: python scripts/responsive_ui_check.py
