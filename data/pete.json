@@ -1,7 +1,7 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 8:40am",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 9:15am",
   "weather": {
-    "temp": "20°",
+    "temp": "22°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 4,
@@ -19,18 +19,18 @@
         "date": "2026-08-18",
         "high": 26,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-19",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -39,7 +39,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -123,20 +123,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -148,6 +134,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "St Pauls Camp 8.15 - 5.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "0964keure928mhs30mr5v8as47",
       "calendarColorSource": "google"
     },
     {
@@ -495,11 +495,11 @@
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTnZ3OVpmelZVZVpFam9UdkE0UzlibEt0cFFtalRLeHhrN0pZVi16VkZOanlZY0dPRFpFM2NEN1J5ZE9Lb0F5aEVGanNfSlNGYnY3MUhTaTJVME0wYnNTaTZhNXJHUzNDelBZRlZXLWdjSWhySGptNkx6LXd1TjRtekt4QXg5bE9SeFZ5NzJ6c0FnaDY1?oc=5"
       },
       {
-        "title": "Watch us lift the Community Shield!",
+        "title": "Arteta drops clear triple transfer hint with Arsenal team selection",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONmZQMU1OQ2htRUhseXVrWnQtU1VhVVFrMk1oQV83alduOEptc2FZdThUbWN1ZXFqOGRrX011OHRRbWltN282bHRjRzFVN1EzSjltWEdNOG9NZDgxM1dVdk54clgxejZyYUVKSlc5TzkzNUpXdUhrdTNtQU5icGlmQW5R?oc=5"
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZlNhMGZLN0RUMTd6UGdEU0RKM0FSUDkzdllOTGZTRVlwaEgtcEVHOG9vR2djRnRMSXE1d1NONWVYaHNGSTBISXJDaUZFVjhSRUd3RmROZTFIQTloYkpMT2JlTEN3ZlpxVkR3bGJleGRRajVfS1h5ekphdmhkTnhDdmpGTjN4d3dXOTRZVTRaZlZJVHp4Qm5nWE1OUWlodi1hT3VzX3ZzenQ?oc=5"
       }
     ],
     "sources": [
@@ -556,7 +556,7 @@
       "title": "Silo season 3 release schedule: When is episode 7 out on Apple TV?",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "Radio Times",
+      "source": "radiotimes.com",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4ODhaRXdvSTcweEdwSm9keXprVnBtbGlvRHd4MGxqejktX2FRWVBidmpGcG1yZnJIQTNrNHlBMHd3NEN2ZWVjSXRxbGxsUlBtdzBhTkpnVEplT0w0WXo2Tmc5Um0xWDgwbFlhZ2d2aVBibnYzRGFv?oc=5",
       "preferenceScore": 130
     },
@@ -677,11 +677,11 @@
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSHRPU0RWLUlmU1FiVnYzSUoxN29PMnpHY3hmQ1pkUGREeDZZNmY5ZzA0R1hDdmgzWlBqNmNhaF9haVZ1YjM4SVlXRXRvSmQyZmFQTEdZMXhGalBMSXdwWVJGcTVhVExKZzFITG5yV2NDOVhfRGNoVUdhakFfYlc4emhZc0xLZTJZcnpVa1d4OTdoUVdmSVpR?oc=5"
       },
       {
-        "title": "Anthropic could be valued at more than $2trn in record IPO",
+        "title": "Chinese AI company Zhipu claims its new is a better bug-finder than Anthropic, OpenAI",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Business Matters",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuZFZtZ0N6dzliOTVDdzhKY1Jib3VLSlBNNkJUQ2lyYXAxWjAyWjdKNjFIMjNjWldiNngxMFlwOG5zOVFEeVNVLWJCVTUyYzY5QUw0WDRjSVpSSzdkTVJFZ2M3VVJHUEpNWk93dDlGQzY?oc=5"
+        "source": "The Register",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNa2JLdmJWM2ZvaDJJRTJZTXU3Rl91d3ZQQ2hWWmFfQ3RqcHRfQld2TnBid2h4dkRhUFBQTjkxNVpVRXViRnY1Ym9OMkVpMV9rRVhxSGFVLTVrcUpsU2ZDNGNUSVZrcDZoRU9vNzJQUElnRlpqd2oyUHNJZFBfNFRKWkd4OUNCaExiUTNjVDdQV2U3bzFLYy14OVRjcUlFUmxWa01lcjhmOGx6Y0hsR2dndW5ENmdmeFpCUFFSNVFUVm0zU1JiMVhacDdlVkJWRGVpM1JtazNnWQ?oc=5"
       }
     ],
     "Arsenal news": [
@@ -714,18 +714,18 @@
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTnZ3OVpmelZVZVpFam9UdkE0UzlibEt0cFFtalRLeHhrN0pZVi16VkZOanlZY0dPRFpFM2NEN1J5ZE9Lb0F5aEVGanNfSlNGYnY3MUhTaTJVME0wYnNTaTZhNXJHUzNDelBZRlZXLWdjSWhySGptNkx6LXd1TjRtekt4QXg5bE9SeFZ5NzJ6c0FnaDY1?oc=5"
       },
       {
+        "title": "Arteta drops clear triple transfer hint with Arsenal team selection",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZlNhMGZLN0RUMTd6UGdEU0RKM0FSUDkzdllOTGZTRVlwaEgtcEVHOG9vR2djRnRMSXE1d1NONWVYaHNGSTBISXJDaUZFVjhSRUd3RmROZTFIQTloYkpMT2JlTEN3ZlpxVkR3bGJleGRRajVfS1h5ekphdmhkTnhDdmpGTjN4d3dXOTRZVTRaZlZJVHp4Qm5nWE1OUWlodi1hT3VzX3ZzenQ?oc=5"
+      },
+      {
         "title": "Watch us lift the Community Shield!",
         "summary": "",
         "meta": "Mon 17 Aug",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONmZQMU1OQ2htRUhseXVrWnQtU1VhVVFrMk1oQV83alduOEptc2FZdThUbWN1ZXFqOGRrX011OHRRbWltN282bHRjRzFVN1EzSjltWEdNOG9NZDgxM1dVdk54clgxejZyYUVKSlc5TzkzNUpXdUhrdTNtQU5icGlmQW5R?oc=5"
-      },
-      {
-        "title": "Arsenal take big step towards Gabriel Jesus deal as £5.1m transfer is confirmed",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd2Y5M0JuQkxnUG4zYkl1aU1KVm1oSVQwaVZ4SGtKZU5EMXNNOGlxcjFuZHQ3ZVQxR3JOVWFILVhmOVRmX2MzcFBvWklvUUN6ekFJWmxkTXdWYzlDcjVNcXBNNS1PY2FiWE81TGpwMTlSbXFseHpCLXR1Y3pOQWFZTVlEckd6YzF1RzF2V3lrZVdwLWxZdWNaWjF4QTR0QV9EYmc?oc=5"
       },
       {
         "title": "Community Shield highlights: Arsenal 3-0 Man City",
@@ -735,11 +735,11 @@
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaWhRNzQ5Z0VOODF2X3U5M2lhTzQzVFFWOVJiWl8weC12dGJSekhObXpkSnA5XzM4MGRCcjdNNjRveEhtUTZKcW43cGtrdmxuS1NSeUdCUWFDTlJUV1dvY2Y2QmpIZk40cnNRSWQ0Y3lkVlNnWDRZTVdwMjI5aWFhWU5uRHRQS2JPVlZ6T0FzNFMzMmZu?oc=5"
       },
       {
-        "title": "Arteta drops clear triple transfer hint with Arsenal team selection",
+        "title": "Arsenal take big step towards Gabriel Jesus deal as £5.1m transfer is confirmed",
         "summary": "",
         "meta": "Mon 17 Aug",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZlNhMGZLN0RUMTd6UGdEU0RKM0FSUDkzdllOTGZTRVlwaEgtcEVHOG9vR2djRnRMSXE1d1NONWVYaHNGSTBISXJDaUZFVjhSRUd3RmROZTFIQTloYkpMT2JlTEN3ZlpxVkR3bGJleGRRajVfS1h5ekphdmhkTnhDdmpGTjN4d3dXOTRZVTRaZlZJVHp4Qm5nWE1OUWlodi1hT3VzX3ZzenQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd2Y5M0JuQkxnUG4zYkl1aU1KVm1oSVQwaVZ4SGtKZU5EMXNNOGlxcjFuZHQ3ZVQxR3JOVWFILVhmOVRmX2MzcFBvWklvUUN6ekFJWmxkTXdWYzlDcjVNcXBNNS1PY2FiWE81TGpwMTlSbXFseHpCLXR1Y3pOQWFZTVlEckd6YzF1RzF2V3lrZVdwLWxZdWNaWjF4QTR0QV9EYmc?oc=5"
       }
     ],
     "Local news": [
@@ -782,7 +782,7 @@
         "title": "Students set new records for A-level grades in bumper year | A-levels",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "theguardian.com",
+        "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkc2LW42QWt2bWd5QlY3MjlFbndkdnFaNi00VlpQMnY5dGktcUhXb2xHazJtQnpvREFlQThtLVBJdFVPSHBPZ1BwNmFacWhGVGtkRjJGSmxacklJWDNPWURsNExqZkpDWEY3VTE4V0hmb2QtRm5IUVJqSVNENnpXSG5jS0VJVTR1bDh1ZU9YNGVZTlU2SzBzYzZ3?oc=5"
       },
       {
@@ -849,7 +849,7 @@
         "title": "Jason Arday’s life may be a warped fantasy. But so is this conversation around DEI",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "theguardian.com",
+        "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ1RFOVNaRFd1MXdjN09FMlFiNkRSVHhtUl9QWWVybl9kRVlPX0JBMDdxYXYteDdsVldtaDViSmF6QTBuZXVpSUlFTExDcmxXWlJudGxzLXhpNFlRVFBZWkJOQnluMEp5MElqZHl4M05SSHh1UkUyLVo2dW9YSS1SNmk0UkM?oc=5"
       },
       {

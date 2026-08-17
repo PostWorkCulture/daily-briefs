@@ -1,7 +1,7 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 8:40am",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 9:15am",
   "weather": {
-    "temp": "20°",
+    "temp": "22°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 4,
@@ -19,18 +19,18 @@
         "date": "2026-08-18",
         "high": 26,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-19",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -39,7 +39,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -123,20 +123,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -148,6 +134,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "St Pauls Camp 8.15 - 5.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-19T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "0964keure928mhs30mr5v8as47",
       "calendarColorSource": "google"
     },
     {
@@ -432,19 +432,19 @@
     }
   ],
   "lead": {
-    "title": "Man with dementia given days to leave Sweden",
+    "title": "Sweden introduces new safeguards for funds facing large withdrawals",
     "summary": "",
-    "meta": "Sun 16 Aug",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5"
+    "meta": "Mon 17 Aug",
+    "source": "AMWatch",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5"
   },
   "interests": [
     {
-      "title": "Man with dementia given days to leave Sweden",
+      "title": "Sweden introduces new safeguards for funds facing large withdrawals",
       "summary": "",
-      "meta": "Sun 16 Aug",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5",
+      "meta": "Mon 17 Aug",
+      "source": "AMWatch",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5",
       "section": "Sweden"
     },
     {
@@ -478,7 +478,7 @@
       "title": "Silo season 3 release schedule: When is episode 7 out on Apple TV?",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "Radio Times",
+      "source": "radiotimes.com",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4ODhaRXdvSTcweEdwSm9keXprVnBtbGlvRHd4MGxqejktX2FRWVBidmpGcG1yZnJIQTNrNHlBMHd3NEN2ZWVjSXRxbGxsUlBtdzBhTkpnVEplT0w0WXo2Tmc5Um0xWDgwbFlhZ2d2aVBibnYzRGFv?oc=5",
       "preferenceScore": 130
     },
@@ -550,6 +550,13 @@
   "sections": {
     "Sweden": [
       {
+        "title": "Sweden introduces new safeguards for funds facing large withdrawals",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "AMWatch",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5"
+      },
+      {
         "title": "Man with dementia given days to leave Sweden",
         "summary": "",
         "meta": "Sun 16 Aug",
@@ -560,7 +567,7 @@
         "title": "Post-Brexit rights for British citizens are being undermined in Sweden",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "theguardian.com",
+        "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ012N3ppZ1JkZjdiamZyNGlFazdDZHZNM1N1UzNwUjlMUGV1TjBtRU9NSUhWRFBaYU5lOE9EamVjTm9OU0U5T3JMTFRmVDZZN1B6TnpBRXNtVE5JUm1jMlpkcFRXQ1lFZHVyODc2ZWdyM1M3ekszMjFPRXdvNGpYRGJ1LURka2l2ajdROVBkRF9WV25tRUdHYXR1S2QzbndBMHd0Q1UyZGYwRFNkUXY4cWhDYkNMQQ?oc=5"
       },
       {
@@ -578,25 +585,18 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRUF5SVAwWWl5bDk5YWhiaF8tYy03bUs2T25kVWRRRS10WjBjelQyS3pFR054UFd3NmcwanFUY0NfYkphNE14SFQ0bFQzMFMwcWZlZlBnQW5vcDYta0tHWnkzMVZ6Tm1yYks4c2hXQUVVZ0NsVndFMjRKSzN2M3MtTXdndFk5M0hsdVptUXRYM2xldw?oc=5"
       },
       {
-        "title": "BBC Proms 2026 on Sunday morning August 16 at Royal Albert Hall, London – Swedish Chamber Orchestra & Martin Fröst. [Posted for the record.]",
-        "summary": "",
-        "meta": "Sun 16 Aug",
-        "source": "colinscolumn.com",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQYWxvVFVLTjJ0Z2R0TGIyRW9HVFhpSnphZ0VnWE1IY1ZPWVRXT1VwWXFZQnRYdFJiaWhXRGdRTWxqTG80a3B3TUNGS052dHFGSVI2YU8xdFhnX242bzhPcUhCQnh3T0t5SC1qVHBtalZZdklDRUJIRWZpb29jRG9aczlFa19NczhGSTVQb0dJWDY0SGRmOXZlNVUzVkhmcF9ncXBXVTJ1NHgyTXRvRGowajM0d0tkOTRyZ0lmT3JpSFVtVE9aelhMVlJmdXFEbjRVdEo1N2EwbFl3UEVmbEhYTnRDcXczWXFsWmFLQnRGWVMxNXM?oc=5"
-      },
-      {
-        "title": "Sweden's Systematic Growth acquires UK cyber firm 4Secure",
+        "title": "British dementia patient facing 'inhumane' deportation from Sweden",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Dealroom",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNV0dvN2FVUUk1bDJlbHFKRmlIVWVodUVvcDYzVVFqOHpWbnJaRzhqWmpoSTFiMGJmdlg2WGFwYWhieUZMY245YXo0WFAwdXlYWmNWRzB5RVBUM1dUVWEzb3hDR25VRjdSZjE4R2VCYS1PSk15ZzNsQ1dHN2VSS19OazFjQjg4OG4xb0JzZlhacUVOTnRRblE?oc=5"
+        "source": "lbc.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlZyZjUyUnR0WGFCSDd1dTJoaFJoclFjc0VLcXB5a2FpdG1Mb1JYcThCOWtOSXFKT1RaQXJubjhNM2FZaWRqZEdFdDliRkU4ODdIcGIyejFFaGFXT3RkcGRUeU1JX2dBaHRYMnBKaEdPcnB4SzdidzJUN0Y3cXh5b3pHUlN0SU4yb09YeWNxSmZxN0JpQU9Eckc1MDU?oc=5"
       },
       {
-        "title": "Swedish firm snaps up cybersecurity specialist",
+        "title": "Herlings And Sacha Coenen Light Up Uddevalla At The MXGP of Sweden",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "TheBusinessDesk.com",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOek8wMkgzcnRTMmNyYmExTzlNWURQclBmYWFraVoxSEFsU1dvMU9XN3h0ZmZlS2lXdXRpU0h2TzVzcDY1UDZQVFl1XzdjUU9lbnl2a3VrYWZhNWZFb1YxbDBIeTBXSjREZzU2Y3VQbVI3cVZReDJTVU9SZkFNbnAyOVEzRUdjWjNOOGgxSFFhalJ3LVZ3VXNBa3Flc2lJamZpMnl2QnhrYw?oc=5"
+        "source": "superbike-news.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcGgxbHBCWGFZRHZKQmpsRUNObVNqeVluWHBmUzloSUpHdlJ6ZXh2Q21GaW1vSTdVZjFIYzdZYTd2NExHQW5KRE5QMHNoSDE3NEVLZXBzaHF4WkNrdmRpb0J2N05kVEFZMVRLWFBnbW5pWkhBRnNLekN2ZjRpTXNzRENPbnBOVWpUQm9KNUNXX2I4Nnowd1Y1d2IxcFhQMlZQQlE?oc=5"
       }
     ],
     "Local news": [
@@ -639,7 +639,7 @@
         "title": "Students set new records for A-level grades in bumper year | A-levels",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "theguardian.com",
+        "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkc2LW42QWt2bWd5QlY3MjlFbndkdnFaNi00VlpQMnY5dGktcUhXb2xHazJtQnpvREFlQThtLVBJdFVPSHBPZ1BwNmFacWhGVGtkRjJGSmxacklJWDNPWURsNExqZkpDWEY3VTE4V0hmb2QtRm5IUVJqSVNENnpXSG5jS0VJVTR1bDh1ZU9YNGVZTlU2SzBzYzZ3?oc=5"
       },
       {
@@ -752,11 +752,11 @@
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSHRPU0RWLUlmU1FiVnYzSUoxN29PMnpHY3hmQ1pkUGREeDZZNmY5ZzA0R1hDdmgzWlBqNmNhaF9haVZ1YjM4SVlXRXRvSmQyZmFQTEdZMXhGalBMSXdwWVJGcTVhVExKZzFITG5yV2NDOVhfRGNoVUdhakFfYlc4emhZc0xLZTJZcnpVa1d4OTdoUVdmSVpR?oc=5"
       },
       {
-        "title": "Anthropic could be valued at more than $2trn in record IPO",
+        "title": "Chinese AI company Zhipu claims its new is a better bug-finder than Anthropic, OpenAI",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Business Matters",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuZFZtZ0N6dzliOTVDdzhKY1Jib3VLSlBNNkJUQ2lyYXAxWjAyWjdKNjFIMjNjWldiNngxMFlwOG5zOVFEeVNVLWJCVTUyYzY5QUw0WDRjSVpSSzdkTVJFZ2M3VVJHUEpNWk93dDlGQzY?oc=5"
+        "source": "The Register",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNa2JLdmJWM2ZvaDJJRTJZTXU3Rl91d3ZQQ2hWWmFfQ3RqcHRfQld2TnBid2h4dkRhUFBQTjkxNVpVRXViRnY1Ym9OMkVpMV9rRVhxSGFVLTVrcUpsU2ZDNGNUSVZrcDZoRU9vNzJQUElnRlpqd2oyUHNJZFBfNFRKWkd4OUNCaExiUTNjVDdQV2U3bzFLYy14OVRjcUlFUmxWa01lcjhmOGx6Y0hsR2dndW5ENmdmeFpCUFFSNVFUVm0zU1JiMVhacDdlVkJWRGVpM1JtazNnWQ?oc=5"
       }
     ],
     "Career": [
@@ -764,7 +764,7 @@
         "title": "Jason Arday’s life may be a warped fantasy. But so is this conversation around DEI",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "theguardian.com",
+        "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ1RFOVNaRFd1MXdjN09FMlFiNkRSVHhtUl9QWWVybl9kRVlPX0JBMDdxYXYteDdsVldtaDViSmF6QTBuZXVpSUlFTExDcmxXWlJudGxzLXhpNFlRVFBZWkJOQnluMEp5MElqZHl4M05SSHh1UkUyLVo2dW9YSS1SNmk0UkM?oc=5"
       },
       {
