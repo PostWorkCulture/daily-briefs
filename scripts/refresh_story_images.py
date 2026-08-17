@@ -15,15 +15,26 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = DATA / "story-images.json"
-UA = {"User-Agent": "Mozilla/5.0 DailyBriefs/5.0 (+https://github.com/PostWorkCulture/daily-briefs)"}
+UA = {"User-Agent": "Mozilla/5.0 DailyBriefs/6.0 (+https://github.com/PostWorkCulture/daily-briefs)"}
 TARGET_PER_PROFILE_TAB = 4
 MAX_IMAGE_BYTES = 12_000_000
 VISUAL_HASH_DISTANCE = 5
+MIN_WIDTH = 900
+MIN_HEIGHT = 500
+MIN_AREA = 650_000
+MIN_ASPECT = 1.15
+MAX_ASPECT = 2.45
+BANNED_IMAGE_HINTS = ("favicon", "sprite", "logo", "brandmark", "avatar", "icon-", "/icon/", "placeholder", "default-image", "default_image")
+BANNED_IMAGE_HOSTS = ("image.thum.io",)
+STOP = {
+    "the", "and", "for", "with", "from", "that", "this", "into", "over", "after", "before", "about", "says", "say", "new", "latest", "live", "news", "report", "reports", "update", "updates", "why", "how", "what", "when", "where", "who", "its", "their", "his", "her", "our", "your", "more", "than", "has", "have", "had", "was", "were", "will", "would", "could", "should", "not", "out"
+}
 SAM_ALTMAN = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Sam_Altman_speaking_at_TED.jpg/1280px-Sam_Altman_speaking_at_TED.jpg",
     "alt": "OpenAI CEO Sam Altman speaking on stage at TED",
     "pos": "center 32%",
     "credit": "Steve Jurvetson · CC BY 2.0 · Wikimedia Commons",
+    "curated": True,
 }
 
 
@@ -37,11 +48,27 @@ def norm_url(url: str) -> str:
         return re.sub(r"[?#].*$", "", str(url or "")).rstrip("/").lower()
 
 
-def screenshot(url: str) -> str:
-    return "https://image.thum.io/get/width/1200/crop/720/noanimate/" + url
+def title_tokens(value: str) -> set[str]:
+    return {x for x in re.findall(r"[a-z0-9]+", (value or "").lower()) if len(x) > 2 and x not in STOP}
 
 
-def og_image(url: str) -> tuple[str | None, str | None]:
+def title_relevant(article_title: str, page_title: str | None) -> bool:
+    if not page_title:
+        return False
+    a, b = title_tokens(article_title), title_tokens(page_title)
+    if not a or not b:
+        return False
+    overlap = len(a & b)
+    return overlap >= 2 or overlap / max(1, min(len(a), len(b))) >= 0.45
+
+
+def banned_image_url(url: str) -> bool:
+    low = html.unescape(url or "").lower()
+    host = urlsplit(low).netloc
+    return any(x in host for x in BANNED_IMAGE_HOSTS) or any(x in low for x in BANNED_IMAGE_HINTS)
+
+
+def og_image(url: str, article_title: str) -> tuple[str | None, str | None]:
     try:
         r = requests.get(url, headers=UA, timeout=20, allow_redirects=True)
         r.raise_for_status()
@@ -52,18 +79,19 @@ def og_image(url: str) -> tuple[str | None, str | None]:
             if tag and tag.get("content"):
                 title = tag.get("content").strip()
                 break
+        if not title:
+            title = clean = (soup.title.get_text(" ", strip=True) if soup.title else "")
         final_host = urlsplit(r.url).netloc.lower()
         if "news.google.com" in final_host or (title and title.strip().lower() == "google news"):
+            return None, title
+        if not title_relevant(article_title, title):
             return None, title
         for key in ("og:image", "og:image:secure_url", "twitter:image", "twitter:image:src"):
             tag = soup.find("meta", attrs={"property": key}) or soup.find("meta", attrs={"name": key})
             if not tag or not tag.get("content"):
                 continue
             image = urljoin(r.url, html.unescape(tag.get("content").strip()))
-            if not image.startswith("https://"):
-                continue
-            host = urlsplit(image).netloc.lower()
-            if "google" in host or "gstatic" in host:
+            if not image.startswith("https://") or banned_image_url(image):
                 continue
             return image, title
         return None, title
@@ -86,25 +114,33 @@ def hamming(a: int, b: int) -> int:
     return (a ^ b).bit_count()
 
 
-def image_fingerprint(url: str) -> tuple[str, int] | None:
+def image_info(url: str) -> tuple[str, int, int, int] | None:
     try:
+        if banned_image_url(url):
+            return None
         r = requests.get(url, headers={**UA, "Accept": "image/avif,image/webp,image/*,*/*;q=0.8"}, timeout=24)
         r.raise_for_status()
         data = r.content
         if not data or len(data) > MAX_IMAGE_BYTES:
             return None
-        byte_hash = hashlib.sha256(data).hexdigest()
         with Image.open(io.BytesIO(data)) as im:
+            im = ImageOps.exif_transpose(im)
+            width, height = im.size
+            if width < MIN_WIDTH or height < MIN_HEIGHT or width * height < MIN_AREA:
+                return None
+            aspect = width / max(height, 1)
+            if aspect < MIN_ASPECT or aspect > MAX_ASPECT:
+                return None
             visual_hash = dhash(im)
-        return byte_hash, visual_hash
+        return hashlib.sha256(data).hexdigest(), visual_hash, width, height
     except Exception:
         return None
 
 
-def visually_used(fp: tuple[str, int] | None, used: list[tuple[str, int]]) -> bool:
-    if not fp:
+def visually_used(info: tuple[str, int, int, int] | None, used: list[tuple[str, int]]) -> bool:
+    if not info:
         return False
-    byte_hash, visual_hash = fp
+    byte_hash, visual_hash, _, _ = info
     return any(byte_hash == prior_byte or hamming(visual_hash, prior_visual) <= VISUAL_HASH_DISTANCE for prior_byte, prior_visual in used)
 
 
@@ -152,7 +188,6 @@ def candidates(payload: dict, profile: str) -> dict[str, list[dict]]:
         "arsenal": unique(arsenal),
         "ai": unique(sections.get("AI") or []),
         "career": unique(sections.get("Career") or []),
-        "watch": unique(payload.get("watch") or []),
     }
 
 
@@ -167,29 +202,30 @@ def main() -> None:
     used_images: set[str] = set()
     used_fingerprints: list[tuple[str, int]] = []
     metadata_cache: dict[str, tuple[str | None, str | None]] = {}
-    fingerprint_cache: dict[str, tuple[str, int] | None] = {}
+    info_cache: dict[str, tuple[str, int, int, int] | None] = {}
 
-    def acceptable(rule: dict, profile_used: set[str]) -> tuple[bool, str, tuple[str, int] | None]:
+    def acceptable(rule: dict, profile_used: set[str]) -> tuple[bool, str, tuple[str, int, int, int] | None]:
         src = rule.get("src", "")
         key = norm_url(src)
-        if not key or key in used_images or key in profile_used:
+        if not key or key in used_images or key in profile_used or banned_image_url(src):
             return False, key, None
-        if key not in fingerprint_cache:
-            fingerprint_cache[key] = image_fingerprint(src)
-        fp = fingerprint_cache[key]
-        if visually_used(fp, used_fingerprints):
-            return False, key, fp
-        return True, key, fp
+        if key not in info_cache:
+            info_cache[key] = image_info(src)
+        info = info_cache[key]
+        if not info or visually_used(info, used_fingerprints):
+            return False, key, info
+        return True, key, info
 
     for profile, payload in profiles.items():
-        for tab, items in candidates(payload, profile).items():
+        for _, items in candidates(payload, profile).items():
             count = 0
             used_in_this_profile: set[str] = set()
             for item in items:
                 if count >= TARGET_PER_PROFILE_TAB:
                     break
                 url = item.get("url", "").strip()
-                if not url:
+                title = item.get("title", "").strip()
+                if not url or not title:
                     continue
                 if url in result:
                     key = norm_url(result[url]["src"])
@@ -198,56 +234,57 @@ def main() -> None:
                         count += 1
                     continue
 
-                hay = f"{item.get('title','')} {item.get('source','')} {url}".lower()
+                hay = f"{title} {item.get('source','')} {url}".lower()
                 proposals: list[dict] = []
                 if "openai" in hay or "chatgpt" in hay:
                     proposals.append(dict(SAM_ALTMAN))
 
                 if url not in metadata_cache:
-                    metadata_cache[url] = og_image(url)
+                    metadata_cache[url] = og_image(url, title)
                 image, page_title = metadata_cache[url]
                 if image:
-                    proposals.append({"src": image, "alt": page_title or item.get("title") or "Story image", "pos": "center"})
-                proposals.append({"src": screenshot(url), "alt": item.get("title") or "Story image", "pos": "center"})
+                    proposals.append({"src": image, "alt": page_title or title, "pos": "center"})
 
                 chosen = None
                 chosen_key = ""
-                chosen_fp = None
+                chosen_info = None
                 for rule in proposals:
-                    ok, key, fp = acceptable(rule, used_in_this_profile)
+                    ok, key, info = acceptable(rule, used_in_this_profile)
                     if ok:
-                        chosen, chosen_key, chosen_fp = rule, key, fp
+                        chosen, chosen_key, chosen_info = rule, key, info
                         break
                 if not chosen:
                     continue
 
+                chosen.pop("curated", None)
                 result[url] = chosen
                 used_images.add(chosen_key)
                 used_in_this_profile.add(chosen_key)
-                if chosen_fp:
-                    used_fingerprints.append(chosen_fp)
+                if chosen_info:
+                    used_fingerprints.append((chosen_info[0], chosen_info[1]))
                 count += 1
 
     seen_urls = {}
     seen_fps: list[tuple[str, str, int]] = []
     for article_url, rule in result.items():
         src = rule.get("src") if isinstance(rule, dict) else None
-        if not isinstance(src, str) or not src:
-            raise SystemExit(f"invalid story image rule for {article_url}")
+        if not isinstance(src, str) or not src or banned_image_url(src):
+            raise SystemExit(f"invalid or banned story image rule for {article_url}")
         key = norm_url(src)
         if key in seen_urls and seen_urls[key] != article_url:
             raise SystemExit(f"duplicate image URL assigned to {article_url} and {seen_urls[key]}")
         seen_urls[key] = article_url
-        fp = fingerprint_cache.get(key)
-        if fp:
-            byte_hash, visual_hash = fp
-            for prior_article, prior_byte, prior_visual in seen_fps:
-                if byte_hash == prior_byte or hamming(visual_hash, prior_visual) <= VISUAL_HASH_DISTANCE:
-                    raise SystemExit(f"visually duplicate image assigned to {article_url} and {prior_article}")
-            seen_fps.append((article_url, byte_hash, visual_hash))
+        info = info_cache.get(key)
+        if not info:
+            raise SystemExit(f"story image failed quality validation for {article_url}")
+        byte_hash, visual_hash, _, _ = info
+        for prior_article, prior_byte, prior_visual in seen_fps:
+            if byte_hash == prior_byte or hamming(visual_hash, prior_visual) <= VISUAL_HASH_DISTANCE:
+                raise SystemExit(f"visually duplicate image assigned to {article_url} and {prior_article}")
+        seen_fps.append((article_url, byte_hash, visual_hash))
 
     OUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(result)} unique story/TV image rules to {OUT}")
+    print(f"Wrote {len(result)} premium unique article image rules to {OUT}")
 
 
 if __name__ == "__main__":
