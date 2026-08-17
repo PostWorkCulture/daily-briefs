@@ -7,11 +7,12 @@
   <title>Daily Briefs</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/features.css">
-  <link rel="stylesheet" href="css/tabs-dida.css?v=20260817d">
-  <link rel="stylesheet" href="css/story-weather.css?v=20260817d">
-  <link rel="stylesheet" href="css/aurora-nav.css?v=20260817d">
-  <link rel="stylesheet" href="css/tv-picks-restored.css?v=20260817d">
-  <link rel="stylesheet" href="css/arsenal-result-image.css?v=20260817d">
+  <link rel="stylesheet" href="css/tabs-dida.css?v=20260817e">
+  <link rel="stylesheet" href="css/story-weather.css?v=20260817e">
+  <link rel="stylesheet" href="css/aurora-nav.css?v=20260817e">
+  <link rel="stylesheet" href="css/nav-cannon.css?v=20260817e">
+  <link rel="stylesheet" href="css/tv-picks-restored.css?v=20260817e">
+  <link rel="stylesheet" href="css/arsenal-result-image.css?v=20260817e">
 </head>
 <body>
   <main class="app-shell">
@@ -29,13 +30,10 @@
       <section class="hero">
         <div class="eyebrow" id="briefDate">Loading brief…</div>
         <h1 id="greeting">Morning, Pete.</h1>
-        <p id="intro">Your day, filtered down to the things worth knowing.</p>
-        <div class="status-grid" hidden>
-          <article class="status-card"><span>Weather</span><strong id="weatherTemp">—</strong><small id="weatherSummary">Loading</small></article>
-          <article class="status-card"><span>Next up</span><strong id="calendarCount">—</strong><small id="calendarSummary">calendar</small></article>
-          <article class="status-card"><span>Stories</span><strong id="storyCount">—</strong><small>fresh items</small></article>
-        </div>
       </section>
+
+      <!-- Non-visual compatibility hooks for the existing renderer. The old status cards are removed. -->
+      <div hidden aria-hidden="true"><span id="intro"></span><span id="weatherTemp"></span><span id="weatherSummary"></span><span id="calendarCount"></span><span id="calendarSummary"></span><span id="storyCount"></span></div>
 
       <section class="panel-block weather-block" id="weatherPanel">
         <div class="section-head"><h2>Weather</h2><span class="section-kicker">Met Office · KT8 2LE</span></div>
@@ -102,21 +100,22 @@
   <nav class="bottom-nav" id="primaryNav" aria-label="Primary navigation">
     <button class="active" data-view-target="home"><b>⌂</b>Home</button>
     <button data-view-target="news"><b>◫</b>News</button>
-    <button data-view-target="arsenal"><b>⚽</b>Arsenal</button>
+    <button data-view-target="arsenal"><b class="cannon-mark"><svg class="nav-cannon" viewBox="0 0 64 32" aria-hidden="true"><circle cx="18" cy="23" r="7"/><circle cx="18" cy="23" r="2.2"/><path d="M18 23h13l4-7h18v-5H34l-5 6H18"/><path d="M53 11h7v5h-7"/><path d="M11 23h14M18 16v14"/></svg></b>Arsenal</button>
     <button data-view-target="ai"><b>◇</b>AI</button>
     <button data-view-target="career"><b>↗</b>Career</button>
     <button data-view-target="dida"><b>✦</b>Dida</button>
   </nav>
 
-  <script src="js/app.js?v=20260817d" defer></script>
-  <script src="js/tabs-dida.js?v=20260817d" defer></script>
+  <script src="js/app.js?v=20260817e" defer></script>
+  <script src="js/date-cleanup.js?v=20260817e" defer></script>
+  <script src="js/tabs-dida.js?v=20260817e" defer></script>
   <script src="js/calendar-cleanup.js" defer></script>
-  <script src="js/weather-met.js?v=20260817d" defer></script>
-  <script src="js/weather-extremes.js?v=20260817d" defer></script>
+  <script src="js/weather-met.js?v=20260817e" defer></script>
+  <script src="js/weather-extremes.js?v=20260817e" defer></script>
   <script src="js/tonight-cleanup.js" defer></script>
   <script src="js/scenery-facts.js" defer></script>
-  <script src="js/story-images-enhance.js?v=20260817d" defer></script>
-  <script src="js/tv-picks-artwork.js?v=20260817d" defer></script>
-  <script src="js/arsenal-result-image.js?v=20260817d" defer></script>
+  <script src="js/story-images-enhance.js?v=20260817e" defer></script>
+  <script src="js/tv-picks-artwork.js?v=20260817e" defer></script>
+  <script src="js/arsenal-result-image.js?v=20260817e" defer></script>
 </body>
 </html>
