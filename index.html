@@ -7,7 +7,9 @@
   <title>Daily Briefs</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/features.css">
-  <link rel="stylesheet" href="css/tabs-dida.css?v=20260817a">
+  <link rel="stylesheet" href="css/tabs-dida.css?v=20260817b">
+  <link rel="stylesheet" href="css/story-weather.css?v=20260817b">
+  <link rel="stylesheet" href="css/aurora-nav.css?v=20260817b">
 </head>
 <body>
   <main class="app-shell">
@@ -36,6 +38,7 @@
       <section class="panel-block weather-block" id="weatherPanel">
         <div class="section-head"><h2>Weather</h2><span class="section-kicker">Met Office · KT8 2LE</span></div>
         <div class="forecast-strip" id="forecastStrip"></div>
+        <div class="uk-yesterday" id="yesterdayExtremes" hidden></div>
       </section>
 
       <section class="panel-block calendar-block calendar-priority" id="calendarSection">
@@ -103,11 +106,13 @@
     <button data-view-target="dida"><b>✦</b>Dida</button>
   </nav>
 
-  <script src="js/app.js?v=20260817a" defer></script>
-  <script src="js/tabs-dida.js?v=20260817a" defer></script>
+  <script src="js/app.js?v=20260817b" defer></script>
+  <script src="js/tabs-dida.js?v=20260817b" defer></script>
   <script src="js/calendar-cleanup.js" defer></script>
-  <script src="js/weather-met.js" defer></script>
+  <script src="js/weather-met.js?v=20260817b" defer></script>
+  <script src="js/weather-extremes.js?v=20260817b" defer></script>
   <script src="js/tonight-cleanup.js" defer></script>
   <script src="js/scenery-facts.js" defer></script>
+  <script src="js/story-images-enhance.js?v=20260817b" defer></script>
 </body>
 </html>
