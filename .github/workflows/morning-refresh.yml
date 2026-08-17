@@ -43,6 +43,7 @@ jobs:
           python scripts/enrich_weather_v2.py
           python scripts/enrich_arsenal.py
           python scripts/finalize_arsenal.py
+          python scripts/enrich_next_fixture.py
           python scripts/enrich_tv_picks.py
           python scripts/refresh_story_images.py
 
@@ -60,6 +61,16 @@ jobs:
               picks=data.get('watch') or []
               assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
+
+          pete=json.loads((Path('data')/'pete.json').read_text())
+          fixture=(pete.get('arsenal') or {}).get('nextFixture')
+          if fixture:
+              required=('opponent','stadium','kickoff','competition','tvChannel')
+              for key in required:
+                  assert str(fixture.get(key) or '').strip(), f'Arsenal next fixture missing {key}'
+              previous=fixture.get('previousMeeting') or {}
+              assert str(previous.get('score') or '').strip(), 'Arsenal next fixture missing previous-meeting score'
+
           rules=json.loads(Path('data/story-images.json').read_text())
           seen={}
           for article,rule in rules.items():
@@ -68,7 +79,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} unique story image rules and programme-first TV Picks')
+          print(f'Validated {len(rules)} unique story image rules, programme-first TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
