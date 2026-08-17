@@ -1,10 +1,10 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 5:07pm",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 9:31pm",
   "weather": {
-    "temp": "26°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 10,
+    "temp": "23°",
+    "summary": "Clear",
+    "condition": "Clear",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-08-17",
@@ -12,34 +12,34 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-08-18",
-        "high": 26,
+        "high": 25,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-19",
-        "high": 25,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-08-20",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -62,17 +62,17 @@
       },
       {
         "date": "2026-08-23",
-        "high": 22,
+        "high": 21,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 4,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -123,20 +123,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "WFH",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-22T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "St Pauls Camp 8.15 - 5.45",
       "summary": "",
       "url": "",
@@ -148,6 +134,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "0964keure928mhs30mr5v8as47",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "WFH",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-22T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#fbd75b",
+      "colorId": "5",
+      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
       "calendarColorSource": "google"
     },
     {
@@ -333,20 +333,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -358,6 +344,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -451,8 +451,8 @@
       "title": "Revealed: The south-west London boroughs hit by the most crime in July",
       "summary": "",
       "meta": "Mon 17 Aug",
-      "source": "Sutton Guardian",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaVVpdkx1WUpOMHNhU09lU3JYYnFrSHdqdEsxSV8xUnBJNE90T1EtSjc0cEZ4UVFhaEVwaXdsM2dfZF9neXJJcnBNUjBOcUpYMUViUXF3UjFUZ1dQMW5TUWlrcnNJLTIwbTM1R3I5dFJHSjl5S1B1dDVUSDhtS1hpcUYzcnBFLWE5cWpXbkNJWFI0a0I2YlZnX01GTnRQQQ?oc=5",
+      "source": "London Now",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5",
       "section": "Local"
     },
     {
@@ -517,25 +517,18 @@
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5"
       },
       {
+        "title": "Swedish Chamber Orchestra/Fröst review – dance, dynamism and a wild rumpus as maverick clarinettist-conductor takes charge",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYlFQYmFTTE1zc005ZDFNQWpBRVhWM2hRWHVTUzFXcFJUVmpPWU9aZmwyQnpzN083dlhDT21WZ2RVMVcwUFlpcUFnMnpNSk9HSDJpUlZhZ1ZpcW9FMDZGcFB2UkpvN0NRQ0JfVlhrYTIwTW15YVBDbkhUTnZGV3Y5Tmc1b294dTE5aWYxS0RUOVB4Nmk2YlFPSldfNENRc244QWJaT19B?oc=5"
+      },
+      {
         "title": "Sweden introduces new safeguards for funds facing large withdrawals",
         "summary": "",
         "meta": "Mon 17 Aug",
         "source": "AMWatch",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93ZnlCSnB2cGNjSjJDcG1saUM5WnY3SGNzWGRTQXlqNWFBYzFUS3NxTFFZV19MTUhlY3loSzVCbC1CMnJ2dlN6NXM4NjFLUkplT3NGSWFBTWNHQkVjZzljbzY2eGtUY0U1RTN6NTZVaw?oc=5"
-      },
-      {
-        "title": "Offshore wind in Sweden \"a bit like a gamble\": Skyborn would welcome auctions",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "EnergyWatch",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrX0lBeWVOemdBTVJnTXFoVFMzbFNwdDl5d0E5bXg4dGp3NTg2ZFk5OG9WdVRxMENnUjREMDlOSWJEbHZaQnVJUUJJY1ZyTnRGMlRZbjB3MUhPa05pZTlfcE5nSFdWM2ZLcFlV?oc=5"
-      },
-      {
-        "title": "British dementia patient facing 'inhumane' deportation from Sweden",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "lbc.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlZyZjUyUnR0WGFCSDd1dTJoaFJoclFjc0VLcXB5a2FpdG1Mb1JYcThCOWtOSXFKT1RaQXJubjhNM2FZaWRqZEdFdDliRkU4ODdIcGIyejFFaGFXT3RkcGRUeU1JX2dBaHRYMnBKaEdPcnB4SzdidzJUN0Y3cXh5b3pHUlN0SU4yb09YeWNxSmZxN0JpQU9Eckc1MDU?oc=5"
       },
       {
         "title": "Areim acquires Swedish logistics asset from CapMan Real Estate | News | Real Assets",
@@ -545,18 +538,25 @@
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQR3hNSzdnbTFYRTZpV0FOanA3SWRRdkEwbkgxamxyRWR5eE5sR244Nk5xZHRTQVZCc04yX3J0RUxxWS1mMkFPRG9GYjF6VldBTkNmamxSWXFUX3RsRWVtYlAyNGliSDVQR09GOG5UQkxBRUxOUzlfZWtaQXcwcWUyOWRfcHZ3YjBjaUVKSEhWUVp3TkNVdkN1TkR1S2x2YmU0a2IzWWNZS29YMGZfREpZbg?oc=5"
       },
       {
-        "title": "Swedish Chamber Orchestra/Fröst review – dance, dynamism and a wild rumpus as maverick clarinettist-conductor takes charge",
+        "title": "Offshore wind in Sweden \"a bit like a gamble\": Skyborn would welcome auctions",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYlFQYmFTTE1zc005ZDFNQWpBRVhWM2hRWHVTUzFXcFJUVmpPWU9aZmwyQnpzN083dlhDT21WZ2RVMVcwUFlpcUFnMnpNSk9HSDJpUlZhZ1ZpcW9FMDZGcFB2UkpvN0NRQ0JfVlhrYTIwTW15YVBDbkhUTnZGV3Y5Tmc1b294dTE5aWYxS0RUOVB4Nmk2YlFPSldfNENRc244QWJaT19B?oc=5"
+        "source": "energywatch.com",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrX0lBeWVOemdBTVJnTXFoVFMzbFNwdDl5d0E5bXg4dGp3NTg2ZFk5OG9WdVRxMENnUjREMDlOSWJEbHZaQnVJUUJJY1ZyTnRGMlRZbjB3MUhPa05pZTlfcE5nSFdWM2ZLcFlV?oc=5"
       },
       {
-        "title": "Sweden: Tesla ends strike by buying out employees",
+        "title": "School shooting leaves boy seriously injured as teen girl arrested",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "eurotopics.net",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNalBsQ3lMSGdXT2xJdFVqNHRQZWd3aWtvMGxxVFU5NEZHZ0pjNUxhT182ZU1KVlRjMUloQVM3TkpRbnlha3g1SnhCcFg5UVNuNEhSRUMwZ2luaFlPRzNULU1DTzZtT2ZfbllwNzNHWlN6OUpfQ3ZPTnI1ekFwZENrTFVXbXRwUnBiVl9jNi1n?oc=5"
+        "source": "manchestereveningnews.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRnU4dnZmalA0MEpvaFVMUHFKclRKUVEySlZFVUlwRXozTVVieDN5OGphVDEzYmRZekhPSDBWTE5kUnJvLUpPSHNYZVNlbXkwVnFkV1BmdE9EYlVMb01WeGdUTEgycU1sUWNDbktjeTRRdFNVVDF3LXZWSkZJcDZyQ1ozUFVqaEl6a1FRNDVydlpZbmdURlU5akYxOGJjQm8?oc=5"
+      },
+      {
+        "title": "Eurovision: Sweden: SVT implements new Melodifestivalen age limit | ESCToday",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "esctoday.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMXBYN0VETFA2THhVX1NIQTBfR28xVVVnY0x2M0lmdWZlV0Y2Rm9wMkhNMmQ5RndJN0FDSTBMaHp1VUVCdlJzTkNwLU9LVzkyblRqckhKaHNZYTR6VVhXWmhJMG1Ya0ZNcHcybGVoSEhrVlNJWHRpWjBGYVBrWTBieEV0NDRjM1FJNVRWNU13?oc=5"
       }
     ],
     "Local news": [
@@ -564,15 +564,8 @@
         "title": "Revealed: The south-west London boroughs hit by the most crime in July",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Sutton Guardian",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaVVpdkx1WUpOMHNhU09lU3JYYnFrSHdqdEsxSV8xUnBJNE90T1EtSjc0cEZ4UVFhaEVwaXdsM2dfZF9neXJJcnBNUjBOcUpYMUViUXF3UjFUZ1dQMW5TUWlrcnNJLTIwbTM1R3I5dFJHSjl5S1B1dDVUSDhtS1hpcUYzcnBFLWE5cWpXbkNJWFI0a0I2YlZnX01GTnRQQQ?oc=5"
-      },
-      {
-        "title": "Record number of children are living in temporary accommodation",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "source": "NewStartMag",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMEdJS090eElqNGNudEhhejBWRGtTVW8xX2ZsZXRHaUdIS05ZTl9xTGFscU85ZGM0T0xUQzZ5YVlpOHBQV1FFTURyYVl0TnMwdmJJRkMzM3ZoanFxcVVNdVB3dS1xVlU3STMtem8xVENMRG5tRWE2VTZlZkZ1Y2ljWXYwUWdjZ2tyR3JqdEdnMXpsbkR2WHlLWHBrbkdSZGk1?oc=5"
+        "source": "London Now",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5"
       },
       {
         "title": "Sutton shines on national stage as borough ranks top 10 for A-levels",
@@ -582,27 +575,41 @@
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaDg1MVdtaGxrVVFTSno1SWNJRjJFalM4RVQ2Skg0MXhMaVZiQV84VTlxTWE4Qlo1SVlKUG1kaVNvYjk5blBiczlNSTQwbU5OdGd1cUJ1dW45QjF2TXFuVENNdVVKZ21Mdm51U2NFbUNwMFNfUDN4ZnViajJvZGVISnhWdm1HbWJpRERCMG9qNGtpTzN3cFE3RUltTmFkNDU5UjFoU3lOaFY?oc=5"
       },
       {
+        "title": "Record number of children are living in temporary accommodation",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "source": "NewStartMag",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMEdJS090eElqNGNudEhhejBWRGtTVW8xX2ZsZXRHaUdIS05ZTl9xTGFscU85ZGM0T0xUQzZ5YVlpOHBQV1FFTURyYVl0TnMwdmJJRkMzM3ZoanFxcVVNdVB3dS1xVlU3STMtem8xVENMRG5tRWE2VTZlZkZ1Y2ljWXYwUWdjZ2tyR3JqdEdnMXpsbkR2WHlLWHBrbkdSZGk1?oc=5"
+      },
+      {
         "title": "Residents of 'pin-drop quiet' South London neighbourhood worry about KFC 2am plans",
         "summary": "",
         "meta": "Sat 15 Aug",
         "source": "My London",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTDh1R0FvRmtyY1dLdXJUU1FMRk5Ia3RNNl9FMDJvWmxXb2RLTXZ1M2phRnRiNnFjVXRJeEJ5RXd6OVRsRkFqU3E3OGFHOG9FcHVNanFtNUNtOFhaSm1LVHoxQTBrYy04TVlKQ0MtRnBISHdKWXZSM3hKdEZ3dEtJTGdpc1ZERmd5UXlJcnpES200eGM4UlJV0gGXAUFVX3lxTE5MOHVHQW9Ga3JjV0t1clRTUUxGTkhrdE02X0UwMm9abFdvZEtNdnUzamFGdGI2cWNVdEl4QnlFd3o5VGxGQWpTcTc4YUc4b0VwdU1qcW01Q204WFpKbUtUejFBMGtjLThNWUpDQy1GcEhId0pZdlIzeEp0Rnd0S0lMZ2lzVkRGZ3lReUlyekRLbTR4YzhSUlU?oc=5"
-      },
-      {
-        "title": "Secrets of Zendaya and Tom Holland's Ultra-Private Wedding Revealed",
-        "summary": "",
-        "meta": "Sun 16 Aug",
-        "source": "okmagazine.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdHFsVDg1TW5XSndyTFUyaDM0cThaVDZxUURMejVMcUFBZTc0bnVPMUxlMWd2WEFMRVdFQnVsT3VJOEhiYjAtN2hGNl90Y2JkVDlxNEJrVHMyUkRlazNud0liWk50ZFFxQ3R6NXFENTFxVlR5MEF6VTR5cHdMYUxXXzdDQnZOaHU2OTZ3Zw?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran issue",
-        "summary": "The US and Oman have separately been negotiating to reopen the Strait of Hormuz, a waterway that has been closed during the US war with Iran.",
+        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+        "summary": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
         "meta": "Mon 17 Aug",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Tributes to actress Hayden Panettiere as coroner finds 'no signs of trauma'",
+        "summary": "The US actress, who has died at the age of 36, starred in the TV shows Heroes and Nashville.",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Fifa executive leaves job three weeks after speaking out against Infantino plan",
+        "summary": "A senior Fifa figure leaves football's world governing body three weeks after criticising its president Gianni Infantino.",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cn7n4d6vy03o?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Burnham exchanged messages with person posing as Trump's chief of staff",
@@ -624,78 +631,64 @@
         "meta": "Mon 17 Aug",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c171j051gejo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Rain on way for UK with temperatures to drop to overnight lows of 3C in some places",
-        "summary": "After an exceptional summer of heatwaves and drought, the weather will turn wetter and cooler this week, as Simon King explains",
-        "meta": "Mon 17 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/weather/articles/cy8eevy3zzxo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Boy, seven, among four injured after crash in Ireland that killed five teenagers",
-        "summary": "A car in which the five teenagers were travelling in was going the wrong way down a motorway in County Kildare.",
-        "meta": "Mon 17 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ce8lx172kero?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
       {
-        "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "NVIDIA Newsroom",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYXdyMXl0ZUs3UDVBSFo1a3BCcDg4UlZUazQxSEp1allrY1B3SEVxYnQ2RjFQVFY5T3Q1YUFYM19Jc1ZQNXVobGtZNVJBc1BPQXpFWFFsTlBvWEJqV3VRM1lCU0ZzSVlHcS14UGxUZldBaEVsdUJveHN0TXJOLURfWDBxRlJYaFdXMHREU3VSNlVrcFZncENub1czY2lGV1F6eGpGSWZiU2loYlJYVVRFZTdQSU80Q0lNZmdvX3FZQ0hTU1pjZF8weHhCRWEzeURkcDk3N1Z3?oc=5"
-      },
-      {
-        "title": "The Defender’s Window",
+        "title": "New policy ideas for the Intelligence Age",
         "summary": "",
         "meta": "Mon 17 Aug",
         "source": "OpenAI",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLQlJTY0ZsRElpT2xCTXk5N0RXX1ptdmhadm4tM1NxZDQzZ3BIVi1fcm1EdnFsZFExZFVQZ3pRdGlJbWhONy1NM3ZFLXBvRDB1UG1IWHlkUmZldw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50c2tWanNsR0xvM0w1d2hzSFJHS1FXenprdUZCQmNfZVQ2WlNNenprcEczaUcwMm9nYlAyQUwxQ05LY2UwMXpXM1ZRWHNieF91dVYtcklTRG8wQ28wc1VpRFNnSE91M0tDRTFPTHBzRWNiUHJVZVE?oc=5"
       },
       {
-        "title": "Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast, sources say",
+        "title": "Securing the Infrastructure of Intelligence",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Euronext Markets",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTjF4Y2p4cmxwOUVZbDJ1ektGNzFFMnR0Q0FCNk5rWWFFdTZZUXgzNTE1X2pJczlFV0pnYm52cmVSTUVTRE1lYXZPUWQ1T0h0aTZsMlJ0NEp0VkZXTEFjU0xUT1JJSG5NbTB3TEJXRjREeU13T1FPVFJHY1FEQkpsVFVub0VfNXZ5cm9jd2tVbVhKekVVeklMRHpNYjRFQmxBZnRmanFaelRMWXZQRWdvdnNpdHp3S0tkNkx3UTc2aHhSQQ?oc=5"
+        "source": "NVIDIA Blog",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fSFBydWFKWkl3TU5YbTZnTF9WMTJCVUZldEY2VmNHMi1KM2s2Q0ZrSW9MZE1oU1N3ZFh6UjhZZDVlZkU0QUNub0NFR2VjSWNud1dYdjZ4bDRuR0JkSXR1SWJUWHd5NFk0ZExJQUhldXo4QUd5Y2lmaXJEM0RWX2c?oc=5"
       },
       {
-        "title": "Anthropic AI Models Turn Against Each Other In Tests",
+        "title": "Claude to start watermarking AI-generated text – but will it make quality worse?",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "digit.fyi",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMkF5cGswU2ZYSWN0TzAwNjVwRHNQNzQ1Q00tNEx4ZERDb0VzS2NWdGp1MzdwTHUxRzRVNkxPLWZGMjlHU1QwSmVReVhIM3RhT3lJTUMydjh3emtCSXpGS3N4SjdiRGNGRjkxSHNjXzdwUmMzUHVKYmhQM0pzLTBndA?oc=5"
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdDhaNEwwSzdEUkZjTjdIb1JyTkl4T2JMZ2V1REVTaEhvd3owenhXallWRk5UOGltM3d0d3dqelFNV1hjbHljTDBYc0xVbWJCZTZIQWc1aHUwZFA0ZVlXZlozUGZBNEdJQmhhR3BpRmdSZHFnaF93X3V0aVp6ZnVPQnY5T3BXamdHcG1ZVHdGeGRjNUk?oc=5"
       },
       {
-        "title": "Nvidia backing $105 billion in financing for OpenAI data center in Ohio",
+        "title": "Anthropic Revenue Run Rate Surpasses $65 Billion Ahead of IPO",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONTY0SXEyaEQ3Q1pRaUhyaVdKNzBHWUJNNVdQX3V5SHRSWVdfYmYzTWJpQjhKVHd5OGRmdjFzT25reUNJX21IWFc0Z2FwY0hQcWFSRm16bURnUVVydUVuT2FDYy11TmV0T09nMDJEdVBsbTdvRWN0ckoxQ2p4b3NPRVVSd3TSAYoBQVVfeXFMUGE1ZTROeEprR2lWenlwXy12a09IbkgwRGdzQ1lTSlhzSzRUb2M2LUF1OXVwT1g5NkxMeEFxX2hleklhU0Z0Q0pZVE40eDVNT2xzRGtFQnp0U2luSVQ3bjlGMkpYNlV6UzVSRXBqUXJqV2Q2SHpkdFZIWDdSRUk1R21LbThheEN5c1VB?oc=5"
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNVktR0ZGanRzYkMwQjBWRkhfbmVfLTVxR3JpYWtRbk1HemlQbjRab2EzTmN1VDNmYmk5Z0xIWGYzVmU2b3VTRENNTy00d1RrLXBoWjFPVE5hNEQyVDdrZ1ZuTzFaczRGODM0VnpycFpDa0tTZWpFSzYyU3d1dVNwQzlicGJPTm9WdlFHczFUMzNOalhjdDIwSWZZcVltMHdsVDY2OXE4QnZOQ2laUlU4Xw?oc=5"
       },
       {
-        "title": "OpenAI Foundation pledges $100m to boost hepatitis C cure rates",
+        "title": "Anthropic’s Groundbreaking Second Quarter Delivers $11.5B In Revenue",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "pharmaphorum",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcGRJMEhlWlRKUjlXZWp1QjdRWnV2eGpqNEdVdExRaG5pUUg0c1ZSTUJaS2llQTRLZGZzNjB2MU5NNHo1dms3ZWJuNzFBWV82SzgxaEtmdExPX2lRdTlITUxJUHJ0OEtITFZaT0FIVkxFamdzdlp3Rm05U1VaUE5GNmxUZU1FMkdmWTJfaDJUSjhxck0?oc=5"
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHM2Y1Z2ZE9vWWloeE00N0hsUE53d1RkQXc1Y3hGMHcxbklvZDJOVmZUc1Z6emxsNUU0c0lGT3kxOWltaFJ5Tmp2Q0JTeURlNnp4SS13a0c4R0ljSG9uU2Q1TnBCYkZCbV92Z1c4RmJUUm0yOVdKUnd0SGlQaTYxNjFQT0cwSUdDeURqVExOajZxS0tyMk50Z2x1STVzdm1NWGxRRU9KdmFGSE5PT0MtakduMWdQMER1?oc=5"
       },
       {
-        "title": "The hyping of Anthropic’s IPO",
-        "summary": "",
-        "meta": "Sun 16 Aug",
-        "source": "Marcus on AI | Substack",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xalAzMmNyWUxzTHBEMjZpMmtDUVJsN2l6NVpBNTlDbkJKQjlvLTZmN01ZZmtrQTdQV3FIMWtVMXQ1ZER6MHF5TXdxUWY3ZTMtQWJiaXlxeDBQSF9OcEFGWndmVEp6dmpISEh1cVdFaw?oc=5"
-      },
-      {
-        "title": "Alibaba Releases Weights Of Flagship Qwen3.8-Max AI Model",
+        "title": "Anthropic’s Claude Will Add Watermarks to AI-Generated Text and Files",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Silicon UK",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NNmF0b0J0OFpPZEFGbG1qLUl1Y0t6WHRtZHFBQUViY2NCMWNuNnE2TlRtMS1yWUs1RnlDU1o5NjI0b3BNMzIxMkNwVEd4X0dpY19HYnF2WGtEUDkxUEFRMExGc0lFOGRxQ0ZV0gFrQVVfeXFMT002YXRvQnQ4Wk9kQUZsbWotSXVjS3pYdG1kcUFBRWJjY0IxY242cTZOVG0xLXJZSzVGeUNTWjk2MjRvcE0zMjEyQ3BUR3hfR2ljX0dicXZYa0RQOTFQQVEwTEZzSUU4ZHFDRlU?oc=5"
+        "source": "CNET",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTVhQkpPVGFnb3lvVXZ1UHRHOXFVNTB5eVIxUXc4b2xiNFpOVFY1QVBpN18tMm1sVDdwSTlGcEljQ2tIazZkMFlWZjM1bURnT2xmT0s4UWJlWTdVUHVTQ2ZtcVI5UW5FVkluZGpVREFoT29SMGNMaVlYRUVPZDFnX2hVdVlCQ2FBWVVnRTk4MGgyOXZFdmFXa2E0U1p1YmdLSDQ2bEFWTzJ2MDdoQnhvVUd2bVp3dFdu?oc=5"
+      },
+      {
+        "title": "Nvidia to provide up to $105 billion guarantee for OpenAI's Ohio data center",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZkxQZ0FIUUQ0X2p6bVF1NWw1eF9PQnBtRVJVbUk4eV83UkU5X0JjdmE0RnFDdkZOLVJNWWlCejVmOTdmdTFoT3FGWmhGOGVYdFdwcXNwWlAtaEVNRnFPYkZFVzhmY3ZBQ0xERGUtWFF6QWdxcVFqR2k4dkdDTkJHNURIdUJ0Rk05NE94ekVPMjYtaWNodnItODdIdGU4Qmw5bndYZ095UF9nRFc5RnRheGxtNXFCM2VWbXd5M2pCTGw?oc=5"
+      },
+      {
+        "title": "Anthropic Is Reportedly Aiming for a Valuation of $2 Trillion or More. Is It Justifiable?",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSXdRLVdObm0xYkdCdldVQXJaZ3ZlbThjMnloQkhkSThWMlRINDhzVG5Lc2FxNEhQaGNFcHB3VFpfcUZpVEhfeU4tWkpkNTRMOHdfNmZfRXl3SmlOQ0xWRG5feVAyWUpBSEphQWFNdlNXQmVaTV8zamNqNHVMTHZ5eVpQWnlCMERnVjZqdFd4a0hDOVhsbFZYcHI5YndOc1VWWXBCN2ZKUQ?oc=5"
       }
     ],
     "Career": [
