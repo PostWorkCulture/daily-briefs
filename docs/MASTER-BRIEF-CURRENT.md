@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.1, 17 August 2026. Owner: Pete.
+Version 1.2, 17 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -62,6 +62,9 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Do not change them as a side effect of other work.
 - Sofia's Career section shows current senior non-software product roles suited to her 17 years in product development at Strategic Insight, a B2B financial-data company.
 - Sofia's roles must be fully remote or explicitly offer at least three work-from-home days per week. Generic hybrid roles do not qualify without evidence of that working pattern.
+- Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
+- Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
+- Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
 
 ## Morning Story target
 

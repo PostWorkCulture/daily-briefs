@@ -4,6 +4,7 @@ import html
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import quote_plus
@@ -11,6 +12,7 @@ from zoneinfo import ZoneInfo
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from icalendar import Calendar
 
@@ -44,6 +46,10 @@ SOFIA_SOFTWARE_ROLE = re.compile(
     r"engineer|engineering|programmer|devops|mlops|product design|designer|ux|ui|product marketing)\b",
     re.I,
 )
+SOFIA_EXCLUDED_SECTOR = re.compile(
+    r"\b(?:casino|gambling|betting|gaming|video games?|mobile games?|midcore games?)\b",
+    re.I,
+)
 SOFIA_DOMAIN_TERMS = re.compile(
     r"\b(?:b2b|financial|finance|fintech|market data|data product|business intelligence|"
     r"information services|strategic insight|consumer insight|market research|analytics|enterprise)\b",
@@ -59,15 +65,46 @@ SOFIA_REMOTE_NEGATION = re.compile(
 )
 SOFIA_THREE_WFH_TERMS = (
     re.compile(r"\b(?:at least\s+)?(?:3|three)\s+days?(?:\s+a\s+week)?\s+(?:working\s+)?(?:from\s+home|at\s+home|remote)\b", re.I),
-    re.compile(r"\b(?:from\s+home|at\s+home|remote)\s+(?:for\s+)?(?:at least\s+)?(?:3|three)\s+days?\b", re.I),
-    re.compile(r"\b(?:up to\s+)?(?:2|two)\s+days?(?:\s+a\s+week)?\s+(?:in|at)\s+(?:the\s+)?office\b", re.I),
-    re.compile(r"\b(?:in|at)\s+(?:the\s+)?office\s+(?:for\s+)?(?:up to\s+)?(?:2|two)\s+days?\b", re.I),
+    re.compile(r"\b(?:from\s+home|at\s+home|remote)\s+(?:for\s+)?(?:(?:at least|up to)\s+)?(?:3|three)\s+days?\b", re.I),
+    re.compile(r"\b(?:at least\s+|up to\s+)?(?:2|two)\s+days?(?:\s+a\s+week)?\s+(?:in|at|from)\s+(?:the\s+)?office\b", re.I),
+    re.compile(r"\b(?:in|at|from)\s+(?:the\s+)?office\s+(?:for\s+)?(?:at least\s+|up to\s+)?(?:2|two)\s+days?\b", re.I),
     re.compile(r"\boffice\s+(?:attendance\s+)?(?:twice|2\s+times)\s+a\s+week\b", re.I),
 )
 SOFIA_UK_LOCATION = re.compile(
     r"\b(?:united kingdom|u\.?k\.?|england|scotland|wales|northern ireland|london|"
     r"manchester|birmingham|bristol|bath|leeds|liverpool|edinburgh|glasgow|cambridge|"
     r"oxford|reading|surrey|kent|essex|hampshire|nottingham|sheffield|cardiff|belfast)\b",
+    re.I,
+)
+SOFIA_SWEDEN_LOCATION = re.compile(
+    r"\b(?:sweden|swedish|stockholm|gothenburg|göteborg|malmö|malmo|uppsala|lund)\b",
+    re.I,
+)
+REMOTE_ELIGIBLE_LOCATION = re.compile(
+    r"\b(?:remote|worldwide|global|anywhere|europe|european|emea|united kingdom|u\.?k\.?|sweden|swedish)\b",
+    re.I,
+)
+REMOTE_EXCLUDED_LOCATION = re.compile(
+    r"\b(?:united states|u\.?s\.?a?\.?|canada|latin america|latam|asia|apac|australia|new zealand)\b",
+    re.I,
+)
+PETE_ROLE_TERMS = re.compile(
+    r"\b(?:ai|artificial intelligence|data|digital|automation|machine learning|analytics|"
+    r"technology|technical|platform|cloud|cyber|information|solution architect|product)\b",
+    re.I,
+)
+PETE_PUBLIC_SECTOR_TERMS = re.compile(
+    r"\b(?:civil service|public sector|government|department for|cabinet office|gds|nhs|"
+    r"local authority|ministry of|home office|public service)\b",
+    re.I,
+)
+PETE_EXCLUDED_ROLE = re.compile(
+    r"\b(?:software engineer|machine learning engineer|data engineer|developer|programmer|devops|mlops)\b",
+    re.I,
+)
+INACTIVE_LISTING = re.compile(
+    r"\b(?:no longer accepting applications|job (?:has )?expired|position (?:has been )?filled|"
+    r"vacancy (?:has )?closed|applications? closed)\b",
     re.I,
 )
 
@@ -208,13 +245,13 @@ def sofia_work_arrangement(job: dict, source: str) -> str | None:
     if SOFIA_REMOTE_NEGATION.search(text):
         return None
 
-    source_is_remote = source == "Remote OK" or bool(job.get("remote"))
+    source_is_remote = source in {"Remote OK", "Remotive", "Jobicy"} or bool(job.get("remote"))
     if source_is_remote or SOFIA_REMOTE_TERMS.search(text):
         return "remote"
 
     if any(pattern.search(text) for pattern in SOFIA_THREE_WFH_TERMS):
         location = clean_html(str(job.get("location", "")))
-        if SOFIA_UK_LOCATION.search(f"{location} {text}"):
+        if SOFIA_UK_LOCATION.search(f"{location} {text}") or SOFIA_SWEDEN_LOCATION.search(f"{location} {text}"):
             return "3-wfh-days"
     return None
 
@@ -226,12 +263,25 @@ def parse_job_date(job: dict) -> datetime | None:
             return datetime.fromtimestamp(int(epoch), TZ)
         except (TypeError, ValueError, OSError):
             pass
-    value = job.get("date")
+    value = job.get("date") or job.get("publication_date") or job.get("pubDate")
     if value:
         try:
             return dateparser.parse(str(value)).astimezone(TZ)
         except Exception:
             pass
+    return None
+
+
+def job_country_focus(job: dict) -> str | None:
+    location = clean_html(str(job.get("location") or ""))
+    description = clean_html(html.unescape(str(job.get("description") or "")))
+    text = f"{location} {description}"
+    if SOFIA_UK_LOCATION.search(text):
+        return "UK"
+    if SOFIA_SWEDEN_LOCATION.search(text):
+        return "Sweden"
+    if REMOTE_ELIGIBLE_LOCATION.search(location) and not REMOTE_EXCLUDED_LOCATION.search(location):
+        return "Europe/remote"
     return None
 
 
@@ -242,6 +292,9 @@ def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
     arrangement = sofia_work_arrangement(job, source)
     if not arrangement:
         return None
+    country_focus = job_country_focus(job)
+    if not country_focus:
+        return None
 
     url = clean_html(str(job.get("url") or ""))
     if not url.startswith(("https://", "http://")):
@@ -249,6 +302,10 @@ def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
     company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
     location = clean_html(str(job.get("location") or "Location not stated"))
     description = clean_html(html.unescape(str(job.get("description") or "")))
+    if SOFIA_EXCLUDED_SECTOR.search(f"{title} {description}"):
+        return None
+    if job.get("inactive") or INACTIVE_LISTING.search(description):
+        return None
     posted = parse_job_date(job)
     if posted and NOW - posted > timedelta(days=30):
         return None
@@ -262,6 +319,10 @@ def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         score += 3
     if arrangement == "remote":
         score += 2
+    if country_focus in {"UK", "Sweden"}:
+        score += 5
+    if source == "LinkedIn":
+        score += 1
 
     work_label = "Remote" if arrangement == "remote" else "3+ WFH days"
     posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
@@ -275,14 +336,104 @@ def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         "workArrangement": arrangement,
         "company": company,
         "location": location,
+        "countryFocus": country_focus,
     }
     if posted:
         item["postedAt"] = posted.date().isoformat()
     return score, posted or datetime.min.replace(tzinfo=TZ), item
 
 
-def sofia_career_jobs(limit: int = 8) -> list[dict]:
-    candidates = []
+def normalise_job(row: dict, source: str) -> dict:
+    if source == "Arbeitnow":
+        return {
+            "title": row.get("title"), "company_name": row.get("company_name"),
+            "location": row.get("location"), "description": row.get("description"),
+            "url": row.get("url"), "created_at": row.get("created_at"), "remote": row.get("remote"),
+        }
+    if source == "Remote OK":
+        return {
+            "title": row.get("position"), "company_name": row.get("company"),
+            "location": row.get("location") or "Remote", "description": row.get("description"),
+            "tags": row.get("tags"), "url": row.get("url"), "epoch": row.get("epoch"), "remote": True,
+        }
+    if source == "Remotive":
+        return {
+            "title": row.get("title"), "company_name": row.get("company_name"),
+            "location": row.get("candidate_required_location") or "Remote",
+            "description": row.get("description"), "tags": row.get("tags"),
+            "url": row.get("url"), "publication_date": row.get("publication_date"), "remote": True,
+        }
+    if source == "Jobicy":
+        return {
+            "title": row.get("jobTitle"), "company_name": row.get("companyName"),
+            "location": row.get("jobGeo") or "Remote", "description": row.get("jobDescription"),
+            "tags": row.get("jobIndustry"), "url": row.get("url"), "pubDate": row.get("pubDate"), "remote": True,
+        }
+    if source == "Sweden JobTech":
+        address = row.get("workplace_address") or {}
+        location = ", ".join(x for x in (address.get("municipality"), address.get("region"), address.get("country")) if x)
+        return {
+            "title": row.get("headline"), "company_name": (row.get("employer") or {}).get("name"),
+            "location": location or "Sweden", "description": (row.get("description") or {}).get("text"),
+            "url": row.get("webpage_url"), "publication_date": row.get("publication_date"),
+        }
+    return dict(row)
+
+
+def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, ...] = (0, 10)) -> list[tuple[dict, str]]:
+    jobs = []
+    for start in starts:
+        try:
+            response = requests.get(
+                "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
+                params={"keywords": keywords, "location": location, "f_TPR": "r2592000", "start": start},
+                headers=UA,
+                timeout=25,
+            )
+            response.raise_for_status()
+        except Exception:
+            continue
+        soup = BeautifulSoup(response.text, "html.parser")
+        for card in soup.select("li"):
+            link = card.select_one("a.base-card__full-link")
+            title = card.select_one("h3.base-search-card__title")
+            if not link or not title:
+                continue
+            company = card.select_one("h4.base-search-card__subtitle")
+            place = card.select_one("span.job-search-card__location")
+            stamp = card.select_one("time")
+            jobs.append(({
+                "title": title.get_text(" ", strip=True),
+                "company_name": company.get_text(" ", strip=True) if company else "Employer not stated",
+                "location": place.get_text(" ", strip=True) if place else location,
+                "date": stamp.get("datetime") if stamp else None,
+                "url": (link.get("href") or "").split("?", 1)[0],
+                "description": "",
+                "target": target,
+            }, "LinkedIn"))
+    return jobs
+
+
+def linkedin_description(job: dict) -> dict:
+    if job.get("description") or not str(job.get("url") or "").startswith("http"):
+        return job
+    try:
+        response = requests.get(job["url"], headers=UA, timeout=25)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        page_text = soup.get_text(" ", strip=True)
+        block = soup.select_one(".show-more-less-html__markup")
+        enriched = dict(job)
+        enriched["description"] = block.get_text(" ", strip=True) if block else page_text
+        if INACTIVE_LISTING.search(page_text):
+            enriched["inactive"] = True
+        return enriched
+    except Exception:
+        return job
+
+
+def career_job_candidates() -> list[tuple[dict, str]]:
+    candidates: list[tuple[dict, str]] = []
     for page in range(1, 4):
         try:
             response = requests.get(
@@ -297,18 +448,67 @@ def sofia_career_jobs(limit: int = 8) -> list[dict]:
             break
         if not rows:
             break
-        candidates.extend((row, "Arbeitnow") for row in rows)
+        candidates.extend((normalise_job(row, "Arbeitnow"), "Arbeitnow") for row in rows)
 
     try:
         response = requests.get("https://remoteok.com/api", headers=UA, timeout=30)
         response.raise_for_status()
         rows = response.json()
-        candidates.extend((row, "Remote OK") for row in rows[1:] if isinstance(row, dict))
+        candidates.extend((normalise_job(row, "Remote OK"), "Remote OK") for row in rows[1:] if isinstance(row, dict))
     except Exception:
         pass
 
+    for params in ({"category": "product"}, {"search": "AI data digital"}):
+        try:
+            response = requests.get("https://remotive.com/api/remote-jobs", params=params, headers=UA, timeout=30)
+            response.raise_for_status()
+            candidates.extend((normalise_job(row, "Remotive"), "Remotive") for row in response.json().get("jobs", []))
+        except Exception:
+            pass
+
+    try:
+        response = requests.get("https://jobicy.com/api/v2/remote-jobs", params={"count": 50, "geo": "uk"}, headers=UA, timeout=30)
+        response.raise_for_status()
+        candidates.extend((normalise_job(row, "Jobicy"), "Jobicy") for row in response.json().get("jobs", []))
+    except Exception:
+        pass
+
+    for query in ("product manager", "produktchef"):
+        try:
+            response = requests.get(
+                "https://jobsearch.api.jobtechdev.se/search",
+                params={"q": query, "limit": 100},
+                headers=UA,
+                timeout=30,
+            )
+            response.raise_for_status()
+            candidates.extend((normalise_job(row, "Sweden JobTech"), "Sweden JobTech") for row in response.json().get("hits", []))
+        except Exception:
+            pass
+
+    candidates.extend(linkedin_jobs("Senior Product Manager OR Product Director OR Head of Product", "United Kingdom", "sofia"))
+    candidates.extend(linkedin_jobs("Senior Product Manager OR Product Director OR Head of Product", "Sweden", "sofia"))
+    candidates.extend(linkedin_jobs("AI data digital public sector", "United Kingdom", "pete"))
+    return candidates
+
+
+def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
+    candidates = candidates if candidates is not None else career_job_candidates()
+    linkedin_candidates = [
+        job for job, source in candidates
+        if source == "LinkedIn" and job.get("target") == "sofia" and sofia_role_match(str(job.get("title") or ""))
+    ]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        linkedin_enriched = {job.get("url"): enriched for job, enriched in zip(linkedin_candidates, pool.map(linkedin_description, linkedin_candidates))}
+
     ranked, seen = [], set()
     for job, source in candidates:
+        if source == "LinkedIn":
+            if job.get("target") != "sofia" or not sofia_role_match(str(job.get("title") or "")):
+                continue
+            job = linkedin_enriched.get(job.get("url"), job)
+            if job.get("inactive"):
+                continue
         result = sofia_job_item(job, source)
         if not result:
             continue
@@ -320,6 +520,83 @@ def sofia_career_jobs(limit: int = 8) -> list[dict]:
         ranked.append((score, posted, item))
     ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
     return [item for _, _, item in ranked[:limit]]
+
+
+def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
+    title = clean_html(str(job.get("title") or ""))
+    company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
+    location = clean_html(str(job.get("location") or "Location not stated"))
+    description = clean_html(html.unescape(str(job.get("description") or "")))
+    if PETE_EXCLUDED_ROLE.search(title):
+        return None
+    if not PETE_ROLE_TERMS.search(title) and not PETE_PUBLIC_SECTOR_TERMS.search(f"{title} {company}"):
+        return None
+    if not SOFIA_UK_LOCATION.search(f"{location} {description}"):
+        return None
+    if job.get("inactive") or INACTIVE_LISTING.search(description):
+        return None
+    url = clean_html(str(job.get("url") or ""))
+    if not url.startswith(("https://", "http://")):
+        return None
+    posted = parse_job_date(job)
+    if posted and NOW - posted > timedelta(days=30):
+        return None
+
+    score = 4
+    if PETE_PUBLIC_SECTOR_TERMS.search(f"{title} {company} {description}"):
+        score += 5
+    if re.search(r"\b(?:head|director|lead|senior|principal|architect|manager)\b", title, re.I):
+        score += 2
+    if re.search(r"\b(?:ai|artificial intelligence|automation|machine learning)\b", title, re.I):
+        score += 3
+    if source == "LinkedIn":
+        score += 1
+    posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
+    item = {
+        "title": title,
+        "summary": f"{company} · {location}",
+        "meta": f"UK · {posted_label}",
+        "source": source,
+        "url": url,
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": company,
+        "location": location,
+    }
+    if posted:
+        item["postedAt"] = posted.date().isoformat()
+    return score, posted or datetime.min.replace(tzinfo=TZ), item
+
+
+def pete_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
+    candidates = candidates if candidates is not None else career_job_candidates()
+    ranked, seen = [], set()
+    for job, source in candidates:
+        if source == "LinkedIn" and job.get("target") != "pete":
+            continue
+        result = pete_job_item(job, source)
+        if not result:
+            continue
+        score, posted, item = result
+        key = re.sub(r"\W+", "", f"{item['title']}{item['company']}".lower())[:180]
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        ranked.append((score, posted, item))
+    ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
+    return [item for _, _, item in ranked[:limit]]
+
+
+def previous_career(profile: str) -> list[dict]:
+    try:
+        data = json.loads((DATA / f"{profile}.json").read_text(encoding="utf-8"))
+        jobs = (data.get("sections") or {}).get("Career") or []
+        return [
+            job for job in jobs
+            if job.get("contentType") == "job" and str(job.get("url") or "").startswith(("https://", "http://"))
+        ]
+    except Exception:
+        return []
 
 
 def calendar_colour_data() -> dict:
@@ -459,8 +736,9 @@ def build_profiles() -> dict[str, dict]:
     local = google_news('(Kingston upon Thames OR Molesey OR Esher OR Walton-on-Thames OR Elmbridge) when:4d', 8, 4)
     uk = rss('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News', 6, 2) or google_news('UK news when:2d', 6, 2)
     tonight = tonight_recommendations()
-    pete_career = google_news('("UK Civil Service" jobs OR "AI jobs" UK OR public sector careers) when:7d', 6, 7)
-    sofia_career = sofia_career_jobs()
+    career_candidates = career_job_candidates()
+    pete_career = pete_career_jobs(career_candidates) or previous_career("pete")
+    sofia_career = sofia_career_jobs(career_candidates) or previous_career("sofia")
     sweden = google_news('(Sweden OR Swedish) news when:4d', 7, 4)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
 

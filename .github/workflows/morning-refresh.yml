@@ -64,9 +64,19 @@ jobs:
 
           pete=json.loads((Path('data')/'pete.json').read_text())
           sofia=json.loads((Path('data')/'sofia.json').read_text())
-          for job in (sofia.get('sections') or {}).get('Career') or []:
+          pete_jobs=(pete.get('sections') or {}).get('Career') or []
+          assert pete_jobs, 'Pete Career has no current jobs'
+          for job in pete_jobs:
+              assert job.get('contentType') == 'job', 'Pete Career contains non-job content'
+              assert job.get('countryFocus') == 'UK', 'Pete Career contains a non-UK role'
+              assert str(job.get('url') or '').startswith(('https://','http://')), 'Pete Career job missing real link'
+
+          sofia_jobs=(sofia.get('sections') or {}).get('Career') or []
+          assert sofia_jobs, 'Sofia Career has no current jobs'
+          for job in sofia_jobs:
               assert job.get('contentType') == 'job', 'Sofia Career contains non-job content'
               assert job.get('workArrangement') in {'remote','3-wfh-days'}, 'Sofia Career contains an ineligible work pattern'
+              assert job.get('countryFocus') in {'UK','Sweden','Europe/remote'}, 'Sofia Career contains an ineligible location'
               assert str(job.get('url') or '').startswith(('https://','http://')), 'Sofia Career job missing real link'
 
           fixture=(pete.get('arsenal') or {}).get('nextFixture')
@@ -85,7 +95,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} unique story image rules, programme-first TV Picks and full Arsenal fixture details')
+          print(f'Validated {len(rules)} unique story image rules, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
