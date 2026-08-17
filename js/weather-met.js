@@ -51,8 +51,9 @@ function renderWeather(wx={}){
     const el=document.createElement('article');
     el.className='forecast-day'+(i===0?' today':'');
     const date=new Date(`${d.date}T12:00:00`);
-    const low=d.low==null?'':`<small>${d.low}° low</small>`;
-    el.innerHTML=`<span>${i===0?'Today':date.toLocaleDateString('en-GB',{weekday:'short'})}</span>${weatherIcon(d.condition||d.summary,'small')}<strong>${d.high??'—'}°</strong>${low}<em>${d.summary||''}</em>`;
+    const low=d.low==null?'':`<small class="fd-low">${d.low}° low</small>`;
+    const rain=d.rainChance==null?'':`<small class="fd-rain"><span>Chance of rain</span><b>${d.rainChance}%</b></small>`;
+    el.innerHTML=`<span>${i===0?'Today':date.toLocaleDateString('en-GB',{weekday:'short'})}</span>${weatherIcon(d.condition||d.summary,'small')}<strong>${d.high??'—'}°</strong>${low}${rain}<em>${d.summary||''}</em>`;
     box.appendChild(el);
   });
 }
