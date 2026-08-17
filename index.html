@@ -7,6 +7,7 @@
   <title>Daily Briefs</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/tabs-dida.css?v=20260817a">
 </head>
 <body>
   <main class="app-shell">
@@ -15,84 +16,95 @@
       <div class="profile-avatar" id="profileAvatar">P</div>
     </header>
 
-    <div class="profile-switch" aria-label="Choose profile">
+    <div class="profile-switch" id="profileSwitch" aria-label="Choose profile">
       <button class="active" data-profile="pete">Pete</button>
       <button data-profile="sofia">Sofia</button>
-      <button data-profile="us">Us</button>
     </div>
 
-    <section class="hero">
-      <div class="eyebrow" id="briefDate">Loading brief…</div>
-      <h1 id="greeting">Morning, Pete.</h1>
-      <p id="intro">Your day, filtered down to the things worth knowing.</p>
-      <div class="status-grid" hidden>
-        <article class="status-card"><span>Weather</span><strong id="weatherTemp">—</strong><small id="weatherSummary">Loading</small></article>
-        <article class="status-card"><span>Next up</span><strong id="calendarCount">—</strong><small id="calendarSummary">calendar</small></article>
-        <article class="status-card"><span>Stories</span><strong id="storyCount">—</strong><small>fresh items</small></article>
-      </div>
-    </section>
+    <div class="brief-view active" id="view-home" data-view="home">
+      <section class="hero">
+        <div class="eyebrow" id="briefDate">Loading brief…</div>
+        <h1 id="greeting">Morning, Pete.</h1>
+        <p id="intro">Your day, filtered down to the things worth knowing.</p>
+        <div class="status-grid" hidden>
+          <article class="status-card"><span>Weather</span><strong id="weatherTemp">—</strong><small id="weatherSummary">Loading</small></article>
+          <article class="status-card"><span>Next up</span><strong id="calendarCount">—</strong><small id="calendarSummary">calendar</small></article>
+          <article class="status-card"><span>Stories</span><strong id="storyCount">—</strong><small>fresh items</small></article>
+        </div>
+      </section>
 
-    <section class="panel-block weather-block" id="weatherPanel">
-      <div class="section-head"><h2>Weather</h2><span class="section-kicker">Met Office · KT8 2LE</span></div>
-      <div class="forecast-strip" id="forecastStrip"></div>
-    </section>
+      <section class="panel-block weather-block" id="weatherPanel">
+        <div class="section-head"><h2>Weather</h2><span class="section-kicker">Met Office · KT8 2LE</span></div>
+        <div class="forecast-strip" id="forecastStrip"></div>
+      </section>
 
-    <section class="panel-block calendar-block calendar-priority" id="calendarSection">
-      <div class="section-head"><h2>Calendar</h2></div>
-      <div class="calendar-summary" id="calendarSummaryCards"></div>
-      <div class="list-card calendar-list" id="calendarList"></div>
-    </section>
+      <section class="panel-block calendar-block calendar-priority" id="calendarSection">
+        <div class="section-head"><h2>Calendar</h2></div>
+        <div class="calendar-summary" id="calendarSummaryCards"></div>
+        <div class="list-card calendar-list" id="calendarList"></div>
+      </section>
 
-    <section class="arsenal-panel panel-block" id="arsenalPanel" hidden>
-      <div class="section-head"><h2>Arsenal</h2><span class="section-kicker">Men's first team · all competitions</span></div>
-      <div class="arsenal-grid">
-        <article class="match-card" id="lastResultCard"><span>Last result</span><strong>—</strong><small>Loading</small></article>
-        <article class="match-card next" id="nextFixtureCard"><span>Next fixture</span><strong>—</strong><small>Loading</small></article>
-        <article class="table-card" id="leagueCard"><span>Premier League</span><strong>—</strong><small>Position</small></article>
-      </div>
-      <div class="arsenal-news" id="arsenalNews"></div>
-    </section>
+      <section class="panel-block scenery-block" id="sceneryPanel">
+        <div class="section-head"><h2>Around the world</h2><span class="section-kicker">One remarkable place each day</span></div>
+        <a class="scenery-card" id="sceneryCard" href="#" target="_blank" rel="noopener noreferrer">
+          <img id="sceneryImage" alt="Remarkable place around the world">
+          <div class="scenery-shade"></div>
+          <div class="scenery-copy"><span id="sceneryCountry">Explore</span><strong id="sceneryPlace">Somewhere remarkable</strong><small id="sceneryCredit"></small></div>
+        </a>
+        <article class="scenery-fact" id="sceneryFact">
+          <span>Rare fact of the day</span>
+          <p id="sceneryFactText">Loading today’s fact…</p>
+        </article>
+      </section>
 
-    <section class="panel-block scenery-block" id="sceneryPanel">
-      <div class="section-head"><h2>Around the world</h2><span class="section-kicker">One remarkable place each day</span></div>
-      <a class="scenery-card" id="sceneryCard" href="#" target="_blank" rel="noopener noreferrer">
-        <img id="sceneryImage" alt="Remarkable place around the world">
-        <div class="scenery-shade"></div>
-        <div class="scenery-copy"><span id="sceneryCountry">Explore</span><strong id="sceneryPlace">Somewhere remarkable</strong><small id="sceneryCredit"></small></div>
-      </a>
-      <article class="scenery-fact" id="sceneryFact">
-        <span>Rare fact of the day</span>
-        <p id="sceneryFactText">Loading today’s fact…</p>
-      </article>
-    </section>
+      <section class="panel-block tonight-block">
+        <div class="section-head"><h2>Tonight</h2><span class="section-kicker">Crime · Docs · Apple</span></div>
+        <div class="watch-strip" id="watchStrip"></div>
+      </section>
 
-    <section class="panel-block" hidden>
-      <div id="interestGrid"></div>
-    </section>
+      <section hidden><div id="interestGrid"></div><div id="contentGroups"></div><article id="leadCard"><h3></h3><p></p></article></section>
+    </div>
 
-    <section class="panel-block tonight-block">
-      <div class="section-head"><h2>Tonight</h2><span class="section-kicker">Crime · Docs · Apple</span></div>
-      <div class="watch-strip" id="watchStrip"></div>
-    </section>
+    <div class="brief-view" id="view-news" data-view="news">
+      <section class="panel-block tab-panel"><div class="section-head"><h2>News</h2></div><div class="tab-groups" id="newsTabGroups"></div></section>
+    </div>
 
-    <section class="panel-block full-width">
-      <div class="section-head"><h2>Everything else</h2></div>
-      <div class="content-groups" id="contentGroups"></div>
-    </section>
+    <div class="brief-view" id="view-arsenal" data-view="arsenal">
+      <section class="arsenal-panel panel-block" id="arsenalPanel" hidden>
+        <div class="section-head"><h2>Arsenal</h2><span class="section-kicker">Men's first team · all competitions</span></div>
+        <div class="arsenal-grid">
+          <article class="match-card" id="lastResultCard"><span>Last result</span><strong>—</strong><small>Loading</small></article>
+          <article class="match-card next" id="nextFixtureCard"><span>Next fixture</span><strong>—</strong><small>Loading</small></article>
+          <article class="table-card" id="leagueCard"><span>Premier League</span><strong>—</strong><small>Position</small></article>
+        </div>
+        <div class="arsenal-news" id="arsenalNews"></div>
+      </section>
+    </div>
 
-    <section hidden>
-      <article id="leadCard"><h3></h3><p></p></article>
-    </section>
+    <div class="brief-view" id="view-ai" data-view="ai">
+      <section class="panel-block tab-panel"><div class="section-head"><h2>AI</h2></div><div class="tab-groups single" id="aiTabGroups"></div></section>
+    </div>
+
+    <div class="brief-view" id="view-career" data-view="career">
+      <section class="panel-block tab-panel"><div class="section-head"><h2>Career</h2></div><div class="tab-groups single" id="careerTabGroups"></div></section>
+    </div>
+
+    <div class="brief-view" id="view-dida" data-view="dida">
+      <section class="panel-block tab-panel dida-shell"><div id="didaContent"></div></section>
+    </div>
   </main>
 
-  <nav class="bottom-nav">
-    <button class="active" data-scroll="top"><b>⌂</b>Home</button>
-    <button data-scroll="contentGroups"><b>◇</b>Discover</button>
-    <button data-scroll="watchStrip"><b>▶</b>Watch</button>
-    <button data-scroll="calendarSection"><b>◷</b>Calendar</button>
+  <nav class="bottom-nav" id="primaryNav" aria-label="Primary navigation">
+    <button class="active" data-view-target="home"><b>⌂</b>Home</button>
+    <button data-view-target="news"><b>◫</b>News</button>
+    <button data-view-target="arsenal"><b>⚽</b>Arsenal</button>
+    <button data-view-target="ai"><b>◇</b>AI</button>
+    <button data-view-target="career"><b>↗</b>Career</button>
+    <button data-view-target="dida"><b>✦</b>Dida</button>
   </nav>
 
-  <script src="js/app.js" defer></script>
+  <script src="js/app.js?v=20260817a" defer></script>
+  <script src="js/tabs-dida.js?v=20260817a" defer></script>
   <script src="js/calendar-cleanup.js" defer></script>
   <script src="js/weather-met.js" defer></script>
   <script src="js/tonight-cleanup.js" defer></script>
