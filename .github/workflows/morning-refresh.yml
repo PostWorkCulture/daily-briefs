@@ -63,6 +63,12 @@ jobs:
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
 
           pete=json.loads((Path('data')/'pete.json').read_text())
+          sofia=json.loads((Path('data')/'sofia.json').read_text())
+          for job in (sofia.get('sections') or {}).get('Career') or []:
+              assert job.get('contentType') == 'job', 'Sofia Career contains non-job content'
+              assert job.get('workArrangement') in {'remote','3-wfh-days'}, 'Sofia Career contains an ineligible work pattern'
+              assert str(job.get('url') or '').startswith(('https://','http://')), 'Sofia Career job missing real link'
+
           fixture=(pete.get('arsenal') or {}).get('nextFixture')
           if fixture:
               required=('opponent','stadium','kickoff','competition','tvChannel')

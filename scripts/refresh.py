@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 import os
 import re
@@ -29,6 +30,46 @@ WEATHER_LABELS = {
     71: "Light snow", 73: "Snow", 75: "Heavy snow", 80: "Showers",
     81: "Showers", 82: "Heavy showers", 95: "Thunderstorms",
 }
+
+SOFIA_PRODUCT_ROLE_PATTERNS = (
+    re.compile(r"\b(?:senior|lead|principal|group)\s+(?:data\s+)?product\s+(?:manager|owner|lead|developer)\b", re.I),
+    re.compile(r"\b(?:head|director|vice president|vp)\s+of\s+(?:data\s+)?product(?:\s+development)?\b", re.I),
+    re.compile(r"\b(?:data\s+)?product\s+(?:director|lead)\b", re.I),
+    re.compile(r"\b(?:senior|lead|principal)\s+product\s+development\s+(?:manager|lead|director)\b", re.I),
+    re.compile(r"\bproduct\s+development\s+(?:director|head|lead)\b", re.I),
+    re.compile(r"\b(?:chief product officer|cpo)\b", re.I),
+)
+SOFIA_SOFTWARE_ROLE = re.compile(
+    r"\b(?:software|frontend|front-end|backend|back-end|full[- ]stack|web|mobile|"
+    r"engineer|engineering|programmer|devops|mlops|product design|designer|ux|ui|product marketing)\b",
+    re.I,
+)
+SOFIA_DOMAIN_TERMS = re.compile(
+    r"\b(?:b2b|financial|finance|fintech|market data|data product|business intelligence|"
+    r"information services|strategic insight|consumer insight|market research|analytics|enterprise)\b",
+    re.I,
+)
+SOFIA_REMOTE_TERMS = re.compile(
+    r"\b(?:fully remote|remote[- ]first|100% remote|work from anywhere|remote role|remote job)\b",
+    re.I,
+)
+SOFIA_REMOTE_NEGATION = re.compile(
+    r"\b(?:do not offer remote|no remote work|remote work (?:is )?not available|not a remote role)\b",
+    re.I,
+)
+SOFIA_THREE_WFH_TERMS = (
+    re.compile(r"\b(?:at least\s+)?(?:3|three)\s+days?(?:\s+a\s+week)?\s+(?:working\s+)?(?:from\s+home|at\s+home|remote)\b", re.I),
+    re.compile(r"\b(?:from\s+home|at\s+home|remote)\s+(?:for\s+)?(?:at least\s+)?(?:3|three)\s+days?\b", re.I),
+    re.compile(r"\b(?:up to\s+)?(?:2|two)\s+days?(?:\s+a\s+week)?\s+(?:in|at)\s+(?:the\s+)?office\b", re.I),
+    re.compile(r"\b(?:in|at)\s+(?:the\s+)?office\s+(?:for\s+)?(?:up to\s+)?(?:2|two)\s+days?\b", re.I),
+    re.compile(r"\boffice\s+(?:attendance\s+)?(?:twice|2\s+times)\s+a\s+week\b", re.I),
+)
+SOFIA_UK_LOCATION = re.compile(
+    r"\b(?:united kingdom|u\.?k\.?|england|scotland|wales|northern ireland|london|"
+    r"manchester|birmingham|bristol|bath|leeds|liverpool|edinburgh|glasgow|cambridge|"
+    r"oxford|reading|surrey|kent|essex|hampshire|nottingham|sheffield|cardiff|belfast)\b",
+    re.I,
+)
 
 
 def clean_html(value: str) -> str:
@@ -152,6 +193,133 @@ def rss(url: str, section: str, limit: int = 6, max_age_days: int = 4) -> list[d
         items.append({"title": title, "summary": summary, "meta": meta, "source": section, "url": entry.get("link", "")})
         if len(items) >= limit: break
     return items
+
+
+def sofia_role_match(title: str) -> bool:
+    title = clean_html(title)
+    if not any(pattern.search(title) for pattern in SOFIA_PRODUCT_ROLE_PATTERNS):
+        return False
+    return not SOFIA_SOFTWARE_ROLE.search(title)
+
+
+def sofia_work_arrangement(job: dict, source: str) -> str | None:
+    raw = " ".join(str(job.get(key, "")) for key in ("title", "position", "location", "description", "tags"))
+    text = clean_html(html.unescape(raw))
+    if SOFIA_REMOTE_NEGATION.search(text):
+        return None
+
+    source_is_remote = source == "Remote OK" or bool(job.get("remote"))
+    if source_is_remote or SOFIA_REMOTE_TERMS.search(text):
+        return "remote"
+
+    if any(pattern.search(text) for pattern in SOFIA_THREE_WFH_TERMS):
+        location = clean_html(str(job.get("location", "")))
+        if SOFIA_UK_LOCATION.search(f"{location} {text}"):
+            return "3-wfh-days"
+    return None
+
+
+def parse_job_date(job: dict) -> datetime | None:
+    epoch = job.get("created_at") or job.get("epoch")
+    if epoch:
+        try:
+            return datetime.fromtimestamp(int(epoch), TZ)
+        except (TypeError, ValueError, OSError):
+            pass
+    value = job.get("date")
+    if value:
+        try:
+            return dateparser.parse(str(value)).astimezone(TZ)
+        except Exception:
+            pass
+    return None
+
+
+def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
+    title = clean_html(str(job.get("title") or job.get("position") or ""))
+    if not sofia_role_match(title):
+        return None
+    arrangement = sofia_work_arrangement(job, source)
+    if not arrangement:
+        return None
+
+    url = clean_html(str(job.get("url") or ""))
+    if not url.startswith(("https://", "http://")):
+        return None
+    company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
+    location = clean_html(str(job.get("location") or "Location not stated"))
+    description = clean_html(html.unescape(str(job.get("description") or "")))
+    posted = parse_job_date(job)
+    if posted and NOW - posted > timedelta(days=30):
+        return None
+
+    score = 4
+    if re.search(r"\b(?:director|head|vice president|vp|principal|group)\b", title, re.I):
+        score += 3
+    elif re.search(r"\b(?:senior|lead)\b", title, re.I):
+        score += 2
+    if SOFIA_DOMAIN_TERMS.search(f"{title} {description}"):
+        score += 3
+    if arrangement == "remote":
+        score += 2
+
+    work_label = "Remote" if arrangement == "remote" else "3+ WFH days"
+    posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
+    item = {
+        "title": title,
+        "summary": f"{company} · {location}",
+        "meta": f"{work_label} · {posted_label}",
+        "source": source,
+        "url": url,
+        "contentType": "job",
+        "workArrangement": arrangement,
+        "company": company,
+        "location": location,
+    }
+    if posted:
+        item["postedAt"] = posted.date().isoformat()
+    return score, posted or datetime.min.replace(tzinfo=TZ), item
+
+
+def sofia_career_jobs(limit: int = 8) -> list[dict]:
+    candidates = []
+    for page in range(1, 4):
+        try:
+            response = requests.get(
+                "https://www.arbeitnow.com/api/job-board-api",
+                params={"page": page},
+                headers=UA,
+                timeout=30,
+            )
+            response.raise_for_status()
+            rows = response.json().get("data", [])
+        except Exception:
+            break
+        if not rows:
+            break
+        candidates.extend((row, "Arbeitnow") for row in rows)
+
+    try:
+        response = requests.get("https://remoteok.com/api", headers=UA, timeout=30)
+        response.raise_for_status()
+        rows = response.json()
+        candidates.extend((row, "Remote OK") for row in rows[1:] if isinstance(row, dict))
+    except Exception:
+        pass
+
+    ranked, seen = [], set()
+    for job, source in candidates:
+        result = sofia_job_item(job, source)
+        if not result:
+            continue
+        score, posted, item = result
+        key = re.sub(r"\W+", "", f"{item['title']}{item['company']}".lower())[:180]
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        ranked.append((score, posted, item))
+    ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
+    return [item for _, _, item in ranked[:limit]]
 
 
 def calendar_colour_data() -> dict:
@@ -291,13 +459,14 @@ def build_profiles() -> dict[str, dict]:
     local = google_news('(Kingston upon Thames OR Molesey OR Esher OR Walton-on-Thames OR Elmbridge) when:4d', 8, 4)
     uk = rss('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News', 6, 2) or google_news('UK news when:2d', 6, 2)
     tonight = tonight_recommendations()
-    career = google_news('("UK Civil Service" jobs OR "AI jobs" UK OR public sector careers) when:7d', 6, 7)
+    pete_career = google_news('("UK Civil Service" jobs OR "AI jobs" UK OR public sector careers) when:7d', 6, 7)
+    sofia_career = sofia_career_jobs()
     sweden = google_news('(Sweden OR Swedish) news when:4d', 7, 4)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
 
     stamp = NOW.strftime("%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
-    pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": career}
-    sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": career}
+    pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": pete_career}
+    sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": sofia_career}
     def first(items, fallback): return items[0] if items else {"title": fallback, "summary": "", "meta": "", "source": "", "url": ""}
     return {
         "pete": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
