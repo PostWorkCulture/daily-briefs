@@ -52,13 +52,9 @@ def og_image(url: str) -> tuple[str | None, str | None]:
             if tag and tag.get("content"):
                 title = tag.get("content").strip()
                 break
-
-        # Google News wrapper pages often expose Google's own generic artwork rather
-        # than the publisher's story image. Never use that as an article image.
         final_host = urlsplit(r.url).netloc.lower()
         if "news.google.com" in final_host or (title and title.strip().lower() == "google news"):
             return None, title
-
         for key in ("og:image", "og:image:secure_url", "twitter:image", "twitter:image:src"):
             tag = soup.find("meta", attrs={"property": key}) or soup.find("meta", attrs={"name": key})
             if not tag or not tag.get("content"):
@@ -156,6 +152,7 @@ def candidates(payload: dict, profile: str) -> dict[str, list[dict]]:
         "arsenal": unique(arsenal),
         "ai": unique(sections.get("AI") or []),
         "career": unique(sections.get("Career") or []),
+        "watch": unique(payload.get("watch") or []),
     }
 
 
@@ -195,8 +192,6 @@ def main() -> None:
                 if not url:
                     continue
                 if url in result:
-                    # The same article may appear in both personal briefs. That is not
-                    # image reuse across different articles, so keep the one canonical rule.
                     key = norm_url(result[url]["src"])
                     if key not in used_in_this_profile:
                         used_in_this_profile.add(key)
@@ -213,9 +208,6 @@ def main() -> None:
                 image, page_title = metadata_cache[url]
                 if image:
                     proposals.append({"src": image, "alt": page_title or item.get("title") or "Story image", "pos": "center"})
-
-                # Exact linked-article screenshot is the final safe fallback: it can never
-                # silently substitute an unrelated stock image for the story.
                 proposals.append({"src": screenshot(url), "alt": item.get("title") or "Story image", "pos": "center"})
 
                 chosen = None
@@ -236,8 +228,6 @@ def main() -> None:
                     used_fingerprints.append(chosen_fp)
                 count += 1
 
-    # Hard publish guards: one image field per article, no repeated normalised URLs,
-    # and no visually duplicated image files where fingerprints are available.
     seen_urls = {}
     seen_fps: list[tuple[str, str, int]] = []
     for article_url, rule in result.items():
@@ -257,7 +247,7 @@ def main() -> None:
             seen_fps.append((article_url, byte_hash, visual_hash))
 
     OUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(result)} unique story image rules to {OUT}")
+    print(f"Wrote {len(result)} unique story/TV image rules to {OUT}")
 
 
 if __name__ == "__main__":
