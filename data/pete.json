@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 10:26am",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 10:27am",
   "weather": {
     "temp": "23°",
     "summary": "Sunny intervals",
@@ -333,20 +333,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -358,6 +344,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -451,8 +451,8 @@
     "nextFixture": {
       "date": "2026-08-21T20:00:00+01:00",
       "dateLabel": "Fri 21 Aug",
-      "kickoff": "8pm",
-      "opponent": "Coventry City (Sky Sports)",
+      "kickoff": "8:00pm",
+      "opponent": "Coventry City",
       "competition": "Premier League",
       "homeAway": "home",
       "completed": false,
@@ -460,7 +460,15 @@
       "opponentScore": null,
       "result": "",
       "url": "https://www.premierleague.com/en/news/4675132/all-of-arsenals-fixtures-for-202627-premier-league-season",
-      "source": "PremierLeague.com"
+      "source": "PremierLeague.com / Sky Sports",
+      "stadium": "Emirates Stadium",
+      "tvChannel": "Sky Sports Main Event · Sky Sports Premier League",
+      "previousMeeting": {
+        "score": "Arsenal 4–0 Coventry City",
+        "date": "24 Jan 2014",
+        "competition": "FA Cup",
+        "source": "Transfermarkt / theScore"
+      }
     },
     "leaguePosition": null,
     "points": null,
@@ -484,7 +492,7 @@
         "title": "Arteta: Maresca is as good as Pep - my players are hungry",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "skysports.com",
+        "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNLXhkWTZWN2dUZmVtbldqVXVjRDZjYXhUSTJ4c21fN1ZURGZvR2VZVG5IaWpwbFU2X21iZEtkNHhSVVRxd1dSNFBkZVZ2b1QtZ3g1NHZFelZ5bVpTdVhFS3FqMnFDNk44akZQZ25wdGtjMnFYTDNsUUlOV1NDNk9UbTRRQ0xKQU0tVjh1RzNlR29RZXd2ZkpGZUVvdTdBR2UyUXNkV0NvZDdQbUpEUkduZ0Q3c2hmSjQwSm5xOVlrTlRnbUk0al9FdWhTcEx5alVvYXJWaDlOZ0QyQnNwNnl1TXdkaDZMNC1KRkpsSUd1NUZldXJmZGktdVdBXzJqaHVlOENEd0k0VldqLWxYdEZzTlZFVDgza3RhdVpjMUNlcERKRVMxOWdSbktKQ1V0QQ?oc=5"
       },
       {
@@ -640,7 +648,7 @@
         "title": "IBM, OpenAI Partner to Accelerate Secure Enterprise AI Deployment",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "thefastmode.com",
+        "source": "The Fast Mode",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZVR2Mk5iczJ0LXM4NGppNXFOcHRwc3U3bjlVN0N3SDZ2eDdhVVhOb2N2cnd0WGdQWl8yNUJET25xdzhFTkJIMUF6VXREX2dXQ1FsY2JUNHVwaTQybWNRaXpodkZNT2M1NXhaQWltQ1hoU29ROWxzN0NYVnF4WE5vVV93VzhFN2lpX3pyX0NGT0dMUkloVUhlUUtDZEdCSy05NGkyVElmRmNpZEM0bU1yU01NTjB2UGRkZS1v?oc=5"
       }
     ],
@@ -663,7 +671,7 @@
         "title": "Arteta: Maresca is as good as Pep - my players are hungry",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "skysports.com",
+        "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNLXhkWTZWN2dUZmVtbldqVXVjRDZjYXhUSTJ4c21fN1ZURGZvR2VZVG5IaWpwbFU2X21iZEtkNHhSVVRxd1dSNFBkZVZ2b1QtZ3g1NHZFelZ5bVpTdVhFS3FqMnFDNk44akZQZ25wdGtjMnFYTDNsUUlOV1NDNk9UbTRRQ0xKQU0tVjh1RzNlR29RZXd2ZkpGZUVvdTdBR2UyUXNkV0NvZDdQbUpEUkduZ0Q3c2hmSjQwSm5xOVlrTlRnbUk0al9FdWhTcEx5alVvYXJWaDlOZ0QyQnNwNnl1TXdkaDZMNC1KRkpsSUd1NUZldXJmZGktdVdBXzJqaHVlOENEd0k0VldqLWxYdEZzTlZFVDgza3RhdVpjMUNlcERKRVMxOWdSbktKQ1V0QQ?oc=5"
       },
       {
@@ -721,7 +729,7 @@
         "title": "Guildford gets England's top A Level grades as Surrey students do exceptionally well",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "Surrey Live",
+        "source": "getsurrey.co.uk",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYWdPbktiWE14c1dfSVg4ZGN6SGV3dU5TWlN6MlhvZi1xUDlZMUU2Qm9JOUNnQktud2pLSkQ0Y1ZiNG8zeWtIOXdXWkVBOWFMSkhyZ01iNEU1bngyRjNHdW1aZmxlTjZQTkR5T08yVlhYOEtOY1RKRVZyY3JXaklUUmROaklGZDVTQjJNUlZ0R0PSAZYBQVVfeXFMTXI2aDVEZjBtcjdZdlU4VnM0N1Y3MU13OVVKaGdZQTVZSmNqTV9hTUtZQUtRN3JlSTN6NlFRS1RCTlh1SnRQcnM0eDhNakViLTZxZ3NmMGtYcXNIaXh3cWNMdl9MSG5ycWlzSGZ0akJ6NlZFTFRkYUFKSE9vNWpIYmxYYTBrZVJoT2xOZGVac3NxSGt4NEx3?oc=5"
       },
       {
@@ -756,7 +764,7 @@
         "title": "Saturday 15 August 2026",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "BBC",
+        "source": "bbc.co.uk",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HdG53REZjVE1kUXktX053RU9DMGJybFZTdFlKb3pWdHlzX2FRZ2E2U2NNb1JIRUVoZGR4TlpBQkxzdGdkME53LTQ2RUJqQ2s1R0FVblFNYUFYWVJTY1Z2Nw?oc=5"
       }
     ],
