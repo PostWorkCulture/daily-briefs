@@ -1,0 +1,4 @@
+/* Compact Arsenal-style cannon mark for the nav. Uses current nav accent colour. */
+.bottom-nav .cannon-mark{display:block;height:18px;margin:0 auto 3px!important;line-height:1!important}
+.bottom-nav .nav-cannon{display:block;width:26px;height:18px;margin:0 auto;overflow:visible;fill:none;stroke:currentColor;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px rgba(255,84,67,.72))}
+.bottom-nav button[data-view-target="arsenal"].active .nav-cannon,.bottom-nav button[data-view-target="arsenal"]:hover .nav-cannon{filter:drop-shadow(0 0 7px rgba(255,84,67,1)) drop-shadow(0 0 14px rgba(255,84,67,.5))}
