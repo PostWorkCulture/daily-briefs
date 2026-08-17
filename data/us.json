@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 16 August 2026 · refreshed 6:25am",
+  "updatedLabel": "Monday, 17 August 2026 · refreshed 6:06am",
   "weather": {
     "temp": "18°",
     "summary": "Sunny intervals",
@@ -7,30 +7,21 @@
     "currentRainChance": 4,
     "daily": [
       {
-        "date": "2026-08-16",
+        "date": "2026-08-17",
         "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-08-17",
-        "high": 28,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-18",
-        "high": 27,
+        "high": 26,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -39,7 +30,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -48,7 +39,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -57,22 +48,31 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-08-22",
+        "high": 20,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-08-23",
         "high": 21,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -306,20 +306,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -331,6 +317,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -451,7 +451,7 @@
       "title": "Silo season 3 release schedule: When is episode 7 out on Apple TV?",
       "summary": "",
       "meta": "Fri 14 Aug",
-      "source": "Radio Times",
+      "source": "radiotimes.com",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4ODhaRXdvSTcweEdwSm9keXprVnBtbGlvRHd4MGxqejktX2FRWVBidmpGcG1yZnJIQTNrNHlBMHd3NEN2ZWVjSXRxbGxsUlBtdzBhTkpnVEplT0w0WXo2Tmc5Um0xWDgwbFlhZ2d2aVBibnYzRGFv?oc=5",
       "preferenceScore": 130
     },
@@ -506,7 +506,7 @@
     {
       "title": "Silo season three: Find out more about the new season",
       "summary": "",
-      "meta": "Tue 4 Aug",
+      "meta": "Thu 13 Aug",
       "source": "Rayo",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwdHJyNmZDek4yaGNRRklFdlMtcjBJaGt3cXF2dTROTUFVa0hiZDFjdkpzXzVYeU5YY0NkcFF2ZG5GNF8yaXkwS2haT29KaHVpbkxvYkZEU0JfX3BOOE1HZHN4MzA1cnhuUERRUHBFd3dGNHF2cGhhQjRHOXIwaFk?oc=5",
       "preferenceScore": 100
@@ -530,18 +530,18 @@
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBsdGZ6eGY5OWdLU1dLMGlkSGZUR2IyS3U0MmMwV3pUTmYwTm9HUFdCS3Z0Q0paV3BsdVA5dUlvS1RxNS1JX3lBdndWSS1xcy1JUlZLRXBydngtbktPRTNtLWNBRWhrMVQ0UHV4a2RBZUFVb1JjVHJ5RQ?oc=5"
       },
       {
+        "title": "Family in tribute to ‘beloved’ nine-year-old girl as man due in court over death",
+        "summary": "",
+        "meta": "Wed 5 Aug",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNGtZejFFOWdHVnlzSHNKdEM4bVVvUjAzTGFPNFp2Q2pVSkRyblNMc3R6anRsbnZtNlJmNG9yNEpBMjFqd1FISms3Q2t2UlFaS3B0NF9IUzB0aWZ0NzJtNy13NkFJRDl3c1Fxek1uNlMtSVg4XzNhaUc1UzBNcTF0M245ZXhTYlI3RERTOHowb05QRGlfaEJUNmxBU3VaMEJKY3ZXWVpsdmY1QTF3bXZwVmpyMTBmdw?oc=5"
+      },
+      {
         "title": "Surrey Lebanese restaurant voted in UK's top ten boasts near-perfect rating",
         "summary": "",
         "meta": "Sat 15 Aug",
         "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQb016Y0NQcjcyRHZITFZOb2NlQ1BOY2VpRUtyeTJ5aXlxdUxSeDIxc0Y2QWFkMHR1eTZURVBkUnhscUF6UXN5TlNXUnp3NHBUMUQ0ODdMUVdHSHZIRFlBSldyU0hJWU9lQnRhakNYUnBHUkRjVDFLWkxLajhfaXhyWnFJSEpMc0Rob0p6NFI2UE93Z3ZWZ1ZyTkd0WVDSAaIBQVVfeXFMTlV1cnVnSmhienBGTlFHYjhHTDlHQ0Y4QTRCaWdMb1RvaUJnelYtLTFJS1d3Y1BpQmUyY093UTExWUZOaEdSSl9GalJhcUFxUl91cmZFVnZ0NlBGMVFFRkRWMUF2S2czb2UwamNETEctbmtKb0hJNk9lbkZQNVNISkJkNEF2RWVzX3FzbHRTekFQUDBnNnVlVlFYWVNORnZPWFlR?oc=5"
-      },
-      {
-        "title": "Emraan Hashmi’s ‘Awarapan 2’ to Release in a Cinema Near You on 14 August 2026",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "source": "Richmond & Twickenham Times",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQSGljR2hxZC1RcExxMjV5V3VmUTkycXVTQ0ZaSjBGY281THVzd21xdmpMbVgzVHBJUl9oVHVQOFBHcmlKbjIwQ2NQNk45UzUzdm1YSk05Vk5iX1I4OFVkVVJGYnZCQUlZUjYwRmxUS3ZuOU9sT0xHWWh2T1l2VEFneEFuRE8tY0xIMkJaRVBULXZTcVlDRi1vUUhobU50cXNrLWxnSHVaRXhlYTZZT1BGX1k3Y1pON3BTZVhKVzBUS1R1eHFmbHlldHAtY2VVVEJaOGE3Wl90Y0NhZUI0LTNudGpSLXFsYXNMQUhwVDlHOXJLcDRhdUFmWWc1cGNmdw?oc=5"
       },
       {
         "title": "Two inmates charged with attempted murder after Sara Sharif’s father attacked | News - KISSTORY",
@@ -554,15 +554,15 @@
         "title": "London's best private dining rooms for 30 people",
         "summary": "",
         "meta": "Tue 11 Aug",
-        "source": "SquareMeal",
+        "source": "squaremeal.co.uk",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMmZBQ0JEUDFoLXpQQmNrTHBSOU1wM1JuOTZHMWNobVhrSERReXB3emxuWUsyMXRyc0wwaVQzTUpDbUJRWDFGTk56ZzJFblJ0aGpVTmc4TC1zQk1td29qd2tfaUhaV0E3RVpMS3ozbTNCVkN3dUdpaXd1OUlRajZzbHZ2ZHVhSEhFX04wRzFyS3VNVGhzOTgzLQ?oc=5"
       },
       {
-        "title": "20 fantastic things to do in Vancouver this week: Aug. 3 to 9",
+        "title": "20 fantastic things to do in Vancouver this week: Aug. 10 to 16",
         "summary": "",
-        "meta": "Sun 2 Aug",
+        "meta": "Sun 9 Aug",
         "source": "Daily Hive",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TSTJhakljVG1SWEZ5SHNoQ01SWnk4LWZZTWUyamxnZEtwcTRVT2V6dTlzVWNhV09uRVFRT0EtaEFkalJKcGxBNEdQeUxxeHB1Zk9NZlVfNU1za3h2LXZhMXpVNEVSSzE1Rmxr?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yekQ5QmNZTGt3NFhkUnVnODdUR0NkXzFXSEJybXF0TDdtOV9EWmdlVEtyc1JjZWJUa0FBZnhUb3pJUGRPTEN5QWVhWFlDWUltSi1jTVZ0WThNZFRrUTQ5LUhTRS1VTXFIa3NoZmpB?oc=5"
       },
       {
         "title": "47+ Fun Things To Do In Metro Vancouver This Weekend (August 7-9)",
@@ -625,60 +625,60 @@
       {
         "title": "London's smartest boroughs according to A-level grades revealed - how does your area fare?",
         "summary": "",
-        "meta": "Fri 14 Aug",
-        "source": "London Evening Standard",
+        "meta": "Mon 17 Aug",
+        "source": "standard.co.uk",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXg3ejRIMHNrbEp4VmJnMllldk8wVktMUnk5VkRjeE5IR003ZlA1NEY3SkpIOU1MTTVnelg0b21YOUVvRkV6VXFLRmtTRXdoMUhxTlowZE9LNG5vV0RoZzVCUEwyMUxzZ3pDZXdlZzNIdDFxNGlzZEF6QnZGY3pMZU5fYkxsejFNR01V?oc=5"
       },
       {
-        "title": "This secretive Thai kitchen in London is officially one of Tom Holland's favourite places to eat in the city - and it's tucked away in a charming dog-friendly pub",
+        "title": "Saturday 15 August 2026",
         "summary": "",
-        "meta": "Wed 12 Aug",
-        "source": "Secret London",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM0JOa0NZLUtRTHUwOGpsaW9YMGJXMG02SFMzYjltTzJnNGd4Z0pfWTVhRHdNazd6eFM5Y2ZsWnJ4bURoU3VXSFJsS0hqSUpiV0kyY1BRY2NPZHJIa2tBenh3TjNub0hqb1VrS0NjU1RjMV9fbUtKS2FETEc4QTZmZkdiSDk?oc=5"
+        "meta": "Sat 15 Aug",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HdG53REZjVE1kUXktX053RU9DMGJybFZTdFlKb3pWdHlzX2FRZ2E2U2NNb1JIRUVoZGR4TlpBQkxzdGdkME53LTQ2RUJqQ2s1R0FVblFNYUFYWVJTY1Z2Nw?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "Reform UK plan would overhaul welfare system with £50bn in savings",
-        "summary": "The party will release a full 50-page plan on Monday outlining the proposed changes - including a replacement for the disability payments system Pip - were they to come to power.",
+        "title": "Trump envoy Kushner arrives in Israel after rare Hamas talks on Gaza peace plan",
+        "summary": "US President Trump's son-in-law Jared Kushner is expected to meet Israeli Prime Minister Benjamin Netanyahu later on Monday.",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Heroes actress Hayden Panettiere dies aged 36",
+        "summary": "Panettiere starred in TV shows including Heroes and Nashville along with films Remember the Titans and Raising Helen.",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Parents pushed to breaking point by Child Maintenance Service, BBC told",
+        "summary": "Mothers, like Katy, describe battles to make ex-partners pay, while fathers say they have been wrongly charged thousands.",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c4g3re5ew8do?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "UK to turn cooler with rain after exceptional heat and dry spell",
+        "summary": "After and exceptional summer of heatwaves and drought, the weather will turn wetter and cooler this week, as Simon King explains",
+        "meta": "Mon 17 Aug",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/weather/articles/cy8eevy3zzxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Five teenagers dead and four injured after car drives on wrong side of motorway",
+        "summary": "The collision occurred on on the M9 Northbound at about 03:00 local time on Sunday in County Kildare.",
         "meta": "Sun 16 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cz977nxww1jo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cwyqq52xkypo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Major incidents across UK putting firefighters under 'incredible pressure', fire chief says",
-        "summary": "Major incidents declared across England and Wales with blazes in Stourbridge, Sandwell and Pershore.",
-        "meta": "Sat 15 Aug",
+        "title": "Trump says US to scale back South Korea military drills after it stayed out of Iran war",
+        "summary": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
+        "meta": "Mon 17 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwyjjvd4g0qo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Ariana Grande leaves problems at home as her tour hits the UK",
-        "summary": "The star plays the first of 10 dates in London, after which she will \"step back\" from public life.",
-        "meta": "Sun 16 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cn0n7rln2rno?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Jason Arday death 'tragedy on so many levels' says PM",
-        "summary": "Andy Burnham says the former Cambridge professor's death is a \"really sad, sad and sorry state of affairs\".",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c9982znvyk4o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Rescuers search for survivors of powerful Indonesia earthquake",
-        "summary": "Officials say a rapid assessment into the impact of the earthquake that destroyed hundreds of buildings and killed 47 is under way.",
-        "meta": "Sun 16 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Hunt wins third gold as Asher-Smith makes history",
-        "summary": "Amy Hunt claims the third gold medal of her bid for a historic quadruple and Dina Asher-Smith makes history as Great Britain win two relay golds at the European Athletics Championships.",
-        "meta": "Sat 15 Aug",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/sport/athletics/articles/cqjxxd0j844o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss"
       }
     ]
   }
