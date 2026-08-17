@@ -1,21 +1,39 @@
-#lastResultCard.has-match-image{position:relative;overflow:hidden;padding-top:150px!important;min-height:230px}
+#lastResultCard.has-match-image{position:relative;overflow:hidden;padding-top:150px!important;min-height:230px;min-width:0}
 #lastResultCard .match-result-photo{position:absolute;top:0;left:0;right:0;height:132px;background:#101d2c center/cover no-repeat;border-bottom:1px solid rgba(255,255,255,.08)}
 #lastResultCard.has-match-image:hover{border-color:rgba(255,84,67,.9);box-shadow:0 0 24px rgba(255,84,67,.18);transform:none!important}
 #lastResultCard.has-match-image .match-result-photo{transform:none!important}
-#nextFixtureCard.fixture-detail-card{min-height:230px;padding:15px 16px!important}
-#nextFixtureCard.fixture-detail-card>strong{font-size:22px;margin:8px 0 10px}
-.fixture-facts{display:grid;gap:0;border-top:1px solid rgba(255,255,255,.09)}
-.fixture-fact{display:grid;grid-template-columns:minmax(108px,.8fr) minmax(0,1.35fr);column-gap:12px;align-items:start;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.arsenal-grid>*{min-width:0}
+#nextFixtureCard.fixture-detail-card{min-height:230px;padding:15px 16px!important;min-width:0;overflow:hidden}
+#nextFixtureCard.fixture-detail-card>strong{font-size:22px;margin:8px 0 10px;max-width:100%;overflow-wrap:anywhere}
+.fixture-facts{display:grid;gap:0;border-top:1px solid rgba(255,255,255,.09);min-width:0}
+.fixture-fact{display:grid;grid-template-columns:minmax(94px,.72fr) minmax(0,1.55fr);column-gap:12px;align-items:start;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);min-width:0;max-width:100%}
 .fixture-fact:last-child{border-bottom:0}
-.fixture-fact>span{font-size:8px!important;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;color:#f59aa1!important;font-weight:900}
-.fixture-fact>b{font-size:11px;line-height:1.35;color:#f5f8fb;font-weight:800}
-.fixture-fact>small{grid-column:2;color:#7790a7!important;font-size:8px!important;margin-top:2px!important;line-height:1.3}
+.fixture-fact>span{font-size:8px!important;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;color:#f59aa1!important;font-weight:900;min-width:0}
+.fixture-fact>b{font-size:11px;line-height:1.35;color:#f5f8fb;font-weight:800;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal;white-space:normal}
+.fixture-fact>small{grid-column:2;color:#7790a7!important;font-size:8px!important;margin-top:2px!important;line-height:1.3;min-width:0;max-width:100%;overflow-wrap:anywhere;white-space:normal}
 #nextFixtureCard.fixture-detail-card:hover{border-color:rgba(255,84,67,.9);box-shadow:0 0 24px rgba(255,84,67,.18);transform:none!important}
-@media(max-width:680px){
+
+/* Mobile: cards become a single column and fixture labels stack above values. */
+@media(max-width:699px){
+  .arsenal-grid{grid-template-columns:minmax(0,1fr)!important}
   #lastResultCard.has-match-image{padding-top:142px!important}
   #lastResultCard .match-result-photo{height:126px}
   #nextFixtureCard.fixture-detail-card{min-height:0;padding:14px!important}
   #nextFixtureCard.fixture-detail-card>strong{font-size:20px}
-  .fixture-fact{grid-template-columns:104px minmax(0,1fr);column-gap:10px;padding:7px 0}
-  .fixture-fact>b{font-size:10.5px}
+  .fixture-fact{grid-template-columns:minmax(0,1fr);gap:3px;padding:8px 0}
+  .fixture-fact>b{font-size:11px}
+  .fixture-fact>small{grid-column:1;margin-top:0!important}
+}
+
+/* Tablet / Chromebook widths: give the information-heavy fixture card more room. */
+@media(min-width:700px) and (max-width:979px){
+  .arsenal-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.35fr)!important}
+  .table-card{grid-column:1/-1!important}
+  .fixture-fact{grid-template-columns:minmax(88px,.65fr) minmax(0,1.55fr)}
+}
+
+/* Desktop: preserve the three-card row but allocate extra width to Next Fixture. */
+@media(min-width:980px){
+  .arsenal-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.55fr) minmax(145px,.55fr)!important}
+  .table-card{grid-column:auto!important}
 }
