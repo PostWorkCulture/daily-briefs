@@ -47,6 +47,13 @@ def og_image(url: str) -> tuple[str | None, str | None]:
             if tag and tag.get("content"):
                 title = tag.get("content").strip()
                 break
+
+        # Google News wrapper pages commonly expose Google's own generic artwork rather
+        # than the publisher's story image. Never use that as an article image.
+        final_host = urlsplit(r.url).netloc.lower()
+        if "news.google.com" in final_host or (title and title.strip().lower() == "google news"):
+            return None, title
+
         for key in ("og:image", "og:image:secure_url", "twitter:image", "twitter:image:src"):
             tag = soup.find("meta", attrs={"property": key}) or soup.find("meta", attrs={"name": key})
             if not tag or not tag.get("content"):
@@ -55,9 +62,9 @@ def og_image(url: str) -> tuple[str | None, str | None]:
             if not image.startswith("https://"):
                 continue
             host = urlsplit(image).netloc.lower()
-            # Avoid generic Google News / tracking artwork. Exact-article screenshots
-            # are a safer fallback than unrelated publisher stock imagery.
-            if "google" in host and "googleusercontent" not in host:
+            # Reject Google-hosted wrapper/tracking artwork. Exact-article screenshots
+            # are a safer fallback than unrelated or generic publisher imagery.
+            if "google" in host or "gstatic" in host:
                 continue
             return image, title
         return None, title
