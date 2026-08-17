@@ -40,9 +40,10 @@
     }
   ];
 
-  function titleOf(card){return (card.querySelector('b')?.textContent||'').trim()}
+  let scheduled=false;
+  function rawTitle(card){return card.dataset.originalTvTitle||(card.querySelector('b')?.textContent||'').trim()}
   function catalogueRule(card){
-    const hay=[titleOf(card),card.getAttribute('href')||'',card.textContent||''].join(' ');
+    const hay=[rawTitle(card),card.getAttribute('href')||'',card.textContent||''].join(' ');
     return CATALOGUE.find(x=>x.match.test(hay))||null;
   }
   function imageOk(src){
@@ -50,28 +51,33 @@
     return /^https:\/\//.test(src||'')&&!/image\.thum\.io|screenshot|favicon|placeholder|logo/.test(low);
   }
   function enhance(){
+    scheduled=false;
     const box=document.getElementById('watchStrip');
     if(!box)return;
     let shown=0;
     [...box.querySelectorAll('.watch-card')].forEach(card=>{
+      if(card.dataset.tvArtEnhanced==='1'){shown++;return}
+      if(!card.dataset.originalTvTitle)card.dataset.originalTvTitle=(card.querySelector('b')?.textContent||'').trim();
       const rule=catalogueRule(card);
       if(!rule||!imageOk(rule.src)){
         card.remove();
         return;
       }
       const label=card.querySelector('b');
-      if(label)label.textContent=rule.programme;
+      if(label&&label.textContent!==rule.programme)label.textContent=rule.programme;
       card.classList.add('artwork');
       card.style.setProperty('--pick-image',`url("${String(rule.src).replace(/"/g,'%22')}")`);
       card.style.setProperty('--pick-pos',rule.pos||'center');
       card.setAttribute('aria-label',rule.alt||rule.programme);
+      card.dataset.tvArtEnhanced='1';
       shown++;
     });
     if(!shown&&!box.querySelector('.empty'))box.innerHTML='<div class="empty">No TV pick passed today’s programme-artwork check.</div>';
   }
+  function queue(){if(scheduled)return;scheduled=true;requestAnimationFrame(enhance)}
 
   const base=window.renderWatch;
-  if(typeof base==='function')window.renderWatch=function(items){base(items);enhance()};
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',enhance);else enhance();
-  new MutationObserver(enhance).observe(document.body,{childList:true,subtree:true});
+  if(typeof base==='function')window.renderWatch=function(items){base(items);queue()};
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',queue);else queue();
+  new MutationObserver(queue).observe(document.getElementById('watchStrip')||document.body,{childList:true,subtree:true});
 })();
