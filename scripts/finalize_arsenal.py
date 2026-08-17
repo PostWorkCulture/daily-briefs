@@ -43,7 +43,9 @@ def verified_como_result() -> dict:
     }
 
 
-def verified_community_shield() -> dict:
+def verified_community_shield_result() -> dict:
+    # Current Daily Briefs news feed contains Arsenal.com's report of the 3-0 result.
+    # Keep this verified result until a still-newer completed men's first-team match is available.
     return {
         "date": "2026-08-16T15:00:00+01:00",
         "dateLabel": "Sun 16 Aug",
@@ -51,12 +53,14 @@ def verified_community_shield() -> dict:
         "opponent": "Manchester City",
         "competition": "FA Community Shield",
         "homeAway": "neutral",
-        "completed": False,
-        "arsenalScore": None,
-        "opponentScore": None,
-        "result": "",
-        "url": "https://www.thefa.com/news/2026/jun/04/2026-fa-community-shield",
-        "source": "The FA",
+        "completed": True,
+        "arsenalScore": 3,
+        "opponentScore": 0,
+        "result": "3–0",
+        "url": "https://www.skysports.com/football/arsenal-vs-manchester-city/report/556659",
+        "source": "Sky Sports / Arsenal.com",
+        "image": "https://e0.365dm.com/26/08/1600x900/skysports-arsenal-man-city_7323378.jpg?20260816170357",
+        "imageAlt": "Arsenal players after the 3-0 Community Shield win over Manchester City",
     }
 
 
@@ -68,7 +72,6 @@ def main() -> None:
     arsenal_news = [x for x in sections.get("Arsenal news", []) if not betting_item(x)]
     sections["Arsenal news"] = arsenal_news
 
-    # Prevent betting content leaking through the smaller "For you" Arsenal card as well.
     interests = []
     for item in payload.get("interests", []):
         if str(item.get("section", "")).lower() == "arsenal" and betting_item(item):
@@ -84,31 +87,25 @@ def main() -> None:
     arsenal["news"] = [x for x in arsenal.get("news", arsenal_news) if not betting_item(x)][:5]
     arsenal["scope"] = "Arsenal men's first team · all competitions"
 
-    # Source data currently misses the final pre-season result. Keep a verified fallback only
-    # until a newer completed match is available from Sky/ESPN.
+    # Choose the newest verified completed fallback only when the live source has not
+    # already supplied a newer completed result.
+    fallback = verified_community_shield_result() if NOW >= datetime.fromisoformat("2026-08-16T15:00:00+01:00") else verified_como_result()
     last = arsenal.get("lastResult")
-    como = verified_como_result()
     if not last:
-        arsenal["lastResult"] = como
+        arsenal["lastResult"] = fallback
     else:
         try:
-            if datetime.fromisoformat(last["date"]) < datetime.fromisoformat(como["date"]):
-                arsenal["lastResult"] = como
+            last_dt = datetime.fromisoformat(last["date"])
+            fallback_dt = datetime.fromisoformat(fallback["date"])
+            if last_dt < fallback_dt:
+                arsenal["lastResult"] = fallback
+            elif last_dt == fallback_dt and last.get("opponent") == "Manchester City":
+                # Preserve the approved result image even if another source supplied the score.
+                last.setdefault("image", fallback["image"])
+                last.setdefault("imageAlt", fallback["imageAlt"])
+                arsenal["lastResult"] = last
         except Exception:
-            arsenal["lastResult"] = como
-
-    # Before kick-off, Community Shield is the next men's first-team fixture regardless of
-    # the Premier League fallback. After the match starts, live sources are allowed to take over.
-    shield = verified_community_shield()
-    shield_dt = datetime.fromisoformat(shield["date"])
-    if NOW < shield_dt:
-        next_fixture = arsenal.get("nextFixture")
-        try:
-            next_dt = datetime.fromisoformat(next_fixture["date"]) if next_fixture else None
-        except Exception:
-            next_dt = None
-        if next_dt is None or shield_dt < next_dt:
-            arsenal["nextFixture"] = shield
+            arsenal["lastResult"] = fallback
 
     payload["arsenal"] = arsenal
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
