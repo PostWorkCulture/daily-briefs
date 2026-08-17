@@ -1,8 +1,8 @@
-/* Approved TV/Tonight artwork treatment: image-led, premium, no hover movement. */
+/* Premium TV Picks: genuine programme artwork only, framed consistently, no hover movement. */
 .tonight-block .watch-strip{gap:12px;padding-bottom:2px}
-.tonight-block .watch-card.artwork{position:relative;overflow:hidden;flex:0 0 min(78%,310px);min-height:250px;border-color:rgba(255,212,119,.38);background-image:linear-gradient(180deg,rgba(3,8,15,.02) 22%,rgba(3,8,15,.22) 50%,rgba(3,8,15,.94) 100%),var(--pick-image)!important;background-size:cover!important;background-position:center!important;box-shadow:inset 0 -70px 80px rgba(3,8,15,.24);transform:none!important}
-.tonight-block .watch-card.artwork:before{background:linear-gradient(180deg,rgba(3,8,15,.02) 25%,rgba(3,8,15,.12) 48%,rgba(3,8,15,.72) 100%)!important}
-.tonight-block .watch-card.artwork:hover{border-color:#ffd477;box-shadow:0 0 24px rgba(255,212,119,.22),inset 0 -70px 80px rgba(3,8,15,.28);transform:none!important}
-.tonight-block .watch-card.artwork small{color:#ffd477;text-shadow:0 1px 9px #000}.tonight-block .watch-card.artwork b{font-size:16px;line-height:1.2;text-shadow:0 2px 12px #000}.tonight-block .watch-card.artwork em{color:#d9e4ee;text-shadow:0 1px 8px #000}
-@media(min-width:900px){.tonight-block .watch-card.artwork{min-height:285px}}
-@media(max-width:420px){.tonight-block .watch-card.artwork{flex-basis:82%;min-height:230px}}
+.tonight-block .watch-card.artwork{position:relative;overflow:hidden;flex:0 0 min(82%,360px);aspect-ratio:16/10;min-height:210px;border-color:rgba(255,212,119,.38);background-image:linear-gradient(180deg,rgba(3,8,15,.01) 24%,rgba(3,8,15,.14) 52%,rgba(3,8,15,.94) 100%),var(--pick-image)!important;background-size:cover!important;background-position:var(--pick-pos,center)!important;background-repeat:no-repeat!important;box-shadow:inset 0 -76px 86px rgba(3,8,15,.25);transform:none!important}
+.tonight-block .watch-card.artwork:before{background:linear-gradient(180deg,rgba(3,8,15,.01) 25%,rgba(3,8,15,.08) 48%,rgba(3,8,15,.76) 100%)!important}
+.tonight-block .watch-card.artwork:hover{border-color:#ffd477;box-shadow:0 0 24px rgba(255,212,119,.22),inset 0 -76px 86px rgba(3,8,15,.30);transform:none!important}
+.tonight-block .watch-card.artwork small{color:#ffd477;text-shadow:0 1px 9px #000}.tonight-block .watch-card.artwork b{font-size:17px;line-height:1.18;text-shadow:0 2px 12px #000}.tonight-block .watch-card.artwork em{color:#d9e4ee;text-shadow:0 1px 8px #000}
+@media(min-width:900px){.tonight-block .watch-card.artwork{flex-basis:min(46%,390px);min-height:235px}}
+@media(max-width:420px){.tonight-block .watch-card.artwork{flex-basis:86%;min-height:205px}}
