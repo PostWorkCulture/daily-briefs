@@ -1,0 +1,33 @@
+name: Remove obsolete Us profile
+on:
+  push:
+    paths:
+      - '.github/workflows/remove-us-profile.yml'
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Remove Us profile from generator
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/refresh.py')
+          s=p.read_text()
+          s=s.replace('    us_sections = {"Local ideas": family, "Local news": local, "UK news": uk}\n','')
+          s=s.replace('        "us": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "lead": first(family or local, "Your shared day is ready."), "interests": [dict(first(family, "Family ideas"), section="Family"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": us_sections},\n','')
+          p.write_text(s)
+          PY
+          rm -f data/us.json
+          grep -q '"pete":' scripts/refresh.py
+          grep -q '"sofia":' scripts/refresh.py
+          if grep -q '"us":' scripts/refresh.py; then echo 'Us profile still present' >&2; exit 1; fi
+          git config user.name 'Daily Briefs Cleanup'
+          git config user.email 'actions@users.noreply.github.com'
+          git add scripts/refresh.py data/us.json
+          git commit -m 'Remove obsolete Us profile'
+          git push
