@@ -313,10 +313,13 @@ def main() -> None:
     path = DATA / "pete.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
     news = (payload.get("sections") or {}).get("Arsenal news", [])
+    transfers = (payload.get("arsenal") or {}).get("transfers", [])
     clean_news = clean_arsenal_news(news)
     if "sections" in payload and "Arsenal news" in payload["sections"]:
         payload["sections"]["Arsenal news"] = clean_news
-    payload["arsenal"] = snapshot(clean_news)
+    enriched = snapshot(clean_news)
+    enriched["transfers"] = transfers
+    payload["arsenal"] = enriched
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print("Arsenal enrichment complete")
 
