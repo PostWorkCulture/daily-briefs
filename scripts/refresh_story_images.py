@@ -5,6 +5,7 @@ import html
 import io
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 
@@ -16,12 +17,12 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = DATA / "story-images.json"
 UA = {"User-Agent": "Mozilla/5.0 DailyBriefs/6.0 (+https://github.com/PostWorkCulture/daily-briefs)"}
-TARGET_PER_PROFILE_TAB = 4
+TARGET_PER_PROFILE_TAB = 5
 MAX_IMAGE_BYTES = 12_000_000
 VISUAL_HASH_DISTANCE = 5
-MIN_WIDTH = 900
-MIN_HEIGHT = 500
-MIN_AREA = 650_000
+MIN_WIDTH = 1200
+MIN_HEIGHT = 675
+MIN_AREA = 900_000
 MIN_ASPECT = 1.15
 MAX_ASPECT = 2.45
 BANNED_IMAGE_HINTS = ("favicon", "sprite", "logo", "brandmark", "avatar", "icon-", "/icon/", "placeholder", "default-image", "default_image")
@@ -36,6 +37,33 @@ SAM_ALTMAN = {
     "credit": "Steve Jurvetson · CC BY 2.0 · Wikimedia Commons",
     "curated": True,
 }
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+CURATED_TAB_QUERIES = {
+    "news": (
+        "Stockholm Sweden waterfront", "London skyline England", "Palace of Westminster London",
+        "British newspaper press", "Surrey England landscape", "Sweden city street", "London street scene",
+    ),
+    "arsenal": (
+        "Emirates Stadium Arsenal", "football stadium crowd England", "football pitch goal",
+        "association football match England", "football boots ball", "football supporters stadium",
+    ),
+    "ai": (
+        "artificial intelligence computer", "data centre servers", "semiconductor wafer",
+        "neural network visualization", "robot technology", "computer circuit board", "machine learning data",
+    ),
+    "career": (
+        "London office team", "business meeting office", "financial data screen",
+        "product management whiteboard", "remote work laptop", "Stockholm office", "professional team collaboration",
+    ),
+}
+
+
+def clean_text(value: str) -> str:
+    return re.sub(
+        r"\s+",
+        " ",
+        BeautifulSoup(html.unescape(value or ""), "html.parser").get_text(" ", strip=True),
+    ).strip()
 
 
 def norm_url(url: str) -> str:
@@ -70,7 +98,7 @@ def banned_image_url(url: str) -> bool:
 
 def og_image(url: str, article_title: str) -> tuple[str | None, str | None]:
     try:
-        r = requests.get(url, headers=UA, timeout=20, allow_redirects=True)
+        r = requests.get(url, headers=UA, timeout=(4, 8), allow_redirects=True)
         r.raise_for_status()
         soup = BeautifulSoup(r.text[:2_500_000], "html.parser")
         title = None
@@ -118,7 +146,7 @@ def image_info(url: str) -> tuple[str, int, int, int] | None:
     try:
         if banned_image_url(url):
             return None
-        r = requests.get(url, headers={**UA, "Accept": "image/avif,image/webp,image/*,*/*;q=0.8"}, timeout=24)
+        r = requests.get(url, headers={**UA, "Accept": "image/avif,image/webp,image/*,*/*;q=0.8"}, timeout=(4, 12))
         r.raise_for_status()
         data = r.content
         if not data or len(data) > MAX_IMAGE_BYTES:
@@ -135,6 +163,48 @@ def image_info(url: str) -> tuple[str, int, int, int] | None:
         return hashlib.sha256(data).hexdigest(), visual_hash, width, height
     except Exception:
         return None
+
+
+def commons_images(query: str) -> list[dict]:
+    try:
+        response = requests.get(
+            COMMONS_API,
+            params={
+                "action": "query",
+                "generator": "search",
+                "gsrsearch": query,
+                "gsrnamespace": 6,
+                "gsrlimit": 6,
+                "prop": "imageinfo",
+                "iiprop": "url|size|extmetadata",
+                "iiurlwidth": 1600,
+                "format": "json",
+                "origin": "*",
+            },
+            headers=UA,
+            timeout=(4, 12),
+        )
+        response.raise_for_status()
+        pages = (response.json().get("query") or {}).get("pages", {})
+    except Exception:
+        return []
+
+    results = []
+    for page in pages.values():
+        info = (page.get("imageinfo") or [{}])[0]
+        width, height = int(info.get("width") or 0), int(info.get("height") or 0)
+        if width < MIN_WIDTH or height < MIN_HEIGHT:
+            continue
+        src = info.get("thumburl") or info.get("url")
+        if not src or banned_image_url(src):
+            continue
+        meta = info.get("extmetadata") or {}
+        artist = clean_text((meta.get("Artist") or {}).get("value", ""))
+        licence = clean_text((meta.get("LicenseShortName") or {}).get("value", ""))
+        credit = " · ".join(x for x in (artist, licence, "Wikimedia Commons") if x)
+        title = clean_text(page.get("title", "").removeprefix("File:"))
+        results.append({"src": src, "alt": f"Supporting image: {title}", "pos": "center", "credit": credit})
+    return results
 
 
 def visually_used(info: tuple[str, int, int, int] | None, used: list[tuple[str, int]]) -> bool:
@@ -203,6 +273,34 @@ def main() -> None:
     used_fingerprints: list[tuple[str, int]] = []
     metadata_cache: dict[str, tuple[str | None, str | None]] = {}
     info_cache: dict[str, tuple[str, int, int, int] | None] = {}
+    commons_cache: dict[str, list[dict]] = {}
+
+    profile_tabs = {profile: candidates(payload, profile) for profile, payload in profiles.items()}
+    article_lookups = {
+        item.get("url", "").strip(): item.get("title", "").strip()
+        for tabs in profile_tabs.values()
+        for items in tabs.values()
+        for item in items
+        if item.get("url", "").strip() and item.get("title", "").strip()
+    }
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {executor.submit(og_image, url, title): url for url, title in article_lookups.items()}
+        for future in as_completed(futures):
+            url = futures[future]
+            try:
+                metadata_cache[url] = future.result()
+            except Exception:
+                metadata_cache[url] = (None, None)
+
+    all_queries = sorted({query for queries in CURATED_TAB_QUERIES.values() for query in queries})
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {executor.submit(commons_images, query): query for query in all_queries}
+        for future in as_completed(futures):
+            query = futures[future]
+            try:
+                commons_cache[query] = future.result()
+            except Exception:
+                commons_cache[query] = []
 
     def acceptable(rule: dict, profile_used: set[str]) -> tuple[bool, str, tuple[str, int, int, int] | None]:
         src = rule.get("src", "")
@@ -216,8 +314,8 @@ def main() -> None:
             return False, key, info
         return True, key, info
 
-    for profile, payload in profiles.items():
-        for _, items in candidates(payload, profile).items():
+    for profile, tabs in profile_tabs.items():
+        for tab, items in tabs.items():
             count = 0
             used_in_this_profile: set[str] = set()
             for item in items:
@@ -239,11 +337,12 @@ def main() -> None:
                 if "openai" in hay or "chatgpt" in hay:
                     proposals.append(dict(SAM_ALTMAN))
 
-                if url not in metadata_cache:
-                    metadata_cache[url] = og_image(url, title)
-                image, page_title = metadata_cache[url]
+                image, page_title = metadata_cache.get(url, (None, None))
                 if image:
                     proposals.append({"src": image, "alt": page_title or title, "pos": "center"})
+
+                for query in CURATED_TAB_QUERIES.get(tab, ()):
+                    proposals.extend(commons_cache.get(query, ()))
 
                 chosen = None
                 chosen_key = ""
@@ -284,7 +383,7 @@ def main() -> None:
         seen_fps.append((article_url, byte_hash, visual_hash))
 
     OUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(result)} premium unique article image rules to {OUT}")
+    print(f"Wrote {len(result)} premium unique article image rules, targeting {TARGET_PER_PROFILE_TAB} per profile tab, to {OUT}")
 
 
 if __name__ == "__main__":

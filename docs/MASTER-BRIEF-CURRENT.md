@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.2, 17 August 2026. Owner: Pete.
+Version 1.4, 18 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -36,6 +36,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Daily weather only. No advice or best-time content.
 - Visual must match wording. Rain icon only for actual rain/showers, not rain probability.
 - Sunny intervals, partly cloudy, and light cloud must be distinguishable.
+- Yesterday's warmest and coldest cards must use Met Office observations from England only. Never select Scotland, Wales, Northern Ireland, or another country.
+- Both extreme cards must display the verified town and English county in `Town, County` form.
 
 **Calendar**
 - Real content refreshed every morning through GOOGLE_CALENDAR_ICS_URL.
@@ -45,6 +47,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 **Around the world**
 - One pictured place daily, linked to a real destination.
 - Put an amazing or rare fact directly beneath it.
+- Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
 
 **TV Picks**
 - Keep at least four named picks per profile.
@@ -59,6 +62,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 **News, AI, Career, Dida**
 - Keep each destination working and independent.
 - Use current content and real source links.
+- Show up to five relevant, unique, high-resolution article images in every populated News, Arsenal, AI, and Career tab, with no more than one image per article. Apply the same coverage standard to Pete and Sofia.
+- Article images must be at least 1,200 × 675 pixels, and the refresh must reject logos, icons, placeholders, low-resolution sources, and duplicate or near-duplicate images.
 - Do not change them as a side effect of other work.
 - Sofia's Career section shows current senior non-software product roles suited to her 17 years in product development at Strategic Insight, a B2B financial-data company.
 - Sofia's roles must be fully remote or explicitly offer at least three work-from-home days per week. Generic hybrid roles do not qualify without evidence of that working pattern.

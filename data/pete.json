@@ -83,9 +83,12 @@
       "dateLabel": "Monday 17 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
-      "hot": {
-        "location": "Heathrow",
-        "displayLocation": "Heathrow, Greater London",
+    "hot": {
+      "location": "Heathrow",
+      "town": "Heathrow",
+      "county": "Greater London",
+      "country": "England",
+      "displayLocation": "Heathrow, Greater London",
         "value": "29.0°C",
         "photo": {
           "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Air_Malta_Airbus%2C_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -94,16 +97,19 @@
           "alt": "Air Malta Airbus, Heathrow Airport"
         }
       },
-      "cold": {
-        "location": "Altnaharra No 2",
-        "displayLocation": "Altnaharra No 2",
-        "value": "6.8°C",
-        "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/A836_starting_to_descend_to_Altnaharra_-_geograph.org.uk_-_4456554.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:A836_starting_to_descend_to_Altnaharra_-_geograph.org.uk_-_4456554.jpg",
-          "credit": "Peter Moore · CC BY-SA 2.0",
-          "alt": "A836 starting to descend to Altnaharra"
-        }
+    "cold": {
+      "location": "Spadeadam No 2",
+      "town": "Spadeadam",
+      "county": "Cumberland",
+      "country": "England",
+      "displayLocation": "Spadeadam, Cumberland",
+      "value": "10.9°C",
+      "photo": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/RAF%20Spadeadam%20-%20Greymare%20Hill%20%28geograph%202412506%29.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:RAF_Spadeadam_-_Greymare_Hill_(geograph_2412506).jpg",
+        "credit": "Phil Thirkell · CC BY-SA 2.0",
+        "alt": "Greymare Hill at RAF Spadeadam in Cumberland"
+      }
       }
     }
   },

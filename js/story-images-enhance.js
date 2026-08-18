@@ -1,9 +1,9 @@
 /* Premium image layer for News / Arsenal / AI / Career.
-   Rules: max one image per article, max four image-led cards per tab view,
-   never reuse an image, and never invent a fallback. If the daily image map
-   has no verified high-quality relevant image, the article stays text-only. */
+   Rules: max one image per article, max five image-led cards per tab view,
+   never reuse an image, and use only verified high-quality article or
+   tab-relevant imagery. */
 (function(){
-  const IMAGE_LIMIT_PER_VIEW=4;
+  const IMAGE_LIMIT_PER_VIEW=5;
   let map={};
   let scheduled=false;
 

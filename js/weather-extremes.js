@@ -1,4 +1,4 @@
-/* Render Met Office 'Yesterday in the UK' hottest/coldest cards. */
+/* Render Met Office 'Yesterday in England' hottest/coldest cards. */
 (function(){
   function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
   function card(kind,item,dateLabel){
@@ -16,7 +16,7 @@
     const data=wx?.yesterdayExtremes;
     if(!data||data.error||(!data.hot&&!data.cold)){root.hidden=true;root.innerHTML='';return}
     root.hidden=false;
-    root.innerHTML=`<div class="uk-yesterday-title"><strong>Yesterday in the UK</strong><span>${esc(data.dateLabel||'Met Office observations')}</span></div><div class="uk-extremes">${card('hot',data.hot,data.dateLabel)}${card('cold',data.cold,data.dateLabel)}</div>`;
+    root.innerHTML=`<div class="uk-yesterday-title"><strong>Yesterday in England</strong><span>${esc(data.dateLabel||'Met Office observations')}</span></div><div class="uk-extremes">${card('hot',data.hot,data.dateLabel)}${card('cold',data.cold,data.dateLabel)}</div>`;
   }
   const base=window.renderWeather;
   if(typeof base==='function')window.renderWeather=function(wx){base(wx);render(wx)};

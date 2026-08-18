@@ -24,6 +24,11 @@ def check_viewport(browser, name: str) -> None:
             () => {
               const card = document.querySelector('#nextFixtureCard.fixture-detail-card');
               const cardRect = card.getBoundingClientRect();
+              const nav = document.querySelector('#primaryNav');
+              const navRect = nav.getBoundingClientRect();
+              const navButtons = [...nav.querySelectorAll('button')]
+                .map(button => ({text: button.innerText.trim(), rect: button.getBoundingClientRect()}))
+                .filter(item => item.rect.width > 0 && item.rect.height > 0);
               const selectors = [
                 '#nextFixtureCard.fixture-detail-card > strong',
                 '#nextFixtureCard .fixture-fact',
@@ -45,7 +50,19 @@ def check_viewport(browser, name: str) -> None:
                 pageScrollWidth: document.documentElement.scrollWidth,
                 cardClientWidth: card.clientWidth,
                 cardScrollWidth: card.scrollWidth,
-                offenders
+                offenders,
+                nav: {
+                  width: navRect.width,
+                  height: navRect.height,
+                  buttons: navButtons.map(item => ({
+                    text: item.text,
+                    left: item.rect.left,
+                    right: item.rect.right,
+                    top: item.rect.top,
+                    bottom: item.rect.bottom,
+                    width: item.rect.width
+                  }))
+                }
               };
             }
             """
@@ -63,9 +80,24 @@ def check_viewport(browser, name: str) -> None:
         if result["offenders"]:
             failures.append(f"fixture descendants escape card: {result['offenders']}")
 
+        nav = result["nav"]
+        buttons = nav["buttons"]
+        if len(buttons) != 6:
+            failures.append(f"expected 6 visible Pete nav buttons, found {len(buttons)}")
+        if any(button["width"] < 44 for button in buttons):
+            failures.append(f"nav buttons squeezed below 44px: {buttons}")
+        if name == "desktop":
+            if len({round(button["left"]) for button in buttons}) != 1:
+                failures.append(f"desktop nav is not a single vertical column: {buttons}")
+            if len({round(button["top"]) for button in buttons}) != len(buttons):
+                failures.append(f"desktop nav buttons overlap vertically: {buttons}")
+        else:
+            if len({round(button["top"]) for button in buttons}) != 1:
+                failures.append(f"mobile nav is not a single horizontal row: {buttons}")
+
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: next fixture fits viewport and card")
+        print(f"PASS {name}: fixture fits and six-item navigation is usable")
     finally:
         page.close()
 

@@ -45,22 +45,34 @@ KNOWN_PHOTOS = {
     },
 }
 
-KNOWN_ENGLISH_COUNTIES = {
-    "teddington": "Greater London",
-    "wiggonholt": "West Sussex",
-    "topcliffe": "North Yorkshire",
-    "pershore": "Worcestershire",
-    "writtle": "Essex",
-    "holbeach": "Lincolnshire",
-    "shobdon": "Herefordshire",
-    "boscombe down": "Wiltshire",
-    "south newington": "Oxfordshire",
-    "benson": "Oxfordshire",
-    "brize norton": "Oxfordshire",
-    "exeter": "Devon",
-    "langdon bay": "Kent",
-    "heathrow": "Greater London",
-    "kew": "Greater London",
+KNOWN_ENGLISH_PLACES = {
+    "teddington": ("Teddington", "Greater London"),
+    "wiggonholt": ("Wiggonholt", "West Sussex"),
+    "topcliffe": ("Topcliffe", "North Yorkshire"),
+    "pershore": ("Pershore", "Worcestershire"),
+    "writtle": ("Writtle", "Essex"),
+    "holbeach": ("Holbeach", "Lincolnshire"),
+    "shobdon": ("Shobdon", "Herefordshire"),
+    "boscombe down": ("Boscombe Down", "Wiltshire"),
+    "south newington": ("South Newington", "Oxfordshire"),
+    "benson": ("Benson", "Oxfordshire"),
+    "brize norton": ("Brize Norton", "Oxfordshire"),
+    "exeter": ("Exeter", "Devon"),
+    "langdon bay": ("Langdon Bay", "Kent"),
+    "heathrow": ("Heathrow", "Greater London"),
+    "kew": ("Kew", "Greater London"),
+    "spadeadam": ("Spadeadam", "Cumberland"),
+}
+
+ENGLAND_REGION_IDS = {
+    "region-ne",  # North East England
+    "region-yh",  # Yorkshire & Humber
+    "region-nw",  # North West England
+    "region-em",  # East Midlands
+    "region-wm",  # West Midlands
+    "region-ee",  # East of England
+    "region-se",  # London & South East England
+    "region-sw",  # South West England
 }
 
 
@@ -78,11 +90,11 @@ def core_place(location: str) -> str:
     return clean(value.split(",", 1)[0])
 
 
-def england_county(location: str) -> str | None:
+def england_place(location: str) -> tuple[str, str] | None:
     low = location.lower()
-    for key, county in KNOWN_ENGLISH_COUNTIES.items():
+    for key, place in KNOWN_ENGLISH_PLACES.items():
         if key in low:
-            return county
+            return place
     try:
         r = requests.get(
             NOMINATIM,
@@ -98,19 +110,22 @@ def england_county(location: str) -> str | None:
         values = " ".join(str(x) for x in address.values()).lower()
         if "england" not in values:
             return None
-        county = address.get("county") or address.get("state_district")
-        if county and county.lower() != core_place(location).lower():
-            return clean(county)
+        county = clean(address.get("county") or address.get("state_district") or "")
+        town = clean(
+            address.get("town") or address.get("city") or address.get("village") or
+            address.get("hamlet") or address.get("locality") or address.get("suburb") or
+            core_place(location)
+        )
+        if town and county and town.lower() != county.lower():
+            return town, county
     except Exception:
         return None
     return None
 
 
 def display_location(location: str) -> str:
-    county = england_county(location)
-    if county and county.lower() not in location.lower():
-        return f"{location}, {county}"
-    return location
+    place = england_place(location)
+    return f"{place[0]}, {place[1]}" if place else location
 
 
 def exact_commons_photo(location: str) -> dict | None:
@@ -172,30 +187,51 @@ def parse_extremes() -> dict | None:
         r = requests.get(EXTREMES_URL, headers=UA, timeout=30)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
-        heading = next((h for h in soup.find_all(["h2", "h3", "h4"]) if clean(h.get_text(" ", strip=True)).lower() == "extremes for united kingdom"), None)
-        if not heading:
-            raise ValueError("UK extremes heading not found")
-        table = heading.find_next("table")
-        if not table:
-            raise ValueError("UK extremes table not found")
-        values = {}
-        for row in table.find_all("tr"):
-            cells = [clean(c.get_text(" ", strip=True)) for c in row.find_all(["th", "td"])]
-            if len(cells) >= 3:
-                values[cells[0].lower()] = {"location": cells[1], "value": cells[2]}
-        hot = values.get("highest maximum temperature")
-        cold = values.get("lowest minimum temperature")
-        if not hot or not cold:
-            raise ValueError("required UK temperature extremes not found")
+        headings = [h for h in soup.find_all(["h2", "h3", "h4"]) if h.get("id") in ENGLAND_REGION_IDS]
+        if len(headings) != len(ENGLAND_REGION_IDS):
+            raise ValueError("not all England regional extremes tables were found")
 
-        date_heading = heading.find_previous("h2")
+        hot_candidates, cold_candidates = [], []
+        for heading in headings:
+            table = heading.find_next("table")
+            if not table:
+                raise ValueError(f"England extremes table missing for {heading.get('id')}")
+            values = {}
+            for row in table.find_all("tr"):
+                cells = [clean(c.get_text(" ", strip=True)) for c in row.find_all(["th", "td"])]
+                if len(cells) >= 3:
+                    values[cells[0].lower()] = {"location": cells[1], "value": cells[2]}
+            if values.get("highest maximum temperature"):
+                hot_candidates.append(values["highest maximum temperature"])
+            if values.get("lowest minimum temperature"):
+                cold_candidates.append(values["lowest minimum temperature"])
+
+        def temperature(item: dict) -> float:
+            match = re.search(r"-?\d+(?:\.\d+)?", item.get("value", ""))
+            if not match:
+                raise ValueError(f"temperature missing for {item.get('location', 'England location')}")
+            return float(match.group())
+
+        if not hot_candidates or not cold_candidates:
+            raise ValueError("required England temperature extremes not found")
+        hot = max(hot_candidates, key=temperature)
+        cold = min(cold_candidates, key=temperature)
+
+        date_heading = headings[0].find_previous("h2")
         date_label = clean(date_heading.get_text(" ", strip=True)) if date_heading else "Yesterday"
 
         def enrich(item: dict) -> dict:
             loc = clean(item["location"])
+            place = england_place(loc)
+            if not place:
+                raise ValueError(f"England town/county could not be verified for {loc}")
+            town, county = place
             return {
                 "location": loc,
-                "displayLocation": display_location(loc),
+                "town": town,
+                "county": county,
+                "country": "England",
+                "displayLocation": f"{town}, {county}",
                 "value": clean(item["value"]).replace(" °C", "°C"),
                 "photo": exact_commons_photo(loc),
             }
@@ -219,7 +255,7 @@ def main() -> None:
         payload = json.loads(path.read_text(encoding="utf-8"))
         payload["weather"] = wx
         path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("Met Office weather + UK yesterday extremes applied to Pete and Sofia")
+    print("Met Office weather + England-only yesterday extremes applied to Pete and Sofia")
 
 
 if __name__ == "__main__":

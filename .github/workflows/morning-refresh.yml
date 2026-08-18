@@ -58,6 +58,14 @@ jobs:
               assert data.get('weather',{}).get('source')=='Met Office', f'{profile}: weather source changed'
               ext=data.get('weather',{}).get('yesterdayExtremes',{})
               assert ext.get('source')=='Met Office', f'{profile}: extremes source changed'
+              assert not ext.get('error'), f"{profile}: England extremes unavailable: {ext.get('error')}"
+              for kind in ('hot','cold'):
+                  place=ext.get(kind) or {}
+                  assert place.get('country')=='England', f'{profile}: {kind} extreme is not in England'
+                  assert str(place.get('town') or '').strip(), f'{profile}: {kind} extreme missing town'
+                  assert str(place.get('county') or '').strip(), f'{profile}: {kind} extreme missing county'
+                  expected=f"{place['town']}, {place['county']}"
+                  assert place.get('displayLocation')==expected, f'{profile}: {kind} extreme does not show town and county'
               picks=data.get('watch') or []
               assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
@@ -95,7 +103,39 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} unique story image rules, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
+
+          def unique_links(items):
+              return list(dict.fromkeys(
+                  str(item.get('url') or '').strip()
+                  for item in items
+                  if str(item.get('url') or '').strip()
+              ))
+
+          def story_tabs(data, profile):
+              sections=data.get('sections') or {}
+              news=[]
+              if profile=='sofia':
+                  news.extend(sections.get('Sweden') or [])
+              news.extend(sections.get('Local news') or [])
+              news.extend(sections.get('UK news') or [])
+              tabs={
+                  'news': unique_links(news),
+                  'ai': unique_links(sections.get('AI') or []),
+                  'career': unique_links(sections.get('Career') or []),
+              }
+              if profile=='pete':
+                  tabs['arsenal']=unique_links(
+                      ((data.get('arsenal') or {}).get('news') or [])
+                      + (sections.get('Arsenal news') or [])
+                  )
+              return tabs
+
+          for profile,data in (('pete',pete),('sofia',sofia)):
+              for tab,links in story_tabs(data,profile).items():
+                  expected=min(5,len(links))
+                  actual=sum(url in rules for url in links)
+                  assert actual>=expected, f'{profile} {tab}: only {actual}/{expected} articles have images'
+          print(f'Validated {len(rules)} unique story image rules with five-image tab coverage, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
