@@ -22,7 +22,7 @@ MAX_IMAGE_BYTES = 12_000_000
 VISUAL_HASH_DISTANCE = 5
 MIN_WIDTH = 1200
 MIN_HEIGHT = 675
-MIN_AREA = 900_000
+MIN_AREA = MIN_WIDTH * MIN_HEIGHT
 MIN_ASPECT = 1.15
 MAX_ASPECT = 2.45
 BANNED_IMAGE_HINTS = ("favicon", "sprite", "logo", "brandmark", "avatar", "icon-", "/icon/", "placeholder", "default-image", "default_image")
@@ -59,11 +59,9 @@ CURATED_TAB_QUERIES = {
 
 
 def clean_text(value: str) -> str:
-    return re.sub(
-        r"\s+",
-        " ",
-        BeautifulSoup(html.unescape(value or ""), "html.parser").get_text(" ", strip=True),
-    ).strip()
+    raw = html.unescape(value or "")
+    text = BeautifulSoup(raw, "html.parser").get_text(" ", strip=True) if "<" in raw else raw
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def norm_url(url: str) -> str:
@@ -172,12 +170,12 @@ def commons_images(query: str) -> list[dict]:
             params={
                 "action": "query",
                 "generator": "search",
-                "gsrsearch": query,
+                "gsrsearch": f"{query} filemime:image/jpeg",
                 "gsrnamespace": 6,
-                "gsrlimit": 6,
+                "gsrlimit": 12,
                 "prop": "imageinfo",
                 "iiprop": "url|size|extmetadata",
-                "iiurlwidth": 1600,
+                "iiurlwidth": 1800,
                 "format": "json",
                 "origin": "*",
             },
@@ -301,6 +299,10 @@ def main() -> None:
                 commons_cache[query] = future.result()
             except Exception:
                 commons_cache[query] = []
+    print(
+        "Commons JPEG fallback candidates: "
+        + ", ".join(f"{query}={len(items)}" for query, items in commons_cache.items())
+    )
 
     def acceptable(rule: dict, profile_used: set[str]) -> tuple[bool, str, tuple[str, int, int, int] | None]:
         src = rule.get("src", "")
