@@ -1,23 +1,14 @@
 {
-  "updatedLabel": "Monday, 17 August 2026 · refreshed 10:01pm",
+  "updatedLabel": "Tuesday, 18 August 2026 · refreshed 6:00am",
   "weather": {
-    "temp": "22°",
-    "summary": "Clear",
-    "condition": "Clear",
-    "currentRainChance": 4,
+    "temp": "19°",
+    "summary": "Overcast",
+    "condition": "Overcast",
+    "currentRainChance": 20,
     "daily": [
       {
-        "date": "2026-08-17",
-        "high": 26,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-08-18",
-        "high": 25,
+        "high": 26,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -26,19 +17,19 @@
       },
       {
         "date": "2026-08-19",
-        "high": 24,
+        "high": 25,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-08-20",
-        "high": 22,
+        "high": 23,
         "low": null,
-        "summary": "Light Showers",
-        "condition": "Light Showers",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 40,
         "source": "Met Office"
       },
@@ -57,7 +48,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -68,11 +59,20 @@
         "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
+      },
+      {
+        "date": "2026-08-24",
+        "high": 22,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 20,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Cloudy · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -80,29 +80,29 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Sunday 16 August 2026",
+      "dateLabel": "Monday 17 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Teddington, Bushy Park",
-        "displayLocation": "Teddington, Bushy Park, Greater London",
-        "value": "27.7°C",
+        "location": "Heathrow",
+        "displayLocation": "Heathrow, Greater London",
+        "value": "29.0°C",
         "photo": {
-          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Diana_Fountain%2C_Bushy_Park.jpeg?width=1600",
-          "page": "https://commons.wikimedia.org/wiki/File:Diana_Fountain,_Bushy_Park.jpeg",
-          "credit": "Jonathan Cardy · CC BY 3.0",
-          "alt": "Diana Fountain in Bushy Park, Teddington, Greater London"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Air_Malta_Airbus%2C_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Air_Malta_Airbus,_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg",
+          "credit": "Brian Robert Marshall · CC BY-SA 2.0",
+          "alt": "Air Malta Airbus, Heathrow Airport"
         }
       },
       "cold": {
-        "location": "Sennybridge No 2",
-        "displayLocation": "Sennybridge No 2",
-        "value": "5.8°C",
+        "location": "Altnaharra No 2",
+        "displayLocation": "Altnaharra No 2",
+        "value": "6.8°C",
         "photo": {
-          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bridge_over_the_River_Usk_at_Sennybridge_-_geograph.org.uk_-_3953802.jpg?width=1600",
-          "page": "https://commons.wikimedia.org/wiki/File:Bridge_over_the_River_Usk_at_Sennybridge_-_geograph.org.uk_-_3953802.jpg",
-          "credit": "Rod Allday · CC BY-SA 2.0",
-          "alt": "Bridge over the River Usk at Sennybridge"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/A836_starting_to_descend_to_Altnaharra_-_geograph.org.uk_-_4456554.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:A836_starting_to_descend_to_Altnaharra_-_geograph.org.uk_-_4456554.jpg",
+          "credit": "Peter Moore · CC BY-SA 2.0",
+          "alt": "A836 starting to descend to Altnaharra"
         }
       }
     }
@@ -123,20 +123,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "WFH",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-22T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "St Pauls Camp 8.15 - 5.45",
       "summary": "",
       "url": "",
@@ -148,6 +134,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "0964keure928mhs30mr5v8as47",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "WFH",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-18T00:00:00+01:00",
+      "end": "2026-08-22T00:00:00+01:00",
+      "date": "2026-08-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#fbd75b",
+      "colorId": "5",
+      "googleEventId": "5g149t6cpdpq0r9mm283bkucp0",
       "calendarColorSource": "google"
     },
     {
@@ -475,39 +475,39 @@
     "played": null,
     "news": [
       {
-        "title": "Report: Arsenal 3-0 Manchester City",
+        "title": "Arsenal ratings vs Man City: Odegaard stars as debutants impress",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSnhZeUZpRDVfZ0RDbS1GWnBSR0JCLVhXN3lZWDdINndRaUJ3MjRsSTgxVVBYdFJBY0hFTXpYYTdfRmFkZlFlTV8zbXFWUEpkR2FFcFI1a2ZiQUExbFhkaEsxazl5R3BDU3J5enBJNWxZNHppOGp3c2hlMlhMdmZaa1RB?oc=5"
+        "meta": "Tue 18 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZVZuZGJ6aWtJTGg4TmV2YUtCbVJLeU1QR2hXSjdJMmRzUm9aMkU0YXZIZFpOc3UzV1JWVlhyeVBZZ0lJTXVRVkVnaFN2Q0RudVJUNFZQSXMtMVA3cm0xVjRHRFpxQ0VqVWN3azRHUms4MExBbG1aMl9TQVljWVVwMzk0TmFNVDNwZ214NHNiOWZWSDJyRXZ5OXZ5TG44ZVVwS0wxRF9DTEFPaUgwOWplLTAtdFI4aFJXaDJjTQ?oc=5"
       },
       {
         "title": "Arsenal Explained: What happened when Henry returned?",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
+        "source": "arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRUtJT3NCUHRJOXo0anFtN2RoalR2NUpLUTdkR0FKd1B5MXBpdTc1QnpYNlRzeTZaUXo4ajRKcDRud3NaMVVqeFZqZkNFWklqMkNMSUliWGM0aGhzdkJXcnhWbFhvWmVaNDhxNHd4U2JnZVg2N0NRQUVsQjA2NmE2UWxUdUNxX3RXR0FCR2xFVVl6N3N3LUV2Wg?oc=5"
       },
       {
-        "title": "How Arsenal should line up against Coventry as Arteta faces huge call",
+        "title": "Man City's Community Shield defeat to Arsenal revealed the scale of the job facing Enzo Maresca on eve of new Premier League season",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNTlYRUNzZElYOU5tT1A1bmxvUktYZWhZTFVIZ0s1TTd1Z2c2Y0RiYkg2SHJDanBwTGhCSHh2R0dyWlAza3JwUXlJcnJNaHFvTEpIZ3c4dU80UDNELTVMT2ptOXhnUVZaQi1hbUFGRWRWeFhsNnFCUnZNcHMzdmZVQVdNWWdJRENnRVRFV1FKTnYzRmtFb0x3MDN0dS0yQ0QzNlc3bVN3SE1nZ3BheGc?oc=5"
-      },
-      {
-        "title": "How to watch Arsenal v Coventry City live on TV",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5"
+        "meta": "Tue 18 Aug",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNQjJMUmZ0VDI3ZEVHRlpheksxQWViMTl6UnlITS1lcThFZzRQMlhEVkJpWkxtaWdkSXZqSzlTVEgySWNPTmhLOUowRi1yb0VYdFJZcUdGUm1VOHFwMW5vaTRYdDNSSXI5UVdJTGVFUmRyemZNdE14bDlGRUJHYkFud0xXWVlxVEx3dEtfM3pTT3RJSjFoSnQ1RG55X0hwRzhjUWRiUTF0UlJkYllNWUVKNmdyYk52YVRjNlBSU2k4VklyZ2ZwMGxOcnV5bFhQU2d2Y1pKeUNEU2hCRHZWNmNkQXY2Smd2cDhjM2NWckM0UmU4bWkwNGtxaXg4VUpEdEt6NFlraUhDdkx6RmFRWnJhQUE3TQ?oc=5"
       },
       {
         "title": "Where is the Community Shield? Why Arsenal vs Man City not at Wembley",
         "summary": "",
-        "meta": "Mon 17 Aug",
+        "meta": "Tue 18 Aug",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOazJEY0g2b0treW5pVThMaU5YVFFpMHVmeVh6Qzh6SFJCRUdweGV4OVdCUFdBMkpHN1NBbmI3dnlqTnlobFlqU2paSWRGY3BnSDZENHBaWW8xaVlBOVd0QjZMZ3F5dklFMWxjVVh4bzR4eGR5aFJ0TEh3TUpaNzlLa2YzU3NSZXFFaTdkdFQ5dFQtV1hHbFk3Q2F4cFVNRFVZZ2ZuYkRsbkxaVnFoZGMxRWViNGd4MUdN?oc=5"
+      },
+      {
+        "title": "Report: Arsenal 3-0 Manchester City",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSnhZeUZpRDVfZ0RDbS1GWnBSR0JCLVhXN3lZWDdINndRaUJ3MjRsSTgxVVBYdFJBY0hFTXpYYTdfRmFkZlFlTV8zbXFWUEpkR2FFcFI1a2ZiQUExbFhkaEsxazl5R3BDU3J5enBJNWxZNHppOGp3c2hlMlhMdmZaa1RB?oc=5"
       }
     ],
     "sources": [
@@ -535,19 +535,19 @@
       "section": "AI"
     },
     {
-      "title": "Report: Arsenal 3-0 Manchester City",
+      "title": "Arsenal ratings vs Man City: Odegaard stars as debutants impress",
       "summary": "",
-      "meta": "Mon 17 Aug",
-      "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSnhZeUZpRDVfZ0RDbS1GWnBSR0JCLVhXN3lZWDdINndRaUJ3MjRsSTgxVVBYdFJBY0hFTXpYYTdfRmFkZlFlTV8zbXFWUEpkR2FFcFI1a2ZiQUExbFhkaEsxazl5R3BDU3J5enBJNWxZNHppOGp3c2hlMlhMdmZaa1RB?oc=5",
+      "meta": "Tue 18 Aug",
+      "source": "London Evening Standard",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZVZuZGJ6aWtJTGg4TmV2YUtCbVJLeU1QR2hXSjdJMmRzUm9aMkU0YXZIZFpOc3UzV1JWVlhyeVBZZ0lJTXVRVkVnaFN2Q0RudVJUNFZQSXMtMVA3cm0xVjRHRFpxQ0VqVWN3azRHUms4MExBbG1aMl9TQVljWVVwMzk0TmFNVDNwZ214NHNiOWZWSDJyRXZ5OXZ5TG44ZVVwS0wxRF9DTEFPaUgwOWplLTAtdFI4aFJXaDJjTQ?oc=5",
       "section": "Arsenal"
     },
     {
-      "title": "Revealed: The south-west London boroughs hit by the most crime in July",
+      "title": "Sutton shines on national stage as borough ranks top 10 for A-levels",
       "summary": "",
       "meta": "Mon 17 Aug",
-      "source": "london-now.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5",
+      "source": "yourlocalguardian.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaDg1MVdtaGxrVVFTSno1SWNJRjJFalM4RVQ2Skg0MXhMaVZiQV84VTlxTWE4Qlo1SVlKUG1kaVNvYjk5blBiczlNSTQwbU5OdGd1cUJ1dW45QjF2TXFuVENNdVVKZ21Mdm51U2NFbUNwMFNfUDN4ZnViajJvZGVISnhWdm1HbWJpRERCMG9qNGtpTzN3cFE3RUltTmFkNDU5UjFoU3lOaFY?oc=5",
       "section": "Local"
     }
   ],
@@ -603,20 +603,6 @@
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50c2tWanNsR0xvM0w1d2hzSFJHS1FXenprdUZCQmNfZVQ2WlNNenprcEczaUcwMm9nYlAyQUwxQ05LY2UwMXpXM1ZRWHNieF91dVYtcklTRG8wQ28wc1VpRFNnSE91M0tDRTFPTHBzRWNiUHJVZVE?oc=5"
       },
       {
-        "title": "Claude to start watermarking AI-generated text – but will it make quality worse?",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdDhaNEwwSzdEUkZjTjdIb1JyTkl4T2JMZ2V1REVTaEhvd3owenhXallWRk5UOGltM3d0d3dqelFNV1hjbHljTDBYc0xVbWJCZTZIQWc1aHUwZFA0ZVlXZlozUGZBNEdJQmhhR3BpRmdSZHFnaF93X3V0aVp6ZnVPQnY5T3BXamdHcG1ZVHdGeGRjNUk?oc=5"
-      },
-      {
-        "title": "Securing the Infrastructure of Intelligence",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "NVIDIA Blog",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fSFBydWFKWkl3TU5YbTZnTF9WMTJCVUZldEY2VmNHMi1KM2s2Q0ZrSW9MZE1oU1N3ZFh6UjhZZDVlZkU0QUNub0NFR2VjSWNud1dYdjZ4bDRuR0JkSXR1SWJUWHd5NFk0ZExJQUhldXo4QUd5Y2lmaXJEM0RWX2c?oc=5"
-      },
-      {
         "title": "Anthropic Revenue Run Rate Surpasses $65 Billion Ahead of IPO",
         "summary": "",
         "meta": "Mon 17 Aug",
@@ -624,76 +610,90 @@
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNVktR0ZGanRzYkMwQjBWRkhfbmVfLTVxR3JpYWtRbk1HemlQbjRab2EzTmN1VDNmYmk5Z0xIWGYzVmU2b3VTRENNTy00d1RrLXBoWjFPVE5hNEQyVDdrZ1ZuTzFaczRGODM0VnpycFpDa0tTZWpFSzYyU3d1dVNwQzlicGJPTm9WdlFHczFUMzNOalhjdDIwSWZZcVltMHdsVDY2OXE4QnZOQ2laUlU4Xw?oc=5"
       },
       {
-        "title": "Anthropic’s Groundbreaking Second Quarter Delivers $11.5B In Revenue",
+        "title": "Anthropic tells investors annualized revenue run rate climbed to $65 billion in July",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHM2Y1Z2ZE9vWWloeE00N0hsUE53d1RkQXc1Y3hGMHcxbklvZDJOVmZUc1Z6emxsNUU0c0lGT3kxOWltaFJ5Tmp2Q0JTeURlNnp4SS13a0c4R0ljSG9uU2Q1TnBCYkZCbV92Z1c4RmJUUm0yOVdKUnd0SGlQaTYxNjFQT0cwSUdDeURqVExOajZxS0tyMk50Z2x1STVzdm1NWGxRRU9KdmFGSE5PT0MtakduMWdQMER1?oc=5"
+        "source": "cnbc.com",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUi05NkI4cXl6M3ZhcWx2QlFuYjNJa2xTN3pIUER6YWZ6bGc3TTBUb0VIV3ppTXBXdG5pbEo2b19kRFQ3MW1SR3p3eFQ2RGNlQUdwUFRJRXJtS0ZCemxjZmRRRWl3Y3M0VXo0dU5nZE0tTXVsZ2xGVXZXa1czZWo3alFiTm9GTWtXVHVoOW1FOVY4ZDJWZzN6MHN0SWtPQXRRQlE?oc=5"
       },
       {
-        "title": "Nvidia to provide up to $105 billion guarantee for OpenAI's Ohio data center",
+        "title": "Claude to start watermarking AI-generated text – but will it make quality worse?",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdDhaNEwwSzdEUkZjTjdIb1JyTkl4T2JMZ2V1REVTaEhvd3owenhXallWRk5UOGltM3d0d3dqelFNV1hjbHljTDBYc0xVbWJCZTZIQWc1aHUwZFA0ZVlXZlozUGZBNEdJQmhhR3BpRmdSZHFnaF93X3V0aVp6ZnVPQnY5T3BXamdHcG1ZVHdGeGRjNUk?oc=5"
+      },
+      {
+        "title": "Anthropic's revenue run rate reportedly surpasses $65 billion pre-IPO",
+        "summary": "",
+        "meta": "Tue 18 Aug",
+        "source": "Axios",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9iSnBXWEFaa1hJVXNlT3YxM3VJalNlaEhTMGtmeUVXMUotcTJ4bzVRbWJIcDVjS0xMZVpEY2hZdTJhZjdtcUd2RHpRazJvRGdPNGlfTFhUc29nZkV5aFk2VXVSclI4aDl5WlNKa2VyTEdISW1TLVdyQ0R3?oc=5"
+      },
+      {
+        "title": "Anthropic revenue run rate tops $65 billion, source says",
         "summary": "",
         "meta": "Mon 17 Aug",
         "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZkxQZ0FIUUQ0X2p6bVF1NWw1eF9PQnBtRVJVbUk4eV83UkU5X0JjdmE0RnFDdkZOLVJNWWlCejVmOTdmdTFoT3FGWmhGOGVYdFdwcXNwWlAtaEVNRnFPYkZFVzhmY3ZBQ0xERGUtWFF6QWdxcVFqR2k4dkdDTkJHNURIdUJ0Rk05NE94ekVPMjYtaWNodnItODdIdGU4Qmw5bndYZ095UF9nRFc5RnRheGxtNXFCM2VWbXd5M2pCTGw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVEJ6S2RpblVGQzhVS083a3dqR3JpajJOUkJIVUZIS1ZkQ05PeW9TdkJUazFpRXNybXNDUUNnV3dfWTllcFdsYms2Mm53dGJwY1VyYnVYb0xYSTNwZWoyaC1vM0FDVWJtTlh6VjFyTGxGUUNaYkg0VDdzNlhjMDJ4dUxJVHQzY0dUaWdKd2t3d0NoWk5IQU52bDRXWTJxZWNFdThJ?oc=5"
       },
       {
-        "title": "Anthropic Is Reportedly Aiming for a Valuation of $2 Trillion or More. Is It Justifiable?",
+        "title": "OpenAI president’s blog pushing agentic AI most notable for what it did not say",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "finance.yahoo.com",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSXdRLVdObm0xYkdCdldVQXJaZ3ZlbThjMnloQkhkSThWMlRINDhzVG5Lc2FxNEhQaGNFcHB3VFpfcUZpVEhfeU4tWkpkNTRMOHdfNmZfRXl3SmlOQ0xWRG5feVAyWUpBSEphQWFNdlNXQmVaTV8zamNqNHVMTHZ5eVpQWnlCMERnVjZqdFd4a0hDOVhsbFZYcHI5YndOc1VWWXBCN2ZKUQ?oc=5"
+        "meta": "Tue 18 Aug",
+        "source": "computerworld.com",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdk9EaWRBc3lXZG1Bel9RNmpxUnN2T3hJamNydnZpRHo4THNCNVdNaE1ReVlOT2s0bGdIMnFsTnh3LWk4OUwwRWhWYnZmY19qb1NSMUxwbHU5QTF3UHhlZ1o0Ym13NHR4TWNHV2cwYjBkWGpTSC15U2dJUHlveUpCVHJTaUxlSm1Ob3JkZjJ1ZEJDMnFJVERPcEVTdm9tSjJuZURuaHIyMnNHQWdVYU5ESzhma3NWYmNXbWhHd01BbUtfT2ljS29veg?oc=5"
       },
       {
-        "title": "Anthropic’s New AI Watermark Sparks Backlash From Claude Subscribers",
+        "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "inc.com",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNl8zdzQ1TXlVR2tELXloWjVYNWN2a0NGQ054eEQxMEdhRnRrWFpkOUFpLV8tNFJ3LXZyWjV5anl2SDJGMXJRZlZSMTBKQ1R2S1BtWVJzQVE4NFNNMUl5dUlYalZIT2VEaW9NTlk0bFF2WjNKZHFXQTdBb0hIaV9DeERPRHRsMUpqTEdOT1lrU3oyZ0N0ZkFpSm1vdUpTUm1vSXBHMFhOaVlSSGxLRUE?oc=5"
+        "source": "NVIDIA Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYXdyMXl0ZUs3UDVBSFo1a3BCcDg4UlZUazQxSEp1allrY1B3SEVxYnQ2RjFQVFY5T3Q1YUFYM19Jc1ZQNXVobGtZNVJBc1BPQXpFWFFsTlBvWEJqV3VRM1lCU0ZzSVlHcS14UGxUZldBaEVsdUJveHN0TXJOLURfWDBxRlJYaFdXMHREU3VSNlVrcFZncENub1czY2lGV1F6eGpGSWZiU2loYlJYVVRFZTdQSU80Q0lNZmdvX3FZQ0hTU1pjZF8weHhCRWEzeURkcDk3N1Z3?oc=5"
       }
     ],
     "Arsenal news": [
       {
-        "title": "Report: Arsenal 3-0 Manchester City",
+        "title": "Arsenal ratings vs Man City: Odegaard stars as debutants impress",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSnhZeUZpRDVfZ0RDbS1GWnBSR0JCLVhXN3lZWDdINndRaUJ3MjRsSTgxVVBYdFJBY0hFTXpYYTdfRmFkZlFlTV8zbXFWUEpkR2FFcFI1a2ZiQUExbFhkaEsxazl5R3BDU3J5enBJNWxZNHppOGp3c2hlMlhMdmZaa1RB?oc=5"
+        "meta": "Tue 18 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZVZuZGJ6aWtJTGg4TmV2YUtCbVJLeU1QR2hXSjdJMmRzUm9aMkU0YXZIZFpOc3UzV1JWVlhyeVBZZ0lJTXVRVkVnaFN2Q0RudVJUNFZQSXMtMVA3cm0xVjRHRFpxQ0VqVWN3azRHUms4MExBbG1aMl9TQVljWVVwMzk0TmFNVDNwZ214NHNiOWZWSDJyRXZ5OXZ5TG44ZVVwS0wxRF9DTEFPaUgwOWplLTAtdFI4aFJXaDJjTQ?oc=5"
       },
       {
         "title": "Arsenal Explained: What happened when Henry returned?",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
+        "source": "arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRUtJT3NCUHRJOXo0anFtN2RoalR2NUpLUTdkR0FKd1B5MXBpdTc1QnpYNlRzeTZaUXo4ajRKcDRud3NaMVVqeFZqZkNFWklqMkNMSUliWGM0aGhzdkJXcnhWbFhvWmVaNDhxNHd4U2JnZVg2N0NRQUVsQjA2NmE2UWxUdUNxX3RXR0FCR2xFVVl6N3N3LUV2Wg?oc=5"
       },
       {
-        "title": "How Arsenal should line up against Coventry as Arteta faces huge call",
+        "title": "Man City's Community Shield defeat to Arsenal revealed the scale of the job facing Enzo Maresca on eve of new Premier League season",
+        "summary": "",
+        "meta": "Tue 18 Aug",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNQjJMUmZ0VDI3ZEVHRlpheksxQWViMTl6UnlITS1lcThFZzRQMlhEVkJpWkxtaWdkSXZqSzlTVEgySWNPTmhLOUowRi1yb0VYdFJZcUdGUm1VOHFwMW5vaTRYdDNSSXI5UVdJTGVFUmRyemZNdE14bDlGRUJHYkFud0xXWVlxVEx3dEtfM3pTT3RJSjFoSnQ1RG55X0hwRzhjUWRiUTF0UlJkYllNWUVKNmdyYk52YVRjNlBSU2k4VklyZ2ZwMGxOcnV5bFhQU2d2Y1pKeUNEU2hCRHZWNmNkQXY2Smd2cDhjM2NWckM0UmU4bWkwNGtxaXg4VUpEdEt6NFlraUhDdkx6RmFRWnJhQUE3TQ?oc=5"
+      },
+      {
+        "title": "Where is the Community Shield? Why Arsenal vs Man City not at Wembley",
+        "summary": "",
+        "meta": "Tue 18 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOazJEY0g2b0treW5pVThMaU5YVFFpMHVmeVh6Qzh6SFJCRUdweGV4OVdCUFdBMkpHN1NBbmI3dnlqTnlobFlqU2paSWRGY3BnSDZENHBaWW8xaVlBOVd0QjZMZ3F5dklFMWxjVVh4bzR4eGR5aFJ0TEh3TUpaNzlLa2YzU3NSZXFFaTdkdFQ5dFQtV1hHbFk3Q2F4cFVNRFVZZ2ZuYkRsbkxaVnFoZGMxRWViNGd4MUdN?oc=5"
+      },
+      {
+        "title": "Report: Arsenal 3-0 Manchester City",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNTlYRUNzZElYOU5tT1A1bmxvUktYZWhZTFVIZ0s1TTd1Z2c2Y0RiYkg2SHJDanBwTGhCSHh2R0dyWlAza3JwUXlJcnJNaHFvTEpIZ3c4dU80UDNELTVMT2ptOXhnUVZaQi1hbUFGRWRWeFhsNnFCUnZNcHMzdmZVQVdNWWdJRENnRVRFV1FKTnYzRmtFb0x3MDN0dS0yQ0QzNlc3bVN3SE1nZ3BheGc?oc=5"
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSnhZeUZpRDVfZ0RDbS1GWnBSR0JCLVhXN3lZWDdINndRaUJ3MjRsSTgxVVBYdFJBY0hFTXpYYTdfRmFkZlFlTV8zbXFWUEpkR2FFcFI1a2ZiQUExbFhkaEsxazl5R3BDU3J5enBJNWxZNHppOGp3c2hlMlhMdmZaa1RB?oc=5"
       },
       {
         "title": "How to watch Arsenal v Coventry City live on TV",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
+        "source": "arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5"
-      },
-      {
-        "title": "Where is the Community Shield? Why Arsenal vs Man City not at Wembley",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOazJEY0g2b0treW5pVThMaU5YVFFpMHVmeVh6Qzh6SFJCRUdweGV4OVdCUFdBMkpHN1NBbmI3dnlqTnlobFlqU2paSWRGY3BnSDZENHBaWW8xaVlBOVd0QjZMZ3F5dklFMWxjVVh4bzR4eGR5aFJ0TEh3TUpaNzlLa2YzU3NSZXFFaTdkdFQ5dFQtV1hHbFk3Q2F4cFVNRFVZZ2ZuYkRsbkxaVnFoZGMxRWViNGd4MUdN?oc=5"
-      },
-      {
-        "title": "Every word: Arteta's post-Community Shield presser",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTnZ3OVpmelZVZVpFam9UdkE0UzlibEt0cFFtalRLeHhrN0pZVi16VkZOanlZY0dPRFpFM2NEN1J5ZE9Lb0F5aEVGanNfSlNGYnY3MUhTaTJVME0wYnNTaTZhNXJHUzNDelBZRlZXLWdjSWhySGptNkx6LXd1TjRtekt4QXg5bE9SeFZ5NzJ6c0FnaDY1?oc=5"
       },
       {
         "title": "Arteta drops clear triple transfer hint with Arsenal team selection",
@@ -703,27 +703,27 @@
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZlNhMGZLN0RUMTd6UGdEU0RKM0FSUDkzdllOTGZTRVlwaEgtcEVHOG9vR2djRnRMSXE1d1NONWVYaHNGSTBISXJDaUZFVjhSRUd3RmROZTFIQTloYkpMT2JlTEN3ZlpxVkR3bGJleGRRajVfS1h5ekphdmhkTnhDdmpGTjN4d3dXOTRZVTRaZlZJVHp4Qm5nWE1OUWlodi1hT3VzX3ZzenQ?oc=5"
       },
       {
-        "title": "Team news: Guimaraes and Tzolis start Community Shield",
+        "title": "Every word: Arteta's post-Community Shield presser",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcFFXUk5YdEZLSTJYckVMdDhaWGw4S3pHT3FTLUlCQng1SkNGb3YwMTlSYzlNNUNkS05Fd25za2dmU3hGTlpGN1BicnlKeVQzV1lTZ0RPVTFxb2FLSHdnR19Ocml1LThwenE1elBkNk9nakpIYXhOYXFoRHNBeEhOR3lDUmZSTGNNVmFtYnQ3RGk5aWlLbWc5bzJHVQ?oc=5"
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTnZ3OVpmelZVZVpFam9UdkE0UzlibEt0cFFtalRLeHhrN0pZVi16VkZOanlZY0dPRFpFM2NEN1J5ZE9Lb0F5aEVGanNfSlNGYnY3MUhTaTJVME0wYnNTaTZhNXJHUzNDelBZRlZXLWdjSWhySGptNkx6LXd1TjRtekt4QXg5bE9SeFZ5NzJ6c0FnaDY1?oc=5"
       }
     ],
     "Local news": [
       {
-        "title": "Revealed: The south-west London boroughs hit by the most crime in July",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "london-now.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5"
-      },
-      {
         "title": "Sutton shines on national stage as borough ranks top 10 for A-levels",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "source": "Sutton Guardian",
+        "source": "yourlocalguardian.co.uk",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaDg1MVdtaGxrVVFTSno1SWNJRjJFalM4RVQ2Skg0MXhMaVZiQV84VTlxTWE4Qlo1SVlKUG1kaVNvYjk5blBiczlNSTQwbU5OdGd1cUJ1dW45QjF2TXFuVENNdVVKZ21Mdm51U2NFbUNwMFNfUDN4ZnViajJvZGVISnhWdm1HbWJpRERCMG9qNGtpTzN3cFE3RUltTmFkNDU5UjFoU3lOaFY?oc=5"
+      },
+      {
+        "title": "Revealed: The south-west London boroughs hit by the most crime in July",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "London Now",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUjZhTGJRS0lRMmN4N3p4RUJmNmhlc1RmbFotUUUxWjVuU3JxZnM5a3RvTENtR1dONXlLd1h2TEdFcy1IZFp0bjRINlVqY2F2VVB6SFRnLWp6dFZmWWZBU3dYaEJhanZLVEQ2SDJZVnpqcndJbENib2JnQUlOMDFXZlFSZURiLWg0b3RqeXRrSl9kckFN?oc=5"
       },
       {
         "title": "Record number of children are living in temporary accommodation",
@@ -733,11 +733,18 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMEdJS090eElqNGNudEhhejBWRGtTVW8xX2ZsZXRHaUdIS05ZTl9xTGFscU85ZGM0T0xUQzZ5YVlpOHBQV1FFTURyYVl0TnMwdmJJRkMzM3ZoanFxcVVNdVB3dS1xVlU3STMtem8xVENMRG5tRWE2VTZlZkZ1Y2ljWXYwUWdjZ2tyR3JqdEdnMXpsbkR2WHlLWHBrbkdSZGk1?oc=5"
       },
       {
-        "title": "Residents of 'pin-drop quiet' South London neighbourhood worry about KFC 2am plans",
+        "title": "London's smartest boroughs according to A-level grades revealed - how does your area fare?",
         "summary": "",
-        "meta": "Sat 15 Aug",
-        "source": "My London",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTDh1R0FvRmtyY1dLdXJUU1FMRk5Ia3RNNl9FMDJvWmxXb2RLTXZ1M2phRnRiNnFjVXRJeEJ5RXd6OVRsRkFqU3E3OGFHOG9FcHVNanFtNUNtOFhaSm1LVHoxQTBrYy04TVlKQ0MtRnBISHdKWXZSM3hKdEZ3dEtJTGdpc1ZERmd5UXlJcnpES200eGM4UlJV0gGXAUFVX3lxTE5MOHVHQW9Ga3JjV0t1clRTUUxGTkhrdE02X0UwMm9abFdvZEtNdnUzamFGdGI2cWNVdEl4QnlFd3o5VGxGQWpTcTc4YUc4b0VwdU1qcW01Q204WFpKbUtUejFBMGtjLThNWUpDQy1GcEhId0pZdlIzeEp0Rnd0S0lMZ2lzVkRGZ3lReUlyekRLbTR4YzhSUlU?oc=5"
+        "meta": "Fri 14 Aug",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXg3ejRIMHNrbEp4VmJnMllldk8wVktMUnk5VkRjeE5IR003ZlA1NEY3SkpIOU1MTTVnelg0b21YOUVvRkV6VXFLRmtTRXdoMUhxTlowZE9LNG5vV0RoZzVCUEwyMUxzZ3pDZXdlZzNIdDFxNGlzZEF6QnZGY3pMZU5fYkxsejFNR01V?oc=5"
+      },
+      {
+        "title": "Secrets of Zendaya and Tom Holland's Ultra-Private Wedding Revealed",
+        "summary": "",
+        "meta": "Sun 16 Aug",
+        "source": "okmagazine.com",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdHFsVDg1TW5XSndyTFUyaDM0cThaVDZxUURMejVMcUFBZTc0bnVPMUxlMWd2WEFMRVdFQnVsT3VJOEhiYjAtN2hGNl90Y2JkVDlxNEJrVHMyUkRlazNud0liWk50ZFFxQ3R6NXFENTFxVlR5MEF6VTR5cHdMYUxXXzdDQnZOaHU2OTZ3Zw?oc=5"
       }
     ],
     "UK news": [
@@ -749,39 +756,39 @@
         "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Tributes to actress Hayden Panettiere as coroner finds 'no signs of trauma'",
-        "summary": "The US actress, who has died at the age of 36, starred in the TV shows Heroes and Nashville.",
-        "meta": "Mon 17 Aug",
+        "title": "Russia warns UK over supplying drones to Ukraine",
+        "summary": "An MoD spokesperson responds by saying Britain stands \"shoulder to shoulder\" with Ukraine.",
+        "meta": "Tue 18 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Fifa executive leaves job three weeks after speaking out against Infantino plan",
-        "summary": "Senior Fifa figure Kevin Lamour is sacked football's world governing body three weeks after criticising its president Gianni Infantino.",
+        "title": "Fifa official sacked after Infantino plan criticism",
+        "summary": "Senior Fifa figure Kevin Lamour is sacked by football's world governing body three weeks after criticising its president Gianni Infantino.",
         "meta": "Mon 17 Aug",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/sport/football/articles/cn7n4d6vy03o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Burnham exchanged messages with person posing as Trump's chief of staff",
-        "summary": "Downing Street has declined to comment on the security breach, first reported by Politico.",
-        "meta": "Mon 17 Aug",
+        "title": "Tributes to actress Hayden Panettiere as coroner finds 'no signs of trauma'",
+        "summary": "The US actress, who has died at the age of 36, starred in the TV shows Heroes and Nashville.",
+        "meta": "Tue 18 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyvj5zdjj2o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Parents pushed to breaking point by Child Maintenance Service, BBC told",
-        "summary": "Mothers describe battles to make ex-partners pay, while fathers say they have been wrongly charged thousands.",
-        "meta": "Mon 17 Aug",
+        "title": "BBC breaks down Trump's latest shift on North and South Korea",
+        "summary": "Trump said the US will \"substantially reduce\" joint military exercises with South Korea, citing his \"very good relationship\" with Kim Jong Un.",
+        "meta": "Tue 18 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c4g3re5ew8do?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/videos/cy45zjw424xo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Emotional farewell to 'global, iconic superstar' Bonnie Tyler",
-        "summary": "Fans, friends and family travel to Swansea to pay tribute to Total Eclipse of the Heart singer.",
-        "meta": "Mon 17 Aug",
+        "title": "Young adults are taking prescription drugs instead of alcohol - and it's dividing experts",
+        "summary": "Increasingly, young adults are taking anxiety medication to feel \"drunk\" at parties. But it's not a free lunch, experts warn.",
+        "meta": "Tue 18 Aug",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c171j051gejo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c1d1lpl9vrxo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
@@ -796,18 +803,6 @@
         "company": "Government Digital Service",
         "location": "England, United Kingdom",
         "postedAt": "2026-08-04"
-      },
-      {
-        "title": "Senior Manager or Director, Data & AI Delivery Lead (Central Government)",
-        "summary": "Baringa · London, England, United Kingdom",
-        "meta": "UK · Posted Tue 28 Jul",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/senior-manager-or-director-data-ai-delivery-lead-central-government-at-baringa-4445721705",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Baringa",
-        "location": "London, England, United Kingdom",
-        "postedAt": "2026-07-28"
       },
       {
         "title": "DDaT- Head of People Data and Insight",
@@ -831,6 +826,18 @@
         "countryFocus": "UK",
         "company": "Ministry of Justice UK",
         "location": "London, England, United Kingdom",
+        "postedAt": "2026-08-11"
+      },
+      {
+        "title": "Director of Digital and Analysis- Marine Management Organisation (MMO)",
+        "summary": "Department for Environment, Food and Rural Affairs · Newton Upon Derwent, England, United Kingdom",
+        "meta": "UK · Posted Tue 11 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/director-of-digital-and-analysis-marine-management-organisation-mmo-at-department-for-environment-food-and-rural-affairs-4451684727",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Department for Environment, Food and Rural Affairs",
+        "location": "Newton Upon Derwent, England, United Kingdom",
         "postedAt": "2026-08-11"
       },
       {
@@ -870,6 +877,30 @@
         "postedAt": "2026-08-03"
       },
       {
+        "title": "Product Manager",
+        "summary": "Primer.io · United Kingdom",
+        "meta": "UK · Posted Tue 18 Aug",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.co.uk/jobs/companies/primerio/product-manager-united-kingdom-412017",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Primer.io",
+        "location": "United Kingdom",
+        "postedAt": "2026-08-18"
+      },
+      {
+        "title": "Senior Platform Architect - UK",
+        "summary": "temporaltechnologies · Location not stated",
+        "meta": "UK · Posted Mon 17 Aug",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.co.uk/jobs/companies/temporaltechnologies/senior-platform-architect-uk-450783",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "temporaltechnologies",
+        "location": "Location not stated",
+        "postedAt": "2026-08-17"
+      },
+      {
         "title": "Senior Technical Advisor, Data Use and Decision Science (Remote - US, UK, France, DRC)",
         "summary": "Resolvetosavelives · US, France, DRC",
         "meta": "UK · Posted Mon 17 Aug",
@@ -880,30 +911,6 @@
         "company": "Resolvetosavelives",
         "location": "US, France, DRC",
         "postedAt": "2026-08-17"
-      },
-      {
-        "title": "AI Lead",
-        "summary": "Money and Pensions Service · Bedford, England, United Kingdom",
-        "meta": "UK · Posted Fri 14 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/ai-lead-at-money-and-pensions-service-4451229540",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Money and Pensions Service",
-        "location": "Bedford, England, United Kingdom",
-        "postedAt": "2026-08-14"
-      },
-      {
-        "title": "Head of AI and Automation Accelerator",
-        "summary": "Ofgem · London Area, United Kingdom",
-        "meta": "UK · Posted Wed 12 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-ai-and-automation-accelerator-at-ofgem-4444143247",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Ofgem",
-        "location": "London Area, United Kingdom",
-        "postedAt": "2026-08-12"
       }
     ]
   }
