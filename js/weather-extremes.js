@@ -8,7 +8,7 @@
     const photoStyle=photo?.src?` style="background-image:url('${esc(photo.src)}')"`:'';
     const credit=photo?.src?`<div class="uk-extreme-photo-credit">${photo.page?`<a href="${esc(photo.page)}" target="_blank" rel="noopener">${esc(photo.credit||'Exact-place photo')}</a>`:esc(photo.credit||'Exact-place photo')}</div>`:'<div class="uk-extreme-photo-credit">Exact-place photo unavailable</div>';
     const kicker=kind==='hot'?'Hottest place':'Coldest place';
-    const line=kind==='hot'?'highest UK maximum':'lowest UK minimum';
+    const line=kind==='hot'?'highest England maximum':'lowest England minimum';
     return `<article class="${cls}"><div class="uk-extreme-photo" role="img" aria-label="${esc(photo?.alt||item.displayLocation||item.location||kicker)}"${photoStyle}></div>${credit}<div class="uk-extreme-copy"><div class="uk-extreme-kicker">${kicker}</div><h3>${esc(item.displayLocation||item.location||'—')} · ${esc(item.value||'—')}</h3><p>${esc(dateLabel||'Yesterday')}’s ${line}.</p><p>Official Met Office observed extreme.</p></div></article>`;
   }
   function render(wx){
