@@ -34,13 +34,21 @@ function renderArsenal(a){
   $('#leagueCard').innerHTML=a.leaguePosition?`<span>Premier League</span><strong>${a.leaguePosition}${a.leaguePosition===1?'st':a.leaguePosition===2?'nd':a.leaguePosition===3?'rd':'th'}</strong><small>${a.points??0} pts · ${a.played??0} played</small>`:'<span>Premier League</span><strong>—</strong><small>Table not started / unavailable</small>';
   const news=$('#arsenalNews');news.innerHTML='';
   (a.news||[]).slice(0,3).forEach(n=>{const el=linkEl('div',n,'arsenal-news-item');el.innerHTML=`<span>${n.source||'Team news'}</span><b>${n.title}</b>`;news.appendChild(el)});
+  const newest=items=>[...(items||[])].sort((left,right)=>(Date.parse(right.publishedAt||'')||0)-(Date.parse(left.publishedAt||'')||0));
   const transfers=$('#arsenalTransfers');transfers.innerHTML='';
-  (a.transfers||[]).slice(0,6).forEach(item=>{
+  newest(a.transfers).slice(0,6).forEach(item=>{
     const el=linkEl('article',item,'arsenal-transfer-item');
     el.innerHTML=`<div><span>${item.trust||'Trusted report'}</span><small>${item.source||'Trusted source'}${item.meta?` · ${item.meta}`:''}</small></div><b>${item.title}</b>`;
     transfers.appendChild(el);
   });
   if(!transfers.children.length)transfers.innerHTML='<div class="arsenal-transfer-empty">No new trusted men’s first-team transfer update today.</div>';
+  const rumours=$('#arsenalTransferRumours');rumours.innerHTML='';
+  newest(a.transferRumours).slice(0,5).forEach(item=>{
+    const el=linkEl('article',item,'arsenal-transfer-item arsenal-rumour-item');
+    el.innerHTML=`<div><span>Unconfirmed · X</span><small>${item.source||'Reporter'}${item.confidence?` · ${item.confidence}`:''}${item.meta?` · ${item.meta}`:''}</small></div><b>${item.title}</b>`;
+    rumours.appendChild(el);
+  });
+  if(!rumours.children.length)rumours.innerHTML='<div class="arsenal-transfer-empty arsenal-rumour-empty">No qualifying reporter posts in the last seven days.</div>';
 }
 function renderScenery(){const start=new Date(new Date().getFullYear(),0,0);const day=Math.floor((new Date()-start)/86400000);const item=scenery[(day-1)%scenery.length];$('#sceneryImage').src=item.image;$('#sceneryImage').alt=`${item.place}, ${item.country}`;$('#sceneryCountry').textContent=item.country;$('#sceneryPlace').textContent=item.place;$('#sceneryCredit').textContent=item.credit;$('#sceneryCard').href=item.href}
 function render(data){state.data=data;const p=meta[state.profile];$('#greeting').textContent=`Morning, ${p.name}.`;$('#intro').textContent=p.intro;$('#profileAvatar').textContent=p.name[0];$('#briefDate').textContent=data.updatedLabel||'Latest brief';$('#weatherTemp').textContent=data.weather?.temp||'—';$('#weatherSummary').textContent=data.weather?.summary||'Forecast unavailable';const total=Object.values(data.sections||{}).reduce((n,v)=>n+(Array.isArray(v)?v.length:0),0);$('#storyCount').textContent=total;const lead=data.lead||data.interests?.[0]||{};$('#leadCard h3').textContent=lead.title||'Your brief is ready.';$('#leadCard p').textContent=lead.summary||lead.source||'Fresh items will appear here after the morning refresh.';renderScenery();renderWeather(data.weather||{});renderArsenal(data.arsenal);renderCalendar(data.calendar||[]);renderInterests(data.interests);renderWatch(data.watch);renderGroups(data.sections)}

@@ -27,6 +27,8 @@ def check_viewport(browser, name: str) -> None:
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
+        page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
+        page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)
         for selector in ('#lastResultCard', '#nextFixtureCard', '#leagueCard', '.arsenal-news-item'):
             locator = page.locator(selector).first
             if locator.count():
@@ -129,7 +131,7 @@ def check_viewport(browser, name: str) -> None:
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: fixture, navigation, Calendar glow, Arsenal glow/transfers and lime Dida treatment are usable")
+        print(f"PASS {name}: fixture, navigation, Calendar glow, Arsenal trusted/reporter-watch lists and lime Dida treatment are usable")
     finally:
         page.close()
 

@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.5, 18 August 2026. Owner: Pete.
+Version 1.6, 18 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -59,7 +59,9 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Men's first team, all competitions.
 - Latest completed and nearest upcoming fixtures.
 - Preserve opponent, stadium, kickoff, competition, TV channel, and previous-meeting details when available.
-- Put Transfer watch at the bottom of the Arsenal view. Include only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, academy, and women's-team items.
+- Put Transfer watch at the bottom of the Arsenal view and always order it newest first. Its trusted list includes only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic/The New York Times, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, academy, and women's-team items from this trusted list.
+- Beneath the trusted list, show a separate Reporter watch for early, speculative public X posts. Mark every item `Unconfirmed · X`; never mix it into trusted reporting. Allow only David Ornstein, Fabrizio Romano, Charles Watts, and James Benge. Order it newest first and reject betting, gambling, women's-team, academy, U21, U18, youth, and girls' items.
+- Discover allowlisted public X posts through Google News indexing so the brief does not require a paid X API, credentials, scraping proxy, or new morning-refresh secret.
 - Apply the red edge-glow hover/focus treatment to every Arsenal card, including fixtures, league position, news, and transfer updates.
 
 **News, AI, Career, Dida**

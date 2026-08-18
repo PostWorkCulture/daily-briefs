@@ -85,10 +85,17 @@ def main() -> None:
 
     arsenal = payload.setdefault("arsenal", {})
     arsenal["news"] = [x for x in arsenal.get("news", arsenal_news) if not betting_item(x)][:5]
-    arsenal["transfers"] = [
+    arsenal["transfers"] = sorted([
         x for x in arsenal.get("transfers", [])
         if not betting_item(x) and x.get("contentType") == "transfer-update" and x.get("trust")
-    ][:6]
+    ], key=lambda x: str(x.get("publishedAt") or ""), reverse=True)[:6]
+    arsenal["transferRumours"] = sorted([
+        x for x in arsenal.get("transferRumours", [])
+        if not betting_item(x)
+        and x.get("contentType") == "transfer-rumour"
+        and x.get("trust") == "Unconfirmed"
+        and x.get("sourceType") == "X"
+    ], key=lambda x: str(x.get("publishedAt") or ""), reverse=True)[:5]
     arsenal["scope"] = "Arsenal men's first team · all competitions"
 
     # Choose the newest verified completed fallback only when the live source has not

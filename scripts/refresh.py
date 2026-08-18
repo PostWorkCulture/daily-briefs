@@ -201,15 +201,17 @@ def google_news(query: str, limit: int = 6, max_age_days: int = 4) -> list[dict]
         key = re.sub(r"\W+", "", title.lower())[:120]
         if not key or key in seen:
             continue
+        published_at = ""
         try:
             dt = dateparser.parse(entry.get("published", "")).astimezone(TZ)
             if NOW - dt > timedelta(days=max_age_days):
                 continue
             meta = dt.strftime("%a %-d %b")
+            published_at = dt.isoformat()
         except Exception:
             meta = "Recent"
         seen.add(key)
-        out.append({"title": title.strip(), "summary": "", "meta": meta, "source": source.strip(), "url": entry.get("link", "")})
+        out.append({"title": title.strip(), "summary": "", "meta": meta, "publishedAt": published_at, "source": source.strip(), "url": entry.get("link", "")})
         if len(out) >= limit:
             break
     return out
@@ -221,13 +223,15 @@ def rss(url: str, section: str, limit: int = 6, max_age_days: int = 4) -> list[d
         title = clean_html(entry.get("title", "")); key = re.sub(r"\W+", "", title.lower())[:120]
         if not title or key in seen: continue
         summary = clean_html(entry.get("summary", ""))[:220]
+        published_at = ""
         try:
             dt = dateparser.parse(entry.get("published", "")).astimezone(TZ)
             if NOW - dt > timedelta(days=max_age_days): continue
             meta = dt.strftime("%a %-d %b")
+            published_at = dt.isoformat()
         except Exception: meta = section
         seen.add(key)
-        items.append({"title": title, "summary": summary, "meta": meta, "source": section, "url": entry.get("link", "")})
+        items.append({"title": title, "summary": summary, "meta": meta, "publishedAt": published_at, "source": section, "url": entry.get("link", "")})
         if len(items) >= limit: break
     return items
 
@@ -273,15 +277,40 @@ TRUSTED_ARSENAL_TRANSFER_SOURCES = {
     "the guardian": "Trusted report",
     "reuters": "Trusted report",
     "espn": "Trusted report",
+    "the new york times": "Tier-one report",
 }
+X_TRANSFER_REPORTERS = (
+    {"name": "David Ornstein", "handle": "David_Ornstein", "confidence": "Tier-one reporter", "profile": "https://x.com/David_Ornstein"},
+    {"name": "Fabrizio Romano", "handle": "FabrizioRomano", "confidence": "Established reporter", "profile": "https://x.com/FabrizioRomano"},
+    {"name": "Charles Watts", "handle": "charles_watts", "confidence": "Arsenal specialist", "profile": "https://x.com/charles_watts"},
+    {"name": "James Benge", "handle": "jamesbenge", "confidence": "Arsenal specialist", "profile": "https://x.com/jamesbenge"},
+)
 TRANSFER_TERMS = re.compile(
     r"\b(?:transfer|sign(?:s|ed|ing)?|deal|move|bid|talks|loan|contract|exit|joins?|medical|target)\b",
     re.I,
 )
 TRANSFER_EXCLUSIONS = re.compile(
-    r"\b(?:rumou?r|gossip|paper talk|odds|betting|women|women's|u21|u18|academy|girls)\b",
+    r"\b(?:rumou?rs?|gossip|paper talk|odds|betting|women|women's|u21|u18|academy|girls)\b",
     re.I,
 )
+SPECULATION_EXCLUSIONS = re.compile(
+    r"\b(?:paper talk|odds|betting|women|women's|u21|u18|academy|youth|girls)\b",
+    re.I,
+)
+
+
+def news_timestamp(item: dict) -> float:
+    value = str(item.get("publishedAt") or "").strip()
+    if not value:
+        return 0
+    try:
+        return dateparser.parse(value).timestamp()
+    except Exception:
+        return 0
+
+
+def newest_first(items: list[dict]) -> list[dict]:
+    return sorted(items, key=news_timestamp, reverse=True)
 
 
 def arsenal_transfer_updates() -> list[dict]:
@@ -302,9 +331,29 @@ def arsenal_transfer_updates() -> list[dict]:
         update["contentType"] = "transfer-update"
         update["trust"] = trust
         updates.append(update)
-        if len(updates) >= 6:
-            break
-    return updates
+    return newest_first(updates)[:6]
+
+
+def arsenal_transfer_rumours() -> list[dict]:
+    rumours = []
+    for reporter in X_TRANSFER_REPORTERS:
+        query = f'site:x.com/{reporter["handle"]}/status Arsenal (transfer OR signing OR deal OR move OR bid OR talks OR loan OR contract OR exit) when:7d'
+        for item in google_news(query, 10, 7):
+            title = clean_html(item.get("title", ""))
+            if "arsenal" not in title.lower() or not TRANSFER_TERMS.search(title) or SPECULATION_EXCLUSIONS.search(title):
+                continue
+            update = dict(item)
+            update.update({
+                "contentType": "transfer-rumour",
+                "trust": "Unconfirmed",
+                "speculative": True,
+                "source": reporter["name"],
+                "sourceType": "X",
+                "confidence": reporter["confidence"],
+                "sourceUrl": reporter["profile"],
+            })
+            rumours.append(update)
+    return newest_first(merge_news(rumours, limit=30))[:5]
 
 
 def sofia_role_match(title: str) -> bool:
@@ -764,7 +813,7 @@ def parse_fixture(event: dict, competition: str) -> dict | None:
     }
 
 
-def arsenal_snapshot(news: list[dict], transfers: list[dict]) -> dict:
+def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: list[dict]) -> dict:
     competitions = {
         "eng.1": "Premier League", "eng.fa": "FA Cup", "eng.league_cup": "League Cup",
         "uefa.champions": "Champions League", "eng.charity": "Community Shield",
@@ -801,6 +850,7 @@ def arsenal_snapshot(news: list[dict], transfers: list[dict]) -> dict:
         "leaguePosition": position, "points": points, "played": played,
         "news": news[:5],
         "transfers": transfers[:6],
+        "transferRumours": transfer_rumours[:5],
     }
 
 
@@ -814,7 +864,8 @@ def build_profiles() -> dict[str, dict]:
     )
     arsenal_news = google_news('Arsenal FC when:3d', 8, 3)
     transfers = arsenal_transfer_updates()
-    arsenal = arsenal_snapshot(arsenal_news, transfers)
+    transfer_rumours = arsenal_transfer_rumours()
+    arsenal = arsenal_snapshot(arsenal_news, transfers, transfer_rumours)
     local = local_news()
     uk = uk_news()
     tonight = tonight_recommendations()

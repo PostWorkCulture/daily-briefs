@@ -98,15 +98,40 @@ jobs:
               previous=fixture.get('previousMeeting') or {}
               assert str(previous.get('score') or '').strip(), 'Arsenal next fixture missing previous-meeting score'
 
-          trusted_sources={'arsenal.com','bbc sport','sky sports','the athletic','the guardian','reuters','espn'}
+          trusted_sources={'arsenal.com','bbc sport','sky sports','the athletic','the guardian','reuters','espn','the new york times'}
           transfers=(pete.get('arsenal') or {}).get('transfers') or []
+          transfer_dates=[]
           for item in transfers:
               source=str(item.get('source') or '').lower()
               title=str(item.get('title') or '')
               assert item.get('contentType')=='transfer-update', 'Arsenal transfer section contains non-transfer content'
               assert item.get('trust') in {'Official','Tier-one report','Trusted report'}, 'Arsenal transfer item has no approved trust label'
               assert any(name in source for name in trusted_sources), f'Arsenal transfer source is not approved: {source}'
-              assert not __import__('re').search(r'\b(?:rumou?r|gossip|paper talk|odds|betting)\b', title, __import__('re').I), f'Arsenal transfer item is rumour-led: {title}'
+              assert not __import__('re').search(r'\b(?:rumou?rs?|gossip|paper talk|odds|betting)\b', title, __import__('re').I), f'Arsenal transfer item is rumour-led: {title}'
+              assert str(item.get('publishedAt') or '').strip(), f'Arsenal transfer item has no machine-sortable date: {title}'
+              transfer_dates.append(item['publishedAt'])
+          assert transfer_dates==sorted(transfer_dates,reverse=True), 'Arsenal trusted transfers are not newest first'
+
+          x_reporters={'David Ornstein','Fabrizio Romano','Charles Watts','James Benge'}
+          x_profiles={
+              'David Ornstein':'https://x.com/David_Ornstein',
+              'Fabrizio Romano':'https://x.com/FabrizioRomano',
+              'Charles Watts':'https://x.com/charles_watts',
+              'James Benge':'https://x.com/jamesbenge',
+          }
+          rumours=(pete.get('arsenal') or {}).get('transferRumours') or []
+          rumour_dates=[]
+          for item in rumours:
+              title=str(item.get('title') or '')
+              source=str(item.get('source') or '')
+              assert item.get('contentType')=='transfer-rumour', 'Reporter watch contains non-rumour content'
+              assert item.get('trust')=='Unconfirmed' and item.get('speculative') is True, 'Reporter watch item is not clearly marked unconfirmed'
+              assert item.get('sourceType')=='X', 'Reporter watch item is not from the X allowlist'
+              assert source in x_reporters and item.get('sourceUrl')==x_profiles[source], f'Unapproved X reporter: {source}'
+              assert not __import__('re').search(r'\b(?:odds|betting|gambling|women|women\'s|u21|u18|academy|youth|girls)\b', title, __import__('re').I), f'Ineligible Reporter watch item: {title}'
+              assert str(item.get('publishedAt') or '').strip(), f'Reporter watch item has no machine-sortable date: {title}'
+              rumour_dates.append(item['publishedAt'])
+          assert rumour_dates==sorted(rumour_dates,reverse=True), 'Reporter watch is not newest first'
 
           rules=json.loads(Path('data/story-images.json').read_text())
           seen={}
