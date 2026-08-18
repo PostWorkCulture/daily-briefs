@@ -1,7 +1,6 @@
-/* Premium image layer for News / Arsenal / AI / Career.
+/* Exact publisher image layer for News / Arsenal / AI / Career.
    Rules: max one image per article, max five image-led cards per tab view,
-   never reuse an image, and use only verified high-quality article or
-   tab-relevant imagery. */
+   never reuse an image, and reject every generic or inferred fallback. */
 (function(){
   const IMAGE_LIMIT_PER_VIEW=5;
   let map={};
@@ -16,7 +15,7 @@
     let rule=map[url];
     if(!rule){const key=Object.keys(map).find(k=>url===k||url.startsWith(k));if(key)rule=map[key]}
     if(typeof rule==='string')rule={src:rule};
-    if(!rule?.src||banned(rule.src))return null;
+    if(!rule?.src||rule.provenance!=='publisher'||!rule.matchedPageTitle||banned(rule.src))return null;
     return rule;
   }
   function wrap(card,rule,key){

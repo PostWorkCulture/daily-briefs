@@ -16,8 +16,23 @@ def check_viewport(browser, name: str) -> None:
     try:
         page.goto(BASE_URL, wait_until="domcontentloaded", timeout=15000)
         page.wait_for_timeout(1200)
+        calendar_cards = page.locator('#calendarSummaryCards button')
+        if calendar_cards.count() != 4:
+            raise AssertionError(f"{name}: expected four Calendar summary cards")
+        calendar_cards.first.hover()
+        calendar_shadow = calendar_cards.first.evaluate("el => getComputedStyle(el).boxShadow")
+        if calendar_shadow == "none":
+            raise AssertionError(f"{name}: Calendar card has no edge-glow hover")
+
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
+        page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
+        for selector in ('#lastResultCard', '#nextFixtureCard', '#leagueCard', '.arsenal-news-item'):
+            locator = page.locator(selector).first
+            if locator.count():
+                locator.hover()
+                if locator.evaluate("el => getComputedStyle(el).boxShadow") == "none":
+                    raise AssertionError(f"{name}: {selector} has no Arsenal red edge glow")
 
         result = page.evaluate(
             """
@@ -95,9 +110,26 @@ def check_viewport(browser, name: str) -> None:
             if len({round(button["top"]) for button in buttons}) != 1:
                 failures.append(f"mobile nav is not a single horizontal row: {buttons}")
 
+        page.locator('[data-view-target="dida"]').click()
+        page.locator('.dida-hero').wait_for(state="visible", timeout=10000)
+        dida = page.evaluate(
+            """
+            () => ({
+              accent: getComputedStyle(document.querySelector('.dida-shell')).getPropertyValue('--dida').trim(),
+              heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
+              quickIcons: document.querySelectorAll('.dida-quick-icon').length,
+              foldIcons: document.querySelectorAll('.dida-fold-icon').length
+            })
+            """
+        )
+        if dida["accent"].lower() != "#b7ff3c":
+            failures.append(f"Dida accent is not lime green: {dida['accent']}")
+        if dida["heroIcons"] < 3 or dida["quickIcons"] < 3 or dida["foldIcons"] < 4:
+            failures.append(f"Dida fun icon treatment is incomplete: {dida}")
+
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: fixture fits and six-item navigation is usable")
+        print(f"PASS {name}: fixture, navigation, Calendar glow, Arsenal glow/transfers and lime Dida treatment are usable")
     finally:
         page.close()
 

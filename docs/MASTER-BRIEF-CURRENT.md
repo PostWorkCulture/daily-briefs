@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.4, 18 August 2026. Owner: Pete.
+Version 1.5, 18 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -43,6 +43,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Real content refreshed every morning through GOOGLE_CALENDAR_ICS_URL.
 - Real links, no duplication, no Soon or For you groups.
 - No duplicate Today/Tomorrow pills. Keep numbered controls.
+- Today, Tomorrow, This week, and This month summary boxes use a visible cyan edge-glow on hover and keyboard focus, without moving the box.
 
 **Around the world**
 - One pictured place daily, linked to a real destination.
@@ -58,18 +59,24 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Men's first team, all competitions.
 - Latest completed and nearest upcoming fixtures.
 - Preserve opponent, stadium, kickoff, competition, TV channel, and previous-meeting details when available.
+- Put Transfer watch at the bottom of the Arsenal view. Include only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, academy, and women's-team items.
+- Apply the red edge-glow hover/focus treatment to every Arsenal card, including fixtures, league position, news, and transfer updates.
 
 **News, AI, Career, Dida**
 - Keep each destination working and independent.
 - Use current content and real source links.
-- Show up to five relevant, unique, high-resolution article images in every populated News, Arsenal, AI, and Career tab, with no more than one image per article. Apply the same coverage standard to Pete and Sofia.
-- Article images must be at least 1,200 × 675 pixels, and the refresh must reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.
+- Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
+- Show up to five unique, high-resolution article images in each News, Arsenal, AI, and Career view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
+- Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
+- Article images must be at least 1,200 × 675 pixels. Reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.
 - Do not change them as a side effect of other work.
 - Sofia's Career section shows current senior non-software product roles suited to her 17 years in product development at Strategic Insight, a B2B financial-data company.
 - Sofia's roles must be fully remote or explicitly offer at least three work-from-home days per week. Generic hybrid roles do not qualify without evidence of that working pattern.
 - Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
+- Dida uses lime green, not orange, with playful code-native icons and colour while keeping the weekly quick wins first and reference material compact on mobile.
+- Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 
 ## Morning Story target
 

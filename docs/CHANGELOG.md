@@ -2,6 +2,22 @@
 
 Newest entries go first.
 
+## 18 August 2026: News depth, trusted Arsenal transfers, exact imagery, and lime Dida
+
+Status: implemented
+
+- Requested change: Add Calendar edge glow; keep at least 10 UK and 10 Local stories; add a trusted Arsenal transfer section; extend Arsenal's red hover to every box; remove generic AI and brief imagery; and make Dida lime, colourful, and icon-led.
+- Approved scope: Calendar and Arsenal interaction styling, news collection and protected counts, Arsenal transfer sourcing and filtering, article-image provenance, Dida presentation, cache versions, responsive checks, master brief, and changelog.
+- Files changed: scripts/refresh.py, scripts/finalize_arsenal.py, scripts/refresh_story_images.py, scripts/responsive_ui_check.py, .github/workflows/morning-refresh.yml, js/app.js, js/tabs-dida.js, js/story-images-enhance.js, css/app.css, css/features.css, css/tabs-dida.css, css/aurora-nav.css, data/story-images.json, index.html, docs/MASTER-BRIEF-CURRENT.md, and docs/CHANGELOG.md.
+- News rule: collect and de-duplicate broader local and national sources, with workflow failure if either profile has fewer than 10 Local News or 10 UK News items.
+- Arsenal rule: show Transfer watch at the bottom; accept only approved first-team transfer updates from Arsenal.com, BBC Sport, Sky Sports, The Athletic, The Guardian, Reuters, or ESPN; reject rumour, gossip, paper-talk, betting, academy, and women's-team items.
+- Image rule: remove every generic fallback and legacy generic mapping. Use only a high-resolution image selected by the exact matching publisher article page; otherwise keep the card text-only.
+- Dida rule: lime-green treatment with playful, relevant code-native icons. No Dida photograph was added because Dida photos must come from Pete and remain exactly as supplied.
+- Validation performed: pending full local, workflow, responsive Chrome, deployment, and live-data checks.
+- Unexpected changes: none intended; existing profiles, shared Calendar content, weather, careers, TV Picks, and Around the World behaviour remain protected.
+- Master brief update: version 1.5 records the protected hover, news-count, trusted-transfer, exact-image, and Dida rules.
+- Follow-up: validate the first deployed refresh and tune only source breadth if either 10-item news threshold becomes fragile.
+
 ## 18 August 2026: England extremes, Chrome navigation, and image coverage
 
 Status: validated

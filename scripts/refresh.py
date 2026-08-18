@@ -232,6 +232,81 @@ def rss(url: str, section: str, limit: int = 6, max_age_days: int = 4) -> list[d
     return items
 
 
+def merge_news(*groups: list[dict], limit: int) -> list[dict]:
+    merged, seen = [], set()
+    for group in groups:
+        for item in group:
+            title = clean_html(item.get("title", ""))
+            url = str(item.get("url", "")).strip()
+            key = re.sub(r"\W+", "", title.lower())[:120]
+            if not title or not url or key in seen:
+                continue
+            seen.add(key)
+            merged.append(item)
+            if len(merged) >= limit:
+                return merged
+    return merged
+
+
+def local_news() -> list[dict]:
+    return merge_news(
+        google_news('(Molesey OR "East Molesey" OR "West Molesey") when:7d', 14, 7),
+        google_news('(Elmbridge OR Esher OR "Walton-on-Thames") when:7d', 14, 7),
+        google_news('("Kingston upon Thames" OR "Hampton Court" OR Surbiton) when:7d', 14, 7),
+        limit=12,
+    )
+
+
+def uk_news() -> list[dict]:
+    return merge_news(
+        rss('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News', 16, 4),
+        google_news('(UK OR Britain OR British) news when:3d', 16, 3),
+        limit=12,
+    )
+
+
+TRUSTED_ARSENAL_TRANSFER_SOURCES = {
+    "arsenal.com": "Official",
+    "bbc sport": "Trusted report",
+    "sky sports": "Trusted report",
+    "the athletic": "Tier-one report",
+    "the guardian": "Trusted report",
+    "reuters": "Trusted report",
+    "espn": "Trusted report",
+}
+TRANSFER_TERMS = re.compile(
+    r"\b(?:transfer|sign(?:s|ed|ing)?|deal|move|bid|talks|loan|contract|exit|joins?|medical|target)\b",
+    re.I,
+)
+TRANSFER_EXCLUSIONS = re.compile(
+    r"\b(?:rumou?r|gossip|paper talk|odds|betting|women|women's|u21|u18|academy|girls)\b",
+    re.I,
+)
+
+
+def arsenal_transfer_updates() -> list[dict]:
+    candidates = merge_news(
+        google_news('site:arsenal.com Arsenal (transfer OR signing OR loan OR contract) when:21d', 24, 21),
+        google_news('Arsenal (transfer OR signing OR deal OR loan OR contract) when:14d', 50, 14),
+        limit=60,
+    )
+    updates = []
+    for item in candidates:
+        source = clean_html(item.get("source", ""))
+        source_key = source.lower()
+        trust = next((label for name, label in TRUSTED_ARSENAL_TRANSFER_SOURCES.items() if name in source_key), None)
+        title = clean_html(item.get("title", ""))
+        if not trust or not TRANSFER_TERMS.search(title) or TRANSFER_EXCLUSIONS.search(title):
+            continue
+        update = dict(item)
+        update["contentType"] = "transfer-update"
+        update["trust"] = trust
+        updates.append(update)
+        if len(updates) >= 6:
+            break
+    return updates
+
+
 def sofia_role_match(title: str) -> bool:
     title = clean_html(title)
     if not any(pattern.search(title) for pattern in SOFIA_PRODUCT_ROLE_PATTERNS):
@@ -689,7 +764,7 @@ def parse_fixture(event: dict, competition: str) -> dict | None:
     }
 
 
-def arsenal_snapshot(news: list[dict]) -> dict:
+def arsenal_snapshot(news: list[dict], transfers: list[dict]) -> dict:
     competitions = {
         "eng.1": "Premier League", "eng.fa": "FA Cup", "eng.league_cup": "League Cup",
         "uefa.champions": "Champions League", "eng.charity": "Community Shield",
@@ -725,16 +800,23 @@ def arsenal_snapshot(news: list[dict]) -> dict:
         "nextFixture": future[0] if future else None,
         "leaguePosition": position, "points": points, "played": played,
         "news": news[:5],
+        "transfers": transfers[:6],
     }
 
 
 def build_profiles() -> dict[str, dict]:
     wx = weather(); cal = calendar_events()
-    ai = google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 8, 3)
+    ai = merge_news(
+        rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
+        rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
+        google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 12, 3),
+        limit=10,
+    )
     arsenal_news = google_news('Arsenal FC when:3d', 8, 3)
-    arsenal = arsenal_snapshot(arsenal_news)
-    local = google_news('(Kingston upon Thames OR Molesey OR Esher OR Walton-on-Thames OR Elmbridge) when:4d', 8, 4)
-    uk = rss('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News', 6, 2) or google_news('UK news when:2d', 6, 2)
+    transfers = arsenal_transfer_updates()
+    arsenal = arsenal_snapshot(arsenal_news, transfers)
+    local = local_news()
+    uk = uk_news()
     tonight = tonight_recommendations()
     career_candidates = career_job_candidates()
     pete_career = pete_career_jobs(career_candidates) or previous_career("pete")

@@ -69,6 +69,9 @@ jobs:
               picks=data.get('watch') or []
               assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
+              sections=data.get('sections') or {}
+              assert len(sections.get('Local news') or [])>=10, f'{profile}: fewer than 10 Local News items'
+              assert len(sections.get('UK news') or [])>=10, f'{profile}: fewer than 10 UK News items'
 
           pete=json.loads((Path('data')/'pete.json').read_text())
           sofia=json.loads((Path('data')/'sofia.json').read_text())
@@ -95,47 +98,36 @@ jobs:
               previous=fixture.get('previousMeeting') or {}
               assert str(previous.get('score') or '').strip(), 'Arsenal next fixture missing previous-meeting score'
 
+          trusted_sources={'arsenal.com','bbc sport','sky sports','the athletic','the guardian','reuters','espn'}
+          transfers=(pete.get('arsenal') or {}).get('transfers') or []
+          for item in transfers:
+              source=str(item.get('source') or '').lower()
+              title=str(item.get('title') or '')
+              assert item.get('contentType')=='transfer-update', 'Arsenal transfer section contains non-transfer content'
+              assert item.get('trust') in {'Official','Tier-one report','Trusted report'}, 'Arsenal transfer item has no approved trust label'
+              assert any(name in source for name in trusted_sources), f'Arsenal transfer source is not approved: {source}'
+              assert not __import__('re').search(r'\b(?:rumou?r|gossip|paper talk|odds|betting)\b', title, __import__('re').I), f'Arsenal transfer item is rumour-led: {title}'
+
           rules=json.loads(Path('data/story-images.json').read_text())
           seen={}
+          all_articles=set()
+          for data in (pete,sofia):
+              sections=data.get('sections') or {}
+              for section in ('Local news','UK news','Sweden','AI','Career','Arsenal news'):
+                  all_articles.update(str(item.get('url') or '').strip() for item in sections.get(section) or [])
+              arsenal=data.get('arsenal') or {}
+              all_articles.update(str(item.get('url') or '').strip() for item in arsenal.get('news') or [])
           for article,rule in rules.items():
               src=rule.get('src') if isinstance(rule,dict) else None
               assert src, f'missing image src for {article}'
+              assert article in all_articles, f'image rule is not tied to a current article: {article}'
+              assert rule.get('provenance')=='publisher', f'non-publisher image rule: {article}'
+              assert str(rule.get('matchedPageTitle') or '').strip(), f'image rule missing matched publisher title: {article}'
+              assert not any(host in src.lower() for host in ('upload.wikimedia.org','unsplash.com','pexels.com')), f'generic image host used: {article}'
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-
-          def unique_links(items):
-              return list(dict.fromkeys(
-                  str(item.get('url') or '').strip()
-                  for item in items
-                  if str(item.get('url') or '').strip()
-              ))
-
-          def story_tabs(data, profile):
-              sections=data.get('sections') or {}
-              news=[]
-              if profile=='sofia':
-                  news.extend(sections.get('Sweden') or [])
-              news.extend(sections.get('Local news') or [])
-              news.extend(sections.get('UK news') or [])
-              tabs={
-                  'news': unique_links(news),
-                  'ai': unique_links(sections.get('AI') or []),
-                  'career': unique_links(sections.get('Career') or []),
-              }
-              if profile=='pete':
-                  tabs['arsenal']=unique_links(
-                      ((data.get('arsenal') or {}).get('news') or [])
-                      + (sections.get('Arsenal news') or [])
-                  )
-              return tabs
-
-          for profile,data in (('pete',pete),('sofia',sofia)):
-              for tab,links in story_tabs(data,profile).items():
-                  expected=min(5,len(links))
-                  actual=sum(url in rules for url in links)
-                  assert actual>=expected, f'{profile} {tab}: only {actual}/{expected} articles have images'
-          print(f'Validated {len(rules)} unique story image rules with five-image tab coverage, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
+          print(f'Validated {len(rules)} exact publisher image rules, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
