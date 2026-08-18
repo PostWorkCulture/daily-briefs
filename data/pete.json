@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Tuesday, 18 August 2026 · refreshed 9:44am",
+  "updatedLabel": "Tuesday, 18 August 2026 · refreshed 9:47am",
   "weather": {
     "temp": "22°",
     "summary": "Overcast",
@@ -330,20 +330,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -355,6 +341,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -514,7 +514,62 @@
       "ESPN"
     ],
     "scope": "Arsenal men's first team · all competitions",
-    "transfers": []
+    "transfers": [
+      {
+        "title": "Bruno Guimaraes joins Arsenal",
+        "summary": "",
+        "meta": "Sat 8 Aug",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hNFE0T0ZrY2pyNnpZQURxazhES1ZuSFRSWmMteFJVWlJaMllCdTZSS0VhSUJaUlFZbk02TW5ZZU54TlNyZ3JYcWtPXzNJVDV0MlhpWnBBMkZfNEtSSXZfVXAxZ0VWU3djQ0VCeVVEUUwtMi1WR2o4MXIwWQ?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Official"
+      },
+      {
+        "title": "Ismeal Kabia joins St Mirren on loan",
+        "summary": "",
+        "meta": "Sat 15 Aug",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWlh4SzNtdUd0aEQ4MnZGTXBxS19yMjh3U0RSaGlCSXoyOERKOC1aQ0JQLTV4YzhDMkx2Y3ZuUjlaNzF2VnpCVXlNc1BLOWNIVTY1VV8zZ0tGcEtRRUZBbldscktCWjRnV3FrU2xNT29UMV9vUVRHX2FlZ3BSZmRZYnZ6dUI?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Official"
+      },
+      {
+        "title": "Arsenal transfer news: What do Gunners do now after Vinicius Jr commits to new Real Madrid contract?",
+        "summary": "",
+        "meta": "Fri 7 Aug",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQMDBZM2U2dVNpRlQ2aGxQQlJDcWZHZ0tzcE1od2dPUjlWUWEtdmF1R3VWNklVbXNiVDAtNXdWYjBDX2dOdHd3U21neEVYTGJtR0w3eGRWS0oybmFSakpFSGdPYnM0Q1Q1bnFXTHNvOTRyVThMRnNJSmkyeFpCTThxT25EMGg1MnlPOWRFVk45c01GejJoVFhFNHl2M0VQdENENTN6NDA1N1RobC1vdko1RkYxRlh6WGg4MWF3Qk1qSG9SbnJoSXdUMTJ4MEM1Q25CUXhmeXBPM0FCbzNvSFdDOE80VXdCSWl6?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Bruno Guimarães completes £75m Arsenal move: ‘I needed a new challenge’",
+        "summary": "",
+        "meta": "Sat 8 Aug",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYVVuRzlfWXdZOEtWX0M2MmlfaGFtVDRTbFZIc3NnSmNfVnd4RG1VLThrTlJkLVB5Vi1zOEo1bmJsYXR1TW1sWmRic0xwQ2djU3RrWmhabkxXTUF0dHhCQ0RKcTBVaU9RRlJOTWdlUURSTld0eFZlc3RsLXpGYVExdW04cVZ3NkJ1d1VqZ1hXczMxanNjck1HZzJVZmxKZHBjQUE?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Mikel Arteta says Arsenal are actively looking for signings in the transfer market after Bruno Guimaraes makes bow in friendly against Como",
+        "summary": "",
+        "meta": "Wed 12 Aug",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNRE9EckFfanMyVWI0QUliTVB5aERMZHhzVnVqNnpiVmN2TXVMSVc3VTc5N0dVVDNpbGlOOXI2ZnZzT3JxZE5MRUhxc0tnQ2xaa0M3eGFmRmxnU1hneUN6anFMYUVWQW4zczZ6XzJidGFIY0F0SXQ0NlRxMXVyd3hYVGFDeTUzRTRxN2V0TmZ1MVFkUU4yeTlOOEJ0VHF0RnduVkpZQUwxSnc0SnRXTWxrSDdlRElPR1ItamI5dDUxUS1LMHBueXpyQkRIQmlQNUtDSzBlSm5Zb0x5T2c5bDJDUTRPcXZkRkdMVXZpd09ZYmRmOEtFS1Vac1U2dm9oNkJsYi1KUzhPVGFIUGFOaWRDVVVGRTJaeHZYSjBlc2Zjcw?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Arsenal transfer latest: How does Victor Osimhen stack up against current attack?",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVmxJRzJRNHpLTmZoc0FIYWktOWZyRHBfZ2h5NlFMR1dGMnNEcmloUkR5TU5zczM5SzZkaUlBVTVSblJqSHVYUllKVmpLeExMamYzcjBSaVlkSEFuckhOOG9NN1kzMDFSNU12Ri12NHJERnNUbkh2WXZPcHJYRHN2Y0hKeVhSNHNWa3Q1LXBPMU5ZOUhSOWFHWTRWWUNJSkJKUGFjbnpqTXdRa2hFdnZKbllIMk1QWWp0cnRIdG04YU92ak5qSHBpbkVxdFBZYUlSMFMwaHFQc0owMi1FU042VWUxREk?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      }
+    ]
   },
   "lead": {
     "title": "The Defender’s Window",
@@ -734,14 +789,14 @@
         "title": "Surrey Lebanese restaurant voted in UK's top ten boasts near-perfect rating",
         "summary": "",
         "meta": "Sat 15 Aug",
-        "source": "getsurrey.co.uk",
+        "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQb016Y0NQcjcyRHZITFZOb2NlQ1BOY2VpRUtyeTJ5aXlxdUxSeDIxc0Y2QWFkMHR1eTZURVBkUnhscUF6UXN5TlNXUnp3NHBUMUQ0ODdMUVdHSHZIRFlBSldyU0hJWU9lQnRhakNYUnBHUkRjVDFLWkxLajhfaXhyWnFJSEpMc0Rob0p6NFI2UE93Z3ZWZ1ZyTkd0WVDSAaIBQVVfeXFMTlV1cnVnSmhienBGTlFHYjhHTDlHQ0Y4QTRCaWdMb1RvaUJnelYtLTFJS1d3Y1BpQmUyY093UTExWUZOaEdSSl9GalJhcUFxUl91cmZFVnZ0NlBGMVFFRkRWMUF2S2czb2UwamNETEctbmtKb0hJNk9lbkZQNVNISkJkNEF2RWVzX3FzbHRTekFQUDBnNnVlVlFYWVNORnZPWFlR?oc=5"
       },
       {
         "title": "Man charged following series of incidents involving cyclists in Elmbridge",
         "summary": "",
         "meta": "Thu 13 Aug",
-        "source": "Surrey Police",
+        "source": "surrey.police.uk",
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTWhua3FCSlh6aUQ3NEJXUXQ3UWpUVXFlcS1xaHdiR19MV1hYUFlQMGJvT3RhWWNqakVWS25RSXo4cF9FeWI4N2JHbjZtWFU1QjVCVG1yTzVMa1d3M29sbC03QTAzYlJzMzB3NHFnTDkzRlNrakZybkg2OGJVU0ZLR2VqclBjOTJKRl9RQnZ6cG10cXQtbGZPaFlRS01mSUJGU1JybTF3eloxMnhLQm90R1lrMFhpSnpmTVl4b1pBeXpHQ2g2TktEdUxkY0s2VmV2dTZB?oc=5"
       },
       {
@@ -769,15 +824,15 @@
         "title": "Police name Surrey man charged after multiple crashes with cyclists reported",
         "summary": "",
         "meta": "Fri 14 Aug",
-        "source": "getsurrey.co.uk",
+        "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORDBwY0liSFJqeV9JSFo1YTQ0eVUyakVBSVdRMXdSd2NNTEdiR0liUHl0bm5RTml3S2Q4UXh0VHJwbnUwN0Q1dWh3R2FieWgyM0JXOU56UUVFVENhS1lVSzRjRFZhajRndmVxckk5dG9Fb0xaTWt0VTQwTEs2OC1GN3Njbjg5d0wtRGdUZtIBkgFBVV95cUxQa1JwZTQyMGZlUENfRUNLamZPWnF2UzJNby1vWGdvZHVWMklzX1dTY0tjU0M0ZnlaaDRkQnREOWxSMk1fQkx1bHJ2TWwzelRJWm5mVGIyYmhHNV9MbWExY0duRXJuNzE4YW1JVVhkb25iVFVMUDQyMTVESVBxVjk0QzRmc3NKQXRBdU0yaXE2el8wQQ?oc=5"
       },
       {
-        "title": "Help protect Elmbridge's countryside and woodlands sites",
+        "title": "Elmbridge Mayor launches Elmbridge Together Fun Run to support local charities",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "source": "Elmbridge Borough Council",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSURxX3hJVVhYV0d0c3o1WjhpWUpZdE9CYTBraDRkbU4zcXAzTURfNlZ1SUlxZ1VlV1NHX3VEYTQ4LTVVcklsWXVlM2dzVDFyZkY5cldnWF9DXzctWjR2OUNGeWo5cXBoZE10ek55cTFyRUxEa0UzSlJCcFNnUEN5LVpDc0dLS3BPOVp4Z2hfYzRrbUtkZjByUS13?oc=5"
+        "meta": "Tue 11 Aug",
+        "source": "elmbridge.gov.uk",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ011U1BfRHZlQ0RXUVhhbjcwT1BaeUN5X1FQbTZrcHdCQ3kxMGZraWx0NE1aWXI3SDB5NEZibFFlQmdBMjJpVDdrNkViRDZzWDhtTkR6Y2ZsVm5kMzdOb2xFd2xIUnRSX25kWlJaNnIwTmtTbGphak1pTjg4a1BJc2F2WFIxRUdlVmV3R3A0eGxlVmhuOFJvRnAxZVVUbV9zM3c2cTF3UjA3ME5NOWF5ODN5ejE?oc=5"
       },
       {
         "title": "Walton & Hersham FC fans stage matchday bar boycott",
@@ -794,18 +849,18 @@
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xYnVEZzlrUHhsNG5wMjZkWThONjRtN2h4TWlHOGtFbFhVWW1JRGdoQm15NFpuX3NITm8tUDJoTGtHczBvdl85bXRBWXRESHZFX2JkWnRXRW1Udw?oc=5"
       },
       {
+        "title": "Help protect Elmbridge's countryside and woodlands sites",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "source": "elmbridge.gov.uk",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSURxX3hJVVhYV0d0c3o1WjhpWUpZdE9CYTBraDRkbU4zcXAzTURfNlZ1SUlxZ1VlV1NHX3VEYTQ4LTVVcklsWXVlM2dzVDFyZkY5cldnWF9DXzctWjR2OUNGeWo5cXBoZE10ek55cTFyRUxEa0UzSlJCcFNnUEN5LVpDc0dLS3BPOVp4Z2hfYzRrbUtkZjByUS13?oc=5"
+      },
+      {
         "title": "Walton-on-Thames hearcare centre celebrates new recruit",
         "summary": "",
         "meta": "Wed 12 Aug",
         "source": "London Post",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMlNZSUpzQWpvRnAxRWN1QXdvZ0xQM2J2MGdYNkJHeVhWWGJ0cWpNTG5jYTgwUHJSVVRrNmtSSlo4b3U0ZHQ5c2FUNWxJemYzMzVCRzFQRHgyUkxGNF8xWXBSSUJuUzAtZ05jRmZFWnBHaGxSWnY3SzRFVk0ta2pVRFhuOXVHcGVBTE1YWA?oc=5"
-      },
-      {
-        "title": "Walton on Thames : Man charged following series of incidents involving cyclists – East Surrey News",
-        "summary": "",
-        "meta": "Thu 13 Aug",
-        "source": "Leatherhead Living",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNODYzdkVZcVc3eE9CQU1TZGc1ZG03VE1mXzcybEdabDVLNnU1R2R6SlZRZDVRT0dRZmJGNnc4UG5zcE5CT2hRXzY0V0JCTjE2UVJxdnZGcnNyLWxKcmV4WGdpT1hqcXBxc0pyNkFDa1RQai1wUjVpVHhhY2RtRzhGQS16TUpIeENlNWg1ZFpXRjFJV3BFMzltb0ZnRjZmNlM5V3BOTllSTkJzT3BTOG5hdXFjcnFTUXBPVlFuRndvMnpOLXgzdEhmV0pSZno?oc=5"
       }
     ],
     "UK news": [
@@ -896,6 +951,18 @@
     ],
     "Career": [
       {
+        "title": "Senior Digital and AI Evaluator",
+        "summary": "Government Digital Service · England, United Kingdom",
+        "meta": "UK · Posted Tue 4 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/senior-digital-and-ai-evaluator-at-government-digital-service-4446624834",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Government Digital Service",
+        "location": "England, United Kingdom",
+        "postedAt": "2026-08-04"
+      },
+      {
         "title": "DDaT- Head of People Data and Insight",
         "summary": "UK Ministry of Defence · London, England, United Kingdom",
         "meta": "UK · Posted Mon 17 Aug",
@@ -917,6 +984,18 @@
         "countryFocus": "UK",
         "company": "Ministry of Justice UK",
         "location": "London, England, United Kingdom",
+        "postedAt": "2026-08-11"
+      },
+      {
+        "title": "Director of Digital and Analysis- Marine Management Organisation (MMO)",
+        "summary": "Department for Environment, Food and Rural Affairs · Newton Upon Derwent, England, United Kingdom",
+        "meta": "UK · Posted Tue 11 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/director-of-digital-and-analysis-marine-management-organisation-mmo-at-department-for-environment-food-and-rural-affairs-4451684727",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Department for Environment, Food and Rural Affairs",
+        "location": "Newton Upon Derwent, England, United Kingdom",
         "postedAt": "2026-08-11"
       },
       {
@@ -990,30 +1069,6 @@
         "company": "Resolvetosavelives",
         "location": "US, France, DRC",
         "postedAt": "2026-08-17"
-      },
-      {
-        "title": "AI Lead",
-        "summary": "Money and Pensions Service · Bedford, England, United Kingdom",
-        "meta": "UK · Posted Fri 14 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/ai-lead-at-money-and-pensions-service-4451229540",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Money and Pensions Service",
-        "location": "Bedford, England, United Kingdom",
-        "postedAt": "2026-08-14"
-      },
-      {
-        "title": "Director of Data and AI",
-        "summary": "Macmillan Cancer Support · Greater London, England, United Kingdom",
-        "meta": "UK · Posted Mon 10 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/director-of-data-and-ai-at-macmillan-cancer-support-4449585184",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Macmillan Cancer Support",
-        "location": "Greater London, England, United Kingdom",
-        "postedAt": "2026-08-10"
       }
     ]
   }
