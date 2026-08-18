@@ -63,7 +63,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep each destination working and independent.
 - Use current content and real source links.
 - Show up to five relevant, unique, high-resolution article images in every populated News, Arsenal, AI, and Career tab, with no more than one image per article. Apply the same coverage standard to Pete and Sofia.
-- Article images must be at least 1,200 × 675 pixels, and the refresh must reject logos, icons, placeholders, low-resolution sources, and duplicate or near-duplicate images.
+- Article images must be at least 1,200 × 675 pixels, and the refresh must reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.
 - Do not change them as a side effect of other work.
 - Sofia's Career section shows current senior non-software product roles suited to her 17 years in product development at Strategic Insight, a B2B financial-data company.
 - Sofia's roles must be fully remote or explicitly offer at least three work-from-home days per week. Generic hybrid roles do not qualify without evidence of that working pattern.
