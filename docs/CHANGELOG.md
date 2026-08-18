@@ -2,6 +2,19 @@
 
 Newest entries go first.
 
+## 18 August 2026: Dedicated Daily Brief icon
+
+Status: implemented
+
+- Requested change: Replace the incorrectly shared Bomberfan image with Pete's approved colourful Daily Brief icon, showing the concept before publication.
+- Approved scope: derived favicon, Apple touch, installable-app and maskable icon files; explicit root/Pete/Sofia metadata; web app manifest; cache-busting URLs; responsive checks; master brief; and changelog.
+- Files changed: favicon.ico, assets/icons/apple-touch-icon.png, assets/icons/daily-brief-192.png, assets/icons/daily-brief-512.png, assets/icons/daily-brief-maskable-512.png, assets/icons/favicon-32.png, site.webmanifest, index.html, pete/index.html, sofia/index.html, scripts/responsive_ui_check.py, docs/MASTER-BRIEF-CURRENT.md, and docs/CHANGELOG.md.
+- Branding rule: use the approved colourful rising-sun and layered-news-card design for Daily Brief favicon, touch, installable-app, and preview metadata; never reuse Bomberfan imagery.
+- Validation performed: pending icon-dimension, manifest, responsive mobile/desktop, deployment, HTTP-content, and live Chrome checks.
+- Unexpected changes: none intended; Bomberfan and all Daily Brief content, routes, profiles, sections, data, sources, and interactions remain unchanged.
+- Master brief update: version 1.7 records the dedicated Daily Brief icon and separation from Bomberfan branding.
+- Follow-up: confirm browser caches display the versioned icon URLs after deployment.
+
 ## 18 August 2026: Newest-first transfers and X reporter watch
 
 Status: validated

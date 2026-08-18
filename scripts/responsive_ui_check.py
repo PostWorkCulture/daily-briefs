@@ -16,6 +16,13 @@ def check_viewport(browser, name: str) -> None:
     try:
         page.goto(BASE_URL, wait_until="domcontentloaded", timeout=15000)
         page.wait_for_timeout(1200)
+        icon_links = page.locator('link[rel="icon"]')
+        if icon_links.count() < 3:
+            raise AssertionError(f"{name}: expected ICO, 32px and 192px Daily Brief icons")
+        if page.locator('link[rel="apple-touch-icon"][sizes="180x180"]').count() != 1:
+            raise AssertionError(f"{name}: Daily Brief Apple touch icon is missing")
+        if page.locator('link[rel="manifest"]').count() != 1:
+            raise AssertionError(f"{name}: Daily Brief web app manifest is missing")
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
             raise AssertionError(f"{name}: expected four Calendar summary cards")
@@ -131,7 +138,7 @@ def check_viewport(browser, name: str) -> None:
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: fixture, navigation, Calendar glow, Arsenal trusted/reporter-watch lists and lime Dida treatment are usable")
+        print(f"PASS {name}: Daily Brief icons, fixture, navigation, Calendar glow, Arsenal trusted/reporter-watch lists and lime Dida treatment are usable")
     finally:
         page.close()
 
