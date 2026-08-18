@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 18 August 2026: Newest-first transfers and X reporter watch
 
-Status: implemented
+Status: validated
 
 - Requested change: Order Arsenal transfers newest first and add useful speculative transfer signals from Twitter/X.
 - Approved scope: transfer timestamps and sorting, allowlisted public X reporter discovery, separate unconfirmed presentation, preservation through Arsenal enrichment, protected workflow checks, cache versions, master brief, and changelog.
@@ -12,7 +12,7 @@ Status: implemented
 - Trusted-list rule: official and established-media transfers remain separate and are ordered by machine-readable publication time, newest first.
 - Speculation rule: Reporter watch accepts only public X posts from David Ornstein, Fabrizio Romano, Charles Watts, and James Benge, marks every item unconfirmed, orders them newest first, and excludes betting, gambling, women's-team, academy, U21, U18, youth, and girls' content.
 - Reliability decision: use Google News indexing of the four verified X profiles. Direct X recent-search access requires authenticated, pay-per-use API access, which conflicts with the brief's no-paid-API boundary.
-- Validation performed: pending syntax, synthetic filters, live source discovery, responsive Chrome, Morning refresh, Pages deployment, and live ordering checks.
+- Validation performed: Python and JavaScript syntax, workflow validation code, synthetic filters, live source discovery, responsive Chrome at mobile and desktop widths, successful Morning refresh, successful Pages deployment, generated-feed ordering and allowlist checks, and live Chrome rendering of both lists.
 - Unexpected changes: none intended; fixtures, trusted-source rules, the gambling ban, profiles, Calendar, News, AI, Career, Dida, Weather, Around the World, and TV Picks remain unchanged.
 - Master brief update: version 1.6 records newest-first ordering and the separate unconfirmed X Reporter watch.
 - Follow-up: monitor indexing coverage; an empty Reporter watch is valid when no qualifying recent post is indexed.
