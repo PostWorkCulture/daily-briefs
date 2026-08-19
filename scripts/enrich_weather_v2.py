@@ -4,7 +4,7 @@ import html
 import json
 import re
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -46,6 +46,7 @@ KNOWN_PHOTOS = {
 }
 
 KNOWN_ENGLISH_PLACES = {
+    "albemarle": ("Albemarle", "Northumberland"),
     "teddington": ("Teddington", "Greater London"),
     "wiggonholt": ("Wiggonholt", "West Sussex"),
     "topcliffe": ("Topcliffe", "North Yorkshire"),
@@ -90,11 +91,51 @@ def core_place(location: str) -> str:
     return clean(value.split(",", 1)[0])
 
 
-def england_place(location: str) -> tuple[str, str] | None:
+def met_office_heading_place(heading: str) -> tuple[str, str] | None:
+    match = re.match(
+        r"^(.+?)\s+\(([^()]+)\)\s+(?:last 24 hours weather|weather)\b",
+        clean(heading),
+        flags=re.I,
+    )
+    if not match:
+        return None
+    town, county = clean(match.group(1)), clean(match.group(2))
+    if not town or not county or town.lower() == county.lower():
+        return None
+    return town, county
+
+
+def linked_met_office_place(location: str, location_url: str) -> tuple[str, str] | None:
+    if not location_url:
+        return None
+    url = urljoin(EXTREMES_URL, location_url)
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or parsed.netloc != "weather.metoffice.gov.uk":
+        return None
+    try:
+        r = requests.get(url, headers=UA, timeout=15)
+        r.raise_for_status()
+        heading = BeautifulSoup(r.text, "html.parser").find("h1")
+        place = met_office_heading_place(heading.get_text(" ", strip=True) if heading else "")
+        if not place:
+            return None
+        expected = re.sub(r"\W+", "", core_place(location).lower())
+        actual = re.sub(r"\W+", "", place[0].lower())
+        if expected and actual and expected != actual:
+            return None
+        return place
+    except Exception:
+        return None
+
+
+def england_place(location: str, location_url: str = "") -> tuple[str, str] | None:
     low = location.lower()
     for key, place in KNOWN_ENGLISH_PLACES.items():
         if key in low:
             return place
+    official_place = linked_met_office_place(location, location_url)
+    if official_place:
+        return official_place
     try:
         r = requests.get(
             NOMINATIM,
@@ -198,9 +239,15 @@ def parse_extremes() -> dict | None:
                 raise ValueError(f"England extremes table missing for {heading.get('id')}")
             values = {}
             for row in table.find_all("tr"):
-                cells = [clean(c.get_text(" ", strip=True)) for c in row.find_all(["th", "td"])]
+                cell_nodes = row.find_all(["th", "td"])
+                cells = [clean(c.get_text(" ", strip=True)) for c in cell_nodes]
                 if len(cells) >= 3:
-                    values[cells[0].lower()] = {"location": cells[1], "value": cells[2]}
+                    location_link = cell_nodes[1].find("a", href=True)
+                    values[cells[0].lower()] = {
+                        "location": cells[1],
+                        "locationUrl": urljoin(EXTREMES_URL, location_link["href"]) if location_link else "",
+                        "value": cells[2],
+                    }
             if values.get("highest maximum temperature"):
                 hot_candidates.append(values["highest maximum temperature"])
             if values.get("lowest minimum temperature"):
@@ -222,7 +269,7 @@ def parse_extremes() -> dict | None:
 
         def enrich(item: dict) -> dict:
             loc = clean(item["location"])
-            place = england_place(loc)
+            place = england_place(loc, item.get("locationUrl", ""))
             if not place:
                 raise ValueError(f"England town/county could not be verified for {loc}")
             town, county = place

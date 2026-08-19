@@ -2,6 +2,17 @@
 
 Newest entries go first.
 
+## 19 August 2026: Repair England weather-extremes county resolution
+
+Status: implemented; production rerun pending
+
+- Failure: the scheduled morning refresh generated valid data but publication was blocked because the county resolver could not verify the Met Office station `Albemarle`.
+- Root cause: the extremes parser discarded the official Met Office station link and relied on a small manual mapping plus a third-party geocoder for unknown stations.
+- Fix: add the verified `Albemarle, Northumberland` mapping and resolve future unknown linked stations from the county in their official Met Office observation-page heading before using the existing fallback.
+- Safety: accept only HTTPS links on `weather.metoffice.gov.uk`, require the linked station name to match the extremes-table location, and retain the hard failure when town, county, or England status cannot be verified.
+- Tests: three regression tests pass; a live Met Office extremes parse returned `Hurn, Bournemouth, Christchurch and Poole` and `Albemarle, Northumberland`, both marked England with no resolver error.
+- Scope: weather-extremes enrichment and its regression tests only. No layout, profile, calendar, news, Arsenal, Career, AI, TV Picks, Dida, or image behaviour changed.
+
 ## 18 August 2026: Dedicated Daily Brief icon
 
 Status: validated
