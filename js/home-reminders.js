@@ -41,11 +41,28 @@
     return date;
   }
 
-  function nextChristmas(today = new Date()) {
+  function midsummerEve(year) {
+    const d = new Date(year, 5, 19);
+    d.setDate(19 + ((5 - d.getDay() + 7) % 7)); // Friday between 19 and 25 June
+    return d;
+  }
+
+  function festiveDatesForYear(year) {
+    return [
+      { name: "New Year's Day", date: new Date(year, 0, 1), icon: '✦', detail: 'New year' },
+      { name: 'Swedish Midsummer', date: midsummerEve(year), icon: '☀', detail: 'Midsummer Eve' },
+      { name: 'Halloween', date: new Date(year, 9, 31), icon: '◐', detail: 'Halloween' },
+      { name: 'Bonfire Night', date: new Date(year, 10, 5), icon: '✹', detail: 'Guy Fawkes Night' },
+      { name: 'Christmas Day', date: new Date(year, 11, 25), icon: '✦', detail: 'Christmas' }
+    ];
+  }
+
+  function nextFestiveDate(today = new Date()) {
     const now = startOfDay(today);
-    let date = new Date(now.getFullYear(), 11, 25);
-    if (date < now) date = new Date(now.getFullYear() + 1, 11, 25);
-    return date;
+    return [
+      ...festiveDatesForYear(now.getFullYear()),
+      ...festiveDatesForYear(now.getFullYear() + 1)
+    ].filter(item => item.date >= now).sort((a, b) => a.date - b.date)[0];
   }
 
   function nextOccurrence(item, today = new Date()) {
@@ -165,39 +182,38 @@
     const binDays = dayDiff(today, bin.date);
     const clocks = nextClockChange(today);
     const clockDays = dayDiff(today, clocks);
-    const christmas = nextChristmas(today);
-    const christmasDays = dayDiff(today, christmas);
+    const festive = nextFestiveDate(today);
+    const festiveDays = dayDiff(today, festive.date);
     const nextOccasion = sortedOccasions(today)[0] || null;
 
     const binUrgent = binDays <= 1 ? ' urgent' : '';
     const binHeadline = binDays === 0 ? `${bin.type.toUpperCase()} TODAY` : binDays === 1 ? `${bin.type.toUpperCase()} TOMORROW` : bin.type;
-    const occasionCardHtml = nextOccasion ? (() => {
+
+    const cards = [
+      {
+        date: bin.date,
+        html: `<article class="home-reminder-card bin${binUrgent}"><div class="home-reminder-top"><span class="home-reminder-icon">♻</span><span>Bin day</span></div><strong>${binHeadline}</strong><b>${countdownText(binDays, 'Collection')}</b><small>${fmtDate(bin.date)} · ${bin.detail}</small></article>`
+      },
+      {
+        date: clocks,
+        html: `<article class="home-reminder-card clocks"><div class="home-reminder-top"><span class="home-reminder-icon">◷</span><span>Clocks change</span></div><strong>Clocks go back</strong><b>${clockDays === 0 ? 'Today' : clockDays === 1 ? 'Tomorrow' : `${clockDays} days to go`}</b><small>${fmtDate(clocks)} · back one hour</small></article>`
+      },
+      {
+        date: festive.date,
+        html: `<article class="home-reminder-card christmas"><div class="home-reminder-top"><span class="home-reminder-icon">${festive.icon}</span><span>Festive</span></div><strong>${festive.name}</strong><b>${festiveDays === 0 ? 'Today' : festiveDays === 1 ? 'Tomorrow' : `${festiveDays} days to go`}</b><small>${fmtDate(festive.date)} · ${festive.detail}</small></article>`
+      }
+    ];
+
+    if (nextOccasion) {
       const days = dayDiff(today, nextOccasion.nextDate);
       const milestone = milestoneText(nextOccasion);
-      return `<article class="home-reminder-card birthday"><div class="home-reminder-top"><span class="home-reminder-icon">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`;
-    })() : '';
+      cards.push({
+        date: nextOccasion.nextDate,
+        html: `<article class="home-reminder-card birthday"><div class="home-reminder-top"><span class="home-reminder-icon">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`
+      });
+    }
 
-    root.innerHTML = `
-      <article class="home-reminder-card bin${binUrgent}">
-        <div class="home-reminder-top"><span class="home-reminder-icon">♻</span><span>Bin day</span></div>
-        <strong>${binHeadline}</strong>
-        <b>${countdownText(binDays, 'Collection')}</b>
-        <small>${fmtDate(bin.date)} · ${bin.detail}</small>
-      </article>
-      ${occasionCardHtml}
-      <article class="home-reminder-card clocks">
-        <div class="home-reminder-top"><span class="home-reminder-icon">◷</span><span>Clocks change</span></div>
-        <strong>Clocks go back</strong>
-        <b>${clockDays} days</b>
-        <small>${fmtDate(clocks)} · back one hour</small>
-      </article>
-      <article class="home-reminder-card christmas">
-        <div class="home-reminder-top"><span class="home-reminder-icon">✦</span><span>Christmas</span></div>
-        <strong>${christmasDays} days</strong>
-        <b>to Christmas</b>
-        <small>${fmtDate(christmas)}</small>
-      </article>`;
-
+    root.innerHTML = cards.sort((a, b) => a.date - b.date).map(card => card.html).join('');
     renderBirthdayTab();
   }
 
