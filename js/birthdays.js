@@ -9,7 +9,7 @@
     {name:'Oscar',day:7,month:6,year:2021},
     {name:'Arthur',day:4,month:4,year:2024},
     {name:'Trey',day:12,month:12,year:2025},
-    {name:"Pete's Mum",day:7,month:5,year:1964},
+    {name:"Pete's Mum",day:7,month:5,year:1962},
     {name:"Sofia's Dad",day:25,month:7,year:1948},
     {name:"Sofia's Mum",day:20,month:5,year:1949},
     {name:'Patrick',day:1,month:3,year:1978},
