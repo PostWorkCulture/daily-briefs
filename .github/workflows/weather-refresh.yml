@@ -1,0 +1,73 @@
+name: Weather refresh
+
+on:
+  schedule:
+    # GitHub Actions cron is UTC. These run at 08:00, 11:00, 14:00 and 17:00
+    # during British Summer Time, and one hour earlier during GMT.
+    - cron: '0 7,10,13,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-briefs-weather-refresh
+  cancel-in-progress: true
+
+jobs:
+  weather:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh Met Office weather only
+        run: python scripts/refresh_weather_only.py
+
+      - name: Validate weather source
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for profile in ('pete', 'sofia'):
+              data = json.loads((Path('data') / f'{profile}.json').read_text())
+              weather = data.get('weather') or {}
+              assert weather.get('source') == 'Met Office', f'{profile}: weather source changed'
+              assert weather.get('temp') not in (None, '', '—'), f'{profile}: current temperature unavailable'
+              assert weather.get('daily'), f'{profile}: daily forecast unavailable'
+              extremes = weather.get('yesterdayExtremes') or {}
+              assert extremes.get('source') == 'Met Office', f'{profile}: yesterday extremes were lost'
+          print('Validated Met Office live weather for Pete and Sofia')
+          PY
+
+      - name: Commit refreshed weather
+        run: |
+          git config user.name "Daily Briefs Bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          mkdir -p /tmp/daily-briefs-weather
+          cp data/pete.json data/sofia.json /tmp/daily-briefs-weather/
+
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/daily-briefs-weather/*.json data/
+
+          git add data/pete.json data/sofia.json
+          if git diff --cached --quiet; then
+            echo "No weather changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Weather refresh: $(TZ=Europe/London date '+%Y-%m-%d %H:%M')"
+          git push origin main
