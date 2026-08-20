@@ -1,0 +1,235 @@
+(() => {
+  const DAY = 86400000;
+  const BIN_ANCHOR = new Date(2026, 7, 24); // Monday 24 Aug 2026 = recycling
+  let occasions = [];
+
+  const startOfDay = (date = new Date()) => {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  };
+
+  const dayDiff = (from, to) => Math.round((startOfDay(to) - startOfDay(from)) / DAY);
+  const fmtDate = d => d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  function nextBinCollection(today = new Date()) {
+    const now = startOfDay(today);
+    let weeks = 0;
+    if (now > BIN_ANCHOR) weeks = Math.ceil(dayDiff(BIN_ANCHOR, now) / 7);
+    const date = new Date(BIN_ANCHOR);
+    date.setDate(BIN_ANCHOR.getDate() + weeks * 7);
+    const recycling = weeks % 2 === 0;
+    return {
+      date,
+      type: recycling ? 'Recycling' : 'General + garden waste',
+      detail: recycling ? 'recycling collection' : 'normal rubbish + garden waste collection',
+      recycling
+    };
+  }
+
+  function lastSundayOfOctober(year) {
+    const d = new Date(year, 9, 31);
+    d.setDate(31 - d.getDay());
+    return d;
+  }
+
+  function nextClockChange(today = new Date()) {
+    const now = startOfDay(today);
+    let date = lastSundayOfOctober(now.getFullYear());
+    if (date < now) date = lastSundayOfOctober(now.getFullYear() + 1);
+    return date;
+  }
+
+  function midsummerEve(year) {
+    const d = new Date(year, 5, 19);
+    d.setDate(19 + ((5 - d.getDay() + 7) % 7)); // Friday between 19 and 25 June
+    return d;
+  }
+
+  function festiveDatesForYear(year) {
+    return [
+      { name: "New Year's Day", date: new Date(year, 0, 1), icon: '✦', detail: 'New year' },
+      { name: 'Swedish Midsummer', date: midsummerEve(year), icon: '☀', detail: 'Midsummer Eve' },
+      { name: 'Halloween', date: new Date(year, 9, 31), icon: '◐', detail: 'Halloween' },
+      { name: 'Bonfire Night', date: new Date(year, 10, 5), icon: '✹', detail: 'Guy Fawkes Night' },
+      { name: 'Christmas Day', date: new Date(year, 11, 25), icon: '✦', detail: 'Christmas' }
+    ];
+  }
+
+  function nextFestiveDate(today = new Date()) {
+    const now = startOfDay(today);
+    return [
+      ...festiveDatesForYear(now.getFullYear()),
+      ...festiveDatesForYear(now.getFullYear() + 1)
+    ].filter(item => item.date >= now).sort((a, b) => a.date - b.date)[0];
+  }
+
+  function nextOccurrence(item, today = new Date()) {
+    const now = startOfDay(today);
+    const month = Number(item.month);
+    const day = Number(item.day);
+    if (!month || !day) return null;
+    let date = new Date(now.getFullYear(), month - 1, day);
+    if (date < now) date = new Date(now.getFullYear() + 1, month - 1, day);
+    return date;
+  }
+
+  function normaliseType(item) {
+    const type = String(item.type || 'birthday').toLowerCase();
+    return ['birthday', 'anniversary', 'occasion'].includes(type) ? type : 'occasion';
+  }
+
+  function sortedOccasions(today = new Date()) {
+    return occasions
+      .map(item => ({ ...item, type: normaliseType(item), nextDate: nextOccurrence(item, today) }))
+      .filter(item => item.name && item.nextDate)
+      .sort((a, b) => a.nextDate - b.nextDate || a.name.localeCompare(b.name));
+  }
+
+  function milestoneText(item) {
+    if (!item.year) return '';
+    const number = item.nextDate.getFullYear() - Number(item.year);
+    if (!Number.isFinite(number) || number < 0) return '';
+    if (item.type === 'birthday') return `turning ${number}`;
+    if (item.type === 'anniversary') return `${number} years`;
+    return `${number} years`;
+  }
+
+  function iconFor(item) {
+    if (item.type === 'anniversary') return '♥';
+    if (item.type === 'occasion') return '★';
+    return '🎂';
+  }
+
+  function typeLabel(item) {
+    if (item.type === 'anniversary') return 'Anniversary';
+    if (item.type === 'occasion') return item.label || 'Occasion';
+    return 'Birthday';
+  }
+
+  function countdownText(days, noun) {
+    if (days === 0) return `${noun} today`;
+    if (days === 1) return `${noun} tomorrow`;
+    return `${days} days to go`;
+  }
+
+  function ensureBirthdayTab() {
+    const nav = document.getElementById('primaryNav');
+    if (nav && !nav.querySelector('[data-view-target="birthdays"]')) {
+      const button = document.createElement('button');
+      button.dataset.viewTarget = 'birthdays';
+      button.innerHTML = '<b>🎂</b>Birthdays';
+      nav.appendChild(button);
+    }
+
+    const shell = document.querySelector('.app-shell');
+    if (shell && !document.getElementById('view-birthdays')) {
+      const view = document.createElement('div');
+      view.className = 'brief-view';
+      view.id = 'view-birthdays';
+      view.dataset.view = 'birthdays';
+      view.innerHTML = '<section class="panel-block tab-panel birthday-panel"><div class="section-head"><h2>Birthdays & anniversaries</h2><span class="section-kicker">Static family dates · next up first</span></div><div id="birthdayList" class="birthday-list"></div></section>';
+      shell.appendChild(view);
+    }
+
+    if (!document.getElementById('birthdayStyles')) {
+      const style = document.createElement('style');
+      style.id = 'birthdayStyles';
+      style.textContent = `
+        @media(max-width:899px){#primaryNav{grid-template-columns:repeat(7,minmax(0,1fr))}}
+        .birthday-list{display:grid;gap:18px}.occasion-group{display:grid;gap:10px}.occasion-group h3{margin:0 0 2px;font-size:15px;color:var(--accent2)}
+        .birthday-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,#2d2244,#151c32)}
+        .birthday-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);font-size:22px}
+        .birthday-card strong{display:block;font-size:16px}.birthday-card small{display:block;color:var(--muted);margin-top:3px}.birthday-card b{color:#ffd983;font-size:14px;text-align:right}
+        .birthday-empty{padding:24px;border:1px dashed var(--line);border-radius:20px;color:var(--muted)}
+        .home-reminder-card.birthday{background:linear-gradient(145deg,#352247,#1b2035)}
+      `;
+      document.head.appendChild(style);
+    }
+  }
+
+  function occasionCard(item) {
+    const days = dayDiff(new Date(), item.nextDate);
+    const milestone = milestoneText(item);
+    return `<article class="birthday-card"><div class="birthday-avatar">${iconFor(item)}</div><div><strong>${esc(item.name)}</strong><small>${typeLabel(item)} · ${fmtDate(item.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></div><b>${days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : `${days} days`}</b></article>`;
+  }
+
+  function renderBirthdayTab() {
+    const list = document.getElementById('birthdayList');
+    if (!list) return;
+    const upcoming = sortedOccasions();
+    if (!upcoming.length) {
+      list.innerHTML = '<div class="birthday-empty">No birthdays or anniversaries added yet.</div>';
+      return;
+    }
+    const birthdays = upcoming.filter(item => item.type === 'birthday');
+    const anniversaries = upcoming.filter(item => item.type === 'anniversary');
+    const other = upcoming.filter(item => item.type === 'occasion');
+    const groups = [];
+    if (birthdays.length) groups.push(`<section class="occasion-group"><h3>Birthdays</h3>${birthdays.map(occasionCard).join('')}</section>`);
+    if (anniversaries.length) groups.push(`<section class="occasion-group"><h3>Anniversaries</h3>${anniversaries.map(occasionCard).join('')}</section>`);
+    if (other.length) groups.push(`<section class="occasion-group"><h3>Other dates</h3>${other.map(occasionCard).join('')}</section>`);
+    list.innerHTML = groups.join('');
+  }
+
+  function render() {
+    const root = document.getElementById('homeReminders');
+    if (!root) return;
+
+    const today = startOfDay();
+    const bin = nextBinCollection(today);
+    const binDays = dayDiff(today, bin.date);
+    const clocks = nextClockChange(today);
+    const clockDays = dayDiff(today, clocks);
+    const festive = nextFestiveDate(today);
+    const festiveDays = dayDiff(today, festive.date);
+    const nextOccasion = sortedOccasions(today)[0] || null;
+
+    const binUrgent = binDays <= 1 ? ' urgent' : '';
+    const binHeadline = binDays === 0 ? `${bin.type.toUpperCase()} TODAY` : binDays === 1 ? `${bin.type.toUpperCase()} TOMORROW` : bin.type;
+
+    const cards = [
+      {
+        date: bin.date,
+        html: `<article class="home-reminder-card bin${binUrgent}"><div class="home-reminder-top"><span class="home-reminder-icon">♻</span><span>Bin day</span></div><strong>${binHeadline}</strong><b>${countdownText(binDays, 'Collection')}</b><small>${fmtDate(bin.date)} · ${bin.detail}</small></article>`
+      },
+      {
+        date: clocks,
+        html: `<article class="home-reminder-card clocks"><div class="home-reminder-top"><span class="home-reminder-icon">◷</span><span>Clocks change</span></div><strong>Clocks go back</strong><b>${clockDays === 0 ? 'Today' : clockDays === 1 ? 'Tomorrow' : `${clockDays} days to go`}</b><small>${fmtDate(clocks)} · back one hour</small></article>`
+      },
+      {
+        date: festive.date,
+        html: `<article class="home-reminder-card christmas"><div class="home-reminder-top"><span class="home-reminder-icon">${festive.icon}</span><span>Festive</span></div><strong>${festive.name}</strong><b>${festiveDays === 0 ? 'Today' : festiveDays === 1 ? 'Tomorrow' : `${festiveDays} days to go`}</b><small>${fmtDate(festive.date)} · ${festive.detail}</small></article>`
+      }
+    ];
+
+    if (nextOccasion) {
+      const days = dayDiff(today, nextOccasion.nextDate);
+      const milestone = milestoneText(nextOccasion);
+      cards.push({
+        date: nextOccasion.nextDate,
+        html: `<article class="home-reminder-card birthday"><div class="home-reminder-top"><span class="home-reminder-icon">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`
+      });
+    }
+
+    root.innerHTML = cards.sort((a, b) => a.date - b.date).map(card => card.html).join('');
+    renderBirthdayTab();
+  }
+
+  async function loadOccasions() {
+    try {
+      const res = await fetch(`data/occasions.json?cb=${Date.now()}`, { cache: 'no-store' });
+      occasions = res.ok ? await res.json() : [];
+      if (!Array.isArray(occasions)) occasions = [];
+    } catch {
+      occasions = [];
+    }
+    render();
+  }
+
+  ensureBirthdayTab();
+  render();
+  loadOccasions();
+  window.addEventListener('focus', render);
+})();

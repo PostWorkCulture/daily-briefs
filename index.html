@@ -18,6 +18,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png?v=20260818b">
   <link rel="manifest" href="site.webmanifest?v=20260818b">
   <link rel="stylesheet" href="css/app.css?v=20260818c">
+  <link rel="stylesheet" href="css/home-reminders.css?v=20260820a">
   <link rel="stylesheet" href="css/features.css?v=20260818d">
   <link rel="stylesheet" href="css/tabs-dida.css?v=20260818c">
   <link rel="stylesheet" href="css/story-weather.css?v=20260817f">
@@ -50,6 +51,11 @@
         <div class="section-head"><h2>Weather</h2><span class="section-kicker">Met Office · KT8 2LE</span></div>
         <div class="forecast-strip" id="forecastStrip"></div>
         <div class="uk-yesterday" id="yesterdayExtremes" hidden></div>
+      </section>
+
+      <section class="panel-block home-reminders-block" id="homeRemindersSection">
+        <div class="section-head"><h2>Coming up</h2><span class="section-kicker">Home reminders</span></div>
+        <div class="home-reminders-grid" id="homeReminders" aria-live="polite"></div>
       </section>
 
       <section class="panel-block calendar-block calendar-priority" id="calendarSection">
@@ -134,6 +140,7 @@
   </nav>
 
   <script src="js/app.js?v=20260818d" defer></script>
+  <script src="js/home-reminders.js?v=20260820a" defer></script>
   <script src="js/date-cleanup.js?v=20260817f" defer></script>
   <script src="js/tabs-dida.js?v=20260818c" defer></script>
   <script src="js/calendar-cleanup.js" defer></script>
