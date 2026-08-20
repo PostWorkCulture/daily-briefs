@@ -18,7 +18,12 @@
     const date = new Date(BIN_ANCHOR);
     date.setDate(BIN_ANCHOR.getDate() + weeks * 7);
     const recycling = weeks % 2 === 0;
-    return { date, type: recycling ? 'Recycling' : 'General waste', recycling };
+    return {
+      date,
+      type: recycling ? 'Recycling' : 'General + garden waste',
+      detail: recycling ? 'recycling collection' : 'normal rubbish + garden waste collection',
+      recycling
+    };
   }
 
   function lastSundayOfOctober(year) {
@@ -67,7 +72,7 @@
         <div class="home-reminder-top"><span class="home-reminder-icon">♻</span><span>Bin day</span></div>
         <strong>${binHeadline}</strong>
         <b>${countdownText(binDays, 'Collection')}</b>
-        <small>${fmtDate(bin.date)} · ${bin.recycling ? 'recycling collection' : 'normal rubbish collection'}</small>
+        <small>${fmtDate(bin.date)} · ${bin.detail}</small>
       </article>
       <article class="home-reminder-card clocks">
         <div class="home-reminder-top"><span class="home-reminder-icon">◷</span><span>Clocks change</span></div>
