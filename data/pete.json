@@ -2,8 +2,8 @@
   "updatedLabel": "Thursday, 20 August 2026 · refreshed 6:02am",
   "weather": {
     "temp": "20°",
-    "summary": "Light showers",
-    "condition": "Light showers",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 50,
     "daily": [
       {
@@ -12,20 +12,11 @@
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 50,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-21",
-        "high": 21,
-        "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-08-22",
         "high": 22,
         "low": null,
         "summary": "Sunny intervals",
@@ -34,16 +25,16 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-08-23",
+        "date": "2026-08-22",
         "high": 24,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 4,
         "source": "Met Office"
       },
       {
-        "date": "2026-08-24",
+        "date": "2026-08-23",
         "high": 23,
         "low": null,
         "summary": "Sunny",
@@ -52,8 +43,8 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-08-25",
-        "high": 25,
+        "date": "2026-08-24",
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -61,7 +52,7 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-08-26",
+        "date": "2026-08-25",
         "high": 25,
         "low": null,
         "summary": "Light Showers",
@@ -72,7 +63,7 @@
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Light Showers expected · rain chance around 50%",
+      "detail": "Light Showers expected · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
