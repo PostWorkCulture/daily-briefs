@@ -1,27 +1,18 @@
 {
-  "updatedLabel": "Wednesday, 19 August 2026 · refreshed 6:36am",
+  "updatedLabel": "Thursday, 20 August 2026 · refreshed 6:02am",
   "weather": {
-    "temp": "17°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "16°",
+    "summary": "Light showers",
+    "condition": "Light showers",
     "currentRainChance": 30,
     "daily": [
       {
-        "date": "2026-08-19",
-        "high": 24,
-        "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 50,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-08-20",
-        "high": 23,
+        "high": 22,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -30,49 +21,49 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-08-22",
-        "high": 20,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-08-23",
-        "high": 22,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-24",
-        "high": 23,
+        "high": 25,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-25",
-        "high": 23,
+        "high": 25,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Cloudy · peak rain chance around 50%",
+      "label": "Check hourly Met Office forecast",
+      "detail": "Light Showers expected · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -80,35 +71,35 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Tuesday 18 August 2026",
+      "dateLabel": "Wednesday 19 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Hurn",
-        "town": "Hurn",
-        "county": "Bournemouth, Christchurch and Poole",
+        "location": "Teddington, Bushy Park",
+        "town": "Teddington",
+        "county": "Greater London",
         "country": "England",
-        "displayLocation": "Hurn, Bournemouth, Christchurch and Poole",
-        "value": "28.6°C",
+        "displayLocation": "Teddington, Greater London",
+        "value": "26.4°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Home_farmhouse%2C_Hurn_-_geograph.org.uk_-_1061707.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:Home_farmhouse,_Hurn_-_geograph.org.uk_-_1061707.jpg",
-          "credit": "Mike Faherty · CC BY-SA 2.0",
-          "alt": "Home farmhouse, Hurn Early C19 farmhouse, listed by English Heritage, on the B3073 just south of Hurn Bridge. https://historicengland.org.uk/listing/the-list/list-entry/1324648"
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Diana_Fountain%2C_Bushy_Park.jpeg?width=1600",
+          "page": "https://commons.wikimedia.org/wiki/File:Diana_Fountain,_Bushy_Park.jpeg",
+          "credit": "Jonathan Cardy · CC BY 3.0",
+          "alt": "Diana Fountain in Bushy Park, Teddington, Greater London"
         }
       },
       "cold": {
-        "location": "Albemarle",
-        "town": "Albemarle",
+        "location": "Brizlee Wood",
+        "town": "Denwick",
         "county": "Northumberland",
         "country": "England",
-        "displayLocation": "Albemarle, Northumberland",
-        "value": "12.5°C",
+        "displayLocation": "Denwick, Northumberland",
+        "value": "11.5°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/1950_Census_Enumeration_District_Maps_-_Virginia_%28VA%29_-_Albemarle_County_-_Albemarle_County_-_ED_2-1_to_31_-_NARA_-_51435420.jpg/1920px-1950_Census_Enumeration_District_Maps_-_Virginia_%28VA%29_-_Albemarle_County_-_Albemarle_County_-_ED_2-1_to_31_-_NARA_-_51435420.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "page": "https://commons.wikimedia.org/wiki/File:1950_Census_Enumeration_District_Maps_-_Virginia_(VA)_-_Albemarle_County_-_Albemarle_County_-_ED_2-1_to_31_-_NARA_-_51435420.jpg",
-          "credit": "Unknown author Unknown author or not provided · Public domain",
-          "alt": "Albemarle, United Kingdom"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Brizlee_Wood_Radar_Dome_-_geograph.org.uk_-_5520522.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Brizlee_Wood_Radar_Dome_-_geograph.org.uk_-_5520522.jpg",
+          "credit": "Russel Wills · CC BY-SA 2.0",
+          "alt": "Brizlee Wood Radar Dome"
         }
       }
     }
@@ -129,20 +120,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "St Pauls Camp 8.15 - 5.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-18T00:00:00+01:00",
-      "end": "2026-08-19T00:00:00+01:00",
-      "date": "2026-08-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "0964keure928mhs30mr5v8as47",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "St Pauls Camp 9.30 - 4.30",
       "summary": "",
       "url": "",
@@ -157,6 +134,20 @@
       "calendarColorSource": "google"
     },
     {
+      "title": "8.15-17.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-24T00:00:00+01:00",
+      "end": "2026-08-26T00:00:00+01:00",
+      "date": "2026-08-24",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "7aea217cfg5736rbc7utpu0af4",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -168,20 +159,6 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "6ueu9vsdjc2t6soimqga0hbfoa",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "8.15-17.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-25T00:00:00+01:00",
-      "end": "2026-08-26T00:00:00+01:00",
-      "date": "2026-08-25",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "7aea217cfg5736rbc7utpu0af4",
       "calendarColorSource": "google"
     },
     {
@@ -311,20 +288,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -336,6 +299,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -410,21 +387,21 @@
     }
   ],
   "lead": {
-    "title": "Swedish MP intervenes in ‘damaging’ Brexit row over elderly Britons ordered to leave",
+    "title": "Micro-home installation in Sweden highlights youth housing crisis",
     "summary": "",
-    "meta": "Tue 18 Aug",
-    "publishedAt": "2026-08-18T20:45:00+01:00",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTlQdV9uZzBGSG9ZQ056QWc4NzVpdXYtOGFZaGFKQzNjVGVlMkdsMzR1SnNSa2J1bjdtNy1sS3FjTnJXaVhBVjNVQU8wYy1yd3hNLUMzcVQ5TXN3dnJhakFWTDhfSWZGV045UUlfOEY2UzM5WkliamU5NU1RcGdmak1iUDgtaHJJQUV2MVd5MVhUXzdEMC1GVTJBZm0xNVk2b21adzVQdDVjdG84bEhwSQ?oc=5"
+    "meta": "Thu 20 Aug",
+    "publishedAt": "2026-08-20T03:22:48+01:00",
+    "source": "Creative Review",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPanRLQjdWNU5KYlJrR2hCekR1NUphM3h3RGctb0RUZTRpSDVGNjlOLVBNU0t6UGhDRFdkSUtZYnhjTUs4TmhxZmhOTTVrbXZSdmEyZkJhRXRMTTBlRFZUN2ZkVzhUaGFXTk11VmZNREhaRThCVjIxaUktY25ic2FEVjdYdl9BekIwOFVISUhLNkFsaHJCZU9VVWkxT2VmbnV0MEEtUldjN2pYVkVXdnc?oc=5"
   },
   "interests": [
     {
-      "title": "Swedish MP intervenes in ‘damaging’ Brexit row over elderly Britons ordered to leave",
+      "title": "Micro-home installation in Sweden highlights youth housing crisis",
       "summary": "",
-      "meta": "Tue 18 Aug",
-      "publishedAt": "2026-08-18T20:45:00+01:00",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTlQdV9uZzBGSG9ZQ056QWc4NzVpdXYtOGFZaGFKQzNjVGVlMkdsMzR1SnNSa2J1bjdtNy1sS3FjTnJXaVhBVjNVQU8wYy1yd3hNLUMzcVQ5TXN3dnJhakFWTDhfSWZGV045UUlfOEY2UzM5WkliamU5NU1RcGdmak1iUDgtaHJJQUV2MVd5MVhUXzdEMC1GVTJBZm0xNVk2b21adzVQdDVjdG84bEhwSQ?oc=5",
+      "meta": "Thu 20 Aug",
+      "publishedAt": "2026-08-20T03:22:48+01:00",
+      "source": "Creative Review",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPanRLQjdWNU5KYlJrR2hCekR1NUphM3h3RGctb0RUZTRpSDVGNjlOLVBNU0t6UGhDRFdkSUtZYnhjTUs4TmhxZmhOTTVrbXZSdmEyZkJhRXRMTTBlRFZUN2ZkVzhUaGFXTk11VmZNREhaRThCVjIxaUktY25ic2FEVjdYdl9BekIwOFVISUhLNkFsaHJCZU9VVWkxT2VmbnV0MEEtUldjN2pYVkVXdnc?oc=5",
       "section": "Sweden"
     },
     {
@@ -492,60 +469,60 @@
   "sections": {
     "Sweden": [
       {
+        "title": "Micro-home installation in Sweden highlights youth housing crisis",
+        "summary": "",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T03:22:48+01:00",
+        "source": "Creative Review",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPanRLQjdWNU5KYlJrR2hCekR1NUphM3h3RGctb0RUZTRpSDVGNjlOLVBNU0t6UGhDRFdkSUtZYnhjTUs4TmhxZmhOTTVrbXZSdmEyZkJhRXRMTTBlRFZUN2ZkVzhUaGFXTk11VmZNREhaRThCVjIxaUktY25ic2FEVjdYdl9BekIwOFVISUhLNkFsaHJCZU9VVWkxT2VmbnV0MEEtUldjN2pYVkVXdnc?oc=5"
+      },
+      {
         "title": "Swedish MP intervenes in ‘damaging’ Brexit row over elderly Britons ordered to leave",
         "summary": "",
         "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T20:45:00+01:00",
+        "publishedAt": "2026-08-18T19:44:00+01:00",
         "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTlQdV9uZzBGSG9ZQ056QWc4NzVpdXYtOGFZaGFKQzNjVGVlMkdsMzR1SnNSa2J1bjdtNy1sS3FjTnJXaVhBVjNVQU8wYy1yd3hNLUMzcVQ5TXN3dnJhakFWTDhfSWZGV045UUlfOEY2UzM5WkliamU5NU1RcGdmak1iUDgtaHJJQUV2MVd5MVhUXzdEMC1GVTJBZm0xNVk2b21adzVQdDVjdG84bEhwSQ?oc=5"
       },
       {
-        "title": "The Swedish immigration crackdown that is tearing British families apart",
+        "title": "Sweden's viral stinky fish caught in Baltic Sea crisis",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T13:24:00+01:00",
-        "source": "The Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTTJRQnp5VUx3djRadjlrdW9wRmxOSjlDQndQU2RXX3FRMG9aTmlOMnZtRVFTTjRsVm5yc0lhcC1NMWpuOEhxdDdzZjJXVjB6SFVmMFA1bWdvd2J3akZWUW9HckNuX1hSSjk5ZWdLNzZSMEtZak5YbFJUYzZMc1AyQ0ZJWEM5M2g0S0xLXzNJbUtIeVM0?oc=5"
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T03:01:30+01:00",
+        "source": "euractiv.com",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdXhHVUJpcjFaNE5aNVdqbi04Ry1yUUJ0Rmo5UW9WRlRTM2MwVks2ajNDSml0ZnN3ZmxOUHc2NHJBWGZGYjR6WlVWX0hJLXNieVpRdnV2cnVaNzgtWU5UTlg5LVczMHoxUkhuUGRNNHlJYmlvbXRvdUFpRmtDMjlIM09kYmVvcXlWcW90bw?oc=5"
       },
       {
-        "title": "Swedish researchers use 3D model to study snoring mechanics",
+        "title": "Swedish MP raises issue of 'vulnerable and elderly' nationals facing deportation | ITV News",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T18:53:00+01:00",
-        "source": "News-Medical",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS1Q4YWRmOXhjbm96WGNpbXlfaXBzMmZrdlE0aG1PTUZGV0UySU9CMkVRMUUtNEVtWklNbXo3blE5SUttRGdaMWtqdkQwX1dwMW9iZ1ZYY3RHYWJzeVhKOENraVhoS09QOTgxS3lDTkVxaGFzbUY0WEotRUdCZmVXcC1Gb0RzY3NqdjJ4V1dpSGUxanJjUGFSNWE3akRMdzZlNzB2S1VoSXJuQ2s?oc=5"
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T19:08:26+01:00",
+        "source": "ITVX",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS2pQM0pzUHRtTWl3ZW5oSk02Ml9CRzVDOHBWS0s5SG5RWGUzSndnb0ZmVTZNQlM0cjFTRGNyQU13Y3k0NUVKVUVaT3JZTzgwcEkxLXlKQTRFZW8zbnVtT1p2OGJuSktIbDI5QmYzT3BVV081dEUyR195bDRXN2RNN0dMNWVRUGJLOUJLUndfVWtGUjl4dmRPUlZJcUw3b1BTNm1DaUJiT1ROaU5TRGlGc2o5Qk5CVlNvdWs4aEdNOA?oc=5"
       },
       {
-        "title": "Why is Sweden deporting Britons faster than any other EU country post-Brexit? | David Milstead",
+        "title": "Is Brexit to blame for British citizens being deported from Sweden?",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T16:13:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSnRmaE9yVkpHd1VsaGw0YlBLdFZoNE1FMl9DVWp4X1EtdVNxZktmQ2N5NWJ6SG9fb01vcGY2VS0yNHNPelFObXlvaXktX0NIV1EyWFRFMjJBWlp5TEo1UGN4VHZaNjllUEZvcjlMRkkzeFY2TXVET0kybzRXdktCZlNYSFlnUFNFSnlDaU1LbkRrRkxfWGhiWlRBVEhQZw?oc=5"
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T16:10:00+01:00",
+        "source": "The Independent",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNFEzNW9EMml3aHl3SzJEUnoyTHlUbHY0Yk55dk1naTRMbVhMeTFaV2xPMUNsYVdfTTN2WkVQWnQySHV3ZmJ6U0JNcHVYU0lwdFhJZmd1c0ZoM2FtelNvZ2VxSFJWcVVyUkNoMXpWV3h2TzFPa251eEtZLVdZcEJfRFJ2Y1oyUUhOTUJUY0dYTkhCX2FQQ2dfWC10QnVDUG9vaWIxTzF3?oc=5"
       },
       {
-        "title": "Man with dementia given days to leave Sweden",
+        "title": "Swedish minister, daughter of Haifa Palestinian, wears Star of David at election debate",
         "summary": "",
-        "meta": "Sun 16 Aug",
-        "publishedAt": "2026-08-16T07:07:47+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTDR1QXREbFhoSGtsSnE5d3ZQWEVZNE42R2NWaEp5WEphbm5iMlV0bnBSNzlKeFVhZVgySmJMaERnUHp1TzBZQkRIdWktWS1VZkI3SXR2Vk0yYWZw?oc=5"
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T18:07:00+01:00",
+        "source": "The Times of Israel",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMmxoN2VicTZWV1NyeExWNjc1b3puWDFpVkpaMmt3anhJcWp4ZGhQREdNV3ZuOWUwbGtwYjNSTFU2RVpzRDZvTDZoa2lwa0NJZmgwMTdaQ0lnMHAwUVNYb2hNaV92bUZrNXZjWTNTeGdaUUxpRW5sVDloNG9BVDNJeFZSZlB2Zk9RZmxuc3pFam5MbXNkU3Y4Z1V5MEdidlh1bnk1TlNuZE81NG9Pd1dBNlVZbTczOXfSAbwBQVVfeXFMT05pSGY3NGZKc3N5VHVNeG5HbDVfMXJNdUZ6Z1ROd2pWdzhPNHpEMzdjSURMSXFLZDlDVjVSUjVaU1d6UDB6MENkQ0JiSjE1SXlHb2dCazl6OERoUGlDTms2TGN5UzdwdGhpMzY0d3hvZUw5TG1Ca19RZnA0anU5eHlfX0lYWUgxeUtUOVVtaFNhVjRscXNmc2o1N29NY3RKcWRWZkUzUUtwTVBQZzlHR2J1cXBVQ2dpUms5aVc?oc=5"
       },
       {
-        "title": "Russian campers spark assassination scare at Swedish arms boss’s retreat",
+        "title": "Sweden's Checkin.com Q2 revenue falls on customer exits",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T17:47:27+01:00",
-        "source": "The Times",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUjZyOTRIOEl5R3ltLU5SZ0FSYjZ5RVJLT0xNVWE4eDJBUGxBWlQ0ZThfdXlyY1JycFUzaVV5T2x1NDJwV193VHVsM1RGOTZ3SGxObzA3cG1UNW01c2tKTVNUcWRQVG4tRlZJMk84LWpRQ0RZV2VzTjZJbHg5bVpuOFZ5enJxamF3UXlTdktIVDZwV3lQcXlhckJnX08tT3RDU0xTLWNZU3BEdUNRVjQ4YzhQSG1OSVdYOHBrUUpiRjNXLW4tc1E?oc=5"
-      },
-      {
-        "title": "Swedish opposition holds big lead ahead of September vote, poll shows",
-        "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T09:53:49+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTldsbDdnM1lDLTVCZ1hWQUhNb2RLdEV6Y21kakhzeVBiRXFKcHlhMXQ2dXFHSHZCcXRRUHQ5VHBudWlreTN5N2E1Vk0yYnZ5cUNfeEVfZk1aeUdfSC1rbnI5a2pCdGtrWW1rNGFjUGxwNF9tanNhWU5RaHNTVDdxMVhoYS1ST0R3Vl92MjNZYzdwUm5tQzd0NnJPa1FVUUZLME1SZi12NlJBNGd2X2ZkZTd4c1U?oc=5"
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T05:09:00+01:00",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZFNvdS02b1hUMU9JZGxYM2lwSld3Q29sSlNYM3hrU0tTOU12eWJjODNhejhSVVdkTXE5WVhpa09EenNVVHVpZXNQd043dzlTNjI2Ym5ZTkJWcmhndFFxb293UUFJQ3ZhRklZV0VwbU1xc0pmM29Da1FYRFp2c3MyZjdnYmJ5U25yQ3NaekVGX3VkMXNKZ0NCdHFySjlpS05TbWk5dGh5X0hJRWIzaDZTZVIyN2VWTTMtbXB1ZDBFUFV3TEU?oc=5"
       }
     ],
     "Local news": [
@@ -574,14 +551,6 @@
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTWhua3FCSlh6aUQ3NEJXUXQ3UWpUVXFlcS1xaHdiR19MV1hYUFlQMGJvT3RhWWNqakVWS25RSXo4cF9FeWI4N2JHbjZtWFU1QjVCVG1yTzVMa1d3M29sbC03QTAzYlJzMzB3NHFnTDkzRlNrakZybkg2OGJVU0ZLR2VqclBjOTJKRl9RQnZ6cG10cXQtbGZPaFlRS01mSUJGU1JybTF3eloxMnhLQm90R1lrMFhpSnpmTVl4b1pBeXpHQ2g2TktEdUxkY0s2VmV2dTZB?oc=5"
       },
       {
-        "title": "Mark Pettini Debut and last played matches in Tests, ODIs, T20Is and other formats",
-        "summary": "",
-        "meta": "Thu 13 Aug",
-        "publishedAt": "2026-08-13T05:26:05+01:00",
-        "source": "Cricinfo",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5MmRBRklNVmZDX0doUnhPbjk1TEhKVkJBeW82dHAyazlNQ09YRF9ON0hHdlVnNGM4OVQySTh5b1NtYlp2Z2ZwOU42eDhFQWZnQzZKZTEzQkRQV2JCRlBjR3pOOWV0eUs0WXBkald6OA?oc=5"
-      },
-      {
         "title": "Local vet warns that dogs swimming in rivers can cause danger to both dogs and the river",
         "summary": "",
         "meta": "Sat 15 Aug",
@@ -590,19 +559,11 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRFRuN0g1cEQyYVVibjNTMFd1UEUxNzhGc18yY3Vjd3NiNWs0WS16TmhOenViNEFhOEZxUjRhdGg1VkJ0WHU0M3JFUGNmWTBYMFhsYjZTR0xVWlRRckdZclBvR09mOE5sQ3RpUDMxdFhJcmJKXzUwM3llb1ZCUUQ3UmVXcWpOWDNaaXdYcG55NG5wQVZ6Y1JZNVh0Q3FQTG1URW9Kcw?oc=5"
       },
       {
-        "title": "South East England basks in temperatures set to hit 30 degrees",
-        "summary": "",
-        "meta": "Wed 12 Aug",
-        "publishedAt": "2026-08-12T10:25:28+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Ebm43aTI4TzJ0dkl0WGJyZnZaeTM0LUhicUpRbDNSdU9tSDhyenViWGdJTEtRYWtrWUF2Skt4TVVDcDVqTWgzeW9DZktYRFRsZ29YQXlNLWtqQlIx?oc=5"
-      },
-      {
         "title": "Paweł Kowalkowski stats and ratings",
         "summary": "",
         "meta": "Sun 16 Aug",
         "publishedAt": "2026-08-16T03:00:07+01:00",
-        "source": "Sofascore",
+        "source": "sofascore.com",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IUEppb2ZoUmRpQ1labmZGZHVTcTd6Zm5uM2c3VXJocUc5bnRaM0NXaV92aUpkdExfUmhNbUxjSF82QnBFUmc5Zk5xdHNTSG03RHQxY1diWG1YQlZqUTA4SFdtamxiWUptbGRiWFdkeWhwVnNSSWc?oc=5"
       },
       {
@@ -614,11 +575,27 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORDBwY0liSFJqeV9JSFo1YTQ0eVUyakVBSVdRMXdSd2NNTEdiR0liUHl0bm5RTml3S2Q4UXh0VHJwbnUwN0Q1dWh3R2FieWgyM0JXOU56UUVFVENhS1lVSzRjRFZhajRndmVxckk5dG9Fb0xaTWt0VTQwTEs2OC1GN3Njbjg5d0wtRGdUZtIBkgFBVV95cUxQa1JwZTQyMGZlUENfRUNLamZPWnF2UzJNby1vWGdvZHVWMklzX1dTY0tjU0M0ZnlaaDRkQnREOWxSMk1fQkx1bHJ2TWwzelRJWm5mVGIyYmhHNV9MbWExY0duRXJuNzE4YW1JVVhkb25iVFVMUDQyMTVESVBxVjk0QzRmc3NKQXRBdU0yaXE2el8wQQ?oc=5"
       },
       {
+        "title": "Van driver faces court after cyclists injured in three separate collisions | News - Hits Radio (Surrey & East Hampshire)",
+        "summary": "",
+        "meta": "Thu 13 Aug",
+        "publishedAt": "2026-08-13T21:38:14+01:00",
+        "source": "Rayo",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNamNsN2MyVlZib3lvV3dfQm82cWVsNHI1Sk1VazZfcUstLUR2dnQ4Y3lTNGZ2XzFQWjNqZU9pVEJGOE5yVlBoaFVnSnBxT0dTcnl1VHcwV0JtTkFaQjBKVHVZdFNNVHVKcEZWM2FNMG5nR2xXcWlLb183SndxWVF0ZXhKak1GNGRCdV9uVnh2aVB5dklqTU9FbmM5Z2hGT19vR2c3aWFWOXN2ZjRndndoWDZsdkttMllJR085R2dXMERPMGZycUpwam5LSXNpZlVnU051aXdGQQ?oc=5"
+      },
+      {
+        "title": "Elmbridge driver charged after cyclists injured in van incidents | News - Greatest Hits Radio (Surrey & East Hampshire)",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "publishedAt": "2026-08-14T05:39:27+01:00",
+        "source": "Rayo",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVjlZWVZPcU0zWGhZV3JHdFVDWVNFSVAyRkVRRDJkOWQ0c0dkaXJFU3ZVbUlNYWtMNTNWSXpVRTRiZ3ZQeDZOTzVRWHZXd2djZ2NtYjNDbV9NeXU4T3l0dUpvUXlNUGViRVMxM05kQzZFbGh2cWVfclA3Y0JMXzRWR1Ytb19VUUNaX2J0bTBCMXBQWWRhSkc4YlktMEpmbUZGM252MXo1OXZoWWpHZGFGcFY5UzU?oc=5"
+      },
+      {
         "title": "Help protect Elmbridge's countryside and woodlands sites",
         "summary": "",
         "meta": "Mon 17 Aug",
         "publishedAt": "2026-08-17T12:32:06+01:00",
-        "source": "elmbridge.gov.uk",
+        "source": "Elmbridge Borough Council",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSURxX3hJVVhYV0d0c3o1WjhpWUpZdE9CYTBraDRkbU4zcXAzTURfNlZ1SUlxZ1VlV1NHX3VEYTQ4LTVVcklsWXVlM2dzVDFyZkY5cldnWF9DXzctWjR2OUNGeWo5cXBoZE10ek55cTFyRUxEa0UzSlJCcFNnUEN5LVpDc0dLS3BPOVp4Z2hfYzRrbUtkZjByUS13?oc=5"
       },
       {
@@ -630,121 +607,145 @@
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE04VDl0MVNTM0pvQUxvWHVEOVV6d2R5M2NqWE0ybVEtWVdiS3B1QmVrV2RoOUVLMEtpbG9YVG9hVUhoZWowS1FYUFBUMXZxWEZsTmdMMHN1SXUtcTk1?oc=5"
       },
       {
-        "title": "Plans revealed for 650 homes either side of A3 Esher Bypass",
+        "title": "Walton on Thames : Man charged following series of incidents involving cyclists – East Surrey News",
         "summary": "",
-        "meta": "Wed 12 Aug",
-        "publishedAt": "2026-08-12T11:30:45+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xYnVEZzlrUHhsNG5wMjZkWThONjRtN2h4TWlHOGtFbFhVWW1JRGdoQm15NFpuX3NITm8tUDJoTGtHczBvdl85bXRBWXRESHZFX2JkWnRXRW1Udw?oc=5"
+        "meta": "Thu 13 Aug",
+        "publishedAt": "2026-08-13T18:24:17+01:00",
+        "source": "Leatherhead Living",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNODYzdkVZcVc3eE9CQU1TZGc1ZG03VE1mXzcybEdabDVLNnU1R2R6SlZRZDVRT0dRZmJGNnc4UG5zcE5CT2hRXzY0V0JCTjE2UVJxdnZGcnNyLWxKcmV4WGdpT1hqcXBxc0pyNkFDa1RQai1wUjVpVHhhY2RtRzhGQS16TUpIeENlNWg1ZFpXRjFJV3BFMzltb0ZnRjZmNlM5V3BOTllSTkJzT3BTOG5hdXFjcnFTUXBPVlFuRndvMnpOLXgzdEhmV0pSZno?oc=5"
       },
       {
-        "title": "Walton-on-Thames hearcare centre celebrates new recruit",
+        "title": "Costain lands £150m Thames Water treatment works package",
         "summary": "",
-        "meta": "Wed 12 Aug",
-        "publishedAt": "2026-08-12T14:20:44+01:00",
-        "source": "London Post",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMlNZSUpzQWpvRnAxRWN1QXdvZ0xQM2J2MGdYNkJHeVhWWGJ0cWpNTG5jYTgwUHJSVVRrNmtSSlo4b3U0ZHQ5c2FUNWxJemYzMzVCRzFQRHgyUkxGNF8xWXBSSUJuUzAtZ05jRmZFWnBHaGxSWnY3SzRFVk0ta2pVRFhuOXVHcGVBTE1YWA?oc=5"
+        "meta": "Tue 18 Aug",
+        "publishedAt": "2026-08-18T09:12:39+01:00",
+        "source": "constructionnews.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSy13Y3R2TzZBckdNNkYxbm42RzBwYjItU3ZTYWkydUdSV0NzaTEwVEhMQ1dKbUVhZmcxbm5MZldtRXpfRHA1YklZcjM5cFRuYUx0UW85M1ZsYWlYdjVjRHNkanNtRGpVc3hVdS1HaDdqNXpvUjAwYVRnNkdscFRwa0pyQnpoZURBVzIxOFViV3BfX3BkbDFRSTVCSVhaZW5BdTlkMWV4cVZCNmZyWjNiVHBn?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "Sacked Ukrainian defence minister calls for presidential election",
-        "summary": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T05:44:41+01:00",
+        "title": "Prince Harry and Meghan moving back to UK later this month",
+        "summary": "The couple's children, Prince Archie, 7, and Princess Lilibet, 5, are enrolled to start at a school in September.",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T02:14:29+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c62ey03z9d1o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Three dead after family get into difficulty in sea",
-        "summary": "A man, a woman and a teenage girl die, and a younger girl is in critical condition, after swimming off Shoreham on the Sussex coast.",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T22:30:56+01:00",
+        "title": "Harry and Meghan are experts in surprise - but is their UK return forever?",
+        "summary": "The sudden decision to return leaves lots of questions for the Duke and Duchess of Sussex and Royal Family.",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T03:00:51+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cm2gmjd36pvo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cqjxn9j410vo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "'Everyone in for Christmas' - Burnham unveils rough sleeping plan",
-        "summary": "Rough sleepers in England will be offered housing, in a move likened to the “Everyone In” initiative during the pandemic.",
+        "title": "Students wait for GCSE and BTec grades as app launches for 750 schools in England",
+        "summary": "Some pupils in England will be able to see their grades on their phones from 11:00 BST on Thursday.",
         "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T04:42:16+01:00",
+        "publishedAt": "2026-08-19T18:09:34+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgvy2n6grno?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c9q9z402d1yo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Demand for degree apprenticeships in England quadruples in three years",
-        "summary": "The popularity of degree apprenticeships has grown as the cost of university has come under increased scrutiny.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T06:00:12+01:00",
+        "title": "Russia launches missile strikes on Kyiv and surrounding region, killing at least eight",
+        "summary": "Apartment blocks and warehouses were targeted in the \"massive attack\" on Thursday, according to the State Emergency Service of Ukraine.",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T05:46:32+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckg374p4e24o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "French civil servant drugged us to make us urinate on ourselves, say accusers",
-        "summary": "More than 200 women accuse Christian Nègre of drugging them to make them urinate - two share their stories.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T06:00:39+01:00",
+        "title": "Giant whales move into Greenland waters as ice disappears",
+        "summary": "Melting sea ice from climate change has opened up the region for giant whales to undertake \"feeding frenzies\".",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T03:05:20+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/crrv48lenwgo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cq6dn9gj7eno?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Camilla admits it was 'difficult' to keep King's cancer diagnosis a secret",
-        "summary": "In a video to mark the 30th anniversary of Maggie's cancer charity, Queen Camilla speaks about her husband's own diagnosis.",
+        "title": "Vaccine breakthrough stops cancer returning in trial",
+        "summary": "A new jab extended the length of time patients were cancer free, but it is unclear for how long.",
         "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T00:37:18+01:00",
+        "publishedAt": "2026-08-19T20:00:48+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c80n48kg0vjo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c79gpv7v190o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Scientists stunned by children's lung recovery in ultra low emission zone",
-        "summary": "Children's lung capacity caught up with their peers in less polluted areas once a clean air zone came in, a study shows.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T00:53:24+01:00",
+        "title": "Downpours to continue for UK with risk of flash flooding",
+        "summary": "The prolonged dry spell has come to an end with heavy, thundery showers continuing to sweep across the UK, as Ben Rich explains.",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T00:56:33+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c1l1r1zne1ro?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/weather/articles/cevm32j9pp3o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Is another UK heatwave on the way in September?",
-        "summary": "Some long range forecasts are suggesting autumn could be hotter and drier than average. Simon King explores whether a warm spell might be on the cards.",
+        "title": "People smuggler exposed by BBC investigation arrested and charged",
+        "summary": "Twana Jamal Khdir has been arrested and charged with immigration offences.",
         "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T01:21:04+01:00",
+        "publishedAt": "2026-08-19T21:54:51+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/weather/articles/c79g04899wno?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cx2ldeg93njo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Suspended Reform UK member vows to fight to remain in party",
-        "summary": "Tim Montgomerie says his appeal will be a test of whether the party can tolerate free speech.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T04:34:11+01:00",
+        "title": "Vapes could lead to health harms in children, doctors warn",
+        "summary": "A Royal College of Paediatrics and Child Health has published a report with concerns vaping is a gateway to smoking",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T01:35:22+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c4gd1mez8zvo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c0rdl0y8d4wo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Deaf patient given wrong jab due to sign language error, report says",
-        "summary": "An ombudsman report says disabled people are being let down by a lack of accessible communication methods.",
+        "title": "Couple and teenage daughter who died in water off Shoreham named by police",
+        "summary": "Police say the family travelled from their home in London and went into the sea for a swim.",
         "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T01:28:56+01:00",
+        "publishedAt": "2026-08-19T19:45:51+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cn8nmm51l49o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cvgvr336z2po?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Families' agonising search for answers as thousands still missing in Gaza",
-        "summary": "Ten months after a ceasefire was declared, thousands of Palestinians in Gaza are still reported missing.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T06:04:00+01:00",
+        "title": "Weekly type 2 diabetes jab could replace daily injections",
+        "summary": "Hundreds of thousands of people with type 2 diabetes could get access to a new weekly insulin jab to replace daily injections.",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T01:39:40+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ce34r0er75go?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cn8nd1n54zxo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "'Banned over a pair of £2 sandals': Why some sellers are complaining about Vinted",
-        "summary": "Several thousands of Vinted users say they have been wrongly suspended or permanently banned from the preloved app.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T00:14:49+01:00",
+        "title": "Captured Ukrainian-born soldiers tell BBC why they fought for Russia",
+        "summary": "Men born in Ukraine who fought for Russia are tried for treason, but at a prisoner of war camp in western Ukraine, many believe they were defending their homeland.",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T06:01:24+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx2kwnrn5zpo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cn9nr195drzo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
+      {
+        "title": "Offering Zero Data Retention for frontier models",
+        "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T20:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
+      },
+      {
+        "title": "Replit expands access to software creation with GPT-5.6 Luna",
+        "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T08:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/replit"
+      },
+      {
+        "title": "ChatGPT Ads expands across Europe",
+        "summary": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions.",
+        "meta": "Tue 18 Aug",
+        "publishedAt": "2026-08-18T23:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/chatgpt-ads-expands-across-europe"
+      },
       {
         "title": "Strengthening democratic oversight in national security",
         "summary": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.",
@@ -770,30 +771,6 @@
         "url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
       },
       {
-        "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
-        "summary": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T12:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/chatgpt-for-teens"
-      },
-      {
-        "title": "How NVIDIA scales expertise with ChatGPT Work",
-        "summary": "NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally.",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T01:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/nvidia/chatgpt-work"
-      },
-      {
-        "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-        "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T08:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/asana"
-      },
-      {
         "title": "Introducing Gemini 3.7 Flash",
         "summary": "",
         "meta": "Thu 13 Aug",
@@ -802,82 +779,43 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/"
       },
       {
-        "title": "Putting sign language AI into users’ hands",
-        "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
-        "meta": "Wed 12 Aug",
-        "publishedAt": "2026-08-12T15:01:59+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/"
+        "title": "OpenAI clarifies ‘acquisition’ offer for Irish teen's startup idea was a joke",
+        "summary": "",
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T11:08:59+01:00",
+        "source": "Sifted",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82LWZzV0lyOWRSYW1zU3VpalpacXpKS2R0eUw0a0l6bTMyUTNQeWJaWWtCTzFabG9XOU5yUVNSZlE0VjJtV2FlcmRxeHdYT3hnSjZRcWtKR3UtWkItMThVV0dFQWpUS0hTeXJXUzdR?oc=5"
       },
       {
-        "title": "OpenAI announces slowing pace of development after hack by rogue agent",
+        "title": "OpenAI 'will be a public company in 2027' or sooner, CFO Friar tells employees",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T21:47:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE02M0ExWjVvUGFYRlJ5S2laeDR1M3NDRWFlU0UwMVN5VXJ5M0hvMmRUZGV0VzlqUnJCQWtSNnBadl8wWnFLV3ZVN1dzTHg1dDhSalB2UHAzVW1xUG1CVEU5b2xkZ1NJTGh2Wl9qWk5LZGFKMGU3RUZqVQ?oc=5"
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T20:23:36+01:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjVnJGYzVGcWt5c0F3WTY3elk5SkRrSUV3U3Y2OFdIV1dCRm4wVU5PZF8wV1VXT2Q4cVZZU3NZWlRFRTVhZTNYNTZNbEh2bmZ1aDJEWnFINFR6dlVqdGVsQ1RRSmhBV0dKYkFwcTZpQk56MGlZ0gF6QVVfeXFMTnhrRVAzUVl4M3FxY3gxcjdrZFhGODd4X2sxYzRpS1JTaHNJaXNxVEFuSExkOWlNVkYwZnJKX0xXV1hCOUxORnVjLWM1UEszb3BLa1gxMmZVa3dDQ2JNc3hyMERhMXFibThXczd5Y05BRFo5QlRONXdxQ3c?oc=5"
       },
       {
-        "title": "How Claude is accelerating protein design and analytical chemistry",
+        "title": "ChatGPT Down: OpenAI Confirms Login And Signup Outage — Latest Updates",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T23:14:57+01:00",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBZSUlFZ25ZeUpwR2FqLUh5WlJpQVRfM3RPaVg5dlo5NWMzbldIOW1WZDR2MklDNWdidlJIN2JKbUV1VU52aDk0YmlpdVJIVmRVTzRfanM5ZmU5MnlWVTZLSHZhTE0wVC1iRzNwUzRKRTk3MC1DMWZR?oc=5"
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T01:24:21+01:00",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWmd4V2FlSTZRS3BEZjFzeG16c0FQYzE0TUFlaWtQRXNLUDJsdGZSMGp5TVNRRHJIR3dzTWprbEtXbW1JcGJ6RWtESmsyWTZaLS1aNHl1ajJkdHY5dVJjQU5pbEpuWHJCRWwzdF82TmtmbnpTOGlVRkV1M0Z1c29PNWhJa2VLV09OTXhXZHRLZWs1ekE?oc=5"
       }
     ],
     "Career": [
       {
-        "title": "Head of Product",
-        "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Tue 11 Aug",
+        "title": "Senior Product Manager",
+        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
+        "meta": "3+ WFH days · Posted Fri 31 Jul",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442775538",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Foundation Partners",
-        "location": "London, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-11"
-      },
-      {
-        "title": "Head of Product",
-        "summary": "PlannerPal · United Kingdom",
-        "meta": "Remote · Posted Sun 26 Jul",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-plannerpal-4442376111",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "PlannerPal",
-        "location": "United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-07-26"
-      },
-      {
-        "title": "Product Lead",
-        "summary": "Street Group · Manchester, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Mon 17 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
+        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
         "contentType": "job",
         "workArrangement": "3-wfh-days",
-        "company": "Street Group",
-        "location": "Manchester, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-17"
-      },
-      {
-        "title": "Product Lead (Pre booking experience)",
-        "summary": "British Airways Holidays · Crawley, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Wed 5 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-pre-booking-experience-at-british-airways-holidays-4449472670",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "British Airways Holidays",
-        "location": "Crawley, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-05"
+        "company": "Quinyx",
+        "location": "Stockholm, Stockholm County, Sweden",
+        "countryFocus": "Sweden",
+        "postedAt": "2026-07-31"
       },
       {
         "title": "Senior Product Manager - Neo Payroll",
