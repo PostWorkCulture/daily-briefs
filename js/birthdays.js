@@ -60,7 +60,7 @@
   }
 
   function birthdayInYear(person,year){
-    return new Date(year,person.month-1,person.day,12,0,0,0);
+    return new Date(year,person.month-1,person.day);
   }
 
   function currentAge(person,today=startOfDay()){
