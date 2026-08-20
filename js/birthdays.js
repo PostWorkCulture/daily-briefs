@@ -17,6 +17,42 @@
     {name:'Ash & Sophia',day:7,month:11,year:1995}
   ];
 
+  function ensureUI(){
+    if(!document.querySelector('link[data-birthdays-style]')){
+      const style=document.createElement('link');
+      style.rel='stylesheet';
+      style.href='css/birthdays.css?v=20260820a';
+      style.dataset.birthdaysStyle='1';
+      document.head.appendChild(style);
+    }
+
+    const shell=document.querySelector('.app-shell');
+    if(shell&&!document.getElementById('view-birthdays')){
+      const view=document.createElement('div');
+      view.className='brief-view';
+      view.id='view-birthdays';
+      view.dataset.view='birthdays';
+      view.innerHTML=`<section class="panel-block tab-panel birthday-shell"><div class="birthday-hero"><div class="birthday-kicker">FAMILY BIRTHDAYS</div><h2>Birthdays</h2><p id="birthdayNextSummary">Your family birthdays, ordered by what is coming next.</p></div><div class="birthday-next-card" id="birthdayNextCard"></div><div class="birthday-list" id="birthdayList"></div></section>`;
+      shell.appendChild(view);
+    }
+
+    const nav=document.getElementById('primaryNav');
+    if(nav&&!nav.querySelector('[data-view-target="birthdays"]')){
+      const button=document.createElement('button');
+      button.dataset.viewTarget='birthdays';
+      button.innerHTML='<b>♡</b>Birthdays';
+      button.addEventListener('click',()=>{
+        if(typeof window.showBriefView==='function')window.showBriefView('birthdays');
+        else{
+          document.querySelectorAll('.brief-view').forEach(v=>v.classList.toggle('active',v.dataset.view==='birthdays'));
+          document.querySelectorAll('[data-view-target]').forEach(b=>b.classList.toggle('active',b.dataset.viewTarget==='birthdays'));
+          window.scrollTo({top:0,behavior:'smooth'});
+        }
+      });
+      nav.appendChild(button);
+    }
+  }
+
   function startOfDay(date=new Date()){
     const d=new Date(date);
     d.setHours(0,0,0,0);
@@ -56,6 +92,7 @@
   }
 
   function renderBirthdays(){
+    ensureUI();
     const list=document.getElementById('birthdayList');
     const nextCard=document.getElementById('birthdayNextCard');
     const summary=document.getElementById('birthdayNextSummary');
