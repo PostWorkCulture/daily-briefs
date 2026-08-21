@@ -1,18 +1,18 @@
 {
   "updatedLabel": "Friday, 21 August 2026 · refreshed 6:02am",
   "weather": {
-    "temp": "22°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
-    "currentRainChance": 4,
+    "temp": "21°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 30,
     "daily": [
       {
         "date": "2026-08-21",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -39,7 +39,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -53,7 +53,7 @@
       },
       {
         "date": "2026-08-26",
-        "high": 26,
+        "high": 25,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -62,17 +62,17 @@
       },
       {
         "date": "2026-08-27",
-        "high": 25,
+        "high": 24,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 50,
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 40%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
