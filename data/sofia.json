@@ -1,27 +1,27 @@
 {
   "updatedLabel": "Friday, 21 August 2026 · refreshed 6:02am",
   "weather": {
-    "temp": "19°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "22°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-08-21",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-08-22",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -39,16 +39,16 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-08-25",
-        "high": 27,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -62,7 +62,7 @@
       },
       {
         "date": "2026-08-27",
-        "high": 24,
+        "high": 25,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
@@ -72,7 +72,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 50%",
+      "detail": "Sunny intervals · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
