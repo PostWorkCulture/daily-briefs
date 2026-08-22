@@ -159,6 +159,15 @@ def parse_news_result(item: dict) -> dict | None:
     }
 
 
+def result_signal_priority(title: str) -> int:
+    text = title.lower()
+    if "report" in text or "result" in text or "full time" in text or "full-time" in text:
+        return 0
+    if "highlight" in text:
+        return 1
+    return 2
+
+
 def newest_news_result(payload: dict) -> dict | None:
     sections = payload.get("sections") or {}
     arsenal = payload.get("arsenal") or {}
@@ -176,30 +185,48 @@ def newest_news_result(payload: dict) -> dict | None:
     if not parsed:
         return None
 
-    parsed.sort(
+    groups: dict[tuple[str, int, int], list[dict]] = {}
+    for candidate in parsed:
+        key = (
+            candidate["opponent"].lower(),
+            int(candidate["arsenalScore"]),
+            int(candidate["opponentScore"]),
+        )
+        groups.setdefault(key, []).append(candidate)
+
+    # The newest result group is the one with the latest trusted result/report
+    # publication. This allows next-day highlights to reinforce the same match
+    # without creating a fake new match date.
+    def group_latest(group: list[dict]) -> datetime:
+        return max(
+            (parse_dt(x["_publishedAt"]) or datetime.min.replace(tzinfo=TZ))
+            for x in group
+        )
+
+    group = max(groups.values(), key=group_latest)
+
+    # Prefer a report/result over highlights, then Arsenal.com over secondary
+    # trusted sources. This becomes the canonical URL/source for lastResult.
+    group.sort(
         key=lambda x: (
-            parse_dt(x["_publishedAt"]) or datetime.min.replace(tzinfo=TZ),
-            -int(x["_sourcePriority"]),
-        ),
-        reverse=True,
+            result_signal_priority(x.get("_title", "")),
+            int(x["_sourcePriority"]),
+            parse_dt(x["_publishedAt"]) or NOW,
+        )
     )
-    newest_date = (parse_dt(parsed[0]["_publishedAt"]) or NOW).date()
-    newest = [x for x in parsed if (parse_dt(x["_publishedAt"]) or NOW).date() == newest_date]
+    chosen = dict(group[0])
 
-    # Prefer Arsenal.com for the canonical report, but use any same-day trusted
-    # headline to enrich the competition label.
-    newest.sort(key=lambda x: (int(x["_sourcePriority"]), -(parse_dt(x["_publishedAt"]) or NOW).timestamp()))
-    chosen = dict(newest[0])
-
-    same_match_texts = []
-    for candidate in newest:
-        if (
-            candidate["opponent"].lower() == chosen["opponent"].lower()
-            and candidate["arsenalScore"] == chosen["arsenalScore"]
-            and candidate["opponentScore"] == chosen["opponentScore"]
-        ):
-            same_match_texts.append(candidate.get("_title", ""))
-    chosen["competition"] = infer_competition(same_match_texts or [chosen.get("_title", "")])
+    # A result article cannot pre-date the match. The earliest publication for
+    # the same verified scoreline is therefore the safest match-day fallback,
+    # avoiding next-day highlight uploads shifting the result into tomorrow.
+    match_day = min(
+        (parse_dt(x["_publishedAt"]) or NOW).date()
+        for x in group
+    )
+    match_dt = datetime(match_day.year, match_day.month, match_day.day, 12, tzinfo=TZ)
+    chosen["date"] = match_dt.isoformat()
+    chosen["dateLabel"] = match_dt.strftime("%a %-d %b")
+    chosen["competition"] = infer_competition([x.get("_title", "") for x in group])
 
     for private_key in ("_publishedAt", "_sourcePriority", "_title"):
         chosen.pop(private_key, None)
