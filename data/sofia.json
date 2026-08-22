@@ -1,32 +1,14 @@
 {
-  "updatedLabel": "Friday, 21 August 2026 · refreshed 6:02am",
+  "updatedLabel": "Saturday, 22 August 2026 · refreshed 5:58am",
   "weather": {
-    "temp": "21°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 30,
+    "temp": "12°",
+    "summary": "Sunny",
+    "condition": "Sunny",
+    "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-08-21",
-        "high": 21,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
       {
         "date": "2026-08-22",
         "high": 22,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-08-23",
-        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -34,25 +16,25 @@
         "source": "Met Office"
       },
       {
+        "date": "2026-08-23",
+        "high": 23,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
+        "source": "Met Office"
+      },
+      {
         "date": "2026-08-24",
         "high": 23,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-08-25",
-        "high": 26,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-08-26",
         "high": 25,
         "low": null,
         "summary": "Sunny intervals",
@@ -61,18 +43,36 @@
         "source": "Met Office"
       },
       {
+        "date": "2026-08-26",
+        "high": 27,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
         "date": "2026-08-27",
-        "high": 24,
+        "high": 25,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 30,
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-08-28",
+        "high": 22,
+        "low": null,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 30%",
+      "detail": "Sunny intervals · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -80,21 +80,21 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Thursday 20 August 2026",
+      "dateLabel": "Friday 21 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Writtle",
-        "town": "Writtle",
-        "county": "Essex",
+        "location": "Newport (Salop)",
+        "town": "Shrewsbury",
+        "county": "Shropshire",
         "country": "England",
-        "displayLocation": "Writtle, Essex",
-        "value": "25.6°C",
+        "displayLocation": "Shrewsbury, Shropshire",
+        "value": "23.3°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/A414_Ongar_Road_West%2C_Writtle_-_geograph.org.uk_-_4349568.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:A414_Ongar_Road_West,_Writtle_-_geograph.org.uk_-_4349568.jpg",
-          "credit": "Geographer · CC BY-SA 2.0",
-          "alt": "A414 Ongar Road West, Writtle"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Smallwood_Lodge%2C_Newport%2C_Salop_-_geograph.org.uk_-_1828599.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Smallwood_Lodge,_Newport,_Salop_-_geograph.org.uk_-_1828599.jpg",
+          "credit": "nick macneill · CC BY-SA 2.0",
+          "alt": "Smallwood Lodge, Newport, Salop"
         }
       },
       "cold": {
@@ -103,7 +103,7 @@
         "county": "Cumbria",
         "country": "England",
         "displayLocation": "Shap, Cumbria",
-        "value": "9.1°C",
+        "value": "2.5°C",
         "photo": {
           "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Lane_descending_to_Shap_-_geograph.org.uk_-_4277912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "page": "https://commons.wikimedia.org/wiki/File:Lane_descending_to_Shap_-_geograph.org.uk_-_4277912.jpg",
@@ -297,20 +297,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -322,6 +308,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -393,24 +393,38 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Dentist 11:15 (1.5 hr)",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-24T11:15:00+01:00",
+      "end": "2026-09-24T12:30:00+01:00",
+      "date": "2026-09-24",
+      "time": "11:15am",
+      "allDay": false,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "cdhj2eb469j68b9pcosj4b9kc5gm6bb1cko3ab9h6phj8p9j6gs68e34cc",
+      "calendarColorSource": "calendar-default"
     }
   ],
   "lead": {
-    "title": "Swedish MP intervenes in ‘damaging’ Brexit row over elderly Britons ordered to leave",
+    "title": "One dead after teenager carries out sword attack at Swedish school, police say",
     "summary": "",
-    "meta": "Wed 19 Aug",
-    "publishedAt": "2026-08-19T14:21:00+01:00",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTlQdV9uZzBGSG9ZQ056QWc4NzVpdXYtOGFZaGFKQzNjVGVlMkdsMzR1SnNSa2J1bjdtNy1sS3FjTnJXaVhBVjNVQU8wYy1yd3hNLUMzcVQ5TXN3dnJhakFWTDhfSWZGV045UUlfOEY2UzM5WkliamU5NU1RcGdmak1iUDgtaHJJQUV2MVd5MVhUXzdEMC1GVTJBZm0xNVk2b21adzVQdDVjdG84bEhwSQ?oc=5"
+    "meta": "Sat 22 Aug",
+    "publishedAt": "2026-08-22T00:02:50+01:00",
+    "source": "Sky News",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS2ZTakJVN2ZrUXdmbWpQZkxpV05lQUtDRVZDalU3cS1NeXQ0OTR3WHJyUkZyVnlfNU85cnU4ZEUyRHpPR3BFaE83YUpmajdxak1lVEo3SmNrMVV0c1VXY1YtR055Q3NmX1JlaXNxY1BFX3F0OHVjMWticXVuMmxqaDNqZkU5bS15dTJxS0x3S0pxbENJc3g2VVpGRmpCMXhoOHc?oc=5"
   },
   "interests": [
     {
-      "title": "Swedish MP intervenes in ‘damaging’ Brexit row over elderly Britons ordered to leave",
+      "title": "One dead after teenager carries out sword attack at Swedish school, police say",
       "summary": "",
-      "meta": "Wed 19 Aug",
-      "publishedAt": "2026-08-19T14:21:00+01:00",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTlQdV9uZzBGSG9ZQ056QWc4NzVpdXYtOGFZaGFKQzNjVGVlMkdsMzR1SnNSa2J1bjdtNy1sS3FjTnJXaVhBVjNVQU8wYy1yd3hNLUMzcVQ5TXN3dnJhakFWTDhfSWZGV045UUlfOEY2UzM5WkliamU5NU1RcGdmak1iUDgtaHJJQUV2MVd5MVhUXzdEMC1GVTJBZm0xNVk2b21adzVQdDVjdG84bEhwSQ?oc=5",
+      "meta": "Sat 22 Aug",
+      "publishedAt": "2026-08-22T00:02:50+01:00",
+      "source": "Sky News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS2ZTakJVN2ZrUXdmbWpQZkxpV05lQUtDRVZDalU3cS1NeXQ0OTR3WHJyUkZyVnlfNU85cnU4ZEUyRHpPR3BFaE83YUpmajdxak1lVEo3SmNrMVV0c1VXY1YtR055Q3NmX1JlaXNxY1BFX3F0OHVjMWticXVuMmxqaDNqZkU5bS15dTJxS0x3S0pxbENJc3g2VVpGRmpCMXhoOHc?oc=5",
       "section": "Sweden"
     },
     {
@@ -478,60 +492,60 @@
   "sections": {
     "Sweden": [
       {
-        "title": "Swedish MP intervenes in ‘damaging’ Brexit row over elderly Britons ordered to leave",
+        "title": "One dead after teenager carries out sword attack at Swedish school, police say",
         "summary": "",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T14:21:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTlQdV9uZzBGSG9ZQ056QWc4NzVpdXYtOGFZaGFKQzNjVGVlMkdsMzR1SnNSa2J1bjdtNy1sS3FjTnJXaVhBVjNVQU8wYy1yd3hNLUMzcVQ5TXN3dnJhakFWTDhfSWZGV045UUlfOEY2UzM5WkliamU5NU1RcGdmak1iUDgtaHJJQUV2MVd5MVhUXzdEMC1GVTJBZm0xNVk2b21adzVQdDVjdG84bEhwSQ?oc=5"
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T00:02:50+01:00",
+        "source": "Sky News",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS2ZTakJVN2ZrUXdmbWpQZkxpV05lQUtDRVZDalU3cS1NeXQ0OTR3WHJyUkZyVnlfNU85cnU4ZEUyRHpPR3BFaE83YUpmajdxak1lVEo3SmNrMVV0c1VXY1YtR055Q3NmX1JlaXNxY1BFX3F0OHVjMWticXVuMmxqaDNqZkU5bS15dTJxS0x3S0pxbENJc3g2VVpGRmpCMXhoOHc?oc=5"
       },
       {
-        "title": "Foundation supporter Ella takes on incredible 1000-mile challenge from Sweden to Celtic Park",
-        "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T13:10:52+01:00",
-        "source": "Celtic FC",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbnhTS3lhZ0NhS1hMb1RWZmhTV3dmVUEydVg1MHdRcG8yc1JCcVpCc1BQZFBvd3ZIbHoxMTJSck9wZ3VoMkpoUjZ0UzZ1MDJTQ1ZhcGlpVDZfUlhTbFo5QUhyN0JIc1dVN2xzZ1FBUUN4V2JHZDRHcnVtX3JOSndmTkNKa1dHcmpHTjRrbE91OHgtMjg1OXVfdVBhb1hxWnlGbTBBYTY5ZVl5OFlnd1l3YjJRamV5dkxHR1o4VHVacUprR2tZY1VTN1E4eldEM0ZRZW9NNQ?oc=5"
-      },
-      {
-        "title": "Sweden: SVT confirms participation at Eurovision 2027",
+        "title": "One killed in sword attack at Swedish school",
         "summary": "",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T00:17:46+01:00",
-        "source": "ESCToday.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLWpxZUFRdkljWGFjdTFxZW5QNld4Qm13SUl0VFdxWGFjRnl6Q2hWbEloT05MQXlVY1U4b3lvVl9PUVpvU3NMcldkU2ZrT2dsbnZOY0tqSzNIcEptYV9KaEtxd05UYUQ1TmU3QnRnMmJrdXA5RjlXNklZYjRReDYyX1p5SXU3elRZ?oc=5"
+        "publishedAt": "2026-08-21T22:03:24+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QMG1ILU85bTVlS1FGMWZ2NHg5cXg5eEMyQ0JmYVN0bFgyZ19lS3BlRmpUY0w4ckwxcVpHSktaT2pqUzI3bUZ3SXhocmhES0FTTG5ZYjhSOGVlZw?oc=5"
       },
       {
-        "title": "Riksbyggen Builds Sweden’s Smallest Homes to Expose Housing Crisis",
+        "title": "One killed, three injured in sword attack at school in Sweden",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T12:50:20+01:00",
-        "source": "Little Black Book | LBBOnline",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNT2t1bXI5bG1NbXBMQ3ZMckItRi10bU9NOGNBbW9IV0l4al9wWDc4cmZmVERhMTk1RUdfLTg1aElMdncwX3Zjb043d0tIODRqcXhsRjQ2RUFzeEtOcnMwUGtMUGl4RElsaUVwMHF6dmxvcFRuRHBfbDJIcjd2UWRDTE9rakhRM2ozUXYtLUFBTGxndw?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T23:01:21+01:00",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc1FiWmhleEdURXFoczdXdkxZNnRIMFRvNkltM3VOdFBTa2h0MUhyempnTE9JOFVxT0ozX05pOFJaY2RjQU1wb2FIdlZOOEdrS3RBcmZpNWZWU2wzakhCdVBlMDJlLUpkbGEyVjNJemZCQ1VaQ0dmTDR0dnVXS0pWR05aaHBCeXk4MkUzcnVWYl8tdUNSMEpna2lKT2FoZ9IBowFBVV95cUxQczc4bDgzNDNTTEt2a1pOd2x6ejRyMkQ2RlN6RUlBY1VNcFJOQjdBSlFLSkJ3ZjgwVWFNdjBzTm5PNDYwa3ZKNTYtUU9lQ0lzd0N1S2pQQ2t1TG95cm45TlNYaXhCV1VKOWNYTk04S3FxTUFjRWJKYVZrQkZON09yWE84b281RFVERjcyX0xDYndORjBxMjFFeG1ZNUw1aDY2ZDVN?oc=5"
       },
       {
-        "title": "How Sweden became a country of big-state libertarians",
+        "title": "One killed, three injured when man attacks Swedish school with sword",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T13:59:02+01:00",
-        "source": "The Economist",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOUsxaWRERTlaM2xWWXB4ckNxbGw0WnJjNWtvc3BGSVZnbjg5bWNBdEZ5S2ZYREVyMEV2eWZ6cklPV0h0dmczLTVlTWJ0dDNGWm95eFF6R0VUY292VUE4RnB1V3pSa2RvVHpuQUhxODVLbEdxQkVkbTUtZEJYYlM2X29WaUgwT3NIRnlpeUpjUU5hR0NUdmk0S0FXNkhWUQ?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T23:21:44+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYld0b2RsdVRvRlhCVVpCRWJVYkpTeTY3SlFmcWJsSC1majhPVWFXRVAtMDdsTHJMT0FxY2RKMTFxRmpCRkxTTTFZMGI5RDctTmROWmplNDFBY0FVRzVMc1lEMnlCN0VjcE13anpXR0RfNDJkaVIzYUdQMWRnTWlGM3dwT01KNm9HcmlZYmI2ZnYwbzR3Wi1fSnQtM1VlYlRwQVk5Z2prSEEtWGo4UmhNaEhjNmlnSmVF?oc=5"
       },
       {
-        "title": "Preview: WDF Swedish Open 2026, Malmö",
+        "title": "One dead and two seriously injured in sword attack at Sweden school",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T18:36:12+01:00",
-        "source": "Darts World Magazine",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBUOEQyc1A0Y1BEWEJ5NkduZnl6UlhQUHJJNHNaZVJaZXhmUDdNYWo2SFljUFdDR1JtVmlCcFktOFFNdkZEZmlUZjVaMTdIVDBLd0wxWERBVExkR2FlZ1NQUGhuMEhxSzJKTUhDNnVKVjZpVjJhdEE?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T22:50:01+01:00",
+        "source": "ITVX",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTVlJVGdOcUY2WjJPTjRnckRRYnlWb3BxejJ6cGdzZk9sRVVhdGMwd3FmbENVVUtYTlFDYnkxU2ZfVnc1NTZPTVVlUG9EYl8wTnJDc29LcWRiMWNySmVvaENfcG9wLS1yZ3VaZE9QZXBDbzBvZGc3M3l4Q0dOdkRkLVhKRmhncFNXSVg3YmViQUdrV0F1MzVDTUM0RXE4bjVnVGRqRkhR?oc=5"
       },
       {
-        "title": "Swedish Avant-Pop Artist Murex Shares New Single ‘Mothers Bells’",
+        "title": "Sweden: One killed in school sword attack",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T17:23:27+01:00",
-        "source": "clashmusic.com",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeFZRanI1LTF2Rk9oSG83SUVwQU1HQVpTeF8yWmstNjVuSUNNNWd2YTl4cC1WNFVoc0xnRjhvX203SXQyX2RMRld3X2NBaE4teWlTWTkxZFhXU3lUWTRZcW5DSkZzamV6MlRiaEFybXBvaHB0dFFTdlpsakFvakpVSkEtMXdkSHh4cWVUMW56Mlg4X1hvOFVqWHB1bw?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T15:55:18+01:00",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45NFBsY2tMZE8xRE1XSDk1YWtEekVlM21SZXZxVElMeEJrTkhLX3ZzTVlkQU45MzhCb0dBZmEzWmZrTWVIdmZVOXd6US1Tc3F4QThXMTBwZ0d5NnhpQkthcVJveHFRZ1hsZTFIUmZ1aU0wOUI1NHdCVXd0Qzl5Z9IBfkFVX3lxTE03dVJONXViMmRhZVVsUEdvOWtDM0ZjeFNCNUJsTVREMzZTZVFhOURyTmhWQl9CVFQ3MURMY2x0LXRnalZFSUUzU0M5T0RtT1FXYS1hQzlia3hMTlItMzlEcERWdzI4RTZrMWhVazhmOHhfNHQ4TkdYOEdGZnVJdw?oc=5"
+      },
+      {
+        "title": "One killed, two teens injured in Swedish high school sword attack",
+        "summary": "",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T14:42:35+01:00",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNGRablJkcUZoRXZxUV9yaHpXbU5RdnhIQi12VG81VW1vdkM1bW11dGxpWDlsQlpzS1l1OEpVYUZSX0RudGQ4Qk9zU0hCcTJIdTg0WGIwaUtFdDZDRmMzQlh2R3pSblkxai1XTlBubDVISFRMd1RYTl9pVDNvaWg2YzBvRzJaRDRmQlU4MjlFYmM3bEVRTEVhWjRHZzAyWU9qUjNoMHJrdkdTNk0?oc=5"
       }
     ],
     "Local news": [
@@ -552,36 +566,12 @@
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQb016Y0NQcjcyRHZITFZOb2NlQ1BOY2VpRUtyeTJ5aXlxdUxSeDIxc0Y2QWFkMHR1eTZURVBkUnhscUF6UXN5TlNXUnp3NHBUMUQ0ODdMUVdHSHZIRFlBSldyU0hJWU9lQnRhakNYUnBHUkRjVDFLWkxLajhfaXhyWnFJSEpMc0Rob0p6NFI2UE93Z3ZWZ1ZyTkd0WVDSAaIBQVVfeXFMTlV1cnVnSmhienBGTlFHYjhHTDlHQ0Y4QTRCaWdMb1RvaUJnelYtLTFJS1d3Y1BpQmUyY093UTExWUZOaEdSSl9GalJhcUFxUl91cmZFVnZ0NlBGMVFFRkRWMUF2S2czb2UwamNETEctbmtKb0hJNk9lbkZQNVNISkJkNEF2RWVzX3FzbHRTekFQUDBnNnVlVlFYWVNORnZPWFlR?oc=5"
       },
       {
-        "title": "Local vet warns that dogs swimming in rivers can cause danger to both dogs and the river",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "publishedAt": "2026-08-15T05:30:16+01:00",
-        "source": "Rayo",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRFRuN0g1cEQyYVVibjNTMFd1UEUxNzhGc18yY3Vjd3NiNWs0WS16TmhOenViNEFhOEZxUjRhdGg1VkJ0WHU0M3JFUGNmWTBYMFhsYjZTR0xVWlRRckdZclBvR09mOE5sQ3RpUDMxdFhJcmJKXzUwM3llb1ZCUUQ3UmVXcWpOWDNaaXdYcG55NG5wQVZ6Y1JZNVh0Q3FQTG1URW9Kcw?oc=5"
-      },
-      {
         "title": "Paweł Kowalkowski stats and ratings",
         "summary": "",
         "meta": "Sun 16 Aug",
         "publishedAt": "2026-08-16T03:00:07+01:00",
         "source": "Sofascore",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IUEppb2ZoUmRpQ1labmZGZHVTcTd6Zm5uM2c3VXJocUc5bnRaM0NXaV92aUpkdExfUmhNbUxjSF82QnBFUmc5Zk5xdHNTSG03RHQxY1diWG1YQlZqUTA4SFdtamxiWUptbGRiWFdkeWhwVnNSSWc?oc=5"
-      },
-      {
-        "title": "Police name Surrey man charged after multiple crashes with cyclists reported",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "publishedAt": "2026-08-14T11:05:00+01:00",
-        "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORDBwY0liSFJqeV9JSFo1YTQ0eVUyakVBSVdRMXdSd2NNTEdiR0liUHl0bm5RTml3S2Q4UXh0VHJwbnUwN0Q1dWh3R2FieWgyM0JXOU56UUVFVENhS1lVSzRjRFZhajRndmVxckk5dG9Fb0xaTWt0VTQwTEs2OC1GN3Njbjg5d0wtRGdUZtIBkgFBVV95cUxQa1JwZTQyMGZlUENfRUNLamZPWnF2UzJNby1vWGdvZHVWMklzX1dTY0tjU0M0ZnlaaDRkQnREOWxSMk1fQkx1bHJ2TWwzelRJWm5mVGIyYmhHNV9MbWExY0duRXJuNzE4YW1JVVhkb25iVFVMUDQyMTVESVBxVjk0QzRmc3NKQXRBdU0yaXE2el8wQQ?oc=5"
-      },
-      {
-        "title": "Elmbridge driver charged after cyclists injured in van incidents | News - Hits Radio (Surrey & East Hampshire)",
-        "summary": "",
-        "meta": "Sat 15 Aug",
-        "publishedAt": "2026-08-15T03:24:08+01:00",
-        "source": "Rayo",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTDhTNEEtaWZSN1dfdElXYVR0NjI1MXdQQTE2WTJHSXFsQ0V5cm1yckdCUlc2TG50MVBYaFNGcVc1akU0S1ZLSjFmMVJ3d3hocUY0NTlDaWxqOXp1Qnpsd2NQRXlXYlBTTzNBclBKVHp0bGhvWTdnaXFzMExOQXpHM2J4TzNtWlI4Y01IU3N3MmdrYlBYYVJjYmQwcHU2RzlGRVlIdGdseXV0WWY2cDN4Qg?oc=5"
       },
       {
         "title": "Changes to planning decisions: what it means for you",
@@ -608,20 +598,20 @@
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSURxX3hJVVhYV0d0c3o1WjhpWUpZdE9CYTBraDRkbU4zcXAzTURfNlZ1SUlxZ1VlV1NHX3VEYTQ4LTVVcklsWXVlM2dzVDFyZkY5cldnWF9DXzctWjR2OUNGeWo5cXBoZE10ek55cTFyRUxEa0UzSlJCcFNnUEN5LVpDc0dLS3BPOVp4Z2hfYzRrbUtkZjByUS13?oc=5"
       },
       {
-        "title": "Costain lands £150m Thames Water treatment works package",
+        "title": "Walton on Thames : 4 arrests in multi agency illicit goods crackdown – East Surrey News",
         "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T09:12:39+01:00",
-        "source": "Construction News",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSy13Y3R2TzZBckdNNkYxbm42RzBwYjItU3ZTYWkydUdSV0NzaTEwVEhMQ1dKbUVhZmcxbm5MZldtRXpfRHA1YklZcjM5cFRuYUx0UW85M1ZsYWlYdjVjRHNkanNtRGpVc3hVdS1HaDdqNXpvUjAwYVRnNkdscFRwa0pyQnpoZURBVzIxOFViV3BfX3BkbDFRSTVCSVhaZW5BdTlkMWV4cVZCNmZyWjNiVHBn?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T14:34:47+01:00",
+        "source": "Leatherhead Living",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1BoZ2VOOFh2RGFrMkk4YWY5eUtlLXBzVnZFb1JwNXBPUXhHNklmb19rZVJ6Z0NUVFRBUkhrS0Fucl9hV3gtdmVSWmt6b09NSm5YVTBnZWxLTmNSUGc3Wm9XUVAyNW0ya29RUVAzdkFuUkFhNWpWQ3VqT0kzMW9SOGxyQ2JZSC00TVk0THZ3YXk1RHBXSHF2NkdmYTI1d21jdElHM3BEM0QtNUlpNFBqVWNma3oxSFNiazFTNGNR?oc=5"
       },
       {
-        "title": "Esher Oxshott Cobham : car thief gang jailed – East Surrey News",
+        "title": "The M25 and M3 roadworks for drivers to avoid this week as Surrey A3 closure looms",
         "summary": "",
-        "meta": "Fri 14 Aug",
-        "publishedAt": "2026-08-14T16:12:49+01:00",
-        "source": "Leatherhead Living",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS2VpTlRFck12eWlkMWFGWVpJdjZqdXhrcndkUGNOR0I5RThkbkJsUnFsZzlOWlRXQ3NadzQ3YWl3WVZVdDEwNG5WRnhzNV9QT09oNVplZUNqSjdZanpMX0NLWmxjczZ0U1ExOUl2ZmZXUU9yc1VvUHd2QTNzcXFXLXUxYTh4SE9PRVpRR18zOTJiTVRQQWxTcElMbWkydw?oc=5"
+        "meta": "Mon 17 Aug",
+        "publishedAt": "2026-08-17T15:29:00+01:00",
+        "source": "Surrey Live",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkIycjZCY0xJOVRxTUlxRWV6OGRvSjJiTnV1MEhWd3k2S1pkS21hQ1Q3ZUNaMmZrbURUcHpiUUJ0LUk5REVIYmtQSk91dldaQWxHLVFFQlBkbHJYanlMRFp1ZFFMUG1YZ3hzdEY1RkIyWjhpNFJCYzd0dEcxNXo4eU1UMnNMazlwdnJSd9IBkgFBVV95cUxNdV90T1N2UzhwcUl3TXF5cDcybXlBZ29UZi1Ma1FjNDdGQ0xNS3NwODdrQ0g3ZzBRZmNuUnE4c0hOMmR3cllrekNpeEFENUNheGNFTllOVWw5R3F5eko4Qm1BbzlUbWZqN3lJUWprQ2FsMmgxYXRZQ2FMRVdhYlFPWVRwQmlHekI2QVp2T0VtOHVrZw?oc=5"
       },
       {
         "title": "Costain selected to upgrade Thames Water treatment sites",
@@ -630,104 +620,128 @@
         "publishedAt": "2026-08-18T02:46:41+01:00",
         "source": "Costain",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVU1vd24wX2xRT09way1sMDNXb3NlanotdGNfb0JXQUxTaFN0OTNZWUl3WmozY05GRDhnZExLdXNpV1N4ZFJES2U3NUxWV0NqeHJqR2IyVHRjNXJwejBXYXEwMndGelZ2TUxfUW1razV5eXlmTHZ6MU9zdFBHLXdYMmctd1JOaHpmd2VUckNHVXJPSUdtSENNNXlnZ3BiRnJYQUhRZmJjRy1oRnM?oc=5"
+      },
+      {
+        "title": "Costain bags £150m Thames Water wastewater programme",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "publishedAt": "2026-08-17T17:53:50+01:00",
+        "source": "Construction Enquirer",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY21Bb09BR05SVWVKeTJIQmF4ajRyMzJqTmVkM2xRQ1hjWXR0T3VPWktGTUZxeEROT1I5UWc4YV9sQjY2cVRLeHNZakJrY2kwdElsVU9LdlQ2ZWJYdmZHVk1tamIwbGx2LUIwVXpqSjRxbXlkTUYtTExTamRaMWg0SWFFY2tLbWVSYU40M2hvbkFXcGhjdGpkdHgxa1prVVg4R2c?oc=5"
+      },
+      {
+        "title": "South of England Men's Community Game announces expanded Representative Programme",
+        "summary": "",
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T15:00:00+01:00",
+        "source": "The Home of Rugby League",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1h1QjZqc3gzZlQwVEJTRmxiazc4NjAwRF9JeVBYZ25VSEozN2FKLUsxUEpZOFNCVkJaWnJVR20wME1PenQyNVVlYnBXSmdtdVNYMWU5bC1DMVJCX3R6cGF6LWZYSU9zOWRGbzN1UEh1MzNCekdGVTd4ZExRYlFsQTNoSmZidktBQ1VzMFlDV29XREh0NFJ5ZElVc3RBbjRCb25XRmhZVFQ2ZVdTMDdIQjZMbGl5X29qQkpJSTgtc3hIZw?oc=5"
+      },
+      {
+        "title": "New homes proposal rejected again",
+        "summary": "",
+        "meta": "Mon 17 Aug",
+        "publishedAt": "2026-08-17T05:01:31+01:00",
+        "source": "Woking News and Mail",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdGpYaF9URkgycldqYk9hV3U1X3ZaVVU5dFhJMlR1TzJTbVhBZ3FrWFQ4bVFINlQ0Y3ZzN0t6MDF3eGhQQzRPNlpRdWVaQlhHb205cTZWa3NsTE1yWXpwNThLWEtkSDJiR3ZZVXczY2NUQlRjNDNUeVdoOGM0TTh2LVRrMzN4M0pTM09FVFFBbHktalUx?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "El Niño weather system set to be 'strongest in living memory', warns Met Office",
-        "summary": "Scientists say the growing El Niño weather pattern is an \"unprecedented event\" and means 2027 is likely to be the world's hottest year on record.",
+        "title": "Canada says it will match US tariffs 'dollar for dollar' as trade talks break down",
+        "summary": "New 50% levy on $20bn of Canadian imports comes into force after last minute breakdown in trade talks.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T05:46:33+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cvgvyy4x2mvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Girl, 6, dies days after Shoreham sea tragedy killed three family members",
+        "summary": "Saja El-Khawas is the fourth person to die after her family got into difficulty in water off West Sussex.",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T01:33:21+01:00",
+        "publishedAt": "2026-08-21T23:28:37+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/weather/articles/c3ekg93vjz9o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c629y0kx8gyo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Will Harry's return heal rift with his brother? Don't hold your breath",
-        "summary": "The Prince of Wales remains in no mood to forgive and forget. The hurt he feels lingers.",
+        "title": "TikTok to pay $400m to US in one of largest child privacy settlements",
+        "summary": "The deal stems from a 2024 lawsuit alleging TikTok and its parent company ByteDance collected \"vast amounts of data\" on millions of users under the age of 13.",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T05:07:22+01:00",
+        "publishedAt": "2026-08-21T23:36:12+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyx410xxyko?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Meghan could return to acting once back in UK",
-        "summary": "Sources close to the Sussexes have not denied reports that Meghan has been offered an acting role in the UK.",
+        "title": "More students planning to live at home for university over 'insane' living costs",
+        "summary": "Students like Jessica say they worry about missing out on student life, but feel they have no choice but to stay at home.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T00:01:58+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c70gy180e8lo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Burnham economic adviser O'Neill rules out government job",
+        "summary": "Lord O'Neill, former chief economist at Goldman Sachs, was tipped to become Andy Burnham's chief economic adviser.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T03:53:22+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwym4m4j848o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
+        "summary": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T04:17:29+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Meghan in talks for role in Netflix series The Gentlemen, BBC understands",
+        "summary": "This would be Meghan's first significant acting role since her marriage to Prince Harry.",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T03:52:29+01:00",
+        "publishedAt": "2026-08-21T19:29:31+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c79g28zxwzdo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cwye9g9r58zo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "French becoming more effective in stopping small boat crossings, UK says",
-        "summary": "The Home Office credits France with intercepting hundreds of potential crossings this summer using new tactics.",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T23:23:24+01:00",
+        "title": "GTA 6 leaks - a nightmare or a blip for the biggest video game of the year?",
+        "summary": "Clips appearing to show the highly anticipated game have appeared online, but will they really hurt it?",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T00:13:00+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c1d1v333ewxo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c07r3183gn3o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "My student day out in London turned to terror - now survivors like me won't be forgotten",
-        "summary": "The UK's first national day for victims and survivors of terrorism takes place on Friday - and means more to this man than many.",
+        "title": "Prince Harry and six others face privacy case legal bill of up to £34.5m",
+        "summary": "The seven claimants, who include Sir Elton John and Liz Hurley, have to pay the Daily Mail publisher an initial £9.54m in the next seven days after losing a privacy case.",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T01:11:18+01:00",
+        "publishedAt": "2026-08-21T18:18:41+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cd0x91ym7veo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c04kwr9r1zlo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "How much could Trump's 'economic D-Day' hurt Iran?",
-        "summary": "Iran has so far proved adept at finding ways around years of already punishing sanctions on its economy.",
+        "title": "Under-fives and pregnant women told to avoid runny eggs when eating out over salmonella risk",
+        "summary": "The advice also applies to the over-65s and others with underlying medical conditions amid salmonella outbreak.",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T00:16:45+01:00",
+        "publishedAt": "2026-08-21T20:13:43+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cx2krdggx6xo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "The town whose council wants migrants to move in",
-        "summary": "Greenock wants to attract immigrants to settle in the town and reverse its declining population.",
+        "title": "Murder investigation after wildfire uncovers body in park",
+        "summary": "A post-mortem examination revealed the remains belonged to a woman aged between 25 and 45.",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T06:00:02+01:00",
+        "publishedAt": "2026-08-21T18:46:04+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckgdpdk84d0o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c0rdk9ddepvo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "British rapper Yung Filly to face retrial on rape charges in Australia",
-        "summary": "A jury last month cleared the YouTuber of several sexual assault offences, but it couldn't reach a decision on three others,",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T05:17:05+01:00",
+        "title": "As they return to the UK, Harry and Meghan search for a brand that sticks",
+        "summary": "They will not be working royals when they come back. So what could they be doing instead?",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T01:03:10+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cd7l1g8922jo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Millennials are struggling to buy a home - but is it actually getting easier?",
-        "summary": "Twenty-somethings are much less likely to own a home than previous generations. But data suggests things may be turning a corner.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T00:10:58+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cgewlld498xo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Rain to stop in time for weekend as sun returns",
-        "summary": "The heavy downpours that have caused flash flooding will ease during Friday with sunshine returning for the weekend. But there are some chilly nights in store, as Ben Rich explains.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T01:14:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/weather/articles/c2el98pkd3po?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Stifling heat and broken toilets: TUI River Cruise passengers tell of their holiday hell",
-        "summary": "Holidaymakers tell the BBC they paid for luxury breaks but faulty air conditioning left them in sweltering heat.",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T23:59:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cy07exrz5lpo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Pakistan ex-PM Imran Khan back in jail after hospital examination",
-        "summary": "It comes as the court had earlier this week ordered that he had to be taken for a hospital examination.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T05:27:13+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckgdr9vr50po?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c0l5d387j18o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
@@ -780,65 +794,39 @@
         "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
       },
       {
-        "title": "Anthropic Expects to Match or Top SpaceX’s Record IPO Size",
-        "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T18:56:02+01:00",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZjdKM3p6TTVON2FNcXFDRVhHd056NU03dGQxNzFYYkNYc09xWDhwS1hETzdFUkoyVkpWM0o1VENSaENzWnIwODBmUThla2dsUWF5UkRuWThvVmRsRVdCZHhCaDVQZ2NYSVdLU2J4aHdaZ19OeDY5LUREbVg1cmR6ZmZxVk5OcG5YX0lHMmFUelNSYjNoVVBJVWNYdENoeFFZdmxEQVBPSDNsQWdIMFdtQnJn?oc=5"
+        "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+        "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T12:59:48+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
       },
       {
-        "title": "Anthropic Expects to Match SpaceX’s Record IPO Size or Top It",
+        "title": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T18:56:02+01:00",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT2RwbzAzN1d4OE5VenFKUThLek1qUFJLTk1fM1AzQTMxNHd2eFNmYWdfMDN5NWxpNGVwUTAwNE1TVEdjNGlaM3J2Y1FaSi05aFNIVGs3UjJ5U04xenlISzJLQ1BLSklVVWJKbG53SGRNY3RQUkhyc2k1TTU4WV9rUFoxRnVkQS1mc0pqU2tKdU5mcjFqRzYzSjNOaDE0OGxTcDFF?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T22:44:30+01:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeXdwbzNJcERVMTFvY2JtSkNBMUVaWGpSNlRqYXM1MndRT0lFOWw0NFpURjU4aVFZeTZvdjNRRWs0VWNaWXhzTXQ1QlJ4eUEwR2FXdl9Ca2xIQzVwQmgteVVLRkZneTlHMUt1dXJWNGk3UWladzNVQWZRc3ZpRFlQR2xTbGZLdGlRZzF2RWRvTk5CcVJQM19ZZlA1U2tCN1lkRkHSAacBQVVfeXFMTXQtbkxtMGJVQ0lSUjgwcG1EUFZkb1pWRjY4czE4M3NlQ1RsVWtWOVBESjM2SllMby1jN2haVy1wMWYxR2FnSFpwOUhKT180bVpRTzlETERmYjVQdE1SYjBiYXc0VzRRQnVSUC10Z2lpc0FqZlJibF8waTdOSndRa091YXZwUkRSWnlxbEI3NTYyeW55a1NkZ2NGVTc4YUM3UHZtQ056aGM?oc=5"
       },
       {
-        "title": "Anthropic plans to change enterprise data retention policy, source says",
+        "title": "Anthropic Could Aim to Raise $100 Billion in Blockbuster I.P.O.",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T20:34:49+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaDlfRWVSb2Q5ZEhuaWFqdHR3WThoM2tOalBxeW91VEZGZWgzTUNJZF9NZUxFTmhINXlHS1V3YlZvTXAtNExsT3JtaTdmajA2UlZvYUtOOTI4ZEtBRFIzYTVBNl9nRUhzVUFybmZfX3BIVjd4aDJMM1hpUXQtMC1lZzZXR0k2c3poNlUtUWl0RGZ5NzhNSmtaTzI2NmF0QU54WWZvYVhzREpmanpmN2lfNHh3?oc=5"
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T01:24:20+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUXg2WVgtendKTnJablIxTHFpMzE2Nm91VTR2enZZSk5wWld3Y2pFTGVWQjE2OVpPcTFyUTJRNFU1SkpMOS1ZajQwSDM5RV8tYlEybi1kUGVlWEZhV2pKdW9DYS1Pc1M5cGgzanlUVncyV192cXVxT2VHRFF4dVUyVkNn?oc=5"
       },
       {
-        "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs Emerging",
+        "title": "Exploring new frontiers of AI and games research",
         "summary": "",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T19:41:00+01:00",
-        "source": "Futurism",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUVVKREVBczZfRG1iREJhYVNKZDZDQ0FheU5qTUw1MjhFY2NfSzh5bGUtMDZlRVhvUzZFU2F3SVVQQmVINllkd3FxbHBPUzFNNnFwdngtUGNjdlQ0Wm9TblVEeFd3YnJsdzc1bVRzQ0MwZHBuUjdtVl9BZEZVdnQ4eGRRNXhCYTBW?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T13:00:48+01:00",
+        "source": "Google DeepMind",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOLWx5RTBia1JNQkw5a1g5dE1xRXZMZ01SMnVmZ2RkbzZuc21mMTdiLW5wY2UzSVRZRUh3VWxsT2t5bGl4YkJMOHhOZHBXV0p5TjVFbjlRSzBTRFMtRkx2cDFDems3Sk9FVEgtUFlPV09oRmNqMDZYUjBaZ2dCVHVzWlJiZzJNUXI4eTAxQ2R6VXh3UkdYUUdFTGNwWkRBV091?oc=5"
       }
     ],
     "Career": [
-      {
-        "title": "Head of Product",
-        "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Tue 11 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442775538",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Foundation Partners",
-        "location": "London, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-11"
-      },
-      {
-        "title": "Head of Product",
-        "summary": "PlannerPal · United Kingdom",
-        "meta": "Remote · Posted Sun 26 Jul",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-plannerpal-4442376111",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "PlannerPal",
-        "location": "United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-07-26"
-      },
       {
         "title": "Senior Product Manager, Reporting & Insights",
         "summary": "remotecom · Location not stated",
@@ -879,43 +867,30 @@
         "postedAt": "2026-08-07"
       },
       {
-        "title": "Product Lead (Pre booking experience)",
-        "summary": "British Airways Holidays · Crawley, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Wed 5 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-pre-booking-experience-at-british-airways-holidays-4449472670",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "British Airways Holidays",
-        "location": "Crawley, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-05"
-      },
-      {
-        "title": "Senior Product Manager - Analytics",
+        "title": "Senior Product Manager",
         "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
-        "meta": "3+ WFH days · Posted Mon 27 Jul",
+        "meta": "3+ WFH days · Posted Fri 31 Jul",
         "source": "LinkedIn",
-        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-analytics-at-quinyx-4445934880",
+        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
         "contentType": "job",
         "workArrangement": "3-wfh-days",
         "company": "Quinyx",
         "location": "Stockholm, Stockholm County, Sweden",
         "countryFocus": "Sweden",
-        "postedAt": "2026-07-27"
+        "postedAt": "2026-07-31"
       },
       {
-        "title": "Senior Product Manager (m/f/x) - German Speaking",
-        "summary": "DemoUp Cliplister · Remote job",
-        "meta": "Remote · Posted Thu 20 Aug",
+        "title": "Senior Data Product Manager",
+        "summary": "Fundingcircle · London",
+        "meta": "3+ WFH days · Posted Sat 22 Aug",
         "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.com/jobs/companies/demoup-cliplister/remote-senior-product-manager-german-speaking-berlin-311211",
+        "url": "https://www.arbeitnow.co.uk/jobs/companies/fundingcircle/senior-data-product-manager-london-173327",
         "contentType": "job",
-        "workArrangement": "remote",
-        "company": "DemoUp Cliplister",
-        "location": "Remote job",
-        "countryFocus": "Europe/remote",
-        "postedAt": "2026-08-20"
+        "workArrangement": "3-wfh-days",
+        "company": "Fundingcircle",
+        "location": "London",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-22"
       }
     ]
   }
