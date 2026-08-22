@@ -1,7 +1,7 @@
 {
-  "updatedLabel": "Saturday, 22 August 2026 · refreshed 5:58am",
+  "updatedLabel": "Saturday, 22 August 2026 · refreshed 10:34am",
   "weather": {
-    "temp": "15°",
+    "temp": "18°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 4,
@@ -21,7 +21,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -30,7 +30,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -48,7 +48,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -66,7 +66,7 @@
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       }
     ],
@@ -297,20 +297,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -322,6 +308,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -411,20 +411,18 @@
   ],
   "arsenal": {
     "lastResult": {
-      "date": "2026-08-16T15:00:00+01:00",
-      "dateLabel": "Sun 16 Aug",
-      "kickoff": "3pm",
-      "opponent": "Manchester City",
-      "competition": "FA Community Shield",
-      "homeAway": "neutral",
+      "date": "2026-08-22T12:00:00+01:00",
+      "dateLabel": "Sat 22 Aug",
+      "kickoff": "",
+      "opponent": "Coventry City",
+      "competition": "Men's first team",
+      "homeAway": "home",
       "completed": true,
       "arsenalScore": 3,
       "opponentScore": 0,
       "result": "3–0",
-      "url": "https://www.skysports.com/football/arsenal-vs-manchester-city/report/556659",
-      "source": "Sky Sports / Arsenal.com",
-      "image": "https://e0.365dm.com/26/08/1600x900/skysports-arsenal-man-city_7323378.jpg?20260816170357",
-      "imageAlt": "Arsenal players after the 3-0 Community Shield win over Manchester City"
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMmtwT0FUT2xTbk5ocS1ySlZXNUd5ZE1tWWt6bXVtV3lYaDFEaFVIcjdNVjNPd1Z4dlVwXzItS2JXeEJtQWdDWE90SEpya0tPQ09LZjhudTZqMl9oNXF5UFlwSEZTSktQbGFJVzVoSXFxTDE0b0lzQlBwQjFYa1dvM1M4LXQ?oc=5",
+      "source": "Arsenal.com"
     },
     "nextFixture": {
       "date": "2026-08-29T00:00:00+01:00",
@@ -453,6 +451,14 @@
     "played": null,
     "news": [
       {
+        "title": "How to watch Arsenal v Coventry City live on TV",
+        "summary": "",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T00:47:01+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5"
+      },
+      {
         "title": "Premier League highlights: Arsenal 3-0 Coventry City",
         "summary": "",
         "meta": "Fri 21 Aug",
@@ -461,12 +467,12 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6QnM1eUhSdzI4TTN2X3RoVVN4UkxDYXd6QnVhR2psX181Umg3cHRsWW5hTnZtN1M2cU9FVDd5X0UyZ1NXT093Mk5laFZsTXV1cjJaYktVbURaeVpTOGROVlNMVjB4Uzg?oc=5"
       },
       {
-        "title": "How to watch Arsenal v Coventry City live on TV",
+        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
         "summary": "",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T00:47:01+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5"
+        "publishedAt": "2026-08-22T10:01:10+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
       },
       {
         "title": "Report: Arsenal 3-0 Coventry City",
@@ -477,20 +483,12 @@
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tc1ZnbnpPMFZ6aHU2NDN1Y2VSd1BMa3FWOHVXejN4azgzSmE0V2ZxbmF2QWljbFYxZk05M2h5MkE2RGkzeW5RM3NaejkxQ0JnZ29wZHExWE1Mb1I5aU5Jbk5LOG5KM2RrbFRmZ0dqRnBhcVlheXJpMHJ2aU4zemM?oc=5"
       },
       {
-        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
+        "title": "Highlights: Arsenal 3-0 Coventry City",
         "summary": "",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T03:58:13+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
-      },
-      {
-        "title": "Arsenal get new Julian Alvarez boost after fresh twist in transfer saga",
-        "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T04:13:13+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNkl4eXdzSDNEbU0xOHpHbFlyX1lYcjBXYWhtWEppdkN4dnlVVzNMY0paa1hyQXNUNkNKbW5CVy1CY0dBX1dHSk82cFBadXA4cUxWTzZoZjI4d0ozX3llNVJwUVp5VUQzaXN5VkF4X04wM1NzNWN6eDhHSWU5S0JHOW9KbW96SWNnazBsdjFLLWdsaUlBMnFWRWt1VE1ibkFhekFn?oc=5"
+        "publishedAt": "2026-08-22T00:05:15+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMmtwT0FUT2xTbk5ocS1ySlZXNUd5ZE1tWWt6bXVtV3lYaDFEaFVIcjdNVjNPd1Z4dlVwXzItS2JXeEJtQWdDWE90SEpya0tPQ09LZjhudTZqMl9oNXF5UFlwSEZTSktQbGFJVzVoSXFxTDE0b0lzQlBwQjFYa1dvM1M4LXQ?oc=5"
       }
     ],
     "sources": [
@@ -522,6 +520,16 @@
         "trust": "Trusted report"
       },
       {
+        "title": "Ezri Konsa: Arsenal complete £55m deal for Aston Villa and England defender",
+        "summary": "",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T19:41:09+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPV1FRQzl6OGZEMUs0aTFvNERxSXdTOEpSUDBhMHUyaW15VzFZWEFKQm5lNm9na04zeHhCN2J4VWZfcC0zOHBfUDJDTnl3a0czSDE0S3Y1TjczWExZOWNRWFl0RlZsYUhTYnB6X09BRUF1TzVUQzM4Ym01RktjTFRvLTEzYzYzRnNCcVF4eDFJRHIxZng1SC1Id29qTTgxMVMyLTBWLUxoT1I4V3ptR0E2NnlfQUc2T1hOTnp6RVc3Z0VtOFVRcVVHaVNR?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
         "title": "Ezri Konsa signs for Arsenal",
         "summary": "",
         "meta": "Fri 21 Aug",
@@ -548,16 +556,6 @@
         "publishedAt": "2026-08-14T19:39:32+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSU9Bc1NHenJ1TDRZc0Q5endTemZTcDY0ZGVXV0pQQVlRSTIzUFFlaU54NnVwLVYwNzFybmVyZWxUc1UxTkhHNTlYS0JWX2tVa2NGNElkLU15X0VMYmIxSEs0VHN0U3d1N2o4V2c2QVktbDZYM2t4eFNJWW84dmlkR0NnUEQ1QXVTLVBXdTI5cGZQUnVmY2s2OHpIa0ZveDNhR05rRE5jLU5LZmRxb2ZR?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Arsenal transfer latest: Jarrell Quansah move backed as Clinton Morrison insists it's a 'no brainer'",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "publishedAt": "2026-08-14T10:52:58+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWHhkX1RwRkoxbE9KUXZVY1NhYWpMdXFEcnJGdG5xbjVtQmNCWXR5ak1qVGV2SVk2blRZNU1Lc2l1a1ppQ2lORS03ZlhkblFqbmxlcmhSVHI3bm5XaHZJQ21xUHRHMk1IVzhPMnh1TE05OV9TYi1tTTJDYndDRDBVS0VPTXZEVXpBRVhrQmpzZkpoNllhZmhpT255a0FpMFFLb05SQTNRdTI4QmlpYWUzZnhWSHFCT0ZZWFh4b1FidHlGT0ZFMHVGak85TlZMUkVwSFlUZDRrNk04OGVENXc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       }
@@ -654,12 +652,12 @@
       "section": "AI"
     },
     {
-      "title": "Premier League highlights: Arsenal 3-0 Coventry City",
+      "title": "How to watch Arsenal v Coventry City live on TV",
       "summary": "",
-      "meta": "Fri 21 Aug",
-      "publishedAt": "2026-08-21T22:35:28+01:00",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6QnM1eUhSdzI4TTN2X3RoVVN4UkxDYXd6QnVhR2psX181Umg3cHRsWW5hTnZtN1M2cU9FVDd5X0UyZ1NXT093Mk5laFZsTXV1cjJaYktVbURaeVpTOGROVlNMVjB4Uzg?oc=5",
+      "meta": "Sat 22 Aug",
+      "publishedAt": "2026-08-22T00:47:01+01:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5",
       "section": "Arsenal"
     },
     {
@@ -789,15 +787,23 @@
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUXg2WVgtendKTnJablIxTHFpMzE2Nm91VTR2enZZSk5wWld3Y2pFTGVWQjE2OVpPcTFyUTJRNFU1SkpMOS1ZajQwSDM5RV8tYlEybi1kUGVlWEZhV2pKdW9DYS1Pc1M5cGgzanlUVncyV192cXVxT2VHRFF4dVUyVkNn?oc=5"
       },
       {
-        "title": "Exploring new frontiers of AI and games research",
+        "title": "Anthropic-Backed Ode Buys Casper As AI Services Race Heats Up",
         "summary": "",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T13:00:48+01:00",
-        "source": "Google DeepMind",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOLWx5RTBia1JNQkw5a1g5dE1xRXZMZ01SMnVmZ2RkbzZuc21mMTdiLW5wY2UzSVRZRUh3VWxsT2t5bGl4YkJMOHhOZHBXV0p5TjVFbjlRSzBTRFMtRkx2cDFDems3Sk9FVEgtUFlPV09oRmNqMDZYUjBaZ2dCVHVzWlJiZzJNUXI4eTAxQ2R6VXh3UkdYUUdFTGNwWkRBV091?oc=5"
+        "publishedAt": "2026-08-21T14:52:49+01:00",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSUpyb2ZESEtmbzBoekNMUHJINmN3ME04OFdKWVg4ODhHWURzLWJPc1ZONzFlQTdNSjJxS09CM0Fsazk0dUlnQVItRWFjVUtQbzdOanhMQXJjcnM0akM3bXBXb1c4Y2RXeVduMDJZY3V2N0ZZOUl2cS0zZVNraTB4UU41anRCdkRqcm1XN3JWeEZQYlVVa1laNUlwVjR5ck04NlpZS0xMT1JVeWtuTUtjNktPaGJEQQ?oc=5"
       }
     ],
     "Arsenal news": [
+      {
+        "title": "How to watch Arsenal v Coventry City live on TV",
+        "summary": "",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T00:47:01+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5"
+      },
       {
         "title": "Premier League highlights: Arsenal 3-0 Coventry City",
         "summary": "",
@@ -807,12 +813,12 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6QnM1eUhSdzI4TTN2X3RoVVN4UkxDYXd6QnVhR2psX181Umg3cHRsWW5hTnZtN1M2cU9FVDd5X0UyZ1NXT093Mk5laFZsTXV1cjJaYktVbURaeVpTOGROVlNMVjB4Uzg?oc=5"
       },
       {
-        "title": "How to watch Arsenal v Coventry City live on TV",
+        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
         "summary": "",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T00:47:01+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVFTNnZsYld2cnUzOFRweUU1azBpM242Y1VIVTlkdTk4ZEk3SlZQLU8xdlZjZWttNGZqenYyQmNYbklmY0hDRHRJMlAwZFRUMjRTRUtJYzlZZjl1ak8wREYzYXpLLU9NeWxEVUswRG43UVhRVmVPeE53T1Jxc3JOazMwRnpZTkRsNFV3SEJqWW5MTEE?oc=5"
+        "publishedAt": "2026-08-22T10:01:10+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
       },
       {
         "title": "Report: Arsenal 3-0 Coventry City",
@@ -823,20 +829,20 @@
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tc1ZnbnpPMFZ6aHU2NDN1Y2VSd1BMa3FWOHVXejN4azgzSmE0V2ZxbmF2QWljbFYxZk05M2h5MkE2RGkzeW5RM3NaejkxQ0JnZ29wZHExWE1Mb1I5aU5Jbk5LOG5KM2RrbFRmZ0dqRnBhcVlheXJpMHJ2aU4zemM?oc=5"
       },
       {
-        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
+        "title": "Highlights: Arsenal 3-0 Coventry City",
         "summary": "",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T03:58:13+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
+        "publishedAt": "2026-08-22T00:05:15+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMmtwT0FUT2xTbk5ocS1ySlZXNUd5ZE1tWWt6bXVtV3lYaDFEaFVIcjdNVjNPd1Z4dlVwXzItS2JXeEJtQWdDWE90SEpya0tPQ09LZjhudTZqMl9oNXF5UFlwSEZTSktQbGFJVzVoSXFxTDE0b0lzQlBwQjFYa1dvM1M4LXQ?oc=5"
       },
       {
-        "title": "Arsenal get new Julian Alvarez boost after fresh twist in transfer saga",
+        "title": "Arsenal vs Coventry highlights: Champions cruise to victory in opener",
         "summary": "",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T04:13:13+01:00",
+        "publishedAt": "2026-08-22T09:52:07+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNkl4eXdzSDNEbU0xOHpHbFlyX1lYcjBXYWhtWEppdkN4dnlVVzNMY0paa1hyQXNUNkNKbW5CVy1CY0dBX1dHSk82cFBadXA4cUxWTzZoZjI4d0ozX3llNVJwUVp5VUQzaXN5VkF4X04wM1NzNWN6eDhHSWU5S0JHOW9KbW96SWNnazBsdjFLLWdsaUlBMnFWRWt1VE1ibkFhekFn?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcnpjYktrV3hVcjJyWVpuc0F5eTdNZ0hLUE1GM2FpbU5fbFpkSkRycmtabjllUHE3NFZqREFnVzA1eDYyaDluTFRMOTVNcm8wTFVqTTY4LVdodFR1blltUzBnUDhCcjVNMDF4SFhFWVdhQzZfMGFSbl8xUUZjWnRPc1JXRXNPamhkbVY1dVpWRUY2dkJxekwxUWxGYU9YMGxBajNmUWpGNkhqUGl2?oc=5"
       },
       {
         "title": "Team news: Rice and Saka start against Coventry",
@@ -847,20 +853,12 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ2ZBMjE4UzFkajJBMi14SC1iX3d2aUxYLVBreUZuS2g0am5EVVNqTW0yNkp0aXdnZVNNNVUwU2FjajEzcXhhOGFOQmVULTFMdmJmM0NxTmRreW9nSVZHYlpTQlhVamJXVTJhNDFmLVhFQXVsbVlPNnl3N1Q5djBGZ0tya250QzFWZE1mbzYzeDkxQQ?oc=5"
       },
       {
-        "title": "Ezri Konsa: I want to keep winning",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T16:05:31+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObWg0Q201ZUFxSW9KNkIyV2theTBzWTN1WERVclZmaDhERHhsLUlEUXZJV1owSENXOFJlSGJ2SWtYSHFNdkFOV3lTNnBJN3oxajl4U2ptOER5Z3JnYmpLNW5FUUtvRmRURWVqUm9CXzBZWlNiWFQ0cnUxQjhoMm9rZg?oc=5"
-      },
-      {
-        "title": "Highlights | Arsenal 3-0 Coventry City | extended",
+        "title": "Arsenal player ratings: Tzolis electric as Saka shows encouraging signs",
         "summary": "",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T00:47:08+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9sY240VmNkbl9SMmwwY3BLcHk1NU5GTVI2eE1XUXBaNURHSGFrRE13QU54UXpBRnNkV25KeWI3ZklycTlLOVJieE9FQXA1cFU5aldGcEN0NWtLQ0FOYk1z?oc=5"
+        "publishedAt": "2026-08-22T08:16:05+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUmNYZXpXaHNrSUw1WWY5ZE9zMXB2OWVxU0Y3QVhhcFhqSk9QcXlBUTl1Q0JzRzBSS21tZzZBdk5JbE80LXlNaVRtelBHamE2NnBtQWlqY1NJajZka0U2RHp0SGxzZmw5WnYzYWZENFJka19FVndGSTAzTXdmd0Q0TjI4emllQkJJZ01WcV80Y0JmRk8zU2lBQS1QaTJ2TFZuU0VjTQ?oc=5"
       }
     ],
     "Local news": [
@@ -921,12 +919,12 @@
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1BoZ2VOOFh2RGFrMkk4YWY5eUtlLXBzVnZFb1JwNXBPUXhHNklmb19rZVJ6Z0NUVFRBUkhrS0Fucl9hV3gtdmVSWmt6b09NSm5YVTBnZWxLTmNSUGc3Wm9XUVAyNW0ya29RUVAzdkFuUkFhNWpWQ3VqT0kzMW9SOGxyQ2JZSC00TVk0THZ3YXk1RHBXSHF2NkdmYTI1d21jdElHM3BEM0QtNUlpNFBqVWNma3oxSFNiazFTNGNR?oc=5"
       },
       {
-        "title": "The M25 and M3 roadworks for drivers to avoid this week as Surrey A3 closure looms",
+        "title": "We tried Surrey's 'best family experience' and my daughter was obsessed with one thing",
         "summary": "",
         "meta": "Mon 17 Aug",
-        "publishedAt": "2026-08-17T15:29:00+01:00",
+        "publishedAt": "2026-08-17T08:00:00+01:00",
         "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkIycjZCY0xJOVRxTUlxRWV6OGRvSjJiTnV1MEhWd3k2S1pkS21hQ1Q3ZUNaMmZrbURUcHpiUUJ0LUk5REVIYmtQSk91dldaQWxHLVFFQlBkbHJYanlMRFp1ZFFMUG1YZ3hzdEY1RkIyWjhpNFJCYzd0dEcxNXo4eU1UMnNMazlwdnJSd9IBkgFBVV95cUxNdV90T1N2UzhwcUl3TXF5cDcybXlBZ29UZi1Ma1FjNDdGQ0xNS3NwODdrQ0g3ZzBRZmNuUnE4c0hOMmR3cllrekNpeEFENUNheGNFTllOVWw5R3F5eko4Qm1BbzlUbWZqN3lJUWprQ2FsMmgxYXRZQ2FMRVdhYlFPWVRwQmlHekI2QVp2T0VtOHVrZw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb29SckZhUjNQczFMWGptN0JjQ1J3RjBGZWVtZzhvMi1Jak8wazJqY1k4RFV0U1FLRTJhQkFXMkhrVnVXSDBvejZSem02bkRwekhmazZWcldveTlWdlA2ZGp1YU13b1p4aXIzTlE3MF9EUzdaZkJDWUdOcUwyZWRLZkhvSm4zQjJJY1FnQnNUZ0t4ek5zZWpvLWlnd0VBU29q0gGmAUFVX3lxTE1EaGxFempDaTIzbk5lcG1DVlR5c3N1cDhLaFpuaTRWMmk5VjFmMGc5ZVUtRHh1RGZMRzFmOGk2SzZHelN0dWJNSDhwc0lEeGR3TldYRldTQ2o4dUhwaV9tTVc5SUtVWlRyeHF5M2V3MmdFWFJyaWZoWmZ6d09XWXZFdEpqTzdyYV81cjhFR080cFVXakpvVXp0cHkzdW40NTMwUXJUemc?oc=5"
       },
       {
         "title": "Costain selected to upgrade Thames Water treatment sites",
@@ -945,38 +943,38 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY21Bb09BR05SVWVKeTJIQmF4ajRyMzJqTmVkM2xRQ1hjWXR0T3VPWktGTUZxeEROT1I5UWc4YV9sQjY2cVRLeHNZakJrY2kwdElsVU9LdlQ2ZWJYdmZHVk1tamIwbGx2LUIwVXpqSjRxbXlkTUYtTExTamRaMWg0SWFFY2tLbWVSYU40M2hvbkFXcGhjdGpkdHgxa1prVVg4R2c?oc=5"
       },
       {
-        "title": "South of England Men's Community Game announces expanded Representative Programme",
-        "summary": "",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T15:00:00+01:00",
-        "source": "The Home of Rugby League",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1h1QjZqc3gzZlQwVEJTRmxiazc4NjAwRF9JeVBYZ25VSEozN2FKLUsxUEpZOFNCVkJaWnJVR20wME1PenQyNVVlYnBXSmdtdVNYMWU5bC1DMVJCX3R6cGF6LWZYSU9zOWRGbzN1UEh1MzNCekdGVTd4ZExRYlFsQTNoSmZidktBQ1VzMFlDV29XREh0NFJ5ZElVc3RBbjRCb25XRmhZVFQ2ZVdTMDdIQjZMbGl5X29qQkpJSTgtc3hIZw?oc=5"
-      },
-      {
         "title": "New homes proposal rejected again",
         "summary": "",
         "meta": "Mon 17 Aug",
         "publishedAt": "2026-08-17T05:01:31+01:00",
         "source": "Woking News and Mail",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdGpYaF9URkgycldqYk9hV3U1X3ZaVVU5dFhJMlR1TzJTbVhBZ3FrWFQ4bVFINlQ0Y3ZzN0t6MDF3eGhQQzRPNlpRdWVaQlhHb205cTZWa3NsTE1yWXpwNThLWEtkSDJiR3ZZVXczY2NUQlRjNDNUeVdoOGM0TTh2LVRrMzN4M0pTM09FVFFBbHktalUx?oc=5"
+      },
+      {
+        "title": "South of England Men's Community Game announces expanded Representative Programme",
+        "summary": "",
+        "meta": "Wed 19 Aug",
+        "publishedAt": "2026-08-19T15:00:00+01:00",
+        "source": "The Home of Rugby League",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1h1QjZqc3gzZlQwVEJTRmxiazc4NjAwRF9JeVBYZ25VSEozN2FKLUsxUEpZOFNCVkJaWnJVR20wME1PenQyNVVlYnBXSmdtdVNYMWU5bC1DMVJCX3R6cGF6LWZYSU9zOWRGbzN1UEh1MzNCekdGVTd4ZExRYlFsQTNoSmZidktBQ1VzMFlDV29XREh0NFJ5ZElVc3RBbjRCb25XRmhZVFQ2ZVdTMDdIQjZMbGl5X29qQkpJSTgtc3hIZw?oc=5"
       }
     ],
     "UK news": [
       {
+        "title": "Multiple deaths after crash between police vehicle and car",
+        "summary": "\"A number of patients died at the scene\", ambulance officials say, after the collision near Middlesbrough.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T10:31:02+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cx272ly3g00o?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Canada says it will match US tariffs 'dollar for dollar' as trade talks break down",
-        "summary": "New 50% levy on $20bn of Canadian imports comes into force after last minute breakdown in trade talks.",
+        "summary": "A new 50% levy on $20bn of Canadian imports comes into force after a last-minute breakdown in trade talks.",
         "meta": "Sat 22 Aug",
         "publishedAt": "2026-08-22T05:46:33+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cvgvyy4x2mvo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Girl, 6, dies days after Shoreham sea tragedy killed three family members",
-        "summary": "Saja El-Khawas is the fourth person to die after her family got into difficulty in water off West Sussex.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T23:28:37+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c629y0kx8gyo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "TikTok to pay $400m to US in one of largest child privacy settlements",
@@ -987,6 +985,14 @@
         "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Girl, 6, dies days after Shoreham sea tragedy killed three family members",
+        "summary": "Saja El-Khawas is the fourth person to die after her family got into difficulty in water off West Sussex.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T10:09:41+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c629y0kx8gyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "More students planning to live at home for university over 'insane' living costs",
         "summary": "Students like Jessica say they worry about missing out on student life, but feel they have no choice but to stay at home.",
         "meta": "Sat 22 Aug",
@@ -995,28 +1001,36 @@
         "url": "https://www.bbc.co.uk/news/articles/c70gy180e8lo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Burnham economic adviser O'Neill rules out government job",
-        "summary": "Lord O'Neill, former chief economist at Goldman Sachs, was tipped to become Andy Burnham's chief economic adviser.",
+        "title": "Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall",
+        "summary": "Nine people are still missing after the attack which left 130 injured, including a number of children.",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T03:53:22+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwym4m4j848o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
-        "summary": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T04:17:29+01:00",
+        "publishedAt": "2026-08-22T10:13:26+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Meghan in talks for role in Netflix series The Gentlemen, BBC understands",
-        "summary": "This would be Meghan's first significant acting role since her marriage to Prince Harry.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T19:29:31+01:00",
+        "title": "Sydney Marathon medal mistakenly depicts Munich stadium",
+        "summary": "Online sleuths detected the error after Sydney Marathon unveiled the double-sided medal.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T08:53:57+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwye9g9r58zo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cvg92y1wzn8o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "How this 1960s ex-council house is managing to stay cool without air con",
+        "summary": "The Passivhaus standard is growing in popularity as UK homeowners adapt to hotter summer temperatures.",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T00:56:48+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cg5l3z7p922o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "As they return to the UK, Harry and Meghan search for a brand that sticks",
+        "summary": "They will not be working royals when they come back. So what could they be doing instead?",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T01:03:10+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c0l5d387j18o?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "GTA 6 leaks - a nightmare or a blip for the biggest video game of the year?",
@@ -1027,36 +1041,20 @@
         "url": "https://www.bbc.co.uk/news/articles/c07r3183gn3o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Prince Harry and six others face privacy case legal bill of up to £34.5m",
-        "summary": "The seven claimants, who include Sir Elton John and Liz Hurley, have to pay the Daily Mail publisher an initial £9.54m in the next seven days after losing a privacy case.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T18:18:41+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c04kwr9r1zlo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Under-fives and pregnant women told to avoid runny eggs when eating out over salmonella risk",
-        "summary": "The advice also applies to the over-65s and others with underlying medical conditions amid salmonella outbreak.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T20:13:43+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx2krdggx6xo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Murder investigation after wildfire uncovers body in park",
-        "summary": "A post-mortem examination revealed the remains belonged to a woman aged between 25 and 45.",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T18:46:04+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c0rdk9ddepvo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "As they return to the UK, Harry and Meghan search for a brand that sticks",
-        "summary": "They will not be working royals when they come back. So what could they be doing instead?",
+        "title": "Drugs at their fingertips, intense pressure: Why child stars fall into addiction",
+        "summary": "Experts told the BBC the pressures of childhood stardom can put actors at an unusually higher risk of substance abuse issues.",
         "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T01:03:10+01:00",
+        "publishedAt": "2026-08-22T00:41:33+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c0l5d387j18o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cq56x3910jwo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "These bookshops let Chinese readers question their country, now the doors are closing",
+        "summary": "For some mainlanders, Hong Kong's independent bookstores are a window into a different, freer world.",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T23:26:25+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cj0338l6yg4o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
