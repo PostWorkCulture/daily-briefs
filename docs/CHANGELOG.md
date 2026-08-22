@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 22 August 2026: Lighter theme and permanent rare-fact history
 
-Status: implemented; automated validation running
+Status: validated
 
 - Requested change: Make the dark-blue interface much lighter and easier to read; remove navigation stars and sparkles; move the Pete/Sofia greeting down slightly; and make Fact of the Day genuinely rare, fact-first, image-second, and permanently non-repeating.
 - Theme rule: use a light sky-blue and soft-lavender canvas with dark ink text, pale cards, restrained coloured accents, and deliberate dark overlays only on image-led media.
@@ -17,6 +17,8 @@ Status: implemented; automated validation running
 - Image rule: each fact includes a matching, attributed image of at least 2,200 × 1,000; no low-resolution or generic fallback is displayed.
 - Requirements protected: profile routes, calendar, Met Office weather, Arsenal content rules, Career/AI icon treatment, three-zone Dida structure, birthday balloon, cannon mark, navigation geometry, links, and all unrelated data feeds.
 - Validation added: mobile and desktop checks cover light-theme brightness, fact-before-image order, verified fact loading, greeting spacing, and complete navigation sparkle removal; Morning refresh validates the permanent fact ledger.
+- QA discoveries resolved: a legacy birthday-card enhancement was replacing the requested single nav balloon with a three-balloon graphic, so its nav override was removed while preserving its card artwork. The responsive workflow now runs automatically for every HTML, CSS, JavaScript, profile-page, or test change, and the Calendar assertion returns to the visible Home view before checking hover behaviour.
+- Validation result: the final responsive workflow passed at 390 × 844 and 1,366 × 900, including both greetings, the single balloon, Arsenal cannon, light theme, fact-first layout, navigation geometry, Career/AI icons, three-zone Dida structure, Calendar glow, and Arsenal content.
 - Unexpected changes: none intended.
 
 ## 22 August 2026: Cleaner content icons, Dida zones, and navigation marks
