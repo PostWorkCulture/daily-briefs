@@ -145,7 +145,7 @@ def check_viewport(browser, name: str) -> None:
         visual = page.evaluate(
             r"""
             () => {
-              const rgb = getComputedStyle(document.body).backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
+              const rgb = getComputedStyle(document.documentElement).backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
               const fact = document.querySelector('#sceneryFact');
               const image = document.querySelector('#sceneryCard');
               const greeting = document.querySelector('#greeting');
@@ -244,8 +244,9 @@ def check_viewport(browser, name: str) -> None:
             })
             """
         )
-        if dida["accent"].lower() != "#b7ff3c":
-            failures.append(f"Dida accent is not lime green: {dida['accent']}")
+        dida_accent = dida["accent"].lower()
+        if dida_accent != "#679a00":
+            failures.append(f"Dida accent is not the readable light-theme lime: {dida['accent']}")
         if dida["heroIcons"] < 3 or dida["quickIcons"] < 3 or dida["foldIcons"] < 4:
             failures.append(f"Dida fun icon treatment is incomplete: {dida}")
         if dida["zones"] != 3 or dida["sectionLinks"] != 3:
