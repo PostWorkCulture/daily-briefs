@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.9, 22 August 2026. Owner: Pete.
+Version 2.0, 22 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -8,10 +8,10 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 
 ## Product
 
-Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a dark navy/purple or cinematic base, luminous accents, rounded cards, bold legible type, and meaningful warm photography. Preserve header styling during unrelated work.
+Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a light sky-blue and soft-lavender base, dark ink text, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve dark treatments for image-led media cards where a strong overlay protects readability. Preserve header styling during unrelated work.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
-- Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal.
+- Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 
 ## Boundaries
 
@@ -28,6 +28,7 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 - The Home greeting is `Hey Pete` for Pete and `Hey Sofia` for Sofia, without trailing punctuation.
 - Keep the greeting deliberately smaller than the previous headline: 36–52 px below 900 px and 52–68 px from 900 px upwards.
+- Place the greeting slightly lower in the hero so it sits comfortably between the date and the Weather panel.
 
 ## Current structure
 
@@ -52,8 +53,9 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Today, Tomorrow, This week, and This month summary boxes use a visible cyan edge-glow on hover and keyboard focus, without moving the box.
 
 **Around the world**
-- One pictured place daily, linked to a real destination.
-- Put an amazing or rare fact directly beneath it.
+- Lead with one genuinely astonishing, obscure, source-verified fact each day, then show its precisely matched place image beneath it.
+- Prefer wild places, with occasional extreme-life, human-origins, population-scale, unusual-travel, indigenous-culture, and planet-trend facts.
+- Track every published fact ID in a committed permanent history. Never reuse an ID or duplicate fact text; if the catalogue is exhausted, fail the refresh instead of repeating.
 - Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
 
 **TV Picks**

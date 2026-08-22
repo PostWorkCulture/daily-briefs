@@ -2,6 +2,22 @@
 
 Newest entries go first.
 
+## 22 August 2026: Lighter theme and permanent rare-fact history
+
+Status: implemented; automated validation running
+
+- Requested change: Make the dark-blue interface much lighter and easier to read; remove navigation stars and sparkles; move the Pete/Sofia greeting down slightly; and make Fact of the Day genuinely rare, fact-first, image-second, and permanently non-repeating.
+- Theme rule: use a light sky-blue and soft-lavender canvas with dark ink text, pale cards, restrained coloured accents, and deliberate dark overlays only on image-led media.
+- Navigation rule: preserve the clean aurora edge but remove every star field, twinkle layer, sparkle pseudo-element, and sparkle glyph. Dida now uses an open-book mark.
+- Greeting rule: retain `Hey Pete` and `Hey Sofia` at the smaller approved scale, with extra spacing below the date so the greeting sits more naturally before Weather.
+- Fact rule: the verified fact card now appears before its matched image. The first fact explains how Antarctica’s Blood Falls turns red only after clear iron-rich brine meets air.
+- No-repeat rule: a committed fact history records each published ID forever. Duplicate catalogue text, duplicate IDs, duplicate history IDs, or two facts on one date fail validation. Catalogue exhaustion fails the refresh instead of recycling.
+- Editorial range: the curated catalogue prioritises wild places and also covers extreme life, human origins, population-scale planet facts, impossible landscapes, and unique travel.
+- Image rule: each fact includes a matching, attributed image of at least 2,200 × 1,000; no low-resolution or generic fallback is displayed.
+- Requirements protected: profile routes, calendar, Met Office weather, Arsenal content rules, Career/AI icon treatment, three-zone Dida structure, birthday balloon, cannon mark, navigation geometry, links, and all unrelated data feeds.
+- Validation added: mobile and desktop checks cover light-theme brightness, fact-before-image order, verified fact loading, greeting spacing, and complete navigation sparkle removal; Morning refresh validates the permanent fact ledger.
+- Unexpected changes: none intended.
+
 ## 22 August 2026: Cleaner content icons, Dida zones, and navigation marks
 
 Status: implemented

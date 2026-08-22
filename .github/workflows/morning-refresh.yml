@@ -73,6 +73,26 @@ jobs:
               assert len(sections.get('Local news') or [])>=10, f'{profile}: fewer than 10 Local News items'
               assert len(sections.get('UK news') or [])>=10, f'{profile}: fewer than 10 UK News items'
 
+          catalog=json.loads(Path('data/fact-catalog.json').read_text())
+          history=json.loads(Path('data/fact-history.json').read_text()).get('used') or []
+          fact_ids=[str(item.get('id') or '') for item in catalog]
+          fact_texts=[__import__('re').sub(r'\W+','',str(item.get('fact') or '').lower()) for item in catalog]
+          assert catalog and len(fact_ids)==len(set(fact_ids)), 'Fact catalogue has duplicate IDs'
+          assert len(fact_texts)==len(set(fact_texts)), 'Fact catalogue repeats fact text'
+          used_ids=[str(item.get('id') or '') for item in history]
+          used_dates=[str(item.get('date') or '') for item in history]
+          assert len(used_ids)==len(set(used_ids)), 'Fact history repeats a fact ID'
+          assert len(used_dates)==len(set(used_dates)), 'Fact history has two facts on one date'
+          assert set(used_ids)<=set(fact_ids), 'Fact history contains an unknown fact ID'
+          assert history, 'Fact history is empty'
+          for profile in ('pete','sofia'):
+              profile_data=json.loads((Path('data')/f'{profile}.json').read_text())
+              fact=profile_data.get('worldFact') or {}
+              assert fact.get('id')==history[-1].get('id'), f'{profile}: current fact does not match history'
+              assert fact.get('date')==history[-1].get('date'), f'{profile}: current fact date does not match history'
+              assert str(fact.get('sourceUrl') or '').startswith('https://'), f'{profile}: fact has no verified source'
+              assert str(fact.get('image') or '').startswith('https://'), f'{profile}: fact has no matched image'
+
           pete=json.loads((Path('data')/'pete.json').read_text())
           sofia=json.loads((Path('data')/'sofia.json').read_text())
           pete_jobs=(pete.get('sections') or {}).get('Career') or []
@@ -152,7 +172,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} exact publisher image rules, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
+          print(f'Validated {len(rules)} exact publisher image rules, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data

@@ -136,6 +136,48 @@ def check_viewport(browser, name: str) -> None:
         )
 
         failures = []
+        visual = page.evaluate(
+            """
+            () => {
+              const rgb = getComputedStyle(document.body).backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
+              const fact = document.querySelector('#sceneryFact');
+              const image = document.querySelector('#sceneryCard');
+              const greeting = document.querySelector('#greeting');
+              const nav = document.querySelector('#primaryNav');
+              const buttons = [...nav.querySelectorAll('button')];
+              return {
+                bodyRgb: rgb,
+                factBeforeImage: Boolean(fact.compareDocumentPosition(image) & Node.DOCUMENT_POSITION_FOLLOWING),
+                factText: document.querySelector('#sceneryFactText')?.textContent?.trim() || '',
+                factHref: fact?.getAttribute('href') || '',
+                factLabel: document.querySelector('#sceneryFactLabel')?.textContent?.trim() || '',
+                greetingMarginTop: parseFloat(getComputedStyle(greeting).marginTop),
+                navAfter: getComputedStyle(nav, '::after').content,
+                buttonAfter: buttons.map(button => getComputedStyle(button, '::after').content),
+                navText: nav.textContent
+              };
+            }
+            """
+        )
+        if sum(visual["bodyRgb"]) < 560:
+            failures.append(f"theme is still too dark: {visual['bodyRgb']}")
+        if not visual["factBeforeImage"]:
+            failures.append("insane fact does not appear before its image")
+        if not visual["factText"] or visual["factText"].startswith("Loading"):
+            failures.append("daily world fact did not render")
+        if not visual["factHref"].startswith("https://"):
+            failures.append("daily world fact has no verified source link")
+        if not visual["factLabel"].startswith("Insane fact of the day"):
+            failures.append(f"fact lead label changed: {visual['factLabel']}")
+        if visual["greetingMarginTop"] < 16:
+            failures.append(f"greeting was not moved down: margin {visual['greetingMarginTop']}")
+        if visual["navAfter"] not in {"none", '""'}:
+            failures.append(f"navigation star layer remains: {visual['navAfter']}")
+        if any(content not in {"none", '""'} for content in visual["buttonAfter"]):
+            failures.append(f"navigation button sparkle remains: {visual['buttonAfter']}")
+        if any(mark in visual["navText"] for mark in ("✦", "★", "☆", "✨")):
+            failures.append("navigation still contains a star or sparkle glyph")
+
         if result["pageScrollWidth"] > result["viewportWidth"] + 1:
             failures.append(
                 f"page horizontal overflow: {result['pageScrollWidth']} > {result['viewportWidth']}"

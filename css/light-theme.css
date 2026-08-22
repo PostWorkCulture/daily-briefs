@@ -1,0 +1,46 @@
+/* Light, high-readability theme approved 22 August 2026. */
+:root{--bg:#dcebf6;--panel:#f9fcff;--panel2:#edf5fa;--line:rgba(27,65,95,.15);--text:#142a3d;--muted:#60758a;--accent:#0878b8;--accent2:#08679d;--warm:#98610b;--shadow:0 16px 42px rgba(52,83,108,.13)}
+html{background:var(--bg)}
+body{color:var(--text);background:radial-gradient(circle at 12% 0,rgba(255,255,255,.92),transparent 31rem),radial-gradient(circle at 88% 12%,rgba(220,207,255,.58),transparent 34rem),linear-gradient(180deg,#eaf5fb,#dcebf6 56%,#e9e2f5)}
+.topbar{background:linear-gradient(180deg,rgba(239,248,253,.98),rgba(239,248,253,.86),rgba(239,248,253,.2))}
+.profile-avatar{background:linear-gradient(145deg,#d9edf8,#eee6fb);color:#173b54;border-color:rgba(31,99,140,.18)}
+.profile-switch{background:rgba(249,252,255,.78);box-shadow:0 9px 24px rgba(56,88,114,.08)}
+.profile-switch button{color:#60758a}.profile-switch button.active{background:#d7eaf5;color:#173a55;box-shadow:0 7px 18px rgba(48,95,130,.12)}
+.hero{padding:32px 0 6px}.hero h1{margin:17px 0 4px;color:#142a3d}
+.section-kicker{color:#657b8f}.section-head h2,#view-home .section-head h2{color:#173650!important}
+.status-card,.list-card,.content-group,.interest-card,.calendar-list{background:rgba(249,252,255,.88);border-color:var(--line);box-shadow:var(--shadow)}
+.list-row,.calendar-row{border-color:rgba(27,65,95,.11)}
+.list-row p,.calendar-row p,.interest-card p{color:#60758a}
+.calendar-summary button{background:linear-gradient(180deg,#fbfdff,#eaf3f8);color:#173650;border-color:var(--line)}
+.calendar-summary button:hover,.calendar-summary button:focus-visible{border-color:rgba(0,124,184,.62);background:linear-gradient(180deg,#fff,#e4f2f9);box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10)}
+.weather-block{background:linear-gradient(145deg,rgba(250,253,255,.97),rgba(226,241,249,.96));border-color:rgba(38,104,143,.18)}
+.weather-svg{stroke:#176c98;filter:drop-shadow(0 5px 13px rgba(38,126,168,.16))}
+.forecast-day{background:rgba(255,255,255,.62);border-color:rgba(36,94,128,.14)}
+.forecast-day.today{background:linear-gradient(180deg,#dff3fb,#f8fcff);border-color:rgba(14,121,171,.28)}
+.forecast-day span{color:#176c98}.forecast-day small{color:#506b80}.forecast-day .fd-rain{color:#607b8e!important}.forecast-day .fd-rain span{color:#607b8e!important}.forecast-day .fd-rain b{color:#315e78!important}
+.uk-yesterday{border-top-color:rgba(27,65,95,.12)}.uk-yesterday-title strong{color:#26455b}.uk-yesterday-title span{color:#657b8f}
+.home-reminder-card{background:linear-gradient(180deg,#fbfdff,#eaf3f8);box-shadow:0 11px 26px rgba(58,89,113,.10)}
+.home-reminder-card.bin{background:linear-gradient(180deg,#e1f5ed,#f8fcfa)}.home-reminder-card.bin .home-reminder-icon{background:#ccebdc;color:#24694e}.home-reminder-card.bin b{color:#24694e}
+.home-reminder-card.clocks{background:linear-gradient(180deg,#e8ecfb,#fafbff)}
+.home-reminder-card.christmas{background:linear-gradient(180deg,#f8e9ee,#fffafb)}.home-reminder-card.christmas .home-reminder-icon{background:#f4dfe6;color:#8a4059}.home-reminder-card.christmas b{color:#8a4059}
+.tab-story{background:linear-gradient(180deg,#fbfdff,#edf5fa);border-color:var(--line);box-shadow:0 10px 25px rgba(50,82,108,.08)}
+.tab-story .meta{color:#667c90}.tab-story p{color:#5b7286}
+.section-story-icon{background:rgba(255,255,255,.72);box-shadow:inset 0 0 17px rgba(42,94,126,.04)}
+.section-story-icon-ai{color:#8d36aa;background:#f4e7f8}.section-story-icon-career{color:#7b5900;background:#fff4cd}
+.arsenal-panel{background:radial-gradient(circle at 90% 0,rgba(239,49,62,.10),transparent 30rem),linear-gradient(145deg,#fffafa,#f5eef1);border-color:rgba(198,42,49,.22)}
+.match-card,.table-card,.arsenal-news-item,.arsenal-transfer-item{background:rgba(255,255,255,.72);border-color:rgba(122,51,59,.14)}
+.match-card.next{background:linear-gradient(145deg,#fdebed,#fff)}
+.match-card span,.table-card span,.arsenal-news-item span{color:#b4303d}
+.arsenal-transfer-sources a{color:#8c2a34}.arsenal-transfer-item span{color:#a82f39}.arsenal-rumour-item{background:linear-gradient(145deg,#fff8df,#fff)}
+.scenery-fact{display:block;margin:0 0 12px;text-decoration:none;color:inherit;background:linear-gradient(145deg,#fff,#e6f3f9);border-color:rgba(29,96,133,.17);box-shadow:0 10px 28px rgba(54,87,111,.08)}
+.scenery-fact p{color:#1d3b50}.scenery-fact small{display:block;margin-top:9px;color:#60798d;font-size:9px;font-weight:750}.scenery-fact:hover,.scenery-fact:focus-visible{border-color:rgba(8,120,184,.48);box-shadow:0 0 0 1px rgba(8,120,184,.07),0 13px 31px rgba(51,91,118,.13)}
+.dida-shell{--dida:#679a00;--dida2:#3e6800;background:linear-gradient(180deg,#f5fae9,#edf5df);border-color:rgba(92,139,0,.24)}
+.dida-hero{background:radial-gradient(circle at 86% 4%,rgba(172,220,81,.25),transparent 13rem),linear-gradient(145deg,#f8fce8,#e5f0cf 72%);border-color:rgba(92,139,0,.30);box-shadow:inset 0 0 30px rgba(105,154,0,.04),0 10px 27px rgba(73,106,43,.08)}
+.dida-hero p{color:#47604e}.dida-source{color:#607866}
+.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon{background:rgba(255,255,255,.72);box-shadow:0 7px 18px rgba(69,100,42,.10)}
+.dida-section-nav a{background:rgba(255,255,255,.68);color:#3d5d42}
+.dida-zone,.dida-week-zone,.dida-seasonal-zone,.dida-library-zone{background:linear-gradient(180deg,rgba(255,255,255,.80),rgba(235,244,226,.88));border-color:rgba(92,139,0,.18)}
+.dida-zone-head p{color:#607866}.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card{background:rgba(255,255,255,.62);border-color:rgba(92,139,0,.14)}
+.dida-quick p,.dida-season-title p,.dida-fold summary p,.dida-ref-card li,.dida-ref-card p,.dida-season-item{color:#536c59}
+.bottom-nav .nav-cannon,.bottom-nav .nav-balloon{filter:none}
+@media(min-width:900px){.hero{padding:48px 0 14px}.hero h1{margin:22px 0 4px}}

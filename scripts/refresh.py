@@ -24,6 +24,8 @@ NOW = datetime.now(TZ)
 UA = {"User-Agent": "DailyBriefs/3.0 (+https://github.com/PostWorkCulture/daily-briefs)"}
 LAT = 51.400
 LON = -0.366
+FACT_CATALOG = DATA / "fact-catalog.json"
+FACT_HISTORY = DATA / "fact-history.json"
 
 WEATHER_LABELS = {
     0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Cloudy",
@@ -107,6 +109,63 @@ INACTIVE_LISTING = re.compile(
     r"vacancy (?:has )?closed|applications? closed)\b",
     re.I,
 )
+
+
+def world_fact_for_today() -> dict:
+    try:
+        catalog = json.loads(FACT_CATALOG.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"Fact catalogue unavailable: {exc}") from exc
+    if not isinstance(catalog, list) or not catalog:
+        raise RuntimeError("Fact catalogue is empty")
+
+    required = {"id", "category", "country", "place", "source", "sourceUrl", "image", "imagePage", "photoCredit", "fact"}
+    ids, fact_texts = [], []
+    for item in catalog:
+        missing = sorted(required - set(item))
+        if missing:
+            raise RuntimeError(f"Fact {item.get('id', '<unknown>')} is missing: {', '.join(missing)}")
+        ids.append(str(item["id"]).strip())
+        fact_texts.append(re.sub(r"\W+", "", str(item["fact"]).lower()))
+    if len(ids) != len(set(ids)):
+        raise RuntimeError("Fact catalogue contains duplicate IDs")
+    if len(fact_texts) != len(set(fact_texts)):
+        raise RuntimeError("Fact catalogue contains repeated fact text")
+
+    if FACT_HISTORY.exists():
+        history = json.loads(FACT_HISTORY.read_text(encoding="utf-8"))
+    else:
+        history = {"version": 1, "used": []}
+    used = history.get("used")
+    if not isinstance(used, list):
+        raise RuntimeError("Fact history is malformed")
+    used_ids = [str(row.get("id") or "") for row in used]
+    used_dates = [str(row.get("date") or "") for row in used]
+    if len(used_ids) != len(set(used_ids)):
+        raise RuntimeError("Fact history already contains a repeated fact ID")
+    if len(used_dates) != len(set(used_dates)):
+        raise RuntimeError("Fact history contains more than one fact for a date")
+    unknown = sorted(set(used_ids) - set(ids))
+    if unknown:
+        raise RuntimeError(f"Fact history references unknown IDs: {', '.join(unknown)}")
+
+    today = NOW.date().isoformat()
+    today_row = next((row for row in used if row.get("date") == today), None)
+    if today_row:
+        selected_id = today_row["id"]
+    else:
+        selected = next((item for item in catalog if item["id"] not in set(used_ids)), None)
+        if selected is None:
+            raise RuntimeError("Fact catalogue exhausted; refusing to repeat an earlier fact")
+        selected_id = selected["id"]
+        used.append({"date": today, "id": selected_id})
+        history["version"] = 1
+        FACT_HISTORY.write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    item = next(item for item in catalog if item["id"] == selected_id)
+    result = dict(item)
+    result.update({"date": today, "sequence": next(i for i, row in enumerate(used, 1) if row["id"] == selected_id)})
+    return result
 
 
 def clean_html(value: str) -> str:
@@ -855,7 +914,7 @@ def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: 
 
 
 def build_profiles() -> dict[str, dict]:
-    wx = weather(); cal = calendar_events()
+    wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
     ai = merge_news(
         rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
         rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
@@ -880,8 +939,8 @@ def build_profiles() -> dict[str, dict]:
     sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": sofia_career}
     def first(items, fallback): return items[0] if items else {"title": fallback, "summary": "", "meta": "", "source": "", "url": ""}
     return {
-        "pete": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
-        "sofia": {"updatedLabel": stamp, "weather": wx, "calendar": cal, "lead": first(sweden or local or tonight, "Your morning brief is ready."), "interests": [dict(first(sweden, "Sweden"), section="Sweden"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": sofia_sections},
+        "pete": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
+        "sofia": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "lead": first(sweden or local or tonight, "Your morning brief is ready."), "interests": [dict(first(sweden, "Sweden"), section="Sweden"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": sofia_sections},
     }
 
 
