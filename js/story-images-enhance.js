@@ -1,4 +1,4 @@
-/* Exact publisher image layer for News / Arsenal / AI / Career.
+/* Exact publisher image layer for News / Arsenal. AI and Career use code-native section icons.
    Rules: max one image per article, max five image-led cards per tab view,
    never reuse an image, and reject every generic or inferred fallback. */
 (function(){
@@ -27,6 +27,7 @@
     card.append(copy,media);card.classList.add('has-image');card.dataset.imageEnhanced='1';card.dataset.imageKey=key;
   }
   function enhanceView(view){
+    if(view.matches('#view-ai,#view-career'))return;
     const cards=[...view.querySelectorAll('.tab-story[href],.arsenal-news-item[href]')];
     const used=new Set();let count=0;
     for(const card of cards){

@@ -119,7 +119,7 @@
     if (nav && !nav.querySelector('[data-view-target="birthdays"]')) {
       const button = document.createElement('button');
       button.dataset.viewTarget = 'birthdays';
-      button.innerHTML = '<b>🎂</b>Birthdays';
+      button.innerHTML = '<b class="birthday-nav-mark" aria-hidden="true"><svg class="nav-balloon" viewBox="0 0 24 28"><path d="M12 2C7.6 2 4 5.7 4 10.3c0 5.8 5.2 10.2 8 11.7 2.8-1.5 8-5.9 8-11.7C20 5.7 16.4 2 12 2Z"/><path d="m10.2 22 1.8 2 1.8-2M12 24c2 1.1 2.5 2.4 1.2 3"/></svg></b>Birthdays';
       nav.appendChild(button);
     }
 

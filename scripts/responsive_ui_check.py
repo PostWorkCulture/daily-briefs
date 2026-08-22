@@ -41,6 +41,26 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Daily Brief Apple touch icon is missing")
         if page.locator('link[rel="manifest"]').count() != 1:
             raise AssertionError(f"{name}: Daily Brief web app manifest is missing")
+        birthday_balloon = page.locator('[data-view-target="birthdays"] .nav-balloon')
+        if birthday_balloon.count() != 1:
+            raise AssertionError(f"{name}: Birthdays nav does not use one balloon icon")
+        arsenal_cannon = page.locator('[data-view-target="arsenal"] .nav-cannon')
+        if arsenal_cannon.count() != 1:
+            raise AssertionError(f"{name}: Arsenal nav cannon is missing")
+        if arsenal_cannon.locator('.cannon-barrel').count() != 1 or arsenal_cannon.locator('.cannon-wheel').count() != 1:
+            raise AssertionError(f"{name}: Arsenal nav cannon is not the approved barrel-and-wheel mark")
+
+        for target in ("ai", "career"):
+            page.locator(f'[data-view-target="{target}"]').click()
+            cards = page.locator(f'#view-{target} .tab-story')
+            icons = page.locator(f'#view-{target} .section-story-icon')
+            if cards.count() < 1 or icons.count() != cards.count():
+                raise AssertionError(
+                    f"{name}: {target} cards do not consistently use section icons"
+                )
+            if page.locator(f'#view-{target} .story-media').count() != 0:
+                raise AssertionError(f"{name}: {target} still shows article photography")
+
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
             raise AssertionError(f"{name}: expected four Calendar summary cards")
@@ -162,7 +182,11 @@ def check_viewport(browser, name: str) -> None:
               accent: getComputedStyle(document.querySelector('.dida-shell')).getPropertyValue('--dida').trim(),
               heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
               quickIcons: document.querySelectorAll('.dida-quick-icon').length,
-              foldIcons: document.querySelectorAll('.dida-fold-icon').length
+              foldIcons: document.querySelectorAll('.dida-fold-icon').length,
+              zones: document.querySelectorAll('.dida-zone').length,
+              sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
+              folds: document.querySelectorAll('.dida-fold').length,
+              openFolds: document.querySelectorAll('.dida-fold[open]').length
             })
             """
         )
@@ -170,10 +194,14 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"Dida accent is not lime green: {dida['accent']}")
         if dida["heroIcons"] < 3 or dida["quickIcons"] < 3 or dida["foldIcons"] < 4:
             failures.append(f"Dida fun icon treatment is incomplete: {dida}")
+        if dida["zones"] != 3 or dida["sectionLinks"] != 3:
+            failures.append(f"Dida is not split into three clear sections: {dida}")
+        if dida["folds"] != 4 or dida["openFolds"] != 0:
+            failures.append(f"Dida reference library is not compact by default: {dida}")
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: Pete/Sofia greetings, Daily Brief icons, fixture, navigation, Calendar glow, Arsenal trusted/reporter-watch lists and lime Dida treatment are usable")
+        print(f"PASS {name}: greetings, AI/Career icons, balloon and cannon nav marks, three-zone Dida layout, fixture, navigation, Calendar glow and Arsenal content are usable")
     finally:
         page.close()
 

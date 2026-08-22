@@ -2,6 +2,22 @@
 
 Newest entries go first.
 
+## 22 August 2026: Cleaner content icons, Dida zones, and navigation marks
+
+Status: implemented
+
+- Requested change: Remove Career and AI pictures in favour of stylish generic icons; reorganise the overloaded Dida view; use a single balloon for Birthdays; and replace the Arsenal navigation mark with a proper cannon.
+- Approved scope: AI/Career presentation only, Dida information layout only, the two requested navigation icons, responsive regression coverage, cache keys, master brief, and changelog.
+- Files changed: index.html, js/story-images-enhance.js, js/tabs-dida.js, css/tabs-dida.css, js/home-reminders.js, css/home-reminders.css, css/nav-cannon.css, scripts/responsive_ui_check.py, docs/MASTER-BRIEF-CURRENT.md, and docs/CHANGELOG.md.
+- AI/Career rule: suppress article photography and use decorative code-native icon sets while preserving every item, metadata field, and real destination link.
+- Dida rule: preserve all content but divide it into This week, Seasonal missions, and Reference library; keep the four detailed reference groups collapsed until opened.
+- Navigation rule: Birthdays uses one balloon; Arsenal uses a clean side-on cannon with a filled barrel and spoked wheel.
+- Requirements protected: Pete/Sofia profile behaviour, mobile horizontal and desktop vertical navigation, 44 px targets, Dida lime styling, Arsenal red treatment and content rules, all data sources, and every unrelated view.
+- Validation prepared: mobile and desktop checks assert the icon-only AI/Career cards, balloon/cannon marks, three Dida zones, collapsed reference library, navigation geometry, and existing protected rules.
+- Unexpected changes: none intended.
+- Master brief update: version 1.9 records the approved image, Dida structure, and navigation-icon rules.
+- Follow-up: run responsive, refresh, Pages, and live-route verification.
+
 ## 22 August 2026: Shorter Hey greetings
 
 Status: implemented

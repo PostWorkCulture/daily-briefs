@@ -10,12 +10,30 @@
   render=function(data){baseRender(data);renderProfileViews(data,state.profile)};
 
   function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-  function story(item){
+  function sectionIcon(section,index=0){
+    const icons={
+      ai:[
+        '<rect x="5" y="5" width="14" height="14" rx="4"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M19 9h3M2 15h3M19 15h3"/><circle cx="12" cy="12" r="3"/>',
+        '<path d="M12 3c.8 4.8 3.2 7.2 7.5 7.5-4.3.3-6.7 2.7-7.5 7.5-.8-4.8-3.2-7.2-7.5-7.5C8.8 10.2 11.2 7.8 12 3Z"/><path d="M19 16v5M16.5 18.5h5"/>',
+        '<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="m8.4 10.9 7.2-3M8.4 13.1l7.2 3"/>'
+      ],
+      career:[
+        '<rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7V5h8v2M3 12h18M10 12v2h4v-2"/>',
+        '<path d="M5 19 19 5M11 5h8v8"/><path d="M5 6v13h13"/>',
+        '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/>'
+      ]
+    };
+    const set=icons[section]||icons.ai;
+    return `<svg viewBox="0 0 24 24" aria-hidden="true">${set[index%set.length]}</svg>`;
+  }
+  function story(item,section='',index=0){
     const tag=item?.url?'a':'article';
     const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
-    return `<${tag} class="tab-story"${attrs}>${item?.meta||item?.source?`<div class="meta">${esc(item.meta||'')}${item.meta&&item.source?' · ':''}${esc(item.source||'')}</div>`:''}<h4>${esc(item?.title||'Untitled')}</h4>${item?.summary?`<p>${esc(item.summary)}</p>`:''}</${tag}>`;
+    const copy=`${item?.meta||item?.source?`<div class="meta">${esc(item.meta||'')}${item.meta&&item.source?' · ':''}${esc(item.source||'')}</div>`:''}<h4>${esc(item?.title||'Untitled')}</h4>${item?.summary?`<p>${esc(item.summary)}</p>`:''}`;
+    const icon=section?`<span class="section-story-icon section-story-icon-${section}">${sectionIcon(section,index)}</span>`:'';
+    return `<${tag} class="tab-story${section?' section-story':''}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
-  function group(title,items){return `<section class="tab-group"><h3>${esc(title)}</h3><div class="tab-list">${(items||[]).map(story).join('')||'<div class="empty">Nothing listed today.</div>'}</div></section>`}
+  function group(title,items,section=''){return `<section class="tab-group"><h3>${esc(title)}</h3><div class="tab-list">${(items||[]).map((item,index)=>story(item,section,index)).join('')||'<div class="empty">Nothing listed today.</div>'}</div></section>`}
   function openAIFirst(items){return [...(items||[])].sort((a,b)=>{const score=x=>/openai|chatgpt/i.test(`${x.title||''} ${x.source||''} ${x.url||''}`)?0:1;return score(a)-score(b)})}
   function didaIcon(name){
     const paths={
@@ -70,7 +88,8 @@
   };
   function currentSeason(){const m=new Date().getMonth()+1;if(m===12||m<=2)return seasons.winter;if(m<=5)return seasons.spring;if(m<=8)return seasons.summer;return seasons.autumn}
   function seasonalBlocks(){const m=new Date().getMonth()+1,out=[currentSeason()];if(m>=8&&m<=11)out.push(seasons.birthday);if(m>=10||m===12)out.push(seasons.christmas);return out}
-  function fold(n,icon,title,strap,body){const desktop=matchMedia('(min-width:761px)').matches;return `<details class="dida-fold"${desktop?' open':''}><summary><span class="dida-fold-icon">${didaIcon(icon)}</span><div><h4>${esc(title)}</h4><p>${esc(strap)}</p></div><span class="dida-num">${n}</span><b class="dida-plus" aria-hidden="true">+</b></summary><div class="dida-fold-body">${body}</div></details>`}
+  function fold(n,icon,title,strap,body){return `<details class="dida-fold"><summary><span class="dida-fold-icon">${didaIcon(icon)}</span><div><h4>${esc(title)}</h4><p>${esc(strap)}</p></div><span class="dida-num">${n}</span><b class="dida-plus" aria-hidden="true">+</b></summary><div class="dida-fold-body">${body}</div></details>`}
+  function zoneHead(number,kicker,title,description){return `<header class="dida-zone-head"><span class="dida-zone-number">${number}</span><div><small>${esc(kicker)}</small><h3>${esc(title)}</h3><p>${esc(description)}</p></div></header>`}
   function didaHTML(){
     const day=Math.floor(Date.now()/86400000),learn=teach[day%teach.length],play=games[(day+2)%games.length],season=currentSeason(),quick=[['book','LEARN',learn[0],learn[1]],['play','PLAY',play[0],play[1]],['leaf','OUTSIDE / MAKE',season[0],season[2][day%season[2].length]]];
     const seasonal=seasonalBlocks().map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');
@@ -78,7 +97,9 @@
     const teachBody=`<div class="dida-reference">${teach.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const gamesBody=`<div class="dida-reference">${games.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const powersBody=`<div class="dida-reference">${powers.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
-    return `<section class="dida-hero"><div class="dida-hero-icons" aria-hidden="true"><span>${didaIcon('star')}</span><span>${didaIcon('puzzle')}</span><span>${didaIcon('pencil')}</span></div><div class="dida-kicker">DIDA · AGE 5</div><h2>What matters now</h2><p>Confidence, conversation, early literacy and numbers, movement, turn-taking and doing more everyday things independently.</p><div class="dida-source">Milestones are a guide, not a test. <a href="https://www.cdc.gov/act-early/milestones/5-years.html" target="_blank" rel="noopener">CDC age-5 guide</a></div></section><section class="dida-now"><div class="dida-now-head"><div><span>THIS WEEK</span><h3>Three easy wins</h3></div></div><div class="dida-quick-grid">${quick.map(x=>`<article class="dida-quick"><span class="dida-quick-icon">${didaIcon(x[0])}</span><small>${esc(x[1])}</small><h4>${esc(x[2])}</h4><p>${esc(x[3])}</p></article>`).join('')}</div></section><section class="dida-now"><div class="dida-now-head"><div><span>RIGHT NOW</span><h3>Seasonal ideas</h3></div></div>${seasonal}</section>${fold('01','star','Five-year-old milestones','All the milestones, grouped for quick scanning.',milestoneBody)}${fold('02','letters','What to teach her now','Short real-life practice, not formal lessons.',teachBody)}${fold('03','dice','Games worth playing','Quick games that secretly practise useful skills.',gamesBody)}${fold('04','bolt','Little superpowers','Useful things to build across the year.',powersBody)}`;
+    const quickCards=quick.map(x=>`<article class="dida-quick"><span class="dida-quick-icon">${didaIcon(x[0])}</span><div><small>${esc(x[1])}</small><h4>${esc(x[2])}</h4><p>${esc(x[3])}</p></div></article>`).join('');
+    const library=[fold('01','star','Five-year-old milestones','Grouped development markers for quick scanning.',milestoneBody),fold('02','letters','What to teach her now','Short real-life practice, not formal lessons.',teachBody),fold('03','dice','Games worth playing','Quick games that quietly practise useful skills.',gamesBody),fold('04','bolt','Little superpowers','Useful things to build across the year.',powersBody)].join('');
+    return `<section class="dida-hero"><div class="dida-hero-icons" aria-hidden="true"><span>${didaIcon('star')}</span><span>${didaIcon('puzzle')}</span><span>${didaIcon('pencil')}</span></div><div class="dida-kicker">DIDA · AGE 5</div><h2>What matters now</h2><p>Confidence, conversation, early literacy and numbers, movement, turn-taking and doing more everyday things independently.</p><div class="dida-source">Milestones are a guide, not a test. <a href="https://www.cdc.gov/act-early/milestones/5-years.html" target="_blank" rel="noopener">CDC age-5 guide</a></div></section><nav class="dida-section-nav" aria-label="Dida sections"><a href="#dida-week">This week</a><a href="#dida-seasonal">Seasonal</a><a href="#dida-library">Reference</a></nav><section class="dida-zone dida-week-zone" id="dida-week">${zoneHead('01','START HERE','This week','Three focused ideas. Do one, not everything.')}<div class="dida-quick-grid">${quickCards}</div></section><section class="dida-zone dida-seasonal-zone" id="dida-seasonal">${zoneHead('02','EXPLORE & PLAY','Seasonal missions','Timely activities grouped into one clear place.')}${seasonal}</section><section class="dida-zone dida-library-zone" id="dida-library">${zoneHead('03','KEEP FOR LATER','Reference library','Open only the guide you need. Everything else stays out of the way.')}<div class="dida-library">${library}</div></section>`;
   }
 
   function renderProfileViews(data,profile){
@@ -87,8 +108,8 @@
     if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden]);
     news.push(['Local News',data.sections?.['Local news']||[]],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
-    document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]));
-    document.getElementById('careerTabGroups').innerHTML=group('',data.sections?.Career||[]);
+    document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
+    document.getElementById('careerTabGroups').innerHTML=group('',data.sections?.Career||[],'career');
     document.getElementById('didaContent').innerHTML=didaHTML();
     if(profile==='sofia'&&document.getElementById('view-arsenal')?.classList.contains('active'))showView('home');
   }

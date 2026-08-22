@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.8, 22 August 2026. Owner: Pete.
+Version 1.9, 22 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -11,6 +11,7 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a dark navy/purple or cinematic base, luminous accents, rounded cards, bold legible type, and meaningful warm photography. Preserve header styling during unrelated work.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
+- Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal.
 
 ## Boundaries
 
@@ -73,7 +74,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep each destination working and independent.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
-- Show up to five unique, high-resolution article images in each News, Arsenal, AI, and Career view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
+- Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
+- AI and Career never show article photography. Use stylish, decorative code-native section icons while preserving the current article and job content, metadata, and real links.
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
 - Article images must be at least 1,200 × 675 pixels. Reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.
 - Do not change them as a side effect of other work.
@@ -82,7 +84,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
-- Dida uses lime green, not orange, with playful code-native icons and colour while keeping the weekly quick wins first and reference material compact on mobile.
+- Dida uses lime green, not orange, with playful code-native icons and colour. Split it into three clear zones: This week, Seasonal missions, and Reference library. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 
 ## Morning Story target
