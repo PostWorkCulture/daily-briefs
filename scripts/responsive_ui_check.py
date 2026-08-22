@@ -170,7 +170,7 @@ def check_viewport(browser, name: str) -> None:
               const clarityTargets = [
                 ['Home greeting', '#greeting', [2, 7, 19]],
                 ['Home status detail', '.status-card small', [16, 43, 73]],
-                ['Home calendar detail', '.calendar-row p', [9, 29, 50]],
+                ['Home calendar time', '.event-time', [9, 29, 50]],
                 ['Around the world fact', '.scenery-fact p', [7, 22, 38]],
                 ['News story detail', '#view-news .tab-story p', [9, 29, 50]],
                 ['Arsenal fixture detail', '.match-card small', [6, 18, 31]],
