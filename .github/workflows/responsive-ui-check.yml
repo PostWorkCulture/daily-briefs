@@ -14,6 +14,11 @@ on:
   push:
     branches: [main]
     paths:
+      - 'index.html'
+      - 'pete/**'
+      - 'sofia/**'
+      - 'css/**'
+      - 'js/**'
       - 'scripts/responsive_ui_check.py'
       - '.github/workflows/responsive-ui-check.yml'
 
