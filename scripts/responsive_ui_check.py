@@ -137,12 +137,14 @@ def check_viewport(browser, name: str) -> None:
 
         failures = []
         visual = page.evaluate(
-            """
+            r"""
             () => {
               const rgb = getComputedStyle(document.body).backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
               const fact = document.querySelector('#sceneryFact');
               const image = document.querySelector('#sceneryCard');
               const greeting = document.querySelector('#greeting');
+              const heroBrand = document.querySelector('.hero .hero-brand');
+              const date = document.querySelector('#briefDate');
               const nav = document.querySelector('#primaryNav');
               const buttons = [...nav.querySelectorAll('button')];
               return {
@@ -152,6 +154,8 @@ def check_viewport(browser, name: str) -> None:
                 factHref: fact?.getAttribute('href') || '',
                 factLabel: document.querySelector('#sceneryFactLabel')?.textContent?.trim() || '',
                 greetingMarginTop: parseFloat(getComputedStyle(greeting).marginTop),
+                heroBrandBeforeDate: Boolean(heroBrand && date && (heroBrand.compareDocumentPosition(date) & Node.DOCUMENT_POSITION_FOLLOWING)),
+                topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
                 navAfter: getComputedStyle(nav, '::after').content,
                 buttonAfter: buttons.map(button => getComputedStyle(button, '::after').content),
                 navText: nav.textContent
@@ -171,6 +175,8 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"fact lead label changed: {visual['factLabel']}")
         if visual["greetingMarginTop"] < 16:
             failures.append(f"greeting was not moved down: margin {visual['greetingMarginTop']}")
+        if not visual["heroBrandBeforeDate"] or visual["topbarBrandCount"] != 0:
+            failures.append("Daily Briefs wordmark was not moved directly above the date")
         if visual["navAfter"] not in {"none", '""'}:
             failures.append(f"navigation star layer remains: {visual['navAfter']}")
         if any(content not in {"none", '""'} for content in visual["buttonAfter"]):

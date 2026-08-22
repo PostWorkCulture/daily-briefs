@@ -3,6 +3,7 @@
 html{background:var(--bg)}
 body{color:var(--text);background:radial-gradient(circle at 12% 0,rgba(255,255,255,.92),transparent 31rem),radial-gradient(circle at 88% 12%,rgba(220,207,255,.58),transparent 34rem),linear-gradient(180deg,#eaf5fb,#dcebf6 56%,#e9e2f5)}
 .topbar{background:linear-gradient(180deg,rgba(239,248,253,.98),rgba(239,248,253,.86),rgba(239,248,253,.2))}
+.profile-topbar{justify-content:flex-end}.hero-brand{margin:0 0 9px;font-size:16px;line-height:1}.hero-brand+.eyebrow{margin-top:0}
 .profile-avatar{background:linear-gradient(145deg,#d9edf8,#eee6fb);color:#173b54;border-color:rgba(31,99,140,.18)}
 .profile-switch{background:rgba(249,252,255,.78);box-shadow:0 9px 24px rgba(56,88,114,.08)}
 .profile-switch button{color:#60758a}.profile-switch button.active{background:#d7eaf5;color:#173a55;box-shadow:0 7px 18px rgba(48,95,130,.12)}

@@ -9,6 +9,7 @@ Status: implemented; automated validation running
 - Requested change: Make the dark-blue interface much lighter and easier to read; remove navigation stars and sparkles; move the Pete/Sofia greeting down slightly; and make Fact of the Day genuinely rare, fact-first, image-second, and permanently non-repeating.
 - Theme rule: use a light sky-blue and soft-lavender canvas with dark ink text, pale cards, restrained coloured accents, and deliberate dark overlays only on image-led media.
 - Navigation rule: preserve the clean aurora edge but remove every star field, twinkle layer, sparkle pseudo-element, and sparkle glyph. Dida now uses an open-book mark.
+- Wordmark rule: move `Daily Briefs` out of the sticky top bar and place it directly above the date without duplication.
 - Greeting rule: retain `Hey Pete` and `Hey Sofia` at the smaller approved scale, with extra spacing below the date so the greeting sits more naturally before Weather.
 - Fact rule: the verified fact card now appears before its matched image. The first fact explains how Antarctica’s Blood Falls turns red only after clear iron-rich brine meets air.
 - No-repeat rule: a committed fact history records each published ID forever. Duplicate catalogue text, duplicate IDs, duplicate history IDs, or two facts on one date fail validation. Catalogue exhaustion fails the refresh instead of recycling.

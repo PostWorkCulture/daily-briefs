@@ -28,6 +28,7 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 - The Home greeting is `Hey Pete` for Pete and `Hey Sofia` for Sofia, without trailing punctuation.
 - Keep the greeting deliberately smaller than the previous headline: 36–52 px below 900 px and 52–68 px from 900 px upwards.
+- Place the `Daily Briefs` wordmark directly above the date, not in the sticky top bar.
 - Place the greeting slightly lower in the hero so it sits comfortably between the date and the Weather panel.
 
 ## Current structure
