@@ -66,6 +66,7 @@ def check_viewport(browser, name: str) -> None:
             if page.locator(f'#view-{target} .story-media').count() != 0:
                 raise AssertionError(f"{name}: {target} still shows article photography")
 
+        page.locator('[data-view-target="home"]').click()
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
             raise AssertionError(f"{name}: expected four Calendar summary cards")
