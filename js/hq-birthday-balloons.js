@@ -39,31 +39,15 @@
     return `<svg class="hq-balloon${compact?' compact':''}" viewBox="0 0 70 86" aria-hidden="true"><defs><linearGradient id="g-${id}" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="${a}"/><stop offset="100%" stop-color="${b}"/></linearGradient><filter id="s-${id}" x="-40%" y="-40%" width="180%" height="220%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="rgba(0,0,0,.34)"/></filter></defs><g filter="url(#s-${id})"><ellipse cx="36" cy="31" rx="22" ry="26" fill="url(#g-${id})" stroke="rgba(255,255,255,.18)" stroke-width="1.3"/><ellipse cx="27" cy="21" rx="7" ry="10" fill="rgba(255,255,255,.36)" transform="rotate(-18 27 21)"/><path d="M36 56C34 60 32 62 29 64c4 0 7 2 10 5 2-3 5-5 9-5-4-2-6-4-8-8Z" fill="${accent}"/><path d="M37 68c3 6 5 9 8 15" fill="none" stroke="${accent}" stroke-width="2.3" stroke-linecap="round"/></g></svg>`;
   }
 
-  function navSvg() {
-    return `<svg class="hq-nav-balloons" viewBox="0 0 72 48" aria-hidden="true"><defs><linearGradient id="nb1" x1="0" x2="1"><stop stop-color="#6ed7ff"/><stop offset="1" stop-color="#5484ff"/></linearGradient><linearGradient id="nb2" x1="0" x2="1"><stop stop-color="#ff7cc8"/><stop offset="1" stop-color="#ff5b6e"/></linearGradient><linearGradient id="nb3" x1="0" x2="1"><stop stop-color="#ffd84f"/><stop offset="1" stop-color="#ff9730"/></linearGradient></defs><ellipse cx="18" cy="17" rx="10" ry="12" fill="url(#nb1)"/><ellipse cx="36" cy="14" rx="10" ry="12" fill="url(#nb2)"/><ellipse cx="54" cy="18" rx="10" ry="12" fill="url(#nb3)"/><ellipse cx="14" cy="12" rx="3.2" ry="4.4" fill="rgba(255,255,255,.38)"/><ellipse cx="32" cy="10" rx="3.2" ry="4.4" fill="rgba(255,255,255,.38)"/><ellipse cx="50" cy="14" rx="3.2" ry="4.4" fill="rgba(255,255,255,.38)"/><path d="M18 29c4 6 6 11 8 17M36 26c-1 7-3 12-5 20M54 30c-3 5-5 10-6 16" stroke="rgba(255,255,255,.75)" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>`;
-  }
-
   function ensureStyles() {
     if (document.getElementById('hqBirthdayBalloonStyles')) return;
     const style=document.createElement('style');
     style.id='hqBirthdayBalloonStyles';
     style.textContent=`
-      .hq-nav-balloons{width:28px;height:24px;display:block;margin:0 auto 3px;filter:drop-shadow(0 0 7px rgba(255,107,198,.28))}
       .birthday-avatar.hq-balloon-avatar{width:72px;height:78px;border-radius:0;background:transparent;overflow:visible;display:grid;place-items:center}
       .hq-balloon{width:68px;height:82px;display:block;overflow:visible}.hq-balloon.compact{width:31px;height:39px}
       .birthday-card.hq-colour{border-color:rgba(255,255,255,.13);box-shadow:0 14px 30px rgba(0,0,0,.2)}
       .home-reminder-card.birthday .home-reminder-icon.hq-balloon-home{width:34px;height:42px;background:transparent;overflow:visible}
-      #primaryNav[data-profile="sofia"] [data-view-target="home"]{order:1}
-      #primaryNav[data-profile="sofia"] [data-view-target="news"]{order:2}
-      #primaryNav[data-profile="sofia"] [data-view-target="dida"]{order:3}
-      #primaryNav[data-profile="sofia"] [data-view-target="career"]{order:4}
-      #primaryNav[data-profile="sofia"] [data-view-target="birthdays"]{order:5}
-      #primaryNav[data-profile="sofia"] [data-view-target="ai"]{order:6}
-      @media(max-width:899px){
-        #primaryNav.bottom-nav{display:flex!important;grid-template-columns:none!important;overflow-x:auto!important;overflow-y:hidden!important;justify-content:flex-start!important;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
-        #primaryNav.bottom-nav::-webkit-scrollbar{display:none}
-        #primaryNav.bottom-nav button{flex:0 0 72px!important;min-width:72px!important;scroll-snap-align:center}
-      }
       @media(max-width:560px){.birthday-avatar.hq-balloon-avatar{width:58px;height:66px}.hq-balloon{width:56px;height:68px}}
     `;
     document.head.appendChild(style);
@@ -97,9 +81,6 @@
 
   function enhance() {
     ensureStyles();
-    const nav=document.querySelector('[data-view-target="birthdays"] b');
-    if(nav && nav.dataset.hq!=='1'){nav.innerHTML=navSvg();nav.dataset.hq='1';}
-
     birthdayCards().forEach(enhanceBirthdayCard);
 
     document.querySelectorAll('.home-reminder-card.birthday').forEach(card=>{
