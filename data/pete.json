@@ -1,9 +1,9 @@
 {
   "updatedLabel": "Saturday, 22 August 2026 · refreshed 5:58am",
   "weather": {
-    "temp": "12°",
-    "summary": "Sunny",
-    "condition": "Sunny",
+    "temp": "15°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
@@ -12,7 +12,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -35,7 +35,7 @@
       },
       {
         "date": "2026-08-25",
-        "high": 25,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -72,7 +72,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Sunny intervals · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
