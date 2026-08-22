@@ -102,7 +102,8 @@ def check_viewport(browser, name: str) -> None:
                     right: item.rect.right,
                     top: item.rect.top,
                     bottom: item.rect.bottom,
-                    width: item.rect.width
+                    width: item.rect.width,
+                    target: button.dataset.viewTarget || null
                   }))
                 }
               };
@@ -124,8 +125,20 @@ def check_viewport(browser, name: str) -> None:
 
         nav = result["nav"]
         buttons = nav["buttons"]
-        if len(buttons) != 6:
-            failures.append(f"expected 6 visible Pete nav buttons, found {len(buttons)}")
+        expected_nav_targets = [
+            "home",
+            "news",
+            "arsenal",
+            "ai",
+            "career",
+            "dida",
+            "birthdays",
+        ]
+        actual_nav_targets = [button["target"] for button in buttons]
+        if actual_nav_targets != expected_nav_targets:
+            failures.append(
+                f"Pete nav targets changed: {actual_nav_targets} != {expected_nav_targets}"
+            )
         if any(button["width"] < 44 for button in buttons):
             failures.append(f"nav buttons squeezed below 44px: {buttons}")
         if name == "desktop":

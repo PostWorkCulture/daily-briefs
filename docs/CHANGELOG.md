@@ -12,6 +12,7 @@ Status: implemented
 - Greeting rule: show `Hey Pete` and `Hey Sofia` without trailing punctuation.
 - Typography rule: use a 36–52 px responsive range below 900 px and a 52–68 px range from 900 px upwards.
 - Validation prepared: both names and both viewport size ceilings are asserted by the responsive UI check; JavaScript syntax and exact bounded replacements were checked before publication.
+- QA discovery: the existing Birthdays destination made the old six-button Pete navigation assertion stale. The check now protects all seven existing destinations in order without changing the UI.
 - Unexpected changes: none intended; profiles, routes, sections, controls, data, colours, links, content feeds, and unrelated responsive behaviour remain unchanged.
 - Master brief update: version 1.8 records the approved greeting wording and smaller responsive scale.
 - Follow-up: run the responsive workflow and verify both live profile routes after deployment.
