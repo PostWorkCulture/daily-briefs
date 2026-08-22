@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 1.7, 18 August 2026. Owner: Pete.
+Version 1.8, 22 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -24,6 +24,9 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 ## Profiles
 
 Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia only. Keep /pete/ and /sofia/ routes and data/pete.json and data/sofia.json consistent. Never restore the obsolete Us profile.
+
+- The Home greeting is `Hey Pete` for Pete and `Hey Sofia` for Sofia, without trailing punctuation.
+- Keep the greeting deliberately smaller than the previous headline: 36–52 px below 900 px and 52–68 px from 900 px upwards.
 
 ## Current structure
 

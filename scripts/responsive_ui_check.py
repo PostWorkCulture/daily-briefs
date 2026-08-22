@@ -15,6 +15,24 @@ def check_viewport(browser, name: str) -> None:
     page.set_default_timeout(10000)
     try:
         page.goto(BASE_URL, wait_until="domcontentloaded", timeout=15000)
+        page.locator("#greeting").wait_for(state="visible", timeout=10000)
+        greeting = page.locator("#greeting")
+        if greeting.inner_text() != "Hey Pete":
+            raise AssertionError(f"{name}: Pete greeting is not 'Hey Pete'")
+        max_greeting_px = 52 if name == "mobile" else 68
+        greeting_size = float(greeting.evaluate("el => parseFloat(getComputedStyle(el).fontSize)"))
+        if greeting_size > max_greeting_px:
+            raise AssertionError(
+                f"{name}: greeting is too large ({greeting_size}px > {max_greeting_px}px)"
+            )
+        page.locator('[data-profile="sofia"]').click()
+        page.wait_for_function(
+            "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
+        )
+        page.locator('[data-profile="pete"]').click()
+        page.wait_for_function(
+            "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
+        )
         page.wait_for_timeout(1200)
         icon_links = page.locator('link[rel="icon"]')
         if icon_links.count() < 3:
@@ -138,7 +156,7 @@ def check_viewport(browser, name: str) -> None:
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: Daily Brief icons, fixture, navigation, Calendar glow, Arsenal trusted/reporter-watch lists and lime Dida treatment are usable")
+        print(f"PASS {name}: Pete/Sofia greetings, Daily Brief icons, fixture, navigation, Calendar glow, Arsenal trusted/reporter-watch lists and lime Dida treatment are usable")
     finally:
         page.close()
 

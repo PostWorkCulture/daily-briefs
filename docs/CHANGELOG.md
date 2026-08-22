@@ -2,6 +2,20 @@
 
 Newest entries go first.
 
+## 22 August 2026: Shorter Hey greetings
+
+Status: implemented
+
+- Requested change: Replace the morning greeting with `Hey Pete`, make it smaller, and apply the same treatment to Sofia.
+- Approved scope: shared greeting copy, responsive greeting typography, cache keys, Pete/Sofia responsive regression coverage, master brief, and changelog.
+- Files changed: index.html, js/app.js, css/app.css, scripts/responsive_ui_check.py, docs/MASTER-BRIEF-CURRENT.md, and docs/CHANGELOG.md.
+- Greeting rule: show `Hey Pete` and `Hey Sofia` without trailing punctuation.
+- Typography rule: use a 36–52 px responsive range below 900 px and a 52–68 px range from 900 px upwards.
+- Validation prepared: both names and both viewport size ceilings are asserted by the responsive UI check; JavaScript syntax and exact bounded replacements were checked before publication.
+- Unexpected changes: none intended; profiles, routes, sections, controls, data, colours, links, content feeds, and unrelated responsive behaviour remain unchanged.
+- Master brief update: version 1.8 records the approved greeting wording and smaller responsive scale.
+- Follow-up: run the responsive workflow and verify both live profile routes after deployment.
+
 ## 19 August 2026: Repair England weather-extremes county resolution
 
 Status: validated
