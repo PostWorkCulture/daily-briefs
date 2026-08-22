@@ -2,6 +2,22 @@
 
 Newest entries go first.
 
+## 22 August 2026: Deep blue aurora preview and clearer Dida spacing
+
+Status: implemented on preview branch, awaiting publication approval
+
+- Requested change: Try background option D, separate the three Dida sections more clearly, and check that all brief text remains visible before publication.
+- Approved scope: global colour theme, dark navigation surface, Dida zone spacing, cache keys, responsive contrast coverage, master brief, and changelog.
+- Files changed: css/light-theme.css, css/tabs-dida.css, index.html, scripts/responsive_ui_check.py, docs/MASTER-BRIEF-CURRENT.md, and docs/CHANGELOG.md.
+- Theme rule: use a near-black navy canvas with layered cyan and indigo aurora glows, deep translucent blue surfaces, and high-contrast light text.
+- Dida rule: preserve all three zones and their content, with 26 px separation on mobile and 30 px on larger screens.
+- Readability rule: representative primary and secondary text across Home, News, Arsenal, AI, Career, Dida, and Birthdays must meet at least 4.5:1 contrast against its intended surface.
+- Requirements protected: both profiles and greetings, all routes, data feeds, section order, Calendar glow, Around the world fact-first layout, Arsenal treatment, AI/Career icons, Dida content, birthday balloon, cannon mark, and responsive navigation geometry.
+- Validation prepared: mobile and desktop checks now assert the exact option D background, layered aurora, text contrast across every view, Dida accent, Dida section spacing, and all existing protected rules.
+- Publication: no production branch, Pages deployment, or live route was changed.
+- Unexpected changes: none intended.
+- Master brief update: version 2.1 records the approved option D theme, contrast floor, and Dida spacing.
+
 ## 22 August 2026: Lighter theme and permanent rare-fact history
 
 Status: validated

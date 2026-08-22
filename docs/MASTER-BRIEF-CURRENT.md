@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.0, 22 August 2026. Owner: Pete.
+Version 2.1, 22 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -8,7 +8,7 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 
 ## Product
 
-Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a light sky-blue and soft-lavender base, dark ink text, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve dark treatments for image-led media cards where a strong overlay protects readability. Preserve header styling during unrelated work.
+Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use the approved option D deep blue aurora background: a near-black navy base with layered cyan and indigo glows, high-contrast light text, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Keep primary and secondary text at or above 4.5:1 contrast against its intended surface. Preserve header styling during unrelated work.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
 - Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
@@ -87,7 +87,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
-- Dida uses lime green, not orange, with playful code-native icons and colour. Split it into three clear zones: This week, Seasonal missions, and Reference library. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
+- Dida uses lime green, not orange, with playful code-native icons and colour. Split it into three clear zones: This week, Seasonal missions, and Reference library. Separate consecutive zones by 26 px on mobile and 30 px on larger screens. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 
 ## Morning Story target

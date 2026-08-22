@@ -19,3 +19,7 @@
 @media(max-width:760px){.bottom-nav{font-size:8px}.bottom-nav button{padding-left:1px!important;padding-right:1px!important}.tab-panel{margin-top:10px}.section-story{grid-template-columns:46px minmax(0,1fr);gap:11px}.section-story-icon{width:46px;height:46px;border-radius:14px}.section-story-icon svg{width:23px;height:23px}.dida-shell{padding:10px;border-radius:22px}.dida-hero{padding:17px;border-radius:19px}.dida-hero h2{font-size:26px}.dida-hero-icons{opacity:.72}.dida-zone{padding:12px;border-radius:18px}.dida-zone-head h3{font-size:17px}.dida-section-nav a{min-height:44px;font-size:8px}}
 @media(min-width:700px){.dida-quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.dida-season-list{grid-template-columns:repeat(2,minmax(0,1fr))}.dida-reference{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:900px){.tab-groups:not(.single){grid-template-columns:repeat(2,minmax(0,1fr))}.tab-list{grid-template-columns:repeat(2,minmax(0,1fr))}.dida-shell{padding:18px}.dida-zone{padding:19px}.dida-section-nav{max-width:620px}.dida-season-list{grid-template-columns:repeat(5,minmax(0,1fr))}.dida-library{grid-template-columns:repeat(2,minmax(0,1fr))}.dida-fold-body{padding:0 14px 14px}.bottom-nav,#primaryNav[data-profile="sofia"]{grid-template-columns:1fr!important}}
+
+/* Clear visual separation between the three Dida sections. */
+.dida-zone + .dida-zone{margin-top:30px}
+@media(max-width:699px){.dida-zone + .dida-zone{margin-top:26px}}

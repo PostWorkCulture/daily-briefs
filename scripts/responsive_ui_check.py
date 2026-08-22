@@ -10,6 +10,19 @@ VIEWPORTS = {
 }
 
 
+def contrast_ratio(foreground: list[float], background: list[float]) -> float:
+    def luminance(rgb: list[float]) -> float:
+        channels = [value / 255 for value in rgb]
+        linear = [
+            value / 12.92 if value <= 0.03928 else ((value + 0.055) / 1.055) ** 2.4
+            for value in channels
+        ]
+        return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+    light, dark = sorted((luminance(foreground), luminance(background)), reverse=True)
+    return (light + 0.05) / (dark + 0.05)
+
+
 def check_viewport(browser, name: str) -> None:
     page = browser.new_page(viewport=VIEWPORTS[name])
     page.set_default_timeout(10000)
@@ -153,6 +166,22 @@ def check_viewport(browser, name: str) -> None:
               const date = document.querySelector('#briefDate');
               const nav = document.querySelector('#primaryNav');
               const buttons = [...nav.querySelectorAll('button')];
+              const parseRgb = value => value.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
+              const clarityTargets = [
+                ['Home greeting', '#greeting', [2, 7, 19]],
+                ['Home status detail', '.status-card small', [16, 43, 73]],
+                ['Home calendar detail', '.calendar-row p', [9, 29, 50]],
+                ['Around the world fact', '.scenery-fact p', [7, 22, 38]],
+                ['News story detail', '#view-news .tab-story p', [9, 29, 50]],
+                ['Arsenal fixture detail', '.match-card small', [6, 18, 31]],
+                ['AI story detail', '#view-ai .tab-story p', [9, 29, 50]],
+                ['Career story detail', '#view-career .tab-story p', [9, 29, 50]],
+                ['Dida introduction', '.dida-hero p', [10, 27, 44]],
+                ['Dida zone detail', '.dida-zone-head p', [8, 28, 42]],
+                ['Dida quick-win detail', '.dida-quick p', [5, 18, 31]],
+                ['Dida reference detail', '.dida-fold summary p', [5, 18, 31]],
+                ['Birthdays heading', '#view-birthdays .section-head h2', [2, 7, 19]]
+              ];
               return {
                 bodyRgb: rgb,
                 factBeforeImage: Boolean(fact.compareDocumentPosition(image) & Node.DOCUMENT_POSITION_FOLLOWING),
@@ -164,13 +193,35 @@ def check_viewport(browser, name: str) -> None:
                 topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
                 navAfter: getComputedStyle(nav, '::after').content,
                 buttonAfter: buttons.map(button => getComputedStyle(button, '::after').content),
-                navText: nav.textContent
+                navText: nav.textContent,
+                bodyBackground: getComputedStyle(document.body).backgroundImage,
+                clarity: clarityTargets.map(([label, selector, background]) => {
+                  const element = document.querySelector(selector);
+                  return {
+                    label,
+                    selector,
+                    background,
+                    exists: Boolean(element),
+                    foreground: element ? parseRgb(getComputedStyle(element).color) : [0, 0, 0]
+                  };
+                })
               };
             }
             """
         )
-        if sum(visual["bodyRgb"]) < 560:
-            failures.append(f"theme is still too dark: {visual['bodyRgb']}")
+        if visual["bodyRgb"] != [2, 7, 19]:
+            failures.append(f"deep blue theme background changed: {visual['bodyRgb']}")
+        if visual["bodyBackground"].count("radial-gradient") < 2 or "linear-gradient" not in visual["bodyBackground"]:
+            failures.append("option D layered blue aurora background is missing")
+        for sample in visual["clarity"]:
+            if not sample["exists"]:
+                failures.append(f"text clarity sample is missing: {sample['label']} ({sample['selector']})")
+                continue
+            ratio = contrast_ratio(sample["foreground"], sample["background"])
+            if ratio < 4.5:
+                failures.append(
+                    f"text contrast is below 4.5:1 for {sample['label']}: {ratio:.2f}:1"
+                )
         if not visual["factBeforeImage"]:
             failures.append("insane fact does not appear before its image")
         if not visual["factText"] or visual["factText"].startswith("Loading"):
@@ -240,23 +291,30 @@ def check_viewport(browser, name: str) -> None:
               zones: document.querySelectorAll('.dida-zone').length,
               sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
               folds: document.querySelectorAll('.dida-fold').length,
-              openFolds: document.querySelectorAll('.dida-fold[open]').length
+              openFolds: document.querySelectorAll('.dida-fold[open]').length,
+              zoneGaps: [...document.querySelectorAll('.dida-zone')].slice(1).map((zone, index, following) => {
+                const zones = [...document.querySelectorAll('.dida-zone')];
+                return Math.round(zone.getBoundingClientRect().top - zones[index].getBoundingClientRect().bottom);
+              })
             })
             """
         )
         dida_accent = dida["accent"].lower()
-        if dida_accent != "#679a00":
-            failures.append(f"Dida accent is not the readable light-theme lime: {dida['accent']}")
+        if dida_accent != "#b7ff3c":
+            failures.append(f"Dida accent is not the readable dark-theme lime: {dida['accent']}")
         if dida["heroIcons"] < 3 or dida["quickIcons"] < 3 or dida["foldIcons"] < 4:
             failures.append(f"Dida fun icon treatment is incomplete: {dida}")
         if dida["zones"] != 3 or dida["sectionLinks"] != 3:
             failures.append(f"Dida is not split into three clear sections: {dida}")
         if dida["folds"] != 4 or dida["openFolds"] != 0:
             failures.append(f"Dida reference library is not compact by default: {dida}")
+        minimum_zone_gap = 28 if name == "desktop" else 24
+        if len(dida["zoneGaps"]) != 2 or any(gap < minimum_zone_gap for gap in dida["zoneGaps"]):
+            failures.append(f"Dida sections are not clearly separated: {dida['zoneGaps']}")
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: greetings, AI/Career icons, balloon and cannon nav marks, three-zone Dida layout, fixture, navigation, Calendar glow and Arsenal content are usable")
+        print(f"PASS {name}: greetings, option D contrast, AI/Career icons, balloon and cannon nav marks, separated three-zone Dida layout, fixture, navigation, Calendar glow and Arsenal content are usable")
     finally:
         page.close()
 
