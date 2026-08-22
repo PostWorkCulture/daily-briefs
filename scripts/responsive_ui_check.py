@@ -42,8 +42,13 @@ def check_viewport(browser, name: str) -> None:
         if page.locator('link[rel="manifest"]').count() != 1:
             raise AssertionError(f"{name}: Daily Brief web app manifest is missing")
         birthday_balloon = page.locator('[data-view-target="birthdays"] .nav-balloon')
-        if birthday_balloon.count() != 1:
-            raise AssertionError(f"{name}: Birthdays nav does not use one balloon icon")
+        balloon_count = birthday_balloon.count()
+        if balloon_count != 1:
+            nav_html = page.locator('#primaryNav').evaluate('el => el.outerHTML')
+            raise AssertionError(
+                f"{name}: Birthdays nav does not use one balloon icon "
+                f"(found {balloon_count}); nav DOM: {nav_html}"
+            )
         arsenal_cannon = page.locator('[data-view-target="arsenal"] .nav-cannon')
         if arsenal_cannon.count() != 1:
             raise AssertionError(f"{name}: Arsenal nav cannon is missing")
