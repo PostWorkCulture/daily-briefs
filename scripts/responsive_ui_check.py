@@ -69,7 +69,11 @@ def check_viewport(browser, name: str) -> None:
               const nav = document.querySelector('#primaryNav');
               const navRect = nav.getBoundingClientRect();
               const navButtons = [...nav.querySelectorAll('button')]
-                .map(button => ({text: button.innerText.trim(), rect: button.getBoundingClientRect()}))
+                .map(button => ({
+                  text: button.innerText.trim(),
+                  target: button.dataset.viewTarget || null,
+                  rect: button.getBoundingClientRect()
+                }))
                 .filter(item => item.rect.width > 0 && item.rect.height > 0);
               const selectors = [
                 '#nextFixtureCard.fixture-detail-card > strong',
@@ -103,7 +107,7 @@ def check_viewport(browser, name: str) -> None:
                     top: item.rect.top,
                     bottom: item.rect.bottom,
                     width: item.rect.width,
-                    target: button.dataset.viewTarget || null
+                    target: item.target
                   }))
                 }
               };
