@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 23 August 2026: Clearer Dida zones and age-six content
 
-Status: implemented on preview branch, awaiting publication approval
+Status: validated
 
 - Requested change: Separate the three Dida sections more clearly, use neutral readable text with green reserved for boxes and highlights, and change the content for a six-year-old.
 - Approved scope: Dida spacing, Dida light-theme text colour, age-specific Dida copy and source, cache keys, responsive regression coverage, master brief, and changelog.
@@ -14,9 +14,10 @@ Status: implemented on preview branch, awaiting publication approval
 - Age rule: update the hero, development guide, teaching ideas, games, seasonal quantities, and birthday runway from age five to age six. Replace the old age-five CDC link with the real CDC ages 6–8 guide.
 - Requirements protected: the approved light sky-blue and lavender app background, all three Dida zones, every Dida idea and guide, four collapsed reference groups, both profiles, all routes, and every unrelated view and feed.
 - Validation prepared: mobile and desktop checks require three zones, 28/36 px gaps, neutral Dida body text, age-six wording, the real age-six source, lime accents, and the existing collapsed reference library.
-- Publication: not published. Awaiting Pete's approval after preview review.
+- Publication: published after Pete's approval on 23 August 2026.
 - Unexpected changes: none intended.
 - Master brief update: version 2.2 records the approved age-six, spacing, and neutral-text rules.
+- Validation result: Responsive UI check, Morning refresh, and Pages deployment passed. Pete and Sofia returned HTTP 200; the deployed Dida assets contain the age-six copy, 28/36 px zone gaps, neutral body text, new cache keys, and no preview-only redirect.
 
 ## 23 August 2026: Light-theme Birthday cards
 
