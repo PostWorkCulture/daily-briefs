@@ -229,7 +229,7 @@ def check_viewport(browser, name: str) -> None:
                 failures.append(f"mobile nav is not a single horizontal row: {buttons}")
 
         for profile in ("pete", "sofia"):
-            page.locator(f'[data-profile="{profile}"]').click()
+            page.locator(f'.profile-switch [data-profile="{profile}"]').click()
             page.wait_for_function(
                 f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}'"
             )
@@ -285,7 +285,7 @@ def check_viewport(browser, name: str) -> None:
             if birthday["balloonCards"] < 1:
                 failures.append(f"{profile} birthday cards lost their balloon artwork")
 
-        page.locator('[data-profile="pete"]').click()
+        page.locator('.profile-switch [data-profile="pete"]').click()
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
         )
