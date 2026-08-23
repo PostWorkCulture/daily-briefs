@@ -2,6 +2,19 @@
 
 Newest entries go first.
 
+## 23 August 2026: Bookmark icon cache repair
+
+Status: implemented, awaiting preview approval
+
+- Requested change: Stop newly saved Daily Brief bookmarks from showing the obsolete Bomberfan logo.
+- Root cause: the committed artwork is the approved Daily Brief rising-sun and layered-news-card design, but bookmark metadata still reused the original origin-level icon filenames. Chrome can retain that earlier Bomberfan association in its favicon database despite query-string cache keys.
+- Fix: publish the approved artwork under entirely new immutable filenames for shortcut icon, ICO favicon, 32 px favicon, Apple touch icon, 192 px icon, 512 px icon, and maskable icon. Root, Pete, Sofia, Open Graph, and manifest metadata now use those new paths.
+- Requirements protected: the approved Daily Brief artwork is reused without alteration; no page layout, profile, content, navigation, data source, or unrelated branding changes.
+- Validation prepared: static checks require the new filenames in root and both profile routes, verify the new manifest identity and icon set, and retain mobile and desktop browser coverage.
+- Unexpected changes: none intended.
+- Master brief update: none. This repairs the existing dedicated-icon requirement without changing the specification.
+- Follow-up: after publication, remove any existing Bomberfan bookmark once and save the Daily Brief again so Chrome creates a new bookmark record from the new icon URLs.
+
 ## 23 August 2026: Tidier News, corrected Arsenal result, independent Dida boxes, and Birthday glow
 
 Status: implemented, awaiting preview approval

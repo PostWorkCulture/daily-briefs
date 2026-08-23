@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import sys
+from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 BASE_URL = "http://127.0.0.1:4173/?profile=pete&locked=1"
@@ -8,6 +10,39 @@ VIEWPORTS = {
     "mobile": {"width": 390, "height": 844},
     "desktop": {"width": 1366, "height": 900},
 }
+ROOT = Path(__file__).resolve().parents[1]
+ICON_PATHS = {
+    "shortcut": "assets/icons/daily-brief-favicon-v2.ico",
+    "ico": "assets/icons/daily-brief-favicon-v2.ico",
+    "small": "assets/icons/daily-brief-favicon-32-v2.png",
+    "large": "assets/icons/daily-brief-192-v2.png",
+    "touch": "assets/icons/daily-brief-touch-v2.png",
+    "manifest": "daily-brief-v2.webmanifest",
+}
+
+
+def check_icon_metadata_files() -> None:
+    expected_root = tuple(ICON_PATHS.values())
+    root_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    for value in expected_root:
+        if value not in root_html:
+            raise AssertionError(f"root icon metadata is missing {value}")
+
+    for profile in ("pete", "sofia"):
+        profile_html = (ROOT / profile / "index.html").read_text(encoding="utf-8")
+        for value in expected_root:
+            if f"../{value}" not in profile_html:
+                raise AssertionError(f"{profile} icon metadata is missing ../{value}")
+
+    manifest = json.loads((ROOT / ICON_PATHS["manifest"]).read_text(encoding="utf-8"))
+    manifest_icons = {item.get("src") for item in manifest.get("icons", [])}
+    expected_manifest_icons = {
+        "assets/icons/daily-brief-192-v2.png",
+        "assets/icons/daily-brief-512-v2.png",
+        "assets/icons/daily-brief-maskable-512-v2.png",
+    }
+    if manifest.get("name") != "Daily Briefs" or manifest_icons != expected_manifest_icons:
+        raise AssertionError(f"bookmark manifest metadata is incorrect: {manifest}")
 
 
 def check_viewport(browser, name: str) -> None:
@@ -34,6 +69,52 @@ def check_viewport(browser, name: str) -> None:
             "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
         )
         page.wait_for_timeout(1200)
+        expected_links = {
+            'link[rel="shortcut icon"]': ICON_PATHS["shortcut"],
+            'link[rel="icon"][type="image/x-icon"]': ICON_PATHS["ico"],
+            'link[rel="icon"][sizes="32x32"]': ICON_PATHS["small"],
+            'link[rel="icon"][sizes="192x192"]': ICON_PATHS["large"],
+            'link[rel="apple-touch-icon"]': ICON_PATHS["touch"],
+            'link[rel="manifest"]': ICON_PATHS["manifest"],
+        }
+        for selector, expected_href in expected_links.items():
+            link = page.locator(selector)
+            if link.count() != 1 or link.get_attribute("href") != expected_href:
+                raise AssertionError(
+                    f"{name}: bookmark metadata {selector} does not use {expected_href}"
+                )
+            asset_url = page.evaluate(
+                "path => new URL(path, document.baseURI).href", expected_href
+            )
+            response = page.request.get(asset_url)
+            if not response.ok or not response.body():
+                raise AssertionError(
+                    f"{name}: bookmark asset did not load from {expected_href}"
+                )
+
+        decoded_icons = page.evaluate(
+            """
+            paths => Promise.all(paths.map(path => new Promise(resolve => {
+              const image = new Image();
+              image.onload = () => resolve({
+                path,
+                width: image.naturalWidth,
+                height: image.naturalHeight,
+              });
+              image.onerror = () => resolve({path, width: 0, height: 0});
+              image.src = path;
+            })))
+            """,
+            [ICON_PATHS["small"], ICON_PATHS["large"], ICON_PATHS["touch"]],
+        )
+        expected_dimensions = {
+            ICON_PATHS["small"]: (32, 32),
+            ICON_PATHS["large"]: (192, 192),
+            ICON_PATHS["touch"]: (180, 180),
+        }
+        for icon in decoded_icons:
+            if (icon["width"], icon["height"]) != expected_dimensions[icon["path"]]:
+                raise AssertionError(f"{name}: bookmark icon failed to decode: {icon}")
         icon_links = page.locator('link[rel="icon"]')
         if icon_links.count() < 3:
             raise AssertionError(f"{name}: expected ICO, 32px and 192px Daily Brief icons")
@@ -431,6 +512,7 @@ def check_viewport(browser, name: str) -> None:
 
 
 def main() -> int:
+    check_icon_metadata_files()
     with sync_playwright() as p:
         browser = p.chromium.launch()
         try:
