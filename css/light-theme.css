@@ -42,6 +42,7 @@ body{color:var(--text);background:radial-gradient(circle at 12% 0,rgba(255,255,2
 .dida-section-nav a{background:rgba(249,252,255,.84);border-color:rgba(27,65,95,.16);color:#29445a}
 .dida-section-nav a:hover,.dida-section-nav a:focus-visible{border-color:rgba(103,154,0,.62);color:#3e6800;box-shadow:0 0 16px rgba(103,154,0,.14)}
 .dida-zone,.dida-week-zone,.dida-seasonal-zone,.dida-library-zone{background:linear-gradient(180deg,#f9fcff,#e7f0f6);border-color:rgba(27,65,95,.18);box-shadow:0 14px 34px rgba(52,83,108,.12)}
+.dida-hero,.dida-zone{transition:border-color .18s,box-shadow .18s;transform:none!important}.dida-hero:hover,.dida-hero:focus-within,.dida-zone:hover,.dida-zone:focus-within,#view-career .tab-story:hover,#view-career .tab-story:focus-visible{border-color:rgba(0,124,184,.62);box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10);transform:none!important}
 .dida-zone-head{border-bottom-color:rgba(27,65,95,.12)}.dida-zone-head p{color:#52697e}.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card{background:rgba(255,255,255,.68);border-color:rgba(27,65,95,.13)}
 .dida-quick p,.dida-season-title p,.dida-fold summary p,.dida-ref-card li,.dida-ref-card p,.dida-season-item{color:#52697e}
 .bottom-nav .nav-cannon,.bottom-nav .nav-balloon{filter:none}

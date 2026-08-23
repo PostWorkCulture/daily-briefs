@@ -6,17 +6,18 @@ Newest entries go first.
 
 Status: implemented, awaiting preview approval
 
-- Requested change: Put UK News underneath Local News, correct the Arsenal result, restyle Dida as three independent blue/neutral boxes, and give Birthday cards the same hover treatment as Calendar Today/Tomorrow.
+- Requested change: Put UK News underneath Local News, correct the Arsenal result, restyle Dida as three independent blue/neutral boxes, and give Birthday, Career, and Dida cards the same hover treatment as Calendar Today/Tomorrow.
 - Approved scope: News group layout, Arsenal first-team result validation and current data, Dida surfaces and separation, Birthday hover/focus states, cache keys, responsive and refresh regression coverage, safe preview-branch workflow routing, master brief, and changelog.
 - Arsenal correction: the under-21 Crystal Palace report is no longer eligible for the men’s first-team result. The latest result is Arsenal 3–0 Coventry City, Premier League, Friday 21 August 2026. Academy, youth, women’s-team, and girls’ stories are now excluded from first-team Arsenal news and result parsing at collection, enrichment, and finalisation.
 - News layout: News groups stack vertically in profile order, placing UK News directly below Local News while retaining Sweden above Local News for Sofia. Article cards keep their existing responsive grid.
 - Dida layout: the shared green outer container is removed. This week, Seasonal missions, and Reference library are independent blue/neutral cards with their existing 28 px mobile and 36 px desktop gaps. Lime is reserved for occasional icons, labels, badges, links, and interactive highlights.
 - Birthday interaction: every Birthday card and the Home birthday reminder uses the Calendar cyan edge-glow on mouse hover and keyboard focus, with no movement and no replacement of the existing pastel card backgrounds.
+- Career and Dida interaction: Career story cards and Dida’s hero and three zone cards use the same Calendar cyan edge-glow, with no movement. Career also retains keyboard-focus parity, while a Dida zone glows when its interactive content receives keyboard focus.
 - Requirements protected: Pete/Sofia profiles, news content and links, age-six Dida copy and source, all existing Dida ideas and collapsed reference groups, birthday artwork and contrast, and unrelated views.
 - Release safety: script changes on a preview branch can no longer start a refresh job that resets to and writes into main; the refresh push trigger is explicitly main-only.
 - Validation prepared: Python regression tests reject youth result stories and prefer the correct first-team report; morning validation rejects ineligible Arsenal news; responsive checks compare Birthday and Calendar computed hover shadows, verify no movement, assert News order, and verify the independent neutral Dida surfaces.
 - Unexpected changes: none intended.
-- Master brief update: version 2.3 records the approved News ordering, Dida surface rules, and Birthday interaction treatment.
+- Master brief update: version 2.4 records the approved News ordering, Dida surface rules, and Birthday, Career, and Dida interaction treatments.
 - Follow-up: complete local QA, stage the preview, and publish only after Pete approves it.
 
 ## 23 August 2026: Clearer Dida zones and age-six content

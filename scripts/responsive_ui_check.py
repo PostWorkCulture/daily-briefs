@@ -76,6 +76,18 @@ def check_viewport(browser, name: str) -> None:
         if calendar_shadow == "none":
             raise AssertionError(f"{name}: Calendar card has no edge-glow hover")
 
+        page.locator('[data-view-target="career"]').click()
+        career_card = page.locator('#view-career .tab-story').first
+        career_card.hover()
+        page.wait_for_timeout(250)
+        career_shadow = career_card.evaluate("el => getComputedStyle(el).boxShadow")
+        career_transform = career_card.evaluate("el => getComputedStyle(el).transform")
+        if career_shadow != calendar_shadow or career_transform != "none":
+            raise AssertionError(
+                f"{name}: Career hover does not match Calendar glow or moves: "
+                f"shadow={career_shadow}, transform={career_transform}"
+            )
+
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
@@ -400,10 +412,20 @@ def check_viewport(browser, name: str) -> None:
             failures.append("Dida still renders age-five wording")
         if dida["sourceHref"] != "https://stacks.cdc.gov/view/cdc/155268":
             failures.append(f"Dida age-six source changed or is not real: {dida['sourceHref']}")
+        dida_zone = page.locator('.dida-zone').first
+        dida_zone.hover()
+        page.wait_for_timeout(250)
+        dida_hover_shadow = dida_zone.evaluate("el => getComputedStyle(el).boxShadow")
+        dida_hover_transform = dida_zone.evaluate("el => getComputedStyle(el).transform")
+        if dida_hover_shadow != calendar_shadow or dida_hover_transform != "none":
+            failures.append(
+                "Dida hover does not match Calendar glow or moves: "
+                f"shadow={dida_hover_shadow}, transform={dida_hover_transform}"
+            )
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: greetings, light birthday cards, AI/Career icons, balloon and cannon nav marks, spaced age-six Dida zones with neutral text, fixture, navigation, Calendar glow and Arsenal content are usable")
+        print(f"PASS {name}: greetings, Calendar-matched Birthday, Career and Dida glows, AI/Career icons, balloon and cannon nav marks, spaced age-six Dida zones with neutral text, fixture, navigation and Arsenal content are usable")
     finally:
         page.close()
 
