@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 23 August 2026 · refreshed 6:00am",
+  "updatedLabel": "Sunday, 23 August 2026 · refreshed 7:42am",
   "worldFact": {
     "id": "socotra-endemic-snails-reptiles",
     "category": "Wild isolation",
@@ -15,7 +15,7 @@
     "sequence": 2
   },
   "weather": {
-    "temp": "12°",
+    "temp": "14°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 4,
@@ -31,11 +31,11 @@
       },
       {
         "date": "2026-08-24",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -44,7 +44,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -62,12 +62,12 @@
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 60,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-08-28",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
@@ -76,7 +76,7 @@
       },
       {
         "date": "2026-08-29",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -105,10 +105,10 @@
         "displayLocation": "Ross-on-Wye, Herefordshire",
         "value": "24.4°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Former_Perrock%27s_Almshouses%2C_Old_Gloucester_Road%2C_Ross-on-Wye_-_geograph.org.uk_-_6170366.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:Former_Perrock%27s_Almshouses,_Old_Gloucester_Road,_Ross-on-Wye_-_geograph.org.uk_-_6170366.jpg",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Domino%27s_Pizza_in_Ross-on-Wye_-_geograph.org.uk_-_5289485.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Domino%27s_Pizza_in_Ross-on-Wye_-_geograph.org.uk_-_5289485.jpg",
           "credit": "Jaggery · CC BY-SA 2.0",
-          "alt": "Former Perrock's Almshouses, Old Gloucester Road, Ross-on-Wye"
+          "alt": "Domino's Pizza in Ross-on-Wye"
         }
       },
       "cold": {
@@ -129,20 +129,6 @@
   },
   "calendar": [
     {
-      "title": "8.15-17.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-24T00:00:00+01:00",
-      "end": "2026-08-26T00:00:00+01:00",
-      "date": "2026-08-24",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "7aea217cfg5736rbc7utpu0af4",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -154,6 +140,20 @@
       "color": "#fbd75b",
       "colorId": "5",
       "googleEventId": "6ueu9vsdjc2t6soimqga0hbfoa",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "8.15-17.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-24T00:00:00+01:00",
+      "end": "2026-08-26T00:00:00+01:00",
+      "date": "2026-08-24",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "7aea217cfg5736rbc7utpu0af4",
       "calendarColorSource": "google"
     },
     {
@@ -283,20 +283,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -308,6 +294,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -410,21 +410,21 @@
     }
   ],
   "lead": {
-    "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
+    "title": "Swedish sword attack victim was 17-year-old girl, police say",
     "summary": "",
-    "meta": "Sat 22 Aug",
-    "publishedAt": "2026-08-22T20:05:00+01:00",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWhTTjhRSG54U0F1QnRUUmxyY2pseGM5RjBvOWVhNEkzNkd1Q3BFLThGTERPakFzTXdCTjU1N3VuQzY1WjRzcFRJSGlWT1l0WnA2TExxYUR5aS1ZWE45TFFwdjgyNm5udFlvQ0pDejR6VGlBR2g0cDZKZnpqS3Roal9NSDYyV3ZIbmQ0QkZuTGVQMXdWMUFyN3BsV0MxQzdBSnQxZlVzNmhpSUZybjYxcC1R?oc=5"
+    "meta": "Sun 23 Aug",
+    "publishedAt": "2026-08-23T02:34:15+01:00",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xdmprXy1xWlJiMTRoV3NHM2dOeXE5UjVpNkNaMHcxWkkwS2cydldwZWZ2MlJSWmNGb2pvWlZ6NkNlNldEQUlGM0xPWWw5Y2ttMXI5UGowdEpva05X?oc=5"
   },
   "interests": [
     {
-      "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
+      "title": "Swedish sword attack victim was 17-year-old girl, police say",
       "summary": "",
-      "meta": "Sat 22 Aug",
-      "publishedAt": "2026-08-22T20:05:00+01:00",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWhTTjhRSG54U0F1QnRUUmxyY2pseGM5RjBvOWVhNEkzNkd1Q3BFLThGTERPakFzTXdCTjU1N3VuQzY1WjRzcFRJSGlWT1l0WnA2TExxYUR5aS1ZWE45TFFwdjgyNm5udFlvQ0pDejR6VGlBR2g0cDZKZnpqS3Roal9NSDYyV3ZIbmQ0QkZuTGVQMXdWMUFyN3BsV0MxQzdBSnQxZlVzNmhpSUZybjYxcC1R?oc=5",
+      "meta": "Sun 23 Aug",
+      "publishedAt": "2026-08-23T02:34:15+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xdmprXy1xWlJiMTRoV3NHM2dOeXE5UjVpNkNaMHcxWkkwS2cydldwZWZ2MlJSWmNGb2pvWlZ6NkNlNldEQUlGM0xPWWw5Y2ttMXI5UGowdEpva05X?oc=5",
       "section": "Sweden"
     },
     {
@@ -492,20 +492,20 @@
   "sections": {
     "Sweden": [
       {
-        "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
-        "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T20:05:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWhTTjhRSG54U0F1QnRUUmxyY2pseGM5RjBvOWVhNEkzNkd1Q3BFLThGTERPakFzTXdCTjU1N3VuQzY1WjRzcFRJSGlWT1l0WnA2TExxYUR5aS1ZWE45TFFwdjgyNm5udFlvQ0pDejR6VGlBR2g0cDZKZnpqS3Roal9NSDYyV3ZIbmQ0QkZuTGVQMXdWMUFyN3BsV0MxQzdBSnQxZlVzNmhpSUZybjYxcC1R?oc=5"
-      },
-      {
         "title": "Swedish sword attack victim was 17-year-old girl, police say",
         "summary": "",
         "meta": "Sun 23 Aug",
         "publishedAt": "2026-08-23T02:34:15+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xdmprXy1xWlJiMTRoV3NHM2dOeXE5UjVpNkNaMHcxWkkwS2cydldwZWZ2MlJSWmNGb2pvWlZ6NkNlNldEQUlGM0xPWWw5Y2ttMXI5UGowdEpva05X?oc=5"
+      },
+      {
+        "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
+        "summary": "",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T20:05:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWhTTjhRSG54U0F1QnRUUmxyY2pseGM5RjBvOWVhNEkzNkd1Q3BFLThGTERPakFzTXdCTjU1N3VuQzY1WjRzcFRJSGlWT1l0WnA2TExxYUR5aS1ZWE45TFFwdjgyNm5udFlvQ0pDejR6VGlBR2g0cDZKZnpqS3Roal9NSDYyV3ZIbmQ0QkZuTGVQMXdWMUFyN3BsV0MxQzdBSnQxZlVzNmhpSUZybjYxcC1R?oc=5"
       },
       {
         "title": "'17-year-old girl killed' in sword attack at Swedish school",
@@ -528,7 +528,7 @@
         "summary": "",
         "meta": "Sat 22 Aug",
         "publishedAt": "2026-08-22T14:07:13+01:00",
-        "source": "DW.com",
+        "source": "dw.com",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45NFBsY2tMZE8xRE1XSDk1YWtEekVlM21SZXZxVElMeEJrTkhLX3ZzTVlkQU45MzhCb0dBZmEzWmZrTWVIdmZVOXd6US1Tc3F4QThXMTBwZ0d5NnhpQkthcVJveHFRZ1hsZTFIUmZ1aU0wOUI1NHdCVXd0Qzl5Z9IBfkFVX3lxTE03dVJONXViMmRhZVVsUEdvOWtDM0ZjeFNCNUJsTVREMzZTZVFhOURyTmhWQl9CVFQ3MURMY2x0LXRnalZFSUUzU0M5T0RtT1FXYS1hQzlia3hMTlItMzlEcERWdzI4RTZrMWhVazhmOHhfNHQ4TkdYOEdGZnVJdw?oc=5"
       },
       {
@@ -540,12 +540,12 @@
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNakIxQzhpX0VybGgzZ2otVFF5R1haNkU5Z1NVSlVjdVE5QTVxYjZVcEF1bVBpdkRYR2hXTXVvU0FfLWl5RUFxUXdSWVNxdlR2OTNSb1ZoTkcyeE5Sa0hZUnNrSHpka19FZlR4U0ZvLVYta2VZRWhucTRSdU9kMXhxUFVwT3Jwb3ppMXJPT2s2eE90dXg2cW8yd29mMW9Ed21ab2RN0gGoAUFVX3lxTE04ckVQdVJYa0ZpZThGRndvU3dNQ0F3UVBFNDVqZVh1cGEtbU9GUjAyVUkxZFpFdnJqRzVDeXpXU1NQRlZyTElTNjBrUE5RYXNOOEhKeDk4WnVrcFZqSEFtQlVFRVRXbVB3QWNXSG5aYW4tSkQwT1M5dVVMLXpfN3VWa0h2aF91U2djaFFyMGZlcjNYTG9HY0NyQ0RkeFVGSFYwRjNKTV8zSg?oc=5"
       },
       {
-        "title": "Victim of sword attack at a Swedish school was a 17-year-old girl | ITV News",
+        "title": "Thousands expected at Sweden climate demo as election looms",
         "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T12:52:57+01:00",
-        "source": "ITVX",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQk1HNVRNc3VoNEJlZmJHSWIxZGpvUmI3ZGlIbEtaenVVc3NWRzZ6SDlIa2RrS3dncG9PSVZ1TXBwSkU0ei1Ob3FoTGRPNnVUUF9wQ1kzeXBiNFVqNzJiQVFXX1piN005ZkVGdDdEMTlSX2E1aXRMNldwQW9FS1R0QlZhTXJ0Sm5fX09GOWJQVzZpcDhJdUVndm1EZXd3QnZwemtJ?oc=5"
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T06:50:15+01:00",
+        "source": "Arab News PK",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuVjBwVVN6aHF5M1cwdXd5eUJacmxybEk4YnYzUkRPSEdPbXpybkxoTkFrTlVWbWVzZ1V6N3lNRGJ3eXpKT29ZdTNJR19pVy1DVlZheQ?oc=5"
       }
     ],
     "Local news": [
@@ -598,12 +598,12 @@
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1BoZ2VOOFh2RGFrMkk4YWY5eUtlLXBzVnZFb1JwNXBPUXhHNklmb19rZVJ6Z0NUVFRBUkhrS0Fucl9hV3gtdmVSWmt6b09NSm5YVTBnZWxLTmNSUGc3Wm9XUVAyNW0ya29RUVAzdkFuUkFhNWpWQ3VqT0kzMW9SOGxyQ2JZSC00TVk0THZ3YXk1RHBXSHF2NkdmYTI1d21jdElHM3BEM0QtNUlpNFBqVWNma3oxSFNiazFTNGNR?oc=5"
       },
       {
-        "title": "The M25 and M3 roadworks for drivers to avoid this week as Surrey A3 closure looms",
+        "title": "Surrey's hotspot neighbourhoods where the priciest homes are sold",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "publishedAt": "2026-08-17T15:29:00+01:00",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T07:00:00+01:00",
         "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkIycjZCY0xJOVRxTUlxRWV6OGRvSjJiTnV1MEhWd3k2S1pkS21hQ1Q3ZUNaMmZrbURUcHpiUUJ0LUk5REVIYmtQSk91dldaQWxHLVFFQlBkbHJYanlMRFp1ZFFMUG1YZ3hzdEY1RkIyWjhpNFJCYzd0dEcxNXo4eU1UMnNMazlwdnJSd9IBkgFBVV95cUxNdV90T1N2UzhwcUl3TXF5cDcybXlBZ29UZi1Ma1FjNDdGQ0xNS3NwODdrQ0g3ZzBRZmNuUnE4c0hOMmR3cllrekNpeEFENUNheGNFTllOVWw5R3F5eko4Qm1BbzlUbWZqN3lJUWprQ2FsMmgxYXRZQ2FMRVdhYlFPWVRwQmlHekI2QVp2T0VtOHVrZw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVXVqOXJ0bkZJemhTaVRqNUozT0JFcV9OU1NtWkhDOFZzXzlpSVVYeFRhWkF4amVBaTEyVzZody1vX0U1UjZTRTgyelFCTmZxODkzYVR6OVpTTUp5TXRsOXVVQlZGM3oybVVKVjAybGxFMlhIMXdicnlLR0s5dTJyQ1ZoMzdycm5yYVVGYkh4N0J0d1ZvWXhVa21rSU9GdUNr0gGmAUFVX3lxTE1EYW5HQlpqb1Z5U3ZyaTM0QjVpWTVHeW1TOU9fQ0JIMWFFdHZBcDhGd21TaEhya2RhY3lORXlmZzJrZHJ0VGN2UkxobjZjSlQ1YzZ2QVhaeTVDOEQzUmVjcFp6WExRY0pHVi1kWTM1cUNYNnYyUFIxVnBGSVV4RnRCN2hmZk1hMWNuOFhKN1Faajl4d3BMekdfbGtKdzhEd3pCVzVxOGc?oc=5"
       },
       {
         "title": "Costain selected to upgrade Thames Water treatment sites",
@@ -630,23 +630,31 @@
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdGpYaF9URkgycldqYk9hV3U1X3ZaVVU5dFhJMlR1TzJTbVhBZ3FrWFQ4bVFINlQ0Y3ZzN0t6MDF3eGhQQzRPNlpRdWVaQlhHb205cTZWa3NsTE1yWXpwNThLWEtkSDJiR3ZZVXczY2NUQlRjNDNUeVdoOGM0TTh2LVRrMzN4M0pTM09FVFFBbHktalUx?oc=5"
       },
       {
-        "title": "South of England Men's Community Game announces expanded Representative Programme",
-        "summary": "",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T15:00:00+01:00",
-        "source": "The Home of Rugby League",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1h1QjZqc3gzZlQwVEJTRmxiazc4NjAwRF9JeVBYZ25VSEozN2FKLUsxUEpZOFNCVkJaWnJVR20wME1PenQyNVVlYnBXSmdtdVNYMWU5bC1DMVJCX3R6cGF6LWZYSU9zOWRGbzN1UEh1MzNCekdGVTd4ZExRYlFsQTNoSmZidktBQ1VzMFlDV29XREh0NFJ5ZElVc3RBbjRCb25XRmhZVFQ2ZVdTMDdIQjZMbGl5X29qQkpJSTgtc3hIZw?oc=5"
-      },
-      {
         "title": "Thames Water awards £150m wastewater upgrade work to Costain",
         "summary": "",
         "meta": "Mon 17 Aug",
         "publishedAt": "2026-08-17T13:05:10+01:00",
         "source": "Smart Water Magazine",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeTk0ZUxwVlFvTElGRkU5LUJ0VzdKWVhER0dYUzZCRHZ6dDZpeVJZUFNKZGNwaXY0RmVKRWxzVVlKOUs4djBlY2lGUTZTYlpWZm8tNVBTRVpoYjBhaVpaZ0RHS3NWb00xdExFblQySEJUeGJqSy1GXzZBX2IwVC1ZRThWZ255c1VYT0RmbHRydHI1dTJSb2N4T0hyYnZ2ZWEzeDZ0QkFFWGdiR2o1T25TYlFZeTFiYVk?oc=5"
+      },
+      {
+        "title": "Join us for the Cobham skatepark opening JAM",
+        "summary": "",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T16:17:38+01:00",
+        "source": "Elmbridge Borough Council",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkNRSGg0RFhLY251ZUZzSmE1SGwtMTctS3N4TUFma1c3enQ5Y2w4dnZXaVZKTzZXYmNFMHEzRzVGY0dncTRBdTVhUUtsQzZQaHU0YTdTS3dwUmhNY3hyTC1Bd0V4dDdJYTRpbXZQNzRLelQtSk4xYXVuQzF5SkZkVw?oc=5"
       }
     ],
     "UK news": [
+      {
+        "title": "Police officers killed in wrong-way crash mourned in 'unimaginable loss'",
+        "summary": "PC Matthew Blades, PC Tom Clough and five young people were killed when a car drove the wrong way on the A66 and struck the police vehicle.",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T07:23:43+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cdj0j8enpzyo?at_medium=RSS&at_campaign=rss"
+      },
       {
         "title": "Mayors to get powers to overrule local councils on planning decisions",
         "summary": "Housing minister Matthew Pennycook said the change was \"essential\" for helping mayors \"effectively deliver new homes\".",
@@ -656,12 +664,12 @@
         "url": "https://www.bbc.co.uk/news/articles/cy8m0gxexl4o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Two police officers among seven killed in wrong-way car crash",
-        "summary": "PC Matthew Blades and PC Tom Clough died after a car driving the wrong way down the A66 near Middlesbrough collided with a police vehicle.",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T20:28:14+01:00",
+        "title": "Trump says Canada wants 'benefits' of being US state as Carney says countries in trade war",
+        "summary": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war.",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T06:46:43+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx272ly3g00o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Struggling households need more help with bills, energy industry says",
@@ -678,14 +686,6 @@
         "publishedAt": "2026-08-23T03:37:03+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cy8e8jx0x5wo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Canadian PM calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
-        "summary": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war.",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T21:10:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Cyber attack shut down small power plant",
@@ -802,6 +802,14 @@
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
       },
       {
+        "title": "Anthropic: the largest IPO ever?",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T07:18:35+01:00",
+        "source": "The Week",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54TlBvOFdMMi1lajBPcENVRGRKRmEtUTVkcnRzV2xNX0pEZTlKRWFIbVNQNldBV3lUUzl5djVUNTJGQy04eXVKcTcxT3dPM1dOWmlTZEtrMGhhWjRtbU9rVEtqY2NIckZGYm9EaUtKZXFhYV9ZQkd1WVdmTQ?oc=5"
+      },
+      {
         "title": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
         "summary": "",
         "meta": "Fri 21 Aug",
@@ -816,42 +824,47 @@
         "publishedAt": "2026-08-23T02:28:29+01:00",
         "source": "inc.com",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZ2hVS3doNVlVVGdCeEQ0UnM1R0dhTGdXX2hxZ2xodVdONkk1TXZCNXVUUF9TRER1MFQ5RERTd0JNbHc5cnVXZ0tOUWx2Nlo2Y0duOVJQRVQ3WkQzWHRLUFdBMDFMNm5zTkJWVGRsQjh6NlQwbXlTTkFvUU9ZcW5kOGRudDZRU3luUUdPR3BaREpaQ3oxZzFrZ3dJWF81NVRRWjNLekhoS2s0TmI5VWFMcnpCemJwRUdSSkozeVNpcF8xcmhsbXZvM2tlTQ?oc=5"
-      },
-      {
-        "title": "A free AI model is winning over developers. And nobody knows whose servers it runs on",
-        "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T22:53:48+01:00",
-        "source": "The Next Web",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZFNFNjZCZ2d4eVY0aDFlbEpXSS1BS1dKaDdTalhmRTdPUnljWDBiVWhRRDJ6Qm10ekNpWC02N3hobm5ydlBlX2d3QzhMaDByeVRfa053bTRwVU10QTJ6QnVhaXN5RFBzbFVXclhVM1plczE0V2lzRWd3eHZYV2ZNQWdSTWVaOGc?oc=5"
       }
     ],
     "Career": [
       {
-        "title": "Head of Product",
-        "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Tue 11 Aug",
+        "title": "Product Lead",
+        "summary": "Street Group · Manchester, England, United Kingdom",
+        "meta": "3+ WFH days · Posted Mon 17 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442775538",
+        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
         "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Foundation Partners",
-        "location": "London, England, United Kingdom",
+        "workArrangement": "3-wfh-days",
+        "company": "Street Group",
+        "location": "Manchester, England, United Kingdom",
         "countryFocus": "UK",
-        "postedAt": "2026-08-11"
+        "postedAt": "2026-08-17"
       },
       {
         "title": "Head of Product",
-        "summary": "PlannerPal · United Kingdom",
-        "meta": "Remote · Posted Sun 26 Jul",
+        "summary": "LocalStack · London, England, United Kingdom",
+        "meta": "Remote · Posted Fri 7 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-plannerpal-4442376111",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-localstack-4450702579",
         "contentType": "job",
         "workArrangement": "remote",
-        "company": "PlannerPal",
-        "location": "United Kingdom",
+        "company": "LocalStack",
+        "location": "London, England, United Kingdom",
         "countryFocus": "UK",
-        "postedAt": "2026-07-26"
+        "postedAt": "2026-08-07"
+      },
+      {
+        "title": "Senior Product Manager",
+        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
+        "meta": "3+ WFH days · Posted Fri 31 Jul",
+        "source": "LinkedIn",
+        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
+        "contentType": "job",
+        "workArrangement": "3-wfh-days",
+        "company": "Quinyx",
+        "location": "Stockholm, Stockholm County, Sweden",
+        "countryFocus": "Sweden",
+        "postedAt": "2026-07-31"
       },
       {
         "title": "Senior Data Product Manager",
