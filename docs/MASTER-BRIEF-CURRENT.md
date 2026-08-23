@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.2, 23 August 2026. Owner: Pete.
+Version 2.3, 23 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -13,6 +13,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
 - Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 - Birthday and anniversary cards use pale pink, blue, lavender, mint, and gold-tinted surfaces that belong with the approved light theme. Keep the colourful balloon artwork, dark readable text, and a minimum 4.5:1 text contrast.
+- Birthday and anniversary cards, including the Home birthday reminder, use the same visible cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
 
 ## Boundaries
 
@@ -78,6 +79,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep each destination working and independent.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
+- Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - AI and Career never show article photography. Use stylish, decorative code-native section icons while preserving the current article and job content, metadata, and real links.
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
@@ -89,7 +91,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
 - Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
-- Dida uses lime green, not orange, for containers, borders, code-native icons, badges, and highlights only. Use neutral dark ink for headings and neutral blue-grey for body text. Split it into three clear zones: This week, Seasonal missions, and Reference library, with at least 28 px between zones on mobile and 36 px on Chromebook/desktop. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
+- Dida uses blue and neutral backgrounds, borders, and card surfaces. Reserve lime green for occasional accents such as icons, small badges, labels, links, and interactive highlights. Use neutral dark ink for headings and neutral blue-grey for body text. Remove the shared outer Dida container so This week, Seasonal missions, and Reference library appear as three independent boxes, with at least 28 px between zones on mobile and 36 px on Chromebook/desktop. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 
 ## Morning Story target

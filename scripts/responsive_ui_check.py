@@ -71,6 +71,7 @@ def check_viewport(browser, name: str) -> None:
         if calendar_cards.count() != 4:
             raise AssertionError(f"{name}: expected four Calendar summary cards")
         calendar_cards.first.hover()
+        page.wait_for_timeout(250)
         calendar_shadow = calendar_cards.first.evaluate("el => getComputedStyle(el).boxShadow")
         if calendar_shadow == "none":
             raise AssertionError(f"{name}: Calendar card has no edge-glow hover")
@@ -233,6 +234,25 @@ def check_viewport(browser, name: str) -> None:
             page.wait_for_function(
                 f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}'"
             )
+            page.locator('[data-view-target="news"]').click()
+            news_groups = page.evaluate(
+                """
+                () => [...document.querySelectorAll('#newsTabGroups .tab-group')].map(group => ({
+                  title: group.querySelector('h3')?.textContent.trim() || '',
+                  top: group.getBoundingClientRect().top,
+                  bottom: group.getBoundingClientRect().bottom
+                }))
+                """
+            )
+            news_titles = [group["title"] for group in news_groups]
+            try:
+                local_index = news_titles.index("Local News")
+                uk_index = news_titles.index("UK News")
+            except ValueError:
+                failures.append(f"{profile} News is missing Local News or UK News: {news_titles}")
+            else:
+                if uk_index != local_index + 1 or news_groups[uk_index]["top"] < news_groups[local_index]["bottom"]:
+                    failures.append(f"{profile} UK News is not directly underneath Local News: {news_groups}")
             page.locator('[data-view-target="birthdays"]').click()
             page.locator('.birthday-card').first.wait_for(state="visible", timeout=10000)
             birthday = page.evaluate(
@@ -284,6 +304,23 @@ def check_viewport(browser, name: str) -> None:
                 failures.append(f"{profile} birthday card text contrast is below 4.5:1: {birthday}")
             if birthday["balloonCards"] < 1:
                 failures.append(f"{profile} birthday cards lost their balloon artwork")
+            birthday_card = page.locator('.birthday-card').first
+            birthday_card.hover()
+            page.wait_for_timeout(250)
+            birthday_shadow = birthday_card.evaluate("el => getComputedStyle(el).boxShadow")
+            birthday_transform = birthday_card.evaluate("el => getComputedStyle(el).transform")
+            if birthday_shadow != calendar_shadow or birthday_transform != "none":
+                failures.append(
+                    f"{profile} Birthday hover does not match Calendar glow or moves: "
+                    f"shadow={birthday_shadow}, transform={birthday_transform}"
+                )
+            page.locator('[data-view-target="home"]').click()
+            home_birthday = page.locator('.home-reminder-card.birthday')
+            home_birthday.hover()
+            page.wait_for_timeout(250)
+            home_birthday_shadow = home_birthday.evaluate("el => getComputedStyle(el).boxShadow")
+            if home_birthday_shadow != calendar_shadow:
+                failures.append(f"{profile} Home Birthday hover does not match Calendar glow")
 
         page.locator('.profile-switch [data-profile="pete"]').click()
         page.wait_for_function(
@@ -308,10 +345,14 @@ def check_viewport(browser, name: str) -> None:
               ];
               return {
                 accent: getComputedStyle(document.querySelector('.dida-shell')).getPropertyValue('--dida').trim(),
+                shellBackground: getComputedStyle(document.querySelector('.dida-shell')).backgroundImage,
+                shellShadow: getComputedStyle(document.querySelector('.dida-shell')).boxShadow,
                 heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
                 quickIcons: document.querySelectorAll('.dida-quick-icon').length,
                 foldIcons: document.querySelectorAll('.dida-fold-icon').length,
                 zones: document.querySelectorAll('.dida-zone').length,
+                zoneBackgrounds: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).backgroundImage),
+                zoneBorders: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).borderColor),
                 zoneGaps: zoneRects.slice(1).map((rect, index) => rect.top - zoneRects[index].bottom),
                 sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
                 folds: document.querySelectorAll('.dida-fold').length,
@@ -333,6 +374,10 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"Dida fun icon treatment is incomplete: {dida}")
         if dida["zones"] != 3 or dida["sectionLinks"] != 3:
             failures.append(f"Dida is not split into three clear sections: {dida}")
+        if dida["shellBackground"] != "none" or dida["shellShadow"] != "none":
+            failures.append(f"Dida still has a shared outer container: {dida}")
+        if any("rgb(103, 154, 0)" in value for value in dida["zoneBackgrounds"] + dida["zoneBorders"]):
+            failures.append(f"Dida zone surfaces still use green: {dida}")
         minimum_zone_gap = 28 if name == "mobile" else 36
         if len(dida["zoneGaps"]) != 2 or any(
             gap < minimum_zone_gap - 1 for gap in dida["zoneGaps"]

@@ -26,6 +26,20 @@ LAT = 51.400
 LON = -0.366
 FACT_CATALOG = DATA / "fact-catalog.json"
 FACT_HISTORY = DATA / "fact-history.json"
+NON_MENS_ARSENAL = re.compile(
+    r"\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|"
+    r"youth|women(?:['’]?s)?|girls?)\b",
+    re.I,
+)
+
+
+def first_team_arsenal_news(items: list[dict]) -> list[dict]:
+    return [
+        item for item in items
+        if not NON_MENS_ARSENAL.search(
+            " ".join(str(item.get(key, "")) for key in ("title", "summary", "source"))
+        )
+    ]
 
 WEATHER_LABELS = {
     0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Cloudy",
@@ -873,6 +887,7 @@ def parse_fixture(event: dict, competition: str) -> dict | None:
 
 
 def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: list[dict]) -> dict:
+    news = first_team_arsenal_news(news)
     competitions = {
         "eng.1": "Premier League", "eng.fa": "FA Cup", "eng.league_cup": "League Cup",
         "uefa.champions": "Champions League", "eng.charity": "Community Shield",
@@ -921,7 +936,7 @@ def build_profiles() -> dict[str, dict]:
         google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 12, 3),
         limit=10,
     )
-    arsenal_news = google_news('Arsenal FC when:3d', 8, 3)
+    arsenal_news = first_team_arsenal_news(google_news('Arsenal FC when:3d', 8, 3))
     transfers = arsenal_transfer_updates()
     transfer_rumours = arsenal_transfer_rumours()
     arsenal = arsenal_snapshot(arsenal_news, transfers, transfer_rumours)

@@ -26,6 +26,11 @@ TRUSTED_RESULT_SOURCES = {
 }
 
 RESULT_SIGNAL = re.compile(r"\b(?:report|result|highlights?|full[- ]time|full time)\b", re.I)
+NON_MENS_ARSENAL = re.compile(
+    r"\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|"
+    r"youth|women(?:['’]?s)?|girls?)\b",
+    re.I,
+)
 SCORELINE = re.compile(
     r"(?P<home>[A-Za-z][A-Za-z0-9 .&'’\-]{1,48}?)\s+"
     r"(?P<hscore>\d{1,2})\s*[-–—]\s*(?P<ascore>\d{1,2})\s+"
@@ -40,6 +45,13 @@ def betting_item(item: dict) -> bool:
         " ".join(str(item.get(k, "")) for k in ("title", "summary", "source")).lower(),
     ) + " "
     return any(term in text for term in BETTING_TERMS)
+
+
+def non_mens_item(item: dict) -> bool:
+    text = " ".join(
+        str(item.get(key, "")) for key in ("title", "summary", "source")
+    )
+    return bool(NON_MENS_ARSENAL.search(text))
 
 
 def verified_como_result() -> dict:
@@ -75,6 +87,23 @@ def verified_community_shield_result() -> dict:
         "source": "Sky Sports / Arsenal.com",
         "image": "https://e0.365dm.com/26/08/1600x900/skysports-arsenal-man-city_7323378.jpg?20260816170357",
         "imageAlt": "Arsenal players after the 3-0 Community Shield win over Manchester City",
+    }
+
+
+def verified_coventry_result() -> dict:
+    return {
+        "date": "2026-08-21T20:00:00+01:00",
+        "dateLabel": "Fri 21 Aug",
+        "kickoff": "8pm",
+        "opponent": "Coventry City",
+        "competition": "Premier League",
+        "homeAway": "home",
+        "completed": True,
+        "arsenalScore": 3,
+        "opponentScore": 0,
+        "result": "3–0",
+        "url": "https://www.skysports.com/football/arsenal-vs-coventry-city/report/559444",
+        "source": "Sky Sports",
     }
 
 
@@ -114,6 +143,9 @@ def infer_competition(texts: list[str]) -> str:
 
 
 def parse_news_result(item: dict) -> dict | None:
+    if non_mens_item(item):
+        return None
+
     source = str(item.get("source") or "").strip().lower()
     if source not in TRUSTED_RESULT_SOURCES:
         return None
@@ -253,13 +285,36 @@ def use_fixture_details(candidate: dict, arsenal: dict) -> dict:
     return candidate
 
 
+def news_supports_result(candidate: dict, payload: dict) -> bool:
+    candidate_dt = parse_dt(candidate.get("date"))
+    if not candidate_dt:
+        return False
+    sections = payload.get("sections") or {}
+    arsenal = payload.get("arsenal") or {}
+    for source_items in (sections.get("Arsenal news") or [], arsenal.get("news") or []):
+        for item in source_items:
+            parsed = parse_news_result(item)
+            parsed_dt = parse_dt(parsed.get("date")) if parsed else None
+            if not parsed or not parsed_dt or parsed_dt.date() != candidate_dt.date():
+                continue
+            if (
+                str(parsed.get("opponent") or "").lower()
+                == str(candidate.get("opponent") or "").lower()
+                and parsed.get("arsenalScore") == candidate.get("arsenalScore")
+                and parsed.get("opponentScore") == candidate.get("opponentScore")
+            ):
+                return True
+    return False
+
+
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    fallback = (
-        verified_community_shield_result()
-        if NOW >= datetime.fromisoformat("2026-08-16T15:00:00+01:00")
-        else verified_como_result()
-    )
+    if NOW >= datetime.fromisoformat("2026-08-21T20:00:00+01:00"):
+        fallback = verified_coventry_result()
+    elif NOW >= datetime.fromisoformat("2026-08-16T15:00:00+01:00"):
+        fallback = verified_community_shield_result()
+    else:
+        fallback = verified_como_result()
     news_result = newest_news_result(payload)
     if news_result:
         news_result = use_fixture_details(news_result, arsenal)
@@ -269,7 +324,8 @@ def apply_last_result_fallback(payload: dict) -> None:
         candidates.append(news_result)
 
     last = arsenal.get("lastResult")
-    if last:
+    last_from_news = str((last or {}).get("source") or "").strip().lower() == "arsenal.com"
+    if last and (not last_from_news or news_supports_result(last, payload)):
         candidates.append(last)
 
     def candidate_dt(item: dict) -> datetime:
@@ -318,22 +374,36 @@ def main() -> None:
     payload = json.loads(path.read_text(encoding="utf-8"))
 
     sections = payload.setdefault("sections", {})
-    arsenal_news = [x for x in sections.get("Arsenal news", []) if not betting_item(x)]
+    arsenal_news = [
+        x for x in sections.get("Arsenal news", [])
+        if not betting_item(x) and not non_mens_item(x)
+    ]
     sections["Arsenal news"] = arsenal_news
 
     interests = []
+    replaced_arsenal_interest = False
     for item in payload.get("interests", []):
-        if str(item.get("section", "")).lower() == "arsenal" and betting_item(item):
+        if (
+            str(item.get("section", "")).lower() == "arsenal"
+            and (betting_item(item) or non_mens_item(item))
+        ):
+            if arsenal_news and not replaced_arsenal_interest:
+                replacement = dict(arsenal_news[0])
+                replacement["section"] = "Arsenal"
+                interests.append(replacement)
+                replaced_arsenal_interest = True
             continue
         interests.append(item)
     if not any(str(x.get("section", "")).lower() == "arsenal" for x in interests) and arsenal_news:
         replacement = dict(arsenal_news[0])
         replacement["section"] = "Arsenal"
         interests.append(replacement)
+    interest_order = {"ai": 0, "arsenal": 1, "local": 2}
+    interests.sort(key=lambda item: interest_order.get(str(item.get("section", "")).lower(), 99))
     payload["interests"] = interests
 
     arsenal = payload.setdefault("arsenal", {})
-    arsenal["news"] = [x for x in arsenal.get("news", arsenal_news) if not betting_item(x)][:5]
+    arsenal["news"] = arsenal_news[:5]
     arsenal["transfers"] = sorted([
         x for x in arsenal.get("transfers", [])
         if not betting_item(x) and x.get("contentType") == "transfer-update" and x.get("trust")

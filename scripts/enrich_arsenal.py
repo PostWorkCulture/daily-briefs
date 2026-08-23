@@ -30,6 +30,11 @@ MEN_COMPETITIONS = {
     "League Cup", "Champions League", "UEFA Champions League", "Europa League",
     "UEFA Europa League", "Friendly Match", "Friendly Matches", "Club Friendly",
 }
+NON_MENS_ARSENAL = re.compile(
+    r"\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|"
+    r"youth|women(?:['’]?s)?|girls?)\b",
+    re.I,
+)
 
 
 def get_json(url: str) -> dict:
@@ -61,7 +66,7 @@ def clean_arsenal_news(items: list[dict]) -> list[dict]:
         blob = " ".join([
             str(item.get("title", "")), str(item.get("summary", "")), str(item.get("source", ""))
         ])
-        if contains_betting(blob):
+        if contains_betting(blob) or NON_MENS_ARSENAL.search(blob):
             continue
         clean.append(item)
     return clean

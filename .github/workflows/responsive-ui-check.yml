@@ -9,6 +9,8 @@ on:
       - 'css/**'
       - 'js/**'
       - 'scripts/responsive_ui_check.py'
+      - 'scripts/finalize_arsenal.py'
+      - 'tests/test_finalize_arsenal.py'
       - '.github/workflows/responsive-ui-check.yml'
   workflow_dispatch:
   push:
@@ -20,6 +22,8 @@ on:
       - 'css/**'
       - 'js/**'
       - 'scripts/responsive_ui_check.py'
+      - 'scripts/finalize_arsenal.py'
+      - 'tests/test_finalize_arsenal.py'
       - '.github/workflows/responsive-ui-check.yml'
 
 jobs:
@@ -44,6 +48,9 @@ jobs:
         run: |
           python -m http.server 4173 >/tmp/daily-briefs-http.log 2>&1 &
           sleep 2
+
+      - name: Check Arsenal first-team result guard
+        run: python tests/test_finalize_arsenal.py
 
       - name: Check mobile and desktop layouts
         run: python scripts/responsive_ui_check.py

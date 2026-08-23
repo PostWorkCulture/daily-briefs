@@ -140,6 +140,8 @@
         @media(max-width:899px){#primaryNav{grid-template-columns:repeat(7,minmax(0,1fr))}}
         .birthday-list{display:grid;gap:18px}.occasion-group{display:grid;gap:10px}.occasion-group h3{margin:0 0 2px;font-size:15px;color:var(--accent2)}
         .birthday-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(178,53,111,.18);border-radius:20px;background:linear-gradient(145deg,#fff8fc,#f3effa 58%,#e9f4fa);box-shadow:0 12px 28px rgba(73,79,111,.10)}
+        .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
+        .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(0,124,184,.62)!important;box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10)!important;transform:none!important;outline:none}
         .birthday-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(178,53,111,.07);font-size:22px}
         .birthday-card strong{display:block;font-size:16px}.birthday-card small{display:block;color:#52697e;margin-top:3px}.birthday-card b{color:#9a2f61;font-size:14px;text-align:right}
         .birthday-empty{padding:24px;border:1px dashed var(--line);border-radius:20px;color:var(--muted)}
@@ -153,7 +155,7 @@
   function occasionCard(item) {
     const days = dayDiff(new Date(), item.nextDate);
     const milestone = milestoneText(item);
-    return `<article class="birthday-card"><div class="birthday-avatar">${iconFor(item)}</div><div><strong>${esc(item.name)}</strong><small>${typeLabel(item)} · ${fmtDate(item.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></div><b>${days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : `${days} days`}</b></article>`;
+    return `<article class="birthday-card" tabindex="0"><div class="birthday-avatar">${iconFor(item)}</div><div><strong>${esc(item.name)}</strong><small>${typeLabel(item)} · ${fmtDate(item.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></div><b>${days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : `${days} days`}</b></article>`;
   }
 
   function renderBirthdayTab() {
@@ -210,7 +212,7 @@
       const milestone = milestoneText(nextOccasion);
       cards.push({
         date: nextOccasion.nextDate,
-        html: `<article class="home-reminder-card birthday"><div class="home-reminder-top"><span class="home-reminder-icon">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`
+        html: `<article class="home-reminder-card birthday" tabindex="0"><div class="home-reminder-top"><span class="home-reminder-icon">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`
       });
     }
 
