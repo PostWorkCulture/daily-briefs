@@ -56,34 +56,34 @@
   }
 
   const milestones=[
-    ['Social & emotional',['Takes turns and follows simple rules in games','Enjoys singing, dancing or putting on a little performance','Helps with simple home jobs such as matching socks or clearing the table']],
-    ['Language & communication',['Tells a short story with connected events','Answers simple questions about a story','Keeps a conversation going for several back-and-forth turns','Recognises or makes simple rhymes']],
-    ['Thinking & learning',['Counts to 10','Recognises some written numbers 1–5','Uses time words such as yesterday, tomorrow, morning and night','Stays with an activity for roughly 5–10 minutes','Writes some letters in her name','Recognises some letters']],
-    ['Movement & independence',['Buttons some buttons','Hops on one foot','Manages more dressing, tidying and mealtime jobs with less help']]
+    ['Social & emotional',['Builds stronger friendships and practises fairness in games','Shows growing independence while still looking for reassurance','Talks about experiences, thoughts and feelings in more detail']],
+    ['Language & communication',['Retells a story with a beginning, middle and end','Follows instructions with two or three steps','Uses a wider vocabulary and asks more detailed questions','Reads and writes some familiar words']],
+    ['Thinking & learning',['Counts beyond 20 and starts counting backwards from 10','Recognises written numbers and connects them to quantities','Uses objects or drawings for simple adding and taking away','Understands days, routines and before or after','Stays with a chosen activity for longer stretches','Plans, tests and changes an idea when solving a problem']],
+    ['Movement & independence',['Skips, hops and balances with more control','Throws and catches a ball more consistently','Uses pencils and scissors with growing control','Manages dressing, shoes, her school bag and simple home jobs with reminders']]
   ];
   const teach=[
-    ['Name power','Practise letters in Dida’s name, then spot them on signs, packets and books.'],
-    ['Sound detective','Choose one sound and hunt for things that begin with it.'],
-    ['Number sense','Count real things to 10 and beyond, then ask what happens if you add one.'],
-    ['Story thinking','After a story ask what happened first, next and what might happen tomorrow.'],
-    ['Time words','Use yesterday, today, tomorrow, morning and evening naturally.'],
-    ['Independence','Let her choose clothes, clear her plate, pair socks and help pack a small bag.']
+    ['Reading power','Read a short page together, then spot one new word on signs, packets or books.'],
+    ['Sound detective','Choose one sound or letter blend and hunt for words that use it.'],
+    ['Number sense','Count real things beyond 20, compare groups, then add or take away one or two.'],
+    ['Story thinking','After a story ask for the beginning, middle, ending and one different ending.'],
+    ['Time and plans','Use a simple calendar to talk about yesterday, today, tomorrow and the week ahead.'],
+    ['Independence','Let her choose clothes, clear her plate, pair socks and help pack her school bag.']
   ];
   const games=[
     ['Story Builder','Take turns adding a sentence to a ridiculous story. Add a colour, animal or place each turn.'],
     ['Rhyming Hunt','Pick a word and race to invent three rhymes, including silly ones.'],
-    ['Number Treasure Hunt','Hide number cards 1–10, find them, order them and match each with that many objects.'],
-    ['Hopscotch Missions','Hop to a number, balance on one foot, then answer a tiny counting challenge.'],
-    ['Mini Shop','Price toys with 1–5 pretend coins and take turns as shopkeeper and customer.'],
+    ['Number Treasure Hunt','Hide number cards 1–20, find them, order them and make simple pairs that total 10.'],
+    ['Hopscotch Missions','Hop to a number, balance on one foot, then solve a tiny adding or taking-away challenge.'],
+    ['Mini Shop','Price toys with pretend 1p, 2p, 5p and 10p coins and take turns as shopkeeper and customer.'],
     ['Sock Match Sprint','Match clean socks and sort them by person, colour or size.']
   ];
   const powers=[['Kindness','Notice when someone needs help and think of one thing she can do.'],['Confidence','Order food, ask a shop assistant a question or introduce herself.'],['Problem solving','Before stepping in, ask “What could we try first?”'],['Body confidence','Run, climb, balance, dance, throw, catch and get muddy.'],['Creativity','Keep drawing, building, pretending and making up absurd stories.'],['Family memory','Take one photo or tiny recording each month of a new obsession.']];
   const seasons={
     winter:['Winter missions','Cosy projects + outdoor mini-adventures',['Torch-light treasure hunt','Paper snowflakes and count the points','Build the tallest blanket den','Puddle or frost photo hunt','Make a warm-drink café and practise taking orders']],
-    spring:['Spring missions','Growing, noticing and getting outside',['Plant something fast-growing','Five-colour spring scavenger hunt','Build a bug hotel','Draw a map to a playground','Make leaf or flower patterns']],
-    summer:['Late-summer missions','Make the most of long, light days',['Garden mini-Olympics: hop, throw, balance, sprint','Picnic alphabet hunt','Trace shadows with chalk and revisit them later','Freeze tiny toys in ice and plan a rescue','Make a five-stop nature treasure map']],
+    spring:['Spring missions','Growing, noticing and getting outside',['Plant something fast-growing','Six-colour spring scavenger hunt','Build a bug hotel','Draw a map to a playground','Make leaf or flower patterns']],
+    summer:['Late-summer missions','Make the most of long, light days',['Garden mini-Olympics: hop, throw, balance, sprint','Picnic alphabet hunt','Trace shadows with chalk and revisit them later','Freeze tiny toys in ice and plan a rescue','Make a six-stop nature treasure map']],
     autumn:['Autumn missions','Leaves, darker evenings and making weather',['Leaf colour hunt','Conker or acorn counting challenge','Torch-lit indoor obstacle course','Design a Halloween creature and invent its story','Bake something simple and count the ingredients']],
-    birthday:['Birthday runway · late November','Make turning five feel like an adventure',['Create a “5 things before I’m 5” list','Let Dida design one part of her birthday','Make a handprint “4” now and “5” on her birthday','Record a two-minute favourite-things interview','Build a birthday treasure hunt with five clues']],
+    birthday:['Birthday runway · late November','Make turning six feel like an adventure',['Create a “6 things before I’m 6” list','Let Dida design one part of her birthday','Make a handprint “5” now and “6” on her birthday','Record a two-minute favourite-things interview','Build a birthday treasure hunt with six clues']],
     christmas:['Christmas missions','Tiny traditions worth repeating',['Paper-chain countdown in number order','North Pole toy-delivery obstacle course','Invent a silly Christmas story','Do one kindness mission','Wrap an empty box together for folding and tape practice']]
   };
   function currentSeason(){const m=new Date().getMonth()+1;if(m===12||m<=2)return seasons.winter;if(m<=5)return seasons.spring;if(m<=8)return seasons.summer;return seasons.autumn}
@@ -98,8 +98,8 @@
     const gamesBody=`<div class="dida-reference">${games.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const powersBody=`<div class="dida-reference">${powers.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const quickCards=quick.map(x=>`<article class="dida-quick"><span class="dida-quick-icon">${didaIcon(x[0])}</span><div><small>${esc(x[1])}</small><h4>${esc(x[2])}</h4><p>${esc(x[3])}</p></div></article>`).join('');
-    const library=[fold('01','star','Five-year-old milestones','Grouped development markers for quick scanning.',milestoneBody),fold('02','letters','What to teach her now','Short real-life practice, not formal lessons.',teachBody),fold('03','dice','Games worth playing','Quick games that quietly practise useful skills.',gamesBody),fold('04','bolt','Little superpowers','Useful things to build across the year.',powersBody)].join('');
-    return `<section class="dida-hero"><div class="dida-hero-icons" aria-hidden="true"><span>${didaIcon('star')}</span><span>${didaIcon('puzzle')}</span><span>${didaIcon('pencil')}</span></div><div class="dida-kicker">DIDA · AGE 5</div><h2>What matters now</h2><p>Confidence, conversation, early literacy and numbers, movement, turn-taking and doing more everyday things independently.</p><div class="dida-source">Milestones are a guide, not a test. <a href="https://www.cdc.gov/act-early/milestones/5-years.html" target="_blank" rel="noopener">CDC age-5 guide</a></div></section><nav class="dida-section-nav" aria-label="Dida sections"><a href="#dida-week">This week</a><a href="#dida-seasonal">Seasonal</a><a href="#dida-library">Reference</a></nav><section class="dida-zone dida-week-zone" id="dida-week">${zoneHead('01','START HERE','This week','Three focused ideas. Do one, not everything.')}<div class="dida-quick-grid">${quickCards}</div></section><section class="dida-zone dida-seasonal-zone" id="dida-seasonal">${zoneHead('02','EXPLORE & PLAY','Seasonal missions','Timely activities grouped into one clear place.')}${seasonal}</section><section class="dida-zone dida-library-zone" id="dida-library">${zoneHead('03','KEEP FOR LATER','Reference library','Open only the guide you need. Everything else stays out of the way.')}<div class="dida-library">${library}</div></section>`;
+    const library=[fold('01','star','Age-six development','Grouped development markers for quick scanning.',milestoneBody),fold('02','letters','What to teach her now','Short real-life practice, not formal lessons.',teachBody),fold('03','dice','Games worth playing','Quick games that quietly practise useful skills.',gamesBody),fold('04','bolt','Little superpowers','Useful things to build across the year.',powersBody)].join('');
+    return `<section class="dida-hero"><div class="dida-hero-icons" aria-hidden="true"><span>${didaIcon('star')}</span><span>${didaIcon('puzzle')}</span><span>${didaIcon('pencil')}</span></div><div class="dida-kicker">DIDA · AGE 6</div><h2>What matters now</h2><p>Growing independence, stronger friendships, reading and number confidence, movement, creativity and learning how to solve problems.</p><div class="dida-source">Development varies from child to child. <a href="https://stacks.cdc.gov/view/cdc/155268" target="_blank" rel="noopener">CDC ages 6–8 guide</a></div></section><nav class="dida-section-nav" aria-label="Dida sections"><a href="#dida-week">This week</a><a href="#dida-seasonal">Seasonal</a><a href="#dida-library">Reference</a></nav><section class="dida-zone dida-week-zone" id="dida-week">${zoneHead('01','START HERE','This week','Three focused ideas. Do one, not everything.')}<div class="dida-quick-grid">${quickCards}</div></section><section class="dida-zone dida-seasonal-zone" id="dida-seasonal">${zoneHead('02','EXPLORE & PLAY','Seasonal missions','Timely activities grouped into one clear place.')}${seasonal}</section><section class="dida-zone dida-library-zone" id="dida-library">${zoneHead('03','KEEP FOR LATER','Reference library','Open only the guide you need. Everything else stays out of the way.')}<div class="dida-library">${library}</div></section>`;
   }
 
   function renderProfileViews(data,profile){

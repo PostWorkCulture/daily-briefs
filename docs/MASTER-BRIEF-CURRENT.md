@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.1, 23 August 2026. Owner: Pete.
+Version 2.2, 23 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -88,7 +88,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
-- Dida uses lime green, not orange, with playful code-native icons and colour. Split it into three clear zones: This week, Seasonal missions, and Reference library. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
+- Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
+- Dida uses lime green, not orange, for containers, borders, code-native icons, badges, and highlights only. Use neutral dark ink for headings and neutral blue-grey for body text. Split it into three clear zones: This week, Seasonal missions, and Reference library, with at least 28 px between zones on mobile and 36 px on Chromebook/desktop. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 
 ## Morning Story target

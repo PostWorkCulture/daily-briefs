@@ -292,17 +292,38 @@ def check_viewport(browser, name: str) -> None:
         page.locator('[data-view-target="dida"]').click()
         page.locator('.dida-hero').wait_for(state="visible", timeout=10000)
         dida = page.evaluate(
-            """
-            () => ({
-              accent: getComputedStyle(document.querySelector('.dida-shell')).getPropertyValue('--dida').trim(),
-              heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
-              quickIcons: document.querySelectorAll('.dida-quick-icon').length,
-              foldIcons: document.querySelectorAll('.dida-fold-icon').length,
-              zones: document.querySelectorAll('.dida-zone').length,
-              sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
-              folds: document.querySelectorAll('.dida-fold').length,
-              openFolds: document.querySelectorAll('.dida-fold[open]').length
-            })
+            r"""
+            () => {
+              const zoneRects = [...document.querySelectorAll('.dida-zone')]
+                .map(zone => zone.getBoundingClientRect());
+              const textSelectors = [
+                '.dida-hero p',
+                '.dida-source',
+                '.dida-zone-head p',
+                '.dida-quick p',
+                '.dida-season-title p',
+                '.dida-season-item',
+                '.dida-fold summary p',
+                '.dida-ref-card p'
+              ];
+              return {
+                accent: getComputedStyle(document.querySelector('.dida-shell')).getPropertyValue('--dida').trim(),
+                heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
+                quickIcons: document.querySelectorAll('.dida-quick-icon').length,
+                foldIcons: document.querySelectorAll('.dida-fold-icon').length,
+                zones: document.querySelectorAll('.dida-zone').length,
+                zoneGaps: zoneRects.slice(1).map((rect, index) => rect.top - zoneRects[index].bottom),
+                sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
+                folds: document.querySelectorAll('.dida-fold').length,
+                openFolds: document.querySelectorAll('.dida-fold[open]').length,
+                bodyTextColours: textSelectors.map(selector => ({
+                  selector,
+                  colour: getComputedStyle(document.querySelector(selector)).color
+                })),
+                copy: document.querySelector('#didaContent').textContent,
+                sourceHref: document.querySelector('.dida-source a')?.href || ''
+              };
+            }
             """
         )
         dida_accent = dida["accent"].lower()
@@ -312,12 +333,32 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"Dida fun icon treatment is incomplete: {dida}")
         if dida["zones"] != 3 or dida["sectionLinks"] != 3:
             failures.append(f"Dida is not split into three clear sections: {dida}")
+        minimum_zone_gap = 28 if name == "mobile" else 36
+        if len(dida["zoneGaps"]) != 2 or any(
+            gap < minimum_zone_gap - 1 for gap in dida["zoneGaps"]
+        ):
+            failures.append(
+                f"Dida zone gaps are below {minimum_zone_gap}px: {dida['zoneGaps']}"
+            )
         if dida["folds"] != 4 or dida["openFolds"] != 0:
             failures.append(f"Dida reference library is not compact by default: {dida}")
+        expected_text_colour = "rgb(82, 105, 126)"
+        non_neutral_text = [
+            item for item in dida["bodyTextColours"]
+            if item["colour"] != expected_text_colour
+        ]
+        if non_neutral_text:
+            failures.append(f"Dida body text is not consistently neutral: {non_neutral_text}")
+        if "DIDA · AGE 6" not in dida["copy"] or "Age-six development" not in dida["copy"]:
+            failures.append("Dida did not switch fully to the age-six presentation")
+        if any(old_copy in dida["copy"] for old_copy in ("AGE 5", "Five-year-old", "turning five")):
+            failures.append("Dida still renders age-five wording")
+        if dida["sourceHref"] != "https://stacks.cdc.gov/view/cdc/155268":
+            failures.append(f"Dida age-six source changed or is not real: {dida['sourceHref']}")
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: greetings, light birthday cards, AI/Career icons, balloon and cannon nav marks, three-zone Dida layout, fixture, navigation, Calendar glow and Arsenal content are usable")
+        print(f"PASS {name}: greetings, light birthday cards, AI/Career icons, balloon and cannon nav marks, spaced age-six Dida zones with neutral text, fixture, navigation, Calendar glow and Arsenal content are usable")
     finally:
         page.close()
 
