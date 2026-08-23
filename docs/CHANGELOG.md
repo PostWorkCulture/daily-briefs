@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 23 August 2026: Light-theme Birthday cards
 
-Status: implemented on preview branch, awaiting publication approval
+Status: implemented; automated validation running
 
 - Requested change: Reject option D, retain the current approved light background, and improve the Birthday card backgrounds so they match it.
 - Approved scope: Birthday and anniversary list cards, the Home Birthday reminder card, Birthday balloon-card enhancement styles, cache keys, responsive regression coverage, master brief, and changelog.
@@ -13,7 +13,7 @@ Status: implemented on preview branch, awaiting publication approval
 - Readability rule: Birthday names, dates, countdowns, and reminder text must retain at least 4.5:1 contrast against every gradient stop.
 - Requirements protected: the approved light sky-blue and lavender app background, both profiles and greetings, Birthday navigation balloon, all Birthday data, every route, every unrelated view, and all content feeds.
 - Validation prepared: mobile and desktop checks now inspect Birthday cards for both Pete and Sofia, require light surfaces, require balloon artwork, and calculate text contrast against every rendered gradient stop.
-- Publication: no production branch, Pages deployment, or live route was changed.
+- Publication: approved on 23 August 2026; responsive and Pages workflows must pass before final validation.
 - Unexpected changes: none intended.
 - Master brief update: version 2.1 records the approved light Birthday-card rule.
 
