@@ -20,7 +20,7 @@ if (!document.querySelector('script[data-occasion-milestones]')) {
 // High-quality balloon artwork for birthday cards. Navigation keeps its single code-native balloon.
 if (!document.querySelector('script[data-hq-birthday-balloons]')) {
   const balloonScript = document.createElement('script');
-  balloonScript.src = 'js/hq-birthday-balloons.js?v=20260822c';
+  balloonScript.src = 'js/hq-birthday-balloons.js?v=20260823a';
   balloonScript.defer = true;
   balloonScript.dataset.hqBirthdayBalloons = '1';
   document.head.appendChild(balloonScript);

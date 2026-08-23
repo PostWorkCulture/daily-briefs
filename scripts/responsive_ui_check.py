@@ -228,6 +228,67 @@ def check_viewport(browser, name: str) -> None:
             if len({round(button["top"]) for button in buttons}) != 1:
                 failures.append(f"mobile nav is not a single horizontal row: {buttons}")
 
+        for profile in ("pete", "sofia"):
+            page.locator(f'[data-profile="{profile}"]').click()
+            page.wait_for_function(
+                f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}'"
+            )
+            page.locator('[data-view-target="birthdays"]').click()
+            page.locator('.birthday-card').first.wait_for(state="visible", timeout=10000)
+            birthday = page.evaluate(
+                r"""
+                () => {
+                  const parseRgb = value => value.match(/\d+(?:\.\d+)?/g)?.slice(0,3).map(Number) || [0,0,0];
+                  const stops = value => [...value.matchAll(/rgba?\(\s*(\d+)[,\s]+(\d+)[,\s]+(\d+)/g)]
+                    .map(match => match.slice(1,4).map(Number));
+                  const luminance = rgb => {
+                    const values = rgb.map(value => value / 255).map(
+                      value => value <= 0.03928 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4
+                    );
+                    return 0.2126 * values[0] + 0.7152 * values[1] + 0.0722 * values[2];
+                  };
+                  const contrast = (a, b) => {
+                    const values = [luminance(a), luminance(b)].sort((x, y) => y - x);
+                    return (values[0] + 0.05) / (values[1] + 0.05);
+                  };
+                  const inspect = card => {
+                    const backgroundStops = stops(getComputedStyle(card).backgroundImage);
+                    const textNodes = [card.querySelector('strong'), card.querySelector('small'), card.querySelector('b')].filter(Boolean);
+                    const ratios = textNodes.flatMap(node => backgroundStops.map(stop => contrast(parseRgb(getComputedStyle(node).color), stop)));
+                    return {
+                      backgroundStops,
+                      minimumContrast: ratios.length ? Math.min(...ratios) : 0
+                    };
+                  };
+                  const cards = [...document.querySelectorAll('.birthday-card')];
+                  const homeCard = document.querySelector('.home-reminder-card.birthday');
+                  return {
+                    cards: cards.map(inspect),
+                    homeCard: homeCard ? inspect(homeCard) : null,
+                    balloonCards: document.querySelectorAll('.birthday-card.hq-colour .hq-balloon').length
+                  };
+                }
+                """
+            )
+            if not birthday["cards"] or birthday["homeCard"] is None:
+                failures.append(f"{profile} birthday cards did not render")
+                continue
+            birthday_surfaces = birthday["cards"] + [birthday["homeCard"]]
+            if any(
+                not surface["backgroundStops"]
+                or min(sum(stop) for stop in surface["backgroundStops"]) < 620
+                for surface in birthday_surfaces
+            ):
+                failures.append(f"{profile} birthday cards are not using the light-theme surfaces: {birthday}")
+            if any(surface["minimumContrast"] < 4.5 for surface in birthday_surfaces):
+                failures.append(f"{profile} birthday card text contrast is below 4.5:1: {birthday}")
+            if birthday["balloonCards"] < 1:
+                failures.append(f"{profile} birthday cards lost their balloon artwork")
+
+        page.locator('[data-profile="pete"]').click()
+        page.wait_for_function(
+            "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
+        )
         page.locator('[data-view-target="dida"]').click()
         page.locator('.dida-hero').wait_for(state="visible", timeout=10000)
         dida = page.evaluate(
@@ -256,7 +317,7 @@ def check_viewport(browser, name: str) -> None:
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: greetings, AI/Career icons, balloon and cannon nav marks, three-zone Dida layout, fixture, navigation, Calendar glow and Arsenal content are usable")
+        print(f"PASS {name}: greetings, light birthday cards, AI/Career icons, balloon and cannon nav marks, three-zone Dida layout, fixture, navigation, Calendar glow and Arsenal content are usable")
     finally:
         page.close()
 

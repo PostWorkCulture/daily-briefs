@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.0, 22 August 2026. Owner: Pete.
+Version 2.1, 23 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -12,6 +12,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
 - Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
+- Birthday and anniversary cards use pale pink, blue, lavender, mint, and gold-tinted surfaces that belong with the approved light theme. Keep the colourful balloon artwork, dark readable text, and a minimum 4.5:1 text contrast.
 
 ## Boundaries
 

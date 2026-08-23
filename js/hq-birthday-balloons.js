@@ -1,13 +1,13 @@
 (() => {
   const palettes = [
-    ['#ff5f8f','#ff9f43','#ffd5df','linear-gradient(180deg,rgba(114,33,55,.95),rgba(38,16,23,.97))'],
-    ['#4a8dff','#42d4ff','#d8f1ff','linear-gradient(180deg,rgba(25,53,106,.95),rgba(14,23,43,.97))'],
-    ['#d64dff','#ff70cc','#f6d7ff','linear-gradient(180deg,rgba(87,31,104,.95),rgba(24,14,40,.97))'],
-    ['#00d3a7','#6fff73','#d8ffe7','linear-gradient(180deg,rgba(15,82,71,.95),rgba(13,31,33,.97))'],
-    ['#ffd548','#ff9a2f','#fff0be','linear-gradient(180deg,rgba(111,72,14,.95),rgba(43,24,11,.97))'],
-    ['#8b6dff','#ff66d1','#eadbff','linear-gradient(180deg,rgba(60,39,110,.95),rgba(24,18,45,.97))'],
-    ['#00c4ff','#00efd1','#d7fbff','linear-gradient(180deg,rgba(16,78,100,.95),rgba(11,29,37,.97))'],
-    ['#ff6d6d','#ff4fa3','#ffe0ea','linear-gradient(180deg,rgba(109,34,70,.95),rgba(40,15,32,.97))']
+    ['#ff5f8f','#ff9f43','#ffd5df','linear-gradient(145deg,#fff5f8,#f8e7ef 58%,#eef6ff)'],
+    ['#4a8dff','#42d4ff','#d8f1ff','linear-gradient(145deg,#f7faff,#edf4ff 58%,#e9f9ff)'],
+    ['#d64dff','#ff70cc','#f6d7ff','linear-gradient(145deg,#fff7ff,#f5f0ff 58%,#edf4ff)'],
+    ['#00d3a7','#6fff73','#d8ffe7','linear-gradient(145deg,#f6fffb,#eef9f5 58%,#edf8ff)'],
+    ['#ffd548','#ff9a2f','#fff0be','linear-gradient(145deg,#fffdf4,#fff7e5 58%,#f3f6ff)'],
+    ['#8b6dff','#ff66d1','#eadbff','linear-gradient(145deg,#fbf9ff,#f1edff 58%,#fceefa)'],
+    ['#00c4ff','#00efd1','#d7fbff','linear-gradient(145deg,#f5fdff,#e9f8fb 58%,#eef9f5)'],
+    ['#ff6d6d','#ff4fa3','#ffe0ea','linear-gradient(145deg,#fff7fa,#fae9f0 58%,#f3effa)']
   ];
 
   const known = {
@@ -46,7 +46,7 @@
     style.textContent=`
       .birthday-avatar.hq-balloon-avatar{width:72px;height:78px;border-radius:0;background:transparent;overflow:visible;display:grid;place-items:center}
       .hq-balloon{width:68px;height:82px;display:block;overflow:visible}.hq-balloon.compact{width:31px;height:39px}
-      .birthday-card.hq-colour{border-color:rgba(255,255,255,.13);box-shadow:0 14px 30px rgba(0,0,0,.2)}
+      .birthday-card.hq-colour{border-color:rgba(178,53,111,.18);box-shadow:0 12px 28px rgba(73,79,111,.10)}
       .home-reminder-card.birthday .home-reminder-icon.hq-balloon-home{width:34px;height:42px;background:transparent;overflow:visible}
       @media(max-width:560px){.birthday-avatar.hq-balloon-avatar{width:58px;height:66px}.hq-balloon{width:56px;height:68px}}
     `;
