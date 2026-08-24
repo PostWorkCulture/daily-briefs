@@ -2,6 +2,21 @@
 
 Newest entries go first.
 
+## 24 August 2026: Unified dark ink, neutral navigation, and solid pastel Coming up cards
+
+Status: implemented, awaiting preview approval
+
+- Requested change: remove the visible `Daily Briefs` text; use the `Hey Pete` dark ink for main copy throughout the brief; keep navigation neutral until hover; and give the Home `Coming up` cards solid pastel surfaces, with Halloween in orange.
+- Wordmark rule: the visible hero wordmark is removed. Browser titles, bookmark metadata, manifest identity, icons, and sharing metadata retain the Daily Briefs name.
+- Text rule: readable copy on light surfaces now uses `#142A3D`, matching the greeting. Coloured section titles and purposeful highlights remain. Text over dark photographic media remains light to preserve contrast.
+- Navigation rule: all navigation text and code-native icons use `#142A3D` at rest, including the active destination. The existing per-destination colours appear only on hover or keyboard focus.
+- Coming up rule: bin day uses pastel mint, clocks use pastel lavender, birthdays use pastel pink, and seasonal reminders use a dedicated solid pastel palette. Halloween uses pastel orange `#FFC27A`.
+- Validation prepared: mobile and desktop checks require no visible wordmark, consistent main-copy ink, neutral navigation at rest, colour on hover, solid Coming up surfaces, dark card text, and the dedicated Halloween orange mapping.
+- Requirements protected: solid blue canvas, Pete and Sofia profiles, Daily Brief bookmark identity, Birthday-tab pink treatment, Dida green titles and outlines, image-overlay contrast, navigation geometry, links, content, and data sources.
+- Unexpected changes: none intended.
+- Master brief update: version 2.6 records the approved wordmark, text, navigation, and Coming up card rules.
+- Publication: draft only. Do not merge or publish until Pete approves it.
+
 ## 24 August 2026: Solid blue canvas, white Dida cards, bright Birthday pink, and current Arsenal fixture
 
 Status: implemented, awaiting preview approval

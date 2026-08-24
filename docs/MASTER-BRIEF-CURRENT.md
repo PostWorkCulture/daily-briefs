@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.5, 24 August 2026. Owner: Pete.
+Version 2.6, 24 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -8,7 +8,11 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 
 ## Product
 
-Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, dark ink text, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve dark treatments for image-led media cards where a strong overlay protects readability. Preserve header styling during unrelated work.
+Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, the same dark `#142A3D` ink as the Home greeting for main copy on every light surface, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve light text for image-led media cards where a strong dark overlay is required for readability. Preserve header styling during unrelated work.
+
+- Do not show a visible `Daily Briefs` wordmark in page content. Retain the Daily Briefs browser title, bookmark, manifest, icon, and sharing metadata.
+- Primary navigation uses dark `#142A3D` text and icons at rest, including the active destination. Each destination's existing colour appears only on hover or keyboard focus.
+- Home `Coming up` cards use solid pastel surfaces with dark `#142A3D` text. Halloween uses pastel orange.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
 - Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Birthday navigation uses vivid bright pink. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
@@ -30,7 +34,7 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 - The Home greeting is `Hey Pete` for Pete and `Hey Sofia` for Sofia, without trailing punctuation.
 - Keep the greeting deliberately smaller than the previous headline: 36–52 px below 900 px and 52–68 px from 900 px upwards.
-- Place the `Daily Briefs` wordmark directly above the date, not in the sticky top bar.
+- Do not display the `Daily Briefs` wordmark above the date or in the sticky top bar.
 - Place the greeting slightly lower in the hero so it sits comfortably between the date and the Weather panel.
 
 ## Current structure

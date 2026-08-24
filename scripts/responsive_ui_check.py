@@ -25,6 +25,8 @@ ICON_PATHS = {
 def check_icon_metadata_files() -> None:
     expected_root = tuple(ICON_PATHS.values())
     root_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    if 'class="brand hero-brand"' in root_html:
+        raise AssertionError("visible Daily Briefs wordmark remains in the hero")
     for value in expected_root:
         if value not in root_html:
             raise AssertionError(f"root icon metadata is missing {value}")
@@ -44,6 +46,11 @@ def check_icon_metadata_files() -> None:
     }
     if manifest.get("name") != "Daily Briefs" or manifest_icons != expected_manifest_icons:
         raise AssertionError(f"bookmark manifest metadata is incorrect: {manifest}")
+
+    reminders = (ROOT / "js" / "home-reminders.js").read_text(encoding="utf-8")
+    theme = (ROOT / "css" / "light-theme.css").read_text(encoding="utf-8")
+    if "theme: 'halloween'" not in reminders or ".home-reminder-card.festive.halloween{background:#ffc27a}" not in theme:
+        raise AssertionError("Halloween does not have its dedicated solid pastel orange treatment")
 
 
 def check_viewport(browser, name: str) -> None:
@@ -248,10 +255,10 @@ def check_viewport(browser, name: str) -> None:
               const fact = document.querySelector('#sceneryFact');
               const image = document.querySelector('#sceneryCard');
               const greeting = document.querySelector('#greeting');
-              const heroBrand = document.querySelector('.hero .hero-brand');
               const date = document.querySelector('#briefDate');
               const nav = document.querySelector('#primaryNav');
               const buttons = [...nav.querySelectorAll('button')];
+              const reminderCards = [...document.querySelectorAll('#homeReminders .home-reminder-card')];
               return {
                 bodyRgb: rgb,
                 bodyBackgroundImage: bodyStyle.backgroundImage,
@@ -262,8 +269,31 @@ def check_viewport(browser, name: str) -> None:
                 factHref: fact?.getAttribute('href') || '',
                 factLabel: document.querySelector('#sceneryFactLabel')?.textContent?.trim() || '',
                 greetingMarginTop: parseFloat(getComputedStyle(greeting).marginTop),
-                heroBrandBeforeDate: Boolean(heroBrand && date && (heroBrand.compareDocumentPosition(date) & Node.DOCUMENT_POSITION_FOLLOWING)),
+                greetingColour: getComputedStyle(greeting).color,
+                dateColour: getComputedStyle(date).color,
+                heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
                 topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
+                navDefaultColours: buttons.map(button => getComputedStyle(button).color),
+                mainCopyColours: [
+                  '.section-kicker',
+                  '.forecast-day small',
+                  '.calendar-row p',
+                  '#sceneryFactText',
+                  '#nextFixtureCard .fixture-fact>b',
+                  '#nextFixtureCard .fixture-fact>small'
+                ].map(selector => ({
+                  selector,
+                  colour: document.querySelector(selector)
+                    ? getComputedStyle(document.querySelector(selector)).color
+                    : null
+                })),
+                reminderCards: reminderCards.map(card => ({
+                  classes: card.className,
+                  backgroundImage: getComputedStyle(card).backgroundImage,
+                  backgroundColour: getComputedStyle(card).backgroundColor,
+                  textColours: [...card.querySelectorAll('.home-reminder-top,strong,b,small')]
+                    .map(node => getComputedStyle(node).color)
+                })),
                 navAfter: getComputedStyle(nav, '::after').content,
                 buttonAfter: buttons.map(button => getComputedStyle(button, '::after').content),
                 navText: nav.textContent
@@ -292,14 +322,63 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"fact lead label changed: {visual['factLabel']}")
         if visual["greetingMarginTop"] < 16:
             failures.append(f"greeting was not moved down: margin {visual['greetingMarginTop']}")
-        if not visual["heroBrandBeforeDate"] or visual["topbarBrandCount"] != 0:
-            failures.append("Daily Briefs wordmark was not moved directly above the date")
+        if visual["heroBrandCount"] != 0 or visual["topbarBrandCount"] != 0:
+            failures.append("visible Daily Briefs wordmark remains")
+        approved_ink = "rgb(20, 42, 61)"
+        if visual["greetingColour"] != approved_ink or visual["dateColour"] != approved_ink:
+            failures.append(
+                f"greeting or date does not use the approved ink: {visual}"
+            )
+        if any(colour != approved_ink for colour in visual["navDefaultColours"]):
+            failures.append(f"navigation is coloured before hover: {visual['navDefaultColours']}")
+        wrong_main_copy = [
+            item for item in visual["mainCopyColours"]
+            if item["colour"] != approved_ink
+        ]
+        if wrong_main_copy:
+            failures.append(f"main copy does not match the greeting ink: {wrong_main_copy}")
+        if len(visual["reminderCards"]) < 4:
+            failures.append(f"Coming up cards are missing: {visual['reminderCards']}")
+        expected_reminder_colours = {
+            "bin": "rgb(216, 242, 230)",
+            "clocks": "rgb(228, 225, 248)",
+            "new-year": "rgb(214, 234, 248)",
+            "midsummer": "rgb(255, 240, 168)",
+            "halloween": "rgb(255, 194, 122)",
+            "bonfire": "rgb(255, 214, 176)",
+            "christmas": "rgb(244, 213, 221)",
+            "birthday": "rgb(255, 193, 220)",
+        }
+        for required_theme in ("bin", "clocks", "birthday"):
+            if not any(required_theme in card["classes"].split() for card in visual["reminderCards"]):
+                failures.append(f"Coming up {required_theme} card is missing: {visual['reminderCards']}")
+        festive_cards = [card for card in visual["reminderCards"] if "festive" in card["classes"].split()]
+        if len(festive_cards) != 1:
+            failures.append(f"Coming up festive card is missing or duplicated: {visual['reminderCards']}")
+        for theme, expected_colour in expected_reminder_colours.items():
+            matching = [card for card in visual["reminderCards"] if theme in card["classes"].split()]
+            if not matching:
+                continue
+            if len(matching) != 1:
+                failures.append(f"Coming up {theme} card is duplicated: {visual['reminderCards']}")
+                continue
+            card = matching[0]
+            if card["backgroundImage"] != "none" or card["backgroundColour"] != expected_colour:
+                failures.append(f"Coming up {theme} card is not solid pastel {expected_colour}: {card}")
+            if any(colour != approved_ink for colour in card["textColours"]):
+                failures.append(f"Coming up {theme} text does not match the greeting: {card}")
         if visual["navAfter"] not in {"none", '""'}:
             failures.append(f"navigation star layer remains: {visual['navAfter']}")
         if any(content not in {"none", '""'} for content in visual["buttonAfter"]):
             failures.append(f"navigation button sparkle remains: {visual['buttonAfter']}")
         if any(mark in visual["navText"] for mark in ("✦", "★", "☆", "✨")):
             failures.append("navigation still contains a star or sparkle glyph")
+
+        news_nav = page.locator('[data-view-target="news"]')
+        news_nav.hover()
+        page.wait_for_timeout(250)
+        if news_nav.evaluate("el => getComputedStyle(el).color") != "rgb(38, 91, 187)":
+            failures.append("News navigation colour does not appear on hover")
 
         if result["pageScrollWidth"] > result["viewportWidth"] + 1:
             failures.append(
@@ -367,6 +446,14 @@ def check_viewport(browser, name: str) -> None:
                 """
             )
             news_titles = [group["title"] for group in news_groups]
+            news_copy_colours = page.evaluate(
+                """
+                () => [...document.querySelectorAll('#newsTabGroups .tab-story h4,#newsTabGroups .tab-story p,#newsTabGroups .tab-story .meta')]
+                  .map(node => getComputedStyle(node).color)
+                """
+            )
+            if any(colour != approved_ink for colour in news_copy_colours):
+                failures.append(f"{profile} News copy does not match the greeting ink: {news_copy_colours}")
             try:
                 local_index = news_titles.index("Local News")
                 uk_index = news_titles.index("UK News")
@@ -395,10 +482,13 @@ def check_viewport(browser, name: str) -> None:
                   };
                   const inspect = card => {
                     const backgroundStops = stops(getComputedStyle(card).backgroundImage);
+                    const backgroundColour = parseRgb(getComputedStyle(card).backgroundColor);
+                    const surfaces = backgroundStops.length ? backgroundStops : [backgroundColour];
                     const textNodes = [card.querySelector('strong'), card.querySelector('small'), card.querySelector('b')].filter(Boolean);
-                    const ratios = textNodes.flatMap(node => backgroundStops.map(stop => contrast(parseRgb(getComputedStyle(node).color), stop)));
+                    const ratios = textNodes.flatMap(node => surfaces.map(stop => contrast(parseRgb(getComputedStyle(node).color), stop)));
                     return {
                       backgroundStops,
+                      backgroundColour,
                       minimumContrast: ratios.length ? Math.min(...ratios) : 0
                     };
                   };
@@ -417,16 +507,18 @@ def check_viewport(browser, name: str) -> None:
             if not birthday["cards"] or birthday["homeCard"] is None:
                 failures.append(f"{profile} birthday cards did not render")
                 continue
-            birthday_surfaces = birthday["cards"] + [birthday["homeCard"]]
             if any(
                 not surface["backgroundStops"]
                 or not any(
                     stop[0] >= 245 and stop[1] <= 190 and stop[2] >= 180
                     for stop in surface["backgroundStops"]
                 )
-                for surface in birthday_surfaces
+                for surface in birthday["cards"]
             ):
                 failures.append(f"{profile} birthday cards are not using bright pink surfaces: {birthday}")
+            if birthday["homeCard"]["backgroundStops"] or birthday["homeCard"]["backgroundColour"] != [255, 193, 220]:
+                failures.append(f"{profile} Home birthday reminder is not solid pastel pink: {birthday}")
+            birthday_surfaces = birthday["cards"] + [birthday["homeCard"]]
             if any(surface["minimumContrast"] < 4.5 for surface in birthday_surfaces):
                 failures.append(f"{profile} birthday card text contrast is below 4.5:1: {birthday}")
             if birthday["balloonCards"] < 1:
@@ -525,7 +617,7 @@ def check_viewport(browser, name: str) -> None:
             )
         if dida["folds"] != 4 or dida["openFolds"] != 0:
             failures.append(f"Dida reference library is not compact by default: {dida}")
-        expected_text_colour = "rgb(82, 105, 126)"
+        expected_text_colour = "rgb(20, 42, 61)"
         non_neutral_text = [
             item for item in dida["bodyTextColours"]
             if item["colour"] != expected_text_colour
