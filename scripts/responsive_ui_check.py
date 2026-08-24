@@ -304,6 +304,7 @@ def check_viewport(browser, name: str) -> None:
                   '#sceneryPanel .section-head h2',
                   '.tonight-block > .section-head h2'
                 ].map(selector => getComputedStyle(document.querySelector(selector)).color),
+                weatherTitleColour: getComputedStyle(document.querySelector('#weatherPanel .section-head h2')).color,
                 heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
                 topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
                 navDefaultColours: buttons.map(button => getComputedStyle(button).color),
@@ -368,6 +369,8 @@ def check_viewport(browser, name: str) -> None:
             )
         if any(colour != "rgb(255, 255, 255)" for colour in visual["canvasTitleColours"]):
             failures.append(f"titles on the blue canvas are not white: {visual['canvasTitleColours']}")
+        if visual["weatherTitleColour"] != approved_ink:
+            failures.append(f"Weather title is not readable on its light card: {visual['weatherTitleColour']}")
         if any(colour != approved_ink for colour in visual["navDefaultColours"]):
             failures.append(f"navigation is coloured before hover: {visual['navDefaultColours']}")
         wrong_main_copy = [
