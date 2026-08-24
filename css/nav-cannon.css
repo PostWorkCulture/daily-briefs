@@ -3,4 +3,4 @@
 .bottom-nav .nav-cannon{display:block;width:32px;height:20px;margin:0 auto;overflow:visible;color:currentColor;filter:drop-shadow(0 0 6px rgba(255,84,67,.58))}
 .bottom-nav .nav-cannon .cannon-barrel{fill:currentColor;stroke:none}
 .bottom-nav .nav-cannon .cannon-wheel{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.bottom-nav button[data-view-target="arsenal"].active .nav-cannon,.bottom-nav button[data-view-target="arsenal"]:hover .nav-cannon{filter:drop-shadow(0 0 7px rgba(255,84,67,1)) drop-shadow(0 0 14px rgba(255,84,67,.5))}
+.bottom-nav button[data-view-target="arsenal"]:hover .nav-cannon,.bottom-nav button[data-view-target="arsenal"]:focus-visible .nav-cannon{filter:drop-shadow(0 0 7px rgba(255,84,67,1)) drop-shadow(0 0 14px rgba(255,84,67,.5))}

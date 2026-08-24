@@ -1,31 +1,36 @@
 /* Light, high-readability theme approved 22 August 2026. */
-:root{--bg:#78b7e0;--panel:#f9fcff;--panel2:#edf5fa;--line:rgba(27,65,95,.15);--text:#142a3d;--muted:#60758a;--accent:#0878b8;--accent2:#08679d;--warm:#98610b;--shadow:0 16px 42px rgba(52,83,108,.13)}
+:root{--bg:#78b7e0;--panel:#f9fcff;--panel2:#edf5fa;--line:rgba(27,65,95,.15);--text:#142a3d;--muted:#142a3d;--accent:#0878b8;--accent2:#08679d;--warm:#98610b;--shadow:0 16px 42px rgba(52,83,108,.13)}
 html{background:var(--bg)}
 body{color:var(--text);background:var(--bg)}
 .topbar{background:var(--bg)}
-.profile-topbar{justify-content:flex-end}.hero-brand{margin:0 0 9px;font-size:16px;line-height:1}.hero-brand+.eyebrow{margin-top:0}
+.profile-topbar{justify-content:flex-end}
 .profile-avatar{background:linear-gradient(145deg,#d9edf8,#eee6fb);color:#173b54;border-color:rgba(31,99,140,.18)}
 .profile-switch{background:rgba(249,252,255,.78);box-shadow:0 9px 24px rgba(56,88,114,.08)}
-.profile-switch button{color:#60758a}.profile-switch button.active{background:#d7eaf5;color:#173a55;box-shadow:0 7px 18px rgba(48,95,130,.12)}
-.hero{padding:32px 0 6px}.hero h1{margin:17px 0 4px;color:#142a3d}
-.section-kicker{color:#657b8f}.section-head h2,#view-home .section-head h2{color:#173650!important}
+.profile-switch button{color:var(--text)}.profile-switch button.active{background:#d7eaf5;color:var(--text);box-shadow:0 7px 18px rgba(48,95,130,.12)}
+.hero{padding:32px 0 6px}.hero h1{margin:17px 0 4px;color:#fff}.eyebrow{color:var(--text)}
+.section-kicker{color:var(--text)}.section-head h2{color:#173650}
+#homeRemindersSection .section-head h2,#calendarSection .section-head h2,#sceneryPanel .section-head h2,.tonight-block>.section-head h2,#view-news .section-head h2,#view-news .tab-group h3,#view-ai .section-head h2,#view-career .section-head h2,.birthday-panel .section-head h2,.occasion-month h3{color:#fff!important}
+#weatherPanel .section-head h2{color:var(--text)!important}
 .status-card,.list-card,.content-group,.interest-card,.calendar-list{background:rgba(249,252,255,.88);border-color:var(--line);box-shadow:var(--shadow)}
 .list-row,.calendar-row{border-color:rgba(27,65,95,.11)}
-.list-row p,.calendar-row p,.interest-card p{color:#60758a}
+.list-row p,.calendar-row p,.interest-card p{color:var(--text)}
 .calendar-summary button{background:linear-gradient(180deg,#fbfdff,#eaf3f8);color:#173650;border-color:var(--line)}
-.calendar-summary button:hover,.calendar-summary button:focus-visible{border-color:rgba(0,124,184,.62);background:linear-gradient(180deg,#fff,#e4f2f9);box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10)}
+.calendar-summary button:hover,.calendar-summary button:focus-visible{border-color:rgba(0,124,184,.88);background:linear-gradient(180deg,#fff,#e4f2f9);box-shadow:inset 0 0 0 2px rgba(39,147,199,.16),0 0 0 3px rgba(255,255,255,.45),0 0 20px rgba(23,128,183,.40),0 0 38px rgba(57,135,255,.22)}
 .weather-block{background:linear-gradient(145deg,rgba(250,253,255,.97),rgba(226,241,249,.96));border-color:rgba(38,104,143,.18)}
 .weather-svg{stroke:#176c98;filter:drop-shadow(0 5px 13px rgba(38,126,168,.16))}
 .forecast-day{background:rgba(255,255,255,.62);border-color:rgba(36,94,128,.14)}
 .forecast-day.today{background:linear-gradient(180deg,#dff3fb,#f8fcff);border-color:rgba(14,121,171,.28)}
-.forecast-day span{color:#176c98}.forecast-day small{color:#506b80}.forecast-day .fd-rain{color:#607b8e!important}.forecast-day .fd-rain span{color:#607b8e!important}.forecast-day .fd-rain b{color:#315e78!important}
-.uk-yesterday{border-top-color:rgba(27,65,95,.12)}.uk-yesterday-title strong{color:#26455b}.uk-yesterday-title span{color:#657b8f}
-.home-reminder-card{background:linear-gradient(180deg,#fbfdff,#eaf3f8);box-shadow:0 11px 26px rgba(58,89,113,.10)}
-.home-reminder-card.bin{background:linear-gradient(180deg,#e1f5ed,#f8fcfa)}.home-reminder-card.bin .home-reminder-icon{background:#ccebdc;color:#24694e}.home-reminder-card.bin b{color:#24694e}
-.home-reminder-card.clocks{background:linear-gradient(180deg,#e8ecfb,#fafbff)}
-.home-reminder-card.christmas{background:linear-gradient(180deg,#f8e9ee,#fffafb)}.home-reminder-card.christmas .home-reminder-icon{background:#f4dfe6;color:#8a4059}.home-reminder-card.christmas b{color:#8a4059}
+.forecast-day span{color:#176c98}.forecast-day small{color:var(--text)}.forecast-day .fd-rain,.forecast-day .fd-rain span,.forecast-day .fd-rain b{color:var(--text)!important}
+.uk-yesterday{border-top-color:rgba(27,65,95,.12)}.uk-yesterday-title strong,.uk-yesterday-title span{color:var(--text)}
+.home-reminder-card{background:#dbeaf6;color:var(--text);box-shadow:0 11px 26px rgba(58,89,113,.10)}
+.home-reminder-card .home-reminder-top,.home-reminder-card b,.home-reminder-card small{color:var(--text)}
+.home-reminder-card.bin{background:#d8f2e6}.home-reminder-card.bin .home-reminder-icon{background:#bce4d1;color:#24694e}.home-reminder-card.bin b{color:var(--text)}
+.home-reminder-card.clocks{background:#e4e1f8}
+.home-reminder-card.festive.new-year{background:#d6eaf8}.home-reminder-card.festive.midsummer{background:#fff0a8}.home-reminder-card.festive.halloween{background:#ffc27a}.home-reminder-card.festive.bonfire{background:#ffd6b0}.home-reminder-card.festive.christmas{background:#f4d5dd}
+.home-reminder-card.festive .home-reminder-icon{background:rgba(255,255,255,.48);color:var(--text)}
+#homeReminders .home-reminder-card.birthday{background:#ffc1dc!important}
 .tab-story{background:linear-gradient(180deg,#fbfdff,#edf5fa);border-color:var(--line);box-shadow:0 10px 25px rgba(50,82,108,.08)}
-.tab-story .meta{color:#667c90}.tab-story p{color:#5b7286}
+.tab-story .meta,.tab-story p{color:var(--text)}
 .section-story-icon{background:rgba(255,255,255,.72);box-shadow:inset 0 0 17px rgba(42,94,126,.04)}
 .section-story-icon-ai{color:#8d36aa;background:#f4e7f8}.section-story-icon-career{color:#7b5900;background:#fff4cd}
 .arsenal-panel{background:radial-gradient(circle at 90% 0,rgba(239,49,62,.10),transparent 30rem),linear-gradient(145deg,#fffafa,#f5eef1);border-color:rgba(198,42,49,.22)}
@@ -34,18 +39,21 @@ body{color:var(--text);background:var(--bg)}
 .match-card span,.table-card span,.arsenal-news-item span{color:#b4303d}
 .arsenal-transfer-sources a{color:#8c2a34}.arsenal-transfer-item span{color:#a82f39}.arsenal-rumour-item{background:linear-gradient(145deg,#fff8df,#fff)}
 .scenery-fact{display:block;margin:0 0 12px;text-decoration:none;color:inherit;background:linear-gradient(145deg,#fff,#e6f3f9);border-color:rgba(29,96,133,.17);box-shadow:0 10px 28px rgba(54,87,111,.08)}
-.scenery-fact p{color:#1d3b50}.scenery-fact small{display:block;margin-top:9px;color:#60798d;font-size:9px;font-weight:750}.scenery-fact:hover,.scenery-fact:focus-visible{border-color:rgba(8,120,184,.48);box-shadow:0 0 0 1px rgba(8,120,184,.07),0 13px 31px rgba(51,91,118,.13)}
+.scenery-fact p{color:var(--text)}.scenery-fact small{display:block;margin-top:9px;color:var(--text);font-size:9px;font-weight:750}
 .dida-shell{--dida:#00823b;--dida2:#00823b;color:#142a3d;background:transparent;border:0;border-radius:0;box-shadow:none;padding:0}
-.dida-hero{background:#fff;border-color:rgba(0,130,59,.48);box-shadow:0 12px 30px rgba(52,83,108,.11)}
-.dida-hero h2,.dida-zone-head h3,.dida-quick h4,.dida-season h4,.dida-fold summary h4,.dida-ref-card h5{color:var(--dida)}
-.dida-hero p{color:#52697e}.dida-source{color:#52697e}.dida-source a{color:#0878b8}
-.dida-icon,.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon,.dida-season-title>span,.dida-season-item .dida-icon,.dida-plus{color:#29445a}
-.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon,.dida-season-title>span{background:#fff;border-color:rgba(0,130,59,.38);box-shadow:0 7px 18px rgba(52,83,108,.09)}
-.dida-section-nav a{background:#fff;border-color:rgba(0,130,59,.48);color:var(--dida)}
-.dida-section-nav a:hover,.dida-section-nav a:focus-visible{border-color:rgba(0,130,59,.76);color:var(--dida);box-shadow:0 0 16px rgba(0,130,59,.16)}
+.dida-zone-head h3,.dida-quick h4,.dida-season h4,.dida-fold summary h4,.dida-ref-card h5{color:var(--dida)}
+.dida-source{color:var(--text)}.dida-source a{color:#0878b8}
+.dida-icon,.dida-quick-icon,.dida-fold-icon,.dida-season-title>span,.dida-season-item .dida-icon,.dida-plus{color:#29445a}
+.dida-quick-icon,.dida-fold-icon,.dida-season-title>span{background:#fff;border-color:rgba(0,130,59,.38);box-shadow:0 7px 18px rgba(52,83,108,.09)}
 .dida-zone,.dida-week-zone,.dida-seasonal-zone,.dida-library-zone{background:#fff;border-color:rgba(0,130,59,.48);box-shadow:0 14px 34px rgba(52,83,108,.12)}
-.dida-hero,.dida-zone{transition:border-color .18s,box-shadow .18s;transform:none!important}.dida-hero:hover,.dida-hero:focus-within,.dida-zone:hover,.dida-zone:focus-within,#view-career .tab-story:hover,#view-career .tab-story:focus-visible{border-color:rgba(0,124,184,.62);box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10);transform:none!important}
-.dida-zone-head{border-bottom-color:rgba(0,130,59,.34)}.dida-zone-head p{color:#52697e}.dida-zone-number,.dida-num{background:#fff;border-color:rgba(0,130,59,.48);color:#29445a}.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card{background:#fff;border-color:rgba(0,130,59,.38)}
-.dida-quick p,.dida-season-title p,.dida-fold summary p,.dida-ref-card li,.dida-ref-card p,.dida-season-item{color:#52697e}
+.dida-zone-head{border-bottom-color:rgba(0,130,59,.34)}.dida-num{background:#fff;border-color:rgba(0,130,59,.48);color:#29445a}.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card{background:#fff;border-color:rgba(0,130,59,.38)}
+.dida-quick p,.dida-season-title p,.dida-fold summary p,.dida-ref-card li,.dida-ref-card p,.dida-season-item{color:var(--text)}
+#nextFixtureCard .fixture-fact>b{color:var(--text)!important}#nextFixtureCard .fixture-fact>small{color:var(--text)!important}
 .bottom-nav .nav-cannon,.bottom-nav .nav-balloon{filter:none}
+/* A clear, stationary hover language across the brief. Purposeful Arsenal red and TV gold remain section-specific. */
+.calendar-summary button,.tab-story,.home-reminder-card,.dida-zone,.scenery-fact,.scenery-card,.uk-extreme,.list-row,.interest-card{transition:border-color .18s,box-shadow .18s,background .18s;transform:none!important}
+.tab-story:hover,.tab-story:focus-visible,.home-reminder-card:hover,.home-reminder-card:focus-within,.dida-zone:hover,.dida-zone:focus-within,.scenery-fact:hover,.scenery-fact:focus-visible,.scenery-card:hover,.scenery-card:focus-visible,.uk-extreme:hover,.uk-extreme:focus-within,.list-row:hover,.list-row:focus-visible,.interest-card:hover,.interest-card:focus-visible{border-color:rgba(0,124,184,.88)!important;box-shadow:inset 0 0 0 2px rgba(39,147,199,.16),0 0 0 3px rgba(255,255,255,.45),0 0 20px rgba(23,128,183,.40),0 0 38px rgba(57,135,255,.22)!important;transform:none!important;outline:none}
+.match-card:hover,.match-card:focus-within,.table-card:hover,.table-card:focus-within,.arsenal-news-item:hover,.arsenal-news-item:focus-visible,.arsenal-transfer-item:hover,.arsenal-transfer-item:focus-visible,#lastResultCard.has-match-image:hover,#nextFixtureCard.fixture-detail-card:hover{border-color:rgba(255,84,67,.94);box-shadow:inset 0 0 0 2px rgba(255,130,118,.18),0 0 0 3px rgba(255,255,255,.38),0 0 20px rgba(255,84,67,.46),0 0 38px rgba(239,49,62,.24);transform:none!important}
+.tonight-block .watch-card.artwork:hover,.tonight-block .watch-card.artwork:focus-visible{border-color:#ffd477;box-shadow:inset 0 0 0 2px rgba(255,212,119,.18),inset 0 -76px 86px rgba(3,8,15,.30),0 0 20px rgba(255,212,119,.44),0 0 38px rgba(255,212,119,.22);transform:none!important;outline:none}
+@media(min-width:700px){.home-reminders-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.home-reminder-card{min-height:132px;padding:12px 13px;border-radius:18px}.home-reminder-card strong{margin-top:9px;font-size:17px}.home-reminder-card b{font-size:12px}.home-reminder-card small{margin-top:5px;font-size:10px}.home-reminder-icon{width:25px;height:25px}}
 @media(min-width:900px){.hero{padding:48px 0 14px}.hero h1{margin:22px 0 4px}}

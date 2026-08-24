@@ -2,6 +2,25 @@
 
 Newest entries go first.
 
+## 24 August 2026: Compact reminders, stronger hover feedback, simplified Dida, and month-grouped Birthday cards
+
+Status: validated and approved for publication
+
+- Requested changes: remove the visible `Daily Briefs` text; use consistent dark ink for main copy; make the Home greeting and blue-canvas titles white; remove the Around the world subtitle; keep navigation neutral until hover and prevent it disappearing temporarily on mobile; give Home `Coming up` cards solid pastel surfaces with Halloween in orange; fit all four reminders on one Chromebook row; strengthen hover feedback consistently; remove Dida's top section and extra header copy; and simplify Birthday into white cards grouped by month.
+- Wordmark rule: the visible hero wordmark is removed. Browser titles, bookmark metadata, manifest identity, icons, and sharing metadata retain the Daily Briefs name.
+- Text rule: readable copy on light surfaces uses `#142A3D`. The Home greeting and titles sitting directly on the blue canvas use white; titles inside light cards retain a contrasting dark or purposeful accent. Text over dark photographic media remains light to preserve contrast. The old `Rare facts · wild places` subtitle is removed.
+- Navigation rule: all navigation text and code-native icons use `#142A3D` at rest, including the active destination. The existing per-destination colours appear only on hover or keyboard focus.
+- Mobile navigation stability: destination changes scroll to the new view immediately on mobile instead of starting a smooth-scroll compositor transition. The fixed bar uses an opaque surface, safe-area-aware bottom position, forced visibility, and a higher stable stacking level.
+- Coming up rule: bin day uses pastel mint, clocks use pastel lavender, birthdays use pastel pink, and seasonal reminders use a dedicated solid pastel palette. Halloween uses pastel orange `#FFC27A`. At Chromebook widths, the four cards use a shorter four-column row.
+- Hover rule: Calendar, News, AI, Career, Coming up, Birthday, Dida, Weather, and Around the world cards use one stronger stationary cyan glow. Arsenal retains an equally visible red treatment, TV artwork retains gold, and navigation keeps its destination colour.
+- Dida rule: the hero and duplicate mini-navigation are removed. The three independent boxes remain, and each header now contains only `This week`, `Seasonal missions`, or `Reference library`. The age-six source moves into Reference library without removing any ideas or guides.
+- Birthday rule: the destination is labelled `Birthday` once, the static-family subtitle and repeated generic heading are removed, cards are de-duplicated, grouped beneath white month headings, arranged on the same row per month when space allows, and use solid white surfaces. Bright pink remains for outlines, highlights, and navigation hover; the Home reminder remains pastel pink.
+- Validation passed: all eight unit tests and the responsive browser workflow cover the compact four-card reminder row, stronger hover parity, repeated mobile navigation switching and viewport visibility, simplified three-zone Dida structure, month grouping, solid-white Birthday cards, unique entries, responsive layouts, contrast, and all previously protected content.
+- Requirements protected: solid blue canvas, Pete and Sofia profiles, Daily Brief bookmark identity, colourful Birthday balloons, Dida green titles and outlines, image-overlay contrast, navigation geometry, links, content, and data sources.
+- Unexpected changes: none intended.
+- Master brief update: version 2.7 records the wordmark, text, navigation, compact Coming up, hover, Dida, and Birthday rules.
+- Publication: Pete approved publication on 24 August 2026.
+
 ## 24 August 2026: Solid blue canvas, white Dida cards, bright Birthday pink, and current Arsenal fixture
 
 Status: implemented, awaiting preview approval
