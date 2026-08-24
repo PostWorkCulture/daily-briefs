@@ -270,6 +270,7 @@ def check_viewport(browser, name: str) -> None:
             """
         )
 
+        page.locator('[data-view-target="home"]').click()
         failures = []
         visual = page.evaluate(
             r"""
