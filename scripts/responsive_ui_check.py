@@ -307,6 +307,7 @@ def check_viewport(browser, name: str) -> None:
                 weatherTitleColour: getComputedStyle(document.querySelector('#weatherPanel .section-head h2')).color,
                 heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
                 topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
+                navBackgroundColour: getComputedStyle(nav).backgroundColor,
                 navDefaultColours: buttons.map(button => getComputedStyle(button).color),
                 mainCopyColours: [
                   '.section-kicker',
@@ -371,8 +372,10 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"titles on the blue canvas are not white: {visual['canvasTitleColours']}")
         if visual["weatherTitleColour"] != approved_ink:
             failures.append(f"Weather title is not readable on its light card: {visual['weatherTitleColour']}")
-        if any(colour != approved_ink for colour in visual["navDefaultColours"]):
-            failures.append(f"navigation is coloured before hover: {visual['navDefaultColours']}")
+        if visual["navBackgroundColour"] != "rgb(52, 58, 64)":
+            failures.append(f"navigation is not solid dark grey: {visual['navBackgroundColour']}")
+        if any(colour != "rgb(255, 255, 255)" for colour in visual["navDefaultColours"]):
+            failures.append(f"navigation text and icons are not white before hover: {visual['navDefaultColours']}")
         wrong_main_copy = [
             item for item in visual["mainCopyColours"]
             if item["colour"] is not None and item["colour"] != approved_ink
@@ -424,11 +427,25 @@ def check_viewport(browser, name: str) -> None:
         if any(mark in visual["navText"] for mark in ("✦", "★", "☆", "✨")):
             failures.append("navigation still contains a star or sparkle glyph")
 
-        news_nav = page.locator('[data-view-target="news"]')
-        news_nav.hover()
-        page.wait_for_timeout(250)
-        if news_nav.evaluate("el => getComputedStyle(el).color") != "rgb(38, 91, 187)":
-            failures.append("News navigation colour does not appear on hover")
+        expected_nav_hover_colours = {
+            "home": "rgb(108, 232, 255)",
+            "news": "rgb(140, 185, 255)",
+            "arsenal": "rgb(255, 155, 160)",
+            "ai": "rgb(235, 170, 255)",
+            "career": "rgb(255, 211, 92)",
+            "dida": "rgb(155, 224, 83)",
+            "birthdays": "rgb(255, 150, 205)",
+        }
+        for target, expected_colour in expected_nav_hover_colours.items():
+            nav_button = page.locator(f'[data-view-target="{target}"]')
+            nav_button.hover()
+            page.wait_for_timeout(220)
+            actual_colour = nav_button.evaluate("el => getComputedStyle(el).color")
+            if actual_colour != expected_colour:
+                failures.append(
+                    f"{target} navigation colour does not appear on hover: "
+                    f"{actual_colour} != {expected_colour}"
+                )
 
         if result["pageScrollWidth"] > result["viewportWidth"] + 1:
             failures.append(
@@ -636,7 +653,7 @@ def check_viewport(browser, name: str) -> None:
                 for group in birthday["monthGroups"]
             ):
                 failures.append(f"{profile} same-month Birthday cards do not share a row: {birthday['monthGroups']}")
-            if birthday["navPink"] != "217,0,119" or birthday["headingColour"] != "rgb(255, 255, 255)":
+            if birthday["navPink"] != "255,150,205" or birthday["headingColour"] != "rgb(255, 255, 255)":
                 failures.append(f"{profile} Birthday heading is not white or navigation hover is not bright pink: {birthday}")
             birthday_card = page.locator('.birthday-card').first
             birthday_card.hover()
