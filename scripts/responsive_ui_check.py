@@ -11,6 +11,7 @@ VIEWPORTS = {
     "desktop": {"width": 1366, "height": 900},
 }
 ROOT = Path(__file__).resolve().parents[1]
+ARTIFACTS = ROOT / "artifacts"
 ICON_PATHS = {
     "shortcut": "assets/icons/daily-brief-favicon-v2.ico",
     "ico": "assets/icons/daily-brief-favicon-v2.ico",
@@ -216,6 +217,7 @@ def check_viewport(browser, name: str) -> None:
                 pageScrollWidth: document.documentElement.scrollWidth,
                 cardClientWidth: card.clientWidth,
                 cardScrollWidth: card.scrollWidth,
+                fixtureText: card.innerText,
                 offenders,
                 nav: {
                   width: navRect.width,
@@ -239,7 +241,10 @@ def check_viewport(browser, name: str) -> None:
         visual = page.evaluate(
             r"""
             () => {
-              const rgb = getComputedStyle(document.documentElement).backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
+              const htmlStyle = getComputedStyle(document.documentElement);
+              const bodyStyle = getComputedStyle(document.body);
+              const topbarStyle = getComputedStyle(document.querySelector('.topbar'));
+              const rgb = htmlStyle.backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
               const fact = document.querySelector('#sceneryFact');
               const image = document.querySelector('#sceneryCard');
               const greeting = document.querySelector('#greeting');
@@ -249,6 +254,9 @@ def check_viewport(browser, name: str) -> None:
               const buttons = [...nav.querySelectorAll('button')];
               return {
                 bodyRgb: rgb,
+                bodyBackgroundImage: bodyStyle.backgroundImage,
+                bodyBackgroundColor: bodyStyle.backgroundColor,
+                topbarBackgroundColor: topbarStyle.backgroundColor,
                 factBeforeImage: Boolean(fact.compareDocumentPosition(image) & Node.DOCUMENT_POSITION_FOLLOWING),
                 factText: document.querySelector('#sceneryFactText')?.textContent?.trim() || '',
                 factHref: fact?.getAttribute('href') || '',
@@ -263,8 +271,17 @@ def check_viewport(browser, name: str) -> None:
             }
             """
         )
-        if sum(visual["bodyRgb"]) < 560:
-            failures.append(f"theme is still too dark: {visual['bodyRgb']}")
+        if visual["bodyRgb"] != [120, 183, 224]:
+            failures.append(f"solid blue canvas changed: {visual['bodyRgb']}")
+        if visual["bodyBackgroundImage"] != "none":
+            failures.append(
+                f"page canvas is not solid: {visual['bodyBackgroundImage']}"
+            )
+        if visual["bodyBackgroundColor"] != "rgb(120, 183, 224)" or visual["topbarBackgroundColor"] != "rgb(120, 183, 224)":
+            failures.append(
+                "body or topbar does not use the solid blue canvas: "
+                f"body={visual['bodyBackgroundColor']}, topbar={visual['topbarBackgroundColor']}"
+            )
         if not visual["factBeforeImage"]:
             failures.append("insane fact does not appear before its image")
         if not visual["factText"] or visual["factText"].startswith("Loading"):
@@ -294,6 +311,18 @@ def check_viewport(browser, name: str) -> None:
             )
         if result["offenders"]:
             failures.append(f"fixture descendants escape card: {result['offenders']}")
+        required_fixture_copy = (
+            "Aston Villa",
+            "Mon 31 Aug",
+            "8:00pm",
+            "Villa Park",
+            "Sky Sports",
+            "Arsenal 4–1 Aston Villa",
+        )
+        if any(value not in result["fixtureText"] for value in required_fixture_copy):
+            failures.append(
+                f"upcoming Arsenal fixture is stale or incomplete: {result['fixtureText']}"
+            )
 
         nav = result["nav"]
         buttons = nav["buttons"]
@@ -378,7 +407,9 @@ def check_viewport(browser, name: str) -> None:
                   return {
                     cards: cards.map(inspect),
                     homeCard: homeCard ? inspect(homeCard) : null,
-                    balloonCards: document.querySelectorAll('.birthday-card.hq-colour .hq-balloon').length
+                    balloonCards: document.querySelectorAll('.birthday-card.hq-colour .hq-balloon').length,
+                    navPink: getComputedStyle(document.querySelector('[data-view-target="birthdays"]')).getPropertyValue('--nav-rgb').trim(),
+                    headingColour: getComputedStyle(document.querySelector('.birthday-panel .section-head h2')).color
                   };
                 }
                 """
@@ -389,14 +420,19 @@ def check_viewport(browser, name: str) -> None:
             birthday_surfaces = birthday["cards"] + [birthday["homeCard"]]
             if any(
                 not surface["backgroundStops"]
-                or min(sum(stop) for stop in surface["backgroundStops"]) < 620
+                or not any(
+                    stop[0] >= 245 and stop[1] <= 190 and stop[2] >= 180
+                    for stop in surface["backgroundStops"]
+                )
                 for surface in birthday_surfaces
             ):
-                failures.append(f"{profile} birthday cards are not using the light-theme surfaces: {birthday}")
+                failures.append(f"{profile} birthday cards are not using bright pink surfaces: {birthday}")
             if any(surface["minimumContrast"] < 4.5 for surface in birthday_surfaces):
                 failures.append(f"{profile} birthday card text contrast is below 4.5:1: {birthday}")
             if birthday["balloonCards"] < 1:
                 failures.append(f"{profile} birthday cards lost their balloon artwork")
+            if birthday["navPink"] != "217,0,119" or birthday["headingColour"] != "rgb(217, 0, 119)":
+                failures.append(f"{profile} Birthday accent is not bright pink: {birthday}")
             birthday_card = page.locator('.birthday-card').first
             birthday_card.hover()
             page.wait_for_timeout(250)
@@ -445,7 +481,10 @@ def check_viewport(browser, name: str) -> None:
                 foldIcons: document.querySelectorAll('.dida-fold-icon').length,
                 zones: document.querySelectorAll('.dida-zone').length,
                 zoneBackgrounds: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).backgroundImage),
+                zoneBackgroundColours: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).backgroundColor),
                 zoneBorders: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).borderColor),
+                innerBackgroundColours: [...document.querySelectorAll('.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card,.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon')].map(item => getComputedStyle(item).backgroundColor),
+                titleColours: [...document.querySelectorAll('.dida-hero h2,.dida-zone-head h3,.dida-quick h4,.dida-season h4,.dida-fold summary h4,.dida-ref-card h5')].map(item => getComputedStyle(item).color),
                 zoneGaps: zoneRects.slice(1).map((rect, index) => rect.top - zoneRects[index].bottom),
                 sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
                 folds: document.querySelectorAll('.dida-fold').length,
@@ -461,16 +500,22 @@ def check_viewport(browser, name: str) -> None:
             """
         )
         dida_accent = dida["accent"].lower()
-        if dida_accent != "#679a00":
-            failures.append(f"Dida accent is not the readable light-theme lime: {dida['accent']}")
+        if dida_accent != "#00823b":
+            failures.append(f"Dida accent is not the approved bright green: {dida['accent']}")
         if dida["heroIcons"] < 3 or dida["quickIcons"] < 3 or dida["foldIcons"] < 4:
             failures.append(f"Dida fun icon treatment is incomplete: {dida}")
         if dida["zones"] != 3 or dida["sectionLinks"] != 3:
             failures.append(f"Dida is not split into three clear sections: {dida}")
         if dida["shellBackground"] != "none" or dida["shellShadow"] != "none":
             failures.append(f"Dida still has a shared outer container: {dida}")
-        if any("rgb(103, 154, 0)" in value for value in dida["zoneBackgrounds"] + dida["zoneBorders"]):
-            failures.append(f"Dida zone surfaces still use green: {dida}")
+        if any(value != "none" for value in dida["zoneBackgrounds"]):
+            failures.append(f"Dida zones still use gradient backgrounds: {dida}")
+        if any(value != "rgb(255, 255, 255)" for value in dida["zoneBackgroundColours"] + dida["innerBackgroundColours"]):
+            failures.append(f"Dida card or icon surfaces are not white: {dida}")
+        if any("0, 130, 59" not in value for value in dida["zoneBorders"]):
+            failures.append(f"Dida zone outlines do not use the bright green: {dida}")
+        if any(value != "rgb(0, 130, 59)" for value in dida["titleColours"]):
+            failures.append(f"Dida titles do not use the bright green: {dida}")
         minimum_zone_gap = 28 if name == "mobile" else 36
         if len(dida["zoneGaps"]) != 2 or any(
             gap < minimum_zone_gap - 1 for gap in dida["zoneGaps"]
@@ -502,6 +547,15 @@ def check_viewport(browser, name: str) -> None:
             failures.append(
                 "Dida hover does not match Calendar glow or moves: "
                 f"shadow={dida_hover_shadow}, transform={dida_hover_transform}"
+            )
+
+        ARTIFACTS.mkdir(parents=True, exist_ok=True)
+        for target in ("home", "arsenal", "dida", "birthdays"):
+            page.locator(f'[data-view-target="{target}"]').click()
+            page.wait_for_timeout(250)
+            page.screenshot(
+                path=str(ARTIFACTS / f"preview-{name}-{target}.png"),
+                full_page=True,
             )
 
         if failures:

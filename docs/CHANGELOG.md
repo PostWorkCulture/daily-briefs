@@ -2,6 +2,23 @@
 
 Newest entries go first.
 
+## 24 August 2026: Solid blue canvas, white Dida cards, bright Birthday pink, and current Arsenal fixture
+
+Status: implemented, awaiting preview approval
+
+- Requested changes: keep UK News directly below Local News; correct the stale upcoming Arsenal match; replace the pale gradient canvas with a solid blue that is not too dark; make every Dida card and icon surface white with a brighter green only for titles and outlines; and replace the muted Birthday colour and navigation treatment with bright pink.
+- News status: the existing draft already stacks UK News directly beneath Local News for Pete and Sofia, with Sweden retained above Local News for Sofia.
+- Arsenal correction: the next men’s first-team fixture is Aston Villa away at Villa Park on Monday 31 August 2026 at 8:00pm, live on Sky Sports. The previous meeting is Arsenal 4–1 Aston Villa on 30 December 2025. The fixture now links to the updated Premier League schedule.
+- Arsenal refresh repair: the official fallback now reads the Premier League’s maintained all-380-fixtures page before the original club-release page, captures broadcaster data, and replaces a stale same-opponent league fixture without displacing an earlier fixture from another competition.
+- Canvas: the root, body, and top bar now use one solid medium-light blue, `#78B7E0`, with no gradient or decorative wash.
+- Dida: the hero, three independent zones, inner cards, navigation boxes, and icon surfaces are white. Fresh green `#00823B` is restricted to titles and outlines; body text and icons remain neutral. The approved cyan hover/focus glow is retained.
+- Birthdays: the section heading, card outlines, cards, Home reminder, milestone card, and navigation state now use a vivid pink treatment. Darker ink is used for card details so text contrast remains at least 4.5:1.
+- Validation: fixture parser and stale-schedule regression tests added; responsive checks now require the exact solid canvas, updated fixture details, bright Birthday treatment, white Dida surfaces, fresh green titles/outlines, existing hover effects, News order, and mobile/desktop layout. The preview workflow now exports screenshots for review before publication.
+- Requirements protected: Pete and Sofia profiles, real links and sources, all sections and content, Dida age-six copy and three-box spacing, colourful birthday balloons, responsive behaviour, and unrelated card treatments.
+- Unexpected changes: none intended.
+- Master brief update: version 2.5 records the approved canvas, Dida, and Birthday colour rules.
+- Publication: draft only. Do not merge or publish until Pete approves the screenshots.
+
 ## 23 August 2026: Bookmark icon cache repair
 
 Status: implemented, awaiting preview approval

@@ -138,15 +138,15 @@
       style.id = 'birthdayStyles';
       style.textContent = `
         @media(max-width:899px){#primaryNav{grid-template-columns:repeat(7,minmax(0,1fr))}}
-        .birthday-list{display:grid;gap:18px}.occasion-group{display:grid;gap:10px}.occasion-group h3{margin:0 0 2px;font-size:15px;color:var(--accent2)}
-        .birthday-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(178,53,111,.18);border-radius:20px;background:linear-gradient(145deg,#fff8fc,#f3effa 58%,#e9f4fa);box-shadow:0 12px 28px rgba(73,79,111,.10)}
+        .birthday-panel .section-head h2,.occasion-group h3{color:#d90077!important}.birthday-list{display:grid;gap:18px}.occasion-group{display:grid;gap:10px}.occasion-group h3{margin:0 0 2px;font-size:15px}
+        .birthday-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(217,0,119,.48);border-radius:20px;background:linear-gradient(145deg,#fff,#ffb8d8 58%,#ff99c7);box-shadow:0 12px 28px rgba(73,79,111,.10)}
         .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
         .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(0,124,184,.62)!important;box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10)!important;transform:none!important;outline:none}
-        .birthday-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(178,53,111,.07);font-size:22px}
-        .birthday-card strong{display:block;font-size:16px}.birthday-card small{display:block;color:#52697e;margin-top:3px}.birthday-card b{color:#9a2f61;font-size:14px;text-align:right}
+        .birthday-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(217,0,119,.08);font-size:22px}
+        .birthday-card strong{display:block;font-size:16px}.birthday-card small{display:block;color:#33485a;margin-top:3px}.birthday-card b{color:#8f004f;font-size:14px;text-align:right}
         .birthday-empty{padding:24px;border:1px dashed var(--line);border-radius:20px;color:var(--muted)}
-        .home-reminder-card.birthday{background:linear-gradient(145deg,#fff8fc,#f3effa 58%,#e9f4fa);border-color:rgba(178,53,111,.18);box-shadow:0 12px 28px rgba(73,79,111,.10)}
-        .home-reminder-card.birthday .home-reminder-top,.home-reminder-card.birthday small{color:#52697e}.home-reminder-card.birthday b{color:#9a2f61}
+        .home-reminder-card.birthday{background:linear-gradient(145deg,#fff,#ffb8d8 58%,#ff99c7);border-color:rgba(217,0,119,.48);box-shadow:0 12px 28px rgba(73,79,111,.10)}
+        .home-reminder-card.birthday .home-reminder-top,.home-reminder-card.birthday small{color:#33485a}.home-reminder-card.birthday b{color:#8f004f}
       `;
       document.head.appendChild(style);
     }
