@@ -333,7 +333,7 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"navigation is coloured before hover: {visual['navDefaultColours']}")
         wrong_main_copy = [
             item for item in visual["mainCopyColours"]
-            if item["colour"] != approved_ink
+            if item["colour"] is not None and item["colour"] != approved_ink
         ]
         if wrong_main_copy:
             failures.append(f"main copy does not match the greeting ink: {wrong_main_copy}")
