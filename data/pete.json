@@ -1,40 +1,31 @@
 {
-  "updatedLabel": "Sunday, 23 August 2026 · refreshed 8:45am",
+  "updatedLabel": "Monday, 24 August 2026 · refreshed 6:09am",
   "worldFact": {
-    "id": "socotra-endemic-snails-reptiles",
-    "category": "Wild isolation",
-    "country": "Yemen",
-    "place": "Socotra Archipelago",
-    "source": "UNESCO World Heritage Centre",
-    "sourceUrl": "https://whc.unesco.org/en/list/1263/",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dragon%27s_Blood_Trees%2C_Socotra_Island.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Dragon%27s_Blood_Trees,_Socotra_Island.jpg",
-    "photoCredit": "Rod Waddington · CC BY-SA 2.0",
-    "fact": "Socotra is so biologically isolated that about 95% of its land-snail species and 90% of its reptile species occur nowhere else on Earth.",
-    "date": "2026-08-23",
-    "sequence": 2
+    "id": "death-valley-sailing-stones",
+    "category": "Planet oddity",
+    "country": "United States",
+    "place": "Racetrack Playa · Death Valley",
+    "source": "U.S. National Park Service",
+    "sourceUrl": "https://www.nps.gov/articles/deva-moving-rocks.htm",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Racetrack_Playa-s.png?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Racetrack_Playa-s.png",
+    "photoCredit": "Martin D. Adamiker · CC BY-SA 4.0",
+    "fact": "Rocks weighing as much as 320 kilograms can travel across Death Valley’s Racetrack Playa. Thin floating ice, shallow water and winds of only about 10 mph can move them in near-perfect synchrony.",
+    "date": "2026-08-24",
+    "sequence": 3
   },
   "weather": {
-    "temp": "24°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "21°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-08-23",
-        "high": 24,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
       {
         "date": "2026-08-24",
         "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -42,8 +33,8 @@
         "date": "2026-08-25",
         "high": 26,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 20,
         "source": "Met Office"
       },
@@ -51,33 +42,42 @@
         "date": "2026-08-26",
         "high": 26,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-08-27",
-        "high": 22,
+        "high": 25,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-08-28",
         "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 50,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-08-29",
+        "high": 22,
+        "low": null,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Sunny · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -85,21 +85,21 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Saturday 22 August 2026",
+      "dateLabel": "Sunday 23 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Ross-On-Wye",
-        "town": "Ross-on-Wye",
-        "county": "Herefordshire",
+        "location": "Heathrow",
+        "town": "Heathrow",
+        "county": "Greater London",
         "country": "England",
-        "displayLocation": "Ross-on-Wye, Herefordshire",
-        "value": "24.4°C",
+        "displayLocation": "Heathrow, Greater London",
+        "value": "25.7°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Chaseside%2C_Ross-on-Wye_-_geograph.org.uk_-_5638267.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:Chaseside,_Ross-on-Wye_-_geograph.org.uk_-_5638267.jpg",
-          "credit": "Jaggery · CC BY-SA 2.0",
-          "alt": "Chaseside, Ross-on-Wye"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Air_Malta_Airbus%2C_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Air_Malta_Airbus,_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg",
+          "credit": "Brian Robert Marshall · CC BY-SA 2.0",
+          "alt": "Air Malta Airbus, Heathrow Airport"
         }
       },
       "cold": {
@@ -108,31 +108,17 @@
         "county": "Cumbria",
         "country": "England",
         "displayLocation": "Shap, Cumbria",
-        "value": "1.9°C",
+        "value": "1.3°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Herding_sheep_near_Shap_Abbey_-_geograph.org.uk_-_4534334.jpg/1920px-Herding_sheep_near_Shap_Abbey_-_geograph.org.uk_-_4534334.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "page": "https://commons.wikimedia.org/wiki/File:Herding_sheep_near_Shap_Abbey_-_geograph.org.uk_-_4534334.jpg",
-          "credit": "Gareth James · CC BY-SA 2.0",
-          "alt": "Herding sheep near Shap Abbey"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Lane_descending_to_Shap_-_geograph.org.uk_-_4277912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Lane_descending_to_Shap_-_geograph.org.uk_-_4277912.jpg",
+          "credit": "Trevor Littlewood · CC BY-SA 2.0",
+          "alt": "Lane descending to Shap"
         }
       }
     }
   },
   "calendar": [
-    {
-      "title": "WFH",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-24T00:00:00+01:00",
-      "end": "2026-08-25T00:00:00+01:00",
-      "date": "2026-08-24",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "6ueu9vsdjc2t6soimqga0hbfoa",
-      "calendarColorSource": "google"
-    },
     {
       "title": "8.15-17.45",
       "summary": "",
@@ -145,6 +131,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "7aea217cfg5736rbc7utpu0af4",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "WFH",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-24T00:00:00+01:00",
+      "end": "2026-08-25T00:00:00+01:00",
+      "date": "2026-08-24",
+      "time": "All day",
+      "allDay": true,
+      "color": "#fbd75b",
+      "colorId": "5",
+      "googleEventId": "6ueu9vsdjc2t6soimqga0hbfoa",
       "calendarColorSource": "google"
     },
     {
@@ -402,18 +402,20 @@
   ],
   "arsenal": {
     "lastResult": {
-      "date": "2026-08-21T20:00:00+01:00",
-      "dateLabel": "Fri 21 Aug",
-      "kickoff": "8pm",
-      "opponent": "Coventry City",
-      "competition": "Premier League",
-      "homeAway": "home",
+      "date": "2026-08-16T15:00:00+01:00",
+      "dateLabel": "Sun 16 Aug",
+      "kickoff": "3pm",
+      "opponent": "Manchester City",
+      "competition": "FA Community Shield",
+      "homeAway": "neutral",
       "completed": true,
       "arsenalScore": 3,
       "opponentScore": 0,
       "result": "3–0",
-      "url": "https://www.skysports.com/football/arsenal-vs-coventry-city/report/559444",
-      "source": "Sky Sports"
+      "url": "https://www.skysports.com/football/arsenal-vs-manchester-city/report/556659",
+      "source": "Sky Sports / Arsenal.com",
+      "image": "https://e0.365dm.com/26/08/1600x900/skysports-arsenal-man-city_7323378.jpg?20260816170357",
+      "imageAlt": "Arsenal players after the 3-0 Community Shield win over Manchester City"
     },
     "nextFixture": {
       "date": "2026-08-31T20:00:00+01:00",
@@ -442,44 +444,44 @@
     "played": null,
     "news": [
       {
-        "title": "Man City's Community Shield defeat to Arsenal revealed the scale of the job facing Enzo Maresca on eve of new Premier League season",
+        "title": "Highlights: Arsenal Women 1-0 Paris FC",
         "summary": "",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T06:02:37+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNQjJMUmZ0VDI3ZEVHRlpheksxQWViMTl6UnlITS1lcThFZzRQMlhEVkJpWkxtaWdkSXZqSzlTVEgySWNPTmhLOUowRi1yb0VYdFJZcUdGUm1VOHFwMW5vaTRYdDNSSXI5UVdJTGVFUmRyemZNdE14bDlGRUJHYkFud0xXWVlxVEx3dEtfM3pTT3RJSjFoSnQ1RG55X0hwRzhjUWRiUTF0UlJkYllNWUVKNmdyYk52YVRjNlBSU2k4VklyZ2ZwMGxOcnV5bFhQU2d2Y1pKeUNEU2hCRHZWNmNkQXY2Smd2cDhjM2NWckM0UmU4bWkwNGtxaXg4VUpEdEt6NFlraUhDdkx6RmFRWnJhQUE3TQ?oc=5"
+        "publishedAt": "2026-08-23T17:11:42+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbGd2aXJVckxoNjR6Mk1rRkxVaTNmNGFoYUlXTHNEaEFVQU9fbXBWZnpyT19CRFVSa3hySWdPazNCWmRYLVV0dld3ekFMR1NsYmxKYTM2Sll4cWJac1ZraURQb1owRFctbHVQREtfVy1qZWhtVjBMeHhvWFdReEkxUzFnWGYtZw?oc=5"
       },
       {
-        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
+        "title": "Report: Arsenal Women 1-0 Paris FC",
         "summary": "",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T07:07:26+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
-      },
-      {
-        "title": "Alvarez 'changes Arsenal transfer stance after Arteta talks'",
-        "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T08:28:17+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc09Udm5LbHM0THUyeWEtUTNtUldSbUJvVzdESG9xdkNkZWFlZ1BIOHFhLUZTSnY3MzZsRGQ4eW9VMUQxUVcycEJHeU5vcS1TNEtLVjRqRDFybzVFQm90aTNxN3puMkJlYkJOdzdvdEZyOW5VU05qdWFTN21vYndwekY2RzdxcjlOZmtnbnVoVVBRUDhMbndtSlNkX1gwQ1NmRS0yQV9R?oc=5"
+        "publishedAt": "2026-08-23T14:57:31+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ3RsWUNENTZOZW1PaFpKb2YtYWdLZURzNUloYloxcWNmYThLUF9xM1RZbFRwRUZzdkxmZUVOdXgwYVktOWtDTjZhWGlrb0t0Z01hMDFLdUhTLS1GRFJQekFISjdZU2ZZTjhCQ1VRODNJcmZtYnhrLWpja3RfWl9CZg?oc=5"
       },
       {
         "title": "'Gone next week': Arsenal fans have Viktor Gyokeres transfer theory after Barcelona 'meeting'",
         "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T06:19:58+01:00",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T06:00:09+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc2NybTYxQTdlUGswaE9vM20zanZUcW1KbHpOWl93S3ZmZC1iVHdubjlmZ2ZLMnoxS0lPZ0tCVmJiN0RfRmVMaVg1MWRDQXBWeWI4SWdWc2JOTm92bVhySXVBX2dabXY2ZW11RXZjOVRXVWRpQ05FTmoxekxQdXJxZjNlY0k0UF9ERkdPSUFkV3lvTDVsQUl3amphTDh6dVFpSWItUQ?oc=5"
       },
       {
-        "title": "Report: Arsenal 3-0 Coventry City",
+        "title": "Arsenal sent new transfer update over £85m football 'phenomenon'",
         "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T22:03:53+01:00",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T04:33:23+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaVNiQXozaG9ZZ18xNlVnS1F5LXNJMlgyLVU3a1pFSGZoR0xSekhnQWI5TXFVOXBNcFdQdHZFQTV6Ti0zdTFDV3RvZHRqbXllb2UzZ0ViU0FWNGk0T0ZuczJGdm5HVEx2aEdkWUZJdFBfNUtvOGpaZ09VNTJIbGJyeFFfR2tqMFRQMlFzUGlGZGNjYXRBNHFXMQ?oc=5"
+      },
+      {
+        "title": "Team news: Who starts against Paris FC?",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T12:06:30+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tc1ZnbnpPMFZ6aHU2NDN1Y2VSd1BMa3FWOHVXejN4azgzSmE0V2ZxbmF2QWljbFYxZk05M2h5MkE2RGkzeW5RM3NaejkxQ0JnZ29wZHExWE1Mb1I5aU5Jbk5LOG5KM2RrbFRmZ0dqRnBhcVlheXJpMHJ2aU4zemM?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnVIc2lsTmR4eE5rdHU3bm5PRTk1eGtfOEwwOU04RVdHZXdjLXlZMjV5Ukt6QVBLTVkzb280VFRzbk1hMEkyY3JQSTJEZ3g5cVl5ckRZQ0ZIMFIwV2FDbVh0MHJnOUVNbFkzb0t1RnNyOTFUQWlQeUhad21mQlZ6bHpzRHpIdw?oc=5"
       }
     ],
     "sources": [
@@ -491,22 +493,22 @@
     "scope": "Arsenal men's first team · all competitions",
     "transfers": [
       {
+        "title": "Al Hilal pursuing deal for Arsenal’s Gabriel Martinelli - The Athletic",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T13:41:34+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMDZZbEpmLXhZZDVzb01mN0RFRjNCYjh5dkgtS1Rha25BV29NRndEc2FRQ05qU0dvSFltdWYyeTVERzc1VFhmRktuV2pROWYwaFVFcUsyRFprMVZpRktMenRnZEZfd2sxbWFka0V3Z3FHd0E0LW1ldDdKalo3N0cxSGdrekdwZ0pMZ0dKQ3pEMkl4RWxoTlZibW13cDJtZw?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Tier-one report"
+      },
+      {
         "title": "Arsenal transfer news: Julian Alvarez would add 'magic' to Gunners' frontline says Gary Neville as he urges them to sign Atletico Madrid striker",
         "summary": "",
         "meta": "Fri 21 Aug",
         "publishedAt": "2026-08-21T23:44:29+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRk8tUi1ERXg3V2JqYXFvUDV4VW1tS0thMjRJZm1ET2h0WFZ3LWNXMzZDVmR6X1dlZ0tOZWpweVZnQTBiUkZGZDFEbU14LWU3ajhrY1RfbFRud1p4c0VXeVdzZDdPX1F6VFByT0M0RmpsSFVOR2ktME5tTVQzdWgwYUpNLUVDRmJEUGtpVEpvUzlSM01HYWtwdC1FeDlQU055OTliTU5aT3NvdWZ4Z3ZoTU5JUVcwM3loZW1Jc0N6ZEs5bXFvN0VWczlicGx6cmthQ2NQWmdGLWRLQVY4UUhEYkRkbWVBcEo4dmhxSl9iVjJqS3RmbUc5ZENXdTd4OHFYMFBIUC1Ua09jNWNSdWxzMU8zcU8wdGR5SExDWThpS0c?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Ian Wright 'really pleased' with Ezri Konsa signing - Arsenal fans welcome latest summer transfer",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T20:06:45+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPdjhSNGFuemdDWWhOTThkYkstbjBrVEc1NUJoaWQ5OGd3OFc0M1BxSGQ3UC1WSGJaZzVEUHRVc1lURVo2ZktfSFJ0TUk5a0wzMUlDb2Z6aU1XZkFEdXJXX041TXRaeFRaU2ZtUEo1YVV1S1hYVThtWXN2TmNzdzNyS0pnX0Q1SDN6aGR3aVNIWG82ZF9QWnNSczBvTk5qVm11aHh6c1JodzZmRjhWcjhsMXY3Q1FVb0ZEMWxUNlZ5YThJZUY2WmpZR2JTWjVrTDc1bGtza3FfS0tNVHNpbEEtZV93OA?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -523,20 +525,10 @@
       {
         "title": "Mikel Arteta: Arsenal manager says he will sign new contract after entering the last year of his current deal",
         "summary": "",
-        "meta": "Fri 14 Aug",
-        "publishedAt": "2026-08-14T22:32:11+01:00",
+        "meta": "Sat 15 Aug",
+        "publishedAt": "2026-08-15T08:00:00+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTjRScDdJXzB0QkIzUFhIZTJVRi1oX2FBWHdYdVZqMEgyTzZzWlNaNWpqeWt5UnJzZUVSS2IySFdRLVdmekVRUTJtR3l4cGRsbTdueEtDcnhWWmJydzB5RlVMMDItUXZEQ3pTbjl2VC1pcXhzYVU5clJOdDVjeS1oSXNXdmdfNHdnaXFjQWlDYmVPWEl6emV1eVRIXzF6RnpFUE5ma2tuRDdycHh0eWc0b05pbER4ajYxRFk3VnBWMjVUSW9OalFTeFhlUnJnVlllblUyMzFhS3dpUjJyaHFKTmh5RlphWElpeTlicDB5bHJVMlEtRFE?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Arsenal transfer latest: Jarrell Quansah move backed as Clinton Morrison insists it's a 'no brainer'",
-        "summary": "",
-        "meta": "Fri 14 Aug",
-        "publishedAt": "2026-08-14T10:52:58+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWHhkX1RwRkoxbE9KUXZVY1NhYWpMdXFEcnJGdG5xbjVtQmNCWXR5ak1qVGV2SVk2blRZNU1Lc2l1a1ppQ2lORS03ZlhkblFqbmxlcmhSVHI3bm5XaHZJQ21xUHRHMk1IVzhPMnh1TE05OV9TYi1tTTJDYndDRDBVS0VPTXZEVXpBRVhrQmpzZkpoNllhZmhpT255a0FpMFFLb05SQTNRdTI4QmlpYWUzZnhWSHFCT0ZZWFh4b1FidHlGT0ZFMHVGak85TlZMUkVwSFlUZDRrNk04OGVENXc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -549,9 +541,47 @@
         "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVmxJRzJRNHpLTmZoc0FIYWktOWZyRHBfZ2h5NlFMR1dGMnNEcmloUkR5TU5zczM5SzZkaUlBVTVSblJqSHVYUllKVmpLeExMamYzcjBSaVlkSEFuckhOOG9NN1kzMDFSNU12Ri12NHJERnNUbkh2WXZPcHJYRHN2Y0hKeVhSNHNWa3Q1LXBPMU5ZOUhSOWFHWTRWWUNJSkJKUGFjbnpqTXdRa2hFdnZKbllIMk1QWWp0cnRIdG04YU92ak5qSHBpbkVxdFBZYUlSMFMwaHFQc0owMi1FU042VWUxREk?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
+      },
+      {
+        "title": "Arsenal transfer latest: Jarrell Quansah move backed as Clinton Morrison insists it's a 'no brainer'",
+        "summary": "",
+        "meta": "Fri 14 Aug",
+        "publishedAt": "2026-08-14T08:00:00+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWHhkX1RwRkoxbE9KUXZVY1NhYWpMdXFEcnJGdG5xbjVtQmNCWXR5ak1qVGV2SVk2blRZNU1Lc2l1a1ppQ2lORS03ZlhkblFqbmxlcmhSVHI3bm5XaHZJQ21xUHRHMk1IVzhPMnh1TE05OV9TYi1tTTJDYndDRDBVS0VPTXZEVXpBRVhrQmpzZkpoNllhZmhpT255a0FpMFFLb05SQTNRdTI4QmlpYWUzZnhWSHFCT0ZZWFh4b1FidHlGT0ZFMHVGak85TlZMUkVwSFlUZDRrNk04OGVENXc?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
       }
     ],
     "transferRumours": [
+      {
+        "title": "Al-Hilal in concrete talks with Arsenal over Gabriel Martinelli, as first reported by @David_Ornstein , with Saudi club ready to offer major improvement on terms to Brazil international. Al-Hilal had been targeting Pedro Neto but talks on hold with Chelsea, who va",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T16:48:53+01:00",
+        "source": "James Benge",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HRmZVaDV4aU1HOFpJTmJLV3BEbDg2WWVNTnRWMlV5SC13WndfbmpDY1RNOTJJcmtVYzVQZHFuNVd3VS0yeVN4THp6TGNPbEpWWGx6RFRQaHNGcjZsT3JKdA?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/jamesbenge"
+      },
+      {
+        "title": "🚨 Al Hilal pursuing deal to sign Gabriel Martinelli from Arsenal. No agreement yet but talks ongoing between clubs + with 25yo winger. #AFC want in region of £60m & Brazil international open to #AlHilal possibility after turning down Turkey @TheAthleticFC",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T13:43:00+01:00",
+        "source": "David Ornstein",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBreVhoZXp2aGJjYzFPRDRINTNGZUJFUE1SZHlsb0xRN2RWSHFndGpiSC1BMjVySEtxbm5iaklPcFRZeWl5NUU4MXhtZy1iU2VyTDRXSVQ1SE41RHEzcTZLazFfS3hkZw?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Tier-one reporter",
+        "sourceUrl": "https://x.com/David_Ornstein"
+      },
       {
         "title": "🚨🔴⚪️ OFFICIAL: Ezri Konsa joins Arsenal from Aston Villa on £50m plus £5m add-ons deal.",
         "summary": "",
@@ -593,34 +623,6 @@
         "sourceType": "X",
         "confidence": "Established reporter",
         "sourceUrl": "https://x.com/FabrizioRomano"
-      },
-      {
-        "title": "🚨 Ezri Konsa in line to make Arsenal debut at Aston Villa on Aug 31 following transfer between clubs. #AFC’s primary defensive target all window & eventually found compromise with #AVFC to secure move 28yo wanted. W/ @J_Tanswell @gunnerblog @The",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T09:18:22+01:00",
-        "source": "David Ornstein",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WSW5IaXVaMjVmcVpfeHhQOTNDZm5KdUZxZUI5dU5yZDFWRHRmeFNmQ2ZDM0psSE8ydUFIeUtKdlVUdW8xeWdJMWZjR3BXbVVVYjduT3JZdmlfSW41Z2VYNi1XQXI1QQ?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Tier-one reporter",
-        "sourceUrl": "https://x.com/David_Ornstein"
-      },
-      {
-        "title": "🚨 Ezri Konsa completes move from Aston Villa to Arsenal. Final transfer fee for 28yo defender £51m + £4m add-ons to #AVFC. England international underwent #AFC medical yesterday & has now put pen to paper on 4yr contract with option of 5th @TheAthleti",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T08:28:03+01:00",
-        "source": "David Ornstein",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9vd05SOFhMS0dUbG5NN05sZFR2dHJFd3JIa2t0dnVaY1VwanFOLXJyTjRRSWgwRzFVOEZNVXJ5VDdNa0E3anlVRXF4M2FmbFRsSHhfM3VJT1Y3b0RyQktuUDk5Y2RxZw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Tier-one reporter",
-        "sourceUrl": "https://x.com/David_Ornstein"
       }
     ]
   },
@@ -643,21 +645,21 @@
       "section": "AI"
     },
     {
-      "title": "Man City's Community Shield defeat to Arsenal revealed the scale of the job facing Enzo Maresca on eve of new Premier League season",
+      "title": "Highlights: Arsenal Women 1-0 Paris FC",
       "summary": "",
       "meta": "Sun 23 Aug",
-      "publishedAt": "2026-08-23T06:02:37+01:00",
-      "source": "Sky Sports",
-      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNQjJMUmZ0VDI3ZEVHRlpheksxQWViMTl6UnlITS1lcThFZzRQMlhEVkJpWkxtaWdkSXZqSzlTVEgySWNPTmhLOUowRi1yb0VYdFJZcUdGUm1VOHFwMW5vaTRYdDNSSXI5UVdJTGVFUmRyemZNdE14bDlGRUJHYkFud0xXWVlxVEx3dEtfM3pTT3RJSjFoSnQ1RG55X0hwRzhjUWRiUTF0UlJkYllNWUVKNmdyYk52YVRjNlBSU2k4VklyZ2ZwMGxOcnV5bFhQU2d2Y1pKeUNEU2hCRHZWNmNkQXY2Smd2cDhjM2NWckM0UmU4bWkwNGtxaXg4VUpEdEt6NFlraUhDdkx6RmFRWnJhQUE3TQ?oc=5",
+      "publishedAt": "2026-08-23T17:11:42+01:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbGd2aXJVckxoNjR6Mk1rRkxVaTNmNGFoYUlXTHNEaEFVQU9fbXBWZnpyT19CRFVSa3hySWdPazNCWmRYLVV0dld3ekFMR1NsYmxKYTM2Sll4cWJac1ZraURQb1owRFctbHVQREtfVy1qZWhtVjBMeHhvWFdReEkxUzFnWGYtZw?oc=5",
       "section": "Arsenal"
     },
     {
-      "title": "Gorantla’s 70 keeps pressure on East Molesey",
+      "title": "SHEPHERDS BUSH SECURE PLACE IN NATIONAL CUP SEMI-FINAL",
       "summary": "",
-      "meta": "Tue 18 Aug",
-      "publishedAt": "2026-08-18T09:21:19+01:00",
-      "source": "The Kia Oval",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NSHN1VkVPUW16UXFYaHBpdjlSY00teDRPNDAyRjR3Q2ZDaDZVRFFGczB0MFlpUXN4MmFFXzJheXRMbmFYUHJTQklUcE9waEp5dXFkT1gyUEVTQVFCUlNJLTdpTGg3aWZkNUpoMmNYc2tCRXJmWHBj?oc=5",
+      "meta": "Thu 20 Aug",
+      "publishedAt": "2026-08-20T08:00:00+01:00",
+      "source": "Middlesex Cricket",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUExIeHl3MG92YnlXcFB2NzBnNnpkNGg2M0ZPdFB1UV9PLTRsV21EenZwRGFYNmduQWJsM0xjeDRNYVN3NGtEamV1SmY5aDZHQUZWU2t2NnY0SldGdS10RzU2TlJ1OGQ0QUEycThIbXZnV3Q5ZGZPZ0FPdUdjcy1kQ2dWVEszTkhOVkpsbjJCNUZnSE92TTRaTnQyNDU?oc=5",
       "section": "Local"
     }
   ],
@@ -762,81 +764,97 @@
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
       },
       {
-        "title": "I worked at OpenAI. Here are the guardrails we need now | Miles Brundage",
+        "title": "‘We are hitting a different chapter’: OpenAI leader warns of threat of ‘persistent’ AI cyber-attacks",
         "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T10:53:00+01:00",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T20:00:00+01:00",
         "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPY1FuS0ZpTFcxZnl2MGU3SF9XcEhhOGd6M3FnLVg3emZ3VFhjeTgwVXdyMjZlRkNDbkpuU1lDRkpjVG5tVjkxczdtbVhOeUR2S3NjVDQ4RmF6RjM2TWpKR3FsVmlBaXROX0RmeDZCNnI0OE9QN2pLRDdsRkNOQ3E0aWVEcFM?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTU9VbHZPQ2czTUlfNVZMVk53TkZRbUhPTTJJQ3o3SjE4VEpiZWx2UHBpWG5MZkN6aG9ZVWsycTk1ME9pNFNmaWFybG1oMmxlY2NoZEEyZlZwT09SY2dxdWZIYjFmSGRLNG91dkJLU1ZrYV8yRHY0eHc5TnR1UktESUpUR1l6SlRueXlIbU9aeW5TYTZqR0E?oc=5"
       },
       {
-        "title": "Decart’s $7 billion Anthropic deal could become far more valuable after the IPO",
+        "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
         "summary": "",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T07:38:00+01:00",
-        "source": "calcalistech.com",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9icVRMd3dSeFhQTWpObmNESTFpUlhLUjdiY3E1eW9YZlE1ZktBRDctX04tMkRjQ2FjTVFUS3ZRRUZRdFA2UjhkbEQ1R0RIUU5vVGhsZ3hWRktLeC14NWplbVFoeXZpQXdR?oc=5"
+        "publishedAt": "2026-08-23T09:23:24+01:00",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQldWM1lpRFZ5SjhkcXQxalo3S3p0RWw2RHR1Rm5vaXlONzU5a1dSM0VoWGJ6dVJQYWE2Q2VlU0QxT0V2OVpsWDE1ZlJDeE90cEl5TDNrQUxZNWlEMVNkczNGWHVJVmNVQ3c5Ym9GQnp5V2gxSG5Hc0NpNHhRSFFHS3kxZ08?oc=5"
       },
       {
-        "title": "Anthropic: the largest IPO ever?",
+        "title": "OpenAI is sharpening its focus on enterprise advertisers",
         "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T07:18:35+01:00",
-        "source": "The Week",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54TlBvOFdMMi1lajBPcENVRGRKRmEtUTVkcnRzV2xNX0pEZTlKRWFIbVNQNldBV3lUUzl5djVUNTJGQy04eXVKcTcxT3dPM1dOWmlTZEtrMGhhWjRtbU9rVEtqY2NIckZGYm9EaUtKZXFhYV9ZQkd1WVdmTQ?oc=5"
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T05:02:53+01:00",
+        "source": "Digiday",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdC1HaDQ1bEl6T3FrMEwyd3Z5U1BycFlBcGc2QVpnUGZYODF6eFZwR19OckN0aXFqS0FkWk94eHJndTJGNFhaV0RtOWlpY2lCZE9sUU11cTJ6RnpGa3lQaTJoNmlEMjZsaDJxYmZNT3hoLUNaTFNxcEM2c2ZZQTJwbkhrcXdvYmw3Q2FUSkxNMjA?oc=5"
       }
     ],
     "Arsenal news": [
       {
-        "title": "Man City's Community Shield defeat to Arsenal revealed the scale of the job facing Enzo Maresca on eve of new Premier League season",
+        "title": "Highlights: Arsenal Women 1-0 Paris FC",
         "summary": "",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T06:02:37+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNQjJMUmZ0VDI3ZEVHRlpheksxQWViMTl6UnlITS1lcThFZzRQMlhEVkJpWkxtaWdkSXZqSzlTVEgySWNPTmhLOUowRi1yb0VYdFJZcUdGUm1VOHFwMW5vaTRYdDNSSXI5UVdJTGVFUmRyemZNdE14bDlGRUJHYkFud0xXWVlxVEx3dEtfM3pTT3RJSjFoSnQ1RG55X0hwRzhjUWRiUTF0UlJkYllNWUVKNmdyYk52YVRjNlBSU2k4VklyZ2ZwMGxOcnV5bFhQU2d2Y1pKeUNEU2hCRHZWNmNkQXY2Smd2cDhjM2NWckM0UmU4bWkwNGtxaXg4VUpEdEt6NFlraUhDdkx6RmFRWnJhQUE3TQ?oc=5"
+        "publishedAt": "2026-08-23T17:11:42+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbGd2aXJVckxoNjR6Mk1rRkxVaTNmNGFoYUlXTHNEaEFVQU9fbXBWZnpyT19CRFVSa3hySWdPazNCWmRYLVV0dld3ekFMR1NsYmxKYTM2Sll4cWJac1ZraURQb1owRFctbHVQREtfVy1qZWhtVjBMeHhvWFdReEkxUzFnWGYtZw?oc=5"
       },
       {
-        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
+        "title": "Report: Arsenal Women 1-0 Paris FC",
         "summary": "",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T07:07:26+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
-      },
-      {
-        "title": "Alvarez 'changes Arsenal transfer stance after Arteta talks'",
-        "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T08:28:17+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc09Udm5LbHM0THUyeWEtUTNtUldSbUJvVzdESG9xdkNkZWFlZ1BIOHFhLUZTSnY3MzZsRGQ4eW9VMUQxUVcycEJHeU5vcS1TNEtLVjRqRDFybzVFQm90aTNxN3puMkJlYkJOdzdvdEZyOW5VU05qdWFTN21vYndwekY2RzdxcjlOZmtnbnVoVVBRUDhMbndtSlNkX1gwQ1NmRS0yQV9R?oc=5"
+        "publishedAt": "2026-08-23T14:57:31+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ3RsWUNENTZOZW1PaFpKb2YtYWdLZURzNUloYloxcWNmYThLUF9xM1RZbFRwRUZzdkxmZUVOdXgwYVktOWtDTjZhWGlrb0t0Z01hMDFLdUhTLS1GRFJQekFISjdZU2ZZTjhCQ1VRODNJcmZtYnhrLWpja3RfWl9CZg?oc=5"
       },
       {
         "title": "'Gone next week': Arsenal fans have Viktor Gyokeres transfer theory after Barcelona 'meeting'",
         "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T06:19:58+01:00",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T06:00:09+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc2NybTYxQTdlUGswaE9vM20zanZUcW1KbHpOWl93S3ZmZC1iVHdubjlmZ2ZLMnoxS0lPZ0tCVmJiN0RfRmVMaVg1MWRDQXBWeWI4SWdWc2JOTm92bVhySXVBX2dabXY2ZW11RXZjOVRXVWRpQ05FTmoxekxQdXJxZjNlY0k0UF9ERkdPSUFkV3lvTDVsQUl3amphTDh6dVFpSWItUQ?oc=5"
       },
       {
-        "title": "Report: Arsenal 3-0 Coventry City",
+        "title": "Arsenal sent new transfer update over £85m football 'phenomenon'",
         "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T22:03:53+01:00",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T04:33:23+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaVNiQXozaG9ZZ18xNlVnS1F5LXNJMlgyLVU3a1pFSGZoR0xSekhnQWI5TXFVOXBNcFdQdHZFQTV6Ti0zdTFDV3RvZHRqbXllb2UzZ0ViU0FWNGk0T0ZuczJGdm5HVEx2aEdkWUZJdFBfNUtvOGpaZ09VNTJIbGJyeFFfR2tqMFRQMlFzUGlGZGNjYXRBNHFXMQ?oc=5"
+      },
+      {
+        "title": "Team news: Who starts against Paris FC?",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T12:06:30+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tc1ZnbnpPMFZ6aHU2NDN1Y2VSd1BMa3FWOHVXejN4azgzSmE0V2ZxbmF2QWljbFYxZk05M2h5MkE2RGkzeW5RM3NaejkxQ0JnZ29wZHExWE1Mb1I5aU5Jbk5LOG5KM2RrbFRmZ0dqRnBhcVlheXJpMHJ2aU4zemM?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnVIc2lsTmR4eE5rdHU3bm5PRTk1eGtfOEwwOU04RVdHZXdjLXlZMjV5Ukt6QVBLTVkzb280VFRzbk1hMEkyY3JQSTJEZ3g5cVl5ckRZQ0ZIMFIwV2FDbVh0MHJnOUVNbFkzb0t1RnNyOTFUQWlQeUhad21mQlZ6bHpzRHpIdw?oc=5"
+      },
+      {
+        "title": "Arteta explains Martinelli decision amid Arsenal 'talks' for £60m transfer",
+        "summary": "",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T04:39:06+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVE1CUEM4dEJDZTRkcHo5bnJsUEhaVXN5eUdDcmtjTmw0dXV0TUVZdTdLSjV5TjFlcV81cWJyMXhuTW1oX1V0UzBHMEx6UDBOb2czODFhOWJ2NE5xbFN4T1djOTVGdDhnR0Y0eEJXa3gtRVJicFluVVU5RXFkYUZGMnlCYl9uY2UzM0hQMlhORk9rMC1Fc2c?oc=5"
+      },
+      {
+        "title": "Gallery: 26 great shots of late win over Paris FC",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T16:14:12+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQ3dPaHhjNjVhcmQtMnFBRGc1SUdOY1ZKVFhvTWw4a0x4NE5TU2ZBc3M5eGZPVWE1WG9fNV9ETk5FSmdUUVJHMHdja0pzT3N2RnFIQXdiNnEtQkhBcFBkWVB1UzNJbHJLSDhRMnNZRFVnOG9jSGVEX0M3cEl5NkhMUjdyNUFJSG03clM0a3pTM2FtUlo3?oc=5"
+      },
+      {
+        "title": "Arsenal book medical for new striker signing ahead of triple announcement",
+        "summary": "",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T00:43:08+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUGljR1duWWxHRU93VnQ5SjRLNkZrNUZmRWtZaGRMMGtyOU4yZWVFUnBKN092U0ZqWDdmVkJGX1V3eklHanhCRm5HUUliQm93bFduU0VIXy0tVWJIUnc5NzRGcXlra0dRelZxSFViNDR2Q3RPUDNQRlUxX3JLcFR1TGRkOGs1a0hxWVdMUzVtaHMwUEFMU1M3dUEzcWxvYzBwbzlPQkczNExzSjdqYkdERDdQaEJuTTRsekE?oc=5"
       }
     ],
     "Local news": [
-      {
-        "title": "Gorantla’s 70 keeps pressure on East Molesey",
-        "summary": "",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T09:21:19+01:00",
-        "source": "The Kia Oval",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NSHN1VkVPUW16UXFYaHBpdjlSY00teDRPNDAyRjR3Q2ZDaDZVRFFGczB0MFlpUXN4MmFFXzJheXRMbmFYUHJTQklUcE9waEp5dXFkT1gyUEVTQVFCUlNJLTdpTGg3aWZkNUpoMmNYc2tCRXJmWHBj?oc=5"
-      },
       {
         "title": "SHEPHERDS BUSH SECURE PLACE IN NATIONAL CUP SEMI-FINAL",
         "summary": "",
@@ -902,14 +920,6 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY21Bb09BR05SVWVKeTJIQmF4ajRyMzJqTmVkM2xRQ1hjWXR0T3VPWktGTUZxeEROT1I5UWc4YV9sQjY2cVRLeHNZakJrY2kwdElsVU9LdlQ2ZWJYdmZHVk1tamIwbGx2LUIwVXpqSjRxbXlkTUYtTExTamRaMWg0SWFFY2tLbWVSYU40M2hvbkFXcGhjdGpkdHgxa1prVVg4R2c?oc=5"
       },
       {
-        "title": "New homes proposal rejected again",
-        "summary": "",
-        "meta": "Mon 17 Aug",
-        "publishedAt": "2026-08-17T05:01:31+01:00",
-        "source": "Woking News and Mail",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdGpYaF9URkgycldqYk9hV3U1X3ZaVVU5dFhJMlR1TzJTbVhBZ3FrWFQ4bVFINlQ0Y3ZzN0t6MDF3eGhQQzRPNlpRdWVaQlhHb205cTZWa3NsTE1yWXpwNThLWEtkSDJiR3ZZVXczY2NUQlRjNDNUeVdoOGM0TTh2LVRrMzN4M0pTM09FVFFBbHktalUx?oc=5"
-      },
-      {
         "title": "South of England Men's Community Game announces expanded Representative Programme",
         "summary": "",
         "meta": "Wed 19 Aug",
@@ -918,110 +928,126 @@
         "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1h1QjZqc3gzZlQwVEJTRmxiazc4NjAwRF9JeVBYZ25VSEozN2FKLUsxUEpZOFNCVkJaWnJVR20wME1PenQyNVVlYnBXSmdtdVNYMWU5bC1DMVJCX3R6cGF6LWZYSU9zOWRGbzN1UEh1MzNCekdGVTd4ZExRYlFsQTNoSmZidktBQ1VzMFlDV29XREh0NFJ5ZElVc3RBbjRCb25XRmhZVFQ2ZVdTMDdIQjZMbGl5X29qQkpJSTgtc3hIZw?oc=5"
       },
       {
-        "title": "Thames Water awards £150m wastewater upgrade work to Costain",
+        "title": "Join us for the Cobham skatepark opening JAM",
         "summary": "",
-        "meta": "Mon 17 Aug",
-        "publishedAt": "2026-08-17T13:05:10+01:00",
-        "source": "Smart Water Magazine",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeTk0ZUxwVlFvTElGRkU5LUJ0VzdKWVhER0dYUzZCRHZ6dDZpeVJZUFNKZGNwaXY0RmVKRWxzVVlKOUs4djBlY2lGUTZTYlpWZm8tNVBTRVpoYjBhaVpaZ0RHS3NWb00xdExFblQySEJUeGJqSy1GXzZBX2IwVC1ZRThWZ255c1VYT0RmbHRydHI1dTJSb2N4T0hyYnZ2ZWEzeDZ0QkFFWGdiR2o1T25TYlFZeTFiYVk?oc=5"
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T16:17:38+01:00",
+        "source": "Elmbridge Borough Council",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkNRSGg0RFhLY251ZUZzSmE1SGwtMTctS3N4TUFma1c3enQ5Y2w4dnZXaVZKTzZXYmNFMHEzRzVGY0dncTRBdTVhUUtsQzZQaHU0YTdTS3dwUmhNY3hyTC1Bd0V4dDdJYTRpbXZQNzRLelQtSk4xYXVuQzF5SkZkVw?oc=5"
+      },
+      {
+        "title": "Football fans stage matchday bar boycott over long-standing stadium row with local council",
+        "summary": "",
+        "meta": "Thu 20 Aug",
+        "publishedAt": "2026-08-20T12:18:18+01:00",
+        "source": "Football Ground Guide",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcDFsODJOQlNCRU83V2Eyel8xYlBRbzh5QXptRlZiUW1xcHRJSXBVTXdNbnd1Y2NubDFtbGFjcEtjTmRpb0RibG9LaVoxY1dtRjcyLWg4LWtSejZBb3pERlpWT0hRLWRlRHpUNVU3c2hsTVRPUlBmVmJCUVZQOXZtSG5aS1pwUGViR3ZaZkxEcmZsZ2VTOTVqaHI3TjFDUThYUWFSQXBzSDlEazdNb1lFUXRfLVZkV2pyRHNMbENsUXh6cVN3WDN6VWxzTmc?oc=5"
+      },
+      {
+        "title": "Lazy Griff suffers suspected tendon injury at Chester",
+        "summary": "",
+        "meta": "Sat 22 Aug",
+        "publishedAt": "2026-08-22T18:22:19+01:00",
+        "source": "Ipswich Star",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY0hJazRNNmgtUE9tMEN1cE1VSkg3TXhFQ2RLb3Y0N1ozblZ4Z0RHeDRQdm1fU2ZXLVVHYzZxN1RVZjRDS28wbTdKUTJQdHBac3FMcTQ4LUlsRVlPUWtMcGM5aWFCeUxac2l4aVhTYnZDZ2hVZlQzM3NMM282OFVyQ2MzdC16N1owZzcyN2g2YXNpcEhUWmNGcDVFcW9acEFlUkY2R3c1dTI?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "Police officers killed in wrong-way crash mourned in 'unimaginable loss'",
-        "summary": "PC Matthew Blades, PC Tom Clough and five young people were killed when a car drove the wrong way on the A66 and struck the police vehicle.",
+        "title": "Burnham visits Kyiv to reaffirm UK support for Ukraine",
+        "summary": "It comes after Moscow warned of \"consequences\" over the reported use of British drones by Ukraine.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T06:00:12+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Families of two police officers killed in crash say they were heroes",
+        "summary": "PC Matthew Blades and PC Tom Clough died after a car, whose five occupants were also killed, collided with their vehicle.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T01:37:43+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c4gvgy3de37o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "How easy is it to find an NHS dentist? It depends where you live",
+        "summary": "Nearly 600 practices in England have withdrawn from NHS dentistry over the last 10 years, as the service heads towards a two-tier system.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T00:10:18+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c9v4w77d9m8o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Nearly 3 million Teslas recalled in China over hidden door handles",
+        "summary": "Other brands affected by the recall include Chinese carmakers XPeng, Xiaomi and Geely.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T06:01:17+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c4g6ggdg030o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Divorce, smartphones and control - BBC sees how Taliban run Afghanistan",
+        "summary": "Five years after the Taliban’s return, the BBC follows senior figures as the group reshapes the country.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T06:00:22+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/ckgvk9p2n7ko?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Reform says it will prioritise British-born young workers for social housing",
+        "summary": "Labour called the plan \"unserious and unworkable\" and accused Reform of pushing \"gimmicks and division\".",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T08:24:25+01:00",
+        "publishedAt": "2026-08-23T22:07:47+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cdj0j8enpzyo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cvgjgyg1rngo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Mayors to get powers to overrule local councils on planning decisions",
-        "summary": "Housing minister Matthew Pennycook said the change was \"essential\" for helping mayors \"effectively deliver new homes\".",
+        "title": "Australian shark attack victim grateful for 'second chance at life'",
+        "summary": "Leah Stewart was mauled by a shark in June, suffering multiple bites to her arms and legs.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T01:34:59+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c87n792dnlno?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Review launched into how pub and hotel business rates calculated",
+        "summary": "The review of how rates are calculated in England and Wales could lead to reform of the system.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T00:26:15+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c8xnxy89gv7o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Ex-cricket captains urge 'proper medical care' for Imran Khan",
+        "summary": "The former skippers say it is \"basic decency\" for Pakistan to comply with a court-ordered medical assessment.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T04:55:35+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cx2z889l0dxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "CrossCountry to provide full service on Monday after major disruption",
+        "summary": "CrossCountry says its \"key priority\" is now restoring as close to a normal service as possible.",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T04:10:51+01:00",
+        "publishedAt": "2026-08-23T20:00:31+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cy8m0gxexl4o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cp8x8xglp27o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-        "summary": "Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war.",
+        "title": "Trump waves green flag to start IndyCar race through Washington streets",
+        "summary": "The president took a ceremonial lap of the track before the race, which is the culmination of a summer of events to mark the country's 250th birthday.",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T06:46:43+01:00",
+        "publishedAt": "2026-08-23T21:19:36+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c0qvq24vlj4o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Plan to restrict sex and violent offenders to certain areas to start in October",
-        "summary": "Serious violent and sexual offenders may be confined to areas of just a few miles after leaving prison on probation.",
+        "title": "Viral 'Cat in the Hat' TikTok trend sparks fun fake videos but also real fear",
+        "summary": "The social media posts have prompted police forces in Ireland and the UK to issue statements that the images are fake.",
         "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T03:37:03+01:00",
+        "publishedAt": "2026-08-23T19:38:36+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cy8e8jx0x5wo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Struggling households need more help with bills, energy industry says",
-        "summary": "Industry body Energy UK says the current support for households most in need does not go far enough.",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T00:00:03+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cm2g5x7l4mko?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Iran-linked hackers behind cyber attack that shut down power plant, reports say",
-        "summary": "The government says at no point was there a risk to the UK's energy system during the attack in July.",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T03:48:41+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ce9793g34yvo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Lucy Davis 'grateful' for support over cancer diagnosis",
-        "summary": "The Office star was appearing at convention in London, less than two weeks after announcing her condition.",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T22:50:29+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cd9w9l9v8w8o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "The hotel booking mix-up that could free mushroom murderer",
-        "summary": "A table tennis tournament and a throat lozenge could help Erin Patterson's lawyers overturn her convictions.",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T20:03:03+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c9w09dj7qk5o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "How a new era of heatwaves could shake up the school calendar",
-        "summary": "Teachers warn it could be increasingly difficult for classrooms to function during the hottest months.",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T00:16:43+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cp872m0grgyo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Why we can't look away from hoarder home clean-ups",
-        "summary": "Videos of extreme cleaning posted on social media often go viral and are watched millions of times.",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T00:22:10+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cy743vpj3dlo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Trump Mobile promoted a 'Made in the USA' phone - but the details kept changing",
-        "summary": "BBC Verify tracks the changes in design, spec, manufacture and release date of the T1 phone from Trump Mobile.",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T00:45:01+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/c20eq9ywplqo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Did a goat herder's lucky $200 nugget spark a gold rush in western Kenya?",
-        "summary": "Prospectors have come to West Pokot county in the hope a gram of the precious metal can change their lives.",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T00:22:02+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyjmnvdr95o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cwyqy29jn74o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
@@ -1038,16 +1064,16 @@
         "postedAt": "2026-08-05"
       },
       {
-        "title": "Professorship (W2) in Business Information Systems, Business Analytics and Applied AI (100 %) (m/f/d)",
-        "summary": "velpTEC edutainment · Remote",
-        "meta": "UK · Posted Fri 21 Aug",
+        "title": "AI Deployment Strategist, Critical and Sovereign Institutions - UK",
+        "summary": "Mistral.ai · London",
+        "meta": "UK · Posted Sun 23 Aug",
         "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.co.uk/jobs/companies/velptec-edutainment/remote-professorship-w2-in-business-information-systems-business-analytics-and-applied-ai-100-122066",
+        "url": "https://www.arbeitnow.co.uk/jobs/companies/mistralai/ai-deployment-strategist-critical-and-sovereign-institutions-uk-london-118751",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "velpTEC edutainment",
-        "location": "Remote",
-        "postedAt": "2026-08-21"
+        "company": "Mistral.ai",
+        "location": "London",
+        "postedAt": "2026-08-23"
       },
       {
         "title": "DDaT- Head of People Data and Insight",
@@ -1098,6 +1124,18 @@
         "postedAt": "2026-08-03"
       },
       {
+        "title": "Senior Lead, Government Innovation and Economic Growth",
+        "summary": "Plexal · Manchester",
+        "meta": "UK · Posted Sun 23 Aug",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.co.uk/jobs/companies/plexal/senior-lead-government-innovation-and-economic-growth-manchester-351752",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Plexal",
+        "location": "Manchester",
+        "postedAt": "2026-08-23"
+      },
+      {
         "title": "Senior Manager, Analytics",
         "summary": "Eucalyptus · Location not stated",
         "meta": "UK · Posted Sat 22 Aug",
@@ -1122,28 +1160,16 @@
         "postedAt": "2026-08-22"
       },
       {
-        "title": "Bank Relationship and Analytics Manager (m/f/d)",
-        "summary": "Raisin · Berlin, Berlin",
-        "meta": "UK · Posted Fri 21 Aug",
-        "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.com/jobs/companies/raisin/bank-relationship-and-analytics-manager-berlin-berlin-456484",
+        "title": "Policy Advisor - Data Policy",
+        "summary": "Department for Science, Innovation and Technology · London, England, United Kingdom",
+        "meta": "UK · Posted Wed 19 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/policy-advisor-data-policy-at-department-for-science-innovation-and-technology-4455455583",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "Raisin",
-        "location": "Berlin, Berlin",
-        "postedAt": "2026-08-21"
-      },
-      {
-        "title": "Principal Engineer, Product Security (m/f/x)",
-        "summary": "commercetools · München, Bayern",
-        "meta": "UK · Posted Fri 21 Aug",
-        "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.com/jobs/companies/commercetools/principal-engineer-product-security-munchen-bayern-353065",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "commercetools",
-        "location": "München, Bayern",
-        "postedAt": "2026-08-21"
+        "company": "Department for Science, Innovation and Technology",
+        "location": "London, England, United Kingdom",
+        "postedAt": "2026-08-19"
       }
     ]
   }
