@@ -38,8 +38,8 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    .occasion-milestone{border-color:rgba(255,217,131,.68)!important;box-shadow:inset 0 0 0 1px rgba(255,217,131,.13),0 0 24px rgba(255,196,77,.12)!important;background:linear-gradient(145deg,#4b321f,#34243f)!important}
-    .occasion-milestone-badge{display:inline-block;width:max-content;margin-top:6px;padding:5px 8px;border-radius:999px;background:rgba(255,217,131,.13);border:1px solid rgba(255,217,131,.32);color:#ffd983;font-size:10px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}
+    .occasion-milestone{border-color:rgba(217,0,119,.58)!important;box-shadow:0 12px 28px rgba(73,79,111,.10)!important;background:linear-gradient(145deg,#fff,#ffb8d8 58%,#ff99c7)!important}
+    .occasion-milestone-badge{display:inline-block;width:max-content;margin-top:6px;padding:5px 8px;border-radius:999px;background:#fff;border:1px solid rgba(217,0,119,.48);color:#8f004f;font-size:10px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}
   `;
   document.head.appendChild(style);
 

@@ -17,6 +17,10 @@ NOW = datetime.now(TZ)
 UA = {"User-Agent": "Mozilla/5.0 DailyBriefs/3.2"}
 ARSENAL_ID = "359"
 SEASON = NOW.year
+OFFICIAL_PL_FIXTURE_URLS = (
+    "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season/",
+    "https://www.premierleague.com/en/news/4675132/all-of-arsenals-fixtures-for-202627-premier-league-season",
+)
 
 # Never surface gambling / betting material in Daily Briefs.
 BETTING_TERMS = {
@@ -30,6 +34,11 @@ MEN_COMPETITIONS = {
     "League Cup", "Champions League", "UEFA Champions League", "Europa League",
     "UEFA Europa League", "Friendly Match", "Friendly Matches", "Club Friendly",
 }
+NON_MENS_ARSENAL = re.compile(
+    r"\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|"
+    r"youth|women(?:['’]?s)?|girls?)\b",
+    re.I,
+)
 
 
 def get_json(url: str) -> dict:
@@ -61,7 +70,7 @@ def clean_arsenal_news(items: list[dict]) -> list[dict]:
         blob = " ".join([
             str(item.get("title", "")), str(item.get("summary", "")), str(item.get("source", ""))
         ])
-        if contains_betting(blob):
+        if contains_betting(blob) or NON_MENS_ARSENAL.search(blob):
             continue
         clean.append(item)
     return clean
@@ -199,28 +208,33 @@ def all_sky_matches() -> list[dict]:
     return combined
 
 
-def official_pl_next_fixture() -> dict | None:
-    html, url = get_html("https://www.premierleague.com/en/news/4675132/all-of-arsenals-fixtures-for-202627-premier-league-season")
-    if not html:
-        return None
+def parse_official_pl_fixtures(
+    html: str, url: str, now: datetime | None = None
+) -> list[dict]:
+    now = now or NOW
     text = BeautifulSoup(html, "html.parser").get_text("\n", strip=True)
     pat = re.compile(
-        r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?\s*(?:(\d{1,2}:\d{2})\s+)?(Arsenal\s+v\s+[^\n]+|[^\n]+\s+v\s+Arsenal)", re.I
+        r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+"
+        r"(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?\s*"
+        r"(?:(\d{1,2}:\d{2})\s+)?"
+        r"(Arsenal\s+v\s+[^\n(]+|[^\n(]+\s+v\s+Arsenal)"
+        r"(?:\s+\(([^)\n]+)\))?",
+        re.I,
     )
     months = {m.lower(): i for i, m in enumerate([
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ], 1)}
-    candidates = []
+    candidates: list[dict] = []
     for m in pat.finditer(text):
         mon = months.get(m.group(3).lower())
         if not mon:
             continue
-        year = int(m.group(4) or NOW.year)
+        year = int(m.group(4) or now.year)
         dt = datetime(year, mon, int(m.group(2)), tzinfo=TZ)
         if m.group(5):
             hh, mm = map(int, m.group(5).split(":")); dt = dt.replace(hour=hh, minute=mm)
-        if dt < NOW - timedelta(hours=3):
+        if dt < now - timedelta(hours=3):
             continue
         fixture = m.group(6).strip()
         parts = re.split(r"\s+v\s+", fixture, maxsplit=1, flags=re.I)
@@ -235,8 +249,40 @@ def official_pl_next_fixture() -> dict | None:
             "homeAway": "home" if home.lower() == "arsenal" else "away",
             "completed": False, "arsenalScore": None, "opponentScore": None,
             "result": "", "url": url, "source": "PremierLeague.com",
+            "tvChannel": (m.group(7) or "TBC").strip(),
         })
-    return min(candidates, key=lambda x: x["date"]) if candidates else None
+    return candidates
+
+
+def official_pl_next_fixture() -> dict | None:
+    for source_url in OFFICIAL_PL_FIXTURE_URLS:
+        html, final_url = get_html(source_url)
+        if not html:
+            continue
+        candidates = parse_official_pl_fixtures(html, final_url)
+        if candidates:
+            return min(candidates, key=lambda x: x["date"])
+    return None
+
+
+def reconcile_official_fixture(fixtures: list[dict], official: dict | None) -> list[dict]:
+    if not official:
+        return fixtures
+    official_opponent = re.sub(
+        r"\s+", " ", str(official.get("opponent") or "")
+    ).strip().lower()
+    official_competition = str(official.get("competition") or "").strip().lower()
+    reconciled = [
+        fixture
+        for fixture in fixtures
+        if fixture.get("completed")
+        or re.sub(r"\s+", " ", str(fixture.get("opponent") or "")).strip().lower()
+        != official_opponent
+        or str(fixture.get("competition") or "").strip().lower()
+        != official_competition
+    ]
+    reconciled.append(official)
+    return reconciled
 
 
 def espn_snapshot() -> tuple[list[dict], int | None, int | None, int | None]:
@@ -278,7 +324,10 @@ def snapshot(existing_news: list[dict]) -> dict:
     espn_fixtures, position, points, played = espn_snapshot()
     sky_fixtures = all_sky_matches()
 
-    all_fixtures = sky_fixtures + espn_fixtures
+    official_fixture = official_pl_next_fixture()
+    all_fixtures = reconcile_official_fixture(
+        sky_fixtures + espn_fixtures, official_fixture
+    )
     unique = {}
     for item in all_fixtures:
         key = (item.get("date"), item.get("opponent"), item.get("competition"), item.get("completed"))
@@ -293,9 +342,9 @@ def snapshot(existing_news: list[dict]) -> dict:
     last_result = past[-1] if past else None
     next_fixture = future[0] if future else None
 
-    # Only fall back to the official PL page when no all-competition source returns anything.
+    # Retain the official PL fallback when no all-competition source returns anything.
     if not next_fixture:
-        next_fixture = official_pl_next_fixture()
+        next_fixture = official_fixture
 
     return {
         "lastResult": last_result,

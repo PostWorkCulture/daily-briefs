@@ -2,6 +2,54 @@
 
 Newest entries go first.
 
+## 24 August 2026: Solid blue canvas, white Dida cards, bright Birthday pink, and current Arsenal fixture
+
+Status: implemented, awaiting preview approval
+
+- Requested changes: keep UK News directly below Local News; correct the stale upcoming Arsenal match; replace the pale gradient canvas with a solid blue that is not too dark; make every Dida card and icon surface white with a brighter green only for titles and outlines; and replace the muted Birthday colour and navigation treatment with bright pink.
+- News status: the existing draft already stacks UK News directly beneath Local News for Pete and Sofia, with Sweden retained above Local News for Sofia.
+- Arsenal correction: the next men’s first-team fixture is Aston Villa away at Villa Park on Monday 31 August 2026 at 8:00pm, live on Sky Sports. The previous meeting is Arsenal 4–1 Aston Villa on 30 December 2025. The fixture now links to the updated Premier League schedule.
+- Arsenal refresh repair: the official fallback now reads the Premier League’s maintained all-380-fixtures page before the original club-release page, captures broadcaster data, and replaces a stale same-opponent league fixture without displacing an earlier fixture from another competition.
+- Canvas: the root, body, and top bar now use one solid medium-light blue, `#78B7E0`, with no gradient or decorative wash.
+- Dida: the hero, three independent zones, inner cards, navigation boxes, and icon surfaces are white. Fresh green `#00823B` is restricted to titles and outlines; body text and icons remain neutral. The approved cyan hover/focus glow is retained.
+- Birthdays: the section heading, card outlines, cards, Home reminder, milestone card, and navigation state now use a vivid pink treatment. Darker ink is used for card details so text contrast remains at least 4.5:1.
+- Validation: fixture parser and stale-schedule regression tests added; responsive checks now require the exact solid canvas, updated fixture details, bright Birthday treatment, white Dida surfaces, fresh green titles/outlines, existing hover effects, News order, and mobile/desktop layout. The preview workflow now exports screenshots for review before publication.
+- Requirements protected: Pete and Sofia profiles, real links and sources, all sections and content, Dida age-six copy and three-box spacing, colourful birthday balloons, responsive behaviour, and unrelated card treatments.
+- Unexpected changes: none intended.
+- Master brief update: version 2.5 records the approved canvas, Dida, and Birthday colour rules.
+- Publication: draft only. Do not merge or publish until Pete approves the screenshots.
+
+## 23 August 2026: Bookmark icon cache repair
+
+Status: implemented, awaiting preview approval
+
+- Requested change: Stop newly saved Daily Brief bookmarks from showing the obsolete Bomberfan logo.
+- Root cause: the committed artwork is the approved Daily Brief rising-sun and layered-news-card design, but bookmark metadata still reused the original origin-level icon filenames. Chrome can retain that earlier Bomberfan association in its favicon database despite query-string cache keys.
+- Fix: publish the approved artwork under entirely new immutable filenames for shortcut icon, ICO favicon, 32 px favicon, Apple touch icon, 192 px icon, 512 px icon, and maskable icon. Root, Pete, Sofia, Open Graph, and manifest metadata now use those new paths.
+- Requirements protected: the approved Daily Brief artwork is reused without alteration; no page layout, profile, content, navigation, data source, or unrelated branding changes.
+- Validation prepared: static checks require the new filenames in root and both profile routes, verify the new manifest identity and icon set, and retain mobile and desktop browser coverage.
+- Unexpected changes: none intended.
+- Master brief update: none. This repairs the existing dedicated-icon requirement without changing the specification.
+- Follow-up: after publication, remove any existing Bomberfan bookmark once and save the Daily Brief again so Chrome creates a new bookmark record from the new icon URLs.
+
+## 23 August 2026: Tidier News, corrected Arsenal result, independent Dida boxes, and Birthday glow
+
+Status: implemented, awaiting preview approval
+
+- Requested change: Put UK News underneath Local News, correct the Arsenal result, restyle Dida as three independent blue/neutral boxes, and give Birthday, Career, and Dida cards the same hover treatment as Calendar Today/Tomorrow.
+- Approved scope: News group layout, Arsenal first-team result validation and current data, Dida surfaces and separation, Birthday hover/focus states, cache keys, responsive and refresh regression coverage, safe preview-branch workflow routing, master brief, and changelog.
+- Arsenal correction: the under-21 Crystal Palace report is no longer eligible for the men’s first-team result. The latest result is Arsenal 3–0 Coventry City, Premier League, Friday 21 August 2026. Academy, youth, women’s-team, and girls’ stories are now excluded from first-team Arsenal news and result parsing at collection, enrichment, and finalisation.
+- News layout: News groups stack vertically in profile order, placing UK News directly below Local News while retaining Sweden above Local News for Sofia. Article cards keep their existing responsive grid.
+- Dida layout: the shared green outer container is removed. This week, Seasonal missions, and Reference library are independent blue/neutral cards with their existing 28 px mobile and 36 px desktop gaps. Lime is reserved for occasional icons, labels, badges, links, and interactive highlights.
+- Birthday interaction: every Birthday card and the Home birthday reminder uses the Calendar cyan edge-glow on mouse hover and keyboard focus, with no movement and no replacement of the existing pastel card backgrounds.
+- Career and Dida interaction: Career story cards and Dida’s hero and three zone cards use the same Calendar cyan edge-glow, with no movement. Career also retains keyboard-focus parity, while a Dida zone glows when its interactive content receives keyboard focus.
+- Requirements protected: Pete/Sofia profiles, news content and links, age-six Dida copy and source, all existing Dida ideas and collapsed reference groups, birthday artwork and contrast, and unrelated views.
+- Release safety: script changes on a preview branch can no longer start a refresh job that resets to and writes into main; the refresh push trigger is explicitly main-only.
+- Validation prepared: Python regression tests reject youth result stories and prefer the correct first-team report; morning validation rejects ineligible Arsenal news; responsive checks compare Birthday and Calendar computed hover shadows, verify no movement, assert News order, and verify the independent neutral Dida surfaces.
+- Unexpected changes: none intended.
+- Master brief update: version 2.4 records the approved News ordering, Dida surface rules, and Birthday, Career, and Dida interaction treatments.
+- Follow-up: complete local QA, stage the preview, and publish only after Pete approves it.
+
 ## 23 August 2026: Clearer Dida zones and age-six content
 
 Status: validated

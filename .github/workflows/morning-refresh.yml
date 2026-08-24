@@ -5,6 +5,7 @@ on:
     - cron: '30 4 * * *'
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - '.github/workflows/morning-refresh.yml'
       - 'scripts/**'
@@ -34,6 +35,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Run refresh regression tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
 
       - name: Refresh brief data
         env:
@@ -95,6 +99,9 @@ jobs:
 
           pete=json.loads((Path('data')/'pete.json').read_text())
           sofia=json.loads((Path('data')/'sofia.json').read_text())
+          non_mens_arsenal=__import__('re').compile(r'\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|youth|women(?:[\'’]?s)?|girls?)\b', __import__('re').I)
+          arsenal_items=((pete.get('sections') or {}).get('Arsenal news') or []) + ((pete.get('arsenal') or {}).get('news') or [])
+          assert not any(non_mens_arsenal.search(' '.join(str(item.get(key,'')) for key in ('title','summary','source'))) for item in arsenal_items), 'Arsenal first-team news contains academy, youth, women or girls content'
           pete_jobs=(pete.get('sections') or {}).get('Career') or []
           assert pete_jobs, 'Pete Career has no current jobs'
           for job in pete_jobs:

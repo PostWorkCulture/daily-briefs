@@ -11,7 +11,7 @@ if (typeof state !== 'undefined' && state.data?.calendar && typeof renderCalenda
 // Milestone birthdays and anniversaries.
 if (!document.querySelector('script[data-occasion-milestones]')) {
   const milestoneScript = document.createElement('script');
-  milestoneScript.src = 'js/occasion-milestones.js?v=20260820a';
+  milestoneScript.src = 'js/occasion-milestones.js?v=20260824a';
   milestoneScript.defer = true;
   milestoneScript.dataset.occasionMilestones = '1';
   document.head.appendChild(milestoneScript);
@@ -20,7 +20,7 @@ if (!document.querySelector('script[data-occasion-milestones]')) {
 // High-quality balloon artwork for birthday cards. Navigation keeps its single code-native balloon.
 if (!document.querySelector('script[data-hq-birthday-balloons]')) {
   const balloonScript = document.createElement('script');
-  balloonScript.src = 'js/hq-birthday-balloons.js?v=20260823a';
+  balloonScript.src = 'js/hq-birthday-balloons.js?v=20260824a';
   balloonScript.defer = true;
   balloonScript.dataset.hqBirthdayBalloons = '1';
   document.head.appendChild(balloonScript);

@@ -9,6 +9,11 @@ on:
       - 'css/**'
       - 'js/**'
       - 'scripts/responsive_ui_check.py'
+      - 'scripts/enrich_arsenal.py'
+      - 'scripts/enrich_next_fixture.py'
+      - 'scripts/finalize_arsenal.py'
+      - 'tests/test_enrich_arsenal.py'
+      - 'tests/test_finalize_arsenal.py'
       - '.github/workflows/responsive-ui-check.yml'
   workflow_dispatch:
   push:
@@ -20,6 +25,11 @@ on:
       - 'css/**'
       - 'js/**'
       - 'scripts/responsive_ui_check.py'
+      - 'scripts/enrich_arsenal.py'
+      - 'scripts/enrich_next_fixture.py'
+      - 'scripts/finalize_arsenal.py'
+      - 'tests/test_enrich_arsenal.py'
+      - 'tests/test_finalize_arsenal.py'
       - '.github/workflows/responsive-ui-check.yml'
 
 jobs:
@@ -37,7 +47,7 @@ jobs:
 
       - name: Install browser test dependencies
         run: |
-          pip install playwright
+          pip install -r requirements.txt playwright
           python -m playwright install --with-deps chromium
 
       - name: Start local site
@@ -45,5 +55,16 @@ jobs:
           python -m http.server 4173 >/tmp/daily-briefs-http.log 2>&1 &
           sleep 2
 
+      - name: Check Arsenal fixture and first-team guards
+        run: python -m unittest discover -s tests -p 'test_*.py'
+
       - name: Check mobile and desktop layouts
         run: python scripts/responsive_ui_check.py
+
+      - name: Upload preview screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-brief-preview
+          path: artifacts/*.png
+          if-no-files-found: warn

@@ -1,8 +1,8 @@
 /* Light, high-readability theme approved 22 August 2026. */
-:root{--bg:#dcebf6;--panel:#f9fcff;--panel2:#edf5fa;--line:rgba(27,65,95,.15);--text:#142a3d;--muted:#60758a;--accent:#0878b8;--accent2:#08679d;--warm:#98610b;--shadow:0 16px 42px rgba(52,83,108,.13)}
+:root{--bg:#78b7e0;--panel:#f9fcff;--panel2:#edf5fa;--line:rgba(27,65,95,.15);--text:#142a3d;--muted:#60758a;--accent:#0878b8;--accent2:#08679d;--warm:#98610b;--shadow:0 16px 42px rgba(52,83,108,.13)}
 html{background:var(--bg)}
-body{color:var(--text);background:radial-gradient(circle at 12% 0,rgba(255,255,255,.92),transparent 31rem),radial-gradient(circle at 88% 12%,rgba(220,207,255,.58),transparent 34rem),linear-gradient(180deg,#eaf5fb,#dcebf6 56%,#e9e2f5)}
-.topbar{background:linear-gradient(180deg,rgba(239,248,253,.98),rgba(239,248,253,.86),rgba(239,248,253,.2))}
+body{color:var(--text);background:var(--bg)}
+.topbar{background:var(--bg)}
 .profile-topbar{justify-content:flex-end}.hero-brand{margin:0 0 9px;font-size:16px;line-height:1}.hero-brand+.eyebrow{margin-top:0}
 .profile-avatar{background:linear-gradient(145deg,#d9edf8,#eee6fb);color:#173b54;border-color:rgba(31,99,140,.18)}
 .profile-switch{background:rgba(249,252,255,.78);box-shadow:0 9px 24px rgba(56,88,114,.08)}
@@ -35,13 +35,17 @@ body{color:var(--text);background:radial-gradient(circle at 12% 0,rgba(255,255,2
 .arsenal-transfer-sources a{color:#8c2a34}.arsenal-transfer-item span{color:#a82f39}.arsenal-rumour-item{background:linear-gradient(145deg,#fff8df,#fff)}
 .scenery-fact{display:block;margin:0 0 12px;text-decoration:none;color:inherit;background:linear-gradient(145deg,#fff,#e6f3f9);border-color:rgba(29,96,133,.17);box-shadow:0 10px 28px rgba(54,87,111,.08)}
 .scenery-fact p{color:#1d3b50}.scenery-fact small{display:block;margin-top:9px;color:#60798d;font-size:9px;font-weight:750}.scenery-fact:hover,.scenery-fact:focus-visible{border-color:rgba(8,120,184,.48);box-shadow:0 0 0 1px rgba(8,120,184,.07),0 13px 31px rgba(51,91,118,.13)}
-.dida-shell{--dida:#679a00;--dida2:#3e6800;color:#142a3d;background:linear-gradient(180deg,#f5fae9,#edf5df);border-color:rgba(92,139,0,.24)}
-.dida-hero{background:radial-gradient(circle at 86% 4%,rgba(172,220,81,.25),transparent 13rem),linear-gradient(145deg,#f8fce8,#e5f0cf 72%);border-color:rgba(92,139,0,.30);box-shadow:inset 0 0 30px rgba(105,154,0,.04),0 10px 27px rgba(73,106,43,.08)}
-.dida-hero p{color:#52697e}.dida-source{color:#52697e}
-.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon{background:rgba(255,255,255,.72);box-shadow:0 7px 18px rgba(69,100,42,.10)}
-.dida-section-nav a{background:rgba(255,255,255,.68);color:#29445a}
-.dida-zone,.dida-week-zone,.dida-seasonal-zone,.dida-library-zone{background:linear-gradient(180deg,rgba(255,255,255,.80),rgba(235,244,226,.88));border-color:rgba(92,139,0,.18)}
-.dida-zone-head p{color:#52697e}.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card{background:rgba(255,255,255,.62);border-color:rgba(92,139,0,.14)}
+.dida-shell{--dida:#00823b;--dida2:#00823b;color:#142a3d;background:transparent;border:0;border-radius:0;box-shadow:none;padding:0}
+.dida-hero{background:#fff;border-color:rgba(0,130,59,.48);box-shadow:0 12px 30px rgba(52,83,108,.11)}
+.dida-hero h2,.dida-zone-head h3,.dida-quick h4,.dida-season h4,.dida-fold summary h4,.dida-ref-card h5{color:var(--dida)}
+.dida-hero p{color:#52697e}.dida-source{color:#52697e}.dida-source a{color:#0878b8}
+.dida-icon,.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon,.dida-season-title>span,.dida-season-item .dida-icon,.dida-plus{color:#29445a}
+.dida-hero-icons span,.dida-quick-icon,.dida-fold-icon,.dida-season-title>span{background:#fff;border-color:rgba(0,130,59,.38);box-shadow:0 7px 18px rgba(52,83,108,.09)}
+.dida-section-nav a{background:#fff;border-color:rgba(0,130,59,.48);color:var(--dida)}
+.dida-section-nav a:hover,.dida-section-nav a:focus-visible{border-color:rgba(0,130,59,.76);color:var(--dida);box-shadow:0 0 16px rgba(0,130,59,.16)}
+.dida-zone,.dida-week-zone,.dida-seasonal-zone,.dida-library-zone{background:#fff;border-color:rgba(0,130,59,.48);box-shadow:0 14px 34px rgba(52,83,108,.12)}
+.dida-hero,.dida-zone{transition:border-color .18s,box-shadow .18s;transform:none!important}.dida-hero:hover,.dida-hero:focus-within,.dida-zone:hover,.dida-zone:focus-within,#view-career .tab-story:hover,#view-career .tab-story:focus-visible{border-color:rgba(0,124,184,.62);box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10);transform:none!important}
+.dida-zone-head{border-bottom-color:rgba(0,130,59,.34)}.dida-zone-head p{color:#52697e}.dida-zone-number,.dida-num{background:#fff;border-color:rgba(0,130,59,.48);color:#29445a}.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card{background:#fff;border-color:rgba(0,130,59,.38)}
 .dida-quick p,.dida-season-title p,.dida-fold summary p,.dida-ref-card li,.dida-ref-card p,.dida-season-item{color:#52697e}
 .bottom-nav .nav-cannon,.bottom-nav .nav-balloon{filter:none}
 @media(min-width:900px){.hero{padding:48px 0 14px}.hero h1{margin:22px 0 4px}}

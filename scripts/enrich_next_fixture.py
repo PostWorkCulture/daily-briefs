@@ -93,7 +93,21 @@ VERIFIED_FIXTURES = {
         "tvChannel": "Sky Sports Main Event · Sky Sports Premier League",
         "source": "PremierLeague.com / Sky Sports",
         "previousMeeting": HISTORICAL_MEETINGS["coventry city"],
-    }
+    },
+    ("2026-08-31", "aston villa"): {
+        "opponent": "Aston Villa",
+        "stadium": "Villa Park",
+        "kickoff": "8:00pm",
+        "competition": "Premier League",
+        "tvChannel": "Sky Sports",
+        "source": "PremierLeague.com / Arsenal.com / Sky Sports",
+        "previousMeeting": {
+            "score": "Arsenal 4–1 Aston Villa",
+            "date": "30 Dec 2025",
+            "competition": "Premier League",
+            "source": "Sky Sports",
+        },
+    },
 }
 
 
