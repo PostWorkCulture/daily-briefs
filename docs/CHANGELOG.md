@@ -4,16 +4,16 @@ Newest entries go first.
 
 ## 24 August 2026: Dark-grey navigation with white resting labels
 
-Status: implemented, awaiting preview approval
+Status: validated and approved for publication
 
 - Requested change: make the primary navigation dark grey with white text so it stands out more.
 - Approved scope: navigation surface, resting text and icon colours, brighter destination hover colours, cache key, responsive regression coverage, master brief, and changelog only.
 - Navigation rule: use solid dark grey `#343A40` on mobile and desktop. Every label and code-native icon is white at rest, including the active destination; the existing destination identities appear only through brighter, readable hover and keyboard-focus colours.
 - Requirements protected: mobile fixed-bar stability, desktop vertical rail, 44 px controls, active-state clarity, aurora outline, Birthday balloon, Arsenal cannon, hover-only destination colour behaviour, Pete and Sofia profiles, all content, data, sources, routes, and unrelated styling.
-- Validation prepared: mobile and desktop checks require the exact dark-grey surface, white resting labels and icons, every brighter destination hover colour, stable repeated mobile navigation switching, and all existing protected responsive behaviour.
+- Validation passed: all eight unit tests and the responsive Chromium workflow require the exact dark-grey surface, white resting labels and icons, every brighter destination hover colour, stable repeated mobile navigation switching, and all existing protected responsive behaviour. Mobile and Chromebook screenshots were visually inspected.
 - Unexpected changes: none intended.
 - Master brief update: version 2.8 replaces the previous light navigation and dark resting-text rule.
-- Publication: preview only. Do not merge or publish until Pete approves it.
+- Publication: Pete approved publication on 24 August 2026.
 
 ## 24 August 2026: Compact reminders, stronger hover feedback, simplified Dida, and month-grouped Birthday cards
 
