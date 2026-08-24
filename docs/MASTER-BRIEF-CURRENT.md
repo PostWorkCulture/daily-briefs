@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.7, 24 August 2026. Owner: Pete.
+Version 2.8, 24 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -13,13 +13,13 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - The Home greeting and section or page titles that sit directly on the solid blue canvas use white text. Titles inside white or light cards retain a contrasting dark or purposeful accent colour. Main copy on light surfaces remains dark `#142A3D`.
 
 - Do not show a visible `Daily Briefs` wordmark in page content. Retain the Daily Briefs browser title, bookmark, manifest, icon, and sharing metadata.
-- Primary navigation uses dark `#142A3D` text and icons at rest, including the active destination. Each destination's existing colour appears only on hover or keyboard focus.
+- Primary navigation uses a solid dark-grey `#343A40` surface with white text and icons at rest, including the active destination. Each destination uses a brighter version of its existing colour only on hover or keyboard focus so the feedback remains readable against the dark surface.
 - On mobile, primary navigation remains fixed, fully visible, and clickable while switching destinations or interacting with content. Use immediate mobile view changes and a stable opaque navigation surface to avoid compositor flicker.
 - Home `Coming up` cards use solid pastel surfaces with dark `#142A3D` text. Halloween uses pastel orange. From 700 px upwards, all four cards must fit on one compact row.
 - Interactive card hover and keyboard-focus feedback must be clearly visible, stationary, and consistent in strength throughout the brief. General cards use cyan, Arsenal cards retain red, and image-led TV cards retain gold.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
-- Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Birthday navigation uses vivid bright pink. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
+- Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Birthday navigation uses vivid bright pink on hover or keyboard focus. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 - The Birthday destination and navigation label are both `Birthday`. Do not repeat a generic Birthdays subheading beneath the page title.
 - Birthday and anniversary cards use solid white surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings are white on the blue canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, dark readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder retains its solid pastel-pink surface.
 - Birthday and anniversary cards, including the Home birthday reminder, use the same visible cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
