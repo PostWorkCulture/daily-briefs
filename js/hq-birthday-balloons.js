@@ -65,7 +65,7 @@
     if (!name) return;
     const p=paletteFor(name);
     card.classList.add('hq-colour');
-    card.style.background=p[3];
+    card.style.background='#fff';
     let avatar=card.querySelector('.birthday-avatar');
     if (!avatar) {
       avatar=document.createElement('div');

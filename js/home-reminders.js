@@ -81,9 +81,16 @@
   }
 
   function sortedOccasions(today = new Date()) {
+    const seen = new Set();
     return occasions
       .map(item => ({ ...item, type: normaliseType(item), nextDate: nextOccurrence(item, today) }))
       .filter(item => item.name && item.nextDate)
+      .filter(item => {
+        const key = `${item.type}|${item.name.trim().toLowerCase()}|${item.month}|${item.day}|${item.year || ''}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
       .sort((a, b) => a.nextDate - b.nextDate || a.name.localeCompare(b.name));
   }
 
@@ -119,7 +126,7 @@
     if (nav && !nav.querySelector('[data-view-target="birthdays"]')) {
       const button = document.createElement('button');
       button.dataset.viewTarget = 'birthdays';
-      button.innerHTML = '<b class="birthday-nav-mark" aria-hidden="true"><svg class="nav-balloon" viewBox="0 0 24 28"><path d="M12 2C7.6 2 4 5.7 4 10.3c0 5.8 5.2 10.2 8 11.7 2.8-1.5 8-5.9 8-11.7C20 5.7 16.4 2 12 2Z"/><path d="m10.2 22 1.8 2 1.8-2M12 24c2 1.1 2.5 2.4 1.2 3"/></svg></b>Birthdays';
+      button.innerHTML = '<b class="birthday-nav-mark" aria-hidden="true"><svg class="nav-balloon" viewBox="0 0 24 28"><path d="M12 2C7.6 2 4 5.7 4 10.3c0 5.8 5.2 10.2 8 11.7 2.8-1.5 8-5.9 8-11.7C20 5.7 16.4 2 12 2Z"/><path d="m10.2 22 1.8 2 1.8-2M12 24c2 1.1 2.5 2.4 1.2 3"/></svg></b>Birthday';
       nav.appendChild(button);
     }
 
@@ -129,7 +136,7 @@
       view.className = 'brief-view';
       view.id = 'view-birthdays';
       view.dataset.view = 'birthdays';
-      view.innerHTML = '<section class="panel-block tab-panel birthday-panel"><div class="section-head"><h2>Birthdays & anniversaries</h2><span class="section-kicker">Static family dates · next up first</span></div><div id="birthdayList" class="birthday-list"></div></section>';
+      view.innerHTML = '<section class="panel-block tab-panel birthday-panel"><div class="section-head"><h2>Birthday</h2></div><div id="birthdayList" class="birthday-list"></div></section>';
       shell.appendChild(view);
     }
 
@@ -138,15 +145,16 @@
       style.id = 'birthdayStyles';
       style.textContent = `
         @media(max-width:899px){#primaryNav{grid-template-columns:repeat(7,minmax(0,1fr))}}
-        .birthday-panel .section-head h2,.occasion-group h3{color:#d90077!important}.birthday-list{display:grid;gap:18px}.occasion-group{display:grid;gap:10px}.occasion-group h3{margin:0 0 2px;font-size:15px}
-        .birthday-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(217,0,119,.48);border-radius:20px;background:linear-gradient(145deg,#fff,#ffb8d8 58%,#ff99c7);box-shadow:0 12px 28px rgba(73,79,111,.10)}
+        .birthday-panel .section-head h2,.occasion-month h3{color:#fff!important}.birthday-list{display:grid;gap:22px}.occasion-month{display:grid;gap:10px}.occasion-month h3{margin:0 0 2px;font-size:15px}.birthday-month-grid{display:grid;grid-template-columns:1fr;gap:10px}
+        .birthday-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(217,0,119,.48);border-radius:20px;background:#fff!important;box-shadow:0 12px 28px rgba(73,79,111,.10)}
         .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
-        .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(0,124,184,.62)!important;box-shadow:inset 0 0 0 1px rgba(39,147,199,.10),0 0 12px rgba(23,128,183,.19),0 0 24px rgba(57,135,255,.10)!important;transform:none!important;outline:none}
+        .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(0,124,184,.88)!important;box-shadow:inset 0 0 0 2px rgba(39,147,199,.16),0 0 0 3px rgba(255,255,255,.45),0 0 20px rgba(23,128,183,.40),0 0 38px rgba(57,135,255,.22)!important;transform:none!important;outline:none}
         .birthday-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(217,0,119,.08);font-size:22px}
         .birthday-card strong{display:block;font-size:16px}.birthday-card small{display:block;color:#142a3d;margin-top:3px}.birthday-card b{color:#8f004f;font-size:14px;text-align:right}
         .birthday-empty{padding:24px;border:1px dashed var(--line);border-radius:20px;color:var(--muted)}
         #homeReminders .home-reminder-card.birthday{background:#ffc1dc!important;border-color:rgba(217,0,119,.48);box-shadow:0 12px 28px rgba(73,79,111,.10)}
         .home-reminder-card.birthday .home-reminder-top,.home-reminder-card.birthday small{color:#142a3d}.home-reminder-card.birthday b{color:#142a3d}
+        @media(min-width:700px){.birthday-month-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
       `;
       document.head.appendChild(style);
     }
@@ -166,14 +174,17 @@
       list.innerHTML = '<div class="birthday-empty">No birthdays or anniversaries added yet.</div>';
       return;
     }
-    const birthdays = upcoming.filter(item => item.type === 'birthday');
-    const anniversaries = upcoming.filter(item => item.type === 'anniversary');
-    const other = upcoming.filter(item => item.type === 'occasion');
-    const groups = [];
-    if (birthdays.length) groups.push(`<section class="occasion-group"><h3>Birthdays</h3>${birthdays.map(occasionCard).join('')}</section>`);
-    if (anniversaries.length) groups.push(`<section class="occasion-group"><h3>Anniversaries</h3>${anniversaries.map(occasionCard).join('')}</section>`);
-    if (other.length) groups.push(`<section class="occasion-group"><h3>Other dates</h3>${other.map(occasionCard).join('')}</section>`);
-    list.innerHTML = groups.join('');
+    const months = new Map();
+    upcoming.forEach(item => {
+      const key = `${item.nextDate.getFullYear()}-${item.nextDate.getMonth()}`;
+      if (!months.has(key)) months.set(key, []);
+      months.get(key).push(item);
+    });
+    list.innerHTML = [...months.values()].map(items => {
+      const first = items[0].nextDate;
+      const month = first.toLocaleDateString('en-GB', { month: 'long' });
+      return `<section class="occasion-group occasion-month"><h3>${esc(month)}</h3><div class="birthday-month-grid">${items.map(occasionCard).join('')}</div></section>`;
+    }).join('');
   }
 
   function render() {

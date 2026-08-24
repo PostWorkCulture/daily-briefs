@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.6, 24 August 2026. Owner: Pete.
+Version 2.7, 24 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -8,15 +8,20 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 
 ## Product
 
-Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, the same dark `#142A3D` ink as the Home greeting for main copy on every light surface, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve light text for image-led media cards where a strong dark overlay is required for readability. Preserve header styling during unrelated work.
+Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, dark `#142A3D` ink for main copy on every light surface, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve light text for image-led media cards where a strong dark overlay is required for readability. Preserve header styling during unrelated work.
+
+- The Home greeting and section or page titles that sit directly on the solid blue canvas use white text. Titles inside white or light cards retain a contrasting dark or purposeful accent colour. Main copy on light surfaces remains dark `#142A3D`.
 
 - Do not show a visible `Daily Briefs` wordmark in page content. Retain the Daily Briefs browser title, bookmark, manifest, icon, and sharing metadata.
 - Primary navigation uses dark `#142A3D` text and icons at rest, including the active destination. Each destination's existing colour appears only on hover or keyboard focus.
-- Home `Coming up` cards use solid pastel surfaces with dark `#142A3D` text. Halloween uses pastel orange.
+- On mobile, primary navigation remains fixed, fully visible, and clickable while switching destinations or interacting with content. Use immediate mobile view changes and a stable opaque navigation surface to avoid compositor flicker.
+- Home `Coming up` cards use solid pastel surfaces with dark `#142A3D` text. Halloween uses pastel orange. From 700 px upwards, all four cards must fit on one compact row.
+- Interactive card hover and keyboard-focus feedback must be clearly visible, stationary, and consistent in strength throughout the brief. General cards use cyan, Arsenal cards retain red, and image-led TV cards retain gold.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
 - Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Birthday navigation uses vivid bright pink. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
-- Birthday and anniversary cards use vivid bright-pink surfaces and accents. Keep the colourful balloon artwork, dark readable text, and a minimum 4.5:1 text contrast.
+- The Birthday destination and navigation label are both `Birthday`. Do not repeat a generic Birthdays subheading beneath the page title.
+- Birthday and anniversary cards use solid white surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings are white on the blue canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, dark readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder retains its solid pastel-pink surface.
 - Birthday and anniversary cards, including the Home birthday reminder, use the same visible cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
 
 ## Boundaries
@@ -61,6 +66,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 **Around the world**
 - Lead with one genuinely astonishing, obscure, source-verified fact each day, then show its precisely matched place image beneath it.
+- Show only the `Around the world` title above the fact. Do not display the old `Rare facts · wild places` subtitle.
 - Prefer wild places, with occasional extreme-life, human-origins, population-scale, unusual-travel, indigenous-culture, and planet-trend facts.
 - Track every published fact ID in a committed permanent history. Never reuse an ID or duplicate fact text; if the catalogue is exhausted, fail the refresh instead of repeating.
 - Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
@@ -96,8 +102,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
 - Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
-- Dida uses white backgrounds for every hero, zone, inner card, and icon surface. Use fresh bright green only for titles and box outlines; icons and body copy remain neutral. Remove the shared outer Dida container so This week, Seasonal missions, and Reference library appear as three independent boxes, with at least 28 px between zones on mobile and 36 px on Chromebook/desktop. Keep weekly quick wins first, preserve every existing idea and guide, and keep all four reference groups collapsed by default on mobile and desktop.
-- Dida’s hero and three independent zone cards use the Calendar cyan edge-glow on hover or when they contain keyboard focus, without movement.
+- Dida has no hero or duplicate section-navigation block. It opens directly with three independent boxes: This week, Seasonal missions, and Reference library. Each box header contains only that title, without a number, kicker, or description. Use white backgrounds for every zone, inner card, and icon surface; fresh bright green only for titles and box outlines; and neutral icons and body copy. Keep at least 28 px between zones on mobile and 36 px on Chromebook/desktop, keep weekly quick wins first, preserve every existing idea and the real age-six source, and keep all four reference groups collapsed by default on mobile and desktop.
+- Dida’s three independent zone cards use the strong Calendar cyan edge-glow on hover or when they contain keyboard focus, without movement.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 
 ## Morning Story target

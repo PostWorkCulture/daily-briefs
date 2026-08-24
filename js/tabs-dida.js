@@ -89,7 +89,7 @@
   function currentSeason(){const m=new Date().getMonth()+1;if(m===12||m<=2)return seasons.winter;if(m<=5)return seasons.spring;if(m<=8)return seasons.summer;return seasons.autumn}
   function seasonalBlocks(){const m=new Date().getMonth()+1,out=[currentSeason()];if(m>=8&&m<=11)out.push(seasons.birthday);if(m>=10||m===12)out.push(seasons.christmas);return out}
   function fold(n,icon,title,strap,body){return `<details class="dida-fold"><summary><span class="dida-fold-icon">${didaIcon(icon)}</span><div><h4>${esc(title)}</h4><p>${esc(strap)}</p></div><span class="dida-num">${n}</span><b class="dida-plus" aria-hidden="true">+</b></summary><div class="dida-fold-body">${body}</div></details>`}
-  function zoneHead(number,kicker,title,description){return `<header class="dida-zone-head"><span class="dida-zone-number">${number}</span><div><small>${esc(kicker)}</small><h3>${esc(title)}</h3><p>${esc(description)}</p></div></header>`}
+  function zoneHead(title){return `<header class="dida-zone-head"><h3>${esc(title)}</h3></header>`}
   function didaHTML(){
     const day=Math.floor(Date.now()/86400000),learn=teach[day%teach.length],play=games[(day+2)%games.length],season=currentSeason(),quick=[['book','LEARN',learn[0],learn[1]],['play','PLAY',play[0],play[1]],['leaf','OUTSIDE / MAKE',season[0],season[2][day%season[2].length]]];
     const seasonal=seasonalBlocks().map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');
@@ -99,7 +99,7 @@
     const powersBody=`<div class="dida-reference">${powers.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const quickCards=quick.map(x=>`<article class="dida-quick"><span class="dida-quick-icon">${didaIcon(x[0])}</span><div><small>${esc(x[1])}</small><h4>${esc(x[2])}</h4><p>${esc(x[3])}</p></div></article>`).join('');
     const library=[fold('01','star','Age-six development','Grouped development markers for quick scanning.',milestoneBody),fold('02','letters','What to teach her now','Short real-life practice, not formal lessons.',teachBody),fold('03','dice','Games worth playing','Quick games that quietly practise useful skills.',gamesBody),fold('04','bolt','Little superpowers','Useful things to build across the year.',powersBody)].join('');
-    return `<section class="dida-hero"><div class="dida-hero-icons" aria-hidden="true"><span>${didaIcon('star')}</span><span>${didaIcon('puzzle')}</span><span>${didaIcon('pencil')}</span></div><div class="dida-kicker">DIDA · AGE 6</div><h2>What matters now</h2><p>Growing independence, stronger friendships, reading and number confidence, movement, creativity and learning how to solve problems.</p><div class="dida-source">Development varies from child to child. <a href="https://stacks.cdc.gov/view/cdc/155268" target="_blank" rel="noopener">CDC ages 6–8 guide</a></div></section><nav class="dida-section-nav" aria-label="Dida sections"><a href="#dida-week">This week</a><a href="#dida-seasonal">Seasonal</a><a href="#dida-library">Reference</a></nav><section class="dida-zone dida-week-zone" id="dida-week">${zoneHead('01','START HERE','This week','Three focused ideas. Do one, not everything.')}<div class="dida-quick-grid">${quickCards}</div></section><section class="dida-zone dida-seasonal-zone" id="dida-seasonal">${zoneHead('02','EXPLORE & PLAY','Seasonal missions','Timely activities grouped into one clear place.')}${seasonal}</section><section class="dida-zone dida-library-zone" id="dida-library">${zoneHead('03','KEEP FOR LATER','Reference library','Open only the guide you need. Everything else stays out of the way.')}<div class="dida-library">${library}</div></section>`;
+    return `<section class="dida-zone dida-week-zone" id="dida-week">${zoneHead('This week')}<div class="dida-quick-grid">${quickCards}</div></section><section class="dida-zone dida-seasonal-zone" id="dida-seasonal">${zoneHead('Seasonal missions')}${seasonal}</section><section class="dida-zone dida-library-zone" id="dida-library">${zoneHead('Reference library')}<div class="dida-library">${library}</div><p class="dida-source"><a href="https://stacks.cdc.gov/view/cdc/155268" target="_blank" rel="noopener">CDC ages 6–8 guide</a></p></section>`;
   }
 
   function renderProfileViews(data,profile){
@@ -119,7 +119,8 @@
     if(state.profile==='sofia'&&view==='arsenal')view='home';
     document.querySelectorAll('.brief-view').forEach(v=>v.classList.toggle('active',v.dataset.view===view));
     document.querySelectorAll('[data-view-target]').forEach(b=>b.classList.toggle('active',b.dataset.viewTarget===view));
-    window.scrollTo({top:0,behavior:'smooth'});
+    const mobile=window.matchMedia('(max-width: 899px)').matches;
+    window.scrollTo({top:0,behavior:mobile?'auto':'smooth'});
   }
   window.showBriefView=showView;
   document.querySelectorAll('[data-view-target]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.viewTarget)));
