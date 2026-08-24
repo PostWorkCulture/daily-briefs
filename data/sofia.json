@@ -15,9 +15,9 @@
     "sequence": 3
   },
   "weather": {
-    "temp": "14°",
-    "summary": "Sunny",
-    "condition": "Sunny",
+    "temp": "17°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
@@ -40,7 +40,7 @@
       },
       {
         "date": "2026-08-26",
-        "high": 25,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -49,11 +49,11 @@
       },
       {
         "date": "2026-08-27",
-        "high": 26,
+        "high": 27,
         "low": null,
-        "summary": "Light Showers",
-        "condition": "Light Showers",
-        "rainChance": 50,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -62,20 +62,11 @@
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 50,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-08-29",
-        "high": 22,
-        "low": null,
-        "summary": "Light Showers",
-        "condition": "Light Showers",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
-        "date": "2026-08-30",
+        "date": "2026-08-29",
         "high": 22,
         "low": null,
         "summary": "Light Showers",
