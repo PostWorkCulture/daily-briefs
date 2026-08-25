@@ -1,46 +1,37 @@
 {
-  "updatedLabel": "Monday, 24 August 2026 · refreshed 8:53pm",
+  "updatedLabel": "Tuesday, 25 August 2026 · refreshed 6:02am",
   "worldFact": {
-    "id": "death-valley-sailing-stones",
-    "category": "Planet oddity",
-    "country": "United States",
-    "place": "Racetrack Playa · Death Valley",
-    "source": "U.S. National Park Service",
-    "sourceUrl": "https://www.nps.gov/articles/deva-moving-rocks.htm",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Racetrack_Playa-s.png?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Racetrack_Playa-s.png",
-    "photoCredit": "Martin D. Adamiker · CC BY-SA 4.0",
-    "fact": "Rocks weighing as much as 320 kilograms can travel across Death Valley’s Racetrack Playa. Thin floating ice, shallow water and winds of only about 10 mph can move them in near-perfect synchrony.",
-    "date": "2026-08-24",
-    "sequence": 3
+    "id": "lencois-rainwater-desert-lagoons",
+    "category": "Impossible landscape",
+    "country": "Brazil",
+    "place": "Lençóis Maranhenses",
+    "source": "UNESCO World Heritage Centre",
+    "sourceUrl": "https://whc.unesco.org/en/list/1611/",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses_Paulo_Cattelan_%2803%29.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses_Paulo_Cattelan_(03).jpg",
+    "photoCredit": "Paulo Cattelan · CC BY-SA 4.0",
+    "fact": "Lençóis Maranhenses looks like a vast desert, yet rainwater alone creates thousands of clear seasonal lagoons between its white dunes, while some dunes migrate up to 25 metres in a year.",
+    "date": "2026-08-25",
+    "sequence": 4
   },
   "weather": {
-    "temp": "18°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "16°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-08-24",
-        "high": 21,
-        "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
       {
         "date": "2026-08-25",
         "high": 26,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-26",
-        "high": 27,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -49,17 +40,35 @@
       },
       {
         "date": "2026-08-27",
-        "high": 24,
+        "high": 23,
         "low": null,
-        "summary": "Light Showers",
-        "condition": "Light Showers",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-08-28",
+        "high": 22,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-08-29",
+        "high": 22,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 4%",
+      "detail": "Sunny · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -67,36 +76,31 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Sunday 23 August 2026",
+      "dateLabel": "Monday 24 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Heathrow",
-        "town": "Heathrow",
-        "county": "Greater London",
+        "location": "Yeovilton",
+        "town": "Yeovilton",
+        "county": "Somerset",
         "country": "England",
-        "displayLocation": "Heathrow, Greater London",
-        "value": "25.7°C",
+        "displayLocation": "Yeovilton, Somerset",
+        "value": "25.6°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Air_Malta_Airbus%2C_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:Air_Malta_Airbus,_Heathrow_Airport_-_geograph.org.uk_-_6272179.jpg",
-          "credit": "Brian Robert Marshall · CC BY-SA 2.0",
-          "alt": "Air Malta Airbus, Heathrow Airport"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Early_morning_at_St_Bartholomew%2C_Yeovilton%2C_the_Fleet_Air_Arm_Memorial_Church_%2814%29_-_geograph.org.uk_-_3670395.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "page": "https://commons.wikimedia.org/wiki/File:Early_morning_at_St_Bartholomew,_Yeovilton,_the_Fleet_Air_Arm_Memorial_Church_(14)_-_geograph.org.uk_-_3670395.jpg",
+          "credit": "Basher Eyre · CC BY-SA 2.0",
+          "alt": "Early morning at St Bartholomew, Yeovilton, the Fleet Air Arm Memorial Church (14)"
         }
       },
       "cold": {
-        "location": "Shap",
-        "town": "Shap",
-        "county": "Cumbria",
+        "location": "Kielder Castle",
+        "town": "Kielder",
+        "county": "Northumberland",
         "country": "England",
-        "displayLocation": "Shap, Cumbria",
-        "value": "1.3°C",
-        "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Lane_descending_to_Shap_-_geograph.org.uk_-_4277912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:Lane_descending_to_Shap_-_geograph.org.uk_-_4277912.jpg",
-          "credit": "Trevor Littlewood · CC BY-SA 2.0",
-          "alt": "Lane descending to Shap"
-        }
+        "displayLocation": "Kielder, Northumberland",
+        "value": "3.4°C",
+        "photo": null
       }
     }
   },
@@ -401,12 +405,12 @@
       "section": "Sweden"
     },
     {
-      "title": "M Zaidi & Co Surrey Cricket Championship 2026 – week 16",
+      "title": "Large new skate park opening soon in Surrey village with official date revealed",
       "summary": "",
       "meta": "Mon 24 Aug",
-      "publishedAt": "2026-08-24T16:11:19+01:00",
-      "source": "The Kia Oval",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQREpVNktwMHBlRUg0ODJfZWdNZTA1aTA1eEdPbUFVbmdFUG5rWHpVUmdxNlFIZkdUOGpLSEQxUC15WHhfZTUtZElHNzcwQlhrT19VM2FPN0JFNnlocWY3LTB5Vl9JcTdKN1RMU29QdVVyQkdWM080UlJ2LUFmMklOcDFn?oc=5",
+      "publishedAt": "2026-08-24T12:15:00+01:00",
+      "source": "Surrey Live",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVG5ZdXRlWkJzMURDMDhMd2dDS2FrTENHOFR0NXJpY1JmWlQxcVZPTW15MlJlM29pcDN2TDNPUkp6VmxCQ3V1bExsTklYV2c3X2VUWGhwX3dfeTFfejNPRndIZEhyTW02UTBId0xVYVZKYmVLWlFhNGhPR0VfT0NJTmpvbG5TNmJDNnZWZUpsTVBnd9IBlwFBVV95cUxQbDlfRFRiOGluem9ZZVAzUWs4S0tlSEw1czdydlhWQjRFS2xMTDFVVThtWlVSOXlvcnJOTjMxMWVXakc1TU5STmtibjR1Tk11VXY2dXhMaDluc2ZjZ08xdkNtUDlNNDE2UTlaNGJ4SV9QWDdOSGNaUWFHS2tpeURrTVowMG1vYlB5Xzdjci1ZYkxMRk1rQS1n?oc=5",
       "section": "Local"
     },
     {
@@ -473,6 +477,14 @@
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xdmprXy1xWlJiMTRoV3NHM2dOeXE5UjVpNkNaMHcxWkkwS2cydldwZWZ2MlJSWmNGb2pvWlZ6NkNlNldEQUlGM0xPWWw5Y2ttMXI5UGowdEpva05X?oc=5"
       },
       {
+        "title": "Swedish Club posts stronger H1 profit as combined ratio improves to 96%",
+        "summary": "",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T03:29:40+01:00",
+        "source": "Insurance Business",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRGJrTExIeUF1S09SaXdIdG9ucHB2M2hMZlp3SW90RG44RGtUdDlvVG1oa3A4R2JiY3pIYlhjdXdwcFMxdzNjSVhSTzRjWFVGNmZHS0NwbjMxaHVMOHlIbDd6bTM3dmFQRTVQRUpETTZ4VUVfMWRFU2pqX2xuNmNwMkNyZ0VEVEUxTTFoQkMzR0ZFVXN2ZDRiTGl4UkItWWVJcFBOdUhfcHpNLVVkeDlHTXRWdnRSdGp3M1otZFAwSjR3YzdRWWFHRlFpYW1tRG8?oc=5"
+      },
+      {
         "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
         "summary": "",
         "meta": "Sun 23 Aug",
@@ -481,20 +493,28 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWhTTjhRSG54U0F1QnRUUmxyY2pseGM5RjBvOWVhNEkzNkd1Q3BFLThGTERPakFzTXdCTjU1N3VuQzY1WjRzcFRJSGlWT1l0WnA2TExxYUR5aS1ZWE45TFFwdjgyNm5udFlvQ0pDejR6VGlBR2g0cDZKZnpqS3Roal9NSDYyV3ZIbmQ0QkZuTGVQMXdWMUFyN3BsV0MxQzdBSnQxZlVzNmhpSUZybjYxcC1R?oc=5"
       },
       {
-        "title": "Swedish Club Results: H1 Sees Improved Underwriting Profits -",
+        "title": "Sweden's push to produce its own antibiotics comes with a catch",
         "summary": "",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T19:47:28+01:00",
-        "source": "Insurance Edge",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZDJ6eTlUMEx1WmdJUWxaT25ZTlBISnB5NjZjS0YxcW9yTTZwV2ZzeGxaOEVVakk1OG1KLTVvb1Q0NVJuYlNXZ1pyQVdzVGxJN3Y2SnZnMl9HY1hoSGpqQmdJYUVsb0NUanRjNHpNdUdEd19BTnJJSkxVOTdabFh4LWxibkJRejBPR3RIdWxTdzZZdTJsNU9KQkttd3ZyZw?oc=5"
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T03:02:46+01:00",
+        "source": "euractiv.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUEJad0FvdXEwbmN3M1c2ZkFJWEJIX0pCclBKRnJxY2tXdDJ4UVh6V1FXQ3VGV2JybldIWV9MVGJPTXJJVGdGcW5IcmxNOU5xVm5fMWFiNm5yU0FCNDg3VlNsQzhsbHRQS0lFWDdybTRZTTItRDhiWDFmSDdsRHZZZy1GVllMaW5aSzdKYlFFZ3hpYkszVF9Ieg?oc=5"
       },
       {
-        "title": "Israel bars two Swedish MEPs from West Bank visit",
+        "title": "Competition or collusion: Entry decisions in the Swedish pharmaceutical market",
+        "summary": "",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T00:37:30+01:00",
+        "source": "CEPR",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUmxJWktKME9ydkhBMTFXZ2F1Q3F4YVZrd1dUY0otekQ1aTFtU0l1ZHNSX3E2Y2Vwa3laUGk4ZHhqUWJ3c095N01jN3lpYzRMb3BsSTVUay1YWEdwSXl0TFlXTjBsZWJUU3VmM2c2c2lPMjVzMmZzZlM3WkFDX2kzYzNKclRBaGRpUzlJb0RCNFJHak12ci0zbDJxQmo2dUZFNnkw?oc=5"
+      },
+      {
+        "title": "Sweden moves to prevent school attacks after one killed in sword assault in Fagersta",
         "summary": "",
         "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T15:23:08+01:00",
-        "source": "euractiv.com",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORk0zRGZGYkc0aTBscV9hTS1MSHBFLTVmYjU0MkVKM2JOLXVuTkFJRUtRQ2U1TWRadWNvVDByRGZmdTV5LWJvd1hqU29ZU2E0Z1ZGRXVoSXVvc0NiZU9XV3NVbmRTN1Q5WGFLYm42RksyODg3WHl2U2NiVEg1bjZhODFmb0dzbXc?oc=5"
+        "publishedAt": "2026-08-24T11:59:23+01:00",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQW50eEJxQUdualJhNUNDVTlUQTR3MWxpbTVsazlwRHNmdGpqR3VudmRVTXlDZ1VSNExYcklCUXVNM0JaZmpZcGhDbkpIMmlkNUV4c2ZFcFpPVWhQbktCaUFFLXFGX203aEhSM1hNb3hUQ3pFVVRFdXdqQUxqdG1YLVFZMXByZ1g3dTJEQWpReDQ0eXJCYi1SMmpJWk1oSGhQMS1uRlZQTGNIanhNNE52R0VEWGpaRFVkMmNyMDQyY2hDbW91aFRodXl3?oc=5"
       },
       {
         "title": "'17-year-old girl killed' in sword attack at Swedish school",
@@ -503,25 +523,17 @@
         "publishedAt": "2026-08-22T17:09:11+01:00",
         "source": "Sky News",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeUtnSDJjN2hJVTVfMDVWWEtWcnBjTW9hRnMxMTNseVFobjJ6RDZSVXozZ1JhaXdpbjNOdllUSWJuRm1MMnA1bmNqZ3BqVXpGMUhJMTBmelVxdzgxRVZTclVIeFZPRVRxQUNuTXhLRHZEMkl6SmdqQ2NPNXNvZE1LM3hGek1rQWt5M2xZY2ZEdXR1RTBjMmZvWQ?oc=5"
-      },
-      {
-        "title": "Israel blocks 2 Swedish European parliamentarians from entering country",
-        "summary": "",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T16:43:00+01:00",
-        "source": "Middle East Monitor",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRUJnZGM4aXNiN1ZiSkNpQ0FyMUpPVWRQUGJ3UDE4ZFJSZ181RDhLVnI0N210dThfS25MTFFuTTEzWHdvNXBzSmxnTkI0d21rMFAzTlZwWHBCX0pHLXlnTC1TbEhUUFZJdkRUb284Q0lQSFdqNEV0LWhVVzhzMHJ2bEYzdldvalZGemhZemRrNkI2eFRYN056SnBydlkxWEdPXzU1RVUzOUpPNmJJanZWLXBMZHp0QdIBuwFBVV95cUxPdlc1WUxuX3I4TEozRXBKTzFFYUZONVpKWGplQXdLZDVLUW9oWDdvem5CVkdUa0xxODgtbENDU0V6UDY4UDJYME92TGl3UmVFQmhWV1I4R0pPM1VlR1dYZjJvbXhwMnF6a2xFaXU5Y1JrTEtLWWlmSjBOQ3VuS2RxV1ZQY09XMlN0N1NBTWhlbjZjcXkwVGlLVzZzUE55QnB0Y1NkQk5QT1llNzNQRDFsdklpakwwVnVxSkNZ?oc=5"
-      },
-      {
-        "title": "From Sweden to Spain: Felicia Schröder embraces a new challenge defined by ambition",
-        "summary": "",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T15:58:00+01:00",
-        "source": "olympics.com",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbVRVZktELUNyYm9GNnB6WVdBaG8xRFc2NTQ5N1ZCTVFqdEE2YWU5dGZYREV4Z1dpYUQydDZZRXhqNEVNYWdEZTdHV0NRMmV2cFJpeGNzYjgta3VKcWhTZVgyWENDM1dMcDFPeVZYM2MzSUxxcTRrcmhWbEpMSC1hZ3J3bW5Vd3Y2MHd2VnVLd0pYR1gwMXM4a1NxRk1LUQ?oc=5"
       }
     ],
     "Local news": [
+      {
+        "title": "Large new skate park opening soon in Surrey village with official date revealed",
+        "summary": "",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T12:15:00+01:00",
+        "source": "Surrey Live",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVG5ZdXRlWkJzMURDMDhMd2dDS2FrTENHOFR0NXJpY1JmWlQxcVZPTW15MlJlM29pcDN2TDNPUkp6VmxCQ3V1bExsTklYV2c3X2VUWGhwX3dfeTFfejNPRndIZEhyTW02UTBId0xVYVZKYmVLWlFhNGhPR0VfT0NJTmpvbG5TNmJDNnZWZUpsTVBnd9IBlwFBVV95cUxQbDlfRFRiOGluem9ZZVAzUWs4S0tlSEw1czdydlhWQjRFS2xMTDFVVThtWlVSOXlvcnJOTjMxMWVXakc1TU5STmtibjR1Tk11VXY2dXhMaDluc2ZjZ08xdkNtUDlNNDE2UTlaNGJ4SV9QWDdOSGNaUWFHS2tpeURrTVowMG1vYlB5Xzdjci1ZYkxMRk1rQS1n?oc=5"
+      },
       {
         "title": "M Zaidi & Co Surrey Cricket Championship 2026 – week 16",
         "summary": "",
@@ -579,12 +591,12 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVXVqOXJ0bkZJemhTaVRqNUozT0JFcV9OU1NtWkhDOFZzXzlpSVVYeFRhWkF4amVBaTEyVzZody1vX0U1UjZTRTgyelFCTmZxODkzYVR6OVpTTUp5TXRsOXVVQlZGM3oybVVKVjAybGxFMlhIMXdicnlLR0s5dTJyQ1ZoMzdycm5yYVVGYkh4N0J0d1ZvWXhVa21rSU9GdUNr0gGmAUFVX3lxTE1EYW5HQlpqb1Z5U3ZyaTM0QjVpWTVHeW1TOU9fQ0JIMWFFdHZBcDhGd21TaEhya2RhY3lORXlmZzJrZHJ0VGN2UkxobjZjSlQ1YzZ2QVhaeTVDOEQzUmVjcFp6WExRY0pHVi1kWTM1cUNYNnYyUFIxVnBGSVV4RnRCN2hmZk1hMWNuOFhKN1Faajl4d3BMekdfbGtKdzhEd3pCVzVxOGc?oc=5"
       },
       {
-        "title": "Costain selected to upgrade Thames Water treatment sites",
+        "title": "Costain lands £150m Thames Water treatment works package",
         "summary": "",
         "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T02:46:41+01:00",
-        "source": "Costain",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVU1vd24wX2xRT09way1sMDNXb3NlanotdGNfb0JXQUxTaFN0OTNZWUl3WmozY05GRDhnZExLdXNpV1N4ZFJES2U3NUxWV0NqeHJqR2IyVHRjNXJwejBXYXEwMndGelZ2TUxfUW1razV5eXlmTHZ6MU9zdFBHLXdYMmctd1JOaHpmd2VUckNHVXJPSUdtSENNNXlnZ3BiRnJYQUhRZmJjRy1oRnM?oc=5"
+        "publishedAt": "2026-08-18T09:12:39+01:00",
+        "source": "Construction News",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSy13Y3R2TzZBckdNNkYxbm42RzBwYjItU3ZTYWkydUdSV0NzaTEwVEhMQ1dKbUVhZmcxbm5MZldtRXpfRHA1YklZcjM5cFRuYUx0UW85M1ZsYWlYdjVjRHNkanNtRGpVc3hVdS1HaDdqNXpvUjAwYVRnNkdscFRwa0pyQnpoZURBVzIxOFViV3BfX3BkbDFRSTVCSVhaZW5BdTlkMWV4cVZCNmZyWjNiVHBn?oc=5"
       },
       {
         "title": "South of England Men's Community Game announces expanded Representative Programme",
@@ -609,17 +621,65 @@
         "publishedAt": "2026-08-20T12:18:18+01:00",
         "source": "Football Ground Guide",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcDFsODJOQlNCRU83V2Eyel8xYlBRbzh5QXptRlZiUW1xcHRJSXBVTXdNbnd1Y2NubDFtbGFjcEtjTmRpb0RibG9LaVoxY1dtRjcyLWg4LWtSejZBb3pERlpWT0hRLWRlRHpUNVU3c2hsTVRPUlBmVmJCUVZQOXZtSG5aS1pwUGViR3ZaZkxEcmZsZ2VTOTVqaHI3TjFDUThYUWFSQXBzSDlEazdNb1lFUXRfLVZkV2pyRHNMbENsUXh6cVN3WDN6VWxzTmc?oc=5"
-      },
-      {
-        "title": "Lazy Griff suffers suspected tendon injury at Chester",
-        "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T18:22:19+01:00",
-        "source": "Ipswich Star",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY0hJazRNNmgtUE9tMEN1cE1VSkg3TXhFQ2RLb3Y0N1ozblZ4Z0RHeDRQdm1fU2ZXLVVHYzZxN1RVZjRDS28wbTdKUTJQdHBac3FMcTQ4LUlsRVlPUWtMcGM5aWFCeUxac2l4aVhTYnZDZ2hVZlQzM3NMM282OFVyQ2MzdC16N1owZzcyN2g2YXNpcEhUWmNGcDVFcW9acEFlUkY2R3c1dTI?oc=5"
       }
     ],
     "UK news": [
+      {
+        "title": "More than 70,000 social and affordable homes to be built across England",
+        "summary": "Funding has been granted to Greater Manchester, the West Midlands and West Yorkshire as well as £6bn for London.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T01:32:20+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cnvly73jrrdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Iran says it is ready for what US calls 'greatest financial offensive ever'",
+        "summary": "The US calls its latest sanctions on Iran an \"economic D-Day\", but Tehran says it has a plan to counter them.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T04:50:06+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Lockerbie bombing trial postponed days before it was due to start",
+        "summary": "The trial of a Libyan man is delayed for a third time, after new evidence on the 37-year-old case came to light three days ago.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T23:13:36+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cq63rmj1zl1o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Beyond China's humanoid robots, a quieter machine revolution is unfolding",
+        "summary": "There are more than two million robots working in China's factories - and they are scaling up fast.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T23:13:20+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c62m4zn1q6mo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "UK drone factories may face attacks from 'unknown sources', says Kremlin adviser",
+        "summary": "The comments on BBC Newsnight come after the UK announced it has agreed to hand over blueprints for British-made missile components to Ukraine.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T05:06:34+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cg598m3meeyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "The grieving family who says the coroner's courts aren't working",
+        "summary": "One man's death highlights the growing strains on the UK's coroner's courts",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T00:09:16+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cvgydn9k4p2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Kit Harington joins HBO's Harry Potter series as Gilderoy Lockhart",
+        "summary": "The role marks Harington's third collaboration with HBO, after starring in the tentpole Game of Thrones and financial drama The Industry.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T22:58:49+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c783lnz12vlo?at_medium=RSS&at_campaign=rss"
+      },
       {
         "title": "Organised crime arrests as police investigate A66 crash that killed two officers",
         "summary": "Nine men and three women are arrested as police investigate the lead-up to the crash that killed seven people.",
@@ -629,95 +689,47 @@
         "url": "https://www.bbc.co.uk/news/articles/c36d6975dzno?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "How the deadly A66 crash unfolded leaving seven dead",
-        "summary": "At 03:30 BST on Saturday, two police officers were killed when a Volkswagen Passat collided with their marked car on the A66 motorway.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T17:55:42+01:00",
+        "title": "Home-testing kits now available for women in England who have missed cervical screening",
+        "summary": "Nearly 4 million women in England can order a self-testing kits to check for high-risk HPV.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T00:27:50+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/cvgyx7yzejpo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c9w4jgg4y55o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Burnham vows support for Ukraine despite 'outrageous threats' from Russia",
-        "summary": "It comes after Moscow warned of \"consequences\" over the reported use of British drones by Ukraine.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T18:29:59+01:00",
+        "title": "Moment tornado tears through southern France",
+        "summary": "The tornado has injured more than 40 people and destroyed homes in villages.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T01:16:35+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/videos/ckg8wkd0j7do?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Is UK's Storm Shadow missile a game changer for Ukraine?",
-        "summary": "Correspondent Joe Inwood breaks down the weapons technology that could make a difference in the Russia-Ukraine war.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T16:14:14+01:00",
+        "title": "US removes Syria from list of state sponsors of terrorism",
+        "summary": "The Trump administration has embraced Syria's new president, former al-Qaeda linked militant Ahmed al-Sharaa.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T01:17:25+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/cx2znjly4dno?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c33knmyl0y5o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Charity? Acting? The Cotswolds? What will Harry and Meghan's UK life look like?",
-        "summary": "The couple's return to the UK is imminent - and what they'll be focusing on here is gradually becoming clearer.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T20:43:51+01:00",
+        "title": "Sir Chris Hoy: Campaigning for cancer screening should not be down to me",
+        "summary": "The cycling legend tells BBC Scotland that the onus to encourage men to get tested for prostate cancer should not just be on high profile individuals like him.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T00:39:36+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c6243glyqv7o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "World's oceans hit highest temperature on record as El Niño grows",
-        "summary": "The record \"is another clear signal of an ocean under growing stress\", according to Dr Samantha Burgess from the European Copernicus climate change service.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T17:27:28+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c62m4gpnp78o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Briton fighting for Russia killed in Ukraine",
-        "summary": "Bradley Townsend left South Yorkshire in April, telling his family he was going to Romania.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T17:17:54+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cy0zry1zk9go?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Police pass Mohamed Al Fayed case file to prosecutors",
-        "summary": "The Crown Prosecution Service will review evidence relating to a man in his 80s gathered by police investigating allegations against the late Harrods owner.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T20:16:10+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cz6zx0njdywo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Snooker champion Graeme Dott guilty of child sex abuse",
-        "summary": "The former world champion was found guilty of lewd and libidinous behaviour towards a girl and boy.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T18:35:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c0lr80rk0dno?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Nearly 90,000 told to evacuate as wildfire approaches Reno, Nevada",
-        "summary": "The fire has burned around 15,000 acres and is completely uncontained, officials say.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T18:42:33+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c4gqlp0yzyjo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Videos showing dangerous driving easily found on social media",
-        "summary": "At least one of the young people killed in the crash appears in videos posted on TikTok showing dangerous driving.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T20:42:47+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/c05rjenm66go?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Divorce, smartphones and control - BBC sees how Taliban run Afghanistan",
-        "summary": "Five years after the Taliban’s return, the BBC follows senior figures as the group reshapes the country.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T06:00:22+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckgvk9p2n7ko?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/sport/cycling/articles/c80nzk7dey4o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
+      {
+        "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+        "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/gpt-5-6-in-kiro"
+      },
       {
         "title": "Introducing AI Futures",
         "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
@@ -759,14 +771,6 @@
         "url": "https://openai.com/index/chatgpt-ads-expands-across-europe"
       },
       {
-        "title": "Strengthening democratic oversight in national security",
-        "summary": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.",
-        "meta": "Tue 18 Aug",
-        "publishedAt": "2026-08-18T20:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
-      },
-      {
         "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
         "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
         "meta": "Fri 21 Aug",
@@ -775,31 +779,44 @@
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
       },
       {
-        "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+        "title": "Companies not as keen on Anthropic’s best AI model",
         "summary": "",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T20:05:56+01:00",
-        "source": "OpenAI",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KREpjX0wxZ2hweXkxbzN2cmFNT0VmZENCbUp1VS1NWTh2NXJCdEZuazlqYXlVallVVGp4RnY3RFBlQWdqWGU2a2FPWGZ1WXJUVEhz?oc=5"
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T01:47:09+01:00",
+        "source": "cio.com",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOUlubmQxdDFISUd0dVk5M0w0R3ZWUnNSOUNfRVp2UGlTbGhfTzQ0dnRaSG8tS01OSnN5OFBiUnNQYklyOWNJcXl2SW9XRW5EUEhONzBEaEF0M214Q3E3UXpSY25kbFhSeUVPVjRocTkwX3lQTDhuWjNJYXdLZUx1cHR4aF9wM0lvS0pPRW8zNEhtMlEtOHA5dl8tWi1JVnV6QVZJ?oc=5"
       },
       {
-        "title": "Mysterious, incredibly powerful AI model appears online",
+        "title": "Hugging Face Explores $13 Billion Sale a Month After a Rogue OpenAI Agent Hacked It",
         "summary": "",
         "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T16:45:43+01:00",
-        "source": "Yahoo Finance UK",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWlIzTzNaWnZ6Ull6ZnJqN0JKRmdvZGwzNzg0THNGbUV6QWdSYjdJY2pwcUlxYjhoTzFCQjhQY0JwTERFSGlUUURvU3BaNHlpMUNmakYtY2xaSGY4YmNVWXhhUmV4MTQ0NHZSNXU3cTdjQ0pzc1RhTlNjN1Y0dVNEYnZ1UTU2Rks2TmI4SkdISFRTUQ?oc=5"
+        "publishedAt": "2026-08-24T23:16:04+01:00",
+        "source": "Decrypt",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS2JXWTJtSDJ5LVllZEo3SWNnV0MySkJrMVJBd0FEb0pGYzByREd0UGQ1eTNLWU9BTzlpUGNDQzVRVGw3cHlXbV9xTG91TDQxM19WQTYxQ0xpTGdEaWxaOFQxX0RKTTkxMDZ0dVdCRlk0NXVsWF8wSm5HNWNZUFBhaF9xR2jSAYwBQVVfeXFMTnlKODkzVFFnbkVXUDdSdF9qZ01CSFhST2h1Z2pTVjJhUmN4akVuTVJwY3ZPdFhLeDR5R3E2Q24wNXdONkt2ajBTWHFYb182MmxrYWRWSm81VDcyNjJBNXhTSEhvUV9tMUZTR0V5a2pqRUNUUUpPRGxfNUxZb1NRUDFfeDV6cUctUXdkWnE?oc=5"
       },
       {
-        "title": "Thomson Reuters launches AI model in fresh challenge to Harvey and Legora",
+        "title": "OpenAI loses a second sales leader in a week to Salesforce",
         "summary": "",
         "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T14:56:22+01:00",
-        "source": "The Lawyer",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjY3NqRzU3LUItZ0J2NXBCYW9RTk9LV2xWb0ZSQnRLQXFqbnlySGJZVW5Bc2MzU3c0ZFFZMmJJaWpDbFNnYlg2QTJTREFUbVJGczQ3eE1DVXdDa1dQdThoOA?oc=5"
+        "publishedAt": "2026-08-24T19:48:17+01:00",
+        "source": "The Next Web",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUDNLVFBiSmxuN3ZGVk9TRmJCTWlVSUg3UHJ3c05kYzE2b01va1dqQkN3Y2g5amRJRG95RzZ1Ym1CNXBZYTVJcF95Rk5saXJpUzMydk0wN29yLWVsT1JZM0dxQkZ6clFxcThNajEtVWlXaDlvXzdJVnpMMVk5ZXp5VGVxbw?oc=5"
       }
     ],
     "Career": [
+      {
+        "title": "Head of Product",
+        "summary": "Foundation Partners · London, England, United Kingdom",
+        "meta": "Remote · Posted Tue 11 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442775538",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "Foundation Partners",
+        "location": "London, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-11"
+      },
       {
         "title": "Director of Product Management",
         "summary": "Rasa · Remote - Germany",
@@ -840,6 +857,32 @@
         "postedAt": "2026-08-07"
       },
       {
+        "title": "Product Lead (Pre booking experience)",
+        "summary": "British Airways Holidays · Crawley, England, United Kingdom",
+        "meta": "3+ WFH days · Posted Wed 5 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/product-lead-pre-booking-experience-at-british-airways-holidays-4449472670",
+        "contentType": "job",
+        "workArrangement": "3-wfh-days",
+        "company": "British Airways Holidays",
+        "location": "Crawley, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-05"
+      },
+      {
+        "title": "Senior Product Manager",
+        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
+        "meta": "3+ WFH days · Posted Fri 31 Jul",
+        "source": "LinkedIn",
+        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
+        "contentType": "job",
+        "workArrangement": "3-wfh-days",
+        "company": "Quinyx",
+        "location": "Stockholm, Stockholm County, Sweden",
+        "countryFocus": "Sweden",
+        "postedAt": "2026-07-31"
+      },
+      {
         "title": "Senior Product Manager - Analytics",
         "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
         "meta": "3+ WFH days · Posted Mon 27 Jul",
@@ -851,19 +894,6 @@
         "location": "Stockholm, Stockholm County, Sweden",
         "countryFocus": "Sweden",
         "postedAt": "2026-07-27"
-      },
-      {
-        "title": "Senior Product Manager (fintech)",
-        "summary": "TechBiz Global GmbH · Remote job",
-        "meta": "Remote · Posted Mon 24 Aug",
-        "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-product-manager-fintech-berlin-424858",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "TechBiz Global GmbH",
-        "location": "Remote job",
-        "countryFocus": "Europe/remote",
-        "postedAt": "2026-08-24"
       }
     ]
   }
