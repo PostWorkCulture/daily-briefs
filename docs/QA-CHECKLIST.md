@@ -15,6 +15,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Mobile has no overflow, clipping, or unusable navigation.
 - [ ] Chromebook/desktop has an intentional larger-screen layout.
 - [ ] Responsive smoke test passes.
+- [ ] Supplied Coming up artwork matches recycling, normal bins, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
 
 ## Weather
 

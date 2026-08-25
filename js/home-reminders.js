@@ -1,6 +1,13 @@
 (() => {
   const DAY = 86400000;
   const BIN_ANCHOR = new Date(2026, 7, 24); // Monday 24 Aug 2026 = recycling
+  const REMINDER_ART = {
+    clocks: 'assets/icons/clocks-card.webp',
+    halloween: 'assets/icons/halloween-card.webp',
+    normalBins: 'assets/icons/normal-bins-card.webp',
+    recycling: 'assets/icons/recycling-card.webp',
+    christmas: 'assets/icons/xmas-card.webp'
+  };
   let occasions = [];
 
   const startOfDay = (date = new Date()) => {
@@ -121,6 +128,16 @@
     return `${days} days to go`;
   }
 
+  function reminderArtwork(src) {
+    return src
+      ? `<img class="home-reminder-art" src="${src}" alt="" aria-hidden="true" decoding="async">`
+      : '';
+  }
+
+  function reminderCopy(content) {
+    return `<div class="home-reminder-copy">${content}</div>`;
+  }
+
   function ensureBirthdayTab() {
     const nav = document.getElementById('primaryNav');
     if (nav && !nav.querySelector('[data-view-target="birthdays"]')) {
@@ -202,19 +219,21 @@
 
     const binUrgent = binDays <= 1 ? ' urgent' : '';
     const binHeadline = binDays === 0 ? `${bin.type.toUpperCase()} TODAY` : binDays === 1 ? `${bin.type.toUpperCase()} TOMORROW` : bin.type;
+    const binArt = bin.recycling ? REMINDER_ART.recycling : REMINDER_ART.normalBins;
+    const festiveArt = REMINDER_ART[festive.theme] || '';
 
     const cards = [
       {
         date: bin.date,
-        html: `<article class="home-reminder-card bin${binUrgent}"><div class="home-reminder-top"><span class="home-reminder-icon">♻</span><span>Bin day</span></div><strong>${binHeadline}</strong><b>${countdownText(binDays, 'Collection')}</b><small>${fmtDate(bin.date)} · ${bin.detail}</small></article>`
+        html: `<article class="home-reminder-card bin has-art${binUrgent}">${reminderArtwork(binArt)}${reminderCopy(`<div class="home-reminder-top"><span class="home-reminder-icon">♻</span><span>Bin day</span></div><strong>${binHeadline}</strong><b>${countdownText(binDays, 'Collection')}</b><small>${fmtDate(bin.date)} · ${bin.detail}</small>`)}</article>`
       },
       {
         date: clocks,
-        html: `<article class="home-reminder-card clocks"><div class="home-reminder-top"><span class="home-reminder-icon">◷</span><span>Clocks change</span></div><strong>Clocks go back</strong><b>${clockDays === 0 ? 'Today' : clockDays === 1 ? 'Tomorrow' : `${clockDays} days to go`}</b><small>${fmtDate(clocks)} · back one hour</small></article>`
+        html: `<article class="home-reminder-card clocks has-art">${reminderArtwork(REMINDER_ART.clocks)}${reminderCopy(`<div class="home-reminder-top"><span class="home-reminder-icon">◷</span><span>Clocks change</span></div><strong>Clocks go back</strong><b>${clockDays === 0 ? 'Today' : clockDays === 1 ? 'Tomorrow' : `${clockDays} days to go`}</b><small>${fmtDate(clocks)} · back one hour</small>`)}</article>`
       },
       {
         date: festive.date,
-        html: `<article class="home-reminder-card festive ${festive.theme}"><div class="home-reminder-top"><span class="home-reminder-icon">${festive.icon}</span><span>Festive</span></div><strong>${festive.name}</strong><b>${festiveDays === 0 ? 'Today' : festiveDays === 1 ? 'Tomorrow' : `${festiveDays} days to go`}</b><small>${fmtDate(festive.date)} · ${festive.detail}</small></article>`
+        html: `<article class="home-reminder-card festive ${festive.theme}${festiveArt ? ' has-art' : ''}">${reminderArtwork(festiveArt)}${reminderCopy(`<div class="home-reminder-top"><span class="home-reminder-icon">${festive.icon}</span><span>Festive</span></div><strong>${festive.name}</strong><b>${festiveDays === 0 ? 'Today' : festiveDays === 1 ? 'Tomorrow' : `${festiveDays} days to go`}</b><small>${fmtDate(festive.date)} · ${festive.detail}</small>`)}</article>`
       }
     ];
 
