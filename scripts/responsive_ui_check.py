@@ -566,11 +566,12 @@ def check_viewport(browser, name: str) -> None:
             )
             page.locator('[data-view-target="career"]').click()
             career_meta = page.locator('#view-career .tab-story .meta').all_inner_texts()
+            career_meta_normalised = [value.lower() for value in career_meta]
             if profile == "pete" and (
                 not career_meta
                 or any(
-                    "Within 1 hour of KT8 2LE" not in value and "Remote" not in value
-                    for value in career_meta
+                    "within 1 hour of kt8 2le" not in value and "remote" not in value
+                    for value in career_meta_normalised
                 )
             ):
                 failures.append(f"Pete Career contains an out-of-area job: {career_meta}")
