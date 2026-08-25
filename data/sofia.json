@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Tuesday, 25 August 2026 · refreshed 6:02am",
+  "updatedLabel": "Tuesday, 25 August 2026 · refreshed 8:10am",
   "worldFact": {
     "id": "lencois-rainwater-desert-lagoons",
     "category": "Impossible landscape",
@@ -15,7 +15,7 @@
     "sequence": 4
   },
   "weather": {
-    "temp": "16°",
+    "temp": "19°",
     "summary": "Sunny",
     "condition": "Sunny",
     "currentRainChance": 4,
@@ -26,7 +26,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -35,12 +35,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-08-27",
-        "high": 23,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -49,11 +49,11 @@
       },
       {
         "date": "2026-08-28",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -64,11 +64,20 @@
         "condition": "Sunny intervals",
         "rainChance": 40,
         "source": "Met Office"
+      },
+      {
+        "date": "2026-08-30",
+        "high": 22,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 30%",
+      "detail": "Sunny · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -106,20 +115,6 @@
   },
   "calendar": [
     {
-      "title": "8.15-17.45",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-24T00:00:00+01:00",
-      "end": "2026-08-26T00:00:00+01:00",
-      "date": "2026-08-24",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "7aea217cfg5736rbc7utpu0af4",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "WFH",
       "summary": "",
       "url": "",
@@ -134,7 +129,21 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "9.30-16.30",
+      "title": "Camp 8.15-17.45",
+      "summary": "",
+      "url": "",
+      "start": "2026-08-24T00:00:00+01:00",
+      "end": "2026-08-26T00:00:00+01:00",
+      "date": "2026-08-24",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "7aea217cfg5736rbc7utpu0af4",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Camp - 9.30-16.30",
       "summary": "",
       "url": "",
       "start": "2026-08-26T00:00:00+01:00",
@@ -260,20 +269,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -285,6 +280,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -477,12 +486,12 @@
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xdmprXy1xWlJiMTRoV3NHM2dOeXE5UjVpNkNaMHcxWkkwS2cydldwZWZ2MlJSWmNGb2pvWlZ6NkNlNldEQUlGM0xPWWw5Y2ttMXI5UGowdEpva05X?oc=5"
       },
       {
-        "title": "Swedish Club posts stronger H1 profit as combined ratio improves to 96%",
+        "title": "Swedish Club posts 96% combined ratio and $282 million in free reserves at H1",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T03:29:40+01:00",
+        "publishedAt": "2026-08-25T06:04:40+01:00",
         "source": "Insurance Business",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRGJrTExIeUF1S09SaXdIdG9ucHB2M2hMZlp3SW90RG44RGtUdDlvVG1oa3A4R2JiY3pIYlhjdXdwcFMxdzNjSVhSTzRjWFVGNmZHS0NwbjMxaHVMOHlIbDd6bTM3dmFQRTVQRUpETTZ4VUVfMWRFU2pqX2xuNmNwMkNyZ0VEVEUxTTFoQkMzR0ZFVXN2ZDRiTGl4UkItWWVJcFBOdUhfcHpNLVVkeDlHTXRWdnRSdGp3M1otZFAwSjR3YzdRWWFHRlFpYW1tRG8?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTDJtQUtQRWZiX0pHOWdwb2JrUl9QSm1rX0VOUUw4VDVFRDdsQ1JBZ2VTVEpacnU4SldkWGNjRXJma2p6dHhmel9JT0JNbVRvV1h3UFktVVpyVDlBbkdLeFd3a05wYTlZWnFHSnNTd0hyWVIyV0owT0FkOXQzMWU5TlpuUnQ0VjNubUsyMWRyREtIU3dzbGMxeG1VcHFuQ3Y0RVhzNmZBVUQxelltTlJIazZ6TzQxUDcwY0c2UlZtTUU0azREMFo5dERYQndrYmlxZEhSYUVB?oc=5"
       },
       {
         "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
@@ -504,17 +513,9 @@
         "title": "Competition or collusion: Entry decisions in the Swedish pharmaceutical market",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T00:37:30+01:00",
+        "publishedAt": "2026-08-25T00:43:06+01:00",
         "source": "CEPR",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUmxJWktKME9ydkhBMTFXZ2F1Q3F4YVZrd1dUY0otekQ1aTFtU0l1ZHNSX3E2Y2Vwa3laUGk4ZHhqUWJ3c095N01jN3lpYzRMb3BsSTVUay1YWEdwSXl0TFlXTjBsZWJUU3VmM2c2c2lPMjVzMmZzZlM3WkFDX2kzYzNKclRBaGRpUzlJb0RCNFJHak12ci0zbDJxQmo2dUZFNnkw?oc=5"
-      },
-      {
-        "title": "Sweden moves to prevent school attacks after one killed in sword assault in Fagersta",
-        "summary": "",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T11:59:23+01:00",
-        "source": "Euronews.com",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQW50eEJxQUdualJhNUNDVTlUQTR3MWxpbTVsazlwRHNmdGpqR3VudmRVTXlDZ1VSNExYcklCUXVNM0JaZmpZcGhDbkpIMmlkNUV4c2ZFcFpPVWhQbktCaUFFLXFGX203aEhSM1hNb3hUQ3pFVVRFdXdqQUxqdG1YLVFZMXByZ1g3dTJEQWpReDQ0eXJCYi1SMmpJWk1oSGhQMS1uRlZQTGNIanhNNE52R0VEWGpaRFVkMmNyMDQyY2hDbW91aFRodXl3?oc=5"
       },
       {
         "title": "'17-year-old girl killed' in sword attack at Swedish school",
@@ -523,6 +524,14 @@
         "publishedAt": "2026-08-22T17:09:11+01:00",
         "source": "Sky News",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeUtnSDJjN2hJVTVfMDVWWEtWcnBjTW9hRnMxMTNseVFobjJ6RDZSVXozZ1JhaXdpbjNOdllUSWJuRm1MMnA1bmNqZ3BqVXpGMUhJMTBmelVxdzgxRVZTclVIeFZPRVRxQUNuTXhLRHZEMkl6SmdqQ2NPNXNvZE1LM3hGek1rQWt5M2xZY2ZEdXR1RTBjMmZvWQ?oc=5"
+      },
+      {
+        "title": "Sweden moves to prevent school attacks after one killed in sword assault in Fagersta",
+        "summary": "",
+        "meta": "Mon 24 Aug",
+        "publishedAt": "2026-08-24T11:59:23+01:00",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQW50eEJxQUdualJhNUNDVTlUQTR3MWxpbTVsazlwRHNmdGpqR3VudmRVTXlDZ1VSNExYcklCUXVNM0JaZmpZcGhDbkpIMmlkNUV4c2ZFcFpPVWhQbktCaUFFLXFGX203aEhSM1hNb3hUQ3pFVVRFdXdqQUxqdG1YLVFZMXByZ1g3dTJEQWpReDQ0eXJCYi1SMmpJWk1oSGhQMS1uRlZQTGNIanhNNE52R0VEWGpaRFVkMmNyMDQyY2hDbW91aFRodXl3?oc=5"
       }
     ],
     "Local news": [
@@ -625,26 +634,26 @@
     ],
     "UK news": [
       {
-        "title": "More than 70,000 social and affordable homes to be built across England",
-        "summary": "Funding has been granted to Greater Manchester, the West Midlands and West Yorkshire as well as £6bn for London.",
+        "title": "Iran says it is 'fully prepared' to counter widened US economic sanctions",
+        "summary": "The US calls its latest sanctions on Iran an \"economic D-Day\", but Tehran says it has a plan to address them.",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T01:32:20+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cnvly73jrrdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Iran says it is ready for what US calls 'greatest financial offensive ever'",
-        "summary": "The US calls its latest sanctions on Iran an \"economic D-Day\", but Tehran says it has a plan to counter them.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T04:50:06+01:00",
+        "publishedAt": "2026-08-25T07:54:46+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "More than 70,000 social and affordable homes to be built across England over 10 years",
+        "summary": "Funding has been granted to Greater Manchester, the West Midlands and West Yorkshire as well as £6bn for London.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T06:41:08+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cnvly73jrrdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Lockerbie bombing trial postponed days before it was due to start",
         "summary": "The trial of a Libyan man is delayed for a third time, after new evidence on the 37-year-old case came to light three days ago.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T23:13:36+01:00",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T07:59:03+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cq63rmj1zl1o?at_medium=RSS&at_campaign=rss"
       },
@@ -657,20 +666,20 @@
         "url": "https://www.bbc.co.uk/news/articles/c62m4zn1q6mo?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "The grieving family who say the coroner's courts aren't working",
+        "summary": "One man's death highlights the growing strains on the UK's coroner's courts",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T00:09:16+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cvgydn9k4p2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "UK drone factories may face attacks from 'unknown sources', says Kremlin adviser",
         "summary": "The comments on BBC Newsnight come after the UK announced it has agreed to hand over blueprints for British-made missile components to Ukraine.",
         "meta": "Tue 25 Aug",
         "publishedAt": "2026-08-25T05:06:34+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cg598m3meeyo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "The grieving family who says the coroner's courts aren't working",
-        "summary": "One man's death highlights the growing strains on the UK's coroner's courts",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T00:09:16+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgydn9k4p2o?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Kit Harington joins HBO's Harry Potter series as Gilderoy Lockhart",
@@ -683,18 +692,26 @@
       {
         "title": "Organised crime arrests as police investigate A66 crash that killed two officers",
         "summary": "Nine men and three women are arrested as police investigate the lead-up to the crash that killed seven people.",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T18:53:40+01:00",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T06:52:21+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c36d6975dzno?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Home-testing kits now available for women in England who have missed cervical screening",
-        "summary": "Nearly 4 million women in England can order a self-testing kits to check for high-risk HPV.",
+        "title": "HPV home-testing kits available for women in England who have missed cervical screening",
+        "summary": "Nearly four million women in England can order a self-testing kits to check for high-risk HPV.",
         "meta": "Tue 25 Aug",
         "publishedAt": "2026-08-25T00:27:50+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c9w4jgg4y55o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Burnham refuses to rule out tax rises in autumn Budget",
+        "summary": "Experts have warned that he and Chancellor John Healey will have little room to manoeuvre in their first Budget.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T07:40:33+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cj06818jgzlo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Moment tornado tears through southern France",
@@ -705,18 +722,10 @@
         "url": "https://www.bbc.co.uk/news/videos/ckg8wkd0j7do?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "US removes Syria from list of state sponsors of terrorism",
-        "summary": "The Trump administration has embraced Syria's new president, former al-Qaeda linked militant Ahmed al-Sharaa.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T01:17:25+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c33knmyl0y5o?at_medium=RSS&at_campaign=rss"
-      },
-      {
         "title": "Sir Chris Hoy: Campaigning for cancer screening should not be down to me",
         "summary": "The cycling legend tells BBC Scotland that the onus to encourage men to get tested for prostate cancer should not just be on high profile individuals like him.",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T00:39:36+01:00",
+        "publishedAt": "2026-08-25T06:24:54+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/sport/cycling/articles/c80nzk7dey4o?at_medium=RSS&at_campaign=rss"
       }
@@ -779,14 +788,6 @@
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
       },
       {
-        "title": "Companies not as keen on Anthropic’s best AI model",
-        "summary": "",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T01:47:09+01:00",
-        "source": "cio.com",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOUlubmQxdDFISUd0dVk5M0w0R3ZWUnNSOUNfRVp2UGlTbGhfTzQ0dnRaSG8tS01OSnN5OFBiUnNQYklyOWNJcXl2SW9XRW5EUEhONzBEaEF0M214Q3E3UXpSY25kbFhSeUVPVjRocTkwX3lQTDhuWjNJYXdLZUx1cHR4aF9wM0lvS0pPRW8zNEhtMlEtOHA5dl8tWi1JVnV6QVZJ?oc=5"
-      },
-      {
         "title": "Hugging Face Explores $13 Billion Sale a Month After a Rogue OpenAI Agent Hacked It",
         "summary": "",
         "meta": "Mon 24 Aug",
@@ -795,12 +796,20 @@
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS2JXWTJtSDJ5LVllZEo3SWNnV0MySkJrMVJBd0FEb0pGYzByREd0UGQ1eTNLWU9BTzlpUGNDQzVRVGw3cHlXbV9xTG91TDQxM19WQTYxQ0xpTGdEaWxaOFQxX0RKTTkxMDZ0dVdCRlk0NXVsWF8wSm5HNWNZUFBhaF9xR2jSAYwBQVVfeXFMTnlKODkzVFFnbkVXUDdSdF9qZ01CSFhST2h1Z2pTVjJhUmN4akVuTVJwY3ZPdFhLeDR5R3E2Q24wNXdONkt2ajBTWHFYb182MmxrYWRWSm81VDcyNjJBNXhTSEhvUV9tMUZTR0V5a2pqRUNUUUpPRGxfNUxZb1NRUDFfeDV6cUctUXdkWnE?oc=5"
       },
       {
-        "title": "OpenAI loses a second sales leader in a week to Salesforce",
+        "title": "Companies not as keen on Anthropic’s best AI model",
         "summary": "",
-        "meta": "Mon 24 Aug",
-        "publishedAt": "2026-08-24T19:48:17+01:00",
-        "source": "The Next Web",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUDNLVFBiSmxuN3ZGVk9TRmJCTWlVSUg3UHJ3c05kYzE2b01va1dqQkN3Y2g5amRJRG95RzZ1Ym1CNXBZYTVJcF95Rk5saXJpUzMydk0wN29yLWVsT1JZM0dxQkZ6clFxcThNajEtVWlXaDlvXzdJVnpMMVk5ZXp5VGVxbw?oc=5"
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T01:47:09+01:00",
+        "source": "cio.com",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOUlubmQxdDFISUd0dVk5M0w0R3ZWUnNSOUNfRVp2UGlTbGhfTzQ0dnRaSG8tS01OSnN5OFBiUnNQYklyOWNJcXl2SW9XRW5EUEhONzBEaEF0M214Q3E3UXpSY25kbFhSeUVPVjRocTkwX3lQTDhuWjNJYXdLZUx1cHR4aF9wM0lvS0pPRW8zNEhtMlEtOHA5dl8tWi1JVnV6QVZJ?oc=5"
+      },
+      {
+        "title": "How AI ‘doomer’ Dario Amodei built Anthropic to save the world",
+        "summary": "",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T06:00:00+01:00",
+        "source": "The Times",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcDVuZmtpWDI1X29aMTZfVHlzOEotM0xJSEp0em5VWEgzanJpRFJRYXJpWVNVa3R4TEJPd1l0YzgxLUxfQlFiaHdJNjY4NjZERGFyTklhVnZNdFA2ZEFXSkJjWWdleEJaNWNKRXJTRF96SFEycjNPeS1nU0Y1ejZtQ3ZxSmZjdWI1VVpaRU1qa1BVTzlVUldLTDV2Nlg2bGRsdVE?oc=5"
       }
     ],
     "Career": [
@@ -809,7 +818,7 @@
         "summary": "Foundation Partners · London, England, United Kingdom",
         "meta": "Remote · Posted Tue 11 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442775538",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442780389",
         "contentType": "job",
         "workArrangement": "remote",
         "company": "Foundation Partners",
@@ -881,19 +890,6 @@
         "location": "Stockholm, Stockholm County, Sweden",
         "countryFocus": "Sweden",
         "postedAt": "2026-07-31"
-      },
-      {
-        "title": "Senior Product Manager - Analytics",
-        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
-        "meta": "3+ WFH days · Posted Mon 27 Jul",
-        "source": "LinkedIn",
-        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-analytics-at-quinyx-4445934880",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "Quinyx",
-        "location": "Stockholm, Stockholm County, Sweden",
-        "countryFocus": "Sweden",
-        "postedAt": "2026-07-27"
       }
     ]
   }
