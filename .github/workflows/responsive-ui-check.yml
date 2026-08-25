@@ -9,11 +9,13 @@ on:
       - 'css/**'
       - 'js/**'
       - 'scripts/responsive_ui_check.py'
+      - 'scripts/refresh.py'
       - 'scripts/enrich_arsenal.py'
       - 'scripts/enrich_next_fixture.py'
       - 'scripts/finalize_arsenal.py'
       - 'tests/test_enrich_arsenal.py'
       - 'tests/test_finalize_arsenal.py'
+      - 'tests/test_refresh_career.py'
       - '.github/workflows/responsive-ui-check.yml'
   workflow_dispatch:
   push:
@@ -25,11 +27,13 @@ on:
       - 'css/**'
       - 'js/**'
       - 'scripts/responsive_ui_check.py'
+      - 'scripts/refresh.py'
       - 'scripts/enrich_arsenal.py'
       - 'scripts/enrich_next_fixture.py'
       - 'scripts/finalize_arsenal.py'
       - 'tests/test_enrich_arsenal.py'
       - 'tests/test_finalize_arsenal.py'
+      - 'tests/test_refresh_career.py'
       - '.github/workflows/responsive-ui-check.yml'
 
 jobs:

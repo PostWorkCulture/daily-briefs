@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 2.8, 24 August 2026. Owner: Pete.
+Version 2.9, 25 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -22,6 +22,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Birthday navigation uses vivid bright pink on hover or keyboard focus. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 - The Birthday destination and navigation label are both `Birthday`. Do not repeat a generic Birthdays subheading beneath the page title.
 - Birthday and anniversary cards use solid white surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings are white on the blue canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, dark readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder retains its solid pastel-pink surface.
+- Keep at least 18 px between Birthday cards and 30 px between month groups on mobile, increasing to 22 px between cards and 36 px between month groups on Chromebook/desktop.
 - Birthday and anniversary cards, including the Home birthday reminder, use the same visible cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
 
 ## Boundaries
@@ -90,6 +91,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
+- The News view opens directly with its group headings. Do not repeat a page-level `News` heading above them. Keep at least 18 px between News, AI, and Career article cards on mobile and 22 px on Chromebook/desktop.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - AI and Career never show article photography. Use stylish, decorative code-native section icons while preserving the current article and job content, metadata, and real links.
 - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
@@ -99,7 +101,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Sofia's Career section shows current senior non-software product roles suited to her 17 years in product development at Strategic Insight, a B2B financial-data company.
 - Sofia's roles must be fully remote or explicitly offer at least three work-from-home days per week. Generic hybrid roles do not qualify without evidence of that working pattern.
 - Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
-- Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
+- Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia. Include only UK-eligible fully remote roles or roles in a conservative one-hour commute catchment from KT8 2LE. Reject distant locations and unspecified `Greater London` listings; generic `London` is treated as central London, while the displayed office location remains available for Pete to verify before applying.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
 - Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
 - Dida has no hero or duplicate section-navigation block. It opens directly with three independent boxes: This week, Seasonal missions, and Reference library. Each box header contains only that title, without a number, kicker, or description. Use white backgrounds for every zone, inner card, and icon surface; fresh bright green only for titles and box outlines; and neutral icons and body copy. Keep at least 28 px between zones on mobile and 36 px on Chromebook/desktop, keep weekly quick wins first, preserve every existing idea and the real age-six source, and keep all four reference groups collapsed by default on mobile and desktop.
