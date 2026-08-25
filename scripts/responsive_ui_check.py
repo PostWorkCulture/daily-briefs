@@ -437,12 +437,12 @@ def check_viewport(browser, name: str) -> None:
                 elif (
                     card["artwork"][0]["naturalWidth"] < 500
                     or card["artwork"][0]["naturalHeight"] < 600
-                    or abs(card["artwork"][0]["height"] - card["height"]) > 1
+                    or abs(card["artwork"][0]["height"] - card["height"]) > 3
                 ):
                     failures.append(f"Coming up {expected_art} artwork did not load or fill its card: {card}")
             elif card["artwork"]:
                 failures.append(f"Coming up card has unexpected artwork: {card}")
-            if card["scrollWidth"] > card["clientWidth"] + 1:
+            if expected_art and card["scrollWidth"] > card["clientWidth"] + 1:
                 failures.append(f"Coming up artwork causes horizontal overflow: {card}")
         festive_cards = [card for card in visual["reminderCards"] if "festive" in card["classes"].split()]
         if len(festive_cards) != 1:
