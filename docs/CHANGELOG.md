@@ -4,13 +4,14 @@ Newest entries go first.
 
 ## 25 August 2026: Dark-navy navigation and separated Coming up text
 
-Status: in preview, not published
+Status: validated and published
 
 - Requested changes: replace the dark-grey navigation surface with dark navy, and keep all Coming up text on the coloured left side of each artwork card so it never runs over the picture.
 - Approved scope: navigation surface and shadow, Coming up text and artwork geometry, CSS cache keys, responsive validation, master brief, QA checklist, and changelog only.
 - Navigation rule: use solid dark navy `#102A43` on mobile and desktop while retaining white resting labels and icons, the active treatment, brighter per-destination hover and focus colours, the aurora edge, and fixed mobile stability.
 - Coming up rule: reserve a 55% left text column and a 42% right artwork column, leaving separation between their layout boxes. Keep the pastel card identities, dark text, dynamic dates and countdowns, current supplied artwork, crops, hover feedback, mobile stacking, and compact four-card Chromebook row.
-- Publication: awaiting Pete's preview approval.
+- Validation passed: all eight unit tests and the full responsive Chromium workflow verified the exact dark-navy surface, white resting navigation, destination hover colours, stable mobile switching, left-only Coming up text geometry, right-side artwork, mobile stacking, and the compact four-card Chromebook row. Mobile and Chromebook screenshots were visually inspected.
+- Publication: Pete approved the preview and PR #6 was published on 25 August 2026.
 - Master brief update: version 3.0 records both requested rules.
 
 ## 25 August 2026: Supplied artwork for Coming up cards
