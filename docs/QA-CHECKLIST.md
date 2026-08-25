@@ -15,7 +15,9 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Mobile has no overflow, clipping, or unusable navigation.
 - [ ] Chromebook/desktop has an intentional larger-screen layout.
 - [ ] Responsive smoke test passes.
+- [ ] Primary navigation is solid dark navy with white resting text and icons; mobile stability and destination hover colours remain intact.
 - [ ] Supplied Coming up artwork matches recycling, normal bins, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
+- [ ] Coming up text remains wholly inside the left pastel column and does not overlap the right-side artwork.
 
 ## Weather
 

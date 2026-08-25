@@ -346,10 +346,12 @@ def check_viewport(browser, name: str) -> None:
                   height: card.getBoundingClientRect().height,
                   clientWidth: card.clientWidth,
                   scrollWidth: card.scrollWidth,
+                  copyRight: card.querySelector('.home-reminder-copy')?.getBoundingClientRect().right || null,
                   artwork: [...card.querySelectorAll('.home-reminder-art')].map(image => ({
                     src: image.getAttribute('src'),
                     naturalWidth: image.naturalWidth,
                     naturalHeight: image.naturalHeight,
+                    left: image.getBoundingClientRect().left,
                     width: image.getBoundingClientRect().width,
                     height: image.getBoundingClientRect().height
                   })),
@@ -395,8 +397,8 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"titles on the blue canvas are not white: {visual['canvasTitleColours']}")
         if visual["weatherTitleColour"] != approved_ink:
             failures.append(f"Weather title is not readable on its light card: {visual['weatherTitleColour']}")
-        if visual["navBackgroundColour"] != "rgb(52, 58, 64)":
-            failures.append(f"navigation is not solid dark grey: {visual['navBackgroundColour']}")
+        if visual["navBackgroundColour"] != "rgb(16, 42, 67)":
+            failures.append(f"navigation is not solid dark navy: {visual['navBackgroundColour']}")
         if any(colour != "rgb(255, 255, 255)" for colour in visual["navDefaultColours"]):
             failures.append(f"navigation text and icons are not white before hover: {visual['navDefaultColours']}")
         wrong_main_copy = [
@@ -440,6 +442,8 @@ def check_viewport(browser, name: str) -> None:
                     or abs(card["artwork"][0]["height"] - card["height"]) > 3
                 ):
                     failures.append(f"Coming up {expected_art} artwork did not load or fill its card: {card}")
+                elif card["copyRight"] > card["artwork"][0]["left"] + 1:
+                    failures.append(f"Coming up text overlaps {expected_art} artwork: {card}")
             elif card["artwork"]:
                 failures.append(f"Coming up card has unexpected artwork: {card}")
             if expected_art and card["scrollWidth"] > card["clientWidth"] + 1:
