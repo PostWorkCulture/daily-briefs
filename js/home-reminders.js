@@ -145,7 +145,7 @@
       style.id = 'birthdayStyles';
       style.textContent = `
         @media(max-width:899px){#primaryNav{grid-template-columns:repeat(7,minmax(0,1fr))}}
-        .birthday-panel .section-head h2,.occasion-month h3{color:#fff!important}.birthday-list{display:grid;gap:22px}.occasion-month{display:grid;gap:10px}.occasion-month h3{margin:0 0 2px;font-size:15px}.birthday-month-grid{display:grid;grid-template-columns:1fr;gap:10px}
+        .birthday-panel .section-head h2,.occasion-month h3{color:#fff!important}.birthday-list{display:grid;gap:30px}.occasion-month{display:grid;gap:14px}.occasion-month h3{margin:0 0 2px;font-size:15px}.birthday-month-grid{display:grid;grid-template-columns:1fr;gap:18px}
         .birthday-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(217,0,119,.48);border-radius:20px;background:#fff!important;box-shadow:0 12px 28px rgba(73,79,111,.10)}
         .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
         .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(0,124,184,.88)!important;box-shadow:inset 0 0 0 2px rgba(39,147,199,.16),0 0 0 3px rgba(255,255,255,.45),0 0 20px rgba(23,128,183,.40),0 0 38px rgba(57,135,255,.22)!important;transform:none!important;outline:none}
@@ -154,7 +154,7 @@
         .birthday-empty{padding:24px;border:1px dashed var(--line);border-radius:20px;color:var(--muted)}
         #homeReminders .home-reminder-card.birthday{background:#ffc1dc!important;border-color:rgba(217,0,119,.48);box-shadow:0 12px 28px rgba(73,79,111,.10)}
         .home-reminder-card.birthday .home-reminder-top,.home-reminder-card.birthday small{color:#142a3d}.home-reminder-card.birthday b{color:#142a3d}
-        @media(min-width:700px){.birthday-month-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
+        @media(min-width:700px){.birthday-list{gap:36px}.birthday-month-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}}
       `;
       document.head.appendChild(style);
     }

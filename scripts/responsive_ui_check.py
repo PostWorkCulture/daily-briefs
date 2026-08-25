@@ -29,6 +29,8 @@ def check_icon_metadata_files() -> None:
         raise AssertionError("visible Daily Briefs wordmark remains in the hero")
     if "Rare facts · wild places" in root_html:
         raise AssertionError("Around the world still shows the removed Rare facts subtitle")
+    if '<div class="section-head"><h2>News</h2></div>' in root_html:
+        raise AssertionError("News still shows the redundant page-level heading")
     for value in expected_root:
         if value not in root_html:
             raise AssertionError(f"root icon metadata is missing {value}")
@@ -48,6 +50,15 @@ def check_icon_metadata_files() -> None:
     }
     if manifest.get("name") != "Daily Briefs" or manifest_icons != expected_manifest_icons:
         raise AssertionError(f"bookmark manifest metadata is incorrect: {manifest}")
+
+    pete = json.loads((ROOT / "data" / "pete.json").read_text(encoding="utf-8"))
+    pete_jobs = (pete.get("sections") or {}).get("Career") or []
+    if not pete_jobs or any(
+        job.get("commuteFrom") != "KT8 2LE"
+        or job.get("commuteEligibility") not in {"remote", "within-1-hour"}
+        for job in pete_jobs
+    ):
+        raise AssertionError("Pete Career contains a job outside the KT8 2LE one-hour/remote rule")
 
     reminders = (ROOT / "js" / "home-reminders.js").read_text(encoding="utf-8")
     theme = (ROOT / "css" / "light-theme.css").read_text(encoding="utf-8")
@@ -156,6 +167,22 @@ def check_viewport(browser, name: str) -> None:
                 )
             if page.locator(f'#view-{target} .story-media').count() != 0:
                 raise AssertionError(f"{name}: {target} still shows article photography")
+
+        required_article_gap = 22 if name == "desktop" else 18
+        for target in ("news", "ai", "career"):
+            page.locator(f'[data-view-target="{target}"]').click()
+            article_list = page.locator(f'#view-{target} .tab-list').first
+            article_list.wait_for(state="visible", timeout=10000)
+            article_gap = float(
+                article_list.evaluate("el => parseFloat(getComputedStyle(el).rowGap)")
+            )
+            if article_gap < required_article_gap:
+                raise AssertionError(
+                    f"{name}: {target} article gap is too small: "
+                    f"{article_gap}px < {required_article_gap}px"
+                )
+        if page.locator('#view-news > .tab-panel > .section-head').count() != 0:
+            raise AssertionError(f"{name}: redundant News page heading remains")
 
         page.locator('[data-view-target="home"]').click()
         calendar_cards = page.locator('#calendarSummaryCards button')
@@ -537,6 +564,17 @@ def check_viewport(browser, name: str) -> None:
             page.wait_for_function(
                 f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}'"
             )
+            page.locator('[data-view-target="career"]').click()
+            career_meta = page.locator('#view-career .tab-story .meta').all_inner_texts()
+            career_meta_normalised = [value.lower() for value in career_meta]
+            if profile == "pete" and (
+                not career_meta
+                or any(
+                    "within 1 hour of kt8 2le" not in value and "remote" not in value
+                    for value in career_meta_normalised
+                )
+            ):
+                failures.append(f"Pete Career contains an out-of-area job: {career_meta}")
             page.locator('[data-view-target="news"]').click()
             news_groups = page.evaluate(
                 """
@@ -620,7 +658,10 @@ def check_viewport(browser, name: str) -> None:
                     })),
                     balloonCards: document.querySelectorAll('.birthday-card.hq-colour .hq-balloon').length,
                     navPink: getComputedStyle(document.querySelector('[data-view-target="birthdays"]')).getPropertyValue('--nav-rgb').trim(),
-                    headingColour: getComputedStyle(document.querySelector('.birthday-panel .section-head h2')).color
+                    headingColour: getComputedStyle(document.querySelector('.birthday-panel .section-head h2')).color,
+                    listGap: parseFloat(getComputedStyle(document.querySelector('.birthday-list')).rowGap),
+                    monthGaps: [...document.querySelectorAll('.birthday-month-grid')]
+                      .map(grid => parseFloat(getComputedStyle(grid).rowGap))
                   };
                 }
                 """
@@ -655,6 +696,11 @@ def check_viewport(browser, name: str) -> None:
                 failures.append(f"{profile} same-month Birthday cards do not share a row: {birthday['monthGroups']}")
             if birthday["navPink"] != "255,150,205" or birthday["headingColour"] != "rgb(255, 255, 255)":
                 failures.append(f"{profile} Birthday heading is not white or navigation hover is not bright pink: {birthday}")
+            required_birthday_gap = 22 if name == "desktop" else 18
+            if birthday["listGap"] < (36 if name == "desktop" else 30) or any(
+                gap < required_birthday_gap for gap in birthday["monthGaps"]
+            ):
+                failures.append(f"{profile} Birthday card or month spacing is too small: {birthday}")
             birthday_card = page.locator('.birthday-card').first
             birthday_card.hover()
             page.wait_for_timeout(250)
@@ -794,7 +840,15 @@ def check_viewport(browser, name: str) -> None:
             )
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
-        for target in ("home", "arsenal", "dida", "birthdays"):
+        for target in (
+            "home",
+            "news",
+            "ai",
+            "career",
+            "arsenal",
+            "dida",
+            "birthdays",
+        ):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(

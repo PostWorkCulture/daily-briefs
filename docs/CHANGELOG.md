@@ -2,6 +2,21 @@
 
 Newest entries go first.
 
+## 25 August 2026: KT8 Career catchment, clearer article gaps, and simplified News heading
+
+Status: implemented, awaiting preview approval
+
+- Requested changes: keep Career jobs within one hour of KT8 2LE, add more space between News, AI, Career, and Birthday cards, and remove the redundant page-level `News` heading.
+- Approved scope: Pete Career sourcing, filtering, metadata, fallback safety, and current data; News, AI, Career, and Birthday card spacing; the News page heading; cache keys; workflow validation; responsive regression coverage; master brief; and changelog.
+- Pete Career rule: allow UK-eligible fully remote jobs or jobs whose listed location is in the conservative KT8 one-hour catchment. Nearby Surrey and south-west London locations plus generic central `London` qualify; distant cities and unspecified `Greater London` do not. Every retained job records `KT8 2LE` as the commute origin and its eligibility method. Sofia's remote and Sweden-focused Career rules are unchanged.
+- Spacing rule: News, AI, and Career article grids use 18 px gaps on mobile and 22 px on Chromebook/desktop. Birthday cards use the same 18/22 px gaps, with 30/36 px between month groups.
+- News heading rule: remove the repeated page-level `News` title while retaining the Local News, UK News, and Sofia Sweden group titles.
+- Requirements protected: current source pool, relevant role filters, real job links, News ordering and minimum counts, article imagery rules, Birthday grouping and balloon artwork, hover behaviour, navigation, profiles, routes, and all unrelated content and styling.
+- Validation prepared: unit tests cover nearby, remote, distant, and ambiguous Greater London roles. Morning and responsive checks require the commute metadata, card gaps, absent duplicate News heading, current profile behaviour, and all existing protected rules.
+- Unexpected changes: none intended.
+- Master brief update: version 2.9 records the commute, spacing, and News-heading rules.
+- Publication: preview only. Do not merge or publish until Pete approves it.
+
 ## 24 August 2026: Dark-grey navigation with white resting labels
 
 Status: validated and approved for publication

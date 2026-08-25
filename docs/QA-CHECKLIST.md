@@ -37,6 +37,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Around the world has one linked image and a fact directly below.
 - [ ] At least four named TV Picks per profile with matching artwork.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
+- [ ] Pete Career contains only UK-eligible remote roles or jobs in the KT8 2LE one-hour catchment; Sofia Career rules remain intact.
+- [ ] News has no duplicate page title; News, AI, Career, and Birthday cards retain the approved responsive gaps.
 - [ ] All offered sources and destinations are real and clickable.
 
 ## Arsenal

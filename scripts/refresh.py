@@ -114,6 +114,18 @@ PETE_PUBLIC_SECTOR_TERMS = re.compile(
     r"local authority|ministry of|home office|public service)\b",
     re.I,
 )
+PETE_COMMUTE_BASE = "KT8 2LE"
+PETE_ONE_HOUR_LOCATIONS = re.compile(
+    r"\b(?:east molesey|west molesey|molesey|hampton court|hampton|teddington|"
+    r"kingston(?: upon thames)?|surbiton|thames ditton|long ditton|esher|"
+    r"walton(?:-on-thames| on thames)?|hersham|weybridge|sunbury(?:-on-thames| on thames)?|"
+    r"chertsey|addlestone|cobham|oxshott|epsom|chessington|twickenham|richmond|"
+    r"wimbledon|woking|staines(?:-upon-thames| upon thames)?|feltham|hounslow|heathrow|"
+    r"putney|hammersmith|fulham|clapham junction|vauxhall|waterloo|westminster|whitehall|"
+    r"central london|west london|south west london|london,? england|^london$)\b",
+    re.I,
+)
+PETE_UNSPECIFIED_GREATER_LONDON = re.compile(r"\bgreater london\b", re.I)
 PETE_EXCLUDED_ROLE = re.compile(
     r"\b(?:software engineer|machine learning engineer|data engineer|developer|programmer|devops|mlops)\b",
     re.I,
@@ -577,13 +589,22 @@ def normalise_job(row: dict, source: str) -> dict:
     return dict(row)
 
 
-def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, ...] = (0, 10)) -> list[tuple[dict, str]]:
+def linkedin_jobs(
+    keywords: str,
+    location: str,
+    target: str,
+    starts: tuple[int, ...] = (0, 10),
+    distance: int | None = None,
+) -> list[tuple[dict, str]]:
     jobs = []
     for start in starts:
         try:
+            params = {"keywords": keywords, "location": location, "f_TPR": "r2592000", "start": start}
+            if distance:
+                params["distance"] = distance
             response = requests.get(
                 "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
-                params={"keywords": keywords, "location": location, "f_TPR": "r2592000", "start": start},
+                params=params,
                 headers=UA,
                 timeout=25,
             )
@@ -685,7 +706,8 @@ def career_job_candidates() -> list[tuple[dict, str]]:
 
     candidates.extend(linkedin_jobs("Senior Product Manager OR Product Director OR Head of Product", "United Kingdom", "sofia"))
     candidates.extend(linkedin_jobs("Senior Product Manager OR Product Director OR Head of Product", "Sweden", "sofia"))
-    candidates.extend(linkedin_jobs("AI data digital public sector", "United Kingdom", "pete"))
+    candidates.extend(linkedin_jobs("AI data digital public sector", "East Molesey, England, United Kingdom", "pete", starts=(0, 10, 20), distance=25))
+    candidates.extend(linkedin_jobs("AI data digital public sector", "London, England, United Kingdom", "pete", starts=(0, 10, 20), distance=25))
     return candidates
 
 
@@ -719,6 +741,20 @@ def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: i
     return [item for _, _, item in ranked[:limit]]
 
 
+def pete_commute_eligibility(job: dict, source: str) -> str | None:
+    raw = " ".join(str(job.get(key, "")) for key in ("title", "location", "description", "tags"))
+    text = clean_html(html.unescape(raw))
+    source_is_remote = source in {"Remote OK", "Remotive", "Jobicy"} or bool(job.get("remote"))
+    if not SOFIA_REMOTE_NEGATION.search(text) and (source_is_remote or SOFIA_REMOTE_TERMS.search(text)):
+        return "remote"
+    location = clean_html(str(job.get("location") or ""))
+    if PETE_UNSPECIFIED_GREATER_LONDON.search(location):
+        return None
+    if PETE_ONE_HOUR_LOCATIONS.search(location):
+        return "within-1-hour"
+    return None
+
+
 def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
     title = clean_html(str(job.get("title") or ""))
     company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
@@ -729,6 +765,9 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
     if not PETE_ROLE_TERMS.search(title) and not PETE_PUBLIC_SECTOR_TERMS.search(f"{title} {company}"):
         return None
     if not SOFIA_UK_LOCATION.search(f"{location} {description}"):
+        return None
+    commute_eligibility = pete_commute_eligibility(job, source)
+    if not commute_eligibility:
         return None
     if job.get("inactive") or INACTIVE_LISTING.search(description):
         return None
@@ -748,17 +787,23 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         score += 3
     if source == "LinkedIn":
         score += 1
+    if commute_eligibility == "within-1-hour":
+        score += 2
     posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
+    commute_label = "Remote" if commute_eligibility == "remote" else f"Within 1 hour of {PETE_COMMUTE_BASE}"
     item = {
         "title": title,
         "summary": f"{company} · {location}",
-        "meta": f"UK · {posted_label}",
+        "meta": f"{commute_label} · {posted_label}",
         "source": source,
         "url": url,
         "contentType": "job",
         "countryFocus": "UK",
         "company": company,
         "location": location,
+        "workArrangement": "remote" if commute_eligibility == "remote" else "nearby",
+        "commuteFrom": PETE_COMMUTE_BASE,
+        "commuteEligibility": commute_eligibility,
     }
     if posted:
         item["postedAt"] = posted.date().isoformat()
@@ -767,10 +812,30 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
 
 def pete_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
     candidates = candidates if candidates is not None else career_job_candidates()
+    linkedin_candidates = [
+        job for job, source in candidates
+        if source == "LinkedIn" and job.get("target") == "pete"
+        and not PETE_EXCLUDED_ROLE.search(clean_html(str(job.get("title") or "")))
+        and (
+            PETE_ROLE_TERMS.search(clean_html(str(job.get("title") or "")))
+            or PETE_PUBLIC_SECTOR_TERMS.search(
+                clean_html(f"{job.get('title') or ''} {job.get('company_name') or ''}")
+            )
+        )
+    ]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        linkedin_enriched = {
+            job.get("url"): enriched
+            for job, enriched in zip(linkedin_candidates, pool.map(linkedin_description, linkedin_candidates))
+        }
     ranked, seen = [], set()
     for job, source in candidates:
-        if source == "LinkedIn" and job.get("target") != "pete":
-            continue
+        if source == "LinkedIn":
+            if job.get("target") != "pete":
+                continue
+            job = linkedin_enriched.get(job.get("url"), job)
+            if job.get("inactive"):
+                continue
         result = pete_job_item(job, source)
         if not result:
             continue
@@ -788,10 +853,17 @@ def previous_career(profile: str) -> list[dict]:
     try:
         data = json.loads((DATA / f"{profile}.json").read_text(encoding="utf-8"))
         jobs = (data.get("sections") or {}).get("Career") or []
-        return [
+        jobs = [
             job for job in jobs
             if job.get("contentType") == "job" and str(job.get("url") or "").startswith(("https://", "http://"))
         ]
+        if profile == "pete":
+            jobs = [
+                job for job in jobs
+                if job.get("commuteFrom") == PETE_COMMUTE_BASE
+                and job.get("commuteEligibility") in {"remote", "within-1-hour"}
+            ]
+        return jobs
     except Exception:
         return []
 

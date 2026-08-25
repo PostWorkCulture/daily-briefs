@@ -107,6 +107,8 @@ jobs:
           for job in pete_jobs:
               assert job.get('contentType') == 'job', 'Pete Career contains non-job content'
               assert job.get('countryFocus') == 'UK', 'Pete Career contains a non-UK role'
+              assert job.get('commuteFrom') == 'KT8 2LE', 'Pete Career has the wrong commute origin'
+              assert job.get('commuteEligibility') in {'remote','within-1-hour'}, 'Pete Career contains a role outside the one-hour commute rule'
               assert str(job.get('url') or '').startswith(('https://','http://')), 'Pete Career job missing real link'
 
           sofia_jobs=(sofia.get('sections') or {}).get('Career') or []
@@ -179,7 +181,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} exact publisher image rules, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
+          print(f'Validated {len(rules)} exact publisher image rules, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, Pete one-hour/remote jobs, Sofia UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
