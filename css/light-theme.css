@@ -27,6 +27,7 @@ body{color:var(--text);background:var(--bg)}
 .home-reminder-card.bin{background:#d8f2e6}.home-reminder-card.bin .home-reminder-icon{background:#bce4d1;color:#24694e}.home-reminder-card.bin b{color:var(--text)}
 .home-reminder-card.clocks{background:#e4e1f8}
 .home-reminder-card.festive.new-year{background:#d6eaf8}.home-reminder-card.festive.midsummer{background:#fff0a8}.home-reminder-card.festive.halloween{background:#ffc27a}.home-reminder-card.festive.bonfire{background:#ffd6b0}.home-reminder-card.festive.christmas{background:#f4d5dd}
+.home-reminder-card.has-art{--reminder-solid:#dbeaf6}.home-reminder-card.bin.has-art{--reminder-solid:#d8f2e6}.home-reminder-card.clocks.has-art{--reminder-solid:#e4e1f8}.home-reminder-card.festive.halloween.has-art{--reminder-solid:#ffc27a}.home-reminder-card.festive.christmas.has-art{--reminder-solid:#f4d5dd}
 .home-reminder-card.festive .home-reminder-icon{background:rgba(255,255,255,.48);color:var(--text)}
 #homeReminders .home-reminder-card.birthday{background:#ffc1dc!important}
 .tab-story{background:linear-gradient(180deg,#fbfdff,#edf5fa);border-color:var(--line);box-shadow:0 10px 25px rgba(50,82,108,.08)}

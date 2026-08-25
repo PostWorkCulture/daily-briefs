@@ -2,6 +2,20 @@
 
 Newest entries go first.
 
+## 25 August 2026: Supplied artwork for Coming up cards
+
+Status: approved for publication, validation in progress
+
+- Requested change: publish Pete's newly uploaded recycling, normal-bin, clocks, Halloween, and Christmas images on their matching Home `Coming up` cards.
+- Approved scope: those five supplied source images, optimised display crops, Coming up rendering and layout, cache keys, responsive validation, master brief, QA checklist, and changelog only.
+- Artwork rule: show the supplied subject artwork on the right side of its matching card while keeping the existing solid pastel surface and current dynamic text on the left. The display crops omit the obsolete 2025 dates, fixed countdown numbers, and decorative `View calendar` controls embedded in the source compositions.
+- Performance rule: use compact WebP display crops totalling less than 210 KB rather than loading the five source files, which total more than 6 MB.
+- Requirements protected: four cards on one Chromebook row, mobile stacking and navigation visibility, dark readable text, existing pastel card identities, live countdown calculations, stationary cyan hover, Birthday card treatment, both profiles, all routes, and every unrelated section.
+- Validation: static checks require every mapped image; responsive checks verify the correct live mapping, decoded image dimensions, full-height crop, no overflow, pastel backgrounds, dark text, compact Chromebook row, and all existing protected behaviour.
+- Unexpected changes: none intended.
+- Publication: Pete requested direct publication on 25 August 2026 after validation.
+- Master brief update: version 2.9 records the approved supplied-artwork rule.
+
 ## 24 August 2026: Dark-grey navigation with white resting labels
 
 Status: validated and approved for publication

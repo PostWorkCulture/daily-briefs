@@ -53,6 +53,19 @@ def check_icon_metadata_files() -> None:
     theme = (ROOT / "css" / "light-theme.css").read_text(encoding="utf-8")
     if "theme: 'halloween'" not in reminders or ".home-reminder-card.festive.halloween{background:#ffc27a}" not in theme:
         raise AssertionError("Halloween does not have its dedicated solid pastel orange treatment")
+    reminder_art = {
+        "clocks-card.webp",
+        "halloween-card.webp",
+        "normal-bins-card.webp",
+        "recycling-card.webp",
+        "xmas-card.webp",
+    }
+    for filename in reminder_art:
+        path = ROOT / "assets" / "icons" / filename
+        if not path.is_file() or path.stat().st_size < 10_000:
+            raise AssertionError(f"Coming up artwork is missing or empty: {filename}")
+        if filename not in reminders:
+            raise AssertionError(f"Coming up renderer does not reference {filename}")
 
 
 def check_viewport(browser, name: str) -> None:
@@ -324,12 +337,22 @@ def check_viewport(browser, name: str) -> None:
                 })),
                 reminderCards: reminderCards.map(card => ({
                   classes: card.className,
+                  text: card.textContent.trim(),
                   backgroundImage: getComputedStyle(card).backgroundImage,
                   backgroundColour: getComputedStyle(card).backgroundColor,
                   top: card.getBoundingClientRect().top,
                   left: card.getBoundingClientRect().left,
                   right: card.getBoundingClientRect().right,
                   height: card.getBoundingClientRect().height,
+                  clientWidth: card.clientWidth,
+                  scrollWidth: card.scrollWidth,
+                  artwork: [...card.querySelectorAll('.home-reminder-art')].map(image => ({
+                    src: image.getAttribute('src'),
+                    naturalWidth: image.naturalWidth,
+                    naturalHeight: image.naturalHeight,
+                    width: image.getBoundingClientRect().width,
+                    height: image.getBoundingClientRect().height
+                  })),
                   textColours: [...card.querySelectorAll('.home-reminder-top,strong,b,small')]
                     .map(node => getComputedStyle(node).color)
                 })),
@@ -397,6 +420,30 @@ def check_viewport(browser, name: str) -> None:
         for required_theme in ("bin", "clocks", "birthday"):
             if not any(required_theme in card["classes"].split() for card in visual["reminderCards"]):
                 failures.append(f"Coming up {required_theme} card is missing: {visual['reminderCards']}")
+        for card in visual["reminderCards"]:
+            classes = card["classes"].split()
+            expected_art = None
+            if "bin" in classes:
+                expected_art = "recycling-card.webp" if "recycling" in card["text"].lower() else "normal-bins-card.webp"
+            elif "clocks" in classes:
+                expected_art = "clocks-card.webp"
+            elif "halloween" in classes:
+                expected_art = "halloween-card.webp"
+            elif "christmas" in classes:
+                expected_art = "xmas-card.webp"
+            if expected_art:
+                if len(card["artwork"]) != 1 or not card["artwork"][0]["src"].endswith(expected_art):
+                    failures.append(f"Coming up {expected_art} artwork is not mapped correctly: {card}")
+                elif (
+                    card["artwork"][0]["naturalWidth"] < 500
+                    or card["artwork"][0]["naturalHeight"] < 600
+                    or abs(card["artwork"][0]["height"] - card["height"]) > 1
+                ):
+                    failures.append(f"Coming up {expected_art} artwork did not load or fill its card: {card}")
+            elif card["artwork"]:
+                failures.append(f"Coming up card has unexpected artwork: {card}")
+            if card["scrollWidth"] > card["clientWidth"] + 1:
+                failures.append(f"Coming up artwork causes horizontal overflow: {card}")
         festive_cards = [card for card in visual["reminderCards"] if "festive" in card["classes"].split()]
         if len(festive_cards) != 1:
             failures.append(f"Coming up festive card is missing or duplicated: {visual['reminderCards']}")
