@@ -4,14 +4,14 @@ Newest entries go first.
 
 ## 26 August 2026: Guaranteed weather images and human-first rare facts
 
-Status: validated locally, awaiting preview approval
+Status: validated, awaiting preview approval
 
 - Requested changes: never leave the hottest or coldest England card without an image, and replace dull geological facts with much more surprising, little-known facts about people, communities, population, languages, traditions, records, music, and bands around the world.
 - Weather image rule: every extreme now receives a locally cached 1,600 × 900 exact-place WebP. Search order is landmark, council or civic building, town centre, then another clearly identifiable exact-place view. The refresh fails before publication if it cannot verify, download, cache, credit, and source both images.
 - Current weather repair: Wiggonholt now uses a verified Pulborough Brooks image and Kielder now uses a verified Kielder Water image. Pete and Sofia use the same local, cache-keyed files so a remote image failure cannot leave either card blank.
 - Fact rule: new-day selection now chooses an unused `human-first` fact before any general catalogue item. Eight source-verified facts were added across extraordinary people, population and language records, living traditions, record-breaking music culture, indigenous music, and human-animal communication.
 - Current fact: the Eye of the Sahara item is replaced by Jeju's haenyeo, women breath-hold divers who continue the tradition into their 80s.
-- Validation added: unit tests cover known exact-place image fallbacks and human-first selection; morning validation blocks missing weather assets or a narrow fact queue; responsive checks require two visible sourced weather images, a human-first current fact, and the existing mobile and Chromebook layouts.
+- Validation passed: all 12 unit tests cover known exact-place image fallbacks, human-first selection, and the existing Arsenal guards. The responsive Chromium workflow passed at 390 × 844 and 1,366 × 900, requiring two visible sourced weather images, a human-first current fact, stable mobile navigation, and all protected layouts. Both Home screenshots were visually inspected.
 - Scope protected: no layout, navigation, Calendar, News, Arsenal, AI, Career, Dida, Birthday, TV Picks, profile, route, or unrelated content change is intended.
 - Publication: preview only. Do not merge or publish until Pete approves it.
 - Master brief update: version 3.1 records both permanent rules.
