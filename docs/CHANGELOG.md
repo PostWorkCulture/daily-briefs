@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 26 August 2026: Guaranteed weather images and human-first rare facts
 
-Status: validated, awaiting preview approval
+Status: validated and published
 
 - Requested changes: never leave the hottest or coldest England card without an image, and replace dull geological facts with much more surprising, little-known facts about people, communities, population, languages, traditions, records, music, and bands around the world.
 - Weather image rule: every extreme now receives a locally cached 1,600 × 900 exact-place WebP. Search order is landmark, council or civic building, town centre, then another clearly identifiable exact-place view. The refresh fails before publication if it cannot verify, download, cache, credit, and source both images.
@@ -13,7 +13,7 @@ Status: validated, awaiting preview approval
 - Current fact: the Eye of the Sahara item is replaced by Jeju's haenyeo, women breath-hold divers who continue the tradition into their 80s.
 - Validation passed: all 12 unit tests cover known exact-place image fallbacks, human-first selection, and the existing Arsenal guards. The responsive Chromium workflow passed at 390 × 844 and 1,366 × 900, requiring two visible sourced weather images, a human-first current fact, stable mobile navigation, and all protected layouts. Both Home screenshots were visually inspected.
 - Scope protected: no layout, navigation, Calendar, News, Arsenal, AI, Career, Dida, Birthday, TV Picks, profile, route, or unrelated content change is intended.
-- Publication: preview only. Do not merge or publish until Pete approves it.
+- Publication: Pete approved the preview and PR #7 was published on 26 August 2026. The post-merge morning refresh succeeded. Both profile routes and both local weather-image files returned HTTP 200, and the live Pete and Sofia data retained the Jeju haenyeo fact plus the cached Wiggonholt and Kielder images.
 - Master brief update: version 3.1 records both permanent rules.
 
 ## 25 August 2026: Dark-navy navigation and separated Coming up text
