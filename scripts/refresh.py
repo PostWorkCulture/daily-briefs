@@ -168,7 +168,9 @@ def world_fact_for_today() -> dict:
     if today_row:
         selected_id = today_row["id"]
     else:
-        selected = next((item for item in catalog if item["id"] not in set(used_ids)), None)
+        unused = [item for item in catalog if item["id"] not in set(used_ids)]
+        selected = next((item for item in unused if item.get("editorialPriority") == "human-first"), None)
+        selected = selected or next(iter(unused), None)
         if selected is None:
             raise RuntimeError("Fact catalogue exhausted; refusing to repeat an earlier fact")
         selected_id = selected["id"]

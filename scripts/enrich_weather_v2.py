@@ -1,13 +1,16 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import re
+from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, ImageOps
 
 from enrich_weather_metoffice import met_weather, UA
 
@@ -16,6 +19,7 @@ DATA = ROOT / "data"
 EXTREMES_URL = "https://weather.metoffice.gov.uk/observations/weather-extremes"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
+WEATHER_IMAGE_DIR = ROOT / "assets" / "weather-extremes"
 
 # Known, manually verified exact-place photos from the approved Daily Briefs build.
 KNOWN_PHOTOS = {
@@ -32,16 +36,22 @@ KNOWN_PHOTOS = {
         "alt": "Bridge over the River Usk at Sennybridge",
     },
     "wiggonholt": {
-        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg?width=1600",
-        "page": "https://commons.wikimedia.org/wiki/File:Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg",
-        "credit": "Ian Hawfinch · CC BY-SA 2.0",
-        "alt": "Wiggonholt Parish Church, West Sussex",
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pulborough_Brooks.JPG?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Pulborough_Brooks.JPG",
+        "credit": "Charlesdrakew · public domain",
+        "alt": "Pulborough Brooks nature reserve in Wiggonholt, West Sussex",
     },
     "topcliffe": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Church_Street_from_above%2C_Topcliffe_-_geograph.org.uk_-_6405522.jpg?width=1600",
         "page": "https://commons.wikimedia.org/wiki/File:Church_Street_from_above,_Topcliffe_-_geograph.org.uk_-_6405522.jpg",
         "credit": "Gordon Hatton · CC BY-SA 2.0",
         "alt": "Church Street in Topcliffe, North Yorkshire",
+    },
+    "kielder": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kielder_water_uk_-_panoramio.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
+        "credit": "Jim Walton · CC BY 3.0",
+        "alt": "Kielder Water in Kielder, Northumberland",
     },
 }
 
@@ -169,7 +179,7 @@ def display_location(location: str) -> str:
     return f"{place[0]}, {place[1]}" if place else location
 
 
-def exact_commons_photo(location: str) -> dict | None:
+def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict | None:
     low = location.lower()
     for key, photo in KNOWN_PHOTOS.items():
         if key in low:
@@ -178,49 +188,98 @@ def exact_commons_photo(location: str) -> dict | None:
     place = core_place(location)
     if len(place) < 3:
         return None
-    try:
-        params = {
-            "action": "query",
-            "generator": "search",
-            "gsrsearch": f'"{place}"',
-            "gsrnamespace": 6,
-            "gsrlimit": 10,
-            "prop": "imageinfo",
-            "iiprop": "url|extmetadata",
-            "iiurlwidth": 1600,
-            "format": "json",
-            "origin": "*",
-        }
-        r = requests.get(COMMONS_API, params=params, headers=UA, timeout=20)
-        r.raise_for_status()
-        pages = (r.json().get("query") or {}).get("pages", {})
-        needle = re.sub(r"\W+", "", place.lower())
-        for page in pages.values():
-            info = (page.get("imageinfo") or [{}])[0]
-            meta = info.get("extmetadata") or {}
-            title = page.get("title", "")
-            desc = plain((meta.get("ImageDescription") or {}).get("value", ""))
-            hay = re.sub(r"\W+", "", f"{title} {desc}".lower())
-            # Exact-location safety rule: the place name itself must be present in
-            # the Commons file title/description. Otherwise we deliberately show no photo.
-            if needle not in hay:
-                continue
-            src = info.get("thumburl") or info.get("url")
-            if not src:
-                continue
-            artist = plain((meta.get("Artist") or {}).get("value", "")) or "Wikimedia Commons contributor"
-            licence = plain((meta.get("LicenseShortName") or {}).get("value", ""))
-            credit = " · ".join(x for x in (artist, licence) if x)
-            filename = title.removeprefix("File:")
-            return {
-                "src": src,
-                "page": "https://commons.wikimedia.org/wiki/File:" + quote(filename.replace(" ", "_"), safe="()_,.-"),
-                "credit": credit,
-                "alt": desc or f"{place}, United Kingdom",
+    exact_needles = {
+        re.sub(r"\W+", "", value.lower())
+        for value in (place, town)
+        if len(clean(value)) >= 3
+    }
+    searches = (
+        f'"{place}" "{county}" landmark',
+        f'"{town or place}" "{county}" council offices',
+        f'"{town or place}" "{county}" town centre',
+        f'"{town or place}" "{county}" England',
+    )
+    candidates = []
+    for search_rank, search in enumerate(searches):
+        try:
+            params = {
+                "action": "query",
+                "generator": "search",
+                "gsrsearch": search,
+                "gsrnamespace": 6,
+                "gsrlimit": 20,
+                "prop": "imageinfo",
+                "iiprop": "url|size|mime|extmetadata",
+                "iiurlwidth": 1600,
+                "format": "json",
+                "origin": "*",
             }
-    except Exception:
-        return None
+            r = requests.get(COMMONS_API, params=params, headers=UA, timeout=20)
+            r.raise_for_status()
+            pages = (r.json().get("query") or {}).get("pages", {})
+            for page in pages.values():
+                info = (page.get("imageinfo") or [{}])[0]
+                if info.get("mime") not in {"image/jpeg", "image/png", "image/webp"}:
+                    continue
+                width, height = int(info.get("width") or 0), int(info.get("height") or 0)
+                if width < 640 or height < 360:
+                    continue
+                if not (info.get("thumburl") or info.get("url")):
+                    continue
+                meta = info.get("extmetadata") or {}
+                title = page.get("title", "")
+                desc = plain((meta.get("ImageDescription") or {}).get("value", ""))
+                hay_text = f"{title} {desc}".lower()
+                hay = re.sub(r"\W+", "", hay_text)
+                if not any(needle in hay for needle in exact_needles):
+                    continue
+                landmark_bonus = 2 if re.search(
+                    r"\b(?:castle|church|landmark|town centre|council|civic|market|high street|harbour|park|station|street)\b",
+                    hay_text,
+                    flags=re.I,
+                ) else 0
+                landscape_bonus = 1 if width >= height else 0
+                candidates.append((10 - search_rank + landmark_bonus + landscape_bonus, width * height, page, info, desc))
+        except Exception:
+            continue
+
+    if candidates:
+        _, _, page, info, desc = max(candidates, key=lambda row: (row[0], row[1]))
+        meta = info.get("extmetadata") or {}
+        title = page.get("title", "")
+        artist = plain((meta.get("Artist") or {}).get("value", "")) or "Wikimedia Commons contributor"
+        licence = plain((meta.get("LicenseShortName") or {}).get("value", ""))
+        filename = title.removeprefix("File:")
+        return {
+            "src": info.get("thumburl") or info.get("url"),
+            "page": "https://commons.wikimedia.org/wiki/File:" + quote(filename.replace(" ", "_"), safe="()_,.-"),
+            "credit": " · ".join(x for x in (artist, licence) if x),
+            "alt": desc or f"{town or place}, {county or 'England'}",
+        }
     return None
+
+
+def localise_weather_photo(photo: dict, kind: str) -> dict:
+    src = str(photo.get("src") or "")
+    if not src.startswith("https://"):
+        raise ValueError(f"{kind} extreme has no downloadable place photo")
+    response = requests.get(
+        src,
+        headers={**UA, "Accept": "image/avif,image/webp,image/*,*/*;q=0.8"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    image = ImageOps.exif_transpose(Image.open(BytesIO(response.content))).convert("RGB")
+    image = ImageOps.fit(image, (1600, 900), method=Image.Resampling.LANCZOS)
+    WEATHER_IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    output = WEATHER_IMAGE_DIR / f"{kind}.webp"
+    image.save(output, "WEBP", quality=82, method=6)
+    digest = hashlib.sha256(output.read_bytes()).hexdigest()[:12]
+    result = dict(photo)
+    result["src"] = f"assets/weather-extremes/{kind}.webp?v={digest}"
+    result["width"] = 1600
+    result["height"] = 900
+    return result
 
 
 def parse_extremes() -> dict | None:
@@ -267,12 +326,17 @@ def parse_extremes() -> dict | None:
         date_heading = headings[0].find_previous("h2")
         date_label = clean(date_heading.get_text(" ", strip=True)) if date_heading else "Yesterday"
 
-        def enrich(item: dict) -> dict:
+        def enrich(item: dict, kind: str) -> dict:
             loc = clean(item["location"])
             place = england_place(loc, item.get("locationUrl", ""))
             if not place:
                 raise ValueError(f"England town/county could not be verified for {loc}")
             town, county = place
+            remote_photo = exact_commons_photo(loc, town, county)
+            if not remote_photo:
+                raise ValueError(
+                    f"No verified landmark, civic, town-centre or exact-place photo found for {town}, {county}"
+                )
             return {
                 "location": loc,
                 "town": town,
@@ -280,15 +344,15 @@ def parse_extremes() -> dict | None:
                 "country": "England",
                 "displayLocation": f"{town}, {county}",
                 "value": clean(item["value"]).replace(" °C", "°C"),
-                "photo": exact_commons_photo(loc),
+                "photo": localise_weather_photo(remote_photo, kind),
             }
 
         return {
             "dateLabel": date_label,
             "source": "Met Office",
             "sourceUrl": EXTREMES_URL,
-            "hot": enrich(hot),
-            "cold": enrich(cold),
+            "hot": enrich(hot, "hot"),
+            "cold": enrich(cold, "cold"),
         }
     except Exception as exc:
         return {"source": "Met Office", "sourceUrl": EXTREMES_URL, "error": str(exc)}

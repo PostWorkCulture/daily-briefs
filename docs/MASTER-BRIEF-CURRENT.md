@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.0, 25 August 2026. Owner: Pete.
+Version 3.1, 26 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -57,6 +57,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Sunny intervals, partly cloudy, and light cloud must be distinguishable.
 - Yesterday's warmest and coldest cards must use Met Office observations from England only. Never select Scotland, Wales, Northern Ireland, or another country.
 - Both extreme cards must display the verified town and English county in `Town, County` form.
+- Both extreme cards must always display a locally cached 1,600 × 900 image of the exact place. Source a landmark first, then a council or civic building, town centre, or another clearly identifiable exact-place view. Retain its source and credit. If no verified image can be found or cached, fail the morning refresh instead of publishing a blank card.
 
 **Calendar**
 - Real content refreshed every morning through GOOGLE_CALENDAR_ICS_URL.
@@ -67,7 +68,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 **Around the world**
 - Lead with one genuinely astonishing, obscure, source-verified fact each day, then show its precisely matched place image beneath it.
 - Show only the `Around the world` title above the fact. Do not display the old `Rare facts · wild places` subtitle.
-- Prefer wild places, with occasional extreme-life, human-origins, population-scale, unusual-travel, indigenous-culture, and planet-trend facts.
+- Prioritise genuinely rare human stories from different countries: extraordinary people and communities, population and language records, indigenous traditions, unusual customs, record-breaking achievements, and surprising music or band culture. Wild places and planet facts remain occasional variety, not the default.
+- Keep a curated human-first queue large enough to prevent dull fallback. New-day selection must choose an unused human-first fact before any general catalogue item.
 - Track every published fact ID in a committed permanent history. Never reuse an ID or duplicate fact text; if the catalogue is exhausted, fail the refresh instead of repeating.
 - Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
 
