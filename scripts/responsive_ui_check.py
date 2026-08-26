@@ -888,7 +888,7 @@ def check_viewport(browser, name: str) -> None:
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))
-        print(f"PASS {name}: compact Coming up row, visible consistent card glows, month-grouped white Birthday cards, simplified three-zone Dida, greetings, fixture, navigation and protected content are usable")
+        print(f"PASS {name}: sourced weather images, human-first fact, compact Coming up row, visible card glows, Birthday, Dida, navigation and protected content are usable")
     finally:
         page.close()
 
