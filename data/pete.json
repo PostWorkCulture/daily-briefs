@@ -15,7 +15,7 @@
     "sequence": 5
   },
   "weather": {
-    "temp": "20°",
+    "temp": "24°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 30,
@@ -26,34 +26,34 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-08-27",
         "high": 25,
         "low": null,
-        "summary": "Heavy Rain",
-        "condition": "Heavy Rain",
-        "rainChance": 90,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-08-28",
-        "high": 23,
+        "high": 22,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-29",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -62,7 +62,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -71,7 +71,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -80,13 +80,13 @@
         "low": null,
         "summary": "Rain",
         "condition": "Rain",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 30%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
