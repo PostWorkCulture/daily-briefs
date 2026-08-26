@@ -27,6 +27,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Rain icon only for rain/showers.
 - [ ] Cloud conditions remain distinguishable.
 - [ ] No invented fallback data.
+- [ ] Hottest and coldest cards each show a locally cached 1,600 × 900 exact-place image with a real source and credit.
+- [ ] If no exact-place image can be verified and cached, the morning refresh fails instead of publishing a blank weather card.
 
 ## Calendar
 
@@ -38,6 +40,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 ## Content
 
 - [ ] Around the world has one linked image and a fact directly below.
+- [ ] The current fact is human-first, genuinely unusual, source-verified, unused, and drawn from the people, population, traditions, records, or music range.
 - [ ] At least four named TV Picks per profile with matching artwork.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] All offered sources and destinations are real and clickable.

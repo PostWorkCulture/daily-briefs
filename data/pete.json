@@ -1,16 +1,17 @@
 {
   "updatedLabel": "Wednesday, 26 August 2026 · refreshed 6:03am",
   "worldFact": {
-    "id": "richat-eroded-geologic-dome",
-    "category": "Seen from space",
-    "country": "Mauritania",
-    "place": "The Eye of the Sahara",
-    "source": "NASA Earth Observatory",
-    "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/eyeing-the-richat-structure/",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg",
-    "photoCredit": "European Space Agency · attribution",
-    "fact": "The 40-kilometre-wide Eye of the Sahara looks so much like an impact crater that scientists once classified it as one. It is actually the eroded remains of a colossal uplifted geologic dome.",
+    "id": "jeju-haenyeo-octogenarian-breath-divers",
+    "editorialPriority": "human-first",
+    "category": "People who defy limits",
+    "country": "South Korea",
+    "place": "Jeju Island",
+    "source": "UNESCO Intangible Cultural Heritage",
+    "sourceUrl": "https://ich.unesco.org/en/decisions/11.COM/10.B.24",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jejuolle-route-03B_2.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jejuolle-route-03B_2.jpg",
+    "photoCredit": "Jeju Olle Foundation · CC BY-SA 4.0",
+    "fact": "On Jeju Island, women divers, some in their 80s, descend about 10 metres without oxygen tanks and can work for up to seven hours a day. They hold their breath for every dive and make a unique sound when they surface.",
     "date": "2026-08-26",
     "sequence": 5
   },
@@ -96,10 +97,12 @@
         "displayLocation": "Wiggonholt, West Sussex",
         "value": "29.0°C",
         "photo": {
-          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg?width=1600",
-          "page": "https://commons.wikimedia.org/wiki/File:Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg",
-          "credit": "Ian Hawfinch · CC BY-SA 2.0",
-          "alt": "Wiggonholt Parish Church, West Sussex"
+          "src": "assets/weather-extremes/hot.webp?v=d21c384d1cbf",
+          "page": "https://commons.wikimedia.org/wiki/File:Pulborough_Brooks.JPG",
+          "credit": "Charlesdrakew · public domain",
+          "alt": "Pulborough Brooks nature reserve in Wiggonholt, West Sussex",
+          "width": 1600,
+          "height": 900
         }
       },
       "cold": {
@@ -109,7 +112,14 @@
         "country": "England",
         "displayLocation": "Kielder, Northumberland",
         "value": "8.1°C",
-        "photo": null
+        "photo": {
+          "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
+          "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
+          "credit": "Jim Walton · CC BY 3.0",
+          "alt": "Kielder Water in Kielder, Northumberland",
+          "width": 1600,
+          "height": 900
+        }
       }
     }
   },

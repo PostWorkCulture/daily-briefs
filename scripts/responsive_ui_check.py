@@ -39,6 +39,23 @@ def check_icon_metadata_files() -> None:
             if f"../{value}" not in profile_html:
                 raise AssertionError(f"{profile} icon metadata is missing ../{value}")
 
+        profile_data = json.loads((ROOT / "data" / f"{profile}.json").read_text(encoding="utf-8"))
+        current_fact = profile_data.get("worldFact") or {}
+        if current_fact.get("editorialPriority") != "human-first":
+            raise AssertionError(f"{profile} current world fact is not human-first")
+        extremes = (profile_data.get("weather") or {}).get("yesterdayExtremes") or {}
+        for kind in ("hot", "cold"):
+            photo = ((extremes.get(kind) or {}).get("photo") or {})
+            source = str(photo.get("src") or "")
+            expected_prefix = f"assets/weather-extremes/{kind}.webp?v="
+            if not source.startswith(expected_prefix):
+                raise AssertionError(f"{profile} {kind} weather card has no local image")
+            image_path = ROOT / source.split("?", 1)[0]
+            if not image_path.is_file() or image_path.stat().st_size < 20_000:
+                raise AssertionError(f"{profile} {kind} weather image is missing or empty")
+            if not str(photo.get("page") or "").startswith("https://commons.wikimedia.org/wiki/File:"):
+                raise AssertionError(f"{profile} {kind} weather image lacks a verified source")
+
     manifest = json.loads((ROOT / ICON_PATHS["manifest"]).read_text(encoding="utf-8"))
     manifest_icons = {item.get("src") for item in manifest.get("icons", [])}
     expected_manifest_icons = {
@@ -180,7 +197,7 @@ def check_viewport(browser, name: str) -> None:
         if calendar_shadow == "none":
             raise AssertionError(f"{name}: Calendar card has no edge-glow hover")
 
-        for selector in ('#homeReminders .home-reminder-card', '#sceneryFact', '#sceneryCard'):
+        for selector in ('#homeReminders .home-reminder-card', '#sceneryFact', '#sceneryCard', '.uk-extreme'):
             card = page.locator(selector).first
             card.hover()
             page.wait_for_timeout(250)
@@ -299,6 +316,7 @@ def check_viewport(browser, name: str) -> None:
               const nav = document.querySelector('#primaryNav');
               const buttons = [...nav.querySelectorAll('button')];
               const reminderCards = [...document.querySelectorAll('#homeReminders .home-reminder-card')];
+              const weatherCards = [...document.querySelectorAll('#yesterdayExtremes .uk-extreme')];
               return {
                 bodyRgb: rgb,
                 bodyBackgroundImage: bodyStyle.backgroundImage,
@@ -308,6 +326,12 @@ def check_viewport(browser, name: str) -> None:
                 factText: document.querySelector('#sceneryFactText')?.textContent?.trim() || '',
                 factHref: fact?.getAttribute('href') || '',
                 factLabel: document.querySelector('#sceneryFactLabel')?.textContent?.trim() || '',
+                weatherCards: weatherCards.map(card => ({
+                  classes: card.className,
+                  backgroundImage: getComputedStyle(card.querySelector('.uk-extreme-photo')).backgroundImage,
+                  sourceHref: card.querySelector('.uk-extreme-photo-credit a')?.href || '',
+                  text: card.textContent.trim()
+                })),
                 greetingMarginTop: parseFloat(getComputedStyle(greeting).marginTop),
                 greetingColour: getComputedStyle(greeting).color,
                 dateColour: getComputedStyle(date).color,
@@ -384,6 +408,15 @@ def check_viewport(browser, name: str) -> None:
             failures.append("daily world fact has no verified source link")
         if not visual["factLabel"].startswith("Insane fact of the day"):
             failures.append(f"fact lead label changed: {visual['factLabel']}")
+        if len(visual["weatherCards"]) != 2:
+            failures.append(f"hottest and coldest weather image cards are not both present: {visual['weatherCards']}")
+        for card in visual["weatherCards"]:
+            if "no-photo" in card["classes"].split():
+                failures.append(f"weather card fell back to a blank image: {card}")
+            if "assets/weather-extremes/" not in card["backgroundImage"]:
+                failures.append(f"weather card does not use its cached exact-place image: {card}")
+            if not card["sourceHref"].startswith("https://commons.wikimedia.org/wiki/File:"):
+                failures.append(f"weather card image credit is not linked to its source: {card}")
         if visual["greetingMarginTop"] < 16:
             failures.append(f"greeting was not moved down: margin {visual['greetingMarginTop']}")
         if visual["heroBrandCount"] != 0 or visual["topbarBrandCount"] != 0:

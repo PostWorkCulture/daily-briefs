@@ -70,6 +70,13 @@ jobs:
                   assert str(place.get('county') or '').strip(), f'{profile}: {kind} extreme missing county'
                   expected=f"{place['town']}, {place['county']}"
                   assert place.get('displayLocation')==expected, f'{profile}: {kind} extreme does not show town and county'
+                  photo=place.get('photo') or {}
+                  photo_src=str(photo.get('src') or '')
+                  assert photo_src.startswith(f'assets/weather-extremes/{kind}.webp?v='), f'{profile}: {kind} extreme has no local place image'
+                  photo_path=Path(photo_src.split('?',1)[0])
+                  assert photo_path.exists() and photo_path.stat().st_size>20_000, f'{profile}: {kind} local place image is missing or empty'
+                  assert str(photo.get('page') or '').startswith('https://commons.wikimedia.org/wiki/File:'), f'{profile}: {kind} image has no source page'
+                  assert str(photo.get('credit') or '').strip(), f'{profile}: {kind} image has no credit'
               picks=data.get('watch') or []
               assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
@@ -83,6 +90,11 @@ jobs:
           fact_texts=[__import__('re').sub(r'\W+','',str(item.get('fact') or '').lower()) for item in catalog]
           assert catalog and len(fact_ids)==len(set(fact_ids)), 'Fact catalogue has duplicate IDs'
           assert len(fact_texts)==len(set(fact_texts)), 'Fact catalogue repeats fact text'
+          human_first=[item for item in catalog if item.get('editorialPriority')=='human-first']
+          assert len(human_first)>=8, 'Fact catalogue needs at least eight human-first facts'
+          human_categories=' '.join(str(item.get('category') or '').lower() for item in human_first)
+          for required_category in ('people','population','tradition','music','record'):
+              assert required_category in human_categories, f'Fact catalogue lacks a human-first {required_category} category'
           used_ids=[str(item.get('id') or '') for item in history]
           used_dates=[str(item.get('date') or '') for item in history]
           assert len(used_ids)==len(set(used_ids)), 'Fact history repeats a fact ID'
@@ -189,12 +201,16 @@ jobs:
 
           mkdir -p /tmp/daily-briefs-data
           cp data/*.json /tmp/daily-briefs-data/
+          mkdir -p /tmp/daily-briefs-weather-images
+          cp assets/weather-extremes/*.webp /tmp/daily-briefs-weather-images/
 
           git fetch origin main
           git reset --hard origin/main
           cp /tmp/daily-briefs-data/*.json data/
+          mkdir -p assets/weather-extremes
+          cp /tmp/daily-briefs-weather-images/*.webp assets/weather-extremes/
 
-          git add data/*.json
+          git add data/*.json assets/weather-extremes/*.webp
           if git diff --cached --quiet; then
             echo "No data changes to commit"
             exit 0
