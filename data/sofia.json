@@ -15,14 +15,14 @@
     "sequence": 5
   },
   "weather": {
-    "temp": "25°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 30,
+    "temp": "26°",
+    "summary": "Sunny",
+    "condition": "Sunny",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-08-26",
-        "high": 25,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -33,41 +33,41 @@
         "date": "2026-08-27",
         "high": 25,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 80,
+        "summary": "Light Rain",
+        "condition": "Light Rain",
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-08-28",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Light Showers",
         "condition": "Light Showers",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-08-29",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 50,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-08-30",
-        "high": 22,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
+        "date": "2026-08-30",
+        "high": 23,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
         "date": "2026-08-31",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
