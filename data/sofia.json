@@ -1,49 +1,40 @@
 {
-  "updatedLabel": "Tuesday, 25 August 2026 · refreshed 2:47pm",
+  "updatedLabel": "Wednesday, 26 August 2026 · refreshed 6:03am",
   "worldFact": {
-    "id": "lencois-rainwater-desert-lagoons",
-    "category": "Impossible landscape",
-    "country": "Brazil",
-    "place": "Lençóis Maranhenses",
-    "source": "UNESCO World Heritage Centre",
-    "sourceUrl": "https://whc.unesco.org/en/list/1611/",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses_Paulo_Cattelan_%2803%29.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses_Paulo_Cattelan_(03).jpg",
-    "photoCredit": "Paulo Cattelan · CC BY-SA 4.0",
-    "fact": "Lençóis Maranhenses looks like a vast desert, yet rainwater alone creates thousands of clear seasonal lagoons between its white dunes, while some dunes migrate up to 25 metres in a year.",
-    "date": "2026-08-25",
-    "sequence": 4
+    "id": "richat-eroded-geologic-dome",
+    "category": "Seen from space",
+    "country": "Mauritania",
+    "place": "The Eye of the Sahara",
+    "source": "NASA Earth Observatory",
+    "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/eyeing-the-richat-structure/",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg",
+    "photoCredit": "European Space Agency · attribution",
+    "fact": "The 40-kilometre-wide Eye of the Sahara looks so much like an impact crater that scientists once classified it as one. It is actually the eroded remains of a colossal uplifted geologic dome.",
+    "date": "2026-08-26",
+    "sequence": 5
   },
   "weather": {
-    "temp": "24°",
-    "summary": "Sunny",
-    "condition": "Sunny",
-    "currentRainChance": 4,
+    "temp": "18°",
+    "summary": "Light showers",
+    "condition": "Light showers",
+    "currentRainChance": 80,
     "daily": [
       {
-        "date": "2026-08-25",
-        "high": 26,
-        "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 10,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-08-26",
-        "high": 26,
+        "high": 27,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-08-27",
-        "high": 26,
+        "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Light Showers",
+        "condition": "Light Showers",
         "rainChance": 30,
         "source": "Met Office"
       },
@@ -58,11 +49,11 @@
       },
       {
         "date": "2026-08-29",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -71,13 +62,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-08-31",
+        "high": 23,
+        "low": null,
+        "summary": "Rain",
+        "condition": "Rain",
         "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 10%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 80%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -85,21 +85,21 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Monday 24 August 2026",
+      "dateLabel": "Tuesday 25 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Yeovilton",
-        "town": "Yeovilton",
-        "county": "Somerset",
+        "location": "Wiggonholt",
+        "town": "Wiggonholt",
+        "county": "West Sussex",
         "country": "England",
-        "displayLocation": "Yeovilton, Somerset",
-        "value": "25.6°C",
+        "displayLocation": "Wiggonholt, West Sussex",
+        "value": "29.0°C",
         "photo": {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Early_morning_at_St_Bartholomew%2C_Yeovilton%2C_the_Fleet_Air_Arm_Memorial_Church_%2814%29_-_geograph.org.uk_-_3670395.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "page": "https://commons.wikimedia.org/wiki/File:Early_morning_at_St_Bartholomew,_Yeovilton,_the_Fleet_Air_Arm_Memorial_Church_(14)_-_geograph.org.uk_-_3670395.jpg",
-          "credit": "Basher Eyre · CC BY-SA 2.0",
-          "alt": "Early morning at St Bartholomew, Yeovilton, the Fleet Air Arm Memorial Church (14)"
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg?width=1600",
+          "page": "https://commons.wikimedia.org/wiki/File:Wiggonholt_Parish_Church_-_geograph.org.uk_-_560292.jpg",
+          "credit": "Ian Hawfinch · CC BY-SA 2.0",
+          "alt": "Wiggonholt Parish Church, West Sussex"
         }
       },
       "cold": {
@@ -108,26 +108,12 @@
         "county": "Northumberland",
         "country": "England",
         "displayLocation": "Kielder, Northumberland",
-        "value": "3.4°C",
+        "value": "8.1°C",
         "photo": null
       }
     }
   },
   "calendar": [
-    {
-      "title": "WFH",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-24T00:00:00+01:00",
-      "end": "2026-08-25T00:00:00+01:00",
-      "date": "2026-08-24",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "6ueu9vsdjc2t6soimqga0hbfoa",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Camp 8.15-17.45",
       "summary": "",
@@ -396,21 +382,21 @@
     }
   ],
   "lead": {
-    "title": "Brussels ran a consultation that made the Swedish answer unsayable",
+    "title": "Swedish military seeks to take over Russian-owned estate near naval base",
     "summary": "",
     "meta": "Tue 25 Aug",
-    "publishedAt": "2026-08-25T08:49:06+01:00",
-    "source": "The Parliament Magazine",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQR0phOXh6aXZoZ0Zvc2lnMkFWdFhlSVZMVi1zT2FueFQ4eDhBZFRuemczdm9fcXJ6S294U1g0ckpKNjZIYUZXQXdSVnI4bjhhZllhZ1hKNGpPbzF3a2EwNEhyeFVUNGw0Y1REVzJrOVhINVlBZHp1WTZ4dG41VzFwR21sNE5zb2tjbnB6TGhBMHliSjdYSlBldktoTmNBTks2S2F0TWVldFlDaFpqd3VKaENVZ2FRRWVQTXBB?oc=5"
+    "publishedAt": "2026-08-25T16:18:50+01:00",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VS0EtYkRTQ3hRWGVFY25wX19UeXU0cDVGSDVxOUdDSTVZSkVmRXh2Znc5MFNVRGxaNGlrcFpIVzFScjdGSVQ1dzVxdzU2QTMyd3ZFY0VkZ2c0RDU2?oc=5"
   },
   "interests": [
     {
-      "title": "Brussels ran a consultation that made the Swedish answer unsayable",
+      "title": "Swedish military seeks to take over Russian-owned estate near naval base",
       "summary": "",
       "meta": "Tue 25 Aug",
-      "publishedAt": "2026-08-25T08:49:06+01:00",
-      "source": "The Parliament Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQR0phOXh6aXZoZ0Zvc2lnMkFWdFhlSVZMVi1zT2FueFQ4eDhBZFRuemczdm9fcXJ6S294U1g0ckpKNjZIYUZXQXdSVnI4bjhhZllhZ1hKNGpPbzF3a2EwNEhyeFVUNGw0Y1REVzJrOVhINVlBZHp1WTZ4dG41VzFwR21sNE5zb2tjbnB6TGhBMHliSjdYSlBldktoTmNBTks2S2F0TWVldFlDaFpqd3VKaENVZ2FRRWVQTXBB?oc=5",
+      "publishedAt": "2026-08-25T16:18:50+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VS0EtYkRTQ3hRWGVFY25wX19UeXU0cDVGSDVxOUdDSTVZSkVmRXh2Znc5MFNVRGxaNGlrcFpIVzFScjdGSVQ1dzVxdzU2QTMyd3ZFY0VkZ2c0RDU2?oc=5",
       "section": "Sweden"
     },
     {
@@ -426,7 +412,7 @@
       "title": "Apple TV+ series Silo reveals central mystery in latest episode",
       "summary": "",
       "meta": "Mon 17 Aug",
-      "publishedAt": "2026-08-17T14:14:00+01:00",
+      "publishedAt": "2026-08-17T08:00:00+01:00",
       "source": "The Independent",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdjB1bGRWVWdhNmJxVXlNcU1pdzZhLWZsTDVOLUNlNTZOUVFWYXdMMm5aUThyY0dMMThTbUs2U20zZVVIaTdrSENZWFhOb3FFUUJDRDNWTHN2ODVhRXFXREVrV21CUFA2TjR5aVhITlI2SVVuMnZPVU41dUFwZVFkVGVzT2t0REtOSW5GaVllWVZ2cG9qaWRkSFFITXppZGUtSDBRQXRBMC1SVUsyZnpz?oc=5",
       "preferenceScore": 140,
@@ -478,20 +464,20 @@
   "sections": {
     "Sweden": [
       {
-        "title": "Brussels ran a consultation that made the Swedish answer unsayable",
+        "title": "Swedish military seeks to take over Russian-owned estate near naval base",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T08:49:06+01:00",
-        "source": "The Parliament Magazine",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQR0phOXh6aXZoZ0Zvc2lnMkFWdFhlSVZMVi1zT2FueFQ4eDhBZFRuemczdm9fcXJ6S294U1g0ckpKNjZIYUZXQXdSVnI4bjhhZllhZ1hKNGpPbzF3a2EwNEhyeFVUNGw0Y1REVzJrOVhINVlBZHp1WTZ4dG41VzFwR21sNE5zb2tjbnB6TGhBMHliSjdYSlBldktoTmNBTks2S2F0TWVldFlDaFpqd3VKaENVZ2FRRWVQTXBB?oc=5"
+        "publishedAt": "2026-08-25T16:18:50+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VS0EtYkRTQ3hRWGVFY25wX19UeXU0cDVGSDVxOUdDSTVZSkVmRXh2Znc5MFNVRGxaNGlrcFpIVzFScjdGSVQ1dzVxdzU2QTMyd3ZFY0VkZ2c0RDU2?oc=5"
       },
       {
-        "title": "Swedish sword attack victim was 17-year-old girl, police say",
+        "title": "Sweden's ruling coalition trails in poll, but closes gap on centre-left opposition",
         "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T02:34:15+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xdmprXy1xWlJiMTRoV3NHM2dOeXE5UjVpNkNaMHcxWkkwS2cydldwZWZ2MlJSWmNGb2pvWlZ6NkNlNldEQUlGM0xPWWw5Y2ttMXI5UGowdEpva05X?oc=5"
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T23:51:41+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTUF5SjVxdWVzWUtPeGlNNjlCWVpQSjRMOWF4Wk1WTUpDQlZud3VXdHhvVWVtVnlLX1QxR0lJZHpqSV9KbHFkVHU3U0thQmdWZ2Y4VTV1dzc2UzJtZE1vQmI4SWUwanpGaUlTVW1CaXYyaElyZW9QaUNNMldJM3RNNE4zbFcwUEZ0UXlQZ3lvTHNUOXJvWmVhU0pXOUhHVHc1SE5UU3VVbldOOGdBeVlJYzYza0VSUVAtX28w?oc=5"
       },
       {
         "title": "Seventeen-year-old girl killed in sword attack at school in Sweden",
@@ -502,36 +488,36 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWhTTjhRSG54U0F1QnRUUmxyY2pseGM5RjBvOWVhNEkzNkd1Q3BFLThGTERPakFzTXdCTjU1N3VuQzY1WjRzcFRJSGlWT1l0WnA2TExxYUR5aS1ZWE45TFFwdjgyNm5udFlvQ0pDejR6VGlBR2g0cDZKZnpqS3Roal9NSDYyV3ZIbmQ0QkZuTGVQMXdWMUFyN3BsV0MxQzdBSnQxZlVzNmhpSUZybjYxcC1R?oc=5"
       },
       {
-        "title": "EcoDataCenter buys site for third Swedish data centre",
+        "title": "Petersson to lean on local knowledge in Sweden",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T14:28:30+01:00",
-        "source": "Green Street News",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR0pFeEZkYzV0N1dYNDhCdlJSS3VRclI1RlBJSXlQaU5JMzc5QXdUdGljZERmdFh6N2RzUGtRQk9Na1dMTmYyR1VqTGRTT0dCZkRoR1hfa0xmNVVNMmpTN0RvYk04QUJHUkRTVEZKNFoyQWV2cUFZVmx4NExtUjFlazdLUDVUV3p3U0RldnlKRmhidzE5?oc=5"
+        "publishedAt": "2026-08-25T16:34:44+01:00",
+        "source": "europeantour.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQOXkxb1JjYlNNblA1TWtFUUh4ZHB0UmpUa2FRV2pyQ1dyV21Gb1ZCNnJ1UldERy00bjMtMGVOOXE0d2U3RlJGdmEybjlucEM4YV9BajFTNEFhSVRUakZyalZUSnN3YjN4WUlzMW1xOXNnOWFkUmo0ZmZpWkJrRWVIeWlHMi1McGEtMEo0dGNYNHdROUs1WlNIYVJBMktfSDdIczZQcXZVZ2VDNjFCdWRRbjFDQldRZw?oc=5"
       },
       {
-        "title": "Swedish military seeks to seize property near naval base owned by Russian with Kremlin ties",
+        "title": "Sweden Seeks to Seize Russian Oligarch's Mansion Right Next to Strategic Naval Base",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T11:45:07+01:00",
-        "source": "Euronews.com",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOXc1MzhGRjBlcmdqd2FUSzNBRUpVSm5INzRDOGZ4ZjBraW1aRFVwampRX0hYMFJaTU96UjZvNnpNTEg5VzQ4d3NMX0M4bE10ZGllQVk3eXZPbTgzMDBKMFZHR0FPalRGZDhGR0NqS0R2aTRGTU1iMGVpWGtLMEZvSi1pejBRQUZFTkNMam5aRVRNb3ZRcUF3MVd1dVN3aWlyRnNyMXFRcVpXc2xITVBwMVRtMkRsSm1Scm5odkI5VjVxZ2xjWURpMUNLbHhyVVNPbmc?oc=5"
+        "publishedAt": "2026-08-25T20:38:44+01:00",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMkg4bHV6c0gwRzdNUXh1M2dnbTN5LVduU0hiVU9KUUJWMThheVZnQ1NLR0FMODBwenU1WWtKZjRhbGlRMUd4MXdwRkFKdmxvMUZlSXpvZXZmaDNDVjh2UFZCRE1XcEYzZXMwSzkyZS0waWQxWWJTZVkwSDhITVZXdUxzWnJsODhUUC1naHlxaVZreDA2RjBVSnZHdG95WlBYRVF3Sl9jSkVZYzA5Y2gxRWtNUldFT3ZVVV9icw?oc=5"
       },
       {
-        "title": "Swedish Club posts 96% combined ratio and $282 million in free reserves at H1",
+        "title": "Overtaking the EU: Sweden’s Plan to Ban Forever Chemicals",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T06:04:40+01:00",
-        "source": "Insurance Business",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTDJtQUtQRWZiX0pHOWdwb2JrUl9QSm1rX0VOUUw4VDVFRDdsQ1JBZ2VTVEpacnU4SldkWGNjRXJma2p6dHhmel9JT0JNbVRvV1h3UFktVVpyVDlBbkdLeFd3a05wYTlZWnFHSnNTd0hyWVIyV0owT0FkOXQzMWU5TlpuUnQ0VjNubUsyMWRyREtIU3dzbGMxeG1VcHFuQ3Y0RVhzNmZBVUQxelltTlJIazZ6TzQxUDcwY0c2UlZtTUU0azREMFo5dERYQndrYmlxZEhSYUVB?oc=5"
+        "publishedAt": "2026-08-25T17:11:31+01:00",
+        "source": "Sustainability Magazine",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVlU2UnM4X0hRVUNURkxoSXVVOXZRX3dhOTdwcFUwb1FhNWpXVjZ1SG4xeUh0TnJtTFNMa0p4NWctOWtFczd5QmJUT2pjTjBvUEd4VWs5NG1QcnNNUUxEd1k1ay04TmxLb1lsUEUxb3Z3R3p5eXRoeDRKODdwWjdGam1weDdVQWwtMGJGcDl6M3h0Nk11?oc=5"
       },
       {
-        "title": "Sweden’s power exports slump to 5-yr low on less nuclear, hydro",
+        "title": "Brussels ran a consultation that made the Swedish answer unsayable",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T13:48:22+01:00",
-        "source": "Montel News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbEdUTWR6STNtejZmQXFRZzlIWDd1OVVYTnQ3eE5wOFRwR2dEYVRWVndkTmFjM19pa29iNXk5Sk9BdlZvN2tHeXByNzBZNDFkdFcyN3YyQkdyQTZUeEVGZEtGbEdjVF8zREtUMGhPOGpzUTVLUWtYTDM2c09XTEsxVmxvdEdHV0lMbW9nNmF6b2RVbjRURVFqcnlfUnZJdjUtdEdYeE10aDNtMFZIZEFleXBfNEhJSEFNR2sybnp5U0d2aDRx?oc=5"
+        "publishedAt": "2026-08-25T08:49:06+01:00",
+        "source": "The Parliament Magazine",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQR0phOXh6aXZoZ0Zvc2lnMkFWdFhlSVZMVi1zT2FueFQ4eDhBZFRuemczdm9fcXJ6S294U1g0ckpKNjZIYUZXQXdSVnI4bjhhZllhZ1hKNGpPbzF3a2EwNEhyeFVUNGw0Y1REVzJrOVhINVlBZHp1WTZ4dG41VzFwR21sNE5zb2tjbnB6TGhBMHliSjdYSlBldktoTmNBTks2S2F0TWVldFlDaFpqd3VKaENVZ2FRRWVQTXBB?oc=5"
       }
     ],
     "Local news": [
@@ -566,6 +552,14 @@
         "publishedAt": "2026-08-20T08:00:00+01:00",
         "source": "Middlesex Cricket",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUExIeHl3MG92YnlXcFB2NzBnNnpkNGg2M0ZPdFB1UV9PLTRsV21EenZwRGFYNmduQWJsM0xjeDRNYVN3NGtEamV1SmY5aDZHQUZWU2t2NnY0SldGdS10RzU2TlJ1OGQ0QUEycThIbXZnV3Q5ZGZPZ0FPdUdjcy1kQ2dWVEszTkhOVkpsbjJCNUZnSE92TTRaTnQyNDU?oc=5"
+      },
+      {
+        "title": "Lefty is right for the Rams",
+        "summary": "",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T06:00:54+01:00",
+        "source": "The Pitching In Isthmian League",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zWVJuUUJwbThrR0dteHZsZFdST3VVQ3plQmtiWVIzbFBmd1FJLThjTmRrQXZPek1uQmRvUG5FQ2kxSjJpTzVTTTZQTXdmQXlLdDZKbmY3UE5uTmVDWU00MW41M2o5VGlSa2tzWFc5TEQ?oc=5"
       },
       {
         "title": "Changes to planning decisions: what it means for you",
@@ -622,115 +616,123 @@
         "publishedAt": "2026-08-20T12:18:18+01:00",
         "source": "Football Ground Guide",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcDFsODJOQlNCRU83V2Eyel8xYlBRbzh5QXptRlZiUW1xcHRJSXBVTXdNbnd1Y2NubDFtbGFjcEtjTmRpb0RibG9LaVoxY1dtRjcyLWg4LWtSejZBb3pERlpWT0hRLWRlRHpUNVU3c2hsTVRPUlBmVmJCUVZQOXZtSG5aS1pwUGViR3ZaZkxEcmZsZ2VTOTVqaHI3TjFDUThYUWFSQXBzSDlEazdNb1lFUXRfLVZkV2pyRHNMbENsUXh6cVN3WDN6VWxzTmc?oc=5"
-      },
-      {
-        "title": "Lazy Griff suffers suspected tendon injury at Chester",
-        "summary": "",
-        "meta": "Sat 22 Aug",
-        "publishedAt": "2026-08-22T18:22:19+01:00",
-        "source": "Ipswich Star",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY0hJazRNNmgtUE9tMEN1cE1VSkg3TXhFQ2RLb3Y0N1ozblZ4Z0RHeDRQdm1fU2ZXLVVHYzZxN1RVZjRDS28wbTdKUTJQdHBac3FMcTQ4LUlsRVlPUWtMcGM5aWFCeUxac2l4aVhTYnZDZ2hVZlQzM3NMM282OFVyQ2MzdC16N1owZzcyN2g2YXNpcEhUWmNGcDVFcW9acEFlUkY2R3c1dTI?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "Five more arrests in fatal A66 crash investigation",
-        "summary": "The new arrests include a 16-year-old boy and two men held on suspicion of being in an organised crime group.",
+        "title": "How Dolly Parton told her life story through six iconic songs",
+        "summary": "A legendary singer-songwriter, her music covered themes around love, loss, female empowerment and spirituality.",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T00:43:13+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cpqpjv0j0eeo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "NHS failing child sex abuse victims in adulthood, say psychiatrists",
+        "summary": "There have been decades of mistreatment and mismanagement of those who seek help later in life, say experts in a new, damning report.",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T05:07:48+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c0kl40d3011o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Winter energy prices expected to rise to three-year high",
+        "summary": "Millions of households will be affected by an increase in the energy price cap by regulator Ofgem.",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T00:07:29+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cqjkl1xvgw5o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "CIA chief travels to Moscow for unannounced talks, US media reports",
+        "summary": "Flight tracking data confirms an American military aircraft travelled to Russia from the US via Latvia on Tuesday.",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T14:27:35+01:00",
+        "publishedAt": "2026-08-25T20:48:14+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Why Pride is facing a backlash - from inside and outside the LGBT community",
+        "summary": "Big companies used to go out of their way to support Pride. Now, there's a nervousness in the air, Darren Milby writes",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T00:13:34+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cj63jyl09jxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Yellow warnings in force as rain and thunderstorms hit parts of UK",
+        "summary": "Torrential downpours will affect parts of England and Wales, delivering some of the wettest weather in several weeks",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T00:11:15+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/weather/articles/c62krylw57xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
+        "summary": "The latest escalation in an ongoing trade war between the US and Canada will see new levies on goods from steel to furniture, fresh tuna and makeup.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T20:50:57+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "As Ukraine hits Russia's refineries, Russia targets Ukraine's petrol pumps",
+        "summary": "Fuel companies are urging customers not to linger at the pumps after a wave of deadly attacks.",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T00:50:53+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c5y6x777gk4o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Father's house rammed before son died in A66 crash",
+        "summary": "The house belonging to Cole Worthy's father is significantly damaged and its windows are smashed.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T18:30:40+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cevwjww8p08o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
-        "summary": "The US has threatened to isolate nations that continue to do business with Tehran, which sells much of its oil to Beijing.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T12:53:36+01:00",
+        "title": "Nicotine vapes best chance to quit smoking, major review finds",
+        "summary": "They work better than patches, gum or pills, the most up-to-date evidence suggests.",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T00:40:38+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c1e5p51n2p2o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Trump may hope an 'economic onslaught' will pressure Iran - its leaders are betting otherwise",
-        "summary": "The US says new sanctions are an \"economic D-Day\", but Tehran's leaders have survived restrictions before.",
+        "title": "Life of the music legend whose songs touched millions",
+        "summary": "The singer, songwriter and actress is known for timeless hits including Jolene and I Will Always Love You.",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T13:37:53+01:00",
+        "publishedAt": "2026-08-25T19:14:13+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cr50n9gnljgo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cz9xdl4g25zo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Man dies in crash after police pursuit",
-        "summary": "Two women are also hurt and one remains in hospital in critical condition.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T14:44:52+01:00",
+        "title": "Elton John, Oprah Winfrey and Paul McCartney lead tributes to Dolly Parton",
+        "summary": "The tributes have included artists across musical genres, fans from all generations and politicians from all spectrum sharing their love for the country icon.",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T05:44:38+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cly7ne4xegmo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Yellow weather warnings issued as thunderstorms and flooding forecast",
-        "summary": "The Met Office has issued a yellow weather warning as heavy showers and thunderstorms are forecast to move northwards across the UK on Wednesday.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T11:06:04+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/weather/articles/c770lyg4318o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Young people leaving care have death rate four times higher than national average",
-        "summary": "Those leaving care have a death rate around four times higher than the general population, a new review reveals.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T12:05:37+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx2zn4p9019o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Moment tornado tears through southern France",
-        "summary": "The tornado has injured more than 40 people and destroyed homes in villages.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T01:16:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/ckg8wkd0j7do?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Boy, 3, injured in crocodile attack returns home from hospital",
-        "summary": "The boy's family say he is \"happy to be home\" after undergoing seven operations in hospital.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T11:48:09+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c8d3pn5g764o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Kate Hudson to make How to Lose a Guy in 10 Days sequel, 23 years on",
-        "summary": "Hudson and Matthew McConaughey, her co-star from the 2003 rom-com, could be reunited for the sequel.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T12:46:12+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cpq0j81pv08o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Andrew Tate exaggerates and did not own supercars in photos, his lawyers say",
-        "summary": "Prosecutors argue Tate and his brother Tristan are a flight risk and should not be released on bail.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T13:33:57+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c4grxr0e5gdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "OnlyFans owner was paid over $700m before his death",
-        "summary": "The site hosts a range of subscription-based content from cooking to fitness videos, but it is best known for pornography.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T11:09:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c8d3p2g2p05o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Root 'hacked off' and 'disappointed' at Carse incident",
-        "summary": "England captain Joe Root says he is \"hacked off\" and \"disappointed\" at the incident involving fast bowler Brydon Carse at a Derby nightclub.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T14:33:01+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/sport/cricket/articles/c4g5z5p8w17o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cd08zzev8lno?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
+      {
+        "title": "The full stack behind abundant intelligence",
+        "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T08:05:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+      },
+      {
+        "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+        "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T08:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/jalapeno-first-results"
+      },
       {
         "title": "Disrupting a new covert influence campaign from Russia",
         "summary": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
@@ -738,6 +740,14 @@
         "publishedAt": "2026-08-25T01:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia"
+      },
+      {
+        "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+        "summary": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T01:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/introducing-admin-plugin"
       },
       {
         "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
@@ -756,30 +766,6 @@
         "url": "https://openai.com/index/introducing-ai-futures"
       },
       {
-        "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
-        "summary": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
-        "meta": "Thu 20 Aug",
-        "publishedAt": "2026-08-20T01:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/stampli"
-      },
-      {
-        "title": "Offering Zero Data Retention for frontier models",
-        "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T20:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
-      },
-      {
-        "title": "Replit expands access to software creation with GPT-5.6 Luna",
-        "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T08:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/replit"
-      },
-      {
         "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
         "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
         "meta": "Fri 21 Aug",
@@ -788,31 +774,70 @@
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
       },
       {
-        "title": "Thomson Reuters goes via China to build its own AI model",
+        "title": "Funding better evaluations of AI’s impact on wellbeing",
         "summary": "",
         "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T10:23:43+01:00",
-        "source": "Computing UK",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWHlaczdsaDJSeUdHRUpRN1BmWUd5Yy1PQTk1czdLNnZDcmFTRWlNWjQxZk5fcFZqX3BTV3NWUDRaM1kzSlluenQ4QTg2cGVSOUZWUDllSlRTblpSYldHZlFlamVWT3VaUzZKZkYwXzN4UnBycWticGJYMDJ5NXFaRw?oc=5"
+        "publishedAt": "2026-08-25T17:10:44+01:00",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5DNElZcS10WnJ1NHJEdmtYNkxUT1JQZ3plaDhZejA4UENGVlliUzRqM19sejJyOEFZbW9zbTZyZmpsZGpmOGYtaDc2T1pFTThXUG9wQi1nUFl3cVhIVDJyQVd6QnBsa2M?oc=5"
       },
       {
-        "title": "OpenAI bans Russian ChatGPT accounts used in covert misinformation campaign",
+        "title": "OpenAI loses a top data center exec, as stream of high-profile departures continues",
         "summary": "",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T12:21:09+01:00",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1doUkxoU0tsZWdKS3pSZm1mYTBTazcweVc2U2xXZV82OXNtcWQ3MkdZQ2F5LWlCVE0zakVpUGNYd1pQTF9DQ1lhMk9VLTNpcHRPTzJrSFpwMFZOQUNoQjl0OUo5aWRFZlczU1lOdFhHVlpnM000VDhQUVBjaVlBc3pkd9IBiAFBVV95cUxPcEJkWVhZWXUtUlRTczBRU25JLVpXeFoxamhNa01ZUTRUbjZWY05rdGE3aS1hWnd0RnB1RFpaWFp3TWhBVFloV2ZFVnppZ0JWV3daalVVUW5qS2ZmSTQyaWhBeHQ1czRkdmRER1J1UlY3TUZSNVpUT2Q4Zjc1Nkc4WGlvU2F6Q2py?oc=5"
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T01:06:20+01:00",
+        "source": "TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQnZDYTNQU016aGJnVUljb0VNRXQtd2ExUzBuSl9ZZE5XVWtwUG5kY2RpVmZqcGs5cHpTUjhuakFnVFRkRFhQaE5BRDhXbGdCSnRVbVhhYm4zNEJSLWpQR0lodzE2YzBUODkwUnNLd2FBSWZWYnozcDBYd1FxTG1GNlVCOFdjUnpKM0hvRnZNM1ljSkx1UThVWDg3dU45eE1BSGV2M0VjSk9tS2tIRW51VTF5TlBzOFJG?oc=5"
       },
       {
-        "title": "Anthropic Explores Iceland’s Relationship with AI 'ÞETTA REDDAST'",
+        "title": "OpenAI Jalapeno Custom AI ASIC at Hot Chips 2026",
         "summary": "",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T11:00:17+01:00",
-        "source": "Little Black Book | LBBOnline",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9vZlhfczE5SklpbmNzNF9DbFgySlZXdTI0QnlqT3FpNFNaZEtQZjRiWFpLUW1wcFNQcVNNSkhYbnkyNjBxV2ZncHBldjA1bGJJOThNejJhdmNXVURuVE9LUFc2R0VJZEJmQ29WUlg2bzViYkthRUhPUThGMGQ?oc=5"
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T01:45:45+01:00",
+        "source": "ServeTheHome",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9WSGhkZ3l5ZkJpdklTaHFuVlBCcElvcWxaME9wc1ZNeU5XRzVxU3JueGI2dnhYU3llYm9MZlN0S1pLekhSMHhjTXlqSk5oZ2dEXy11Nk1qR2lhWXIzazFyUlY0OFR0aXQ2RzRObjR3T0xGbEpISVE0?oc=5"
       }
     ],
     "Career": [
+      {
+        "title": "Head of Product",
+        "summary": "Foundation Partners · London, England, United Kingdom",
+        "meta": "Remote · Posted Tue 11 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442780389",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "Foundation Partners",
+        "location": "London, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-11"
+      },
+      {
+        "title": "Principal Product Manager- Time to First Production",
+        "summary": "Camunda · Remote",
+        "meta": "Remote · Posted Wed 26 Aug",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.com/jobs/companies/camunda/remote-principal-product-manager-time-to-first-production-35436",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "Camunda",
+        "location": "Remote",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-26"
+      },
+      {
+        "title": "Product Lead",
+        "summary": "Street Group · Manchester, England, United Kingdom",
+        "meta": "3+ WFH days · Posted Mon 17 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
+        "contentType": "job",
+        "workArrangement": "3-wfh-days",
+        "company": "Street Group",
+        "location": "Manchester, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-17"
+      },
       {
         "title": "Head of Product",
         "summary": "LocalStack · London, England, United Kingdom",
@@ -827,17 +852,30 @@
         "postedAt": "2026-08-07"
       },
       {
-        "title": "Senior Product Manager - Analytics",
-        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
-        "meta": "3+ WFH days · Posted Mon 27 Jul",
+        "title": "Product Lead (Pre booking experience)",
+        "summary": "British Airways Holidays · Crawley, England, United Kingdom",
+        "meta": "3+ WFH days · Posted Wed 5 Aug",
         "source": "LinkedIn",
-        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-analytics-at-quinyx-4445934880",
+        "url": "https://uk.linkedin.com/jobs/view/product-lead-pre-booking-experience-at-british-airways-holidays-4449472670",
+        "contentType": "job",
+        "workArrangement": "3-wfh-days",
+        "company": "British Airways Holidays",
+        "location": "Crawley, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-05"
+      },
+      {
+        "title": "Senior Product Manager",
+        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
+        "meta": "3+ WFH days · Posted Fri 31 Jul",
+        "source": "LinkedIn",
+        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
         "contentType": "job",
         "workArrangement": "3-wfh-days",
         "company": "Quinyx",
         "location": "Stockholm, Stockholm County, Sweden",
         "countryFocus": "Sweden",
-        "postedAt": "2026-07-27"
+        "postedAt": "2026-07-31"
       }
     ]
   }
