@@ -15,7 +15,7 @@
     "sequence": 5
   },
   "weather": {
-    "temp": "24°",
+    "temp": "25°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 30,
@@ -26,7 +26,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -53,7 +53,7 @@
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -80,13 +80,13 @@
         "low": null,
         "summary": "Rain",
         "condition": "Rain",
-        "rainChance": 50,
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 50%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
