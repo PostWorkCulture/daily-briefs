@@ -83,7 +83,7 @@
 #view-arsenal .fixture-facts{border-top-color:rgba(255,255,255,.18)}
 #view-arsenal .fixture-fact{border-bottom-color:rgba(255,255,255,.11)}
 #view-arsenal .fixture-fact>span{color:var(--arsenal-yellow)!important}
-#view-arsenal .fixture-fact>b{color:#fff}
+#view-arsenal .fixture-fact>b{color:#fff!important}
 #view-arsenal .fixture-fact>small{color:rgba(255,255,255,.58)!important}
 
 .arsenal-subhead{display:flex;align-items:end;gap:9px;margin:23px 20px 9px;padding-top:15px;border-top:1px solid rgba(7,29,73,.12)}
