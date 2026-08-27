@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 27 August 2026 · refreshed 4:22pm",
+  "updatedLabel": "Thursday, 27 August 2026 · refreshed 8:51pm",
   "worldFact": {
     "id": "finland-heavy-metal-bands-per-capita",
     "editorialPriority": "human-first",
@@ -16,18 +16,18 @@
     "sequence": 6
   },
   "weather": {
-    "temp": "21°",
+    "temp": "20°",
     "summary": "Cloudy",
     "condition": "Cloudy",
-    "currentRainChance": 20,
+    "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-08-27",
-        "high": 25,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -50,7 +50,7 @@
       },
       {
         "date": "2026-08-30",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -63,7 +63,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -87,7 +87,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -146,20 +146,6 @@
       "colorId": "4",
       "googleEventId": "36fkt7vp17k3pvi8f6schg5h6n",
       "calendarColorSource": "google"
-    },
-    {
-      "title": "Sample",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-27T14:15:00+01:00",
-      "end": "2026-08-27T14:45:00+01:00",
-      "date": "2026-08-27",
-      "time": "2:15pm",
-      "allDay": false,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "cpgm2pj6ccqmabb565j68b9kcop36b9o74s36b9l6oom2cj168o64pj4co",
-      "calendarColorSource": "calendar-default"
     },
     {
       "title": "BANK HOLIDAY",
@@ -274,6 +260,20 @@
       "calendarColorSource": "calendar-default"
     },
     {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -288,18 +288,18 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "School Start",
+      "title": "Skatepark Opening",
       "summary": "",
       "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
+      "start": "2026-09-12T00:00:00+01:00",
+      "end": "2026-09-13T00:00:00+01:00",
+      "date": "2026-09-12",
       "time": "All day",
       "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6krm4p9pcgs6abb1c8pmcb9kccq36b9o6so64b9hc4p3ic1g69ij6c1k6c",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -536,10 +536,18 @@
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0I4ekZfaWpSNWZYNlJMZ19BbXp1T1J3UDViNk5Dd0cyX3YwMDh6YXAwUkxwLUc5eUI5clBLdmxSNUZoX0dTanZhLTRqSDdaaXFXWlJkVXlXRVUxWmhzTUZDRzBzZzFDeGdTbHdtdXFhNVJEY0M2VFRERGlQN3QxZ1lUTjJ1UjRGSVY0R28tZ29BRVJDZ2RtbFJyMnU3MVVSdG1YMW5DeXdHRzFKelZOZ2VSYXVGZw?oc=5"
       },
       {
+        "title": "Fortum's NuCore Energi applies for Swedish state support for new nuclear",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T16:59:09+01:00",
+        "source": "World Nuclear News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQUdTZFh5a29PNmgzT1BTb0tDS3RKZE04WHJoQV9HcnY1MUw0djJFeF9wQUVTNFZmOHdEUy1rVThWMjREWkpraUk2YjN6YTNwSGl5dm1jZWJzZXFnajRVaW01TVJ3blJmd2ZwQ1ZSeVI5TWlkTmk5dVM5c0p2TmtrSzF1WC1YQjBWUUZ6X2VfbkJ3akJ2MnYxd2dvb1dwelVKaHFpODUwdWJDdVZ3VVo3T3U5QUVlbU5YNXNBb01lSW5OMC1xTl9iRw?oc=5"
+      },
+      {
         "title": "Warwick automotive firm plants flag in Sweden with new base",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T12:54:19+01:00",
+        "publishedAt": "2026-08-27T12:58:32+01:00",
         "source": "TheBusinessDesk.com",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRnZ5WHpVT2QxSVI3RUItU24tUXhraUEzbnlZMnh2ZVZkWWJUYUVrZ3AzTF9jRlNUb1EyZ3l0bF9sWVkwOGxSZHpSNGdXXzUzVkFPazBnWk9kOTdkWWNFSS12YWhFMElJU3drYm9aSThyRHB3ck0wX2ZrSDR1cWQ3NkFKOXE1Ml9heVhkVVd6eURkaW5NSkdEUzhHNU9MSTFGVlc1UUxPUVZ0U2t3c0NyRkJKd0kza3lY?oc=5"
       },
@@ -547,41 +555,33 @@
         "title": "Sweden offshore wind rejections show ‘continuing uncertainty’ – Hexicon",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T11:50:28+01:00",
+        "publishedAt": "2026-08-27T11:50:43+01:00",
         "source": "Wind Power Monthly",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRkxaQklUUHlvNmp1YTNNelhEQVR0U044dkJ3b29vR2V4V0d3RUxWbGNJWnBUbFRyS3hlcGJRVDZDVl83VkZFTG52Z0U4X2RoSUVpTW52czhQWXg5dm9rWi1FMHQ4enRTYVgyRGlDUnBMejNSeHNzQzk5cktjZmc2Z1RjSzNQRXhrQjFMVC14RmE3MFRuWGhSdXAwNjlETnJucnJScTBwbWZya21IRVJqS1RHOUFIbngwRV9oSW1wU1FCMzhy?oc=5"
       },
       {
-        "title": "Fortum-owned project company NuCore Energi AB initiates discussions on the framework for new nuclear in Sweden",
+        "title": "Sweden to Donate 10 Coast Guard Vessels to Ukraine",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T08:00:00+01:00",
-        "source": "Fortum",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQnh3eGFSNWdkYUtpSmFueWx3SXZDLWZUczVLMEd2eHFoSWlNWVNGRDhKMnM1and6MWpvU3FFNHJha2NIdHpqMEcxVUlSTTRUeXA4dDBZTHlKcXl4VHltN3V4aGpHYWtYWTRwbDJ3WjV3amtpT1pQSWRiQ2FxSlRrNVQxUHBZLUZtUVNCM0ZoNm9oblZNR0ptR0RCd1hXMzlVSkc1dnVnSzRsaFhueXlka3lkN3d1bXM1MmpUd28tT3V4dXZwYXlxSmp3WWVGZw?oc=5"
+        "publishedAt": "2026-08-27T16:35:51+01:00",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS3JobGNVZTdSRnNFb2FVUDdRV0V0TlpfTW5UajVBMUlZaU4wczU3QUozcFItMGx1M1pJWXVMZzQ0YzZocklXWlNabGZtYVo2TnVHbS1LeXNiV3E5UTlwZnVzVTVYclRXZFpPODl2aHZGcml6MmRFSlU1aUhPT1R4RU5yM21YTS1VcC03UFozbVNURDNEZ05BR2FJMUJ2bzdHU213?oc=5"
       },
       {
-        "title": "Swedish Krona: Inflation risks may prompt tougher Riksbank stance - BNY",
+        "title": "European Sleeper and RDC plan to launch Belgium – Sweden night train in 2028",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:03:55+01:00",
-        "source": "FXStreet",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS3RvQWdEdm5ENGYzUWZna1NzX0JiNGJVS3Z2dmIwYTNFcnU0ek1wUm9Jc3Y3SGM0dkZLUzFKTkFpQS14emRSd0VlaXJHNGsweHF0Nk1JTEZ6OTNSYWZnWVgzeC1Ra3lfaHZKNFp2R3R4LTNOQTJERm1qNFlOTzZlRHRaZDAwWUlMNDE0bDFaTlRJRGxmMVB5TGg4bDROUXJHV1pRd0FycjVfcU9mcnk3Nw?oc=5"
+        "publishedAt": "2026-08-27T14:01:51+01:00",
+        "source": "Railway Gazette International",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNc1VaNXBOb1RablAxTHc1aDh5Y0VGQzhqVmJhS0VTNnJaMmRJR3pJTHcwT2w2YzRTQzBSNGUyYVRJMjFsUXhPM3RXS0U1cTRJNzNJUnI0ajgtUG5fazdiQVg1SHZvX19waGlORzFtX3FRRF9kS3BEUjk0SHBKUGV5WWlWdEh1ZjRvb19RMWlveGNDby1zWkdOeW1hYlhHMGNTVk5DRHl4QTJqclA0TUYwY3Q2YzUxSTgwWWlFb1p3M2VIWFhHQnZlS21B?oc=5"
       },
       {
-        "title": "Fortum Seeks Sweden State Aid for Oskarshamn Nuclear Project",
+        "title": "Swedish government raises GDP forecast ahead of September election",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T12:01:05+01:00",
-        "source": "Energy Connects",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTk1ZcmhhRGhtUm5helJ5MW84TmZPWWZvdS1EYXBxR3RIRWp3QzBoS204RWJJVEtDbjV5bVA0VW85SEl1cXhzRWFycncxUVBkenJtbHNHWkJieFc3TXNnYkhoMC1aX3J1UlI1TXFyZjhteDM0ODlKRkl0UVFHU0JrR0htYTFMXzFuU2lFMXg2eWRIZUhnLXpWMWtQRkQ5aWZfRjhBbElqODd6bkxBYUpwUHJvS0ljM19BQm1v?oc=5"
-      },
-      {
-        "title": "Fortum Seeks State Aid for Major New Nuclear Project in Sweden",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T15:30:00+01:00",
-        "source": "Crude Oil Prices Today | OilPrice.com",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOanZvQ3lQVzN0MEM3ZkZoRXE5Z3Y4dnJhbTlJSGZXNHhvUXFZVVFHZXYzc1VOMEZsV3dMaDZVOTM0bXYteVVsdTFxLWo1NkZJWFhzR2JkZFZ1X1ZxYkl3bUl3ZEszRXJVTVM2TUd1bkVhRy1KTVhpbURHNjNLSXVhUXoxTzdYX1RwLXRGR2lRMWpqOWs1cjZmNWQ3NFI3RC13UnVvOEhra0RFUUlyY2hiY2U0TTBWc2hjRGfSAb8BQVVfeXFMTUpIRmxtckM4OF9BZmc5Ml9xVGg5YlczSjY3SG5VZG1IQ3ZscGZSQnNxR0xKQkdQcE45cWRCcUpkam9IWnBZNG53LUtWdENiMTlOSmlac0k4TzJaWG5RRktjRnNraG9iLTNhbDJnUmdOaVU3UTRoM3BrSzY0QlJubWVHT3dMM1k2T19iMG42VHlFQl9aS3lIRU1WUHNZQ0EtM0JiTGtEQzZRN0w0X29QUFBMSE9JY3I1NE9pUFBpZTQ?oc=5"
+        "publishedAt": "2026-08-27T15:59:44+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbl9mOEhFNlZHMUN0UmJzcVNkeVRXSUc1SDJ0QkVYMmw3RDJPTHNHOGl4RVNZUFBvbUVCQl9DVjZhSlkxXzUwOGFCNk1tc3Njc3NWcWU0ekUxWUJzNFlWRGQ4aHdaSUdMV0ppdGZjQVRUQVVjV0pMSDlMeHltb3hfc3J2cnhwLVRPYnQ2NG5wQ3J5aW8yaTJ5SFRuMmRhVUdCZFNQU1p2ckE4eEw4ZUJMM3lR?oc=5"
       }
     ],
     "Local news": [
@@ -642,20 +642,20 @@
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1BoZ2VOOFh2RGFrMkk4YWY5eUtlLXBzVnZFb1JwNXBPUXhHNklmb19rZVJ6Z0NUVFRBUkhrS0Fucl9hV3gtdmVSWmt6b09NSm5YVTBnZWxLTmNSUGc3Wm9XUVAyNW0ya29RUVAzdkFuUkFhNWpWQ3VqT0kzMW9SOGxyQ2JZSC00TVk0THZ3YXk1RHBXSHF2NkdmYTI1d21jdElHM3BEM0QtNUlpNFBqVWNma3oxSFNiazFTNGNR?oc=5"
       },
       {
-        "title": "Join us for the Cobham skatepark opening JAM",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T16:17:38+01:00",
-        "source": "Elmbridge Borough Council",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkNRSGg0RFhLY251ZUZzSmE1SGwtMTctS3N4TUFma1c3enQ5Y2w4dnZXaVZKTzZXYmNFMHEzRzVGY0dncTRBdTVhUUtsQzZQaHU0YTdTS3dwUmhNY3hyTC1Bd0V4dDdJYTRpbXZQNzRLelQtSk4xYXVuQzF5SkZkVw?oc=5"
-      },
-      {
         "title": "Surrey's hotspot neighbourhoods where the priciest homes are sold",
         "summary": "",
         "meta": "Sat 22 Aug",
         "publishedAt": "2026-08-22T07:00:00+01:00",
         "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVXVqOXJ0bkZJemhTaVRqNUozT0JFcV9OU1NtWkhDOFZzXzlpSVVYeFRhWkF4amVBaTEyVzZody1vX0U1UjZTRTgyelFCTmZxODkzYVR6OVpTTUp5TXRsOXVVQlZGM3oybVVKVjAybGxFMlhIMXdicnlLR0s5dTJyQ1ZoMzdycm5yYVVGYkh4N0J0d1ZvWXhVa21rSU9GdUNr0gGmAUFVX3lxTE1EYW5HQlpqb1Z5U3ZyaTM0QjVpWTVHeW1TOU9fQ0JIMWFFdHZBcDhGd21TaEhya2RhY3lORXlmZzJrZHJ0VGN2UkxobjZjSlQ1YzZ2QVhaeTVDOEQzUmVjcFp6WExRY0pHVi1kWTM1cUNYNnYyUFIxVnBGSVV4RnRCN2hmZk1hMWNuOFhKN1Faajl4d3BMekdfbGtKdzhEd3pCVzVxOGc?oc=5"
+      },
+      {
+        "title": "Join us for the Cobham skatepark opening JAM",
+        "summary": "",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T16:17:38+01:00",
+        "source": "Elmbridge Borough Council",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkNRSGg0RFhLY251ZUZzSmE1SGwtMTctS3N4TUFma1c3enQ5Y2w4dnZXaVZKTzZXYmNFMHEzRzVGY0dncTRBdTVhUUtsQzZQaHU0YTdTS3dwUmhNY3hyTC1Bd0V4dDdJYTRpbXZQNzRLelQtSk4xYXVuQzF5SkZkVw?oc=5"
       },
       {
         "title": "New £632m contract to change rubbish collection across Surrey",
@@ -684,15 +684,15 @@
     ],
     "UK news": [
       {
-        "title": "Watch: How the collapse of a glacier caused such devastation",
-        "summary": "At least 270 people have died in the massive flash floods, while more than 800 others are missing.",
+        "title": "Watch: Tracing the deadly path of the Nepal-Tibet flash flood",
+        "summary": "BBC Verify traces the path of the destructive Nepal-Tibet flash flood using verified video.",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T11:17:45+01:00",
+        "publishedAt": "2026-08-27T17:13:39+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/ckgxnrg8j19o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/videos/cp80m87pez3o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Uefa pursuing criminal legal action against Infantino",
+        "title": "Uefa preparing criminal legal action against Infantino",
         "summary": "Uefa is pursuing criminal proceedings against Fifa president Gianni Infantino over the scrapped plan to sell off stakes in the World Cup.",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T15:42:09+01:00",
@@ -700,12 +700,12 @@
         "url": "https://www.bbc.co.uk/sport/football/articles/cx2zl5kwlxjo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Convicted Bosnian Serb war criminal Mladić dies aged 84",
-        "summary": "He was jailed for life in 2017 for genocide, war crimes and crimes against humanity during the wars in the ex-Yugoslavia in 1992-95.",
+        "title": "The monstrous crimes of Ratko Mladic, the 'Butcher of Bosnia'",
+        "summary": "The Bosnian Serb commander led a campaign of ethnic cleansing during the Bosnian conflict.",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T16:16:54+01:00",
+        "publishedAt": "2026-08-27T14:48:09+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5ywxpryj95o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c2q05wzlx5xo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Dame Jenni Murray died days after car crash, inquest hears",
@@ -716,12 +716,28 @@
         "url": "https://www.bbc.co.uk/news/articles/cm27y2dx7pwo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "UK salmonella cases nearing 500 as egg investigations continue",
-        "summary": "Close to 500 people have become ill with salmonella linked to imported eggs, say UK authorities who are investigating more clusters.",
+        "title": "Extra 200 police drafted in to aid force investigating wrong-way crash and fire deaths",
+        "summary": "Cleveland Police confirms it has support from six local forces and the National Crime Agency.",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T12:00:35+01:00",
+        "publishedAt": "2026-08-27T19:04:16+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cn8ej0zvppxo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/ckgvnjpv1l0o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Jury deliberating in trial of Lindsay Clancy, US woman accused of killing her children",
+        "summary": "Prosecutors argued Clancy made a calculated decision to murder the children, while the defence argued that she was suffering from postpartum psychosis.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T18:46:21+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c33keeyyv70o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Man City and Aston Villa to face holders PSG - check full details of Champions League draw",
+        "summary": "European champions Paris St-Germain will face Premier League duo Manchester City and Aston Villa in the league phase of this season's Champions League.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T18:32:55+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c5ywxxll10jo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Top Gear to return to TV four years after Flintoff crash, BBC confirms",
@@ -732,6 +748,22 @@
         "url": "https://www.bbc.co.uk/news/articles/clym7yrdk29o?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Optimus Prime and Eeyore voice actor Peter Cullen dies",
+        "summary": "Cullen voiced the heroic Optimus Prime in the Transformers TV series and then the Hollywood films.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T17:00:12+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c15844gwe0wo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "UK salmonella cases nearing 500 as egg investigations continue",
+        "summary": "Close to 500 people have become ill with salmonella linked to imported eggs, say UK authorities who are investigating more clusters.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T12:00:35+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cn8ej0zvppxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Blake Lively awarded $400,000 of $8m she claimed for legal fees in Baldoni battle",
         "summary": "A judge awards less than Lively requested to cover her legal fees to fight a defamation case he filed.",
         "meta": "Thu 27 Aug",
@@ -740,47 +772,23 @@
         "url": "https://www.bbc.co.uk/news/articles/c0lrwlzrk86o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Number of asylum seekers in hotels halves in a year",
-        "summary": "Figures released today by the Home Office show that there was also a fall across legal migration arrivals, asylum claims and small boat arrivals.",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:17:32+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c3relr4xx27o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Norway's royal family gathers at King Harald's bedside as his condition worsens",
-        "summary": "The 89-year-old has been in hospital for over a week receiving treatment for a rare blood condition.",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T12:20:49+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cqxvrnvrr5do?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "One in eight young people still out of work or education ahead of major review",
-        "summary": "Just under one million young people in the UK are not in education, employment or training (Neet).",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:56:31+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c93epy2yev0o?at_medium=RSS&at_campaign=rss"
-      },
-      {
         "title": "What we know so far",
         "summary": "Hundreds have died in flooding and landslides on the border of Nepal and Tibet.",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T10:55:02+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cd948kn02e5o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Two teenagers, 13 and 14, among 33 UK nationals missing in disaster",
-        "summary": "Nepali police says 359 bodies have been recovered, while over 1,300 are still missing in total, according to authorities.",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:20:11+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cnvlde5075no?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
+      {
+        "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+        "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T10:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training"
+      },
       {
         "title": "Expanding OpenAI’s presence in Brazil",
         "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
@@ -822,12 +830,12 @@
         "url": "https://openai.com/index/loveholidays"
       },
       {
-        "title": "The full stack behind abundant intelligence",
-        "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T08:05:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+        "title": "Gemini Omni 1.1 Flash lets you build with more control",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T17:11:32+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/"
       },
       {
         "title": "Piloting the world's first double-blind AI evaluations",
@@ -852,56 +860,9 @@
         "publishedAt": "2026-08-21T12:59:48+01:00",
         "source": "Google DeepMind",
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
-      },
-      {
-        "title": "Anthropic agrees $45bn AI data centre deal with UK start-up Nscale",
-        "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T22:48:11+01:00",
-        "source": "Financial Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVFdwRkdzT29RSlNEUjhiTk9wbEF5S2RKSW5fbmZzOHM2WXFKaHlrYVhVT2ctRWRTLWZLMlFGMXNDU0VhWXJhNkRjNGpZYUVlMkJoWDJ4OHhyVmZ0NTNtTkdZSUVFeGVRVWVyZzdUT0o5dUFVeUNVQVJmcDQ3aVAwRUFfbFg?oc=5"
       }
     ],
     "Career": [
-      {
-        "title": "Head of Product",
-        "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Tue 11 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442780389",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Foundation Partners",
-        "location": "London, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-11"
-      },
-      {
-        "title": "Product Lead (Pre booking experience)",
-        "summary": "British Airways Holidays · Crawley, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Wed 26 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-pre-booking-experience-at-british-airways-holidays-4449472670",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "British Airways Holidays",
-        "location": "Crawley, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-26"
-      },
-      {
-        "title": "Product Lead",
-        "summary": "Street Group · Manchester, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Mon 17 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "Street Group",
-        "location": "Manchester, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-17"
-      },
       {
         "title": "Head of Product",
         "summary": "LocalStack · London, England, United Kingdom",

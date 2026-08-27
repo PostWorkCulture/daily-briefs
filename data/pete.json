@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 27 August 2026 · refreshed 4:22pm",
+  "updatedLabel": "Thursday, 27 August 2026 · refreshed 8:51pm",
   "worldFact": {
     "id": "finland-heavy-metal-bands-per-capita",
     "editorialPriority": "human-first",
@@ -16,18 +16,18 @@
     "sequence": 6
   },
   "weather": {
-    "temp": "21°",
+    "temp": "20°",
     "summary": "Cloudy",
     "condition": "Cloudy",
-    "currentRainChance": 20,
+    "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-08-27",
-        "high": 25,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -50,7 +50,7 @@
       },
       {
         "date": "2026-08-30",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -63,7 +63,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -87,7 +87,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -146,20 +146,6 @@
       "colorId": "4",
       "googleEventId": "36fkt7vp17k3pvi8f6schg5h6n",
       "calendarColorSource": "google"
-    },
-    {
-      "title": "Sample",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-27T14:15:00+01:00",
-      "end": "2026-08-27T14:45:00+01:00",
-      "date": "2026-08-27",
-      "time": "2:15pm",
-      "allDay": false,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "cpgm2pj6ccqmabb565j68b9kcop36b9o74s36b9l6oom2cj168o64pj4co",
-      "calendarColorSource": "calendar-default"
     },
     {
       "title": "BANK HOLIDAY",
@@ -274,6 +260,20 @@
       "calendarColorSource": "calendar-default"
     },
     {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -288,18 +288,18 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "School Start",
+      "title": "Skatepark Opening",
       "summary": "",
       "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
+      "start": "2026-09-12T00:00:00+01:00",
+      "end": "2026-09-13T00:00:00+01:00",
+      "date": "2026-09-12",
       "time": "All day",
       "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6krm4p9pcgs6abb1c8pmcb9kccq36b9o6so64b9hc4p3ic1g69ij6c1k6c",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -438,19 +438,27 @@
       }
     },
     "leaguePosition": 2,
-    "points": 3,
-    "played": 1,
+    "points": null,
+    "played": null,
     "news": [
       {
-        "title": "Champions League 2026/27: Who could we face?",
+        "title": "Reiss Nelson leaves Arsenal",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:17:09+01:00",
+        "publishedAt": "2026-08-27T16:47:55+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZHlsUWJaRVJDZlFXeWJYNlFfSXUwbjliVFBnREhac2ZqNFNMemFLV0ptMldxWHhJRC1QM0ltWVhMbnF1RTg1ZXNFUWM1NEhzYTdqMGZydnl3cmxvSm5SaDgyeHRxYnVVMUtHRzRWcEVGcEY0YjdDNjc5UDA5eGxPSldKZEdVU2VERVdQNm5CSQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oOTktX0ZCUnBrR3haQ0UzU2VaLThKWUlOaWVvWmx6VjJsakxaQUM2VEwwemdrdGVVUk9rSXZLU1lrblVoOXZKSE92SVlabmM2S0RBMUZwaVlieTRrMUN2WV8zMFo2dFNfUzdZNXYyODEyU2hZeWhwRw?oc=5"
       },
       {
-        "title": "Mikel on Villa, Konsa and proving ourselves",
+        "title": "Reiss Nelson becomes free agent after agreeing with Arsenal to mutually terminate contract - The Athletic",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T16:32:04+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQLVB2aXNpNlJfTjBob29UWnUwSnZnVl9wVml5UjBfYzhPTEZHdUkzMWJIUjd1SFp5SFFXVG1BbzJDQl9CbGNtdUNJaG9mQ1lUY29GLVl5NHNrM3ZSNG9IaHhoa0dHVDY0SU5Td29KY2JTVGRPSWo0ZDRoSVBnTmd5M2dHZkdHTlNuUDR3b3dwRnNSZ3Q1MVRKeA?oc=5"
+      },
+      {
+        "title": "Arteta on Konsa's swift return to Aston Villa",
         "summary": "",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T14:45:16+01:00",
@@ -458,28 +466,20 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMG5YRWRWdllwdFJRaG5VdUcxUDNLZlFfMXZpUzBFYmItWFFjTXBrTi16aVBNUUdXZEVTbzJXaFNCdEVJUEktYm5peV9Qc2pBTkR1VWNSODVMdkN4YV8wbDVHenEwdEFoQmRMX2ZXMjJqODhEYkNjSG5DNTlHeHpyZmpYSjR3bDcwa1dNWQ?oc=5"
       },
       {
-        "title": "UEFA ruling could impact Arsenal in Champions League draw",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:06:21+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNnVvSC1JT25oVFlXSk5XdWY1UmxDbGhaMm9Ebm5xRGZnaWRYYzMteHI1M092LTVqa3laNDVXRDRicnB4cnhvVmRPRld1TDNoTUtxbDdjdmFwMTJWWU0xM0pqNHpvbDFucElYWVZudWtWZlVIQmZ6SjFJU2tJNzNhOUI2TEFtM29rSC1sT1U4cFNkVG5jbG5KUDk2d0JaU2VZd0E?oc=5"
-      },
-      {
-        "title": "Arteta issues update on Bruno, Timber and Saliba",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:44:02+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNelM5aGVEWjJQRG5MN25GU3ZFQVNMZTkwcmRYQjg0YlA2cDU3eEFlZTZTekZVLTZnS2RLWmFiaklHczlwazdyb0Q0QWoydmIzbkNOc2FreE1FT1kyZ0pMUWJkVXNhcjNDZkE1N19mWlNiSWNKVi1Nbi1TS0lEd09RUVFCcHExRWdYbWpVdi1QclRwRFk?oc=5"
-      },
-      {
         "title": "Next Arsenal FC transfer 'confirmed' as striker sends cryptic farewell to former club",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:48:35+01:00",
+        "publishedAt": "2026-08-27T19:10:10+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXRwcDVpYTZORmFqUmUwTVpKdTVuM1JOWmszY1RVUWRrbWpfQ0dzMWJKZkNQN3FfUnJfYndtd2ZVRG01aGJMSl9RUXAtc080aWZKQWt1ME9MS1hGRW5qcW9xd3dwTUVzTzRkWmVpeGhrRTJXTVBSZUdfVVNtWDFsWGQtSV9fYmJRcUxKUGE5WjBYbjlnM2ZqRmx3Ympmckk?oc=5"
+      },
+      {
+        "title": "2026/27 Champions League draw: Our eight opponents",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T17:49:31+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3plUm5QZHY1aVQ0SG5udGNLT1NnaEhFTXBFay0tZlBFbzZycFFTZ1NZNHpSQTRITWJWU3VDaWVpOEdmVkd3d2xSZ2NFVjR3czIta1Q4dmdWbFJNemg5blRGdy14aGZRLWhtTWhZRk5UVWhfZmZ0SHZDQWo3RkdSZ2QtR1RYaFF0bmNBdUQzMkJMY0hM?oc=5"
       }
     ],
     "sources": [
@@ -494,9 +494,29 @@
         "title": "Julian Alvarez transfer news: Atletico Madrid won't sell striker to Barcelona with Arsenal the only option",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:31:55+01:00",
+        "publishedAt": "2026-08-27T19:33:45+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcl8zeTZBWHpuc2UxN3JHSVBZOUJBU0R0WDhFeFJtUjRmcXdvQmJnYnlTZlhubjlrY0dKOWVuSnR0OHFmaUotS0FvTGlRcGhvMWIwSUE4ZmM0NmRTVFFEQTZYSWdxYy1Ha3NFWTdTVXFpdUVwYnA1dkRoYW9nTzlRV1A5c1ljTXUzTHJncWFnQ0F1Q3VscTR1RjRfNXBwNi1YcWtVM3VEc3JCS2NBalFOWFBueXNPR2dmMXBtYThYU2pvbld6ZEg4bXh0TVpTR0JFbzNNNUFYVGNrRjFYUnNDc1k2MWNTSzhHakphUFhOeDI?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Reiss Nelson becomes free agent after agreeing with Arsenal to mutually terminate contract - The Athletic",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T16:32:04+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQLVB2aXNpNlJfTjBob29UWnUwSnZnVl9wVml5UjBfYzhPTEZHdUkzMWJIUjd1SFp5SFFXVG1BbzJDQl9CbGNtdUNJaG9mQ1lUY29GLVl5NHNrM3ZSNG9IaHhoa0dHVDY0SU5Td29KY2JTVGRPSWo0ZDRoSVBnTmd5M2dHZkdHTlNuUDR3b3dwRnNSZ3Q1MVRKeA?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Tier-one report"
+      },
+      {
+        "title": "Mikel Arteta to Arsenal squad amid Julián Álvarez transfer talk: 'Knock on my door'",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T14:54:00+01:00",
+        "source": "ESPN",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOenJucWhCLVlEcFB3VTcyYm9iaThEei1ZTzRJLV92SnpWLUxkRnV0bXlUQXZXVGhFUnpXWkozMmtLV2tOY0dGSjdLZUN4Z25jMDRUR3VKZVdhWGYzOU5KRExCU3pCNjhUcHZsQzlfdTRXTGxlVmxwSDRwWUFNVjRzMmJRUGVoSDdicUdMWGpObXhPNU05RkRod0VkZGh1YVBlUEFENGxibktQUkNFLVhGNlA4aWZpY0NqYTRSMjVGY1BmcWZO?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -529,29 +549,23 @@
         "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRk8tUi1ERXg3V2JqYXFvUDV4VW1tS0thMjRJZm1ET2h0WFZ3LWNXMzZDVmR6X1dlZ0tOZWpweVZnQTBiUkZGZDFEbU14LWU3ajhrY1RfbFRud1p4c0VXeVdzZDdPX1F6VFByT0M0RmpsSFVOR2ktME5tTVQzdWgwYUpNLUVDRmJEUGtpVEpvUzlSM01HYWtwdC1FeDlQU055OTliTU5aT3NvdWZ4Z3ZoTU5JUVcwM3loZW1Jc0N6ZEs5bXFvN0VWczlicGx6cmthQ2NQWmdGLWRLQVY4UUhEYkRkbWVBcEo4dmhxSl9iVjJqS3RmbUc5ZENXdTd4OHFYMFBIUC1Ua09jNWNSdWxzMU8zcU8wdGR5SExDWThpS0c?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
-      },
-      {
-        "title": "Ezri Konsa signs for Arsenal",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T16:01:43+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBweWxmVEhFQUlMWElmOVd0bHlMUEVfdWRUSzNVSmFFOXd2ZDhNLW5EOTJEZkc5dGZmcXNRd1dkYnFocVlPZzlZTDhQNDNLM0lNZ2NUMmsxZDd1cWtjWkRjZlFDdVU1b0dYRXEwZmhPRUd4WjNGcUMtbkhn?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Official"
-      },
-      {
-        "title": "Ezri Konsa transfer news: Arsenal agree deal with Aston Villa to sign England defender",
-        "summary": "",
-        "meta": "Wed 19 Aug",
-        "publishedAt": "2026-08-19T14:57:16+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU1FDZjB6SFVudzFSZnpMQXc2cWxvd1RhOHZvSUJRMFc5clktbG9GS1Vma0ozamVqbjFjb3RJVDd6RjJjVlpVOUloemF0MDVsTXpjY3k5Rmg3cTdzQ0FmWTU5ZU5OVDAyMVBZeF9YckluTkZsUWhxanVUTWpJMGpqTV80SUk4eE1pYjU5Rl9JYW1Wa0tyOGlTZ090dmVEWjdRNXFuYXlHajJaNjkxN3FLVy13OEZveFZrYXNfLXBpMDVqdkVkYUNVRlJoZDRUTHF4MEg1c2pXcw?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
       }
     ],
     "transferRumours": [
+      {
+        "title": "🚨 EXCL: Reiss Nelson agrees deal with Arsenal to terminate contract by mutual consent. Terms ran until June 2027+1 but 26yo winger leaves #AFC now as free agent. Interest from England & abroad - will assess options before deciding next step @TheAthleti",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T16:30:09+01:00",
+        "source": "David Ornstein",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4yam9NaEExLXRuVkJfaHhaRzB5YVgyQUFwcERYQ2JRSGNpYmN4V3dYbHp4NV9DY3R6blNMaVV2a1JYV0xqUFpGd3VsRXpVTl9CdXZpRHRfWXVLQXdYX1FsNUlXNi1OZw?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Tier-one reporter",
+        "sourceUrl": "https://x.com/David_Ornstein"
+      },
       {
         "title": "Exclusive: Al-Hilal making final arrangements for Gabriel Martinelli signing with talks for Arsenal over €66 million deal. Medical scheduled for the weekend. Final details still need sorting but Saudi club making plans for Brazilian’s arrival.",
         "summary": "",
@@ -565,6 +579,20 @@
         "sourceType": "X",
         "confidence": "Arsenal specialist",
         "sourceUrl": "https://x.com/jamesbenge"
+      },
+      {
+        "title": "🚨🔵⚪️ Gabriel Martinelli’s agent are in direct contact with Al Hilal again to close the agreement on personal terms and seal the move. Arsenal are ready to authorize Gabriel for medical after package over €65m verbally agreed with Al Hilal.",
+        "summary": "",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T08:00:00+01:00",
+        "source": "Fabrizio Romano",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82bDVpOWZONU80QzVKaW9QSXBxWm5obDRLamJQTnRHMjNpYm5pZEJEcTl6V2VQc0g1TS1LUG1CcldTaGYxQW5TbTY3VUxKRzNGLVR0alNraVd4dmFTNndobGpnNllhdw?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Established reporter",
+        "sourceUrl": "https://x.com/FabrizioRomano"
       },
       {
         "title": "🚨🇦🇷 Arsenal remain attentive to Julián Álvarez situation and internal feeling is they can reach an agreement with Atlético on the fee. But #AFC will only bid if Julián decides to open doors to the move: his stance will be the key factor. So far, Julián only wanted",
@@ -593,62 +621,34 @@
         "sourceType": "X",
         "confidence": "Established reporter",
         "sourceUrl": "https://x.com/FabrizioRomano"
-      },
-      {
-        "title": "🚨 Al Hilal pursuing deal to sign Gabriel Martinelli from Arsenal. No agreement yet but talks ongoing between clubs + with 25yo winger. #AFC want in region of £60m & Brazil international open to #AlHilal possibility after turning down Turkey @TheAthleticFC",
-        "summary": "",
-        "meta": "Sun 23 Aug",
-        "publishedAt": "2026-08-23T13:43:00+01:00",
-        "source": "David Ornstein",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBreVhoZXp2aGJjYzFPRDRINTNGZUJFUE1SZHlsb0xRN2RWSHFndGpiSC1BMjVySEtxbm5iaklPcFRZeWl5NUU4MXhtZy1iU2VyTDRXSVQ1SE41RHEzcTZLazFfS3hkZw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Tier-one reporter",
-        "sourceUrl": "https://x.com/David_Ornstein"
-      },
-      {
-        "title": "🚨🔴⚪️ OFFICIAL: Ezri Konsa joins Arsenal from Aston Villa on £50m plus £5m add-ons deal.",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T16:03:31+01:00",
-        "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tMXkzZEpuM2FsYnVnYUZoUEx1bWtIT2VEcTFqX0dyRHFFaHhQU1R3RDNocHhkMzZ6MGo5ZnBhei1KbFNsM2c0LUcyN1dXelg4VkFob3F6aFhrdVMtWEJDMGhWRUdPdw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Established reporter",
-        "sourceUrl": "https://x.com/FabrizioRomano"
       }
     ]
   },
   "lead": {
-    "title": "Expanding OpenAI’s presence in Brazil",
-    "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+    "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+    "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
     "meta": "Thu 27 Aug",
-    "publishedAt": "2026-08-27T04:00:00+01:00",
+    "publishedAt": "2026-08-27T10:00:00+01:00",
     "source": "OpenAI",
-    "url": "https://openai.com/index/expanding-our-presence-in-brazil"
+    "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training"
   },
   "interests": [
     {
-      "title": "Expanding OpenAI’s presence in Brazil",
-      "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
       "meta": "Thu 27 Aug",
-      "publishedAt": "2026-08-27T04:00:00+01:00",
+      "publishedAt": "2026-08-27T10:00:00+01:00",
       "source": "OpenAI",
-      "url": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
       "section": "AI"
     },
     {
-      "title": "Champions League 2026/27: Who could we face?",
+      "title": "Reiss Nelson leaves Arsenal",
       "summary": "",
       "meta": "Thu 27 Aug",
-      "publishedAt": "2026-08-27T14:17:09+01:00",
+      "publishedAt": "2026-08-27T16:47:55+01:00",
       "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZHlsUWJaRVJDZlFXeWJYNlFfSXUwbjliVFBnREhac2ZqNFNMemFLV0ptMldxWHhJRC1QM0ltWVhMbnF1RTg1ZXNFUWM1NEhzYTdqMGZydnl3cmxvSm5SaDgyeHRxYnVVMUtHRzRWcEVGcEY0YjdDNjc5UDA5eGxPSldKZEdVU2VERVdQNm5CSQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oOTktX0ZCUnBrR3haQ0UzU2VaLThKWUlOaWVvWmx6VjJsakxaQUM2VEwwemdrdGVVUk9rSXZLU1lrblVoOXZKSE92SVlabmM2S0RBMUZwaVlieTRrMUN2WV8zMFo2dFNfUzdZNXYyODEyU2hZeWhwRw?oc=5",
       "section": "Arsenal"
     },
     {
@@ -751,6 +751,14 @@
   "sections": {
     "AI": [
       {
+        "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+        "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T10:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training"
+      },
+      {
         "title": "Expanding OpenAI’s presence in Brazil",
         "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
         "meta": "Thu 27 Aug",
@@ -791,12 +799,12 @@
         "url": "https://openai.com/index/loveholidays"
       },
       {
-        "title": "The full stack behind abundant intelligence",
-        "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
-        "meta": "Tue 25 Aug",
-        "publishedAt": "2026-08-25T08:05:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+        "title": "Gemini Omni 1.1 Flash lets you build with more control",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T17:11:32+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/"
       },
       {
         "title": "Piloting the world's first double-blind AI evaluations",
@@ -821,27 +829,27 @@
         "publishedAt": "2026-08-21T12:59:48+01:00",
         "source": "Google DeepMind",
         "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
-      },
-      {
-        "title": "Anthropic agrees $45bn AI data centre deal with UK start-up Nscale",
-        "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T22:48:11+01:00",
-        "source": "Financial Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVFdwRkdzT29RSlNEUjhiTk9wbEF5S2RKSW5fbmZzOHM2WXFKaHlrYVhVT2ctRWRTLWZLMlFGMXNDU0VhWXJhNkRjNGpZYUVlMkJoWDJ4OHhyVmZ0NTNtTkdZSUVFeGVRVWVyZzdUT0o5dUFVeUNVQVJmcDQ3aVAwRUFfbFg?oc=5"
       }
     ],
     "Arsenal news": [
       {
-        "title": "Champions League 2026/27: Who could we face?",
+        "title": "Reiss Nelson leaves Arsenal",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:17:09+01:00",
+        "publishedAt": "2026-08-27T16:47:55+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZHlsUWJaRVJDZlFXeWJYNlFfSXUwbjliVFBnREhac2ZqNFNMemFLV0ptMldxWHhJRC1QM0ltWVhMbnF1RTg1ZXNFUWM1NEhzYTdqMGZydnl3cmxvSm5SaDgyeHRxYnVVMUtHRzRWcEVGcEY0YjdDNjc5UDA5eGxPSldKZEdVU2VERVdQNm5CSQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oOTktX0ZCUnBrR3haQ0UzU2VaLThKWUlOaWVvWmx6VjJsakxaQUM2VEwwemdrdGVVUk9rSXZLU1lrblVoOXZKSE92SVlabmM2S0RBMUZwaVlieTRrMUN2WV8zMFo2dFNfUzdZNXYyODEyU2hZeWhwRw?oc=5"
       },
       {
-        "title": "Mikel on Villa, Konsa and proving ourselves",
+        "title": "Reiss Nelson becomes free agent after agreeing with Arsenal to mutually terminate contract - The Athletic",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T16:32:04+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQLVB2aXNpNlJfTjBob29UWnUwSnZnVl9wVml5UjBfYzhPTEZHdUkzMWJIUjd1SFp5SFFXVG1BbzJDQl9CbGNtdUNJaG9mQ1lUY29GLVl5NHNrM3ZSNG9IaHhoa0dHVDY0SU5Td29KY2JTVGRPSWo0ZDRoSVBnTmd5M2dHZkdHTlNuUDR3b3dwRnNSZ3Q1MVRKeA?oc=5"
+      },
+      {
+        "title": "Arteta on Konsa's swift return to Aston Villa",
         "summary": "",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T14:45:16+01:00",
@@ -849,44 +857,44 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMG5YRWRWdllwdFJRaG5VdUcxUDNLZlFfMXZpUzBFYmItWFFjTXBrTi16aVBNUUdXZEVTbzJXaFNCdEVJUEktYm5peV9Qc2pBTkR1VWNSODVMdkN4YV8wbDVHenEwdEFoQmRMX2ZXMjJqODhEYkNjSG5DNTlHeHpyZmpYSjR3bDcwa1dNWQ?oc=5"
       },
       {
-        "title": "UEFA ruling could impact Arsenal in Champions League draw",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:06:21+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNnVvSC1JT25oVFlXSk5XdWY1UmxDbGhaMm9Ebm5xRGZnaWRYYzMteHI1M092LTVqa3laNDVXRDRicnB4cnhvVmRPRld1TDNoTUtxbDdjdmFwMTJWWU0xM0pqNHpvbDFucElYWVZudWtWZlVIQmZ6SjFJU2tJNzNhOUI2TEFtM29rSC1sT1U4cFNkVG5jbG5KUDk2d0JaU2VZd0E?oc=5"
-      },
-      {
-        "title": "Arteta issues update on Bruno, Timber and Saliba",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:44:02+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNelM5aGVEWjJQRG5MN25GU3ZFQVNMZTkwcmRYQjg0YlA2cDU3eEFlZTZTekZVLTZnS2RLWmFiaklHczlwazdyb0Q0QWoydmIzbkNOc2FreE1FT1kyZ0pMUWJkVXNhcjNDZkE1N19mWlNiSWNKVi1Nbi1TS0lEd09RUVFCcHExRWdYbWpVdi1QclRwRFk?oc=5"
-      },
-      {
         "title": "Next Arsenal FC transfer 'confirmed' as striker sends cryptic farewell to former club",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:48:35+01:00",
+        "publishedAt": "2026-08-27T19:10:10+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXRwcDVpYTZORmFqUmUwTVpKdTVuM1JOWmszY1RVUWRrbWpfQ0dzMWJKZkNQN3FfUnJfYndtd2ZVRG01aGJMSl9RUXAtc080aWZKQWt1ME9MS1hGRW5qcW9xd3dwTUVzTzRkWmVpeGhrRTJXTVBSZUdfVVNtWDFsWGQtSV9fYmJRcUxKUGE5WjBYbjlnM2ZqRmx3Ympmckk?oc=5"
       },
       {
-        "title": "Ipswich Town drawn in Carabao Cup third round",
-        "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T22:23:37+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeHlPa2RMdHhtSGJEQnpnaW9mU0wxR3dkTjZ4MkxNSnFhR19jUnp3aktIUzlVM25WaWJLV1ZfRDY0aC1vSlhYMTlDSzF0dHVZaVM3NGdZd2QzMk5ic2pDWGFwZnBpRTRDSXZUX0FZeGdJcWpXWi1lOXFVc09DNlFqTGw2aDFKRU4tVVJndVRtdGw?oc=5"
-      },
-      {
-        "title": "Arsenal to confirm two new signings after medicals with third imminent",
+        "title": "2026/27 Champions League draw: Our eight opponents",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T11:06:51+01:00",
+        "publishedAt": "2026-08-27T17:49:31+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3plUm5QZHY1aVQ0SG5udGNLT1NnaEhFTXBFay0tZlBFbzZycFFTZ1NZNHpSQTRITWJWU3VDaWVpOEdmVkd3d2xSZ2NFVjR3czIta1Q4dmdWbFJNemg5blRGdy14aGZRLWhtTWhZRk5UVWhfZmZ0SHZDQWo3RkdSZ2QtR1RYaFF0bmNBdUQzMkJMY0hM?oc=5"
+      },
+      {
+        "title": "Arsenal XI vs Aston Villa: Confirmed team news and predicted lineup",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T19:08:39+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUDdMRjBMTXFnUHc2dU90UjRvT0YzNXpXZkIxcmUtRDZnNEJfYWRNdUJFV05XMXpUdVZOQ2FsNmhkdWhLYjBvRF80ZlZ1cWFjUFdQZ05pckVNMGJjODZFN1RwZzRyWlUwZzctVzRUT3pJNFZCLUphY0dIWnlfM1Y3VlJ0eU1jN3BZVXZPUHpTQkd1M0NtR1NtbWVudEszUURmMzBjY29n?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUXd6VHFnQUlBV3NfNXZ0VUswTUNyLVcyV20ySlJONVotTXRKZC1BUFZuWTBhbW81ZEdQdjdIMDFZWnJ5T0VZUTlhaVhJWGFaWnBka1BRa29iSkVheTFfWmhyTFJMNmpfV2pBc2R5S3NJLXlIQzFJS3Y3cG5xNXZiTHRWaEdPYTkydmx3TUtLTGRmbWRINHlpWHRWZ1VoeGwySjF5Q2ZTck1TV0RrVHE2eHRXQWwxaWd3NmVnNjAzY1gtenlPMDlaYW15cElaQ01NXzd0dHowbElHZnUwUnE3bkQtbmVoSk1uaU1N?oc=5"
+      },
+      {
+        "title": "Champions League 26/27: Format, match dates and more",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T18:47:18+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSEVCWEJ2anczMnRLRUNzZEpTRUxNcFRzV1JSSlYzc2ZOWXdfVUsweEMtRHB3RFg5Sl9LRm9YVk9ydDRUbFRibXVmNDUzcEpFT0tCLVFIQWwwVmxPaGtGc2Z4TWQxMnZRNXVqdDVmR05oNk1nQUZ6eFl3QURJZWRjeXNvTkZsWkVZNDVsXzhwMjJILUxrTUpHOGpB?oc=5"
+      },
+      {
+        "title": "Champions League 2026/27: Who could we face?",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T17:16:48+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZHlsUWJaRVJDZlFXeWJYNlFfSXUwbjliVFBnREhac2ZqNFNMemFLV0ptMldxWHhJRC1QM0ltWVhMbnF1RTg1ZXNFUWM1NEhzYTdqMGZydnl3cmxvSm5SaDgyeHRxYnVVMUtHRzRWcEVGcEY0YjdDNjc5UDA5eGxPSldKZEdVU2VERVdQNm5CSQ?oc=5"
       }
     ],
     "Local news": [
@@ -947,20 +955,20 @@
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1BoZ2VOOFh2RGFrMkk4YWY5eUtlLXBzVnZFb1JwNXBPUXhHNklmb19rZVJ6Z0NUVFRBUkhrS0Fucl9hV3gtdmVSWmt6b09NSm5YVTBnZWxLTmNSUGc3Wm9XUVAyNW0ya29RUVAzdkFuUkFhNWpWQ3VqT0kzMW9SOGxyQ2JZSC00TVk0THZ3YXk1RHBXSHF2NkdmYTI1d21jdElHM3BEM0QtNUlpNFBqVWNma3oxSFNiazFTNGNR?oc=5"
       },
       {
-        "title": "Join us for the Cobham skatepark opening JAM",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T16:17:38+01:00",
-        "source": "Elmbridge Borough Council",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkNRSGg0RFhLY251ZUZzSmE1SGwtMTctS3N4TUFma1c3enQ5Y2w4dnZXaVZKTzZXYmNFMHEzRzVGY0dncTRBdTVhUUtsQzZQaHU0YTdTS3dwUmhNY3hyTC1Bd0V4dDdJYTRpbXZQNzRLelQtSk4xYXVuQzF5SkZkVw?oc=5"
-      },
-      {
         "title": "Surrey's hotspot neighbourhoods where the priciest homes are sold",
         "summary": "",
         "meta": "Sat 22 Aug",
         "publishedAt": "2026-08-22T07:00:00+01:00",
         "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVXVqOXJ0bkZJemhTaVRqNUozT0JFcV9OU1NtWkhDOFZzXzlpSVVYeFRhWkF4amVBaTEyVzZody1vX0U1UjZTRTgyelFCTmZxODkzYVR6OVpTTUp5TXRsOXVVQlZGM3oybVVKVjAybGxFMlhIMXdicnlLR0s5dTJyQ1ZoMzdycm5yYVVGYkh4N0J0d1ZvWXhVa21rSU9GdUNr0gGmAUFVX3lxTE1EYW5HQlpqb1Z5U3ZyaTM0QjVpWTVHeW1TOU9fQ0JIMWFFdHZBcDhGd21TaEhya2RhY3lORXlmZzJrZHJ0VGN2UkxobjZjSlQ1YzZ2QVhaeTVDOEQzUmVjcFp6WExRY0pHVi1kWTM1cUNYNnYyUFIxVnBGSVV4RnRCN2hmZk1hMWNuOFhKN1Faajl4d3BMekdfbGtKdzhEd3pCVzVxOGc?oc=5"
+      },
+      {
+        "title": "Join us for the Cobham skatepark opening JAM",
+        "summary": "",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T16:17:38+01:00",
+        "source": "Elmbridge Borough Council",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkNRSGg0RFhLY251ZUZzSmE1SGwtMTctS3N4TUFma1c3enQ5Y2w4dnZXaVZKTzZXYmNFMHEzRzVGY0dncTRBdTVhUUtsQzZQaHU0YTdTS3dwUmhNY3hyTC1Bd0V4dDdJYTRpbXZQNzRLelQtSk4xYXVuQzF5SkZkVw?oc=5"
       },
       {
         "title": "New £632m contract to change rubbish collection across Surrey",
@@ -989,15 +997,15 @@
     ],
     "UK news": [
       {
-        "title": "Watch: How the collapse of a glacier caused such devastation",
-        "summary": "At least 270 people have died in the massive flash floods, while more than 800 others are missing.",
+        "title": "Watch: Tracing the deadly path of the Nepal-Tibet flash flood",
+        "summary": "BBC Verify traces the path of the destructive Nepal-Tibet flash flood using verified video.",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T11:17:45+01:00",
+        "publishedAt": "2026-08-27T17:13:39+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/ckgxnrg8j19o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/videos/cp80m87pez3o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Uefa pursuing criminal legal action against Infantino",
+        "title": "Uefa preparing criminal legal action against Infantino",
         "summary": "Uefa is pursuing criminal proceedings against Fifa president Gianni Infantino over the scrapped plan to sell off stakes in the World Cup.",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T15:42:09+01:00",
@@ -1005,12 +1013,12 @@
         "url": "https://www.bbc.co.uk/sport/football/articles/cx2zl5kwlxjo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Convicted Bosnian Serb war criminal Mladić dies aged 84",
-        "summary": "He was jailed for life in 2017 for genocide, war crimes and crimes against humanity during the wars in the ex-Yugoslavia in 1992-95.",
+        "title": "The monstrous crimes of Ratko Mladic, the 'Butcher of Bosnia'",
+        "summary": "The Bosnian Serb commander led a campaign of ethnic cleansing during the Bosnian conflict.",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T16:16:54+01:00",
+        "publishedAt": "2026-08-27T14:48:09+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5ywxpryj95o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c2q05wzlx5xo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Dame Jenni Murray died days after car crash, inquest hears",
@@ -1021,12 +1029,28 @@
         "url": "https://www.bbc.co.uk/news/articles/cm27y2dx7pwo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "UK salmonella cases nearing 500 as egg investigations continue",
-        "summary": "Close to 500 people have become ill with salmonella linked to imported eggs, say UK authorities who are investigating more clusters.",
+        "title": "Extra 200 police drafted in to aid force investigating wrong-way crash and fire deaths",
+        "summary": "Cleveland Police confirms it has support from six local forces and the National Crime Agency.",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T12:00:35+01:00",
+        "publishedAt": "2026-08-27T19:04:16+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cn8ej0zvppxo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/ckgvnjpv1l0o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Jury deliberating in trial of Lindsay Clancy, US woman accused of killing her children",
+        "summary": "Prosecutors argued Clancy made a calculated decision to murder the children, while the defence argued that she was suffering from postpartum psychosis.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T18:46:21+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c33keeyyv70o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Man City and Aston Villa to face holders PSG - check full details of Champions League draw",
+        "summary": "European champions Paris St-Germain will face Premier League duo Manchester City and Aston Villa in the league phase of this season's Champions League.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T18:32:55+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c5ywxxll10jo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Top Gear to return to TV four years after Flintoff crash, BBC confirms",
@@ -1037,6 +1061,22 @@
         "url": "https://www.bbc.co.uk/news/articles/clym7yrdk29o?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Optimus Prime and Eeyore voice actor Peter Cullen dies",
+        "summary": "Cullen voiced the heroic Optimus Prime in the Transformers TV series and then the Hollywood films.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T17:00:12+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c15844gwe0wo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "UK salmonella cases nearing 500 as egg investigations continue",
+        "summary": "Close to 500 people have become ill with salmonella linked to imported eggs, say UK authorities who are investigating more clusters.",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T12:00:35+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cn8ej0zvppxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Blake Lively awarded $400,000 of $8m she claimed for legal fees in Baldoni battle",
         "summary": "A judge awards less than Lively requested to cover her legal fees to fight a defamation case he filed.",
         "meta": "Thu 27 Aug",
@@ -1045,44 +1085,12 @@
         "url": "https://www.bbc.co.uk/news/articles/c0lrwlzrk86o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Number of asylum seekers in hotels halves in a year",
-        "summary": "Figures released today by the Home Office show that there was also a fall across legal migration arrivals, asylum claims and small boat arrivals.",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:17:32+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c3relr4xx27o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Norway's royal family gathers at King Harald's bedside as his condition worsens",
-        "summary": "The 89-year-old has been in hospital for over a week receiving treatment for a rare blood condition.",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T12:20:49+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cqxvrnvrr5do?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "One in eight young people still out of work or education ahead of major review",
-        "summary": "Just under one million young people in the UK are not in education, employment or training (Neet).",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T13:56:31+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c93epy2yev0o?at_medium=RSS&at_campaign=rss"
-      },
-      {
         "title": "What we know so far",
         "summary": "Hundreds have died in flooding and landslides on the border of Nepal and Tibet.",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T10:55:02+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cd948kn02e5o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Two teenagers, 13 and 14, among 33 UK nationals missing in disaster",
-        "summary": "Nepali police says 359 bodies have been recovered, while over 1,300 are still missing in total, according to authorities.",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:20:11+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cnvlde5075no?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
@@ -1097,18 +1105,6 @@
         "company": "Cresta",
         "location": "UK",
         "postedAt": "2026-08-27"
-      },
-      {
-        "title": "Founding GTM & Sales Manager - DACH & Nordics (gn) @ AI Digital Defense Venture, Germany",
-        "summary": "atlantic.vc · Remote job",
-        "meta": "UK · Posted Wed 26 Aug",
-        "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.com/jobs/companies/atlanticvc/remote-founding-gtm-sales-manager-dach-nordics-gn-at-ai-digital-defense-venture-germany-berlin-242780",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "atlantic.vc",
-        "location": "Remote job",
-        "postedAt": "2026-08-26"
       },
       {
         "title": "Course Director UX UI and AI",
@@ -1144,18 +1140,6 @@
         "countryFocus": "UK",
         "company": "Coventry and Warwickshire Partnership NHS Trust",
         "location": "Coventry, England, United Kingdom",
-        "postedAt": "2026-08-24"
-      },
-      {
-        "title": "Head of Data Exploitation",
-        "summary": "Department for Environment, Food and Rural Affairs · England, United Kingdom",
-        "meta": "UK · Posted Mon 24 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-data-exploitation-at-department-for-environment-food-and-rural-affairs-4457107400",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Department for Environment, Food and Rural Affairs",
-        "location": "England, United Kingdom",
         "postedAt": "2026-08-24"
       },
       {
@@ -1204,6 +1188,30 @@
         "countryFocus": "UK",
         "company": "LastPass",
         "location": "UK",
+        "postedAt": "2026-08-27"
+      },
+      {
+        "title": "Senior/Strategic Digital Analytics Consultant - UK",
+        "summary": "Quantum Metric · UK",
+        "meta": "UK · Posted Thu 27 Aug",
+        "source": "Jobicy",
+        "url": "https://jobicy.com/jobs/151829-senior-strategic-digital-analytics-consultant-uk",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Quantum Metric",
+        "location": "UK",
+        "postedAt": "2026-08-27"
+      },
+      {
+        "title": "Senior Product Designer",
+        "summary": "Taktile · Berlin Office",
+        "meta": "UK · Posted Thu 27 Aug",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.com/jobs/companies/taktile/senior-product-designer-berlin-232186",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Taktile",
+        "location": "Berlin Office",
         "postedAt": "2026-08-27"
       }
     ]
