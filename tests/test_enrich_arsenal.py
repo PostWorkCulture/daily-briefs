@@ -23,6 +23,14 @@ enrich_next_fixture = load_script("enrich_next_fixture")
 
 
 class UpcomingFixtureTests(unittest.TestCase):
+    def test_transient_standings_outage_keeps_last_verified_position(self) -> None:
+        enriched = {"leaguePosition": None}
+        existing = {"leaguePosition": 2}
+
+        result = enrich_arsenal.retain_verified_league_position(enriched, existing)
+
+        self.assertEqual(result["leaguePosition"], 2)
+
     def test_updated_official_fixture_date_time_and_broadcaster_are_parsed(self) -> None:
         html = """
         <main>

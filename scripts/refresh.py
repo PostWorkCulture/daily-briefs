@@ -798,6 +798,16 @@ def previous_career(profile: str) -> list[dict]:
         return []
 
 
+def previous_arsenal_position() -> int | None:
+    """Keep the last verified rank when the live standings feed is temporarily unavailable."""
+    try:
+        data = json.loads((DATA / "pete.json").read_text(encoding="utf-8"))
+        position = (data.get("arsenal") or {}).get("leaguePosition")
+        return position if isinstance(position, int) and 1 <= position <= 20 else None
+    except Exception:
+        return None
+
+
 def calendar_colour_data() -> dict:
     path = DATA / "calendar-colors.json"
     try: return json.loads(path.read_text(encoding="utf-8"))
@@ -931,6 +941,7 @@ def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: 
 
 
 def build_profiles() -> dict[str, dict]:
+    previous_position = previous_arsenal_position()
     wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
     ai = merge_news(
         rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
@@ -942,6 +953,8 @@ def build_profiles() -> dict[str, dict]:
     transfers = arsenal_transfer_updates()
     transfer_rumours = arsenal_transfer_rumours()
     arsenal = arsenal_snapshot(arsenal_news, transfers, transfer_rumours)
+    if arsenal.get("leaguePosition") is None and previous_position is not None:
+        arsenal["leaguePosition"] = previous_position
     local = local_news()
     uk = uk_news()
     tonight = tonight_recommendations()

@@ -358,16 +358,27 @@ def snapshot(existing_news: list[dict]) -> dict:
     }
 
 
+def retain_verified_league_position(enriched: dict, existing: dict) -> dict:
+    """Do not erase the last verified rank during a transient standings outage."""
+    if enriched.get("leaguePosition") is not None:
+        return enriched
+    position = existing.get("leaguePosition")
+    if isinstance(position, int) and 1 <= position <= 20:
+        enriched["leaguePosition"] = position
+    return enriched
+
+
 def main() -> None:
     path = DATA / "pete.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
+    existing_arsenal = payload.get("arsenal") or {}
     news = (payload.get("sections") or {}).get("Arsenal news", [])
     transfers = (payload.get("arsenal") or {}).get("transfers", [])
     transfer_rumours = (payload.get("arsenal") or {}).get("transferRumours", [])
     clean_news = clean_arsenal_news(news)
     if "sections" in payload and "Arsenal news" in payload["sections"]:
         payload["sections"]["Arsenal news"] = clean_news
-    enriched = snapshot(clean_news)
+    enriched = retain_verified_league_position(snapshot(clean_news), existing_arsenal)
     enriched["transfers"] = transfers
     enriched["transferRumours"] = transfer_rumours
     payload["arsenal"] = enriched
