@@ -11,11 +11,13 @@ on:
       - 'assets/weather-extremes/**'
       - 'data/fact-catalog.json'
       - 'data/fact-history.json'
+      - 'data/tv-picks-history.json'
       - 'data/pete.json'
       - 'data/sofia.json'
       - 'scripts/responsive_ui_check.py'
       - 'scripts/enrich_weather_v2.py'
       - 'scripts/refresh.py'
+      - 'scripts/enrich_tv_picks.py'
       - 'scripts/enrich_arsenal.py'
       - 'scripts/enrich_next_fixture.py'
       - 'scripts/finalize_arsenal.py'
@@ -23,6 +25,7 @@ on:
       - 'tests/test_finalize_arsenal.py'
       - 'tests/test_enrich_weather_v2.py'
       - 'tests/test_world_facts.py'
+      - 'tests/test_enrich_tv_picks.py'
       - '.github/workflows/responsive-ui-check.yml'
   workflow_dispatch:
   push:
@@ -36,11 +39,13 @@ on:
       - 'assets/weather-extremes/**'
       - 'data/fact-catalog.json'
       - 'data/fact-history.json'
+      - 'data/tv-picks-history.json'
       - 'data/pete.json'
       - 'data/sofia.json'
       - 'scripts/responsive_ui_check.py'
       - 'scripts/enrich_weather_v2.py'
       - 'scripts/refresh.py'
+      - 'scripts/enrich_tv_picks.py'
       - 'scripts/enrich_arsenal.py'
       - 'scripts/enrich_next_fixture.py'
       - 'scripts/finalize_arsenal.py'
@@ -48,6 +53,7 @@ on:
       - 'tests/test_finalize_arsenal.py'
       - 'tests/test_enrich_weather_v2.py'
       - 'tests/test_world_facts.py'
+      - 'tests/test_enrich_tv_picks.py'
       - '.github/workflows/responsive-ui-check.yml'
 
 jobs:

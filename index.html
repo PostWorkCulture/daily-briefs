@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="css/tv-picks-restored.css?v=20260817g">
   <link rel="stylesheet" href="css/arsenal-result-image.css?v=20260817h">
   <link rel="stylesheet" href="css/light-theme.css?v=20260825a">
+  <link rel="stylesheet" href="css/arsenal-official-theme.css?v=20260827a">
 </head>
 <body>
   <main class="app-shell">
@@ -94,12 +95,16 @@
 
     <div class="brief-view" id="view-arsenal" data-view="arsenal">
       <section class="arsenal-panel panel-block" id="arsenalPanel" hidden>
-        <div class="section-head"><h2>Arsenal</h2><span class="section-kicker">Men's first team · all competitions</span></div>
+        <header class="arsenal-hero">
+          <div class="arsenal-hero-copy"><span>The Arsenal</span><h2>Match centre</h2><p>Men's first team · all competitions</p></div>
+          <svg class="arsenal-hero-cannon" viewBox="0 0 152 76" aria-hidden="true"><path class="cannon-barrel" d="M44 28h74l10-6h16v24h-16l-10-6H44Z"/><g class="cannon-wheel"><circle cx="44" cy="50" r="20"/><circle cx="44" cy="50" r="5"/><path d="M44 30v40M24 50h40M30 36l28 28M58 36 30 64"/></g></svg>
+        </header>
         <div class="arsenal-grid">
           <article class="match-card" id="lastResultCard"><span>Last result</span><strong>—</strong><small>Loading</small></article>
           <article class="match-card next" id="nextFixtureCard"><span>Next fixture</span><strong>—</strong><small>Loading</small></article>
-          <article class="table-card" id="leagueCard"><span>Premier League</span><strong>—</strong><small>Position</small></article>
+          <article class="league-position-card" id="leagueCard"><span>Premier League</span><strong>—</strong><small>Current position</small></article>
         </div>
+        <div class="arsenal-subhead"><span>Latest</span><h3>Club news</h3></div>
         <div class="arsenal-news" id="arsenalNews"></div>
         <section class="arsenal-transfers" aria-labelledby="arsenalTransfersTitle">
           <div class="arsenal-transfer-head">
@@ -143,7 +148,7 @@
     <button data-view-target="birthdays"><b class="birthday-nav-mark" aria-hidden="true"><svg class="nav-balloon" viewBox="0 0 24 28"><path d="M12 2C7.6 2 4 5.7 4 10.3c0 5.8 5.2 10.2 8 11.7 2.8-1.5 8-5.9 8-11.7C20 5.7 16.4 2 12 2Z"/><path d="m10.2 22 1.8 2 1.8-2M12 24c2 1.1 2.5 2.4 1.2 3"/></svg></b>Birthday</button>
   </nav>
 
-  <script src="js/app.js?v=20260822c" defer></script>
+  <script src="js/app.js?v=20260827a" defer></script>
   <script src="js/home-reminders.js?v=20260825a" defer></script>
   <script src="js/date-cleanup.js?v=20260817f" defer></script>
   <script src="js/tabs-dida.js?v=20260824c" defer></script>
@@ -153,7 +158,7 @@
   <script src="js/tonight-cleanup.js" defer></script>
   <script src="js/scenery-facts.js?v=20260822c" defer></script>
   <script src="js/story-images-enhance.js?v=20260822b" defer></script>
-  <script src="js/tv-picks-artwork.js?v=20260817g" defer></script>
+  <script src="js/tv-picks-artwork.js?v=20260827a" defer></script>
   <script src="js/arsenal-result-image.js?v=20260817f" defer></script>
 </body>
 </html>

@@ -2,6 +2,33 @@
 
 Newest entries go first.
 
+## 27 August 2026: Official-site-inspired Arsenal match centre
+
+Status: implemented in draft, not published
+
+- Requested change: use the official Arsenal site's red-led identity and supporting colours to make the brief's Arsenal view more professional, and replace the Premier League table card with the club's current position only.
+- Visual system: bright Arsenal red `#E30613`, deep navy `#071D49`, white, and restrained yellow `#FFD51F`. The view now uses a red cannon masthead, white last-result card, navy next-fixture card, compact red position card, clearer club-news hierarchy, and a navy transfer area.
+- Position rule: retain the live league-table feed but display only Arsenal's ordinal position. Points and matches played are no longer rendered. The 27 August source refresh returns Arsenal in 2nd.
+- Content protected: last result, full next-fixture details, trusted-transfer rules, separate unconfirmed reporter watch, source links, men's-first-team scope, all competitions, and the gambling ban remain unchanged.
+- Accessibility: white on red has a 4.88:1 contrast ratio, white on navy 16.39:1, and yellow on navy 11.55:1. All pass WCAG AA for their use.
+- Validation: the live data refresh confirmed Arsenal 3–0 Coventry City, Aston Villa away next, and 2nd in the Premier League. Responsive Chromium and visual screenshot checks remain pending on the draft workflow.
+- Scope protected: no Home, Weather, Calendar, Around the world, TV Picks, News, AI, Career, Dida, Birthday, navigation, profile, or route change is intended.
+- Master brief update: version 3.2 records the permanent Arsenal presentation and position rules.
+
+## 27 August 2026: Dynamic two-week TV Picks
+
+Status: implemented in draft, not published
+
+- Reported defect: the morning TV enrichment rewrote the same five hard-coded programmes, while the browser artwork guard accepted only those same titles. The count-only validator therefore passed even though no new content could appear.
+- Eligibility rule: a programme qualifies when any new episode was released during the previous seven days or is scheduled during the next seven days. New episodes count even when the series itself is established.
+- Discovery rule: query current UK broadcast schedules and major streaming schedules every morning, rank Pete's existing crime, investigation, documentary, thriller, mystery, science-fiction, football, sport, and history preferences, and exclude news, talk shows, game shows, daily soaps, generic articles, invalid destinations, and programmes without exact artwork.
+- Freshness rule: prefer titles not selected during the previous three refresh days, limit over-concentration by service and category, and store 30 days of selection history. Fail before publication if five valid picks cannot be produced.
+- Card rule: every pick carries the programme title, episode-specific summary where available, channel or streaming service, available-since or upcoming date, a real programme destination, and exact programme artwork supplied by TVMaze. The old fixed-title browser catalogue is removed.
+- Current draft: five picks were generated from 88 eligible programmes for 27 August 2026. Every current destination and artwork URL returned HTTP 200.
+- Validation: 17 unit tests pass, including both edges of the previous/next-week window, exact-artwork enforcement, soap/generic-image rejection, rotation before reuse, and the hard stop for too few picks. Responsive browser validation remains pending on the draft workflow.
+- Scope protected: no layout, navigation, Weather, Calendar, Around the world, News, Arsenal, AI, Career, Dida, Birthday, profile, or route change is intended.
+- Master brief update: version 3.2 records the permanent TV freshness and exact-artwork rules.
+
 ## 26 August 2026: Guaranteed weather images and human-first rare facts
 
 Status: validated and published

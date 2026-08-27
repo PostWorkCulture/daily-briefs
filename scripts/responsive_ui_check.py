@@ -209,7 +209,20 @@ def check_viewport(browser, name: str) -> None:
                     f"shadow={shadow}, transform={transform}"
                 )
 
-        tv_card = page.locator('#watchStrip .watch-card.artwork').first
+        tv_cards = page.locator('#watchStrip .watch-card.artwork')
+        if tv_cards.count() != 5:
+            raise AssertionError(f"{name}: expected five exact-artwork TV Picks, found {tv_cards.count()}")
+        for index in range(tv_cards.count()):
+            card = tv_cards.nth(index)
+            artwork = card.get_attribute('data-artwork') or ''
+            background = card.evaluate("el => getComputedStyle(el).backgroundImage")
+            if not artwork.startswith('https://static.tvmaze.com/uploads/images/original_untouched/') or 'static.tvmaze.com' not in background:
+                raise AssertionError(f"{name}: TV Pick {index + 1} does not render exact programme artwork")
+            text = card.inner_text().casefold()
+            if not any(marker in text for marker in ('available since', 'today', 'tomorrow', 'mon ', 'tue ', 'wed ', 'thu ', 'fri ', 'sat ', 'sun ')):
+                raise AssertionError(f"{name}: TV Pick {index + 1} has no availability date")
+
+        tv_card = tv_cards.first
         if tv_card.count():
             tv_card.hover()
             page.wait_for_timeout(250)
@@ -238,6 +251,20 @@ def check_viewport(browser, name: str) -> None:
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
         page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)
+        arsenal_hero = page.locator('.arsenal-hero')
+        hero_background = arsenal_hero.evaluate("el => getComputedStyle(el).backgroundImage")
+        if 'rgb(227, 6, 19)' not in hero_background:
+            raise AssertionError(f"{name}: Arsenal masthead does not use the approved official-site red: {hero_background}")
+        if arsenal_hero.locator('.arsenal-hero-cannon').count() != 1:
+            raise AssertionError(f"{name}: Arsenal masthead cannon is missing")
+        transfer_background = page.locator('.arsenal-transfers').evaluate("el => getComputedStyle(el).backgroundImage")
+        if 'rgb(7, 29, 73)' not in transfer_background:
+            raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")
+        league_text = page.locator('#leagueCard').inner_text()
+        if not __import__('re').search(r'\b(?:1st|2nd|3rd|(?:[4-9]|1[0-9]|20)th)\b', league_text):
+            raise AssertionError(f"{name}: Arsenal current league position is missing: {league_text}")
+        if __import__('re').search(r'\b(?:pts?|points?|played|matches)\b', league_text, __import__('re').I):
+            raise AssertionError(f"{name}: Arsenal position card still shows table details: {league_text}")
         for selector in ('#lastResultCard', '#nextFixtureCard', '#leagueCard', '.arsenal-news-item'):
             locator = page.locator(selector).first
             if locator.count():

@@ -55,7 +55,11 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          from datetime import date, datetime, timedelta
           from pathlib import Path
+          from zoneinfo import ZoneInfo
+          today_date=datetime.now(ZoneInfo('Europe/London')).date()
+          today=today_date.isoformat()
           for profile in ('pete','sofia'):
               p=Path('data')/f'{profile}.json'
               data=json.loads(p.read_text())
@@ -80,9 +84,22 @@ jobs:
               picks=data.get('watch') or []
               assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
+              assert len({x.get('title','').casefold() for x in picks})==len(picks), f'{profile}: duplicate TV Pick'
+              for pick in picks:
+                  assert pick.get('contentType')=='tv-pick', f'{profile}: non-programme TV Pick'
+                  assert pick.get('generatedDate')==today, f'{profile}: stale TV Picks'
+                  airdate=date.fromisoformat(str(pick.get('airdate') or ''))
+                  assert today_date-timedelta(days=7)<=airdate<=today_date+timedelta(days=7), f'{profile}: TV Pick is outside the previous/next-week window'
+                  assert str(pick.get('artwork') or '').startswith('https://static.tvmaze.com/uploads/images/original_untouched/'), f'{profile}: TV Pick has no exact programme artwork'
+                  assert str(pick.get('url') or '').startswith(('https://','http://')), f'{profile}: TV Pick has no destination link'
               sections=data.get('sections') or {}
               assert len(sections.get('Local news') or [])>=10, f'{profile}: fewer than 10 Local News items'
               assert len(sections.get('UK news') or [])>=10, f'{profile}: fewer than 10 UK News items'
+
+          tv_history=json.loads(Path('data/tv-picks-history.json').read_text()).get('days') or []
+          assert tv_history and tv_history[-1].get('date')==today, 'TV Picks history was not updated today'
+          current_tv=json.loads((Path('data')/'pete.json').read_text()).get('watch') or []
+          assert tv_history[-1].get('titles')==[item['title'] for item in current_tv], 'TV Picks history does not match the published list'
 
           catalog=json.loads(Path('data/fact-catalog.json').read_text())
           history=json.loads(Path('data/fact-history.json').read_text()).get('used') or []
@@ -130,6 +147,8 @@ jobs:
               assert str(job.get('url') or '').startswith(('https://','http://')), 'Sofia Career job missing real link'
 
           fixture=(pete.get('arsenal') or {}).get('nextFixture')
+          position=(pete.get('arsenal') or {}).get('leaguePosition')
+          assert isinstance(position,int) and 1<=position<=20, 'Arsenal current Premier League position is unavailable'
           if fixture:
               required=('opponent','stadium','kickoff','competition','tvChannel')
               for key in required:
@@ -191,7 +210,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} exact publisher image rules, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, UK/Sweden-focused jobs, programme-first TV Picks and full Arsenal fixture details')
+          print(f'Validated {len(rules)} exact publisher image rules, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, UK/Sweden-focused jobs, dynamic two-week exact-artwork TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
