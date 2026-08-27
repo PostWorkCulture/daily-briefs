@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.1, 26 August 2026. Owner: Pete.
+Version 3.2, 27 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -74,10 +74,14 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
 
 **TV Picks**
-- Keep at least four named picks per profile.
-- Programme artwork must match. Permanent editorial rules still need Pete's decision.
+- Show five current, named programmes per profile. An eligible pick has released a new episode within the previous seven days or will release one within the next seven days; a new episode qualifies even when the series itself is not new.
+- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Prefer crime, true crime, investigations, documentaries, thrillers, mysteries, science fiction, football, sport, history, and strong new-series or season premieres. Exclude news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination.
+- Give every card the exact programme artwork supplied by the schedule source, a service or channel, and a clear available-since or upcoming date. Never use generic streaming art, logos, screenshots, placeholders, or a fixed title allowlist.
+- Prefer titles not used during the previous three refresh days, keep source and category variety, and fail before publication if five valid current picks cannot be produced. Keep a committed 30-day selection history so freshness is testable.
 
 **Arsenal**
+- Use an official-site-inspired Arsenal visual system: bright red `#E30613`, deep navy `#071D49`, white, and restrained yellow `#FFD51F`. The section opens with a red cannon masthead, uses strong match-centre hierarchy, white and navy match cards, a red league-position card, clean club-news cards, and a navy transfer area. Keep it professional, high-contrast, stationary on hover, and responsive.
+- Do not show a Premier League table, points total, or matches-played total. Show only Arsenal's current ordinal league position, refreshed from the live table source.
 - No betting, odds, gambling promotion, or gambling information.
 - Men's first team, all competitions.
 - Latest completed and nearest upcoming fixtures.

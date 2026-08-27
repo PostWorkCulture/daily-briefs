@@ -41,12 +41,16 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 
 - [ ] Around the world has one linked image and a fact directly below.
 - [ ] The current fact is human-first, genuinely unusual, source-verified, unused, and drawn from the people, population, traditions, records, or music range.
-- [ ] At least four named TV Picks per profile with matching artwork.
+- [ ] Five unique TV Picks per profile, each tied to a new episode from the previous or next seven days.
+- [ ] Every TV Pick has an exact TVMaze programme image, service/channel, availability date, real destination, and today's generated date.
+- [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] All offered sources and destinations are real and clickable.
 
 ## Arsenal
 
+- [ ] Red cannon masthead, navy/white match hierarchy, red position card, club-news cards, and navy transfer area render at mobile and Chromebook widths.
+- [ ] Premier League card shows only the current ordinal position; no table, points, or played total.
 - [ ] No betting, odds, gambling promotion, or gambling information.
 - [ ] Men's first team and all competitions.
 - [ ] Latest completed and nearest upcoming fixture are correct.

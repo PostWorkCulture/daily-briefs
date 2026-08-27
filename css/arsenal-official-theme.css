@@ -1,0 +1,147 @@
+#view-arsenal{
+  --arsenal-red:#e30613;
+  --arsenal-red-deep:#b31221;
+  --arsenal-navy:#071d49;
+  --arsenal-navy-soft:#102958;
+  --arsenal-yellow:#ffd51f;
+  --arsenal-paper:#f4f5f7;
+  --arsenal-ink:#101b36;
+}
+
+#view-arsenal .arsenal-panel{
+  padding:0!important;
+  overflow:hidden;
+  border:0;
+  border-radius:28px;
+  color:var(--arsenal-ink);
+  background:var(--arsenal-paper)!important;
+  box-shadow:0 22px 60px rgba(7,29,73,.22),0 0 0 1px rgba(7,29,73,.08);
+}
+
+.arsenal-hero{
+  position:relative;
+  min-height:190px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  overflow:hidden;
+  padding:28px 32px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 88% 20%,rgba(255,255,255,.16),transparent 18rem),
+    linear-gradient(132deg,var(--arsenal-red) 0%,var(--arsenal-red) 58%,var(--arsenal-red-deep) 100%);
+  border-bottom:7px solid var(--arsenal-navy);
+}
+
+.arsenal-hero:after{
+  content:"";
+  position:absolute;
+  inset:auto -4% -54px 42%;
+  height:110px;
+  transform:rotate(-7deg);
+  background:rgba(255,255,255,.07);
+}
+
+.arsenal-hero-copy{position:relative;z-index:2}
+.arsenal-hero-copy>span{display:block;font-size:10px;font-weight:950;letter-spacing:.22em;text-transform:uppercase;color:var(--arsenal-yellow)}
+.arsenal-hero-copy h2{margin:7px 0 5px!important;color:#fff!important;font-size:clamp(34px,5vw,54px);line-height:.92;letter-spacing:-.055em;text-transform:uppercase}
+.arsenal-hero-copy p{margin:0;font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.arsenal-hero-cannon{position:relative;z-index:2;width:min(35%,220px);min-width:150px;color:#fff;filter:drop-shadow(0 10px 20px rgba(93,0,8,.25))}
+.arsenal-hero-cannon .cannon-barrel{fill:currentColor}
+.arsenal-hero-cannon .cannon-wheel{fill:none;stroke:currentColor;stroke-width:4}
+
+#view-arsenal .arsenal-grid{padding:20px 20px 0;gap:12px}
+#view-arsenal .match-card,
+#view-arsenal .league-position-card{
+  min-height:150px;
+  border:0;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 8px 24px rgba(7,29,73,.10),0 0 0 1px rgba(7,29,73,.06);
+  transform:none!important;
+}
+
+#view-arsenal #lastResultCard{background:#fff!important;border-top:5px solid var(--arsenal-red)}
+#view-arsenal #nextFixtureCard{color:#fff;background:linear-gradient(145deg,var(--arsenal-navy-soft),var(--arsenal-navy))!important;border-top:5px solid var(--arsenal-red)}
+#view-arsenal .league-position-card{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;background:linear-gradient(145deg,var(--arsenal-red),var(--arsenal-red-deep))!important;border-top:5px solid var(--arsenal-yellow)}
+
+#view-arsenal .match-card>span,
+#view-arsenal .league-position-card>span{color:var(--arsenal-red)!important;font-size:9px;font-weight:950;letter-spacing:.15em;text-transform:uppercase}
+#view-arsenal #nextFixtureCard>span{color:var(--arsenal-yellow)!important}
+#view-arsenal .league-position-card>span{color:#fff!important}
+#view-arsenal .match-card>strong{margin-top:9px;font-size:23px;color:var(--arsenal-navy);letter-spacing:-.035em}
+#view-arsenal #nextFixtureCard>strong{color:#fff}
+#view-arsenal .league-position-card>strong{margin:6px 0 1px;color:#fff;font-size:48px;line-height:1;font-weight:950;letter-spacing:-.06em}
+#view-arsenal .match-card>small{color:#66728c}
+#view-arsenal #nextFixtureCard>small{color:rgba(255,255,255,.7)}
+#view-arsenal .league-position-card>small{color:rgba(255,255,255,.78);font-size:9px;font-weight:750;text-transform:uppercase;letter-spacing:.1em}
+
+#view-arsenal #lastResultCard.has-match-image{padding-top:158px!important;background:#fff!important}
+#view-arsenal #lastResultCard .match-result-photo{height:140px;background-color:var(--arsenal-navy);border-bottom:5px solid var(--arsenal-red)}
+#view-arsenal #nextFixtureCard.fixture-detail-card{padding:20px!important;min-height:250px;background:linear-gradient(145deg,var(--arsenal-navy-soft),var(--arsenal-navy))!important}
+#view-arsenal .fixture-facts{border-top-color:rgba(255,255,255,.18)}
+#view-arsenal .fixture-fact{border-bottom-color:rgba(255,255,255,.11)}
+#view-arsenal .fixture-fact>span{color:var(--arsenal-yellow)!important}
+#view-arsenal .fixture-fact>b{color:#fff!important}
+#view-arsenal .fixture-fact>small{color:rgba(255,255,255,.58)!important}
+
+.arsenal-subhead{display:flex;align-items:end;gap:9px;margin:23px 20px 9px;padding-top:15px;border-top:1px solid rgba(7,29,73,.12)}
+.arsenal-subhead span{color:var(--arsenal-red);font-size:9px;font-weight:950;letter-spacing:.15em;text-transform:uppercase}
+.arsenal-subhead h3{margin:0;color:var(--arsenal-navy);font-size:22px;letter-spacing:-.035em}
+#view-arsenal .arsenal-news{margin:0;padding:0 20px 22px;gap:10px}
+#view-arsenal .arsenal-news-item{min-height:92px;padding:16px;border:0;border-radius:14px;color:var(--arsenal-ink);background:#fff!important;box-shadow:0 6px 18px rgba(7,29,73,.08),inset 0 4px 0 var(--arsenal-red)}
+#view-arsenal .arsenal-news-item span{color:var(--arsenal-red);font-size:8px;letter-spacing:.13em}
+#view-arsenal .arsenal-news-item b{margin-top:7px;font-size:13px;line-height:1.35}
+
+#view-arsenal .arsenal-transfers{margin:0;padding:24px 20px 22px;border:0;color:#fff;background:linear-gradient(145deg,var(--arsenal-navy-soft),var(--arsenal-navy))}
+#view-arsenal .arsenal-transfer-head{margin-bottom:13px}
+#view-arsenal .arsenal-transfer-head span{color:var(--arsenal-yellow)}
+#view-arsenal .arsenal-transfer-head h3{color:#fff;font-size:23px;letter-spacing:-.035em}
+#view-arsenal .arsenal-transfer-sources a{border-color:rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.08)}
+#view-arsenal .arsenal-transfer-sources a:hover,
+#view-arsenal .arsenal-transfer-sources a:focus-visible{border-color:var(--arsenal-yellow);box-shadow:0 0 0 2px rgba(255,213,31,.16),0 0 18px rgba(255,213,31,.28)}
+#view-arsenal .arsenal-transfer-item{border-color:rgba(255,255,255,.12);color:#fff;background:rgba(255,255,255,.08)!important}
+#view-arsenal .arsenal-transfer-item span{color:var(--arsenal-yellow)}
+#view-arsenal .arsenal-transfer-item small{color:rgba(255,255,255,.58)}
+#view-arsenal .arsenal-transfer-empty{border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.66)}
+#view-arsenal .arsenal-rumour-head{border-top-color:rgba(255,213,31,.24)}
+#view-arsenal .arsenal-rumour-head span{color:var(--arsenal-yellow)}
+#view-arsenal .arsenal-rumour-head h4{color:#fff}
+#view-arsenal .arsenal-rumour-head p{color:rgba(255,255,255,.62)}
+#view-arsenal .arsenal-rumour-item{border-color:rgba(255,213,31,.2);background:rgba(255,213,31,.08)!important}
+
+#view-arsenal .match-card:hover,
+#view-arsenal .match-card:focus-within,
+#view-arsenal .league-position-card:hover,
+#view-arsenal .league-position-card:focus-within,
+#view-arsenal .arsenal-news-item:hover,
+#view-arsenal .arsenal-news-item:focus-visible,
+#view-arsenal .arsenal-transfer-item:hover,
+#view-arsenal .arsenal-transfer-item:focus-visible{
+  border-color:transparent!important;
+  box-shadow:0 0 0 3px rgba(255,255,255,.55),0 0 0 6px rgba(227,6,19,.8),0 0 28px rgba(227,6,19,.34)!important;
+  transform:none!important;
+  outline:none;
+}
+
+@media(max-width:699px){
+  .arsenal-hero{min-height:160px;padding:24px 20px}
+  .arsenal-hero-cannon{width:42%;min-width:118px;opacity:.94}
+  #view-arsenal .arsenal-grid{grid-template-columns:1fr!important;padding:16px 14px 0}
+  #view-arsenal .match-card,#view-arsenal .league-position-card{min-height:132px;padding:17px}
+  #view-arsenal #nextFixtureCard.fixture-detail-card{padding:17px!important}
+  .arsenal-subhead{margin:21px 14px 9px}
+  #view-arsenal .arsenal-news{padding:0 14px 18px}
+  #view-arsenal .arsenal-transfers{padding:22px 14px 20px}
+}
+
+@media(min-width:700px) and (max-width:979px){
+  #view-arsenal .arsenal-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.35fr)!important}
+  #view-arsenal .league-position-card{grid-column:1/-1!important;min-height:118px}
+}
+
+@media(min-width:980px){
+  #view-arsenal .arsenal-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.55fr) minmax(145px,.55fr)!important}
+  #view-arsenal .league-position-card{grid-column:auto!important}
+}
