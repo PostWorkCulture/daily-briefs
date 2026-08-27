@@ -260,6 +260,22 @@ def check_viewport(browser, name: str) -> None:
         transfer_background = page.locator('.arsenal-transfers').evaluate("el => getComputedStyle(el).backgroundImage")
         if 'rgb(7, 29, 73)' not in transfer_background:
             raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")
+        fixture_copy_colours = page.evaluate(
+            """
+            () => ({
+              primary: getComputedStyle(document.querySelector('#nextFixtureCard .fixture-fact>b')).color,
+              supporting: getComputedStyle(document.querySelector('#nextFixtureCard .fixture-fact>small')).color
+            })
+            """
+        )
+        if fixture_copy_colours["primary"] != "rgb(255, 255, 255)":
+            raise AssertionError(
+                f"{name}: Arsenal fixture copy is not white on navy: {fixture_copy_colours}"
+            )
+        if not fixture_copy_colours["supporting"].startswith("rgba(255, 255, 255,"):
+            raise AssertionError(
+                f"{name}: Arsenal supporting fixture copy is not light on navy: {fixture_copy_colours}"
+            )
         league_text = page.locator('#leagueCard').inner_text()
         if not __import__('re').search(r'\b(?:1st|2nd|3rd|(?:[4-9]|1[0-9]|20)th)\b', league_text):
             raise AssertionError(f"{name}: Arsenal current league position is missing: {league_text}")
@@ -377,9 +393,7 @@ def check_viewport(browser, name: str) -> None:
                   '.section-kicker',
                   '.forecast-day small',
                   '.calendar-row p',
-                  '#sceneryFactText',
-                  '#nextFixtureCard .fixture-fact>b',
-                  '#nextFixtureCard .fixture-fact>small'
+                  '#sceneryFactText'
                 ].map(selector => ({
                   selector,
                   colour: document.querySelector(selector)
