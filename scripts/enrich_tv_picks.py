@@ -44,6 +44,17 @@ EXCLUDED_TITLES = re.compile(
     r"this morning|news at|squawk box|countdown)\b",
     re.I,
 )
+SPORTS_TERMS = re.compile(
+    r"\b(?:sports?|football|soccer|premier league|champions league|fa cup|carabao cup|"
+    r"rugby|cricket|tennis|golf|boxing|formula\s*(?:one|1)|f1|motorsport|grand prix|"
+    r"athletics?|olympics?|basketball|nfl|super bowl|baseball|nhl|ice hockey|cycling|"
+    r"darts|snooker|horse racing|wrestling|wwe|ufc)\b",
+    re.I,
+)
+ALLOWED_MAJOR_SPORTS = re.compile(
+    r"\b(?:world cup|uefa euro(?:s|\s*20\d{2})?|uefa european championship|wimbledon)\b",
+    re.I,
+)
 INTEREST_WEIGHTS = {
     "true crime": 90,
     "murder": 65,
@@ -56,8 +67,9 @@ INTEREST_WEIGHTS = {
     "scandal": 34,
     "science-fiction": 45,
     "sci-fi": 45,
-    "football": 28,
-    "sport": 12,
+    "world cup": 65,
+    "wimbledon": 65,
+    "uefa euro": 65,
     "history": 18,
     "travel": 12,
 }
@@ -179,6 +191,9 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     summary = episode_summary or show_summary or f"A current {show_type.lower() or 'programme'} to consider."
     genres = [str(item) for item in show.get("genres") or []]
     haystack = " ".join([title, summary, show_type, *genres]).lower()
+    is_sport = show_type == "Sports" or SPORTS_TERMS.search(haystack)
+    if is_sport and not ALLOWED_MAJOR_SPORTS.search(haystack):
+        return None
     score = max(12, 74 - abs(offset) * 8)
     if offset < 0:
         score -= 4

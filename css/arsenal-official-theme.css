@@ -47,9 +47,7 @@
 .arsenal-hero-copy>span{display:block;font-size:10px;font-weight:950;letter-spacing:.22em;text-transform:uppercase;color:var(--arsenal-yellow)}
 .arsenal-hero-copy h2{margin:7px 0 5px!important;color:#fff!important;font-size:clamp(34px,5vw,54px);line-height:.92;letter-spacing:-.055em;text-transform:uppercase}
 .arsenal-hero-copy p{margin:0;font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82)}
-.arsenal-hero-cannon{position:relative;z-index:2;width:min(35%,220px);min-width:150px;color:#fff;filter:drop-shadow(0 10px 20px rgba(93,0,8,.25))}
-.arsenal-hero-cannon .cannon-barrel{fill:currentColor}
-.arsenal-hero-cannon .cannon-wheel{fill:none;stroke:currentColor;stroke-width:4}
+.arsenal-hero-cannon{position:relative;z-index:2;width:min(42%,260px);min-width:170px;height:auto;object-fit:contain;filter:drop-shadow(0 10px 20px rgba(93,0,8,.25))}
 
 #view-arsenal .arsenal-grid{padding:20px 20px 0;gap:12px}
 #view-arsenal .match-card,

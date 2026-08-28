@@ -173,8 +173,28 @@ def check_viewport(browser, name: str) -> None:
         arsenal_cannon = page.locator('[data-view-target="arsenal"] .nav-cannon')
         if arsenal_cannon.count() != 1:
             raise AssertionError(f"{name}: Arsenal nav cannon is missing")
-        if arsenal_cannon.locator('.cannon-barrel').count() != 1 or arsenal_cannon.locator('.cannon-wheel').count() != 1:
-            raise AssertionError(f"{name}: Arsenal nav cannon is not the approved barrel-and-wheel mark")
+        nav_cannon_mask = arsenal_cannon.evaluate(
+            "el => getComputedStyle(el).maskImage || getComputedStyle(el).webkitMaskImage || ''"
+        )
+        if "arsenal-cannon-white-v1.png" not in nav_cannon_mask:
+            raise AssertionError(f"{name}: Arsenal nav cannon does not use the supplied silhouette")
+
+        page.locator('[data-view-target="news"]').click()
+        local_news_order = page.evaluate(
+            """
+            () => {
+              const expected = [...(state.data?.sections?.['Local news'] || [])]
+                .sort((a,b) => (Date.parse(b.publishedAt || '') || 0) - (Date.parse(a.publishedAt || '') || 0))
+                .map(item => item.title);
+              const group = [...document.querySelectorAll('#newsTabGroups .tab-group')]
+                .find(section => section.querySelector('h3')?.textContent.trim() === 'Local News');
+              const actual = [...(group?.querySelectorAll('h4') || [])].map(node => node.textContent.trim());
+              return {expected, actual};
+            }
+            """
+        )
+        if local_news_order["actual"] != local_news_order["expected"]:
+            raise AssertionError(f"{name}: Local News is not rendered newest first: {local_news_order}")
 
         for target in ("ai", "career"):
             page.locator(f'[data-view-target="{target}"]').click()
@@ -221,6 +241,18 @@ def check_viewport(browser, name: str) -> None:
             text = card.inner_text().casefold()
             if not any(marker in text for marker in ('available since', 'today', 'tomorrow', 'mon ', 'tue ', 'wed ', 'thu ', 'fri ', 'sat ', 'sun ')):
                 raise AssertionError(f"{name}: TV Pick {index + 1} has no availability date")
+            sports = __import__('re').search(
+                r'\b(?:sports?|football|soccer|premier league|champions league|fa cup|carabao cup|rugby|cricket|tennis|golf|boxing|formula\s*(?:one|1)|f1|motorsport|grand prix|athletics?|olympics?|basketball|nfl|super bowl|baseball|nhl|ice hockey|cycling|darts|snooker|horse racing|wrestling|wwe|ufc)\b',
+                text,
+                __import__('re').I,
+            )
+            allowed_sport = __import__('re').search(
+                r'\b(?:world cup|uefa euro(?:s|\s*20\d{2})?|uefa european championship|wimbledon)\b',
+                text,
+                __import__('re').I,
+            )
+            if sports and not allowed_sport:
+                raise AssertionError(f"{name}: routine sport appeared in TV Picks: {text}")
 
         tv_card = tv_cards.first
         if tv_card.count():
@@ -257,6 +289,32 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Arsenal masthead does not use the approved official-site red: {hero_background}")
         if arsenal_hero.locator('.arsenal-hero-cannon').count() != 1:
             raise AssertionError(f"{name}: Arsenal masthead cannon is missing")
+        cannon_asset = page.evaluate(
+            """
+            () => {
+              const hero = document.querySelector('.arsenal-hero-cannon');
+              const nav = document.querySelector('.nav-cannon');
+              const navStyle = getComputedStyle(nav);
+              return {
+                heroTag: hero?.tagName || '',
+                heroSrc: hero?.getAttribute('src') || '',
+                heroWidth: hero?.naturalWidth || 0,
+                heroHeight: hero?.naturalHeight || 0,
+                navMask: navStyle.maskImage || navStyle.webkitMaskImage || ''
+              };
+            }
+            """
+        )
+        if (
+            cannon_asset["heroTag"] != "IMG"
+            or cannon_asset["heroSrc"] != "assets/icons/arsenal-cannon-white-v1.png"
+            or cannon_asset["heroWidth"] < 800
+            or cannon_asset["heroHeight"] < 300
+            or "arsenal-cannon-white-v1.png" not in cannon_asset["navMask"]
+        ):
+            raise AssertionError(
+                f"{name}: supplied cannon is not shared by the Arsenal masthead and nav: {cannon_asset}"
+            )
         transfer_background = page.locator('.arsenal-transfers').evaluate("el => getComputedStyle(el).backgroundImage")
         if 'rgb(7, 29, 73)' not in transfer_background:
             raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")

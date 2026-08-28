@@ -1,6 +1,4 @@
 /* Clean side-on cannon mark for the Arsenal nav. */
 .bottom-nav .cannon-mark{display:block;height:20px;margin:0 auto 2px!important;line-height:1!important}
-.bottom-nav .nav-cannon{display:block;width:32px;height:20px;margin:0 auto;overflow:visible;color:currentColor;filter:drop-shadow(0 0 6px rgba(255,84,67,.58))}
-.bottom-nav .nav-cannon .cannon-barrel{fill:currentColor;stroke:none}
-.bottom-nav .nav-cannon .cannon-wheel{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bottom-nav .nav-cannon{display:block;width:34px;height:20px;margin:0 auto;background:currentColor;-webkit-mask:url('../assets/icons/arsenal-cannon-white-v1.png') center/contain no-repeat;mask:url('../assets/icons/arsenal-cannon-white-v1.png') center/contain no-repeat;filter:drop-shadow(0 0 6px rgba(255,84,67,.58))}
 .bottom-nav button[data-view-target="arsenal"]:hover .nav-cannon,.bottom-nav button[data-view-target="arsenal"]:focus-visible .nav-cannon{filter:drop-shadow(0 0 7px rgba(255,84,67,1)) drop-shadow(0 0 14px rgba(255,84,67,.5))}

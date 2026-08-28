@@ -2,6 +2,16 @@
 
 Newest entries go first.
 
+## 28 August 2026: Newest-first Local News, major-event-only sport and supplied cannon
+
+Status: implemented in draft, not published
+
+- Local News rule: merge the current Molesey, Elmbridge and Kingston-area sources before selecting the 12 newest stories, then render them newest to oldest for both profiles.
+- TV sport rule: reject routine sports programmes and coverage. The only sports exceptions are World Cup, UEFA Euros and Wimbledon programmes that otherwise satisfy the existing seven-day episode, artwork and destination rules.
+- Arsenal identity: extract the exact supplied white cannon from Pete's red artwork as a transparent asset and use that same file for the Arsenal masthead and navigation mask, preventing the two silhouettes from diverging.
+- Validation: 20 unit tests pass, including Local News ordering and allowed/blocked sport cases. Responsive mobile and Chromebook validation remains pending on the draft workflow.
+- Scope protected: all other sections, profiles, routes, data rules and Daily Brief favicon branding remain unchanged.
+
 ## 27 August 2026: Official-site-inspired Arsenal match centre
 
 Status: implemented in draft, not published

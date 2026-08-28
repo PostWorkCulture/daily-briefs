@@ -44,12 +44,15 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Five unique TV Picks per profile, each tied to a new episode from the previous or next seven days.
 - [ ] Every TV Pick has an exact TVMaze programme image, service/channel, availability date, real destination, and today's generated date.
 - [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
+- [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
+- [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] All offered sources and destinations are real and clickable.
 
 ## Arsenal
 
-- [ ] Red cannon masthead, navy/white match hierarchy, red position card, club-news cards, and navy transfer area render at mobile and Chromebook widths.
+- [ ] The supplied cannon asset renders in the red masthead and the nav uses the exact same silhouette at mobile and Chromebook widths.
+- [ ] Navy/white match hierarchy, red position card, club-news cards, and navy transfer area render at mobile and Chromebook widths.
 - [ ] Premier League card shows only the current ordinal position; no table, points, or played total.
 - [ ] No betting, odds, gambling promotion, or gambling information.
 - [ ] Men's first team and all competitions.
