@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.2, 27 August 2026. Owner: Pete.
+Version 3.3, 28 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -19,7 +19,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Interactive card hover and keyboard-focus feedback must be clearly visible, stationary, and consistent in strength throughout the brief. General cards use cyan, Arsenal cards retain red, and image-led TV cards retain gold.
 
 - Use the approved colourful rising-sun and layered-news-card artwork as the dedicated Daily Brief icon across favicon, Apple touch, installable-app, and link-preview metadata. Keep Daily Brief branding separate from Bomberfan and never reuse a Bomberfan image here.
-- Primary navigation uses a single code-native balloon for Birthdays and a clean side-on barrel-and-wheel cannon for Arsenal. Birthday navigation uses vivid bright pink on hover or keyboard focus. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
+- Primary navigation uses a single code-native balloon for Birthdays and the exact same supplied cannon silhouette used in the Arsenal masthead. Birthday navigation uses vivid bright pink on hover or keyboard focus. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 - The Birthday destination and navigation label are both `Birthday`. Do not repeat a generic Birthdays subheading beneath the page title.
 - Birthday and anniversary cards use solid white surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings are white on the blue canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, dark readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder retains its solid pastel-pink surface.
 - Birthday and anniversary cards, including the Home birthday reminder, use the same visible cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
@@ -75,12 +75,12 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 **TV Picks**
 - Show five current, named programmes per profile. An eligible pick has released a new episode within the previous seven days or will release one within the next seven days; a new episode qualifies even when the series itself is not new.
-- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Prefer crime, true crime, investigations, documentaries, thrillers, mysteries, science fiction, football, sport, history, and strong new-series or season premieres. Exclude news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination.
+- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Prefer crime, true crime, investigations, documentaries, thrillers, mysteries, science fiction, history, and strong new-series or season premieres. Exclude routine sport, news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination. The only sports exceptions are World Cup, UEFA Euros and Wimbledon programmes.
 - Give every card the exact programme artwork supplied by the schedule source, a service or channel, and a clear available-since or upcoming date. Never use generic streaming art, logos, screenshots, placeholders, or a fixed title allowlist.
 - Prefer titles not used during the previous three refresh days, keep source and category variety, and fail before publication if five valid current picks cannot be produced. Keep a committed 30-day selection history so freshness is testable.
 
 **Arsenal**
-- Use an official-site-inspired Arsenal visual system: bright red `#E30613`, deep navy `#071D49`, white, and restrained yellow `#FFD51F`. The section opens with a red cannon masthead, uses strong match-centre hierarchy, white and navy match cards, a red league-position card, clean club-news cards, and a navy transfer area. Keep it professional, high-contrast, stationary on hover, and responsive.
+- Use an official-site-inspired Arsenal visual system: bright red `#E30613`, deep navy `#071D49`, white, and restrained yellow `#FFD51F`. The section opens with a red masthead using Pete's supplied white cannon, and the nav uses that exact same silhouette. Use strong match-centre hierarchy, white and navy match cards, a red league-position card, clean club-news cards, and a navy transfer area. Keep it professional, high-contrast, stationary on hover, and responsive.
 - Do not show a Premier League table, points total, or matches-played total. Show only Arsenal's current ordinal league position, refreshed from the live table source.
 - No betting, odds, gambling promotion, or gambling information.
 - Men's first team, all competitions.
@@ -95,6 +95,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep each destination working and independent.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
+- Merge Local News candidates across all configured local searches before selecting the newest items, and always render Local News strictly newest to oldest.
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - AI and Career never show article photography. Use stylish, decorative code-native section icons while preserving the current article and job content, metadata, and real links.

@@ -92,8 +92,15 @@ jobs:
                   assert today_date-timedelta(days=7)<=airdate<=today_date+timedelta(days=7), f'{profile}: TV Pick is outside the previous/next-week window'
                   assert str(pick.get('artwork') or '').startswith('https://static.tvmaze.com/uploads/images/original_untouched/'), f'{profile}: TV Pick has no exact programme artwork'
                   assert str(pick.get('url') or '').startswith(('https://','http://')), f'{profile}: TV Pick has no destination link'
+                  sports=__import__('re').compile(r'\b(?:sports?|football|soccer|premier league|champions league|fa cup|carabao cup|rugby|cricket|tennis|golf|boxing|formula\s*(?:one|1)|f1|motorsport|grand prix|athletics?|olympics?|basketball|nfl|super bowl|baseball|nhl|ice hockey|cycling|darts|snooker|horse racing|wrestling|wwe|ufc)\b',__import__('re').I)
+                  allowed_sport=__import__('re').compile(r'\b(?:world cup|uefa euro(?:s|\s*20\d{2})?|uefa european championship|wimbledon)\b',__import__('re').I)
+                  pick_text=' '.join(str(pick.get(key) or '') for key in ('title','summary','badge'))
+                  assert not sports.search(pick_text) or allowed_sport.search(pick_text), f'{profile}: routine sport appeared in TV Picks: {pick.get("title")}'
               sections=data.get('sections') or {}
-              assert len(sections.get('Local news') or [])>=10, f'{profile}: fewer than 10 Local News items'
+              local_items=sections.get('Local news') or []
+              assert len(local_items)>=10, f'{profile}: fewer than 10 Local News items'
+              local_dates=[str(item.get('publishedAt') or '') for item in local_items]
+              assert local_dates==sorted(local_dates,reverse=True), f'{profile}: Local News is not newest first'
               assert len(sections.get('UK news') or [])>=10, f'{profile}: fewer than 10 UK News items'
 
           tv_history=json.loads(Path('data/tv-picks-history.json').read_text()).get('days') or []

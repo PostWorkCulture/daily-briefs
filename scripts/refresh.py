@@ -327,13 +327,22 @@ def merge_news(*groups: list[dict], limit: int) -> list[dict]:
     return merged
 
 
+def newest_news(items: list[dict], limit: int) -> list[dict]:
+    """Put reliably dated stories first, newest to oldest, with undated items last."""
+    return sorted(
+        items,
+        key=lambda item: str(item.get("publishedAt") or ""),
+        reverse=True,
+    )[:limit]
+
+
 def local_news() -> list[dict]:
-    return merge_news(
+    return newest_news(merge_news(
         google_news('(Molesey OR "East Molesey" OR "West Molesey") when:7d', 14, 7),
         google_news('(Elmbridge OR Esher OR "Walton-on-Thames") when:7d', 14, 7),
         google_news('("Kingston upon Thames" OR "Hampton Court" OR Surbiton) when:7d', 14, 7),
-        limit=12,
-    )
+        limit=42,
+    ), 12)
 
 
 def uk_news() -> list[dict]:

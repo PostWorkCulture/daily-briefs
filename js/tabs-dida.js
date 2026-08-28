@@ -34,6 +34,7 @@
     return `<${tag} class="tab-story${section?' section-story':''}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
   function group(title,items,section=''){return `<section class="tab-group"><h3>${esc(title)}</h3><div class="tab-list">${(items||[]).map((item,index)=>story(item,section,index)).join('')||'<div class="empty">Nothing listed today.</div>'}</div></section>`}
+  function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
   function openAIFirst(items){return [...(items||[])].sort((a,b)=>{const score=x=>/openai|chatgpt/i.test(`${x.title||''} ${x.source||''} ${x.url||''}`)?0:1;return score(a)-score(b)})}
   function didaIcon(name){
     const paths={
@@ -106,7 +107,7 @@
     if(nav)nav.dataset.profile=profile;
     const news=[];
     if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden]);
-    news.push(['Local News',data.sections?.['Local news']||[]],['UK News',data.sections?.['UK news']||[]]);
+    news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
     document.getElementById('careerTabGroups').innerHTML=group('',data.sections?.Career||[],'career');

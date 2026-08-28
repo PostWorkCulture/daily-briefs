@@ -60,6 +60,28 @@ class TvPickTests(unittest.TestCase):
         self.assertIsNone(tv.candidate(generic, date(2026, 8, 27)))
         self.assertIsNone(tv.candidate(episode("EastEnders", episode_id=3), date(2026, 8, 27)))
 
+    def test_sport_is_limited_to_world_cup_euros_and_wimbledon(self) -> None:
+        routine = episode(
+            "Premier League Highlights",
+            episode_id=40,
+            show_type="Sports",
+            genres=["Sports"],
+        )
+        self.assertIsNone(tv.candidate(routine, date(2026, 8, 27)))
+
+        allowed = (
+            "FIFA World Cup Review",
+            "UEFA Euro 2028 Preview",
+            "Wimbledon Centre Court",
+        )
+        for index, title in enumerate(allowed, start=41):
+            with self.subTest(title=title):
+                item = tv.candidate(
+                    episode(title, episode_id=index, show_type="Sports", genres=["Sports"]),
+                    date(2026, 8, 27),
+                )
+                self.assertIsNotNone(item)
+
     def test_new_episode_is_eligible_across_previous_and_next_week(self) -> None:
         last_week = tv.candidate(
             episode("Last Week Series", episode_id=30, airdate="2026-08-20", number=6),
