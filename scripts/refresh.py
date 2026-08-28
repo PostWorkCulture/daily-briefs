@@ -771,6 +771,8 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
     description = clean_html(html.unescape(str(job.get("description") or "")))
     if PETE_EXCLUDED_ROLE.search(title):
         return None
+    if "government digital service" in title.lower() and "government digital service" not in company.lower():
+        return None
     if not PETE_ROLE_TERMS.search(title) and not PETE_PUBLIC_SECTOR_TERMS.search(f"{title} {company}"):
         return None
     if not SOFIA_UK_LOCATION.search(f"{location} {description}"):
