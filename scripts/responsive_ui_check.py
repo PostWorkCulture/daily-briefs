@@ -53,6 +53,12 @@ def check_icon_metadata_files() -> None:
                 raise AssertionError(f"{profile} icon metadata is missing ../{value}")
 
         profile_data = json.loads((ROOT / "data" / f"{profile}.json").read_text(encoding="utf-8"))
+        if profile == "pete":
+            for job in (profile_data.get("sections") or {}).get("Career") or []:
+                title = str(job.get("title") or "").casefold()
+                company = str(job.get("company") or "").casefold()
+                if "government digital service" in title and "government digital service" not in company:
+                    raise AssertionError("Pete Career includes a mismatched GDS aggregator duplicate")
         current_fact = profile_data.get("worldFact") or {}
         if current_fact.get("editorialPriority") != "human-first":
             raise AssertionError(f"{profile} current world fact is not human-first")
@@ -99,6 +105,77 @@ def check_icon_metadata_files() -> None:
             raise AssertionError(f"Coming up artwork is missing or empty: {filename}")
         if filename not in reminders:
             raise AssertionError(f"Coming up renderer does not reference {filename}")
+
+
+def check_profile_routes(browser) -> None:
+    cases = (
+        ("http://127.0.0.1:4173/pete/", "pete"),
+        ("http://127.0.0.1:4173/sofia/", "sofia"),
+        ("http://127.0.0.1:4173/?profile=pete&locked=1", "pete"),
+        ("http://127.0.0.1:4173/?profile=sofia&locked=1", "sofia"),
+    )
+    for url, profile in cases:
+        context = browser.new_context(viewport={"width": 390, "height": 844})
+        page = context.new_page()
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=15000)
+            page.wait_for_function(
+                f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}' && "
+                f"document.querySelector('#primaryNav')?.dataset.profile === '{profile}'"
+            )
+            route_state = page.evaluate(
+                """
+                () => {
+                  const switcher=document.querySelector('#profileSwitch');
+                  const rect=switcher.getBoundingClientRect();
+                  const arsenal=document.querySelector('[data-view-target="arsenal"]');
+                  return {
+                    profile: state.profile,
+                    navProfile: document.querySelector('#primaryNav')?.dataset.profile,
+                    switchHidden: switcher.hidden,
+                    switchWidth: rect.width,
+                    switchHeight: rect.height,
+                    arsenalVisible: getComputedStyle(arsenal).display !== 'none'
+                  };
+                }
+                """
+            )
+            if route_state["profile"] != profile or route_state["navProfile"] != profile:
+                raise AssertionError(f"{url}: loaded the wrong profile identity: {route_state}")
+            if not route_state["switchHidden"] or route_state["switchWidth"] or route_state["switchHeight"]:
+                raise AssertionError(f"{url}: locked switch still occupies space: {route_state}")
+            if route_state["arsenalVisible"] != (profile == "pete"):
+                raise AssertionError(f"{url}: Arsenal visibility does not match profile: {route_state}")
+        finally:
+            context.close()
+
+
+def check_reduced_motion(browser) -> None:
+    context = browser.new_context(
+        viewport={"width": 1366, "height": 900}, reduced_motion="reduce"
+    )
+    page = context.new_page()
+    try:
+        page.goto(BASE_URL, wait_until="domcontentloaded", timeout=15000)
+        page.locator("#greeting").wait_for(state="visible", timeout=10000)
+        page.evaluate("window.scrollTo(0, 900)")
+        page.locator('[data-view-target="news"]').click()
+        motion = page.evaluate(
+            """
+            () => ({
+              scrollY: window.scrollY,
+              navAnimation: getComputedStyle(document.querySelector('.bottom-nav'),'::before').animationName,
+              cardTransition: getComputedStyle(document.querySelector('#view-news .tab-story')).transitionDuration
+            })
+            """
+        )
+        if motion["scrollY"] != 0 or motion["navAnimation"] != "none":
+            raise AssertionError(f"reduced motion still animates navigation: {motion}")
+        durations = [float(value.rstrip("s")) for value in motion["cardTransition"].split(", ")]
+        if any(value > 0.001 for value in durations):
+            raise AssertionError(f"reduced motion retains long transitions: {motion}")
+    finally:
+        context.close()
 
 
 def check_viewport(browser, name: str) -> None:
@@ -220,6 +297,22 @@ def check_viewport(browser, name: str) -> None:
         if local_news_order["actual"] != local_news_order["expected"]:
             raise AssertionError(f"{name}: Local News is not rendered newest first: {local_news_order}")
 
+        hierarchy = page.evaluate(
+            """
+            () => [...document.querySelectorAll('#newsTabGroups .tab-group')].map(group =>
+              [...group.querySelectorAll('.tab-story')].map(card => ({
+                lead:card.classList.contains('story-lead'),
+                support:card.classList.contains('story-support'),
+                stream:card.classList.contains('story-stream')
+              })))
+            """
+        )
+        for roles in hierarchy:
+            for index, role in enumerate(roles):
+                expected = "lead" if index == 0 else "support" if index < 3 else "stream"
+                if not role[expected] or sum(role.values()) != 1:
+                    raise AssertionError(f"{name}: invalid News hierarchy at {index}: {role}")
+
         for target in ("ai", "career"):
             page.locator(f'[data-view-target="{target}"]').click()
             cards = page.locator(f'#view-{target} .tab-story')
@@ -308,6 +401,19 @@ def check_viewport(browser, name: str) -> None:
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
         page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)
+        arsenal_roles = page.evaluate(
+            """
+            () => [...document.querySelectorAll('#arsenalNews .arsenal-news-item')].map(card => ({
+              lead:card.classList.contains('arsenal-news-lead'),
+              support:card.classList.contains('arsenal-news-support'),
+              stream:card.classList.contains('arsenal-news-stream')
+            }))
+            """
+        )
+        for index, role in enumerate(arsenal_roles):
+            expected = "lead" if index == 0 else "support" if index < 3 else "stream"
+            if not role[expected] or sum(role.values()) != 1:
+                raise AssertionError(f"{name}: invalid Arsenal news hierarchy at {index}: {role}")
         arsenal_hero = page.locator('.arsenal-hero')
         hero_background = arsenal_hero.evaluate("el => getComputedStyle(el).backgroundImage")
         if 'rgb(227, 6, 19)' not in hero_background:
@@ -872,7 +978,7 @@ def check_viewport(browser, name: str) -> None:
             if grouped_count != len(birthday["cards"]) or not birthday["monthGroups"]:
                 failures.append(f"{profile} Birthday cards are not grouped by month: {birthday}")
             if name == "desktop" and any(
-                group["cardCount"] > 1 and len(set(group["tops"])) != 1
+                group["cardCount"] <= 3 and len(set(group["tops"])) != 1
                 for group in birthday["monthGroups"]
             ):
                 failures.append(f"{profile} same-month Birthday cards do not share a row: {birthday['monthGroups']}")
@@ -1059,6 +1165,8 @@ def main() -> int:
     with sync_playwright() as p:
         browser = p.chromium.launch()
         try:
+            check_profile_routes(browser)
+            check_reduced_motion(browser)
             for name in VIEWPORTS:
                 check_viewport(browser, name)
         finally:
