@@ -977,7 +977,7 @@ def check_viewport(browser, name: str) -> None:
             )
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
-        for target in ("home", "arsenal", "dida", "birthdays"):
+        for target in ("home", "news", "arsenal", "dida", "birthdays"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(
