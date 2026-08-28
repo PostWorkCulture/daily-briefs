@@ -5,7 +5,8 @@ import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
-BASE_URL = "http://127.0.0.1:4173/?profile=pete&locked=1"
+BASE_URL = "http://127.0.0.1:4173/?profile=pete"
+LOCKED_URL = "http://127.0.0.1:4173/?profile=pete&locked=1"
 VIEWPORTS = {
     "mobile": {"width": 390, "height": 844},
     "desktop": {"width": 1366, "height": 900},
@@ -290,6 +291,7 @@ def check_viewport(browser, name: str) -> None:
                 )
 
         page.locator('[data-view-target="career"]').click()
+        page.wait_for_function("window.scrollY < 2")
         career_card = page.locator('#view-career .tab-story').first
         career_card.hover()
         page.wait_for_timeout(250)
@@ -425,6 +427,11 @@ def check_viewport(browser, name: str) -> None:
         )
 
         page.locator('[data-view-target="home"]').click()
+        # Clear interaction state before checking the resting-state colour.
+        # Desktop retains :hover and touch emulation can retain focus.
+        page.evaluate("document.activeElement?.blur()")
+        page.mouse.move(1, 1)
+        page.wait_for_timeout(250)
         failures = []
         visual = page.evaluate(
             r"""
@@ -798,6 +805,14 @@ def check_viewport(browser, name: str) -> None:
                     const values = [luminance(a), luminance(b)].sort((x, y) => y - x);
                     return (values[0] + 0.05) / (values[1] + 0.05);
                   };
+                  const lineCount = node => {
+                    if (!node) return 0;
+                    const style = getComputedStyle(node);
+                    const parsedLineHeight = parseFloat(style.lineHeight);
+                    const fallbackLineHeight = parseFloat(style.fontSize) * 1.2;
+                    const lineHeight = Number.isFinite(parsedLineHeight) ? parsedLineHeight : fallbackLineHeight;
+                    return Math.round(node.getBoundingClientRect().height / lineHeight);
+                  };
                   const inspect = card => {
                     const backgroundStops = stops(getComputedStyle(card).backgroundImage);
                     const backgroundColour = parseRgb(getComputedStyle(card).backgroundColor);
@@ -807,7 +822,9 @@ def check_viewport(browser, name: str) -> None:
                     return {
                       backgroundStops,
                       backgroundColour,
-                      minimumContrast: ratios.length ? Math.min(...ratios) : 0
+                      minimumContrast: ratios.length ? Math.min(...ratios) : 0,
+                      nameLines: lineCount(card.querySelector('strong')),
+                      detailLines: lineCount(card.querySelector('small'))
                     };
                   };
                   const cards = [...document.querySelectorAll('.birthday-card')];
@@ -859,6 +876,11 @@ def check_viewport(browser, name: str) -> None:
                 for group in birthday["monthGroups"]
             ):
                 failures.append(f"{profile} same-month Birthday cards do not share a row: {birthday['monthGroups']}")
+            if name == "desktop" and any(
+                surface["nameLines"] > 2 or surface["detailLines"] > 2
+                for surface in birthday["cards"]
+            ):
+                failures.append(f"{profile} desktop Birthday copy wraps too deeply: {birthday['cards']}")
             if birthday["navPink"] != "255,150,205" or birthday["headingColour"] != "rgb(255, 255, 255)":
                 failures.append(f"{profile} Birthday heading is not white or navigation hover is not bright pink: {birthday}")
             birthday_card = page.locator('.birthday-card').first
@@ -1000,13 +1022,30 @@ def check_viewport(browser, name: str) -> None:
             )
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
-        for target in ("home", "news", "arsenal", "dida", "birthdays"):
+        for target in ("home", "news", "arsenal", "ai", "career", "dida", "birthdays"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(
                 path=str(ARTIFACTS / f"preview-{name}-{target}.png"),
                 full_page=True,
             )
+
+        page.locator('[data-profile="sofia"]').click()
+        page.wait_for_function(
+            "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
+        )
+        for target in ("home", "news", "career"):
+            page.locator(f'[data-view-target="{target}"]').click()
+            page.wait_for_timeout(250)
+            page.screenshot(
+                path=str(ARTIFACTS / f"preview-{name}-sofia-{target}.png"),
+                full_page=True,
+            )
+
+        page.goto(LOCKED_URL, wait_until="domcontentloaded", timeout=15000)
+        page.locator("#greeting").wait_for(state="visible", timeout=10000)
+        if page.locator("#profileSwitch").is_visible():
+            failures.append("locked profile route exposes the profile switch")
 
         if failures:
             raise AssertionError(f"{name}: " + " | ".join(failures))

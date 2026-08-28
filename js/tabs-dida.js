@@ -31,9 +31,14 @@
     const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
     const copy=`${item?.meta||item?.source?`<div class="meta">${esc(item.meta||'')}${item.meta&&item.source?' · ':''}${esc(item.source||'')}</div>`:''}<h4>${esc(item?.title||'Untitled')}</h4>${item?.summary?`<p>${esc(item.summary)}</p>`:''}`;
     const icon=section?`<span class="section-story-icon section-story-icon-${section}">${sectionIcon(section,index)}</span>`:'';
-    return `<${tag} class="tab-story${section?' section-story':''}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
+    const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
+    return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
-  function group(title,items,section=''){return `<section class="tab-group"><h3>${esc(title)}</h3><div class="tab-list">${(items||[]).map((item,index)=>story(item,section,index)).join('')||'<div class="empty">Nothing listed today.</div>'}</div></section>`}
+  function group(title,items,section=''){
+    const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    const heading=title?`<h3>${esc(title)}</h3>`:'';
+    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${(items||[]).map((item,index)=>story(item,section,index)).join('')||'<div class="empty">Nothing listed today.</div>'}</div></section>`;
+  }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
   function openAIFirst(items){return [...(items||[])].sort((a,b)=>{const score=x=>/openai|chatgpt/i.test(`${x.title||''} ${x.source||''} ${x.url||''}`)?0:1;return score(a)-score(b)})}
   function didaIcon(name){
@@ -119,7 +124,11 @@
   function showView(view){
     if(state.profile==='sofia'&&view==='arsenal')view='home';
     document.querySelectorAll('.brief-view').forEach(v=>v.classList.toggle('active',v.dataset.view===view));
-    document.querySelectorAll('[data-view-target]').forEach(b=>b.classList.toggle('active',b.dataset.viewTarget===view));
+    document.querySelectorAll('[data-view-target]').forEach(b=>{
+      const active=b.dataset.viewTarget===view;
+      b.classList.toggle('active',active);
+      if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
+    });
     const mobile=window.matchMedia('(max-width: 899px)').matches;
     window.scrollTo({top:0,behavior:mobile?'auto':'smooth'});
   }

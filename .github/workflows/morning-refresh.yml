@@ -172,7 +172,7 @@ jobs:
               assert item.get('contentType')=='transfer-update', 'Arsenal transfer section contains non-transfer content'
               assert item.get('trust') in {'Official','Tier-one report','Trusted report'}, 'Arsenal transfer item has no approved trust label'
               assert any(name in source for name in trusted_sources), f'Arsenal transfer source is not approved: {source}'
-              assert not __import__('re').search(r'\b(?:rumou?rs?|gossip|paper talk|odds|betting)\b', title, __import__('re').I), f'Arsenal transfer item is rumour-led: {title}'
+              assert not __import__('re').search(r'\b(?:rumou?rs?|gossip|paper talk|odds|betting|vacanc(?:y|ies)|jobs?|careers?|creative|marketing|partnerships?|commercial|u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|youth|women(?:[\'’]?s)?|girls?)\b', title, __import__('re').I), f'Arsenal trusted transfer item is outside men\'s first-team scope: {title}'
               assert str(item.get('publishedAt') or '').strip(), f'Arsenal transfer item has no machine-sortable date: {title}'
               transfer_dates.append(item['publishedAt'])
           assert transfer_dates==sorted(transfer_dates,reverse=True), 'Arsenal trusted transfers are not newest first'

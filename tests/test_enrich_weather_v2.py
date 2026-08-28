@@ -30,6 +30,14 @@ class EnglandPlaceTests(unittest.TestCase):
         )
         self.assertIn("Kielder", photo["alt"])
 
+    def test_northolt_has_verified_exact_place_photo(self):
+        photo = exact_commons_photo("Northolt", "Northolt", "Greater London")
+        self.assertEqual(
+            photo["page"],
+            "https://commons.wikimedia.org/wiki/File:Northolt_clock_tower_-_geograph.org.uk_-_7246077.jpg",
+        )
+        self.assertIn("Northolt", photo["alt"])
+
     def test_wiggonholt_has_verified_exact_place_photo(self):
         photo = exact_commons_photo("Wiggonholt", "Wiggonholt", "West Sussex")
         self.assertEqual(

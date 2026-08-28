@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.4, 28 August 2026. Owner: Pete.
+Version 3.5, 28 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -9,6 +9,9 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 ## Product
 
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, dark `#142A3D` ink for main copy on every light surface, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve light text for image-led media cards where a strong dark overlay is required for readability. Preserve header styling during unrelated work.
+
+- Use an `Open Horizon newsroom` hierarchy inspired by premium news homepages without copying their identity: firm section rules, a clear lead/supporting/stream rhythm, intentional desktop grids, and denser mobile scanning. Prominence comes from width, position, type scale, and verified imagery, not fabricated labels or reordered source content. Keep bespoke systems for Arsenal, Dida, Birthday, Weather, Coming up, Calendar, Around the world, and TV Picks.
+- Text-only news leads are valid and must use a purposeful compact layout rather than reserving an empty image-scale area. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists.
 
 - The Home greeting and section or page titles that sit directly on the solid blue canvas use white text. Titles inside white or light cards retain a contrasting dark or purposeful accent colour. Main copy on light surfaces remains dark `#142A3D`.
 
@@ -44,8 +47,8 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 ## Current structure
 
-Primary views: Home, News, Arsenal, AI, Career, Dida.
-Home: Weather, Calendar, Around the world, TV Picks.
+Primary views: Home, News, Arsenal, AI, Career, Dida, Birthday.
+Home: Weather, Coming up, Calendar, Around the world, TV Picks.
 Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal in any shared flow.
 
 ## Protected requirements
@@ -86,7 +89,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Men's first team, all competitions.
 - Latest completed and nearest upcoming fixtures.
 - Preserve opponent, stadium, kickoff, competition, TV channel, and previous-meeting details when available.
-- Put Transfer watch at the bottom of the Arsenal view and always order it newest first. Its trusted list includes only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic/The New York Times, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, academy, and women's-team items from this trusted list.
+- Put Transfer watch at the bottom of the Arsenal view and always order it newest first. Its trusted list includes only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic/The New York Times, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, job vacancies, commercial roles, academy, and women's-team items from this trusted list. An Arsenal.com item without explicit first-team context must be corroborated by a separate approved source identifying the same player before it can appear.
 - Beneath the trusted list, show a separate Reporter watch for early, speculative public X posts. Mark every item `Unconfirmed · X`; never mix it into trusted reporting. Allow only David Ornstein, Fabrizio Romano, Charles Watts, and James Benge. Order it newest first and reject betting, gambling, women's-team, academy, U21, U18, youth, and girls' items.
 - Discover allowlisted public X posts through Google News indexing so the brief does not require a paid X API, credentials, scraping proxy, or new morning-refresh secret.
 - Apply the red edge-glow hover/focus treatment to every Arsenal card, including fixtures, league position, news, and transfer updates.

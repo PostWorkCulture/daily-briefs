@@ -28,7 +28,7 @@ function renderArsenal(a){
   $('#nextFixtureCard').innerHTML=next?`<span>Next fixture · ${next.competition}</span><strong>${next.opponent}</strong><small>${next.dateLabel} · ${next.kickoff} · ${next.homeAway==='home'?'Home':'Away'}</small>`:'<span>Next fixture</span><strong>—</strong><small>Fixture unavailable</small>';
   $('#leagueCard').innerHTML=a.leaguePosition?`<span>Premier League</span><strong>${a.leaguePosition}${a.leaguePosition===1?'st':a.leaguePosition===2?'nd':a.leaguePosition===3?'rd':'th'}</strong><small>Current position</small>`:'<span>Premier League</span><strong>—</strong><small>Position unavailable</small>';
   const news=$('#arsenalNews');news.innerHTML='';
-  (a.news||[]).slice(0,3).forEach(n=>{const el=linkEl('div',n,'arsenal-news-item');el.innerHTML=`<span>${n.source||'Team news'}</span><b>${n.title}</b>`;news.appendChild(el)});
+  (a.news||[]).slice(0,5).forEach(n=>{const el=linkEl('div',n,'arsenal-news-item');el.innerHTML=`<span>${n.source||'Team news'}</span><b>${n.title}</b>`;news.appendChild(el)});
   const newest=items=>[...(items||[])].sort((left,right)=>(Date.parse(right.publishedAt||'')||0)-(Date.parse(left.publishedAt||'')||0));
   const transfers=$('#arsenalTransfers');transfers.innerHTML='';
   newest(a.transfers).slice(0,6).forEach(item=>{
