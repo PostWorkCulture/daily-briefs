@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 28 August 2026: Sky-grade editorial refinement loop
 
-Status: implementation and validation complete; publication pending
+Status: validated and published
 
 - Editorial rail: tightened the Chromebook/desktop reading width to 1,120 px and turned the empty top bar into a useful date, refresh-time, weather, and profile utility masthead without restoring a wordmark.
 - News: image-verified leads now use an image-left, copy-right desktop package; text-only leads use a deliberate 7/5 lead-and-support rail; stream cards are flatter and mobile feeds use a single divided paper surface.
@@ -15,6 +15,7 @@ Status: implementation and validation complete; publication pending
 - Career curation: removed a duplicate GDS role attributed to the wrong employer and added a refresh guard against the same employer/title mismatch.
 - Validation: the responsive Playwright suite now verifies isolated Pete and Sofia routes, direct locked queries, zero switch geometry, profile-specific Arsenal visibility, reduced motion, News and Arsenal hierarchy roles, and the revised editorial geometry at 390 × 844 and 1,366 × 900.
 - Protected contrast: the specified white canvas headings on `#78B7E0` remain unchanged. Raising those headings to WCAG AAA would require Pete to approve a colour or title-backing change.
+- Publication: PR #13 passed the responsive workflow and was squash-merged as `aac83e7`.
 - Master brief update: version 3.6 records the refined editorial geometry, utility masthead, authoritative locked-profile behaviour, adaptive Birthday grid, and reduced-motion requirement.
 
 ## 28 August 2026: Open Horizon newsroom structural overhaul
