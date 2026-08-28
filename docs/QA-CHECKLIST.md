@@ -12,6 +12,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 
 - [ ] Pete and Sofia only; no Us.
 - [ ] /pete/ and /sofia/ load the correct profile and data.
+- [ ] Direct `profile=pete` and `profile=sofia` queries override stale local storage; locked routes hide the switch with zero occupied geometry and retain the correct Arsenal visibility.
 - [ ] Mobile has no overflow, clipping, or unusable navigation.
 - [ ] Chromebook/desktop has an intentional larger-screen layout.
 - [ ] Responsive smoke test passes.
@@ -20,6 +21,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] The selected Open Horizon mark renders in the Home nav and decodes from new favicon, Apple touch, Android, maskable, manifest, and link-preview paths.
 - [ ] Supplied Coming up artwork matches recycling, normal bins, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
 - [ ] Coming up text remains wholly inside the left pastel column and does not overlap the right-side artwork.
+- [ ] `prefers-reduced-motion` disables scripted smooth scrolling, navigation animation, and visible transition duration; keyboard focus retains a real outline.
 
 ## Weather
 
@@ -42,8 +44,11 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 ## Editorial hierarchy and content
 
 - [ ] Desktop Home has no dead grid row between Calendar, Around the world, and TV Picks.
+- [ ] Desktop Calendar uses four summary boxes in one row above a natural-height event list; short event lists do not stretch.
 - [ ] News groups use lead, supporting, and compact stream tiers without changing source order.
-- [ ] A text-only News lead stays compact; it never reserves a large empty media area.
+- [ ] A text-only News lead uses the 7/5 desktop lead-and-support rail; it never reserves an empty media area.
+- [ ] An image-verified desktop lead places media left and copy right; mobile keeps lead media above its copy.
+- [ ] AI and Career have no orphan stream card at 900–1,099 px or at the current Chromebook width.
 - [ ] On mobile, only an image-verified lead uses full-width media; later verified images use compact thumbnails.
 - [ ] Around the world leads with its sourced fact and then its precisely matched linked image.
 - [ ] The current fact is human-first, genuinely unusual, source-verified, unused, and drawn from the people, population, traditions, records, or music range.
@@ -54,12 +59,15 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
+- [ ] Dida has one page-level title followed by exactly three white age-six zones.
+- [ ] Birthday months use a full-width single card, two balanced half-width cards, or three equal cards on one Chromebook row.
 - [ ] All offered sources and destinations are real and clickable.
 
 ## Arsenal
 
 - [ ] The supplied cannon asset renders in the red masthead and the nav uses the exact same silhouette at mobile and Chromebook widths.
 - [ ] Navy/white match hierarchy, red position card, club-news cards, and navy transfer area render at mobile and Chromebook widths.
+- [ ] Five Club news cards retain source order and receive one lead, two support, and two stream roles.
 - [ ] Premier League card shows only the current ordinal position; no table, points, or played total.
 - [ ] No betting, odds, gambling promotion, or gambling information.
 - [ ] Men's first team and all competitions.
