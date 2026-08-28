@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.6, 28 August 2026. Owner: Pete.
+Version 3.7, 28 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -14,7 +14,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Cap the main Chromebook/desktop editorial rail at 1,120 px. Use the slim top bar for the refresh date, compact weather status, and active profile control or identity; never restore a page-content wordmark.
 - Text-only news leads are valid and must use a purposeful 7/5 lead-and-support desktop rail rather than reserving an empty image-scale area. Image-verified desktop leads use a prominent image-left, copy-right package. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists, and secondary items form a flat divided paper feed rather than a wall of identical cards.
 
-- The Home greeting and section or page titles that sit directly on the solid blue canvas use white text. Titles inside white or light cards retain a contrasting dark or purposeful accent colour. Main copy on light surfaces remains dark `#142A3D`.
+- The Home greeting and section or page titles that sit directly on the solid blue canvas use dark `#142A3D` ink, giving at least 4.5:1 contrast. Titles inside white or light cards retain the same readable dark ink or a purposeful accessible accent colour. Reserve white text for dark surfaces and strongly overlaid media. Main copy on light surfaces remains dark `#142A3D`.
 
 - Do not show a visible `Daily Briefs` wordmark in page content. Retain the Daily Briefs browser title, bookmark, manifest, icon, and sharing metadata.
 - Primary navigation uses a solid dark-navy `#102A43` surface with white text and icons at rest, including the active destination. Each destination uses a brighter version of its existing colour only on hover or keyboard focus so the feedback remains readable against the dark surface.
@@ -26,7 +26,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Use Pete's selected minimalist Open Horizon artwork, a yellow sunrise emerging from layered blue open pages, as the dedicated Daily Brief icon across favicon, Apple touch, Android saved-page, installable-app, link-preview, and Home navigation metadata. Use new immutable filenames when changing icon artwork so mobile favourites cannot reuse an old cached identity. Keep Daily Brief branding separate from Bomberfan and Arsenal.
 - Primary navigation uses a single code-native balloon for Birthdays and the exact same supplied cannon silhouette used in the Arsenal masthead. Birthday navigation uses vivid bright pink on hover or keyboard focus. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 - The Birthday destination and navigation label are both `Birthday`. Do not repeat a generic Birthdays subheading beneath the page title.
-- Birthday and anniversary cards use solid white surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings are white on the blue canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, dark readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder retains its solid pastel-pink surface.
+- Birthday and anniversary cards use solid white surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings use dark `#142A3D` ink on the blue canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, dark readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder retains its solid pastel-pink surface.
 - Birthday and anniversary cards, including the Home birthday reminder, use the same visible cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
 
 ## Boundaries
@@ -108,6 +108,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Merge Local News candidates across all configured local searches before selecting the newest items, and always render Local News strictly newest to oldest.
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
+- Add an article media block in the browser only after its exact publisher image has loaded, decoded, and met the 1,200 × 675 minimum. A failed or slow image must leave the story text-only instead of reserving an empty dark media slab.
 - AI and Career never show article photography. Use stylish, decorative code-native section icons while preserving the current article and job content, metadata, and real links.
 - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
