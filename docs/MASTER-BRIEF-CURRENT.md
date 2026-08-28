@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.5, 28 August 2026. Owner: Pete.
+Version 3.6, 28 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -11,12 +11,14 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, dark `#142A3D` ink for main copy on every light surface, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve light text for image-led media cards where a strong dark overlay is required for readability. Preserve header styling during unrelated work.
 
 - Use an `Open Horizon newsroom` hierarchy inspired by premium news homepages without copying their identity: firm section rules, a clear lead/supporting/stream rhythm, intentional desktop grids, and denser mobile scanning. Prominence comes from width, position, type scale, and verified imagery, not fabricated labels or reordered source content. Keep bespoke systems for Arsenal, Dida, Birthday, Weather, Coming up, Calendar, Around the world, and TV Picks.
-- Text-only news leads are valid and must use a purposeful compact layout rather than reserving an empty image-scale area. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists.
+- Cap the main Chromebook/desktop editorial rail at 1,120 px. Use the slim top bar for the refresh date, compact weather status, and active profile control or identity; never restore a page-content wordmark.
+- Text-only news leads are valid and must use a purposeful 7/5 lead-and-support desktop rail rather than reserving an empty image-scale area. Image-verified desktop leads use a prominent image-left, copy-right package. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists, and secondary items form a flat divided paper feed rather than a wall of identical cards.
 
 - The Home greeting and section or page titles that sit directly on the solid blue canvas use white text. Titles inside white or light cards retain a contrasting dark or purposeful accent colour. Main copy on light surfaces remains dark `#142A3D`.
 
 - Do not show a visible `Daily Briefs` wordmark in page content. Retain the Daily Briefs browser title, bookmark, manifest, icon, and sharing metadata.
 - Primary navigation uses a solid dark-navy `#102A43` surface with white text and icons at rest, including the active destination. Each destination uses a brighter version of its existing colour only on hover or keyboard focus so the feedback remains readable against the dark surface.
+- Respect `prefers-reduced-motion`: destination changes and in-page controls must not request smooth scrolling, navigation decoration must not animate, and hover/focus transitions must become effectively immediate. Keep a real visible keyboard-focus outline in addition to destination glows.
 - On mobile, primary navigation remains fixed, fully visible, and clickable while switching destinations or interacting with content. Use immediate mobile view changes and a stable opaque navigation surface to avoid compositor flicker.
 - Home `Coming up` cards retain solid pastel text surfaces with dark `#142A3D` text and use Pete-supplied artwork as a cropped right-side visual where a matched image exists. Keep all live card text inside a dedicated left-side text column on the solid pastel area, with no overlap into the artwork. Recycling, normal bins, clocks, Halloween, and Christmas each use their matching supplied image. Crop out the dates, countdown numbers, and fake controls embedded in the source compositions so the live dynamic card text remains authoritative. Halloween retains pastel orange. From 700 px upwards, all four cards must fit on one compact row.
 - Interactive card hover and keyboard-focus feedback must be clearly visible, stationary, and consistent in strength throughout the brief. General cards use cyan, Arsenal cards retain red, and image-led TV cards retain gold.
@@ -39,6 +41,8 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 ## Profiles
 
 Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia only. Keep /pete/ and /sofia/ routes and data/pete.json and data/sofia.json consistent. Never restore the obsolete Us profile.
+
+- A valid `profile=pete` or `profile=sofia` query parameter is authoritative over local storage. Locked profile routes hide the switch and must not reserve any geometry for it. Pete routes show Arsenal; Sofia routes do not.
 
 - The Home greeting is `Hey Pete` for Pete and `Hey Sofia` for Sofia, without trailing punctuation.
 - Keep the greeting deliberately smaller than the previous headline: 36–52 px below 900 px and 52–68 px from 900 px upwards.
@@ -67,6 +71,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Real links, no duplication, no Soon or For you groups.
 - No duplicate Today/Tomorrow pills. Keep numbered controls.
 - Today, Tomorrow, This week, and This month summary boxes use a visible cyan edge-glow on hover and keyboard focus, without moving the box.
+- On Chromebook/desktop, show the four summary boxes in one concise row above a natural-height event list; a short list must never stretch into a dead white slab.
 
 **Around the world**
 - Lead with one genuinely astonishing, obscure, source-verified fact each day, then show its precisely matched place image beneath it.
@@ -75,6 +80,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep a curated human-first queue large enough to prevent dull fallback. New-day selection must choose an unused human-first fact before any general catalogue item.
 - Track every published fact ID in a committed permanent history. Never reuse an ID or duplicate fact text; if the catalogue is exhausted, fail the refresh instead of repeating.
 - Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
+- On Chromebook/desktop, short fact copy may be vertically centred beside its image so the 4/8 package uses its whitespace intentionally; fact-first DOM order remains mandatory.
 
 **TV Picks**
 - Show five current, named programmes per profile. An eligible pick has released a new episode within the previous seven days or will release one within the next seven days; a new episode qualifies even when the series itself is not new.
@@ -93,6 +99,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Beneath the trusted list, show a separate Reporter watch for early, speculative public X posts. Mark every item `Unconfirmed · X`; never mix it into trusted reporting. Allow only David Ornstein, Fabrizio Romano, Charles Watts, and James Benge. Order it newest first and reject betting, gambling, women's-team, academy, U21, U18, youth, and girls' items.
 - Discover allowlisted public X posts through Google News indexing so the brief does not require a paid X API, credentials, scraping proxy, or new morning-refresh secret.
 - Apply the red edge-glow hover/focus treatment to every Arsenal card, including fixtures, league position, news, and transfer updates.
+- Render the five Club news items with explicit lead, two-support, and two-stream roles while preserving source order and exact-image eligibility.
 
 **News, AI, Career, Dida**
 - Keep each destination working and independent.
@@ -111,8 +118,9 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Favour UK- and Sweden-based roles for Sofia; Europe-wide remote roles are a lower-priority fallback.
 - Pete's Career section shows current UK roles in Civil Service, public sector, AI, digital, data, and automation, using the same multi-site search pool as Sofia.
 - Career searches include LinkedIn, Arbeitnow, Remote OK, Remotive, Jobicy, and Sweden's official JobTech feed. Reject duplicates, listings older than 30 days, inactive listings when detectable, and links that are not real HTTP(S) job pages.
+- Reject job listings whose title names Government Digital Service but whose listed employer is a different organisation; this is treated as a mismatched aggregator duplicate.
 - Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
-- Dida has no hero or duplicate section-navigation block. It opens directly with three independent boxes: This week, Seasonal missions, and Reference library. Each box header contains only that title, without a number, kicker, or description. Use white backgrounds for every zone, inner card, and icon surface; fresh bright green only for titles and box outlines; and neutral icons and body copy. Keep at least 28 px between zones on mobile and 36 px on Chromebook/desktop, keep weekly quick wins first, preserve every existing idea and the real age-six source, and keep all four reference groups collapsed by default on mobile and desktop.
+- Dida has a single page-level `Dida` title but no hero or duplicate section-navigation block. It then opens directly with three independent boxes: This week, Seasonal missions, and Reference library. Each box header contains only that title, without a number, kicker, or description. Use white backgrounds for every zone, inner card, and icon surface; fresh bright green only for titles and box outlines; and neutral icons and body copy. Keep at least 28 px between zones on mobile and 36 px on Chromebook/desktop, keep weekly quick wins first, preserve every existing idea and the real age-six source, and keep all four reference groups collapsed by default on mobile and desktop.
 - Dida’s three independent zone cards use the strong Calendar cyan edge-glow on hover or when they contain keyboard focus, without movement.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
 

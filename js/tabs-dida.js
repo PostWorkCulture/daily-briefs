@@ -4,6 +4,7 @@
   const profileSwitch=document.getElementById('profileSwitch');
   const params=new URLSearchParams(location.search);
   const locked=params.get('locked')==='1';
+  document.body.classList.add(locked?'profile-locked':'profile-unlocked');
   if(locked&&profileSwitch)profileSwitch.hidden=true;
 
   const baseRender=render;
@@ -130,7 +131,8 @@
       if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
     });
     const mobile=window.matchMedia('(max-width: 899px)').matches;
-    window.scrollTo({top:0,behavior:mobile?'auto':'smooth'});
+    const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0,behavior:mobile||reducedMotion?'auto':'smooth'});
   }
   window.showBriefView=showView;
   document.querySelectorAll('[data-view-target]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.viewTarget)));

@@ -2,6 +2,21 @@
 
 Newest entries go first.
 
+## 28 August 2026: Sky-grade editorial refinement loop
+
+Status: implementation and validation complete; publication pending
+
+- Editorial rail: tightened the Chromebook/desktop reading width to 1,120 px and turned the empty top bar into a useful date, refresh-time, weather, and profile utility masthead without restoring a wordmark.
+- News: image-verified leads now use an image-left, copy-right desktop package; text-only leads use a deliberate 7/5 lead-and-support rail; stream cards are flatter and mobile feeds use a single divided paper surface.
+- Home: Calendar now uses a concise four-box summary row above a natural-height event list, Around the world vertically centres short facts, and the five-card TV layout no longer creates an orphan at intermediate widths. Weather and all four Coming up cards retain their protected full-width order and single-row Chromebook layout.
+- AI and Career: repaired the 900–1,099 px orphan layout and balanced the final four desktop stream cards when ten items are present. AI and Career still use code-native icons and no photography.
+- Arsenal, Dida, and Birthday: added lead/support/stream roles to all five club-news cards, gave Dida a consistent page title while preserving exactly three white age-six zones, and made Birthday months use one, two, or three balanced columns according to their item count.
+- Correctness and accessibility: direct `profile` query parameters are now authoritative over stale local storage, locked routes occupy no switch space, reduced-motion preferences disable scripted smooth scrolling and visual transitions, and keyboard focus retains a real outline fallback alongside destination glows.
+- Career curation: removed a duplicate GDS role attributed to the wrong employer and added a refresh guard against the same employer/title mismatch.
+- Validation: the responsive Playwright suite now verifies isolated Pete and Sofia routes, direct locked queries, zero switch geometry, profile-specific Arsenal visibility, reduced motion, News and Arsenal hierarchy roles, and the revised editorial geometry at 390 × 844 and 1,366 × 900.
+- Protected contrast: the specified white canvas headings on `#78B7E0` remain unchanged. Raising those headings to WCAG AAA would require Pete to approve a colour or title-backing change.
+- Master brief update: version 3.6 records the refined editorial geometry, utility masthead, authoritative locked-profile behaviour, adaptive Birthday grid, and reduced-motion requirement.
+
 ## 28 August 2026: Open Horizon newsroom structural overhaul
 
 Status: validated and published
@@ -14,8 +29,8 @@ Status: validated and published
 - Data integrity: replaced the incorrect West Malling weather image with Mark Percy's exact-place Northolt clock tower photograph, cached locally at 1,600 × 900 with Commons source and CC BY-SA 2.0 credit. The refresh now has a verified Northolt fallback.
 - Arsenal scope: removed a marketing vacancy and an academy signing from trusted Transfer watch. Future Arsenal.com items without explicit first-team context require separate approved-source player corroboration; job and commercial titles are rejected.
 - Validation: 25 unit tests, JavaScript syntax checks, Python compilation, diff hygiene, and the Playwright responsive suite pass. Screenshots cover Pete and Sofia Home, News, and Career plus Pete Arsenal, AI, Dida, and Birthday at 390 × 844 and 1,366 × 900.
-- Publication: PR #11 was published on 28 August 2026 after the Responsive UI check passed. The post-merge Morning refresh completed in commit `b1b0792`.
 - Rollback: preserved pre-overhaul main as `backup/pre-sky-news-overhaul-2026-08-28`.
+- Publication: PR #11 was merged and the post-release morning refresh completed successfully.
 - Master brief update: version 3.5 records the permanent editorial hierarchy and transfer-scope rules; QA wording now matches the fact-first Around the world order.
 
 ## 28 August 2026: Open Horizon Daily Brief identity
