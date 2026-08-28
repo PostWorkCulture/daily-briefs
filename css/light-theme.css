@@ -9,7 +9,7 @@ body{color:var(--text);background:var(--bg)}
 .profile-switch button{color:var(--text)}.profile-switch button.active{background:#d7eaf5;color:var(--text);box-shadow:0 7px 18px rgba(48,95,130,.12)}
 .hero{padding:32px 0 6px}.hero h1{margin:17px 0 4px;color:#fff}.eyebrow{color:var(--text)}
 .section-kicker{color:var(--text)}.section-head h2{color:#173650}
-#homeRemindersSection .section-head h2,#calendarSection .section-head h2,#sceneryPanel .section-head h2,.tonight-block>.section-head h2,#view-news .section-head h2,#view-news .tab-group h3,#view-ai .section-head h2,#view-career .section-head h2,.birthday-panel .section-head h2,.occasion-month h3{color:#fff!important}
+#homeRemindersSection .section-head h2,#calendarSection .section-head h2,#sceneryPanel .section-head h2,.tonight-block>.section-head h2,#view-news .section-head h2,#view-news .tab-group h3,#view-ai .section-head h2,#view-career .section-head h2,.birthday-panel .section-head h2,.occasion-month h3{color:var(--text)!important}
 #weatherPanel .section-head h2{color:var(--text)!important}
 .status-card,.list-card,.content-group,.interest-card,.calendar-list{background:rgba(249,252,255,.88);border-color:var(--line);box-shadow:var(--shadow)}
 .list-row,.calendar-row{border-color:rgba(27,65,95,.11)}

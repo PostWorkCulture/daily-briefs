@@ -22,6 +22,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Supplied Coming up artwork matches recycling, normal bins, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
 - [ ] Coming up text remains wholly inside the left pastel column and does not overlap the right-side artwork.
 - [ ] `prefers-reduced-motion` disables scripted smooth scrolling, navigation animation, and visible transition duration; keyboard focus retains a real outline.
+- [ ] The greeting and every title directly on the blue canvas use dark `#142A3D` ink and meet at least 4.5:1 contrast; white remains reserved for dark surfaces and strongly overlaid media.
 
 ## Weather
 
@@ -48,6 +49,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] News groups use lead, supporting, and compact stream tiers without changing source order.
 - [ ] A text-only News lead uses the 7/5 desktop lead-and-support rail; it never reserves an empty media area.
 - [ ] An image-verified desktop lead places media left and copy right; mobile keeps lead media above its copy.
+- [ ] News and Arsenal media blocks appear only after the exact publisher image loads and decodes at 1,200 × 675 or larger; failed or slow images leave a text-only story with no empty dark slab.
 - [ ] AI and Career have no orphan stream card at 900–1,099 px or at the current Chromebook width.
 - [ ] On mobile, only an image-verified lead uses full-width media; later verified images use compact thumbnails.
 - [ ] Around the world leads with its sourced fact and then its precisely matched linked image.

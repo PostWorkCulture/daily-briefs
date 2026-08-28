@@ -281,6 +281,27 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Arsenal nav cannon does not use the supplied silhouette")
 
         page.locator('[data-view-target="news"]').click()
+        page.wait_for_timeout(500)
+        unsafe_story_media = page.evaluate(
+            """
+            () => [...document.querySelectorAll('#view-news .story-media')]
+              .filter(media =>
+                media.dataset.imageReady !== '1'
+                || Number(media.dataset.imageWidth) < 1200
+                || Number(media.dataset.imageHeight) < 675
+              )
+              .map(media => ({
+                ready: media.dataset.imageReady || '',
+                width: media.dataset.imageWidth || '',
+                height: media.dataset.imageHeight || '',
+                background: getComputedStyle(media).backgroundImage
+              }))
+            """
+        )
+        if unsafe_story_media:
+            raise AssertionError(
+                f"{name}: News contains an undecoded or undersized media slab: {unsafe_story_media}"
+            )
         local_news_order = page.evaluate(
             """
             () => {
@@ -554,6 +575,34 @@ def check_viewport(browser, name: str) -> None:
               const buttons = [...nav.querySelectorAll('button')];
               const reminderCards = [...document.querySelectorAll('#homeReminders .home-reminder-card')];
               const weatherCards = [...document.querySelectorAll('#yesterdayExtremes .uk-extreme')];
+              const parseRgb = value => value.match(/\d+(?:\.\d+)?/g)?.slice(0,3).map(Number) || [0,0,0];
+              const luminance = values => {
+                const rgbValues = values.map(value => value / 255).map(
+                  value => value <= 0.03928 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4
+                );
+                return 0.2126 * rgbValues[0] + 0.7152 * rgbValues[1] + 0.0722 * rgbValues[2];
+              };
+              const contrast = (left, right) => {
+                const values = [luminance(left), luminance(right)].sort((a, b) => b - a);
+                return (values[0] + 0.05) / (values[1] + 0.05);
+              };
+              const canvasTitleSelectors = [
+                '#greeting',
+                '#homeRemindersSection .section-head h2',
+                '#calendarSection .section-head h2',
+                '#sceneryPanel .section-head h2',
+                '.tonight-block > .section-head h2',
+                '#view-news > .tab-panel > .section-head h2',
+                '#view-news .tab-group > h3',
+                '#view-ai .section-head h2',
+                '#view-career .section-head h2',
+                '#view-dida > .tab-panel > .section-head h2',
+                '.birthday-panel .section-head h2',
+                '.occasion-month h3'
+              ];
+              const canvasTitles = canvasTitleSelectors
+                .map(selector => document.querySelector(selector))
+                .filter(Boolean);
               return {
                 bodyRgb: rgb,
                 bodyBackgroundImage: bodyStyle.backgroundImage,
@@ -572,12 +621,8 @@ def check_viewport(browser, name: str) -> None:
                 greetingMarginTop: parseFloat(getComputedStyle(greeting).marginTop),
                 greetingColour: getComputedStyle(greeting).color,
                 dateColour: getComputedStyle(date).color,
-                canvasTitleColours: [
-                  '#homeRemindersSection .section-head h2',
-                  '#calendarSection .section-head h2',
-                  '#sceneryPanel .section-head h2',
-                  '.tonight-block > .section-head h2'
-                ].map(selector => getComputedStyle(document.querySelector(selector)).color),
+                canvasTitleColours: canvasTitles.map(node => getComputedStyle(node).color),
+                canvasTitleContrasts: canvasTitles.map(node => contrast(parseRgb(getComputedStyle(node).color), rgb)),
                 weatherTitleColour: getComputedStyle(document.querySelector('#weatherPanel .section-head h2')).color,
                 heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
                 topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
@@ -657,12 +702,14 @@ def check_viewport(browser, name: str) -> None:
         if visual["heroBrandCount"] != 0 or visual["topbarBrandCount"] != 0:
             failures.append("visible Daily Briefs wordmark remains")
         approved_ink = "rgb(20, 42, 61)"
-        if visual["greetingColour"] != "rgb(255, 255, 255)" or visual["dateColour"] != approved_ink:
+        if visual["greetingColour"] != approved_ink or visual["dateColour"] != approved_ink:
             failures.append(
-                f"greeting is not white or date does not use the approved ink: {visual}"
+                f"greeting or date does not use the approved ink: {visual}"
             )
-        if any(colour != "rgb(255, 255, 255)" for colour in visual["canvasTitleColours"]):
-            failures.append(f"titles on the blue canvas are not white: {visual['canvasTitleColours']}")
+        if any(colour != approved_ink for colour in visual["canvasTitleColours"]):
+            failures.append(f"titles on the blue canvas do not use the approved ink: {visual['canvasTitleColours']}")
+        if any(ratio < 4.5 for ratio in visual["canvasTitleContrasts"]):
+            failures.append(f"titles on the blue canvas fall below 4.5:1 contrast: {visual['canvasTitleContrasts']}")
         if visual["weatherTitleColour"] != approved_ink:
             failures.append(f"Weather title is not readable on its light card: {visual['weatherTitleColour']}")
         if visual["navBackgroundColour"] != "rgb(16, 42, 67)":
@@ -987,8 +1034,8 @@ def check_viewport(browser, name: str) -> None:
                 for surface in birthday["cards"]
             ):
                 failures.append(f"{profile} desktop Birthday copy wraps too deeply: {birthday['cards']}")
-            if birthday["navPink"] != "255,150,205" or birthday["headingColour"] != "rgb(255, 255, 255)":
-                failures.append(f"{profile} Birthday heading is not white or navigation hover is not bright pink: {birthday}")
+            if birthday["navPink"] != "255,150,205" or birthday["headingColour"] != approved_ink:
+                failures.append(f"{profile} Birthday heading is not readable ink or navigation hover is not bright pink: {birthday}")
             birthday_card = page.locator('.birthday-card').first
             birthday_card.hover()
             page.wait_for_timeout(250)
