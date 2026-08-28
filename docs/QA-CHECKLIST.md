@@ -16,6 +16,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Chromebook/desktop has an intentional larger-screen layout.
 - [ ] Responsive smoke test passes.
 - [ ] Primary navigation is solid dark navy with white resting text and icons; mobile stability and destination hover colours remain intact.
+- [ ] Fixed mobile navigation sits in an opaque reserved bottom band so live copy is not visible beneath it; all final content can still scroll above the band.
 - [ ] The selected Open Horizon mark renders in the Home nav and decodes from new favicon, Apple touch, Android, maskable, manifest, and link-preview paths.
 - [ ] Supplied Coming up artwork matches recycling, normal bins, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
 - [ ] Coming up text remains wholly inside the left pastel column and does not overlap the right-side artwork.
@@ -38,11 +39,16 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] No duplicate Today/Tomorrow pills; numbered controls remain.
 - [ ] Calendar stays above Arsenal.
 
-## Content
+## Editorial hierarchy and content
 
-- [ ] Around the world has one linked image and a fact directly below.
+- [ ] Desktop Home has no dead grid row between Calendar, Around the world, and TV Picks.
+- [ ] News groups use lead, supporting, and compact stream tiers without changing source order.
+- [ ] A text-only News lead stays compact; it never reserves a large empty media area.
+- [ ] On mobile, only an image-verified lead uses full-width media; later verified images use compact thumbnails.
+- [ ] Around the world leads with its sourced fact and then its precisely matched linked image.
 - [ ] The current fact is human-first, genuinely unusual, source-verified, unused, and drawn from the people, population, traditions, records, or music range.
 - [ ] Five unique TV Picks per profile, each tied to a new episode from the previous or next seven days.
+- [ ] All five TV Picks remain visible on desktop as well as mobile.
 - [ ] Every TV Pick has an exact TVMaze programme image, service/channel, availability date, real destination, and today's generated date.
 - [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
 - [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
@@ -57,6 +63,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Premier League card shows only the current ordinal position; no table, points, or played total.
 - [ ] No betting, odds, gambling promotion, or gambling information.
 - [ ] Men's first team and all competitions.
+- [ ] Trusted transfers contain no academy, youth, women's-team, job-vacancy, marketing, or commercial-role items; ambiguous Arsenal.com items have separate approved-source player corroboration.
 - [ ] Latest completed and nearest upcoming fixture are correct.
 - [ ] Required fixture details and real links remain.
 - [ ] No invented scores or fixtures.

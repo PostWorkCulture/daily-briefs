@@ -374,7 +374,8 @@ TRANSFER_TERMS = re.compile(
     re.I,
 )
 TRANSFER_EXCLUSIONS = re.compile(
-    r"\b(?:rumou?rs?|gossip|paper talk|odds|betting|women|women's|u21|u18|academy|girls)\b",
+    r"\b(?:rumou?rs?|gossip|paper talk|odds|betting|women|women's|u21|u18|academy|girls|"
+    r"vacanc(?:y|ies)|jobs?|careers?|creative|marketing|partnerships?|commercial)\b",
     re.I,
 )
 SPECULATION_EXCLUSIONS = re.compile(
@@ -397,6 +398,30 @@ def newest_first(items: list[dict]) -> list[dict]:
     return sorted(items, key=news_timestamp, reverse=True)
 
 
+TRANSFER_NAME_STOPWORDS = {
+    "arsenal", "transfer", "news", "sign", "signs", "signed", "signing",
+    "join", "joins", "joined", "deal", "move", "loan", "contract", "target",
+    "report", "official", "update", "first", "team", "player", "new", "the",
+    "with", "from", "into", "amid", "after", "ahead", "agree", "agreed",
+}
+
+
+def transfer_identity_words(title: str) -> set[str]:
+    return {
+        word for word in re.findall(r"[a-zà-öø-ÿ'’-]{3,}", clean_html(title).lower())
+        if word not in TRANSFER_NAME_STOPWORDS
+    }
+
+
+def official_transfer_is_corroborated(item: dict, trusted_reports: list[dict]) -> bool:
+    """Keep official items only when a separate approved source identifies the same player."""
+    identity = transfer_identity_words(item.get("title", ""))
+    return len(identity) >= 2 and any(
+        len(identity & transfer_identity_words(report.get("title", ""))) >= 2
+        for report in trusted_reports
+    )
+
+
 def arsenal_transfer_updates() -> list[dict]:
     candidates = merge_news(
         google_news('site:arsenal.com Arsenal (transfer OR signing OR loan OR contract) when:21d', 24, 21),
@@ -415,7 +440,16 @@ def arsenal_transfer_updates() -> list[dict]:
         update["contentType"] = "transfer-update"
         update["trust"] = trust
         updates.append(update)
-    return newest_first(updates)[:6]
+    trusted_reports = [
+        item for item in updates
+        if "arsenal.com" not in clean_html(item.get("source", "")).lower()
+    ]
+    scoped_updates = [
+        item for item in updates
+        if "arsenal.com" not in clean_html(item.get("source", "")).lower()
+        or official_transfer_is_corroborated(item, trusted_reports)
+    ]
+    return newest_first(scoped_updates)[:6]
 
 
 def arsenal_transfer_rumours() -> list[dict]:

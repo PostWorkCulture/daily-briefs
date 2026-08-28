@@ -23,6 +23,12 @@ WEATHER_IMAGE_DIR = ROOT / "assets" / "weather-extremes"
 
 # Known, manually verified exact-place photos from the approved Daily Briefs build.
 KNOWN_PHOTOS = {
+    "northolt": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Northolt_clock_tower_-_geograph.org.uk_-_7246077.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Northolt_clock_tower_-_geograph.org.uk_-_7246077.jpg",
+        "credit": "Mark Percy · CC BY-SA 2.0",
+        "alt": "Northolt clock tower on Northolt Village Green, Greater London",
+    },
     "teddington": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Diana_Fountain%2C_Bushy_Park.jpeg?width=1600",
         "page": "https://commons.wikimedia.org/wiki/File:Diana_Fountain,_Bushy_Park.jpeg",
@@ -57,6 +63,7 @@ KNOWN_PHOTOS = {
 
 KNOWN_ENGLISH_PLACES = {
     "albemarle": ("Albemarle", "Northumberland"),
+    "northolt": ("Northolt", "Greater London"),
     "teddington": ("Teddington", "Greater London"),
     "wiggonholt": ("Wiggonholt", "West Sussex"),
     "topcliffe": ("Topcliffe", "North Yorkshire"),

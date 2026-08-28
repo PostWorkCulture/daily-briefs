@@ -1,0 +1,631 @@
+/* Open Horizon newsroom system, approved structural direction 28 August 2026. */
+:root{
+  --editorial-navy:#102a43;
+  --editorial-ink:#142a3d;
+  --editorial-blue:#0878b8;
+  --editorial-sky:#78b7e0;
+  --editorial-paper:#fff;
+  --editorial-paper-soft:#f3f8fb;
+  --editorial-rule:rgba(16,42,67,.20);
+  --editorial-rule-strong:rgba(16,42,67,.42);
+  --editorial-sun:#ffd447;
+  --editorial-shadow:0 12px 28px rgba(16,42,67,.10);
+}
+
+[hidden]{display:none!important}
+html{scroll-padding-top:16px}
+body{
+  font-feature-settings:"kern" 1,"tnum" 1;
+  text-rendering:optimizeLegibility;
+}
+a,button{-webkit-tap-highlight-color:transparent}
+.app-shell{position:relative}
+
+/* Compact masthead. The profile routes stay locked and no longer reserve an empty switch. */
+.topbar{
+  position:relative;
+  top:auto;
+  height:52px;
+  min-height:52px;
+  background:var(--editorial-sky)!important;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+.profile-avatar{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  background:#fff!important;
+  border:1px solid rgba(16,42,67,.18);
+  box-shadow:0 8px 20px rgba(16,42,67,.10);
+  color:var(--editorial-navy);
+}
+.profile-switch{
+  width:min(100%,360px);
+  margin:6px 0 0 auto;
+  padding:4px;
+  border:1px solid rgba(16,42,67,.16);
+  border-radius:12px;
+  background:rgba(255,255,255,.82)!important;
+  box-shadow:0 8px 20px rgba(16,42,67,.08);
+}
+.profile-switch button{
+  min-height:40px;
+  border-radius:8px;
+  font-size:12px;
+  letter-spacing:.01em;
+}
+.profile-switch button.active{
+  background:var(--editorial-navy)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
+
+.hero{padding:22px 0 16px!important}
+.eyebrow{
+  color:var(--editorial-ink)!important;
+  font-size:11px;
+  letter-spacing:.14em;
+}
+.hero h1{
+  max-width:none;
+  margin:17px 0 0!important;
+  font-weight:850;
+  letter-spacing:-.052em;
+  line-height:.96;
+}
+
+/* Section grammar: firm rules and clear titles rather than equal soft widgets. */
+.panel-block{margin-top:34px}
+.section-head{
+  position:relative;
+  align-items:flex-end;
+  min-height:38px;
+  margin-bottom:14px;
+  padding:0 0 10px;
+  border-bottom:1px solid rgba(255,255,255,.72);
+}
+.section-head:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:52px;
+  height:4px;
+  background:var(--editorial-sun);
+}
+.section-head h2{
+  font-size:clamp(24px,3vw,32px);
+  font-weight:850;
+  letter-spacing:-.045em;
+  line-height:1;
+}
+.section-kicker{
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.035em;
+}
+.weather-block .section-head{
+  border-bottom-color:var(--editorial-rule);
+}
+.weather-block .section-head:after{background:var(--editorial-blue)}
+
+/* Weather remains first and complete, but becomes denser and adapts to the actual day count. */
+.weather-block{
+  padding:20px!important;
+  border:1px solid rgba(16,42,67,.15)!important;
+  border-radius:18px!important;
+  background:#eef7fb!important;
+  box-shadow:var(--editorial-shadow)!important;
+}
+.forecast-strip{
+  display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(116px,1fr))!important;
+  gap:9px!important;
+  overflow:visible!important;
+}
+.forecast-day{
+  min-width:0!important;
+  min-height:156px;
+  padding:12px 8px!important;
+  border:1px solid rgba(16,42,67,.13)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  box-shadow:none;
+}
+.forecast-day.today{
+  border-top:5px solid var(--editorial-sun)!important;
+  background:#fffdf4!important;
+  box-shadow:0 8px 18px rgba(16,42,67,.08);
+}
+.forecast-day span{font-size:11px!important}
+.forecast-day strong{font-size:25px!important}
+.forecast-day small,
+.forecast-day em,
+.forecast-day .fd-rain,
+.forecast-day .fd-rain span,
+.forecast-day .fd-rain b{font-size:11px!important}
+.uk-yesterday{margin-top:18px;padding-top:15px;border-top-color:var(--editorial-rule)!important}
+.uk-yesterday-title strong{font-size:11px!important}
+.uk-yesterday-title span{font-size:10px!important}
+.uk-extremes{gap:12px}
+.uk-extreme{
+  min-height:230px;
+  border-radius:12px!important;
+}
+.uk-extreme-photo-credit,.story-credit{font-size:9px!important}
+.uk-extreme-kicker{font-size:10px!important}
+.uk-extreme h3{font-size:23px}
+.uk-extreme p{font-size:12px}
+
+/* Protected reminders retain their solid pastel identities and artwork geometry. */
+.home-reminders-grid{gap:12px}
+.home-reminder-card{
+  border-radius:14px!important;
+  border-color:rgba(16,42,67,.14)!important;
+  box-shadow:0 9px 20px rgba(16,42,67,.09)!important;
+}
+.home-reminder-top{font-size:11px!important}
+.home-reminder-card strong{font-size:19px!important}
+.home-reminder-card b{font-size:13px!important}
+.home-reminder-card small{font-size:11px!important}
+
+/* Calendar becomes a concise newsroom schedule, with the first event clearly leading. */
+.calendar-summary{gap:9px}
+.calendar-summary button{
+  min-height:68px;
+  border-radius:10px!important;
+  border-color:rgba(16,42,67,.15)!important;
+  background:#fff!important;
+  box-shadow:0 5px 14px rgba(16,42,67,.06);
+}
+.calendar-summary b{font-size:24px}
+.calendar-summary span{font-size:10px!important}
+.calendar-list{
+  border-radius:12px!important;
+  border-color:rgba(16,42,67,.15)!important;
+  background:#fff!important;
+  box-shadow:var(--editorial-shadow)!important;
+}
+.calendar-row{
+  min-height:66px;
+  padding:13px 15px;
+  border-bottom-color:rgba(16,42,67,.11)!important;
+}
+.calendar-row:first-child{
+  min-height:78px;
+  background:#f7fbfd;
+}
+.calendar-row:first-child .event-copy h3{font-size:16px}
+.event-time{font-size:11px!important}
+.event-copy h3{font-size:14px}
+.event-copy p{font-size:12px!important}
+
+/* Around the world is a single editorial package while preserving fact-first DOM order. */
+.scenery-fact{
+  margin:0!important;
+  padding:18px 20px!important;
+  border:1px solid rgba(16,42,67,.16)!important;
+  border-radius:14px 14px 0 0!important;
+  background:#fff!important;
+  box-shadow:var(--editorial-shadow)!important;
+}
+.scenery-fact span{font-size:11px!important;color:var(--editorial-blue)!important}
+.scenery-fact p{font-size:16px!important;line-height:1.5!important}
+.scenery-fact small{font-size:10px!important}
+.scenery-card{
+  height:370px!important;
+  margin-top:-1px;
+  border-radius:0 0 18px 18px!important;
+  box-shadow:var(--editorial-shadow)!important;
+}
+.scenery-copy span{font-size:10px!important}
+.scenery-copy strong{font-size:clamp(28px,4vw,40px)!important}
+.scenery-copy small{font-size:10px!important}
+
+/* TV uses one clear lead plus four supporting choices. All five remain visible. */
+.tonight-block .watch-card:nth-child(n){display:flex!important}
+.tonight-block .watch-card{
+  min-width:0!important;
+  min-height:210px!important;
+  border-radius:14px!important;
+}
+.tonight-block .watch-card small{font-size:10px!important}
+.tonight-block .watch-card b{font-size:18px!important}
+.tonight-block .watch-card em{font-size:11px!important}
+
+/* Editorial content hierarchy for News, AI and Career. */
+.tab-panel{margin-top:18px}
+.tab-panel>.section-head{margin-bottom:22px}
+.tab-groups{gap:38px}
+.tab-group{min-width:0}
+.tab-group>h3{
+  position:relative;
+  margin:0 0 16px!important;
+  padding:0 0 10px;
+  border-bottom:1px solid rgba(255,255,255,.72);
+  color:#fff!important;
+  font-size:clamp(22px,3vw,29px)!important;
+  font-weight:850;
+  letter-spacing:-.04em!important;
+}
+.tab-group>h3:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:48px;
+  height:4px;
+  background:#fff;
+}
+#view-news .tab-group>h3:after{background:#3987ff}
+.tab-list{gap:12px}
+.tab-story{
+  min-width:0;
+  padding:16px 17px!important;
+  border:1px solid rgba(16,42,67,.14)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  box-shadow:0 7px 18px rgba(16,42,67,.07)!important;
+}
+.tab-story .meta{
+  color:var(--editorial-ink)!important;
+  font-size:11px!important;
+  line-height:1.3;
+}
+.tab-story h4{
+  color:var(--editorial-ink);
+  font-size:17px!important;
+  line-height:1.3!important;
+  letter-spacing:-.018em;
+}
+.tab-story p{
+  color:var(--editorial-ink)!important;
+  font-size:13px!important;
+  line-height:1.5!important;
+}
+.tab-story.story-lead{
+  border-top:5px solid var(--editorial-blue)!important;
+}
+.tab-story.story-lead h4{
+  font-size:clamp(22px,3vw,29px)!important;
+  line-height:1.14!important;
+  letter-spacing:-.035em;
+}
+.tab-story.story-lead p{font-size:14px!important}
+.tab-story.story-support h4{font-size:18px!important}
+.tab-story.story-stream{box-shadow:none!important}
+.tab-story.has-image{grid-template-columns:minmax(0,1fr) 150px!important}
+.tab-story.has-image .story-copy{padding:16px 17px!important}
+.tab-story.story-lead.has-image{
+  grid-template-columns:1fr!important;
+  padding:0!important;
+}
+.tab-story.story-lead.has-image .story-media{
+  order:-1;
+  min-height:260px;
+  border:0;
+  border-bottom:1px solid rgba(16,42,67,.12);
+}
+.section-story{
+  grid-template-columns:52px minmax(0,1fr)!important;
+  align-items:start;
+}
+.section-story-icon{
+  width:52px!important;
+  height:52px!important;
+  border-radius:12px!important;
+}
+.section-story-copy{min-width:0}
+
+/* Arsenal keeps its protected identity, with complete news and sharper editorial edges. */
+#view-arsenal .arsenal-panel{border-radius:18px!important}
+#view-arsenal .arsenal-news{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))!important}
+#view-arsenal .arsenal-news-item{min-height:104px;border-radius:10px!important}
+#view-arsenal .arsenal-news-item span{font-size:10px!important}
+#view-arsenal .arsenal-news-item b{font-size:14px!important}
+#view-arsenal .arsenal-transfer-item{border-radius:10px!important}
+#view-arsenal .arsenal-transfer-item span{font-size:10px!important}
+#view-arsenal .arsenal-transfer-item small{font-size:10px!important}
+#view-arsenal .arsenal-transfer-item b{font-size:13px!important}
+
+/* Dida remains three white age-six zones, with readable type and less nested visual noise. */
+.dida-zone{border-radius:14px!important}
+.dida-zone-head h3{font-size:24px!important}
+.dida-quick,.dida-season,.dida-fold,.dida-ref-card,.dida-season-item{border-radius:10px!important}
+.dida-quick small{font-size:10px!important}
+.dida-quick h4,.dida-season h4,.dida-fold summary h4{font-size:15px!important}
+.dida-quick p,.dida-season-title p,.dida-fold summary p,.dida-season-item,.dida-ref-card li,.dida-ref-card p{
+  color:var(--editorial-ink)!important;
+  font-size:12px!important;
+  line-height:1.48!important;
+}
+.dida-ref-card h5{font-size:13px!important}
+.dida-source{font-size:11px!important}
+
+/* Birthday keeps its month groups and pink identity, with stronger page hierarchy. */
+.birthday-list{gap:32px!important}
+.occasion-month{gap:12px!important}
+.occasion-month h3{
+  position:relative;
+  margin:0!important;
+  padding:0 0 9px;
+  border-bottom:1px solid rgba(255,255,255,.72);
+  font-size:21px!important;
+  font-weight:850;
+  letter-spacing:-.025em;
+}
+.occasion-month h3:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:44px;
+  height:4px;
+  background:#ff67b3;
+}
+.birthday-card{
+  min-height:82px;
+  border-radius:12px!important;
+  box-shadow:0 7px 18px rgba(16,42,67,.08)!important;
+}
+.birthday-card strong{font-size:17px!important}
+.birthday-card small{font-size:12px!important}
+
+/* Restrained permanent navigation. Destination colour appears only on hover or focus. */
+.bottom-nav{
+  gap:2px!important;
+  padding:6px!important;
+  border-radius:18px!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  background:var(--editorial-navy)!important;
+  box-shadow:0 12px 28px rgba(16,42,67,.22),inset 0 1px 0 rgba(255,255,255,.12)!important;
+}
+.bottom-nav:before{
+  inset:-1px!important;
+  padding:1px!important;
+  border-radius:19px!important;
+  opacity:.58;
+  filter:none!important;
+  animation-duration:18s!important;
+}
+.bottom-nav button{
+  min-height:46px;
+  border-radius:11px!important;
+  font-size:9px!important;
+  letter-spacing:.01em;
+}
+.bottom-nav button:before{opacity:.18!important}
+.bottom-nav button.active:not(:hover):not(:focus-visible){
+  background:rgba(255,255,255,.10)!important;
+  border-color:rgba(255,255,255,.18)!important;
+  box-shadow:inset 3px 0 0 rgba(255,212,71,.92)!important;
+}
+
+@media(max-width:699px){
+  body:after{
+    content:"";
+    position:fixed;
+    z-index:999;
+    right:0;
+    bottom:0;
+    left:0;
+    height:78px;
+    background:var(--editorial-sky);
+    pointer-events:none;
+  }
+  .app-shell{padding-left:14px;padding-right:14px}
+  .topbar{height:46px;min-height:46px}
+  .hero{padding:16px 0 12px!important}
+  .hero h1{font-size:clamp(36px,12vw,50px)}
+  .panel-block{margin-top:28px}
+  .section-head{min-height:34px;margin-bottom:12px;padding-bottom:9px}
+  .section-head h2{font-size:25px}
+  .weather-block{padding:14px!important}
+  .forecast-strip{
+    display:flex!important;
+    gap:8px!important;
+    overflow-x:auto!important;
+    scroll-snap-type:x mandatory;
+  }
+  .forecast-day{flex:0 0 116px!important;min-height:152px;scroll-snap-align:start}
+  .uk-extremes{
+    display:flex!important;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+  }
+  .uk-extremes::-webkit-scrollbar{display:none}
+  .uk-extreme{flex:0 0 82%;min-height:210px;scroll-snap-align:start}
+  .scenery-card{height:300px!important}
+  .tab-groups{gap:30px}
+  .tab-group>h3{font-size:23px!important}
+  .tab-list{grid-template-columns:1fr!important}
+  .tab-story{grid-column:auto!important;grid-row:auto!important}
+  .tab-story.has-image,
+  .tab-story.story-lead.has-image{grid-template-columns:1fr!important}
+  .tab-story.has-image .story-media{
+    order:-1;
+    min-height:178px;
+    border:0;
+    border-bottom:1px solid rgba(16,42,67,.12);
+  }
+  .tab-story.story-lead.has-image .story-media{min-height:210px}
+  .tab-story.story-support.has-image,
+  .tab-story.story-stream.has-image{
+    grid-template-columns:minmax(0,1fr) 108px!important;
+  }
+  .tab-story.story-support.has-image .story-media,
+  .tab-story.story-stream.has-image .story-media{
+    order:0;
+    min-height:100%;
+    border:0;
+    border-left:1px solid rgba(16,42,67,.12);
+  }
+  .tab-story.story-lead h4{font-size:22px!important}
+  .tab-story h4{font-size:16px!important}
+  .section-story{grid-template-columns:46px minmax(0,1fr)!important}
+  .section-story-icon{width:46px!important;height:46px!important}
+  .bottom-nav{width:min(calc(100% - 16px),560px)!important;bottom:max(8px,env(safe-area-inset-bottom))!important}
+  .bottom-nav button{min-height:48px;padding:8px 1px 7px!important;font-size:8px!important}
+  .bottom-nav button.active:not(:hover):not(:focus-visible){box-shadow:inset 0 3px 0 rgba(255,212,71,.92)!important}
+}
+
+@media(min-width:700px) and (max-width:1099px){
+  .app-shell{width:min(calc(100% - 48px),920px)}
+  .forecast-strip{grid-template-columns:repeat(auto-fit,minmax(122px,1fr))!important}
+  .tab-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .tab-story.story-lead{grid-column:1/-1}
+  .tonight-block .watch-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .tonight-block .watch-card:first-child{grid-column:1/-1;min-height:300px!important}
+  .tonight-block .watch-card:last-child:nth-child(odd){grid-column:1/-1}
+}
+
+@media(min-width:700px){
+  .home-reminder-card{
+    min-width:0;
+    min-height:144px!important;
+    height:144px;
+    padding:11px 12px!important;
+  }
+  .home-reminder-copy{min-width:0}
+  .home-reminder-card strong{margin-top:8px!important;font-size:17px!important}
+  .home-reminder-card b{font-size:12px!important}
+  .home-reminder-card small{margin-top:4px!important;font-size:10px!important}
+}
+
+@media(min-width:900px){
+  body{padding-left:92px}
+  .app-shell{width:min(calc(100% - 72px),1220px);padding-bottom:72px}
+  .topbar{height:56px;min-height:56px}
+  .profile-switch{margin-top:0}
+  .hero{padding:22px 0 20px!important}
+  .hero h1{font-size:clamp(52px,5vw,64px)}
+  .panel-block{margin-top:40px}
+  .tab-groups:not(.single){grid-template-columns:1fr!important}
+  .tab-groups.single .tab-list{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .tab-groups.single .story-lead{grid-column:span 2}
+  .bottom-nav{left:18px!important;width:76px!important}
+  .bottom-nav button{padding:10px 3px!important}
+  .birthday-month-grid{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))!important}
+  .birthday-card{
+    position:relative;
+    grid-template-columns:54px minmax(0,1fr)!important;
+    gap:10px!important;
+    min-height:96px;
+    padding:12px!important;
+  }
+  .birthday-card>div:nth-child(2){padding-right:62px}
+  .birthday-card>b{
+    position:absolute;
+    top:15px;
+    right:12px;
+  }
+  .birthday-avatar.hq-balloon-avatar{width:54px!important;height:62px!important}
+  .hq-balloon:not(.compact){width:52px!important;height:64px!important}
+}
+
+@media(min-width:1100px){
+  #view-home.active{
+    display:grid;
+    grid-template-columns:repeat(12,minmax(0,1fr));
+    column-gap:24px;
+    row-gap:42px;
+  }
+  #view-home>.hero,
+  #view-home>#weatherPanel,
+  #view-home>#homeRemindersSection,
+  #view-home>.tonight-block,
+  #view-home>section[hidden],
+  #view-home>div[hidden]{grid-column:1/-1}
+  #view-home>#calendarSection,
+  #view-home>#sceneryPanel{grid-column:1/-1}
+  #view-home>.panel-block{margin-top:0}
+  #view-home>.hero{padding-bottom:0!important}
+
+  .calendar-block{
+    display:grid;
+    grid-template-columns:180px minmax(0,1fr);
+    gap:14px;
+    align-content:start;
+  }
+  .calendar-block>.section-head{grid-column:1/-1}
+  .calendar-block>.calendar-summary{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    margin:0;
+  }
+  .calendar-block>.calendar-list{max-height:520px}
+
+  #sceneryPanel{
+    display:grid;
+    grid-template-columns:repeat(12,minmax(0,1fr));
+  }
+  #sceneryPanel>.section-head{grid-column:1/-1}
+  #sceneryPanel>.scenery-fact{
+    grid-column:1/span 4;
+    min-height:370px;
+    border-radius:14px 0 0 14px!important;
+  }
+  #sceneryPanel>.scenery-card{
+    grid-column:5/-1;
+    margin-top:0;
+    border-radius:0 18px 18px 0!important;
+  }
+
+  .tab-list{
+    display:grid!important;
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+  .tab-groups.single .tab-list{
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  }
+  .tab-story.story-lead{
+    grid-column:1/span 8;
+    grid-row:1/span 2;
+    min-height:318px;
+  }
+  .tab-story.story-lead:not(.has-image){
+    grid-row:auto;
+    min-height:152px;
+    align-self:start;
+    padding:22px!important;
+  }
+  .tab-list:has(> .story-lead:not(.has-image)) > .story-lead{
+    grid-column:1/-1;
+    min-height:0;
+  }
+  .tab-list:has(> .story-lead:not(.has-image)) > .story-support{
+    grid-column:span 6;
+    min-height:0;
+  }
+  .tab-story.story-support{
+    grid-column:9/-1;
+    min-height:152px;
+  }
+  .tab-story.story-stream{grid-column:span 4}
+
+  .tonight-block .watch-strip{
+    display:grid!important;
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+    grid-auto-rows:178px;
+    gap:14px!important;
+    overflow:visible!important;
+  }
+  .tonight-block .watch-card{
+    grid-column:span 3;
+    min-height:0!important;
+    aspect-ratio:auto!important;
+  }
+  .tonight-block .watch-card:first-child{
+    grid-column:span 6;
+    grid-row:span 2;
+  }
+  .tonight-block .watch-card:first-child b{font-size:27px!important}
+  .tonight-block .watch-card:first-child em{font-size:12px!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important}
+  .bottom-nav:before{animation:none!important}
+}
