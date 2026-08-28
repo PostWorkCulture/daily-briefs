@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 28 August 2026: Accessible newsroom contrast and resilient story media
 
-Status: validated and approved for publication
+Status: validated and published
 
 - Approved contrast change: the Home greeting, page titles, section titles, News group headings, Dida page title, and Birthday month headings now use dark `#142A3D` ink directly on the protected `#78B7E0` canvas. Contrast rises from 2.18:1 to 6.76:1 while the solid blue canvas, dark navigation, cards, imagery, and section identities remain unchanged.
 - Editorial rules: title dividers now use the existing navy rule colour instead of a low-contrast white line, strengthening the same lead/support/stream hierarchy without changing content order.
@@ -12,6 +12,7 @@ Status: validated and approved for publication
 - Story-media resilience: News and Arsenal add media geometry only after the exact publisher image loads, decodes, and confirms the existing 1,200 × 675 minimum. Failed or slow images remain text-only instead of showing an empty dark slab.
 - Validation: all 27 unit tests pass; JavaScript syntax, Python compilation and diff hygiene pass; the responsive Chromium suite passes at 390 × 844 and 1,366 × 900; reduced motion, locked routes, media readiness, contrast, section ordering, and protected layouts are covered. Pete and Sofia Home, News, Career, Birthday, Dida, AI, and Arsenal screenshots were generated, and the changed mobile/desktop Home, News, and Birthday views were visually inspected.
 - Scope protected: no route, profile, section, control, source, content item, ordering rule, card colour, navigation behaviour, or data refresh logic changes.
+- Publication: PR #15 passed the remote Responsive UI check and was squash-merged as `91654e3`.
 - Master brief update: version 3.7 records the approved accessible canvas-title treatment and browser image-readiness guard.
 
 ## 28 August 2026: Sky-grade editorial refinement loop
