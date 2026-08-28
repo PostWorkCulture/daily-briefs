@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 28 August 2026 · refreshed 8:01pm",
+  "updatedLabel": "Friday, 28 August 2026 · refreshed 9:36pm",
   "worldFact": {
     "id": "papua-new-guinea-840-living-languages",
     "editorialPriority": "human-first",
@@ -19,24 +19,24 @@
     "temp": "19°",
     "summary": "Cloudy",
     "condition": "Cloudy",
-    "currentRainChance": 50,
+    "currentRainChance": 30,
     "daily": [
       {
         "date": "2026-08-28",
-        "high": 21,
+        "high": 20,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-08-29",
-        "high": 22,
+        "high": 21,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
+        "summary": "Heavy Rain",
+        "condition": "Heavy Rain",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -45,11 +45,20 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-31",
+        "high": 22,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-01",
         "high": 22,
         "low": null,
         "summary": "Cloudy",
@@ -58,18 +67,18 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 50%",
+      "detail": "Sunny intervals · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -242,20 +251,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -267,6 +262,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -422,7 +431,48 @@
     "leaguePosition": 2,
     "points": null,
     "played": null,
-    "news": [],
+    "news": [
+      {
+        "title": "The best training snaps ahead of Villa Park",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T15:25:35+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ1ptdFJibWNITzJlSjFiU0ZDdTE2dkhrcDU2Y0FUZ2pHc2o4cFc3X0dXcVlYVDlUN2JlSjdVM0Q5Xzl1NTI5TlVkUnpLMTdSbjduWDd0VmRQRGJQQ0x4LWxWRllJczlGLXRMNnE0VGNKcnZoaTlaWWlxRXkwb29wcE81SG1ncW1Jd29oU0dR?oc=5"
+      },
+      {
+        "title": "Arsenal to announce new signings after medicals with third 'confirmed'",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T21:00:13+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOamRvenJHdFBheWVoWjAzYXE1SHFEelN6cHhkRzJON2pYZUZyby1rc3ViZFRfR0x1YmpORnY5UjQ5bUs3ZHFzMTBlcHZLUkVVRXNndzR3aVM4aWJXOVdHQ0tKOVA4Y2xfcnFFYlhfaXlSNFYxeFlaelJhbjhrRDVuaS11aWRvbk9hTml5OWtnUUZZTWtLc3I3anVneTc?oc=5"
+      },
+      {
+        "title": "Arsenal’s Julian Alvarez gamble has paid off – with two cards still to play",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T10:51:00+01:00",
+        "source": "The Independent",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQX0VJR011TWRQeWFLVXhCSnkwVE9OSWpCeTZ2YmJueGhZZy1zbmFxdF9RS2R3d3JsMnNCTDZZX0xsNE1PN3dHT3psaTBITllURm15U0UtbHJVUlU1NnZMTGZTclV3TkdLQXJBUUNQV0JhTXNDUkpqRXBucmQwZjE2TGN5WGRKYVNCRnR6YTVSOUNVMDVsWl9RT0FfWXJqenBvYW5UVw?oc=5"
+      },
+      {
+        "title": "Igor Tyjon signs for Arsenal",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T16:08:50+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1UclVYbGlINWtMN0poZUZsN0U2S0kyN1R0b2ZoVHpFRWJ4X0lMLW5DZDdCOFpIU3cyeThadkF1VGM1WWRrX0ZvNWhMblBIR1JKX2ZXNXdKQUZteFl0eHNsOWE2Nkg1ZUJCZjVmLUxxcmJFdlBlRTI3Y3dn?oc=5"
+      },
+      {
+        "title": "Arsenal confirm new striker signing as squad number revealed",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T20:19:19+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNFIwQVY4NzJPTDU4cHNOeE1hMllTeTVudmVYWFZFSTBjekJHWGNLdlctOXNiSHRCVUk1clVLUU5YR2lkQmNyMW1wbzVROWxzVk9uNkl2NnlrbEZib044WF9saTZoRXJpbkQtRmZfZFJHaDB1SzF3QVN0anpnWkJlWjFkcXdCSm5uYV9NTFFzYWl5MkdjeEE?oc=5"
+      }
+    ],
     "sources": [
       "Sky Sports",
       "PremierLeague.com",
@@ -432,12 +482,22 @@
     "scope": "Arsenal men's first team · all competitions",
     "transfers": [
       {
-        "title": "Mikel Arteta to Arsenal squad amid Julián Álvarez transfer talk: 'Knock on my door'",
+        "title": "Julian Alvarez transfer news: Atletico Madrid set deadline for striker to decide whether he stays or joins Arsenal",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T20:24:54+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSC14M2Z6M2xIblc5ajRJMGM0NXBoRlUzN1QzZzFUaVJXOFNuWWI2Z0w4cHB3Z251ZmNrRy1pZHlHcFc4dG9zN0REUkNmUjg3OHhyaGNieWx0cXdhOHpmWFhqaUhnLUJ5cThDYkdCRUZGMkJIRDg2MlJ3MTRScHZzUnNzZE1fVllQV1B3c09TOEtfNFhTS2RBNGhZWHFQZ1B4VmRsS3pyamg0aE4wT2VqNmZsaUtvSVdLY3pmV2dLVExUelBvMi1CUGgtX3JFenZsYXpfQV92S1hpLXZzN2wxNnJxMkk0Vms0elF6YW5sVVV4S1JiX3RHZVUzRXc?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Arsenal terminate Reiss Nelson contract by mutual agreement, becomes free agent",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:54:00+01:00",
+        "publishedAt": "2026-08-27T19:45:00+01:00",
         "source": "ESPN",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOenJucWhCLVlEcFB3VTcyYm9iaThEei1ZTzRJLV92SnpWLUxkRnV0bXlUQXZXVGhFUnpXWkozMmtLV2tOY0dGSjdLZUN4Z25jMDRUR3VKZVdhWGYzOU5KRExCU3pCNjhUcHZsQzlfdTRXTGxlVmxwSDRwWUFNVjRzMmJRUGVoSDdicUdMWGpObXhPNU05RkRod0VkZGh1YVBlUEFENGxibktQUkNFLVhGNlA4aWZpY0NqYTRSMjVGY1BmcWZO?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ2g0aDFQYVJxcm5weUVRTXlKZjJDVGV5SDdOMmtxb3FtM2JPVTZsWTF0eWJvRDVTLUpvTkJ6bTZwNGMwVW1FRXpYOTRfbUxzemtGcnBfeENYbEJ2dE5MR3BKYUlkcFFDckYxbEFGQllmdmdNU0pQSUx5bUk3U2thTWVvNVIzTnZjclA3d2l2WmFKS0xQS1FQcWFsNFRKenZSVktNY01Od3M1RHg3UFFwY2dkOG0wOFlMcVdnNnl6OTB4VFpPWXc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -544,11 +604,12 @@
       "section": "AI"
     },
     {
-      "title": "Arsenal",
+      "title": "The best training snaps ahead of Villa Park",
       "summary": "",
-      "meta": "",
-      "source": "",
-      "url": "",
+      "meta": "Fri 28 Aug",
+      "publishedAt": "2026-08-28T15:25:35+01:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ1ptdFJibWNITzJlSjFiU0ZDdTE2dkhrcDU2Y0FUZ2pHc2o4cFc3X0dXcVlYVDlUN2JlSjdVM0Q5Xzl1NTI5TlVkUnpLMTdSbjduWDd0VmRQRGJQQ0x4LWxWRllJczlGLXRMNnE0VGNKcnZoaTlaWWlxRXkwb29wcE81SG1ncW1Jd29oU0dR?oc=5",
       "section": "Arsenal"
     },
     {
@@ -731,7 +792,72 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5"
       }
     ],
-    "Arsenal news": [],
+    "Arsenal news": [
+      {
+        "title": "The best training snaps ahead of Villa Park",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T15:25:35+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ1ptdFJibWNITzJlSjFiU0ZDdTE2dkhrcDU2Y0FUZ2pHc2o4cFc3X0dXcVlYVDlUN2JlSjdVM0Q5Xzl1NTI5TlVkUnpLMTdSbjduWDd0VmRQRGJQQ0x4LWxWRllJczlGLXRMNnE0VGNKcnZoaTlaWWlxRXkwb29wcE81SG1ncW1Jd29oU0dR?oc=5"
+      },
+      {
+        "title": "Arsenal to announce new signings after medicals with third 'confirmed'",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T21:00:13+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOamRvenJHdFBheWVoWjAzYXE1SHFEelN6cHhkRzJON2pYZUZyby1rc3ViZFRfR0x1YmpORnY5UjQ5bUs3ZHFzMTBlcHZLUkVVRXNndzR3aVM4aWJXOVdHQ0tKOVA4Y2xfcnFFYlhfaXlSNFYxeFlaelJhbjhrRDVuaS11aWRvbk9hTml5OWtnUUZZTWtLc3I3anVneTc?oc=5"
+      },
+      {
+        "title": "Arsenal’s Julian Alvarez gamble has paid off – with two cards still to play",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T10:51:00+01:00",
+        "source": "The Independent",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQX0VJR011TWRQeWFLVXhCSnkwVE9OSWpCeTZ2YmJueGhZZy1zbmFxdF9RS2R3d3JsMnNCTDZZX0xsNE1PN3dHT3psaTBITllURm15U0UtbHJVUlU1NnZMTGZTclV3TkdLQXJBUUNQV0JhTXNDUkpqRXBucmQwZjE2TGN5WGRKYVNCRnR6YTVSOUNVMDVsWl9RT0FfWXJqenBvYW5UVw?oc=5"
+      },
+      {
+        "title": "Igor Tyjon signs for Arsenal",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T16:08:50+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1UclVYbGlINWtMN0poZUZsN0U2S0kyN1R0b2ZoVHpFRWJ4X0lMLW5DZDdCOFpIU3cyeThadkF1VGM1WWRrX0ZvNWhMblBIR1JKX2ZXNXdKQUZteFl0eHNsOWE2Nkg1ZUJCZjVmLUxxcmJFdlBlRTI3Y3dn?oc=5"
+      },
+      {
+        "title": "Arsenal confirm new striker signing as squad number revealed",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T20:19:19+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNFIwQVY4NzJPTDU4cHNOeE1hMllTeTVudmVYWFZFSTBjekJHWGNLdlctOXNiSHRCVUk1clVLUU5YR2lkQmNyMW1wbzVROWxzVk9uNkl2NnlrbEZib044WF9saTZoRXJpbkQtRmZfZFJHaDB1SzF3QVN0anpnWkJlWjFkcXdCSm5uYV9NTFFzYWl5MkdjeEE?oc=5"
+      },
+      {
+        "title": "Gallery: AWFC open training at Emirates Stadium",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T17:03:15+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYW5CeHBwbVZBZHlsTTFVWFJDclFmMGFyVGxlaXQ0V1QtcDZ3QTZOZXZBWkJacnhjem5lN0Ffd0RoNUc0bnFjSXhnakRWY0ZLQi1rRERyX0dyTGhpWEFVOUpCNGFseFl2V21LZ0JSQzZSV1JLMmJZd3JaTC1VZHhfSUIyRjRpR3BOUzlHN3R2UEU0Zw?oc=5"
+      },
+      {
+        "title": "Go Inside Training before we face Aston Villa",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T18:06:38+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdDVtM3J1a1RmWElIanJkOTBncmp3aktFR0M1Y3JaNXBBbDFZRUFwbkpzUDJZVVV0SDI3ZVJLWGNlSmNGd2hFczFudnBFNG9lNml4andTb0ZTcUVNbXE2Tjhmb3poVEVnWEltWXBIUjBqbDEtOVk4dDNETnMxM0NMLWNVZ0FCOUNRS2VwOWFLc1k?oc=5"
+      },
+      {
+        "title": "Arteta reveals Guimaraes injury latest amid two-man Arsenal update",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T20:26:16+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUE10ajI4Q25uRmtHZ0hzY2ZwRXJOWnc4MUdDMDJZUUdSNFI5Z3RmY19uTkdqYUVSNU5Id19peFhEUVFRQ3NZNnN3Rk5vcFl2czdtb05KSkpkQWc1dmZrWWYwaEloTjhJSkliUkZMOUZMcEIwRWpxVWF4MGV1Z2o2R3hDdmt5aDhVcFItel8xOXV3M2NySzJ2S3RRWDBHckpYT2lmVEFLYTJKd2szNkVvc2ZoOA?oc=5"
+      }
+    ],
     "Local news": [
       {
         "title": "Surrey football club stadium bars closed ahead of local derby as fans stage protest",
@@ -766,12 +892,12 @@
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdkNtcjVWMW91aDQ5OWVoSFdpR1o2SHh0cVZqdjB0TWtxbXFvMlpGT3JvYV92M1I3QkVlZTNEU09EWm9wXzBQa2t0NEU4eEhKd3NheW5QSXhNYm5sUXZTYzl5eDlOUGNjSlFYMTRzN2FZb0JLaER4MXRWdW5OVmwxRWxpZ2VtdWs5b09qRUpGV3FYOUplV1dqeGdhdGR1SHZmZ3AyVnozYzBOSENBXy1ZYzNwS25KMTlBNVZTTmtUcmw2dkxQUXYybWRuMllKYUE?oc=5"
       },
       {
-        "title": "Plans for new 60-pupil Surrey school on green belt land currently used for animal grazing",
+        "title": "Guildford Walkfest 2026 is all Set To Go Throughout September",
         "summary": "",
         "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T19:00:00+01:00",
-        "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdFV1b0l3SzhTSGl0RTFqUktzNkpuYW8yaFBUQjdvTjczU0Q1MThGSGgzNHd5NV9pQUpCa0cyQUlMcVgwNl9kT1VZSExtdFJ1U2NaZlAxRDdrREw1OVFrd1JEN25pM0JYSFNTTzEwbmozYUUyVzFVd0FIaU03X3Z1WHV2ZXZyVzdFTVhR0gGLAUFVX3lxTE90VXVvSXdLOFNIaXRFMWpSS3M2Sm5hbzJoUFRCN29ONzNTRDUxOEZIaDM0d3k1X2lBSkJrRzJBSUxxWDA2X2RPVVlITG10UnVTY1pmUDFEN2tETDU5UWt3UkQ3bmkzQlhIU1NPMTBuajNhRTJXMVV3QUhpTTdfdnVYdXZldnJXN0VNWFE?oc=5"
+        "publishedAt": "2026-08-27T16:54:28+01:00",
+        "source": "Buttondown",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWWw5ZnlSSFJRTWtkbWJncEZuaDFLd082QWlWcTVWWXdsbVIyRVhGZ25LRG9lV1ozemkyZUJTcVl2cGtPcjN0aHBienZJT3dqaDhLWTFjcFVrdm5JM1o5aTVlMTFuNk1yYXNEaDNBNEthb3dGZEFad21fT3hmbWJsSjFlRmZjeFdtN3VUdnJQLW9fMmFhNi1N?oc=5"
       },
       {
         "title": "Solario Stakes preview: Breacher has trainer William Muir dreaming of big days to come",
@@ -843,7 +969,7 @@
         "title": "What we know about the 33 British nationals missing in Nepal",
         "summary": "Among those reported missing after deadly floods are a 13-year-old girl and 14-year-old boy.",
         "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T16:48:14+01:00",
+        "publishedAt": "2026-08-28T20:21:57+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c93v70w79gxo?at_medium=RSS&at_campaign=rss"
       },
@@ -864,8 +990,16 @@
         "url": "https://www.bbc.co.uk/news/videos/c3wjq1188g9o?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Six people injured after sign falls at Christian festival",
+        "summary": "Emergency services were called to reports of people in need of medical attention at Wiston Park.",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T20:28:26+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwyz52x45jxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "Wife of man who died after turbulence sues Singapore Airlines",
-        "summary": "Lawyers for Linda Kitchen said her husband was \"fatally injured\" after the flight dropped 6,000 ft.",
+        "summary": "Lawyers for Linda Kitchen say her husband was \"fatally injured\" after the flight dropped 6,000 ft.",
         "meta": "Fri 28 Aug",
         "publishedAt": "2026-08-28T18:47:00+01:00",
         "source": "BBC News",
@@ -883,7 +1017,7 @@
         "title": "Disorder at balloon release for man who died in A66 car crash 'put lives at risk', MP says",
         "summary": "Police now say they are not currently linking a deadly crash on the A66 to a fatal house fire.",
         "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T19:11:28+01:00",
+        "publishedAt": "2026-08-28T20:38:35+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cdj43zkjweyo?at_medium=RSS&at_campaign=rss"
       },
@@ -896,28 +1030,20 @@
         "url": "https://www.bbc.co.uk/news/articles/c1j4rkywx3lo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Other British athletes convicted in connection with coach Baptiste's sex assault of minor in Morocco",
-        "summary": "BBC Sport reveals that Will Sharman, Richard Sharman and Lamin Deen were also convicted in the case which led to Leon Baptiste's imprisonment.",
+        "title": "Sarfaraz denies knowing about Pakistan threat to end tour",
+        "summary": "Head coach Sarfaraz Ahmed says he and his players did not know about a Pakistan Cricket Board threat to the England and Wales Cricket Board over a Sky interview with the sons of Imran Khan.",
         "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T18:54:59+01:00",
+        "publishedAt": "2026-08-28T20:38:35+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/sport/athletics/articles/c5yenn85dqgo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/sport/cricket/articles/c17j0y17epdo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Six people injured after sign falls at Christian festival",
-        "summary": "Emergency services were called to reports of people in need of medical attention at Wiston Park.",
+        "title": "Right-wing commentator Milo Yiannopoulos detained by ICE",
+        "summary": "The British citizen, who lives and works in the US, has supported Trump and ICE agents in the past.",
         "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T19:45:43+01:00",
+        "publishedAt": "2026-08-28T20:45:00+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwyz52x45jxo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "'Terrorist connection' included in charges over vandalism at Trump's Scottish golf resort",
-        "summary": "Seven people accused of causing damage at Trump's resort could receive longer sentences if convicted.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T17:04:25+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c4gk2lqgkeno?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cj06jgq62v9o?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Satellite images reveal scale of flood devastation in Nepal villages",
@@ -1002,28 +1128,16 @@
         "postedAt": "2026-08-24"
       },
       {
-        "title": "DDaT- Head of People Data and Insight",
-        "summary": "UK Ministry of Defence · London, England, United Kingdom",
-        "meta": "UK · Posted Mon 17 Aug",
+        "title": "Lead Data Scientist - Public Sector (security cleared)",
+        "summary": "Kainos · Birmingham, England, United Kingdom",
+        "meta": "UK · Posted Sun 9 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/ddat-head-of-people-data-and-insight-at-uk-ministry-of-defence-4454277865",
+        "url": "https://uk.linkedin.com/jobs/view/lead-data-scientist-public-sector-security-cleared-at-kainos-4415398830",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "UK Ministry of Defence",
-        "location": "London, England, United Kingdom",
-        "postedAt": "2026-08-17"
-      },
-      {
-        "title": "Head of Applied Data Governance and Capability",
-        "summary": "Government Digital Service · England, United Kingdom",
-        "meta": "UK · Posted Thu 6 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-applied-data-governance-and-capability-at-government-digital-service-4448443170",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Government Digital Service",
-        "location": "England, United Kingdom",
-        "postedAt": "2026-08-06"
+        "company": "Kainos",
+        "location": "Birmingham, England, United Kingdom",
+        "postedAt": "2026-08-09"
       },
       {
         "title": "Director of Mobile and Web Platform",
@@ -1046,6 +1160,18 @@
         "contentType": "job",
         "countryFocus": "UK",
         "company": "LastPass",
+        "location": "UK",
+        "postedAt": "2026-08-27"
+      },
+      {
+        "title": "Senior/Strategic Digital Analytics Consultant - UK",
+        "summary": "Quantum Metric · UK",
+        "meta": "UK · Posted Thu 27 Aug",
+        "source": "Jobicy",
+        "url": "https://jobicy.com/jobs/151829-senior-strategic-digital-analytics-consultant-uk",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Quantum Metric",
         "location": "UK",
         "postedAt": "2026-08-27"
       }
