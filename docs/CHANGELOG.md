@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 28 August 2026: Open Horizon newsroom structural overhaul
 
-Status: implementation and local validation complete; publication pending
+Status: validated and published
 
 - Structural direction: adopted a premium editorial hierarchy inspired by Sky News UK while retaining Daily Briefs' Open Horizon identity, blue canvas, protected ordering, data rules, and bespoke profile sections.
 - Home: replaced the long flat desktop stack with intentional full-width newsroom modules, a concise Calendar treatment, a horizontal fact-and-place package, and a lead-plus-four TV grid. All five TV Picks remain visible.
@@ -14,6 +14,7 @@ Status: implementation and local validation complete; publication pending
 - Data integrity: replaced the incorrect West Malling weather image with Mark Percy's exact-place Northolt clock tower photograph, cached locally at 1,600 × 900 with Commons source and CC BY-SA 2.0 credit. The refresh now has a verified Northolt fallback.
 - Arsenal scope: removed a marketing vacancy and an academy signing from trusted Transfer watch. Future Arsenal.com items without explicit first-team context require separate approved-source player corroboration; job and commercial titles are rejected.
 - Validation: 25 unit tests, JavaScript syntax checks, Python compilation, diff hygiene, and the Playwright responsive suite pass. Screenshots cover Pete and Sofia Home, News, and Career plus Pete Arsenal, AI, Dida, and Birthday at 390 × 844 and 1,366 × 900.
+- Publication: PR #11 was published on 28 August 2026 after the Responsive UI check passed. The post-merge Morning refresh completed in commit `b1b0792`.
 - Rollback: preserved pre-overhaul main as `backup/pre-sky-news-overhaul-2026-08-28`.
 - Master brief update: version 3.5 records the permanent editorial hierarchy and transfer-scope rules; QA wording now matches the fact-first Around the world order.
 
