@@ -2,6 +2,15 @@
 
 Newest entries go first.
 
+## 28 August 2026: Open Horizon Daily Brief identity
+
+Status: selected by Pete for immediate publication; deployment validation required
+
+- Selected concept: minimalist yellow sunrise emerging from layered blue open pages.
+- Identity coverage: use the same selected mark for the Home navigation, browser favicon, Apple touch icon, Android saved-page icon, installable-app icons, maskable icon, manifest, and link-preview image.
+- Cache protection: every browser-facing icon and manifest uses a new immutable Open Horizon filename, while the origin-level `favicon.ico` and Apple touch fallback are also replaced.
+- Scope protected: no content, data, profile, layout, section, Arsenal branding, or navigation behaviour changes.
+
 ## 28 August 2026: Newest-first Local News, major-event-only sport and supplied cannon
 
 Status: implemented in draft, not published

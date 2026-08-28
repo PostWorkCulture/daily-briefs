@@ -13,13 +13,14 @@ VIEWPORTS = {
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 ICON_PATHS = {
-    "shortcut": "assets/icons/daily-brief-favicon-v2.ico",
-    "ico": "assets/icons/daily-brief-favicon-v2.ico",
-    "small": "assets/icons/daily-brief-favicon-32-v2.png",
-    "large": "assets/icons/daily-brief-192-v2.png",
-    "touch": "assets/icons/daily-brief-touch-v2.png",
-    "manifest": "daily-brief-v2.webmanifest",
+    "shortcut": "assets/icons/daily-brief-open-horizon-favicon-v1.ico",
+    "ico": "assets/icons/daily-brief-open-horizon-favicon-v1.ico",
+    "small": "assets/icons/daily-brief-open-horizon-favicon-32-v1.png",
+    "large": "assets/icons/daily-brief-open-horizon-192-v1.png",
+    "touch": "assets/icons/daily-brief-open-horizon-touch-v1.png",
+    "manifest": "daily-brief-open-horizon-v1.webmanifest",
 }
+HOME_LOGO_PATH = "assets/icons/daily-brief-open-horizon-master-v1.png"
 
 
 def check_icon_metadata_files() -> None:
@@ -32,6 +33,17 @@ def check_icon_metadata_files() -> None:
     for value in expected_root:
         if value not in root_html:
             raise AssertionError(f"root icon metadata is missing {value}")
+    if HOME_LOGO_PATH not in root_html:
+        raise AssertionError("Home navigation does not use the selected Open Horizon mark")
+    if "daily-brief-open-horizon-512-v1.png" not in root_html:
+        raise AssertionError("Open Graph metadata does not use the selected Open Horizon mark")
+    fallback_touch = ROOT / "apple-touch-icon.png"
+    explicit_touch = ROOT / ICON_PATHS["touch"]
+    if not fallback_touch.is_file() or fallback_touch.read_bytes() != explicit_touch.read_bytes():
+        raise AssertionError("origin-level Apple touch fallback does not match Open Horizon")
+    fallback_favicon = ROOT / "favicon.ico"
+    if not fallback_favicon.is_file() or fallback_favicon.stat().st_size < 5_000:
+        raise AssertionError("origin-level favicon fallback is missing or empty")
 
     for profile in ("pete", "sofia"):
         profile_html = (ROOT / profile / "index.html").read_text(encoding="utf-8")
@@ -59,12 +71,15 @@ def check_icon_metadata_files() -> None:
     manifest = json.loads((ROOT / ICON_PATHS["manifest"]).read_text(encoding="utf-8"))
     manifest_icons = {item.get("src") for item in manifest.get("icons", [])}
     expected_manifest_icons = {
-        "assets/icons/daily-brief-192-v2.png",
-        "assets/icons/daily-brief-512-v2.png",
-        "assets/icons/daily-brief-maskable-512-v2.png",
+        "assets/icons/daily-brief-open-horizon-192-v1.png",
+        "assets/icons/daily-brief-open-horizon-512-v1.png",
+        "assets/icons/daily-brief-open-horizon-maskable-512-v1.png",
     }
     if manifest.get("name") != "Daily Briefs" or manifest_icons != expected_manifest_icons:
         raise AssertionError(f"bookmark manifest metadata is incorrect: {manifest}")
+    fallback_manifest = json.loads((ROOT / "site.webmanifest").read_text(encoding="utf-8"))
+    if {item.get("src") for item in fallback_manifest.get("icons", [])} != expected_manifest_icons:
+        raise AssertionError("origin-level manifest fallback does not use Open Horizon")
 
     reminders = (ROOT / "js" / "home-reminders.js").read_text(encoding="utf-8")
     theme = (ROOT / "css" / "light-theme.css").read_text(encoding="utf-8")
@@ -162,6 +177,14 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Daily Brief Apple touch icon is missing")
         if page.locator('link[rel="manifest"]').count() != 1:
             raise AssertionError(f"{name}: Daily Brief web app manifest is missing")
+        home_logo = page.locator('[data-view-target="home"] .nav-home-logo')
+        if home_logo.count() != 1 or home_logo.get_attribute("src") != HOME_LOGO_PATH:
+            raise AssertionError(f"{name}: Home nav does not use the Open Horizon logo")
+        home_logo_size = home_logo.evaluate(
+            "el => ({width: el.naturalWidth, height: el.naturalHeight})"
+        )
+        if home_logo_size != {"width": 1024, "height": 1024}:
+            raise AssertionError(f"{name}: Home nav logo failed to decode: {home_logo_size}")
         birthday_balloon = page.locator('[data-view-target="birthdays"] .nav-balloon')
         balloon_count = birthday_balloon.count()
         if balloon_count != 1:
