@@ -16,14 +16,14 @@
     "sequence": 8
   },
   "weather": {
-    "temp": "21°",
-    "summary": "Heavy rain",
-    "condition": "Heavy rain",
+    "temp": "19°",
+    "summary": "Light rain",
+    "condition": "Light rain",
     "currentRainChance": 40,
     "daily": [
       {
         "date": "2026-08-29",
-        "high": 22,
+        "high": 20,
         "low": null,
         "summary": "Heavy Rain",
         "condition": "Heavy Rain",
@@ -36,30 +36,21 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-08-31",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-01",
-        "high": 23,
-        "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
-        "date": "2026-09-02",
-        "high": 23,
+        "date": "2026-09-01",
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -67,11 +58,29 @@
         "source": "Met Office"
       },
       {
+        "date": "2026-09-02",
+        "high": 22,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
         "date": "2026-09-03",
-        "high": 25,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-04",
+        "high": 25,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 20,
         "source": "Met Office"
       }
