@@ -1,47 +1,38 @@
 {
-  "updatedLabel": "Friday, 28 August 2026 · refreshed 9:36pm",
+  "updatedLabel": "Saturday, 29 August 2026 · refreshed 8:06am",
   "worldFact": {
-    "id": "papua-new-guinea-840-living-languages",
+    "id": "mexico-voladores-forty-metre-flight",
     "editorialPriority": "human-first",
-    "category": "Population record",
-    "country": "Papua New Guinea",
-    "place": "The world's most linguistically diverse country",
-    "source": "Guinness World Records",
-    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/67315-country-with-most-languages",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mount_Hagen_Cultural_Show%2C_Papua_New_Guinea%2C_2009.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Mount_Hagen_Cultural_Show,_Papua_New_Guinea,_2009.jpg",
-    "photoCredit": "Yves Picq · CC BY-SA 3.0",
-    "fact": "Papua New Guinea holds the record for the most living languages in one country: 840 were documented in 2019. Most of those languages are spoken by fewer than 1,000 people.",
-    "date": "2026-08-28",
-    "sequence": 7
+    "category": "Tradition at height",
+    "country": "Mexico",
+    "place": "The Voladores ceremony",
+    "source": "UNESCO Intangible Cultural Heritage",
+    "sourceUrl": "https://ich.unesco.org/en/decisions/4.COM/13.62",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ceremonia_ritual_de_los_Voladores%2C_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_01.JPG?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ceremonia_ritual_de_los_Voladores,_Cholula,_Puebla,_M%C3%A9xico,_2013-10-12,_DD_01.JPG",
+    "photoCredit": "Diego Delso · CC BY-SA 3.0",
+    "fact": "In the Voladores ceremony, four men launch themselves from a pole up to 40 metres high and spiral towards the ground on ropes. A fifth remains balanced on top, playing a flute and drum to honour the sun, winds and cardinal directions.",
+    "date": "2026-08-29",
+    "sequence": 8
   },
   "weather": {
-    "temp": "19°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
-    "currentRainChance": 30,
+    "temp": "18°",
+    "summary": "Heavy rain",
+    "condition": "Heavy rain",
+    "currentRainChance": 80,
     "daily": [
       {
-        "date": "2026-08-28",
-        "high": 20,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-08-29",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Heavy Rain",
         "condition": "Heavy Rain",
-        "rainChance": 50,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-08-30",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -54,16 +45,16 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-01",
-        "high": 22,
+        "high": 23,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 40,
+        "summary": "Light Rain",
+        "condition": "Light Rain",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -74,11 +65,20 @@
         "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
+      },
+      {
+        "date": "2026-09-03",
+        "high": 25,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 20,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 40%",
+      "label": "Check hourly Met Office forecast",
+      "detail": "Heavy Rain expected · rain chance around 80%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -86,37 +86,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Thursday 27 August 2026",
+      "dateLabel": "Friday 28 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Northolt",
-        "town": "Northolt",
-        "county": "Greater London",
+        "location": "Writtle",
+        "town": "Writtle",
+        "county": "Essex",
         "country": "England",
-        "displayLocation": "Northolt, Greater London",
-        "value": "27.0°C",
+        "displayLocation": "Writtle, Essex",
+        "value": "26.4°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=9ffb9d4e5868",
-          "page": "https://commons.wikimedia.org/wiki/File:Northolt_clock_tower_-_geograph.org.uk_-_7246077.jpg",
-          "credit": "Mark Percy · CC BY-SA 2.0",
-          "alt": "Northolt clock tower on Northolt Village Green, Greater London",
+          "src": "assets/weather-extremes/hot.webp?v=7a3b051988bc",
+          "page": "https://commons.wikimedia.org/wiki/File:Former_Crompton_%5E_Co_Factory,_Writtle_Road_-_geograph.org.uk_-_3351975.jpg",
+          "credit": "Paul Franks · CC BY-SA 2.0",
+          "alt": "Former Crompton & Co Factory, Writtle Road",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Shap",
-        "town": "Shap",
-        "county": "Cumbria",
+        "location": "Exeter Airport No 2",
+        "town": "Exeter",
+        "county": "Devon",
         "country": "England",
-        "displayLocation": "Shap, Cumbria",
-        "value": "9.5°C",
+        "displayLocation": "Exeter, Devon",
+        "value": "9.9°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=8e8504d9fd4c",
-          "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(A6),_Shap_-_geograph.org.uk_-_3344660.jpg",
-          "credit": "David Dixon · CC BY-SA 2.0",
-          "alt": "Main Street (A6), Shap",
+          "src": "assets/weather-extremes/cold.webp?v=29b3920bdb6d",
+          "page": "https://commons.wikimedia.org/wiki/File:Council_offices,_Marsh_Barton,_Exeter_-_geograph.org.uk_-_4307390.jpg",
+          "credit": "David Smith · CC BY-SA 2.0",
+          "alt": "Council offices, Marsh Barton, Exeter",
           "width": 1600,
           "height": 900
         }
@@ -251,20 +251,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -276,6 +262,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -392,140 +392,132 @@
     }
   ],
   "lead": {
-    "title": "Man Utd sign Swedish winger Jusu Bah for £400k",
+    "title": "Amazon backs Sweden’s wind power",
     "summary": "",
     "meta": "Fri 28 Aug",
-    "publishedAt": "2026-08-28T14:06:40+01:00",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DX1FoYjluM0ZWRnRwZWVhVWNPZjlLMV8yOUZGekx3OVNzWFdxcDhOYWZHQ2dzLVVFc2J1anZ4LXNHZlVQRW40SFBsZVE3aTJhbERyckhJWnZqaEw2WHpSSEFDSmxSNFNGaGc?oc=5"
+    "publishedAt": "2026-08-28T13:13:53+01:00",
+    "source": "Energy Live News",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JSEhkR0MyTllhOTVBbEhEcmJhX3ZqckJfQ29jeHVJbF8yQU9xUGhycTduU0EtYl8zSFY2bWlTNjdGR2JTRW4tQnJ1YmtiRGt4ckQ1MVZPcnF6ZklscnBUeWhaSmQ5c3NZQnpVeWtJSGlRMVlCTmNrMnI1NGsyRVk?oc=5"
   },
   "interests": [
     {
-      "title": "Man Utd sign Swedish winger Jusu Bah for £400k",
+      "title": "Amazon backs Sweden’s wind power",
       "summary": "",
       "meta": "Fri 28 Aug",
-      "publishedAt": "2026-08-28T14:06:40+01:00",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DX1FoYjluM0ZWRnRwZWVhVWNPZjlLMV8yOUZGekx3OVNzWFdxcDhOYWZHQ2dzLVVFc2J1anZ4LXNHZlVQRW40SFBsZVE3aTJhbERyckhJWnZqaEw2WHpSSEFDSmxSNFNGaGc?oc=5",
+      "publishedAt": "2026-08-28T13:13:53+01:00",
+      "source": "Energy Live News",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JSEhkR0MyTllhOTVBbEhEcmJhX3ZqckJfQ29jeHVJbF8yQU9xUGhycTduU0EtYl8zSFY2bWlTNjdGR2JTRW4tQnJ1YmtiRGt4ckQ1MVZPcnF6ZklscnBUeWhaSmQ5c3NZQnpVeWtJSGlRMVlCTmNrMnI1NGsyRVk?oc=5",
       "section": "Sweden"
     },
     {
-      "title": "Surrey football club stadium bars closed ahead of local derby as fans stage protest",
+      "title": "Lucy Worsley: ‘I had my annual appraisal in Princess Margaret’s bathroom’",
       "summary": "",
-      "meta": "Fri 28 Aug",
-      "publishedAt": "2026-08-28T16:40:00+01:00",
-      "source": "Surrey Live",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQ0FzLWpYdXFxT2ctOUdkNWlaeFJLNVR1M3RsbFRfVTc1UW1UNnItTDctYl91dFlmZDctXzBWdzF2X0wxM1JfWFgweHF3emJEUTU3TnkzZWNpU0ZYLUtWM3hxSlU2WjJxcVNQbl9HMTdkOXE1aTFIU0VtTEZBZjZzUG5wdk9KcUhiV0pKOFJIVG92djE0ZFHSAZYBQVVfeXFMTkNBcy1qWHVxcU9nLTlHZDVpWnhSSzVUdTN0bGxUX1U3NVFtVDZyLUw3LWJfdXRZZmQ3LV8wVncxdl9MMTNSX1hYMHhxd3piRFE1N055M2VjaVNGWC1LVjN4cUpVNloycXFTUG5fRzE3ZDlxNWkxSFNFbUxGQWY2c1BucHZPSnFIYldKSjhSSFRvdnYxNGRR?oc=5",
+      "meta": "Sat 29 Aug",
+      "publishedAt": "2026-08-29T05:00:00+01:00",
+      "source": "The Times",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQODQyc25nNWxfa1NubGg0c0kxa3RfY05Rc18ydWNHNkt3eTJjNTcwdzE1Qy1qNzEzM0tRQTRTVzhubjRhLWFCMjNkWkUtdXEwbnk3UUJvYmh1NlRncDhWZFpfR0hOUXJaNVRTSDBYVmhBanpVT0xDM3F0VnJka21ZZFpfWDkycXY2Vl83cVdQdGJ4WV80UFFqd3I4NEtqbldCUk1MdjRuUllYYmR3enEwWUV0eV93RTJJMEJ1MTN4RVJfLWtqeWdKWlRvM2c?oc=5",
       "section": "Local"
     },
     {
-      "title": "Murder 24/7 on BBC iPlayer is the best true crime documentary I've seen in years — all because it's made one simple yet important change",
+      "title": "Apple TV+ series Silo reveals central mystery in latest episode",
       "summary": "",
-      "meta": "Sat 15 Aug",
-      "publishedAt": "2026-08-15T08:00:00+01:00",
-      "source": "TechRadar",
-      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQaHgwR1RjajNzM3VtM0NsVE9Zc0hwV0IyTWRESnJVQ1dUbW5vbGpMNzNEdGk0NXF2eWkzbmtlUWFFOVBVWTRJaXhLQmR3d3AyZHRfUnlRWHk5OFk0ZDQzbkE2X2hZMXdCcFhJeXVaT24wQjJyMFBnclI0d080MXFMeXJFS1dCNTlJVk0wNHBGRkFFOXNYLTVsdk1WNUt4Z01mcVNwZTVIdVFQSm52NV9OR0pnNEdtNTlIY2tmWW5LdWUzWG1mTHpGbVAyaVN6am92NnhDeFZYM3VPWHFsZDBiSW96MGgtLS0zanlkWm51RG8xSlVyVllocXFPeGlvc09lZ0k1VUVIbVFGTmFsYVR6ZFBBUlRNdjNVQnlOT3A0NnkzdmZkTEE?oc=5",
-      "preferenceScore": 150,
+      "meta": "Mon 17 Aug",
+      "publishedAt": "2026-08-17T08:00:00+01:00",
+      "source": "The Independent",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdjB1bGRWVWdhNmJxVXlNcU1pdzZhLWZsTDVOLUNlNTZOUVFWYXdMMm5aUThyY0dMMThTbUs2U20zZVVIaTdrSENZWFhOb3FFUUJDRDNWTHN2ODVhRXFXREVrV21CUFA2TjR5aVhITlI2SVVuMnZPVU41dUFwZVFkVGVzT2t0REtOSW5GaVllWVZ2cG9qaWRkSFFITXppZGUtSDBRQXRBMC1SVUsyZnpz?oc=5",
+      "preferenceScore": 140,
       "section": "Watch"
     }
   ],
   "watch": [
     {
-      "title": "Vigil",
-      "summary": "After the murder of a British citizen in the Arctic, DCI Amy Silva and DI Kirsten Longacre investigate. As Amy looks into a possible conspiracy on Scottish soil, Kirsten comes up against…",
-      "meta": "BBC iPlayer · Sun 30 Aug, 6am",
-      "source": "BBC iPlayer",
-      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597202.jpg",
-      "artworkAlt": "Vigil programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-30",
-      "showId": 45879,
-      "episodeId": 3701699,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-28",
-      "preferenceScore": 266.0
-    },
-    {
-      "title": "Love Cheats",
-      "summary": "A global music icon falls for a wealthy businessman, and thinks she is living the dream when she falls pregnant. But his erratic behaviour and absences raise alarm bells, and a trip to New…",
-      "meta": "Channel 4 · Sun 30 Aug, 10:15pm",
+      "title": "Richard E. Grant's Very Modern Odyssey",
+      "summary": "In Corfu, Richard receives as warm a welcome as Odysseus, cooks a special lunch, and brushes up on his archery. His last stop is Ithaca - Odysseus's home.",
+      "meta": "Channel 4 · Tomorrow, 8pm",
       "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/love-cheats",
+      "url": "https://www.channel4.com/programmes/richard-e-grants-very-modern-odyssey",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349372.jpg",
-      "artworkAlt": "Love Cheats programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596358.jpg",
+      "artworkAlt": "Richard E. Grant's Very Modern Odyssey programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-30",
-      "showId": 80197,
-      "episodeId": 3717210,
+      "showId": 93402,
+      "episodeId": 3691366,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-28",
-      "preferenceScore": 241.4
+      "generatedDate": "2026-08-29",
+      "preferenceScore": 204.5
     },
     {
-      "title": "24 Hours in Police Custody",
-      "summary": "The case of a 17-year-old boy who was left critically injured on the roadside after suffering catastrophic head injuries. At first it looks like a hit-and-run, but it quickly becomes…",
-      "meta": "Channel 4 · Sun 30 Aug, 9pm",
+      "title": "Last Seen On Holiday",
+      "summary": "Cases of people who disappeared abroad, and the families left wondering what has become of them.",
+      "meta": "Crime & Investigation · Mon 31 Aug, 9pm",
+      "source": "Crime & Investigation",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/last-seen-holiday",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589478.jpg",
+      "artworkAlt": "Last Seen On Holiday programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-31",
+      "showId": 93463,
+      "episodeId": 3709101,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-29",
+      "preferenceScore": 195.9
+    },
+    {
+      "title": "The Jury: Murder Trial",
+      "summary": "The first in a two-part dramatic restaging of a real-life murder trial, in which two brothers, one aged 14, are charged with killing their stepfather. The boys admit to stabbing the victim…",
+      "meta": "Channel 4 · Tue 1 Sep, 9pm",
       "source": "Channel 4",
-      "url": "http://www.channel4.com/programmes/24-hours-in-police-custody",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/20/50236.jpg",
-      "artworkAlt": "24 Hours in Police Custody programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-30",
-      "showId": 4156,
-      "episodeId": 3717208,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-28",
-      "preferenceScore": 215.5
-    },
-    {
-      "title": "Benidorm Is Murder",
-      "summary": "On Levante Beach, wealthy Mick claims a lounger as his kingdom, surrounded by family and friends. Following a jellyfish incident, he falls asleep beneath his Union Jack hat and never…",
-      "meta": "5 · Available since yesterday",
-      "source": "5",
-      "url": "https://www.channel5.com/show/benidorm-is-murder",
+      "url": "https://www.channel4.com/programmes/the-jury-murder-trial",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/633/1584743.jpg",
-      "artworkAlt": "Benidorm Is Murder programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/607/1517580.jpg",
+      "artworkAlt": "The Jury: Murder Trial programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-08-27",
-      "showId": 86071,
-      "episodeId": 3700534,
+      "airdate": "2026-09-01",
+      "showId": 70799,
+      "episodeId": 3706817,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-28",
-      "preferenceScore": 184.8
+      "generatedDate": "2026-08-29",
+      "preferenceScore": 170.2
     },
     {
-      "title": "Star Trek: Strange New Worlds",
-      "summary": "The Enterprise falls into a slipstream that pushes them to a catastrophic warp threshold.",
-      "meta": "Paramount+ · Available since yesterday",
+      "title": "Lioness",
+      "summary": "Joe leads the hunt as her team exposes a hidden network operating through covert handlers, while Kaitlyn and Westfield hustle to assess the threat.",
+      "meta": "Paramount+ · New tomorrow",
       "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/",
-      "badge": "Sci-fi",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596496.jpg",
-      "artworkAlt": "Star Trek: Strange New Worlds programme artwork",
+      "url": "https://www.paramountplus.com/shows/lioness/",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1587727.jpg",
+      "artworkAlt": "Lioness programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-08-27",
-      "showId": 48090,
-      "episodeId": 3604738,
+      "airdate": "2026-08-30",
+      "showId": 50415,
+      "episodeId": 3638307,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-28",
-      "preferenceScore": 135.0
+      "generatedDate": "2026-08-29",
+      "preferenceScore": 139.0
+    },
+    {
+      "title": "The Gentlemen",
+      "summary": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
+      "meta": "Netflix · New thu 3 sep",
+      "source": "Netflix",
+      "url": "https://www.netflix.com/title/81437051",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597311.jpg",
+      "artworkAlt": "The Gentlemen programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-03",
+      "showId": 64992,
+      "episodeId": 3667664,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-29",
+      "preferenceScore": 138.0
     }
   ],
   "sections": {
     "Sweden": [
-      {
-        "title": "Man Utd sign Swedish winger Jusu Bah for £400k",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T14:06:40+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DX1FoYjluM0ZWRnRwZWVhVWNPZjlLMV8yOUZGekx3OVNzWFdxcDhOYWZHQ2dzLVVFc2J1anZ4LXNHZlVQRW40SFBsZVE3aTJhbERyckhJWnZqaEw2WHpSSEFDSmxSNFNGaGc?oc=5"
-      },
       {
         "title": "Amazon backs Sweden’s wind power",
         "summary": "",
@@ -535,28 +527,12 @@
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JSEhkR0MyTllhOTVBbEhEcmJhX3ZqckJfQ29jeHVJbF8yQU9xUGhycTduU0EtYl8zSFY2bWlTNjdGR2JTRW4tQnJ1YmtiRGt4ckQ1MVZPcnF6ZklscnBUeWhaSmQ5c3NZQnpVeWtJSGlRMVlCTmNrMnI1NGsyRVk?oc=5"
       },
       {
-        "title": "Sweden to deploy fighter jets, warships to Finland",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T13:03:34+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0c1SlRBRmozUHNSTkVNVGNXZkF4TVBGRE5ROTRtUnVSU29vak9sSVNHZGJ3VWtPNFMyVUJPWGN2TnhVOWUxYzBMQ3ZOQUFRenM5Z2t2M25WVjI5Wnh6SE9PX1JjZl9tVWM2Q1pSLUtFbjAyeWM4dnVNbElUN3M1SDE3T2FxS0k0R3FsU3B6elRKWU51LWQ3N1UxQ05jdnhSYlB0dUxlbVdMVDg?oc=5"
-      },
-      {
         "title": "Sweden to deploy jets and warships to help Finland counter drones",
         "summary": "",
         "meta": "Fri 28 Aug",
         "publishedAt": "2026-08-28T13:39:11+01:00",
         "source": "euractiv.com",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLUY5eWlNLVA3UEFKN3VwUElIRXBYZW9ZVHhFell6U3R4QjNOTlJuTHVpVTJXVHRyVWNsczhOcUw4d0ZCVHJXWDFuOWRkTFRrZGpHTThzTDJrczdCNWJQYTJCWm5BdThpa0pORVY0RWZmQ0ctZTFIcGtLVE5HNnRENjY3bEJvamRKUmF2eW9IVlRTTVpzeTFMMzF0dGc?oc=5"
-      },
-      {
-        "title": "Amazon Agrees to Buy Power From Four Swedish Wind Farms",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T09:04:46+01:00",
-        "source": "Energy Connects",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYUdVbTZxY1ZXdHZQRlluNi0wQjZ6NmVnVy1rYi12cEdjbHNnRVVZWnR1QzdFMVBHTlU1cTd4U2pSSERfRXJrNElmZWZfaEczY2d0eWxjQnNXZ2lmNHpkekNoMG5ZQXJHaVMzaGVCVUFfaWRMaEdMOWE5RmxoWGRNQUtjM0pWWjM4VmlkWk9yc29kTlotTF9iTTBVMy1MR25ZWko2R1Y0N0ZqT2swRWozN0h4eFh5QQ?oc=5"
       },
       {
         "title": "France opens door to fighter jet cooperation with Sweden",
@@ -573,9 +549,41 @@
         "publishedAt": "2026-08-28T15:58:53+01:00",
         "source": "Little Black Book | LBBOnline",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaQnJybWhJT3ZTelJObFUtdV90QlVkRi1qTHozRlI0NEk3U211S3hPNjVnenVxOGlOYVRZb2dLZThKbGNUdkVvSWc5dncxUW9oWF9JWElIaVh3UUZXQ2xnWXpxOVdja25DdmVONkZTNkZydVRaRW1hdXl3RjYwMFU?oc=5"
+      },
+      {
+        "title": "Manchester United sign Swedish winger Monica Jusu Bah for £400k",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T14:06:40+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pdS1FeWgwRGhjTWdxMDd5bXM5cXk2cUlCM1liUmc5bXB2Z3o4ejZXSEdHMHo3NGZTUjI0QXVrdkJvNlJRQnBaOEdGbWxfWFl6Mldyb1RXU0tOSTRFWkJ1Nzk5Z3FFVVk?oc=5"
+      },
+      {
+        "title": "Sweden to deploy fighter jets, warships to Finland",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T13:03:34+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0c1SlRBRmozUHNSTkVNVGNXZkF4TVBGRE5ROTRtUnVSU29vak9sSVNHZGJ3VWtPNFMyVUJPWGN2TnhVOWUxYzBMQ3ZOQUFRenM5Z2t2M25WVjI5Wnh6SE9PX1JjZl9tVWM2Q1pSLUtFbjAyeWM4dnVNbElUN3M1SDE3T2FxS0k0R3FsU3B6elRKWU51LWQ3N1UxQ05jdnhSYlB0dUxlbVdMVDg?oc=5"
+      },
+      {
+        "title": "Finland and Sweden team up to boost counter-drone defenses",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T16:59:22+01:00",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ2xlMWc1aWlFemR4ZGw0TGVuVWVLUGs1emY0ZkdKZmM0STk0c3pLeUlIOVl2ZlhxdGxsRjNWQUNnVDNFcGotQkl5SXlITVp4emF4aHFmMjRlbHRSc01SaWtGS19TNW9GdnJDWFlybkFvdFVQUWh0QktGVlNNR1FLSkVRd2Q2UkRxdjJkd3ZSZXRZYUxESXpoMFhZRQ?oc=5"
       }
     ],
     "Local news": [
+      {
+        "title": "Lucy Worsley: ‘I had my annual appraisal in Princess Margaret’s bathroom’",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T05:00:00+01:00",
+        "source": "The Times",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQODQyc25nNWxfa1NubGg0c0kxa3RfY05Rc18ydWNHNkt3eTJjNTcwdzE1Qy1qNzEzM0tRQTRTVzhubjRhLWFCMjNkWkUtdXEwbnk3UUJvYmh1NlRncDhWZFpfR0hOUXJaNVRTSDBYVmhBanpVT0xDM3F0VnJka21ZZFpfWDkycXY2Vl83cVdQdGJ4WV80UFFqd3I4NEtqbldCUk1MdjRuUllYYmR3enEwWUV0eV93RTJJMEJ1MTN4RVJfLWtqeWdKWlRvM2c?oc=5"
+      },
       {
         "title": "Surrey football club stadium bars closed ahead of local derby as fans stage protest",
         "summary": "",
@@ -663,17 +671,81 @@
         "publishedAt": "2026-08-26T15:49:00+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5"
-      },
-      {
-        "title": "New £632m contract to change rubbish collection across Surrey",
-        "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T13:29:41+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IWEh3UXNWV0lZNG1kRE5tM2daZFJqUzNpLVBxdWhhZnBYR0RVZ3kxLTNDUGVYeFNGWThNUU11WHZLY096aERNOTBSY1pRYWZRSHFkaTM3X3Bwdk42?oc=5"
       }
     ],
     "UK news": [
+      {
+        "title": "97-year-old woman rescued after Nepali floods looked like 'a warrior'",
+        "summary": "A 97-year-old woman, Guna Maya Bohara, survived the flash floods and was rescued using an excavator.",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T22:17:54+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/videos/cj64kgrpgjdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
+        "summary": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China.",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T04:54:11+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Man dies and at least six injured after sign falls at Christian festival",
+        "summary": "A 41-year-old man died at the Christian event near Steyning in West Sussex, police say.",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T06:29:27+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwyz52x45jxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
+        "summary": "A woman who rented out homes to two al-Qaeda members speaks publicly for the first time - to the BBC.",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T01:32:17+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Close race as Iceland votes on whether to restart talks on joining EU",
+        "summary": "Turbulent international affairs have brought the vote forward, but the campaign has focused more on Iceland's vital fishing industry.",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T01:56:19+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cn45vdxyvvlo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "The race to stop England running out of water",
+        "summary": "Who is to blame for the summer drought, and can England future-proof its water supplies?",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T01:46:00+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/clyrv84yd9ko?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood",
+        "summary": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood.",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T11:35:06+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/videos/cj06j16vpr5o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Satellite images reveal scale of flood devastation in Nepal villages",
+        "summary": "Before-and-after images show villages, bridges and a key Nepal-Tibet border crossing washed away by devastating floodwaters.",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T18:36:54+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cd68vpjv21do?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "This Indian pilgrim was about to enter Tibet for her dream tour - then her WhatsApp messages stopped",
+        "summary": "Her family is among hundreds anxiously waiting for news after the deadly flash floods.",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T10:31:42+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c70d41g40njo?at_medium=RSS&at_campaign=rss"
+      },
       {
         "title": "Videos show people survive floodwaters on balcony in Nepal",
         "summary": "BBC Verify has located several videos from disaster-struck areas of the Trishuli river after deadly floods swept through.",
@@ -683,95 +755,31 @@
         "url": "https://www.bbc.co.uk/news/videos/cx2z81kmeggo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "What we know about the 33 British nationals missing in Nepal",
-        "summary": "Among those reported missing after deadly floods are a 13-year-old girl and 14-year-old boy.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T20:21:57+01:00",
+        "title": "Charli XCX electrifies Reading Festival with era-spanning set",
+        "summary": "The British singer and Irish rock band Fontaines DC both headlined the first night of Reading for 2026.",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T00:34:34+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c93v70w79gxo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c750ng9grk0o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Norway's 'grandfather': King Harald remembered as son Haakon takes the throne",
-        "summary": "Norwegians paid their respects to the late King Harld after his death on Friday morning.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T19:11:13+01:00",
+        "title": "Sweetcorn ice creams and pastries: The latest 'swavoury' trend taking over your feed",
+        "summary": "From lattes to pastries, UK foodies are embracing the humble sweetcorn as more than a pizza topping.",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T02:13:14+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/c05rzd115y5o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "BBC tracks one week of Israeli settler violence in occupied West Bank",
-        "summary": "The BBC's Lucy Williamson reports on settler attacks on Palestinians, which have been observed over the last week alone.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T15:06:13+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/c3wjq1188g9o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Six people injured after sign falls at Christian festival",
-        "summary": "Emergency services were called to reports of people in need of medical attention at Wiston Park.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T20:28:26+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwyz52x45jxo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Wife of man who died after turbulence sues Singapore Airlines",
-        "summary": "Lawyers for Linda Kitchen say her husband was \"fatally injured\" after the flight dropped 6,000 ft.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T18:47:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cqlwrpey1epo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Paul Heaton scores first number one album as Dolly Parton's 9 to 5 finally reaches top 40",
-        "summary": "Heaton's solo album tops the chart, while Parton's 1980 US hit reaches the UK top 40 at last.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T17:48:36+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c8d3ml106j8o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Disorder at balloon release for man who died in A66 car crash 'put lives at risk', MP says",
-        "summary": "Police now say they are not currently linking a deadly crash on the A66 to a fatal house fire.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T20:38:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cdj43zkjweyo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Four plead guilty to arson attack on Jewish community ambulances",
-        "summary": "Four vehicles run by a charity were set alight in Golders Green, north-west London, causing explosions in March.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T19:41:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c1j4rkywx3lo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Sarfaraz denies knowing about Pakistan threat to end tour",
-        "summary": "Head coach Sarfaraz Ahmed says he and his players did not know about a Pakistan Cricket Board threat to the England and Wales Cricket Board over a Sky interview with the sons of Imran Khan.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T20:38:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/sport/cricket/articles/c17j0y17epdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Right-wing commentator Milo Yiannopoulos detained by ICE",
-        "summary": "The British citizen, who lives and works in the US, has supported Trump and ICE agents in the past.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T20:45:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cj06jgq62v9o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Satellite images reveal scale of flood devastation in Nepal villages",
-        "summary": "Before-and-after images show villages, bridges and a key Nepal-Tibet border crossing washed away by devastating floodwaters.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T18:36:54+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cd68vpjv21do?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c4gdvvp07dzo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
+      {
+        "title": "Our decision on Cursor following its acquisition by SpaceX",
+        "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T07:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex"
+      },
       {
         "title": "Supporting Thailand’s next generation of AI startups",
         "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
@@ -797,14 +805,6 @@
         "url": "https://openai.com/index/expanding-our-presence-in-brazil"
       },
       {
-        "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-        "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T11:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
-      },
-      {
         "title": "Learning never stops: How AI makes learning continuous",
         "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
         "meta": "Wed 26 Aug",
@@ -813,12 +813,12 @@
         "url": "https://openai.com/index/learning-never-stops"
       },
       {
-        "title": "The Hugging Face incident and the road ahead",
-        "summary": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
+        "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+        "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
         "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T01:00:00+01:00",
+        "publishedAt": "2026-08-26T11:00:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
+        "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
       },
       {
         "title": "Gemini Omni 1.1 Flash lets you build with more control",
@@ -847,8 +847,8 @@
       {
         "title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules",
         "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T18:35:00+01:00",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T04:19:00+01:00",
         "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5"
       }
@@ -866,6 +866,32 @@
         "location": "London, England, United Kingdom",
         "countryFocus": "UK",
         "postedAt": "2026-08-11"
+      },
+      {
+        "title": "Product Lead",
+        "summary": "Street Group · Manchester, England, United Kingdom",
+        "meta": "3+ WFH days · Posted Mon 17 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
+        "contentType": "job",
+        "workArrangement": "3-wfh-days",
+        "company": "Street Group",
+        "location": "Manchester, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-17"
+      },
+      {
+        "title": "Head of Product",
+        "summary": "LocalStack · London, England, United Kingdom",
+        "meta": "Remote · Posted Fri 7 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-localstack-4450702579",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "LocalStack",
+        "location": "London, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-07"
       }
     ]
   }
