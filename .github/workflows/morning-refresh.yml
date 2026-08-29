@@ -2,7 +2,10 @@ name: Morning refresh
 
 on:
   schedule:
-    - cron: '30 4 * * *'
+    # GitHub cron is UTC. Half-hour opportunities from 05:00 through 08:30
+    # cover a 06:00 Europe/London start under both GMT and BST, then recover
+    # from a delayed or missed event. The gate skips pre-06:00 and fresh runs.
+    - cron: '0,30 5-8 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -28,18 +31,28 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Check 6am London freshness
+        id: refresh-gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: python scripts/refresh_gate.py
+
       - name: Set up Python
+        if: steps.refresh-gate.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install dependencies
+        if: steps.refresh-gate.outputs.should_run == 'true'
         run: pip install -r requirements.txt
 
       - name: Run refresh regression tests
+        if: steps.refresh-gate.outputs.should_run == 'true'
         run: python -m unittest discover -s tests -p 'test_*.py'
 
       - name: Refresh brief data
+        if: steps.refresh-gate.outputs.should_run == 'true'
         env:
           GOOGLE_CALENDAR_ICS_URL: ${{ secrets.GOOGLE_CALENDAR_ICS_URL }}
         run: |
@@ -52,6 +65,7 @@ jobs:
           python scripts/refresh_story_images.py
 
       - name: Validate protected brief rules
+        if: steps.refresh-gate.outputs.should_run == 'true'
         run: |
           python - <<'PY'
           import json
@@ -221,6 +235,7 @@ jobs:
           PY
 
       - name: Commit refreshed data
+        if: steps.refresh-gate.outputs.should_run == 'true'
         run: |
           git config user.name "Daily Briefs Bot"
           git config user.email "actions@users.noreply.github.com"

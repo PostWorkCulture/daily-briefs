@@ -48,6 +48,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Desktop Calendar uses four summary boxes in one row above a natural-height event list; short event lists do not stretch.
 - [ ] News groups use lead, supporting, and compact stream tiers without changing source order.
 - [ ] A text-only News lead uses the 7/5 desktop lead-and-support rail; it never reserves an empty media area.
+- [ ] Desktop stream stories share one flat divided paper rail with no individual tile rounding or shadow; mobile secondary stories remain one divided feed.
 - [ ] An image-verified desktop lead places media left and copy right; mobile keeps lead media above its copy.
 - [ ] News and Arsenal media blocks appear only after the exact publisher image loads and decodes at 1,200 × 675 or larger; failed or slow images leave a text-only story with no empty dark slab.
 - [ ] AI and Career have no orphan stream card at 900–1,099 px or at the current Chromebook width.
@@ -84,6 +85,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] No Anthropic/OpenAI dependency or paid API requirement.
 - [ ] No private calendar URL committed.
 - [ ] Morning workflow and protected validations pass.
+- [ ] Full refresh targets 06:00 Europe/London across GMT and BST, retries only while the edition is stale, and skips once both profiles are current.
 - [ ] Live site resolves after deployment.
 
 ## Sign-off
