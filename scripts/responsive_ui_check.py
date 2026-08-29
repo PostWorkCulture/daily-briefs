@@ -14,14 +14,20 @@ VIEWPORTS = {
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 ICON_PATHS = {
-    "shortcut": "assets/icons/daily-brief-open-horizon-favicon-v1.ico",
-    "ico": "assets/icons/daily-brief-open-horizon-favicon-v1.ico",
-    "small": "assets/icons/daily-brief-open-horizon-favicon-32-v1.png",
-    "large": "assets/icons/daily-brief-open-horizon-192-v1.png",
-    "touch": "assets/icons/daily-brief-open-horizon-touch-v1.png",
-    "manifest": "daily-brief-open-horizon-v1.webmanifest",
+    "shortcut": "assets/icons/daily-brief-open-horizon-favicon-v2.ico",
+    "ico": "assets/icons/daily-brief-open-horizon-favicon-v2.ico",
+    "small": "assets/icons/daily-brief-open-horizon-favicon-32-v2.png",
+    "large": "assets/icons/daily-brief-open-horizon-192-v2.png",
+    "touch": "assets/icons/daily-brief-open-horizon-touch-v2.png",
+    "manifest": "daily-brief-open-horizon-v2.webmanifest",
 }
-HOME_LOGO_PATH = "assets/icons/daily-brief-open-horizon-master-v1.png"
+HOME_LOGO_PATH = "assets/icons/daily-brief-open-horizon-master-v2.png"
+COMPANY_LOGO_PATHS = {
+    "OpenAI": "assets/company-logos/openai.svg",
+    "Google": "assets/company-logos/google.svg",
+    "Google Gemini": "assets/company-logos/google-gemini.svg",
+    "Anthropic": "assets/company-logos/anthropic.svg",
+}
 
 
 def check_icon_metadata_files() -> None:
@@ -34,9 +40,11 @@ def check_icon_metadata_files() -> None:
     for value in expected_root:
         if value not in root_html:
             raise AssertionError(f"root icon metadata is missing {value}")
+    if "searchParams.set('icon','v2')" not in root_html:
+        raise AssertionError("root page does not apply the v2 bookmark cache key")
     if HOME_LOGO_PATH not in root_html:
         raise AssertionError("Home navigation does not use the selected Open Horizon mark")
-    if "daily-brief-open-horizon-512-v1.png" not in root_html:
+    if "daily-brief-open-horizon-512-v2.png" not in root_html:
         raise AssertionError("Open Graph metadata does not use the selected Open Horizon mark")
     fallback_touch = ROOT / "apple-touch-icon.png"
     explicit_touch = ROOT / ICON_PATHS["touch"]
@@ -51,6 +59,8 @@ def check_icon_metadata_files() -> None:
         for value in expected_root:
             if f"../{value}" not in profile_html:
                 raise AssertionError(f"{profile} icon metadata is missing ../{value}")
+        if f"profile={profile}&locked=1&icon=v2" not in profile_html:
+            raise AssertionError(f"{profile} route does not use the v2 bookmark cache key")
 
         profile_data = json.loads((ROOT / "data" / f"{profile}.json").read_text(encoding="utf-8"))
         if profile == "pete":
@@ -78,15 +88,25 @@ def check_icon_metadata_files() -> None:
     manifest = json.loads((ROOT / ICON_PATHS["manifest"]).read_text(encoding="utf-8"))
     manifest_icons = {item.get("src") for item in manifest.get("icons", [])}
     expected_manifest_icons = {
-        "assets/icons/daily-brief-open-horizon-192-v1.png",
-        "assets/icons/daily-brief-open-horizon-512-v1.png",
-        "assets/icons/daily-brief-open-horizon-maskable-512-v1.png",
+        "assets/icons/daily-brief-open-horizon-192-v2.png",
+        "assets/icons/daily-brief-open-horizon-512-v2.png",
+        "assets/icons/daily-brief-open-horizon-maskable-512-v2.png",
     }
     if manifest.get("name") != "Daily Briefs" or manifest_icons != expected_manifest_icons:
         raise AssertionError(f"bookmark manifest metadata is incorrect: {manifest}")
+    if any(manifest.get(key) != "/daily-briefs/" for key in ("id", "start_url", "scope")):
+        raise AssertionError(f"bookmark manifest is not scoped to the Daily Briefs project: {manifest}")
     fallback_manifest = json.loads((ROOT / "site.webmanifest").read_text(encoding="utf-8"))
     if {item.get("src") for item in fallback_manifest.get("icons", [])} != expected_manifest_icons:
         raise AssertionError("origin-level manifest fallback does not use Open Horizon")
+
+    tabs_script = (ROOT / "js" / "tabs-dida.js").read_text(encoding="utf-8")
+    for company, relative_path in COMPANY_LOGO_PATHS.items():
+        logo_path = ROOT / relative_path
+        if not logo_path.is_file() or logo_path.stat().st_size < 250:
+            raise AssertionError(f"AI company logo is missing or empty: {company}")
+        if relative_path not in tabs_script:
+            raise AssertionError(f"AI company logo is not mapped by the renderer: {company}")
 
     reminders = (ROOT / "js" / "home-reminders.js").read_text(encoding="utf-8")
     theme = (ROOT / "css" / "light-theme.css").read_text(encoding="utf-8")
@@ -142,6 +162,8 @@ def check_profile_routes(browser) -> None:
             )
             if route_state["profile"] != profile or route_state["navProfile"] != profile:
                 raise AssertionError(f"{url}: loaded the wrong profile identity: {route_state}")
+            if "icon=v2" not in page.url:
+                raise AssertionError(f"{url}: did not apply the v2 bookmark cache key")
             if not route_state["switchHidden"] or route_state["switchWidth"] or route_state["switchHeight"]:
                 raise AssertionError(f"{url}: locked switch still occupies space: {route_state}")
             if route_state["arsenalVisible"] != (profile == "pete"):
@@ -382,6 +404,17 @@ def check_viewport(browser, name: str) -> None:
                 )
             if page.locator(f'#view-{target} .story-media').count() != 0:
                 raise AssertionError(f"{name}: {target} still shows article photography")
+            if target == "ai":
+                company_icons = page.locator('#view-ai .section-story-icon-company')
+                if company_icons.count() < 1:
+                    raise AssertionError(f"{name}: AI has no recognised company logos")
+                if company_icons.count() != page.locator('#view-ai .section-company-logo').count():
+                    raise AssertionError(f"{name}: an AI company icon is missing its logo image")
+                failed_logos = page.locator('#view-ai .section-company-logo').evaluate_all(
+                    "els => els.filter(el => !el.complete || !el.naturalWidth).map(el => el.src)"
+                )
+                if failed_logos:
+                    raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
 
         page.locator('[data-view-target="home"]').click()
         calendar_cards = page.locator('#calendarSummaryCards button')

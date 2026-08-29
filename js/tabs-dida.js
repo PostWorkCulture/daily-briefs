@@ -11,7 +11,20 @@
   render=function(data){baseRender(data);renderProfileViews(data,state.profile)};
 
   function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-  function sectionIcon(section,index=0){
+  function aiCompany(item={}){
+    const value=`${item.title||''} ${item.summary||''} ${item.source||''} ${item.url||''}`;
+    const companies=[
+      {name:'Google Gemini',match:/\b(?:gemini|google deepmind|deepmind)\b/i,src:'assets/company-logos/google-gemini.svg'},
+      {name:'Anthropic',match:/\b(?:anthropic|claude)\b/i,src:'assets/company-logos/anthropic.svg'},
+      {name:'OpenAI',match:/\b(?:openai|chatgpt)\b/i,src:'assets/company-logos/openai.svg'},
+      {name:'Google',match:/\bgoogle\b|(?:^|\.)google\.[a-z.]+/i,src:'assets/company-logos/google.svg'}
+    ];
+    return companies.find(company=>company.match.test(value))||null;
+  }
+  function sectionIcon(section,index=0,company=null){
+    if(section==='ai'&&company){
+      return `<img class="section-company-logo" src="${company.src}" alt="" aria-hidden="true">`;
+    }
     const icons={
       ai:[
         '<rect x="5" y="5" width="14" height="14" rx="4"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M19 9h3M2 15h3M19 15h3"/><circle cx="12" cy="12" r="3"/>',
@@ -31,7 +44,9 @@
     const tag=item?.url?'a':'article';
     const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
     const copy=`${item?.meta||item?.source?`<div class="meta">${esc(item.meta||'')}${item.meta&&item.source?' · ':''}${esc(item.source||'')}</div>`:''}<h4>${esc(item?.title||'Untitled')}</h4>${item?.summary?`<p>${esc(item.summary)}</p>`:''}`;
-    const icon=section?`<span class="section-story-icon section-story-icon-${section}">${sectionIcon(section,index)}</span>`:'';
+    const company=section==='ai'?aiCompany(item):null;
+    const companyAttrs=company?` section-story-icon-company" data-company="${esc(company.name)}`:'';
+    const icon=section?`<span class="section-story-icon section-story-icon-${section}${companyAttrs}">${sectionIcon(section,index,company)}</span>`:'';
     const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
     return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
