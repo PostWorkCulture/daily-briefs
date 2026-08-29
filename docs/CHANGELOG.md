@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 29 August 2026: Reliable 6am refresh and flatter editorial stream
 
-Status: validated, publication pending
+Status: validated and published
 
 - Requested change: continue the Sky-standard refinement loop and make sure the brief refreshes at 6:00am every day.
 - Refresh diagnosis: the live brief was still dated 28 August near 8:00am on 29 August. The workflow targeted 04:30 UTC, which is 05:30 during British Summer Time, and no 29 August scheduled run appeared, leaving no recovery path.
@@ -16,6 +16,9 @@ Status: validated, publication pending
 - Scope protected: no profile, route, story, link, source, group order, image-provenance rule, section colour, navigation behaviour, or data-selection logic changed.
 - Unexpected changes: none intended.
 - Master brief update: version 3.8 records the permanent 06:00 London refresh and shared desktop stream rail.
+- Publication: PR #17 passed its remote responsive workflow and was squash-merged as `071ff3e`. The merge-triggered Morning refresh passed the 6am freshness gate, all refresh and protected-rule checks, and committed the 29 August edition as `63801da`; the resulting Pages deployment succeeded.
+- Live verification: Pete and Sofia both show `Saturday, 29 August 2026 · refreshed 8:06am`; locked switches occupy zero space, profile-specific Arsenal visibility is correct, Pete retains 12 Local and 12 UK stories, Sofia retains Sweden above the same 12-story groups, and the new stream rail is live with a one-pixel grid, zero item rounding, and no item shadow.
+- Remote QA note: the first post-merge responsive attempt timed out while waiting for the initial profile route to render. Its immediate retry passed every step without a code change; the identical pull-request run and local mobile/desktop suite had already passed.
 
 ## 28 August 2026: Accessible newsroom contrast and resilient story media
 
