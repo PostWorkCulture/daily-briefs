@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.8, 29 August 2026. Owner: Pete.
+Version 3.9, 29 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -110,7 +110,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - Add an article media block in the browser only after its exact publisher image has loaded, decoded, and met the 1,200 × 675 minimum. A failed or slow image must leave the story text-only instead of reserving an empty dark media slab.
-- AI and Career never show article photography. Use stylish, decorative code-native section icons while preserving the current article and job content, metadata, and real links.
+- AI and Career never show article photography. AI uses the exact company mark when OpenAI or ChatGPT, Google or Gemini, Google DeepMind, Anthropic, or Claude is unambiguous in the story metadata; use the generic code-native AI symbol as fallback. Career retains stylish code-native section icons. Preserve the current article and job content, metadata, and real links.
 - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
 - Article images must be at least 1,200 × 675 pixels. Reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.

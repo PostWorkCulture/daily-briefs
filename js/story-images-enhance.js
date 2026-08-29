@@ -1,4 +1,4 @@
-/* Exact publisher image layer for News / Arsenal. AI and Career use code-native section icons.
+/* Exact publisher image layer for News / Arsenal. AI uses company marks or code-native fallback icons; Career uses code-native icons.
    Rules: max one image per article, max five image-led cards per tab view,
    never reuse an image, and reject every generic or inferred fallback. */
 (function(){
