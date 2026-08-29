@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 29 August 2026: Bookmark identity v2 and AI company marks
 
-Status: implemented; publication validation required
+Status: validated and published; Samsung bookmark re-save pending
 
 - Requested change: stop Samsung Internet saving Daily Briefs with the Bomberfan icon and replace generic AI symbols with recognisable company logos where available.
 - Bookmark diagnosis: the live page already declared only Open Horizon project-level assets, while `https://postworkculture.github.io/favicon.ico` returns a GitHub Pages 404. The wrong Bomberfan mark is consistent with a stale shared-origin browser association, not an asset rendered by Daily Briefs.
@@ -14,6 +14,9 @@ Status: implemented; publication validation required
 - Validation added: bookmark files, manifest scope, profile cache keys, company-logo mappings, logo decoding, generic fallback coverage, and the existing responsive icon and no-photography rules.
 - Unexpected changes: none intended.
 - Master brief update: version 3.9 records the company-mark exception to AI's generic icon rule.
+- Validation result: all 33 unit tests pass; static icon, manifest, route-cache, SVG, JavaScript, Python, JSON, and diff-hygiene checks pass; PR #19's remote Chromium suite passes its mobile and desktop assertions, including company-logo decoding and AI's no-photography rule.
+- Publication: PR #19 was squash-merged as `5f81959`. GitHub Pages serves every Open Horizon v2 metadata path, and Pete and Sofia profile routes resolve to their locked URLs with `icon=v2`.
+- Live verification: Pete's 10 AI cards render six OpenAI marks, three Google Gemini marks, and one Anthropic mark, all decoded successfully. AI contains zero article-photography blocks. Device-level replacement of Samsung's stored old bookmark remains pending Pete deleting and re-adding that bookmark once.
 
 ## 29 August 2026: Reliable 6am refresh and flatter editorial stream
 
