@@ -2,6 +2,21 @@
 
 Newest entries go first.
 
+## 29 August 2026: Reliable 6am refresh and flatter editorial stream
+
+Status: validated, publication pending
+
+- Requested change: continue the Sky-standard refinement loop and make sure the brief refreshes at 6:00am every day.
+- Refresh diagnosis: the live brief was still dated 28 August near 8:00am on 29 August. The workflow targeted 04:30 UTC, which is 05:30 during British Summer Time, and no 29 August scheduled run appeared, leaving no recovery path.
+- Refresh schedule: target 06:00 `Europe/London` under both GMT and BST with half-hour UTC opportunities from 05:00 through 08:30. A London-aware freshness gate blocks pre-06:00 execution, retries while either profile is stale, and skips all later attempts after both profiles carry today's fact date. Manual, workflow-file, and script-triggered runs remain immediate.
+- Editorial rhythm: keep the lead and two supporting stories prominent, then place desktop stream stories on one square-edged, one-pixel divided paper rail instead of a field of floating rounded tiles. Mobile retains its single flat divided feed.
+- Headline priority: text-only News cards show the headline and summary before the date/source line visually, matching the stronger headline-first scan while preserving the original DOM content and source order.
+- Validation added: refresh-gate unit coverage checks manual execution, the pre-06:00 block, the 06:00 stale run, post-publication skipping, and one-profile recovery. Responsive checks require the shared stream surface, zero stream rounding and shadow on desktop, the mobile contents flow, headline-before-metadata geometry, and the existing hierarchy and order.
+- Validation result: all 33 unit tests pass; Python and JavaScript syntax, workflow YAML parsing, and diff hygiene pass; the responsive Chromium suite passes at 390 × 844 and 1,366 × 900; mobile and desktop News plus desktop AI and Career screenshots were visually inspected.
+- Scope protected: no profile, route, story, link, source, group order, image-provenance rule, section colour, navigation behaviour, or data-selection logic changed.
+- Unexpected changes: none intended.
+- Master brief update: version 3.8 records the permanent 06:00 London refresh and shared desktop stream rail.
+
 ## 28 August 2026: Accessible newsroom contrast and resilient story media
 
 Status: validated and published

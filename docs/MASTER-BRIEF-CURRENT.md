@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.7, 28 August 2026. Owner: Pete.
+Version 3.8, 29 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -12,7 +12,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 
 - Use an `Open Horizon newsroom` hierarchy inspired by premium news homepages without copying their identity: firm section rules, a clear lead/supporting/stream rhythm, intentional desktop grids, and denser mobile scanning. Prominence comes from width, position, type scale, and verified imagery, not fabricated labels or reordered source content. Keep bespoke systems for Arsenal, Dida, Birthday, Weather, Coming up, Calendar, Around the world, and TV Picks.
 - Cap the main Chromebook/desktop editorial rail at 1,120 px. Use the slim top bar for the refresh date, compact weather status, and active profile control or identity; never restore a page-content wordmark.
-- Text-only news leads are valid and must use a purposeful 7/5 lead-and-support desktop rail rather than reserving an empty image-scale area. Image-verified desktop leads use a prominent image-left, copy-right package. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists, and secondary items form a flat divided paper feed rather than a wall of identical cards.
+- Text-only news leads are valid and must use a purposeful 7/5 lead-and-support desktop rail rather than reserving an empty image-scale area. Image-verified desktop leads use a prominent image-left, copy-right package. Desktop stream stories share one flat divided paper rail instead of appearing as separate floating tiles. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists, and secondary items form a flat divided paper feed rather than a wall of identical cards.
 
 - The Home greeting and section or page titles that sit directly on the solid blue canvas use dark `#142A3D` ink, giving at least 4.5:1 contrast. Titles inside white or light cards retain the same readable dark ink or a purposeful accessible accent colour. Reserve white text for dark surfaces and strongly overlaid media. Main copy on light surfaces remains dark `#142A3D`.
 
@@ -34,6 +34,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Use only PostWorkCulture/daily-briefs. The old Claude/API repo is obsolete.
 - No Anthropic/OpenAI API dependency or paid API credits.
 - Static responsive GitHub Pages app with JSON data and Python/GitHub Actions refresh.
+- Target the full morning refresh for 06:00 `Europe/London` every day. Use GMT/BST-safe UTC triggers, retry at 30-minute intervals while today's edition is still stale, and skip the remaining retries as soon as both profiles carry today's publication date.
 - Never commit private calendar credentials.
 - Mobile first. Chromebook/desktop must have an intentional larger-screen layout.
 - Always use real, clickable links. Never invent data, URLs, sources, or test results.

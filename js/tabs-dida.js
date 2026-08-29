@@ -38,7 +38,12 @@
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     const heading=title?`<h3>${esc(title)}</h3>`:'';
-    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${(items||[]).map((item,index)=>story(item,section,index)).join('')||'<div class="empty">Nothing listed today.</div>'}</div></section>`;
+    const stories=(items||[]).map((item,index)=>story(item,section,index));
+    const primary=stories.slice(0,3).join('');
+    const stream=stories.slice(3);
+    const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
+    const content=stories.length?`${primary}${streamFeed}`:'<div class="empty">Nothing listed today.</div>';
+    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
   function openAIFirst(items){return [...(items||[])].sort((a,b)=>{const score=x=>/openai|chatgpt/i.test(`${x.title||''} ${x.source||''} ${x.url||''}`)?0:1;return score(a)-score(b)})}

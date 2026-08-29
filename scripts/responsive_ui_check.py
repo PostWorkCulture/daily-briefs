@@ -334,6 +334,44 @@ def check_viewport(browser, name: str) -> None:
                 if not role[expected] or sum(role.values()) != 1:
                     raise AssertionError(f"{name}: invalid News hierarchy at {index}: {role}")
 
+        stream_feeds = page.evaluate(
+            """
+            () => [...document.querySelectorAll('#newsTabGroups .tab-group')].map(group => {
+              const feed=group.querySelector('.story-stream-grid');
+              const streamCards=[...group.querySelectorAll('.story-stream')];
+              const textLead=[...group.querySelectorAll('.story-lead')]
+                .find(card => !card.classList.contains('has-image'));
+              const title=textLead?.querySelector('h4');
+              const meta=textLead?.querySelector('.meta');
+              return {
+                streamCount:streamCards.length,
+                feedCount:feed?1:0,
+                feedDisplay:feed?getComputedStyle(feed).display:'',
+                feedGap:feed?getComputedStyle(feed).gap:'',
+                feedBackground:feed?getComputedStyle(feed).backgroundColor:'',
+                streamRadii:streamCards.map(card => getComputedStyle(card).borderRadius),
+                streamShadows:streamCards.map(card => getComputedStyle(card).boxShadow),
+                titleBeforeMeta:!textLead || !title || !meta || title.getBoundingClientRect().top < meta.getBoundingClientRect().top
+              };
+            })
+            """
+        )
+        for feed in stream_feeds:
+            if feed["streamCount"] and feed["feedCount"] != 1:
+                raise AssertionError(f"{name}: News stream is not grouped into one feed: {feed}")
+            expected_display = "contents" if name == "mobile" else "grid"
+            if feed["streamCount"] and feed["feedDisplay"] != expected_display:
+                raise AssertionError(f"{name}: News stream feed has the wrong layout: {feed}")
+            if name == "desktop" and feed["streamCount"]:
+                if feed["feedGap"] != "1px" or feed["feedBackground"] == "rgba(0, 0, 0, 0)":
+                    raise AssertionError(f"{name}: News stream lacks a shared divided surface: {feed}")
+                if any(value != "0px" for value in feed["streamRadii"]):
+                    raise AssertionError(f"{name}: News stream still looks like floating tiles: {feed}")
+                if any(value != "none" for value in feed["streamShadows"]):
+                    raise AssertionError(f"{name}: News stream retains individual tile shadows: {feed}")
+            if not feed["titleBeforeMeta"]:
+                raise AssertionError(f"{name}: News lead metadata appears before its headline: {feed}")
+
         for target in ("ai", "career"):
             page.locator(f'[data-view-target="{target}"]').click()
             cards = page.locator(f'#view-{target} .tab-story')
