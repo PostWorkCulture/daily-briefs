@@ -13,6 +13,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Pete and Sofia only; no Us.
 - [ ] /pete/ and /sofia/ load the correct profile and data.
 - [ ] Direct `profile=pete` and `profile=sofia` queries override stale local storage; locked routes hide the switch with zero occupied geometry and retain the correct Arsenal visibility.
+- [ ] No utility top bar, duplicate date, compact weather text, or profile badge appears above the main date; on locked routes the main date is the first visible line.
 - [ ] Mobile has no overflow, clipping, or unusable navigation.
 - [ ] Chromebook/desktop has an intentional larger-screen layout.
 - [ ] Responsive smoke test passes.
