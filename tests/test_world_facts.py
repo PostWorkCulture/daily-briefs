@@ -18,6 +18,7 @@ def fact(fact_id: str, priority: str | None = None) -> dict:
         "id": fact_id,
         "category": "Test category",
         "country": "Test country",
+        "locationContext": "Test region · Test continent",
         "place": "Test place",
         "source": "Test source",
         "sourceUrl": "https://example.com/source",
@@ -39,6 +40,42 @@ class WorldFactTests(unittest.TestCase):
         categories = " ".join(item["category"].lower() for item in human_first)
         for topic in ("people", "population", "tradition", "music", "record"):
             self.assertIn(topic, categories)
+
+
+    def test_every_catalogue_fact_has_wider_location_context(self):
+        catalog = json.loads((ROOT / "data" / "fact-catalog.json").read_text(encoding="utf-8"))
+        for item in catalog:
+            with self.subTest(item=item["id"]):
+                self.assertTrue(str(item.get("locationContext") or "").strip())
+                self.assertIn("·", item["locationContext"])
+
+    def test_retired_fact_is_skipped(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog_path = root / "catalog.json"
+            history_path = root / "history.json"
+            retired = fact("retired-human", "human-first")
+            retired["editorialStatus"] = "retired"
+            catalog_path.write_text(
+                json.dumps([retired, fact("fresh-human", "human-first")]),
+                encoding="utf-8",
+            )
+            history_path.write_text('{"version": 1, "used": []}', encoding="utf-8")
+
+            original_catalog = refresh.FACT_CATALOG
+            original_history = refresh.FACT_HISTORY
+            original_now = refresh.NOW
+            try:
+                refresh.FACT_CATALOG = catalog_path
+                refresh.FACT_HISTORY = history_path
+                refresh.NOW = datetime(2026, 8, 30, tzinfo=ZoneInfo("Europe/London"))
+                selected = refresh.world_fact_for_today()
+            finally:
+                refresh.FACT_CATALOG = original_catalog
+                refresh.FACT_HISTORY = original_history
+                refresh.NOW = original_now
+
+            self.assertEqual(selected["id"], "fresh-human")
 
     def test_new_day_prefers_unused_human_first_fact(self):
         with tempfile.TemporaryDirectory() as directory:
