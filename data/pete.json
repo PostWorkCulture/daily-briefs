@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 30 August 2026 · refreshed 7:08am",
+  "updatedLabel": "Sunday, 30 August 2026 · refreshed 7:39am",
   "worldFact": {
     "id": "baltic-forty-thousand-singers-dancers",
     "editorialPriority": "human-first",
@@ -37,7 +37,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -51,7 +51,7 @@
       },
       {
         "date": "2026-09-02",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -60,7 +60,7 @@
       },
       {
         "date": "2026-09-03",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -107,10 +107,10 @@
         "displayLocation": "Exeter, Devon",
         "value": "23.3°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=20cf098a152c",
-          "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
-          "credit": "Edward Ashworth · Public domain",
-          "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
+          "src": "assets/weather-extremes/hot.webp?v=29b3920bdb6d",
+          "page": "https://commons.wikimedia.org/wiki/File:Council_offices,_Marsh_Barton,_Exeter_-_geograph.org.uk_-_4307390.jpg",
+          "credit": "David Smith · CC BY-SA 2.0",
+          "alt": "Council offices, Marsh Barton, Exeter",
           "width": 1600,
           "height": 900
         }
@@ -247,20 +247,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -272,6 +258,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -399,8 +399,6 @@
       "arsenalScore": 3,
       "opponentScore": 0,
       "result": "3–0",
-      "url": "https://www.arsenal.com/news/report-arsenal-3-0-coventry-city-an2Fq8x1O9cq",
-      "source": "Arsenal.com",
       "scorers": [
         {
           "name": "Kai Havertz",
@@ -420,7 +418,9 @@
       ],
       "scorersLabel": "Kai Havertz 15', Bukayo Saka 23', Martin Ødegaard 49'",
       "stadium": "Emirates Stadium",
-      "summary": "Arsenal opened their Premier League title defence with a commanding 3–0 win, scoring twice inside 23 minutes before Ødegaard added the third after half-time."
+      "summary": "Arsenal opened their Premier League title defence with a commanding 3–0 win, scoring twice inside 23 minutes before Ødegaard added the third after half-time.",
+      "url": "https://www.arsenal.com/news/report-arsenal-3-0-coventry-city-an2Fq8x1O9cq",
+      "source": "Arsenal.com"
     },
     "nextFixture": {
       "date": "2026-08-31T20:00:00+01:00",
@@ -460,7 +460,7 @@
         "title": "Aston Villa vs Arsenal: Premier League preview, team news, stats & head-to-head",
         "summary": "",
         "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T04:04:55+01:00",
+        "publishedAt": "2026-08-30T07:08:33+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5wMlo5cWJoZlZpbkJ2T1d1N3JsMEZ6UENIY29ucUZldWtRakF2LW1WbDR4Y3pxZEhWTWRDVU5ERFB0NVp0dGlXMzlwTy1ydHV4WjNOM2FQVmJ6cU9NbTMtNERQdw?oc=5"
       },
@@ -673,76 +673,95 @@
       "showId": 82050,
       "episodeId": 3718033,
       "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 368.6
+      "preferenceScore": 380.5
     },
     {
-      "title": "Hitler's Last Stand",
-      "summary": "As Allied forces fight to break out from the D-Day beaches, American Captain Matt Urban is badly wounded in a German tank assault. But determined to return to his battalion, he makes it to…",
-      "meta": "National Geographic · Tue 1 Sep, 8pm",
-      "source": "National Geographic",
-      "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/157/394083.jpg",
-      "artworkAlt": "Hitler's Last Stand programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-01",
-      "showId": 37030,
-      "episodeId": 3707967,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-30",
-      "preferenceScore": 195.5
-    },
-    {
-      "title": "Fare Dodgers: At War with the Law",
-      "summary": "Investigators Joey, Ela and new recruit Weronika track a suspect believed to have avoided more than £1,400 in fares, using travel data and CCTV to intercept him at Ilford Station. TfL bus…",
-      "meta": "5 · Tomorrow, 9pm",
-      "source": "5",
-      "url": "https://www.channel5.com/show/fare-dodgers-at-war-with-the-law/",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/222/555408.jpg",
-      "artworkAlt": "Fare Dodgers: At War with the Law programme artwork",
+      "title": "Check-In To Murder",
+      "summary": "Check-In To Murder explores chilling true crimes that have shaken British communities, revealing how the line between picturesque and perilous can be razor thin. From quaint villages with…",
+      "meta": "Crime & Investigation · Tomorrow, 10pm",
+      "source": "Crime & Investigation",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/check-in-to-murder",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589613.jpg",
+      "artworkAlt": "Check-In To Murder programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-31",
-      "showId": 44504,
-      "episodeId": 3709098,
+      "showId": 93464,
+      "episodeId": 3694597,
       "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 168.7
+      "preferenceScore": 376.4
     },
     {
-      "title": "The Game",
-      "summary": "A year after surviving a brutal attack, former detective Huw has retreated to a remote coastal home with his wife Alice, determined to leave the past behind. Meanwhile, their daughter…",
-      "meta": "5 · Tue 1 Sep, 9pm",
-      "source": "5",
-      "url": "https://www.channel5.com/show/the-game/",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597201.jpg",
-      "artworkAlt": "The Game programme artwork",
+      "title": "Global Eye",
+      "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
+      "meta": "BBC Two · Available since Mon 24 Aug",
+      "source": "BBC Two",
+      "url": "https://www.bbc.co.uk/programmes/m002j92n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467593.jpg",
+      "artworkAlt": "Global Eye programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-01",
-      "showId": 83042,
-      "episodeId": 3706814,
+      "airdate": "2026-08-24",
+      "showId": 87011,
+      "episodeId": 3713176,
       "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 140.8
+      "preferenceScore": 323.0
     },
     {
-      "title": "Gary Barlow's Wine Tour",
-      "summary": "The Take That star explore New Zealand's vineyards, food and landscapes, beginning in Auckland, where a traditional Maori welcome sets the tone for his journey. Chef Ben Bayly introduces…",
-      "meta": "ITV1 · Today, 12:30pm",
-      "source": "ITV1",
-      "url": "https://www.itv.com/watch/gary-barlow's-wine-tour:-south-africa/10a5527",
-      "badge": "Reality",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/567/1419977.jpg",
-      "artworkAlt": "Gary Barlow's Wine Tour programme artwork",
+      "title": "Death of the Pastor's Wife",
+      "summary": "At age 13, Mica meets charismatic pastor John-Paul. Years later, their secret affair leads to marriage — but behind closed doors, he tightens control.",
+      "meta": "Netflix · Available since Wed 26 Aug",
+      "source": "Netflix",
+      "url": "https://www.netflix.com/title/81989322",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596212.jpg",
+      "artworkAlt": "Death of the Pastor's Wife programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-26",
+      "showId": 93718,
+      "episodeId": 3711737,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 247.0
+    },
+    {
+      "title": "Trigger Point",
+      "summary": "Explosives officer Lana Washington and her bomb-disposal team track a suspicious lorry through London as they work against the clock to make sure it does not reach its destination.",
+      "meta": "ITVX · Today, 6am",
+      "source": "ITVX",
+      "url": "https://www.itv.com/hub/trigger-point/10a0591",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/637/1593119.jpg",
+      "artworkAlt": "Trigger Point programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-30",
-      "showId": 80700,
-      "episodeId": 3716928,
+      "showId": 46358,
+      "episodeId": 3701684,
       "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 139.6
+      "preferenceScore": 170.9
     }
   ],
   "sections": {
@@ -841,7 +860,7 @@
         "title": "Aston Villa vs Arsenal: Premier League preview, team news, stats & head-to-head",
         "summary": "",
         "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T04:04:55+01:00",
+        "publishedAt": "2026-08-30T07:08:33+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5wMlo5cWJoZlZpbkJ2T1d1N3JsMEZ6UENIY29ucUZldWtRakF2LW1WbDR4Y3pxZEhWTWRDVU5ERFB0NVp0dGlXMzlwTy1ydHV4WjNOM2FQVmJ6cU9NbTMtNERQdw?oc=5"
       },
@@ -994,6 +1013,14 @@
         "url": "https://www.bbc.co.uk/news/articles/crr4wd81pdpo?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Burnham gets the early prison release changes he wanted - but at what cost?",
+        "summary": "The prime minister says he will keep hundreds more criminals behind bars but doing so requires complex changes.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T07:33:56+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cdx5zw4e2x9o?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "WhatsApp group chat used to send millions in cash, funding crime and extremism",
         "summary": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.",
         "meta": "Sun 30 Aug",
@@ -1018,20 +1045,12 @@
         "url": "https://www.bbc.co.uk/news/articles/czeznrgyd1go?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "British heavyweight Moses Itauma stretchered out after shock defeat in gruelling world title fight",
-        "summary": "Filip Hrgovic shatters Moses Itauma's world-title dream as the Briton appears to punch himself out in an extraordinary heavyweight world-title contest in London.",
+        "title": "British heavyweight Moses Itauma stretchered out after gruelling world title defeat",
+        "summary": "British heavyweight Moses Itauma was taught a harsh lesson at world level - what can he learn from defeat and where does the 21-year-old go next?",
         "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T00:16:03+01:00",
+        "publishedAt": "2026-08-30T07:08:52+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/sport/boxing/articles/cpd0n46we13o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "I've been to Gamescom six times - here's what excited me this year",
-        "summary": "The BBC's Laura Cress gets a first look at the biggest games in Cologne from Witcher 3 to Alien: Isolation 2.",
-        "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T00:02:28+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cew92lp2g45o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/sport/boxing/articles/cg7krndl84do?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "97-year-old woman rescued after Nepali floods looked like 'a warrior'",
@@ -1074,12 +1093,12 @@
         "url": "https://www.bbc.co.uk/news/articles/c8en3n29wdro?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Mount Fuji pics, life-changing ramen and a weak yen - why young Brits are going to Japan",
-        "summary": "Photos of Mount Fuji, bowls of ramen and the bustle of Shibuya Crossing are filling up social media feeds.",
+        "title": "I've been to Gamescom six times - here's what excited me this year",
+        "summary": "The BBC's Laura Cress gets a first look at the biggest games in Cologne from Witcher 3 to Alien: Isolation 2.",
         "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T00:04:22+01:00",
+        "publishedAt": "2026-08-30T00:02:28+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c7704l1ypjgo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cew92lp2g45o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
@@ -1144,16 +1163,16 @@
         "postedAt": "2026-08-24"
       },
       {
-        "title": "Head of Applied Data Governance and Capability",
-        "summary": "Government Digital Service · England, United Kingdom",
-        "meta": "UK · Posted Thu 6 Aug",
+        "title": "Lead Data Scientist - Public Sector (security cleared)",
+        "summary": "Kainos · Birmingham, England, United Kingdom",
+        "meta": "UK · Posted Sun 9 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-applied-data-governance-and-capability-at-government-digital-service-4448443170",
+        "url": "https://uk.linkedin.com/jobs/view/lead-data-scientist-public-sector-security-cleared-at-kainos-4415398830",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "Government Digital Service",
-        "location": "England, United Kingdom",
-        "postedAt": "2026-08-06"
+        "company": "Kainos",
+        "location": "Birmingham, England, United Kingdom",
+        "postedAt": "2026-08-09"
       },
       {
         "title": "Senior Data Scientist",
@@ -1180,15 +1199,15 @@
         "postedAt": "2026-08-28"
       },
       {
-        "title": "Data and AI Adoption Lead",
-        "summary": "Ofgem · Glasgow, Scotland, United Kingdom",
+        "title": "Data Scientist",
+        "summary": "Ministry of Housing, Communities and Local Government · London, England, United Kingdom",
         "meta": "UK · Posted Fri 28 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/data-and-ai-adoption-lead-at-ofgem-4458060558",
+        "url": "https://uk.linkedin.com/jobs/view/data-scientist-at-ministry-of-housing-communities-and-local-government-4458969957",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "Ofgem",
-        "location": "Glasgow, Scotland, United Kingdom",
+        "company": "Ministry of Housing, Communities and Local Government",
+        "location": "London, England, United Kingdom",
         "postedAt": "2026-08-28"
       },
       {

@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 30 August 2026 · refreshed 7:08am",
+  "updatedLabel": "Sunday, 30 August 2026 · refreshed 7:39am",
   "worldFact": {
     "id": "baltic-forty-thousand-singers-dancers",
     "editorialPriority": "human-first",
@@ -37,7 +37,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -51,7 +51,7 @@
       },
       {
         "date": "2026-09-02",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -60,7 +60,7 @@
       },
       {
         "date": "2026-09-03",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -107,10 +107,10 @@
         "displayLocation": "Exeter, Devon",
         "value": "23.3°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=20cf098a152c",
-          "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
-          "credit": "Edward Ashworth · Public domain",
-          "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
+          "src": "assets/weather-extremes/hot.webp?v=29b3920bdb6d",
+          "page": "https://commons.wikimedia.org/wiki/File:Council_offices,_Marsh_Barton,_Exeter_-_geograph.org.uk_-_4307390.jpg",
+          "credit": "David Smith · CC BY-SA 2.0",
+          "alt": "Council offices, Marsh Barton, Exeter",
           "width": 1600,
           "height": 900
         }
@@ -247,20 +247,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -272,6 +258,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -388,21 +388,21 @@
     }
   ],
   "lead": {
-    "title": "France opens door to fighter jet cooperation with Sweden",
+    "title": "Dementia patient's deportation from Sweden delayed",
     "summary": "",
-    "meta": "Fri 28 Aug",
-    "publishedAt": "2026-08-28T17:19:00+01:00",
-    "source": "politico.eu",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeU1hTEtYVEhrOFIxV3dFUUJ6YWd1NjRzLWNkVHlPZzhuSWZud0ItYmROSWV4YlVIWGZDVVJHT0RWdVVkN2ZyTmFKNVRoLUZ6RFhBN3hIWlBwMklFTm1ZbGVSVEVLS2hGSVJxMmF3WU8xUjJpa3JkUXRISzNWemRXS19vamloSmNKVFBYVFB5S09ZbzQxcm9xQ1lTTi1BV2pOQTN4eS1WVmM?oc=5"
+    "meta": "Sun 30 Aug",
+    "publishedAt": "2026-08-30T07:12:45+01:00",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51V2lhSlN0TGhWTzRLX29XR3NZM1JwQXoxM25jVG13dlF6aGJfMGhPYTMtZDYxZTNwM3BiaEttQlN6bW85RXB6MmpTMnllem9MLUJodTZBOTJNS1dH?oc=5"
   },
   "interests": [
     {
-      "title": "France opens door to fighter jet cooperation with Sweden",
+      "title": "Dementia patient's deportation from Sweden delayed",
       "summary": "",
-      "meta": "Fri 28 Aug",
-      "publishedAt": "2026-08-28T17:19:00+01:00",
-      "source": "politico.eu",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeU1hTEtYVEhrOFIxV3dFUUJ6YWd1NjRzLWNkVHlPZzhuSWZud0ItYmROSWV4YlVIWGZDVVJHT0RWdVVkN2ZyTmFKNVRoLUZ6RFhBN3hIWlBwMklFTm1ZbGVSVEVLS2hGSVJxMmF3WU8xUjJpa3JkUXRISzNWemRXS19vamloSmNKVFBYVFB5S09ZbzQxcm9xQ1lTTi1BV2pOQTN4eS1WVmM?oc=5",
+      "meta": "Sun 30 Aug",
+      "publishedAt": "2026-08-30T07:12:45+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51V2lhSlN0TGhWTzRLX29XR3NZM1JwQXoxM25jVG13dlF6aGJfMGhPYTMtZDYxZTNwM3BiaEttQlN6bW85RXB6MmpTMnllem9MLUJodTZBOTJNS1dH?oc=5",
       "section": "Sweden"
     },
     {
@@ -440,80 +440,107 @@
       "showId": 82050,
       "episodeId": 3718033,
       "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 368.6
+      "preferenceScore": 380.5
     },
     {
-      "title": "Hitler's Last Stand",
-      "summary": "As Allied forces fight to break out from the D-Day beaches, American Captain Matt Urban is badly wounded in a German tank assault. But determined to return to his battalion, he makes it to…",
-      "meta": "National Geographic · Tue 1 Sep, 8pm",
-      "source": "National Geographic",
-      "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/157/394083.jpg",
-      "artworkAlt": "Hitler's Last Stand programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-01",
-      "showId": 37030,
-      "episodeId": 3707967,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-30",
-      "preferenceScore": 195.5
-    },
-    {
-      "title": "Fare Dodgers: At War with the Law",
-      "summary": "Investigators Joey, Ela and new recruit Weronika track a suspect believed to have avoided more than £1,400 in fares, using travel data and CCTV to intercept him at Ilford Station. TfL bus…",
-      "meta": "5 · Tomorrow, 9pm",
-      "source": "5",
-      "url": "https://www.channel5.com/show/fare-dodgers-at-war-with-the-law/",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/222/555408.jpg",
-      "artworkAlt": "Fare Dodgers: At War with the Law programme artwork",
+      "title": "Check-In To Murder",
+      "summary": "Check-In To Murder explores chilling true crimes that have shaken British communities, revealing how the line between picturesque and perilous can be razor thin. From quaint villages with…",
+      "meta": "Crime & Investigation · Tomorrow, 10pm",
+      "source": "Crime & Investigation",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/check-in-to-murder",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589613.jpg",
+      "artworkAlt": "Check-In To Murder programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-31",
-      "showId": 44504,
-      "episodeId": 3709098,
+      "showId": 93464,
+      "episodeId": 3694597,
       "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 168.7
+      "preferenceScore": 376.4
     },
     {
-      "title": "The Game",
-      "summary": "A year after surviving a brutal attack, former detective Huw has retreated to a remote coastal home with his wife Alice, determined to leave the past behind. Meanwhile, their daughter…",
-      "meta": "5 · Tue 1 Sep, 9pm",
-      "source": "5",
-      "url": "https://www.channel5.com/show/the-game/",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597201.jpg",
-      "artworkAlt": "The Game programme artwork",
+      "title": "Global Eye",
+      "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
+      "meta": "BBC Two · Available since Mon 24 Aug",
+      "source": "BBC Two",
+      "url": "https://www.bbc.co.uk/programmes/m002j92n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467593.jpg",
+      "artworkAlt": "Global Eye programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-01",
-      "showId": 83042,
-      "episodeId": 3706814,
+      "airdate": "2026-08-24",
+      "showId": 87011,
+      "episodeId": 3713176,
       "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 140.8
+      "preferenceScore": 323.0
     },
     {
-      "title": "Gary Barlow's Wine Tour",
-      "summary": "The Take That star explore New Zealand's vineyards, food and landscapes, beginning in Auckland, where a traditional Maori welcome sets the tone for his journey. Chef Ben Bayly introduces…",
-      "meta": "ITV1 · Today, 12:30pm",
-      "source": "ITV1",
-      "url": "https://www.itv.com/watch/gary-barlow's-wine-tour:-south-africa/10a5527",
-      "badge": "Reality",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/567/1419977.jpg",
-      "artworkAlt": "Gary Barlow's Wine Tour programme artwork",
+      "title": "Death of the Pastor's Wife",
+      "summary": "At age 13, Mica meets charismatic pastor John-Paul. Years later, their secret affair leads to marriage — but behind closed doors, he tightens control.",
+      "meta": "Netflix · Available since Wed 26 Aug",
+      "source": "Netflix",
+      "url": "https://www.netflix.com/title/81989322",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596212.jpg",
+      "artworkAlt": "Death of the Pastor's Wife programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-26",
+      "showId": 93718,
+      "episodeId": 3711737,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 247.0
+    },
+    {
+      "title": "Trigger Point",
+      "summary": "Explosives officer Lana Washington and her bomb-disposal team track a suspicious lorry through London as they work against the clock to make sure it does not reach its destination.",
+      "meta": "ITVX · Today, 6am",
+      "source": "ITVX",
+      "url": "https://www.itv.com/hub/trigger-point/10a0591",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/637/1593119.jpg",
+      "artworkAlt": "Trigger Point programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-30",
-      "showId": 80700,
-      "episodeId": 3716928,
+      "showId": 46358,
+      "episodeId": 3701684,
       "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
       "generatedDate": "2026-08-30",
-      "preferenceScore": 139.6
+      "preferenceScore": 170.9
     }
   ],
   "sections": {
     "Sweden": [
+      {
+        "title": "Dementia patient's deportation from Sweden delayed",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T07:12:45+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51V2lhSlN0TGhWTzRLX29XR3NZM1JwQXoxM25jVG13dlF6aGJfMGhPYTMtZDYxZTNwM3BiaEttQlN6bW85RXB6MmpTMnllem9MLUJodTZBOTJNS1dH?oc=5"
+      },
       {
         "title": "France opens door to fighter jet cooperation with Sweden",
         "summary": "",
@@ -531,20 +558,20 @@
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JSEhkR0MyTllhOTVBbEhEcmJhX3ZqckJfQ29jeHVJbF8yQU9xUGhycTduU0EtYl8zSFY2bWlTNjdGR2JTRW4tQnJ1YmtiRGt4ckQ1MVZPcnF6ZklscnBUeWhaSmQ5c3NZQnpVeWtJSGlRMVlCTmNrMnI1NGsyRVk?oc=5"
       },
       {
-        "title": "Sweden’s Far-Right Leader Seeks a Comeback as Election Nears",
-        "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T16:24:27+01:00",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNN3FiZ0NhQ3ZwLVp6dmVQczNzTEdTWEVQUHJHdVB3TVM0WmdhOFlDcjVwcm9SNXM0bnpjSnI0djdpUWI1dEJfMFEyLU52OE92Ym0zQS1ySjNLdG80eUVpM2FQTHo5ZVZBZkdVR0NnRERTa0JDTVM3Sm1La3hUZlpaSERGOVhJdUtYZkJsVWFhTEhmSDgwakdDM2hicmM4QWFYR1ZnUngtVWlLMmc3VUpFMHpR?oc=5"
-      },
-      {
         "title": "Sweden to deploy jets and warships to help Finland counter drones",
         "summary": "",
         "meta": "Fri 28 Aug",
         "publishedAt": "2026-08-28T13:39:11+01:00",
         "source": "euractiv.com",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLUY5eWlNLVA3UEFKN3VwUElIRXBYZW9ZVHhFell6U3R4QjNOTlJuTHVpVTJXVHRyVWNsczhOcUw4d0ZCVHJXWDFuOWRkTFRrZGpHTThzTDJrczdCNWJQYTJCWm5BdThpa0pORVY0RWZmQ0ctZTFIcGtLVE5HNnRENjY3bEJvamRKUmF2eW9IVlRTTVpzeTFMMzF0dGc?oc=5"
+      },
+      {
+        "title": "Sweden’s Far-Right Leader Seeks a Comeback as Election Nears",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T16:24:27+01:00",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNN3FiZ0NhQ3ZwLVp6dmVQczNzTEdTWEVQUHJHdVB3TVM0WmdhOFlDcjVwcm9SNXM0bnpjSnI0djdpUWI1dEJfMFEyLU52OE92Ym0zQS1ySjNLdG80eUVpM2FQTHo5ZVZBZkdVR0NnRERTa0JDTVM3Sm1La3hUZlpaSERGOVhJdUtYZkJsVWFhTEhmSDgwakdDM2hicmM4QWFYR1ZnUngtVWlLMmc3VUpFMHpR?oc=5"
       },
       {
         "title": "Halmstad vs Kalmar: Swedish Allsvenskan stats & head-to-head",
@@ -561,14 +588,6 @@
         "publishedAt": "2026-08-29T13:23:31+01:00",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUy1IY0lqVnE2QWIzVllLaEtoLXZMR2g4blhaVzZONUdzQS1YU3h6LUo5VGcyUS1WSE9saVhrNzJ5U1ZXdXMxdWJXUlMzY0pDUWhsU1hRN2VOUHpvT0tOaGdQbnVRd0hVZDZKUjlsWERtWWhlRXYtRmN3cnJPNkhZU1pEUFBlZERQYm4zYk1nRXh6VU1USEFFNWFGZ05Qa2w5c3haZ1lJSF9wRmxYNGlQZEtpdllxM3U3dmZYMERpLTZBQ0M5?oc=5"
-      },
-      {
-        "title": "Sweden to deploy fighter jets, warships to Finland",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T13:03:34+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0c1SlRBRmozUHNSTkVNVGNXZkF4TVBGRE5ROTRtUnVSU29vak9sSVNHZGJ3VWtPNFMyVUJPWGN2TnhVOWUxYzBMQ3ZOQUFRenM5Z2t2M25WVjI5Wnh6SE9PX1JjZl9tVWM2Q1pSLUtFbjAyeWM4dnVNbElUN3M1SDE3T2FxS0k0R3FsU3B6elRKWU51LWQ3N1UxQ05jdnhSYlB0dUxlbVdMVDg?oc=5"
       }
     ],
     "Local news": [
@@ -679,6 +698,14 @@
         "url": "https://www.bbc.co.uk/news/articles/crr4wd81pdpo?at_medium=RSS&at_campaign=rss"
       },
       {
+        "title": "Burnham gets the early prison release changes he wanted - but at what cost?",
+        "summary": "The prime minister says he will keep hundreds more criminals behind bars but doing so requires complex changes.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T07:33:56+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cdx5zw4e2x9o?at_medium=RSS&at_campaign=rss"
+      },
+      {
         "title": "WhatsApp group chat used to send millions in cash, funding crime and extremism",
         "summary": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.",
         "meta": "Sun 30 Aug",
@@ -703,20 +730,12 @@
         "url": "https://www.bbc.co.uk/news/articles/czeznrgyd1go?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "British heavyweight Moses Itauma stretchered out after shock defeat in gruelling world title fight",
-        "summary": "Filip Hrgovic shatters Moses Itauma's world-title dream as the Briton appears to punch himself out in an extraordinary heavyweight world-title contest in London.",
+        "title": "British heavyweight Moses Itauma stretchered out after gruelling world title defeat",
+        "summary": "British heavyweight Moses Itauma was taught a harsh lesson at world level - what can he learn from defeat and where does the 21-year-old go next?",
         "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T00:16:03+01:00",
+        "publishedAt": "2026-08-30T07:08:52+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/sport/boxing/articles/cpd0n46we13o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "I've been to Gamescom six times - here's what excited me this year",
-        "summary": "The BBC's Laura Cress gets a first look at the biggest games in Cologne from Witcher 3 to Alien: Isolation 2.",
-        "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T00:02:28+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cew92lp2g45o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/sport/boxing/articles/cg7krndl84do?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "97-year-old woman rescued after Nepali floods looked like 'a warrior'",
@@ -759,12 +778,12 @@
         "url": "https://www.bbc.co.uk/news/articles/c8en3n29wdro?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Mount Fuji pics, life-changing ramen and a weak yen - why young Brits are going to Japan",
-        "summary": "Photos of Mount Fuji, bowls of ramen and the bustle of Shibuya Crossing are filling up social media feeds.",
+        "title": "I've been to Gamescom six times - here's what excited me this year",
+        "summary": "The BBC's Laura Cress gets a first look at the biggest games in Cologne from Witcher 3 to Alien: Isolation 2.",
         "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T00:04:22+01:00",
+        "publishedAt": "2026-08-30T00:02:28+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c7704l1ypjgo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cew92lp2g45o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
@@ -862,19 +881,6 @@
         "location": "Remote",
         "countryFocus": "UK",
         "postedAt": "2026-08-29"
-      },
-      {
-        "title": "Product Lead",
-        "summary": "Street Group · Manchester, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Mon 17 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "Street Group",
-        "location": "Manchester, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-17"
       },
       {
         "title": "Head of Product",
