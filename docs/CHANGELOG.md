@@ -2,6 +2,17 @@
 
 Newest entries go first.
 
+## 30 August 2026: Remove duplicate top-of-brief strip
+
+Status: implemented; publication follows the normal CI and Pages gates
+
+- Requested change: remove the duplicate date and the additional weather/profile text that appeared above the real brief date.
+- Header change: removed the entire utility top bar, including its repeated refresh date, compact weather status and profile badge.
+- Preserved: the main date remains directly above `Hey Pete` or `Hey Sofia`; the Pete/Sofia switch still works on the shared root and remains hidden with zero geometry on locked profile routes.
+- Validation: responsive QA now requires the removed header fields to be absent and the main date to begin within the first compact page row.
+- Scope protected: no data, content, weather panel, navigation, profile routing, greeting, section order or bookmark identity changed.
+
+
 ## 30 August 2026: Editorial curation and complete Arsenal results
 
 Status: implemented; publication follows the normal CI, refresh, and Pages gates
