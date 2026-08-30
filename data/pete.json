@@ -17,10 +17,10 @@
     "sequence": 9
   },
   "weather": {
-    "temp": "17°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 4,
+    "temp": "20°",
+    "summary": "Light showers",
+    "condition": "Light showers",
+    "currentRainChance": 30,
     "daily": [
       {
         "date": "2026-08-30",
@@ -37,20 +37,11 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-01",
-        "high": 22,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
       },
       {
-        "date": "2026-09-02",
+        "date": "2026-09-01",
         "high": 23,
         "low": null,
         "summary": "Cloudy",
@@ -59,26 +50,26 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-03",
-        "high": 23,
+        "date": "2026-09-02",
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-03",
+        "high": 24,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-04",
-        "high": 23,
-        "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-05",
-        "high": 24,
+        "high": 25,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
