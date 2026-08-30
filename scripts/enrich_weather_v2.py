@@ -41,6 +41,12 @@ KNOWN_PHOTOS = {
         "credit": "Rod Allday · CC BY-SA 2.0",
         "alt": "Bridge over the River Usk at Sennybridge",
     },
+    "warcop": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Warcop_-_geograph.org.uk_-_30200.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Warcop_-_geograph.org.uk_-_30200.jpg",
+        "credit": "Carl Bendelow · CC BY-SA 2.0",
+        "alt": "Warcop village in Cumbria near the Warcop Training Area",
+    },
     "wiggonholt": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pulborough_Brooks.JPG?width=1600",
         "page": "https://commons.wikimedia.org/wiki/File:Pulborough_Brooks.JPG",
@@ -69,6 +75,7 @@ KNOWN_ENGLISH_PLACES = {
     "topcliffe": ("Topcliffe", "North Yorkshire"),
     "pershore": ("Pershore", "Worcestershire"),
     "writtle": ("Writtle", "Essex"),
+    "warcop": ("Warcop", "Cumbria"),
     "holbeach": ("Holbeach", "Lincolnshire"),
     "shobdon": ("Shobdon", "Herefordshire"),
     "boscombe down": ("Boscombe Down", "Wiltshire"),
