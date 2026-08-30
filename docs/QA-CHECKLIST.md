@@ -19,7 +19,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Primary navigation is solid dark navy with white resting text and icons; mobile stability and destination hover colours remain intact.
 - [ ] Fixed mobile navigation sits in an opaque reserved bottom band so live copy is not visible beneath it; all final content can still scroll above the band.
 - [ ] The selected Open Horizon mark renders in the Home nav and decodes from new favicon, Apple touch, Android, maskable, manifest, and link-preview paths.
-- [ ] Supplied Coming up artwork matches recycling, normal bins, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
+- [ ] Supplied Coming up artwork matches recycling, general and garden waste, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
+- [ ] General-bin weeks read `General & garden waste` and `Put out both bins`, without repetitive collection wording.
 - [ ] Coming up text remains wholly inside the left pastel column and does not overlap the right-side artwork.
 - [ ] `prefers-reduced-motion` disables scripted smooth scrolling, navigation animation, and visible transition duration; keyboard focus retains a real outline.
 - [ ] The greeting and every title directly on the blue canvas use dark `#142A3D` ink and meet at least 4.5:1 contrast; white remains reserved for dark surfaces and strongly overlaid media.
@@ -54,12 +55,15 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] AI and Career have no orphan stream card at 900–1,099 px or at the current Chromebook width.
 - [ ] On mobile, only an image-verified lead uses full-width media; later verified images use compact thumbnails.
 - [ ] Around the world leads with its sourced fact and then its precisely matched linked image.
-- [ ] The current fact is human-first, genuinely unusual, source-verified, unused, and drawn from the people, population, traditions, records, or music range.
+- [ ] The current fact is human-first, genuinely unusual, source-verified, unused, not retired, and drawn from the people, population, traditions, records, or music range.
+- [ ] Every current and catalogue fact shows a useful `place/area · country/region` location line.
 - [ ] Five unique TV Picks per profile, each tied to a new episode from the previous or next seven days.
 - [ ] All five TV Picks remain visible on desktop as well as mobile.
 - [ ] Every TV Pick has an exact TVMaze programme image, service/channel, availability date, real destination, and today's generated date.
 - [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
 - [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
+- [ ] TV Picks contain no reality programme or Gary Barlow; dark documentaries, `Silo`/science fiction and new Apple TV+ releases outrank weak lifestyle or celebrity-travel content.
+- [ ] BBC iPlayer, Channel 4 and Netflix receive first platform preference when equally strong current picks are available.
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] Dida has one page-level title followed by exactly three white age-six zones.
@@ -76,7 +80,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Men's first team and all competitions.
 - [ ] Trusted transfers contain no academy, youth, women's-team, job-vacancy, marketing, or commercial-role items; ambiguous Arsenal.com items have separate approved-source player corroboration.
 - [ ] Latest completed and nearest upcoming fixture are correct.
-- [ ] Required fixture details and real links remain.
+- [ ] Latest completed match visibly includes score, scorers, competition, quick factual summary, kickoff time and stadium; publication fails if any field is unavailable.
+- [ ] Required upcoming fixture details and real links remain.
 - [ ] No invented scores or fixtures.
 
 ## Safety and release
