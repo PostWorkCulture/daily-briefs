@@ -80,6 +80,38 @@ class UpcomingFixtureTests(unittest.TestCase):
         self.assertIn(official, fixtures)
         self.assertNotIn(stale, fixtures)
 
+
+    def test_completed_result_includes_all_required_match_details(self) -> None:
+        event = {
+            "id": "2645195",
+            "date": "2026-08-21T19:00:00Z",
+            "status": {"type": {"completed": True}},
+            "links": [{"href": "https://example.com/report"}],
+            "competitions": [{
+                "venue": {"fullName": "Emirates Stadium"},
+                "competitors": [
+                    {"homeAway": "home", "score": {"value": 3}, "team": {"id": "359", "displayName": "Arsenal"}},
+                    {"homeAway": "away", "score": {"value": 0}, "team": {"id": "388", "displayName": "Coventry City"}},
+                ],
+                "details": [
+                    {"scoringPlay": True, "team": {"id": "359"}, "clock": {"displayValue": "15"}, "participants": [{"athlete": {"displayName": "Kai Havertz"}}]},
+                    {"scoringPlay": True, "team": {"id": "359"}, "clock": {"displayValue": "23"}, "participants": [{"athlete": {"displayName": "Bukayo Saka"}}]},
+                    {"scoringPlay": True, "team": {"id": "359"}, "clock": {"displayValue": "49"}, "participants": [{"athlete": {"displayName": "Martin Ødegaard"}}]},
+                ],
+            }],
+        }
+
+        result = enrich_arsenal.parse_fixture(event, "Premier League", "eng.1")
+
+        self.assertIsNotNone(result)
+        assert result is not None
+        self.assertEqual(result["result"], "3–0")
+        self.assertEqual(result["scorersLabel"], "Kai Havertz 15', Bukayo Saka 23', Martin Ødegaard 49'")
+        self.assertEqual(result["competition"], "Premier League")
+        self.assertIn("beat Coventry City 3–0", result["summary"])
+        self.assertEqual(result["kickoff"], "8pm")
+        self.assertEqual(result["stadium"], "Emirates Stadium")
+
     def test_verified_aston_villa_details_are_complete(self) -> None:
         fixture = enrich_next_fixture.enrich_fixture(
             {
