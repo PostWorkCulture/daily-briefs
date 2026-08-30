@@ -422,7 +422,8 @@ def check_viewport(browser, name: str) -> None:
         if 'general & garden waste' not in reminder_copy or 'put out both bins' not in reminder_copy:
             raise AssertionError(f"{name}: Garden Waste reminder copy is unclear: {reminder_text}")
         location_text = page.locator('#sceneryCountry').inner_text()
-        if '·' not in location_text or not any(region in location_text for region in ('Europe', 'Oceania', 'Africa', 'Asia', 'America', 'Antarctica')):
+        location_copy = location_text.casefold()
+        if '·' not in location_text or not any(region in location_copy for region in ('europe', 'oceania', 'africa', 'asia', 'america', 'antarctica')):
             raise AssertionError(f"{name}: Fact location lacks wider country/region context: {location_text}")
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
