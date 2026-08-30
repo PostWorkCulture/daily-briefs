@@ -133,7 +133,7 @@ def world_fact_for_today() -> dict:
     if not isinstance(catalog, list) or not catalog:
         raise RuntimeError("Fact catalogue is empty")
 
-    required = {"id", "category", "country", "place", "source", "sourceUrl", "image", "imagePage", "photoCredit", "fact"}
+    required = {"id", "category", "country", "locationContext", "place", "source", "sourceUrl", "image", "imagePage", "photoCredit", "fact"}
     ids, fact_texts = [], []
     for item in catalog:
         missing = sorted(required - set(item))
@@ -168,7 +168,10 @@ def world_fact_for_today() -> dict:
     if today_row:
         selected_id = today_row["id"]
     else:
-        unused = [item for item in catalog if item["id"] not in set(used_ids)]
+        unused = [
+            item for item in catalog
+            if item["id"] not in set(used_ids) and item.get("editorialStatus") != "retired"
+        ]
         selected = next((item for item in unused if item.get("editorialPriority") == "human-first"), None)
         selected = selected or next(iter(unused), None)
         if selected is None:
