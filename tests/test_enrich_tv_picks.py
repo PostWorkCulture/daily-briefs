@@ -35,8 +35,8 @@ def episode(
             "genres": genres or ["Crime"],
             "weight": 80,
             "officialSite": f"https://example.com/{episode_id}",
-            "network": {"name": source, "country": {"code": "GB"}},
-            "webChannel": None,
+            "network": None if source in tv.STREAMING_SERVICES else {"name": source, "country": {"code": "GB"}},
+            "webChannel": {"name": source} if source in tv.STREAMING_SERVICES else None,
             "image": {
                 "original": f"https://static.tvmaze.com/uploads/images/original_untouched/1/{episode_id}.jpg"
             },
@@ -81,6 +81,40 @@ class TvPickTests(unittest.TestCase):
                     date(2026, 8, 27),
                 )
                 self.assertIsNotNone(item)
+
+
+    def test_reality_and_gary_barlow_are_never_eligible(self) -> None:
+        self.assertIsNone(
+            tv.candidate(
+                episode("Island Contest", episode_id=70, show_type="Reality", genres=["Reality"]),
+                date(2026, 8, 27),
+            )
+        )
+        self.assertIsNone(
+            tv.candidate(
+                episode("Gary Barlow's Wine Tour", episode_id=71, show_type="Documentary", genres=["Travel"]),
+                date(2026, 8, 27),
+            )
+        )
+
+    def test_dark_programmes_and_preferred_services_rank_higher(self) -> None:
+        dark = tv.candidate(
+            episode("Silo: The New Mystery", episode_id=72, show_type="Scripted", genres=["Science-Fiction"], source="Apple TV+"),
+            date(2026, 8, 27),
+        )
+        preferred = tv.candidate(
+            episode("A Murder Investigation", episode_id=73, source="BBC iPlayer"),
+            date(2026, 8, 27),
+        )
+        travel = tv.candidate(
+            episode("A Gentle Travel Programme", episode_id=74, show_type="Documentary", genres=["Travel"], source="ITV1"),
+            date(2026, 8, 27),
+        )
+        assert dark is not None and preferred is not None and travel is not None
+        self.assertGreater(dark["preferenceScore"], travel["preferenceScore"])
+        self.assertGreater(preferred["preferenceScore"], travel["preferenceScore"])
+        self.assertEqual(dark["programmeType"], "Scripted")
+        self.assertEqual(dark["genres"], ["Science-Fiction"])
 
     def test_new_episode_is_eligible_across_previous_and_next_week(self) -> None:
         last_week = tv.candidate(
