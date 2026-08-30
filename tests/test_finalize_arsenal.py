@@ -39,6 +39,34 @@ class FirstTeamResultTests(unittest.TestCase):
                     )
                 )
 
+
+    def test_verified_latest_result_has_all_six_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_coventry_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(len(result["scorers"]), 3)
+
+    def test_incomplete_new_result_fails_closed(self) -> None:
+        payload = {
+            "sections": {"Arsenal news": []},
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-08-29T15:00:00+01:00",
+                    "dateLabel": "Sat 29 Aug",
+                    "opponent": "Incomplete FC",
+                    "completed": True,
+                    "arsenalScore": 1,
+                    "opponentScore": 0,
+                    "result": "1–0",
+                    "source": "ESPN",
+                },
+                "news": [],
+            },
+        }
+        with self.assertRaisesRegex(RuntimeError, "lastResult is incomplete"):
+            finalize_arsenal.apply_last_result_fallback(payload)
+
     def test_first_team_result_wins_over_newer_youth_report(self) -> None:
         payload = {
             "sections": {
