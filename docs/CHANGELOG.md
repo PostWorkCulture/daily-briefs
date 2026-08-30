@@ -2,6 +2,19 @@
 
 Newest entries go first.
 
+## 30 August 2026: Editorial curation and complete Arsenal results
+
+Status: implemented; publication follows the normal CI, refresh, and Pages gates
+
+- Garden Waste: normal-bin weeks now use the shorter `General & garden waste` title and `Put out both bins` instruction while preserving the rule that garden waste is collected with general rubbish.
+- Fact of the Day: replaced the rejected Vanuatu sand item with the unused Baltic mass song-and-dance festival fact, permanently retired Vanuatu from future selection, and added a useful country/region context line to every catalogue item and current card.
+- TV Picks: reality programmes and Gary Barlow are hard exclusions. Dark murder, scandal, fraud, corruption, cult and prison documentaries, `Silo`, science fiction, and new Apple TV+ premieres receive stronger ranking; BBC iPlayer, Channel 4 and Netflix are the preferred services.
+- Arsenal: the latest result now renders score, scorers, competition, quick factual summary, kickoff time and stadium. Structured ESPN venue/scoring-play enrichment supports future matches; the refresh fails closed when any required result detail is missing.
+- Current verified result: Arsenal 3–0 Coventry City at Emirates Stadium in the Premier League, 8pm kickoff; Kai Havertz 15', Bukayo Saka 23' and Martin Ødegaard 49'. The quick summary and source link use Arsenal.com's match report.
+- Validation added: unit coverage for retired facts, location context, reality exclusion, platform/content weighting, ESPN result parsing and incomplete-result failure; protected workflow and responsive checks cover the published fields.
+- Scope protected: no section order, profile, route, navigation, source-link policy, calendar, weather, Birthday, Dida, AI, Career or unrelated News behaviour changed.
+
+
 ## 29 August 2026: Bookmark identity v2 and AI company marks
 
 Status: validated and published; Samsung bookmark re-save pending
