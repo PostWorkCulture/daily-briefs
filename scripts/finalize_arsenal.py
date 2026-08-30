@@ -102,8 +102,19 @@ def verified_coventry_result() -> dict:
         "arsenalScore": 3,
         "opponentScore": 0,
         "result": "3–0",
-        "url": "https://www.skysports.com/football/arsenal-vs-coventry-city/report/559444",
-        "source": "Sky Sports",
+        "scorers": [
+            {"name": "Kai Havertz", "team": "Arsenal", "minute": "15'"},
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "23'"},
+            {"name": "Martin Ødegaard", "team": "Arsenal", "minute": "49'"},
+        ],
+        "scorersLabel": "Kai Havertz 15', Bukayo Saka 23', Martin Ødegaard 49'",
+        "stadium": "Emirates Stadium",
+        "summary": (
+            "Arsenal opened their Premier League title defence with a commanding "
+            "3–0 win, scoring twice inside 23 minutes before Ødegaard added the third after half-time."
+        ),
+        "url": "https://www.arsenal.com/news/report-arsenal-3-0-coventry-city-an2Fq8x1O9cq",
+        "source": "Arsenal.com",
     }
 
 
@@ -331,7 +342,13 @@ def apply_last_result_fallback(payload: dict) -> None:
     def candidate_dt(item: dict) -> datetime:
         return parse_dt(item.get("date")) or datetime.min.replace(tzinfo=TZ)
 
-    newest = max(candidates, key=candidate_dt)
+    newest_date = max(candidate_dt(item) for item in candidates)
+    same_day = [item for item in candidates if candidate_dt(item).date() == newest_date.date()]
+    detail_fields = ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium")
+    newest = max(
+        same_day,
+        key=lambda item: sum(bool(str(item.get(key) or "").strip()) for key in detail_fields),
+    )
 
     # Preserve the approved Community Shield image only while that remains the
     # actual latest result.
@@ -344,6 +361,15 @@ def apply_last_result_fallback(payload: dict) -> None:
         newest.setdefault("imageAlt", fallback.get("imageAlt"))
 
     arsenal["lastResult"] = newest
+    required = ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium")
+    missing = [key for key in required if not str(newest.get(key) or "").strip()]
+    if not isinstance(newest.get("scorers"), list):
+        missing.append("scorers")
+    if missing:
+        raise RuntimeError(
+            "Arsenal lastResult is incomplete; refusing to publish without "
+            + ", ".join(missing)
+        )
 
     # Guardrail: if trusted result/report news contains a newer completed match
     # than lastResult, fail the refresh instead of silently publishing stale data.

@@ -123,11 +123,21 @@
   outline:none;
 }
 
+
+#view-arsenal #lastResultCard{min-height:260px}
+#view-arsenal #lastResultCard>small{display:block;margin-top:7px;line-height:1.35}
+#view-arsenal .last-result-details{display:grid;gap:9px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(7,29,73,.12)}
+#view-arsenal .match-scorers,#view-arsenal .match-summary{margin:0;color:#39465f;font-size:12px;line-height:1.42}
+#view-arsenal .match-scorers{display:grid;gap:3px}
+#view-arsenal .match-scorers b{color:var(--arsenal-red);font-size:9px;font-weight:950;letter-spacing:.12em;text-transform:uppercase}
+#view-arsenal .match-summary{font-size:11px}
+
 @media(max-width:699px){
   .arsenal-hero{min-height:160px;padding:24px 20px}
   .arsenal-hero-cannon{width:42%;min-width:118px;opacity:.94}
   #view-arsenal .arsenal-grid{grid-template-columns:1fr!important;padding:16px 14px 0}
   #view-arsenal .match-card,#view-arsenal .league-position-card{min-height:132px;padding:17px}
+  #view-arsenal #lastResultCard{min-height:auto}
   #view-arsenal #nextFixtureCard.fixture-detail-card{padding:17px!important}
   .arsenal-subhead{margin:21px 14px 9px}
   #view-arsenal .arsenal-news{padding:0 14px 18px}

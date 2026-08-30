@@ -417,6 +417,14 @@ def check_viewport(browser, name: str) -> None:
                     raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
 
         page.locator('[data-view-target="home"]').click()
+        reminder_text = page.locator('#homeReminders').inner_text()
+        reminder_copy = reminder_text.casefold()
+        if 'general & garden waste' not in reminder_copy or 'put out both bins' not in reminder_copy:
+            raise AssertionError(f"{name}: Garden Waste reminder copy is unclear: {reminder_text}")
+        location_text = page.locator('#sceneryCountry').inner_text()
+        location_copy = location_text.casefold()
+        if '·' not in location_text or not any(region in location_copy for region in ('europe', 'oceania', 'africa', 'asia', 'america', 'antarctica')):
+            raise AssertionError(f"{name}: Fact location lacks wider country/region context: {location_text}")
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
             raise AssertionError(f"{name}: expected four Calendar summary cards")
@@ -490,6 +498,13 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
+        last_result_text = page.locator('#lastResultCard').inner_text()
+        last_result_copy = last_result_text.casefold()
+        for required in ('arsenal 3–0 coventry city', 'kai havertz', 'premier league', '8pm', 'emirates stadium'):
+            if required not in last_result_copy:
+                raise AssertionError(f"{name}: Arsenal last result is missing {required}: {last_result_text}")
+        if len(page.locator('#lastResultCard .match-summary').inner_text().strip()) < 40:
+            raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin")
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
         page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)

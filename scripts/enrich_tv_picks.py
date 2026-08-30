@@ -38,10 +38,11 @@ STREAMING_SERVICES = {
     "Sky Go",
 }
 
-EXCLUDED_TYPES = {"Animation", "Game Show", "News", "Talk Show"}
+EXCLUDED_TYPES = {"Animation", "Game Show", "News", "Reality", "Talk Show"}
 EXCLUDED_TITLES = re.compile(
     r"\b(?:eastenders|emmerdale|hollyoaks|coronation street|loose women|good morning britain|"
-    r"this morning|news at|squawk box|countdown)\b",
+    r"this morning|news at|squawk box|countdown|gary barlow|wine tour|love island|"\
+    r"married at first sight|big brother|real housewives|the apprentice|the traitors)\b",
     re.I,
 )
 SPORTS_TERMS = re.compile(
@@ -57,23 +58,48 @@ ALLOWED_MAJOR_SPORTS = re.compile(
 )
 INTEREST_WEIGHTS = {
     "true crime": 90,
-    "murder": 65,
-    "crime": 48,
+    "murder": 78,
+    "serial killer": 76,
+    "homicide": 72,
+    "killer": 62,
+    "crime": 52,
     "thriller": 45,
     "mystery": 42,
     "documentary": 40,
     "docuseries": 40,
-    "investigation": 36,
-    "scandal": 34,
-    "science-fiction": 45,
-    "sci-fi": 45,
+    "investigation": 46,
+    "scandal": 54,
+    "fraud": 48,
+    "corruption": 48,
+    "cult": 44,
+    "abuse": 42,
+    "prison": 34,
+    "conspiracy": 32,
+    "silo": 120,
+    "science-fiction": 52,
+    "sci-fi": 52,
     "world cup": 65,
     "wimbledon": 65,
     "uefa euro": 65,
-    "history": 18,
-    "travel": 12,
+    "history": 20,
 }
+PREFERRED_SERVICE_WEIGHTS = {
+    "BBC iPlayer": 42,
+    "Channel 4": 40,
+    "Netflix": 38,
+    "Apple TV+": 34,
+    "BBC One": 26,
+    "BBC Two": 26,
+    "ITVX": 14,
+    "ITV1": 12,
+    "Sky Atlantic": 12,
+    "Prime Video": 10,
+    "Paramount+": 8,
+}
+
 DEEMPHASIS_WEIGHTS = {
+    "celebrity travel": 70,
+    "travelogue": 55,
     "gardening": 55,
     "garden": 45,
     "diy": 35,
@@ -159,7 +185,8 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     if not title or EXCLUDED_TITLES.search(title):
         return None
     show_type = str(show.get("type") or "").strip()
-    if show_type in EXCLUDED_TYPES:
+    genres = [str(item) for item in show.get("genres") or []]
+    if show_type in EXCLUDED_TYPES or "Reality" in genres:
         return None
     language = str(show.get("language") or "").lower()
     if language and language != "english":
@@ -189,7 +216,6 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     episode_summary = clean_text(episode.get("summary") or "")
     show_summary = clean_text(show.get("summary") or "")
     summary = episode_summary or show_summary or f"A current {show_type.lower() or 'programme'} to consider."
-    genres = [str(item) for item in show.get("genres") or []]
     haystack = " ".join([title, summary, show_type, *genres]).lower()
     is_sport = show_type == "Sports" or SPORTS_TERMS.search(haystack)
     if is_sport and not ALLOWED_MAJOR_SPORTS.search(haystack):
@@ -205,10 +231,11 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
             score -= weight
     if show_type == "Documentary":
         score += 42
-    if source in {"BBC One", "BBC Two", "BBC iPlayer", "Channel 4", "ITV1", "ITVX", "Netflix", "Apple TV+", "Prime Video", "Sky Atlantic", "Paramount+"}:
-        score += 18
+    score += PREFERRED_SERVICE_WEIGHTS.get(source, 0)
     if episode.get("number") == 1:
         score += 28
+        if source == "Apple TV+":
+            score += 18
     score += min(int(show.get("weight") or 0), 100) / 10
 
     official = str(show.get("officialSite") or channel.get("officialSite") or episode.get("url") or show.get("url") or "").strip()
@@ -229,6 +256,8 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
         "showId": show.get("id"),
         "episodeId": episode.get("id"),
         "contentType": "tv-pick",
+        "programmeType": show_type,
+        "genres": genres,
         "generatedDate": day.isoformat(),
         "preferenceScore": round(score, 1),
     }

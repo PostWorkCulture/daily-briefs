@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 3.9, 29 August 2026. Owner: Pete.
+Version 4.0, 30 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -20,7 +20,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Primary navigation uses a solid dark-navy `#102A43` surface with white text and icons at rest, including the active destination. Each destination uses a brighter version of its existing colour only on hover or keyboard focus so the feedback remains readable against the dark surface.
 - Respect `prefers-reduced-motion`: destination changes and in-page controls must not request smooth scrolling, navigation decoration must not animate, and hover/focus transitions must become effectively immediate. Keep a real visible keyboard-focus outline in addition to destination glows.
 - On mobile, primary navigation remains fixed, fully visible, and clickable while switching destinations or interacting with content. Use immediate mobile view changes and a stable opaque navigation surface to avoid compositor flicker.
-- Home `Coming up` cards retain solid pastel text surfaces with dark `#142A3D` text and use Pete-supplied artwork as a cropped right-side visual where a matched image exists. Keep all live card text inside a dedicated left-side text column on the solid pastel area, with no overlap into the artwork. Recycling, normal bins, clocks, Halloween, and Christmas each use their matching supplied image. Crop out the dates, countdown numbers, and fake controls embedded in the source compositions so the live dynamic card text remains authoritative. Halloween retains pastel orange. From 700 px upwards, all four cards must fit on one compact row.
+- Home `Coming up` cards retain solid pastel text surfaces with dark `#142A3D` text and use Pete-supplied artwork as a cropped right-side visual where a matched image exists. Keep all live card text inside a dedicated left-side text column on the solid pastel area, with no overlap into the artwork. Recycling, general and garden waste, clocks, Halloween, and Christmas each use their matching supplied image. General-bin weeks must be titled `General & garden waste` with the concise instruction `Put out both bins`; garden waste remains collected on those weeks. Crop out the dates, countdown numbers, and fake controls embedded in the source compositions so the live dynamic card text remains authoritative. Halloween retains pastel orange. From 700 px upwards, all four cards must fit on one compact row.
 - Interactive card hover and keyboard-focus feedback must be clearly visible, stationary, and consistent in strength throughout the brief. General cards use cyan, Arsenal cards retain red, and image-led TV cards retain gold.
 
 - Use Pete's selected minimalist Open Horizon artwork, a yellow sunrise emerging from layered blue open pages, as the dedicated Daily Brief icon across favicon, Apple touch, Android saved-page, installable-app, link-preview, and Home navigation metadata. Use new immutable filenames when changing icon artwork so mobile favourites cannot reuse an old cached identity. Keep Daily Brief branding separate from Bomberfan and Arsenal.
@@ -80,12 +80,13 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Prioritise genuinely rare human stories from different countries: extraordinary people and communities, population and language records, indigenous traditions, unusual customs, record-breaking achievements, and surprising music or band culture. Wild places and planet facts remain occasional variety, not the default.
 - Keep a curated human-first queue large enough to prevent dull fallback. New-day selection must choose an unused human-first fact before any general catalogue item.
 - Track every published fact ID in a committed permanent history. Never reuse an ID or duplicate fact text; if the catalogue is exhausted, fail the refresh instead of repeating.
+- Every fact must display a useful wider location line in `place/area · country/region` form so an unfamiliar location is understandable without prior knowledge. Retire an item from future selection when Pete rejects it as dull; keep its ID only for permanent history integrity.
 - Use curated, place-matched images at least 2,200 pixels wide and 1,000 pixels high. Never display a low-resolution fallback.
 - On Chromebook/desktop, short fact copy may be vertically centred beside its image so the 4/8 package uses its whitespace intentionally; fact-first DOM order remains mandatory.
 
 **TV Picks**
 - Show five current, named programmes per profile. An eligible pick has released a new episode within the previous seven days or will release one within the next seven days; a new episode qualifies even when the series itself is not new.
-- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Prefer crime, true crime, investigations, documentaries, thrillers, mysteries, science fiction, history, and strong new-series or season premieres. Exclude routine sport, news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination. The only sports exceptions are World Cup, UEFA Euros and Wimbledon programmes.
+- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Prioritise documentaries—especially murder, scandal, corruption, fraud, cult, prison, and other dark investigations—plus thrillers, mysteries, `Silo`, science fiction, and strong new Apple TV+ series or season premieres. Prefer BBC iPlayer, Channel 4, and Netflix, followed by Apple TV+, when equally strong current programmes are available. Exclude every reality programme, including misclassified Gary Barlow or celebrity-travel shows, as well as routine sport, news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination. The only sports exceptions are World Cup, UEFA Euros and Wimbledon programmes.
 - Give every card the exact programme artwork supplied by the schedule source, a service or channel, and a clear available-since or upcoming date. Never use generic streaming art, logos, screenshots, placeholders, or a fixed title allowlist.
 - Prefer titles not used during the previous three refresh days, keep source and category variety, and fail before publication if five valid current picks cannot be produced. Keep a committed 30-day selection history so freshness is testable.
 
@@ -95,7 +96,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - No betting, odds, gambling promotion, or gambling information.
 - Men's first team, all competitions.
 - Latest completed and nearest upcoming fixtures.
-- Preserve opponent, stadium, kickoff, competition, TV channel, and previous-meeting details when available.
+- The latest completed match must always show score, scorers, competition, a concise factual game summary, actual kickoff time, and stadium. If any required result field cannot be verified, fail the refresh instead of publishing an incomplete result.
+- Preserve opponent, stadium, kickoff, competition, TV channel, and previous-meeting details for the upcoming fixture when available.
 - Put Transfer watch at the bottom of the Arsenal view and always order it newest first. Its trusted list includes only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic/The New York Times, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, job vacancies, commercial roles, academy, and women's-team items from this trusted list. An Arsenal.com item without explicit first-team context must be corroborated by a separate approved source identifying the same player before it can appear.
 - Beneath the trusted list, show a separate Reporter watch for early, speculative public X posts. Mark every item `Unconfirmed · X`; never mix it into trusted reporting. Allow only David Ornstein, Fabrizio Romano, Charles Watts, and James Benge. Order it newest first and reject betting, gambling, women's-team, academy, U21, U18, youth, and girls' items.
 - Discover allowlisted public X posts through Google News indexing so the brief does not require a paid X API, credentials, scraping proxy, or new morning-refresh secret.

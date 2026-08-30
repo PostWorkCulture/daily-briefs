@@ -25,7 +25,7 @@ function renderArsenal(a){
   if(state.profile!=='pete'||!a){panel.hidden=true;return}
   panel.hidden=false;
   const last=a.lastResult,next=a.nextFixture;
-  $('#lastResultCard').innerHTML=last?`<span>Last result · ${last.competition}</span><strong>Arsenal ${last.result} ${last.opponent}</strong><small>${last.dateLabel}</small>`:'<span>Last result</span><strong>—</strong><small>No result available</small>';
+  $('#lastResultCard').innerHTML=last?`<span>Last result · ${last.competition}</span><strong>Arsenal ${last.result} ${last.opponent}</strong><small>${[last.dateLabel,last.kickoff,last.stadium].filter(Boolean).join(' · ')}</small><div class="last-result-details"><p class="match-scorers"><b>Scorers</b><span>${last.scorersLabel||'No scorers listed'}</span></p><p class="match-summary">${last.summary||'Match summary unavailable.'}</p></div>`:'<span>Last result</span><strong>—</strong><small>No result available</small>';
   $('#nextFixtureCard').innerHTML=next?`<span>Next fixture · ${next.competition}</span><strong>${next.opponent}</strong><small>${next.dateLabel} · ${next.kickoff} · ${next.homeAway==='home'?'Home':'Away'}</small>`:'<span>Next fixture</span><strong>—</strong><small>Fixture unavailable</small>';
   $('#leagueCard').innerHTML=a.leaguePosition?`<span>Premier League</span><strong>${a.leaguePosition}${a.leaguePosition===1?'st':a.leaguePosition===2?'nd':a.leaguePosition===3?'rd':'th'}</strong><small>Current position</small>`:'<span>Premier League</span><strong>—</strong><small>Position unavailable</small>';
   const news=$('#arsenalNews');news.innerHTML='';

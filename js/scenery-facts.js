@@ -40,7 +40,7 @@ function renderWorldFact(item={}){
     if(image) image.hidden=true;
     return;
   }
-  if(country) country.textContent=item.country||'Explore';
+  if(country) country.textContent=item.locationContext||item.country||'Explore';
   if(place) place.textContent=item.place||'Somewhere remarkable';
   if(credit) credit.textContent=`Photo · ${item.photoCredit||'verified source'}`;
   if(imageCard) imageCard.href=item.sourceUrl;
@@ -49,7 +49,7 @@ function renderWorldFact(item={}){
   if(factText) factText.textContent=item.fact;
   if(factSource) factSource.textContent=`Fact source · ${item.source}`;
   if(image){
-    image.alt=`${item.place}, ${item.country}`;
+    image.alt=`${item.place}, ${item.locationContext||item.country}`;
     loadHighQualityImage(image,item);
   }
 }

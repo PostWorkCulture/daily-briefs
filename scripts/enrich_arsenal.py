@@ -76,11 +76,105 @@ def clean_arsenal_news(items: list[dict]) -> list[dict]:
     return clean
 
 
-def parse_fixture(event: dict, competition: str) -> dict | None:
+def score_display(value) -> str:
+    try:
+        number = float(value)
+        return str(int(number)) if number.is_integer() else str(number)
+    except Exception:
+        return str(value)
+
+
+def scorer_rows(comp: dict) -> list[dict]:
+    competitors = comp.get("competitors") or []
+    team_names = {
+        str(row.get("team", {}).get("id") or ""): row.get("team", {}).get("displayName", "")
+        for row in competitors
+    }
+    rows: list[dict] = []
+    for detail in comp.get("details") or []:
+        if not detail.get("scoringPlay"):
+            continue
+        athlete = {}
+        for participant in detail.get("participants") or []:
+            athlete = participant.get("athlete") or participant.get("player") or {}
+            if athlete:
+                break
+        if not athlete:
+            involved = detail.get("athletesInvolved") or []
+            athlete = involved[0] if involved else detail.get("athlete") or {}
+        name = str(athlete.get("displayName") or athlete.get("shortName") or "").strip()
+        if not name:
+            continue
+        team = detail.get("team") or {}
+        team_name = str(team.get("displayName") or team_names.get(str(team.get("id") or ""), "")).strip()
+        minute = str((detail.get("clock") or {}).get("displayValue") or "").strip()
+        if minute and not minute.endswith("'"):
+            minute = f"{minute}'"
+        rows.append({
+            "name": name,
+            "team": team_name,
+            "minute": minute,
+            "penalty": bool(detail.get("penaltyKick")),
+            "ownGoal": bool(detail.get("ownGoal")),
+        })
+    return rows
+
+
+def scorers_label(rows: list[dict], arsenal_name: str, opponent_name: str, total_goals: int) -> str:
+    if total_goals == 0:
+        return "No scorers"
+    if not rows:
+        return ""
+    grouped: dict[str, list[str]] = {}
+    for row in rows:
+        name = row["name"]
+        if row.get("penalty"):
+            name += " (pen)"
+        if row.get("ownGoal"):
+            name += " (og)"
+        label = " ".join(part for part in (name, row.get("minute", "")) if part)
+        grouped.setdefault(row.get("team") or "Scorers", []).append(label)
+    if len(grouped) == 1 and next(iter(grouped)) in {arsenal_name, "Arsenal"}:
+        return ", ".join(next(iter(grouped.values())))
+    return " · ".join(f"{team}: {', '.join(names)}" for team, names in grouped.items())
+
+
+def result_metadata(comp: dict, competition: str, arsenal: dict, opponent: dict, a_score, o_score) -> dict:
+    venue = str((comp.get("venue") or {}).get("fullName") or "").strip()
+    rows = scorer_rows(comp)
+    try:
+        total_goals = int(float(a_score)) + int(float(o_score))
+    except Exception:
+        total_goals = -1
+    arsenal_name = str(arsenal.get("team", {}).get("displayName") or "Arsenal")
+    opponent_name = str(opponent.get("team", {}).get("displayName") or "Opponent")
+    score = f"{score_display(a_score)}–{score_display(o_score)}"
+    summary = ""
+    try:
+        if float(a_score) > float(o_score):
+            outcome = f"beat {opponent_name} {score}"
+        elif float(a_score) < float(o_score):
+            outcome = f"lost {score} to {opponent_name}"
+        else:
+            outcome = f"drew {score} with {opponent_name}"
+        venue_clause = f" at {venue}" if venue else ""
+        summary = f"Arsenal {outcome}{venue_clause} in the {competition}."
+    except Exception:
+        pass
+    return {
+        "stadium": venue,
+        "scorers": rows,
+        "scorersLabel": scorers_label(rows, arsenal_name, opponent_name, total_goals),
+        "summary": summary,
+    }
+
+
+def parse_fixture(event: dict, competition: str, competition_code: str = "") -> dict | None:
     comps = event.get("competitions") or []
     if not comps:
         return None
-    teams = comps[0].get("competitors") or []
+    comp = comps[0]
+    teams = comp.get("competitors") or []
     arsenal = next((x for x in teams if "arsenal" in x.get("team", {}).get("displayName", "").lower()), None)
     opponent = next((x for x in teams if x is not arsenal), None)
     if not arsenal or not opponent:
@@ -92,16 +186,54 @@ def parse_fixture(event: dict, competition: str) -> dict | None:
     completed = bool(event.get("status", {}).get("type", {}).get("completed"))
     a_score = arsenal.get("score", {}).get("value") if isinstance(arsenal.get("score"), dict) else arsenal.get("score")
     o_score = opponent.get("score", {}).get("value") if isinstance(opponent.get("score"), dict) else opponent.get("score")
-    return {
+    item = {
         "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
         "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
         "opponent": opponent.get("team", {}).get("displayName", "Opponent"),
         "competition": competition, "homeAway": arsenal.get("homeAway", ""),
         "completed": completed, "arsenalScore": a_score, "opponentScore": o_score,
-        "result": f"{int(a_score) if float(a_score).is_integer() else a_score}–{int(o_score) if float(o_score).is_integer() else o_score}" if completed and a_score is not None and o_score is not None else "",
+        "result": f"{score_display(a_score)}–{score_display(o_score)}" if completed and a_score is not None and o_score is not None else "",
         "url": next((l.get("href") for l in event.get("links", []) if l.get("href")), ""),
         "source": "ESPN",
+        "_eventId": str(event.get("id") or ""),
+        "_competitionCode": competition_code,
     }
+    if completed and a_score is not None and o_score is not None:
+        item.update(result_metadata(comp, competition, arsenal, opponent, a_score, o_score))
+    return item
+
+
+def strip_internal(item: dict | None) -> dict | None:
+    if not item:
+        return item
+    return {key: value for key, value in item.items() if not key.startswith("_")}
+
+
+def enrich_completed_result(item: dict) -> dict:
+    enriched = dict(item)
+    event_id = str(enriched.get("_eventId") or "")
+    code = str(enriched.get("_competitionCode") or "")
+    if event_id and code:
+        summary = get_json(
+            f"https://site.api.espn.com/apis/site/v2/sports/soccer/{code}/summary?event={event_id}"
+        )
+        competitions = (summary.get("header") or {}).get("competitions") or []
+        if competitions:
+            parsed = parse_fixture(
+                {
+                    "id": event_id,
+                    "date": enriched.get("date"),
+                    "status": {"type": {"completed": True}},
+                    "competitions": competitions,
+                },
+                str(enriched.get("competition") or "Football"),
+                code,
+            )
+            if parsed:
+                for key in ("stadium", "scorers", "scorersLabel", "summary"):
+                    if parsed.get(key):
+                        enriched[key] = parsed[key]
+    return strip_internal(enriched) or {}
 
 
 def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
@@ -297,7 +429,7 @@ def espn_snapshot() -> tuple[list[dict], int | None, int | None, int | None]:
             f"https://site.api.espn.com/apis/site/v2/sports/soccer/{code}/teams/arsenal/schedule?season={SEASON}",
         ]:
             data = get_json(url)
-            parsed = [parse_fixture(e, name) for e in data.get("events", []) or []]
+            parsed = [parse_fixture(e, name, code) for e in data.get("events", []) or []]
             parsed = [x for x in parsed if x]
             if parsed:
                 fixtures.extend(parsed)
@@ -341,6 +473,29 @@ def snapshot(existing_news: list[dict]) -> dict:
 
     last_result = past[-1] if past else None
     next_fixture = future[0] if future else None
+
+    if last_result:
+        # Sky is the preferred destination, but ESPN normally carries the structured
+        # venue and scoring-play data. Merge those fields for the same completed match.
+        try:
+            last_day = dateparser.parse(last_result["date"]).date()
+        except Exception:
+            last_day = None
+        same_espn = [
+            item for item in espn_fixtures
+            if item.get("completed")
+            and str(item.get("opponent") or "").casefold() == str(last_result.get("opponent") or "").casefold()
+            and last_day
+            and dateparser.parse(item["date"]).date() == last_day
+        ]
+        if same_espn:
+            details = enrich_completed_result(max(same_espn, key=lambda item: item["date"]))
+            last_result = dict(last_result)
+            for key in ("stadium", "scorers", "scorersLabel", "summary"):
+                if details.get(key):
+                    last_result[key] = details[key]
+        last_result = strip_internal(last_result)
+    next_fixture = strip_internal(next_fixture)
 
     # Retain the official PL fallback when no all-competition source returns anything.
     if not next_fixture:

@@ -29,8 +29,8 @@
     const recycling = weeks % 2 === 0;
     return {
       date,
-      type: recycling ? 'Recycling' : 'General + garden waste',
-      detail: recycling ? 'recycling collection' : 'normal rubbish + garden waste collection',
+      type: recycling ? 'Recycling' : 'General & garden waste',
+      detail: recycling ? 'Recycling collection' : 'Put out both bins',
       recycling
     };
   }
