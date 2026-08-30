@@ -107,6 +107,9 @@ jobs:
                   assert today_date-timedelta(days=7)<=airdate<=today_date+timedelta(days=7), f'{profile}: TV Pick is outside the previous/next-week window'
                   assert str(pick.get('artwork') or '').startswith('https://static.tvmaze.com/uploads/images/original_untouched/'), f'{profile}: TV Pick has no exact programme artwork'
                   assert str(pick.get('url') or '').startswith(('https://','http://')), f'{profile}: TV Pick has no destination link'
+                  assert str(pick.get('programmeType') or '').casefold() != 'reality', f'{profile}: reality TV appeared in TV Picks'
+                  assert not any(str(genre).casefold() == 'reality' for genre in pick.get('genres') or []), f'{profile}: reality genre appeared in TV Picks'
+                  assert 'gary barlow' not in str(pick.get('title') or '').casefold(), f'{profile}: Gary Barlow appeared in TV Picks'
                   sports=__import__('re').compile(r'\b(?:sports?|football|soccer|premier league|champions league|fa cup|carabao cup|rugby|cricket|tennis|golf|boxing|formula\s*(?:one|1)|f1|motorsport|grand prix|athletics?|olympics?|basketball|nfl|super bowl|baseball|nhl|ice hockey|cycling|darts|snooker|horse racing|wrestling|wwe|ufc)\b',__import__('re').I)
                   allowed_sport=__import__('re').compile(r'\b(?:world cup|uefa euro(?:s|\s*20\d{2})?|uefa european championship|wimbledon)\b',__import__('re').I)
                   pick_text=' '.join(str(pick.get(key) or '') for key in ('title','summary','badge'))
@@ -129,6 +132,9 @@ jobs:
           fact_texts=[__import__('re').sub(r'\W+','',str(item.get('fact') or '').lower()) for item in catalog]
           assert catalog and len(fact_ids)==len(set(fact_ids)), 'Fact catalogue has duplicate IDs'
           assert len(fact_texts)==len(set(fact_texts)), 'Fact catalogue repeats fact text'
+          for item in catalog:
+              context=str(item.get('locationContext') or '').strip()
+              assert context and '·' in context, f"Fact lacks country/region context: {item.get('id')}"
           human_first=[item for item in catalog if item.get('editorialPriority')=='human-first']
           assert len(human_first)>=8, 'Fact catalogue needs at least eight human-first facts'
           human_categories=' '.join(str(item.get('category') or '').lower() for item in human_first)
@@ -147,6 +153,9 @@ jobs:
               assert fact.get('date')==history[-1].get('date'), f'{profile}: current fact date does not match history'
               assert str(fact.get('sourceUrl') or '').startswith('https://'), f'{profile}: fact has no verified source'
               assert str(fact.get('image') or '').startswith('https://'), f'{profile}: fact has no matched image'
+              assert str(fact.get('locationContext') or '').strip(), f'{profile}: fact has no country/region context'
+              catalog_fact=next(item for item in catalog if item.get('id')==fact.get('id'))
+              assert catalog_fact.get('editorialStatus')!='retired', f'{profile}: retired fact was published'
 
           pete=json.loads((Path('data')/'pete.json').read_text())
           sofia=json.loads((Path('data')/'sofia.json').read_text())
@@ -168,6 +177,10 @@ jobs:
               assert job.get('countryFocus') in {'UK','Sweden','Europe/remote'}, 'Sofia Career contains an ineligible location'
               assert str(job.get('url') or '').startswith(('https://','http://')), 'Sofia Career job missing real link'
 
+          last_result=(pete.get('arsenal') or {}).get('lastResult') or {}
+          for key in ('result','scorersLabel','competition','summary','kickoff','stadium'):
+              assert str(last_result.get(key) or '').strip(), f'Arsenal last result missing {key}'
+          assert isinstance(last_result.get('scorers'),list), 'Arsenal last result missing structured scorers'
           fixture=(pete.get('arsenal') or {}).get('nextFixture')
           position=(pete.get('arsenal') or {}).get('leaguePosition')
           assert isinstance(position,int) and 1<=position<=20, 'Arsenal current Premier League position is unavailable'
