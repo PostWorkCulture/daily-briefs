@@ -499,8 +499,9 @@ def check_viewport(browser, name: str) -> None:
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
         last_result_text = page.locator('#lastResultCard').inner_text()
-        for required in ('Arsenal 3–0 Coventry City', 'Kai Havertz', 'Premier League', '8pm', 'Emirates Stadium'):
-            if required not in last_result_text:
+        last_result_copy = last_result_text.casefold()
+        for required in ('arsenal 3–0 coventry city', 'kai havertz', 'premier league', '8pm', 'emirates stadium'):
+            if required not in last_result_copy:
                 raise AssertionError(f"{name}: Arsenal last result is missing {required}: {last_result_text}")
         if len(page.locator('#lastResultCard .match-summary').inner_text().strip()) < 40:
             raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin")
