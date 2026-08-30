@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.0, 30 August 2026. Owner: Pete.
+Version 4.1, 30 August 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -11,7 +11,7 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use a solid medium-light blue canvas, dark `#142A3D` ink for main copy on every light surface, restrained luminous accents, rounded cards, bold legible type, and meaningful warm photography. Reserve light text for image-led media cards where a strong dark overlay is required for readability. Preserve header styling during unrelated work.
 
 - Use an `Open Horizon newsroom` hierarchy inspired by premium news homepages without copying their identity: firm section rules, a clear lead/supporting/stream rhythm, intentional desktop grids, and denser mobile scanning. Prominence comes from width, position, type scale, and verified imagery, not fabricated labels or reordered source content. Keep bespoke systems for Arsenal, Dida, Birthday, Weather, Coming up, Calendar, Around the world, and TV Picks.
-- Cap the main Chromebook/desktop editorial rail at 1,120 px. Use the slim top bar for the refresh date, compact weather status, and active profile control or identity; never restore a page-content wordmark.
+- Cap the main Chromebook/desktop editorial rail at 1,120 px. Do not use a utility top bar. On locked profile routes, the main brief date must be the first visible line, followed by the greeting; never duplicate the date, weather status, or profile identity above it.
 - Text-only news leads are valid and must use a purposeful 7/5 lead-and-support desktop rail rather than reserving an empty image-scale area. Image-verified desktop leads use a prominent image-left, copy-right package. Desktop stream stories share one flat divided paper rail instead of appearing as separate floating tiles. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists, and secondary items form a flat divided paper feed rather than a wall of identical cards.
 
 - The Home greeting and section or page titles that sit directly on the solid blue canvas use dark `#142A3D` ink, giving at least 4.5:1 contrast. Titles inside white or light cards retain the same readable dark ink or a purposeful accessible accent colour. Reserve white text for dark surfaces and strongly overlaid media. Main copy on light surfaces remains dark `#142A3D`.
@@ -47,7 +47,7 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 - The Home greeting is `Hey Pete` for Pete and `Hey Sofia` for Sofia, without trailing punctuation.
 - Keep the greeting deliberately smaller than the previous headline: 36–52 px below 900 px and 52–68 px from 900 px upwards.
-- Do not display the `Daily Briefs` wordmark above the date or in the sticky top bar.
+- Do not display the `Daily Briefs` wordmark in page content.
 - Place the greeting slightly lower in the hero so it sits comfortably between the date and the Weather panel.
 
 ## Current structure
