@@ -182,6 +182,7 @@ def check_reduced_motion(browser) -> None:
         page.locator("#greeting").wait_for(state="visible", timeout=10000)
         page.evaluate("window.scrollTo(0, 900)")
         page.locator('[data-view-target="news"]').click()
+        page.locator("#view-news .tab-story").first.wait_for(state="visible", timeout=10000)
         motion = page.evaluate(
             """
             () => ({
