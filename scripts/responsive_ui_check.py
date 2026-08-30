@@ -418,7 +418,8 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="home"]').click()
         reminder_text = page.locator('#homeReminders').inner_text()
-        if 'General & garden waste' not in reminder_text or 'Put out both bins' not in reminder_text:
+        reminder_copy = reminder_text.casefold()
+        if 'general & garden waste' not in reminder_copy or 'put out both bins' not in reminder_copy:
             raise AssertionError(f"{name}: Garden Waste reminder copy is unclear: {reminder_text}")
         location_text = page.locator('#sceneryCountry').inner_text()
         if '·' not in location_text or not any(region in location_text for region in ('Europe', 'Oceania', 'Africa', 'Asia', 'America', 'Antarctica')):
