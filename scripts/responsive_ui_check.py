@@ -417,6 +417,12 @@ def check_viewport(browser, name: str) -> None:
                     raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
 
         page.locator('[data-view-target="home"]').click()
+        reminder_text = page.locator('#homeReminders').inner_text()
+        if 'General & garden waste' not in reminder_text or 'Put out both bins' not in reminder_text:
+            raise AssertionError(f"{name}: Garden Waste reminder copy is unclear: {reminder_text}")
+        location_text = page.locator('#sceneryCountry').inner_text()
+        if '·' not in location_text or not any(region in location_text for region in ('Europe', 'Oceania', 'Africa', 'Asia', 'America', 'Antarctica')):
+            raise AssertionError(f"{name}: Fact location lacks wider country/region context: {location_text}")
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
             raise AssertionError(f"{name}: expected four Calendar summary cards")
@@ -490,6 +496,12 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
+        last_result_text = page.locator('#lastResultCard').inner_text()
+        for required in ('Arsenal 3–0 Coventry City', 'Kai Havertz', 'Premier League', '8pm', 'Emirates Stadium'):
+            if required not in last_result_text:
+                raise AssertionError(f"{name}: Arsenal last result is missing {required}: {last_result_text}")
+        if len(page.locator('#lastResultCard .match-summary').inner_text().strip()) < 40:
+            raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin")
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
         page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)
