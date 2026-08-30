@@ -1,47 +1,38 @@
 {
-  "updatedLabel": "Saturday, 29 August 2026 · refreshed 1:12pm",
+  "updatedLabel": "Sunday, 30 August 2026 · refreshed 7:08am",
   "worldFact": {
-    "id": "mexico-voladores-forty-metre-flight",
+    "id": "vanuatu-sand-drawing-eighty-language-groups",
     "editorialPriority": "human-first",
-    "category": "Tradition at height",
-    "country": "Mexico",
-    "place": "The Voladores ceremony",
+    "category": "Living tradition",
+    "country": "Vanuatu",
+    "place": "Vanuatu sand drawings",
     "source": "UNESCO Intangible Cultural Heritage",
-    "sourceUrl": "https://ich.unesco.org/en/decisions/4.COM/13.62",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ceremonia_ritual_de_los_Voladores%2C_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_01.JPG?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Ceremonia_ritual_de_los_Voladores,_Cholula,_Puebla,_M%C3%A9xico,_2013-10-12,_DD_01.JPG",
-    "photoCredit": "Diego Delso · CC BY-SA 3.0",
-    "fact": "In the Voladores ceremony, four men launch themselves from a pole up to 40 metres high and spiral towards the ground on ropes. A fifth remains balanced on top, playing a flute and drum to honour the sun, winds and cardinal directions.",
-    "date": "2026-08-29",
-    "sequence": 8
+    "sourceUrl": "https://ich.unesco.org/en/projects/safeguarding-of-vanuatu-sand-drawings-00022",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sand_drawing%2C_Vanuatu.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sand_drawing,_Vanuatu.jpg",
+    "photoCredit": "PhillipC · CC BY 2.0",
+    "fact": "In Vanuatu, one finger turns sand, volcanic ash or clay into an intricate form of writing. The geometric drawings carry messages, stories and knowledge among roughly 80 ethnolinguistic groups.",
+    "date": "2026-08-30",
+    "sequence": 9
   },
   "weather": {
-    "temp": "19°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 40,
+    "temp": "17°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-08-29",
-        "high": 20,
-        "low": null,
-        "summary": "Heavy Rain",
-        "condition": "Heavy Rain",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
       {
         "date": "2026-08-30",
         "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-31",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -59,11 +50,11 @@
       },
       {
         "date": "2026-09-02",
-        "high": 22,
+        "high": 24,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -77,7 +68,16 @@
       },
       {
         "date": "2026-09-04",
-        "high": 25,
+        "high": 23,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-05",
+        "high": 24,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -86,8 +86,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Check hourly Met Office forecast",
-      "detail": "Heavy Rain expected · rain chance around 40%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -95,37 +95,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Friday 28 August 2026",
+      "dateLabel": "Saturday 29 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Writtle",
-        "town": "Writtle",
-        "county": "Essex",
-        "country": "England",
-        "displayLocation": "Writtle, Essex",
-        "value": "26.4°C",
-        "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=7a3b051988bc",
-          "page": "https://commons.wikimedia.org/wiki/File:Former_Crompton_%5E_Co_Factory,_Writtle_Road_-_geograph.org.uk_-_3351975.jpg",
-          "credit": "Paul Franks · CC BY-SA 2.0",
-          "alt": "Former Crompton & Co Factory, Writtle Road",
-          "width": 1600,
-          "height": 900
-        }
-      },
-      "cold": {
         "location": "Exeter Airport No 2",
         "town": "Exeter",
         "county": "Devon",
         "country": "England",
         "displayLocation": "Exeter, Devon",
-        "value": "9.9°C",
+        "value": "23.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=20cf098a152c",
+          "src": "assets/weather-extremes/hot.webp?v=20cf098a152c",
           "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
           "credit": "Edward Ashworth · Public domain",
           "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
+          "width": 1600,
+          "height": 900
+        }
+      },
+      "cold": {
+        "location": "Warcop Range",
+        "town": "Warcop",
+        "county": "Cumbria",
+        "country": "England",
+        "displayLocation": "Warcop, Cumbria",
+        "value": "9.9°C",
+        "photo": {
+          "src": "assets/weather-extremes/cold.webp?v=82f87521463b",
+          "page": "https://commons.wikimedia.org/wiki/File:Warcop_-_geograph.org.uk_-_30200.jpg",
+          "credit": "Carl Bendelow · CC BY-SA 2.0",
+          "alt": "Warcop village in Cumbria near the Warcop Training Area",
           "width": 1600,
           "height": 900
         }
@@ -133,20 +133,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Camp - 9.30-16.30",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-26T00:00:00+01:00",
-      "end": "2026-08-29T00:00:00+01:00",
-      "date": "2026-08-26",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "36fkt7vp17k3pvi8f6schg5h6n",
-      "calendarColorSource": "google"
-    },
     {
       "title": "BANK HOLIDAY",
       "summary": "",
@@ -260,20 +246,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -285,6 +257,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -419,12 +405,12 @@
       "section": "Sweden"
     },
     {
-      "title": "Lucy Worsley: ‘I had my annual appraisal in Princess Margaret’s bathroom’",
+      "title": "Walton & Hersham vs Dorking Wanderers: National League N / S stats & head-to-head",
       "summary": "",
-      "meta": "Sat 29 Aug",
-      "publishedAt": "2026-08-29T05:00:00+01:00",
-      "source": "The Times",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOelFhUlcyWjZZdTJpS25fV05WWlVmOW5ha1V6ZDM0Y0xLS1hjVTRVN3JWci0zRjc1VWxlSUo2Zld1OFgtOGplRmZaMk85NUNKZXdhSFp1Qnk3ZWRaWHhXNWdMck05TVY1NFcwdzFUNWF2NG0zNFROczRDdWVodWthelFQMDRhZmJrLUlVUm9xLTc4VHYxb1VhVDVqSTFyRFQ4bjY2ZTRfYk4yRzg5SlAxWkpJM3VpeWhxdUFrVUVUR2swZDg5emhRdm5QV1VuOVk?oc=5",
+      "meta": "Sun 30 Aug",
+      "publishedAt": "2026-08-30T00:16:58+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5",
       "section": "Local"
     },
     {
@@ -440,89 +426,89 @@
   ],
   "watch": [
     {
-      "title": "Richard E. Grant's Very Modern Odyssey",
-      "summary": "In Corfu, Richard receives as warm a welcome as Odysseus, cooks a special lunch, and brushes up on his archery. His last stop is Ithaca - Odysseus's home.",
-      "meta": "Channel 4 · Tomorrow, 8pm",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/richard-e-grants-very-modern-odyssey",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596358.jpg",
-      "artworkAlt": "Richard E. Grant's Very Modern Odyssey programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-30",
-      "showId": 93402,
-      "episodeId": 3691366,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 204.5
-    },
-    {
-      "title": "Last Seen On Holiday",
-      "summary": "Cases of people who disappeared abroad, and the families left wondering what has become of them.",
-      "meta": "Crime & Investigation · Mon 31 Aug, 9pm",
-      "source": "Crime & Investigation",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/last-seen-holiday",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589478.jpg",
-      "artworkAlt": "Last Seen On Holiday programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-31",
-      "showId": 93463,
-      "episodeId": 3709101,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 195.9
-    },
-    {
-      "title": "The Jury: Murder Trial",
-      "summary": "The first in a two-part dramatic restaging of a real-life murder trial, in which two brothers, one aged 14, are charged with killing their stepfather. The boys admit to stabbing the victim…",
-      "meta": "Channel 4 · Tue 1 Sep, 9pm",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/the-jury-murder-trial",
+      "title": "True Crime Presents",
+      "summary": "A look at the murder of Peter McMahon in 2012, whose ex-partner Sharon Swinhoe and her accomplice Joseph Collins were sentenced to life for his financially motivated killing.",
+      "meta": "ITV1 · Tue 1 Sep, 9pm",
+      "source": "ITV1",
+      "url": "https://www.itv.com/",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/607/1517580.jpg",
-      "artworkAlt": "The Jury: Murder Trial programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/591/1477670.jpg",
+      "artworkAlt": "True Crime Presents programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-09-01",
-      "showId": 70799,
-      "episodeId": 3706817,
+      "showId": 82050,
+      "episodeId": 3718033,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 170.2
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 368.6
     },
     {
-      "title": "Lioness",
-      "summary": "Joe leads the hunt as her team exposes a hidden network operating through covert handlers, while Kaitlyn and Westfield hustle to assess the threat.",
-      "meta": "Paramount+ · New tomorrow",
-      "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/lioness/",
+      "title": "Hitler's Last Stand",
+      "summary": "As Allied forces fight to break out from the D-Day beaches, American Captain Matt Urban is badly wounded in a German tank assault. But determined to return to his battalion, he makes it to…",
+      "meta": "National Geographic · Tue 1 Sep, 8pm",
+      "source": "National Geographic",
+      "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/157/394083.jpg",
+      "artworkAlt": "Hitler's Last Stand programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-01",
+      "showId": 37030,
+      "episodeId": 3707967,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 195.5
+    },
+    {
+      "title": "Fare Dodgers: At War with the Law",
+      "summary": "Investigators Joey, Ela and new recruit Weronika track a suspect believed to have avoided more than £1,400 in fares, using travel data and CCTV to intercept him at Ilford Station. TfL bus…",
+      "meta": "5 · Tomorrow, 9pm",
+      "source": "5",
+      "url": "https://www.channel5.com/show/fare-dodgers-at-war-with-the-law/",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/222/555408.jpg",
+      "artworkAlt": "Fare Dodgers: At War with the Law programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-31",
+      "showId": 44504,
+      "episodeId": 3709098,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 168.7
+    },
+    {
+      "title": "The Game",
+      "summary": "A year after surviving a brutal attack, former detective Huw has retreated to a remote coastal home with his wife Alice, determined to leave the past behind. Meanwhile, their daughter…",
+      "meta": "5 · Tue 1 Sep, 9pm",
+      "source": "5",
+      "url": "https://www.channel5.com/show/the-game/",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1587727.jpg",
-      "artworkAlt": "Lioness programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597201.jpg",
+      "artworkAlt": "The Game programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-01",
+      "showId": 83042,
+      "episodeId": 3706814,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 140.8
+    },
+    {
+      "title": "Gary Barlow's Wine Tour",
+      "summary": "The Take That star explore New Zealand's vineyards, food and landscapes, beginning in Auckland, where a traditional Maori welcome sets the tone for his journey. Chef Ben Bayly introduces…",
+      "meta": "ITV1 · Today, 12:30pm",
+      "source": "ITV1",
+      "url": "https://www.itv.com/watch/gary-barlow's-wine-tour:-south-africa/10a5527",
+      "badge": "Reality",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/567/1419977.jpg",
+      "artworkAlt": "Gary Barlow's Wine Tour programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-30",
-      "showId": 50415,
-      "episodeId": 3638307,
+      "showId": 80700,
+      "episodeId": 3716928,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 139.0
-    },
-    {
-      "title": "The Gentlemen",
-      "summary": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
-      "meta": "Netflix · New thu 3 sep",
-      "source": "Netflix",
-      "url": "https://www.netflix.com/title/81437051",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597311.jpg",
-      "artworkAlt": "The Gentlemen programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-03",
-      "showId": 64992,
-      "episodeId": 3667664,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 138.0
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 139.6
     }
   ],
   "sections": {
@@ -544,6 +530,14 @@
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JSEhkR0MyTllhOTVBbEhEcmJhX3ZqckJfQ29jeHVJbF8yQU9xUGhycTduU0EtYl8zSFY2bWlTNjdGR2JTRW4tQnJ1YmtiRGt4ckQ1MVZPcnF6ZklscnBUeWhaSmQ5c3NZQnpVeWtJSGlRMVlCTmNrMnI1NGsyRVk?oc=5"
       },
       {
+        "title": "Sweden’s Far-Right Leader Seeks a Comeback as Election Nears",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T16:24:27+01:00",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNN3FiZ0NhQ3ZwLVp6dmVQczNzTEdTWEVQUHJHdVB3TVM0WmdhOFlDcjVwcm9SNXM0bnpjSnI0djdpUWI1dEJfMFEyLU52OE92Ym0zQS1ySjNLdG80eUVpM2FQTHo5ZVZBZkdVR0NnRERTa0JDTVM3Sm1La3hUZlpaSERGOVhJdUtYZkJsVWFhTEhmSDgwakdDM2hicmM4QWFYR1ZnUngtVWlLMmc3VUpFMHpR?oc=5"
+      },
+      {
         "title": "Sweden to deploy jets and warships to help Finland counter drones",
         "summary": "",
         "meta": "Fri 28 Aug",
@@ -552,39 +546,55 @@
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLUY5eWlNLVA3UEFKN3VwUElIRXBYZW9ZVHhFell6U3R4QjNOTlJuTHVpVTJXVHRyVWNsczhOcUw4d0ZCVHJXWDFuOWRkTFRrZGpHTThzTDJrczdCNWJQYTJCWm5BdThpa0pORVY0RWZmQ0ctZTFIcGtLVE5HNnRENjY3bEJvamRKUmF2eW9IVlRTTVpzeTFMMzF0dGc?oc=5"
       },
       {
-        "title": "IKEA UAE’s Swedish TikTok Challenge Puts Students to the Test",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T15:58:53+01:00",
-        "source": "Little Black Book | LBBOnline",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaQnJybWhJT3ZTelJObFUtdV90QlVkRi1qTHozRlI0NEk3U211S3hPNjVnenVxOGlOYVRZb2dLZThKbGNUdkVvSWc5dncxUW9oWF9JWElIaVh3UUZXQ2xnWXpxOVdja25DdmVONkZTNkZydVRaRW1hdXl3RjYwMFU?oc=5"
-      },
-      {
-        "title": "Swedish House Mafia cancel first of two nights in Ullevi due to storm",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T23:02:05+01:00",
-        "source": "We Rave You",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE80QU1ac3NNODhfMWlMZEFYZHBQSlV1bzA0RHljSGFQWWMzdWpGYk9DLXByTy1ZRi1ROXJ6ZWpOaFNGR1J4VHktaDJRa2pydEEzUHd2U0lQUWtGaEZFRndMT3oxV2tST0c2YlRfZjgySE5GaXFpQ2c?oc=5"
-      },
-      {
-        "title": "Manchester United sign Swedish winger Monica Jusu Bah for £400k",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T14:06:40+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pdS1FeWgwRGhjTWdxMDd5bXM5cXk2cUlCM1liUmc5bXB2Z3o4ejZXSEdHMHo3NGZTUjI0QXVrdkJvNlJRQnBaOEdGbWxfWFl6Mldyb1RXU0tOSTRFWkJ1Nzk5Z3FFVVk?oc=5"
-      },
-      {
-        "title": "Sweden to Phase Out Troubled NH90 Transport Helicopters and Expand Black Hawk Fleet",
+        "title": "Halmstad vs Kalmar: Swedish Allsvenskan stats & head-to-head",
         "summary": "",
         "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T02:04:10+01:00",
-        "source": "Aviation News.eu",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeDh5My1tU1lyYlhJLU8tQlJYU3BCeUU4MEEtXzhnM0paVFVvQk4xbTl0WS1FVTlNbG1XRVdGd2ZlSWxFazFBUUVtNlF0WWplcjNYY1k5NkJISG5PWnNsbzJRLXJDcXJjMTJWRE5XcG1fMlBtelFtSEczVXptTThhb090WHBBSVkyNXZ4WC16YUprNFBVTXI5SVozZnY3akk1eHU3NWloMGFGYTMzMDh6VDdkenJ4aFJrRjVFMHR3?oc=5"
+        "publishedAt": "2026-08-29T17:50:32+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Jd3FDZm5OV2VoMG96RE9ZWUhnYi1vSnBMYWZMbWFJby0yTmJPWFEtQTRWTVlfbkFWLWZSZzR3U3B1Q1N0TmtOUnZSOFJUVlVLVGo0SjcyNkR4RDBkYWl2M1d5WQ?oc=5"
+      },
+      {
+        "title": "Sweden to Deploy Gripen Fighter Jets and Naval Ships to Guard Finnish Border With Russia",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T13:23:31+01:00",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUy1IY0lqVnE2QWIzVllLaEtoLXZMR2g4blhaVzZONUdzQS1YU3h6LUo5VGcyUS1WSE9saVhrNzJ5U1ZXdXMxdWJXUlMzY0pDUWhsU1hRN2VOUHpvT0tOaGdQbnVRd0hVZDZKUjlsWERtWWhlRXYtRmN3cnJPNkhZU1pEUFBlZERQYm4zYk1nRXh6VU1USEFFNWFGZ05Qa2w5c3haZ1lJSF9wRmxYNGlQZEtpdllxM3U3dmZYMERpLTZBQ0M5?oc=5"
+      },
+      {
+        "title": "Sweden to deploy fighter jets, warships to Finland",
+        "summary": "",
+        "meta": "Fri 28 Aug",
+        "publishedAt": "2026-08-28T13:03:34+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0c1SlRBRmozUHNSTkVNVGNXZkF4TVBGRE5ROTRtUnVSU29vak9sSVNHZGJ3VWtPNFMyVUJPWGN2TnhVOWUxYzBMQ3ZOQUFRenM5Z2t2M25WVjI5Wnh6SE9PX1JjZl9tVWM2Q1pSLUtFbjAyeWM4dnVNbElUN3M1SDE3T2FxS0k0R3FsU3B6elRKWU51LWQ3N1UxQ05jdnhSYlB0dUxlbVdMVDg?oc=5"
       }
     ],
     "Local news": [
+      {
+        "title": "Walton & Hersham vs Dorking Wanderers: National League N / S stats & head-to-head",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:16:58+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5"
+      },
+      {
+        "title": "Walton & Hersham FC club bar shut after reports of abusive fans",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T19:07:06+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53ZTdQbF95anp4blRrTDVGcXBJbG5zZXVpNklqTTBjNWUxSEdZU1JCU3pNYUZuejRUTHVDemlOajM3cEhJS21GY3J6S2VnLTRJZEdxc3dXQXo0UQ?oc=5"
+      },
+      {
+        "title": "Rock Montreal diverted to Doncaster after sidestepping Solario",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T16:52:14+01:00",
+        "source": "London Now",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOXzJDOHdBNE9tQlVVRjRKLXVsWnJISDV3bEtPbk9XSExzUnZvRlc1Q3NMeXlFUVVjX3VHZDZUSEZZRWFTMmktcjVRWkNSQjdFTE8xZ1AtY0ZfX0dfMFo3TmNZQkt6eTZHeFdNMDlpRWZaZzFxNXQ1bC03ODFyWUptU1pjMFROVThpRERQNlAtT2l0MzV0TjdxNGt5LW5jV19NajBtRDJISXVwekVha2NoeUgta2I?oc=5"
+      },
       {
         "title": "Lucy Worsley: ‘I had my annual appraisal in Princess Margaret’s bathroom’",
         "summary": "",
@@ -618,36 +628,20 @@
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSmZPbUNmdi0xN1hpRW9xbnRfZ0tXSXA3YkZySTdoMjRiTTA1dS0zTU5sQzUtR3lhb1pMZTRwRU9JUmVrWW8yTmdsR3hCLTQ4cHhET3NINy1TRE1uZ2I1RVZSZ0g0akRBTkJPalZNQ3dBdVV2RHdxTzdCUDJXdkRPQ1VuRlVpVlVHTGRlXy1rdUhodHozYmluOGVFNG82ZG53aWRkN1hqc08?oc=5"
       },
       {
-        "title": "Plans for new 60-pupil Surrey school on green belt land currently used for animal grazing",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T19:00:00+01:00",
-        "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ2JINFJZZmxkNWpTbHUtZ1Z3NV9EWXFvRkNERDNibTc4Tnd6QlJ4M0V3YS1JOU51aDVTd3pNdE8tN3MtZjQ3UFdMZDZkcXV5bGJYSzZZLTVFR2FhZ2NpVWJHMGtPcml0NnY4eHBRdU5aZ2o1WjhMYUJwZ3hjQXpUWGN5QUlzd9IBiwFBVV95cUxPdFV1b0l3SzhTSGl0RTFqUktzNkpuYW8yaFBUQjdvTjczU0Q1MThGSGgzNHd5NV9pQUpCa0cyQUlMcVgwNl9kT1VZSExtdFJ1U2NaZlAxRDdrREw1OVFrd1JEN25pM0JYSFNTTzEwbmozYUUyVzFVd0FIaU03X3Z1WHV2ZXZyVzdFTVhR?oc=5"
-      },
-      {
-        "title": "Guildford Walkfest 2026 is all Set To Go Throughout September",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T16:54:28+01:00",
-        "source": "Buttondown",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWWw5ZnlSSFJRTWtkbWJncEZuaDFLd082QWlWcTVWWXdsbVIyRVhGZ25LRG9lV1ozemkyZUJTcVl2cGtPcjN0aHBienZJT3dqaDhLWTFjcFVrdm5JM1o5aTVlMTFuNk1yYXNEaDNBNEthb3dGZEFad21fT3hmbWJsSjFlRmZjeFdtN3VUdnJQLW9fMmFhNi1N?oc=5"
-      },
-      {
-        "title": "Solario Stakes preview: Breacher has trainer William Muir dreaming of big days to come",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:04:19+01:00",
-        "source": "Sporting Life",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQajZzN1BQNjhUR1RJcnFwaUFrWVU1ZUhGVEVKQkF5RGRralg5ZjRNdG9fYmJoNUZXNGRTeE9OT3hEaGlIUVNUMHBaQVl3RWF2MncyWG1pS2JCSGRMUkNkWnRtdk9DNElhaTZGNzJ1TTJiZ29GejhOYmlrd0JpekdWTGhERnNjVTdmV0VUemMtcERsZk9PQUxKOHdzMzhZa0dVdGdpZF96VHpHU1Y1QkxtWWdwVWR6d18xN3RYTC0xSnZtSjNYc2MxZ3JLalhpUnUyMHlJ0gHTAUFVX3lxTFBqNnM3UFA2OFRHVElycXBpQWtZVTVlSEZURUpCQXlEZGtqWDlmNE10b19iYmg1Rlc0ZFN4T05PeERoaUhRU1QwcFpBWXdFYXYydzJYbWlLYkJIZExSQ2RadG12T0M0SWFpNkY3MnVNMmJnb0Z6OE5iaWt3Qml6R1ZMaERGc2NVN2ZXRVR6Yy1wRGxmT09BTEo4d3MzOFlrR1V0Z2lkX3pUekdTVjVCTG1ZZ3BVZHp3XzE3dFhMLTFKdm1KM1hzYzFncktqWGlSdTIweUk?oc=5"
-      },
-      {
         "title": "MacRobertson Shield Day 13 - The final begins",
         "summary": "",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T09:26:05+01:00",
         "source": "Croquet Association",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE85cWd5Rktua0NGRkIxR0c4NzkwOExGdkdkaE5ZOFlmZWpOZl90dnNNSTdFRjYzNjd3ZllmRzBzTWNUbUc0MmdLcFFPZzUyVTRyV1Fkd2Q5T0Z6cVVzeFJ4U0Fn?oc=5"
+      },
+      {
+        "title": "New half billion pound bin waste collection contract in Surrey | News - Greatest Hits Radio (Surrey & East Hampshire)",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T08:48:52+01:00",
+        "source": "Rayo",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUUVwMXUwYWhwYTFfbHhsckxtUURYT2kxSzcwcWNnRktNMTRMRUxDQmF3ODJaMG9SWW5PUWFaUUdEWWszb2VuX0JMNE00LVdiYU1sa19rLUVteEk2cUZ2SU1rYkVhenRKOGVMSGtXUlJBQWVEVThqWXBsVUppM1N6OGJJelRjODdhNXVsR0gzbGh4QzVDdTY2UHF4QkpVVldIUGFDalRtakxKR18waWc?oc=5"
       },
       {
         "title": "Connect with nature, support your wellbeing and help create a sound installation",
@@ -666,23 +660,63 @@
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORWJNS0dwNGp4ZzZOT2Zkd3JDeGItMXMtNTA1WVI5V09nR1kwUm40WEZFY2NQTWtoVEVZNXd2ekU0eWkyMkF4SmhpNzZDbEV6WDAxcE1ObDI0YmdSSnVZaVVGZzFBd2NwaTR5SVZPRmR0TDdoWXNkdUJOcFFOa2NtZFF3bG9CTzBEMWd2SGU1TjZid0NnaWFwSzdaQTZNaE03bWJkVmJJUnkwVnd0UzJJ?oc=5"
       },
       {
-        "title": "This Is One of the Great Car Shows You Need to See Before You Die",
+        "title": "Passenger at CIRCUIT Kingston live concert - Tickets",
         "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T23:22:00+01:00",
-        "source": "Autoweek",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYXFxWWVnZThrYTd6WHJadHZSOWp6MDZKcGtCMm5SRXEtd192aW5VN0diUk1BcVNNa1RzdFplMjItTjJaNXdSVzFJeDMxVTlOSEx0bHZ2UVBjMDdQR1BWUUxoUG1WRGMyZUh0QkJSeU9pS3Y0QXFOZUZEbTh2MTdtNklkTnFXV3FVamdxVDZQWEVIYlk?oc=5"
-      },
-      {
-        "title": "Walton & Hersham vs Dorking Wanderers: National League N / S stats & head-to-head",
-        "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T15:49:00+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5"
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T04:01:27+01:00",
+        "source": "Karlobag.eu",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdkRpR01CSkNDUmRIXzNBdjhOWVY0R0ZTNWlpdlh3eDB6ZUtZWm9QSVdkSmN4VjdPNXU5R3hFTHhZeUZNeG13aV9hemdrWkxEUURUeE5WeUp3UV84bk54b1VPaGhWOG83Q0hnZXhITTItdTZUNFpwVnB3LWowNE4wVWppVjZsbDhYRURZdFhqWmpEb0x6R3c?oc=5"
       }
     ],
     "UK news": [
+      {
+        "title": "PC Harper's killers to stay in jail as PM announces changes to early release scheme",
+        "summary": "Andy Burnham tells BBC Breakfast anyone convicted of manslaughter will be excluded from the early release scheme in the Sentencing Act.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T06:50:27+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/crr4wd81pdpo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "WhatsApp group chat used to send millions in cash, funding crime and extremism",
+        "summary": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T05:59:56+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Iceland EU referendum on a knife edge as counting continues",
+        "summary": "A vote on whether to resume membership talks with the European Union is too close to call.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T04:57:01+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Rescue to continue overnight for 'in distress' vessel carrying five in the Channel",
+        "summary": "Several fishing vessels are assisting the Coastguard after reports of a boat \"in distress' off Plymouth.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:49:43+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/czeznrgyd1go?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "British heavyweight Moses Itauma stretchered out after shock defeat in gruelling world title fight",
+        "summary": "Filip Hrgovic shatters Moses Itauma's world-title dream as the Briton appears to punch himself out in an extraordinary heavyweight world-title contest in London.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:16:03+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/sport/boxing/articles/cpd0n46we13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "I've been to Gamescom six times - here's what excited me this year",
+        "summary": "The BBC's Laura Cress gets a first look at the biggest games in Cologne from Witcher 3 to Alien: Isolation 2.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:02:28+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cew92lp2g45o?at_medium=RSS&at_campaign=rss"
+      },
       {
         "title": "97-year-old woman rescued after Nepali floods looked like 'a warrior'",
         "summary": "A 97-year-old woman, Guna Maya Bohara, survived the flash floods and was rescued using an excavator.",
@@ -690,38 +724,6 @@
         "publishedAt": "2026-08-28T22:17:54+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/videos/cj64kgrpgjdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Christian festival 'devastated' as man dies after sign falls",
-        "summary": "Police say at least six other people were also injured in the incident at the Big Church Festival.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T12:22:48+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c158939pz4do?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Burnham's summer tour is over - now he has to prove himself in Parliament",
-        "summary": "The imminent return of Parliament will put the new prime minister under real scrutiny, with MPs finally getting a chance to grill him.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T11:31:18+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgy48r1nr4o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Sarah Ferguson expected back in the UK 'shortly', source says",
-        "summary": "The former Duchess of York is renting a six-bed house in the Home Counties, reports say.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T11:43:25+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ce8xn9ge6xeo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "We helped create UK emergency alert system - but question how government is using it",
-        "summary": "Millions across England and Wales received a wildfire alert on their phones earlier this month, but it partly backfired.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T02:37:08+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckgw7xj698lo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
@@ -748,36 +750,20 @@
         "url": "https://www.bbc.co.uk/news/articles/c93v70w79gxo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood",
-        "summary": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T11:35:06+01:00",
+        "title": "They fell in love - then had to check they weren't brother and sister",
+        "summary": "A French couple - both conceived by sperm donors - wanted children. But with home DNA tests illegal, how could they be sure they were not related?",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:03:51+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/cj06j16vpr5o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c8en3n29wdro?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
-        "summary": "A woman who rented out homes to two al-Qaeda members speaks publicly for the first time - to the BBC.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T01:32:17+01:00",
+        "title": "Mount Fuji pics, life-changing ramen and a weak yen - why young Brits are going to Japan",
+        "summary": "Photos of Mount Fuji, bowls of ramen and the bustle of Shibuya Crossing are filling up social media feeds.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:04:22+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "How one of the 'most powerful hacks' to control stress actually works",
-        "summary": "We spoke to experts about how the breathing technique used by soldiers and influencers works.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T02:24:36+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5y5jqly153o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "The race to stop England running out of water",
-        "summary": "Who is to blame for the summer drought, and can England future-proof its water supplies?",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T01:46:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyrv84yd9ko?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c7704l1ypjgo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
@@ -854,12 +840,12 @@
         "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/"
       },
       {
-        "title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules",
+        "title": "OpenAI to end model access to Cursor after acquisition by Elon Musk's SpaceX",
         "summary": "",
         "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T04:19:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5"
+        "publishedAt": "2026-08-29T20:05:55+01:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90bmQ0enBvenh2RFZzWDJtV2FWRnFMVzNRMEJrbG1RSmtWbnZ6MU1XcHV0TUJ1dll3YkJJM1RSMUgyRWVsV3NTeHpUV1JOeEZVb01TRkctT0c0NjZIc0haWFVTdzVkSmFLM1htanRGeVJZMmxNb2NaWnBn0gF_QVVfeXFMTnNMYVB6Q3hkc1l0NnRTSVhOeU5uT21nbUxOZDZjU2ota0tocTk2a3JjOWdxeUp0M2ttVUpHNk1ZTlB5MWp6QkR5c21aUlduUERGbzRZenhNZ1ZIQVVWTWt6RmJJdW8xcVAtRW05NnIxVGI5UE1uaVA4Q0V6NWd4cw?oc=5"
       }
     ],
     "Career": [
@@ -901,19 +887,6 @@
         "location": "London, England, United Kingdom",
         "countryFocus": "UK",
         "postedAt": "2026-08-07"
-      },
-      {
-        "title": "Senior Product Manager",
-        "summary": "Quinyx · Stockholm, Stockholm County, Sweden",
-        "meta": "3+ WFH days · Posted Fri 31 Jul",
-        "source": "LinkedIn",
-        "url": "https://se.linkedin.com/jobs/view/senior-product-manager-at-quinyx-4445075436",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "Quinyx",
-        "location": "Stockholm, Stockholm County, Sweden",
-        "countryFocus": "Sweden",
-        "postedAt": "2026-07-31"
       }
     ]
   }

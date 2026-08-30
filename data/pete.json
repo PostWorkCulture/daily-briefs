@@ -1,47 +1,38 @@
 {
-  "updatedLabel": "Saturday, 29 August 2026 · refreshed 1:12pm",
+  "updatedLabel": "Sunday, 30 August 2026 · refreshed 7:08am",
   "worldFact": {
-    "id": "mexico-voladores-forty-metre-flight",
+    "id": "vanuatu-sand-drawing-eighty-language-groups",
     "editorialPriority": "human-first",
-    "category": "Tradition at height",
-    "country": "Mexico",
-    "place": "The Voladores ceremony",
+    "category": "Living tradition",
+    "country": "Vanuatu",
+    "place": "Vanuatu sand drawings",
     "source": "UNESCO Intangible Cultural Heritage",
-    "sourceUrl": "https://ich.unesco.org/en/decisions/4.COM/13.62",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ceremonia_ritual_de_los_Voladores%2C_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_01.JPG?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Ceremonia_ritual_de_los_Voladores,_Cholula,_Puebla,_M%C3%A9xico,_2013-10-12,_DD_01.JPG",
-    "photoCredit": "Diego Delso · CC BY-SA 3.0",
-    "fact": "In the Voladores ceremony, four men launch themselves from a pole up to 40 metres high and spiral towards the ground on ropes. A fifth remains balanced on top, playing a flute and drum to honour the sun, winds and cardinal directions.",
-    "date": "2026-08-29",
-    "sequence": 8
+    "sourceUrl": "https://ich.unesco.org/en/projects/safeguarding-of-vanuatu-sand-drawings-00022",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sand_drawing%2C_Vanuatu.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sand_drawing,_Vanuatu.jpg",
+    "photoCredit": "PhillipC · CC BY 2.0",
+    "fact": "In Vanuatu, one finger turns sand, volcanic ash or clay into an intricate form of writing. The geometric drawings carry messages, stories and knowledge among roughly 80 ethnolinguistic groups.",
+    "date": "2026-08-30",
+    "sequence": 9
   },
   "weather": {
-    "temp": "19°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 40,
+    "temp": "17°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-08-29",
-        "high": 20,
-        "low": null,
-        "summary": "Heavy Rain",
-        "condition": "Heavy Rain",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
       {
         "date": "2026-08-30",
         "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-08-31",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -59,11 +50,11 @@
       },
       {
         "date": "2026-09-02",
-        "high": 22,
+        "high": 24,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -77,7 +68,16 @@
       },
       {
         "date": "2026-09-04",
-        "high": 25,
+        "high": 23,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-05",
+        "high": 24,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -86,8 +86,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Check hourly Met Office forecast",
-      "detail": "Heavy Rain expected · rain chance around 40%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -95,37 +95,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Friday 28 August 2026",
+      "dateLabel": "Saturday 29 August 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Writtle",
-        "town": "Writtle",
-        "county": "Essex",
-        "country": "England",
-        "displayLocation": "Writtle, Essex",
-        "value": "26.4°C",
-        "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=7a3b051988bc",
-          "page": "https://commons.wikimedia.org/wiki/File:Former_Crompton_%5E_Co_Factory,_Writtle_Road_-_geograph.org.uk_-_3351975.jpg",
-          "credit": "Paul Franks · CC BY-SA 2.0",
-          "alt": "Former Crompton & Co Factory, Writtle Road",
-          "width": 1600,
-          "height": 900
-        }
-      },
-      "cold": {
         "location": "Exeter Airport No 2",
         "town": "Exeter",
         "county": "Devon",
         "country": "England",
         "displayLocation": "Exeter, Devon",
-        "value": "9.9°C",
+        "value": "23.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=20cf098a152c",
+          "src": "assets/weather-extremes/hot.webp?v=20cf098a152c",
           "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
           "credit": "Edward Ashworth · Public domain",
           "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
+          "width": 1600,
+          "height": 900
+        }
+      },
+      "cold": {
+        "location": "Warcop Range",
+        "town": "Warcop",
+        "county": "Cumbria",
+        "country": "England",
+        "displayLocation": "Warcop, Cumbria",
+        "value": "9.9°C",
+        "photo": {
+          "src": "assets/weather-extremes/cold.webp?v=82f87521463b",
+          "page": "https://commons.wikimedia.org/wiki/File:Warcop_-_geograph.org.uk_-_30200.jpg",
+          "credit": "Carl Bendelow · CC BY-SA 2.0",
+          "alt": "Warcop village in Cumbria near the Warcop Training Area",
           "width": 1600,
           "height": 900
         }
@@ -133,20 +133,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Camp - 9.30-16.30",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-26T00:00:00+01:00",
-      "end": "2026-08-29T00:00:00+01:00",
-      "date": "2026-08-26",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "36fkt7vp17k3pvi8f6schg5h6n",
-      "calendarColorSource": "google"
-    },
     {
       "title": "BANK HOLIDAY",
       "summary": "",
@@ -260,20 +246,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -285,6 +257,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -437,49 +423,49 @@
         "source": "Sky Sports"
       }
     },
-    "leaguePosition": 3,
+    "leaguePosition": 6,
     "points": null,
     "played": null,
     "news": [
       {
-        "title": "Arteta delivers cryptic Arsenal transfer update as striker deal looms",
+        "title": "James Scanlon joins Arsenal",
         "summary": "",
         "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T12:19:52+01:00",
-        "source": "standard.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVmVTUGJKcUIyeGF1U1FDd05UeHA1Uktua0ZONzJYem5ZWmdiMVgtYnVkLUt2eGFiOWdRc0xWY1czbWRJNkV1S2FfUTFqNE91azdXLTJtMV9iQW5aNVBFUmRwYmdrUU94QUJEUVFCQmo4NGRDWkpEYjNBRTFRaEU5VVpVMlBqWlh2Vm43ZTRHWHZUUzlpbEo0Rzd3RDNfZTZnOWEwR21VeGhNdEVPY3lwcDNYS1NZaEpYYWc?oc=5"
-      },
-      {
-        "title": "Marli Salmon signs first professional contract",
-        "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T09:07:02+01:00",
+        "publishedAt": "2026-08-29T14:15:58+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQa25GcC1PMGJrU1pzTnYtRlEzTTAwajFiRkJrTElPcUZDdlBqUmhYUW1KcFdqYlZMTHM3b2d1ZW5FN19HWUJSYUZKSUJQRmVaajcwSklkeGtGdVFiZ05MNXBSdWV2Zm1NYVZNanFleUxEU0pibjBsZHM2TmxnV2JNY2UxUktkWjliTk5qTFhrUHQwdw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ReFVDTDFzdkpuelR3MTdJcGdMVFU5WlI0THNuSjBZTV94NjhlbHRFTi1kSzFaak12d3FHMHgzSU9QMTVjeFhiUjlYcFRxSlI3aWFkN0lIVElRVkFpbWMxemsxSUc3MjROWDVocjc2SVN6WVFaWm1UWA?oc=5"
       },
       {
-        "title": "Arsenal transfer news: Gunners hold talks for Real Madrid and Brazil forward Endrick - Paper Talk",
+        "title": "Aston Villa vs Arsenal: Premier League preview, team news, stats & head-to-head",
         "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T22:40:55+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPRFZxVnA3ZXhKd3prNWRZay1YdVdfRllrZFNxbEFReHhySGstYkxXcFVwdjhsb3Q0dHd4VnhnTE9lMDl5d1R4S1ZYWEVXeFp6ZS1CeGg2c3cyTG15QzJDZEowdUhaVWNlOTg5elY0cVBNaWQzcno1Z3JFZllJaFRqOE02VFdONXRITTBxMFJSUXNiNTFyR0ZZeUI2VWliWGMxdjhESWFyckVnTEtoWjItVy1sdzB2SzFldFJEbzdwZDgwRU02bkNhWmFIWEl3ZXY3Y0JrMlAzVGk1cW1JaU5kaXY5WQ?oc=5"
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T04:04:55+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5wMlo5cWJoZlZpbkJ2T1d1N3JsMEZ6UENIY29ucUZldWtRakF2LW1WbDR4Y3pxZEhWTWRDVU5ERFB0NVp0dGlXMzlwTy1ydHV4WjNOM2FQVmJ6cU9NbTMtNERQdw?oc=5"
       },
       {
-        "title": "DATE CONFIRMED FOR ARSENAL CUP TIE",
+        "title": "Alvarez 'holds family meeting to discuss Arsenal move' after Arteta talks",
         "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T17:30:00+01:00",
-        "source": "Ipswich Town FC",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZk9EbU1ZckFlSktFZTdhbzcxV3MybWtuRlNJSWsyZTVudW8wa1QwSzlzOGgwQzAxUjVLR25VNFlDa3JxaEhCc2tzdFZPRmZ1aVV5N2N5amdrSjhKZ0xBandaTk9iNlFFQWdLUGlwUWdVelF6ZDYxcl9XdnhhWTJnRjE2b0Y?oc=5"
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T06:20:10+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMlZBX3NMODFGMkZnVWpZQjBlN2JYZHhoRVZQbW4zTjEtR1FINUNYZUNnLVlDOTcwZXBnSEFiRFdUNHVLYzJ0MlAwR0VXQ1lQSGRoU3RWR0tNVmxHa3ZXSXJsNzV2dGVpZENJTmRwWFA5bWllSVhWZVBFT1pmVVp3cENXVWp3MUZMY0lTc2syRldlbFQ1T2w3TmFzdw?oc=5"
       },
       {
-        "title": "Arsenal confirm new striker signing as squad number revealed",
+        "title": "Preview: Aston Villa v Arsenal",
         "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T11:25:30+01:00",
-        "source": "standard.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNFIwQVY4NzJPTDU4cHNOeE1hMllTeTVudmVYWFZFSTBjekJHWGNLdlctOXNiSHRCVUk1clVLUU5YR2lkQmNyMW1wbzVROWxzVk9uNkl2NnlrbEZib044WF9saTZoRXJpbkQtRmZfZFJHaDB1SzF3QVN0anpnWkJlWjFkcXdCSm5uYV9NTFFzYWl5MkdjeEE?oc=5"
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T06:12:14+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE42b1lFLUVVUzFLZnFUSEFEdVE3R0xsZC1SZU5lREZQRTI1YU9rQ2R5cGVVaGd4aV9QVnRSVFhVSkV0bHYtYWpTNlB2aWFkQVVkMVAzd0l0blpiMlQ3b1VURHpuMDhUNXlyelVLZEFwQUZRMU9iNndWZ2NnNA?oc=5"
+      },
+      {
+        "title": "Arsenal XI vs Aston Villa: Confirmed team news and predicted lineup",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T01:42:04+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUXd6VHFnQUlBV3NfNXZ0VUswTUNyLVcyV20ySlJONVotTXRKZC1BUFZuWTBhbW81ZEdQdjdIMDFZWnJ5T0VZUTlhaVhJWGFaWnBka1BRa29iSkVheTFfWmhyTFJMNmpfV2pBc2R5S3NJLXlIQzFJS3Y3cG5xNXZiTHRWaEdPYTkydmx3TUtLTGRmbWRINHlpWHRWZ1VoeGwySjF5Q2ZTck1TV0RrVHE2eHRXQWwxaWd3NmVnNjAzY1gtenlPMDlaYW15cElaQ01NXzd0dHowbElHZnUwUnE3bkQtbmVoSk1uaU1N?oc=5"
       }
     ],
     "sources": [
@@ -491,32 +477,22 @@
     "scope": "Arsenal men's first team · all competitions",
     "transfers": [
       {
-        "title": "Al Hilal closing in on deal for Arsenal's Gabriel Martinelli - sources",
+        "title": "Saturday Social: How 'star signing' Bruno Guimaraes improves Arsenal",
         "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T16:20:00+01:00",
-        "source": "ESPN",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcGdpR2NTdnl3aHNGMlUtZmxOOXQ1Y0g1V3EwbUcxWnlMTzR4RENRXzZOd2YyTzhYREctS2lGNHhfbENsMnYtWDlaRXFWS1BaTGNmSnQ5bnAybzJYOWZ0aDByT1ZsS3dDOFNrLTZqTkFCNEZET0VRUU5sR19XRUNneXZsczQyZ3c1MEh0cG0wbDdLTGlndEJHaS1TRFNKZmJPZHY2WUREdGYxZnI2?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Arsenal terminate Reiss Nelson contract by mutual agreement, becomes free agent",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T19:45:00+01:00",
-        "source": "ESPN",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ2g0aDFQYVJxcm5weUVRTXlKZjJDVGV5SDdOMmtxb3FtM2JPVTZsWTF0eWJvRDVTLUpvTkJ6bTZwNGMwVW1FRXpYOTRfbUxzemtGcnBfeENYbEJ2dE5MR3BKYUlkcFFDckYxbEFGQllmdmdNU0pQSUx5bUk3U2thTWVvNVIzTnZjclA3d2l2WmFKS0xQS1FQcWFsNFRKenZSVktNY01Od3M1RHg3UFFwY2dkOG0wOFlMcVdnNnl6OTB4VFpPWXc?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Arsenal transfer news: Julian Alvarez would add 'magic' to Gunners' frontline says Gary Neville as he urges them to sign Atletico Madrid striker",
-        "summary": "",
-        "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T23:44:29+01:00",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T11:08:30+01:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRk8tUi1ERXg3V2JqYXFvUDV4VW1tS0thMjRJZm1ET2h0WFZ3LWNXMzZDVmR6X1dlZ0tOZWpweVZnQTBiUkZGZDFEbU14LWU3ajhrY1RfbFRud1p4c0VXeVdzZDdPX1F6VFByT0M0RmpsSFVOR2ktME5tTVQzdWgwYUpNLUVDRmJEUGtpVEpvUzlSM01HYWtwdC1FeDlQU055OTliTU5aT3NvdWZ4Z3ZoTU5JUVcwM3loZW1Jc0N6ZEs5bXFvN0VWczlicGx6cmthQ2NQWmdGLWRLQVY4UUhEYkRkbWVBcEo4dmhxSl9iVjJqS3RmbUc5ZENXdTd4OHFYMFBIUC1Ua09jNWNSdWxzMU8zcU8wdGR5SExDWThpS0c?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVndwMkx3N1RTLTlQUTFTUXpWTkVCTnd1VjdoQlZQMDVTc05EWUNJSUxLQVJHUWE1Ml83UGdTX3g1Tk9DTDZRNVZsdG5HQVlwTktsQ0t3VXkwRkpXV2xJdkRUblpHdERTeFhRMmRiaEMwN1lxdWFRSk1uV19BeWlyX3prSmJCWDNIMVA3ZHlENVdaU1lCMVRJRTJ0cHc5eEQ5M3Y0clBNTjFnVEU1ZW1qWmlncFA1WVNYR3JseXp3?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Julian Alvarez transfer news: Atletico Madrid set deadline for striker to decide whether he stays or joins Arsenal",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T07:31:10+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSC14M2Z6M2xIblc5ajRJMGM0NXBoRlUzN1QzZzFUaVJXOFNuWWI2Z0w4cHB3Z251ZmNrRy1pZHlHcFc4dG9zN0REUkNmUjg3OHhyaGNieWx0cXdhOHpmWFhqaUhnLUJ5cThDYkdCRUZGMkJIRDg2MlJ3MTRScHZzUnNzZE1fVllQV1B3c09TOEtfNFhTS2RBNGhZWHFQZ1B4VmRsS3pyamg0aE4wT2VqNmZsaUtvSVdLY3pmV2dLVExUelBvMi1CUGgtX3JFenZsYXpfQV92S1hpLXZzN2wxNnJxMkk0Vms0elF6YW5sVVV4S1JiX3RHZVUzRXc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -524,11 +500,21 @@
         "title": "Ezri Konsa signs for Arsenal",
         "summary": "",
         "meta": "Fri 21 Aug",
-        "publishedAt": "2026-08-21T16:01:43+01:00",
+        "publishedAt": "2026-08-21T08:00:00+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBweWxmVEhFQUlMWElmOVd0bHlMUEVfdWRUSzNVSmFFOXd2ZDhNLW5EOTJEZkc5dGZmcXNRd1dkYnFocVlPZzlZTDhQNDNLM0lNZ2NUMmsxZDd1cWtjWkRjZlFDdVU1b0dYRXEwZmhPRUd4WjNGcUMtbkhn?oc=5",
         "contentType": "transfer-update",
         "trust": "Official"
+      },
+      {
+        "title": "Arsenal transfer news: Julian Alvarez would add 'magic' to Gunners' frontline says Gary Neville as he urges them to sign Atletico Madrid striker",
+        "summary": "",
+        "meta": "Fri 21 Aug",
+        "publishedAt": "2026-08-21T08:00:00+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRk8tUi1ERXg3V2JqYXFvUDV4VW1tS0thMjRJZm1ET2h0WFZ3LWNXMzZDVmR6X1dlZ0tOZWpweVZnQTBiUkZGZDFEbU14LWU3ajhrY1RfbFRud1p4c0VXeVdzZDdPX1F6VFByT0M0RmpsSFVOR2ktME5tTVQzdWgwYUpNLUVDRmJEUGtpVEpvUzlSM01HYWtwdC1FeDlQU055OTliTU5aT3NvdWZ4Z3ZoTU5JUVcwM3loZW1Jc0N6ZEs5bXFvN0VWczlicGx6cmthQ2NQWmdGLWRLQVY4UUhEYkRkbWVBcEo4dmhxSl9iVjJqS3RmbUc5ZENXdTd4OHFYMFBIUC1Ua09jNWNSdWxzMU8zcU8wdGR5SExDWThpS0c?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
       },
       {
         "title": "Ezri Konsa transfer news: Arsenal agree deal with Aston Villa to sign England defender",
@@ -542,6 +528,20 @@
       }
     ],
     "transferRumours": [
+      {
+        "title": "🚨🔴⚪️ Arsenal agree deal to sign 17 year old Georgian talent Andria Bartishvili, here we go! 17 year old midfielder has medical booked in London at #AFC next week then signing a five year contract. He’s joining from 2027 when turning 18. Deal worth €4.5m.",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T12:56:41+01:00",
+        "source": "Fabrizio Romano",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5CRG1CTHpFc3pYUElMSmJVSF9JbnAycFJPeVl0QS1rdXhrenJOb25lcHVTNDFSR1NBZGdzV1N1OXRybGFJTTNwcGdSY3RkVkdIY18tcFoxYTFwM29ud0JiMGU3a2FrQQ?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Established reporter",
+        "sourceUrl": "https://x.com/FabrizioRomano"
+      },
       {
         "title": "Marli Salmon has signed his first professional contract with Arsenal. The defender turns 17 today. Salmon: \"It means a lot to me. A lot of hard work went into this, a lot of ups and downs, but I'm so proud. \"I think it's a proud moment for my family as well, I think it's",
         "summary": "",
@@ -597,20 +597,6 @@
         "sourceType": "X",
         "confidence": "Tier-one reporter",
         "sourceUrl": "https://x.com/David_Ornstein"
-      },
-      {
-        "title": "Exclusive: Al-Hilal making final arrangements for Gabriel Martinelli signing with talks for Arsenal over €66 million deal. Medical scheduled for the weekend. Final details still need sorting but Saudi club making plans for Brazilian’s arrival. https://t.co/L13yRXz8cJ",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T15:05:47+01:00",
-        "source": "James Benge",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GSkhoWjNWUDB3RXpLcmVicm5SVjVheTc1aXF2YzJCbWZjUzRDbUZtMTVhWEVfaXZCNnpiRlhDcEh4LXNvVGNDSjR2cENST2RNOERBcW1XdjNEOWFoQU8wdA?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/jamesbenge"
       }
     ]
   },
@@ -633,109 +619,109 @@
       "section": "AI"
     },
     {
-      "title": "Arteta delivers cryptic Arsenal transfer update as striker deal looms",
+      "title": "James Scanlon joins Arsenal",
       "summary": "",
       "meta": "Sat 29 Aug",
-      "publishedAt": "2026-08-29T12:19:52+01:00",
-      "source": "standard.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVmVTUGJKcUIyeGF1U1FDd05UeHA1Uktua0ZONzJYem5ZWmdiMVgtYnVkLUt2eGFiOWdRc0xWY1czbWRJNkV1S2FfUTFqNE91azdXLTJtMV9iQW5aNVBFUmRwYmdrUU94QUJEUVFCQmo4NGRDWkpEYjNBRTFRaEU5VVpVMlBqWlh2Vm43ZTRHWHZUUzlpbEo0Rzd3RDNfZTZnOWEwR21VeGhNdEVPY3lwcDNYS1NZaEpYYWc?oc=5",
+      "publishedAt": "2026-08-29T14:15:58+01:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ReFVDTDFzdkpuelR3MTdJcGdMVFU5WlI0THNuSjBZTV94NjhlbHRFTi1kSzFaak12d3FHMHgzSU9QMTVjeFhiUjlYcFRxSlI3aWFkN0lIVElRVkFpbWMxemsxSUc3MjROWDVocjc2SVN6WVFaWm1UWA?oc=5",
       "section": "Arsenal"
     },
     {
-      "title": "Lucy Worsley: ‘I had my annual appraisal in Princess Margaret’s bathroom’",
+      "title": "Walton & Hersham vs Dorking Wanderers: National League N / S stats & head-to-head",
       "summary": "",
-      "meta": "Sat 29 Aug",
-      "publishedAt": "2026-08-29T05:00:00+01:00",
-      "source": "The Times",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOelFhUlcyWjZZdTJpS25fV05WWlVmOW5ha1V6ZDM0Y0xLS1hjVTRVN3JWci0zRjc1VWxlSUo2Zld1OFgtOGplRmZaMk85NUNKZXdhSFp1Qnk3ZWRaWHhXNWdMck05TVY1NFcwdzFUNWF2NG0zNFROczRDdWVodWthelFQMDRhZmJrLUlVUm9xLTc4VHYxb1VhVDVqSTFyRFQ4bjY2ZTRfYk4yRzg5SlAxWkpJM3VpeWhxdUFrVUVUR2swZDg5emhRdm5QV1VuOVk?oc=5",
+      "meta": "Sun 30 Aug",
+      "publishedAt": "2026-08-30T00:16:58+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5",
       "section": "Local"
     }
   ],
   "watch": [
     {
-      "title": "Richard E. Grant's Very Modern Odyssey",
-      "summary": "In Corfu, Richard receives as warm a welcome as Odysseus, cooks a special lunch, and brushes up on his archery. His last stop is Ithaca - Odysseus's home.",
-      "meta": "Channel 4 · Tomorrow, 8pm",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/richard-e-grants-very-modern-odyssey",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596358.jpg",
-      "artworkAlt": "Richard E. Grant's Very Modern Odyssey programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-30",
-      "showId": 93402,
-      "episodeId": 3691366,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 204.5
-    },
-    {
-      "title": "Last Seen On Holiday",
-      "summary": "Cases of people who disappeared abroad, and the families left wondering what has become of them.",
-      "meta": "Crime & Investigation · Mon 31 Aug, 9pm",
-      "source": "Crime & Investigation",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/last-seen-holiday",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589478.jpg",
-      "artworkAlt": "Last Seen On Holiday programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-31",
-      "showId": 93463,
-      "episodeId": 3709101,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 195.9
-    },
-    {
-      "title": "The Jury: Murder Trial",
-      "summary": "The first in a two-part dramatic restaging of a real-life murder trial, in which two brothers, one aged 14, are charged with killing their stepfather. The boys admit to stabbing the victim…",
-      "meta": "Channel 4 · Tue 1 Sep, 9pm",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/the-jury-murder-trial",
+      "title": "True Crime Presents",
+      "summary": "A look at the murder of Peter McMahon in 2012, whose ex-partner Sharon Swinhoe and her accomplice Joseph Collins were sentenced to life for his financially motivated killing.",
+      "meta": "ITV1 · Tue 1 Sep, 9pm",
+      "source": "ITV1",
+      "url": "https://www.itv.com/",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/607/1517580.jpg",
-      "artworkAlt": "The Jury: Murder Trial programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/591/1477670.jpg",
+      "artworkAlt": "True Crime Presents programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-09-01",
-      "showId": 70799,
-      "episodeId": 3706817,
+      "showId": 82050,
+      "episodeId": 3718033,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 170.2
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 368.6
     },
     {
-      "title": "Lioness",
-      "summary": "Joe leads the hunt as her team exposes a hidden network operating through covert handlers, while Kaitlyn and Westfield hustle to assess the threat.",
-      "meta": "Paramount+ · New tomorrow",
-      "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/lioness/",
+      "title": "Hitler's Last Stand",
+      "summary": "As Allied forces fight to break out from the D-Day beaches, American Captain Matt Urban is badly wounded in a German tank assault. But determined to return to his battalion, he makes it to…",
+      "meta": "National Geographic · Tue 1 Sep, 8pm",
+      "source": "National Geographic",
+      "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/157/394083.jpg",
+      "artworkAlt": "Hitler's Last Stand programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-01",
+      "showId": 37030,
+      "episodeId": 3707967,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 195.5
+    },
+    {
+      "title": "Fare Dodgers: At War with the Law",
+      "summary": "Investigators Joey, Ela and new recruit Weronika track a suspect believed to have avoided more than £1,400 in fares, using travel data and CCTV to intercept him at Ilford Station. TfL bus…",
+      "meta": "5 · Tomorrow, 9pm",
+      "source": "5",
+      "url": "https://www.channel5.com/show/fare-dodgers-at-war-with-the-law/",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/222/555408.jpg",
+      "artworkAlt": "Fare Dodgers: At War with the Law programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-31",
+      "showId": 44504,
+      "episodeId": 3709098,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 168.7
+    },
+    {
+      "title": "The Game",
+      "summary": "A year after surviving a brutal attack, former detective Huw has retreated to a remote coastal home with his wife Alice, determined to leave the past behind. Meanwhile, their daughter…",
+      "meta": "5 · Tue 1 Sep, 9pm",
+      "source": "5",
+      "url": "https://www.channel5.com/show/the-game/",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1587727.jpg",
-      "artworkAlt": "Lioness programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597201.jpg",
+      "artworkAlt": "The Game programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-01",
+      "showId": 83042,
+      "episodeId": 3706814,
+      "contentType": "tv-pick",
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 140.8
+    },
+    {
+      "title": "Gary Barlow's Wine Tour",
+      "summary": "The Take That star explore New Zealand's vineyards, food and landscapes, beginning in Auckland, where a traditional Maori welcome sets the tone for his journey. Chef Ben Bayly introduces…",
+      "meta": "ITV1 · Today, 12:30pm",
+      "source": "ITV1",
+      "url": "https://www.itv.com/watch/gary-barlow's-wine-tour:-south-africa/10a5527",
+      "badge": "Reality",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/567/1419977.jpg",
+      "artworkAlt": "Gary Barlow's Wine Tour programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-30",
-      "showId": 50415,
-      "episodeId": 3638307,
+      "showId": 80700,
+      "episodeId": 3716928,
       "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 139.0
-    },
-    {
-      "title": "The Gentlemen",
-      "summary": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
-      "meta": "Netflix · New thu 3 sep",
-      "source": "Netflix",
-      "url": "https://www.netflix.com/title/81437051",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597311.jpg",
-      "artworkAlt": "The Gentlemen programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-03",
-      "showId": 64992,
-      "episodeId": 3667664,
-      "contentType": "tv-pick",
-      "generatedDate": "2026-08-29",
-      "preferenceScore": 138.0
+      "generatedDate": "2026-08-30",
+      "preferenceScore": 139.6
     }
   ],
   "sections": {
@@ -813,81 +799,97 @@
         "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/"
       },
       {
-        "title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules",
+        "title": "OpenAI to end model access to Cursor after acquisition by Elon Musk's SpaceX",
         "summary": "",
         "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T04:19:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5"
+        "publishedAt": "2026-08-29T20:05:55+01:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90bmQ0enBvenh2RFZzWDJtV2FWRnFMVzNRMEJrbG1RSmtWbnZ6MU1XcHV0TUJ1dll3YkJJM1RSMUgyRWVsV3NTeHpUV1JOeEZVb01TRkctT0c0NjZIc0haWFVTdzVkSmFLM1htanRGeVJZMmxNb2NaWnBn0gF_QVVfeXFMTnNMYVB6Q3hkc1l0NnRTSVhOeU5uT21nbUxOZDZjU2ota0tocTk2a3JjOWdxeUp0M2ttVUpHNk1ZTlB5MWp6QkR5c21aUlduUERGbzRZenhNZ1ZIQVVWTWt6RmJJdW8xcVAtRW05NnIxVGI5UE1uaVA4Q0V6NWd4cw?oc=5"
       }
     ],
     "Arsenal news": [
       {
-        "title": "Arteta delivers cryptic Arsenal transfer update as striker deal looms",
+        "title": "James Scanlon joins Arsenal",
         "summary": "",
         "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T12:19:52+01:00",
-        "source": "standard.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVmVTUGJKcUIyeGF1U1FDd05UeHA1Uktua0ZONzJYem5ZWmdiMVgtYnVkLUt2eGFiOWdRc0xWY1czbWRJNkV1S2FfUTFqNE91azdXLTJtMV9iQW5aNVBFUmRwYmdrUU94QUJEUVFCQmo4NGRDWkpEYjNBRTFRaEU5VVpVMlBqWlh2Vm43ZTRHWHZUUzlpbEo0Rzd3RDNfZTZnOWEwR21VeGhNdEVPY3lwcDNYS1NZaEpYYWc?oc=5"
-      },
-      {
-        "title": "Marli Salmon signs first professional contract",
-        "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T09:07:02+01:00",
+        "publishedAt": "2026-08-29T14:15:58+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQa25GcC1PMGJrU1pzTnYtRlEzTTAwajFiRkJrTElPcUZDdlBqUmhYUW1KcFdqYlZMTHM3b2d1ZW5FN19HWUJSYUZKSUJQRmVaajcwSklkeGtGdVFiZ05MNXBSdWV2Zm1NYVZNanFleUxEU0pibjBsZHM2TmxnV2JNY2UxUktkWjliTk5qTFhrUHQwdw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ReFVDTDFzdkpuelR3MTdJcGdMVFU5WlI0THNuSjBZTV94NjhlbHRFTi1kSzFaak12d3FHMHgzSU9QMTVjeFhiUjlYcFRxSlI3aWFkN0lIVElRVkFpbWMxemsxSUc3MjROWDVocjc2SVN6WVFaWm1UWA?oc=5"
       },
       {
-        "title": "Arsenal transfer news: Gunners hold talks for Real Madrid and Brazil forward Endrick - Paper Talk",
+        "title": "Aston Villa vs Arsenal: Premier League preview, team news, stats & head-to-head",
         "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T22:40:55+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPRFZxVnA3ZXhKd3prNWRZay1YdVdfRllrZFNxbEFReHhySGstYkxXcFVwdjhsb3Q0dHd4VnhnTE9lMDl5d1R4S1ZYWEVXeFp6ZS1CeGg2c3cyTG15QzJDZEowdUhaVWNlOTg5elY0cVBNaWQzcno1Z3JFZllJaFRqOE02VFdONXRITTBxMFJSUXNiNTFyR0ZZeUI2VWliWGMxdjhESWFyckVnTEtoWjItVy1sdzB2SzFldFJEbzdwZDgwRU02bkNhWmFIWEl3ZXY3Y0JrMlAzVGk1cW1JaU5kaXY5WQ?oc=5"
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T04:04:55+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5wMlo5cWJoZlZpbkJ2T1d1N3JsMEZ6UENIY29ucUZldWtRakF2LW1WbDR4Y3pxZEhWTWRDVU5ERFB0NVp0dGlXMzlwTy1ydHV4WjNOM2FQVmJ6cU9NbTMtNERQdw?oc=5"
       },
       {
-        "title": "DATE CONFIRMED FOR ARSENAL CUP TIE",
+        "title": "Alvarez 'holds family meeting to discuss Arsenal move' after Arteta talks",
         "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T17:30:00+01:00",
-        "source": "Ipswich Town FC",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZk9EbU1ZckFlSktFZTdhbzcxV3MybWtuRlNJSWsyZTVudW8wa1QwSzlzOGgwQzAxUjVLR25VNFlDa3JxaEhCc2tzdFZPRmZ1aVV5N2N5amdrSjhKZ0xBandaTk9iNlFFQWdLUGlwUWdVelF6ZDYxcl9XdnhhWTJnRjE2b0Y?oc=5"
-      },
-      {
-        "title": "Arsenal confirm new striker signing as squad number revealed",
-        "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T11:25:30+01:00",
-        "source": "standard.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNFIwQVY4NzJPTDU4cHNOeE1hMllTeTVudmVYWFZFSTBjekJHWGNLdlctOXNiSHRCVUk1clVLUU5YR2lkQmNyMW1wbzVROWxzVk9uNkl2NnlrbEZib044WF9saTZoRXJpbkQtRmZfZFJHaDB1SzF3QVN0anpnWkJlWjFkcXdCSm5uYV9NTFFzYWl5MkdjeEE?oc=5"
-      },
-      {
-        "title": "Igor Tyjon signs for Arsenal",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T16:08:50+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1UclVYbGlINWtMN0poZUZsN0U2S0kyN1R0b2ZoVHpFRWJ4X0lMLW5DZDdCOFpIU3cyeThadkF1VGM1WWRrX0ZvNWhMblBIR1JKX2ZXNXdKQUZteFl0eHNsOWE2Nkg1ZUJCZjVmLUxxcmJFdlBlRTI3Y3dn?oc=5"
-      },
-      {
-        "title": "Julian Alvarez 'holds family meeting to discuss Arsenal move' after Mikel Arteta talks",
-        "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T12:48:37+01:00",
-        "source": "standard.co.uk",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T06:20:10+01:00",
+        "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMlZBX3NMODFGMkZnVWpZQjBlN2JYZHhoRVZQbW4zTjEtR1FINUNYZUNnLVlDOTcwZXBnSEFiRFdUNHVLYzJ0MlAwR0VXQ1lQSGRoU3RWR0tNVmxHa3ZXSXJsNzV2dGVpZENJTmRwWFA5bWllSVhWZVBFT1pmVVp3cENXVWp3MUZMY0lTc2syRldlbFQ1T2w3TmFzdw?oc=5"
       },
       {
-        "title": "The man who helped build Villa Park and Highbury",
+        "title": "Preview: Aston Villa v Arsenal",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T06:12:14+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE42b1lFLUVVUzFLZnFUSEFEdVE3R0xsZC1SZU5lREZQRTI1YU9rQ2R5cGVVaGd4aV9QVnRSVFhVSkV0bHYtYWpTNlB2aWFkQVVkMVAzd0l0blpiMlQ3b1VURHpuMDhUNXlyelVLZEFwQUZRMU9iNndWZ2NnNA?oc=5"
+      },
+      {
+        "title": "Arsenal XI vs Aston Villa: Confirmed team news and predicted lineup",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T01:42:04+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUXd6VHFnQUlBV3NfNXZ0VUswTUNyLVcyV20ySlJONVotTXRKZC1BUFZuWTBhbW81ZEdQdjdIMDFZWnJ5T0VZUTlhaVhJWGFaWnBka1BRa29iSkVheTFfWmhyTFJMNmpfV2pBc2R5S3NJLXlIQzFJS3Y3cG5xNXZiTHRWaEdPYTkydmx3TUtLTGRmbWRINHlpWHRWZ1VoeGwySjF5Q2ZTck1TV0RrVHE2eHRXQWwxaWd3NmVnNjAzY1gtenlPMDlaYW15cElaQ01NXzd0dHowbElHZnUwUnE3bkQtbmVoSk1uaU1N?oc=5"
+      },
+      {
+        "title": "Champions League league phase fixtures confirmed",
         "summary": "",
         "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T06:09:20+01:00",
+        "publishedAt": "2026-08-29T12:13:31+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPREZtVGtCRlQ1Qzc5cGtFUVZwNGI4bkJpNUI0UnNZaXFuZE5xQmJaNDdsck9NazNQVENaVnVUM1VpTnA0Z0p0alBGb0l5VFZ5ZGM3YXhwMTJYcng0SUFQVmh3LWdfUDFPV1VDUXA5LUQtSG9YbVBZUG5UYmhqMDFuMjRiSFU1dFBfYWp5VDFUX2xwTVhjZzlQNQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTTFqcGwxc1VDbEktaHVpVjh6bXA4UlFncC1rNzRJWXJ0ZHRIZjlaRzJCT1p5eTBka1BMa3N2a0wxSE5TVFFudUNmTzNBSi1Ld2ZNTlRtblRlSEI5VnhJc0ViLTgzVmdrMkR0MzlZc0UwT3oxS2pjYmlGTlJoN3oyQlg4a0FVRjRYSzNjZ28wbVJEUS1r?oc=5"
+      },
+      {
+        "title": "Arteta reveals Guimaraes injury latest amid two-man Arsenal update",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T02:34:15+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUE10ajI4Q25uRmtHZ0hzY2ZwRXJOWnc4MUdDMDJZUUdSNFI5Z3RmY19uTkdqYUVSNU5Id19peFhEUVFRQ3NZNnN3Rk5vcFl2czdtb05KSkpkQWc1dmZrWWYwaEloTjhJSkliUkZMOUZMcEIwRWpxVWF4MGV1Z2o2R3hDdmt5aDhVcFItel8xOXV3M2NySzJ2S3RRWDBHckpYT2lmVEFLYTJKd2szNkVvc2ZoOA?oc=5"
       }
     ],
     "Local news": [
+      {
+        "title": "Walton & Hersham vs Dorking Wanderers: National League N / S stats & head-to-head",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:16:58+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5"
+      },
+      {
+        "title": "Walton & Hersham FC club bar shut after reports of abusive fans",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T19:07:06+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53ZTdQbF95anp4blRrTDVGcXBJbG5zZXVpNklqTTBjNWUxSEdZU1JCU3pNYUZuejRUTHVDemlOajM3cEhJS21GY3J6S2VnLTRJZEdxc3dXQXo0UQ?oc=5"
+      },
+      {
+        "title": "Rock Montreal diverted to Doncaster after sidestepping Solario",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T16:52:14+01:00",
+        "source": "London Now",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOXzJDOHdBNE9tQlVVRjRKLXVsWnJISDV3bEtPbk9XSExzUnZvRlc1Q3NMeXlFUVVjX3VHZDZUSEZZRWFTMmktcjVRWkNSQjdFTE8xZ1AtY0ZfX0dfMFo3TmNZQkt6eTZHeFdNMDlpRWZaZzFxNXQ1bC03ODFyWUptU1pjMFROVThpRERQNlAtT2l0MzV0TjdxNGt5LW5jV19NajBtRDJISXVwekVha2NoeUgta2I?oc=5"
+      },
       {
         "title": "Lucy Worsley: ‘I had my annual appraisal in Princess Margaret’s bathroom’",
         "summary": "",
@@ -921,36 +923,20 @@
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSmZPbUNmdi0xN1hpRW9xbnRfZ0tXSXA3YkZySTdoMjRiTTA1dS0zTU5sQzUtR3lhb1pMZTRwRU9JUmVrWW8yTmdsR3hCLTQ4cHhET3NINy1TRE1uZ2I1RVZSZ0g0akRBTkJPalZNQ3dBdVV2RHdxTzdCUDJXdkRPQ1VuRlVpVlVHTGRlXy1rdUhodHozYmluOGVFNG82ZG53aWRkN1hqc08?oc=5"
       },
       {
-        "title": "Plans for new 60-pupil Surrey school on green belt land currently used for animal grazing",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T19:00:00+01:00",
-        "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ2JINFJZZmxkNWpTbHUtZ1Z3NV9EWXFvRkNERDNibTc4Tnd6QlJ4M0V3YS1JOU51aDVTd3pNdE8tN3MtZjQ3UFdMZDZkcXV5bGJYSzZZLTVFR2FhZ2NpVWJHMGtPcml0NnY4eHBRdU5aZ2o1WjhMYUJwZ3hjQXpUWGN5QUlzd9IBiwFBVV95cUxPdFV1b0l3SzhTSGl0RTFqUktzNkpuYW8yaFBUQjdvTjczU0Q1MThGSGgzNHd5NV9pQUpCa0cyQUlMcVgwNl9kT1VZSExtdFJ1U2NaZlAxRDdrREw1OVFrd1JEN25pM0JYSFNTTzEwbmozYUUyVzFVd0FIaU03X3Z1WHV2ZXZyVzdFTVhR?oc=5"
-      },
-      {
-        "title": "Guildford Walkfest 2026 is all Set To Go Throughout September",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T16:54:28+01:00",
-        "source": "Buttondown",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWWw5ZnlSSFJRTWtkbWJncEZuaDFLd082QWlWcTVWWXdsbVIyRVhGZ25LRG9lV1ozemkyZUJTcVl2cGtPcjN0aHBienZJT3dqaDhLWTFjcFVrdm5JM1o5aTVlMTFuNk1yYXNEaDNBNEthb3dGZEFad21fT3hmbWJsSjFlRmZjeFdtN3VUdnJQLW9fMmFhNi1N?oc=5"
-      },
-      {
-        "title": "Solario Stakes preview: Breacher has trainer William Muir dreaming of big days to come",
-        "summary": "",
-        "meta": "Thu 27 Aug",
-        "publishedAt": "2026-08-27T14:04:19+01:00",
-        "source": "Sporting Life",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQajZzN1BQNjhUR1RJcnFwaUFrWVU1ZUhGVEVKQkF5RGRralg5ZjRNdG9fYmJoNUZXNGRTeE9OT3hEaGlIUVNUMHBaQVl3RWF2MncyWG1pS2JCSGRMUkNkWnRtdk9DNElhaTZGNzJ1TTJiZ29GejhOYmlrd0JpekdWTGhERnNjVTdmV0VUemMtcERsZk9PQUxKOHdzMzhZa0dVdGdpZF96VHpHU1Y1QkxtWWdwVWR6d18xN3RYTC0xSnZtSjNYc2MxZ3JLalhpUnUyMHlJ0gHTAUFVX3lxTFBqNnM3UFA2OFRHVElycXBpQWtZVTVlSEZURUpCQXlEZGtqWDlmNE10b19iYmg1Rlc0ZFN4T05PeERoaUhRU1QwcFpBWXdFYXYydzJYbWlLYkJIZExSQ2RadG12T0M0SWFpNkY3MnVNMmJnb0Z6OE5iaWt3Qml6R1ZMaERGc2NVN2ZXRVR6Yy1wRGxmT09BTEo4d3MzOFlrR1V0Z2lkX3pUekdTVjVCTG1ZZ3BVZHp3XzE3dFhMLTFKdm1KM1hzYzFncktqWGlSdTIweUk?oc=5"
-      },
-      {
         "title": "MacRobertson Shield Day 13 - The final begins",
         "summary": "",
         "meta": "Thu 27 Aug",
         "publishedAt": "2026-08-27T09:26:05+01:00",
         "source": "Croquet Association",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE85cWd5Rktua0NGRkIxR0c4NzkwOExGdkdkaE5ZOFlmZWpOZl90dnNNSTdFRjYzNjd3ZllmRzBzTWNUbUc0MmdLcFFPZzUyVTRyV1Fkd2Q5T0Z6cVVzeFJ4U0Fn?oc=5"
+      },
+      {
+        "title": "New half billion pound bin waste collection contract in Surrey | News - Greatest Hits Radio (Surrey & East Hampshire)",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T08:48:52+01:00",
+        "source": "Rayo",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUUVwMXUwYWhwYTFfbHhsckxtUURYT2kxSzcwcWNnRktNMTRMRUxDQmF3ODJaMG9SWW5PUWFaUUdEWWszb2VuX0JMNE00LVdiYU1sa19rLUVteEk2cUZ2SU1rYkVhenRKOGVMSGtXUlJBQWVEVThqWXBsVUppM1N6OGJJelRjODdhNXVsR0gzbGh4QzVDdTY2UHF4QkpVVldIUGFDalRtakxKR18waWc?oc=5"
       },
       {
         "title": "Connect with nature, support your wellbeing and help create a sound installation",
@@ -969,23 +955,63 @@
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORWJNS0dwNGp4ZzZOT2Zkd3JDeGItMXMtNTA1WVI5V09nR1kwUm40WEZFY2NQTWtoVEVZNXd2ekU0eWkyMkF4SmhpNzZDbEV6WDAxcE1ObDI0YmdSSnVZaVVGZzFBd2NwaTR5SVZPRmR0TDdoWXNkdUJOcFFOa2NtZFF3bG9CTzBEMWd2SGU1TjZid0NnaWFwSzdaQTZNaE03bWJkVmJJUnkwVnd0UzJJ?oc=5"
       },
       {
-        "title": "This Is One of the Great Car Shows You Need to See Before You Die",
+        "title": "Passenger at CIRCUIT Kingston live concert - Tickets",
         "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T23:22:00+01:00",
-        "source": "Autoweek",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYXFxWWVnZThrYTd6WHJadHZSOWp6MDZKcGtCMm5SRXEtd192aW5VN0diUk1BcVNNa1RzdFplMjItTjJaNXdSVzFJeDMxVTlOSEx0bHZ2UVBjMDdQR1BWUUxoUG1WRGMyZUh0QkJSeU9pS3Y0QXFOZUZEbTh2MTdtNklkTnFXV3FVamdxVDZQWEVIYlk?oc=5"
-      },
-      {
-        "title": "Walton & Hersham vs Dorking Wanderers: National League N / S stats & head-to-head",
-        "summary": "",
-        "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T15:49:00+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGQ2NHSTlTTVE1TlNkMHNTWk93UExUaGNfV3g5cHQ1T0t3ZEptYW5fTU9fTEFmMldiSHV4WUtqOHFsdFhhRkJMRGsyOU5ORHJXb0xNUGpNR0lCM0ZSRkNzV1hGSjJVUQ?oc=5"
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T04:01:27+01:00",
+        "source": "Karlobag.eu",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdkRpR01CSkNDUmRIXzNBdjhOWVY0R0ZTNWlpdlh3eDB6ZUtZWm9QSVdkSmN4VjdPNXU5R3hFTHhZeUZNeG13aV9hemdrWkxEUURUeE5WeUp3UV84bk54b1VPaGhWOG83Q0hnZXhITTItdTZUNFpwVnB3LWowNE4wVWppVjZsbDhYRURZdFhqWmpEb0x6R3c?oc=5"
       }
     ],
     "UK news": [
+      {
+        "title": "PC Harper's killers to stay in jail as PM announces changes to early release scheme",
+        "summary": "Andy Burnham tells BBC Breakfast anyone convicted of manslaughter will be excluded from the early release scheme in the Sentencing Act.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T06:50:27+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/crr4wd81pdpo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "WhatsApp group chat used to send millions in cash, funding crime and extremism",
+        "summary": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T05:59:56+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Iceland EU referendum on a knife edge as counting continues",
+        "summary": "A vote on whether to resume membership talks with the European Union is too close to call.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T04:57:01+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Rescue to continue overnight for 'in distress' vessel carrying five in the Channel",
+        "summary": "Several fishing vessels are assisting the Coastguard after reports of a boat \"in distress' off Plymouth.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:49:43+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/czeznrgyd1go?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "British heavyweight Moses Itauma stretchered out after shock defeat in gruelling world title fight",
+        "summary": "Filip Hrgovic shatters Moses Itauma's world-title dream as the Briton appears to punch himself out in an extraordinary heavyweight world-title contest in London.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:16:03+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/sport/boxing/articles/cpd0n46we13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "I've been to Gamescom six times - here's what excited me this year",
+        "summary": "The BBC's Laura Cress gets a first look at the biggest games in Cologne from Witcher 3 to Alien: Isolation 2.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:02:28+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cew92lp2g45o?at_medium=RSS&at_campaign=rss"
+      },
       {
         "title": "97-year-old woman rescued after Nepali floods looked like 'a warrior'",
         "summary": "A 97-year-old woman, Guna Maya Bohara, survived the flash floods and was rescued using an excavator.",
@@ -993,38 +1019,6 @@
         "publishedAt": "2026-08-28T22:17:54+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/videos/cj64kgrpgjdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Christian festival 'devastated' as man dies after sign falls",
-        "summary": "Police say at least six other people were also injured in the incident at the Big Church Festival.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T12:22:48+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c158939pz4do?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Burnham's summer tour is over - now he has to prove himself in Parliament",
-        "summary": "The imminent return of Parliament will put the new prime minister under real scrutiny, with MPs finally getting a chance to grill him.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T11:31:18+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgy48r1nr4o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Sarah Ferguson expected back in the UK 'shortly', source says",
-        "summary": "The former Duchess of York is renting a six-bed house in the Home Counties, reports say.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T11:43:25+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ce8xn9ge6xeo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "We helped create UK emergency alert system - but question how government is using it",
-        "summary": "Millions across England and Wales received a wildfire alert on their phones earlier this month, but it partly backfired.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T02:37:08+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/ckgw7xj698lo?at_medium=RSS&at_campaign=rss"
       },
       {
         "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
@@ -1051,50 +1045,34 @@
         "url": "https://www.bbc.co.uk/news/articles/c93v70w79gxo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood",
-        "summary": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood.",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T11:35:06+01:00",
+        "title": "They fell in love - then had to check they weren't brother and sister",
+        "summary": "A French couple - both conceived by sperm donors - wanted children. But with home DNA tests illegal, how could they be sure they were not related?",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:03:51+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/cj06j16vpr5o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c8en3n29wdro?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
-        "summary": "A woman who rented out homes to two al-Qaeda members speaks publicly for the first time - to the BBC.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T01:32:17+01:00",
+        "title": "Mount Fuji pics, life-changing ramen and a weak yen - why young Brits are going to Japan",
+        "summary": "Photos of Mount Fuji, bowls of ramen and the bustle of Shibuya Crossing are filling up social media feeds.",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T00:04:22+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "How one of the 'most powerful hacks' to control stress actually works",
-        "summary": "We spoke to experts about how the breathing technique used by soldiers and influencers works.",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T02:24:36+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5y5jqly153o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "The race to stop England running out of water",
-        "summary": "Who is to blame for the summer drought, and can England future-proof its water supplies?",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T01:46:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clyrv84yd9ko?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c7704l1ypjgo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "Career": [
       {
-        "title": "Forward Deployed Product Manager - AI Agent (EMEA)",
-        "summary": "Cresta · UK",
-        "meta": "UK · Posted Thu 27 Aug",
+        "title": "CX AI & Automation Lead",
+        "summary": "Remote · Ireland, UK",
+        "meta": "UK · Posted Sat 29 Aug",
         "source": "Jobicy",
-        "url": "https://jobicy.com/jobs/151832-forward-deployed-product-manager-ai-agent-emea",
+        "url": "https://jobicy.com/jobs/152000-cx-ai-automation-lead-2",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "Cresta",
-        "location": "UK",
-        "postedAt": "2026-08-27"
+        "company": "Remote",
+        "location": "Ireland, UK",
+        "postedAt": "2026-08-29"
       },
       {
         "title": "Course Director UX UI and AI",
@@ -1118,18 +1096,6 @@
         "countryFocus": "UK",
         "company": "Databricks",
         "location": "UK",
-        "postedAt": "2026-08-28"
-      },
-      {
-        "title": "Staff AI Deployment Strategist - UK & Nordics",
-        "summary": "Mistral.ai · London",
-        "meta": "UK · Posted Fri 28 Aug",
-        "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.co.uk/jobs/companies/mistralai/staff-ai-deployment-strategist-uk-nordics-london-359774",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Mistral.ai",
-        "location": "London",
         "postedAt": "2026-08-28"
       },
       {
@@ -1157,40 +1123,16 @@
         "postedAt": "2026-08-24"
       },
       {
-        "title": "Head of Data Exploitation",
-        "summary": "Department for Environment, Food and Rural Affairs · England, United Kingdom",
-        "meta": "UK · Posted Mon 24 Aug",
+        "title": "Head of Applied Data Governance and Capability",
+        "summary": "Government Digital Service · England, United Kingdom",
+        "meta": "UK · Posted Thu 6 Aug",
         "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-data-exploitation-at-department-for-environment-food-and-rural-affairs-4457107400",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-applied-data-governance-and-capability-at-government-digital-service-4448443170",
         "contentType": "job",
         "countryFocus": "UK",
-        "company": "Department for Environment, Food and Rural Affairs",
+        "company": "Government Digital Service",
         "location": "England, United Kingdom",
-        "postedAt": "2026-08-24"
-      },
-      {
-        "title": "DDaT- Head of People Data and Insight",
-        "summary": "UK Ministry of Defence · London, England, United Kingdom",
-        "meta": "UK · Posted Mon 17 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/ddat-head-of-people-data-and-insight-at-uk-ministry-of-defence-4454277865",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "UK Ministry of Defence",
-        "location": "London, England, United Kingdom",
-        "postedAt": "2026-08-17"
-      },
-      {
-        "title": "Lead Data Scientist - Public Sector (security cleared)",
-        "summary": "Kainos · Birmingham, England, United Kingdom",
-        "meta": "UK · Posted Sun 9 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/lead-data-scientist-public-sector-security-cleared-at-kainos-4415398830",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "company": "Kainos",
-        "location": "Birmingham, England, United Kingdom",
-        "postedAt": "2026-08-09"
+        "postedAt": "2026-08-06"
       },
       {
         "title": "Senior Data Scientist",
@@ -1203,6 +1145,42 @@
         "company": "Faculty",
         "location": "UK - London",
         "postedAt": "2026-08-29"
+      },
+      {
+        "title": "Senior Product Manager, KYB - MoonPay Enterprise",
+        "summary": "MoonPay · London - Hybrid",
+        "meta": "UK · Posted Fri 28 Aug",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.co.uk/jobs/companies/moonpay/senior-product-manager-kyb-moonpay-enterprise-london-hybrid-23264",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "MoonPay",
+        "location": "London - Hybrid",
+        "postedAt": "2026-08-28"
+      },
+      {
+        "title": "Data and AI Adoption Lead",
+        "summary": "Ofgem · Glasgow, Scotland, United Kingdom",
+        "meta": "UK · Posted Fri 28 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/data-and-ai-adoption-lead-at-ofgem-4458060558",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Ofgem",
+        "location": "Glasgow, Scotland, United Kingdom",
+        "postedAt": "2026-08-28"
+      },
+      {
+        "title": "AI Transformation Lead - 2 year FTC",
+        "summary": "Ofgem · Glasgow, Scotland, United Kingdom",
+        "meta": "UK · Posted Fri 28 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/ai-transformation-lead-2-year-ftc-at-ofgem-4458061537",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "company": "Ofgem",
+        "location": "Glasgow, Scotland, United Kingdom",
+        "postedAt": "2026-08-28"
       }
     ]
   }
