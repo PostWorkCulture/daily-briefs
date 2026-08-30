@@ -38,6 +38,15 @@ class EnglandPlaceTests(unittest.TestCase):
         )
         self.assertIn("Northolt", photo["alt"])
 
+    def test_warcop_range_has_verified_place_and_photo(self):
+        self.assertEqual(england_place("Warcop Range"), ("Warcop", "Cumbria"))
+        photo = exact_commons_photo("Warcop Range", "Warcop", "Cumbria")
+        self.assertEqual(
+            photo["page"],
+            "https://commons.wikimedia.org/wiki/File:Warcop_-_geograph.org.uk_-_30200.jpg",
+        )
+        self.assertIn("Warcop", photo["alt"])
+
     def test_wiggonholt_has_verified_exact_place_photo(self):
         photo = exact_commons_photo("Wiggonholt", "Wiggonholt", "West Sussex")
         self.assertEqual(
