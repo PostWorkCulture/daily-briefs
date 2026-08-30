@@ -651,7 +651,6 @@ def check_viewport(browser, name: str) -> None:
             () => {
               const htmlStyle = getComputedStyle(document.documentElement);
               const bodyStyle = getComputedStyle(document.body);
-              const topbarStyle = getComputedStyle(document.querySelector('.topbar'));
               const rgb = htmlStyle.backgroundColor.match(/\d+(?:\.\d+)?/g)?.slice(0, 3).map(Number) || [0, 0, 0];
               const fact = document.querySelector('#sceneryFact');
               const image = document.querySelector('#sceneryCard');
@@ -693,7 +692,6 @@ def check_viewport(browser, name: str) -> None:
                 bodyRgb: rgb,
                 bodyBackgroundImage: bodyStyle.backgroundImage,
                 bodyBackgroundColor: bodyStyle.backgroundColor,
-                topbarBackgroundColor: topbarStyle.backgroundColor,
                 factBeforeImage: Boolean(fact.compareDocumentPosition(image) & Node.DOCUMENT_POSITION_FOLLOWING),
                 factText: document.querySelector('#sceneryFactText')?.textContent?.trim() || '',
                 factHref: fact?.getAttribute('href') || '',
@@ -711,7 +709,8 @@ def check_viewport(browser, name: str) -> None:
                 canvasTitleContrasts: canvasTitles.map(node => contrast(parseRgb(getComputedStyle(node).color), rgb)),
                 weatherTitleColour: getComputedStyle(document.querySelector('#weatherPanel .section-head h2')).color,
                 heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
-                topbarBrandCount: document.querySelectorAll('.topbar .brand').length,
+                topbarCount: document.querySelectorAll('.topbar, #topbarDate, #topbarWeather, #profileAvatar').length,
+                dateTop: date.getBoundingClientRect().top,
                 navBackgroundColour: getComputedStyle(nav).backgroundColor,
                 navDefaultColours: buttons.map(button => getComputedStyle(button).color),
                 mainCopyColours: [
@@ -761,11 +760,14 @@ def check_viewport(browser, name: str) -> None:
             failures.append(
                 f"page canvas is not solid: {visual['bodyBackgroundImage']}"
             )
-        if visual["bodyBackgroundColor"] != "rgb(120, 183, 224)" or visual["topbarBackgroundColor"] != "rgb(120, 183, 224)":
+        if visual["bodyBackgroundColor"] != "rgb(120, 183, 224)":
             failures.append(
-                "body or topbar does not use the solid blue canvas: "
-                f"body={visual['bodyBackgroundColor']}, topbar={visual['topbarBackgroundColor']}"
+                f"body does not use the solid blue canvas: {visual['bodyBackgroundColor']}"
             )
+        if visual["topbarCount"] != 0:
+            failures.append("duplicate topbar date, weather or profile text remains")
+        if visual["dateTop"] > 48:
+            failures.append(f"main date is not the first compact line: top={visual['dateTop']}")
         if not visual["factBeforeImage"]:
             failures.append("insane fact does not appear before its image")
         if not visual["factText"] or visual["factText"].startswith("Loading"):
@@ -785,7 +787,7 @@ def check_viewport(browser, name: str) -> None:
                 failures.append(f"weather card image credit is not linked to its source: {card}")
         if visual["greetingMarginTop"] < 16:
             failures.append(f"greeting was not moved down: margin {visual['greetingMarginTop']}")
-        if visual["heroBrandCount"] != 0 or visual["topbarBrandCount"] != 0:
+        if visual["heroBrandCount"] != 0:
             failures.append("visible Daily Briefs wordmark remains")
         approved_ink = "rgb(20, 42, 61)"
         if visual["greetingColour"] != approved_ink or visual["dateColour"] != approved_ink:
