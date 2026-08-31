@@ -17,14 +17,14 @@
     "sequence": 10
   },
   "weather": {
-    "temp": "14°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 4,
+    "temp": "22°",
+    "summary": "Light showers",
+    "condition": "Light showers",
+    "currentRainChance": 30,
     "daily": [
       {
         "date": "2026-08-31",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -33,15 +33,6 @@
       },
       {
         "date": "2026-09-01",
-        "high": 22,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-02",
         "high": 23,
         "low": null,
         "summary": "Cloudy",
@@ -50,39 +41,39 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-03",
-        "high": 25,
+        "date": "2026-09-02",
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-03",
+        "high": 25,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-04",
-        "high": 25,
+        "high": 23,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-09-05",
-        "high": 24,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-06",
         "high": 25,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       }
     ],
