@@ -401,6 +401,9 @@ def apply_last_result_fallback(payload: dict) -> None:
     # than lastResult, fail the refresh instead of silently publishing stale data.
     newest_news = newest_news_result(payload)
     if newest_news:
+        newest_news = reconcile_news_result_with_structured(
+            newest_news, arsenal["lastResult"]
+        )
         current_dt = candidate_dt(arsenal["lastResult"])
         news_dt = candidate_dt(newest_news)
         if current_dt.date() < news_dt.date():
