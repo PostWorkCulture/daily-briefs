@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.1, 30 August 2026. Owner: Pete.
+Version 4.2, 1 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -108,6 +108,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep each destination working and independent.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
+- Local News is restricted to East Molesey, West Molesey, Molesey, Kingston upon Thames, Hampton, Teddington, Hampton Court, Walton-on-Thames, and genuinely nearby KT8 places: Hampton Wick, Hampton Hill, Bushy Park, Thames Ditton, Long Ditton, Hinchley Wood, Esher, Hersham, Surbiton, and Sunbury-on-Thames. A headline or summary must contain an approved place or unmistakable local-landmark reference; a broad `Surrey`, `Elmbridge`, or `London` mention, the search query, or the publisher name alone is not sufficient evidence. Reject foreign or unrelated place-name matches. If fewer than 12 suitable stories exist in the freshest 14 days, extend the time window to 30 days before considering any geography change; never silently widen the approved area.
 - Merge Local News candidates across all configured local searches before selecting the newest items, and always render Local News strictly newest to oldest.
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
