@@ -69,6 +69,29 @@ class FirstTeamResultTests(unittest.TestCase):
             {"name": "Bukayo Saka", "team": "Arsenal", "minute": "59'"}
         ])
 
+
+    def test_verified_fallback_completes_late_actual_report(self) -> None:
+        payload = {
+            "sections": {
+                "Arsenal news": [
+                    news_item(
+                        "Match Report: Aston Villa 0-1 Arsenal",
+                        "2026-09-01T00:20:00+01:00",
+                    )
+                ]
+            },
+            "arsenal": {"news": []},
+        }
+
+        finalize_arsenal.apply_last_result_fallback(payload)
+        result = payload["arsenal"]["lastResult"]
+
+        self.assertEqual(result["date"], "2026-08-31T20:00:00+01:00")
+        self.assertEqual(result["opponent"], "Aston Villa")
+        self.assertEqual(result["result"], "1–0")
+        self.assertEqual(result["stadium"], "Villa Park")
+        self.assertEqual(result["scorersLabel"], "Bukayo Saka 59'")
+
     def test_incomplete_new_result_fails_closed(self) -> None:
         payload = {
             "sections": {"Arsenal news": []},

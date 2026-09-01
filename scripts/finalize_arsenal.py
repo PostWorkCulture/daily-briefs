@@ -390,6 +390,7 @@ def apply_last_result_fallback(payload: dict) -> None:
     if news_result:
         news_result = use_fixture_details(news_result, arsenal)
         news_result = reconcile_news_result_with_structured(news_result, last)
+        news_result = reconcile_news_result_with_structured(news_result, fallback)
 
     candidates = [fallback]
     if news_result:
