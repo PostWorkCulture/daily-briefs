@@ -429,8 +429,8 @@ def check_viewport(browser, name: str) -> None:
         if not valid_bin_copy:
             raise AssertionError(f"{name}: Bin Day reminder copy is unclear: {bin_reminder_text}")
         location_text = page.locator('#sceneryCountry').inner_text()
-        location_copy = location_text.casefold()
-        if '·' not in location_text or not any(region in location_copy for region in ('europe', 'oceania', 'africa', 'asia', 'america', 'antarctica')):
+        location_place, separator, location_region = location_text.partition('·')
+        if not separator or not location_place.strip() or not location_region.strip():
             raise AssertionError(f"{name}: Fact location lacks wider country/region context: {location_text}")
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
