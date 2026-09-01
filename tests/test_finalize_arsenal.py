@@ -62,8 +62,8 @@ class FirstTeamResultTests(unittest.TestCase):
             "sections": {"Arsenal news": []},
             "arsenal": {
                 "lastResult": {
-                    "date": "2026-08-29T15:00:00+01:00",
-                    "dateLabel": "Sat 29 Aug",
+                    "date": "2026-09-02T15:00:00+01:00",
+                    "dateLabel": "Wed 2 Sep",
                     "opponent": "Incomplete FC",
                     "completed": True,
                     "arsenalScore": 1,
@@ -93,48 +93,44 @@ class FirstTeamResultTests(unittest.TestCase):
         self.assertEqual(result["result"], "3–0")
 
     def test_after_midnight_report_keeps_structured_match_details(self) -> None:
-        payload = {
-            "sections": {
-                "Arsenal news": [
-                    news_item(
-                        "Report: Aston Villa 1-2 Arsenal",
-                        "2026-09-01T00:20:00+01:00",
-                    )
-                ]
-            },
-            "arsenal": {
-                "lastResult": {
-                    "date": "2026-08-31T20:00:00+01:00",
-                    "dateLabel": "Mon 31 Aug",
-                    "kickoff": "8pm",
-                    "opponent": "Aston Villa",
-                    "competition": "Premier League",
-                    "homeAway": "away",
-                    "completed": True,
-                    "arsenalScore": 2,
-                    "opponentScore": 1,
-                    "result": "2–1",
-                    "scorers": [
-                        {"name": "Player One", "team": "Arsenal", "minute": "24'"},
-                        {"name": "Player Two", "team": "Arsenal", "minute": "71'"},
-                    ],
-                    "scorersLabel": "Player One 24', Player Two 71'",
-                    "stadium": "Villa Park",
-                    "summary": "Arsenal beat Aston Villa 2–1 at Villa Park in the Premier League.",
-                    "source": "ESPN",
-                },
-                "news": [],
-            },
+        structured = {
+            "date": "2026-08-31T20:00:00+01:00",
+            "dateLabel": "Mon 31 Aug",
+            "kickoff": "8pm",
+            "opponent": "Example United",
+            "competition": "Premier League",
+            "homeAway": "away",
+            "completed": True,
+            "arsenalScore": 2,
+            "opponentScore": 1,
+            "result": "2–1",
+            "scorers": [
+                {"name": "Player One", "team": "Arsenal", "minute": "24'"},
+                {"name": "Player Two", "team": "Arsenal", "minute": "71'"},
+            ],
+            "scorersLabel": "Player One 24', Player Two 71'",
+            "stadium": "Example Stadium",
+            "summary": "Arsenal beat Example United 2–1 in the Premier League.",
+            "source": "ESPN",
+        }
+        late_report = {
+            "date": "2026-09-01T12:00:00+01:00",
+            "opponent": "Example United",
+            "arsenalScore": 2,
+            "opponentScore": 1,
+            "result": "2–1",
+            "url": "https://www.arsenal.com/news/example-result",
+            "source": "Arsenal.com",
         }
 
-        finalize_arsenal.apply_last_result_fallback(payload)
-        result = payload["arsenal"]["lastResult"]
+        result = finalize_arsenal.reconcile_news_result_with_structured(
+            late_report, structured
+        )
 
         self.assertEqual(result["date"], "2026-08-31T20:00:00+01:00")
-        self.assertEqual(result["stadium"], "Villa Park")
+        self.assertEqual(result["stadium"], "Example Stadium")
         self.assertEqual(len(result["scorers"]), 2)
         self.assertEqual(result["source"], "Arsenal.com")
-
 
 if __name__ == "__main__":
     unittest.main()
