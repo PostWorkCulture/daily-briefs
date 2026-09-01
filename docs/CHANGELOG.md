@@ -15,6 +15,7 @@ Status: implemented; publication follows the normal CI, refresh, and Pages gates
 - QA repair: wider fact locations are validated by the required non-empty `place/area · country/region` structure rather than a fixed continent-name list, so valid lines such as `Arabian Peninsula · Saudi Arabia, Oman and United Arab Emirates` pass without weakening the location requirement.
 - QA repair: the Arsenal browser check now validates the current completed match's visible score, competition, kickoff, stadium, scorers and summary rather than requiring the superseded Coventry fixture after a new match has been played. The existing fail-closed structured-data validation remains unchanged.
 - QA repair: optional previous-meeting subcopy is colour-checked only when that metadata exists, matching the protected rule that those details are shown when available. Primary next-fixture facts remain mandatory and always receive the white-on-navy check.
+- QA repair: the upcoming-fixture browser assertion now requires a current opponent plus visible stadium, kickoff, competition, TV and previous-meeting rows instead of hard-coding the completed Aston Villa fixture. Missing mandatory fields still fail; unavailable TV or previous-meeting values may use their explicit `TBC` / `No previous meeting found` states.
 - Scope protected: no UK News, profile, route, section order, styling, imagery, weather, calendar, Arsenal, AI, Career, Dida, Birthday, TV Picks, fact, or 6am scheduling behaviour changed.
 
 ## 30 August 2026: Remove duplicate top-of-brief strip
