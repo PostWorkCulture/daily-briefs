@@ -505,13 +505,33 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
-        last_result_text = page.locator('#lastResultCard').inner_text()
-        last_result_copy = last_result_text.casefold()
-        for required in ('arsenal 3–0 coventry city', 'kai havertz', 'premier league', '8pm', 'emirates stadium'):
-            if required not in last_result_copy:
-                raise AssertionError(f"{name}: Arsenal last result is missing {required}: {last_result_text}")
-        if len(page.locator('#lastResultCard .match-summary').inner_text().strip()) < 40:
-            raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin")
+        last_result = page.locator('#lastResultCard').evaluate(
+            r"""
+            card => {
+              const label = card.querySelector(':scope > span')?.textContent.trim() || '';
+              const scoreLine = card.querySelector(':scope > strong')?.textContent.trim() || '';
+              const meta = card.querySelector(':scope > small')?.textContent.trim() || '';
+              const scorers = card.querySelector('.match-scorers span')?.textContent.trim() || '';
+              const summary = card.querySelector('.match-summary')?.textContent.trim() || '';
+              return {
+                label,
+                scoreLine,
+                metaParts: meta.split('·').map(part => part.trim()).filter(Boolean),
+                scorers,
+                summary,
+                hasScore: /^Arsenal\s+\d+\s*[–-]\s*\d+\s+\S/.test(scoreLine)
+              };
+            }
+            """
+        )
+        if not last_result["label"].startswith("Last result · ") or not last_result["label"].removeprefix("Last result · ").strip():
+            raise AssertionError(f"{name}: Arsenal last result has no visible competition: {last_result}")
+        if not last_result["hasScore"] or len(last_result["metaParts"]) < 3:
+            raise AssertionError(f"{name}: Arsenal last result lacks score, kickoff or stadium: {last_result}")
+        if not last_result["scorers"] or last_result["scorers"] == "No scorers listed":
+            raise AssertionError(f"{name}: Arsenal last result has no visible scorers: {last_result}")
+        if len(last_result["summary"]) < 40 or last_result["summary"] == "Match summary unavailable.":
+            raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin: {last_result}")
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
         page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)
