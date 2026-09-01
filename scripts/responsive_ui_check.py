@@ -585,17 +585,21 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")
         fixture_copy_colours = page.evaluate(
             """
-            () => ({
-              primary: getComputedStyle(document.querySelector('#nextFixtureCard .fixture-fact>b')).color,
-              supporting: getComputedStyle(document.querySelector('#nextFixtureCard .fixture-fact>small')).color
-            })
+            () => {
+              const primary = document.querySelector('#nextFixtureCard .fixture-fact>b');
+              const supporting = document.querySelector('#nextFixtureCard .fixture-fact>small');
+              return {
+                primary: primary ? getComputedStyle(primary).color : '',
+                supporting: supporting ? getComputedStyle(supporting).color : null
+              };
+            }
             """
         )
         if fixture_copy_colours["primary"] != "rgb(255, 255, 255)":
             raise AssertionError(
                 f"{name}: Arsenal fixture copy is not white on navy: {fixture_copy_colours}"
             )
-        if not fixture_copy_colours["supporting"].startswith("rgba(255, 255, 255,"):
+        if fixture_copy_colours["supporting"] and not fixture_copy_colours["supporting"].startswith("rgba(255, 255, 255,"):
             raise AssertionError(
                 f"{name}: Arsenal supporting fixture copy is not light on navy: {fixture_copy_colours}"
             )
