@@ -651,6 +651,12 @@ def check_viewport(browser, name: str) -> None:
                 cardClientWidth: card.clientWidth,
                 cardScrollWidth: card.scrollWidth,
                 fixtureText: card.innerText,
+                fixtureOpponent: card.querySelector(':scope > strong')?.textContent.trim() || '',
+                fixtureFacts: [...card.querySelectorAll('.fixture-fact')].map(row => ({
+                  label: row.querySelector(':scope > span')?.textContent.trim() || '',
+                  value: row.querySelector(':scope > b')?.textContent.trim() || '',
+                  supporting: row.querySelector(':scope > small')?.textContent.trim() || ''
+                })),
                 offenders,
                 nav: {
                   width: navRect.width,
@@ -942,15 +948,21 @@ def check_viewport(browser, name: str) -> None:
             )
         if result["offenders"]:
             failures.append(f"fixture descendants escape card: {result['offenders']}")
-        required_fixture_copy = (
-            "Aston Villa",
-            "Mon 31 Aug",
-            "8:00pm",
-            "Villa Park",
-            "Sky Sports",
-            "Arsenal 4–1 Aston Villa",
+        fixture_facts = {
+            row["label"]: row["value"] for row in result["fixtureFacts"]
+        }
+        required_fixture_labels = (
+            "Stadium",
+            "Actual kick-off",
+            "Competition",
+            "TV channel",
+            "Score last time they played",
         )
-        if any(value not in result["fixtureText"] for value in required_fixture_copy):
+        if (
+            not result["fixtureOpponent"]
+            or result["fixtureOpponent"] == "Opponent TBC"
+            or any(not fixture_facts.get(label) for label in required_fixture_labels)
+        ):
             failures.append(
                 f"upcoming Arsenal fixture is stale or incomplete: {result['fixtureText']}"
             )
