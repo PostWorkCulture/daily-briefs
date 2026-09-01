@@ -2,6 +2,17 @@
 
 Newest entries go first.
 
+## 1 September 2026: Strict KT8 Local News boundary
+
+Status: implemented; publication follows the normal CI, refresh, and Pages gates
+
+- Requested change: Local News must contain only stories about East or West Molesey, Kingston, Hampton, Teddington, Hampton Court, Walton-on-Thames, or places genuinely close to KT8 2LE.
+- Geography rule: replaced broad Elmbridge and generic area matching with an explicit local cluster covering the named places plus Hampton Wick, Hampton Hill, Bushy Park, Thames Ditton, Long Ditton, Hinchley Wood, Esher, Hersham, Surbiton, and Sunbury-on-Thames.
+- Evidence rule: every accepted story must name an approved place or unmistakable local landmark in its headline or summary. Search-query matches, publisher names, and generic Surrey, Elmbridge, or London references are insufficient; unrelated foreign namesakes are rejected.
+- Freshness rule: search the latest 14 days first and extend to 30 days only when needed to fill the 12-story target. The refresh never widens geography to satisfy the existing minimum of 10.
+- Validation added: unit coverage for accepted and rejected places, filtering before newest-first limiting, and a protected publication assertion that every Local News story remains in scope.
+- Scope protected: no UK News, profile, route, section order, styling, imagery, weather, calendar, Arsenal, AI, Career, Dida, Birthday, TV Picks, fact, or 6am scheduling behaviour changed.
+
 ## 30 August 2026: Remove duplicate top-of-brief strip
 
 Status: implemented; publication follows the normal CI and Pages gates
