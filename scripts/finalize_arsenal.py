@@ -118,6 +118,32 @@ def verified_coventry_result() -> dict:
     }
 
 
+def verified_aston_villa_result() -> dict:
+    return {
+        "date": "2026-08-31T20:00:00+01:00",
+        "dateLabel": "Mon 31 Aug",
+        "kickoff": "8pm",
+        "opponent": "Aston Villa",
+        "competition": "Premier League",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 1,
+        "opponentScore": 0,
+        "result": "1–0",
+        "scorers": [
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "59'"},
+        ],
+        "scorersLabel": "Bukayo Saka 59'",
+        "stadium": "Villa Park",
+        "summary": (
+            "Bukayo Saka's second-half goal gave Arsenal a 1–0 win at Aston Villa, "
+            "securing back-to-back Premier League wins and clean sheets."
+        ),
+        "url": "https://www.arsenal.com/news/match-report-aston-villa-0-1-arsenal-aEx1E2V3f3gI",
+        "source": "Arsenal.com",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -345,7 +371,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-08-21T20:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-08-31T22:00:00+01:00"):
+        fallback = verified_aston_villa_result()
+    elif NOW >= datetime.fromisoformat("2026-08-21T20:00:00+01:00"):
         fallback = verified_coventry_result()
     elif NOW >= datetime.fromisoformat("2026-08-16T15:00:00+01:00"):
         fallback = verified_community_shield_result()

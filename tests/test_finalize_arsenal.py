@@ -47,6 +47,16 @@ class FirstTeamResultTests(unittest.TestCase):
                 self.assertTrue(str(result.get(key) or "").strip())
         self.assertEqual(len(result["scorers"]), 3)
 
+
+    def test_verified_villa_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_aston_villa_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["scorers"], [
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "59'"}
+        ])
+
     def test_incomplete_new_result_fails_closed(self) -> None:
         payload = {
             "sections": {"Arsenal news": []},
