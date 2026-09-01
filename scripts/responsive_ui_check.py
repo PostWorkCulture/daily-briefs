@@ -418,10 +418,16 @@ def check_viewport(browser, name: str) -> None:
                     raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
 
         page.locator('[data-view-target="home"]').click()
-        reminder_text = page.locator('#homeReminders').inner_text()
-        reminder_copy = reminder_text.casefold()
-        if 'general & garden waste' not in reminder_copy or 'put out both bins' not in reminder_copy:
-            raise AssertionError(f"{name}: Garden Waste reminder copy is unclear: {reminder_text}")
+        bin_reminder_text = page.locator('#homeReminders .home-reminder-card.bin').inner_text()
+        bin_reminder_copy = bin_reminder_text.casefold()
+        recycling_week = 'recycling' in bin_reminder_copy
+        valid_bin_copy = (
+            'recycling collection' in bin_reminder_copy
+            if recycling_week
+            else 'general & garden waste' in bin_reminder_copy and 'put out both bins' in bin_reminder_copy
+        )
+        if not valid_bin_copy:
+            raise AssertionError(f"{name}: Bin Day reminder copy is unclear: {bin_reminder_text}")
         location_text = page.locator('#sceneryCountry').inner_text()
         location_copy = location_text.casefold()
         if '·' not in location_text or not any(region in location_copy for region in ('europe', 'oceania', 'africa', 'asia', 'america', 'antarctica')):
