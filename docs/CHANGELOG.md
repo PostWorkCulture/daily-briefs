@@ -11,6 +11,7 @@ Status: implemented; publication follows the normal CI, refresh, and Pages gates
 - Evidence rule: every accepted story must name an approved place or unmistakable local landmark in its headline or summary. Search-query matches, publisher names, and generic Surrey, Elmbridge, or London references are insufficient; unrelated foreign namesakes are rejected.
 - Freshness rule: search the latest 14 days first and extend to 30 days only when needed to fill the 12-story target. The refresh never widens geography to satisfy the existing minimum of 10.
 - Validation added: unit coverage for accepted and rejected places, filtering before newest-first limiting, and a protected publication assertion that every Local News story remains in scope.
+- QA repair: the responsive check now validates the active bin cycle correctly, requiring `Recycling collection` on recycling weeks and the protected `General & garden waste` / `Put out both bins` wording on general-bin weeks. This fixes a date-sensitive test assertion without changing the reminder itself.
 - Scope protected: no UK News, profile, route, section order, styling, imagery, weather, calendar, Arsenal, AI, Career, Dida, Birthday, TV Picks, fact, or 6am scheduling behaviour changed.
 
 ## 30 August 2026: Remove duplicate top-of-brief strip
