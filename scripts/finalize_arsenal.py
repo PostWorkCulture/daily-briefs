@@ -296,6 +296,31 @@ def use_fixture_details(candidate: dict, arsenal: dict) -> dict:
     return candidate
 
 
+def reconcile_news_result_with_structured(news_result: dict, structured: dict | None) -> dict:
+    """Attach a late result article to its structured match instead of inventing a new match day."""
+    if not structured:
+        return news_result
+    news_dt = parse_dt(news_result.get("date"))
+    structured_dt = parse_dt(structured.get("date"))
+    if not news_dt or not structured_dt:
+        return news_result
+    same_result = (
+        str(news_result.get("opponent") or "").casefold()
+        == str(structured.get("opponent") or "").casefold()
+        and news_result.get("arsenalScore") == structured.get("arsenalScore")
+        and news_result.get("opponentScore") == structured.get("opponentScore")
+    )
+    publication_delay = (news_dt.date() - structured_dt.date()).days
+    if not same_result or publication_delay not in (0, 1, 2):
+        return news_result
+
+    merged = dict(structured)
+    for key in ("url", "source"):
+        if news_result.get(key):
+            merged[key] = news_result[key]
+    return merged
+
+
 def news_supports_result(candidate: dict, payload: dict) -> bool:
     candidate_dt = parse_dt(candidate.get("date"))
     if not candidate_dt:
@@ -327,14 +352,15 @@ def apply_last_result_fallback(payload: dict) -> None:
     else:
         fallback = verified_como_result()
     news_result = newest_news_result(payload)
+    last = arsenal.get("lastResult")
     if news_result:
         news_result = use_fixture_details(news_result, arsenal)
+        news_result = reconcile_news_result_with_structured(news_result, last)
 
     candidates = [fallback]
     if news_result:
         candidates.append(news_result)
 
-    last = arsenal.get("lastResult")
     last_from_news = str((last or {}).get("source") or "").strip().lower() == "arsenal.com"
     if last and (not last_from_news or news_supports_result(last, payload)):
         candidates.append(last)
