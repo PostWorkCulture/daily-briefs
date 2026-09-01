@@ -429,6 +429,17 @@ def apply_last_result_fallback(payload: dict) -> None:
         raise RuntimeError(
             "Arsenal lastResult is incomplete; refusing to publish without "
             + ", ".join(missing)
+            + "; parsed result="
+            + json.dumps(
+                {
+                    key: newest.get(key)
+                    for key in (
+                        "date", "dateLabel", "opponent", "arsenalScore",
+                        "opponentScore", "result", "source", "url"
+                    )
+                },
+                ensure_ascii=False,
+            )
         )
 
     # Guardrail: if trusted result/report news contains a newer completed match
