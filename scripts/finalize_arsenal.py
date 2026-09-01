@@ -158,6 +158,12 @@ def parse_dt(value: str | None) -> datetime | None:
 
 def clean_team(value: str) -> str:
     text = re.sub(r"\s+", " ", value or "").strip(" .:-|")
+    text = re.sub(
+        r"^(?:(?:match|full[- ]time)\s+)?(?:report|result|highlights?)\s*:?\s*",
+        "",
+        text,
+        flags=re.I,
+    )
     text = re.sub(r"\s+(?:extended|highlights?|report)$", "", text, flags=re.I)
     return text.strip(" .:-|")
 

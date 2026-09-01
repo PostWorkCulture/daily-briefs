@@ -25,6 +25,18 @@ def news_item(title: str, published_at: str) -> dict:
 
 
 class FirstTeamResultTests(unittest.TestCase):
+
+    def test_match_report_prefix_is_not_part_of_opponent_name(self) -> None:
+        result = finalize_arsenal.parse_news_result(
+            news_item(
+                "Match Report: Aston Villa 0-1 Arsenal",
+                "2026-09-01T00:20:00+01:00",
+            )
+        )
+        self.assertIsNotNone(result)
+        self.assertEqual(result["opponent"], "Aston Villa")
+        self.assertEqual(result["result"], "1–0")
+
     def test_youth_results_are_rejected(self) -> None:
         for title in (
             "U21 report: Arsenal 1-1 Crystal Palace",
