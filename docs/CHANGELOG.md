@@ -2,6 +2,22 @@
 
 Newest entries go first.
 
+## 1 September 2026: Strict KT8 Local News boundary
+
+Status: implemented; publication follows the normal CI, refresh, and Pages gates
+
+- Requested change: Local News must contain only stories about East or West Molesey, Kingston, Hampton, Teddington, Hampton Court, Walton-on-Thames, or places genuinely close to KT8 2LE.
+- Geography rule: replaced broad Elmbridge and generic area matching with an explicit local cluster covering the named places plus Hampton Wick, Hampton Hill, Bushy Park, Thames Ditton, Long Ditton, Hinchley Wood, Esher, Hersham, Surbiton, and Sunbury-on-Thames.
+- Evidence rule: every accepted story must name an approved place or unmistakable local landmark in its headline or summary. Search-query matches, publisher names, and generic Surrey, Elmbridge, or London references are insufficient; unrelated foreign namesakes are rejected.
+- Freshness rule: search the latest 14 days first and extend to 30 days only when needed to fill the 12-story target. The refresh never widens geography to satisfy the existing minimum of 10.
+- Validation added: unit coverage for accepted and rejected places, filtering before newest-first limiting, and a protected publication assertion that every Local News story remains in scope.
+- QA repair: the responsive check now validates the active bin cycle correctly, requiring `Recycling collection` on recycling weeks and the protected `General & garden waste` / `Put out both bins` wording on general-bin weeks. This fixes a date-sensitive test assertion without changing the reminder itself.
+- QA repair: wider fact locations are validated by the required non-empty `place/area · country/region` structure rather than a fixed continent-name list, so valid lines such as `Arabian Peninsula · Saudi Arabia, Oman and United Arab Emirates` pass without weakening the location requirement.
+- QA repair: the Arsenal browser check now validates the current completed match's visible score, competition, kickoff, stadium, scorers and summary rather than requiring the superseded Coventry fixture after a new match has been played. The existing fail-closed structured-data validation remains unchanged.
+- QA repair: optional previous-meeting subcopy is colour-checked only when that metadata exists, matching the protected rule that those details are shown when available. Primary next-fixture facts remain mandatory and always receive the white-on-navy check.
+- QA repair: the upcoming-fixture browser assertion now requires a current opponent plus visible stadium, kickoff, competition, TV and previous-meeting rows instead of hard-coding the completed Aston Villa fixture. Missing mandatory fields still fail; unavailable TV or previous-meeting values may use their explicit `TBC` / `No previous meeting found` states.
+- Scope protected: no UK News, profile, route, section order, styling, imagery, weather, calendar, Arsenal, AI, Career, Dida, Birthday, TV Picks, fact, or 6am scheduling behaviour changed.
+
 ## 30 August 2026: Remove duplicate top-of-brief strip
 
 Status: implemented; publication follows the normal CI and Pages gates

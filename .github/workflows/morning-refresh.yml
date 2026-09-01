@@ -72,6 +72,7 @@ jobs:
           import json
           from datetime import date, datetime, timedelta
           from pathlib import Path
+          from scripts.refresh import local_news_item_is_in_scope
           from zoneinfo import ZoneInfo
           today_date=datetime.now(ZoneInfo('Europe/London')).date()
           today=today_date.isoformat()
@@ -117,6 +118,7 @@ jobs:
               sections=data.get('sections') or {}
               local_items=sections.get('Local news') or []
               assert len(local_items)>=10, f'{profile}: fewer than 10 Local News items'
+              assert all(local_news_item_is_in_scope(item) for item in local_items), f'{profile}: Local News contains a story outside the approved KT8 area'
               local_dates=[str(item.get('publishedAt') or '') for item in local_items]
               assert local_dates==sorted(local_dates,reverse=True), f'{profile}: Local News is not newest first'
               assert len(sections.get('UK news') or [])>=10, f'{profile}: fewer than 10 UK News items'

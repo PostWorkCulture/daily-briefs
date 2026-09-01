@@ -124,6 +124,37 @@ INACTIVE_LISTING = re.compile(
     re.I,
 )
 
+LOCAL_NEWS_QUERIES = (
+    '(Molesey OR "East Molesey" OR "West Molesey" OR "Hurst Pool" OR "Hurst Park")',
+    '("Kingston upon Thames" OR "Kingston Surrey" OR Surbiton)',
+    '("Hampton Court" OR Teddington OR "Hampton Wick" OR "Hampton Hill" OR "Bushy Park")',
+    '(Hampton AND (London OR Surrey OR Richmond))',
+    '("Walton-on-Thames" OR "Walton on Thames" OR Hersham)',
+    '("Thames Ditton" OR "Long Ditton" OR "Hinchley Wood" OR Esher OR "Sunbury-on-Thames")',
+)
+LOCAL_NEWS_PLACE_EVIDENCE = (
+    re.compile(r"\b(?:east|west)\s+molesey\b|\bmolesey\b", re.I),
+    re.compile(r"\bkingston(?:\s+upon(?:-|\s+)thames)?\b", re.I),
+    re.compile(r"\bhampton\s+(?:court|wick|hill)\b|\bhampton\s*(?:&|and)\s*richmond\b", re.I),
+    re.compile(r"\bteddington\b|\bbushy\s+park\b", re.I),
+    re.compile(r"\bwalton(?:-|\s+)on(?:-|\s+)thames\b|\bwalton\s*(?:&|and)\s*hersham\b", re.I),
+    re.compile(r"\b(?:thames|long)\s+ditton\b|\bhinchley\s+wood\b", re.I),
+    re.compile(r"\besher\b|\bhersham\b|\bsurbiton\b|\bsunbury(?:-|\s+)on(?:-|\s+)thames\b", re.I),
+    re.compile(r"\bhurst\s+(?:park|pool)\b|\bmolesey\s+(?:heath|lock|boat\s+club)\b|\bapps\s+court\s+farm\b|\bimber\s+court\b", re.I),
+)
+LOCAL_NEWS_FALSE_LOCATIONS = re.compile(
+    r"\b(?:kingston\s+upon\s+hull|kingston,?\s+(?:jamaica|ontario|rhode\s+island|tennessee|tasmania)|"
+    r"east\s+hampton|hampton\s+roads|hampton\s+university|hampton\s+(?:inn|by\s+hilton)|the\s+hamptons|"
+    r"walton\s+county|walton[-\s]le[-\s]dale|walton[-\s]on[-\s]the[-\s]naze|walton\s+goggins)\b",
+    re.I,
+)
+PLAIN_HAMPTON = re.compile(r"\bhampton\b", re.I)
+PLAIN_HAMPTON_LOCAL_CONTEXT = re.compile(
+    r"\b(?:resident|council|road|street|park|school|pool|pub|shop|business|planning|police|"
+    r"river|local|village|station|church|library|community|borough|ferry|traffic|closure)s?\b",
+    re.I,
+)
+
 
 def world_fact_for_today() -> dict:
     try:
@@ -339,13 +370,28 @@ def newest_news(items: list[dict], limit: int) -> list[dict]:
     )[:limit]
 
 
+def local_news_item_is_in_scope(item: dict) -> bool:
+    """Require headline or summary evidence that a story is genuinely near KT8 2LE."""
+    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
+    if not text or LOCAL_NEWS_FALSE_LOCATIONS.search(text):
+        return False
+    return any(pattern.search(text) for pattern in LOCAL_NEWS_PLACE_EVIDENCE) or bool(
+        PLAIN_HAMPTON.search(text) and PLAIN_HAMPTON_LOCAL_CONTEXT.search(text)
+    )
+
+
 def local_news() -> list[dict]:
-    return newest_news(merge_news(
-        google_news('(Molesey OR "East Molesey" OR "West Molesey") when:7d', 14, 7),
-        google_news('(Elmbridge OR Esher OR "Walton-on-Thames") when:7d', 14, 7),
-        google_news('("Kingston upon Thames" OR "Hampton Court" OR Surbiton) when:7d', 14, 7),
-        limit=42,
-    ), 12)
+    # Prefer the freshest fortnight. If that cannot fill the 12-story target,
+    # extend time to 30 days without widening beyond the approved KT8 cluster.
+    for max_age_days in (14, 30):
+        candidates = merge_news(*(
+            google_news(f'{query} when:{max_age_days}d', 32, max_age_days)
+            for query in LOCAL_NEWS_QUERIES
+        ), limit=192)
+        scoped = [item for item in candidates if local_news_item_is_in_scope(item)]
+        if len(scoped) >= 12 or max_age_days == 30:
+            return newest_news(scoped, 12)
+    return []
 
 
 def uk_news() -> list[dict]:

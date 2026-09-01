@@ -418,13 +418,19 @@ def check_viewport(browser, name: str) -> None:
                     raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
 
         page.locator('[data-view-target="home"]').click()
-        reminder_text = page.locator('#homeReminders').inner_text()
-        reminder_copy = reminder_text.casefold()
-        if 'general & garden waste' not in reminder_copy or 'put out both bins' not in reminder_copy:
-            raise AssertionError(f"{name}: Garden Waste reminder copy is unclear: {reminder_text}")
+        bin_reminder_text = page.locator('#homeReminders .home-reminder-card.bin').inner_text()
+        bin_reminder_copy = bin_reminder_text.casefold()
+        recycling_week = 'recycling' in bin_reminder_copy
+        valid_bin_copy = (
+            'recycling collection' in bin_reminder_copy
+            if recycling_week
+            else 'general & garden waste' in bin_reminder_copy and 'put out both bins' in bin_reminder_copy
+        )
+        if not valid_bin_copy:
+            raise AssertionError(f"{name}: Bin Day reminder copy is unclear: {bin_reminder_text}")
         location_text = page.locator('#sceneryCountry').inner_text()
-        location_copy = location_text.casefold()
-        if '·' not in location_text or not any(region in location_copy for region in ('europe', 'oceania', 'africa', 'asia', 'america', 'antarctica')):
+        location_place, separator, location_region = location_text.partition('·')
+        if not separator or not location_place.strip() or not location_region.strip():
             raise AssertionError(f"{name}: Fact location lacks wider country/region context: {location_text}")
         calendar_cards = page.locator('#calendarSummaryCards button')
         if calendar_cards.count() != 4:
@@ -499,13 +505,33 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
-        last_result_text = page.locator('#lastResultCard').inner_text()
-        last_result_copy = last_result_text.casefold()
-        for required in ('arsenal 3–0 coventry city', 'kai havertz', 'premier league', '8pm', 'emirates stadium'):
-            if required not in last_result_copy:
-                raise AssertionError(f"{name}: Arsenal last result is missing {required}: {last_result_text}")
-        if len(page.locator('#lastResultCard .match-summary').inner_text().strip()) < 40:
-            raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin")
+        last_result = page.locator('#lastResultCard').evaluate(
+            r"""
+            card => {
+              const label = card.querySelector(':scope > span')?.textContent.trim() || '';
+              const scoreLine = card.querySelector(':scope > strong')?.textContent.trim() || '';
+              const meta = card.querySelector(':scope > small')?.textContent.trim() || '';
+              const scorers = card.querySelector('.match-scorers span')?.textContent.trim() || '';
+              const summary = card.querySelector('.match-summary')?.textContent.trim() || '';
+              return {
+                label,
+                scoreLine,
+                metaParts: meta.split('·').map(part => part.trim()).filter(Boolean),
+                scorers,
+                summary,
+                hasScore: /^Arsenal\s+\d+\s*[–-]\s*\d+\s+\S/.test(scoreLine)
+              };
+            }
+            """
+        )
+        if not last_result["label"].startswith("Last result · ") or not last_result["label"].removeprefix("Last result · ").strip():
+            raise AssertionError(f"{name}: Arsenal last result has no visible competition: {last_result}")
+        if not last_result["hasScore"] or len(last_result["metaParts"]) < 3:
+            raise AssertionError(f"{name}: Arsenal last result lacks score, kickoff or stadium: {last_result}")
+        if not last_result["scorers"] or last_result["scorers"] == "No scorers listed":
+            raise AssertionError(f"{name}: Arsenal last result has no visible scorers: {last_result}")
+        if len(last_result["summary"]) < 40 or last_result["summary"] == "Match summary unavailable.":
+            raise AssertionError(f"{name}: Arsenal quick game summary is missing or too thin: {last_result}")
         page.locator('#arsenalTransfers').wait_for(state="visible", timeout=10000)
         page.locator('.arsenal-rumour-head').wait_for(state="visible", timeout=10000)
         page.locator('#arsenalTransferRumours').wait_for(state="visible", timeout=10000)
@@ -559,17 +585,21 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")
         fixture_copy_colours = page.evaluate(
             """
-            () => ({
-              primary: getComputedStyle(document.querySelector('#nextFixtureCard .fixture-fact>b')).color,
-              supporting: getComputedStyle(document.querySelector('#nextFixtureCard .fixture-fact>small')).color
-            })
+            () => {
+              const primary = document.querySelector('#nextFixtureCard .fixture-fact>b');
+              const supporting = document.querySelector('#nextFixtureCard .fixture-fact>small');
+              return {
+                primary: primary ? getComputedStyle(primary).color : '',
+                supporting: supporting ? getComputedStyle(supporting).color : null
+              };
+            }
             """
         )
         if fixture_copy_colours["primary"] != "rgb(255, 255, 255)":
             raise AssertionError(
                 f"{name}: Arsenal fixture copy is not white on navy: {fixture_copy_colours}"
             )
-        if not fixture_copy_colours["supporting"].startswith("rgba(255, 255, 255,"):
+        if fixture_copy_colours["supporting"] and not fixture_copy_colours["supporting"].startswith("rgba(255, 255, 255,"):
             raise AssertionError(
                 f"{name}: Arsenal supporting fixture copy is not light on navy: {fixture_copy_colours}"
             )
@@ -621,6 +651,12 @@ def check_viewport(browser, name: str) -> None:
                 cardClientWidth: card.clientWidth,
                 cardScrollWidth: card.scrollWidth,
                 fixtureText: card.innerText,
+                fixtureOpponent: card.querySelector(':scope > strong')?.textContent.trim() || '',
+                fixtureFacts: [...card.querySelectorAll('.fixture-fact')].map(row => ({
+                  label: row.querySelector(':scope > span')?.textContent.trim() || '',
+                  value: row.querySelector(':scope > b')?.textContent.trim() || '',
+                  supporting: row.querySelector(':scope > small')?.textContent.trim() || ''
+                })),
                 offenders,
                 nav: {
                   width: navRect.width,
@@ -912,15 +948,21 @@ def check_viewport(browser, name: str) -> None:
             )
         if result["offenders"]:
             failures.append(f"fixture descendants escape card: {result['offenders']}")
-        required_fixture_copy = (
-            "Aston Villa",
-            "Mon 31 Aug",
-            "8:00pm",
-            "Villa Park",
-            "Sky Sports",
-            "Arsenal 4–1 Aston Villa",
+        fixture_facts = {
+            row["label"]: row["value"] for row in result["fixtureFacts"]
+        }
+        required_fixture_labels = (
+            "Stadium",
+            "Actual kick-off",
+            "Competition",
+            "TV channel",
+            "Score last time they played",
         )
-        if any(value not in result["fixtureText"] for value in required_fixture_copy):
+        if (
+            not result["fixtureOpponent"]
+            or result["fixtureOpponent"] == "Opponent TBC"
+            or any(not fixture_facts.get(label) for label in required_fixture_labels)
+        ):
             failures.append(
                 f"upcoming Arsenal fixture is stale or incomplete: {result['fixtureText']}"
             )
