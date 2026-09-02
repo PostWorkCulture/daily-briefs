@@ -1,43 +1,33 @@
 {
-  "updatedLabel": "Tuesday, 1 September 2026 · refreshed 10:12pm",
+  "updatedLabel": "Wednesday, 2 September 2026 · refreshed 6:23am",
   "worldFact": {
-    "id": "arabian-camels-understand-herders-calls",
-    "editorialPriority": "human-first",
-    "category": "People and animals",
-    "country": "Saudi Arabia, Oman and United Arab Emirates",
-    "place": "Alheda'a camel calls",
-    "source": "UNESCO Intangible Cultural Heritage",
-    "sourceUrl": "https://ich.unesco.org/en/RL/alheda-a-oral-traditions-of-calling-camel-flocks-01717",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%D8%B1%D8%A7%D8%B9_%D9%8A%D9%82%D9%88%D8%AF_%D8%AC%D9%85%D9%84%D9%87.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:%D8%B1%D8%A7%D8%B9_%D9%8A%D9%82%D9%88%D8%AF_%D8%AC%D9%85%D9%84%D9%87.jpg",
-    "photoCredit": "Saudi Press Agency · CC BY-SA 4.0",
-    "fact": "Camel herders use a sung oral tradition called Alheda'a to direct their animals. Camels are trained to distinguish calls for right and left, open their mouths on request, kneel to be ridden and assemble quickly during danger.",
-    "locationContext": "Arabian Peninsula · Saudi Arabia, Oman and United Arab Emirates",
-    "date": "2026-09-01",
-    "sequence": 11
+    "id": "richat-eroded-geologic-dome",
+    "category": "Seen from space",
+    "country": "Mauritania",
+    "place": "The Eye of the Sahara",
+    "source": "NASA Earth Observatory",
+    "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/eyeing-the-richat-structure/",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg",
+    "photoCredit": "European Space Agency · attribution",
+    "fact": "The 40-kilometre-wide Eye of the Sahara looks so much like an impact crater that scientists once classified it as one. It is actually the eroded remains of a colossal uplifted geologic dome.",
+    "locationContext": "Adrar Plateau · central Mauritania, north-west Africa",
+    "date": "2026-09-02",
+    "sequence": 12
   },
   "weather": {
-    "temp": "18°",
+    "temp": "16°",
     "summary": "Cloudy",
     "condition": "Cloudy",
     "currentRainChance": 4,
     "daily": [
       {
-        "date": "2026-09-01",
-        "high": 20,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-09-02",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 30,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
@@ -51,7 +41,7 @@
       },
       {
         "date": "2026-09-04",
-        "high": 25,
+        "high": 24,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -64,12 +54,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-06",
-        "high": 25,
+        "high": 27,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -84,11 +74,20 @@
         "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
+      },
+      {
+        "date": "2026-09-08",
+        "high": 21,
+        "low": null,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "label": "Drier spells likely best",
+      "detail": "Cloudy · peak rain chance around 60%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -96,37 +95,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Monday 31 August 2026",
+      "dateLabel": "Tuesday 1 September 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Teddington, Bushy Park",
-        "town": "Teddington",
+        "location": "Heathrow",
+        "town": "Heathrow",
         "county": "Greater London",
         "country": "England",
-        "displayLocation": "Teddington, Greater London",
-        "value": "25.6°C",
+        "displayLocation": "Heathrow, Greater London",
+        "value": "25.0°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=1515d27d3b5a",
-          "page": "https://commons.wikimedia.org/wiki/File:Diana_Fountain,_Bushy_Park.jpeg",
-          "credit": "Jonathan Cardy · CC BY 3.0",
-          "alt": "Diana Fountain in Bushy Park, Teddington, Greater London",
+          "src": "assets/weather-extremes/hot.webp?v=3c5073c33c58",
+          "page": "https://commons.wikimedia.org/wiki/File:Terminal_5_car_park,_Heathrow_-_geograph.org.uk_-_5645514.jpg",
+          "credit": "Derek Harper · CC BY-SA 2.0",
+          "alt": "Terminal 5 car park, Heathrow",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Shap",
-        "town": "Shap",
-        "county": "Cumbria",
+        "location": "Shobdon Airfield",
+        "town": "Shobdon",
+        "county": "Herefordshire",
         "country": "England",
-        "displayLocation": "Shap, Cumbria",
-        "value": "6.2°C",
+        "displayLocation": "Shobdon, Herefordshire",
+        "value": "6.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=8e8504d9fd4c",
-          "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(A6),_Shap_-_geograph.org.uk_-_3344660.jpg",
-          "credit": "David Dixon · CC BY-SA 2.0",
-          "alt": "Main Street (A6), Shap",
+          "src": "assets/weather-extremes/cold.webp?v=7e32cab26d01",
+          "page": "https://commons.wikimedia.org/wiki/File:Shobdon,_St._John_the_Evangelist%27s_Church,_Ceiling_detail_-_geograph.org.uk_-_5750368.jpg",
+          "credit": "Michael Garlick · CC BY-SA 2.0",
+          "alt": "Shobdon, St. John the Evangelist's Church: Ceiling detail",
           "width": 1600,
           "height": 900
         }
@@ -134,20 +133,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "BANK HOLIDAY",
-      "summary": "",
-      "url": "",
-      "start": "2026-08-31T00:00:00+01:00",
-      "end": "2026-09-01T00:00:00+01:00",
-      "date": "2026-08-31",
-      "time": "All day",
-      "allDay": true,
-      "color": "#dc2127",
-      "colorId": "11",
-      "googleEventId": "01ntsfokvo9soq42i9u63431td",
-      "calendarColorSource": "google"
-    },
     {
       "title": "9.30-16.30",
       "summary": "",
@@ -247,20 +232,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -272,6 +243,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -528,21 +513,21 @@
     }
   ],
   "lead": {
-    "title": "‘Not welcome’: How Sweden’s far right took over Stockholm Central Station",
+    "title": "British man deported from Sweden despite living there since childhood",
     "summary": "",
-    "meta": "Tue 1 Sep",
-    "publishedAt": "2026-09-01T09:50:48+01:00",
-    "source": "Al Jazeera",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVmFVX3hkRWNOc0xYRFRiWFQ4ZlJrY3BlSnJsMEh6YUF2NFZ4SThhTHltQ3RHRml2VjY4eEpLQUV5Uk9wRXk3MWVMdUk5Z1Bya200THhLUnM3MnIzMm9NNFlfV2FUVnhwN3BWOFRSQ29qRGcxak4zblc0NVhpbEs1ZlpNSm14TXJFbklKZlBFQ2hpN1lCbWFvY1JOMUdKWms2clhIbFZsNDBMWG81NEHSAbMBQVVfeXFMUGdrbWVrQUk4RFJ5UEdTdGRrMWZPX29Vc1pBNmhGa3RwUXh1bWxaajFsMGN2ZEo5SmpCNG1xMzVwRWJZSnVYaXdqM1RuNjROaWpIeld5bGplb3YyVHItS1FhckZiUlU3WWhCR0Q5dGNEdEJTbWlWaG1jOFBzODlQbW9sM1J4RmdTOVBaNnNMSDJaZm9NT2xxWUNCcTkweXBra1pISW9WbE9yY0JDRzhFNFJFa2s?oc=5"
+    "meta": "Wed 2 Sep",
+    "publishedAt": "2026-09-02T06:00:00+01:00",
+    "source": "The Guardian",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5"
   },
   "interests": [
     {
-      "title": "‘Not welcome’: How Sweden’s far right took over Stockholm Central Station",
+      "title": "British man deported from Sweden despite living there since childhood",
       "summary": "",
-      "meta": "Tue 1 Sep",
-      "publishedAt": "2026-09-01T09:50:48+01:00",
-      "source": "Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVmFVX3hkRWNOc0xYRFRiWFQ4ZlJrY3BlSnJsMEh6YUF2NFZ4SThhTHltQ3RHRml2VjY4eEpLQUV5Uk9wRXk3MWVMdUk5Z1Bya200THhLUnM3MnIzMm9NNFlfV2FUVnhwN3BWOFRSQ29qRGcxak4zblc0NVhpbEs1ZlpNSm14TXJFbklKZlBFQ2hpN1lCbWFvY1JOMUdKWms2clhIbFZsNDBMWG81NEHSAbMBQVVfeXFMUGdrbWVrQUk4RFJ5UEdTdGRrMWZPX29Vc1pBNmhGa3RwUXh1bWxaajFsMGN2ZEo5SmpCNG1xMzVwRWJZSnVYaXdqM1RuNjROaWpIeld5bGplb3YyVHItS1FhckZiUlU3WWhCR0Q5dGNEdEJTbWlWaG1jOFBzODlQbW9sM1J4RmdTOVBaNnNMSDJaZm9NT2xxWUNCcTkweXBra1pISW9WbE9yY0JDRzhFNFJFa2s?oc=5",
+      "meta": "Wed 2 Sep",
+      "publishedAt": "2026-09-02T06:00:00+01:00",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5",
       "section": "Sweden"
     },
     {
@@ -555,132 +540,159 @@
       "section": "Local"
     },
     {
-      "title": "Silo Season 3 Episode 9 Is a Masterclass in Apocalyptic Dread",
+      "title": "SILO Season 3 Episode 9 Sneak Peek Clip to Premiere on Apple TV",
       "summary": "",
-      "meta": "Fri 28 Aug",
-      "publishedAt": "2026-08-28T14:00:00+01:00",
-      "source": "Den of Geek",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNckZSYlU3ZnNNOC1RUlFMN1ROTlEwMEtEazdyME44UmVRQjVycWhZOVdsVnQwVmRSZHlyVHZFV3pROWtsT1pSWEVxRUlUTmh3Qm44cU1JUVp5NkFwbkJvNkdYVndaOGdxSEprZUJObm1UQlZVZkN3R0tlSTJ3WjZqWXJOTDdOOHVMNGNZ?oc=5",
-      "preferenceScore": 100,
+      "meta": "Mon 24 Aug",
+      "publishedAt": "2026-08-24T08:00:00+01:00",
+      "source": "BroadwayWorld",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYWZTNlo2U3F6Tmk1NVJjSHd2a0d6TlYxMWJTZVFjbW5PUXNpUENPY1ZZOTZtNmZzZmdnX1RFbTlkQjNXVTc1R0tFYkJnQ01ZOXFGTXJZbkZyRmFXOE5lMkRlNWFHX0t1czV3TFhyczlCOHhGdUU4Nm85V2JJMlJ4VUZYU1g4Yy0zSXJHV3hMNVhfeGo4VkFBTjVQOEJBRURHUWZBMGRNblpxZEcxTUYyUGVrQXdhY3M?oc=5",
+      "preferenceScore": 130,
       "section": "Watch"
     }
   ],
   "watch": [
     {
-      "title": "Vigil",
-      "summary": "After the murder of a British citizen in the Arctic, DCI Amy Silva and DI Kirsten Longacre investigate. As Amy looks into a possible conspiracy on Scottish soil, Kirsten comes up against…",
-      "meta": "BBC iPlayer · Available since Sun 30 Aug",
-      "source": "BBC iPlayer",
-      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597290.jpg",
-      "artworkAlt": "Vigil programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-08-30",
-      "showId": 45879,
-      "episodeId": 3701699,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Thriller",
-        "Mystery"
-      ],
-      "generatedDate": "2026-09-01",
-      "preferenceScore": 331.0
-    },
-    {
-      "title": "Love Cheats",
-      "summary": "A global music icon falls for a wealthy businessman, and thinks she is living the dream when she falls pregnant. But his erratic behaviour and absences raise alarm bells, and a trip to New…",
-      "meta": "Channel 4 · Available since Sun 30 Aug",
+      "title": "999: What Happened Next",
+      "summary": "Police launch a complex investigation when a train passenger notices something disturbing on a fellow traveller's phone. And officers investigate a series of thefts of luxury 4x4s.",
+      "meta": "Channel 4 · Mon 7 Sep, 10:05pm",
       "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/love-cheats",
+      "url": "https://www.channel4.com/programmes/999-what-happened-next",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349372.jpg",
-      "artworkAlt": "Love Cheats programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527705.jpg",
+      "artworkAlt": "999: What Happened Next programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-08-30",
-      "showId": 80197,
-      "episodeId": 3717210,
+      "airdate": "2026-09-07",
+      "showId": 90023,
+      "episodeId": 3723377,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
-        "Crime",
-        "Romance"
+        "Crime"
       ],
-      "generatedDate": "2026-09-01",
-      "preferenceScore": 264.1
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 285.0
     },
     {
-      "title": "Last Seen On Holiday",
-      "summary": "A surfing trip to the Dominican Republic ends in mystery when Darryl Fornatora vanishes without trace, leaving loved ones searching for answers.",
-      "meta": "Crime & Investigation · Available since yesterday",
-      "source": "Crime & Investigation",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/last-seen-holiday",
+      "title": "9/11: Days That Shocked the World",
+      "summary": "9/11 remains one of the most shocking events in world history. In the first of a two-part documentary to mark the 25th anniversary of the tragedy, rescue workers, survivors and witnesses…",
+      "meta": "Channel 4 · Today, 10pm",
+      "source": "Channel 4",
+      "url": "https://www.channel4.com/programmes/911-days-that-shocked-the-world",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589478.jpg",
-      "artworkAlt": "Last Seen On Holiday programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1598676.jpg",
+      "artworkAlt": "9/11: Days That Shocked the World programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-02",
+      "showId": 93909,
+      "episodeId": 3723308,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 244.0
+    },
+    {
+      "title": "River City",
+      "summary": "As River City reaches its final chapter, this one-hour documentary goes behind the scenes like never before. River City alumna Dawn Steele narrates as the cast unite to relive the moments…",
+      "meta": "BBC iPlayer · Available since Mon 31 Aug",
+      "source": "BBC iPlayer",
+      "url": "http://www.bbc.co.uk/programmes/b006p2xl",
+      "badge": "Drama",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/55/137529.jpg",
+      "artworkAlt": "River City programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-08-31",
-      "showId": 93463,
-      "episodeId": 3709101,
+      "showId": 16504,
+      "episodeId": 3721824,
       "contentType": "tv-pick",
-      "programmeType": "Documentary",
+      "programmeType": "Scripted",
       "genres": [
-        "Crime"
+        "Drama"
       ],
-      "generatedDate": "2026-09-01",
-      "preferenceScore": 246.0
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 145.0
     },
     {
-      "title": "Benidorm Is Murder",
-      "summary": "The murder of an insalubrious guest at a Tavern lock-in forces Dennis into detective mode to save his own skin. And with the doors locked - there is nowhere to run.",
-      "meta": "5 · Thu 3 Sep, 9pm",
-      "source": "5",
-      "url": "https://www.channel5.com/show/benidorm-is-murder",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/633/1584743.jpg",
-      "artworkAlt": "Benidorm Is Murder programme artwork",
+      "title": "Reacher",
+      "summary": "On the run from the police, Reacher and Tamara leave town in search of the mysterious Ahlquist, but they end up in trouble. Meanwhile, in Philadelphia, Jacob and Plum must face their own…",
+      "meta": "Prime Video · New today",
+      "source": "Prime Video",
+      "url": "https://www.amazon.com/dp/B09MKZTJF4",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1591127.jpg",
+      "artworkAlt": "Reacher programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-03",
-      "showId": 86071,
-      "episodeId": 3708471,
+      "airdate": "2026-09-02",
+      "showId": 43031,
+      "episodeId": 3658426,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Action",
+        "Thriller"
+      ],
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 139.0
+    },
+    {
+      "title": "Average Joe",
+      "summary": "Blue-collar plumber, Joe Washington, discovers his recently deceased father lived a secret, second life and stole millions of dollars from dangerous people just before he died. Now those…",
+      "meta": "Paramount+ · New today",
+      "source": "Paramount+",
+      "url": "https://www.paramountplus.com/shows/average-joe/",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596656.jpg",
+      "artworkAlt": "Average Joe programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-02",
+      "showId": 68788,
+      "episodeId": 3652111,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
         "Comedy",
-        "Crime"
+        "Thriller"
       ],
-      "generatedDate": "2026-09-01",
-      "preferenceScore": 197.8
-    },
-    {
-      "title": "The Gentlemen",
-      "summary": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
-      "meta": "Netflix · New thu 3 sep",
-      "source": "Netflix",
-      "url": "https://www.netflix.com/title/81437051",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597311.jpg",
-      "artworkAlt": "The Gentlemen programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-03",
-      "showId": 64992,
-      "episodeId": 3667664,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Comedy",
-        "Action",
-        "Crime"
-      ],
-      "generatedDate": "2026-09-01",
-      "preferenceScore": 186.0
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 136.8
     }
   ],
   "sections": {
     "Sweden": [
+      {
+        "title": "British man deported from Sweden despite living there since childhood",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T06:00:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5"
+      },
+      {
+        "title": "Larsson arrives from Frankfurt",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T22:00:00+01:00",
+        "source": "Fulham FC",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeTlsZmJDUExrWElJSTdXYTFaUW1hUWZ6dFBkNlducXN1amtJYlpqOFctVjY4djZ3MlhoRWZrN09FNEVWeVQwTTNuMXNQWV96TVFhbDRVZ0dERXlEUlFPbVhFR0d3TkdqbWpfUWRrZzgxV29MS0xSZDB2V2RfQzZUS0Q3dG9ZdjN1bmxDSA?oc=5"
+      },
+      {
+        "title": "Sweden: Most Parties Back Stronger Action on Israel",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T06:00:00+01:00",
+        "source": "Human Rights Watch",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ25BZHBNUUlNdnNHVW1kZWFwX3A3MGJWMXYxSzJPUVNkZG0zZVdodWlidmRjRHRHdmsxWDlQck5fNUFjRE1kNFNWMXFXb3FQWXAxckRJMTZCQ2M2UnVuNm0xZWR4eDd0THVnQVpmNXZwdk10eGhmNGRQbGtmVE1Ua2kzbUhQLWtQX3hyNzE2MA?oc=5"
+      },
+      {
+        "title": "Sweden: Man Beaten to Death After Defending Daughter Against Gropers",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T12:29:01+01:00",
+        "source": "The European Conservative",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQenJPaHkzNjNUMlhIVkNoeGlQNk03ck1rSWczaUFvdjF3TndoQ1JGVHVxaVlzY2sySHQ0amszZEV0RUhCNUViRVNfUEZkWUxyNjVCajlFUmFWNS1PdWFndG93b3RRZUJlS3EwMGhZQmFGNG9EaUMtN19kSUNOR1pHMFhhQlROQ3RtNXBSS2FhTldFLTl0VUNmSlBhM1E1NGxtV0MyMUZVVzhsMDl3clVjUkN5NzlXdw?oc=5"
+      },
       {
         "title": "‘Not welcome’: How Sweden’s far right took over Stockholm Central Station",
         "summary": "",
@@ -690,52 +702,20 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVmFVX3hkRWNOc0xYRFRiWFQ4ZlJrY3BlSnJsMEh6YUF2NFZ4SThhTHltQ3RHRml2VjY4eEpLQUV5Uk9wRXk3MWVMdUk5Z1Bya200THhLUnM3MnIzMm9NNFlfV2FUVnhwN3BWOFRSQ29qRGcxak4zblc0NVhpbEs1ZlpNSm14TXJFbklKZlBFQ2hpN1lCbWFvY1JOMUdKWms2clhIbFZsNDBMWG81NEHSAbMBQVVfeXFMUGdrbWVrQUk4RFJ5UEdTdGRrMWZPX29Vc1pBNmhGa3RwUXh1bWxaajFsMGN2ZEo5SmpCNG1xMzVwRWJZSnVYaXdqM1RuNjROaWpIeld5bGplb3YyVHItS1FhckZiUlU3WWhCR0Q5dGNEdEJTbWlWaG1jOFBzODlQbW9sM1J4RmdTOVBaNnNMSDJaZm9NT2xxWUNCcTkweXBra1pISW9WbE9yY0JDRzhFNFJFa2s?oc=5"
       },
       {
-        "title": "Allica Bank Expands Across Europe with Swedish Bank Licence",
+        "title": "Swedish tennis star collapses in scary scenes",
         "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:38:25+01:00",
-        "source": "FinTech Magazine",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOS2FGYVNLcDJRT1lHbkhndS0xLW9NNFZEZUxzV3VPRG9NQTZ1dGJuV0xzMng0WWVob2pBcU1jam9PU3ZOTFVmN0N1b1lRLWhYM3hyT2s4NF8yZXJoeWhnNjRncXRTNUV2bldiaVFOamNYX3RXR1ZUVFllVDdobTdkanFjcElqWS1Wdm5jTk5ZUVMzbEhlMlJr?oc=5"
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T04:08:00+01:00",
+        "source": "Yahoo News UK",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeXVxNXRJNkJzeGxPdHRjYi1tUEt4bFZwaV93SWwwR3NMZWxiNjMtQTBINWlCV2NULTFvczJYbFBEU0NYNjByV0o4bEg3UnZqWm9iUlU4RFVRNWtBcF8zMEtZTVVUYV9FLV9ENzdwTWR5dGZIZi1oSEd6NEhaOVdPSnJXb1dXWUdXYmNvZzhpbw?oc=5"
       },
       {
-        "title": "What makes a destination coach-ready? Sweden has some answers",
+        "title": "Sweden orders four heavily armed FDI frigates from France",
         "summary": "",
         "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T08:51:08+01:00",
-        "source": "IRU | World Road Transport Organisation",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd2FaNTlsWWpHS2xQdTlCWV9HVXJmdDBWUXhuVUg1U0Vfbk50NmZ0RTF5cy1MaWJRb1NIYkVma0JuclU1WHVNT2VkYWpTNFhzbEhMRGszbGROdGNqdkh5SmppaW9GVkFjX0RtTG8yb1lhR1duODdGRGJTQjBrVHQ3M3VQMmpqODkwb2ZDTTNwX19uWG95c2s3dWpwVzhsR2xnWURkOA?oc=5"
-      },
-      {
-        "title": "As war fears grow, Sweden plans burials for part of its population",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T09:49:12+01:00",
-        "source": "Euronews.com",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX0dCcGU2V2gxTzZxbm00Y2g4Nnk3dEt6ZGRsSVFHWlc2UGpWUlVHYXZvY0hlUFNWQ3RIQkt2bW1mc2J6UmpMU3p4VG94bXZvcUVmV1FSYllOUl9vRFlXUzVXenBBOWZwaW53amlYbmVFR2xpSmdiOXNXQy1IZHkxb2FWNl96OFpYLWUxaFVPLTFVR09IMU1JVDBqNGd2WFFYWnhybGs5VGhGY3ZRY19lZ1V6b2FETS03QXQ5VU9zb2txa1RJejg0?oc=5"
-      },
-      {
-        "title": "Sweden finalises four-frigate deal with France’s Naval Group",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T17:13:56+01:00",
-        "source": "Naval Technology",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yaFZVaDNkZlRhUTFjUXpSOVBpOWYtaDBPQWdwVEJrVl92ZWZjXzlqOS13Z2EzdzlvNzZWeUZNbEhOOHNqSEx1VWZrWTg4V3VYWDNNWU5JTjFJX2tGMmEtcXZEck9UUWlRZjFJOElZclZ4YThoaUE?oc=5"
-      },
-      {
-        "title": "A lone Black woman’s defiance of Swedish neo-Nazis, 10 years on",
-        "summary": "",
-        "meta": "Mon 31 Aug",
-        "publishedAt": "2026-08-31T08:17:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTlFPVGJXU0lIdXRZRl9RSnZSZm1XY2pOMHpNMHZHdUFYX3hCdkVsTG9FV1I0bXVwSmRwZDJWcWtsbVFtT1ZSX242UmNXRTRSUnRPSlNDUVFsdXNpY3dMbHdxZl9aSVd3QW1fejJwTnN3NE1odlpkcHJhX1k1eW1KckJpZlFaYmtGRjE3M2ZNcG5lNERTZVR6NFRFd0tiR0lkTmc?oc=5"
-      },
-      {
-        "title": "Sweden's parties clash over healthcare as election nears",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T08:37:46+01:00",
-        "source": "euractiv.com",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZmhtd1ktdFBLaXRONW10OEFJR0txTjVjX2xMb1hJZlU4bXEzalVnLXhvNUdZOEtSdUdadXg0UGpCTWljY1NFYVRLekpGMmd1V0NXaVVIazNGQm5ELWhrM2E1dndZZ09aMWNmdXdsdVRiSWgtdnpuZmxVTHVsRWdWY3B1N2p6RE40TEYzMDdfTQ?oc=5"
+        "publishedAt": "2026-09-01T07:38:54+01:00",
+        "source": "Navy Lookout",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONDhvaW9UZ09CQUlnZlc5YTJiZ0pEUnlWR1dEUDFZUFZXdl9SaVVPbndDZTBRYmZHLVZtMEoxbzY5dXM5NjhnZW1VWTZKVnJlV1BGT1RiYkVMbzd4YkRsU1h0Vk4xQW9PeEhER0RTVzVla3dldDlGcnFzT1Z1Z2g1elNIbkxXZWNsNlplck5rUQ?oc=5"
       }
     ],
     "Local news": [
@@ -748,27 +728,27 @@
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5"
       },
       {
+        "title": "Last chance to comment on Surbiton cafe's new seating plans",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T16:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdnRfa0R3S19ZeU1xOGFRZFhYS3dsTE81SkxDZnFRXzFJc09yOHhlcFgxbWNjUUh6ek1oUlRGSVgxc3YwWWxWUUlHOE90MTBXZ2FFVFhPMDBDUUswY21nby1hSEZrdWZ2NUFIQWp6M0dsb1JKWFJyTnE2c1hUSDI3dElYemluVmRna1RlWnFkdHlESjh2a1FvbF9CempaYk5aUVRXcnFGVW5NSE0?oc=5"
+      },
+      {
         "title": "Gallery: Hampton & Richmond",
         "summary": "",
         "meta": "Tue 1 Sep",
         "publishedAt": "2026-09-01T15:31:07+01:00",
-        "source": "maidstoneunited.co.uk",
+        "source": "Maidstone United Football Club",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fUGpJR2dZaXdWV1RZZVhzLThHVXloZlFkOV8xWVZYalM0SmFFSkdyVDJhMXpQeklHRXUwQ1NIQl9EQlR6cUtMY2JWSVpnOVR6S0Z2R3ZHazZnWEtzbUdKRFo2V0JER2lEbHhtZFMya0c?oc=5"
-      },
-      {
-        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T11:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVENzSlNabldobjhhYkJ2blJRVlhIcFlxcUFaSHh3Nk1NSjc2YzBUWDc4YzhuRl9nUjlMbm8wNktUX0JqU0JNdGVVUWlMN3hzOW5TdGFMeHRubm1sLW5VMHQ2S2p6Y2Jia2hvX0NNMFFDM1pxaXV6YzZGTjYycTh2a2VzUFRELVVPWVNDRHNSZlNjMXRNYTBiRmJQYWpNc3B6X1VoMXpwbHRQTGhLSmdraFVPMVVyLVRuS2VIcmViVnlrSFBYcDNrS3RXUzBOek0?oc=5"
       },
       {
         "title": "Hampton & Richmond vs Maidstone United: National League N / S stats & head-to-head",
         "summary": "",
         "meta": "Tue 1 Sep",
         "publishedAt": "2026-09-01T10:05:46+01:00",
-        "source": "BBC",
+        "source": "bbc.co.uk",
         "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OSFF4VFN4TDA5MDdMUHVtc0JURXNXWmZsUzhudklrREhvNHVUYkV4MUJYREY3cDFOazNEOFFDS3htdjBtc2Y1bVlwRE01Y1pUcFkxUUIyaFdmenNEYVRNSGZ6MEJtZw?oc=5"
       },
       {
@@ -776,7 +756,7 @@
         "summary": "",
         "meta": "Mon 31 Aug",
         "publishedAt": "2026-08-31T20:40:29+01:00",
-        "source": "maidstoneunited.co.uk",
+        "source": "Maidstone United Football Club",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jSEh3T24yTENfV3Z0Ujd4YmxUb0NXNFQ4dWxHUE5GekhCVUZ0TmtXcUxjdGtZZFBpTFNqdE5wT21rX3ZFdXNFLVRGMDdQSmdyRnk3aFhzek1lVHlXd2Z6LVNOeVo5T04xdGN0d3dnaDUyUi1p?oc=5"
       },
       {
@@ -786,22 +766,6 @@
         "publishedAt": "2026-08-31T17:24:36+01:00",
         "source": "Flashscore.co.za",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaG1MdF9UTGltaDdSVXFTSU1iT0VGd0haUktxTzJGbkgyRHh4M0t4VG5kcld4bVpXZWpGQno4V0pOYUVLZ3RySU43SEZOM21ZX2Z1clB4N1RmeXAyVmdpV25qT0tYbkdPcG5oN051bDlmSlFmUTJKclNXSkh0aUZfLUI5ZzA4amRSMVJaamtpaXN1Q0EtRFJDUEVIem9DUXJyV1FJS2hVNmxIdw?oc=5"
-      },
-      {
-        "title": "POST MATCH REACTION | LARRY MCAVOY | Angels 5-1 Walton & Hersham",
-        "summary": "",
-        "meta": "Mon 31 Aug",
-        "publishedAt": "2026-08-31T17:19:53+01:00",
-        "source": "YouTube",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZZ2h6UXAtTXFHcnFWal8zQk9LWFp3Yk15VFA1cDRVWXMwQ2Zmby1US1M2ZVpERjBFNnQ1MHNuVThnUVJPVl9rSHQwalV3R1V3NG1odkxoOVE5Wktl?oc=5"
-      },
-      {
-        "title": "Match Report: Hampton & Richmond",
-        "summary": "",
-        "meta": "Mon 31 Aug",
-        "publishedAt": "2026-08-31T17:10:29+01:00",
-        "source": "maidstoneunited.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1aSEN3ODFVSzhvNjlDZU5IMmpPdjhuREl4elh6UmVacTNGUjZQM2ZhY081T3MwRFJRQUw3VFpzYlV6ZnF1THZXVjZub05lMV85dG9BXy1heFF2Qm1jZWw5R19mU2JyYnNBQXRFVEtTc0xEdmpZVTRr?oc=5"
       },
       {
         "title": "Tonbridge Angels vs Walton & Hersham: National League N / S stats & head-to-head",
@@ -834,104 +798,120 @@
         "publishedAt": "2026-08-31T08:04:12+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMUdTcDUwcm5RUDFKbXJuczNyZnNleWtMVzZIUlRreEJja3RDTGFsbVd5amdLVHRjV1FLUTdBSlVRaEk4NS1CVjh2SS1HTmhQdUdHajlBeE5XT2JIcWhNTU1lR1BSQlI0MkNrNEJGYkZDeDA5WGpRVllBa2tqaW9Vem1GS2hvbldoMFEyVEoyMWVSQVhfWHNSOWNoa3l4RU0yd25NRFozWTNiTGNpRlk1ZzBwYw?oc=5"
+      },
+      {
+        "title": "The club bar at Walton & Hersham FC was shut for the side's home game on Saturday after reports that some fans were \"intimidating and abusive\" towards staff, said the council. More here: https://bbc.in/4qLdaC4",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T19:57:24+01:00",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY2xNZk5IeHpIeDhVdnZKcmVOdHlDMGUtMGRrc1EtbVhmcjV4NFVFTzRPd0R2VDdhWjdsckN2M1VSOEJnaE40bm9zWFBYcVlKaVduRHVtMFZrOF95MTVOM1RPalpJdXRwVjJ1Ym1FTmtHRzNWam5SVjNKX3haSEJOWExLZl9OMUN2bTVvenZfVzUwdHk2dzVUcTRfWXZNUHRFdXZKNVFKUzhVRDhBR3ZnX3NZZ2s4akw0cl81TENfaWVkZTNNOXJ4YnBQdk1IbDY3MTB5SXBSQQ?oc=5"
+      },
+      {
+        "title": "Match Preview: Hampton & Richmond",
+        "summary": "",
+        "meta": "Sun 30 Aug",
+        "publishedAt": "2026-08-30T19:45:29+01:00",
+        "source": "Maidstone United Football Club",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE56bkNvdnQ0T1Zka2pyYjIzZzh0Z2pvY3JQMjNOVC1tUFJISkYyaU8yXzhEUnJCZjdyVXlWQ1ZZN3B2cGxVLVFLMjBHbTczaXo2SXdDb0FCYTZMQ3BBZnY0NDhyckNLUlA3UmcxLUxtQmF3QmhTaGJGdQ?oc=5"
       }
     ],
     "UK news": [
       {
-        "title": "Burnham promises more devolution and public control of essential services",
-        "summary": "Tory leader Kemi Badenoch said Burnham was offering \"more government control, more taxes and more politicians\", as he addressed MPs for the first time as PM.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T21:52:15+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx2z528rdp6o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "UK long-term borrowing costs highest since 1998 ahead of October Budget",
-        "summary": "Higher borrowing costs have piled fresh pressure on Andy Burnham ahead of his first Budget.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T17:36:42+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c8d39vq779no?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Keir Starmer announces he is standing down as MP",
-        "summary": "The move will trigger a by-election to replace the former prime minister in his London constituency.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T18:04:29+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgy4258kgyo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Germany says Russia behind Leipzig airport drone attack",
-        "summary": "A drone carrying an explosive device was discovered at the airport close to Ukrainian cargo planes on 4 August.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T22:05:22+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "US launches more strikes on Iran as state media reports explosions",
-        "summary": "US Central Command accused Iran of targeting commercial shipping and American service members deployed in the region.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T21:59:24+01:00",
+        "title": "Iran attacks US bases in Middle East after reports US strike killed five at wedding party",
+        "summary": "The Iranian Red Crescent says a child was among those killed when shrapnel from a US strike hit a home. The US military says it is aware of the reports and it never targets civilians.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T06:12:07+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Flood chased me as I ran for 20 minutes, Nepal tunnel worker tells BBC",
-        "summary": "Major efforts to rescue hydropower workers continue as Nepal's death toll exceeds 1,000.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T17:11:18+01:00",
+        "title": "Charlie Kirk murder suspect pleads not guilty as judge clears way for death penalty trial",
+        "summary": "The 23-year-old is charged with aggravated murder, a capital offence in Utah, and six other counts.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T02:59:10+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cg49590v6k1o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cj4jn9q7evpo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Baby girl who died at Sheffield house was stabbed, police say",
-        "summary": "A baby girl who was pronounced dead at a property in Sheffield was stabbed, police confirm.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T20:42:04+01:00",
+        "title": "Chris Mason: Will Burnham find PMQs as 'nail biting' and 'nerve wracking' as Blair did?",
+        "summary": "Curiously, the questions at lunchtime may well feel like a minor extension of what he faced on Tuesday, the BBC's political editor writes.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T05:49:23+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cdx0n18z8ypo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c7507z4enq6o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Watch: Norway's new king takes oath as mourners pay respects to his late father",
-        "summary": "Norway's new King takes the first major step of his reign as his father, the late King Harald V, lies in state at the Royal Palace.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T15:06:58+01:00",
+        "title": "UK long-term borrowing costs highest since 1998 ahead of October Budget",
+        "summary": "Higher borrowing costs have piled fresh pressure on Andy Burnham ahead of his first Budget.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T02:23:00+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/videos/ceq8945e71ro?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c8d39vq779no?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Israel warns it will retaliate if UK imposes sanctions",
-        "summary": "The UK's Foreign Secretary Ed Miliband pledged on Tuesday to introduce a \"comprehensive reset\" of policy on Israel.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T20:27:38+01:00",
+        "title": "Israel expanding presence in Lebanon, officials say, as BBC visits occupied areas",
+        "summary": "A BBC team joined a humanitarian mission of the UN peacekeeping force, which says Israeli troops are fortifying positions and continuing demolitions.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T06:03:09+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cr7degkkv5go?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cge41d19gq9o?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Pistol in lake gives hope for case of British family killed in French Alps",
-        "summary": "Saad al-Hilli was shot dead with his wife and mother-in-law while holidaying in eastern France in September 2012.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T17:33:29+01:00",
+        "title": "Rising numbers of children in mental health crisis ending up in A&E",
+        "summary": "NHS emergency departments are seeing more cases of self-harm, eating disorders and emotional distress in young people.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T00:38:20+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c74eklrm344o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/cn5d2r0zqvdo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Sexual assaults happening almost every day in Ceuta, prosecutors say",
-        "summary": "Most migrants have returned to neighbouring Morocco, but as many as 5,000 remain in the Spanish exclave.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:33:14+01:00",
+        "title": "Tiger Woods to change plea after crash arrest",
+        "summary": "The golfer will be in court on Wednesday for a hearing to change his plea after being charged with driving under the influence.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T01:26:08+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c3v4pgk7gweo?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c5y7xvpn5kno?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "'I've never been to Afghanistan': Six million deportees forced to start over under the Taliban",
-        "summary": "As of August, the number forced to return this year from Pakistan and Iran had reached another million.",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T06:00:34+01:00",
+        "title": "Zelensky says airlines should avoid Russian airspace as Ukraine escalates drone operations",
+        "summary": "Chinese and Gulf state airlines are among those still using Russian airspace. Meanwhile, Russia says it will intensify its own attacks on Ukraine.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T05:23:23+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c2e074nn8eko?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/c9v9yydy2wvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "US aircraft carrier docks near Thai beach resort Pattaya after record 250 days at sea",
+        "summary": "The USS Lincoln is docking close to Pattaya, known for its raucous nightlife, and for sex tourism.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T03:42:38+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cg7k09z4lj9o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Urine test can spot more than nine in 10 bladder cancers",
+        "summary": "The NHS has been trialling the test and says the results so far are truly promising.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T02:39:17+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/crr40g71vylo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Apple Maps renames Lake Ontario as Lake America after Trump order",
+        "summary": "The iPhone maker follows rival technology giant Google in relabelling the Great Lake.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T02:32:24+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cddvyyz0e47o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Families hit by long waits for dementia diagnosis",
+        "summary": "Hundreds of families say they have had to wait months or even years for a dementia diagnosis for a loved one.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T02:46:08+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cvgyp2n1e75o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "AI": [
@@ -960,6 +940,14 @@
         "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources"
       },
       {
+        "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+        "summary": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T02:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/gilbert-tobin"
+      },
+      {
         "title": "OpenAI supports California’s bill to advance youth AI safety",
         "summary": "OpenAI supports California SB 1119, advancing strong, age-appropriate AI safeguards for teens while preserving opportunities to learn, create, and explore.",
         "meta": "Mon 31 Aug",
@@ -974,14 +962,6 @@
         "publishedAt": "2026-08-31T08:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/polimill"
-      },
-      {
-        "title": "A milestone in expanding access to AI",
-        "summary": "ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.",
-        "meta": "Mon 31 Aug",
-        "publishedAt": "2026-08-31T05:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads"
       },
       {
         "title": "Introducing agentic video understanding with Gemini",
@@ -1018,6 +998,19 @@
     ],
     "Career": [
       {
+        "title": "Head of Product",
+        "summary": "Foundation Partners · London, England, United Kingdom",
+        "meta": "Remote · Posted Tue 11 Aug",
+        "source": "LinkedIn",
+        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442780389",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "Foundation Partners",
+        "location": "London, England, United Kingdom",
+        "countryFocus": "UK",
+        "postedAt": "2026-08-11"
+      },
+      {
         "title": "Principal Product Manager (Strategic Account Interactions) - Security Solutions",
         "summary": "Elastic · Location not stated",
         "meta": "Remote · Posted Mon 31 Aug",
@@ -1029,19 +1022,6 @@
         "location": "Location not stated",
         "countryFocus": "UK",
         "postedAt": "2026-08-31"
-      },
-      {
-        "title": "Product Lead",
-        "summary": "Street Group · Manchester, England, United Kingdom",
-        "meta": "3+ WFH days · Posted Mon 17 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/product-lead-at-street-group-4443764975",
-        "contentType": "job",
-        "workArrangement": "3-wfh-days",
-        "company": "Street Group",
-        "location": "Manchester, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-17"
       },
       {
         "title": "Head of Product",
