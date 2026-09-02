@@ -462,13 +462,71 @@ def transfer_identity_words(title: str) -> set[str]:
     }
 
 
-def official_transfer_is_corroborated(item: dict, trusted_reports: list[dict]) -> bool:
-    """Keep official items only when a separate approved source identifies the same player."""
+def corroborating_transfer_report(item: dict, trusted_reports: list[dict]) -> dict | None:
+    """Return independent corroboration for an official first-team transfer item."""
     identity = transfer_identity_words(item.get("title", ""))
-    return len(identity) >= 2 and any(
-        len(identity & transfer_identity_words(report.get("title", ""))) >= 2
-        for report in trusted_reports
-    )
+    if len(identity) < 2:
+        return None
+    return next((
+        report for report in trusted_reports
+        if len(identity & transfer_identity_words(report.get("title", ""))) >= 2
+    ), None)
+
+
+def official_transfer_is_corroborated(item: dict, trusted_reports: list[dict]) -> bool:
+    return corroborating_transfer_report(item, trusted_reports) is not None
+
+
+def scope_transfer_updates(candidates: list[dict]) -> list[dict]:
+    """Normalize trusted transfer candidates and quarantine invalid articles.
+
+    Article-level failures are optional-content failures: they are dropped here and
+    must never prevent the rest of the morning brief from refreshing.
+    """
+    updates = []
+    for item in candidates:
+        source = clean_html(item.get("source", ""))
+        source_key = source.lower()
+        trust = next((
+            label for name, label in TRUSTED_ARSENAL_TRANSFER_SOURCES.items()
+            if name in source_key
+        ), None)
+        title = clean_html(item.get("title", ""))
+        if (
+            not trust
+            or not title
+            or not TRANSFER_TERMS.search(title)
+            or TRANSFER_EXCLUSIONS.search(title)
+        ):
+            continue
+        update = dict(item)
+        update["title"] = title
+        update["source"] = source
+        update["contentType"] = "transfer-update"
+        update["trust"] = trust
+        updates.append(update)
+
+    trusted_reports = [
+        item for item in updates
+        if "arsenal.com" not in item.get("source", "").lower()
+    ]
+    scoped_updates = []
+    for item in updates:
+        if "arsenal.com" not in item.get("source", "").lower():
+            scoped_updates.append(item)
+            continue
+        report = corroborating_transfer_report(item, trusted_reports)
+        if not report:
+            continue
+        official = dict(item)
+        official["corroboratedBy"] = {
+            key: report.get(key)
+            for key in ("title", "source", "url", "publishedAt")
+            if report.get(key)
+        }
+        scoped_updates.append(official)
+
+    return newest_first(scoped_updates)[:6]
 
 
 def arsenal_transfer_updates() -> list[dict]:
@@ -477,28 +535,7 @@ def arsenal_transfer_updates() -> list[dict]:
         google_news('Arsenal (transfer OR signing OR deal OR loan OR contract) when:14d', 50, 14),
         limit=60,
     )
-    updates = []
-    for item in candidates:
-        source = clean_html(item.get("source", ""))
-        source_key = source.lower()
-        trust = next((label for name, label in TRUSTED_ARSENAL_TRANSFER_SOURCES.items() if name in source_key), None)
-        title = clean_html(item.get("title", ""))
-        if not trust or not TRANSFER_TERMS.search(title) or TRANSFER_EXCLUSIONS.search(title):
-            continue
-        update = dict(item)
-        update["contentType"] = "transfer-update"
-        update["trust"] = trust
-        updates.append(update)
-    trusted_reports = [
-        item for item in updates
-        if "arsenal.com" not in clean_html(item.get("source", "")).lower()
-    ]
-    scoped_updates = [
-        item for item in updates
-        if "arsenal.com" not in clean_html(item.get("source", "")).lower()
-        or official_transfer_is_corroborated(item, trusted_reports)
-    ]
-    return newest_first(scoped_updates)[:6]
+    return scope_transfer_updates(candidates)
 
 
 def arsenal_transfer_rumours() -> list[dict]:
