@@ -155,6 +155,46 @@ PLAIN_HAMPTON_LOCAL_CONTEXT = re.compile(
     re.I,
 )
 
+UK_POSITIVE_NEWS_QUERIES = (
+    '("United Kingdom" OR Britain OR British OR England OR Scotland OR Wales OR "Northern Ireland") '
+    '(breakthrough OR "promising trial" OR "new treatment" OR "new test" OR discovery OR innovation OR "save lives")',
+    '("United Kingdom" OR Britain OR British OR England OR Scotland OR Wales OR "Northern Ireland") '
+    '(charity OR community OR volunteer OR reunited OR rescued OR restored OR reopened OR celebrates OR award OR milestone OR fundraising)',
+    '("United Kingdom" OR Britain OR British OR England OR Scotland OR Wales OR "Northern Ireland") '
+    '(conservation OR renewable OR "clean energy" OR "jobs created" OR "new homes" OR investment OR funding OR regeneration OR "record low")',
+)
+UK_POSITIVE_NEWS_EVIDENCE = re.compile(
+    r"\b(?:good news|breakthrough|promising|hopeful|success(?:ful(?:ly)?)?|"
+    r"improv(?:e[ds]?|ement|ing)|benefit(?:s|ed|ing)?|rescu(?:e[ds]?|ing)|saved?|"
+    r"reunit(?:e[ds]?|ing)|recover(?:y|ed|ing|s)?|restor(?:e[ds]?|ation|ing)|"
+    r"reopen(?:s|ed|ing)?|opens?|launch(?:es|ed|ing)|unveil(?:s|ed|ing)|approv(?:e[ds]?|al)|"
+    r"award(?:ed|s)?|honou?red|win(?:s|ning)?|triumph(?:s|ed)?|milestone|"
+    r"celebrat(?:e[ds]?|ing)|record[- ]breaking|discover(?:y|ed|ies)|innovation|"
+    r"new treatment|new (?:medical|diagnostic|screening|health) test|can spot|"
+    r"save lives?|life[- ]saving|fundrais(?:er|ing)|"
+    r"raises? (?:£|\$|€|\d)|donat(?:e[ds]?|ion|ions|ing)|volunteer(?:s|ed|ing)?|"
+    r"funding (?:secured|awarded|announced)|investment (?:secured|announced)|"
+    r"grants? (?:awarded|secured)|(?:jobs?|apprenticeships?) (?:created|secured|saved)|"
+    r"new (?:jobs|apprenticeships?|homes|schools|hospitals?|services?)|species (?:returns?|recovers?)|"
+    r"population (?:recovers?|rebounds?)|clean energy|renewable|cuts? emissions|"
+    r"record low|free (?:meals|care|support|travel|classes))\b",
+    re.I,
+)
+UK_NEGATIVE_NEWS_EVIDENCE = re.compile(
+    r"\b(?:murder(?:ed|s)?|killed|killing|dead|deaths?|dies?|fatal(?:ity|ities)?|"
+    r"attack(?:ed|s)?|war|bomb(?:ing|ed|s)?|explosion|shoot(?:ing|s)?|"
+    r"stab(?:bing|bed|s)?|rape|sexual assault|abuse|terror(?:ism|ist)?|hostage|"
+    r"genocide|death penalty|pleads? (?:guilty|not guilty)|charged with|arrest(?:ed|s)?|"
+    r"jailed|prison sentence|police hunt|crash(?:ed|es)?|collision|disaster|"
+    r"earthquake|wildfire|flood(?:ing|ed|s)?|crisis|emergency|outbreak|shortage|"
+    r"collapse|bankrupt(?:cy)?|funding cuts?|spending cuts?|job losses|layoffs?|"
+    r"closures?|scandal|fraud|corruption|protest(?:s|ers)?|strike action|warning|"
+    r"threat(?:ens?|ened)?|fears?|concerns?|at risk|long waits?|waiting list|"
+    r"mental health crisis|homeless(?:ness)?|poverty|sanctions?|invades?|air strike|"
+    r"drone attack)\b",
+    re.I,
+)
+
 
 def world_fact_for_today() -> dict:
     try:
@@ -394,12 +434,33 @@ def local_news() -> list[dict]:
     return []
 
 
-def uk_news() -> list[dict]:
-    return merge_news(
-        rss('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News', 16, 4),
-        google_news('(UK OR Britain OR British) news when:3d', 16, 3),
-        limit=12,
+def positive_uk_news_item_is_in_scope(item: dict) -> bool:
+    """Keep explicitly uplifting stories and reject distressing or adversarial news."""
+    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
+    return bool(
+        text
+        and UK_POSITIVE_NEWS_EVIDENCE.search(text)
+        and not UK_NEGATIVE_NEWS_EVIDENCE.search(text)
     )
+
+
+def uk_news() -> list[dict]:
+    # Use the BBC's UK feed plus targeted positive searches. Start with the
+    # freshest fortnight and extend to 30 days only when needed for depth.
+    # Never fill the section with a negative fallback.
+    for max_age_days in (14, 30):
+        candidates = merge_news(
+            rss('https://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News', 48, max_age_days),
+            *(
+                google_news(f'{query} when:{max_age_days}d', 40, max_age_days)
+                for query in UK_POSITIVE_NEWS_QUERIES
+            ),
+            limit=256,
+        )
+        positive = [item for item in candidates if positive_uk_news_item_is_in_scope(item)]
+        if len(positive) >= 12 or max_age_days == 30:
+            return newest_news(positive, 12)
+    return []
 
 
 TRUSTED_ARSENAL_TRANSFER_SOURCES = {

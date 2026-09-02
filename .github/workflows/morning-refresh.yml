@@ -72,7 +72,7 @@ jobs:
           import json
           from datetime import date, datetime, timedelta
           from pathlib import Path
-          from scripts.refresh import local_news_item_is_in_scope
+          from scripts.refresh import local_news_item_is_in_scope, positive_uk_news_item_is_in_scope
           from zoneinfo import ZoneInfo
           today_date=datetime.now(ZoneInfo('Europe/London')).date()
           today=today_date.isoformat()
@@ -121,7 +121,9 @@ jobs:
               assert all(local_news_item_is_in_scope(item) for item in local_items), f'{profile}: Local News contains a story outside the approved KT8 area'
               local_dates=[str(item.get('publishedAt') or '') for item in local_items]
               assert local_dates==sorted(local_dates,reverse=True), f'{profile}: Local News is not newest first'
-              assert len(sections.get('UK news') or [])>=10, f'{profile}: fewer than 10 UK News items'
+              uk_items=sections.get('UK news') or []
+              assert len(uk_items)>=10, f'{profile}: fewer than 10 UK News items'
+              assert all(positive_uk_news_item_is_in_scope(item) for item in uk_items), f'{profile}: UK News contains a non-positive story'
 
           tv_history=json.loads(Path('data/tv-picks-history.json').read_text()).get('days') or []
           assert tv_history and tv_history[-1].get('date')==today, 'TV Picks history was not updated today'

@@ -2,6 +2,17 @@
 
 Newest entries go first.
 
+## 2 September 2026: Positive-only UK News
+
+Status: implemented; publication follows the normal CI, refresh, and Pages gates
+
+- Requested change: UK News must contain only positive stories.
+- Selection rule: require explicit constructive or uplifting evidence in each headline or summary and reject conflict, crime, deaths, disaster, scandal, crisis, fear-led, adversarial, and otherwise distressing stories.
+- Source rule: replace the BBC general front-page feed with the BBC UK feed plus three targeted UK-positive Google News searches covering science and health, community and charity, and conservation, investment, jobs, and regeneration.
+- Freshness rule: search the latest 14 days first and extend to 30 days only when needed to fill the 12-story target. Never use negative stories as fallback; the existing minimum of 10 remains protected and publication fails if it cannot be met.
+- Validation added: unit coverage for accepted and rejected tone, filtering before newest-first limiting, and a protected publication assertion that every UK News item remains positive.
+- Scope protected: no Local News geography, profile, route, section order, styling, imagery, weather, calendar, Arsenal, AI, Career, Dida, Birthday, TV Picks, fact, or 6am scheduling behaviour changed.
+
 ## 1 September 2026: Strict KT8 Local News boundary
 
 Status: implemented; publication follows the normal CI, refresh, and Pages gates

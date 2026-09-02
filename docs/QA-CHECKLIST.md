@@ -67,6 +67,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] BBC iPlayer, Channel 4 and Netflix receive first platform preference when equally strong current picks are available.
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] Every Local News story has headline or summary evidence for the approved KT8 cluster; broad Surrey, Elmbridge, or London references and foreign/unrelated namesakes are rejected. The refresh may extend from 14 to 30 days for depth but does not widen the geography.
+- [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; the refresh fails instead of using a negative fallback.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] Dida has one page-level title followed by exactly three white age-six zones.
 - [ ] Birthday months use a full-width single card, two balanced half-width cards, or three equal cards on one Chromebook row.
