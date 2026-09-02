@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Wednesday, 2 September 2026 · refreshed 6:23am",
+  "updatedLabel": "Wednesday, 2 September 2026 · refreshed 10:19am",
   "worldFact": {
     "id": "richat-eroded-geologic-dome",
     "category": "Seen from space",
@@ -16,10 +16,10 @@
     "sequence": 12
   },
   "weather": {
-    "temp": "16°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
-    "currentRainChance": 4,
+    "temp": "19°",
+    "summary": "Light rain",
+    "condition": "Light rain",
+    "currentRainChance": 80,
     "daily": [
       {
         "date": "2026-09-02",
@@ -27,7 +27,7 @@
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 60,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
@@ -36,7 +36,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -50,20 +50,20 @@
       },
       {
         "date": "2026-09-05",
-        "high": 23,
+        "high": 22,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-06",
-        "high": 27,
+        "high": 26,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -72,7 +72,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -81,13 +81,13 @@
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Cloudy · peak rain chance around 60%",
+      "detail": "Cloudy · peak rain chance around 90%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -232,20 +232,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -257,6 +243,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -516,8 +516,8 @@
     "title": "British man deported from Sweden despite living there since childhood",
     "summary": "",
     "meta": "Wed 2 Sep",
-    "publishedAt": "2026-09-02T06:00:00+01:00",
-    "source": "The Guardian",
+    "publishedAt": "2026-09-02T09:00:00+01:00",
+    "source": "theguardian.com",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5"
   },
   "interests": [
@@ -525,32 +525,93 @@
       "title": "British man deported from Sweden despite living there since childhood",
       "summary": "",
       "meta": "Wed 2 Sep",
-      "publishedAt": "2026-09-02T06:00:00+01:00",
-      "source": "The Guardian",
+      "publishedAt": "2026-09-02T09:00:00+01:00",
+      "source": "theguardian.com",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5",
       "section": "Sweden"
     },
     {
-      "title": "Beloved Teddington pub manager moves on after nearly two years",
+      "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
       "summary": "",
-      "meta": "Tue 1 Sep",
-      "publishedAt": "2026-09-01T16:58:00+01:00",
+      "meta": "Wed 2 Sep",
+      "publishedAt": "2026-09-02T08:34:00+01:00",
       "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5",
       "section": "Local"
     },
     {
-      "title": "SILO Season 3 Episode 9 Sneak Peek Clip to Premiere on Apple TV",
+      "title": "Murder Case - three new cases to feature in award-winning crime documentary series commissioned by BBC Scotland",
       "summary": "",
-      "meta": "Mon 24 Aug",
-      "publishedAt": "2026-08-24T08:00:00+01:00",
-      "source": "BroadwayWorld",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYWZTNlo2U3F6Tmk1NVJjSHd2a0d6TlYxMWJTZVFjbW5PUXNpUENPY1ZZOTZtNmZzZmdnX1RFbTlkQjNXVTc1R0tFYkJnQ01ZOXFGTXJZbkZyRmFXOE5lMkRlNWFHX0t1czV3TFhyczlCOHhGdUU4Nm85V2JJMlJ4VUZYU1g4Yy0zSXJHV3hMNVhfeGo4VkFBTjVQOEJBRURHUWZBMGRNblpxZEcxTUYyUGVrQXdhY3M?oc=5",
-      "preferenceScore": 130,
+      "meta": "Thu 20 Aug",
+      "publishedAt": "2026-08-20T08:00:00+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53QjFxTHIybHg3eS1oNDgya2tZcVNIbklZS0pGRkw3S3YxNnJ6akZPeGNrN3hJVFBKMkhVTHFTSUJLOUJyTGNaVHdfZUtWa3lRTTJNazFLRFZCOXJCcF9rYUJzbzdyNENjVzQzWmhzWFIwWUJU?oc=5",
+      "preferenceScore": 105,
       "section": "Watch"
     }
   ],
   "watch": [
+    {
+      "title": "True Crime Presents",
+      "summary": "A look at the murder of Peter McMahon in 2012, whose ex-partner Sharon Swinhoe and her accomplice Joseph Collins were sentenced to life for his financially motivated killing.",
+      "meta": "ITV1 · Available since yesterday",
+      "source": "ITV1",
+      "url": "https://www.itv.com/",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/591/1477670.jpg",
+      "artworkAlt": "True Crime Presents programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-01",
+      "showId": 82050,
+      "episodeId": 3718033,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 384.7
+    },
+    {
+      "title": "Check-In To Murder",
+      "summary": "Check-In To Murder explores chilling true crimes that have shaken British communities, revealing how the line between picturesque and perilous can be razor thin. From quaint villages with…",
+      "meta": "Crime & Investigation · Available since Mon 31 Aug",
+      "source": "Crime & Investigation",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/check-in-to-murder",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589613.jpg",
+      "artworkAlt": "Check-In To Murder programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-31",
+      "showId": 93464,
+      "episodeId": 3694597,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 364.5
+    },
+    {
+      "title": "Global Eye",
+      "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
+      "meta": "BBC Two · Mon 7 Sep, 7pm",
+      "source": "BBC Two",
+      "url": "https://www.bbc.co.uk/programmes/m002j92n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467593.jpg",
+      "artworkAlt": "Global Eye programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-07",
+      "showId": 87011,
+      "episodeId": 3720857,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "generatedDate": "2026-09-02",
+      "preferenceScore": 334.1
+    },
     {
       "title": "999: What Happened Next",
       "summary": "Police launch a complex investigation when a train passenger notices something disturbing on a fellow traveller's phone. And officers investigate a series of thefts of luxury 4x4s.",
@@ -570,26 +631,7 @@
         "Crime"
       ],
       "generatedDate": "2026-09-02",
-      "preferenceScore": 285.0
-    },
-    {
-      "title": "9/11: Days That Shocked the World",
-      "summary": "9/11 remains one of the most shocking events in world history. In the first of a two-part documentary to mark the 25th anniversary of the tragedy, rescue workers, survivors and witnesses…",
-      "meta": "Channel 4 · Today, 10pm",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/911-days-that-shocked-the-world",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1598676.jpg",
-      "artworkAlt": "9/11: Days That Shocked the World programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-02",
-      "showId": 93909,
-      "episodeId": 3723308,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "generatedDate": "2026-09-02",
-      "preferenceScore": 244.0
+      "preferenceScore": 289.7
     },
     {
       "title": "River City",
@@ -611,52 +653,6 @@
       ],
       "generatedDate": "2026-09-02",
       "preferenceScore": 145.0
-    },
-    {
-      "title": "Reacher",
-      "summary": "On the run from the police, Reacher and Tamara leave town in search of the mysterious Ahlquist, but they end up in trouble. Meanwhile, in Philadelphia, Jacob and Plum must face their own…",
-      "meta": "Prime Video · New today",
-      "source": "Prime Video",
-      "url": "https://www.amazon.com/dp/B09MKZTJF4",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1591127.jpg",
-      "artworkAlt": "Reacher programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-02",
-      "showId": 43031,
-      "episodeId": 3658426,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Action",
-        "Thriller"
-      ],
-      "generatedDate": "2026-09-02",
-      "preferenceScore": 139.0
-    },
-    {
-      "title": "Average Joe",
-      "summary": "Blue-collar plumber, Joe Washington, discovers his recently deceased father lived a secret, second life and stole millions of dollars from dangerous people just before he died. Now those…",
-      "meta": "Paramount+ · New today",
-      "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/average-joe/",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596656.jpg",
-      "artworkAlt": "Average Joe programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-02",
-      "showId": 68788,
-      "episodeId": 3652111,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Comedy",
-        "Thriller"
-      ],
-      "generatedDate": "2026-09-02",
-      "preferenceScore": 136.8
     }
   ],
   "sections": {
@@ -665,8 +661,8 @@
         "title": "British man deported from Sweden despite living there since childhood",
         "summary": "",
         "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T06:00:00+01:00",
-        "source": "The Guardian",
+        "publishedAt": "2026-09-02T09:00:00+01:00",
+        "source": "theguardian.com",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5"
       },
       {
@@ -686,14 +682,6 @@
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ25BZHBNUUlNdnNHVW1kZWFwX3A3MGJWMXYxSzJPUVNkZG0zZVdodWlidmRjRHRHdmsxWDlQck5fNUFjRE1kNFNWMXFXb3FQWXAxckRJMTZCQ2M2UnVuNm0xZWR4eDd0THVnQVpmNXZwdk10eGhmNGRQbGtmVE1Ua2kzbUhQLWtQX3hyNzE2MA?oc=5"
       },
       {
-        "title": "Sweden: Man Beaten to Death After Defending Daughter Against Gropers",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T12:29:01+01:00",
-        "source": "The European Conservative",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQenJPaHkzNjNUMlhIVkNoeGlQNk03ck1rSWczaUFvdjF3TndoQ1JGVHVxaVlzY2sySHQ0amszZEV0RUhCNUViRVNfUEZkWUxyNjVCajlFUmFWNS1PdWFndG93b3RRZUJlS3EwMGhZQmFGNG9EaUMtN19kSUNOR1pHMFhhQlROQ3RtNXBSS2FhTldFLTl0VUNmSlBhM1E1NGxtV0MyMUZVVzhsMDl3clVjUkN5NzlXdw?oc=5"
-      },
-      {
         "title": "‘Not welcome’: How Sweden’s far right took over Stockholm Central Station",
         "summary": "",
         "meta": "Tue 1 Sep",
@@ -702,12 +690,20 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVmFVX3hkRWNOc0xYRFRiWFQ4ZlJrY3BlSnJsMEh6YUF2NFZ4SThhTHltQ3RHRml2VjY4eEpLQUV5Uk9wRXk3MWVMdUk5Z1Bya200THhLUnM3MnIzMm9NNFlfV2FUVnhwN3BWOFRSQ29qRGcxak4zblc0NVhpbEs1ZlpNSm14TXJFbklKZlBFQ2hpN1lCbWFvY1JOMUdKWms2clhIbFZsNDBMWG81NEHSAbMBQVVfeXFMUGdrbWVrQUk4RFJ5UEdTdGRrMWZPX29Vc1pBNmhGa3RwUXh1bWxaajFsMGN2ZEo5SmpCNG1xMzVwRWJZSnVYaXdqM1RuNjROaWpIeld5bGplb3YyVHItS1FhckZiUlU3WWhCR0Q5dGNEdEJTbWlWaG1jOFBzODlQbW9sM1J4RmdTOVBaNnNMSDJaZm9NT2xxWUNCcTkweXBra1pISW9WbE9yY0JDRzhFNFJFa2s?oc=5"
       },
       {
-        "title": "Swedish tennis star collapses in scary scenes",
+        "title": "Sweden 10Y Bond Yield Hits 15-year High",
         "summary": "",
         "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T04:08:00+01:00",
-        "source": "Yahoo News UK",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeXVxNXRJNkJzeGxPdHRjYi1tUEt4bFZwaV93SWwwR3NMZWxiNjMtQTBINWlCV2NULTFvczJYbFBEU0NYNjByV0o4bEg3UnZqWm9iUlU4RFVRNWtBcF8zMEtZTVVUYV9FLV9ENzdwTWR5dGZIZi1oSEd6NEhaOVdPSnJXb1dXWUdXYmNvZzhpbw?oc=5"
+        "publishedAt": "2026-09-02T07:40:00+01:00",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNXzdaMDhzck1UcUNadjV4dkRxNzg0NXNWZmdBQm52cDVpQ2NoV2tlVFRDWTBLdVV5QnFhcUlmTjFWUmFDb2IzSENMdDhkem1DY21EMV8yWkU3bndmNUZySjhMTEhuc2NXNXBtcUdJVEhXR1dLbGgxcm9iSUYxaDBnTXVNaTdtUzlGeXBaNjdTOXdIVGVy?oc=5"
+      },
+      {
+        "title": "Crystal Water Prize Sparkle for the Crown Princess of Sweden",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T06:00:05+01:00",
+        "source": "thecourtjeweller.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZjEzRUVnMklXcEVGdEU0UEl2VXNVdWhUMDNoM3BRUXdSekN6TFZGRzhNMTVHZW9XbHdyUWJsbmdlTkRUalUyckQ1a2Y4NTF6OER4QzZwVlhiUzE1NjVHY1RHNHFTdmhmeWxrWXMzU3JfTUwtNG9GMU9Kdl9TYmtSYVlGcHNWWllQbnFyaERlUkRUbEt0WGdUVHpNVUJQVWlHbXhYRWQ3Yi1Tdw?oc=5"
       },
       {
         "title": "Sweden orders four heavily armed FDI frigates from France",
@@ -719,6 +715,14 @@
       }
     ],
     "Local news": [
+      {
+        "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T08:34:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5"
+      },
       {
         "title": "Beloved Teddington pub manager moves on after nearly two years",
         "summary": "",
@@ -740,7 +744,7 @@
         "summary": "",
         "meta": "Tue 1 Sep",
         "publishedAt": "2026-09-01T15:31:07+01:00",
-        "source": "Maidstone United Football Club",
+        "source": "maidstoneunited.co.uk",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fUGpJR2dZaXdWV1RZZVhzLThHVXloZlFkOV8xWVZYalM0SmFFSkdyVDJhMXpQeklHRXUwQ1NIQl9EQlR6cUtMY2JWSVpnOVR6S0Z2R3ZHazZnWEtzbUdKRFo2V0JER2lEbHhtZFMya0c?oc=5"
       },
       {
@@ -748,7 +752,7 @@
         "summary": "",
         "meta": "Tue 1 Sep",
         "publishedAt": "2026-09-01T10:05:46+01:00",
-        "source": "bbc.co.uk",
+        "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OSFF4VFN4TDA5MDdMUHVtc0JURXNXWmZsUzhudklrREhvNHVUYkV4MUJYREY3cDFOazNEOFFDS3htdjBtc2Y1bVlwRE01Y1pUcFkxUUIyaFdmenNEYVRNSGZ6MEJtZw?oc=5"
       },
       {
@@ -756,7 +760,7 @@
         "summary": "",
         "meta": "Mon 31 Aug",
         "publishedAt": "2026-08-31T20:40:29+01:00",
-        "source": "Maidstone United Football Club",
+        "source": "maidstoneunited.co.uk",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jSEh3T24yTENfV3Z0Ujd4YmxUb0NXNFQ4dWxHUE5GekhCVUZ0TmtXcUxjdGtZZFBpTFNqdE5wT21rX3ZFdXNFLVRGMDdQSmdyRnk3aFhzek1lVHlXd2Z6LVNOeVo5T04xdGN0d3dnaDUyUi1p?oc=5"
       },
       {
@@ -780,7 +784,7 @@
         "summary": "",
         "meta": "Mon 31 Aug",
         "publishedAt": "2026-08-31T15:00:00+01:00",
-        "source": "DAZN",
+        "source": "dazn.com",
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSldZSEo4LVdjWnNpTXN0TWk5ZGJzN1hBT3VCdmJvQzc3ZmxfQk54N3h6bjRVbERuUWhHbndDY28yeHJvNXBjdkhEcXl2RDA5VDU1czNkMVN6dVhwY2Rxckg4X0FGR2ZPTnRDMXRHbmNlQ0JySXYwOWFGX3lmUUN1cUNKdEowYS1iNEV3cGJ3?oc=5"
       },
       {
@@ -806,89 +810,9 @@
         "publishedAt": "2026-08-30T19:57:24+01:00",
         "source": "facebook.com",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY2xNZk5IeHpIeDhVdnZKcmVOdHlDMGUtMGRrc1EtbVhmcjV4NFVFTzRPd0R2VDdhWjdsckN2M1VSOEJnaE40bm9zWFBYcVlKaVduRHVtMFZrOF95MTVOM1RPalpJdXRwVjJ1Ym1FTmtHRzNWam5SVjNKX3haSEJOWExLZl9OMUN2bTVvenZfVzUwdHk2dzVUcTRfWXZNUHRFdXZKNVFKUzhVRDhBR3ZnX3NZZ2s4akw0cl81TENfaWVkZTNNOXJ4YnBQdk1IbDY3MTB5SXBSQQ?oc=5"
-      },
-      {
-        "title": "Match Preview: Hampton & Richmond",
-        "summary": "",
-        "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T19:45:29+01:00",
-        "source": "Maidstone United Football Club",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE56bkNvdnQ0T1Zka2pyYjIzZzh0Z2pvY3JQMjNOVC1tUFJISkYyaU8yXzhEUnJCZjdyVXlWQ1ZZN3B2cGxVLVFLMjBHbTczaXo2SXdDb0FCYTZMQ3BBZnY0NDhyckNLUlA3UmcxLUxtQmF3QmhTaGJGdQ?oc=5"
       }
     ],
     "UK news": [
-      {
-        "title": "Iran attacks US bases in Middle East after reports US strike killed five at wedding party",
-        "summary": "The Iranian Red Crescent says a child was among those killed when shrapnel from a US strike hit a home. The US military says it is aware of the reports and it never targets civilians.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T06:12:07+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Charlie Kirk murder suspect pleads not guilty as judge clears way for death penalty trial",
-        "summary": "The 23-year-old is charged with aggravated murder, a capital offence in Utah, and six other counts.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T02:59:10+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cj4jn9q7evpo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Chris Mason: Will Burnham find PMQs as 'nail biting' and 'nerve wracking' as Blair did?",
-        "summary": "Curiously, the questions at lunchtime may well feel like a minor extension of what he faced on Tuesday, the BBC's political editor writes.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T05:49:23+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c7507z4enq6o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "UK long-term borrowing costs highest since 1998 ahead of October Budget",
-        "summary": "Higher borrowing costs have piled fresh pressure on Andy Burnham ahead of his first Budget.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T02:23:00+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c8d39vq779no?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Israel expanding presence in Lebanon, officials say, as BBC visits occupied areas",
-        "summary": "A BBC team joined a humanitarian mission of the UN peacekeeping force, which says Israeli troops are fortifying positions and continuing demolitions.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T06:03:09+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cge41d19gq9o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Rising numbers of children in mental health crisis ending up in A&E",
-        "summary": "NHS emergency departments are seeing more cases of self-harm, eating disorders and emotional distress in young people.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T00:38:20+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cn5d2r0zqvdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Tiger Woods to change plea after crash arrest",
-        "summary": "The golfer will be in court on Wednesday for a hearing to change his plea after being charged with driving under the influence.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T01:26:08+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c5y7xvpn5kno?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Zelensky says airlines should avoid Russian airspace as Ukraine escalates drone operations",
-        "summary": "Chinese and Gulf state airlines are among those still using Russian airspace. Meanwhile, Russia says it will intensify its own attacks on Ukraine.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T05:23:23+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c9v9yydy2wvo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "US aircraft carrier docks near Thai beach resort Pattaya after record 250 days at sea",
-        "summary": "The USS Lincoln is docking close to Pattaya, known for its raucous nightlife, and for sex tourism.",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T03:42:38+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cg7k09z4lj9o?at_medium=RSS&at_campaign=rss"
-      },
       {
         "title": "Urine test can spot more than nine in 10 bladder cancers",
         "summary": "The NHS has been trialling the test and says the results so far are truly promising.",
@@ -898,20 +822,92 @@
         "url": "https://www.bbc.co.uk/news/articles/crr40g71vylo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Apple Maps renames Lake Ontario as Lake America after Trump order",
-        "summary": "The iPhone maker follows rival technology giant Google in relabelling the Great Lake.",
+        "title": "Beveridge revisited: Simon Callow film celebrates the radical co-founder of Britain’s welfare state",
+        "summary": "",
         "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T02:32:24+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cddvyyz0e47o?at_medium=RSS&at_campaign=rss"
+        "publishedAt": "2026-09-02T02:31:00+01:00",
+        "source": "theguardian.com",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVmxKYXhlTGNQNnRoZmpoUkZqVTlYV1VqSWpfd09ORXRYZzZSa0hWcFdhRWhjMXAzU0k4UkIwV1NhS0E3OWNrMVkzOW5rYUVMUEx0ci05S0lIVXA1UjhHTGVPOGxyT2VrSXp3MEhfYjRqSW14cmQ1aV81U2xJb3pYamhRNTZuTjZnOEJmNGExeWNSRTNpckRwN09ORTJ3OGY2Z1l5alNtNTN1cHdUeC1vMlFaemRGS0JLMHhsbEs1WENIZUZJcklybnZtRmtNdEdBaDExaEdWSm9rdw?oc=5"
       },
       {
-        "title": "Families hit by long waits for dementia diagnosis",
-        "summary": "Hundreds of families say they have had to wait months or even years for a dementia diagnosis for a loved one.",
+        "title": "In the studio with Kasabian: 'We never thought we'd see success again'",
+        "summary": "The rock band invite us into the studio to talk about the unexpected \"third act\" of their career.",
         "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T02:46:08+01:00",
+        "publishedAt": "2026-09-02T00:56:25+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgyp2n1e75o?at_medium=RSS&at_campaign=rss"
+        "url": "https://www.bbc.co.uk/news/articles/ce301e7w2qvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Range Rover launches first fully electric model",
+        "summary": "The vehicle is being built at JLR's manufacturing plant in Solihull, in the West Midlands.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T00:43:47+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/clyk5016mpyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "One British national rescued alongside 118 Nepalese citizens in search and rescue operations",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T16:55:02+01:00",
+        "source": "Metro.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRUhNSlJZZFg4VXVfSFFkNWNBUFR0SEZrMWQxRFdGS0NXWVcyOUFuTE10VERYR0xsWDJhMVZZWlV5b0JGelRyNFZCc0prN2RzdDZtX3ozS2RRbkdib0FtQXM4eWRnYW1OTWlVMEpXeHNyY1lWOFotaE1TREFjNDY1Zlh2WXlCTTMwTGxtaUZNMWY1X1laaG5kejV0d3ZLSGFRc3VJcDc0cEsta1ZyeGt1UzR1cHdDVlBPLU00UQ?oc=5"
+      },
+      {
+        "title": "Robertson wins novice award at NPS Scotland Championship Finals",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T16:00:00+01:00",
+        "source": "Shetland Times",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaEJNZlhJckpKalkyR0p2OFRPelFDU25qS3RBUVRnSVg4UDItRjdfbTJ1MVFQc19mTjg2MUVVT05vdGx3R2psZ3NDelNvN0loM0ZXMUxHYnpMU0RpSUZmUlZsVGFYTWdJX3BSYmp5dDE5d0RjczYtRXJ1elNsSmV3YkNOZ2RVbkJxaHdxU1hfcW5xLXZ0QUFjRXF0N2pwb1ZVVG1KdXI5NnFSZw?oc=5"
+      },
+      {
+        "title": "Award-Winning British Country Artist Bee Smith Signs Nashville Publishing Deal With Thornton Cline Music",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T16:00:00+01:00",
+        "source": "EIN News",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSTg1NEV5RkhVRkI5QjVOQTI4RXJ0dy12bFp6aDJvcHRyUjFLc0hlTVZKYXBHbVlyMlZVUmVGX2VSY2ZFVUFDQzNhMGNDS3UzRmg0LWxxRVlyT0w1S3JzdUN3ODNuZU1NTUY4Ukl5RlRzOUtiLVY0NDRvNC1ubWtsVWo5bXA3akJNWjhWeUo0aVdPbEpvUHpvMmt2Nm5QVzlxY2tIQlpocndpemJJc29qNGJrVmlkNC1QMkpXcVJUaEdHMzY5SzhNb25xYWxOMXFLVGpXV3k0OEVzWmh2SXRn?oc=5"
+      },
+      {
+        "title": "Award winning Anglesey caravan park secures permission to expand",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T15:43:00+01:00",
+        "source": "North Wales Live",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOalNSZGh5MThxcTh3QktLQWc0QkJpVHdrYTAxZjdfdlpRcXkwREFQUW9UcW1nbnVfUXV3LXQyRUVOSlNsV2FKUUU1QW1zODY2OXVjUEpFN25TWFBMdDBoX3diODBKcXd5RTVCaTdHbkx4RW1yZmJJVTFHWHUwcWdSQ1JWVnNvWTJ4T3JaZFlPLVIzcEJCcGpFN1Vn?oc=5"
+      },
+      {
+        "title": "Glasgow-born entrepreneur shortlisted for national sustainability award",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T15:28:28+01:00",
+        "source": "The Herald",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMTAtOVVjbGJLcUZ0dS1rLUZ0RktUWVM4RExzVFo5TTV4NXVZNkw1eXQxVzRTR3dvNVNTQ0kxaXIzYUxhQ3RqMW9hR1ZGNU9Sdk9fTGtwYlBmX2Q2Q1hRRDY5MXM2NkxhQ3pFYkJsYlMyY0FvRGRTVDB2dzBLVWJWUDcwVzVhZUdYRVl6UGRKbFRJR0pDWFgtWjYzODNTcHJ1YU1j?oc=5"
+      },
+      {
+        "title": "Mud, flippers and snorkels: Wales celebrates 40 years of bog racing",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T12:16:17+01:00",
+        "source": "Inbox.lv",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY3VRaWhNNlQ2ZkxfVGJWSjBKNmJLU2N4S1Vmclp1eTIyUGNXMmlLLU5GN3ctZ0pvV3Q4Z2VhbjE3YWIzNUt5clJmVFZaekRUNmFiWVBTMmRyNTlRelFCdHAtUHJFNHI4WHZ5VjlzVk9teEQ3cWd3SzhHNzR1TEE5dGhRTUFuVkFvdkRkcGJaNnhOVWVZNm9wdzcyQXlEX3VBUkFoSUZPejI2Q0k?oc=5"
+      },
+      {
+        "title": "Mel Giedroyc, M G Leonard and Bryan Burnett among the first to pledge as Scotland celebrates the joy of reading - The NEN",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T09:00:00+01:00",
+        "source": "North Edinburgh News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ2d2cktZRTU2SHFqU1NtTHNlWG5TTTRWYjdoaXlSLWx2YkR3MDhYYW5QVzZ0b0g5dVhqV09mY0dreHhUaFVoeWwxazVxb2lSSHVzT3Z5X3pVREdsalkzQUt2cXhQVFRIcVlQY0IyYTJnc3Z3RmVGWnAtNW9sdFlqSFVuSDdqQ05CLTZKVmNsVnVFNkJ5V0JLcUQxdVpRb1c0RmFvTjl4akZBZk9LaVFWSzdRVWVUc1dWRDBZcnN3OE1sYVFuUjZyTg?oc=5"
+      },
+      {
+        "title": "Monmouthshire Rural Support Centre Recognised With Joint CPRW 2026 Rural Wales Award",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T02:25:30+01:00",
+        "source": "Business News Wales",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOWhtdVlrV1JId2EtSHNJZkJ6QVFLOFN1aTV3NXc2aGgwR3NHX2FKMmhGUzVLdUktdnQtTmhGUVlPUDYweTNDZjh1SHROb3AzS2ZsbmxqLVNVNXE3RGFQRlpqeWRuWDllUG94QTlxSTdJaXJqeE1vRkdZY0NkSjU2Vm14RVFFdmlLbzZIUFpibFRVWXZsQ245OTdmWlNrdWdGQ0kzZFkxYXhoZTdpNXU1QVg5TnJMQQ?oc=5"
       }
     ],
     "AI": [
@@ -998,19 +994,6 @@
     ],
     "Career": [
       {
-        "title": "Head of Product",
-        "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Tue 11 Aug",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442780389",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Foundation Partners",
-        "location": "London, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-08-11"
-      },
-      {
         "title": "Principal Product Manager (Strategic Account Interactions) - Security Solutions",
         "summary": "Elastic · Location not stated",
         "meta": "Remote · Posted Mon 31 Aug",
@@ -1022,6 +1005,19 @@
         "location": "Location not stated",
         "countryFocus": "UK",
         "postedAt": "2026-08-31"
+      },
+      {
+        "title": "Senior Product Manager - Core Experience",
+        "summary": "N8N · Berlin Office",
+        "meta": "Remote · Posted Wed 2 Sep",
+        "source": "Arbeitnow",
+        "url": "https://www.arbeitnow.com/jobs/companies/n8n/senior-product-manager-core-experience-berlin-120518",
+        "contentType": "job",
+        "workArrangement": "remote",
+        "company": "N8N",
+        "location": "Berlin Office",
+        "countryFocus": "UK",
+        "postedAt": "2026-09-02"
       },
       {
         "title": "Head of Product",
@@ -1037,17 +1033,17 @@
         "postedAt": "2026-08-07"
       },
       {
-        "title": "Product Lead - Experience",
-        "summary": "Enode · Europe, Norway",
-        "meta": "Remote · Posted Mon 31 Aug",
+        "title": "Senior Product Manager, Fraud and Compliance",
+        "summary": "Remote · EMEA",
+        "meta": "Remote · Posted Wed 2 Sep",
         "source": "Jobicy",
-        "url": "https://jobicy.com/jobs/148057-product-lead-experience",
+        "url": "https://jobicy.com/jobs/149964-senior-product-manager-fraud-and-compliance",
         "contentType": "job",
         "workArrangement": "remote",
-        "company": "Enode",
-        "location": "Europe, Norway",
+        "company": "Remote",
+        "location": "EMEA",
         "countryFocus": "Europe/remote",
-        "postedAt": "2026-08-31"
+        "postedAt": "2026-09-02"
       }
     ]
   }
