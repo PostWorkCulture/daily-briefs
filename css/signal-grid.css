@@ -223,6 +223,13 @@ body #homeReminders .home-reminder-card.birthday{
 .tonight-block .watch-card.artwork:before{
   background:linear-gradient(180deg,rgba(3,5,4,0) 28%,rgba(3,5,4,.08) 50%,rgba(3,5,4,.84) 100%)!important;
 }
+.tonight-block .watch-card.artwork:hover,
+.tonight-block .watch-card.artwork:focus-visible{
+  border-color:#ffd477!important;
+  box-shadow:inset 0 0 0 2px rgba(255,212,119,.18),inset 0 -76px 86px rgba(3,5,4,.32),0 0 20px rgba(255,212,119,.44),0 0 38px rgba(255,212,119,.22)!important;
+  transform:none!important;
+  outline:none;
+}
 
 /* News, AI and Career */
 .tab-group>h3{border-bottom-color:var(--editorial-rule-strong)!important}
