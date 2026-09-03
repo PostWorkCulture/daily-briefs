@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.4, 3 September 2026. Owner: Pete.
+Version 4.5, 3 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -23,7 +23,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Home `Coming up` cards use graphite surfaces with a slim section-specific colour signal and Pete-supplied artwork as a cropped right-side visual where a matched image exists. Keep all live card text inside a dedicated left-side text column with no overlap into the artwork. Recycling, general and garden waste, clocks, Halloween, and Christmas each use their matching supplied image. General-bin weeks must be titled `General & garden waste` with the concise instruction `Put out both bins`; garden waste remains collected on those weeks. Crop out the dates, countdown numbers, and fake controls embedded in the source compositions so the live dynamic card text remains authoritative. Halloween retains orange as its accent. From 700 px upwards, all four cards must fit on one compact row.
 - Interactive card hover and keyboard-focus feedback must be clearly visible, stationary, and consistent in strength throughout the brief. General cards use cyan, Arsenal cards retain red, and image-led TV cards retain gold.
 
-- Use Pete's selected minimalist Open Horizon artwork, a yellow sunrise emerging from layered blue open pages, as the dedicated Daily Brief icon across favicon, Apple touch, Android saved-page, installable-app, link-preview, and Home navigation metadata. Use new immutable filenames when changing icon artwork so mobile favourites cannot reuse an old cached identity. Keep Daily Brief branding separate from Bomberfan and Arsenal.
+- Use Pete's selected Signal Grid artwork, a warm-white horizon rising through a luminous green signal line and radial grid on near-black, as the dedicated Daily Brief icon across favicon, Apple touch, Android saved-page, installable-app, link-preview, and Home navigation metadata. Use new immutable filenames when changing icon artwork so mobile favourites cannot reuse an old cached identity. Keep Daily Brief branding separate from Bomberfan and Arsenal.
 - Primary navigation uses a single code-native balloon for Birthdays and the exact same supplied cannon silhouette used in the Arsenal masthead. Birthday navigation uses vivid bright pink on hover or keyboard focus. Keep the aurora edge restrained and do not use stars, sparkles, twinkles, or sparkle glyphs in the navigation.
 - The Birthday destination and navigation label are both `Birthday`. Do not repeat a generic Birthdays subheading beneath the page title.
 - Birthday and anniversary cards use dark berry-black surfaces with vivid bright-pink outlines and highlights. The Birthday page title and month headings use warm-white `#F4F7F2` on the black canvas. Group cards under month headings, and place cards from the same month on one line where the viewport allows. Keep the colourful balloon artwork, readable text, unique entries, and a minimum 4.5:1 text contrast. The Home birthday reminder uses the same dark berry-black surface.
@@ -52,8 +52,8 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 ## Current structure
 
-Primary views: Home, News, Arsenal, AI, Career, Dida, Birthday.
-Home: Weather, Coming up, Calendar, Around the world, TV Picks.
+Primary views: Home, Calendar, News, Arsenal, AI, Career, Dida, Birthday.
+Home: Weather, Calendar, Coming up, Around the world, TV Picks.
 Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal in any shared flow.
 
 ## Protected requirements
@@ -71,6 +71,9 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Real content refreshed every morning through GOOGLE_CALENDAR_ICS_URL.
 - Real links, no duplication, no Soon or For you groups.
 - No duplicate Today/Tomorrow pills. Keep numbered controls.
+- Keep Calendar immediately below Weather and above Coming up on Home.
+- Provide a dedicated Calendar destination with a real Monday-first month grid, previous/Today/next controls, event indicators, and a selected-day agenda. Build it exclusively from the same refreshed calendar feed; never add synthetic events.
+- Keep the month view usable at mobile and Chromebook widths: compact event indicators on mobile, readable event titles on larger screens, no horizontal overflow, and visible keyboard focus.
 - Today, Tomorrow, This week, and This month summary boxes use a visible cyan edge-glow on hover and keyboard focus, without moving the box.
 - On Chromebook/desktop, show the four summary boxes in one concise row above a natural-height event list; a short list must never stretch into a dead white slab.
 
