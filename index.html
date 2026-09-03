@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#78b7e0">
+  <meta name="theme-color" content="#030504">
   <meta name="description" content="Pete and Sofia's personalised Daily Briefs for weather, calendar, news, Arsenal, careers and family life.">
   <meta property="og:title" content="Daily Briefs">
   <meta property="og:description" content="A personalised morning brief for Pete and Sofia.">
@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://postworkculture.github.io/daily-briefs/">
   <meta name="twitter:card" content="summary">
   <meta name="application-name" content="Daily Briefs">
-  <meta name="msapplication-TileColor" content="#061b49">
+  <meta name="msapplication-TileColor" content="#030504">
   <meta name="msapplication-TileImage" content="assets/icons/daily-brief-open-horizon-192-v2.png">
   <script>
     (()=>{const url=new URL(location.href);if(!url.searchParams.has('icon')){url.searchParams.set('icon','v2');history.replaceState(null,'',url)}})();
@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="css/light-theme.css?v=20260828d">
   <link rel="stylesheet" href="css/arsenal-official-theme.css?v=20260830a">
   <link rel="stylesheet" href="css/editorial-system.css?v=20260829a">
+  <link rel="stylesheet" href="css/signal-grid.css?v=20260903a">
 </head>
 <body>
   <main class="app-shell">
@@ -141,6 +142,7 @@
   </main>
 
   <nav class="bottom-nav" id="primaryNav" aria-label="Primary navigation">
+    <div class="nav-brand" aria-hidden="true"><strong>Open Horizon</strong><small><i></i>Live briefing</small></div>
     <button class="active" data-view-target="home" aria-current="page"><b class="home-brand-mark"><img class="nav-home-logo" src="assets/icons/daily-brief-open-horizon-master-v2.png" alt="" aria-hidden="true"></b>Home</button>
     <button data-view-target="news"><b>◫</b>News</button>
     <button data-view-target="arsenal"><b class="cannon-mark"><span class="nav-cannon" aria-hidden="true"></span></b>Arsenal</button>
