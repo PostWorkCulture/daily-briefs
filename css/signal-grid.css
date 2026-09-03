@@ -1,0 +1,454 @@
+/* Option 3: Signal Grid, selected 3 September 2026. */
+:root{
+  color-scheme:dark;
+  --bg:#030504;
+  --panel:#090c0a;
+  --panel2:#0d110e;
+  --line:rgba(224,235,225,.14);
+  --text:#f4f7f2;
+  --muted:#a8b0a9;
+  --accent:#7cf46a;
+  --accent2:#a8ff9b;
+  --warm:#ffd477;
+  --shadow:0 18px 48px rgba(0,0,0,.34);
+  --editorial-navy:#070908;
+  --editorial-ink:#f4f7f2;
+  --editorial-blue:#7cf46a;
+  --editorial-sky:#030504;
+  --editorial-paper:#090c0a;
+  --editorial-paper-soft:#0d110e;
+  --editorial-rule:rgba(224,235,225,.13);
+  --editorial-rule-strong:rgba(224,235,225,.25);
+  --editorial-sun:#7cf46a;
+  --editorial-shadow:0 16px 40px rgba(0,0,0,.32);
+  --signal-green:#7cf46a;
+  --signal-panel:#090c0a;
+  --signal-panel-soft:#0d110e;
+  --signal-line:rgba(224,235,225,.14);
+  --signal-muted:#a8b0a9;
+}
+
+html{background:#030504!important}
+body{
+  color:var(--text)!important;
+  background-color:#030504!important;
+  background-image:
+    radial-gradient(circle at 82% -8%,rgba(124,244,106,.075),transparent 30rem),
+    linear-gradient(rgba(151,172,154,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(151,172,154,.035) 1px,transparent 1px)!important;
+  background-size:auto,72px 72px,72px 72px!important;
+  background-attachment:fixed!important;
+}
+body:after{background:#030504!important}
+
+.app-shell{isolation:isolate}
+.nav-brand{display:none}
+.profile-switch{
+  border-color:var(--signal-line)!important;
+  background:#090c0a!important;
+  box-shadow:0 12px 28px rgba(0,0,0,.28)!important;
+}
+.profile-switch button{color:var(--signal-muted)!important}
+.profile-switch button.active{
+  color:#030504!important;
+  background:var(--signal-green)!important;
+}
+
+.hero{
+  position:relative;
+  border-bottom:1px solid var(--editorial-rule-strong);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:88px;
+  height:1px;
+  background:var(--signal-green);
+  box-shadow:0 0 14px rgba(124,244,106,.72);
+}
+.eyebrow{
+  color:var(--signal-green)!important;
+  font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+  font-weight:750;
+}
+.hero h1{
+  color:var(--text)!important;
+  font-weight:520;
+  letter-spacing:-.055em;
+}
+
+.section-head{
+  border-bottom-color:var(--editorial-rule-strong)!important;
+}
+.section-head:after,
+.weather-block .section-head:after{
+  width:42px;
+  height:2px;
+  background:var(--signal-green)!important;
+  box-shadow:0 0 12px rgba(124,244,106,.48);
+}
+.section-head h2,
+#view-home .section-head h2,
+#view-news .section-head h2,
+#view-news .tab-group>h3,
+#view-ai .section-head h2,
+#view-career .section-head h2,
+#view-dida>.tab-panel>.section-head h2,
+.birthday-panel .section-head h2,
+.occasion-month h3{
+  color:var(--text)!important;
+}
+.section-kicker,
+.empty{color:var(--signal-muted)!important}
+.section-kicker,
+.tab-story .meta,
+.section-story-copy .meta,
+.event-time,
+.home-reminder-top{
+  font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+
+/* Home modules */
+.weather-block{
+  border:1px solid var(--signal-line)!important;
+  border-radius:12px!important;
+  color:var(--text)!important;
+  background:rgba(7,10,8,.94)!important;
+  box-shadow:var(--editorial-shadow)!important;
+}
+.forecast-day,
+.forecast-day.today{
+  color:var(--text)!important;
+  border-color:var(--signal-line)!important;
+  border-radius:8px!important;
+  background:#0b0e0c!important;
+  box-shadow:none!important;
+}
+.forecast-day.today{
+  border-top:3px solid var(--signal-green)!important;
+  box-shadow:inset 0 0 24px rgba(124,244,106,.035)!important;
+}
+.forecast-day span,
+.forecast-day .fd-rain,
+.forecast-day .fd-rain span,
+.forecast-day .fd-rain b,
+.forecast-day small,
+.forecast-day em,
+.uk-yesterday-title strong,
+.uk-yesterday-title span{color:var(--text)!important}
+.weather-svg{stroke:var(--signal-green)!important;filter:drop-shadow(0 0 10px rgba(124,244,106,.18))!important}
+.uk-yesterday{border-top-color:var(--signal-line)!important}
+.uk-extreme{border-radius:8px!important;border-color:var(--signal-line)!important}
+
+.home-reminder-card,
+body #homeReminders .home-reminder-card.birthday{
+  --reminder-solid:#0b0e0c;
+  --signal-card-accent:#7cf46a;
+  color:var(--text)!important;
+  border:1px solid var(--signal-line)!important;
+  border-left:3px solid var(--signal-card-accent)!important;
+  border-radius:8px!important;
+  background-color:#0b0e0c!important;
+  background-image:none!important;
+  box-shadow:0 10px 26px rgba(0,0,0,.26)!important;
+}
+.home-reminder-card.bin{--signal-card-accent:#7cf46a}
+.home-reminder-card.clocks{--signal-card-accent:#b9a7ff}
+.home-reminder-card.birthday{--signal-card-accent:#ff96cd}
+.home-reminder-card.festive.halloween{--signal-card-accent:#ff9b50}
+.home-reminder-card.festive.christmas{--signal-card-accent:#ff7387}
+.home-reminder-card.festive{--signal-card-accent:#ffd477}
+.home-reminder-card.has-art:before{
+  background:linear-gradient(90deg,#0b0e0c 0%,#0b0e0c 57%,rgba(11,14,12,.88) 66%,transparent 82%)!important;
+}
+.home-reminder-card .home-reminder-top,
+.home-reminder-card strong,
+.home-reminder-card b,
+.home-reminder-card small,
+.home-reminder-card.bin b,
+.home-reminder-card.birthday b{color:var(--text)!important}
+.home-reminder-icon{
+  color:var(--signal-card-accent)!important;
+  background:rgba(255,255,255,.045)!important;
+}
+
+.calendar-summary button,
+.calendar-list{
+  color:var(--text)!important;
+  border-color:var(--signal-line)!important;
+  border-radius:8px!important;
+  background:#0b0e0c!important;
+  box-shadow:none!important;
+}
+.calendar-summary button b{color:var(--signal-green)!important}
+.calendar-summary button span,
+.calendar-row p{color:var(--text)!important}
+.calendar-row{border-bottom-color:var(--signal-line)!important}
+.calendar-row:first-child{background:rgba(124,244,106,.035)!important}
+.event-time{color:var(--signal-green)!important}
+
+.scenery-fact{
+  color:var(--text)!important;
+  border-color:var(--signal-line)!important;
+  border-radius:8px 8px 0 0!important;
+  background:#090c0a!important;
+  box-shadow:var(--editorial-shadow)!important;
+}
+.scenery-fact span{color:var(--signal-green)!important}
+.scenery-fact p,
+.scenery-fact small{color:var(--text)!important}
+.scenery-card{
+  border-color:var(--signal-line)!important;
+  border-radius:0 0 8px 8px!important;
+  background:#090c0a!important;
+}
+.scenery-card img,
+#sceneryImage{
+  filter:none!important;
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+}
+.scenery-shade{background:linear-gradient(180deg,rgba(3,5,4,.02) 28%,rgba(3,5,4,.12) 52%,rgba(3,5,4,.9) 100%)!important}
+
+.tonight-block .watch-card,
+.tonight-block .watch-card.artwork{
+  border-color:var(--signal-line)!important;
+  border-radius:8px!important;
+  filter:none!important;
+  opacity:1!important;
+  box-shadow:inset 0 -76px 86px rgba(3,5,4,.42)!important;
+}
+.tonight-block .watch-card.artwork:before{
+  background:linear-gradient(180deg,rgba(3,5,4,0) 28%,rgba(3,5,4,.08) 50%,rgba(3,5,4,.84) 100%)!important;
+}
+
+/* News, AI and Career */
+.tab-group>h3{border-bottom-color:var(--editorial-rule-strong)!important}
+.tab-group>h3:after,
+#view-news .tab-group>h3:after{background:var(--signal-green)!important}
+.tab-story,
+.story-stream-grid>.story-stream{
+  color:var(--text)!important;
+  border-color:var(--signal-line)!important;
+  border-radius:6px!important;
+  background:#090c0a!important;
+  box-shadow:none!important;
+}
+.tab-story.story-lead{border-top-color:var(--signal-green)!important}
+.tab-story h4,
+.tab-story p,
+.tab-story .meta,
+.section-story-copy h4,
+.section-story-copy p,
+.section-story-copy .meta{color:var(--text)!important}
+.tab-story .meta,
+.section-story-copy .meta{color:var(--signal-muted)!important}
+.story-stream-grid{
+  border-color:var(--signal-line)!important;
+  background:var(--signal-line)!important;
+}
+.story-media{border-color:var(--signal-line)!important}
+.section-story-icon{
+  border-color:var(--signal-line)!important;
+  border-radius:8px!important;
+  color:var(--signal-green)!important;
+  background:#0d110e!important;
+}
+.section-story-icon-company{background:#fff!important}
+
+/* Dida keeps its content structure and green identity in the dark system. */
+.dida-shell{--dida:#7cf46a;--dida2:#a8ff9b;color:var(--text)!important}
+.dida-zone{
+  color:var(--text)!important;
+  border-color:rgba(124,244,106,.48)!important;
+  background-color:#090c0a!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+.dida-quick,
+.dida-season,
+.dida-season-item,
+.dida-fold,
+.dida-ref-card,
+.dida-quick-icon,
+.dida-fold-icon,
+.dida-season-title>span{
+  color:var(--text)!important;
+  border-color:rgba(124,244,106,.22)!important;
+  background-color:#0d110e!important;
+  background-image:none!important;
+}
+.dida-zone-head h3,
+.dida-quick h4,
+.dida-season h4,
+.dida-fold summary h4,
+.dida-ref-card h5{color:var(--signal-green)!important}
+.dida-source,
+.dida-quick p,
+.dida-season-title p,
+.dida-season-item,
+.dida-fold summary p,
+.dida-ref-card li,
+.dida-ref-card p{color:var(--text)!important}
+.dida-source a{color:var(--signal-green)!important}
+
+/* Birthday retains the pink identity without returning to a light card system. */
+#view-birthdays .birthday-card,
+body #homeReminders .home-reminder-card.birthday{
+  color:var(--text)!important;
+  border-color:rgba(255,150,205,.56)!important;
+  background-color:#140a10!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+#view-birthdays .birthday-card strong,
+#view-birthdays .birthday-card small{color:var(--text)!important}
+#view-birthdays .birthday-card b{color:#ff96cd!important}
+.birthday-avatar{background:rgba(255,150,205,.08)!important}
+.occasion-month h3:after{height:2px;background:#ff96cd!important;box-shadow:0 0 12px rgba(255,150,205,.38)}
+
+/* Shared stationary signal response. */
+.calendar-summary button,
+.tab-story,
+.home-reminder-card,
+.dida-zone,
+.scenery-fact,
+.scenery-card,
+.uk-extreme,
+.list-row,
+.interest-card,
+.birthday-card{transition:border-color .16s,box-shadow .16s,background .16s;transform:none!important}
+.calendar-summary button:hover,
+.calendar-summary button:focus-visible,
+.tab-story:hover,
+.tab-story:focus-visible,
+.home-reminder-card:hover,
+.home-reminder-card:focus-within,
+#view-dida .dida-zone:hover,
+#view-dida .dida-zone:focus-within,
+.scenery-fact:hover,
+.scenery-fact:focus-visible,
+.scenery-card:hover,
+.scenery-card:focus-visible,
+.uk-extreme:hover,
+.uk-extreme:focus-within,
+.list-row:hover,
+.list-row:focus-visible,
+.interest-card:hover,
+.interest-card:focus-visible,
+#view-birthdays .birthday-card:hover,
+#view-birthdays .birthday-card:focus-visible,
+body #homeReminders .home-reminder-card.birthday:hover,
+body #homeReminders .home-reminder-card.birthday:focus-visible{
+  border-color:rgba(124,244,106,.72)!important;
+  background-color:#0d110e!important;
+  box-shadow:inset 0 0 0 1px rgba(124,244,106,.12),0 0 0 1px rgba(124,244,106,.52),0 0 22px rgba(124,244,106,.18)!important;
+  transform:none!important;
+  outline:none;
+}
+
+/* Navigation */
+.bottom-nav{
+  border-color:var(--signal-line)!important;
+  background:#070908!important;
+  box-shadow:0 18px 44px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.05)!important;
+}
+.bottom-nav:before{content:none!important;animation:none!important}
+.bottom-nav button{color:#fff!important}
+.bottom-nav button.active:not(:hover):not(:focus-visible){
+  color:#fff!important;
+  background:rgba(124,244,106,.055)!important;
+  border-color:rgba(124,244,106,.18)!important;
+  box-shadow:inset 3px 0 0 var(--signal-green)!important;
+}
+
+@media(max-width:699px){
+  .hero{padding-top:18px!important;padding-bottom:18px!important}
+  .tab-list{background:#090c0a!important}
+  .tab-story:not(.story-lead){border-bottom-color:var(--signal-line)!important}
+  .scenery-card{height:310px!important}
+  .bottom-nav button.active:not(:hover):not(:focus-visible){box-shadow:inset 0 3px 0 var(--signal-green)!important}
+}
+
+@media(min-width:900px){
+  body{padding-left:236px!important}
+  .app-shell{width:min(calc(100% - 64px),1180px)!important}
+  .bottom-nav{
+    left:16px!important;
+    top:16px!important;
+    bottom:16px!important;
+    width:204px!important;
+    height:auto!important;
+    padding:18px 12px!important;
+    display:flex!important;
+    flex-direction:column;
+    gap:4px!important;
+    transform:none!important;
+    border-radius:10px!important;
+  }
+  .nav-brand{
+    display:block;
+    margin:0 6px 22px;
+    padding:2px 4px 20px;
+    border-bottom:1px solid var(--signal-line);
+  }
+  .nav-brand strong{
+    display:block;
+    color:#fff;
+    font-size:13px;
+    font-weight:650;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .nav-brand small{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:12px;
+    color:var(--signal-green);
+    font:10px/1 ui-monospace,SFMono-Regular,Consolas,monospace;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .nav-brand i{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--signal-green);
+    box-shadow:0 0 10px rgba(124,244,106,.7);
+  }
+  .bottom-nav button{
+    display:grid;
+    grid-template-columns:32px minmax(0,1fr);
+    align-items:center;
+    min-height:52px!important;
+    padding:8px 10px!important;
+    text-align:left;
+    font-size:14px!important;
+    font-weight:560;
+  }
+  .bottom-nav button b,
+  .bottom-nav .home-brand-mark,
+  .bottom-nav .birthday-nav-mark{
+    display:grid;
+    place-items:center;
+    width:24px;
+    height:24px;
+    margin:0!important;
+  }
+  .bottom-nav .nav-home-logo{width:24px;height:22px;margin:0}
+  .bottom-nav .nav-cannon{width:27px!important;margin:0!important}
+  .bottom-nav .nav-balloon{margin:0 auto}
+}
+
+@media(min-width:1100px){
+  #sceneryPanel>.scenery-fact{border-radius:8px 0 0 8px!important}
+  #sceneryPanel>.scenery-card{border-radius:0 8px 8px 0!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  body{background-attachment:scroll!important}
+}
