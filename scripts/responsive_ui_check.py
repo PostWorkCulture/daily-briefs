@@ -745,6 +745,9 @@ def check_viewport(browser, name: str) -> None:
                 canvasTitleColours: canvasTitles.map(node => getComputedStyle(node).color),
                 canvasTitleContrasts: canvasTitles.map(node => contrast(parseRgb(getComputedStyle(node).color), rgb)),
                 weatherTitleColour: getComputedStyle(document.querySelector('#weatherPanel .section-head h2')).color,
+                sceneryImageFilter: getComputedStyle(document.querySelector('#sceneryImage')).filter,
+                tvArtworkFilters: [...document.querySelectorAll('#watchStrip .watch-card.artwork')]
+                  .map(card => getComputedStyle(card).filter),
                 heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
                 topbarCount: document.querySelectorAll('.topbar, #topbarDate, #topbarWeather, #profileAvatar').length,
                 dateTop: date.getBoundingClientRect().top,
@@ -791,15 +794,15 @@ def check_viewport(browser, name: str) -> None:
             }
             """
         )
-        if visual["bodyRgb"] != [120, 183, 224]:
-            failures.append(f"solid blue canvas changed: {visual['bodyRgb']}")
-        if visual["bodyBackgroundImage"] != "none":
+        if visual["bodyRgb"] != [3, 5, 4]:
+            failures.append(f"Signal Grid black canvas changed: {visual['bodyRgb']}")
+        if "linear-gradient" not in visual["bodyBackgroundImage"]:
             failures.append(
-                f"page canvas is not solid: {visual['bodyBackgroundImage']}"
+                f"Signal Grid technical canvas is missing: {visual['bodyBackgroundImage']}"
             )
-        if visual["bodyBackgroundColor"] != "rgb(120, 183, 224)":
+        if visual["bodyBackgroundColor"] != "rgb(3, 5, 4)":
             failures.append(
-                f"body does not use the solid blue canvas: {visual['bodyBackgroundColor']}"
+                f"body does not use the approved black canvas: {visual['bodyBackgroundColor']}"
             )
         if visual["topbarCount"] != 0:
             failures.append("duplicate topbar date, weather or profile text remains")
@@ -826,19 +829,24 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"greeting was not moved down: margin {visual['greetingMarginTop']}")
         if visual["heroBrandCount"] != 0:
             failures.append("visible Daily Briefs wordmark remains")
-        approved_ink = "rgb(20, 42, 61)"
-        if visual["greetingColour"] != approved_ink or visual["dateColour"] != approved_ink:
+        approved_ink = "rgb(244, 247, 242)"
+        if visual["greetingColour"] != approved_ink or visual["dateColour"] != "rgb(124, 244, 106)":
             failures.append(
-                f"greeting or date does not use the approved ink: {visual}"
+                f"greeting or date does not use the Signal Grid colours: {visual}"
             )
         if any(colour != approved_ink for colour in visual["canvasTitleColours"]):
-            failures.append(f"titles on the blue canvas do not use the approved ink: {visual['canvasTitleColours']}")
+            failures.append(f"titles on the black canvas do not use the approved light ink: {visual['canvasTitleColours']}")
         if any(ratio < 4.5 for ratio in visual["canvasTitleContrasts"]):
-            failures.append(f"titles on the blue canvas fall below 4.5:1 contrast: {visual['canvasTitleContrasts']}")
+            failures.append(f"titles on the black canvas fall below 4.5:1 contrast: {visual['canvasTitleContrasts']}")
         if visual["weatherTitleColour"] != approved_ink:
-            failures.append(f"Weather title is not readable on its light card: {visual['weatherTitleColour']}")
-        if visual["navBackgroundColour"] != "rgb(16, 42, 67)":
-            failures.append(f"navigation is not solid dark navy: {visual['navBackgroundColour']}")
+            failures.append(f"Weather title is not readable on its dark card: {visual['weatherTitleColour']}")
+        if visual["sceneryImageFilter"] != "none" or any(value != "none" for value in visual["tvArtworkFilters"]):
+            failures.append(
+                "Around the world or TV Picks artwork is not rendered in full colour: "
+                f"scenery={visual['sceneryImageFilter']}, tv={visual['tvArtworkFilters']}"
+            )
+        if visual["navBackgroundColour"] != "rgb(7, 9, 8)":
+            failures.append(f"navigation is not Signal Grid black: {visual['navBackgroundColour']}")
         if any(colour != "rgb(255, 255, 255)" for colour in visual["navDefaultColours"]):
             failures.append(f"navigation text and icons are not white before hover: {visual['navDefaultColours']}")
         wrong_main_copy = [
@@ -850,14 +858,14 @@ def check_viewport(browser, name: str) -> None:
         if len(visual["reminderCards"]) < 4:
             failures.append(f"Coming up cards are missing: {visual['reminderCards']}")
         expected_reminder_colours = {
-            "bin": "rgb(216, 242, 230)",
-            "clocks": "rgb(228, 225, 248)",
-            "new-year": "rgb(214, 234, 248)",
-            "midsummer": "rgb(255, 240, 168)",
-            "halloween": "rgb(255, 194, 122)",
-            "bonfire": "rgb(255, 214, 176)",
-            "christmas": "rgb(244, 213, 221)",
-            "birthday": "rgb(255, 193, 220)",
+            "bin": "rgb(11, 14, 12)",
+            "clocks": "rgb(11, 14, 12)",
+            "new-year": "rgb(11, 14, 12)",
+            "midsummer": "rgb(11, 14, 12)",
+            "halloween": "rgb(11, 14, 12)",
+            "bonfire": "rgb(11, 14, 12)",
+            "christmas": "rgb(11, 14, 12)",
+            "birthday": "rgb(20, 10, 16)",
         }
         for required_theme in ("bin", "clocks", "birthday"):
             if not any(required_theme in card["classes"].split() for card in visual["reminderCards"]):
@@ -900,9 +908,9 @@ def check_viewport(browser, name: str) -> None:
                 continue
             card = matching[0]
             if card["backgroundImage"] != "none" or card["backgroundColour"] != expected_colour:
-                failures.append(f"Coming up {theme} card is not solid pastel {expected_colour}: {card}")
+                failures.append(f"Coming up {theme} card is not on its dark Signal Grid surface {expected_colour}: {card}")
             if any(colour != approved_ink for colour in card["textColours"]):
-                failures.append(f"Coming up {theme} text does not match the greeting: {card}")
+                failures.append(f"Coming up {theme} text does not use the approved light ink: {card}")
         reminder_tops = {round(card["top"]) for card in visual["reminderCards"]}
         if name == "desktop":
             if len(reminder_tops) != 1:
@@ -1137,12 +1145,12 @@ def check_viewport(browser, name: str) -> None:
                 continue
             if any(
                 surface["backgroundStops"]
-                or surface["backgroundColour"] != [255, 255, 255]
+                or surface["backgroundColour"] != [20, 10, 16]
                 for surface in birthday["cards"]
             ):
-                failures.append(f"{profile} birthday cards are not solid white: {birthday}")
-            if birthday["homeCard"]["backgroundStops"] or birthday["homeCard"]["backgroundColour"] != [255, 193, 220]:
-                failures.append(f"{profile} Home birthday reminder is not solid pastel pink: {birthday}")
+                failures.append(f"{profile} birthday cards are not on the approved dark pink surface: {birthday}")
+            if birthday["homeCard"]["backgroundStops"] or birthday["homeCard"]["backgroundColour"] != [20, 10, 16]:
+                failures.append(f"{profile} Home birthday reminder is not on the approved dark pink surface: {birthday}")
             birthday_surfaces = birthday["cards"] + [birthday["homeCard"]]
             if any(surface["minimumContrast"] < 4.5 for surface in birthday_surfaces):
                 failures.append(f"{profile} birthday card text contrast is below 4.5:1: {birthday}")
@@ -1166,7 +1174,7 @@ def check_viewport(browser, name: str) -> None:
             ):
                 failures.append(f"{profile} desktop Birthday copy wraps too deeply: {birthday['cards']}")
             if birthday["navPink"] != "255,150,205" or birthday["headingColour"] != approved_ink:
-                failures.append(f"{profile} Birthday heading is not readable ink or navigation hover is not bright pink: {birthday}")
+                failures.append(f"{profile} Birthday heading is not readable light ink or navigation hover is not bright pink: {birthday}")
             birthday_card = page.locator('.birthday-card').first
             birthday_card.hover()
             page.wait_for_timeout(250)
@@ -1238,7 +1246,7 @@ def check_viewport(browser, name: str) -> None:
             """
         )
         dida_accent = dida["accent"].lower()
-        if dida_accent != "#00823b":
+        if dida_accent != "#7cf46a":
             failures.append(f"Dida accent is not the approved bright green: {dida['accent']}")
         if dida["heroes"] != 0 or dida["heroIcons"] != 0 or dida["sectionLinks"] != 0:
             failures.append(f"Dida top section or duplicate section navigation remains: {dida}")
@@ -1256,11 +1264,13 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"Dida still has a shared outer container: {dida}")
         if any(value != "none" for value in dida["zoneBackgrounds"]):
             failures.append(f"Dida zones still use gradient backgrounds: {dida}")
-        if any(value != "rgb(255, 255, 255)" for value in dida["zoneBackgroundColours"] + dida["innerBackgroundColours"]):
-            failures.append(f"Dida card or icon surfaces are not white: {dida}")
-        if any("0, 130, 59" not in value for value in dida["zoneBorders"]):
+        if any(value != "rgb(9, 12, 10)" for value in dida["zoneBackgroundColours"]):
+            failures.append(f"Dida zones are not on the approved dark surface: {dida}")
+        if any(value != "rgb(13, 17, 14)" for value in dida["innerBackgroundColours"]):
+            failures.append(f"Dida inner cards or icon surfaces are not on the approved dark surface: {dida}")
+        if any("124, 244, 106" not in value for value in dida["zoneBorders"]):
             failures.append(f"Dida zone outlines do not use the bright green: {dida}")
-        if any(value != "rgb(0, 130, 59)" for value in dida["titleColours"]):
+        if any(value != "rgb(124, 244, 106)" for value in dida["titleColours"]):
             failures.append(f"Dida titles do not use the bright green: {dida}")
         minimum_zone_gap = 28 if name == "mobile" else 36
         if len(dida["zoneGaps"]) != 2 or any(
@@ -1271,7 +1281,7 @@ def check_viewport(browser, name: str) -> None:
             )
         if dida["folds"] != 4 or dida["openFolds"] != 0:
             failures.append(f"Dida reference library is not compact by default: {dida}")
-        expected_text_colour = "rgb(20, 42, 61)"
+        expected_text_colour = "rgb(244, 247, 242)"
         non_neutral_text = [
             item for item in dida["bodyTextColours"]
             if item["colour"] != expected_text_colour
