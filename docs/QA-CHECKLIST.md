@@ -17,14 +17,14 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Mobile has no overflow, clipping, or unusable navigation.
 - [ ] Chromebook/desktop has an intentional larger-screen layout.
 - [ ] Responsive smoke test passes.
-- [ ] Primary navigation is solid dark navy with white resting text and icons; mobile stability and destination hover colours remain intact.
+- [ ] Primary navigation is Signal Grid black with white resting text and icons; the labelled desktop rail, mobile stability, and destination hover colours remain intact.
 - [ ] Fixed mobile navigation sits in an opaque reserved bottom band so live copy is not visible beneath it; all final content can still scroll above the band.
 - [ ] The selected Open Horizon mark renders in the Home nav and decodes from new favicon, Apple touch, Android, maskable, manifest, and link-preview paths.
 - [ ] Supplied Coming up artwork matches recycling, general and garden waste, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
 - [ ] General-bin weeks read `General & garden waste` and `Put out both bins`, without repetitive collection wording.
-- [ ] Coming up text remains wholly inside the left pastel column and does not overlap the right-side artwork.
+- [ ] Coming up text remains wholly inside the left graphite column and does not overlap the right-side artwork.
 - [ ] `prefers-reduced-motion` disables scripted smooth scrolling, navigation animation, and visible transition duration; keyboard focus retains a real outline.
-- [ ] The greeting and every title directly on the blue canvas use dark `#142A3D` ink and meet at least 4.5:1 contrast; white remains reserved for dark surfaces and strongly overlaid media.
+- [ ] The greeting and every title on the black canvas use warm-white `#F4F7F2`, the date uses `#7CF46A`, and all meet at least 4.5:1 contrast.
 
 ## Weather
 
@@ -56,6 +56,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] AI and Career have no orphan stream card at 900–1,099 px or at the current Chromebook width.
 - [ ] On mobile, only an image-verified lead uses full-width media; later verified images use compact thumbnails.
 - [ ] Around the world leads with its sourced fact and then its precisely matched linked image.
+- [ ] Around the world imagery and all five TV Pick artworks render in full colour with no grayscale filter.
 - [ ] The current fact is human-first, genuinely unusual, source-verified, unused, not retired, and drawn from the people, population, traditions, records, or music range.
 - [ ] Every current and catalogue fact shows a useful `place/area · country/region` location line.
 - [ ] Five unique TV Picks per profile, each tied to a new episode from the previous or next seven days.
@@ -69,7 +70,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Every Local News story has headline or summary evidence for the approved KT8 cluster; broad Surrey, Elmbridge, or London references and foreign/unrelated namesakes are rejected. The refresh may extend from 14 to 30 days for depth but does not widen the geography.
 - [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; the refresh fails instead of using a negative fallback.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
-- [ ] Dida has one page-level title followed by exactly three white age-six zones.
+- [ ] Dida has one page-level title followed by exactly three graphite age-six zones with bright green titles and outlines.
 - [ ] Birthday months use a full-width single card, two balanced half-width cards, or three equal cards on one Chromebook row.
 - [ ] All offered sources and destinations are real and clickable.
 
