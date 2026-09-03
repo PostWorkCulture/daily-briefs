@@ -463,8 +463,28 @@ def check_viewport(browser, name: str) -> None:
         if not separator or not location_place.strip() or not location_region.strip():
             raise AssertionError(f"{name}: Fact location lacks wider country/region context: {location_text}")
         calendar_cards = page.locator('#calendarSummaryCards button')
-        if calendar_cards.count() != 4:
-            raise AssertionError(f"{name}: expected four Calendar summary cards")
+        if calendar_cards.count() != 2:
+            raise AssertionError(f"{name}: expected two Calendar summary filters")
+        calendar_filter_state = page.evaluate(
+            """
+            () => [...document.querySelectorAll('#calendarSummaryCards button')].map(button => ({
+              label: button.querySelector('span')?.textContent.trim() || '',
+              range: button.dataset.quickRange || '',
+              pressed: button.getAttribute('aria-pressed')
+            }))
+            """
+        )
+        if calendar_filter_state != [
+            {"label": "Today / tomorrow", "range": "todayTomorrow", "pressed": "true"},
+            {"label": "This month", "range": "month", "pressed": "false"},
+        ]:
+            raise AssertionError(f"{name}: Calendar filters are incorrect: {calendar_filter_state}")
+        calendar_cards.nth(1).click()
+        if calendar_cards.nth(1).get_attribute("aria-pressed") != "true":
+            raise AssertionError(f"{name}: This month Calendar filter did not activate")
+        calendar_cards.first.click()
+        if calendar_cards.first.get_attribute("aria-pressed") != "true":
+            raise AssertionError(f"{name}: Today / tomorrow Calendar filter did not reactivate")
         calendar_cards.first.hover()
         page.wait_for_timeout(250)
         calendar_shadow = calendar_cards.first.evaluate("el => getComputedStyle(el).boxShadow")
