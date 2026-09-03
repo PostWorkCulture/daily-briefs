@@ -185,6 +185,7 @@ a.calendar-day-event:focus-visible{border-color:var(--month-event-colour);box-sh
   .calendar-day-empty{grid-column:1/-1}
 }
 
+@media(min-width:900px){body.profile-unlocked #view-calendar .calendar-page{padding-top:58px}}
 @media(min-width:1100px){.calendar-month-day{min-height:126px}}
 
 @media(prefers-reduced-motion:reduce){
