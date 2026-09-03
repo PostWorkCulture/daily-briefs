@@ -627,7 +627,7 @@ def check_viewport(browser, name: str) -> None:
                 .map(item => item.title),
               actual: [...document.querySelectorAll('#view-career .career-story')]
                 .map(card => card.querySelector('.career-field:first-child dd')?.textContent.trim()),
-              labels: [...document.querySelectorAll('#view-career .career-story:first-child dt')]
+              labels: [...document.querySelectorAll('#view-career .career-story.story-lead dt')]
                 .map(node => node.textContent.trim())
             })
             """
