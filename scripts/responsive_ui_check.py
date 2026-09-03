@@ -503,6 +503,9 @@ def check_viewport(browser, name: str) -> None:
         if page.locator('#calendarMonthTitle').inner_text() != month_before:
             raise AssertionError(f"{name}: Today does not return to the current calendar month")
         page.locator('[data-view-target="home"]').click()
+        calendar_cards.first.hover()
+        page.wait_for_timeout(250)
+        calendar_shadow = calendar_cards.first.evaluate("el => getComputedStyle(el).boxShadow")
 
         for selector in ('#homeReminders .home-reminder-card', '#sceneryFact', '#sceneryCard', '.uk-extreme'):
             card = page.locator(selector).first
