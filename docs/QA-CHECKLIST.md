@@ -19,7 +19,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Responsive smoke test passes.
 - [ ] Primary navigation is Signal Grid black with white resting text and icons; the labelled desktop rail, mobile stability, and destination hover colours remain intact.
 - [ ] Fixed mobile navigation sits in an opaque reserved bottom band so live copy is not visible beneath it; all final content can still scroll above the band.
-- [ ] The selected Open Horizon mark renders in the Home nav and decodes from new favicon, Apple touch, Android, maskable, manifest, and link-preview paths.
+- [ ] The selected Signal Grid mark renders in the Home nav and decodes from immutable v3 favicon, Apple touch, Android, maskable, manifest, and link-preview paths.
 - [ ] Supplied Coming up artwork matches recycling, general and garden waste, clocks, Halloween, and Christmas; embedded stale dates, countdowns, and fake controls are not visible.
 - [ ] General-bin weeks read `General & garden waste` and `Put out both bins`, without repetitive collection wording.
 - [ ] Coming up text remains wholly inside the left graphite column and does not overlap the right-side artwork.
@@ -42,6 +42,10 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Real refreshed content and real links.
 - [ ] No Soon, For you, or duplicated information.
 - [ ] No duplicate Today/Tomorrow pills; numbered controls remain.
+- [ ] Calendar is immediately below Weather and above Coming up on Home.
+- [ ] The dedicated Calendar destination has a Monday-first 42-cell month grid, previous/Today/next controls, event indicators, and a selected-day agenda.
+- [ ] Month cells and the agenda use only events from the refreshed calendar feed; no synthetic events appear.
+- [ ] Mobile uses compact event indicators, desktop shows readable event titles, keyboard focus is visible, and neither width has horizontal overflow.
 - [ ] Calendar stays above Arsenal.
 
 ## Editorial hierarchy and content

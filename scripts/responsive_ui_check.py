@@ -14,14 +14,14 @@ VIEWPORTS = {
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 ICON_PATHS = {
-    "shortcut": "assets/icons/daily-brief-open-horizon-favicon-v2.ico",
-    "ico": "assets/icons/daily-brief-open-horizon-favicon-v2.ico",
-    "small": "assets/icons/daily-brief-open-horizon-favicon-32-v2.png",
-    "large": "assets/icons/daily-brief-open-horizon-192-v2.png",
-    "touch": "assets/icons/daily-brief-open-horizon-touch-v2.png",
-    "manifest": "daily-brief-open-horizon-v2.webmanifest",
+    "shortcut": "assets/icons/daily-brief-signal-grid-favicon-v3.ico",
+    "ico": "assets/icons/daily-brief-signal-grid-favicon-v3.ico",
+    "small": "assets/icons/daily-brief-signal-grid-favicon-32-v3.png",
+    "large": "assets/icons/daily-brief-signal-grid-192-v3.png",
+    "touch": "assets/icons/daily-brief-signal-grid-touch-v3.png",
+    "manifest": "daily-brief-signal-grid-v3.webmanifest",
 }
-HOME_LOGO_PATH = "assets/icons/daily-brief-open-horizon-master-v2.png"
+HOME_LOGO_PATH = "assets/icons/daily-brief-signal-grid-master-v3.png"
 COMPANY_LOGO_PATHS = {
     "OpenAI": "assets/company-logos/openai.svg",
     "Google": "assets/company-logos/google.svg",
@@ -40,12 +40,12 @@ def check_icon_metadata_files() -> None:
     for value in expected_root:
         if value not in root_html:
             raise AssertionError(f"root icon metadata is missing {value}")
-    if "searchParams.set('icon','v2')" not in root_html:
-        raise AssertionError("root page does not apply the v2 bookmark cache key")
+    if "searchParams.set('icon','v3')" not in root_html:
+        raise AssertionError("root page does not apply the v3 bookmark cache key")
     if HOME_LOGO_PATH not in root_html:
         raise AssertionError("Home navigation does not use the selected Open Horizon mark")
-    if "daily-brief-open-horizon-512-v2.png" not in root_html:
-        raise AssertionError("Open Graph metadata does not use the selected Open Horizon mark")
+    if "daily-brief-signal-grid-512-v3.png" not in root_html:
+        raise AssertionError("Open Graph metadata does not use the selected Signal Grid mark")
     fallback_touch = ROOT / "apple-touch-icon.png"
     explicit_touch = ROOT / ICON_PATHS["touch"]
     if not fallback_touch.is_file() or fallback_touch.read_bytes() != explicit_touch.read_bytes():
@@ -59,8 +59,8 @@ def check_icon_metadata_files() -> None:
         for value in expected_root:
             if f"../{value}" not in profile_html:
                 raise AssertionError(f"{profile} icon metadata is missing ../{value}")
-        if f"profile={profile}&locked=1&icon=v2" not in profile_html:
-            raise AssertionError(f"{profile} route does not use the v2 bookmark cache key")
+        if f"profile={profile}&locked=1&icon=v3" not in profile_html:
+            raise AssertionError(f"{profile} route does not use the v3 bookmark cache key")
 
         profile_data = json.loads((ROOT / "data" / f"{profile}.json").read_text(encoding="utf-8"))
         if profile == "pete":
@@ -88,9 +88,9 @@ def check_icon_metadata_files() -> None:
     manifest = json.loads((ROOT / ICON_PATHS["manifest"]).read_text(encoding="utf-8"))
     manifest_icons = {item.get("src") for item in manifest.get("icons", [])}
     expected_manifest_icons = {
-        "assets/icons/daily-brief-open-horizon-192-v2.png",
-        "assets/icons/daily-brief-open-horizon-512-v2.png",
-        "assets/icons/daily-brief-open-horizon-maskable-512-v2.png",
+        "assets/icons/daily-brief-signal-grid-192-v3.png",
+        "assets/icons/daily-brief-signal-grid-512-v3.png",
+        "assets/icons/daily-brief-signal-grid-maskable-512-v3.png",
     }
     if manifest.get("name") != "Daily Briefs" or manifest_icons != expected_manifest_icons:
         raise AssertionError(f"bookmark manifest metadata is incorrect: {manifest}")
@@ -170,8 +170,8 @@ def check_profile_routes(browser) -> None:
             )
             if route_state["profile"] != profile or route_state["navProfile"] != profile:
                 raise AssertionError(f"{url}: loaded the wrong profile identity: {route_state}")
-            if "icon=v2" not in page.url:
-                raise AssertionError(f"{url}: did not apply the v2 bookmark cache key")
+            if "icon=v3" not in page.url:
+                raise AssertionError(f"{url}: did not apply the v3 bookmark cache key")
             if not route_state["switchHidden"] or route_state["switchWidth"] or route_state["switchHeight"]:
                 raise AssertionError(f"{url}: locked switch still occupies space: {route_state}")
             if route_state["arsenalVisible"] != (profile == "pete"):
@@ -426,6 +426,17 @@ def check_viewport(browser, name: str) -> None:
                     raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
 
         page.locator('[data-view-target="home"]').click()
+        home_order = page.evaluate(
+            """
+            () => {
+              const calendar = document.querySelector('#calendarSection');
+              const reminders = document.querySelector('#homeRemindersSection');
+              return Boolean(calendar.compareDocumentPosition(reminders) & Node.DOCUMENT_POSITION_FOLLOWING);
+            }
+            """
+        )
+        if not home_order:
+            raise AssertionError(f"{name}: Calendar is not above Coming up on Home")
         bin_reminder_text = page.locator('#homeReminders .home-reminder-card.bin').inner_text()
         bin_reminder_copy = bin_reminder_text.casefold()
         recycling_week = 'recycling' in bin_reminder_copy
@@ -448,6 +459,50 @@ def check_viewport(browser, name: str) -> None:
         calendar_shadow = calendar_cards.first.evaluate("el => getComputedStyle(el).boxShadow")
         if calendar_shadow == "none":
             raise AssertionError(f"{name}: Calendar card has no edge-glow hover")
+
+        page.locator('[data-open-calendar]').click()
+        month_grid = page.locator('#calendarMonthGrid')
+        month_grid.wait_for(state="visible", timeout=10000)
+        calendar_view = page.evaluate(
+            """
+            () => ({
+              activeView: document.querySelector('.brief-view.active')?.dataset.view || '',
+              activeNav: document.querySelector('#primaryNav button.active')?.dataset.viewTarget || '',
+              title: document.querySelector('#calendarMonthTitle')?.textContent.trim() || '',
+              weekdays: document.querySelectorAll('.calendar-weekdays span').length,
+              days: document.querySelectorAll('.calendar-month-day').length,
+              selectedDays: document.querySelectorAll('.calendar-month-day.selected').length,
+              gridRight: document.querySelector('#calendarMonthGrid').getBoundingClientRect().right,
+              viewportWidth: window.innerWidth
+            })
+            """
+        )
+        if (
+            calendar_view["activeView"] != "calendar"
+            or calendar_view["activeNav"] != "calendar"
+            or not calendar_view["title"]
+            or calendar_view["weekdays"] != 7
+            or calendar_view["days"] != 42
+            or calendar_view["selectedDays"] != 1
+            or calendar_view["gridRight"] > calendar_view["viewportWidth"] + 1
+        ):
+            raise AssertionError(f"{name}: dedicated month Calendar is incomplete: {calendar_view}")
+        event_day = page.locator('.calendar-month-day:has(.calendar-event-chip)').first
+        if event_day.count() != 1:
+            raise AssertionError(f"{name}: refreshed events are missing from the month grid")
+        expected_event_title = event_day.locator('.calendar-event-chip span').first.text_content().strip()
+        event_day.click()
+        if expected_event_title not in page.locator('#calendarDayAgenda').inner_text():
+            raise AssertionError(f"{name}: selecting a calendar day does not reveal its agenda")
+        page.locator('[data-calendar-month="today"]').click()
+        month_before = page.locator('#calendarMonthTitle').inner_text()
+        page.locator('[data-calendar-month="next"]').click()
+        if page.locator('#calendarMonthTitle').inner_text() == month_before:
+            raise AssertionError(f"{name}: next-month control does not change the calendar")
+        page.locator('[data-calendar-month="today"]').click()
+        if page.locator('#calendarMonthTitle').inner_text() != month_before:
+            raise AssertionError(f"{name}: Today does not return to the current calendar month")
+        page.locator('[data-view-target="home"]').click()
 
         for selector in ('#homeReminders .home-reminder-card', '#sceneryFact', '#sceneryCard', '.uk-extreme'):
             card = page.locator(selector).first
@@ -727,6 +782,7 @@ def check_viewport(browser, name: str) -> None:
                 '#view-ai .section-head h2',
                 '#view-career .section-head h2',
                 '#view-dida > .tab-panel > .section-head h2',
+                '#view-calendar .calendar-page-head h2',
                 '.birthday-panel .section-head h2',
                 '.occasion-month h3'
               ];
@@ -938,6 +994,7 @@ def check_viewport(browser, name: str) -> None:
 
         expected_nav_hover_colours = {
             "home": "rgb(108, 232, 255)",
+            "calendar": "rgb(124, 244, 106)",
             "news": "rgb(140, 185, 255)",
             "arsenal": "rgb(255, 155, 160)",
             "ai": "rgb(235, 170, 255)",
@@ -989,6 +1046,7 @@ def check_viewport(browser, name: str) -> None:
         buttons = nav["buttons"]
         expected_nav_targets = [
             "home",
+            "calendar",
             "news",
             "arsenal",
             "ai",
@@ -1011,7 +1069,7 @@ def check_viewport(browser, name: str) -> None:
         else:
             if len({round(button["top"]) for button in buttons}) != 1:
                 failures.append(f"mobile nav is not a single horizontal row: {buttons}")
-            for target in ("home", "news", "dida", "birthday", "career", "home"):
+            for target in ("home", "calendar", "news", "dida", "birthday", "career", "home"):
                 target_name = "birthdays" if target == "birthday" else target
                 page.locator(f'[data-view-target="{target_name}"]').click()
                 page.wait_for_timeout(60)
@@ -1326,7 +1384,7 @@ def check_viewport(browser, name: str) -> None:
             )
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
-        for target in ("home", "news", "arsenal", "ai", "career", "dida", "birthdays"):
+        for target in ("home", "calendar", "news", "arsenal", "ai", "career", "dida", "birthdays"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(
@@ -1338,7 +1396,7 @@ def check_viewport(browser, name: str) -> None:
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
         )
-        for target in ("home", "news", "career"):
+        for target in ("home", "calendar", "news", "career"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(

@@ -2,6 +2,17 @@
 
 Newest entries go first.
 
+## 3 September 2026: Calendar view and Signal Grid icon
+
+Status: implemented; responsive and release validation in progress
+
+- Home priority: moved Calendar directly below Weather and above Coming up.
+- Calendar destination: added a Monday-first six-week month grid with previous, Today, and next controls, mobile event indicators, desktop event titles, and a selected-day agenda.
+- Data protection: the month view uses only the existing refreshed calendar events and preserves their dates, titles, colours, summaries, and real links.
+- Identity: replaced the earlier Open Horizon sunrise icon with Pete's new text-free Signal Grid horizon and radar mark, using immutable v3 filenames across the Home nav, favicons, Apple touch, Android, maskable, manifest, tile, and link-preview metadata.
+- Responsive navigation: added Calendar to the labelled desktop rail and compact mobile navigation for both profiles.
+- Master brief update: version 4.5 records the approved section order, month-view behaviour, and icon direction.
+
 ## 3 September 2026: Signal Grid redesign
 
 Status: published; responsive browser validation passed at 390 × 844 and 1,366 × 900
