@@ -41,7 +41,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 
 - [ ] Real refreshed content and real links.
 - [ ] No Soon, For you, or duplicated information.
-- [ ] No duplicate Today/Tomorrow pills; numbered controls remain.
+- [ ] Exactly two numbered Home filters remain: `Today / tomorrow` and `This month`; the combined filter is selected by default and does not duplicate multi-day events.
 - [ ] Calendar is immediately below Weather and above Coming up on Home.
 - [ ] The dedicated Calendar destination has a Monday-first 42-cell month grid, previous/Today/next controls, event indicators, and a selected-day agenda.
 - [ ] Month cells and the agenda use only events from the refreshed calendar feed; no synthetic events appear.
@@ -51,7 +51,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 ## Editorial hierarchy and content
 
 - [ ] Desktop Home has no dead grid row between Calendar, Around the world, and TV Picks.
-- [ ] Desktop Calendar uses four summary boxes in one row above a natural-height event list; short event lists do not stretch.
+- [ ] Desktop Calendar uses two summary filters in one row above a natural-height event list; short event lists do not stretch.
 - [ ] News groups use lead, supporting, and compact stream tiers without changing source order.
 - [ ] A text-only News lead uses the 7/5 desktop lead-and-support rail; it never reserves an empty media area.
 - [ ] Desktop stream stories share one flat divided paper rail with no individual tile rounding or shadow; mobile secondary stories remain one divided feed.

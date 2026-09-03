@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.5, 3 September 2026. Owner: Pete.
+Version 4.6, 3 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -70,12 +70,12 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 **Calendar**
 - Real content refreshed every morning through GOOGLE_CALENDAR_ICS_URL.
 - Real links, no duplication, no Soon or For you groups.
-- No duplicate Today/Tomorrow pills. Keep numbered controls.
+- Keep exactly two numbered Home summary filters: `Today / tomorrow` and `This month`. The first combines both days without duplicating multi-day events and is selected by default.
 - Keep Calendar immediately below Weather and above Coming up on Home.
 - Provide a dedicated Calendar destination with a real Monday-first month grid, previous/Today/next controls, event indicators, and a selected-day agenda. Build it exclusively from the same refreshed calendar feed; never add synthetic events.
 - Keep the month view usable at mobile and Chromebook widths: compact event indicators on mobile, readable event titles on larger screens, no horizontal overflow, and visible keyboard focus.
-- Today, Tomorrow, This week, and This month summary boxes use a visible cyan edge-glow on hover and keyboard focus, without moving the box.
-- On Chromebook/desktop, show the four summary boxes in one concise row above a natural-height event list; a short list must never stretch into a dead white slab.
+- Both calendar summary filters use a visible cyan edge-glow on hover and keyboard focus, without moving the box.
+- On Chromebook/desktop, show the two summary filters in one concise row above a natural-height event list; a short list must never stretch into a dead white slab.
 
 **Around the world**
 - Lead with one genuinely astonishing, obscure, source-verified fact each day, then show its precisely matched place image beneath it.
