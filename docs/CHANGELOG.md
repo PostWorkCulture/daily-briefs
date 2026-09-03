@@ -4,8 +4,9 @@ Newest entries go first.
 
 ## 3 September 2026: Signal Grid redesign
 
-Status: implemented; responsive and release validation in progress
+Status: published; responsive browser validation passed at 390 × 844 and 1,366 × 900
 
+- Publication: merged PR #26 to `main` as `09833ec9e45ae93ef19f22fab579f71399405ef3` after the full repository release gate passed.
 - Release-gate repair: the morning refresh had exhausted the active human-first fact queue and selected a general geological fact. Added a source-verified UNESCO falconry item, selected it for 3 September, and preserved the no-repeat history.
 
 - Selected direction: Pete approved Option 3, `Signal Grid`, as the production visual system.
