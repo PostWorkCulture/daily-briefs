@@ -63,12 +63,39 @@ def check_icon_metadata_files() -> None:
             raise AssertionError(f"{profile} route does not use the v3 bookmark cache key")
 
         profile_data = json.loads((ROOT / "data" / f"{profile}.json").read_text(encoding="utf-8"))
-        if profile == "pete":
-            for job in (profile_data.get("sections") or {}).get("Career") or []:
-                title = str(job.get("title") or "").casefold()
-                company = str(job.get("company") or "").casefold()
-                if "government digital service" in title and "government digital service" not in company:
-                    raise AssertionError("Pete Career includes a mismatched GDS aggregator duplicate")
+        career = (profile_data.get("sections") or {}).get("Career") or []
+        posted_dates = [str(job.get("postedAt") or "") for job in career]
+        if posted_dates != sorted(posted_dates, reverse=True):
+            raise AssertionError(f"{profile} Career is not newest first: {posted_dates}")
+        required_job_fields = ("title", "company", "description", "salary", "postedDate", "source", "location")
+        for job in career:
+            missing = [field for field in required_job_fields if field not in job or not str(job.get(field) or "").strip()]
+            if missing:
+                raise AssertionError(f"{profile} Career job is missing requested fields {missing}: {job}")
+            if job.get("sector") != "Public sector" or job.get("aiRelated") is not True:
+                raise AssertionError(f"{profile} Career includes a job outside the AI public-sector scope: {job}")
+            title = str(job.get("title") or "").casefold()
+            company = str(job.get("company") or "").casefold()
+            if "government digital service" in title and "government digital service" not in company:
+                raise AssertionError(f"{profile} Career includes a mismatched GDS aggregator duplicate")
+
+        local_news = (profile_data.get("sections") or {}).get("Local news") or []
+        sports_topic = __import__('re').compile(
+            r"\b(?:football|rugby|cricket|hockey|tennis|netball|basketball|golf|cycling|match|league|fixture|FC|RFC|CC)\b",
+            __import__('re').I,
+        )
+        sports_result = __import__('re').compile(
+            r"\b(?:score|result|match report|beat|beaten|defeat|win|won|loss|lost|draw|victory|goals?|points?|wickets?|standings|round-up)\b|\b\d+\s*[-–]\s*\d+\b",
+            __import__('re').I,
+        )
+        sports_exception = __import__('re').compile(
+            r"\b(?:open|opening|unveil|launch|new\s+(?:manager|owner|facility|venue|pitch|ground|sports centre|clubhouse|investment|rules?)|refurbish|redevelop|expansion|closure|relocat|merger|takeover|community pitch|sports centre|major event|festival|sports day|open day|fun run|marathon|regatta|get involved|sign up)\w*\b",
+            __import__('re').I,
+        )
+        for story in local_news:
+            text = " ".join(str(story.get(key) or "") for key in ("title", "summary"))
+            if sports_topic.search(text) and sports_result.search(text) and not sports_exception.search(text):
+                raise AssertionError(f"{profile} Local News contains a routine sports result: {story}")
         current_fact = profile_data.get("worldFact") or {}
         if current_fact.get("editorialPriority") != "human-first":
             raise AssertionError(f"{profile} current world fact is not human-first")
@@ -592,6 +619,26 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="career"]').click()
         page.wait_for_function("window.scrollY < 2")
+        career_render = page.evaluate(
+            """
+            () => ({
+              expected: [...(state.data?.sections?.Career || [])]
+                .sort((a,b) => (Date.parse(b.postedAt || '') || 0) - (Date.parse(a.postedAt || '') || 0))
+                .map(item => item.title),
+              actual: [...document.querySelectorAll('#view-career .career-story')]
+                .map(card => card.querySelector('.career-field:first-child dd')?.textContent.trim()),
+              labels: [...document.querySelectorAll('#view-career .career-story.story-lead dt')]
+                .map(node => node.textContent.trim())
+            })
+            """
+        )
+        expected_labels = [
+            "Job Title", "Company", "Description", "Salary", "Posted Date", "Where it was posted", "Location"
+        ]
+        if career_render["actual"] != career_render["expected"]:
+            raise AssertionError(f"{name}: Career is not rendered newest first: {career_render}")
+        if career_render["labels"] != expected_labels:
+            raise AssertionError(f"{name}: Career fields are missing or out of order: {career_render}")
         career_card = page.locator('#view-career .tab-story').first
         career_card.hover()
         page.wait_for_timeout(250)

@@ -2,6 +2,18 @@
 
 Newest entries go first.
 
+## 3 September 2026: Family-first Local News and public-sector AI careers
+
+Status: implementation complete; publication validation pending
+
+- Local News: expanded the target from 12 to 16 stories, added searches focused on local papers and publications, and prioritised family activities, parks, festivals, seasonal events, workshops, trails, and open days.
+- Sports rule: routine local scores, results, match reports, fixtures, tables, and round-ups are excluded. Openings, major changes, and significant participatory events remain eligible.
+- Career scope: both profiles now show only explicitly AI-related UK public-sector jobs, superseding Sofia's former private-sector product-role rules and Pete's broader digital/data scope.
+- Career presentation: jobs are newest first and every card shows `Job Title`, `Company`, `Description`, `Salary`, `Posted Date`, `Where it was posted`, and `Location` in that exact order. Missing publisher values are stated rather than inferred.
+- Fallback safety: previous Career data can be reused only when it already satisfies the same public-sector, AI-related, seven-field contract.
+- Files changed: `scripts/refresh.py`, `scripts/responsive_ui_check.py`, `tests/test_local_news_order.py`, `tests/test_career_scope.py`, `js/tabs-dida.js`, `css/tabs-dida.css`, `index.html`, generated profile data, master brief, QA checklist, and changelog.
+- Master brief update: version 4.7 records the approved Local News and Career rules.
+
 ## 3 September 2026: Two calendar summary filters
 
 Status: published; responsive browser validation passed at 390 × 844 and 1,366 × 900
