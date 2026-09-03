@@ -6,12 +6,14 @@ Newest entries go first.
 
 Status: implemented; responsive and release validation in progress
 
+- Release-gate repair: the morning refresh had exhausted the active human-first fact queue and selected a general geological fact. Added a source-verified UNESCO falconry item, selected it for 3 September, and preserved the no-repeat history.
+
 - Selected direction: Pete approved Option 3, `Signal Grid`, as the production visual system.
 - Canvas and typography: replaced the blue canvas and light-card system with a near-black technical grid, graphite modules, warm-white copy, precise rules, restrained signal-green highlights, and a wider labelled Open Horizon desktop rail.
 - Colour imagery: Around the world and all TV Picks explicitly retain full-colour source imagery with no grayscale or desaturation filter.
 - Existing identities: Arsenal keeps its official red, navy, white, and yellow match-centre system. Birthday keeps bright pink accents and colourful balloons. Dida keeps its three-zone structure and bright green identity, translated onto graphite surfaces.
 - Coming up: the four compact cards retain their supplied artwork, ordering, dynamic copy, and left/right separation while moving from pastel fills to dark cards with distinct colour rails.
-- Scope protected: no source, content, section order, route, profile behaviour, morning refresh logic, calendar data, news rules, Arsenal data, TV selection logic, or Around the world fact selection changed.
+- Scope protected: no section order, route, profile behaviour, morning refresh logic, calendar data, news rules, Arsenal data, or TV selection logic changed. The only content correction was the release-gate world fact repair above.
 - Rollback: preserved `backup/pre-signal-grid-2026-09-03` before implementation.
 - Master brief update: version 4.4 records the approved visual system.
 
