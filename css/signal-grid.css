@@ -256,6 +256,7 @@ body #homeReminders .home-reminder-card.birthday{
   border-color:var(--signal-line)!important;
   background:var(--signal-line)!important;
 }
+.story-stream-grid>.story-stream{border-radius:0!important}
 .story-media{border-color:var(--signal-line)!important}
 .section-story-icon{
   border-color:var(--signal-line)!important;
