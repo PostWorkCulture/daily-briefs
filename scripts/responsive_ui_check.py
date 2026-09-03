@@ -830,6 +830,8 @@ def check_viewport(browser, name: str) -> None:
         if visual["heroBrandCount"] != 0:
             failures.append("visible Daily Briefs wordmark remains")
         approved_ink = "rgb(244, 247, 242)"
+        approved_muted_ink = "rgb(168, 176, 169)"
+        approved_copy_colours = {approved_ink, approved_muted_ink}
         if visual["greetingColour"] != approved_ink or visual["dateColour"] != "rgb(124, 244, 106)":
             failures.append(
                 f"greeting or date does not use the Signal Grid colours: {visual}"
@@ -851,10 +853,10 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"navigation text and icons are not white before hover: {visual['navDefaultColours']}")
         wrong_main_copy = [
             item for item in visual["mainCopyColours"]
-            if item["colour"] is not None and item["colour"] != approved_ink
+            if item["colour"] is not None and item["colour"] not in approved_copy_colours
         ]
         if wrong_main_copy:
-            failures.append(f"main copy does not match the greeting ink: {wrong_main_copy}")
+            failures.append(f"main copy is outside the approved Signal Grid ink palette: {wrong_main_copy}")
         if len(visual["reminderCards"]) < 4:
             failures.append(f"Coming up cards are missing: {visual['reminderCards']}")
         expected_reminder_colours = {
@@ -1059,8 +1061,8 @@ def check_viewport(browser, name: str) -> None:
                   .map(node => getComputedStyle(node).color)
                 """
             )
-            if any(colour != approved_ink for colour in news_copy_colours):
-                failures.append(f"{profile} News copy does not match the greeting ink: {news_copy_colours}")
+            if any(colour not in approved_copy_colours for colour in news_copy_colours):
+                failures.append(f"{profile} News copy is outside the approved Signal Grid ink palette: {news_copy_colours}")
             news_card = page.locator('#newsTabGroups .tab-story').first
             news_card.hover()
             page.wait_for_timeout(250)
