@@ -4,7 +4,9 @@ Newest entries go first.
 
 ## 3 September 2026: Calendar view and Signal Grid icon
 
-Status: implemented; responsive and release validation in progress
+Status: published; responsive browser validation passed at 390 × 844 and 1,366 × 900
+
+- Publication: squash-merged PR #27 to `main` as `001fb6c21aebd57efd4f2c702e94bce63b4c733c` after all 50 unit tests and the full responsive release gate passed.
 
 - Home priority: moved Calendar directly below Weather and above Coming up.
 - Calendar destination: added a Monday-first six-week month grid with previous, Today, and next controls, mobile event indicators, desktop event titles, and a selected-day agenda.
