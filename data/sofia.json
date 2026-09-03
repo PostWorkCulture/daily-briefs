@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 3 September 2026 · refreshed 6:18am",
+  "updatedLabel": "Thursday, 3 September 2026 · refreshed 9:19am",
   "worldFact": {
     "id": "mongolia-falconry-living-human-heritage",
     "editorialPriority": "human-first",
@@ -17,9 +17,9 @@
     "sequence": 13
   },
   "weather": {
-    "temp": "19°",
-    "summary": "Overcast",
-    "condition": "Overcast",
+    "temp": "21°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
@@ -28,16 +28,16 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-09-04",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 50,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -55,12 +55,12 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-09-07",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -73,7 +73,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -233,20 +233,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -258,6 +244,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -532,26 +532,47 @@
       "section": "Sweden"
     },
     {
-      "title": "Thames Water challenged over pollution risks in Teddington river project",
+      "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
       "summary": "",
       "meta": "Wed 2 Sep",
       "publishedAt": "2026-09-02T08:34:00+01:00",
-      "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWTVyLUZJbjJLdkJWUHhJdkFtbThLb2x6UTBuVDdmc0UycFhKcVZvUTU4STAwVFlsSFAyaWZoQmt1dTdVeUt6NVVaTV9DdUozN2dDellrSVV0c01jWXpqZ2FqRzNDemo2b294TTNNZXJZVjJBWmx6UVBucHdvenlhMUtYN3RBeGl2R1J1WWttT25kcnZiV0RrbC1TbnJKRklqZzBnMGVmLXpObkJYTHpBeHBfWTBSakxxSklFOU1OZmpjQ3J2c0o4XzQxZHZ4dTUxVGFDbldXOEVhSngzdGpzWFFKLVc?oc=5",
+      "source": "Teddington Nub News",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5",
       "section": "Local"
     },
     {
-      "title": "Apple TV’s ‘Silo’ Just Set a Huge Sci-Fi Record Ahead of Its Season 3 Finale",
+      "title": "A New Update On The ‘Silo’ Season 4 Release Date",
       "summary": "",
-      "meta": "Tue 1 Sep",
-      "publishedAt": "2026-09-01T13:36:11+01:00",
-      "source": "Collider",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0FieWJ0ZlpJVGxqZUdnWEpUd2ZlUmtNUkNoeHhFMWt5eEt1Z01HVzQ4cklaaTVSdGU1UjRXNW9vbzN6U21lZjhKRWtTYnpnMFpfRG1LQnFUdVlXRU5KWkx4VEJPTWFCbDdsU2dKcERjV0otV0RFVG5CYzkzVW9yeQ?oc=5",
-      "preferenceScore": 130,
+      "meta": "Sat 29 Aug",
+      "publishedAt": "2026-08-29T13:44:26+01:00",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdkx1S082Nnptd20tVTRiSmt2RkNZcEQ0VTM1NzJsYzJjZGd5NHB2QlBaaFptV2xwUFVQQmtMZjBuSC1ZWXo0SnRpbnRIcC01bFljM19PNUpvWDdwTlJfMkhUSmpFN3BzMTBQZXFMTjRZbEZ6Zkt3OWxGc3pjbVBuSmlPcFJPQnRzZUUzLVZpVk5rTVpJWWVwbE1nQjhpQQ?oc=5",
+      "preferenceScore": 100,
       "section": "Watch"
     }
   ],
   "watch": [
+    {
+      "title": "The Murder Detective",
+      "summary": "After years of investigation, arrests and painstaking evidence-gathering, lead detective Jason Murphy is ready to make his boldest move yet. Convinced that those responsible for Lyra's…",
+      "meta": "Channel 4 · Available since Fri 28 Aug",
+      "source": "Channel 4",
+      "url": "https://www.channel4.com/programmes/the-murder-detective",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1595025.jpg",
+      "artworkAlt": "The Murder Detective programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-28",
+      "showId": 93719,
+      "episodeId": 3711851,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "generatedDate": "2026-09-03",
+      "preferenceScore": 327.7
+    },
     {
       "title": "9/11: Days That Shocked the World",
       "summary": "9/11 remains one of the most shocking events in world history. In the first of a two-part documentary to mark the 25th anniversary of the tragedy, rescue workers, survivors and witnesses…",
@@ -569,29 +590,26 @@
       "programmeType": "Documentary",
       "genres": [],
       "generatedDate": "2026-09-03",
-      "preferenceScore": 238
+      "preferenceScore": 239.6
     },
     {
-      "title": "24 Hours in Police Custody",
-      "summary": "A 17-year-old boy is in a coma fighting for his life after a serious assault. Officers believe he was attacked as part of a territorial dispute between different drug gangs. The…",
-      "meta": "Channel 4 · Sun 6 Sep, 9pm",
-      "source": "Channel 4",
-      "url": "http://www.channel4.com/programmes/24-hours-in-police-custody",
+      "title": "Turning Point: Generation 9/11",
+      "summary": "One-off",
+      "meta": "Netflix · Available since yesterday",
+      "source": "Netflix",
+      "url": "https://www.netflix.com/title/82091553",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/20/50236.jpg",
-      "artworkAlt": "24 Hours in Police Custody programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1598467.jpg",
+      "artworkAlt": "Turning Point: Generation 9/11 programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-06",
-      "showId": 4156,
-      "episodeId": 3717209,
+      "airdate": "2026-09-02",
+      "showId": 93614,
+      "episodeId": 3703754,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": [],
       "generatedDate": "2026-09-03",
-      "preferenceScore": 233.7
+      "preferenceScore": 218.1
     },
     {
       "title": "Star Trek: Strange New Worlds",
@@ -600,7 +618,7 @@
       "source": "Paramount+",
       "url": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/",
       "badge": "Sci-fi",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589217.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599292.jpg",
       "artworkAlt": "Star Trek: Strange New Worlds programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-09-03",
@@ -614,7 +632,7 @@
         "Science-Fiction"
       ],
       "generatedDate": "2026-09-03",
-      "preferenceScore": 144
+      "preferenceScore": 144.0
     },
     {
       "title": "Trigger Point",
@@ -637,29 +655,6 @@
       ],
       "generatedDate": "2026-09-03",
       "preferenceScore": 134.9
-    },
-    {
-      "title": "Reacher",
-      "summary": "Fleeing the police, Reacher and Tamara head out-of-town to find the mysterious Ahlquist only to run into more trouble. Meanwhile, Jacob and Plum deal with their own problems back in…",
-      "meta": "Prime Video · Available since yesterday",
-      "source": "Prime Video",
-      "url": "https://www.amazon.com/dp/B09MKZTJF4",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1591127.jpg",
-      "artworkAlt": "Reacher programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-02",
-      "showId": 43031,
-      "episodeId": 3658426,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Action",
-        "Thriller"
-      ],
-      "generatedDate": "2026-09-03",
-      "preferenceScore": 127
     }
   ],
   "sections": {
@@ -676,9 +671,25 @@
         "title": "Sweden’s election frontrunner vows green reset",
         "summary": "",
         "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T05:01:34+01:00",
+        "publishedAt": "2026-09-03T05:00:22+01:00",
         "source": "Financial Times",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHZuX0xpNm5RR2NTWk9HVmN1MER0Z3VxWGI2azM5RDlZYlVfSzIyZEUtcVBLZ1NMZTBON2lPemw5MHdkOU9TTEsxZW82c0ZQdUhzbUR3YW1BOWdQOTFDdlVkVHpQSi1aUC0yZWtrVmNQVmtGbzFCZXJ2UlNqay1IcEVnS1I?oc=5"
+      },
+      {
+        "title": "Swedish minister defends strict post-Brexit removals of Britons",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T02:30:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRzJlQk9JMGlGSFptY2lzUGRPMEF6aUNKY1lPU0JPaFA5ZVZUZVU5VGVETEc4VjVvN0lYV3lWZlFRUkVhV3pWRFBZZnI1RUxneU9rRHVDQ1NhYnYzdFlxNUVfMklDSW9FTHV4el91elRqcnhzQWpWQzJYTElfd1dZTmNEMU80SzdFUlVTQlhWRXdvUFBoMmR6TUp2YUhvY19R?oc=5"
+      },
+      {
+        "title": "Anglo-French lead at Swedish champions",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T07:46:22+01:00",
+        "source": "4barsrest.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcGZUQWNLZnhHNFpwNDduRm1UaWFUVDdnR3NhcU5TTEhZVjhhd3pqblB3ZHBWUlNiQ1RZU3pxWmRJUlp5T0QxVHZjaXpoLWQwMUxGNjNtemYxVVNkaXUzenN3aC01b3h1LTdCMmh4cnhSeFpZem9XU2pxT3JVR1pqRg?oc=5"
       },
       {
         "title": "‘Not welcome’: How Sweden’s far right took over Stockholm Central Station",
@@ -697,46 +708,38 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOR0FKZnJSUUZMb3lwc1R3RnVaeE1sU18zWGU1QmR2RHQ0VlI0eE91ZFcxcWtMd2d6cWpCdmxGd3ZvU1NFUVJfLWRSeFZtcWI5bTUtZHdiRGpNZ294TEN2NjlKXzRoM2NfNFVCaENWWHN1MUFIdktjRHNuLVduOFVOWU9IS3Zrdmp1R0M4eWVESFlpc1N3ZzA4UlhjN2hLMzZZR3c?oc=5"
       },
       {
-        "title": "Learning curve for DiSE athletes in Sweden – on and off the table",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T09:39:22+01:00",
-        "source": "Table Tennis England",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS2N1anZBZWhEbkw0d05rSFV2YzN5Mm93TzQ4ZDIzeXJIVDJSNENhSGIxdTFUbnVYUzltZUR0VDduOXdWN3lzSElqUjJqUEZoemJNSTdHY3pweGwzOFJGYTdDVmRuWEJ1VUd2WXVTcjZvTld0NlNMTlRjX1Uzdk1idGVkX0FwbkxBMmI5YVRYQkhGVWxialMxQzhTcnFVSXdRenRXSHFfNzBGY2ZEVmsxYQ?oc=5"
-      },
-      {
         "title": "Sweden, a 'paradise' for the ultra-rich, debates billionaire tax ahead of elections",
         "summary": "",
         "meta": "Thu 3 Sep",
         "publishedAt": "2026-09-03T04:30:07+01:00",
         "source": "Le Monde.fr",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUFFTa05zcDRObmNENXE3eDRmbnpUUUY1WjNJRG53WHFnVE5HbVlPbUZBSmRRc05NanA5bVhmcW4zWWhBYnc2eUkwR1o4dE15bS1KUDVsdFlOMXZ6eURhNlFab2JxVVZfM2pXakVTck9qT0hSSVA1WVdqQXpMbEY0M0dhczBYWUk3SWQtcFlFVko5MXNXdDdWMGZkZmZCUlVqRG11ZUpfaDJMbzVQMVlJaWxZUENIZGltNkxOM3BhbUMyVWR1NnBzanBIYV96RzB1U0lISzR5OUxCMEhGeEptMmZB?oc=5"
-      },
-      {
-        "title": "Sweden’s AP2 outshines larger peers in H1 as trio navigate buffer fund reform",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T11:47:50+01:00",
-        "source": "Investment & Pensions Europe",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVU1SMWUtNWh3MDU5UlNSMVFLd1ZEeHNmQlpLbnQxVS1Jczl0UkNnX1lTU0N6dF9Ncm1UMERRazVjWjdRMHNaY0tCclVDLWx4T1ZGUzktZ2s0X3o2djZmOGRSMUNTS0dmamhuaVp0YjF1cVhzZU5MQXAtT0pCNVJGX2hJSURidE11YmVrSHB1cEdTdVlMQndROGpTNUduRmc4UHp2cmJhZGI4cWFWTjVqc2xOX01xSnJra0E?oc=5"
       }
     ],
     "Local news": [
       {
-        "title": "Thames Water challenged over pollution risks in Teddington river project",
+        "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
         "summary": "",
         "meta": "Wed 2 Sep",
         "publishedAt": "2026-09-02T08:34:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWTVyLUZJbjJLdkJWUHhJdkFtbThLb2x6UTBuVDdmc0UycFhKcVZvUTU4STAwVFlsSFAyaWZoQmt1dTdVeUt6NVVaTV9DdUozN2dDellrSVV0c01jWXpqZ2FqRzNDemo2b294TTNNZXJZVjJBWmx6UVBucHdvenlhMUtYN3RBeGl2R1J1WWttT25kcnZiV0RrbC1TbnJKRklqZzBnMGVmLXpObkJYTHpBeHBfWTBSakxxSklFOU1OZmpjQ3J2c0o4XzQxZHZ4dTUxVGFDbldXOEVhSngzdGpzWFFKLVc?oc=5"
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5"
       },
       {
         "title": "Last chance to comment on Surbiton cafe's new seating plans",
         "summary": "",
         "meta": "Tue 1 Sep",
         "publishedAt": "2026-09-01T16:00:00+01:00",
-        "source": "Kingston Nub News",
+        "source": "kingston.nub.news",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdnRfa0R3S19ZeU1xOGFRZFhYS3dsTE81SkxDZnFRXzFJc09yOHhlcFgxbWNjUUh6ek1oUlRGSVgxc3YwWWxWUUlHOE90MTBXZ2FFVFhPMDBDUUswY21nby1hSEZrdWZ2NUFIQWp6M0dsb1JKWFJyTnE2c1hUSDI3dElYemluVmRna1RlWnFkdHlESjh2a1FvbF9CempaYk5aUVRXcnFGVW5NSE0?oc=5"
+      },
+      {
+        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T11:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVENzSlNabldobjhhYkJ2blJRVlhIcFlxcUFaSHh3Nk1NSjc2YzBUWDc4YzhuRl9nUjlMbm8wNktUX0JqU0JNdGVVUWlMN3hzOW5TdGFMeHRubm1sLW5VMHQ2S2p6Y2Jia2hvX0NNMFFDM1pxaXV6YzZGTjYycTh2a2VzUFRELVVPWVNDRHNSZlNjMXRNYTBiRmJQYWpNc3B6X1VoMXpwbHRQTGhLSmdraFVPMVVyLVRuS2VIcmViVnlrSFBYcDNrS3RXUzBOek0?oc=5"
       },
       {
         "title": "Post Match: Hampton & Richmond",
@@ -771,6 +774,14 @@
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZZ2h6UXAtTXFHcnFWal8zQk9LWFp3Yk15VFA1cDRVWXMwQ2Zmby1US1M2ZVpERjBFNnQ1MHNuVThnUVJPVl9rSHQwalV3R1V3NG1odkxoOVE5Wktl?oc=5"
       },
       {
+        "title": "Match Report: Hampton & Richmond",
+        "summary": "",
+        "meta": "Mon 31 Aug",
+        "publishedAt": "2026-08-31T17:10:29+01:00",
+        "source": "Maidstone United Football Club",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1aSEN3ODFVSzhvNjlDZU5IMmpPdjhuREl4elh6UmVacTNGUjZQM2ZhY081T3MwRFJRQUw3VFpzYlV6ZnF1THZXVjZub05lMV85dG9BXy1heFF2Qm1jZWw5R19mU2JyYnNBQXRFVEtTc0xEdmpZVTRr?oc=5"
+      },
+      {
         "title": "Tonbridge Angels vs Walton & Hersham: National League N / S stats & head-to-head",
         "summary": "",
         "meta": "Mon 31 Aug",
@@ -801,41 +812,9 @@
         "publishedAt": "2026-08-30T15:31:11+01:00",
         "source": "Tonbridge Angels",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIdUY2dDI2SzNjUXpabjlJX0ttQ0lKM2YwMUdJT3BEVVQwckc4TEtVRXBLSERITlppM3NDRnFYSk1qRW9odGZRTk9fZVZTWHplVjdxWmYzTG9qQ0dubWRadEd0UkZ6MWxGcTI0?oc=5"
-      },
-      {
-        "title": "Key info: Hampton & Richmond",
-        "summary": "",
-        "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T10:45:24+01:00",
-        "source": "Maidstone United Football Club",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xTEY1WFRwWXFFam1QbVAzY1UwemptREJKbWRfOUdUdExzVURZY0tCeXJLeFctQ0FfVTBsYlMyd2h1cDBhYWpJXzNlRktsUnBrMktBVklUcw?oc=5"
-      },
-      {
-        "title": "The club bar at Walton & Hersham FC was shut for the side's home game on Saturday after reports that some fans were \"intimidating and abusive\" towards staff, said the council. More here: https://bbc.in/4qLdaC4",
-        "summary": "",
-        "meta": "Sun 30 Aug",
-        "publishedAt": "2026-08-30T08:11:05+01:00",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY2xNZk5IeHpIeDhVdnZKcmVOdHlDMGUtMGRrc1EtbVhmcjV4NFVFTzRPd0R2VDdhWjdsckN2M1VSOEJnaE40bm9zWFBYcVlKaVduRHVtMFZrOF95MTVOM1RPalpJdXRwVjJ1Ym1FTmtHRzNWam5SVjNKX3haSEJOWExLZl9OMUN2bTVvenZfVzUwdHk2dzVUcTRfWXZNUHRFdXZKNVFKUzhVRDhBR3ZnX3NZZ2s4akw0cl81TENfaWVkZTNNOXJ4YnBQdk1IbDY3MTB5SXBSQQ?oc=5"
       }
     ],
     "UK news": [
-      {
-        "title": "South Wales law firm secures six legal award shortlistings",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T02:20:46+01:00",
-        "source": "Wales 247",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOenh5LUw2eGVyb29kYUdfZFItV3FVRUs2N09IN0haeUlldTBoMFFqVmF5Q1JVSm01TC1FaURUWU9CSVV6REJjVkJsZV9aanFYQTlYeDlucEpzcGJpUzZ4WGJJOVBiR2xQdzl2NllhSkVIOHZKbktkT1NMZ1pkb2g2RFhZdE1FV01ZNEMwNkxB?oc=5"
-      },
-      {
-        "title": "North Wales care executive shortlisted for major award",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T02:08:17+01:00",
-        "source": "Wales 247",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVnc3Qk5ZczVsZ0VrYXNsMmJUaExtTkFjb3dsWWxyYkQzcy1DaHN0VDZWV2VFeDJZLXc0QjZ5MWhzbFJyVHJVR1Z6Qm9aaWc5RWxibXBYNjZRSk9fVEI4Qy1mZmRQbUNiU0VESHpzTGk0NXVLdjY2Y2VUdE5zbjJRd3ZXa0gyREVu?oc=5"
-      },
       {
         "title": "Uber launches UK's first robotaxis with a driver - here's what it's like to ride in one",
         "summary": "The ride-hailing app has launched 15 self-driving taxis, but they will have safety drivers inside.",
@@ -843,6 +822,14 @@
         "publishedAt": "2026-09-03T00:36:49+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/ce9e838jzpzo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "King Charles celebrates the ‘French side’ of his family history, welcoming the Bayeux Tapestry",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T00:21:25+01:00",
+        "source": "Montreal Gazette",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeTNOZF9jQnVJcXhvZHhzdUUwT1ktc185Y1B2a0NET0tjQ2kweG5DeHAyM2xRZC1GTTVCcUQzT0kwTXVxSFI4UkltWFRRYzY0MXJTZDZwV1VjSDFmMElUeEp5d2c5SnVtV3BLMXU2V05YQmdySWhWQUlreS1MS1U3SA?oc=5"
       },
       {
         "title": "Alyn Smith appointed as Scotland's innovation minister",
@@ -861,44 +848,12 @@
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeExIdVJBeF9UUUljZXA3cGtDWmNJSlVNM1FhNXQ1S1pBZWVrWExDdm5qQ2swakJ6SVhSRk1lZWpTU081d1dYY09HNmR4R013cG5rR1FCbnhPV3hwZjJtMmNQcnFKbHBoMjI5bDlGUUVacnNLM3ZhVENoeUpFRVdsNFg4ak5Za2pNeXVzR3lYQldJaWU3UldMNWd4MWI?oc=5"
       },
       {
-        "title": "Award‑winning Anglesey caravan park gets green light for 11‑pitch expansion",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T10:28:34+01:00",
-        "source": "northwaleschronicle.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONmo5TlFkRXJick1LazlPMzVSSVJmdjM2c2dDaG8yRmg2WlpHS2FlcU1UbWNsUm52NUlkaFRfMTFCQWFwcXM5RnhfZ0IxX1VzOVNtQmNnY3FKMWlSSTJLR2dIT0JNLU9kNHBpVGpXX1JkTHF4ZE9Hd3JKa0RDdXh0cVd1RWhWOEhyR3lEYXM2OU5GTkw2SE1Fckxyd3dSQWZKOGV5Z3Q1SnI2SGM?oc=5"
-      },
-      {
         "title": "Jobs and holidays saved after business rescued from administration",
         "summary": "",
         "meta": "Wed 2 Sep",
         "publishedAt": "2026-09-02T07:57:00+01:00",
         "source": "Wales Online",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYUhVVDdDRjJsb05ZcUdZeTFBT2NKQnV4TmV4TnhsWE9yVjJMWGpXV0NjTzltTkJ4YnVUYmZxTzJsZ0FhTHRYQ1ZZbUtzNkhLd1d6ZTdPMXlHaVZmcGxoTDJ0al9JQUx2aVhiSUZnZ1ZNaU93MnlNM25mMlpubllMTF9RLUdnMmx5UWRiUmFRNFJ1WDDSAZgBQVVfeXFMTmxsb2U0RVJxakNvcFpqU3g1WV9hX3JQYXpKZVVRamhsbjJnQ3F3blFUZ2c4dlRfY2dlQUZqNFhfZS1vcXU3eUtES3ZDVGpxeFpXT1hJX1RVekl0TWxVZmdHN1NmYi1RdE00SHVMVGNlczlzMV9wWElMQjhVTVg4N3Vma1VrRWJvTHladUZIdXNVUUVXX0hFZkU?oc=5"
-      },
-      {
-        "title": "Nepal did not rescue me, says British aid volunteer",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T23:40:00+01:00",
-        "source": "The Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTTZsdjhzSW5fWGdSLUFxY3pyVmpnQjRsdlZrbXNWajdSa3B6OVdLM1dMUTFqbnJxU21zclRya1pnNGhuRzlvUTBlQTlCX2EwM3NRdUYwYU5qaDF1ZDBUZjc2UG9NUzU3ZkNONXdOWmVaZmVQSDV5eG9SLWRRa1BCRFV3b1VpZ2FzVkFQc2pn?oc=5"
-      },
-      {
-        "title": "One British national rescued alongside 118 Nepalese citizens in search and rescue operations",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:55:02+01:00",
-        "source": "Metro.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRUhNSlJZZFg4VXVfSFFkNWNBUFR0SEZrMWQxRFdGS0NXWVcyOUFuTE10VERYR0xsWDJhMVZZWlV5b0JGelRyNFZCc0prN2RzdDZtX3ozS2RRbkdib0FtQXM4eWRnYW1OTWlVMEpXeHNyY1lWOFotaE1TREFjNDY1Zlh2WXlCTTMwTGxtaUZNMWY1X1laaG5kejV0d3ZLSGFRc3VJcDc0cEsta1ZyeGt1UzR1cHdDVlBPLU00UQ?oc=5"
-      },
-      {
-        "title": "Robertson wins novice award at NPS Scotland Championship Finals",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:00:00+01:00",
-        "source": "Shetland Times",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaEJNZlhJckpKalkyR0p2OFRPelFDU25qS3RBUVRnSVg4UDItRjdfbTJ1MVFQc19mTjg2MUVVT05vdGx3R2psZ3NDelNvN0loM0ZXMUxHYnpMU0RpSUZmUlZsVGFYTWdJX3BSYmp5dDE5d0RjczYtRXJ1elNsSmV3YkNOZ2RVbkJxaHdxU1hfcW5xLXZ0QUFjRXF0N2pwb1ZVVG1KdXI5NnFSZw?oc=5"
       },
       {
         "title": "Mud, flippers and snorkels: Wales celebrates 40 years of bog racing",
@@ -915,6 +870,46 @@
         "publishedAt": "2026-09-01T09:15:00+01:00",
         "source": "Olive Press News Spain",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc0hsd25tU080VV9UejZqUERPTkRwdExiMS11OGJMeHNpbUxhcElRN09OZGptcWhaUHZRcFprenA2UUZnYkpiWmlEN0FEV0NHWGhMV091cGdSVEJGZDZMV1hzc1JhNER1QzVlajJLYXI4eUpSWDVpVk5aU1RnNVowYjRENHhvbEtNWmlqRFRVS0I3WVNxUExZd0llaFg0QWtpYTlGajRQUzM5QQ?oc=5"
+      },
+      {
+        "title": "Watch: Notting Hill Carnival celebrates 60th anniversary",
+        "summary": "The three-day event saw dancers in extravagant outfits parading the streets of west London to celebrate Caribbean arts and culture.",
+        "meta": "Mon 31 Aug",
+        "publishedAt": "2026-08-31T16:48:26+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/videos/c05rl9j6d0no?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "England thrashes Pakistan by 194 runs at Lord's to seal a cricket series win with a test to spare",
+        "summary": "",
+        "meta": "Mon 31 Aug",
+        "publishedAt": "2026-08-31T08:44:16+01:00",
+        "source": "The New Indian Express",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNSmhmcWdONVZEcTFaZmFRQ2ItLWJwMVNPZVlPclZzU1R0OGZrWlFfY01iMHRvYlI0RC02Zk1VR0tYM1BYTnlpTjBTZnpOaTZ3QzhTNHlwTkx0TXl5WGltMXdmNV8wOHN1OS13cW56c2J2RGdtbEpaWjlmUFZlWFlsSmU0NC1WUl9hcm9aNl92X2JUeG9Nek1fY3RlVndMYjFrTzhYMGlHMW9TVFFsUENLU1pnNVVRX2tUZlU4WUhkNW0yMW5IMGJ0bEduSXR2OU9makM3ckJPZUFZdkFIUTBZNUFtYnJBaWNPLUZz0gH4AUFVX3lxTE95dEJMbVg5TnFUT2NFM1RXMUN3LTQ2WTRZS19uTUJGbUUwNU41MXJEY05ZQmVvQmNEaThwYlU3NzM2ZldmQlZINWRCYjlsQ0pQRmRzZFJNcXI0MmtILXBGZGhnVUdpWW00UTdYc0RrcmxfQUQ0ampLWlRIT3ZQOXhUcDRZZFhNNnhvTC1KNjFsZnBtajRpeGVjZ1pDX2w0YkNtZmJZWFVmdWZQS2FkdTZJWnpXLVhfRGJoTGpLcG16cUVmS1ptOTA5S0Vvbmc0ek1ud0wtNWlSeDFOTjJwY09vUEswVm92MlhYNHlobk5zSE4yOVhvaGda?oc=5"
+      },
+      {
+        "title": "Adil Rashid of England celebrates a wicket with David Willey, England vs Pakistan, 3rd T20I, Old Trafford, July 20, 2021",
+        "summary": "",
+        "meta": "Sat 29 Aug",
+        "publishedAt": "2026-08-29T22:57:59+01:00",
+        "source": "Cricinfo",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRElScHk2UExsMllzV0h6TVlZd3FBdkdQbGhybElnaUlqZkRwbXBEaGZ3QTk5emxBYU1KS1RWR2NkNGFqczd1OWtXZ3VBNFdyM1pmUHlfeFg5aHJxbi1LQ3VjSm5BR2dBZk1DUWRJeTY3TGcydl9DMXFIOTFnaWdHNHhfeWszRWR1MHlmMkdOTVh3VzBRdDFJQVlTX3VJNTg0?oc=5"
+      },
+      {
+        "title": "Clean Energy Investment Plan",
+        "summary": "",
+        "meta": "Wed 26 Aug",
+        "publishedAt": "2026-08-26T19:40:04+01:00",
+        "source": "Arup",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE80NzI3SURycl9jeUVIMnBleEcxV0hDdjYxNTZPVHlVZ0NJLUlpY1p2ekdSQ2lvcmNRQzNfMFZ4T3VkSzg4OElZZkVnZmtubkJMUW04Y1g5ZDR6WFU0MDNwbEd0S3J4Y0ExVC0w?oc=5"
+      },
+      {
+        "title": "Scotland farmer shares 'devastating' discovery that came as 'complete shock'",
+        "summary": "",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T08:00:00+01:00",
+        "source": "dailyrecord.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcHltS0J1SUJQMVNXSUY2UlE0QWdQYmU2aEZEZ3Y1NnRUdTY5R0F5Q1NuUm5YUC1SVnc4ZlZVdFpaY1M0QnVuT1JNaFBSMTloTWpqeVRBeTEwUnc2b3pmSkJZankwSWtQWGxmem5ZVVZQU2RBNXVrRlhmSk9zUTFQRDJ1eklxbUZlWEpVUWNyb9IBlAFBVV95cUxNNW5IbzVLWFNmeFh6eFBMblczQW8xZzlJUTI0LUhNakNGRHVZandmWEVJRzgyd2RnZFpQM0MxSERaYkxLRTA3OXprbTIzMnp5T1pUbWRCUG13ZVJKdGd4VTh6c3IzLWJhWFVzeFY2Y3BGci15RkRKbHZhckd2aVRpV3VZY2otTmprN1M3Q0lSLVNnS3U4?oc=5"
       }
     ],
     "AI": [
@@ -1000,45 +995,6 @@
       }
     ],
     "Career": [
-      {
-        "title": "Head of Product",
-        "summary": "Foundation Partners · London, England, United Kingdom",
-        "meta": "Remote · Posted Wed 2 Sep",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/head-of-product-at-foundation-partners-4442780389",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Foundation Partners",
-        "location": "London, England, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-09-02"
-      },
-      {
-        "title": "Lead Product Manager",
-        "summary": "Qualis Flow (Qflow) · London Area, United Kingdom",
-        "meta": "Remote · Posted Wed 2 Sep",
-        "source": "LinkedIn",
-        "url": "https://uk.linkedin.com/jobs/view/lead-product-manager-at-qualis-flow-qflow-4460995304",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "Qualis Flow (Qflow)",
-        "location": "London Area, United Kingdom",
-        "countryFocus": "UK",
-        "postedAt": "2026-09-02"
-      },
-      {
-        "title": "Senior Product Manager - Core Experience",
-        "summary": "N8N · Berlin Office",
-        "meta": "Remote · Posted Wed 2 Sep",
-        "source": "Arbeitnow",
-        "url": "https://www.arbeitnow.com/jobs/companies/n8n/senior-product-manager-core-experience-berlin-120518",
-        "contentType": "job",
-        "workArrangement": "remote",
-        "company": "N8N",
-        "location": "Berlin Office",
-        "countryFocus": "UK",
-        "postedAt": "2026-09-02"
-      },
       {
         "title": "Head of Product",
         "summary": "LocalStack · London, England, United Kingdom",
