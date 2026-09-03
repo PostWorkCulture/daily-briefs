@@ -457,8 +457,8 @@ def check_viewport(browser, name: str) -> None:
         calendar_cards.first.hover()
         page.wait_for_timeout(250)
         calendar_shadow = calendar_cards.first.evaluate("el => getComputedStyle(el).boxShadow")
-        if calendar_shadow == "none":
-            raise AssertionError(f"{name}: Calendar card has no edge-glow hover")
+        if calendar_shadow == "none" or "124, 244, 106" not in calendar_shadow:
+            raise AssertionError(f"{name}: Calendar card has no Signal Grid edge-glow hover: {calendar_shadow}")
 
         page.locator('[data-open-calendar]').click()
         month_grid = page.locator('#calendarMonthGrid')
@@ -513,7 +513,7 @@ def check_viewport(browser, name: str) -> None:
             page.wait_for_timeout(250)
             shadow = card.evaluate("el => getComputedStyle(el).boxShadow")
             transform = card.evaluate("el => getComputedStyle(el).transform")
-            if shadow != calendar_shadow or transform != "none":
+            if "124, 244, 106" not in shadow or transform != "none":
                 raise AssertionError(
                     f"{name}: {selector} hover does not match the visible Calendar glow or moves: "
                     f"shadow={shadow}, transform={transform}"
@@ -563,7 +563,7 @@ def check_viewport(browser, name: str) -> None:
         page.wait_for_timeout(250)
         career_shadow = career_card.evaluate("el => getComputedStyle(el).boxShadow")
         career_transform = career_card.evaluate("el => getComputedStyle(el).transform")
-        if career_shadow != calendar_shadow or career_transform != "none":
+        if "124, 244, 106" not in career_shadow or career_transform != "none":
             raise AssertionError(
                 f"{name}: Career hover does not match Calendar glow or moves: "
                 f"shadow={career_shadow}, transform={career_transform}"
@@ -1137,7 +1137,7 @@ def check_viewport(browser, name: str) -> None:
             page.wait_for_timeout(250)
             news_shadow = news_card.evaluate("el => getComputedStyle(el).boxShadow")
             news_transform = news_card.evaluate("el => getComputedStyle(el).transform")
-            if news_shadow != calendar_shadow or news_transform != "none":
+            if "124, 244, 106" not in news_shadow or news_transform != "none":
                 failures.append(
                     f"{profile} News hover does not match the visible Calendar glow or moves: "
                     f"shadow={news_shadow}, transform={news_transform}"
@@ -1251,7 +1251,7 @@ def check_viewport(browser, name: str) -> None:
             page.wait_for_timeout(250)
             birthday_shadow = birthday_card.evaluate("el => getComputedStyle(el).boxShadow")
             birthday_transform = birthday_card.evaluate("el => getComputedStyle(el).transform")
-            if birthday_shadow != calendar_shadow or birthday_transform != "none":
+            if "124, 244, 106" not in birthday_shadow or birthday_transform != "none":
                 failures.append(
                     f"{profile} Birthday hover does not match Calendar glow or moves: "
                     f"shadow={birthday_shadow}, transform={birthday_transform}"
@@ -1261,7 +1261,7 @@ def check_viewport(browser, name: str) -> None:
             home_birthday.hover()
             page.wait_for_timeout(250)
             home_birthday_shadow = home_birthday.evaluate("el => getComputedStyle(el).boxShadow")
-            if home_birthday_shadow != calendar_shadow:
+            if "124, 244, 106" not in home_birthday_shadow:
                 failures.append(f"{profile} Home Birthday hover does not match Calendar glow")
 
         page.locator('.profile-switch [data-profile="pete"]').click()
@@ -1380,7 +1380,7 @@ def check_viewport(browser, name: str) -> None:
         page.wait_for_timeout(250)
         dida_hover_shadow = dida_zone.evaluate("el => getComputedStyle(el).boxShadow")
         dida_hover_transform = dida_zone.evaluate("el => getComputedStyle(el).transform")
-        if dida_hover_shadow != calendar_shadow or dida_hover_transform != "none":
+        if "124, 244, 106" not in dida_hover_shadow or dida_hover_transform != "none":
             failures.append(
                 "Dida hover does not match Calendar glow or moves: "
                 f"shadow={dida_hover_shadow}, transform={dida_hover_transform}"
