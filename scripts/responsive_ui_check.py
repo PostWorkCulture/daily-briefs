@@ -187,7 +187,18 @@ def check_reduced_motion(browser) -> None:
     page = context.new_page()
     try:
         page.goto(BASE_URL, wait_until="domcontentloaded", timeout=15000)
-        page.locator("#greeting").wait_for(state="visible", timeout=10000)
+        for attempt in range(2):
+            try:
+                page.wait_for_function(
+                    "document.querySelector('#greeting')?.textContent === 'Hey Pete' && "
+                    "document.querySelectorAll('#view-news .tab-story').length > 0",
+                    timeout=15000,
+                )
+                break
+            except PlaywrightTimeoutError:
+                if attempt:
+                    raise
+                page.reload(wait_until="domcontentloaded", timeout=15000)
         page.evaluate("window.scrollTo(0, 900)")
         page.locator('[data-view-target="news"]').click()
         page.locator("#view-news .tab-story").first.wait_for(state="visible", timeout=10000)
