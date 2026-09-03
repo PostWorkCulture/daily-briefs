@@ -4,9 +4,10 @@ Newest entries go first.
 
 ## 3 September 2026: Family-first Local News and public-sector AI careers
 
-Status: published; responsive browser validation passed at 390 × 844 and 1,366 × 900
+Status: merged and validated; GitHub Pages redeployment is blocked
 
 - Publication: squash-merged PR #29 to `main` as `b798a16d142be4efe4857bf7e59c0b236e6d947b` after all 56 unit tests and the protected responsive release gate passed.
+- Hosting note: GitHub Pages returned its own 404 after the merge and did not start a new `pages build and deployment` run for the release commits. Re-enable or re-save the repository's Pages source before marking the public routes live.
 
 - Local News: expanded the target from 12 to 16 stories, added searches focused on local papers and publications, and prioritised family activities, parks, festivals, seasonal events, workshops, trails, and open days.
 - Sports rule: routine local scores, results, match reports, fixtures, tables, and round-ups are excluded. Openings, major changes, and significant participatory events remain eligible.
