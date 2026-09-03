@@ -484,6 +484,8 @@ def check_viewport(browser, name: str) -> None:
               days: document.querySelectorAll('.calendar-month-day').length,
               selectedDays: document.querySelectorAll('.calendar-month-day.selected').length,
               gridRight: document.querySelector('#calendarMonthGrid').getBoundingClientRect().right,
+              titleTop: document.querySelector('#calendarMonthTitle').getBoundingClientRect().top,
+              profileBottom: document.querySelector('#profileSwitch').getBoundingClientRect().bottom,
               viewportWidth: window.innerWidth
             })
             """
@@ -496,6 +498,7 @@ def check_viewport(browser, name: str) -> None:
             or calendar_view["days"] != 42
             or calendar_view["selectedDays"] != 1
             or calendar_view["gridRight"] > calendar_view["viewportWidth"] + 1
+            or calendar_view["titleTop"] < calendar_view["profileBottom"]
         ):
             raise AssertionError(f"{name}: dedicated month Calendar is incomplete: {calendar_view}")
         event_day = page.locator('.calendar-month-day:has(.calendar-event-chip)').first
