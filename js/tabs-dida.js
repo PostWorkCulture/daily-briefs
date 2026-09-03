@@ -50,10 +50,26 @@
     const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
     return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
+  function careerStory(item,index=0){
+    const tag=item?.url?'a':'article';
+    const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
+    const fields=[
+      ['Job Title',item?.title||'Untitled'],
+      ['Company',item?.company||'Employer not stated'],
+      ['Description',item?.description||'Description not supplied by publisher.'],
+      ['Salary',item?.salary||'Not stated'],
+      ['Posted Date',item?.postedDate||'Date not stated'],
+      ['Where it was posted',item?.source||'Source not stated'],
+      ['Location',item?.location||'Location not stated']
+    ];
+    const details=fields.map(([label,value])=>`<div class="career-field"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('');
+    const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
+    return `<${tag} class="tab-story section-story career-story${hierarchy}"${attrs}><span class="section-story-icon section-story-icon-career">${sectionIcon('career',index)}</span><dl class="career-details">${details}</dl></${tag}>`;
+  }
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     const heading=title?`<h3>${esc(title)}</h3>`:'';
-    const stories=(items||[]).map((item,index)=>story(item,section,index));
+    const stories=(items||[]).map((item,index)=>section==='career'?careerStory(item,index):story(item,section,index));
     const primary=stories.slice(0,3).join('');
     const stream=stories.slice(3);
     const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
@@ -61,6 +77,7 @@
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
+  function newestJobsFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.postedAt||'')||0)-(Date.parse(a.postedAt||'')||0))}
   function openAIFirst(items){return [...(items||[])].sort((a,b)=>{const score=x=>/openai|chatgpt/i.test(`${x.title||''} ${x.source||''} ${x.url||''}`)?0:1;return score(a)-score(b)})}
   function didaIcon(name){
     const paths={
@@ -136,7 +153,7 @@
     news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
-    document.getElementById('careerTabGroups').innerHTML=group('',data.sections?.Career||[],'career');
+    document.getElementById('careerTabGroups').innerHTML=group('',newestJobsFirst(data.sections?.Career||[]),'career');
     document.getElementById('didaContent').innerHTML=didaHTML();
     if(profile==='sofia'&&document.getElementById('view-arsenal')?.classList.contains('active'))showView('home');
   }

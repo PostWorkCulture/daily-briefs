@@ -104,18 +104,19 @@ REMOTE_EXCLUDED_LOCATION = re.compile(
     r"\b(?:united states|u\.?s\.?a?\.?|canada|latin america|latam|asia|apac|australia|new zealand)\b",
     re.I,
 )
-PETE_ROLE_TERMS = re.compile(
-    r"\b(?:ai|artificial intelligence|data|digital|automation|machine learning|analytics|"
-    r"technology|technical|platform|cloud|cyber|information|solution architect|product)\b",
+AI_CAREER_TERMS = re.compile(
+    r"\b(?:AI|artificial intelligence|machine learning|generative AI|genAI|large language model|"
+    r"LLMs?|responsible AI|AI (?:governance|assurance|policy|strategy|adoption|safety))\b",
     re.I,
 )
-PETE_PUBLIC_SECTOR_TERMS = re.compile(
-    r"\b(?:civil service|public sector|government|department for|cabinet office|gds|nhs|"
-    r"local authority|ministry of|home office|public service)\b",
-    re.I,
-)
-PETE_EXCLUDED_ROLE = re.compile(
-    r"\b(?:software engineer|machine learning engineer|data engineer|developer|programmer|devops|mlops)\b",
+PUBLIC_SECTOR_EMPLOYER_TERMS = re.compile(
+    r"\b(?:civil service|government digital service|cabinet office|home office|"
+    r"ministry of|department for|department of|hm revenue|hm treasury|dwp|defra|dhsc|dft|"
+    r"office for national statistics|national audit office|national cyber security centre|"
+    r"nhs|national health service|[a-z& ]+ council|local authority|parliament|"
+    r"police|fire and rescue|ambulance service|uk research and innovation|ukri|"
+    r"money and pensions service|met office|dvla|dvsa|hm land registry|"
+    r"information commissioner's office|ico|ofcom|ofgem|uk health security agency|ukhsa)\b",
     re.I,
 )
 INACTIVE_LISTING = re.compile(
@@ -132,6 +133,20 @@ LOCAL_NEWS_QUERIES = (
     '("Walton-on-Thames" OR "Walton on Thames" OR Hersham)',
     '("Thames Ditton" OR "Long Ditton" OR "Hinchley Wood" OR Esher OR "Sunbury-on-Thames")',
 )
+LOCAL_NEWS_PUBLICATION_QUERIES = (
+    'site:surreycomet.co.uk (Molesey OR Kingston OR Surbiton OR Teddington OR "Thames Ditton")',
+    'site:surreylive.news (Molesey OR Kingston OR Teddington OR Walton OR Esher OR Hersham)',
+    'site:kingston.nub.news (Kingston OR Surbiton OR "Hampton Wick")',
+    'site:teddington.nub.news (Teddington OR "Hampton Wick" OR "Bushy Park")',
+    'site:weybridgeandwalton.nub.news ("Walton-on-Thames" OR Hersham)',
+    'site:richmondandtwickenhamtimes.co.uk (Teddington OR Hampton OR "Bushy Park")',
+)
+LOCAL_NEWS_FAMILY_QUERIES = (
+    '(Molesey OR Kingston OR Surbiton OR Teddington OR Hampton) '
+    '(family OR kids OR children OR festival OR park OR "what\'s on" OR Halloween OR Christmas)',
+    '("Hampton Court" OR "Walton-on-Thames" OR Hersham OR Esher OR "Thames Ditton") '
+    '(family OR kids OR children OR festival OR event OR trail OR workshop OR "open day")',
+)
 LOCAL_NEWS_PLACE_EVIDENCE = (
     re.compile(r"\b(?:east|west)\s+molesey\b|\bmolesey\b", re.I),
     re.compile(r"\bkingston(?:\s+upon(?:-|\s+)thames)?\b", re.I),
@@ -145,13 +160,56 @@ LOCAL_NEWS_PLACE_EVIDENCE = (
 LOCAL_NEWS_FALSE_LOCATIONS = re.compile(
     r"\b(?:kingston\s+upon\s+hull|kingston,?\s+(?:jamaica|ontario|rhode\s+island|tennessee|tasmania)|"
     r"east\s+hampton|hampton\s+roads|hampton\s+university|hampton\s+(?:inn|by\s+hilton)|the\s+hamptons|"
-    r"walton\s+county|walton[-\s]le[-\s]dale|walton[-\s]on[-\s]the[-\s]naze|walton\s+goggins)\b",
+    r"walton\s+county|walton[-\s]le[-\s]dale|walton[-\s]on[-\s]the[-\s]naze|walton\s+goggins|"
+    r"virginia|tasmania|australia|forest\s+park,?\s+ga|georgia|ireland)\b",
+    re.I,
+)
+LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE = re.compile(
+    r"\b(?:WTKR|Tasmanian Country|Teagasc|Legacy obituary|funeral home|obituary|YouTube)\b",
+    re.I,
+)
+LOCAL_NEWS_LOW_VALUE_CONTENT = re.compile(
+    r"\b(?:obituary|funeral home|death notice|property listing|houses? for sale|jobs? available|"
+    r"MOT|sponsored content|advertorial|download[^.]{0,80}\bapp)\b",
     re.I,
 )
 PLAIN_HAMPTON = re.compile(r"\bhampton\b", re.I)
 PLAIN_HAMPTON_LOCAL_CONTEXT = re.compile(
     r"\b(?:resident|council|road|street|park|school|pool|pub|shop|business|planning|police|"
     r"river|local|village|station|church|library|community|borough|ferry|traffic|closure)s?\b",
+    re.I,
+)
+LOCAL_NEWS_PUBLICATIONS = re.compile(
+    r"\b(?:Surrey Comet|Surrey Live|Kingston Nub News|Teddington Nub News|"
+    r"Weybridge and Walton Nub News|Richmond and Twickenham Times|Molesey Matters|"
+    r"Elmbridge Today|This Is Local London|MyLondon)\b",
+    re.I,
+)
+LOCAL_FAMILY_ACTIVITY = re.compile(
+    r"\b(?:child-friendly|festival|fete|fair|carnival|fun day|family day|kids? day|"
+    r"Halloween|Christmas|Easter|half[- ]term|school holiday|park|playground|trail|"
+    r"workshop|open day|what['’]s on|things to do|activities|fireworks|lantern|grotto|"
+    r"pumpkin|Santa|outdoor cinema|fun day)\b",
+    re.I,
+)
+LOCAL_SPORT_TOPIC = re.compile(
+    r"\b(?:football|rugby|cricket|hockey|tennis|netball|basketball|golf|cycling|"
+    r"athletics|swimming|rowing|fixture|match|league|cup|tournament|FC|RFC|CC)\b",
+    re.I,
+)
+LOCAL_SPORT_RESULT = re.compile(
+    r"\b(?:score|result|match report|beat|beats|beaten|defeat|defeats|defeated|"
+    r"win|wins|won|loss|lost|draw|drew|victory|goals?|points?|innings|wickets?|"
+    r"fixture|standings|table|round-up|roundup)\b|\b\d+\s*[-–]\s*\d+\b",
+    re.I,
+)
+LOCAL_SPORT_EXCEPTION = re.compile(
+    r"\b(?:open|opens|opened|opening|unveil|unveils|unveiled|launch|launches|launched|"
+    r"new\s+(?:manager|owner|facility|venue|pitch|ground|sports centre|clubhouse|investment|rules?)|"
+    r"refurbish|refurbished|redevelop|redeveloped|expansion|major change|"
+    r"closure|closes|relocat|merger|takeover|community pitch|sports centre|sports hub|"
+    r"major event|festival|sports day|open day|fun run|marathon|regatta|"
+    r"get involved|sign up)\b",
     re.I,
 )
 
@@ -411,26 +469,84 @@ def newest_news(items: list[dict], limit: int) -> list[dict]:
 
 
 def local_news_item_is_in_scope(item: dict) -> bool:
-    """Require headline or summary evidence that a story is genuinely near KT8 2LE."""
+    """Require approved local evidence and reject routine sports coverage."""
     text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
-    if not text or LOCAL_NEWS_FALSE_LOCATIONS.search(text):
+    source = clean_html(str(item.get("source", "")))
+    if (
+        not text
+        or LOCAL_NEWS_FALSE_LOCATIONS.search(f"{text} {source}")
+        or LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE.search(source)
+        or LOCAL_NEWS_LOW_VALUE_CONTENT.search(text)
+    ):
         return False
-    return any(pattern.search(text) for pattern in LOCAL_NEWS_PLACE_EVIDENCE) or bool(
+    local = any(pattern.search(text) for pattern in LOCAL_NEWS_PLACE_EVIDENCE) or bool(
         PLAIN_HAMPTON.search(text) and PLAIN_HAMPTON_LOCAL_CONTEXT.search(text)
     )
+    if not local:
+        return False
+    routine_sport = LOCAL_SPORT_TOPIC.search(text) and LOCAL_SPORT_RESULT.search(text)
+    return not routine_sport or bool(LOCAL_SPORT_EXCEPTION.search(text))
+
+
+def local_publication_item(item: dict) -> bool:
+    text = " ".join(str(item.get(key, "")) for key in ("source", "url"))
+    return bool(LOCAL_NEWS_PUBLICATIONS.search(text))
+
+
+def local_family_activity_item(item: dict) -> bool:
+    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
+    return bool(LOCAL_FAMILY_ACTIVITY.search(text))
+
+
+def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
+    """Prioritise local publications and family activities, then display newest first."""
+    scoped = [item for item in items if local_news_item_is_in_scope(item)]
+    prioritised = sorted(
+        scoped,
+        key=lambda item: (
+            local_family_activity_item(item),
+            local_publication_item(item),
+            str(item.get("publishedAt") or ""),
+        ),
+        reverse=True,
+    )
+    selected: list[dict] = []
+    selected_title_words: list[set[str]] = []
+    for item in prioritised:
+        words = set(re.findall(r"[a-z0-9]+", clean_html(str(item.get("title", ""))).lower()))
+        if any(
+            len(words & existing) / max(1, len(words | existing)) >= 0.82
+            for existing in selected_title_words
+        ):
+            continue
+        selected.append(item)
+        selected_title_words.append(words)
+        if len(selected) >= limit:
+            break
+    for item in selected:
+        item["localPublication"] = local_publication_item(item)
+        item["familyActivity"] = local_family_activity_item(item)
+    return newest_news(selected, limit)
 
 
 def local_news() -> list[dict]:
-    # Prefer the freshest fortnight. If that cannot fill the 12-story target,
+    # Prefer the freshest fortnight. If that cannot fill the 16-story target,
     # extend time to 30 days without widening beyond the approved KT8 cluster.
     for max_age_days in (14, 30):
-        candidates = merge_news(*(
-            google_news(f'{query} when:{max_age_days}d', 32, max_age_days)
-            for query in LOCAL_NEWS_QUERIES
-        ), limit=192)
+        queries = (
+            *LOCAL_NEWS_QUERIES,
+            *LOCAL_NEWS_PUBLICATION_QUERIES,
+            *LOCAL_NEWS_FAMILY_QUERIES,
+        )
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            groups = list(pool.map(
+                lambda query: google_news(f'{query} when:{max_age_days}d', 32, max_age_days),
+                queries,
+            ))
+        candidates = merge_news(*groups, limit=448)
         scoped = [item for item in candidates if local_news_item_is_in_scope(item)]
-        if len(scoped) >= 12 or max_age_days == 30:
-            return newest_news(scoped, 12)
+        if len(scoped) >= 16 or max_age_days == 30:
+            return select_local_news(scoped, 16)
     return []
 
 
@@ -655,7 +771,8 @@ def parse_job_date(job: dict) -> datetime | None:
     value = job.get("date") or job.get("publication_date") or job.get("pubDate")
     if value:
         try:
-            return dateparser.parse(str(value)).astimezone(TZ)
+            parsed = dateparser.parse(str(value))
+            return parsed.astimezone(TZ) if parsed.tzinfo else parsed.replace(tzinfo=TZ)
         except Exception:
             pass
     return None
@@ -738,12 +855,14 @@ def normalise_job(row: dict, source: str) -> dict:
             "title": row.get("title"), "company_name": row.get("company_name"),
             "location": row.get("location"), "description": row.get("description"),
             "url": row.get("url"), "created_at": row.get("created_at"), "remote": row.get("remote"),
+            "salary": row.get("salary"),
         }
     if source == "Remote OK":
         return {
             "title": row.get("position"), "company_name": row.get("company"),
             "location": row.get("location") or "Remote", "description": row.get("description"),
             "tags": row.get("tags"), "url": row.get("url"), "epoch": row.get("epoch"), "remote": True,
+            "salary": row.get("salary") or " - ".join(str(value) for value in (row.get("salary_min"), row.get("salary_max")) if value),
         }
     if source == "Remotive":
         return {
@@ -751,12 +870,14 @@ def normalise_job(row: dict, source: str) -> dict:
             "location": row.get("candidate_required_location") or "Remote",
             "description": row.get("description"), "tags": row.get("tags"),
             "url": row.get("url"), "publication_date": row.get("publication_date"), "remote": True,
+            "salary": row.get("salary"),
         }
     if source == "Jobicy":
         return {
             "title": row.get("jobTitle"), "company_name": row.get("companyName"),
             "location": row.get("jobGeo") or "Remote", "description": row.get("jobDescription"),
             "tags": row.get("jobIndustry"), "url": row.get("url"), "pubDate": row.get("pubDate"), "remote": True,
+            "salary": row.get("annualSalaryMin") or row.get("salary"),
         }
     if source == "Sweden JobTech":
         address = row.get("workplace_address") or {}
@@ -770,8 +891,8 @@ def normalise_job(row: dict, source: str) -> dict:
 
 
 def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, ...] = (0, 10)) -> list[tuple[dict, str]]:
-    jobs = []
-    for start in starts:
+    def fetch_page(start: int) -> list[tuple[dict, str]]:
+        jobs = []
         try:
             response = requests.get(
                 "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
@@ -781,7 +902,7 @@ def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, 
             )
             response.raise_for_status()
         except Exception:
-            continue
+            return []
         soup = BeautifulSoup(response.text, "html.parser")
         for card in soup.select("li"):
             link = card.select_one("a.base-card__full-link")
@@ -800,7 +921,10 @@ def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, 
                 "description": "",
                 "target": target,
             }, "LinkedIn"))
-    return jobs
+        return jobs
+
+    with ThreadPoolExecutor(max_workers=min(4, len(starts))) as pool:
+        return [job for page in pool.map(fetch_page, starts) for job in page]
 
 
 def linkedin_description(job: dict) -> dict:
@@ -814,6 +938,13 @@ def linkedin_description(job: dict) -> dict:
         block = soup.select_one(".show-more-less-html__markup")
         enriched = dict(job)
         enriched["description"] = block.get_text(" ", strip=True) if block else page_text
+        salary = re.search(
+            r"(?:£\s?\d{2,3}(?:,\d{3})?(?:\s*(?:-|–|to)\s*£?\s?\d{2,3}(?:,\d{3})?)?(?:\s*(?:per annum|per year|a year|p\.a\.))?)",
+            page_text,
+            re.I,
+        )
+        if salary:
+            enriched["salary"] = salary.group(0)
         if INACTIVE_LISTING.search(page_text):
             enriched["inactive"] = True
         return enriched
@@ -822,63 +953,20 @@ def linkedin_description(job: dict) -> dict:
 
 
 def career_job_candidates() -> list[tuple[dict, str]]:
-    candidates: list[tuple[dict, str]] = []
-    for page in range(1, 4):
-        try:
-            response = requests.get(
-                "https://www.arbeitnow.com/api/job-board-api",
-                params={"page": page},
-                headers=UA,
-                timeout=30,
-            )
-            response.raise_for_status()
-            rows = response.json().get("data", [])
-        except Exception:
-            break
-        if not rows:
-            break
-        candidates.extend((normalise_job(row, "Arbeitnow"), "Arbeitnow") for row in rows)
-
-    try:
-        response = requests.get("https://remoteok.com/api", headers=UA, timeout=30)
-        response.raise_for_status()
-        rows = response.json()
-        candidates.extend((normalise_job(row, "Remote OK"), "Remote OK") for row in rows[1:] if isinstance(row, dict))
-    except Exception:
-        pass
-
-    for params in ({"category": "product"}, {"search": "AI data digital"}):
-        try:
-            response = requests.get("https://remotive.com/api/remote-jobs", params=params, headers=UA, timeout=30)
-            response.raise_for_status()
-            candidates.extend((normalise_job(row, "Remotive"), "Remotive") for row in response.json().get("jobs", []))
-        except Exception:
-            pass
-
-    try:
-        response = requests.get("https://jobicy.com/api/v2/remote-jobs", params={"count": 50, "geo": "uk"}, headers=UA, timeout=30)
-        response.raise_for_status()
-        candidates.extend((normalise_job(row, "Jobicy"), "Jobicy") for row in response.json().get("jobs", []))
-    except Exception:
-        pass
-
-    for query in ("product manager", "produktchef"):
-        try:
-            response = requests.get(
-                "https://jobsearch.api.jobtechdev.se/search",
-                params={"q": query, "limit": 100},
-                headers=UA,
-                timeout=30,
-            )
-            response.raise_for_status()
-            candidates.extend((normalise_job(row, "Sweden JobTech"), "Sweden JobTech") for row in response.json().get("hits", []))
-        except Exception:
-            pass
-
-    candidates.extend(linkedin_jobs("Senior Product Manager OR Product Director OR Head of Product", "United Kingdom", "sofia"))
-    candidates.extend(linkedin_jobs("Senior Product Manager OR Product Director OR Head of Product", "Sweden", "sofia"))
-    candidates.extend(linkedin_jobs("AI data digital public sector", "United Kingdom", "pete"))
-    return candidates
+    queries = (
+        '"artificial intelligence" government',
+        '"AI" NHS',
+        '"machine learning" government',
+        '"generative AI" public sector',
+        '"responsible AI" government',
+        '"AI governance" public sector',
+    )
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        groups = pool.map(
+            lambda query: linkedin_jobs(query, "United Kingdom", "public-ai", starts=(0, 10, 20)),
+            queries,
+        )
+        return [job for group in groups for job in group]
 
 
 def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
@@ -911,20 +999,60 @@ def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: i
     return [item for _, _, item in ranked[:limit]]
 
 
+def published_job_description(description: str, limit: int = 420) -> str:
+    cleaned = clean_html(html.unescape(description)).strip()
+    if not cleaned:
+        return "Description not supplied by publisher."
+    if len(cleaned) <= limit:
+        return cleaned
+    shortened = cleaned[:limit].rsplit(" ", 1)[0].rstrip(" ,;:")
+    return f"{shortened}…"
+
+
+def published_job_salary(job: dict) -> str:
+    description = clean_html(html.unescape(str(job.get("description") or "")))
+    match = re.search(
+        r"£\s?\d{2,3}(?:,\d{3})?(?:\s*(?:-|–|to)\s*£?\s?\d{2,3}(?:,\d{3})?)?"
+        r"(?:\s*(?:per annum|per year|a year|p\.a\.))?",
+        description,
+        re.I,
+    )
+    if match:
+        return match.group(0)
+    value = clean_html(str(job.get("salary") or "")).strip(" -")
+    return value or "Not stated"
+
+
+def job_has_passed_closing_date(description: str) -> bool:
+    match = re.search(
+        r"\b(?:close date|closing date|applications close)\s*:?\s*"
+        r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{1,2}\s+[A-Za-z]+\s+\d{4})",
+        description,
+        re.I,
+    )
+    if not match:
+        return False
+    try:
+        return dateparser.parse(match.group(1), dayfirst=True).date() < NOW.date()
+    except (TypeError, ValueError, OverflowError):
+        return False
+
+
 def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
+    """Return only current UK public-sector vacancies with explicit AI relevance."""
     title = clean_html(str(job.get("title") or ""))
     company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
     location = clean_html(str(job.get("location") or "Location not stated"))
     description = clean_html(html.unescape(str(job.get("description") or "")))
-    if PETE_EXCLUDED_ROLE.search(title):
-        return None
     if "government digital service" in title.lower() and "government digital service" not in company.lower():
         return None
-    if not PETE_ROLE_TERMS.search(title) and not PETE_PUBLIC_SECTOR_TERMS.search(f"{title} {company}"):
+    if not AI_CAREER_TERMS.search(f"{title} {description}"):
+        return None
+    if not PUBLIC_SECTOR_EMPLOYER_TERMS.search(company):
         return None
     if not SOFIA_UK_LOCATION.search(f"{location} {description}"):
         return None
-    if job.get("inactive") or INACTIVE_LISTING.search(description):
+    if job.get("inactive") or INACTIVE_LISTING.search(description) or job_has_passed_closing_date(description):
         return None
     url = clean_html(str(job.get("url") or ""))
     if not url.startswith(("https://", "http://")):
@@ -933,38 +1061,53 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
     if posted and NOW - posted > timedelta(days=30):
         return None
 
-    score = 4
-    if PETE_PUBLIC_SECTOR_TERMS.search(f"{title} {company} {description}"):
-        score += 5
+    score = 5
     if re.search(r"\b(?:head|director|lead|senior|principal|architect|manager)\b", title, re.I):
         score += 2
-    if re.search(r"\b(?:ai|artificial intelligence|automation|machine learning)\b", title, re.I):
+    if AI_CAREER_TERMS.search(title):
         score += 3
     if source == "LinkedIn":
         score += 1
-    posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
+    posted_date = posted.strftime("%-d %B %Y") if posted else "Date not stated"
     item = {
         "title": title,
-        "summary": f"{company} · {location}",
-        "meta": f"UK · {posted_label}",
+        "company": company,
+        "description": published_job_description(description),
+        "salary": published_job_salary(job),
+        "postedDate": posted_date,
         "source": source,
+        "location": location,
         "url": url,
         "contentType": "job",
         "countryFocus": "UK",
-        "company": company,
-        "location": location,
+        "sector": "Public sector",
+        "aiRelated": True,
     }
     if posted:
         item["postedAt"] = posted.date().isoformat()
     return score, posted or datetime.min.replace(tzinfo=TZ), item
 
 
-def pete_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
+def public_ai_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
     candidates = candidates if candidates is not None else career_job_candidates()
+    linkedin_candidates = [
+        job for job, source in candidates
+        if source == "LinkedIn" and job.get("target") == "public-ai"
+        and AI_CAREER_TERMS.search(str(job.get("title") or ""))
+        and PUBLIC_SECTOR_EMPLOYER_TERMS.search(str(job.get("company_name") or job.get("company") or ""))
+    ]
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        linkedin_enriched = {
+            job.get("url"): enriched
+            for job, enriched in zip(linkedin_candidates, pool.map(linkedin_description, linkedin_candidates))
+        }
+
     ranked, seen = [], set()
     for job, source in candidates:
-        if source == "LinkedIn" and job.get("target") != "pete":
-            continue
+        if source == "LinkedIn":
+            if job.get("target") != "public-ai":
+                continue
+            job = linkedin_enriched.get(job.get("url"), job)
         result = pete_job_item(job, source)
         if not result:
             continue
@@ -974,8 +1117,16 @@ def pete_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: in
             continue
         seen.add(key)
         ranked.append((score, posted, item))
-    ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
+    ranked.sort(key=lambda row: (row[1], row[0]), reverse=True)
     return [item for _, _, item in ranked[:limit]]
+
+
+def pete_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
+    return public_ai_career_jobs(candidates, limit)
+
+
+def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
+    return public_ai_career_jobs(candidates, limit)
 
 
 def previous_career(profile: str) -> list[dict]:
@@ -984,7 +1135,11 @@ def previous_career(profile: str) -> list[dict]:
         jobs = (data.get("sections") or {}).get("Career") or []
         return [
             job for job in jobs
-            if job.get("contentType") == "job" and str(job.get("url") or "").startswith(("https://", "http://"))
+            if job.get("contentType") == "job"
+            and job.get("sector") == "Public sector"
+            and job.get("aiRelated") is True
+            and all(key in job for key in ("title", "company", "description", "salary", "postedDate", "source", "location"))
+            and str(job.get("url") or "").startswith(("https://", "http://"))
         ]
     except Exception:
         return []
@@ -1151,8 +1306,9 @@ def build_profiles() -> dict[str, dict]:
     uk = uk_news()
     tonight = tonight_recommendations()
     career_candidates = career_job_candidates()
-    pete_career = pete_career_jobs(career_candidates) or previous_career("pete")
-    sofia_career = sofia_career_jobs(career_candidates) or previous_career("sofia")
+    current_career = public_ai_career_jobs(career_candidates)
+    pete_career = current_career or previous_career("pete")
+    sofia_career = current_career or previous_career("sofia")
     sweden = google_news('(Sweden OR Swedish) news when:4d', 7, 4)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
 

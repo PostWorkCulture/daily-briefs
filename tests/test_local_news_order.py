@@ -76,7 +76,7 @@ class LocalNewsOrderTests(unittest.TestCase):
                 "publishedAt": f"2026-08-{index + 10:02d}T09:00:00+01:00",
                 "url": f"https://example.com/local-{index}",
             }
-            for index in range(12)
+            for index in range(16)
         ]
         rejected = {
             "title": "National celebrity story with no local place",
@@ -88,12 +88,67 @@ class LocalNewsOrderTests(unittest.TestCase):
         with patch.object(refresh, "google_news", return_value=[rejected, *accepted]):
             result = refresh.local_news()
 
-        self.assertEqual(len(result), 12)
+        self.assertEqual(len(result), 16)
         self.assertNotIn(rejected["title"], {item["title"] for item in result})
         self.assertEqual(
             [item["publishedAt"] for item in result],
             sorted((item["publishedAt"] for item in accepted), reverse=True),
         )
+
+    def test_routine_sports_results_are_rejected_but_significant_sports_news_is_kept(self) -> None:
+        rejected = (
+            "Walton & Hersham FC lose 2-1 in league result",
+            "Kingston rugby match report: hosts beaten by 12 points",
+        )
+        accepted = (
+            "New community sports centre opens in Kingston",
+            "Teddington hockey club unveils new community pitch",
+            "Hampton Court hosts major family cycling festival",
+        )
+
+        for title in rejected:
+            with self.subTest(title=title):
+                self.assertFalse(refresh.local_news_item_is_in_scope({"title": title, "summary": ""}))
+        for title in accepted:
+            with self.subTest(title=title):
+                self.assertTrue(refresh.local_news_item_is_in_scope({"title": title, "summary": ""}))
+
+    def test_selection_prioritises_family_activities_and_local_publications(self) -> None:
+        ordinary = [
+            {
+                "title": f"Kingston planning update {index}",
+                "summary": "",
+                "source": "National News",
+                "url": f"https://example.com/{index}",
+                "publishedAt": f"2026-09-{index + 1:02d}T09:00:00+01:00",
+            }
+            for index in range(6)
+        ]
+        family = {
+            "title": "Teddington family Halloween trail announced",
+            "summary": "",
+            "source": "National News",
+            "url": "https://example.com/family",
+            "publishedAt": "2026-08-20T09:00:00+01:00",
+        }
+        local_paper = {
+            "title": "Surbiton library programme expands",
+            "summary": "",
+            "source": "Surrey Comet",
+            "url": "https://www.surreycomet.co.uk/example",
+            "publishedAt": "2026-08-21T09:00:00+01:00",
+        }
+
+        result = refresh.select_local_news([*ordinary, family, local_paper], 4)
+
+        self.assertIn(family, result)
+        self.assertIn(local_paper, result)
+        self.assertEqual(
+            [item["publishedAt"] for item in result],
+            sorted((item["publishedAt"] for item in result), reverse=True),
+        )
+        self.assertTrue(next(item for item in result if item["title"] == family["title"])["familyActivity"])
+        self.assertTrue(next(item for item in result if item["title"] == local_paper["title"])["localPublication"])
 
 
 if __name__ == "__main__":
