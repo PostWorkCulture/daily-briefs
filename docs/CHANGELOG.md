@@ -4,12 +4,15 @@ Newest entries go first.
 
 ## 3 September 2026: Two calendar summary filters
 
-Status: implemented; publication follows the normal responsive and Pages gates
+Status: published; responsive browser validation passed at 390 × 844 and 1,366 × 900
+
+- Publication: squash-merged PR #28 to `main` as `342ffe25bb6bea1b6397c2c96c485215b1501e0a` after all 50 unit tests and the full responsive release gate passed; the Pages deployment succeeded.
 
 - Requested change: replace the four Home calendar summary filters with exactly two: `Today / tomorrow` and `This month`.
 - Combined range: the first filter includes events overlapping either today or tomorrow, counts multi-day events once, and is selected by default.
 - Presentation: both numbered filters share one row at mobile and Chromebook/desktop widths and retain the existing stationary edge-glow and keyboard-focus treatment.
 - Protected scope: the dedicated month Calendar, refreshed event feed, section order, profile behaviour, and all non-Calendar content remain unchanged.
+- Refresh note: the merge-triggered content refresh was rejected before committing because it produced fewer than 10 Local News items. The existing live data remained intact; this did not affect the calendar release.
 - Master brief update: version 4.6 records Pete's approved two-filter specification.
 
 ## 3 September 2026: Calendar view and Signal Grid icon
