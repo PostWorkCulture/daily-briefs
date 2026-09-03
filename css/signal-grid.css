@@ -96,8 +96,8 @@ body:after{background:#030504!important}
 #view-ai .section-head h2,
 #view-career .section-head h2,
 #view-dida>.tab-panel>.section-head h2,
-.birthday-panel .section-head h2,
-.occasion-month h3{
+html body .birthday-panel .section-head h2,
+html body .occasion-month h3{
   color:var(--text)!important;
 }
 .section-kicker,
