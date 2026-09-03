@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import Path
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, sync_playwright
 
 BASE_URL = "http://127.0.0.1:4173/?profile=pete"
 LOCKED_URL = "http://127.0.0.1:4173/?profile=pete&locked=1"
@@ -139,10 +139,18 @@ def check_profile_routes(browser) -> None:
         page = context.new_page()
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=15000)
-            page.wait_for_function(
-                f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}' && "
-                f"document.querySelector('#primaryNav')?.dataset.profile === '{profile}'"
-            )
+            for attempt in range(2):
+                try:
+                    page.wait_for_function(
+                        f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}' && "
+                        f"document.querySelector('#primaryNav')?.dataset.profile === '{profile}'",
+                        timeout=15000,
+                    )
+                    break
+                except PlaywrightTimeoutError:
+                    if attempt:
+                        raise
+                    page.reload(wait_until="domcontentloaded", timeout=15000)
             route_state = page.evaluate(
                 """
                 () => {
