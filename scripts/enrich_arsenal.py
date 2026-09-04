@@ -4,6 +4,7 @@ import json
 import re
 from datetime import datetime, timedelta
 from pathlib import Path
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import requests
@@ -236,12 +237,97 @@ def enrich_completed_result(item: dict) -> dict:
     return strip_internal(enriched) or {}
 
 
+def parse_sky_state_matches(html: str, final_url: str, month_date: datetime) -> list[dict]:
+    """Parse Sky's embedded match data without relying on translated page copy."""
+    soup = BeautifulSoup(html, "html.parser")
+    out: list[dict] = []
+    for node in soup.select('[data-component-name="ui-sport-match-score"][data-state]'):
+        try:
+            state = json.loads(node.get("data-state") or "{}")
+        except (TypeError, json.JSONDecodeError):
+            continue
+        if any(state.get(key) for key in ("isCancelled", "isPostponed", "isAbandoned")):
+            continue
+
+        teams = state.get("teams") or {}
+        home_row, away_row = teams.get("home") or {}, teams.get("away") or {}
+        home = str((home_row.get("name") or {}).get("full") or "").strip()
+        away = str((away_row.get("name") or {}).get("full") or "").strip()
+        arsenal_home = home.casefold() == "arsenal"
+        arsenal_away = away.casefold() == "arsenal"
+        if not arsenal_home and not arsenal_away:
+            continue
+
+        start = state.get("start") or {}
+        raw_date = re.sub(r"(?<=\d)(?:st|nd|rd|th)\b", "", str(start.get("date") or ""), flags=re.I)
+        if not re.search(r"\b\d{4}\b", raw_date):
+            raw_date = f"{raw_date} {month_date.year}".strip()
+        try:
+            dt = dateparser.parse(raw_date, dayfirst=True)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=TZ)
+            else:
+                dt = dt.astimezone(TZ)
+            raw_time = str(start.get("time") or start.get("time12hr") or "").strip()
+            if raw_time:
+                parsed_time = dateparser.parse(raw_time)
+                dt = dt.replace(hour=parsed_time.hour, minute=parsed_time.minute, second=0, microsecond=0)
+        except Exception:
+            continue
+
+        completed = bool(state.get("isResult")) or str(state.get("matchState") or "").casefold() in {
+            "post", "result", "full time", "ft"
+        }
+
+        def score(row: dict):
+            raw = (row.get("score") or {}).get("current")
+            try:
+                value = float(raw)
+                return int(value) if value.is_integer() else value
+            except (TypeError, ValueError):
+                return None
+
+        home_score, away_score = score(home_row), score(away_row)
+        arsenal_score = home_score if arsenal_home else away_score
+        opponent_score = away_score if arsenal_home else home_score
+        competition = str(
+            ((state.get("competition") or {}).get("name") or {}).get("full") or "Football"
+        ).strip()
+        channel = str((state.get("channel") or {}).get("description") or "TBC").strip()
+        match_url = str(state.get("matchURL") or "").strip()
+        item = {
+            "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
+            "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+            "opponent": away if arsenal_home else home, "competition": competition,
+            "homeAway": "home" if arsenal_home else "away", "completed": completed,
+            "arsenalScore": arsenal_score if completed else None,
+            "opponentScore": opponent_score if completed else None,
+            "result": (
+                f"{score_display(arsenal_score)}–{score_display(opponent_score)}"
+                if completed and arsenal_score is not None and opponent_score is not None else ""
+            ),
+            "url": urljoin(final_url, match_url) if match_url else final_url,
+            "source": "Sky Sports", "tvChannel": channel,
+        }
+        venue = state.get("venue")
+        if isinstance(venue, dict):
+            venue = venue.get("fullName") or venue.get("name")
+        if str(venue or "").strip():
+            item["stadium"] = str(venue).strip()
+        out.append(item)
+    return out
+
+
 def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
     month_date = month_date or NOW
     month_url = f"https://www.skysports.com/arsenal-scores-fixtures/{month_date.year}-{month_date.month:02d}-01"
     html, final_url = get_html(month_url)
     if not html:
         return []
+
+    structured = parse_sky_state_matches(html, final_url, month_date)
+    if structured:
+        return structured
 
     soup = BeautifulSoup(html, "html.parser")
     lines = [x.strip() for x in soup.stripped_strings if x.strip()]
@@ -254,7 +340,7 @@ def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
         re.I,
     )
     comp_re = re.compile(
-        r"^(Premier League|FA Community Shield|Community Shield|Friendly Match(?:es)?|Champions League|UEFA Champions League|FA Cup|Carabao Cup|League Cup|Europa League|UEFA Europa League)$",
+        r"^(Premier League|FA Community Shield|Community Shield|Friendly Match(?:es)?|Champions League|UEFA Champions League|FA Cup|Carabao Cup|EFL Cup|League Cup|Europa League|UEFA Europa League)$",
         re.I,
     )
     # Sky text currently resembles: “Arsenal are scheduled to play Manchester City . 3.00pm Arsenal vs Manchester City. Kick-off at 3:00pm”
@@ -290,19 +376,19 @@ def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
         fm = scheduled_re.search(line)
         if fm:
             home, away = fm.group("home").strip(), fm.group("away").strip()
-            if "arsenal" not in home.lower() and "arsenal" not in away.lower():
+            if home.casefold() != "arsenal" and away.casefold() != "arsenal":
                 continue
             try:
                 tm = datetime.strptime(fm.group("ko").upper(), "%I:%M%p").time()
                 dt = current_date.replace(hour=tm.hour, minute=tm.minute)
             except Exception:
                 dt = current_date
-            opponent = away if "arsenal" in home.lower() else home
+            opponent = away if home.casefold() == "arsenal" else home
             out.append({
                 "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
                 "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
                 "opponent": opponent, "competition": current_comp,
-                "homeAway": "home" if "arsenal" in home.lower() else "away",
+                "homeAway": "home" if home.casefold() == "arsenal" else "away",
                 "completed": False, "arsenalScore": None, "opponentScore": None,
                 "result": "", "url": final_url, "source": "Sky Sports",
             })
@@ -311,10 +397,10 @@ def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
         rm = result_re.search(line)
         if rm:
             home, away = rm.group("home").strip(), rm.group("away").strip()
-            if "arsenal" not in home.lower() and "arsenal" not in away.lower():
+            if home.casefold() != "arsenal" and away.casefold() != "arsenal":
                 continue
             h_score, a_score = int(rm.group("hscore")), int(rm.group("ascore"))
-            arsenal_home = "arsenal" in home.lower()
+            arsenal_home = home.casefold() == "arsenal"
             opponent = away if arsenal_home else home
             out.append({
                 "date": current_date.isoformat(), "dateLabel": current_date.strftime("%a %-d %b"),
@@ -451,8 +537,9 @@ def espn_snapshot() -> tuple[list[dict], int | None, int | None, int | None]:
     return fixtures, position, points, played
 
 
-def snapshot(existing_news: list[dict]) -> dict:
+def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) -> dict:
     clean_news = clean_arsenal_news(existing_news)
+    existing_arsenal = existing_arsenal or {}
     espn_fixtures, position, points, played = espn_snapshot()
     sky_fixtures = all_sky_matches()
 
@@ -460,6 +547,22 @@ def snapshot(existing_news: list[dict]) -> dict:
     all_fixtures = reconcile_official_fixture(
         sky_fixtures + espn_fixtures, official_fixture
     )
+    sky_future = [
+        item for item in sky_fixtures
+        if not item.get("completed") and dateparser.parse(item["date"]) >= NOW - timedelta(hours=3)
+    ]
+    existing_next = existing_arsenal.get("nextFixture") or {}
+    try:
+        existing_next_is_future = (
+            not existing_next.get("completed")
+            and dateparser.parse(existing_next.get("date", "")) >= NOW - timedelta(hours=3)
+        )
+    except Exception:
+        existing_next_is_future = False
+    if not sky_future and existing_next_is_future:
+        # A transient Sky parse or network failure must not skip a still-upcoming
+        # verified match and jump to a later fallback fixture.
+        all_fixtures.append(existing_next)
     unique = {}
     for item in all_fixtures:
         key = (item.get("date"), item.get("opponent"), item.get("competition"), item.get("completed"))
@@ -533,7 +636,7 @@ def main() -> None:
     clean_news = clean_arsenal_news(news)
     if "sections" in payload and "Arsenal news" in payload["sections"]:
         payload["sections"]["Arsenal news"] = clean_news
-    enriched = retain_verified_league_position(snapshot(clean_news), existing_arsenal)
+    enriched = retain_verified_league_position(snapshot(clean_news, existing_arsenal), existing_arsenal)
     enriched["transfers"] = transfers
     enriched["transferRumours"] = transfer_rumours
     payload["arsenal"] = enriched
