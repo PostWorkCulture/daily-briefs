@@ -108,6 +108,20 @@ VERIFIED_FIXTURES = {
             "source": "Sky Sports",
         },
     },
+    ("2026-09-06", "chelsea"): {
+        "opponent": "Chelsea",
+        "stadium": "Emirates Stadium",
+        "kickoff": "4:30pm",
+        "competition": "Premier League",
+        "tvChannel": "Sky Sports Premier League",
+        "source": "Sky Sports",
+        "previousMeeting": {
+            "score": "Arsenal 2–1 Chelsea",
+            "date": "1 Mar 2026",
+            "competition": "Premier League",
+            "source": "Arsenal.com",
+        },
+    },
 }
 
 

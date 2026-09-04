@@ -2,6 +2,18 @@
 
 Newest entries go first.
 
+## 4 September 2026: Arsenal next-fixture source repair
+
+Status: implemented; publication follows the normal responsive, refresh, and Pages gates
+
+- Corrected the next fixture from the stale `Leeds United · 10 October` fallback to `Arsenal v Chelsea · Sunday 6 September · 4:30pm`.
+- Root cause: Sky changed the fixture page's hidden localisation copy, while the parser still required the old English sentence `are scheduled to play`; every September fixture was discarded before nearest-date selection.
+- Source hardening: parse Sky's embedded structured match state for date, kickoff, teams, competition, broadcaster, match URL, and result status, while retaining the older text parser only as fallback.
+- Outage safety: if the Sky fixture feed temporarily disappears, retain a still-upcoming verified fixture instead of jumping to a later fallback opponent.
+- Scope protection: require one side to be exactly `Arsenal`, preventing `Arsenal Women` or other similarly named teams from entering the men's first-team feed.
+- Regression proof: added current-format parser coverage, women's-team rejection, nearest-source ordering, and complete Chelsea fixture-detail tests.
+- Protected scope: no layout, styling, prior result, league position, news, transfers, other profile data, or non-Arsenal section changed.
+
 ## 4 September 2026: Strict, documentary-led TV Picks
 
 Status: implemented; publication follows the normal responsive, refresh, and Pages gates
