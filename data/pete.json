@@ -668,904 +668,684 @@
         "sourceUrl": "https://x.com/jamesbenge"
       },
       {
-        "title": "🚨🔵⚪️ OFFICIAL: Gabriel Martinelli joins Al Hilal on €70m package deal from Arsenal. Record sale for #AFC with also a sell-on clause secured as part of the ag�]���$z{-���jםnot title or key in seen: continue
-        summary = clean_html(entry.get("summary", ""))[:220]
-        published_at = ""
-        try:
-            dt = dateparser.parse(entry.get("published", "")).astimezone(TZ)
-            if NOW - dt > timedelta(days=max_age_days): continue
-            meta = dt.strftime("%a %-d %b")
-            published_at = dt.isoformat()
-        except Exception: meta = section
-        seen.add(key)
-        items.append({"title": title, "summary": summary, "meta": meta, "publishedAt": published_at, "source": section, "url": entry.get("link", "")})
-        if len(items) >= limit: break
-    return items
-
-
-def merge_news(*groups: list[dict], limit: int) -> list[dict]:
-    merged, seen = [], set()
-    for group in groups:
-        for item in group:
-            title = clean_html(item.get("title", ""))
-            url = str(item.get("url", "")).strip()
-            key = re.sub(r"\W+", "", title.lower())[:120]
-            if not title or not url or key in seen:
-                continue
-            seen.add(key)
-            merged.append(item)
-            if len(merged) >= limit:
-                return merged
-    return merged
-
-
-def newest_news(items: list[dict], limit: int) -> list[dict]:
-    """Put reliably dated stories first, newest to oldest, with undated items last."""
-    return sorted(
-        items,
-        key=lambda item: str(item.get("publishedAt") or ""),
-        reverse=True,
-    )[:limit]
-
-
-def local_news_item_is_in_scope(item: dict) -> bool:
-    """Require approved local evidence and reject routine sports coverage."""
-    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
-    source = clean_html(str(item.get("source", "")))
-    if (
-        not text
-        or LOCAL_NEWS_FALSE_LOCATIONS.search(f"{text} {source}")
-        or LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE.search(source)
-        or LOCAL_NEWS_LOW_VALUE_CONTENT.search(text)
-    ):
-        return False
-    local = any(pattern.search(text) for pattern in LOCAL_NEWS_PLACE_EVIDENCE) or bool(
-        PLAIN_HAMPTON.search(text) and PLAIN_HAMPTON_LOCAL_CONTEXT.search(text)
-    )
-    if not local:
-        return False
-    routine_sport = LOCAL_SPORT_TOPIC.search(text) and LOCAL_SPORT_RESULT.search(text)
-    return not routine_sport or bool(LOCAL_SPORT_EXCEPTION.search(text))
-
-
-def local_publication_item(item: dict) -> bool:
-    text = " ".join(str(item.get(key, "")) for key in ("source", "url"))
-    return bool(LOCAL_NEWS_PUBLICATIONS.search(text))
-
-
-def local_family_activity_item(item: dict) -> bool:
-    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
-    return bool(LOCAL_FAMILY_ACTIVITY.search(text))
-
-
-def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
-    """Prioritise local publications and family activities, then display newest first."""
-    scoped = [item for item in items if local_news_item_is_in_scope(item)]
-    prioritised = sorted(
-        scoped,
-        key=lambda item: (
-            local_family_activity_item(item),
-            local_publication_item(item),
-            str(item.get("publishedAt") or ""),
-        ),
-        reverse=True,
-    )
-    selected: list[dict] = []
-    selected_title_words: list[set[str]] = []
-    for item in prioritised:
-        words = set(re.findall(r"[a-z0-9]+", clean_html(str(item.get("title", ""))).lower()))
-        if any(
-            len(words & existing) / max(1, len(words | existing)) >= 0.82
-            for existing in selected_title_words
-        ):
-            continue
-        selected.append(item)
-        selected_title_words.append(words)
-        if len(selected) >= limit:
-            break
-    for item in selected:
-        item["localPublication"] = local_publication_item(item)
-        item["familyActivity"] = local_family_activity_item(item)
-    return newest_news(selected, limit)
-
-
-def local_news() -> list[dict]:
-    # Prefer the freshest fortnight. If that cannot fill the 16-story target,
-    # extend time to 30 days without widening beyond the approved KT8 cluster.
-    for max_age_days in (14, 30):
-        queries = (
-            *LOCAL_NEWS_QUERIES,
-            *LOCAL_NEWS_PUBLICATION_QUERIES,
-            *LOCAL_NEWS_FAMILY_QUERIES,
-        )
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            groups = list(pool.map(
-                lambda query: google_news(f'{query} when:{max_age_days}d', 32, max_age_days),
-                queries,
-            ))
-        candidates = merge_news(*groups, limit=448)
-        scoped = [item for item in candidates if local_news_item_is_in_scope(item)]
-        if len(scoped) >= 16 or max_age_days == 30:
-            return select_local_news(scoped, 16)
-    return []
-
-
-def positive_uk_news_item_is_in_scope(item: dict) -> bool:
-    """Keep explicitly uplifting stories and reject distressing or adversarial news."""
-    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
-    return bool(
-        text
-        and UK_POSITIVE_NEWS_EVIDENCE.search(text)
-        and not UK_NEGATIVE_NEWS_EVIDENCE.search(text)
-    )
-
-
-def uk_news() -> list[dict]:
-    # Use the BBC's UK feed plus targeted positive searches. Start with the
-    # freshest fortnight and extend to 30 days only when needed for depth.
-    # Never fill the section with a negative fallback.
-    for max_age_days in (14, 30):
-        candidates = merge_news(
-            rss('https://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News', 48, max_age_days),
-            *(
-                google_news(f'{query} when:{max_age_days}d', 40, max_age_days)
-                for query in UK_POSITIVE_NEWS_QUERIES
-            ),
-            limit=256,
-        )
-        positive = [item for item in candidates if positive_uk_news_item_is_in_scope(item)]
-        if len(positive) >= 12 or max_age_days == 30:
-            return newest_news(positive, 12)
-    return []
-
-
-TRUSTED_ARSENAL_TRANSFER_SOURCES = {
-    "arsenal.com": "Official",
-    "bbc sport": "Trusted report",
-    "sky sports": "Trusted report",
-    "the athletic": "Tier-one report",
-    "the guardian": "Trusted report",
-    "reuters": "Trusted report",
-    "espn": "Trusted report",
-    "the new york times": "Tier-one report",
-}
-X_TRANSFER_REPORTERS = (
-    {"name": "David Ornstein", "handle": "David_Ornstein", "confidence": "Tier-one reporter", "profile": "https://x.com/David_Ornstein"},
-    {"name": "Fabrizio Romano", "handle": "FabrizioRomano", "confidence": "Established reporter", "profile": "https://x.com/FabrizioRomano"},
-    {"name": "Charles Watts", "handle": "charles_watts", "confidence": "Arsenal specialist", "profile": "https://x.com/charles_watts"},
-    {"name": "James Benge", "handle": "jamesbenge", "confidence": "Arsenal specialist", "profile": "https://x.com/jamesbenge"},
-)
-TRANSFER_TERMS = re.compile(
-    r"\b(?:transfer|sign(?:s|ed|ing)?|deal|move|bid|talks|loan|contract|exit|joins?|medical|target)\b",
-    re.I,
-)
-TRANSFER_EXCLUSIONS = re.compile(
-    r"\b(?:rumou?rs?|gossip|paper talk|odds|betting|women|women's|u21|u18|academy|girls|"
-    r"vacanc(?:y|ies)|jobs?|careers?|creative|marketing|partnerships?|commercial)\b",
-    re.I,
-)
-SPECULATION_EXCLUSIONS = re.compile(
-    r"\b(?:paper talk|odds|betting|women|women's|u21|u18|academy|youth|girls)\b",
-    re.I,
-)
-
-
-def news_timestamp(item: dict) -> float:
-    value = str(item.get("publishedAt") or "").strip()
-    if not value:
-        return 0
-    try:
-        return dateparser.parse(value).timestamp()
-    except Exception:
-        return 0
-
-
-def newest_first(items: list[dict]) -> list[dict]:
-    return sorted(items, key=news_timestamp, reverse=True)
-
-
-TRANSFER_NAME_STOPWORDS = {
-    "arsenal", "transfer", "news", "sign", "signs", "signed", "signing",
-    "join", "joins", "joined", "deal", "move", "loan", "contract", "target",
-    "report", "official", "update", "first", "team", "player", "new", "the",
-    "with", "from", "into", "amid", "after", "ahead", "agree", "agreed",
-}
-
-
-def transfer_identity_words(title: str) -> set[str]:
-    return {
-        word for word in re.findall(r"[a-zà-öø-ÿ'’-]{3,}", clean_html(title).lower())
-        if word not in TRANSFER_NAME_STOPWORDS
-    }
-
-
-def corroborating_transfer_report(item: dict, trusted_reports: list[dict]) -> dict | None:
-    """Return independent corroboration for an official first-team transfer item."""
-    identity = transfer_identity_words(item.get("title", ""))
-    if len(identity) < 2:
-        return None
-    return next((
-        report for report in trusted_reports
-        if len(identity & transfer_identity_words(report.get("title", ""))) >= 2
-    ), None)
-
-
-def official_transfer_is_corroborated(item: dict, trusted_reports: list[dict]) -> bool:
-    return corroborating_transfer_report(item, trusted_reports) is not None
-
-
-def scope_transfer_updates(candidates: list[dict]) -> list[dict]:
-    """Normalize trusted transfer candidates and quarantine invalid articles.
-
-    Article-level failures are optional-content failures: they are dropped here and
-    must never prevent the rest of the morning brief from refreshing.
-    """
-    updates = []
-    for item in candidates:
-        source = clean_html(item.get("source", ""))
-        source_key = source.lower()
-        trust = next((
-            label for name, label in TRUSTED_ARSENAL_TRANSFER_SOURCES.items()
-            if name in source_key
-        ), None)
-        title = clean_html(item.get("title", ""))
-        if (
-            not trust
-            or not title
-            or not TRANSFER_TERMS.search(title)
-            or TRANSFER_EXCLUSIONS.search(title)
-        ):
-            continue
-        update = dict(item)
-        update["title"] = title
-        update["source"] = source
-        update["contentType"] = "transfer-update"
-        update["trust"] = trust
-        updates.append(update)
-
-    trusted_reports = [
-        item for item in updates
-        if "arsenal.com" not in item.get("source", "").lower()
+        "title": "🚨🔵⚪️ OFFICIAL: Gabriel Martinelli joins Al Hilal on €70m package deal from Arsenal. Record sale for #AFC with also a sell-on clause secured as part of the agreement. The exclusive story on Martinelli added as part of Hilal list, now reality. 🇧🇷",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T17:38:06+01:00",
+        "source": "Fabrizio Romano",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtdWVsZGc0X2FZQVNnV2NNdnBzWkl1Qi00cHNkOGtWSGlUTDc3NWp5bmJ0NUlNS2J3aU5PRmZobFBZMlFrZHZOVWNCcS04ZHVYZWo2NEpTM0NGYnZUN2lTYjBLZ0cxdw?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Established reporter",
+        "sourceUrl": "https://x.com/FabrizioRomano"
+      },
+      {
+        "title": "Gabriel Martinelli's move to Al-Hilal has been finalised. Arsenal receive £60m for the winger, a new club record. A sell-on clause has also been included in the deal.",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T17:30:30+01:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04LTFfbDBVb29qLXE1SWlRX0UwTm16cS1uTTdkN3ZGOE1ISnhEajRZY1JjN2diNmltd2hGM1kybmJYRnJFNG81Y1BJYUkxd0pyOU1SR044cXFVaEZFa3Y4OS0tSGM?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
+      {
+        "title": "Enjoyed catching up with @strollernick to discuss Arsenal's transfer window today. Much more to come from me with @HaytersTV throughout the season, having now joined the team to help with their Arsenal coverage. https://t.co/6aDX9YuOQ3",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T16:15:07+01:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fUnU0elRjWk1iYnBsMHVCY0ZGUHEzZFhjTm5TVV9aSzV6LW1vdVl0NTZkcTVwWDFsWnFuWm51bFlVRGVmYjYwWXhvX1h4eVh4QkR2TFNEQWJlcnJfelpOSWlGUzA?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
+      {
+        "title": "🚨🔴⚪️ Reiss Nelson has completed a medical and joins Feyenoord as free agent after leaving Arsenal. Former #AFC winger agreed terms last night and now can be considered as new Feyenoord player - after @1908nl.",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T13:13:55+01:00",
+        "source": "Fabrizio Romano",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qM0pWaGpKaWllcXFUN3lYU0RDa0xHckdXUUdCWVhad2tKbm1ucldhR01hakdSODlwMFBVdHUzdDhlTkdueURNaEFTaUN2ZkFMem5rM09UQ0lzSGFDd3o0dlg2d19pUQ?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Established reporter",
+        "sourceUrl": "https://x.com/FabrizioRomano"
+      }
     ]
-    scoped_updates = []
-    for item in updates:
-        if "arsenal.com" not in item.get("source", "").lower():
-            scoped_updates.append(item)
-            continue
-        report = corroborating_transfer_report(item, trusted_reports)
-        if not report:
-            continue
-        official = dict(item)
-        official["corroboratedBy"] = {
-            key: report.get(key)
-            for key in ("title", "source", "url", "publishedAt")
-            if report.get(key)
-        }
-        scoped_updates.append(official)
-
-    return newest_first(scoped_updates)[:6]
-
-
-def arsenal_transfer_updates() -> list[dict]:
-    candidates = merge_news(
-        google_news('site:arsenal.com Arsenal (transfer OR signing OR loan OR contract) when:21d', 24, 21),
-        google_news('Arsenal (transfer OR signing OR deal OR loan OR contract) when:14d', 50, 14),
-        limit=60,
-    )
-    return scope_transfer_updates(candidates)
-
-
-def arsenal_transfer_rumours() -> list[dict]:
-    rumours = []
-    for reporter in X_TRANSFER_REPORTERS:
-        query = f'site:x.com/{reporter["handle"]}/status Arsenal (transfer OR signing OR deal OR move OR bid OR talks OR loan OR contract OR exit) when:7d'
-        for item in google_news(query, 10, 7):
-            title = clean_html(item.get("title", ""))
-            if "arsenal" not in title.lower() or not TRANSFER_TERMS.search(title) or SPECULATION_EXCLUSIONS.search(title):
-                continue
-            update = dict(item)
-            update.update({
-                "contentType": "transfer-rumour",
-                "trust": "Unconfirmed",
-                "speculative": True,
-                "source": reporter["name"],
-                "sourceType": "X",
-                "confidence": reporter["confidence"],
-                "sourceUrl": reporter["profile"],
-            })
-            rumours.append(update)
-    return newest_first(merge_news(rumours, limit=30))[:5]
-
-
-def sofia_role_match(title: str) -> bool:
-    title = clean_html(title)
-    if not any(pattern.search(title) for pattern in SOFIA_PRODUCT_ROLE_PATTERNS):
-        return False
-    return not SOFIA_SOFTWARE_ROLE.search(title)
-
-
-def sofia_work_arrangement(job: dict, source: str) -> str | None:
-    raw = " ".join(str(job.get(key, "")) for key in ("title", "position", "location", "description", "tags"))
-    text = clean_html(html.unescape(raw))
-    if SOFIA_REMOTE_NEGATION.search(text):
-        return None
-
-    source_is_remote = source in {"Remote OK", "Remotive", "Jobicy"} or bool(job.get("remote"))
-    if source_is_remote or SOFIA_REMOTE_TERMS.search(text):
-        return "remote"
-
-    if any(pattern.search(text) for pattern in SOFIA_THREE_WFH_TERMS):
-        location = clean_html(str(job.get("location", "")))
-        if SOFIA_UK_LOCATION.search(f"{location} {text}") or SOFIA_SWEDEN_LOCATION.search(f"{location} {text}"):
-            return "3-wfh-days"
-    return None
-
-
-def parse_job_date(job: dict) -> datetime | None:
-    epoch = job.get("created_at") or job.get("epoch")
-    if epoch:
-        try:
-            return datetime.fromtimestamp(int(epoch), TZ)
-        except (TypeError, ValueError, OSError):
-            pass
-    value = job.get("date") or job.get("publication_date") or job.get("pubDate")
-    if value:
-        try:
-            parsed = dateparser.parse(str(value))
-            return parsed.astimezone(TZ) if parsed.tzinfo else parsed.replace(tzinfo=TZ)
-        except Exception:
-            pass
-    return None
-
-
-def job_country_focus(job: dict) -> str | None:
-    location = clean_html(str(job.get("location") or ""))
-    description = clean_html(html.unescape(str(job.get("description") or "")))
-    text = f"{location} {description}"
-    if SOFIA_UK_LOCATION.search(text):
-        return "UK"
-    if SOFIA_SWEDEN_LOCATION.search(text):
-        return "Sweden"
-    if REMOTE_ELIGIBLE_LOCATION.search(location) and not REMOTE_EXCLUDED_LOCATION.search(location):
-        return "Europe/remote"
-    return None
-
-
-def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
-    title = clean_html(str(job.get("title") or job.get("position") or ""))
-    if not sofia_role_match(title):
-        return None
-    arrangement = sofia_work_arrangement(job, source)
-    if not arrangement:
-        return None
-    country_focus = job_country_focus(job)
-    if not country_focus:
-        return None
-
-    url = clean_html(str(job.get("url") or ""))
-    if not url.startswith(("https://", "http://")):
-        return None
-    company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
-    location = clean_html(str(job.get("location") or "Location not stated"))
-    description = clean_html(html.unescape(str(job.get("description") or "")))
-    if SOFIA_EXCLUDED_SECTOR.search(f"{title} {description}"):
-        return None
-    if job.get("inactive") or INACTIVE_LISTING.search(description):
-        return None
-    posted = parse_job_date(job)
-    if posted and NOW - posted > timedelta(days=30):
-        return None
-
-    score = 4
-    if re.search(r"\b(?:director|head|vice president|vp|principal|group)\b", title, re.I):
-        score += 3
-    elif re.search(r"\b(?:senior|lead)\b", title, re.I):
-        score += 2
-    if SOFIA_DOMAIN_TERMS.search(f"{title} {description}"):
-        score += 3
-    if arrangement == "remote":
-        score += 2
-    if country_focus in {"UK", "Sweden"}:
-        score += 5
-    if source == "LinkedIn":
-        score += 1
-
-    work_label = "Remote" if arrangement == "remote" else "3+ WFH days"
-    posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
-    item = {
-        "title": title,
-        "summary": f"{company} · {location}",
-        "meta": f"{work_label} · {posted_label}",
-        "source": source,
-        "url": url,
-        "contentType": "job",
-        "workArrangement": arrangement,
-        "company": company,
-        "location": location,
-        "countryFocus": country_focus,
+  },
+  "lead": {
+    "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+    "meta": "Thu 3 Sep",
+    "publishedAt": "2026-09-03T14:15:00+01:00",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders"
+  },
+  "interests": [
+    {
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "meta": "Thu 3 Sep",
+      "publishedAt": "2026-09-03T14:15:00+01:00",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "section": "AI"
+    },
+    {
+      "title": "Élisa De Almeida signs for Arsenal",
+      "summary": "",
+      "meta": "Thu 3 Sep",
+      "publishedAt": "2026-09-03T22:11:25+01:00",
+      "source": "arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOclpuVWJlS1QxOW1ZcGhPYkdwNENtemVjeVJ2d21vV2pHVGZoUFljSDFrM0FPci1YSmNrOXh2RWVpdkJpUm02MGhiY1hzZHRUWExYYS0tbmtTS1RNd2gyQVBWd1hfb0cySWJPekdFaktjT0I1VUxGNmpQYTNpLTk5OVRR?oc=5",
+      "section": "Arsenal"
+    },
+    {
+      "title": "Kingston’s Rose Theatre announces cast for upcoming production of ‘Jane Eyre’",
+      "summary": "",
+      "meta": "Thu 3 Sep",
+      "publishedAt": "2026-09-03T16:00:00+01:00",
+      "source": "Kingston Nub News",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbnFuLVU2b01JazYzOEJ5bUtUOUFHZUZGVlNpbDVxcjFfbkRxazFRQkd0X1pyMktTQmt6Q2xLWDlxaHUxekhQSU9kb3FqRFJQRkdDWV9jamg5M3RsUmdLOTNTWUN0MllNcUxyOHNjSzJ6SXp2QmJXMUQ4SEZuLXVzSHI5d3BKd1J6bXRDRFc4d243NTF4ME1PNTVtbjdack5nWm1SbEk3MERMNVpVb09kb2ZrV042RTdpZkVWZ2ZtMF8?oc=5",
+      "localPublication": true,
+      "familyActivity": false,
+      "section": "Local"
     }
-    if posted:
-        item["postedAt"] = posted.date().isoformat()
-    return score, posted or datetime.min.replace(tzinfo=TZ), item
-
-
-def normalise_job(row: dict, source: str) -> dict:
-    if source == "Arbeitnow":
-        return {
-            "title": row.get("title"), "company_name": row.get("company_name"),
-            "location": row.get("location"), "description": row.get("description"),
-            "url": row.get("url"), "created_at": row.get("created_at"), "remote": row.get("remote"),
-            "salary": row.get("salary"),
-        }
-    if source == "Remote OK":
-        return {
-            "title": row.get("position"), "company_name": row.get("company"),
-            "location": row.get("location") or "Remote", "description": row.get("description"),
-            "tags": row.get("tags"), "url": row.get("url"), "epoch": row.get("epoch"), "remote": True,
-            "salary": row.get("salary") or " - ".join(str(value) for value in (row.get("salary_min"), row.get("salary_max")) if value),
-        }
-    if source == "Remotive":
-        return {
-            "title": row.get("title"), "company_name": row.get("company_name"),
-            "location": row.get("candidate_required_location") or "Remote",
-            "description": row.get("description"), "tags": row.get("tags"),
-            "url": row.get("url"), "publication_date": row.get("publication_date"), "remote": True,
-            "salary": row.get("salary"),
-        }
-    if source == "Jobicy":
-        return {
-            "title": row.get("jobTitle"), "company_name": row.get("companyName"),
-            "location": row.get("jobGeo") or "Remote", "description": row.get("jobDescription"),
-            "tags": row.get("jobIndustry"), "url": row.get("url"), "pubDate": row.get("pubDate"), "remote": True,
-            "salary": row.get("annualSalaryMin") or row.get("salary"),
-        }
-    if source == "Sweden JobTech":
-        address = row.get("workplace_address") or {}
-        location = ", ".join(x for x in (address.get("municipality"), address.get("region"), address.get("country")) if x)
-        return {
-            "title": row.get("headline"), "company_name": (row.get("employer") or {}).get("name"),
-            "location": location or "Sweden", "description": (row.get("description") or {}).get("text"),
-            "url": row.get("webpage_url"), "publication_date": row.get("publication_date"),
-        }
-    return dict(row)
-
-
-def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, ...] = (0, 10)) -> list[tuple[dict, str]]:
-    def fetch_page(start: int) -> list[tuple[dict, str]]:
-        jobs = []
-        try:
-            response = requests.get(
-                "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
-                params={"keywords": keywords, "location": location, "f_TPR": "r2592000", "start": start},
-                headers=UA,
-                timeout=25,
-            )
-            response.raise_for_status()
-        except Exception:
-            return []
-        soup = BeautifulSoup(response.text, "html.parser")
-        for card in soup.select("li"):
-            link = card.select_one("a.base-card__full-link")
-            title = card.select_one("h3.base-search-card__title")
-            if not link or not title:
-                continue
-            company = card.select_one("h4.base-search-card__subtitle")
-            place = card.select_one("span.job-search-card__location")
-            stamp = card.select_one("time")
-            jobs.append(({
-                "title": title.get_text(" ", strip=True),
-                "company_name": company.get_text(" ", strip=True) if company else "Employer not stated",
-                "location": place.get_text(" ", strip=True) if place else location,
-                "date": stamp.get("datetime") if stamp else None,
-                "url": (link.get("href") or "").split("?", 1)[0],
-                "description": "",
-                "target": target,
-            }, "LinkedIn"))
-        return jobs
-
-    with ThreadPoolExecutor(max_workers=min(4, len(starts))) as pool:
-        return [job for page in pool.map(fetch_page, starts) for job in page]
-
-
-def linkedin_description(job: dict) -> dict:
-    if job.get("description") or not str(job.get("url") or "").startswith("http"):
-        return job
-    try:
-        response = requests.get(job["url"], headers=UA, timeout=25)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        page_text = soup.get_text(" ", strip=True)
-        block = soup.select_one(".show-more-less-html__markup")
-        enriched = dict(job)
-        enriched["description"] = block.get_text(" ", strip=True) if block else page_text
-        salary = re.search(
-            r"(?:£\s?\d{2,3}(?:,\d{3})?(?:\s*(?:-|–|to)\s*£?\s?\d{2,3}(?:,\d{3})?)?(?:\s*(?:per annum|per year|a year|p\.a\.))?)",
-            page_text,
-            re.I,
-        )
-        if salary:
-            enriched["salary"] = salary.group(0)
-        if INACTIVE_LISTING.search(page_text):
-            enriched["inactive"] = True
-        return enriched
-    except Exception:
-        return job
-
-
-def career_job_candidates() -> list[tuple[dict, str]]:
-    queries = (
-        '"artificial intelligence" government',
-        '"AI" NHS',
-        '"machine learning" government',
-        '"generative AI" public sector',
-        '"responsible AI" government',
-        '"AI governance" public sector',
-    )
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        groups = pool.map(
-            lambda query: linkedin_jobs(query, "United Kingdom", "public-ai", starts=(0, 10, 20)),
-            queries,
-        )
-        return [job for group in groups for job in group]
-
-
-def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
-    candidates = candidates if candidates is not None else career_job_candidates()
-    linkedin_candidates = [
-        job for job, source in candidates
-        if source == "LinkedIn" and job.get("target") == "sofia" and sofia_role_match(str(job.get("title") or ""))
-    ]
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        linkedin_enriched = {job.get("url"): enriched for job, enriched in zip(linkedin_candidates, pool.map(linkedin_description, linkedin_candidates))}
-
-    ranked, seen = [], set()
-    for job, source in candidates:
-        if source == "LinkedIn":
-            if job.get("target") != "sofia" or not sofia_role_match(str(job.get("title") or "")):
-                continue
-            job = linkedin_enriched.get(job.get("url"), job)
-            if job.get("inactive"):
-                continue
-        result = sofia_job_item(job, source)
-        if not result:
-            continue
-        score, posted, item = result
-        key = re.sub(r"\W+", "", f"{item['title']}{item['company']}".lower())[:180]
-        if not key or key in seen:
-            continue
-        seen.add(key)
-        ranked.append((score, posted, item))
-    ranked.sort(key=lambda row: (row[0], row[1]), reverse=True)
-    return [item for _, _, item in ranked[:limit]]
-
-
-def published_job_description(description: str, limit: int = 420) -> str:
-    cleaned = clean_html(html.unescape(description)).strip()
-    if not cleaned:
-        return "Description not supplied by publisher."
-    if len(cleaned) <= limit:
-        return cleaned
-    shortened = cleaned[:limit].rsplit(" ", 1)[0].rstrip(" ,;:")
-    return f"{shortened}…"
-
-
-def published_job_salary(job: dict) -> str:
-    description = clean_html(html.unescape(str(job.get("description") or "")))
-    match = re.search(
-        r"£\s?\d{2,3}(?:,\d{3})?(?:\s*(?:-|–|to)\s*£?\s?\d{2,3}(?:,\d{3})?)?"
-        r"(?:\s*(?:per annum|per year|a year|p\.a\.))?",
-        description,
-        re.I,
-    )
-    if match:
-        return match.group(0)
-    value = clean_html(str(job.get("salary") or "")).strip(" -")
-    return value or "Not stated"
-
-
-def job_has_passed_closing_date(description: str) -> bool:
-    match = re.search(
-        r"\b(?:close date|closing date|applications close)\s*:?\s*"
-        r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{1,2}\s+[A-Za-z]+\s+\d{4})",
-        description,
-        re.I,
-    )
-    if not match:
-        return False
-    try:
-        return dateparser.parse(match.group(1), dayfirst=True).date() < NOW.date()
-    except (TypeError, ValueError, OverflowError):
-        return False
-
-
-def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
-    """Return only current UK public-sector vacancies with explicit AI relevance."""
-    title = clean_html(str(job.get("title") or ""))
-    company = clean_html(str(job.get("company_name") or job.get("company") or "Employer not stated"))
-    location = clean_html(str(job.get("location") or "Location not stated"))
-    description = clean_html(html.unescape(str(job.get("description") or "")))
-    if "government digital service" in title.lower() and "government digital service" not in company.lower():
-        return None
-    if not AI_CAREER_TERMS.search(f"{title} {description}"):
-        return None
-    if not PUBLIC_SECTOR_EMPLOYER_TERMS.search(company):
-        return None
-    if not SOFIA_UK_LOCATION.search(f"{location} {description}"):
-        return None
-    if job.get("inactive") or INACTIVE_LISTING.search(description) or job_has_passed_closing_date(description):
-        return None
-    url = clean_html(str(job.get("url") or ""))
-    if not url.startswith(("https://", "http://")):
-        return None
-    posted = parse_job_date(job)
-    if posted and NOW - posted > timedelta(days=30):
-        return None
-
-    score = 5
-    if re.search(r"\b(?:head|director|lead|senior|principal|architect|manager)\b", title, re.I):
-        score += 2
-    if AI_CAREER_TERMS.search(title):
-        score += 3
-    if source == "LinkedIn":
-        score += 1
-    posted_date = posted.strftime("%-d %B %Y") if posted else "Date not stated"
-    item = {
-        "title": title,
-        "company": company,
-        "description": published_job_description(description),
-        "salary": published_job_salary(job),
-        "postedDate": posted_date,
-        "source": source,
-        "location": location,
-        "url": url,
+  ],
+  "watch": [
+    {
+      "title": "True Crime Presents",
+      "summary": "A look at the murder of Peter McMahon in 2012, whose ex-partner Sharon Swinhoe and her accomplice Joseph Collins were sentenced to life for his financially motivated killing.",
+      "meta": "ITV1 · Available since Tue 1 Sep",
+      "source": "ITV1",
+      "url": "https://www.itv.com/",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/591/1477670.jpg",
+      "artworkAlt": "True Crime Presents programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-01",
+      "showId": 82050,
+      "episodeId": 3718033,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-04",
+      "preferenceScore": 440.8
+    },
+    {
+      "title": "The Murder Detective",
+      "summary": "After years of investigation, arrests and painstaking evidence-gathering, lead detective Jason Murphy is ready to make his boldest move yet. Convinced that those responsible for Lyra's…",
+      "meta": "Channel 4 · Available since Fri 28 Aug",
+      "source": "Channel 4",
+      "url": "https://www.channel4.com/programmes/the-murder-detective",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1595025.jpg",
+      "artworkAlt": "The Murder Detective programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-28",
+      "showId": 93719,
+      "episodeId": 3711851,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-04",
+      "preferenceScore": 436.9
+    },
+    {
+      "title": "Global Eye",
+      "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
+      "meta": "BBC Two · Mon 7 Sep, 7pm",
+      "source": "BBC Two",
+      "url": "https://www.bbc.co.uk/programmes/m002j92n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467593.jpg",
+      "artworkAlt": "Global Eye programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-07",
+      "showId": 87011,
+      "episodeId": 3720857,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-04",
+      "preferenceScore": 422.5
+    },
+    {
+      "title": "Check-In To Murder",
+      "summary": "Check-In To Murder explores chilling true crimes that have shaken British communities, revealing how the line between picturesque and perilous can be razor thin. From quaint villages with…",
+      "meta": "Crime & Investigation · Available since Mon 31 Aug",
+      "source": "Crime & Investigation",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/check-in-to-murder",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589613.jpg",
+      "artworkAlt": "Check-In To Murder programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-31",
+      "showId": 93464,
+      "episodeId": 3694597,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-04",
+      "preferenceScore": 420.5
+    },
+    {
+      "title": "Vigil",
+      "summary": "After the murder of a British citizen in the Arctic, DCI Amy Silva and DI Kirsten Longacre investigate. As Amy looks into a possible conspiracy on Scottish soil, Kirsten comes up against…",
+      "meta": "BBC iPlayer · Available since Sun 30 Aug",
+      "source": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597290.jpg",
+      "artworkAlt": "Vigil programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-08-30",
+      "showId": 45879,
+      "episodeId": 3701699,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-04",
+      "preferenceScore": 345.0
+    }
+  ],
+  "sections": {
+    "AI": [
+      {
+        "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+        "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T14:15:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/daybreak-for-frontline-defenders"
+      },
+      {
+        "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+        "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/legora-financial-statement-review-with-astra"
+      },
+      {
+        "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+        "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/playco-game-prototyping-with-astra"
+      },
+      {
+        "title": "Safety overview: GPT-6 Astra",
+        "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T01:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/safety-overview-gpt-6-astra"
+      },
+      {
+        "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+        "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/atv-big-air-tour"
+      },
+      {
+        "title": "How AI-native companies turn workflows into operating capability",
+        "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T18:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/ai-native-company-workflows"
+      },
+      {
+        "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T16:02:08+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/"
+      },
+      {
+        "title": "Proactive cyber defense for governments and enterprises",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T17:24:24+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/"
+      },
+      {
+        "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T17:18:31+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/"
+      },
+      {
+        "title": "Introducing agentic video understanding with Gemini",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T18:08:51+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/"
+      }
+    ],
+    "Arsenal news": [
+      {
+        "title": "Élisa De Almeida signs for Arsenal",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T22:11:25+01:00",
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOclpuVWJlS1QxOW1ZcGhPYkdwNENtemVjeVJ2d21vV2pHVGZoUFljSDFrM0FPci1YSmNrOXh2RWVpdkJpUm02MGhiY1hzZHRUWExYYS0tbmtTS1RNd2gyQVBWd1hfb0cySWJPekdFaktjT0I1VUxGNmpQYTNpLTk5OVRR?oc=5"
+      },
+      {
+        "title": "Arsenal handed big injury boost as Champions League squad confirmed",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T04:29:32+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVjVZTm9sOFJNUU9GcXVUb09pa2pkazRlQVlzS0NVT2dtbkhIM3Y2ckJ0d0huUGVjYVpUaTdDMjNuNjZEQWEzNWl2SkVGSmN0N3VycndfdkIxamtlYTV1Tzc1NDkteE9uMFZONkpwOHFBVFdWYjZPWnMyZ0hoYmxvSEt0NGljTTU5a0VpeFFUczhFUHcybGp0WmYwRHNmX1RjSnhRcmVrWXJ5ZzJSNldZ?oc=5"
+      },
+      {
+        "title": "Arsenal vs Chelsea preview: TV channel, kick-off time and how to watch | News | Official Site",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T11:10:00+01:00",
+        "source": "Chelsea Football Club",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYlFLaXFYRWh3dzB1cm4tY1M0d3JrRG9nb25QNHA5R3lGUGpDNHBYRWxNVmN6bUdBUS1Wajh6QnlDMFlMZWhtNkdtUFZwY3J2UDNONF9zdTR1eDJiQmtBeFY0aGp3a3UtX0x6SGd0dkpVSmEzY012ZmozbDlsd21qWGpFUzNERFdmWnV6X240WFNiZmNTY0V1QkwyaWJ3eHdRUVZIRVV0Q19GWE56NFN6ZjJsa2JxRDQ?oc=5"
+      },
+      {
+        "title": "TICKET DETAILS (CARABAO CUP) | ARSENAL (H)",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T09:26:17+01:00",
+        "source": "Ipswich Town FC",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQd1BNYUNmcEYySlQzYTFOcXJlLTFFdG5EV1pkSncxRVVOa3RDNjJpUFc4NXJZNHlrbEdKWk9RQ1p0OGJ1TEJKY2FFZjdHSnVTUTF4bG1xYzkwQUJlRkMxcE5xaDNrODk1b2NnR2d3NWs0QWZWZ2ZPQWk1MWhMN2QtcVBxQ3ZaRy1EejRjU1p6TExOUDg?oc=5"
+      },
+      {
+        "title": "Premier League: Hull to remain unbeaten, Arsenal too strong for Chelsea? Danny Mills predicts Super Sunday results!",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T19:13:31+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSFlVazJiMzdESGd3ZHE5NW9TSDBFLTVaNDhGMUpSLTNkdnR0bFlSTXZMUFJWb29xT05YcHNreE1ZRUY3TWJlSEJTN2xiRFFCUUxrNGkwNUNuZTdWcVh1RlBSUnhnNzBlV1VpTVlJRm1XbmpDY1JQT3RCYkF6ZVhXTnZCbFAxNlRVb1FqQTRKb1NsZDZnY2g5c0xNYU1xVW1YOVhMRzUzMnpwMThxbGg2RHRBbFp3UUVmcHNhOWczYmFkQjFTcVhmTW5wS2JteGlYOTJJcmI2VjY?oc=5"
+      },
+      {
+        "title": "Gabriel Martinelli joins Al-Hilal",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T17:34:29+01:00",
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPakttemk5Uk1IVW9QbGhYQzE0elI2UW9hZXdNaDhTdUdrcjlCUjVyaWVmUEtVUFpzXy1RdU1fVWxqcXdDTWxGVjNMNmkyeTV0Ny1YQjgwWXlHY3FROFVDU0VlYnhJNDZ6VGtBdjZBV0FZbGNvbW9PeWFOSFBvZEVfcg?oc=5"
+      },
+      {
+        "title": "Arsenal deal imminent as forward arrives to finalise £60m transfer",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T02:10:11+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOV0d1S1puTVpqMVNwZlQwMVNJTllEOFNpc1BPcHVoM2I5bFV1MkJuT1hKU2Jlc0FfdjIxaWRHZ0dJSmdJWlZ4NExicmYtVkQxeEVKekJFUld3OUNPalY3SHdtWlVnZ253TzlWOU03RTNfcTliVDVuRUlndjZCMEhsWEdxallYaWVBbl9UUTBCdUs0QjlZamFBUUIzMzVZbzd1?oc=5"
+      },
+      {
+        "title": "De Almeida: “I can’t wait to get started”",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T23:32:32+01:00",
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORHl5eTl3REFObGlOX01LYk9NbXFYbmZXZUhmRkNwQmZUanUtenFLYmNPOS02b3VNNkpIWWVPMkZZNnFiZFV0QXZRcDJxV3pkbUFWVEVRRkdlRXNGUTFzVmQzZ3I1SG9LWUJienhXNUdkS2g2NUZnc2FBUE5DWHVtUUN4cjFhQQ?oc=5"
+      }
+    ],
+    "Local news": [
+      {
+        "title": "Kingston’s Rose Theatre announces cast for upcoming production of ‘Jane Eyre’",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T16:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbnFuLVU2b01JazYzOEJ5bUtUOUFHZUZGVlNpbDVxcjFfbkRxazFRQkd0X1pyMktTQmt6Q2xLWDlxaHUxekhQSU9kb3FqRFJQRkdDWV9jamg5M3RsUmdLOTNTWUN0MllNcUxyOHNjSzJ6SXp2QmJXMUQ4SEZuLXVzSHI5d3BKd1J6bXRDRFc4d243NTF4ME1PNTVtbjdack5nWm1SbEk3MERMNVpVb09kb2ZrV042RTdpZkVWZ2ZtMF8?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Thames Water's Teddington river project sparks local Parkrun concerns",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T13:35:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTUV4ck9rTzZyMEluV0E0TDkya1NWenEtb3lkUVNIRnowNkFKdVR1TjJudWFXNjE5U0g3b1dXV3ItNzJDVVdFUmk5cmFZM296MUU5eVYzWkh6TGpJYVJ1ME9XdUhjLVdiejBiamJTa1Zoc3pMdDhJRnFkb0tOMEdjOEoyLXNndjZmRG9GbFNzUVF4cy04bC1EUjZ6YVR3Tzgxa0hNb2FMQlZYTDlxeGx6dFM5aGtHUWxFdzBZ?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston Parkrun future in doubt over Thames Water plans",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T13:35:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVG1XQld1MHlsLWFZWGo1eElBMDZHblJEUHcxMG1FbzNXek5JaTFITlY5b0ZRdGxXMlBDcF8wRGU1bUxuZkR2Y215dl9YczljQ2J4VV9mZktLZ3lHeTdLaFZ2Y081eWZCMkJIbnJhYjJCeTJBRTdEWWFqeTBjR2R6aHhUZ2NtaVBjWU9ZWmxTXzhBRF9hUzJPSWNScFpsNDljZjhVYkdfVHY?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "'Kingston needs homes – but this Local Plan gets too many big choices wrong'",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T10:24:09+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPb3pwZU93V25Sczk1YlhHc0JvTTdMZ2tTbHJBQlFQREtRZVlQcEFoTkZkVVFrZ2ZkN3BaNWJnRmFzUEYzclVmclFSVDVIRTF0MlVuWkp2TkpGUExPUFFwUlkxdlR6LUtpbnVOWUllbnNCcUNLQjFMMzBaTDJOVndSUnFEX2Q0em1tTjdzYnJhRDNyZw?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "What's on near Teddington this weekend: Wine club, art fair, and allotment open day",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T09:06:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUVRpUlBIelJhQTBUQ21WbVNPdUgtZlNmT0l5cExtYU1pWEdoZ1Y4bF84ekNxMmZWLVpzQjFUSHhMdmFaN1hScm11Y0Rnb19OUTI1TjhiNWZVV0ZMOXROcW1IOGUtTE9kSlpNWVQtVFQyLU1NZE1kZU9KamQzZ3F6UFJMZ0hEWDQzbGxaczViLXV5OGhQRnhJWG4zT0ZMb0JQOV9WcHRjblkxTlY0N0JzQnBwWHpZZWwyRnZDVjVQUWMtOG1uemNsVFA5OVNUeE1QWlI0?oc=5",
+        "localPublication": true,
+        "familyActivity": true
+      },
+      {
+        "title": "What's on in Kingston this weekend: Karaoke, Old Kingstonian Hockey Club open day and board game night",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T08:20:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOTHlJUVRYTnN0bUVRNElsRUthSFFHT0ZvNE93VWw2cGptV3lteEV0RXp1cGRzZmZJdko5T3M5R0g5VkJXbThZbEhxTkdZQlNPeHU1MTkzUmFrOG80dk1JTFpYRDhLazMzSHhqd1B6NkFvM1RTQUlZUW82OURBY0ZTd25CTy1aVmgzRzNDTy1ESTJ2dFVvenBUNDFnQVdXTG80WmFyUkdsdm9xQVk2Um1JLWRJUnNvM29sUjhMaDNrcDlab0dySlh5ZXFUZndIM19xU1JvTmlVc0t3WVlMOElqM1JfbzdLeTdXenZBaQ?oc=5",
+        "localPublication": true,
+        "familyActivity": true
+      },
+      {
+        "title": "How Kingston’s elite secondary schools are driving KT2 prices out of reach",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T17:15:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUFBvYkRfQjVfSDl6dzl1Q3BzNnR5dzljdHF2djRkaFJqd2RaRUlVVUtrTGRJQ1JMVjZVWjdiU2pWckNRZ1B2Qlh6T2ZGZXFjRzVnai1QY3c3UU94Qi0wV3hzQ2Z1UG1HeGlBSi1IMkx0ZUZWRm0ybzFyRHhoVjJKZkd2SzIyU0JqYnZJZzNaUFc4TmhlYUt0bEg2dk5uN3RwZEJDOW1PYVRROXV5WHk4MU9zNHNMV25LQ2pGMHpFSQ?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston to host London cycling race next year",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T14:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeEVBRElsYWNpN3VMN1dBVzBJS1pnT1IwUU1LOVFyUFBoOWpqMm8yMFVIWTc3T0ZSMmhWcjJYa1VDWG45TGlDQUg0a3BrZnpLZGNjcG9JS0poRV9YRVpxa2dZWk5sY0JPbFNST01LNElyRmNYWmtrSjFhQ3N1emVTSXh2LXNNT2VFZ1dKTHlYV3Y5Y2M3b1JTVC1UTQ?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Student stalker given more prison time at Kingston Crown Court for benefit fraud",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T12:30:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcEh2MWhyQzNWZWcySXdyblZIeFVsOUxEZkhxUTQtTlZNeUlNY21MZC0tdEVrWGVIMi1WSHNPcTlpWml2RHlPNy1fMWpicXNLZjYxd2pvbVBYa0RNNFdjWjE5Y25ESmd1d0RDRWIzWFo5b0E0SjlIT0EzbG03cjY0TjQ0blZ4azJET19YMkNzT3Uxck8yQzB2ZFpEYS1mMzR5U1hnVk11bm03OG53YnpONmlIdUxjMEVOQ0JuQ3N1QUlqSmE0bEhBMw?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T08:34:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington communnity centre seeks new trustees and trustee secretary",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T21:53:55+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOUnREamwwanBvOTZwTzhaYTFQTTJoWTVUbUk4c0JLVVJKb2hDVHhGc2p5bXlzOW92ZWpYWGlTYjlTREdTZERhcXdRQ1JhR2hBeGJVdURrUjVvYkU3U29BOWdiYlk0V012bUprcUQxdGstY1lfVENkMmpUY0J2Q0NVTnJHcDZmWUdZRmNXLV9fa2ZObHZ0ZTZVMzYyRm9MYXAyVHhvdDZuSlhfSGZyZkdRM19WU05kYkhBTmhXRDFGUTRfNklrZ0pqZm5MWVBEMWFTZmpjQkdvbFRIYldlY09Dd24wYkFGQjNDeVo4cDdnODhnZ05IZHVBa3lyWkd3Zw?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Beloved Teddington pub manager moves on after nearly two years",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T16:58:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston University launches human performance lab to elevate athlete performance",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T12:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSl84MEhLaEpBUlg5THJPUjNJY000cUNsOGRzVVF3T0dJYlBpQTk5NkN4U2x4TzFZTkJaV21DMG5Ud1A3WnR2ZzhyRnYyTnp5WVhsRUxHUmJIYTZCWHBCVVRodWlETS1wRTB3Y1VHRU9WeTcwYnJQWmsyTkFVR1R6akRsYUpwQmpPTlNtcTNFVTMxVXRrQnppbHZnakVzUVFsbEFiT2pPX1ZPdnlhSmxuM1c4ZUhoQmJZVXUwcVJ4S0RfSWpZV2FxRGZ3?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "What's on near Teddington this weekend: Bank Holiday weekend beer fest, Teddington social, and club night",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T09:06:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZDJJRUhoaS11cUx2cUdjT2cycndNYlJHQ1dVNFE1R2Y2aDRZQTcxc291TjJUVW1qa3d6dlpYUDN1Yl81RW9OaHp1SlJKSXNOTzBsYjNPZlN3U1FXZXJIVVpTNGNDYl90MHRxTnJJZFRLZlYyZmlPVWhHajVWVlhYQnA0OHFxVzNEZmFNX0FfQ1Iwa0xScWY3SVRqQ1E1ZnBqTnkwQUI4N2c4eVNWQVhFbHVPdTZVTkhYWUp3Rm4takZlUy02MzlmcTV3RWN3eEhCMmxlblNXcUdzTmt5QnI4amVDT1J5UXJfaWpkaDdUdlRQdw?oc=5",
+        "localPublication": true,
+        "familyActivity": true
+      },
+      {
+        "title": "What's on in Kingston this weekend: Book club, adults-only Lego event, and Club Tropicana",
+        "summary": "",
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T09:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUUFlb3hIbjQ1U1d5QjE3TDVxRl9OaWtnV3d2Yms2TDQxZEJfYnc5TlhkbXYtWHpwSU5DNzROU193c19WMUJlOWRUbjNGMWdMUDF5LVJGdmdsRkNZbGNLQ05YdWtPVnJPTXVoSUphcXZyVDVyOHhKQ3dsUk5ERmtVdHF4ZHZrT25LdGs5TU5kWDJFTjFUWVJ5ZFdUX2loX2luX2NITnBfVS1JQktGRkVVdWdEU0p4dEUyaDBSR2RjcEE4aGNHZkx0Z2Vmemc3YWlKUzBRdWRWZnB0Zw?oc=5",
+        "localPublication": true,
+        "familyActivity": true
+      },
+      {
+        "title": "Newts in danger at Teddington park pond see residents rally to help",
+        "summary": "",
+        "meta": "Sun 23 Aug",
+        "publishedAt": "2026-08-23T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUENnMmZOSFRDNUVtZVlwOVljN0FORDRMMkpZbEhQOFRJSkRJMDdvRUxnckp2WlQzOGE5UzBfUHlvVHdmZ19jbHZ0eEFxMFpDcVBlZDdSUi1IbnFpM2xaWHgxQjBYYWpNM2NSb2ZadUpmWW5TTmdSckJjNl9DM0Q0R2VpYjJNc1VnV2xaTUEzRVM2bEVGbWE1N2JsYTVOQkgtSGxrZjlsbEtRU2RoR2NfMWhRaXRLSzd2akE0MUhfSkhWOTZKSEFKaG93WVBLelRtN0V6NQ?oc=5",
+        "localPublication": true,
+        "familyActivity": true
+      }
+    ],
+    "UK news": [
+      {
+        "title": "Controversial Jackdaw gas field set to be approved in weeks, sources say",
+        "summary": "The government is set to give the go-ahead for the gas field off the coast of Aberdeen, the BBC understands.",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T00:00:15+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cj9xe09jz4eo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Farage senior aide filmed suggesting way to avoid donations law",
+        "summary": "A film broadcast by Channel 4 shows senior Reform UK figures discussing donations with an undercover reporter.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T22:07:58+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cr50ddzl97qo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "British army told to stop non-essential training exercises to save money",
+        "summary": "Units in the UK not preparing to be deployed have been told to cut back on training exercises due to cost pressures.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T20:56:14+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cvgyqey6rlyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Canada unveils new $20 bill featuring portrait of King Charles",
+        "summary": "The vertical banknote features King Charles III, the first new monarch to appear on a Canadian banknote in more than 70 years.",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T20:18:13+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cr50d2dyn70o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Morrisons Foundation launches £1m fund l to give Britain’s community spaces a much-needed boost",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T18:21:01+01:00",
+        "source": "Retail Times",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxON3dtejI5RzRZT2FVU0ZXdlFJSEt0YnhhZ3pUQVRELTRJMFZ0T1ZSYlUyVUdVcll4N0tLZ0tVZUhLMW1neWZzUm9YQS1ZejhEc3VFdGR6WG5KUFQ2R0ZkUnl2cGRzQXJrSFB1NWxMSDZhLXJtQVZ3RmpZSUltdlk0S1RrUGhZMnBKS0pxcnhEY0M3UjhoeFZKNEtyMVBSbGstRnFDWFY2STN0bUZTdVZXdWc2SVYyRDNIeDF6bw?oc=5"
+      },
+      {
+        "title": "Donald Trump celebrates Meghan and Harry’s return to the United Kingdom: “They treated the royal family with enormous contempt”",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T12:23:09+01:00",
+        "source": "MARCA",
+        "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNMlM2bEVsLTFzdXNLM00tWXJuOGItakFVS0VrYlpiUUZuNnFOQkxDWFlGQmFXZ1RLbmZlZHBIUVlkTjI5UGJLbUgwSHVwT3A1cElHSGlfOWd0aTRTZmQ3M3p4WmZvSjcyTHVlQVA1WjFyM3B3dFRQU2I2aUEwZjRRNHQ2QUNiYmVGNUxBNl9SVVZWUWN3ZXdVLWtyVXBkX0I4ckZVSFdqZmgxdTFIa29CS2ppNV9aZlZ6UVMwdFJoeW1yd2xGdk9CektRc21PQ0ZoM2xISGRiWU9xZmZ5cXdJU3Rpb1dzeHFxUm1tT0NBQm95cXAyalh5SmdrcDlhb3lJQ1ZyN2RRX3lORUJuWXpId09nOGR2QdIBlgJBVV95cUxOM1V5TlhzM1VmekpGby1iWnBSQnR2aDl1azlpUkF6ZFdCdnh5cDh2ejRnbVZiZ1AtN3EzeXRVUjBRUm1GdE1BTDNpM1NlTWJqc2ZLZFZVbjl3LUxCZ0U2OXBWcXVtVlk1RElQSlZSSVM4NjZwNmxfaDdpR0NtNVNnbkpQTlQ4TFBPOEFxOTZFRG5ZWkdmZm5RbXFGbk1mbGE2WEVJc0ZoQ1lRZFBoWXhxNmljQkZxOEp0a2FrM25mV0Mtc2hZZlZmNm1uN1hUelJ3cDI0NzBVR01DeDl0MUlLeUd2dkJ4OUhiTFRTa3ZHMFRqUklLOGpBa0duTEIxVnVUZm93dXFrWkNKUHBZTFgwMms3S2VLUQ?oc=5"
+      },
+      {
+        "title": "Legendary Isle of Man TT team earns prestigious British motorcycle racing award",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T09:25:59+01:00",
+        "source": "Crash.net",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQX2pyQnhBOUxWNVJ5WmlnTWtnd0pzSG1EWnBJTW5FRU83ZEF1dFdZRl9YRkI0WDBGR25idm0yaTEtX01xSm1tRmctTFYyY00yWkVKdnQ3TUxPZUIwWE9BNGNlTk1KTWpHN0FtUmV0VnB1ZXczTDFZc2k2MFZHQy1LeXg2N0E2d2t3WmstRllNMkNzRHFYdjV4M3N3LW1vcThHa2pReEdUdzBrQXlLZnh2LU1LblBpTE0?oc=5"
+      },
+      {
+        "title": "Applications open for Community Climate Change Fund (United Kingdom)",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T08:34:03+01:00",
+        "source": "fundsforNGOs",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSE5XTmJuSzNIZzQzX1pmdDBVWU03cGR5ZG1xaHNGODFBU3dDclRzVTdNVzJvWVU4TEUzSGczb3JPOGRweVJWNnd0cmRDY2s4c2lSX2Y2TzlkYkl4MnlUb0FaLVJWOVM3RWVfWndFWVNwa2ZIeGw5OHJ5M0VGX0Y5V0ZBNG5RLVAzSy0wXy1ZZlRUdkpuYjlpOUhoNDRIQlAtTVlXdmZsSzF5UVBaY2JyNDVB0gG3AUFVX3lxTE1ENGpnODY2bngzSHdwNnFtQnlvZ0hUQkNLRHdQSl9faWp6R1E0ejZMYXpWcU1kT01MYnhjWU81cGt2MFFjeUQ2ak5XOUJOM1VzQ3lXcW8zZk1nYTZqWlZxMS04NTIzYzROSzlPVUtKZjBkd2lqN1FsYzFDTXlJTGc2TjhHT1ZlVC0tVEFCMld2c3c2MUhtSDh2aUtfcHlLSUZrWW1IaVpWMlNMaHFscHByajZUNDRYUQ?oc=5"
+      },
+      {
+        "title": "Care executive at Pendine Park named a finalist in major industry award",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T05:00:00+01:00",
+        "source": "North Wales Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNU5nVUV3N0hvTW5aeFV6RklWLVhaUW5pUzFZakNZY1NSVGNocWRGUVFxQnNxbk9HUzJOTjAxQW1oUEh5MnZZZFo5UlB2OFBjdkV4RkQzRTIxTElBZlliS0xMTUdvellPRU0yRk1nZFBETmx0d1FXMHJqRDA1a0RpeWgyX0RsRjZqMzlhUVpZUTBhaG5FZWlDbUFZTkhmZVAydDFUZENtbw?oc=5"
+      },
+      {
+        "title": "South Wales law firm secures six legal award shortlistings",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T02:20:46+01:00",
+        "source": "Wales 247",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOenh5LUw2eGVyb29kYUdfZFItV3FVRUs2N09IN0haeUlldTBoMFFqVmF5Q1JVSm01TC1FaURUWU9CSVV6REJjVkJsZV9aanFYQTlYeDlucEpzcGJpUzZ4WGJJOVBiR2xQdzl2NllhSkVIOHZKbktkT1NMZ1pkb2g2RFhZdE1FV01ZNEMwNkxB?oc=5"
+      },
+      {
+        "title": "Alyn Smith appointed as Scotland's innovation minister",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T14:23:17+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13NHpfSUVfdXNaZ05xekUtLUxOaHpHM1ZQY2dEdENrTUhSVUlFTmh2UUwzNTdxdWR3WXhKa1dCV3FQTC1uRFpUMV9pVXY1ZTRHWnpqWkNGRFo1dw?oc=5"
+      },
+      {
+        "title": "British Ukrainian Community Volunteer Becomes BBC Award Finalist",
+        "summary": "",
+        "meta": "Wed 2 Sep",
+        "publishedAt": "2026-09-02T12:28:00+01:00",
+        "source": "Межа. Новини України.",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93UzctWDJGczZ2Z2diZWh6OUZVd1F0VUY3ZzFSaGZVN3BkSXlHdmxiN2ttZ25BN3ZEdGd4cVJJNTA4MkZkaEwza2pzZno2RWJBYThVWlBjWmtQa2JnMjlJMGV0UnNfTkJ4X1NxVXdXOGJhdEk?oc=5"
+      }
+    ],
+    "Career": [
+      {
+        "title": "AI Industry Opportunities Advisor",
+        "company": "Department for Science, Innovation and Technology",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "3 September 2026",
+        "source": "LinkedIn",
+        "location": "London, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/ai-industry-opportunities-advisor-at-department-for-science-innovation-and-technology-4461668546",
         "contentType": "job",
         "countryFocus": "UK",
         "sector": "Public sector",
-        "aiRelated": True,
-    }
-    if posted:
-        item["postedAt"] = posted.date().isoformat()
-    return score, posted or datetime.min.replace(tzinfo=TZ), item
-
-
-def public_ai_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
-    candidates = candidates if candidates is not None else career_job_candidates()
-    linkedin_candidates = [
-        job for job, source in candidates
-        if source == "LinkedIn" and job.get("target") == "public-ai"
-        and AI_CAREER_TERMS.search(str(job.get("title") or ""))
-        and PUBLIC_SECTOR_EMPLOYER_TERMS.search(str(job.get("company_name") or job.get("company") or ""))
+        "aiRelated": true,
+        "postedAt": "2026-09-03"
+      },
+      {
+        "title": "AI Industry Opportunities Senior Advisor",
+        "company": "Department for Science, Innovation and Technology",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "2 September 2026",
+        "source": "LinkedIn",
+        "location": "London, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/ai-industry-opportunities-senior-advisor-at-department-for-science-innovation-and-technology-4460990844",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-02"
+      },
+      {
+        "title": "Deputy Director Head of AI Assurance",
+        "company": "HM Revenue & Customs",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "1 September 2026",
+        "source": "LinkedIn",
+        "location": "Manchester Area, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4448429970",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-01"
+      },
+      {
+        "title": "Data and AI Adoption Lead",
+        "company": "Ofgem",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "28 August 2026",
+        "source": "LinkedIn",
+        "location": "Glasgow, Scotland, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/data-and-ai-adoption-lead-at-ofgem-4458060558",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-28"
+      }
     ]
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        linkedin_enriched = {
-            job.get("url"): enriched
-            for job, enriched in zip(linkedin_candidates, pool.map(linkedin_description, linkedin_candidates))
-        }
-
-    ranked, seen = [], set()
-    for job, source in candidates:
-        if source == "LinkedIn":
-            if job.get("target") != "public-ai":
-                continue
-            job = linkedin_enriched.get(job.get("url"), job)
-        result = pete_job_item(job, source)
-        if not result:
-            continue
-        score, posted, item = result
-        key = re.sub(r"\W+", "", f"{item['title']}{item['company']}".lower())[:180]
-        if not key or key in seen:
-            continue
-        seen.add(key)
-        ranked.append((score, posted, item))
-    ranked.sort(key=lambda row: (row[1], row[0]), reverse=True)
-    return [item for _, _, item in ranked[:limit]]
-
-
-def pete_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
-    return public_ai_career_jobs(candidates, limit)
-
-
-def sofia_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
-    return public_ai_career_jobs(candidates, limit)
-
-
-def previous_career(profile: str) -> list[dict]:
-    try:
-        data = json.loads((DATA / f"{profile}.json").read_text(encoding="utf-8"))
-        jobs = (data.get("sections") or {}).get("Career") or []
-        return [
-            job for job in jobs
-            if job.get("contentType") == "job"
-            and job.get("sector") == "Public sector"
-            and job.get("aiRelated") is True
-            and all(key in job for key in ("title", "company", "description", "salary", "postedDate", "source", "location"))
-            and str(job.get("url") or "").startswith(("https://", "http://"))
-        ]
-    except Exception:
-        return []
-
-
-def previous_arsenal_position() -> int | None:
-    """Keep the last verified rank when the live standings feed is temporarily unavailable."""
-    try:
-        data = json.loads((DATA / "pete.json").read_text(encoding="utf-8"))
-        position = (data.get("arsenal") or {}).get("leaguePosition")
-        return position if isinstance(position, int) and 1 <= position <= 20 else None
-    except Exception:
-        return None
-
-
-def calendar_colour_data() -> dict:
-    path = DATA / "calendar-colors.json"
-    try: return json.loads(path.read_text(encoding="utf-8"))
-    except Exception: return {"eventPalette": {}, "events": {}}
-
-
-def normalize_google_uid(component) -> str:
-    uid = clean_html(str(component.get("uid", "")))
-    return uid.split("@", 1)[0] if "@" in uid else uid
-
-
-def calendar_events() -> list[dict]:
-    url = os.getenv("GOOGLE_CALENDAR_ICS_URL", "").strip()
-    if not url: return []
-    try:
-        r = requests.get(url, headers=UA, timeout=30); r.raise_for_status(); cal = Calendar.from_ical(r.content)
-    except Exception: return []
-    colours = calendar_colour_data(); palette = colours.get("eventPalette", {}); event_colours = colours.get("events", {})
-    start_window = NOW.replace(hour=0, minute=0, second=0, microsecond=0)
-    next_month = (start_window.replace(day=28) + timedelta(days=4)).replace(day=1)
-    following = (next_month.replace(day=28) + timedelta(days=4)).replace(day=1)
-    end_window = following - timedelta(seconds=1)
-    events = []
-    for component in cal.walk("VEVENT"):
-        start = component.decoded("dtstart"); end = component.decoded("dtend") if component.get("dtend") else start
-        all_day = not isinstance(start, datetime)
-        if all_day: start = datetime.combine(start, datetime.min.time(), TZ)
-        elif start.tzinfo is None: start = start.replace(tzinfo=TZ)
-        else: start = start.astimezone(TZ)
-        if not isinstance(end, datetime): end = datetime.combine(end, datetime.min.time(), TZ)
-        elif end.tzinfo is None: end = end.replace(tzinfo=TZ)
-        else: end = end.astimezone(TZ)
-        if end < start_window or start > end_window: continue
-        title = clean_html(str(component.get("summary", "Calendar event"))) or "Calendar event"
-        event_id = normalize_google_uid(component); color_id = event_colours.get(event_id); colour = palette.get(str(color_id)) if color_id else None
-        time_label = "All day" if all_day else start.strftime("%-I:%M%p").lower().replace(":00", "")
-        events.append({"title": title, "summary": "", "url": "", "start": start.isoformat(), "end": end.isoformat(), "date": start.date().isoformat(), "time": time_label, "allDay": all_day, "color": colour, "colorId": color_id, "googleEventId": event_id, "calendarColorSource": "google" if color_id else "calendar-default"})
-    events.sort(key=lambda x: x["start"])
-    return events
-
-
-def tonight_recommendations() -> list[dict]:
-    true_crime = google_news('(murder OR scandal OR "true crime") (documentary OR docuseries) (Netflix OR BBC OR ITV OR "Channel 4") when:14d', 10, 14)
-    apple = google_news('(site:apple.com/tv-pr OR "Apple TV") (Silo OR thriller OR crime OR mystery OR "new series") when:30d', 10, 30)
-    silo = google_news('"Silo" "Apple TV" when:14d', 5, 14)
-    merged, seen = [], set()
-    for item in silo + true_crime + apple:
-        key = re.sub(r"\W+", "", item.get("title", "").lower())[:120]
-        if not key or key in seen: continue
-        seen.add(key)
-        text = (item.get("title", "") + " " + item.get("source", "")).lower()
-        score = 0
-        for word, weight in [("silo", 100), ("murder", 50), ("true crime", 45), ("scandal", 40), ("documentary", 35), ("docuseries", 35), ("apple", 30), ("crime", 20), ("mystery", 10)]:
-            if word in text: score += weight
-        item = dict(item); item["preferenceScore"] = score
-        merged.append(item)
-    merged.sort(key=lambda x: x.get("preferenceScore", 0), reverse=True)
-    return merged[:10]
-
-
-def espn_json(url: str) -> dict:
-    try:
-        r = requests.get(url, headers=UA, timeout=20); r.raise_for_status(); return r.json()
-    except Exception:
-        return {}
-
-
-def parse_fixture(event: dict, competition: str) -> dict | None:
-    comps = event.get("competitions") or []
-    if not comps: return None
-    comp = comps[0]; teams = comp.get("competitors") or []
-    arsenal = next((x for x in teams if "arsenal" in (x.get("team", {}).get("displayName", "").lower())), None)
-    opp = next((x for x in teams if x is not arsenal), None)
-    if not arsenal or not opp: return None
-    status = event.get("status", {}).get("type", {})
-    try: dt = dateparser.parse(event.get("date", "")).astimezone(TZ)
-    except Exception: return None
-    completed = bool(status.get("completed"))
-    a_score = arsenal.get("score", {}).get("value") if isinstance(arsenal.get("score"), dict) else arsenal.get("score")
-    o_score = opp.get("score", {}).get("value") if isinstance(opp.get("score"), dict) else opp.get("score")
-    return {
-        "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"), "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
-        "opponent": opp.get("team", {}).get("displayName", "Opponent"), "competition": competition,
-        "homeAway": arsenal.get("homeAway", ""), "completed": completed,
-        "arsenalScore": a_score, "opponentScore": o_score,
-        "result": (f"{a_score}–{o_score}" if completed and a_score is not None and o_score is not None else ""),
-        "url": next((l.get("href") for l in event.get("links", []) if l.get("href")), ""),
-    }
-
-
-def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: list[dict]) -> dict:
-    news = first_team_arsenal_news(news)
-    competitions = {
-        "eng.1": "Premier League", "eng.fa": "FA Cup", "eng.league_cup": "League Cup",
-        "uefa.champions": "Champions League", "eng.charity": "Community Shield",
-    }
-    fixtures = []
-    for code, name in competitions.items():
-        data = espn_json(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{code}/teams/arsenal/schedule")
-        for event in data.get("events", []) or []:
-            parsed = parse_fixture(event, name)
-            if parsed: fixtures.append(parsed)
-    # De-dupe the same fixture if an API returns it more than once.
-    unique = {}; [unique.setdefault((x["date"], x["opponent"]), x) for x in fixtures]
-    fixtures = sorted(unique.values(), key=lambda x: x["date"])
-    past = [x for x in fixtures if x["completed"]]
-    future = [x for x in fixtures if not x["completed"] and dateparser.parse(x["date"]) >= NOW - timedelta(hours=3)]
-
-    position = None; points = None; played = None
-    table = espn_json("https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings")
-    groups = table.get("children", []) or []
-    entries = []
-    for group in groups:
-        entries.extend((group.get("standings", {}) or {}).get("entries", []) or [])
-    for entry in entries:
-        team = entry.get("team", {})
-        if "arsenal" not in team.get("displayName", "").lower(): continue
-        stats = {s.get("name"): s.get("value") for s in entry.get("stats", [])}
-        position = int(stats.get("rank")) if stats.get("rank") else None
-        points = int(stats.get("points")) if stats.get("points") is not None else None
-        played = int(stats.get("gamesPlayed")) if stats.get("gamesPlayed") is not None else None
-        break
-    return {
-        "lastResult": past[-1] if past else None,
-        "nextFixture": future[0] if future else None,
-        "leaguePosition": position, "points": points, "played": played,
-        "news": news[:5],
-        "transfers": transfers[:6],
-        "transferRumours": transfer_rumours[:5],
-    }
-
-
-def build_profiles() -> dict[str, dict]:
-    previous_position = previous_arsenal_position()
-    wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
-    ai = merge_news(
-        rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
-        rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
-        google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 12, 3),
-        limit=10,
-    )
-    arsenal_news = first_team_arsenal_news(google_news('Arsenal FC when:3d', 8, 3))
-    transfers = arsenal_transfer_updates()
-    transfer_rumours = arsenal_transfer_rumours()
-    arsenal = arsenal_snapshot(arsenal_news, transfers, transfer_rumours)
-    if arsenal.get("leaguePosition") is None and previous_position is not None:
-        arsenal["leaguePosition"] = previous_position
-    local = local_news()
-    uk = uk_news()
-    tonight = tonight_recommendations()
-    career_candidates = career_job_candidates()
-    current_career = public_ai_career_jobs(career_candidates)
-    pete_career = current_career or previous_career("pete")
-    sofia_career = current_career or previous_career("sofia")
-    sweden = google_news('(Sweden OR Swedish) news when:4d', 7, 4)
-    family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
-
-    stamp = NOW.strftime("%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
-    pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": pete_career}
-    sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": sofia_career}
-    def first(items, fallback): return items[0] if items else {"title": fallback, "summary": "", "meta": "", "source": "", "url": ""}
-    return {
-        "pete": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
-        "sofia": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "lead": first(sweden or local or tonight, "Your morning brief is ready."), "interests": [dict(first(sweden, "Sweden"), section="Sweden"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": sofia_sections},
-    }
-
-
-def main() -> None:
-    profiles = build_profiles()
-    for name, payload in profiles.items():
-        (DATA / f"{name}.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("Updated:", ", ".join(str(DATA / f"{x}.json") for x in profiles))
-
-if __name__ == "__main__": main()
+  }
+}
