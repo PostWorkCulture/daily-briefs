@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.8, 4 September 2026. Owner: Pete.
+Version 4.9, 4 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -120,6 +120,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Add an article media block in the browser only after its exact publisher image has loaded, decoded, and met the 1,200 × 675 minimum. A failed or slow image must leave the story text-only instead of reserving an empty dark media slab.
 - AI and Career never show article photography. AI uses the exact company mark when OpenAI or ChatGPT, Google or Gemini, Google DeepMind, Anthropic, or Claude is unambiguous in the story metadata; use the generic code-native AI symbol as fallback. Career retains stylish code-native section icons.
 - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
+- Career uses neutral light grey `#D4D8D5` for its field labels and navigation hover or keyboard focus. Do not use yellow in the Career treatment.
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
 - Article images must be at least 1,200 × 675 pixels. Reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.
 - Do not change them as a side effect of other work.

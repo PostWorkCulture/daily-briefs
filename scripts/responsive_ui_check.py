@@ -636,7 +636,9 @@ def check_viewport(browser, name: str) -> None:
               actual: [...document.querySelectorAll('#view-career .career-story')]
                 .map(card => card.querySelector('.career-field:first-child dd')?.textContent.trim()),
               labels: [...document.querySelectorAll('#view-career .career-story.story-lead dt')]
-                .map(node => node.textContent.trim())
+                .map(node => node.textContent.trim()),
+              labelColours: [...document.querySelectorAll('#view-career .career-field dt')]
+                .map(node => getComputedStyle(node).color)
             })
             """
         )
@@ -647,6 +649,8 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Career is not rendered newest first: {career_render}")
         if career_render["labels"] != expected_labels:
             raise AssertionError(f"{name}: Career fields are missing or out of order: {career_render}")
+        if set(career_render["labelColours"]) != {"rgb(212, 216, 213)"}:
+            raise AssertionError(f"{name}: Career labels are not light grey: {career_render}")
         career_card = page.locator('#view-career .tab-story').first
         career_card.hover()
         page.wait_for_timeout(250)
@@ -1090,7 +1094,7 @@ def check_viewport(browser, name: str) -> None:
             "news": "rgb(140, 185, 255)",
             "arsenal": "rgb(255, 155, 160)",
             "ai": "rgb(235, 170, 255)",
-            "career": "rgb(255, 211, 92)",
+            "career": "rgb(212, 216, 213)",
             "dida": "rgb(155, 224, 83)",
             "birthdays": "rgb(255, 150, 205)",
         }

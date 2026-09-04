@@ -78,6 +78,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Local News targets 16 stories, prioritises named local publications and family or child activities, and excludes routine sports results unless the item covers an opening, major change, or major event.
 - [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; the refresh fails instead of using a negative fallback.
 - [ ] Both Career sections contain only explicitly AI-related UK public-sector jobs, newest first, with Job Title, Company, Description, Salary, Posted Date, Where it was posted, and Location in that exact order.
+- [ ] Career field labels and navigation hover/focus use light grey `#D4D8D5`; no Career treatment remains yellow.
 - [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] Dida has one page-level title followed by exactly three graphite age-six zones with bright green titles and outlines.
 - [ ] Birthday months use a full-width single card, two balanced half-width cards, or three equal cards on one Chromebook row.
