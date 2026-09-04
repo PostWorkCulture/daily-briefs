@@ -104,6 +104,28 @@ class WorldFactTests(unittest.TestCase):
             self.assertEqual(selected["id"], "remarkable-human")
             self.assertEqual(selected["editorialPriority"], "human-first")
 
+    def test_new_day_fails_when_human_first_queue_is_exhausted(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog_path = root / "catalog.json"
+            history_path = root / "history.json"
+            catalog_path.write_text(json.dumps([fact("ordinary")]), encoding="utf-8")
+            history_path.write_text('{"version": 1, "used": []}', encoding="utf-8")
+
+            original_catalog = refresh.FACT_CATALOG
+            original_history = refresh.FACT_HISTORY
+            original_now = refresh.NOW
+            try:
+                refresh.FACT_CATALOG = catalog_path
+                refresh.FACT_HISTORY = history_path
+                refresh.NOW = datetime(2026, 9, 4, tzinfo=ZoneInfo("Europe/London"))
+                with self.assertRaisesRegex(RuntimeError, "Human-first fact catalogue exhausted"):
+                    refresh.world_fact_for_today()
+            finally:
+                refresh.FACT_CATALOG = original_catalog
+                refresh.FACT_HISTORY = original_history
+                refresh.NOW = original_now
+
 
 if __name__ == "__main__":
     unittest.main()
