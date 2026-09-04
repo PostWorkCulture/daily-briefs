@@ -98,9 +98,12 @@ jobs:
                   assert str(photo.get('page') or '').startswith('https://commons.wikimedia.org/wiki/File:'), f'{profile}: {kind} image has no source page'
                   assert str(photo.get('credit') or '').strip(), f'{profile}: {kind} image has no credit'
               picks=data.get('watch') or []
-              assert len(picks)>=4, f'{profile}: fewer than 4 TV Picks'
+              assert len(picks)==5, f'{profile}: expected exactly 5 TV Picks'
               assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
               assert len({x.get('title','').casefold() for x in picks})==len(picks), f'{profile}: duplicate TV Pick'
+              allowed_tv_lanes={'dark-documentary','dark-scripted','sci-fi','apple-premiere','major-sport'}
+              assert all(x.get('interestLane') in allowed_tv_lanes for x in picks), f'{profile}: TV Picks contain off-profile filler'
+              assert sum(x.get('interestLane')=='dark-documentary' for x in picks)>=3, f'{profile}: TV Picks are not documentary-led'
               for pick in picks:
                   assert pick.get('contentType')=='tv-pick', f'{profile}: non-programme TV Pick'
                   assert pick.get('generatedDate')==today, f'{profile}: stale TV Picks'

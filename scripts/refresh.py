@@ -302,9 +302,8 @@ def world_fact_for_today() -> dict:
             if item["id"] not in set(used_ids) and item.get("editorialStatus") != "retired"
         ]
         selected = next((item for item in unused if item.get("editorialPriority") == "human-first"), None)
-        selected = selected or next(iter(unused), None)
         if selected is None:
-            raise RuntimeError("Fact catalogue exhausted; refusing to repeat an earlier fact")
+            raise RuntimeError("Human-first fact catalogue exhausted; refusing to publish a general fallback")
         selected_id = selected["id"]
         used.append({"date": today, "id": selected_id})
         history["version"] = 1

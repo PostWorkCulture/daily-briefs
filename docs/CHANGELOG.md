@@ -2,6 +2,20 @@
 
 Newest entries go first.
 
+## 4 September 2026: Strict, documentary-led TV Picks
+
+Status: implemented; publication follows the normal responsive, refresh, and Pages gates
+
+- Root cause: TV interests were implemented as score boosts, so any recent programme with artwork could still fill the list after stronger titles were excluded by the three-day freshness rule.
+- Hard eligibility: every pick must now be a dark or investigative documentary, dark crime/thriller/mystery, `Silo` or other science fiction, a new Apple TV+ premiere, or an allowed World Cup, UEFA Euros, or Wimbledon programme.
+- Documentary mix: require at least three qualifying documentaries, fail instead of publishing a weaker mix, and cap them at four when another eligible category is available.
+- Hard exclusions: nature, travel, gardening, medical, food, light crime-comedy, routine enforcement factual shows, reality, Gary Barlow, news, talk, game shows, daily soaps, and generic documentaries cannot act as filler.
+- Freshness: the recent-title rule is now a modest ranking penalty instead of an absolute fresh-first partition, so it cannot force a weaker off-profile title above a strong match.
+- Current proof: the 4 September schedule produces `True Crime Presents`, `The Murder Detective`, `Global Eye`, `Check-In To Murder`, and `Vigil`; `Europe's Wild Kingdoms`, `Ludwig`, `Lioness`, and `Reacher` no longer fill today's selection.
+- Scope protected: five cards, exact full-colour artwork, dates, links, services, the seven-day schedule window, layout, profiles, and every non-TV section remain unchanged.
+- Master brief update: version 4.8 records Pete's strict TV eligibility and documentary-led mix.
+- Protected-data repair: replaced the rejected geological fallback with the source-verified human story of La Gomera's whistled Spanish and made fact selection fail safely when no unused human-first item remains.
+
 ## 3 September 2026: Family-first Local News and public-sector AI careers
 
 Status: merged and validated; GitHub Pages redeployment is blocked

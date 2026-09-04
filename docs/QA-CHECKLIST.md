@@ -68,7 +68,10 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Every TV Pick has an exact TVMaze programme image, service/channel, availability date, real destination, and today's generated date.
 - [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
 - [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
-- [ ] TV Picks contain no reality programme or Gary Barlow; dark documentaries, `Silo`/science fiction and new Apple TV+ releases outrank weak lifestyle or celebrity-travel content.
+- [ ] Every TV Pick passes a hard interest gate: dark/investigative documentary, dark crime/thriller/mystery, `Silo`/science fiction, a new Apple TV+ premiere, or an allowed major-sport programme.
+- [ ] The selection contains at least three qualifying documentaries, fails instead of publishing a weaker mix, and contains no more than four documentaries when another eligible category is available.
+- [ ] TV Picks contain no reality programme or Gary Barlow, and no nature, travel, gardening, medical, food, light crime-comedy, routine enforcement, lifestyle, or generic documentary filler.
+- [ ] Recent-title avoidance is a soft freshness preference and never displaces a stronger on-profile programme.
 - [ ] BBC iPlayer, Channel 4 and Netflix receive first platform preference when equally strong current picks are available.
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] Every Local News story has headline or summary evidence for the approved KT8 cluster; broad Surrey, Elmbridge, or London references and foreign/unrelated namesakes are rejected. The refresh may extend from 14 to 30 days for depth but does not widen the geography.

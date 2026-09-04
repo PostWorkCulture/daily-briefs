@@ -99,6 +99,14 @@ def check_icon_metadata_files() -> None:
         current_fact = profile_data.get("worldFact") or {}
         if current_fact.get("editorialPriority") != "human-first":
             raise AssertionError(f"{profile} current world fact is not human-first")
+        tv_picks = profile_data.get("watch") or []
+        allowed_tv_lanes = {"dark-documentary", "dark-scripted", "sci-fi", "apple-premiere", "major-sport"}
+        if len(tv_picks) != 5:
+            raise AssertionError(f"{profile} must contain exactly five TV Picks")
+        if any(pick.get("interestLane") not in allowed_tv_lanes for pick in tv_picks):
+            raise AssertionError(f"{profile} TV Picks contain an item outside Pete's strict interests: {tv_picks}")
+        if sum(pick.get("interestLane") == "dark-documentary" for pick in tv_picks) < 3:
+            raise AssertionError(f"{profile} TV Picks are not documentary-led: {tv_picks}")
         extremes = (profile_data.get("weather") or {}).get("yesterdayExtremes") or {}
         for kind in ("hot", "cold"):
             photo = ((extremes.get(kind) or {}).get("photo") or {})

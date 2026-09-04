@@ -83,6 +83,25 @@ INTEREST_WEIGHTS = {
     "uefa euro": 65,
     "history": 20,
 }
+
+DARK_DOCUMENTARY_TERMS = re.compile(
+    r"\b(?:true crimes?|murders?|murdered|murderers?|homicides?|killers?|crimes?|criminals?|"
+    r"police|detectives?|investigat(?:e|es|ed|ing|ion|ions|ive)|scandals?|frauds?|corruption|"
+    r"injustice|cults?|abuse|prisons?|missing persons?|disappear(?:s|ed|ance)?|"
+    r"vanish(?:es|ed)?|conspirac(?:y|ies)|terrorism|terrorists?|9/11|hitler)\b",
+    re.I,
+)
+DARK_SCRIPTED_GENRES = {"Crime", "Thriller", "Mystery"}
+LOW_FIT_DOCUMENTARY_GENRES = {"Nature", "Travel", "Medical", "Food", "Home and Garden"}
+LOW_FIT_DOCUMENTARY_TERMS = re.compile(
+    r"\b(?:wildlife|wild kingdom|nature|gardening|gardener|gardeners|travel|travelogue|"
+    r"cook(?:ing)?|food|hospital|medical|a&e|veterinary|vet|celebrity travel|"
+    r"bailiffs?|fare dodgers?|revenue protection)\b",
+    re.I,
+)
+HISTORY_SCORE_PENALTY = 35
+DOCUMENTARY_TARGET = 3
+DOCUMENTARY_CAP_WHEN_MIXED = 4
 PREFERRED_SERVICE_WEIGHTS = {
     "BBC iPlayer": 42,
     "Channel 4": 40,
@@ -167,9 +186,9 @@ def availability_label(episode: dict[str, Any], day: date) -> str:
 
 
 def category_label(show: dict[str, Any], haystack: str) -> str:
-    if "true crime" in haystack or "murder" in haystack:
-        return "True crime"
     show_type = str(show.get("type") or "").strip()
+    if show_type == "Documentary" and re.search(r"\b(?:true crime|murder|homicide|serial killer)\b", haystack):
+        return "True crime"
     genres = [str(item) for item in show.get("genres") or []]
     if show_type == "Documentary":
         return "Documentary"
@@ -177,6 +196,34 @@ def category_label(show: dict[str, Any], haystack: str) -> str:
         if preferred in genres or preferred == show_type:
             return "Sci-fi" if preferred == "Science-Fiction" else preferred
     return show_type or (genres[0] if genres else "TV pick")
+
+
+def preference_lane(show: dict[str, Any], episode: dict[str, Any], haystack: str, source: str) -> str | None:
+    show_type = str(show.get("type") or "").strip()
+    genres = {str(item) for item in show.get("genres") or []}
+
+    if show_type == "Sports" or SPORTS_TERMS.search(haystack):
+        return "major-sport" if ALLOWED_MAJOR_SPORTS.search(haystack) else None
+
+    if show_type == "Documentary":
+        if genres & LOW_FIT_DOCUMENTARY_GENRES or LOW_FIT_DOCUMENTARY_TERMS.search(f"{source} {haystack}"):
+            return None
+        if "Crime" in genres or "War" in genres or DARK_DOCUMENTARY_TERMS.search(haystack):
+            return "dark-documentary"
+        return None
+
+    if "Science-Fiction" in genres or re.search(r"\b(?:silo|science-fiction|sci-fi)\b", haystack):
+        return "sci-fi"
+
+    if source == "Apple TV+" and episode.get("number") == 1:
+        return "apple-premiere"
+
+    if show_type == "Scripted" and genres & DARK_SCRIPTED_GENRES:
+        if "Comedy" in genres:
+            return None
+        return "dark-scripted"
+
+    return None
 
 
 def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
@@ -216,9 +263,9 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     episode_summary = clean_text(episode.get("summary") or "")
     show_summary = clean_text(show.get("summary") or "")
     summary = episode_summary or show_summary or f"A current {show_type.lower() or 'programme'} to consider."
-    haystack = " ".join([title, summary, show_type, *genres]).lower()
-    is_sport = show_type == "Sports" or SPORTS_TERMS.search(haystack)
-    if is_sport and not ALLOWED_MAJOR_SPORTS.search(haystack):
+    haystack = " ".join([title, episode_summary, show_summary, show_type, *genres]).lower()
+    lane = preference_lane(show, episode, haystack, source)
+    if not lane:
         return None
     score = max(12, 74 - abs(offset) * 8)
     if offset < 0:
@@ -231,6 +278,13 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
             score -= weight
     if show_type == "Documentary":
         score += 42
+    score += {
+        "dark-documentary": 72,
+        "dark-scripted": 38,
+        "sci-fi": 48,
+        "apple-premiere": 54,
+        "major-sport": 44,
+    }[lane]
     score += PREFERRED_SERVICE_WEIGHTS.get(source, 0)
     if episode.get("number") == 1:
         score += 28
@@ -258,6 +312,7 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
         "contentType": "tv-pick",
         "programmeType": show_type,
         "genres": genres,
+        "interestLane": lane,
         "generatedDate": day.isoformat(),
         "preferenceScore": round(score, 1),
     }
@@ -315,23 +370,57 @@ def select_picks(candidates: list[dict[str, Any]], day: date, history: list[dict
         if entry.get("date") != day.isoformat()
         for title in entry.get("titles") or []
     }
-    fresh = [item for item in candidates if item["title"].casefold() not in recent]
-    fallback = [item for item in candidates if item["title"].casefold() in recent]
+    def adjusted_score(item: dict[str, Any]) -> float:
+        penalty = HISTORY_SCORE_PENALTY if item["title"].casefold() in recent else 0
+        return float(item["preferenceScore"]) - penalty
+
+    ranked = sorted(
+        candidates,
+        key=lambda item: (-adjusted_score(item), item["airdate"], item["title"]),
+    )
     selected: list[dict[str, Any]] = []
     source_counts: dict[str, int] = {}
     category_counts: dict[str, int] = {}
-    for item in fresh + fallback:
+
+    def add_with_variety(item: dict[str, Any]) -> bool:
+        if item in selected:
+            return False
         source = item["source"]
         category = item["badge"]
-        if source_counts.get(source, 0) >= 2 or category_counts.get(category, 0) >= 2:
-            continue
+        if source_counts.get(source, 0) >= 2 or category_counts.get(category, 0) >= 3:
+            return False
         selected.append(item)
         source_counts[source] = source_counts.get(source, 0) + 1
         category_counts[category] = category_counts.get(category, 0) + 1
+        return True
+
+    documentaries = [item for item in ranked if item.get("interestLane") == "dark-documentary"]
+    if len(documentaries) < DOCUMENTARY_TARGET:
+        raise RuntimeError(
+            f"Only {len(documentaries)} dark or investigative documentaries passed the strict TV Picks rules"
+        )
+    for item in documentaries:
+        add_with_variety(item)
+        if len([pick for pick in selected if pick.get("interestLane") == "dark-documentary"]) == min(
+            DOCUMENTARY_TARGET, len(documentaries)
+        ):
+            break
+
+    has_non_documentary = any(item.get("interestLane") != "dark-documentary" for item in ranked)
+    for item in ranked:
+        if (
+            has_non_documentary
+            and item.get("interestLane") == "dark-documentary"
+            and len([pick for pick in selected if pick.get("interestLane") == "dark-documentary"])
+            >= DOCUMENTARY_CAP_WHEN_MIXED
+        ):
+            continue
+        add_with_variety(item)
         if len(selected) == PICK_COUNT:
             break
+
     if len(selected) < PICK_COUNT:
-        for item in fresh + fallback:
+        for item in ranked:
             if item in selected:
                 continue
             selected.append(item)
