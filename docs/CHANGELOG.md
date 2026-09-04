@@ -2,6 +2,15 @@
 
 Newest entries go first.
 
+## 4 September 2026: Career light-grey treatment
+
+Status: implemented; publication follows the normal responsive and Pages gates
+
+- Replaced the Career field-label and navigation yellow with neutral light grey `#D4D8D5` across both profiles.
+- Replaced the legacy yellow Career icon fallback with a light-grey treatment.
+- Preserved Career content, ordering, seven-field layout, card surfaces, and the existing stationary cyan hover/focus glow.
+- Protected scope: no other destination, data, imagery, layout, or responsive behaviour changed.
+
 ## 4 September 2026: Arsenal next-fixture source repair
 
 Status: implemented; publication follows the normal responsive, refresh, and Pages gates

@@ -33,7 +33,7 @@ body{color:var(--text);background:var(--bg)}
 .tab-story{background:linear-gradient(180deg,#fbfdff,#edf5fa);border-color:var(--line);box-shadow:0 10px 25px rgba(50,82,108,.08)}
 .tab-story .meta,.tab-story p{color:var(--text)}
 .section-story-icon{background:rgba(255,255,255,.72);box-shadow:inset 0 0 17px rgba(42,94,126,.04)}
-.section-story-icon-ai{color:#8d36aa;background:#f4e7f8}.section-story-icon-career{color:#7b5900;background:#fff4cd}
+.section-story-icon-ai{color:#8d36aa;background:#f4e7f8}.section-story-icon-career{color:#545b57;background:#e4e7e5}
 .arsenal-panel{background:radial-gradient(circle at 90% 0,rgba(239,49,62,.10),transparent 30rem),linear-gradient(145deg,#fffafa,#f5eef1);border-color:rgba(198,42,49,.22)}
 .match-card,.table-card,.arsenal-news-item,.arsenal-transfer-item{background:rgba(255,255,255,.72);border-color:rgba(122,51,59,.14)}
 .match-card.next{background:linear-gradient(145deg,#fdebed,#fff)}
