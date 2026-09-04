@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 4 September 2026 · refreshed 6:16am",
+  "updatedLabel": "Friday, 4 September 2026 · refreshed 8:26am",
   "worldFact": {
     "id": "la-gomera-silbo-whistled-spanish",
     "editorialPriority": "human-first",
@@ -17,10 +17,10 @@
     "sequence": 14
   },
   "weather": {
-    "temp": "19°",
+    "temp": "20°",
     "summary": "Light rain",
     "condition": "Light rain",
-    "currentRainChance": 60,
+    "currentRainChance": 90,
     "daily": [
       {
         "date": "2026-09-04",
@@ -28,7 +28,7 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 60,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
@@ -46,16 +46,16 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-07",
-        "high": 25,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 60%",
+      "detail": "Overcast · peak rain chance around 90%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -205,20 +205,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -230,6 +216,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -504,12 +504,12 @@
       "section": "Sweden"
     },
     {
-      "title": "Kingston’s Rose Theatre announces cast for upcoming production of ‘Jane Eyre’",
+      "title": "Weekend weather forecast for Teddington - 4 Sep to 6 Sep",
       "summary": "",
-      "meta": "Thu 3 Sep",
-      "publishedAt": "2026-09-03T16:00:00+01:00",
-      "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbnFuLVU2b01JazYzOEJ5bUtUOUFHZUZGVlNpbDVxcjFfbkRxazFRQkd0X1pyMktTQmt6Q2xLWDlxaHUxekhQSU9kb3FqRFJQRkdDWV9jamg5M3RsUmdLOTNTWUN0MllNcUxyOHNjSzJ6SXp2QmJXMUQ4SEZuLXVzSHI5d3BKd1J6bXRDRFc4d243NTF4ME1PNTVtbjdack5nWm1SbEk3MERMNVpVb09kb2ZrV042RTdpZkVWZ2ZtMF8?oc=5",
+      "meta": "Fri 4 Sep",
+      "publishedAt": "2026-09-04T07:03:05+01:00",
+      "source": "Teddington Nub News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkRJVUxWRk82aS1XQlZSZW1fV1AzMXR3ZGxmVFdhbHk4MXdTdlgwNjl2bUdkeFhlSU8zT2xna1VZQWg4Q3RReXlRNlA4dk9qVUMyWDVlYXZyblF4c01tTGw1QTV0Ni00bTZvX0R0eG1PY3VWU3JHR2U1Ri1MaVU0RWhWS0VPZm1zQkFzemZwQnRraTRHbWZpSVFDb2tHRGlHS3ROM0VaX29wWUk?oc=5",
       "localPublication": true,
       "familyActivity": false,
       "section": "Local"
@@ -648,6 +648,14 @@
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQY0QtUTM0S0NFZkpSTGFhYlFQN0dWR25jamlmRHByU3REdUlYWUlNSUJGemNZcXR0VXFPaGphNDZCOFBoMWhFZUx6MEJkaHoyTkN0cS1Zd0xaN2dQdXdwMVZ0cTRLb3A1blJKTmFUNHZHTzFRQWtLNnl5VWRYRGphWDN2TG1XWTkxMUI3U0dKSWNCTXQ2dUVNUkNlQ1ZUejBzeXFTcFRXRExDaXQ2QzZLNVRnSDhDakw0WVlkdDB6cXo3elJuak1VVTFDZTVwY3Vq?oc=5"
       },
       {
+        "title": "British man deported from Sweden despite living there since childhood",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T02:30:00+01:00",
+        "source": "theguardian.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5"
+      },
+      {
         "title": "11 used oddball Swedish cars that (mostly) cost less than a Polestar 4 SUV",
         "summary": "",
         "meta": "Fri 4 Sep",
@@ -656,19 +664,11 @@
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYVc4Nk16ck85cnItalNXNWdTSFhrUk4zZE9ZQ21wX0Z4cFA3VTJZV3N0czFHUkdJQzVzS0l4U055VGRjc1pEZ0ZqWGNqak9PSG1MeERpMUtVVXVkd25lWDJaWFNuTzEtcGhkTGVDODFZZDQzQmJ3bGF5TVZPdXM2QW9KTVA1Wncza3pNb2U1YXRQTE5mV3FGRFN5SG5JbWpEc01oMEZCNDk?oc=5"
       },
       {
-        "title": "British man deported from Sweden despite living there since childhood",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T02:30:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMk1UczVkcURIT2QyVlU5OWZNeDM0QV9TTm8wWkQ2T2k1a180ck9vX1F4dFhaaW5lSTVpSHRYRm1rQUs0SzM0clVwYnA4bEx5NlFCQ1FSQlVReDcyUXNRQ0VDY3pmUjJySFJlYWhIV1hmZ3ZELTZNX2lUNnNjYTNfYjZUWWR6N1dSa0k4NFMyMlJLUU91MzJkZF9rdEJHOUtIOTJ5UU5QNWZKS01CMVVmeml2SXBDZw?oc=5"
-      },
-      {
         "title": "Sweden’s election frontrunner vows green reset",
         "summary": "",
         "meta": "Thu 3 Sep",
         "publishedAt": "2026-09-03T05:04:46+01:00",
-        "source": "Financial Times",
+        "source": "ft.com",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHZuX0xpNm5RR2NTWk9HVmN1MER0Z3VxWGI2azM5RDlZYlVfSzIyZEUtcVBLZ1NMZTBON2lPemw5MHdkOU9TTEsxZW82c0ZQdUhzbUR3YW1BOWdQOTFDdlVkVHpQSi1aUC0yZWtrVmNQVmtGbzFCZXJ2UlNqay1IcEVnS1I?oc=5"
       },
       {
@@ -698,6 +698,36 @@
     ],
     "Local news": [
       {
+        "title": "Weekend weather forecast for Teddington - 4 Sep to 6 Sep",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T07:03:05+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkRJVUxWRk82aS1XQlZSZW1fV1AzMXR3ZGxmVFdhbHk4MXdTdlgwNjl2bUdkeFhlSU8zT2xna1VZQWg4Q3RReXlRNlA4dk9qVUMyWDVlYXZyblF4c01tTGw1QTV0Ni00bTZvX0R0eG1PY3VWU3JHR2U1Ri1MaVU0RWhWS0VPZm1zQkFzemZwQnRraTRHbWZpSVFDb2tHRGlHS3ROM0VaX29wWUk?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Weekend weather forecast for Kingston - 4 Sep to 6 Sep",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T07:01:07+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2E3V0RWdFNWZ2MtaDlCbjZyTjhMUmtvdlBNRjRnM3RkQUlVMmU1NkNHUlpfcmZDdDdOV1Z2cGwzYzhJR1JhOWhtdzd4ZHFqZVMwMTFVNlY0azVlQlBtUWZrQXNvYXZDTDctb3h6aGJwV2plallzckdpOHNmQjJRLVFJbUNNcEh1TVVoN2FSd2pqQ0xDQS1aY0ZRS2RJNUxNSlRDaVd3?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington High Street Is Evolving as Residents Reshape How They Shop",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T00:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeHlobUtnTXdlM3BKNXBxODBRQ3ZfcE5XV3RDNDRjN3Y4VWFlNTJwcXN4cUx1d2FaOC1LVDdRVTlEUjQ0ZnVfbGN2RmZhY0hBeGNkeGdqeHIxY2UyU1JzZkpuTm5UaXhwaGRkTlg4NGVpQmhxc001X3BiYVRGWmtRcDluWjNQeWhtbFBFY3ZlN0swalVaRTlvd3Z5YXp5S1ZDZnpGX0dXWTBfNVpoQ1RuSDFQTU5MdVZDQWxmTV81ZmpKSUxlZlZN?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "Kingston’s Rose Theatre announces cast for upcoming production of ‘Jane Eyre’",
         "summary": "",
         "meta": "Thu 3 Sep",
@@ -724,6 +754,16 @@
         "publishedAt": "2026-09-03T13:35:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVG1XQld1MHlsLWFZWGo1eElBMDZHblJEUHcxMG1FbzNXek5JaTFITlY5b0ZRdGxXMlBDcF8wRGU1bUxuZkR2Y215dl9YczljQ2J4VV9mZktLZ3lHeTdLaFZ2Y081eWZCMkJIbnJhYjJCeTJBRTdEWWFqeTBjR2R6aHhUZ2NtaVBjWU9ZWmxTXzhBRF9hUzJPSWNScFpsNDljZjhVYkdfVHY?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington - Do You need a solicitor to make a Lasting Power of Attorney?",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T10:57:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRmxoQWhtRWRsRXdyblR3NFF4TzhvVE03RDI3aGM5ZkxpZUVIbzNDVmFJaFQ1US1JLUZBTWhPQ05TSFQ1YnZITjVYMVE0WkxaTWd2Nzllc1piMEo1cDJ5X3pGZ3U4clBDcEdadGhCdnFUdXBUeWFSdUZJSl96N2hUQUxMbXg1bm9zY0RLTGE3cHIwTGc2bGRlVVFYeW8tSjFReG1uRWNpZ29SaUZjSVhBS3JvbS1NSk54VkR0LU9RanQwdDdmLUR4dzBkdUNzUQ?oc=5",
         "localPublication": true,
         "familyActivity": false
       },
@@ -778,54 +818,14 @@
         "familyActivity": false
       },
       {
-        "title": "Student stalker given more prison time at Kingston Crown Court for benefit fraud",
+        "title": "Firefighters battling massive fire at Superior Parts Limited on Hagley Park Road in Kingston",
         "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T12:30:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcEh2MWhyQzNWZWcySXdyblZIeFVsOUxEZkhxUTQtTlZNeUlNY21MZC0tdEVrWGVIMi1WSHNPcTlpWml2RHlPNy1fMWpicXNLZjYxd2pvbVBYa0RNNFdjWjE5Y25ESmd1d0RDRWIzWFo5b0E0SjlIT0EzbG03cjY0TjQ0blZ4azJET19YMkNzT3Uxck8yQzB2ZFpEYS1mMzR5U1hnVk11bm03OG53YnpONmlIdUxjMEVOQ0JuQ3N1QUlqSmE0bEhBMw?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T08:34:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington communnity centre seeks new trustees and trustee secretary",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T21:53:55+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOUnREamwwanBvOTZwTzhaYTFQTTJoWTVUbUk4c0JLVVJKb2hDVHhGc2p5bXlzOW92ZWpYWGlTYjlTREdTZERhcXdRQ1JhR2hBeGJVdURrUjVvYkU3U29BOWdiYlk0V012bUprcUQxdGstY1lfVENkMmpUY0J2Q0NVTnJHcDZmWUdZRmNXLV9fa2ZObHZ0ZTZVMzYyRm9MYXAyVHhvdDZuSlhfSGZyZkdRM19WU05kYkhBTmhXRDFGUTRfNklrZ0pqZm5MWVBEMWFTZmpjQkdvbFRIYldlY09Dd24wYkFGQjNDeVo4cDdnODhnZ05IZHVBa3lyWkd3Zw?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Beloved Teddington pub manager moves on after nearly two years",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:58:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Kingston University launches human performance lab to elevate athlete performance",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T12:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSl84MEhLaEpBUlg5THJPUjNJY000cUNsOGRzVVF3T0dJYlBpQTk5NkN4U2x4TzFZTkJaV21DMG5Ud1A3WnR2ZzhyRnYyTnp5WVhsRUxHUmJIYTZCWHBCVVRodWlETS1wRTB3Y1VHRU9WeTcwYnJQWmsyTkFVR1R6akRsYUpwQmpPTlNtcTNFVTMxVXRrQnppbHZnakVzUVFsbEFiT2pPX1ZPdnlhSmxuM1c4ZUhoQmJZVXUwcVJ4S0RfSWpZV2FxRGZ3?oc=5",
-        "localPublication": true,
-        "familyActivity": false
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T22:01:50+01:00",
+        "source": "IRIE FM",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ2FobWdmcEpVMXo3UDVwYmN0M0FUM2FFQU1Fd2M1TVhzZVVzdWN3Ulp1MU1DM3dKa0x5Wkp3LU8xWjVNdWk0RXZPQ0pJRGlBVXZlY1k2YUs5TTN1QXJDdVJqWnk1b1R6eDdoanJzT1RFT0pZMi12NmNGRHVodS1TcVpnTE1iZVloeUQ1ZXVudkFxSXFkTHVsOE5oZTJQUTN1V05vcmU4VUdYcWhIeVpJSlhR?oc=5",
+        "localPublication": false,
+        "familyActivity": true
       },
       {
         "title": "What's on near Teddington this weekend: Bank Holiday weekend beer fest, Teddington social, and club night",
@@ -863,7 +863,7 @@
         "title": "Controversial Jackdaw gas field set to be approved in weeks, sources say",
         "summary": "The government is set to give the go-ahead for the gas field off the coast of Aberdeen, the BBC understands.",
         "meta": "Fri 4 Sep",
-        "publishedAt": "2026-09-04T00:00:15+01:00",
+        "publishedAt": "2026-09-04T06:59:10+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cj9xe09jz4eo?at_medium=RSS&at_campaign=rss"
       },
@@ -908,6 +908,14 @@
         "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNMlM2bEVsLTFzdXNLM00tWXJuOGItakFVS0VrYlpiUUZuNnFOQkxDWFlGQmFXZ1RLbmZlZHBIUVlkTjI5UGJLbUgwSHVwT3A1cElHSGlfOWd0aTRTZmQ3M3p4WmZvSjcyTHVlQVA1WjFyM3B3dFRQU2I2aUEwZjRRNHQ2QUNiYmVGNUxBNl9SVVZWUWN3ZXdVLWtyVXBkX0I4ckZVSFdqZmgxdTFIa29CS2ppNV9aZlZ6UVMwdFJoeW1yd2xGdk9CektRc21PQ0ZoM2xISGRiWU9xZmZ5cXdJU3Rpb1dzeHFxUm1tT0NBQm95cXAyalh5SmdrcDlhb3lJQ1ZyN2RRX3lORUJuWXpId09nOGR2QdIBlgJBVV95cUxOM1V5TlhzM1VmekpGby1iWnBSQnR2aDl1azlpUkF6ZFdCdnh5cDh2ejRnbVZiZ1AtN3EzeXRVUjBRUm1GdE1BTDNpM1NlTWJqc2ZLZFZVbjl3LUxCZ0U2OXBWcXVtVlk1RElQSlZSSVM4NjZwNmxfaDdpR0NtNVNnbkpQTlQ4TFBPOEFxOTZFRG5ZWkdmZm5RbXFGbk1mbGE2WEVJc0ZoQ1lRZFBoWXhxNmljQkZxOEp0a2FrM25mV0Mtc2hZZlZmNm1uN1hUelJ3cDI0NzBVR01DeDl0MUlLeUd2dkJ4OUhiTFRTa3ZHMFRqUklLOGpBa0duTEIxVnVUZm93dXFrWkNKUHBZTFgwMms3S2VLUQ?oc=5"
       },
       {
+        "title": "British Ukrainian Community Volunteer Becomes BBC Award Finalist",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T11:55:10+01:00",
+        "source": "Межа. Новини України.",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSblJXTlk2aFJqa3h6WDlyZ3FnZHdCR0Frc0FOSkoxOVhtZm84NlFQNkt3d2dBNmFoQXItRk9kOFN6bHJFYWhvLVVnNlBheUR4bDdpSWwzamlxOTROa1VPNDBnMVlLZ2E0ZmRfaERvNS1kQQ?oc=5"
+      },
+      {
         "title": "Legendary Isle of Man TT team earns prestigious British motorcycle racing award",
         "summary": "",
         "meta": "Thu 3 Sep",
@@ -940,20 +948,12 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOenh5LUw2eGVyb29kYUdfZFItV3FVRUs2N09IN0haeUlldTBoMFFqVmF5Q1JVSm01TC1FaURUWU9CSVV6REJjVkJsZV9aanFYQTlYeDlucEpzcGJpUzZ4WGJJOVBiR2xQdzl2NllhSkVIOHZKbktkT1NMZ1pkb2g2RFhZdE1FV01ZNEMwNkxB?oc=5"
       },
       {
-        "title": "Alyn Smith appointed as Scotland's innovation minister",
+        "title": "King Charles celebrates the ‘French side’ of his family history, welcoming the Bayeux Tapestry",
         "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T14:23:17+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13NHpfSUVfdXNaZ05xekUtLUxOaHpHM1ZQY2dEdENrTUhSVUlFTmh2UUwzNTdxdWR3WXhKa1dCV3FQTC1uRFpUMV9pVXY1ZTRHWnpqWkNGRFo1dw?oc=5"
-      },
-      {
-        "title": "British Ukrainian Community Volunteer Becomes BBC Award Finalist",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T12:28:00+01:00",
-        "source": "Межа. Новини України.",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93UzctWDJGczZ2Z2diZWh6OUZVd1F0VUY3ZzFSaGZVN3BkSXlHdmxiN2ttZ25BN3ZEdGd4cVJJNTA4MkZkaEwza2pzZno2RWJBYThVWlBjWmtQa2JnMjlJMGV0UnNfTkJ4X1NxVXdXOGJhdEk?oc=5"
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T01:02:36+01:00",
+        "source": "Montreal Gazette",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeTNOZF9jQnVJcXhvZHhzdUUwT1ktc185Y1B2a0NET0tjQ2kweG5DeHAyM2xRZC1GTTVCcUQzT0kwTXVxSFI4UkltWFRRYzY0MXJTZDZwV1VjSDFmMElUeEp5d2c5SnVtV3BLMXU2V05YQmdySWhWQUlreS1MS1U3SA?oc=5"
       }
     ],
     "AI": [
@@ -1040,6 +1040,21 @@
     ],
     "Career": [
       {
+        "title": "AI Lead",
+        "company": "Money and Pensions Service",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "3 September 2026",
+        "source": "LinkedIn",
+        "location": "Bedford, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/ai-lead-at-money-and-pensions-service-4460477229",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-03"
+      },
+      {
         "title": "AI Industry Opportunities Advisor",
         "company": "Department for Science, Innovation and Technology",
         "description": "Description not supplied by publisher.",
@@ -1070,21 +1085,6 @@
         "postedAt": "2026-09-02"
       },
       {
-        "title": "Deputy Director Head of AI Assurance",
-        "company": "HM Revenue & Customs",
-        "description": "Description not supplied by publisher.",
-        "salary": "Not stated",
-        "postedDate": "1 September 2026",
-        "source": "LinkedIn",
-        "location": "Manchester Area, United Kingdom",
-        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4448429970",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "sector": "Public sector",
-        "aiRelated": true,
-        "postedAt": "2026-09-01"
-      },
-      {
         "title": "Data and AI Adoption Lead",
         "company": "Ofgem",
         "description": "Description not supplied by publisher.",
@@ -1098,6 +1098,51 @@
         "sector": "Public sector",
         "aiRelated": true,
         "postedAt": "2026-08-28"
+      },
+      {
+        "title": "AI Transformation Lead - 2 year FTC",
+        "company": "Ofgem",
+        "description": "AI Transformation Lead 2-year Fixed Term Contract £49,452 - £62,699 + benefits & highly-flexible working London, Glasgow or Card iff Candidates must be eligible to obtain SC clearance Across government, the use of data and artificial intelligence is rapidly moving from experimentation into mainstream delivery. AI is no longer a future ambition; it is a critical capability that enables organisations to make better…",
+        "salary": "£49,452 - £62,699",
+        "postedDate": "28 August 2026",
+        "source": "LinkedIn",
+        "location": "Glasgow, Scotland, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/ai-transformation-lead-2-year-ftc-at-ofgem-4458061537",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-28"
+      },
+      {
+        "title": "Strategy Officer- i.AI",
+        "company": "Department for Science, Innovation and Technology",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "26 August 2026",
+        "source": "LinkedIn",
+        "location": "London, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/strategy-officer-i-ai-at-department-for-science-innovation-and-technology-4458307268",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-26"
+      },
+      {
+        "title": "Deputy Director, Head of AI Assurance",
+        "company": "HM Revenue & Customs",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "6 August 2026",
+        "source": "LinkedIn",
+        "location": "Manchester, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4450226512",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-06"
       }
     ]
   }

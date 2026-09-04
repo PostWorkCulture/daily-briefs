@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 4 September 2026 · refreshed 6:16am",
+  "updatedLabel": "Friday, 4 September 2026 · refreshed 8:26am",
   "worldFact": {
     "id": "la-gomera-silbo-whistled-spanish",
     "editorialPriority": "human-first",
@@ -17,10 +17,10 @@
     "sequence": 14
   },
   "weather": {
-    "temp": "19°",
+    "temp": "20°",
     "summary": "Light rain",
     "condition": "Light rain",
-    "currentRainChance": 60,
+    "currentRainChance": 90,
     "daily": [
       {
         "date": "2026-09-04",
@@ -28,7 +28,7 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 60,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
@@ -46,16 +46,16 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-07",
-        "high": 25,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 60%",
+      "detail": "Overcast · peak rain chance around 90%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -205,20 +205,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "School Start",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir - PU 4pm",
       "summary": "",
       "url": "",
@@ -230,6 +216,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "School Start",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
       "calendarColorSource": "google"
     },
     {
@@ -541,7 +541,7 @@
         "summary": "",
         "meta": "Thu 3 Sep",
         "publishedAt": "2026-09-03T22:11:25+01:00",
-        "source": "arsenal.com",
+        "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOclpuVWJlS1QxOW1ZcGhPYkdwNENtemVjeVJ2d21vV2pHVGZoUFljSDFrM0FPci1YSmNrOXh2RWVpdkJpUm02MGhiY1hzZHRUWExYYS0tbmtTS1RNd2gyQVBWd1hfb0cySWJPekdFaktjT0I1VUxGNmpQYTNpLTk5OVRR?oc=5"
       },
       {
@@ -549,8 +549,16 @@
         "summary": "",
         "meta": "Fri 4 Sep",
         "publishedAt": "2026-09-04T04:29:32+01:00",
-        "source": "London Evening Standard",
+        "source": "standard.co.uk",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVjVZTm9sOFJNUU9GcXVUb09pa2pkazRlQVlzS0NVT2dtbkhIM3Y2ckJ0d0huUGVjYVpUaTdDMjNuNjZEQWEzNWl2SkVGSmN0N3VycndfdkIxamtlYTV1Tzc1NDkteE9uMFZONkpwOHFBVFdWYjZPWnMyZ0hoYmxvSEt0NGljTTU5a0VpeFFUczhFUHcybGp0WmYwRHNmX1RjSnhRcmVrWXJ5ZzJSNldZ?oc=5"
+      },
+      {
+        "title": "Premier League: Hull to remain unbeaten, Arsenal too strong for Chelsea? Danny Mills predicts Super Sunday results!",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T19:13:31+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSFlVazJiMzdESGd3ZHE5NW9TSDBFLTVaNDhGMUpSLTNkdnR0bFlSTXZMUFJWb29xT05YcHNreE1ZRUY3TWJlSEJTN2xiRFFCUUxrNGkwNUNuZTdWcVh1RlBSUnhnNzBlV1VpTVlJRm1XbmpDY1JQT3RCYkF6ZVhXTnZCbFAxNlRVb1FqQTRKb1NsZDZnY2g5c0xNYU1xVW1YOVhMRzUzMnpwMThxbGg2RHRBbFp3UUVmcHNhOWczYmFkQjFTcVhmTW5wS2JteGlYOTJJcmI2VjY?oc=5"
       },
       {
         "title": "Arsenal vs Chelsea preview: TV channel, kick-off time and how to watch | News | Official Site",
@@ -561,20 +569,12 @@
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYlFLaXFYRWh3dzB1cm4tY1M0d3JrRG9nb25QNHA5R3lGUGpDNHBYRWxNVmN6bUdBUS1Wajh6QnlDMFlMZWhtNkdtUFZwY3J2UDNONF9zdTR1eDJiQmtBeFY0aGp3a3UtX0x6SGd0dkpVSmEzY012ZmozbDlsd21qWGpFUzNERFdmWnV6X240WFNiZmNTY0V1QkwyaWJ3eHdRUVZIRVV0Q19GWE56NFN6ZjJsa2JxRDQ?oc=5"
       },
       {
-        "title": "TICKET DETAILS (CARABAO CUP) | ARSENAL (H)",
+        "title": "Gabriel Martinelli joins Al-Hilal",
         "summary": "",
         "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T09:26:17+01:00",
-        "source": "Ipswich Town FC",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQd1BNYUNmcEYySlQzYTFOcXJlLTFFdG5EV1pkSncxRVVOa3RDNjJpUFc4NXJZNHlrbEdKWk9RQ1p0OGJ1TEJKY2FFZjdHSnVTUTF4bG1xYzkwQUJlRkMxcE5xaDNrODk1b2NnR2d3NWs0QWZWZ2ZPQWk1MWhMN2QtcVBxQ3ZaRy1EejRjU1p6TExOUDg?oc=5"
-      },
-      {
-        "title": "Premier League: Hull to remain unbeaten, Arsenal too strong for Chelsea? Danny Mills predicts Super Sunday results!",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T19:13:31+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSFlVazJiMzdESGd3ZHE5NW9TSDBFLTVaNDhGMUpSLTNkdnR0bFlSTXZMUFJWb29xT05YcHNreE1ZRUY3TWJlSEJTN2xiRFFCUUxrNGkwNUNuZTdWcVh1RlBSUnhnNzBlV1VpTVlJRm1XbmpDY1JQT3RCYkF6ZVhXTnZCbFAxNlRVb1FqQTRKb1NsZDZnY2g5c0xNYU1xVW1YOVhMRzUzMnpwMThxbGg2RHRBbFp3UUVmcHNhOWczYmFkQjFTcVhmTW5wS2JteGlYOTJJcmI2VjY?oc=5"
+        "publishedAt": "2026-09-03T17:34:29+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPakttemk5Uk1IVW9QbGhYQzE0elI2UW9hZXdNaDhTdUdrcjlCUjVyaWVmUEtVUFpzXy1RdU1fVWxqcXdDTWxGVjNMNmkyeTV0Ny1YQjgwWXlHY3FROFVDU0VlYnhJNDZ6VGtBdjZBV0FZbGNvbW9PeWFOSFBvZEVfcg?oc=5"
       }
     ],
     "sources": [
@@ -585,16 +585,6 @@
     ],
     "scope": "Arsenal men's first team · all competitions",
     "transfers": [
-      {
-        "title": "Arsenal bank on continuity after big names elude them late in transfer window",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T23:11:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdzNPckcyX190ekIwSlYwaDJKR0tTdUtTa3FhN1BZcmlwaXNnN2RiYjBpLXN0cGhZWGtISUJsUmcwblZwQUR5WDNvMFBJMG10VzJMZTNnTE9hSXdES2RDNEhtVWo3QlVOYk9fZmlFSFU4WWJkeFhBM05jeWZkc2FCa0JLdHpDMncwQ056dm9xMlR2U2p6Q2Z2Y2VOZjhTcF9TT1Y5V3BfWHZfTWNzZ1E?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
       {
         "title": "Gabriel Martinelli transfer news: Forward joins Al Hilal in club-record sale for Arsenal in £60m deal",
         "summary": "",
@@ -610,7 +600,7 @@
         "summary": "",
         "meta": "Thu 3 Sep",
         "publishedAt": "2026-09-03T17:34:29+01:00",
-        "source": "arsenal.com",
+        "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPakttemk5Uk1IVW9QbGhYQzE0elI2UW9hZXdNaDhTdUdrcjlCUjVyaWVmUEtVUFpzXy1RdU1fVWxqcXdDTWxGVjNMNmkyeTV0Ny1YQjgwWXlHY3FROFVDU0VlYnhJNDZ6VGtBdjZBV0FZbGNvbW9PeWFOSFBvZEVfcg?oc=5",
         "contentType": "transfer-update",
         "trust": "Official",
@@ -620,6 +610,16 @@
           "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMWVRMVVpd0x5ZzEycE8tWjZkajd0RjJrNUFDQW5WWkh4X3hZSHM4UGI4dGphVUZ0WHM2MXhLZlZvTUpoQjB4U1RMUjRaOUFvSGRya25HNXVMTHlncUxLaDJsX29FWXJjX0ZPMkJMZGl6RGxXU0FmMkttVXhydEFkMUs2dklNNTEwOUR0VkdoUTVHVUR6Y2NjSm9jM1F5MXJQXzlfMEhaMFEwbGMyOVJIV3FZSmVjYlVkdWRqU19JNzRXNVVtdlQ3SExha2hFdlJLMGlOeFQ4WXl5SXpqdlEzenN1blhvUFdOQng3YjZndw?oc=5",
           "publishedAt": "2026-09-03T18:58:04+01:00"
         }
+      },
+      {
+        "title": "Arsenal: Will Gunners regret missing out on transfer targets? | Transfer Talk Podcast",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T17:20:33+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZk5hTHcyN2tiNVN0bk5Yc0E1WklTQlkwYnBlMnZvclVwRXZhRy1mU2dZRllpTWhRSWJGUFpWWmpRRm1lSXI3MU1GbURVaTdlcU9XM1E2cUJmODBTOXpWOXMwV05uWFZEaWZfZklMU1VVRGJ5UTJmeWJRNFMxandYSGZtUXo1dlBqXzdzZHFTQ0M5ano0R2FSbGxEdEFfZV9qd2tCbzFYcGNzdEhXM2V4c1BPS2NVNjA0SDZnaWlkRUJpMU9UR3ZTYw?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
       },
       {
         "title": "Julian Alvarez transfer news: Atletico Madrid set deadline for striker to decide whether he stays or joins Arsenal",
@@ -748,17 +748,17 @@
       "summary": "",
       "meta": "Thu 3 Sep",
       "publishedAt": "2026-09-03T22:11:25+01:00",
-      "source": "arsenal.com",
+      "source": "Arsenal.com",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOclpuVWJlS1QxOW1ZcGhPYkdwNENtemVjeVJ2d21vV2pHVGZoUFljSDFrM0FPci1YSmNrOXh2RWVpdkJpUm02MGhiY1hzZHRUWExYYS0tbmtTS1RNd2gyQVBWd1hfb0cySWJPekdFaktjT0I1VUxGNmpQYTNpLTk5OVRR?oc=5",
       "section": "Arsenal"
     },
     {
-      "title": "Kingston’s Rose Theatre announces cast for upcoming production of ‘Jane Eyre’",
+      "title": "Weekend weather forecast for Teddington - 4 Sep to 6 Sep",
       "summary": "",
-      "meta": "Thu 3 Sep",
-      "publishedAt": "2026-09-03T16:00:00+01:00",
-      "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbnFuLVU2b01JazYzOEJ5bUtUOUFHZUZGVlNpbDVxcjFfbkRxazFRQkd0X1pyMktTQmt6Q2xLWDlxaHUxekhQSU9kb3FqRFJQRkdDWV9jamg5M3RsUmdLOTNTWUN0MllNcUxyOHNjSzJ6SXp2QmJXMUQ4SEZuLXVzSHI5d3BKd1J6bXRDRFc4d243NTF4ME1PNTVtbjdack5nWm1SbEk3MERMNVpVb09kb2ZrV042RTdpZkVWZ2ZtMF8?oc=5",
+      "meta": "Fri 4 Sep",
+      "publishedAt": "2026-09-04T07:03:05+01:00",
+      "source": "Teddington Nub News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkRJVUxWRk82aS1XQlZSZW1fV1AzMXR3ZGxmVFdhbHk4MXdTdlgwNjl2bUdkeFhlSU8zT2xna1VZQWg4Q3RReXlRNlA4dk9qVUMyWDVlYXZyblF4c01tTGw1QTV0Ni00bTZvX0R0eG1PY3VWU3JHR2U1Ri1MaVU0RWhWS0VPZm1zQkFzemZwQnRraTRHbWZpSVFDb2tHRGlHS3ROM0VaX29wWUk?oc=5",
       "localPublication": true,
       "familyActivity": false,
       "section": "Local"
@@ -965,7 +965,7 @@
         "summary": "",
         "meta": "Thu 3 Sep",
         "publishedAt": "2026-09-03T22:11:25+01:00",
-        "source": "arsenal.com",
+        "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOclpuVWJlS1QxOW1ZcGhPYkdwNENtemVjeVJ2d21vV2pHVGZoUFljSDFrM0FPci1YSmNrOXh2RWVpdkJpUm02MGhiY1hzZHRUWExYYS0tbmtTS1RNd2gyQVBWd1hfb0cySWJPekdFaktjT0I1VUxGNmpQYTNpLTk5OVRR?oc=5"
       },
       {
@@ -973,24 +973,8 @@
         "summary": "",
         "meta": "Fri 4 Sep",
         "publishedAt": "2026-09-04T04:29:32+01:00",
-        "source": "London Evening Standard",
+        "source": "standard.co.uk",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVjVZTm9sOFJNUU9GcXVUb09pa2pkazRlQVlzS0NVT2dtbkhIM3Y2ckJ0d0huUGVjYVpUaTdDMjNuNjZEQWEzNWl2SkVGSmN0N3VycndfdkIxamtlYTV1Tzc1NDkteE9uMFZONkpwOHFBVFdWYjZPWnMyZ0hoYmxvSEt0NGljTTU5a0VpeFFUczhFUHcybGp0WmYwRHNmX1RjSnhRcmVrWXJ5ZzJSNldZ?oc=5"
-      },
-      {
-        "title": "Arsenal vs Chelsea preview: TV channel, kick-off time and how to watch | News | Official Site",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T11:10:00+01:00",
-        "source": "Chelsea Football Club",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYlFLaXFYRWh3dzB1cm4tY1M0d3JrRG9nb25QNHA5R3lGUGpDNHBYRWxNVmN6bUdBUS1Wajh6QnlDMFlMZWhtNkdtUFZwY3J2UDNONF9zdTR1eDJiQmtBeFY0aGp3a3UtX0x6SGd0dkpVSmEzY012ZmozbDlsd21qWGpFUzNERFdmWnV6X240WFNiZmNTY0V1QkwyaWJ3eHdRUVZIRVV0Q19GWE56NFN6ZjJsa2JxRDQ?oc=5"
-      },
-      {
-        "title": "TICKET DETAILS (CARABAO CUP) | ARSENAL (H)",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T09:26:17+01:00",
-        "source": "Ipswich Town FC",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQd1BNYUNmcEYySlQzYTFOcXJlLTFFdG5EV1pkSncxRVVOa3RDNjJpUFc4NXJZNHlrbEdKWk9RQ1p0OGJ1TEJKY2FFZjdHSnVTUTF4bG1xYzkwQUJlRkMxcE5xaDNrODk1b2NnR2d3NWs0QWZWZ2ZPQWk1MWhMN2QtcVBxQ3ZaRy1EejRjU1p6TExOUDg?oc=5"
       },
       {
         "title": "Premier League: Hull to remain unbeaten, Arsenal too strong for Chelsea? Danny Mills predicts Super Sunday results!",
@@ -1001,31 +985,77 @@
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSFlVazJiMzdESGd3ZHE5NW9TSDBFLTVaNDhGMUpSLTNkdnR0bFlSTXZMUFJWb29xT05YcHNreE1ZRUY3TWJlSEJTN2xiRFFCUUxrNGkwNUNuZTdWcVh1RlBSUnhnNzBlV1VpTVlJRm1XbmpDY1JQT3RCYkF6ZVhXTnZCbFAxNlRVb1FqQTRKb1NsZDZnY2g5c0xNYU1xVW1YOVhMRzUzMnpwMThxbGg2RHRBbFp3UUVmcHNhOWczYmFkQjFTcVhmTW5wS2JteGlYOTJJcmI2VjY?oc=5"
       },
       {
+        "title": "Arsenal vs Chelsea preview: TV channel, kick-off time and how to watch | News | Official Site",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T11:10:00+01:00",
+        "source": "Chelsea Football Club",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYlFLaXFYRWh3dzB1cm4tY1M0d3JrRG9nb25QNHA5R3lGUGpDNHBYRWxNVmN6bUdBUS1Wajh6QnlDMFlMZWhtNkdtUFZwY3J2UDNONF9zdTR1eDJiQmtBeFY0aGp3a3UtX0x6SGd0dkpVSmEzY012ZmozbDlsd21qWGpFUzNERFdmWnV6X240WFNiZmNTY0V1QkwyaWJ3eHdRUVZIRVV0Q19GWE56NFN6ZjJsa2JxRDQ?oc=5"
+      },
+      {
         "title": "Gabriel Martinelli joins Al-Hilal",
         "summary": "",
         "meta": "Thu 3 Sep",
         "publishedAt": "2026-09-03T17:34:29+01:00",
-        "source": "arsenal.com",
+        "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPakttemk5Uk1IVW9QbGhYQzE0elI2UW9hZXdNaDhTdUdrcjlCUjVyaWVmUEtVUFpzXy1RdU1fVWxqcXdDTWxGVjNMNmkyeTV0Ny1YQjgwWXlHY3FROFVDU0VlYnhJNDZ6VGtBdjZBV0FZbGNvbW9PeWFOSFBvZEVfcg?oc=5"
+      },
+      {
+        "title": "Arsenal confirm third transfer Deadline Day deal as midfielder seals loan",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T05:45:57+01:00",
+        "source": "standard.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUjk2bUdaVVV0Wmd1TEYwTmpYbmtoU05VX3M3Nl9rbXh5aF9TQWU5TGUyMHk1TDBUbGxMWFR3cExoU2RRenZpbXdTaGcyaXVrODZvR01Ba0kwcHVPYTFIcVJMRldEemhjMXJEVDdMLTRUcXVCMEtOLWtyTVBCejBuX2Vld3VQMVE4UU80SmFHdlk1bVJtVTBJVjNnTG9FQQ?oc=5"
+      },
+      {
+        "title": "FPL Focus: All the best picks for Gameweek 3!",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T17:36:36+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUGxPMGNQd2tJel85c1BQaTBQMHpyWHpWS1NhQ0c0YmpIa0VwSFExbjB3MHV2bUJXZW1DcFpNZTRqS05ZdzRkenh6dEVuQWRvSzNHTzVnM2dsWkFSZ29FWkxTUVFvZGkzSG03b2tqT013cWh1bGNnZHJ4bFNWcV9xbkNXeXdVNmZZWVpPVG1B?oc=5"
       },
       {
         "title": "Arsenal deal imminent as forward arrives to finalise £60m transfer",
         "summary": "",
         "meta": "Fri 4 Sep",
         "publishedAt": "2026-09-04T02:10:11+01:00",
-        "source": "London Evening Standard",
+        "source": "standard.co.uk",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOV0d1S1puTVpqMVNwZlQwMVNJTllEOFNpc1BPcHVoM2I5bFV1MkJuT1hKU2Jlc0FfdjIxaWRHZ0dJSmdJWlZ4NExicmYtVkQxeEVKekJFUld3OUNPalY3SHdtWlVnZ253TzlWOU03RTNfcTliVDVuRUlndjZCMEhsWEdxallYaWVBbl9UUTBCdUs0QjlZamFBUUIzMzVZbzd1?oc=5"
-      },
-      {
-        "title": "De Almeida: “I can’t wait to get started”",
-        "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T23:32:32+01:00",
-        "source": "arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORHl5eTl3REFObGlOX01LYk9NbXFYbmZXZUhmRkNwQmZUanUtenFLYmNPOS02b3VNNkpIWWVPMkZZNnFiZFV0QXZRcDJxV3pkbUFWVEVRRkdlRXNGUTFzVmQzZ3I1SG9LWUJienhXNUdkS2g2NUZnc2FBUE5DWHVtUUN4cjFhQQ?oc=5"
       }
     ],
     "Local news": [
+      {
+        "title": "Weekend weather forecast for Teddington - 4 Sep to 6 Sep",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T07:03:05+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkRJVUxWRk82aS1XQlZSZW1fV1AzMXR3ZGxmVFdhbHk4MXdTdlgwNjl2bUdkeFhlSU8zT2xna1VZQWg4Q3RReXlRNlA4dk9qVUMyWDVlYXZyblF4c01tTGw1QTV0Ni00bTZvX0R0eG1PY3VWU3JHR2U1Ri1MaVU0RWhWS0VPZm1zQkFzemZwQnRraTRHbWZpSVFDb2tHRGlHS3ROM0VaX29wWUk?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Weekend weather forecast for Kingston - 4 Sep to 6 Sep",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T07:01:07+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2E3V0RWdFNWZ2MtaDlCbjZyTjhMUmtvdlBNRjRnM3RkQUlVMmU1NkNHUlpfcmZDdDdOV1Z2cGwzYzhJR1JhOWhtdzd4ZHFqZVMwMTFVNlY0azVlQlBtUWZrQXNvYXZDTDctb3h6aGJwV2plallzckdpOHNmQjJRLVFJbUNNcEh1TVVoN2FSd2pqQ0xDQS1aY0ZRS2RJNUxNSlRDaVd3?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington High Street Is Evolving as Residents Reshape How They Shop",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T00:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeHlobUtnTXdlM3BKNXBxODBRQ3ZfcE5XV3RDNDRjN3Y4VWFlNTJwcXN4cUx1d2FaOC1LVDdRVTlEUjQ0ZnVfbGN2RmZhY0hBeGNkeGdqeHIxY2UyU1JzZkpuTm5UaXhwaGRkTlg4NGVpQmhxc001X3BiYVRGWmtRcDluWjNQeWhtbFBFY3ZlN0swalVaRTlvd3Z5YXp5S1ZDZnpGX0dXWTBfNVpoQ1RuSDFQTU5MdVZDQWxmTV81ZmpKSUxlZlZN?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "Kingston’s Rose Theatre announces cast for upcoming production of ‘Jane Eyre’",
         "summary": "",
@@ -1053,6 +1083,16 @@
         "publishedAt": "2026-09-03T13:35:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVG1XQld1MHlsLWFZWGo1eElBMDZHblJEUHcxMG1FbzNXek5JaTFITlY5b0ZRdGxXMlBDcF8wRGU1bUxuZkR2Y215dl9YczljQ2J4VV9mZktLZ3lHeTdLaFZ2Y081eWZCMkJIbnJhYjJCeTJBRTdEWWFqeTBjR2R6aHhUZ2NtaVBjWU9ZWmxTXzhBRF9hUzJPSWNScFpsNDljZjhVYkdfVHY?oc=5",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington - Do You need a solicitor to make a Lasting Power of Attorney?",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T10:57:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRmxoQWhtRWRsRXdyblR3NFF4TzhvVE03RDI3aGM5ZkxpZUVIbzNDVmFJaFQ1US1JLUZBTWhPQ05TSFQ1YnZITjVYMVE0WkxaTWd2Nzllc1piMEo1cDJ5X3pGZ3U4clBDcEdadGhCdnFUdXBUeWFSdUZJSl96N2hUQUxMbXg1bm9zY0RLTGE3cHIwTGc2bGRlVVFYeW8tSjFReG1uRWNpZ29SaUZjSVhBS3JvbS1NSk54VkR0LU9RanQwdDdmLUR4dzBkdUNzUQ?oc=5",
         "localPublication": true,
         "familyActivity": false
       },
@@ -1107,54 +1147,14 @@
         "familyActivity": false
       },
       {
-        "title": "Student stalker given more prison time at Kingston Crown Court for benefit fraud",
+        "title": "Firefighters battling massive fire at Superior Parts Limited on Hagley Park Road in Kingston",
         "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T12:30:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcEh2MWhyQzNWZWcySXdyblZIeFVsOUxEZkhxUTQtTlZNeUlNY21MZC0tdEVrWGVIMi1WSHNPcTlpWml2RHlPNy1fMWpicXNLZjYxd2pvbVBYa0RNNFdjWjE5Y25ESmd1d0RDRWIzWFo5b0E0SjlIT0EzbG03cjY0TjQ0blZ4azJET19YMkNzT3Uxck8yQzB2ZFpEYS1mMzR5U1hnVk11bm03OG53YnpONmlIdUxjMEVOQ0JuQ3N1QUlqSmE0bEhBMw?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T08:34:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington communnity centre seeks new trustees and trustee secretary",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T21:53:55+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOUnREamwwanBvOTZwTzhaYTFQTTJoWTVUbUk4c0JLVVJKb2hDVHhGc2p5bXlzOW92ZWpYWGlTYjlTREdTZERhcXdRQ1JhR2hBeGJVdURrUjVvYkU3U29BOWdiYlk0V012bUprcUQxdGstY1lfVENkMmpUY0J2Q0NVTnJHcDZmWUdZRmNXLV9fa2ZObHZ0ZTZVMzYyRm9MYXAyVHhvdDZuSlhfSGZyZkdRM19WU05kYkhBTmhXRDFGUTRfNklrZ0pqZm5MWVBEMWFTZmpjQkdvbFRIYldlY09Dd24wYkFGQjNDeVo4cDdnODhnZ05IZHVBa3lyWkd3Zw?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Beloved Teddington pub manager moves on after nearly two years",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:58:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Kingston University launches human performance lab to elevate athlete performance",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T12:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSl84MEhLaEpBUlg5THJPUjNJY000cUNsOGRzVVF3T0dJYlBpQTk5NkN4U2x4TzFZTkJaV21DMG5Ud1A3WnR2ZzhyRnYyTnp5WVhsRUxHUmJIYTZCWHBCVVRodWlETS1wRTB3Y1VHRU9WeTcwYnJQWmsyTkFVR1R6akRsYUpwQmpPTlNtcTNFVTMxVXRrQnppbHZnakVzUVFsbEFiT2pPX1ZPdnlhSmxuM1c4ZUhoQmJZVXUwcVJ4S0RfSWpZV2FxRGZ3?oc=5",
-        "localPublication": true,
-        "familyActivity": false
+        "meta": "Thu 27 Aug",
+        "publishedAt": "2026-08-27T22:01:50+01:00",
+        "source": "IRIE FM",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ2FobWdmcEpVMXo3UDVwYmN0M0FUM2FFQU1Fd2M1TVhzZVVzdWN3Ulp1MU1DM3dKa0x5Wkp3LU8xWjVNdWk0RXZPQ0pJRGlBVXZlY1k2YUs5TTN1QXJDdVJqWnk1b1R6eDdoanJzT1RFT0pZMi12NmNGRHVodS1TcVpnTE1iZVloeUQ1ZXVudkFxSXFkTHVsOE5oZTJQUTN1V05vcmU4VUdYcWhIeVpJSlhR?oc=5",
+        "localPublication": false,
+        "familyActivity": true
       },
       {
         "title": "What's on near Teddington this weekend: Bank Holiday weekend beer fest, Teddington social, and club night",
@@ -1192,7 +1192,7 @@
         "title": "Controversial Jackdaw gas field set to be approved in weeks, sources say",
         "summary": "The government is set to give the go-ahead for the gas field off the coast of Aberdeen, the BBC understands.",
         "meta": "Fri 4 Sep",
-        "publishedAt": "2026-09-04T00:00:15+01:00",
+        "publishedAt": "2026-09-04T06:59:10+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cj9xe09jz4eo?at_medium=RSS&at_campaign=rss"
       },
@@ -1237,6 +1237,14 @@
         "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNMlM2bEVsLTFzdXNLM00tWXJuOGItakFVS0VrYlpiUUZuNnFOQkxDWFlGQmFXZ1RLbmZlZHBIUVlkTjI5UGJLbUgwSHVwT3A1cElHSGlfOWd0aTRTZmQ3M3p4WmZvSjcyTHVlQVA1WjFyM3B3dFRQU2I2aUEwZjRRNHQ2QUNiYmVGNUxBNl9SVVZWUWN3ZXdVLWtyVXBkX0I4ckZVSFdqZmgxdTFIa29CS2ppNV9aZlZ6UVMwdFJoeW1yd2xGdk9CektRc21PQ0ZoM2xISGRiWU9xZmZ5cXdJU3Rpb1dzeHFxUm1tT0NBQm95cXAyalh5SmdrcDlhb3lJQ1ZyN2RRX3lORUJuWXpId09nOGR2QdIBlgJBVV95cUxOM1V5TlhzM1VmekpGby1iWnBSQnR2aDl1azlpUkF6ZFdCdnh5cDh2ejRnbVZiZ1AtN3EzeXRVUjBRUm1GdE1BTDNpM1NlTWJqc2ZLZFZVbjl3LUxCZ0U2OXBWcXVtVlk1RElQSlZSSVM4NjZwNmxfaDdpR0NtNVNnbkpQTlQ4TFBPOEFxOTZFRG5ZWkdmZm5RbXFGbk1mbGE2WEVJc0ZoQ1lRZFBoWXhxNmljQkZxOEp0a2FrM25mV0Mtc2hZZlZmNm1uN1hUelJ3cDI0NzBVR01DeDl0MUlLeUd2dkJ4OUhiTFRTa3ZHMFRqUklLOGpBa0duTEIxVnVUZm93dXFrWkNKUHBZTFgwMms3S2VLUQ?oc=5"
       },
       {
+        "title": "British Ukrainian Community Volunteer Becomes BBC Award Finalist",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T11:55:10+01:00",
+        "source": "Межа. Новини України.",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSblJXTlk2aFJqa3h6WDlyZ3FnZHdCR0Frc0FOSkoxOVhtZm84NlFQNkt3d2dBNmFoQXItRk9kOFN6bHJFYWhvLVVnNlBheUR4bDdpSWwzamlxOTROa1VPNDBnMVlLZ2E0ZmRfaERvNS1kQQ?oc=5"
+      },
+      {
         "title": "Legendary Isle of Man TT team earns prestigious British motorcycle racing award",
         "summary": "",
         "meta": "Thu 3 Sep",
@@ -1269,23 +1277,30 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOenh5LUw2eGVyb29kYUdfZFItV3FVRUs2N09IN0haeUlldTBoMFFqVmF5Q1JVSm01TC1FaURUWU9CSVV6REJjVkJsZV9aanFYQTlYeDlucEpzcGJpUzZ4WGJJOVBiR2xQdzl2NllhSkVIOHZKbktkT1NMZ1pkb2g2RFhZdE1FV01ZNEMwNkxB?oc=5"
       },
       {
-        "title": "Alyn Smith appointed as Scotland's innovation minister",
+        "title": "King Charles celebrates the ‘French side’ of his family history, welcoming the Bayeux Tapestry",
         "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T14:23:17+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13NHpfSUVfdXNaZ05xekUtLUxOaHpHM1ZQY2dEdENrTUhSVUlFTmh2UUwzNTdxdWR3WXhKa1dCV3FQTC1uRFpUMV9pVXY1ZTRHWnpqWkNGRFo1dw?oc=5"
-      },
-      {
-        "title": "British Ukrainian Community Volunteer Becomes BBC Award Finalist",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T12:28:00+01:00",
-        "source": "Межа. Новини України.",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93UzctWDJGczZ2Z2diZWh6OUZVd1F0VUY3ZzFSaGZVN3BkSXlHdmxiN2ttZ25BN3ZEdGd4cVJJNTA4MkZkaEwza2pzZno2RWJBYThVWlBjWmtQa2JnMjlJMGV0UnNfTkJ4X1NxVXdXOGJhdEk?oc=5"
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T01:02:36+01:00",
+        "source": "Montreal Gazette",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeTNOZF9jQnVJcXhvZHhzdUUwT1ktc185Y1B2a0NET0tjQ2kweG5DeHAyM2xRZC1GTTVCcUQzT0kwTXVxSFI4UkltWFRRYzY0MXJTZDZwV1VjSDFmMElUeEp5d2c5SnVtV3BLMXU2V05YQmdySWhWQUlreS1MS1U3SA?oc=5"
       }
     ],
     "Career": [
+      {
+        "title": "AI Lead",
+        "company": "Money and Pensions Service",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "3 September 2026",
+        "source": "LinkedIn",
+        "location": "Bedford, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/ai-lead-at-money-and-pensions-service-4460477229",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-03"
+      },
       {
         "title": "AI Industry Opportunities Advisor",
         "company": "Department for Science, Innovation and Technology",
@@ -1317,21 +1332,6 @@
         "postedAt": "2026-09-02"
       },
       {
-        "title": "Deputy Director Head of AI Assurance",
-        "company": "HM Revenue & Customs",
-        "description": "Description not supplied by publisher.",
-        "salary": "Not stated",
-        "postedDate": "1 September 2026",
-        "source": "LinkedIn",
-        "location": "Manchester Area, United Kingdom",
-        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4448429970",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "sector": "Public sector",
-        "aiRelated": true,
-        "postedAt": "2026-09-01"
-      },
-      {
         "title": "Data and AI Adoption Lead",
         "company": "Ofgem",
         "description": "Description not supplied by publisher.",
@@ -1345,6 +1345,51 @@
         "sector": "Public sector",
         "aiRelated": true,
         "postedAt": "2026-08-28"
+      },
+      {
+        "title": "AI Transformation Lead - 2 year FTC",
+        "company": "Ofgem",
+        "description": "AI Transformation Lead 2-year Fixed Term Contract £49,452 - £62,699 + benefits & highly-flexible working London, Glasgow or Card iff Candidates must be eligible to obtain SC clearance Across government, the use of data and artificial intelligence is rapidly moving from experimentation into mainstream delivery. AI is no longer a future ambition; it is a critical capability that enables organisations to make better…",
+        "salary": "£49,452 - £62,699",
+        "postedDate": "28 August 2026",
+        "source": "LinkedIn",
+        "location": "Glasgow, Scotland, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/ai-transformation-lead-2-year-ftc-at-ofgem-4458061537",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-28"
+      },
+      {
+        "title": "Strategy Officer- i.AI",
+        "company": "Department for Science, Innovation and Technology",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "26 August 2026",
+        "source": "LinkedIn",
+        "location": "London, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/strategy-officer-i-ai-at-department-for-science-innovation-and-technology-4458307268",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-26"
+      },
+      {
+        "title": "Deputy Director, Head of AI Assurance",
+        "company": "HM Revenue & Customs",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "6 August 2026",
+        "source": "LinkedIn",
+        "location": "Manchester, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4450226512",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-08-06"
       }
     ]
   }
