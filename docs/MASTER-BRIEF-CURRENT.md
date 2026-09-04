@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.7, 3 September 2026. Owner: Pete.
+Version 4.8, 4 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -89,9 +89,9 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 **TV Picks**
 - Show five current, named programmes per profile. An eligible pick has released a new episode within the previous seven days or will release one within the next seven days; a new episode qualifies even when the series itself is not new.
-- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Prioritise documentaries—especially murder, scandal, corruption, fraud, cult, prison, and other dark investigations—plus thrillers, mysteries, `Silo`, science fiction, and strong new Apple TV+ series or season premieres. Prefer BBC iPlayer, Channel 4, and Netflix, followed by Apple TV+, when equally strong current programmes are available. Exclude every reality programme, including misclassified Gary Barlow or celebrity-travel shows, as well as routine sport, news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination. The only sports exceptions are World Cup, UEFA Euros and Wimbledon programmes.
+- Refresh the selection every morning from current UK broadcast and major-streaming schedules. Relevance is a hard eligibility rule, not a scoring preference: every pick must be a dark or investigative documentary, a dark crime/thriller/mystery, `Silo` or other science fiction, a strong new Apple TV+ series or season premiere, or an allowed major-sport programme. Make the five-card selection documentary-led with at least three dark or investigative documentaries; fail the refresh rather than publish a weaker mix. Use no more than four documentaries when another eligible category is available. Prefer BBC iPlayer, Channel 4, and Netflix, followed by Apple TV+, when equally strong current programmes are available. Exclude every reality programme, including misclassified Gary Barlow or celebrity-travel shows, plus nature, travel, gardening, medical, food, light crime-comedy and generic documentaries, routine enforcement factual shows, routine sport, news, talk shows, game shows, daily soaps, generic articles, and programmes without a real destination. The only sports exceptions are World Cup, UEFA Euros and Wimbledon programmes.
 - Give every card the exact programme artwork supplied by the schedule source, a service or channel, and a clear available-since or upcoming date. Never use generic streaming art, logos, screenshots, placeholders, or a fixed title allowlist.
-- Prefer titles not used during the previous three refresh days, keep source and category variety, and fail before publication if five valid current picks cannot be produced. Keep a committed 30-day selection history so freshness is testable.
+- Prefer titles not used during the previous three refresh days without allowing that freshness preference to displace a more relevant programme. Keep source and category variety, and fail before publication if five valid current picks cannot be produced. Keep a committed 30-day selection history so freshness is testable.
 
 **Arsenal**
 - Use an official-site-inspired Arsenal visual system: bright red `#E30613`, deep navy `#071D49`, white, and restrained yellow `#FFD51F`. The section opens with a red masthead using Pete's supplied white cannon, and the nav uses that exact same silhouette. Use strong match-centre hierarchy, white and navy match cards, a red league-position card, clean club-news cards, and a navy transfer area. Keep it professional, high-contrast, stationary on hover, and responsive.
