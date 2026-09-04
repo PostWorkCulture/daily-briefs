@@ -17,10 +17,10 @@
     "sequence": 14
   },
   "weather": {
-    "temp": "20°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 90,
+    "temp": "21°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-09-04",
@@ -28,7 +28,7 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 90,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -46,7 +46,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -55,7 +55,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -64,21 +64,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-09",
-        "high": 19,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
-        "date": "2026-09-10",
-        "high": 19,
+        "date": "2026-09-09",
+        "high": 20,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -87,8 +78,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 90%",
+      "label": "Good outdoor day",
+      "detail": "Overcast · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
