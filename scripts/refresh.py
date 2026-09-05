@@ -35,7 +35,7 @@ NON_MENS_ARSENAL = re.compile(
 
 def first_team_arsenal_news(items: list[dict]) -> list[dict]:
     return [
-        item for item in items
+        item for item in editorial_news(items)
         if not NON_MENS_ARSENAL.search(
             " ".join(str(item.get(key, "")) for key in ("title", "summary", "source"))
         )
@@ -253,6 +253,32 @@ UK_NEGATIVE_NEWS_EVIDENCE = re.compile(
     re.I,
 )
 
+SECTION_CONTENT_TYPES = {
+    "Local news": "article",
+    "UK news": "article",
+    "Sweden": "article",
+    "AI": "article",
+    "Arsenal news": "article",
+    "Career": "job",
+}
+JOB_BOARD_SOURCE = re.compile(
+    r"\b(?:Indeed|CV[- ]Library|Totaljobs|Reed(?:\.co\.uk)?|LinkedIn Jobs?|Glassdoor|"
+    r"Adzuna|Jobsite|Jobs24|NHS Jobs?|Civil Service Jobs?|JobServe|Monster Jobs?)\b",
+    re.I,
+)
+JOB_VACANCY_LANGUAGE = re.compile(
+    r"\b(?:vacanc(?:y|ies)|job (?:advert|listing|opening|opportunit(?:y|ies))|"
+    r"now hiring|hiring now|we(?:'re| are) hiring|join our team|apply now|"
+    r"applications? (?:are )?(?:open|close|closing)|closing date|candidate pack)\b",
+    re.I,
+)
+JOB_COMPENSATION_LANGUAGE = re.compile(
+    r"(?:£\s?\d[\d,]*(?:\.\d+)?(?:\s?[kK])?(?:\s*[-–]\s*£?\s?\d[\d,]*(?:\.\d+)?(?:\s?[kK])?)?"
+    r"\s*(?:per annum|p\.?a\.?|a year|plus benefits)|\bsalary\s*[:\-–]?\s*£)",
+    re.I,
+)
+JOB_SCHEMA_FIELDS = frozenset({"company", "salary", "postedDate", "location", "sector", "aiRelated"})
+
 
 def world_fact_for_today() -> dict:
     try:
@@ -417,7 +443,7 @@ def google_news(query: str, limit: int = 6, max_age_days: int = 4) -> list[dict]
         except Exception:
             meta = "Recent"
         seen.add(key)
-        out.append({"title": title.strip(), "summary": "", "meta": meta, "publishedAt": published_at, "source": source.strip(), "url": entry.get("link", "")})
+        out.append({"title": title.strip(), "summary": "", "meta": meta, "publishedAt": published_at, "source": source.strip(), "url": entry.get("link", ""), "contentType": "article"})
         if len(out) >= limit:
             break
     return out
@@ -437,7 +463,7 @@ def rss(url: str, section: str, limit: int = 6, max_age_days: int = 4) -> list[d
             published_at = dt.isoformat()
         except Exception: meta = section
         seen.add(key)
-        items.append({"title": title, "summary": summary, "meta": meta, "publishedAt": published_at, "source": section, "url": entry.get("link", "")})
+        items.append({"title": title, "summary": summary, "meta": meta, "publishedAt": published_at, "source": section, "url": entry.get("link", ""), "contentType": "article"})
         if len(items) >= limit: break
     return items
 
@@ -467,12 +493,64 @@ def newest_news(items: list[dict], limit: int) -> list[dict]:
     )[:limit]
 
 
+def news_item_is_job_vacancy(item: dict) -> bool:
+    """Identify vacancy listings without rejecting reporting about jobs being created."""
+    if str(item.get("contentType") or "").casefold() == "job":
+        return True
+    if len(JOB_SCHEMA_FIELDS.intersection(item)) >= 3:
+        return True
+    title = clean_html(str(item.get("title", "")))
+    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary", "source", "url")))
+    return bool(
+        re.search(r"\(\s*expired\s*\)", title, re.I)
+        or JOB_BOARD_SOURCE.search(text)
+        or JOB_VACANCY_LANGUAGE.search(text)
+        or JOB_COMPENSATION_LANGUAGE.search(title)
+    )
+
+
+def editorial_news_item_is_in_scope(item: dict) -> bool:
+    """Allow only article-shaped, non-vacancy items into editorial destinations."""
+    content_type = str(item.get("contentType") or "article").casefold()
+    return content_type == "article" and not news_item_is_job_vacancy(item)
+
+
+def editorial_news(items: list[dict], limit: int | None = None) -> list[dict]:
+    """Quarantine non-articles and label every surviving editorial item explicitly."""
+    articles = []
+    for item in items:
+        if not editorial_news_item_is_in_scope(item):
+            continue
+        article = dict(item)
+        article["contentType"] = "article"
+        articles.append(article)
+    return articles if limit is None else articles[:limit]
+
+
+def section_content_type_errors(sections: dict) -> list[str]:
+    """Return hard publication errors for content placed in the wrong destination."""
+    errors = []
+    for section, expected_type in SECTION_CONTENT_TYPES.items():
+        for index, item in enumerate(sections.get(section) or [], 1):
+            actual_type = str(item.get("contentType") or "")
+            title = clean_html(str(item.get("title") or "Untitled item"))
+            if actual_type != expected_type:
+                errors.append(
+                    f"{section} item {index} has contentType {actual_type or '<missing>'}, "
+                    f"expected {expected_type}: {title}"
+                )
+            if expected_type == "article" and news_item_is_job_vacancy(item):
+                errors.append(f"{section} contains a job vacancy: {title}")
+    return errors
+
+
 def local_news_item_is_in_scope(item: dict) -> bool:
     """Require approved local evidence and reject routine sports coverage."""
     text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
     source = clean_html(str(item.get("source", "")))
     if (
-        not text
+        not editorial_news_item_is_in_scope(item)
+        or not text
         or LOCAL_NEWS_FALSE_LOCATIONS.search(f"{text} {source}")
         or LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE.search(source)
         or LOCAL_NEWS_LOW_VALUE_CONTENT.search(text)
@@ -553,7 +631,8 @@ def positive_uk_news_item_is_in_scope(item: dict) -> bool:
     """Keep explicitly uplifting stories and reject distressing or adversarial news."""
     text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
     return bool(
-        text
+        editorial_news_item_is_in_scope(item)
+        and text
         and UK_POSITIVE_NEWS_EVIDENCE.search(text)
         and not UK_NEGATIVE_NEWS_EVIDENCE.search(text)
     )
@@ -1289,11 +1368,14 @@ def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: 
 def build_profiles() -> dict[str, dict]:
     previous_position = previous_arsenal_position()
     wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
-    ai = merge_news(
-        rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
-        rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
-        google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 12, 3),
-        limit=10,
+    ai = editorial_news(
+        merge_news(
+            rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
+            rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
+            google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 12, 3),
+            limit=10,
+        ),
+        10,
     )
     arsenal_news = first_team_arsenal_news(google_news('Arsenal FC when:3d', 8, 3))
     transfers = arsenal_transfer_updates()
@@ -1308,12 +1390,16 @@ def build_profiles() -> dict[str, dict]:
     current_career = public_ai_career_jobs(career_candidates)
     pete_career = current_career or previous_career("pete")
     sofia_career = current_career or previous_career("sofia")
-    sweden = google_news('(Sweden OR Swedish) news when:4d', 7, 4)
+    sweden = editorial_news(google_news('(Sweden OR Swedish) news when:4d', 7, 4), 7)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
 
     stamp = NOW.strftime("%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
     pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": pete_career}
     sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": sofia_career}
+    for profile, sections in (("Pete", pete_sections), ("Sofia", sofia_sections)):
+        errors = section_content_type_errors(sections)
+        if errors:
+            raise RuntimeError(f"{profile} section content contract failed: {'; '.join(errors)}")
     def first(items, fallback): return items[0] if items else {"title": fallback, "summary": "", "meta": "", "source": "", "url": ""}
     return {
         "pete": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},

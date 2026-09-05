@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 4.9, 4 September 2026. Owner: Pete.
+Version 5.0, 5 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -109,6 +109,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 **News, AI, Career, Dida**
 - Keep each destination working and independent.
+- Enforce permanent content-type isolation between destinations. Local News, UK News, Sweden, AI, and Arsenal Club news contain editorial articles only, explicitly marked `contentType: article`; Career contains job vacancies only, explicitly marked `contentType: job`. Quarantine any mismatched optional item before selection, never let it count towards a section minimum, and fail publication if a mismatch survives into generated profile data. An article reporting that jobs were created remains News; an advert for a specific role belongs only in Career.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
 - UK News contains only explicitly positive, constructive or uplifting stories. Require clear positive-outcome evidence in the headline or summary; exclude conflict, crime, deaths, disaster, scandal, crisis, fear-led, adversarial and otherwise distressing stories. Search the freshest 14 days first, extend to 30 days only when needed for depth, and fail publication instead of using a negative fallback.

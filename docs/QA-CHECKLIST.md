@@ -76,6 +76,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] Every Local News story has headline or summary evidence for the approved KT8 cluster; broad Surrey, Elmbridge, or London references and foreign/unrelated namesakes are rejected. The refresh may extend from 14 to 30 days for depth but does not widen the geography.
 - [ ] Local News targets 16 stories, prioritises named local publications and family or child activities, and excludes routine sports results unless the item covers an opening, major change, or major event.
+- [ ] Local News, UK News, Sweden, AI, and Arsenal Club news contain only `contentType: article`; Career contains only `contentType: job`. Vacancy-shaped items are quarantined before News selection and no wrong content type survives publication.
 - [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; the refresh fails instead of using a negative fallback.
 - [ ] Both Career sections contain only explicitly AI-related UK public-sector jobs, newest first, with Job Title, Company, Description, Salary, Posted Date, Where it was posted, and Location in that exact order.
 - [ ] Career field labels and navigation hover/focus use light grey `#D4D8D5`; no Career treatment remains yellow.
