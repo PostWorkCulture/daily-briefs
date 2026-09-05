@@ -22,8 +22,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-briefs-refresh
-  cancel-in-progress: true
+  group: daily-briefs-data-writer
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -50,6 +50,9 @@ jobs:
       - name: Install dependencies
         if: steps.refresh-gate.outputs.should_run == 'true'
         run: pip install -r requirements.txt
+
+      - name: Report fact reserve without blocking publication
+        run: python scripts/fact_reserve.py
 
       - name: Run refresh regression tests
         if: steps.refresh-gate.outputs.should_run == 'true'
@@ -265,17 +268,6 @@ jobs:
           git config user.name "Daily Briefs Bot"
           git config user.email "actions@users.noreply.github.com"
 
-          mkdir -p /tmp/daily-briefs-data
-          cp data/*.json /tmp/daily-briefs-data/
-          mkdir -p /tmp/daily-briefs-weather-images
-          cp assets/weather-extremes/*.webp /tmp/daily-briefs-weather-images/
-
-          git fetch origin main
-          git reset --hard origin/main
-          cp /tmp/daily-briefs-data/*.json data/
-          mkdir -p assets/weather-extremes
-          cp /tmp/daily-briefs-weather-images/*.webp assets/weather-extremes/
-
           git add data/*.json assets/weather-extremes/*.webp
           if git diff --cached --quiet; then
             echo "No data changes to commit"
@@ -283,4 +275,5 @@ jobs:
           fi
 
           git commit -m "Morning refresh: $(TZ=Europe/London date '+%Y-%m-%d')"
+          git pull --rebase origin main
           git push origin main

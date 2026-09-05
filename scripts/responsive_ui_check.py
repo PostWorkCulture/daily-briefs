@@ -625,6 +625,22 @@ def check_viewport(browser, name: str) -> None:
                     f"shadow={tv_shadow}, transform={tv_transform}"
                 )
 
+        first_tv_title = tv_cards.first.locator('b').inner_text()
+        tv_cards.first.locator('.watch-feedback-toggle').click()
+        if page.locator('#tvFeedbackTitle').inner_text() != first_tv_title:
+            raise AssertionError(f"{name}: TV feedback selected the wrong programme")
+        page.locator('[data-tv-reason="Not interested"]').click()
+        if first_tv_title in page.locator('#watchStrip .watch-card b').all_text_contents():
+            raise AssertionError(f"{name}: unwanted TV pick remained visible")
+        page.evaluate("renderWatch(state.data.watch)")
+        if first_tv_title in page.locator('#watchStrip .watch-card b').all_text_contents():
+            raise AssertionError(f"{name}: TV feedback was lost on rerender")
+        page.locator('#tvPreferences summary').click()
+        page.get_by_role('button', name=f'Restore {first_tv_title}', exact=True).click()
+        if first_tv_title not in page.locator('#watchStrip .watch-card b').all_text_contents():
+            raise AssertionError(f"{name}: restoring TV pick failed")
+        page.locator('#tvPreferences summary').click()
+
         page.locator('[data-view-target="career"]').click()
         page.wait_for_function("window.scrollY < 2")
         career_render = page.evaluate(
@@ -1370,9 +1386,9 @@ def check_viewport(browser, name: str) -> None:
                 .map(zone => zone.getBoundingClientRect());
               const textSelectors = [
                 '.dida-source',
-                '.dida-quick p',
-                '.dida-season-title p',
-                '.dida-season-item',
+                '.dida-intro',
+                '.dida-steps li',
+                '.dida-challenge',
                 '.dida-fold summary p',
                 '.dida-ref-card p'
               ];
@@ -1382,7 +1398,9 @@ def check_viewport(browser, name: str) -> None:
                 shellShadow: getComputedStyle(document.querySelector('.dida-shell')).boxShadow,
                 heroes: document.querySelectorAll('.dida-hero').length,
                 heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
-                quickIcons: document.querySelectorAll('.dida-quick-icon').length,
+                activityCards: document.querySelectorAll('.dida-activity').length,
+                steps: [...document.querySelectorAll('.dida-activity')].map(card => card.querySelectorAll('.dida-steps li').length),
+                images: [...document.querySelectorAll('#didaContent .dida-scene')].map(img => ({src:img.getAttribute('src'), loaded:img.complete && img.naturalWidth > 0, filter:getComputedStyle(img).filter})),
                 foldIcons: document.querySelectorAll('.dida-fold-icon').length,
                 zones: document.querySelectorAll('.dida-zone').length,
                 zoneBackgrounds: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).backgroundImage),
@@ -1414,11 +1432,15 @@ def check_viewport(browser, name: str) -> None:
             failures.append(f"Dida accent is not the approved bright green: {dida['accent']}")
         if dida["heroes"] != 0 or dida["heroIcons"] != 0 or dida["sectionLinks"] != 0:
             failures.append(f"Dida top section or duplicate section navigation remains: {dida}")
-        if dida["quickIcons"] < 3 or dida["foldIcons"] < 4:
-            failures.append(f"Dida fun icon treatment is incomplete: {dida}")
+        if dida["activityCards"] < 5 or any(count != 3 for count in dida["steps"]):
+            failures.append(f"Dida does not offer complete three-step activities: {dida}")
+        if len(dida["images"]) != 3 or any(image['filter'] != 'none' for image in dida['images']):
+            failures.append(f"Dida needs three full-colour original illustrations: {dida}")
+        if dida["foldIcons"] != 4:
+            failures.append(f"Dida parent guide icons are missing: {dida}")
         if dida["zones"] != 3:
             failures.append(f"Dida is not split into three clear sections: {dida}")
-        expected_zone_titles = ["This week", "Seasonal missions", "Reference library"]
+        expected_zone_titles = ["Play together", "Explore this season", "Parent guide"]
         if [head["text"] for head in dida["zoneHeaders"]] != expected_zone_titles or any(
             head["h3Count"] != 1 or head["extraCount"] != 0
             for head in dida["zoneHeaders"]
@@ -1464,7 +1486,7 @@ def check_viewport(browser, name: str) -> None:
         )
         if any(value in dida["copy"] for value in removed_dida_copy):
             failures.append(f"Dida still renders removed top or header copy: {dida['copy']}")
-        if any(old_copy in dida["copy"] for old_copy in ("AGE 5", "Five-year-old", "turning five")):
+        if any(old_copy in dida["copy"] for old_copy in ("AGE 5", "Five-year-old", "turning five", "turning six", "6 things before I’m 6")):
             failures.append("Dida still renders age-five wording")
         if dida["sourceHref"] != "https://stacks.cdc.gov/view/cdc/155268":
             failures.append(f"Dida age-six source changed or is not real: {dida['sourceHref']}")
@@ -1478,6 +1500,33 @@ def check_viewport(browser, name: str) -> None:
                 "Dida hover does not match Calendar glow or moves: "
                 f"shadow={dida_hover_shadow}, transform={dida_hover_transform}"
             )
+
+        # Exercise the saved activity controls, disclosure state and per-profile persistence.
+        featured_id = page.locator('.dida-featured').get_attribute('data-activity-id')
+        page.locator('.dida-fold summary').first.click()
+        page.locator('.dida-featured [data-dida-action="save"]').click()
+        if page.locator('.dida-fold[open]').count() != 1:
+            raise AssertionError(f"{name}: saving an activity changed unrelated parent disclosures")
+        if page.locator('.dida-featured [data-dida-action="save"]').get_attribute('aria-pressed') != 'true':
+            raise AssertionError(f"{name}: activity favourite did not save")
+        page.locator('.dida-featured [data-dida-action="tried"]').click()
+        if page.locator('.dida-featured [data-dida-action="tried"]').get_attribute('aria-pressed') != 'true':
+            raise AssertionError(f"{name}: activity sticker did not save")
+        page.evaluate("renderProfileViews(state.data, state.profile)")
+        if page.locator('.dida-featured').get_attribute('data-activity-id') != featured_id:
+            raise AssertionError(f"{name}: background refresh replaced the selected adventure")
+        page.locator('[data-dida-action="pick"]').click()
+        if page.locator('.dida-featured').get_attribute('data-activity-id') == featured_id:
+            raise AssertionError(f"{name}: Pick another repeats the same adventure")
+        page.locator('#dida-season-choice').select_option('christmas')
+        if page.locator('#dida-seasonal .dida-activity').count() < 2:
+            raise AssertionError(f"{name}: seasonal selector has no usable activities")
+        page.locator('#dida-season-choice').select_option('autumn')
+        for img in page.locator('#didaContent .dida-scene').all():
+            img.scroll_into_view_if_needed()
+            img.evaluate("img => img.decode()")
+        page.locator('.dida-fold[open] summary').click()
+        page.evaluate("document.getElementById('dida-feedback').textContent = ''")
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
         for target in ("home", "calendar", "news", "arsenal", "ai", "career", "dida", "birthdays"):

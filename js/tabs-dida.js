@@ -51,8 +51,8 @@
     return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
   function careerStory(item,index=0){
-    const tag=item?.url?'a':'article';
-    const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
+    const tag='article';
+    const attrs='';
     const fields=[
       ['Job Title',item?.title||'Untitled'],
       ['Company',item?.company||'Employer not stated'],
@@ -62,7 +62,13 @@
       ['Where it was posted',item?.source||'Source not stated'],
       ['Location',item?.location||'Location not stated']
     ];
-    const details=fields.map(([label,value])=>`<div class="career-field"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('');
+    const link=(url,value)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(value)}</a>`;
+    const details=fields.map(([label,value])=>{
+      let content=esc(value);
+      if((label==='Job Title'||label==='Where it was posted')&&item.url)content=link(item.url,value);
+      if(label==='Where it was posted'&&item.metadataSourceUrl)content+=` · ${link(item.metadataSourceUrl,'Employer details')}`;
+      return `<div class="career-field"><dt>${esc(label)}</dt><dd>${content}</dd></div>`;
+    }).join('');
     const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
     return `<${tag} class="tab-story section-story career-story${hierarchy}"${attrs}><span class="section-story-icon section-story-icon-career">${sectionIcon('career',index)}</span><dl class="career-details">${details}</dl></${tag}>`;
   }
@@ -73,7 +79,7 @@
     const primary=stories.slice(0,3).join('');
     const stream=stories.slice(3);
     const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
-    const content=stories.length?`${primary}${streamFeed}`:'<div class="empty">Nothing listed today.</div>';
+    const content=stories.length?(section==='career'?stories.join(''):`${primary}${streamFeed}`):'<div class="empty">Nothing listed today.</div>';
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
@@ -127,23 +133,23 @@
     spring:['Spring missions','Growing, noticing and getting outside',['Plant something fast-growing','Six-colour spring scavenger hunt','Build a bug hotel','Draw a map to a playground','Make leaf or flower patterns']],
     summer:['Late-summer missions','Make the most of long, light days',['Garden mini-Olympics: hop, throw, balance, sprint','Picnic alphabet hunt','Trace shadows with chalk and revisit them later','Freeze tiny toys in ice and plan a rescue','Make a six-stop nature treasure map']],
     autumn:['Autumn missions','Leaves, darker evenings and making weather',['Leaf colour hunt','Conker or acorn counting challenge','Torch-lit indoor obstacle course','Design a Halloween creature and invent its story','Bake something simple and count the ingredients']],
-    birthday:['Birthday runway · late November','Make turning six feel like an adventure',['Create a “6 things before I’m 6” list','Let Dida design one part of her birthday','Make a handprint “5” now and “6” on her birthday','Record a two-minute favourite-things interview','Build a birthday treasure hunt with six clues']],
+    birthday:['Birthday runway · late November','Make the next birthday feel like an adventure',['Create a birthday adventure wish list','Let Dida design one part of her birthday','Make a handprint now and another on her birthday','Record a two-minute favourite-things interview','Build a birthday treasure hunt with a few playful clues']],
     christmas:['Christmas missions','Tiny traditions worth repeating',['Paper-chain countdown in number order','North Pole toy-delivery obstacle course','Invent a silly Christmas story','Do one kindness mission','Wrap an empty box together for folding and tape practice']]
   };
   function currentSeason(){const m=new Date().getMonth()+1;if(m===12||m<=2)return seasons.winter;if(m<=5)return seasons.spring;if(m<=8)return seasons.summer;return seasons.autumn}
   function seasonalBlocks(){const m=new Date().getMonth()+1,out=[currentSeason()];if(m>=8&&m<=11)out.push(seasons.birthday);if(m>=10||m===12)out.push(seasons.christmas);return out}
   function fold(n,icon,title,strap,body){return `<details class="dida-fold"><summary><span class="dida-fold-icon">${didaIcon(icon)}</span><div><h4>${esc(title)}</h4><p>${esc(strap)}</p></div><span class="dida-num">${n}</span><b class="dida-plus" aria-hidden="true">+</b></summary><div class="dida-fold-body">${body}</div></details>`}
   function zoneHead(title){return `<header class="dida-zone-head"><h3>${esc(title)}</h3></header>`}
-  function didaHTML(){
+  function didaReferenceParts(){
     const day=Math.floor(Date.now()/86400000),learn=teach[day%teach.length],play=games[(day+2)%games.length],season=currentSeason(),quick=[['book','LEARN',learn[0],learn[1]],['play','PLAY',play[0],play[1]],['leaf','OUTSIDE / MAKE',season[0],season[2][day%season[2].length]]];
-    const seasonal=seasonalBlocks().map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');
+    const seasonal=Object.values(seasons).map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');
     const milestoneBody=`<div class="dida-reference">${milestones.map(m=>`<article class="dida-ref-card"><h5>${esc(m[0])}</h5><ul>${m[1].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></article>`).join('')}</div>`;
     const teachBody=`<div class="dida-reference">${teach.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const gamesBody=`<div class="dida-reference">${games.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const powersBody=`<div class="dida-reference">${powers.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const quickCards=quick.map(x=>`<article class="dida-quick"><span class="dida-quick-icon">${didaIcon(x[0])}</span><div><small>${esc(x[1])}</small><h4>${esc(x[2])}</h4><p>${esc(x[3])}</p></div></article>`).join('');
     const library=[fold('01','star','Age-six development','Grouped development markers for quick scanning.',milestoneBody),fold('02','letters','What to teach her now','Short real-life practice, not formal lessons.',teachBody),fold('03','dice','Games worth playing','Quick games that quietly practise useful skills.',gamesBody),fold('04','bolt','Little superpowers','Useful things to build across the year.',powersBody)].join('');
-    return `<section class="dida-zone dida-week-zone" id="dida-week">${zoneHead('This week')}<div class="dida-quick-grid">${quickCards}</div></section><section class="dida-zone dida-seasonal-zone" id="dida-seasonal">${zoneHead('Seasonal missions')}${seasonal}</section><section class="dida-zone dida-library-zone" id="dida-library">${zoneHead('Reference library')}<div class="dida-library">${library}</div><p class="dida-source"><a href="https://stacks.cdc.gov/view/cdc/155268" target="_blank" rel="noopener">CDC ages 6–8 guide</a></p></section>`;
+    return {seasonal, reference:`<div class="dida-library">${library}</div><p class="dida-source"><a href="https://stacks.cdc.gov/view/cdc/155268" target="_blank" rel="noopener">CDC ages 6–8 guide</a></p>`};
   }
 
   function renderProfileViews(data,profile){
@@ -154,7 +160,8 @@
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
     document.getElementById('careerTabGroups').innerHTML=group('',newestJobsFirst(data.sections?.Career||[]),'career');
-    document.getElementById('didaContent').innerHTML=didaHTML();
+    const dida=didaReferenceParts();
+    window.mountDidaActivities(profile,dida.reference,dida.seasonal);
     if(profile==='sofia'&&document.getElementById('view-arsenal')?.classList.contains('active'))showView('home');
   }
   window.renderProfileViews=renderProfileViews;

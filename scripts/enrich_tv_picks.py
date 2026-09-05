@@ -431,13 +431,14 @@ def select_picks(candidates: list[dict[str, Any]], day: date, history: list[dict
     return selected
 
 
-def save(picks: list[dict[str, Any]], day: date, history: list[dict[str, Any]]) -> None:
+def save(picks: list[dict[str, Any]], day: date, history: list[dict[str, Any]], alternatives: list[dict[str, Any]] | None = None) -> None:
     for profile in ("pete", "sofia"):
         path = DATA / f"{profile}.json"
         if not path.exists():
             continue
         payload = json.loads(path.read_text(encoding="utf-8"))
         payload["watch"] = [dict(item) for item in picks]
+        payload["watchAlternatives"] = [dict(item) for item in (alternatives or [])]
         path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     current = {"date": day.isoformat(), "titles": [item["title"] for item in picks]}
@@ -458,7 +459,15 @@ def main() -> None:
     history = load_history()
     candidates = fetch_candidates(day)
     picks = select_picks(candidates, day, history)
-    save(picks, day, history)
+    seen = {item['title'].casefold() for item in picks}
+    alternatives = []
+    for item in sorted(candidates, key=lambda item: item.get('preferenceScore', 0), reverse=True):
+        if item['title'].casefold() not in seen:
+            seen.add(item['title'].casefold())
+            alternatives.append(item)
+        if len(alternatives) == 12:
+            break
+    save(picks, day, history, alternatives)
     print(f"TV Picks: selected {len(picks)} current programmes for {day.isoformat()} from {len(candidates)} exact-artwork candidates")
 
 

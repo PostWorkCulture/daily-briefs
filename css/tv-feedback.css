@@ -1,0 +1,14 @@
+.tonight-block .watch-card.artwork {padding:0!important}
+.watch-destination {display:flex;align-items:flex-end;position:absolute;inset:0;padding:22px;color:inherit;text-decoration:none;z-index:1;border-radius:inherit}
+.watch-destination>div {width:100%}
+.watch-feedback-toggle {position:absolute;right:10px;top:10px;z-index:2;min-height:44px;min-width:52px;padding:8px 12px;background:#030504de;color:#F4F7F2;border:1px solid #ffffff70;border-radius:8px;font:inherit;font-size:12px;cursor:pointer}
+#tvPreferences {margin-top:14px;color:#F4F7F2;font-size:13px;line-height:1.6}
+#tvPreferences summary {cursor:pointer;min-height:44px;padding:10px 0;width:fit-content}
+.tv-hidden-list>div {display:flex;gap:16px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #29322c}
+.tv-hidden-list button {flex-shrink:0;min-height:44px;padding:8px 14px;background:#0d110e;color:#F4F7F2;border:1px solid #6b786e;border-radius:8px;cursor:pointer}
+#tvFeedbackDialog {max-width:460px;width:calc(100vw - 40px);border:1px solid #718176;border-radius:18px;padding:24px;background:#0d110e;color:#F4F7F2;box-shadow:0 20px 80px #000b}
+#tvFeedbackDialog::backdrop {background:#000b}
+#tvFeedbackDialog h3 {font-size:24px;margin:0 0 16px;color:#F4F7F2}
+#tvFeedbackDialog p {font-size:15px;line-height:1.6}
+#tvFeedbackDialog button {display:block;width:100%;min-height:48px;margin-top:12px;padding:10px;border:1px solid #718176;border-radius:9px;background:#18221b;color:#F4F7F2;font:inherit;cursor:pointer}
+:is(.watch-destination,.watch-feedback-toggle,#tvPreferences button,#tvFeedbackDialog button):focus-visible {outline:2px solid #F4F7F2;outline-offset:3px}
