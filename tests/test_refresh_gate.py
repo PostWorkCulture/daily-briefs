@@ -73,7 +73,8 @@ class RefreshGateTests(unittest.TestCase):
             / "workflows"
             / "morning-refresh.yml"
         ).read_text(encoding="utf-8")
-        self.assertIn("cron: '0,30 5-8 * * *'", workflow)
+        self.assertIn("cron: '0 5-8 * * *'", workflow)
+        self.assertIn("cron: '30 5-8 * * *'", workflow)
         self.assertIn("python scripts/refresh_gate.py", workflow)
 
 

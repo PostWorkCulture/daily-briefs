@@ -2,6 +2,16 @@
 
 Newest entries go first.
 
+## 5 September 2026: Missed-schedule recovery
+
+Status: recovery trigger prepared; publication follows the protected refresh and Pages gates
+
+- Confirmed that GitHub emitted none of the eight scheduled `Morning refresh` retry events on 5 September even though the workflow remained marked active.
+- Re-saved the unchanged 05:00 to 08:30 UTC half-hour window as two explicit cron entries so GitHub re-registers the schedule after the recent repository visibility change.
+- Updated the dedicated recovery trigger to start today's refresh immediately after merge.
+- Preserved the 06:00 Europe/London freshness gate, retry behaviour, protected validation, data rules, layout, and styling.
+- Root-cause limit: GitHub does not expose why it omitted the schedule events, so the visibility change is plausible context rather than a proven cause.
+
 ## 4 September 2026: Career light-grey treatment
 
 Status: implemented; publication follows the normal responsive and Pages gates
