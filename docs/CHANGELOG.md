@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 5 September 2026: Permanent section isolation and morning recovery monitor
 
-Status: implementation and protected release checks in progress
+Status: published via PR #37; protected checks and live verification passed
 
 - Root cause: the refreshed Local News pool admitted an expired Business Analyst vacancy because feed results had no explicit content type and the low-value filter recognised only narrow vacancy wording such as `jobs available`.
 - Immediate correction: removed the vacancy from Pete and Sofia Local News and their Home interest cards. Existing News items are now explicitly marked as articles; Career remains explicitly marked as jobs.
@@ -12,8 +12,9 @@ Status: implementation and protected release checks in progress
 - Defence in depth: generated profiles are rejected before writing if any section has a missing or incorrect content type, and the protected publication workflow repeats the same validation after all enrichments.
 - Regression coverage: exact expired-salary listing, job-board source, job schema, both directions of section bleed, and legitimate reporting about jobs being created are covered.
 - Morning incident: GitHub emitted no scheduled Morning refresh event on 5 September. The subsequent catch-up safely stopped first on an exhausted human-first fact queue and then on a missing verified Spadeadam image. The cron was re-registered with eight GMT/BST-safe half-hour opportunities; the fact reserve and Spadeadam mapping were repaired before the successful 09:56 publication.
-- Reliability: add an independent daily post-06:00 freshness monitor outside GitHub Actions so a missing schedule event is detected and recovered rather than waiting for Pete to report it.
+- Reliability: activated an independent daily 06:35 Europe/London freshness monitor outside GitHub Actions so a missing schedule event is detected and recovered rather than waiting for Pete to report it. It stays silent when both profiles are current and reports only when recovery is needed or blocked.
 - Master brief update: version 5.0 records the permanent cross-section content contract and treats it as project memory for every future refresh.
+- Validation and publication: 72 unit tests and the protected mobile/Chromebook browser gate passed. PR #37 was squash-merged as `0d02d3c`; the contract-enforced refresh committed `b98252d`, Pages deployment #326 passed, and both public routes and JSON feeds returned HTTP 200 with 16 Local News articles, six Career jobs, and no section-type errors.
 
 ## 5 September 2026: Missed-schedule recovery
 
