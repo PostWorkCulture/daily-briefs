@@ -39,7 +39,7 @@ class LocalNewsOrderTests(unittest.TestCase):
             "East Molesey residents back riverside plan",
             "Who runs Kingston upon Thames?",
             "Council regrets Hampton Wick parking error",
-            "Hampton residents oppose high street closure",
+            "Hampton, Surrey residents oppose high street closure",
             "Newts in danger at Teddington park pond",
             "Concours of Elegance Hampton Court returns",
             "Walton & Hersham FC fans stage bar boycott",
@@ -101,7 +101,7 @@ class LocalNewsOrderTests(unittest.TestCase):
             "Kingston rugby match report: hosts beaten by 12 points",
         )
         accepted = (
-            "New community sports centre opens in Kingston",
+            "New community sports centre opens in Kingston upon Thames",
             "Teddington hockey club unveils new community pitch",
             "Hampton Court hosts major family cycling festival",
         )

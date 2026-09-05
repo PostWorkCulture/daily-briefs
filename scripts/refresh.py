@@ -149,7 +149,7 @@ LOCAL_NEWS_FAMILY_QUERIES = (
 )
 LOCAL_NEWS_PLACE_EVIDENCE = (
     re.compile(r"\b(?:east|west)\s+molesey\b|\bmolesey\b", re.I),
-    re.compile(r"\bkingston(?:\s+upon(?:-|\s+)thames)?\b", re.I),
+    re.compile(r"\bkingston\s+upon(?:-|\s+)thames\b", re.I),
     re.compile(r"\bhampton\s+(?:court|wick|hill)\b|\bhampton\s*(?:&|and)\s*richmond\b", re.I),
     re.compile(r"\bteddington\b|\bbushy\s+park\b", re.I),
     re.compile(r"\bwalton(?:-|\s+)on(?:-|\s+)thames\b|\bwalton\s*(?:&|and)\s*hersham\b", re.I),
@@ -161,16 +161,16 @@ LOCAL_NEWS_FALSE_LOCATIONS = re.compile(
     r"\b(?:kingston\s+upon\s+hull|kingston,?\s+(?:jamaica|ontario|rhode\s+island|tennessee|tasmania)|"
     r"east\s+hampton|hampton\s+roads|hampton\s+university|hampton\s+(?:inn|by\s+hilton)|the\s+hamptons|"
     r"walton\s+county|walton[-\s]le[-\s]dale|walton[-\s]on[-\s]the[-\s]naze|walton\s+goggins|"
-    r"virginia|tasmania|australia|forest\s+park,?\s+ga|georgia|ireland)\b",
+    r"virginia|tasmania|australia|forest\s+park,?\s+ga|georgia|ireland|jamaica|ontario|hagley park road|Omarion Hampton|Drake London)\b",
     re.I,
 )
 LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE = re.compile(
-    r"\b(?:WTKR|Tasmanian Country|Teagasc|Legacy obituary|funeral home|obituary|YouTube)\b",
+    r"\b(?:WTKR|IRIE FM|Jamaica Gleaner|Tasmanian Country|Teagasc|Legacy obituary|funeral home|obituary|YouTube)\b",
     re.I,
 )
 LOCAL_NEWS_LOW_VALUE_CONTENT = re.compile(
     r"\b(?:obituary|funeral home|death notice|property listing|houses? for sale|jobs? available|"
-    r"MOT|sponsored content|advertorial|download[^.]{0,80}\bapp)\b",
+    r"MOT|weather forecast|sponsored content|advertorial|download[^.]{0,80}\bapp)\b",
     re.I,
 )
 PLAIN_HAMPTON = re.compile(r"\bhampton\b", re.I)
@@ -187,7 +187,7 @@ LOCAL_NEWS_PUBLICATIONS = re.compile(
 )
 LOCAL_FAMILY_ACTIVITY = re.compile(
     r"\b(?:child-friendly|festival|fete|fair|carnival|fun day|family day|kids? day|"
-    r"Halloween|Christmas|Easter|half[- ]term|school holiday|park|playground|trail|"
+    r"Halloween|Christmas|Easter|half[- ]term|school holiday|playground|trail|"
     r"workshop|open day|what['’]s on|things to do|activities|fireworks|lantern|grotto|"
     r"pumpkin|Santa|outdoor cinema|fun day)\b",
     re.I,
@@ -220,13 +220,15 @@ UK_POSITIVE_NEWS_QUERIES = (
     '(charity OR community OR volunteer OR reunited OR rescued OR restored OR reopened OR celebrates OR award OR milestone OR fundraising)',
     '("United Kingdom" OR Britain OR British OR England OR Scotland OR Wales OR "Northern Ireland") '
     '(conservation OR renewable OR "clean energy" OR "jobs created" OR "new homes" OR investment OR funding OR regeneration OR "record low")',
+    '(Britain OR England OR Scotland OR Wales) ("NHS trial" OR "charity raises" OR "species returns" OR "free school meals" OR "community opens")',
+    'site:positive.news (UK OR Britain OR England OR Scotland OR Wales)',
 )
 UK_POSITIVE_NEWS_EVIDENCE = re.compile(
-    r"\b(?:good news|breakthrough|promising|hopeful|success(?:ful(?:ly)?)?|"
-    r"improv(?:e[ds]?|ement|ing)|benefit(?:s|ed|ing)?|rescu(?:e[ds]?|ing)|saved?|"
+    r"\b(?:good news|breakthrough|promising (?:clinical |medical )?(?:trial|treatment|results)|"
+    r"improv(?:e[ds]?|ement|ing)|rescu(?:e[ds]?|ing)|saved?|"
     r"reunit(?:e[ds]?|ing)|recover(?:y|ed|ing|s)?|restor(?:e[ds]?|ation|ing)|"
-    r"reopen(?:s|ed|ing)?|opens?|launch(?:es|ed|ing)|unveil(?:s|ed|ing)|approv(?:e[ds]?|al)|"
-    r"award(?:ed|s)?|honou?red|win(?:s|ning)?|triumph(?:s|ed)?|milestone|"
+    r"reopen(?:s|ed|ing)? (?:to|for|after)|(?:station|museum|library|park|centre|community service) (?:reopens?|opens?)|"
+    r"award(?:ed|s)?|honou?red|milestone|"
     r"celebrat(?:e[ds]?|ing)|record[- ]breaking|discover(?:y|ed|ies)|innovation|"
     r"new treatment|new (?:medical|diagnostic|screening|health) test|can spot|"
     r"save lives?|life[- ]saving|fundrais(?:er|ing)|"
@@ -249,7 +251,8 @@ UK_NEGATIVE_NEWS_EVIDENCE = re.compile(
     r"closures?|scandal|fraud|corruption|protest(?:s|ers)?|strike action|warning|"
     r"threat(?:ens?|ened)?|fears?|concerns?|at risk|long waits?|waiting list|"
     r"mental health crisis|homeless(?:ness)?|poverty|sanctions?|invades?|air strike|"
-    r"drone attack)\b",
+    r"drone attack|territorial dispute|sovereignty|Falklands|demands?|denied|denials?|"
+    r"tribunals?|boxing talks?|talks reopened|clock starts ticking|race to buy|ends? (?:its|their|her|his)|axed)\b",
     re.I,
 )
 
@@ -554,10 +557,12 @@ def local_news_item_is_in_scope(item: dict) -> bool:
         or LOCAL_NEWS_FALSE_LOCATIONS.search(f"{text} {source}")
         or LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE.search(source)
         or LOCAL_NEWS_LOW_VALUE_CONTENT.search(text)
+        or local_event_has_expired(item)
     ):
         return False
     local = any(pattern.search(text) for pattern in LOCAL_NEWS_PLACE_EVIDENCE) or bool(
-        PLAIN_HAMPTON.search(text) and PLAIN_HAMPTON_LOCAL_CONTEXT.search(text)
+        re.search(r"\b(?:kingston|hampton)\b", text, re.I)
+        and (local_publication_item(item) or re.search(r"\b(?:Surrey|London|Thames|Richmond upon Thames)\b", text, re.I))
     )
     if not local:
         return False
@@ -567,12 +572,34 @@ def local_news_item_is_in_scope(item: dict) -> bool:
 
 def local_publication_item(item: dict) -> bool:
     text = " ".join(str(item.get(key, "")) for key in ("source", "url"))
-    return bool(LOCAL_NEWS_PUBLICATIONS.search(text))
+    return bool(LOCAL_NEWS_PUBLICATIONS.search(text) or re.search(
+        r"https?://(?:www\.)?(?:surreycomet\.co\.uk|surreylive\.news|kingston\.nub\.news|"
+        r"teddington\.nub\.news|weybridgeandwalton\.nub\.news|richmondandtwickenhamtimes\.co\.uk)/", text, re.I))
+
+
+def local_event_has_expired(item: dict) -> bool:
+    """Expire time-bound listings without treating dates in ordinary reporting as event dates."""
+    title = clean_html(str(item.get("title") or ""))
+    if not re.search(r"what['’]s on|things to do|this weekend|events? (?:this|today)|weekend weather", title, re.I):
+        return False
+    try:
+        published = dateparser.parse(str(item.get("publishedAt") or "")).astimezone(TZ).date()
+    except (ValueError, TypeError, OverflowError):
+        return False
+    if re.search(r"this weekend|what['’]s on|weekend weather", title, re.I):
+        weekend_end = published + timedelta(days=(6 - published.weekday()) % 7)
+        # Named forthcoming seasonal/event dates should not be treated as this week's listing.
+        if not re.search(r"\b(?:Halloween|Christmas|Easter|next month)\b", title, re.I):
+            return NOW.date() > weekend_end
+    if re.search(r"\btoday\b", title, re.I):
+        return NOW.date() > published
+    return False
 
 
 def local_family_activity_item(item: dict) -> bool:
     text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
-    return bool(LOCAL_FAMILY_ACTIVITY.search(text))
+    return bool(LOCAL_FAMILY_ACTIVITY.search(text) and not re.search(
+        r"adults?[- ]only|over[- ]18|nightclubs?|club night|beer festival|cocktail|bottomless brunch", text, re.I))
 
 
 def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
@@ -589,14 +616,22 @@ def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
     )
     selected: list[dict] = []
     selected_title_words: list[set[str]] = []
+    selected_urls: set[str] = set()
     for item in prioritised:
-        words = set(re.findall(r"[a-z0-9]+", clean_html(str(item.get("title", ""))).lower()))
+        canonical = str(item.get("url") or "").split('#', 1)[0].split('?', 1)[0].rstrip('/')
+        if canonical and canonical in selected_urls:
+            continue
+        title = clean_html(str(item.get("title", ""))).lower()
+        title = re.sub(r"former (?:teddington school pupil|kingston resident)", "former local resident", title)
+        words = set(re.findall(r"[a-z0-9]+", title))
         if any(
             len(words & existing) / max(1, len(words | existing)) >= 0.82
             for existing in selected_title_words
         ):
             continue
         selected.append(item)
+        if canonical:
+            selected_urls.add(canonical)
         selected_title_words.append(words)
         if len(selected) >= limit:
             break
@@ -622,8 +657,9 @@ def local_news() -> list[dict]:
             ))
         candidates = merge_news(*groups, limit=448)
         scoped = [item for item in candidates if local_news_item_is_in_scope(item)]
-        if len(scoped) >= 16 or max_age_days == 30:
-            return select_local_news(scoped, 16)
+        selected = select_local_news(scoped, 16)
+        if len(selected) >= 16 or max_age_days == 30:
+            return selected
     return []
 
 
@@ -643,14 +679,12 @@ def uk_news() -> list[dict]:
     # freshest fortnight and extend to 30 days only when needed for depth.
     # Never fill the section with a negative fallback.
     for max_age_days in (14, 30):
-        candidates = merge_news(
-            rss('https://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News', 48, max_age_days),
-            *(
-                google_news(f'{query} when:{max_age_days}d', 40, max_age_days)
-                for query in UK_POSITIVE_NEWS_QUERIES
-            ),
-            limit=256,
-        )
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            groups = list(pool.map(
+                lambda query: google_news(f'{query} when:{max_age_days}d', 48, max_age_days),
+                UK_POSITIVE_NEWS_QUERIES,
+            ))
+        candidates = merge_news(rss('https://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News', 48, max_age_days), *groups, limit=320)
         positive = [item for item in candidates if positive_uk_news_item_is_in_scope(item)]
         if len(positive) >= 12 or max_age_days == 30:
             return newest_news(positive, 12)
@@ -922,6 +956,11 @@ def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         "location": location,
         "countryFocus": country_focus,
     }
+    if source == "LinkedIn":
+        item["postedDate"] += " · LinkedIn listing date"
+    for field in ('metadataSourceUrl', 'metadataVerifiedAt'):
+        if job.get(field):
+            item[field] = job[field]
     if posted:
         item["postedAt"] = posted.date().isoformat()
     return score, posted or datetime.min.replace(tzinfo=TZ), item
@@ -1008,26 +1047,31 @@ def linkedin_jobs(keywords: str, location: str, target: str, starts: tuple[int, 
 def linkedin_description(job: dict) -> dict:
     if job.get("description") or not str(job.get("url") or "").startswith("http"):
         return job
-    try:
-        response = requests.get(job["url"], headers=UA, timeout=25)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        page_text = soup.get_text(" ", strip=True)
-        block = soup.select_one(".show-more-less-html__markup")
-        enriched = dict(job)
-        enriched["description"] = block.get_text(" ", strip=True) if block else page_text
-        salary = re.search(
-            r"(?:£\s?\d{2,3}(?:,\d{3})?(?:\s*(?:-|–|to)\s*£?\s?\d{2,3}(?:,\d{3})?)?(?:\s*(?:per annum|per year|a year|p\.a\.))?)",
-            page_text,
-            re.I,
-        )
-        if salary:
-            enriched["salary"] = salary.group(0)
-        if INACTIVE_LISTING.search(page_text):
-            enriched["inactive"] = True
-        return enriched
-    except Exception:
-        return job
+    urls = [job["url"]]
+    match = re.search(r'-(\d+)$', job['url'].split('?', 1)[0].rstrip('/'))
+    if match:
+        urls.insert(0, f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{match.group(1)}")
+    for url in urls:
+        try:
+            response = requests.get(url, headers=UA, timeout=15)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            block = soup.select_one(".show-more-less-html__markup")
+            if not block:
+                continue
+            enriched = dict(job)
+            enriched['description'] = block.get_text(' ', strip=True)
+            salary = re.search(
+                r"£\s?\d{2,3}(?:,\d{3})?(?:\s*(?:-|–|to)\s*£?\s?\d{2,3}(?:,\d{3})?)?(?:\s*(?:per annum|per year|a year|p\.a\.))?",
+                enriched['description'], re.I)
+            if salary:
+                enriched['salary'] = salary.group(0)
+            if INACTIVE_LISTING.search(soup.get_text(' ', strip=True)):
+                enriched['inactive'] = True
+            return enriched
+        except requests.RequestException:
+            continue
+    return job
 
 
 def career_job_candidates() -> list[tuple[dict, str]]:
@@ -1161,9 +1205,40 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         "sector": "Public sector",
         "aiRelated": True,
     }
+    if source == "LinkedIn":
+        item["postedDate"] += " · LinkedIn listing date"
+    for field in ('metadataSourceUrl', 'metadataVerifiedAt'):
+        if job.get(field):
+            item[field] = job[field]
     if posted:
         item["postedAt"] = posted.date().isoformat()
     return score, posted or datetime.min.replace(tzinfo=TZ), item
+
+
+def verified_career_details(job: dict) -> dict:
+    """Retain researched primary metadata only for the exact current vacancy."""
+    try:
+        catalog = json.loads((DATA / 'career-verified.json').read_text())
+        verified = catalog.get(str(job.get('url') or '').split('?', 1)[0])
+        if not verified or verified.get('title') != job.get('title'):
+            return job
+        company = str(job.get('company_name') or job.get('company') or '')
+        if company.casefold() != str(verified.get('company') or '').casefold():
+            return job
+        age = (NOW.date() - dateparser.parse(verified['verifiedAt']).date()).days
+        if not 0 <= age <= 14:
+            return job
+        enriched = dict(job)
+        if verified.get('closingDate') and dateparser.parse(verified['closingDate']).date() < NOW.date():
+            enriched['inactive'] = True
+            return enriched
+        for field in ('description', 'salary', 'location'):
+            enriched[field] = verified[field]
+        enriched['metadataSourceUrl'] = verified['originalEmployerUrl']
+        enriched['metadataVerifiedAt'] = verified['verifiedAt']
+        return enriched
+    except (OSError, ValueError, KeyError, TypeError):
+        return job
 
 
 def public_ai_career_jobs(candidates: list[tuple[dict, str]] | None = None, limit: int = 10) -> list[dict]:
@@ -1186,6 +1261,7 @@ def public_ai_career_jobs(candidates: list[tuple[dict, str]] | None = None, limi
             if job.get("target") != "public-ai":
                 continue
             job = linkedin_enriched.get(job.get("url"), job)
+        job = verified_career_details(job)
         result = pete_job_item(job, source)
         if not result:
             continue

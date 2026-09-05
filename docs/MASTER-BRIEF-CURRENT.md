@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.0, 5 September 2026. Owner: Pete.
+Version 5.1, 5 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -130,9 +130,20 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Career discovery uses focused public LinkedIn searches for UK government, NHS, machine-learning, responsible-AI, AI-governance, and generative-AI vacancies. Reject duplicates, listings older than 30 days, detectable passed closing dates, inactive listings, and links that are not real HTTP(S) job pages. A last-good fallback may retain only jobs already carrying the same verified public-sector, AI-related, and seven-field contract.
 - Reject job listings whose title names Government Digital Service but whose listed employer is a different organisation; this is treated as a mismatched aggregator duplicate.
 - Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
-- Dida has a single page-level `Dida` title but no hero or duplicate section-navigation block. It then opens directly with three independent boxes: This week, Seasonal missions, and Reference library. Each box header contains only that title, without a number, kicker, or description. Use graphite backgrounds for every zone, inner card, and icon surface; bright `#7CF46A` green only for titles and box outlines; and warm-white neutral icons and body copy. Keep at least 28 px between zones on mobile and 36 px on Chromebook/desktop, keep weekly quick wins first, preserve every existing idea and the real age-six source, and keep all four reference groups collapsed by default on mobile and desktop.
+- Dida has one page-level title and three independent graphite zones: Play together, Explore this season, and Parent guide. This approved September 5 update replaces the old This week, Seasonal missions, and Reference library labels. Keep bright green titles/outlines, neutral copy, and 28 px mobile / 36 px desktop zone gaps. Play together has one complete featured activity and two alternatives. Explore this season offers a season selector and real instructions; Parent guide preserves all four existing reference folds, closed by default. Preserve existing learning/game/seasonal ideas and the CDC source.
+- Dida uses an original 36-activity rotation with materials, time, setting, adult role, three steps and a playful extension. Include English/Swedish, nature, making, movement and seasonal ideas. Birthday activities are year-neutral and must not infer a birth year.
+- Dida includes three original full-colour clay/storybook illustrations. These are decorative artwork, not pictures of Dida. Existing supplied photographs remain protected. Pick another changes the adventure; Save favourite and We tried it persist per profile on this device, with removable stickers and accessible status feedback. Preserve disclosures during background refresh.
 - Dida’s three independent zone cards use the strong Calendar cyan edge-glow on hover or when they contain keyboard focus, without movement.
 - Dida photographs must be supplied by Pete and kept exactly as supplied. Never source, invent, crop, or substitute a Dida photo.
+
+## September 5 quality and reliability improvements
+
+- Ambiguous Kingston/Hampton headlines require an approved local publication or explicit UK-local context. Exclude foreign namesakes, expired weekend listings, duplicated local editions, standalone weather forecasts and routine results. General reporting about weather impacts may remain News. Bare “park” does not make a story a family activity; adult-only nightlife is not family-first content.
+- Positive UK selection requires explicit positive evidence. Generic promising, benefit, win or reopened wording does not rescue disputes, benefit denials, boxing negotiations or closures.
+- Career can use exact-vacancy primary metadata verified in `data/career-verified.json` for up to 14 days, never after a confirmed closing date. Record the evidence and preserve the publisher's actual listing-date identity. Show office choices/hybrid requirements, real employer links, and honest missing details. Do not claim a sub-one-hour commute from KT8 without verified journey evidence.
+- TV still publishes five qualifying primary picks and may retain up to 12 equally in-scope, current, programme-image-verified alternatives. Per-profile device feedback offers Already watched / Not interested and individual Restore. Hidden titles stay excluded on that device. Refill with eligible alternatives; show fewer picks honestly when none remain. Do not weaken interests or invent replacement programmes.
+- Fact stock below seven emits a maintenance warning, never blocks an otherwise valid edition. The independent recovery task checks/replenishes the verified reserve toward 21. Actual exhaustion remains a hard no-repeat publication failure.
+- Weather and morning writers share a non-cancelling concurrency group. Weather merges only fresh forecast fields into the latest profiles and preserves each profile's own extremes. Morning commits its actual changed files and rebases, failing on conflict rather than restoring stale copies of every JSON file.
 
 ## Morning Story target
 

@@ -1,0 +1,62 @@
+/* The approved illustrated activity hub retains the Signal Grid surfaces. */
+#view-dida .dida-zone {padding:24px; overflow:hidden}
+#view-dida .dida-zone-head {margin-bottom:12px}
+#view-dida .dida-zone-head h3 {font-size:26px;letter-spacing:-.025em}
+#view-dida .dida-intro {font-size:17px;line-height:1.6;color:#F4F7F2;margin:0 0 20px;max-width:52ch}
+#view-dida .dida-feature-layout {display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:start}
+#view-dida .dida-scene {display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:16px;filter:none}
+#view-dida .dida-feature-layout>.dida-scene {position:sticky;top:24px}
+#view-dida .dida-activity {min-width:0;padding:22px;border:1px solid #28342b;border-radius:16px;background:#0d110e}
+#view-dida .dida-featured {padding:0;border:0;background:transparent}
+#view-dida .dida-kicker {display:block;color:#7CF46A;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+#view-dida .dida-activity h4 {font-size:23px;line-height:1.2;color:#7CF46A;margin:0 0 12px;letter-spacing:-.02em}
+#view-dida .dida-meta {display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+#view-dida .dida-meta span {border:1px solid #35413a;border-radius:40px;padding:5px 10px;font-size:12px;color:#F4F7F2}
+#view-dida .dida-kit {margin:0 0 18px;font-size:14px;line-height:1.6;color:#F4F7F2}
+#view-dida .dida-kit div+div {margin-top:8px}
+#view-dida .dida-kit dt {font-weight:700;display:inline}
+#view-dida .dida-kit dt:after {content:': '}
+#view-dida .dida-kit dd {display:inline;margin:0}
+#view-dida .dida-steps {padding-left:24px;margin:0;display:grid;gap:12px;font-size:16px;line-height:1.6;color:#F4F7F2}
+#view-dida .dida-steps li {padding-left:5px}
+#view-dida .dida-steps li::marker {color:#7CF46A;font-weight:700}
+#view-dida .dida-challenge {font-size:14px;line-height:1.6;color:#F4F7F2;padding:14px 0 0;margin:18px 0 0;border-top:1px solid #28342b}
+#view-dida .dida-challenge b {display:block;margin-bottom:3px}
+#view-dida .dida-inspiration {font-size:12px;line-height:1.5;color:#B7C2B9;margin:12px 0}
+#view-dida .dida-inspiration a {text-underline-offset:3px}
+#view-dida .dida-actions {display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+#view-dida button,#view-dida select {min-height:44px;padding:10px 14px;font:inherit;font-size:13px;border:1px solid #445848;border-radius:10px;background:#101a12;color:#F4F7F2;cursor:pointer}
+#view-dida button[aria-pressed=true] {border-color:#7CF46A;color:#7CF46A}
+#view-dida .dida-primary {background:#7CF46A;color:#09200b;font-weight:700;border-color:#7CF46A}
+#view-dida button:hover {border-color:#7CF46A}
+#view-dida :is(button,select,summary,a):focus-visible {outline:2px solid #F4F7F2;outline-offset:4px}
+#view-dida .dida-swap-row {display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin:24px 0 30px}
+#view-dida .dida-stickers {color:#F4F7F2;font-size:13px;margin:0}
+#view-dida .dida-subhead {font-size:18px;color:#F4F7F2;margin:0 0 16px}
+#view-dida .dida-activity-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+#view-dida .dida-favourites,#view-dida .dida-season-inspiration {margin-top:24px;border-top:1px solid #28342b;padding-top:8px}
+#view-dida :is(.dida-favourites,.dida-season-inspiration)>summary {padding:14px 0;min-height:48px;color:#F4F7F2;font-size:16px;cursor:pointer}
+#view-dida .dida-favourites>summary span {margin-left:8px;color:#7CF46A}
+#view-dida .dida-favourites>p,#view-dida .dida-device-note {font-size:12px;line-height:1.6;color:#B7C2B9}
+#view-dida .dida-season-banner {display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px;margin-bottom:24px}
+#view-dida .dida-season-label {display:block;color:#F4F7F2;font-size:13px;margin-bottom:8px}
+#view-dida select {width:100%;max-width:320px}
+#view-dida .dida-parent-banner {display:grid;grid-template-columns:200px 1fr;align-items:center;gap:24px;margin:0 0 24px}
+#view-dida .dida-parent-banner p {margin:0}
+#view-dida .dida-fold summary h4 {font-size:18px}
+#view-dida .dida-fold summary p,#view-dida .dida-ref-card p,#view-dida .dida-ref-card li {font-size:15px;line-height:1.65}
+#view-dida .dida-ref-card h5 {font-size:17px}
+#view-dida .dida-feedback:empty {display:none}
+#view-dida .dida-feedback {position:fixed;bottom:100px;left:50%;transform:translateX(-50%);background:#F4F7F2;color:#09200b;border-radius:12px;padding:14px 20px;width:max-content;max-width:calc(100vw - 40px);font-size:14px;z-index:50;box-shadow:0 4px 24px #0008;pointer-events:none}
+@media(max-width:700px){
+  #view-dida .dida-zone {padding:18px}
+  #view-dida .dida-zone-head h3 {font-size:24px}
+  #view-dida .dida-feature-layout,#view-dida .dida-activity-grid,#view-dida .dida-season-banner {grid-template-columns:1fr}
+  #view-dida .dida-feature-layout>.dida-scene {position:static}
+  #view-dida .dida-activity {padding:18px}
+  #view-dida .dida-featured {padding:0}
+  #view-dida .dida-activity h4 {font-size:22px}
+  #view-dida .dida-parent-banner {grid-template-columns:100px 1fr;gap:14px}
+  #view-dida .dida-parent-banner .dida-intro {font-size:14px}
+  #view-dida .dida-swap-row {align-items:flex-start;flex-direction:column}
+}

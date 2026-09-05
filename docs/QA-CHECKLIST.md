@@ -64,7 +64,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] The current fact is human-first, genuinely unusual, source-verified, unused, not retired, and drawn from the people, population, traditions, records, or music range.
 - [ ] Every current and catalogue fact shows a useful `place/area · country/region` location line.
 - [ ] Five unique TV Picks per profile, each tied to a new episode from the previous or next seven days.
-- [ ] All five TV Picks remain visible on desktop as well as mobile.
+- [ ] All five primary TV Picks are initially visible on desktop/mobile; voluntary hidden picks refill only from current eligible alternatives, and individual Restore works.
 - [ ] Every TV Pick has an exact TVMaze programme image, service/channel, availability date, real destination, and today's generated date.
 - [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
 - [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
@@ -121,3 +121,10 @@ New:
 Conflicts:
 Passed:
 Recommendation: pass | pass with known issues | fail
+
+## Dida activity release
+
+- [ ] Exactly three clear new zones, three colour illustrations, 36 source-attributed ideas, complete three-step cards and year-neutral birthdays.
+- [ ] Picker changes the activity; favourites, tried stickers, restoration and profile-local storage work without opening unrelated parent folds.
+- [ ] TV feedback hides the named programme, survives rerender and restores it correctly.
+- [ ] Low fact stock is a warning; exhaustion still blocks repeats. Weather merge preserves latest editorial fields and independent profile extremes.
