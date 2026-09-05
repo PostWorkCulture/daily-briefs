@@ -23,7 +23,7 @@
 #view-dida .dida-challenge {font-size:14px;line-height:1.6;color:#F4F7F2;padding:14px 0 0;margin:18px 0 0;border-top:1px solid #28342b}
 #view-dida .dida-challenge b {display:block;margin-bottom:3px}
 #view-dida .dida-inspiration {font-size:12px;line-height:1.5;color:#B7C2B9;margin:12px 0}
-#view-dida .dida-inspiration a {text-underline-offset:3px}
+#view-dida .dida-inspiration a {color:#B7C2B9;text-underline-offset:3px}
 #view-dida .dida-actions {display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 #view-dida button,#view-dida select {min-height:44px;padding:10px 14px;font:inherit;font-size:13px;border:1px solid #445848;border-radius:10px;background:#101a12;color:#F4F7F2;cursor:pointer}
 #view-dida button[aria-pressed=true] {border-color:#7CF46A;color:#7CF46A}

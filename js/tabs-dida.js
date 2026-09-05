@@ -79,7 +79,7 @@
     const primary=stories.slice(0,3).join('');
     const stream=stories.slice(3);
     const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
-    const content=stories.length?`${primary}${streamFeed}`:'<div class="empty">Nothing listed today.</div>';
+    const content=stories.length?(section==='career'?stories.join(''):`${primary}${streamFeed}`):'<div class="empty">Nothing listed today.</div>';
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}

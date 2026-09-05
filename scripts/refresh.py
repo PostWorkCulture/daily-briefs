@@ -1220,7 +1220,8 @@ def verified_career_details(job: dict) -> dict:
     try:
         catalog = json.loads((DATA / 'career-verified.json').read_text())
         verified = catalog.get(str(job.get('url') or '').split('?', 1)[0])
-        if not verified or verified.get('title') != job.get('title'):
+        normal_title = lambda title: re.sub(r'\W+', '', str(title).casefold())
+        if not verified or normal_title(verified.get('title')) != normal_title(job.get('title')):
             return job
         company = str(job.get('company_name') or job.get('company') or '')
         if company.casefold() != str(verified.get('company') or '').casefold():
