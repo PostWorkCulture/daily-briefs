@@ -5,7 +5,10 @@ on:
     # GitHub cron is UTC. Half-hour opportunities from 05:00 through 08:30
     # cover a 06:00 Europe/London start under both GMT and BST, then recover
     # from a delayed or missed event. The gate skips pre-06:00 and fresh runs.
-    - cron: '0,30 5-8 * * *'
+    # Keep the same half-hour recovery window as two explicit schedules. Saving
+    # these entries re-registers the cron after a repository visibility change.
+    - cron: '0 5-8 * * *'
+    - cron: '30 5-8 * * *'
   workflow_dispatch:
   push:
     branches: [main]
