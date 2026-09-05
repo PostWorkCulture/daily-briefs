@@ -4,13 +4,16 @@ Newest entries go first.
 
 ## 5 September 2026: Missed-schedule recovery
 
-Status: recovery trigger prepared; publication follows the protected refresh and Pages gates
+Status: second recovery prepared after the first protected catch-up exposed an exhausted fact queue
 
 - Confirmed that GitHub emitted none of the eight scheduled `Morning refresh` retry events on 5 September even though the workflow remained marked active.
 - Re-saved the unchanged 05:00 to 08:30 UTC half-hour window as two explicit cron entries so GitHub re-registers the schedule after the recent repository visibility change.
 - Updated the dedicated recovery trigger to start today's refresh immediately after merge.
 - Preserved the 06:00 Europe/London freshness gate, retry behaviour, protected validation, data rules, layout, and styling.
 - Root-cause limit: GitHub does not expose why it omitted the schedule events, so the visibility change is plausible context rather than a proven cause.
+- First catch-up result: all 65 regression tests passed, then publication stopped safely because every approved human-first Around the World fact had already been used.
+- Queue repair: added ten source-verified, image-credited human-first stories spanning community traditions, music, theatre, language, festivals, hospitality, textiles and storytelling.
+- Preventive guard: the test suite now requires at least seven unused, active human-first facts, providing advance warning before the daily queue can be exhausted again.
 
 ## 4 September 2026: Career light-grey treatment
 
