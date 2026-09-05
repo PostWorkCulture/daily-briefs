@@ -41,6 +41,23 @@ class WorldFactTests(unittest.TestCase):
         for topic in ("people", "population", "tradition", "music", "record"):
             self.assertIn(topic, categories)
 
+    def test_catalog_keeps_a_seven_day_human_first_reserve(self):
+        catalog = json.loads((ROOT / "data" / "fact-catalog.json").read_text(encoding="utf-8"))
+        history = json.loads((ROOT / "data" / "fact-history.json").read_text(encoding="utf-8"))
+        used_ids = {item["id"] for item in history["used"]}
+        available = [
+            item
+            for item in catalog
+            if item.get("editorialPriority") == "human-first"
+            and item.get("editorialStatus") != "retired"
+            and item["id"] not in used_ids
+        ]
+        self.assertGreaterEqual(
+            len(available),
+            7,
+            "Replenish the verified human-first queue before the morning refresh can exhaust it",
+        )
+
 
     def test_every_catalogue_fact_has_wider_location_context(self):
         catalog = json.loads((ROOT / "data" / "fact-catalog.json").read_text(encoding="utf-8"))
