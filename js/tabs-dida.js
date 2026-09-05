@@ -142,7 +142,7 @@
   function zoneHead(title){return `<header class="dida-zone-head"><h3>${esc(title)}</h3></header>`}
   function didaReferenceParts(){
     const day=Math.floor(Date.now()/86400000),learn=teach[day%teach.length],play=games[(day+2)%games.length],season=currentSeason(),quick=[['book','LEARN',learn[0],learn[1]],['play','PLAY',play[0],play[1]],['leaf','OUTSIDE / MAKE',season[0],season[2][day%season[2].length]]];
-    const seasonal=seasonalBlocks().map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');
+    const seasonal=Object.values(seasons).map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');
     const milestoneBody=`<div class="dida-reference">${milestones.map(m=>`<article class="dida-ref-card"><h5>${esc(m[0])}</h5><ul>${m[1].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></article>`).join('')}</div>`;
     const teachBody=`<div class="dida-reference">${teach.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;
     const gamesBody=`<div class="dida-reference">${games.map(x=>`<article class="dida-ref-card"><h5>${esc(x[0])}</h5><p>${esc(x[1])}</p></article>`).join('')}</div>`;

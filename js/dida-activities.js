@@ -36,8 +36,11 @@
     const list = activities(), featured = list.find(a => a.id === saved.featured) || list[0];
     if (!featured) return;
     const others = list.filter(a => a.season === 'all' && a.id !== featured.id);
+    const dayIndex = Math.floor(Date.parse(`${today()}T12:00:00Z`) / 86400000);
+    const offset = (dayIndex + list.indexOf(featured) * 7) % others.length;
+    const rotated = [...others.slice(offset), ...others.slice(0,offset)];
     const alternatives = [];
-    for (const a of [...others.filter(a => a.category !== featured.category && !saved.recent.includes(a.id)), ...others]) {
+    for (const a of [...rotated.filter(a => a.category !== featured.category && !saved.recent.includes(a.id)), ...rotated]) {
       if (!alternatives.some(x => x.id === a.id) && (!alternatives.length || alternatives[0].category !== a.category)) alternatives.push(a);
       if (alternatives.length === 2) break;
     }

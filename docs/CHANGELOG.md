@@ -4,7 +4,7 @@ Newest entries go first.
 
 ## 5 September 2026: Illustrated Dida activities and relevance improvements
 
-Status: implementation complete; protected responsive release gate pending
+Status: release prepared in PR #39; protected QA and publication outcomes are recorded in the release checks.
 
 - Approved by Pete: implement the proposed Dida, News, TV, Career and reliability improvements.
 - Dida: three original full-colour illustrations, 36 complete activities, clearer Play together / Explore this season / Parent guide zones, seasonal selector, device-local favourites, removable tried-it stickers and a non-repeating picker. Existing reference ideas and CDC source retained; birthday prompts no longer hardcode turning six.
@@ -12,7 +12,7 @@ Status: implementation complete; protected responsive release gate pending
 - TV: Already watched / Not interested feedback, saved per profile on this device, individual restoration, and up to 12 approved current alternatives. Five primary recommendations retain the documentary-led interest gate.
 - Career: researched primary descriptions, salaries and office options for six exact vacancies, official employer links, labelled LinkedIn listing dates, and a time-limited evidence catalogue. Journey times remain explicitly unverified.
 - Reliability: low fact stock warns separately; actual exhaustion still fails safely. Shared writer concurrency and field-level weather merging prevent stale editorial overwrites or profile extremes leaking across profiles. Morning publication no longer restores all JSON snapshots over new main commits.
-- Validation: 77 unit tests pass locally; browser interaction and responsive checks pending in GitHub.
+- Validation: 77 unit tests pass locally; browser interaction and responsive results are recorded by PR #39 checks.
 
 ## 5 September 2026: Permanent section isolation and morning recovery monitor
 
