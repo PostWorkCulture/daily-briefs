@@ -47,6 +47,15 @@ class EnglandPlaceTests(unittest.TestCase):
         )
         self.assertIn("Warcop", photo["alt"])
 
+    def test_spadeadam_has_verified_exact_place_photo(self):
+        self.assertEqual(england_place("Spadeadam No 2"), ("Spadeadam", "Cumberland"))
+        photo = exact_commons_photo("Spadeadam No 2", "Spadeadam", "Cumberland")
+        self.assertEqual(
+            photo["page"],
+            "https://commons.wikimedia.org/wiki/File:Entrance_to_RAF_Spadeadam,_1989_-_geograph.org.uk_-_4292063.jpg",
+        )
+        self.assertIn("Spadeadam", photo["alt"])
+
     def test_wiggonholt_has_verified_exact_place_photo(self):
         photo = exact_commons_photo("Wiggonholt", "Wiggonholt", "West Sussex")
         self.assertEqual(
