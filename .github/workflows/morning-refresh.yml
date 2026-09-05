@@ -75,7 +75,7 @@ jobs:
           import json
           from datetime import date, datetime, timedelta
           from pathlib import Path
-          from scripts.refresh import local_news_item_is_in_scope, positive_uk_news_item_is_in_scope
+          from scripts.refresh import local_news_item_is_in_scope, positive_uk_news_item_is_in_scope, section_content_type_errors
           from zoneinfo import ZoneInfo
           today_date=datetime.now(ZoneInfo('Europe/London')).date()
           today=today_date.isoformat()
@@ -122,6 +122,8 @@ jobs:
                   pick_text=' '.join(str(pick.get(key) or '') for key in ('title','summary','badge'))
                   assert not sports.search(pick_text) or allowed_sport.search(pick_text), f'{profile}: routine sport appeared in TV Picks: {pick.get("title")}'
               sections=data.get('sections') or {}
+              content_errors=section_content_type_errors(sections)
+              assert not content_errors, f"{profile}: section content bleed: {'; '.join(content_errors)}"
               local_items=sections.get('Local news') or []
               assert len(local_items)>=10, f'{profile}: fewer than 10 Local News items'
               assert all(local_news_item_is_in_scope(item) for item in local_items), f'{profile}: Local News contains a story outside the approved KT8 area'
@@ -254,7 +256,7 @@ jobs:
               key=src.split('#',1)[0]
               assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
               seen[key]=article
-          print(f'Validated {len(rules)} exact publisher image rules, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, newest-first UK public-sector AI jobs, dynamic two-week exact-artwork TV Picks and full Arsenal fixture details')
+          print(f'Validated {len(rules)} exact publisher image rules, strict section content types, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, newest-first UK public-sector AI jobs, dynamic two-week exact-artwork TV Picks and full Arsenal fixture details')
           PY
 
       - name: Commit refreshed data
