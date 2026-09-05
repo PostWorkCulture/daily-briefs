@@ -65,6 +65,12 @@ KNOWN_PHOTOS = {
         "credit": "Jim Walton · CC BY 3.0",
         "alt": "Kielder Water in Kielder, Northumberland",
     },
+    "spadeadam": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Entrance_to_RAF_Spadeadam%2C_1989_-_geograph.org.uk_-_4292063.jpg?width=1600",
+        "page": "https://commons.wikimedia.org/wiki/File:Entrance_to_RAF_Spadeadam,_1989_-_geograph.org.uk_-_4292063.jpg",
+        "credit": "Ben Brooksbank · CC BY-SA 2.0",
+        "alt": "Entrance to RAF Spadeadam in Cumberland, England",
+    },
 }
 
 KNOWN_ENGLISH_PLACES = {
