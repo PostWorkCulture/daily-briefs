@@ -57,7 +57,9 @@
     host.dataset.didaBound = 'true';
     host.addEventListener('change', event => {
       if (event.target.id !== 'dida-season-choice') return;
+      const open = [...host.querySelectorAll('details')].map(el => el.open);
       saved.season = event.target.value; persist(); render('#dida-season-choice');
+      host.querySelectorAll('details').forEach((el,index) => { el.open = Boolean(open[index]); });
     });
     host.addEventListener('click', event => {
       const button = event.target.closest('[data-dida-action]');
