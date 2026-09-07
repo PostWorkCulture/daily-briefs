@@ -103,6 +103,7 @@ class UpcomingFixtureTests(unittest.TestCase):
             "competition": "Premier League", "completed": False,
         }
         with (
+            patch.object(enrich_arsenal, "NOW", datetime(2026, 9, 1, 9, 0, tzinfo=ZoneInfo("Europe/London"))),
             patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 2, None, None)),
             patch.object(enrich_arsenal, "all_sky_matches", return_value=[chelsea]),
             patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=leeds),
