@@ -1,0 +1,39 @@
+/* Fluid large-screen layout. Mobile and Chromebook sizing remain unchanged. */
+@media (min-width: 1400px) {
+  .app-shell {
+    width: min(calc(100% - clamp(48px, 4vw, 96px)), 1920px) !important;
+    max-width: none !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .tab-list,
+  .tab-groups.single .tab-list,
+  .story-stream-grid,
+  #view-arsenal .arsenal-news,
+  .tonight-block .watch-strip {
+    column-gap: clamp(14px, 1.15vw, 24px) !important;
+  }
+
+  .story-stream-grid > .story-stream {
+    grid-column: span 3;
+  }
+
+  #view-career .tab-list,
+  #view-career .story-stream-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)) !important;
+  }
+
+  #view-career .tab-group-career .tab-list > .career-story,
+  #view-career .tab-group-career .tab-list > .career-story:last-child {
+    grid-column: auto !important;
+  }
+
+  #view-dida .dida-activity-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  #view-dida .dida-library {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
