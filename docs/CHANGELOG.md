@@ -2,6 +2,17 @@
 
 Newest entries go first.
 
+## 7 September 2026: Fluid widescreen layout
+
+Status: implemented; publication follows the normal responsive and protected release gates
+
+- Requested change: stop the brief remaining compressed inside a narrow desktop rail on widescreen monitors and use the available display space dynamically.
+- Responsive rail: preserved the existing mobile and Chromebook widths, then made the editorial surface grow fluidly from 1,400 px up to a controlled 1,920 px maximum.
+- Adaptive grids: wide News streams move from three to four columns when space permits; Career and Dida grids add columns through content-sized `auto-fit` rules instead of fixed counts.
+- Scope protected: no section order, content, data, profile behaviour, navigation, colour treatment, imagery, refresh logic, or mobile/Chromebook layout changed.
+- Validation: the responsive browser suite now includes a 1,920 × 1,080 widescreen viewport in addition to mobile and desktop coverage.
+- Master brief update: version 5.2 records Pete's approved fluid widescreen specification.
+
 ## 7 September 2026: Verified Arsenal v Chelsea result fallback
 
 Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.

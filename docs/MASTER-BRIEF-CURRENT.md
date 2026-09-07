@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.1, 5 September 2026. Owner: Pete.
+Version 5.2, 7 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -11,7 +11,7 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use the selected `Signal Grid` direction: a near-black `#030504` canvas, graphite modules, warm-white `#F4F7F2` copy, thin technical rules, restrained luminous green `#7CF46A` signals, bold legible type, and meaningful photography. Keep the grid extremely faint and functional rather than decorative. Around the world and TV Picks always retain full-colour source imagery. Preserve header styling during unrelated work.
 
 - Use an `Open Horizon newsroom` hierarchy inspired by premium news homepages without copying their identity: firm section rules, a clear lead/supporting/stream rhythm, intentional desktop grids, and denser mobile scanning. Prominence comes from width, position, type scale, and verified imagery, not fabricated labels or reordered source content. Keep bespoke systems for Arsenal, Dida, Birthday, Weather, Coming up, Calendar, Around the world, and TV Picks.
-- Cap the main Chromebook/desktop editorial rail at 1,120 px. Do not use a utility top bar. On locked profile routes, the main brief date must be the first visible line, followed by the greeting; never duplicate the date, weather status, or profile identity above it.
+- Keep the Chromebook layout intentionally compact, then expand the main editorial rail fluidly on widescreen displays up to 1,920 px. Wider rails must use responsive editorial and card grids so content uses the available space without stretching readable copy into uncontrolled line lengths. Do not use a utility top bar. On locked profile routes, the main brief date must be the first visible line, followed by the greeting; never duplicate the date, weather status, or profile identity above it.
 - Text-only news leads are valid and must use a purposeful 7/5 lead-and-support desktop rail rather than reserving an empty image-scale area. Image-verified desktop leads use a prominent image-left, copy-right package. Desktop stream stories share one flat divided paper rail instead of appearing as separate floating tiles. On mobile, only an image-verified lead uses full-width media; supporting and stream stories use compact thumbnails where exact publisher imagery exists, and secondary items form a flat divided paper feed rather than a wall of identical cards.
 
 - The Home greeting and section or page titles on the black canvas use warm-white `#F4F7F2`, giving at least 4.5:1 contrast. The main date uses signal green `#7CF46A`. Main copy on graphite surfaces remains warm white, with muted grey reserved for secondary metadata.
