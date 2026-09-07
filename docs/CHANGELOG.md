@@ -2,6 +2,15 @@
 
 Newest entries go first.
 
+## 7 September 2026: Date-stable Arsenal fixture regression
+
+Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.
+
+- Root cause: the fixture-priority regression used the live clock, so its 6 September Chelsea fixture became historical on 7 September and the test incorrectly expected it to remain upcoming.
+- Repair: pin that isolated test to 1 September 2026, preserving its intended proof that the nearer Sky fixture beats a later official fallback while leaving live fixture selection unchanged.
+- Scope protected: no production code, data, section content, styling, routes, fact catalogue or master-brief rule changed.
+- Validation: all 77 unit tests pass locally after the repair.
+
 ## 5 September 2026: Illustrated Dida activities and relevance improvements
 
 Status: release prepared in PR #39; protected QA and publication outcomes are recorded in the release checks.
