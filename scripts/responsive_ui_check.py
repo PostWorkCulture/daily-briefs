@@ -1591,5 +1591,9 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except Exception as exc:
+        ARTIFACTS.mkdir(parents=True, exist_ok=True)
+        (ARTIFACTS / "responsive-error.txt").write_text(
+            f"{type(exc).__name__}: {exc}\\n", encoding="utf-8"
+        )
         print(f"RESPONSIVE CHECK FAILED: {exc}", file=sys.stderr)
         raise
