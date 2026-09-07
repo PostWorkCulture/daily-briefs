@@ -2,6 +2,15 @@
 
 Newest entries go first.
 
+## 7 September 2026: Verified Arsenal v Chelsea result fallback
+
+Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.
+
+- Protected dependency: the live feed confirmed Arsenal's 2–1 win over Chelsea but omitted the scorer, summary, kickoff and stadium fields required for publication.
+- Repair: added the fully verified 6 September result as the newest deterministic fallback, using Reuters for the match account and scorers, ESPN for structured scorer minutes and Chelsea FC for the 4:30pm kickoff and Emirates Stadium.
+- Result details: Kai Havertz 25', Martin Ødegaard 50'; Premier League; Emirates Stadium; 4:30pm kickoff.
+- Scope protected: no other fixture, section, route, styling, fact data or master-brief rule changed.
+
 ## 7 September 2026: Date-stable Arsenal fixture regression
 
 Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.
