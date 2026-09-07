@@ -10,6 +10,7 @@ LOCKED_URL = "http://127.0.0.1:4173/?profile=pete&locked=1"
 VIEWPORTS = {
     "mobile": {"width": 390, "height": 844},
     "desktop": {"width": 1366, "height": 900},
+    "widescreen": {"width": 1920, "height": 1080},
 }
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
@@ -439,7 +440,7 @@ def check_viewport(browser, name: str) -> None:
             expected_display = "contents" if name == "mobile" else "grid"
             if feed["streamCount"] and feed["feedDisplay"] != expected_display:
                 raise AssertionError(f"{name}: News stream feed has the wrong layout: {feed}")
-            if name == "desktop" and feed["streamCount"]:
+            if name != "mobile" and feed["streamCount"]:
                 if feed["feedGap"] != "1px" or feed["feedBackground"] == "rgba(0, 0, 0, 0)":
                     raise AssertionError(f"{name}: News stream lacks a shared divided surface: {feed}")
                 if any(value != "0px" for value in feed["streamRadii"]):
@@ -858,6 +859,17 @@ def check_viewport(browser, name: str) -> None:
         page.mouse.move(1, 1)
         page.wait_for_timeout(250)
         failures = []
+        shell_width = page.locator(".app-shell").evaluate(
+            "el => el.getBoundingClientRect().width"
+        )
+        if name == "desktop" and shell_width > 1120:
+            failures.append(
+                f"Chromebook/desktop rail unexpectedly changed width: {shell_width}px"
+            )
+        if name == "widescreen" and shell_width < 1450:
+            failures.append(
+                f"widescreen rail does not use the available space: {shell_width}px"
+            )
         visual = page.evaluate(
             r"""
             () => {
@@ -1090,7 +1102,7 @@ def check_viewport(browser, name: str) -> None:
             if any(colour != approved_ink for colour in card["textColours"]):
                 failures.append(f"Coming up {theme} text does not use the approved light ink: {card}")
         reminder_tops = {round(card["top"]) for card in visual["reminderCards"]}
-        if name == "desktop":
+        if name != "mobile":
             if len(reminder_tops) != 1:
                 failures.append(f"Coming up cards do not fit on one Chromebook row: {visual['reminderCards']}")
             if any(card["height"] > 150 for card in visual["reminderCards"]):
@@ -1173,7 +1185,7 @@ def check_viewport(browser, name: str) -> None:
             )
         if any(button["width"] < 44 for button in buttons):
             failures.append(f"nav buttons squeezed below 44px: {buttons}")
-        if name == "desktop":
+        if name != "mobile":
             if len({round(button["left"]) for button in buttons}) != 1:
                 failures.append(f"desktop nav is not a single vertical column: {buttons}")
             if len({round(button["top"]) for button in buttons}) != len(buttons):
@@ -1343,12 +1355,12 @@ def check_viewport(browser, name: str) -> None:
             grouped_count = sum(group["cardCount"] for group in birthday["monthGroups"])
             if grouped_count != len(birthday["cards"]) or not birthday["monthGroups"]:
                 failures.append(f"{profile} Birthday cards are not grouped by month: {birthday}")
-            if name == "desktop" and any(
+            if name != "mobile" and any(
                 group["cardCount"] <= 3 and len(set(group["tops"])) != 1
                 for group in birthday["monthGroups"]
             ):
                 failures.append(f"{profile} same-month Birthday cards do not share a row: {birthday['monthGroups']}")
-            if name == "desktop" and any(
+            if name != "mobile" and any(
                 surface["nameLines"] > 2 or surface["detailLines"] > 2
                 for surface in birthday["cards"]
             ):
