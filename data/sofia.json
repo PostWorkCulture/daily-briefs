@@ -28,12 +28,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-09-08",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
@@ -46,7 +46,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -60,16 +60,16 @@
       },
       {
         "date": "2026-09-11",
-        "high": 22,
+        "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-09-12",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -87,8 +87,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 50%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
