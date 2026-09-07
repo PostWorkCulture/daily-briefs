@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,6 +71,19 @@ class FirstTeamResultTests(unittest.TestCase):
         ])
 
 
+    def test_verified_chelsea_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_chelsea_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["scorers"], [
+            {"name": "Kai Havertz", "team": "Arsenal", "minute": "25'"},
+            {"name": "Martin Ødegaard", "team": "Arsenal", "minute": "50'"},
+        ])
+        self.assertEqual(result["stadium"], "Emirates Stadium")
+        self.assertEqual(result["kickoff"], "4:30pm")
+
+
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {
             "sections": {
@@ -83,7 +97,12 @@ class FirstTeamResultTests(unittest.TestCase):
             "arsenal": {"news": []},
         }
 
-        finalize_arsenal.apply_last_result_fallback(payload)
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-02T09:00:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
         result = payload["arsenal"]["lastResult"]
 
         self.assertEqual(result["date"], "2026-08-31T20:00:00+01:00")
@@ -109,8 +128,13 @@ class FirstTeamResultTests(unittest.TestCase):
                 "news": [],
             },
         }
-        with self.assertRaisesRegex(RuntimeError, "lastResult is incomplete"):
-            finalize_arsenal.apply_last_result_fallback(payload)
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-03T09:00:00+01:00"),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "lastResult is incomplete"):
+                finalize_arsenal.apply_last_result_fallback(payload)
 
     def test_first_team_result_wins_over_newer_youth_report(self) -> None:
         payload = {

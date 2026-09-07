@@ -144,6 +144,33 @@ def verified_aston_villa_result() -> dict:
     }
 
 
+def verified_chelsea_result() -> dict:
+    return {
+        "date": "2026-09-06T16:30:00+01:00",
+        "dateLabel": "Sun 6 Sep",
+        "kickoff": "4:30pm",
+        "opponent": "Chelsea",
+        "competition": "Premier League",
+        "homeAway": "home",
+        "completed": True,
+        "arsenalScore": 2,
+        "opponentScore": 1,
+        "result": "2–1",
+        "scorers": [
+            {"name": "Kai Havertz", "team": "Arsenal", "minute": "25'"},
+            {"name": "Martin Ødegaard", "team": "Arsenal", "minute": "50'"},
+        ],
+        "scorersLabel": "Kai Havertz 25', Martin Ødegaard 50'",
+        "stadium": "Emirates Stadium",
+        "summary": (
+            "Arsenal recovered from Morgan Rogers' second-minute opener to beat Chelsea 2–1, "
+            "with Kai Havertz equalising before Martin Ødegaard completed the comeback after half-time."
+        ),
+        "url": "https://www.reuters.com/sports/soccer/arsenal-pass-chelsea-test-style-with-comeback-win-2026-09-06/",
+        "source": "Reuters / ESPN / Chelsea FC",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -377,7 +404,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-08-31T22:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-09-06T18:30:00+01:00"):
+        fallback = verified_chelsea_result()
+    elif NOW >= datetime.fromisoformat("2026-08-31T22:00:00+01:00"):
         fallback = verified_aston_villa_result()
     elif NOW >= datetime.fromisoformat("2026-08-21T20:00:00+01:00"):
         fallback = verified_coventry_result()
