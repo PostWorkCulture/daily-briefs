@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Monday, 7 September 2026 · refreshed 6:52am",
+  "updatedLabel": "Monday, 7 September 2026 · refreshed 10:51am",
   "worldFact": {
     "id": "indonesia-angklung-one-note-cooperation",
     "editorialPriority": "human-first",
@@ -17,7 +17,7 @@
     "sequence": 17
   },
   "weather": {
-    "temp": "17°",
+    "temp": "23°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 4,
@@ -28,12 +28,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-09-08",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
@@ -46,7 +46,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -82,13 +82,13 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 40%",
+      "detail": "Sunny intervals · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -177,6 +177,20 @@
       "calendarColorSource": "calendar-default"
     },
     {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -188,20 +202,6 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "Choir - PU 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -233,7 +233,7 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Footy - PU 4.15pm",
+      "title": "Footy - PU 4.15pm (main playground)",
       "summary": "",
       "url": "",
       "start": "2026-09-14T00:00:00+01:00",
@@ -247,7 +247,7 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Playball - PU 3.45PM",
+      "title": "Playball - PU 3.45PM (main playground)",
       "summary": "",
       "url": "",
       "start": "2026-09-15T00:00:00+01:00",
@@ -261,7 +261,7 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Crafts - PU 4.15PM",
+      "title": "Crafts - PU 4.15PM (reception)",
       "summary": "",
       "url": "",
       "start": "2026-09-16T00:00:00+01:00",
@@ -345,7 +345,7 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Footy - PU 4.15pm",
+      "title": "Footy - PU 4.15pm (main playground)",
       "summary": "",
       "url": "",
       "start": "2026-10-12T00:00:00+01:00",
@@ -447,7 +447,7 @@
     "title": "Sweden’s fightback against the gangs",
     "summary": "",
     "meta": "Mon 7 Sep",
-    "publishedAt": "2026-09-07T05:00:19+01:00",
+    "publishedAt": "2026-09-07T05:02:18+01:00",
     "source": "Financial Times",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR0JhcUstMXVIeGJaai1LZG80TGRidWZNVGJkQWxJS3ltMHg3dDNuWWthLTgwTXh4c24yOUxpd0ZOYUJZenZBajRQSC1rRTN5TDFKRWdEeDFKT2dVS0hEUi1RYTU0Zi1FdUQySkhSOHpvQ2piWU9sVmRBMmgtUWFCWUoxZlU?oc=5",
     "contentType": "article"
@@ -457,19 +457,19 @@
       "title": "Sweden’s fightback against the gangs",
       "summary": "",
       "meta": "Mon 7 Sep",
-      "publishedAt": "2026-09-07T05:00:19+01:00",
+      "publishedAt": "2026-09-07T05:02:18+01:00",
       "source": "Financial Times",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR0JhcUstMXVIeGJaai1LZG80TGRidWZNVGJkQWxJS3ltMHg3dDNuWWthLTgwTXh4c24yOUxpd0ZOYUJZenZBajRQSC1rRTN5TDFKRWdEeDFKT2dVS0hEUi1RYTU0Zi1FdUQySkhSOHpvQ2piWU9sVmRBMmgtUWFCWUoxZlU?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Former Kingston university accommodation transforms into luxury flats and boutique hotel",
+      "title": "'Fleabag' star to lead scriptwriting course at at Kingston's Rose Theatre",
       "summary": "",
-      "meta": "Sun 6 Sep",
-      "publishedAt": "2026-09-06T17:00:01+01:00",
+      "meta": "Mon 7 Sep",
+      "publishedAt": "2026-09-07T08:30:00+01:00",
       "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUTNreG9OSWw3em9pMURDal9lY1dUM3hvSWduSFVvc3VwaGtPbnFqWTFiQUZPcVlHTVBPM2VJa0ZjWlk3c1ZYOVhUZkNaaWZEb1lwTzNLU3JoQzE2YnFWVTdacTZ5RXBiVVcyTnNOcTVWYTBLUHI2bDVHcFgtSlpJQnNPd1o1TUItQ1hrR3AxR3k5VS12YlA4bnBaRk9Cc3VWazlPZXdzUE1zcW9EU0IxQTBISi1McjA4SG9HTlhYcjkxTVVzTzBTanMyMi1tOVc3djlz?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMlpMVjdsVTRuMUJucS1IWlA3bFExZUhBa0hDZlcxZUltdnRuZTlfdGRXTkExUnpoSFNJeXMxSm41YjVXWF9HQzJyUzJxT2xseV9ONk12cnN1ZXB5M2p1UlBJcVB5TlBHWmRiMzJncTBseFNkaHZfaC1pbjFkTUJMX3BXRDk4UENRRDREZVBNRm40MmpxUTlFNFM1RDc3ZTkyMjJ3em9lSTNlZEwwelNjY0pGVlVha0hkSzJN?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -506,7 +506,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 442.7
+      "preferenceScore": 446.8
     },
     {
       "title": "True Crime Presents",
@@ -605,67 +605,78 @@
         "title": "Sweden’s fightback against the gangs",
         "summary": "",
         "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T05:00:19+01:00",
+        "publishedAt": "2026-09-07T05:02:18+01:00",
         "source": "Financial Times",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR0JhcUstMXVIeGJaai1LZG80TGRidWZNVGJkQWxJS3ltMHg3dDNuWWthLTgwTXh4c24yOUxpd0ZOYUJZenZBajRQSC1rRTN5TDFKRWdEeDFKT2dVS0hEUi1RYTU0Zi1FdUQySkhSOHpvQ2piWU9sVmRBMmgtUWFCWUoxZlU?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Reindeer and rare-earth minerals: Swedish politicians take aim at Indigenous Sami in mining dispute",
+        "title": "Sweden confirms 458 Britons deported or forcibly removed since Brexit",
+        "summary": "",
+        "meta": "Sun 6 Sep",
+        "publishedAt": "2026-09-06T22:34:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb3hoVDdCZEI1LU0yb09JR01hWnJlTjF5TG13cmxhRXhTWnFfQmRueDlwaEprUENZUmd4UllteTZQYml5c2tMOFVyNl9rTnpNUlBSWm1xMDVPRE9NWk1VeFl1MjhrZTU4R0F3b2YzRG9NemJ1UXUtLUFmTnpLQm40MDFEXzF4RU5OWC1n?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden election race tightens as Liberals make parliament threshold, poll shows",
         "summary": "",
         "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T05:00:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNUUtXMm1ybG1UYlVTSkZoTm9rNGd1S0lUQkR4VFRPcjFZLUJCR1NIU2pjZmFXa1R1bUMzNWI2dUVXTW0xZEJ6QUg2SmpyVFBXWXF3LUJacDVTaDYtdlI0X2FhU0dCbVYzLTJvTmdjTXVnT0gwTVVqT2l0OWp2SzMtMGlCRTBFNjI2Q3pFMmxmdFRZSzh1YzRDRk5TRlR4MTZjU2hqdjBHYTYzdjBqOW1EUkh0MlJwZzVZUEc0OXB0X0d5dnIxNVY5cGc5T1E4QTB1ZUFBTmFlUDhQTDc3TFVHbC1HdlBRU0Z2T3NQaE9xeXE?oc=5",
+        "publishedAt": "2026-09-07T09:28:33+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTkhaYmpoa3FUVHJxRzBUT2dQeW41MjdEdGM5RGNqRWlaSTRZdFE5ODF2VDBnUjJaaGRFakRlMEp6eGZVenl2RjJWNmZDRnVGUmZfTjZuUmpnMkxEbXduNERmUXJkQktJZkpiUDJUeTFlZHVjSFB4NHJHcHZUNk96WEFOSFpWbHdjeTY3c1pFaWYwYmUxdUJlWHpIWmdvaDQ3M0RhWERuaUlhbXZabVJndEpzV2VTbURoRHZ6Rl9JX0ZkSkR5R1RVcWdqV1BnZlE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swedish savers have ”impressive long-term perspective,” new CEO of fund giant says",
+        "summary": "",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T07:46:41+01:00",
+        "source": "AMWatch",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Sb0JpbmZPU0dhdFN3OHJsY1FuWTF5SFBWcWxLQlhUS3RQZmRaS0plaW54TFFVUEtnTjFuellJQlpsZVk1b0lBclBSTTdPSGNDYVFzQm9YRXJ2SWxSVGRYa0lRWUhaeDNHZVBlV0s0MA?oc=5",
         "contentType": "article"
       },
       {
         "title": "Russia has entered Sweden’s election campaign, center-left front-runner warns",
         "summary": "",
         "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T03:13:43+01:00",
+        "publishedAt": "2026-09-07T04:00:00+01:00",
         "source": "politico.eu",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcVZEOHRDT0V5Z29aWFVJcjBCVFJiWkszTFBhSXpyWnBLNmR5a21oMFFaY01zSzNSYkRPcjIxcTZxSnUtVzA5MWpYcXNKeS1KVUNxZkdUc2hCWmFmVVN2OTlYMFpsYVJpcnpxZE9iRDJKZVVoNTNNaThiQ1BKWjI5UDM1TDMtelNCVG5odA?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Consortium formed for Swedish SMR project",
+        "title": "Sweden's new BMI rules for obesity treatment draw criticism",
         "summary": "",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T13:42:20+01:00",
-        "source": "world-nuclear-news.org",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNLVlrcWFfQVVRQ0ZicTJXbXRqQm5yQW5UNDFzdFpqbEp2cnNmOUNyT09GemVDZURsMThyYVl1V1hTMEtMd21kem14bF9kSW5tTDJVRjJJZEhPVFdMYnZJV1dWWDFqakE4c1pMSlJLblJpVHo3SzNkZzd4ak9ENGNSMHlMMGMtaTBJdnVrRWxn?oc=5",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T08:33:42+01:00",
+        "source": "euractiv.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLUZoYkxIbHRkTWdLMDJQZ3ZrN19uV1BMRTkyVUlHZ1U5aXRkWkFzMkNGeWFBdzBSNldSWFI2eUVFbER3TlM3THc5YmRLYkdNQVZQQ1ZmTFFDdlo2dUhENTNHbk1ZS1BBNEowUFRVbW5tdEdGQmtmMmFOa2xJMHFBTU10dUtNdkN0SXctMGdLdlVrNVk?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Sweden's pro-Russian ties embarrass the far right",
+        "title": "ADJ lights the way for Sweden Rock Festival 2026",
         "summary": "",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T09:51:34+01:00",
-        "source": "Le Monde.fr",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaEJxNGpoX1k1WmZlY3dFOHRsWktsZF83V2RqeFAzNzFidkVsQTkteXdQcVJvQ3A4V1NzOTFxOE0xVE9fYnRzTEZqTkF5TmZ2TC1PQXhvRE4zZFU1VWVMM0xrdVlCU1dqRjZORF9ub1dsZHJ5TkVvYUxTNlc5TXBPM2owdW90TFoxTUVyTTF3RXh3NVNQYm96bVJhWjZyUWw1d1pEd1AtMm1mQUwwVUdYQXRjamEwakx4V1R3RkJ1eVE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Naval Group Signs $4.897 Billion Contract for Four Swedish FDI Frigates",
-        "summary": "",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T10:13:12+01:00",
-        "source": "imarinenews.com",
-        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMWWZyVVRXWFB5Q09lZWdsQ3lBYmI2Uk5yNWR1MGh5STV0MG1YU0JpbUxBRFEzYzVpSHJPSlBEVW5HaWcwVkNmUnVFOGJBRFk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Örgryte vs Hammarby: Swedish Allsvenskan stats & head-to-head",
-        "summary": "",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T16:56:32+01:00",
-        "source": "bbc.com",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5kd1lCSDhDWk0xREhDM0J6Zmpaa3RXWWJMb0lrQW9UeWVDT0FCaVFWOXhhSTl1NEJnWnFfX2hHeHhZNi1RRXBodWtFb1FfeTdlMGVISFBHcS1zTkFoLVhrYmZEOA?oc=5",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T09:56:23+01:00",
+        "source": "tpimagazine.com",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ2s3RDFZVk9tNkJtZlJCWkVMVkdyTTR0UFFFZGE4SEo2d0FxSzVZZVdWYWR2RkdsSXNDaC0wZFJBc0Zmc1ZGc3VadFpjU3pMNUZHRldIb2o1QzQ0SG5hU25TOFhXWjlqcjV5RWhBMUcycnVkTTM1czQ3OHN0anhrRFVTSQ?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "'Fleabag' star to lead scriptwriting course at at Kingston's Rose Theatre",
+        "summary": "",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T08:30:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMlpMVjdsVTRuMUJucS1IWlA3bFExZUhBa0hDZlcxZUltdnRuZTlfdGRXTkExUnpoSFNJeXMxSm41YjVXWF9HQzJyUzJxT2xseV9ONk12cnN1ZXB5M2p1UlBJcVB5TlBHWmRiMzJncTBseFNkaHZfaC1pbjFkTUJMX3BXRDk4UENRRDREZVBNRm40MmpxUTlFNFM1RDc3ZTkyMjJ3em9lSTNlZEwwelNjY0pGVlVha0hkSzJN?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "Former Kingston university accommodation transforms into luxury flats and boutique hotel",
         "summary": "",
@@ -706,17 +717,6 @@
         "publishedAt": "2026-09-04T10:55:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcFJwMXVOblJmcUpmZGZTLXl5dzdUM2tRY1B5dmxPU19QVVM0WWxhX1Y1VkJCU0FPNGpxd1d0RkpIeUFqV1dac1lvaGNOYzg1QTAyT1RDMTdVd3c2cmlOeFNXRlo0blZDMHQzWWdKN0hrOTNhOG9VUk01T3NxNGhESUtuZzNwdEM2Qzl2S1ZvZ3l1WmM3azZvRng1eHdIR3JNR2pnV09lZ20wdkE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington High Street Is Evolving as Residents Reshape How They Shop",
-        "summary": "",
-        "meta": "Fri 4 Sep",
-        "publishedAt": "2026-09-04T00:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeHlobUtnTXdlM3BKNXBxODBRQ3ZfcE5XV3RDNDRjN3Y4VWFlNTJwcXN4cUx1d2FaOC1LVDdRVTlEUjQ0ZnVfbGN2RmZhY0hBeGNkeGdqeHIxY2UyU1JzZkpuTm5UaXhwaGRkTlg4NGVpQmhxc001X3BiYVRGWmtRcDluWjNQeWhtbFBFY3ZlN0swalVaRTlvd3Z5YXp5S1ZDZnpGX0dXWTBfNVpoQ1RuSDFQTU5MdVZDQWxmTV81ZmpKSUxlZlZN?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -766,12 +766,12 @@
         "familyActivity": false
       },
       {
-        "title": "Thames Water challenged over pollution risks in Teddington river project",
+        "title": "Thames Water challenged over pollution risks in Teddington river abstraction project",
         "summary": "",
         "meta": "Wed 2 Sep",
         "publishedAt": "2026-09-02T08:34:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWTVyLUZJbjJLdkJWUHhJdkFtbThLb2x6UTBuVDdmc0UycFhKcVZvUTU4STAwVFlsSFAyaWZoQmt1dTdVeUt6NVVaTV9DdUozN2dDellrSVV0c01jWXpqZ2FqRzNDemo2b294TTNNZXJZVjJBWmx6UVBucHdvenlhMUtYN3RBeGl2R1J1WWttT25kcnZiV0RrbC1TbnJKRklqZzBnMGVmLXpObkJYTHpBeHBfWTBSakxxSklFOU1OZmpjQ3J2c0o4XzQxZHZ4dTUxVGFDbldXOEVhSngzdGpzWFFKLVc?oc=5",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdWlBR0l3YVk2clNoWWwxSTVUVFNIS3U4U1kydW5EMWxsNmlMVUxIWm9hQm12ZVVDNmdYOGJpblk2MzdQbWNHc0ZiOU4ydmNDanZRQXpnaEhUVjRFUElqTEoxd2xrZi05SUF5LWVSU0E4Y0pVb3dIRV9iS0VDRlhlaXFuMFllaFgyWmhxMXRpeHBwb0dXZGRQV0JmWFQwTjhxd2hFVTRITHNpeXNwR0w3QXFueEltTE9SQ1gzT2JTTkZ3MUNEUkhkcVVkcFJkaXpJ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -783,17 +783,6 @@
         "publishedAt": "2026-09-01T16:58:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Kingston set to change e-bike operators, but who will it be?",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T14:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeVYtY1lyT0V5NWN6RUpvUWFhV2xGMWRaSkMwb08ycXVCNEdyWmlMdk5VdGxuWENTdUFkRWFNa0hXaHlMaHc5Qzg3RVNWNXBNbmJlTVhRMmlZM0M4UjN0cERQa1gtakJnS1BCbEtOQjJ2S3BMZk9uOWpZTU95SHVDbTdiYnlWTExhRFA0MU9jNU54U1ZqY3BuRndjRFRJYzg1dkxRNVR3TDl5YUU?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -835,9 +824,20 @@
         "title": "Waste and recycling in Teddington: Important updates for the August Bank Holiday",
         "summary": "",
         "meta": "Wed 26 Aug",
-        "publishedAt": "2026-08-26T09:20:00+01:00",
+        "publishedAt": "2026-08-26T08:00:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdFlFZFd4X2VyQmlvWC1paHotZ0JPU3hLU1MxbjRXeEpIVXEyR0k4N1dNcllEQkRYczdvTmtZSUg2VEY4akJpczRhSWVXOTFfMXh2NjcwMlJIcV84MDR3QUdoaFlwZmhIazhiN19xRkhSd19aNEZRUmgwM2p6UDZEZGQwNWFkM3JpeTVzNGtITmRmQUlsYUJ6eVBJX1dOb3BXZWFyLUk1alRHcVVhV1l5U1BXRlhNbVBSTEtEUVlKQS02MjRJQ1FYeXlR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "More than 35 years of experience behind care service supporting Kingston families",
+        "summary": "",
+        "meta": "Tue 25 Aug",
+        "publishedAt": "2026-08-25T13:01:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQ09Bd09LY2w0bVRBdHZoNWFTaFMtNXc4dVNsTEZqREg5eDhkZW1GYmRlX0dYNC1JaWFUdjlTQkFfTk1VR3NLLW16alZIVlVMRGNfZlhqR2tSaUx5SW5ORDFBTTFGVVdzdzFQMXp3LXRTUExwR1ZNMEY5dWNHWkptSW9YcU9rOVVwUnlkc0xxOU1tN2ZYUzhOSndqdmxJSlpNeHJRaGg0aGF2dFRrN1BCb1VWS1ZuUjFKZ3pLZEFsWGw3ODFvSWZ3b3JZWC1Oa29yaEVXTlFjRmFOd0RURi1icWNxTjM?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -845,11 +845,29 @@
     ],
     "UK news": [
       {
+        "title": "Pioneering fossil hunter recognised with blue plaque",
+        "summary": "Dorothea Bate discovered the dwarf elephant and the myotragus, an extinct goat-like antelope.",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T07:01:33+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cx2zx1v8ye3o?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Chemo hair loss doesn't define me - it's a symbol that I'm strong",
+        "summary": "The beauty and resilience of women living with cancer is celebrated though photography.",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T06:15:34+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c24jpevmgdzo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
         "title": "‘Not your usual volunteer roles’ available to transform lives of cats in North Wales",
         "summary": "",
         "meta": "Mon 7 Sep",
         "publishedAt": "2026-09-07T05:57:15+01:00",
-        "source": "wrexham.com",
+        "source": "Wrexham.com",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWXNPZ08tUzcwaUlScW5EdmIwbXlJZVljazgzRm1GVFkwbXpaS0xhLVdXLU03eE5mVDZ5ZDQzU1dHVHIxNEs3V3l6S3l5cDRHMnlwWlVNX2c3dWNmeHhpUTRocDJrXzdaMHdZZlZEQmNUVl9yLXU4MGtpbUwxYWQ0TzJjWV81NFppSmRvWGpYdmV6bjV0ZTVuVi1uRWpYMFBZcGhNNGUyeEwtT2EtVDhqQWM1Z2loTkpSWkdB?oc=5",
         "contentType": "article"
       },
@@ -899,20 +917,11 @@
         "contentType": "article"
       },
       {
-        "title": "New book celebrates the life of Wales football icon John Charles",
-        "summary": "",
-        "meta": "Sat 5 Sep",
-        "publishedAt": "2026-09-05T09:23:59+01:00",
-        "source": "nation.cymru",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPM3JaUmM5TTMwMUgtUzFQVC04SlR4OXRzTE11amhDb1RmUTNMU2Q3d1piUXB1LW04SU93ekNNdXBqQ3o2V3BkandWeURFS1RhRmtJaTFjaUdrcEtXY0JqUmMxX3pLQkl5REdVYmRQWFFSQjJvdFpIMmt2UGlxSHVDWEJ0cG5saXlQTXY0cURTcUxUX0NGaFRz?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Pembrokeshire company shortlisted for Golden Fork from Wales 2026 award",
         "summary": "",
         "meta": "Sat 5 Sep",
         "publishedAt": "2026-09-05T06:03:05+01:00",
-        "source": "tenby-today.co.uk",
+        "source": "Tenby Observer",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMnRYYk85WHRGTkFpYmpqcUZ0VEFvNlJGMHNtLUZSODBmbWZfZFlEWGppWkc4cnFUT1pYRlpBRGM1enNlNEJ1OFZXaFBsQnZlMWJGeXZvTkZaWjVmbDFlZXVjN2QzbnVLU0puaFNvQW9tbzB3RUl4NEVKdHlmMDg5dWIzMEZNSmRRUFB5UlB0YWFoclZMbW5oejd5RUtaYXFiQXJCT0NpVjZyRFYtNXBLa1dUWQ?oc=5",
         "contentType": "article"
       },
@@ -921,8 +930,8 @@
         "summary": "",
         "meta": "Sat 5 Sep",
         "publishedAt": "2026-09-05T05:00:00+01:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUWZKM2F0VHlfWHVYb1JmOVRQY0NWcUFKbG9pcG1TV0VxRVV3VEJwSi1SdlZpQUdpcy1YdktQeFUwRnFnd3hCM0pTcjJMVnlTbmU0dXEtb1NmSXg5eDFQNXpQUGNobXh5dUdmelZIaDg4ZzdaalRiNjNMVW9VVm84RXQyYzRySENEX2NqS2MtN1A3NkRJUkYtbjBPYUZJTm9pc1hfcg?oc=5",
+        "source": "North Wales Pioneer",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQVc0cGJvRWgzajN4aDlPRXFZM0I2NW1XM0V5ZXFjNW5BX2VfZlE1clhVMVU2NnVFTXgzME1McmpoTGJDOV9qM3p5UkF2Y3FxNXB0SDY5aWRpb0VYcG5DNmwxUWFuQ00xN1RYcDc0ZmZxcEotendQSy1YQWsyVmhndE9vUWN3UkpiOGNmYXk0UTBMQTFXVW5XNXMtLTlmNFk1UlE?oc=5",
         "contentType": "article"
       },
       {
@@ -942,18 +951,18 @@
         "source": "Aberdeen & Grampian Chamber of Commerce",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd1E5UXhxX09JOVFBVTBxT2tjZXNnRHdMV0t6WFZYNE5MUzAxQXhNdFpjLTQ1ZFdoUVJia0lIR3h5OHg4TmJqeDZyVFdjTVNxVkprSWplMy00N2pfWG9TTW43c3oxR0FkOGFiMm91ZmpmWXdKUDZPVUZRb3pQRi1MZk5lU3d5czAtdUhGWEVCeE1DSlQxbXdSZTduZw?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "What went right this week: the good news that matters",
-        "summary": "",
-        "meta": "Fri 4 Sep",
-        "publishedAt": "2026-09-04T13:55:04+01:00",
-        "source": "Positive News",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5OYUdkM0FxUjB2TUJEaXRaZWJnY3FoV1dFcElEMk9ZbFNEdFNiVDZUZzZ3dGVaWG9QdFhZVkxzaFBOcUJKM3d3bWNrMmoxNHpvOEZXX3R2QlhSdWVRWnN0d09nMWcxdTNGdkQ3WWgtS3B3ZTkzVmJiRjRWR0k2QQ?oc=5",
-        "contentType": "article"
       }
     ],
     "AI": [
+      {
+        "title": "Supporting independent journalism in Ukraine",
+        "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+        "meta": "Mon 7 Sep",
+        "publishedAt": "2026-09-07T01:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+        "contentType": "article"
+      },
       {
         "title": "An Alien Mind",
         "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
@@ -1000,15 +1009,6 @@
         "contentType": "article"
       },
       {
-        "title": "GPT-6 Astra: A new generation of intelligence",
-        "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T12:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/gpt-6-astra",
-        "contentType": "article"
-      },
-      {
         "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
         "summary": "",
         "meta": "Thu 3 Sep",
@@ -1046,6 +1046,36 @@
       }
     ],
     "Career": [
+      {
+        "title": "Lead Technical Architect - AI",
+        "company": "Department for Environment, Food and Rural Affairs",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "7 September 2026 · LinkedIn listing date",
+        "source": "LinkedIn",
+        "location": "London, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/lead-technical-architect-ai-at-department-for-environment-food-and-rural-affairs-4462935337",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-07"
+      },
+      {
+        "title": "Deputy Director, Head of AI Assurance",
+        "company": "HM Revenue & Customs",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
+        "postedDate": "5 September 2026 · LinkedIn listing date",
+        "source": "LinkedIn",
+        "location": "Manchester, England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4462613535",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-05"
+      },
       {
         "title": "AI Lead",
         "company": "Money and Pensions Service",
@@ -1096,6 +1126,23 @@
         "postedAt": "2026-09-02"
       },
       {
+        "title": "AI Transformation Lead - 2 year FTC",
+        "company": "Ofgem",
+        "description": "Lead Ofgem's portfolio of AI initiatives, coordinate multidisciplinary delivery teams, and manage budgets, dependencies, governance and risks as AI moves into everyday regulatory work.",
+        "salary": "London salary £52,397–£62,699; Glasgow/Cardiff £49,452–£58,519.",
+        "postedDate": "28 August 2026 · LinkedIn listing date",
+        "source": "LinkedIn",
+        "location": "London, Cardiff or Glasgow; Currently one office day per week; policy is kept under review.; Journey time from KT8 has not been verified.",
+        "url": "https://uk.linkedin.com/jobs/view/ai-transformation-lead-2-year-ftc-at-ofgem-4458061537",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "metadataSourceUrl": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=2010313",
+        "metadataVerifiedAt": "2026-09-05",
+        "postedAt": "2026-08-28"
+      },
+      {
         "title": "Data and AI Adoption Lead",
         "company": "Ofgem",
         "description": "Build data and AI literacy across Ofgem through capability assessments, training, learning frameworks and practitioner communities, with attention to ethical use and privacy.",
@@ -1133,7 +1180,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 385.2
+      "preferenceScore": 385.9
     },
     {
       "title": "Love Cheats",
@@ -1176,7 +1223,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 303.3
+      "preferenceScore": 303.4
     },
     {
       "title": "Police Interceptors",
@@ -1218,7 +1265,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 279.9
+      "preferenceScore": 279.7
     },
     {
       "title": "Last Seen On Holiday",
@@ -1240,7 +1287,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 270.2
+      "preferenceScore": 270.1
     },
     {
       "title": "How the Tudors Lost Their Heads",
@@ -1262,7 +1309,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 269.0
+      "preferenceScore": 269.6
     },
     {
       "title": "Turning Point: Generation 9/11",
@@ -1282,7 +1329,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 258.3
+      "preferenceScore": 258.1
     },
     {
       "title": "Hitler's Last Stand",
@@ -1325,7 +1372,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-07",
-      "preferenceScore": 240.4
+      "preferenceScore": 243.0
     },
     {
       "title": "Star Trek: Strange New Worlds",
