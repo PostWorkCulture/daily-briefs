@@ -9,7 +9,6 @@
 @media (min-width: 1500px) {
   .tab-list,
   .tab-groups.single .tab-list,
-  .story-stream-grid,
   #view-arsenal .arsenal-news,
   .tonight-block .watch-strip {
     column-gap: clamp(14px, 1.15vw, 24px) !important;
