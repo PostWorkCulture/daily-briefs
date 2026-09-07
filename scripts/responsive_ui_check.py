@@ -1592,8 +1592,12 @@ if __name__ == "__main__":
         raise SystemExit(main())
     except Exception as exc:
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
-        (ARTIFACTS / "responsive-error.txt").write_text(
-            f"{type(exc).__name__}: {exc}\\n", encoding="utf-8"
+        from PIL import Image, ImageDraw
+
+        error_image = Image.new("RGB", (1800, 1000), "white")
+        ImageDraw.Draw(error_image).multiline_text(
+            (30, 30), f"{type(exc).__name__}: {exc}", fill="black", spacing=8
         )
+        error_image.save(ARTIFACTS / "responsive-error.png")
         print(f"RESPONSIVE CHECK FAILED: {exc}", file=sys.stderr)
         raise
