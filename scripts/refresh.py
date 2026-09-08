@@ -280,6 +280,20 @@ JOB_COMPENSATION_LANGUAGE = re.compile(
     r"\s*(?:per annum|p\.?a\.?|a year|plus benefits)|\bsalary\s*[:\-–]?\s*£)",
     re.I,
 )
+# Contractor adverts often omit the word "job" and use abbreviated pay units.
+JOB_CONTRACT_RATE = re.compile(
+    r"£\s?\d[\d,]*(?:\.\d+)?(?:\s*[-–]\s*£?\s?\d[\d,]*(?:\.\d+)?)?"
+    r"\s*(?:p\.?[dh]\.?\b|/\s*(?:day|hour|hr)\b|per\s+(?:day|hour)\b|a\s+(?:day|hour)\b)",
+    re.I,
+)
+JOB_ROLE_TITLE = re.compile(
+    r"^(?:(?:senior|junior|lead|principal|contract|cybersecurity|software|data|business|"
+    r"IT|AI|digital|project|programme|support|service|delivery|technical)\s+){0,5}"
+    r"(?:engineer|analyst|developer|manager|consultant|architect|officer|administrator)\b",
+    re.I,
+)
+JOB_URL_PATH = re.compile(r"https?://[^\s/]+/(?:[^\s?#]*/)?(?:jobs?|careers?|vacancies)/(?:[^\s?#]+)", re.I)
+
 JOB_SCHEMA_FIELDS = frozenset({"company", "salary", "postedDate", "location", "sector", "aiRelated"})
 
 
@@ -509,6 +523,9 @@ def news_item_is_job_vacancy(item: dict) -> bool:
         or JOB_BOARD_SOURCE.search(text)
         or JOB_VACANCY_LANGUAGE.search(text)
         or JOB_COMPENSATION_LANGUAGE.search(title)
+        or JOB_CONTRACT_RATE.search(title)
+        or (JOB_ROLE_TITLE.search(title) and re.search(r"\b(?:inside|outside)\s+IR35\b", text, re.I))
+        or JOB_URL_PATH.search(str(item.get("url", "")))
     )
 
 

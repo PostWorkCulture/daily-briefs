@@ -1,3 +1,12 @@
+# 8 September 2026: Reject contractor adverts from News
+
+Status: implemented, release verification pending
+
+- Fixed the exact Cybersecurity Engineer £495pd / Outside IR35 advert leaking from Kingston Nub News through Google News. Existing checks covered annual salaries but missed contractor rates.
+- Added daily/hourly rate, role-plus-IR35 and direct publisher job-path detection to the shared editorial filter and publication contract.
+- Removed the advert from both Local News lists and their Local interest cards; 15 local articles remain per profile. Career eligibility is unchanged, so this non-qualifying vacancy is not moved into Career.
+- Added regression coverage for the exact leak, rate variants, publisher jobs paths, and legitimate employment reporting. No presentation or unrelated section changes.
+
 # Daily Briefs Changelog
 
 Newest entries go first.
