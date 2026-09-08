@@ -10,6 +10,33 @@ from scripts.refresh import (
 
 
 class SectionContentTypeTests(unittest.TestCase):
+    def test_contractor_adverts_are_quarantined_even_when_labelled_article(self) -> None:
+        for title in (
+            "Cybersecurity Engineer - £495pd - Outside IR35 - Surbiton, Surrey (Hybrid)",
+            "Data Analyst - £45ph - Kingston",
+            "Software Engineer - £400–500 per day - Surbiton",
+            "Support Engineer - £30/hour - Hampton",
+            "Business Analyst - Outside IR35 - Kingston",
+        ):
+            with self.subTest(title=title):
+                item = {"title": title, "source": "Kingston Nub News", "contentType": "article"}
+                self.assertEqual(editorial_news([item]), [])
+                self.assertTrue(section_content_type_errors({"Local news": [item]}))
+
+    def test_publisher_job_path_is_not_an_editorial_article(self) -> None:
+        self.assertEqual(editorial_news([{
+            "title": "Receptionist in Kingston", "contentType": "article",
+            "url": "https://kingston.nub.news/jobs/administration/receptionist-123",
+        }]), [])
+
+    def test_employment_reporting_is_not_a_contractor_advert(self) -> None:
+        for title in (
+            "Council creates 200 new jobs in Kingston",
+            "What changes to IR35 mean for local businesses",
+            "Kingston engineer wins community award",
+        ):
+            self.assertFalse(news_item_is_job_vacancy({"title": title}))
+
     def test_expired_salary_listing_is_a_job_vacancy(self) -> None:
         item = {
             "title": "Business Analyst Surbiton, Surrey - £80,000 plus benefits (EXPIRED)",
