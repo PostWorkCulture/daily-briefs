@@ -3,6 +3,17 @@
 Newest entries go first.
 
 
+## 8 September 2026: Stable reduced-motion release check
+
+Status: recovery repair prepared; publication follows the protected responsive gate
+
+- Symptom: the post-merge responsive repeat intermittently sampled the page while its instant reduced-motion scroll was still settling, then a retry timed out while waiting for a compound readiness condition.
+- Repair: wait independently for the profile greeting and attached News data, allow one additional reload for runner startup variance, and assert the completed scroll position before sampling animation styles.
+- Behaviour protected: the check still requires immediate navigation, no bottom-navigation animation and no meaningful card transition for people who prefer reduced motion.
+- Scope protected: no brief content, styling, interaction, route, profile data, fact selection or catalogue entry changed.
+
+
+
 ## 8 September 2026: Verified human-first fact reserve replenishment
 
 Status: maintenance prepared; publication follows the protected catalogue and responsive release gates
