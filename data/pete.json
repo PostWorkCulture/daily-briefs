@@ -17,10 +17,10 @@
     "sequence": 18
   },
   "weather": {
-    "temp": "16°",
-    "summary": "Heavy rain",
-    "condition": "Heavy rain",
-    "currentRainChance": 90,
+    "temp": "17°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-09-08",
@@ -28,11 +28,20 @@
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-09-09",
+        "high": 20,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 4,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-10",
         "high": 21,
         "low": null,
         "summary": "Sunny intervals",
@@ -41,16 +50,16 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-10",
+        "date": "2026-09-11",
         "high": 22,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 50,
         "source": "Met Office"
       },
       {
-        "date": "2026-09-11",
+        "date": "2026-09-12",
         "high": 23,
         "low": null,
         "summary": "Sunny intervals",
@@ -59,7 +68,7 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-12",
+        "date": "2026-09-13",
         "high": 23,
         "low": null,
         "summary": "Overcast",
@@ -68,18 +77,18 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-13",
-        "high": 24,
+        "date": "2026-09-14",
+        "high": 23,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Light Rain expected · rain chance around 4%",
+      "detail": "Light Rain expected · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
