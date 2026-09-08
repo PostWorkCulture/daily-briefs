@@ -2,6 +2,18 @@
 
 Newest entries go first.
 
+
+## 8 September 2026: Verified human-first fact reserve replenishment
+
+Status: maintenance prepared; publication follows the protected catalogue and responsive release gates
+
+- Reserve trigger: after today's selected fact was recorded, six active unused human-first facts remained, below the seven-fact maintenance threshold.
+- Replenishment: added 15 unused human-first facts, restoring the forward reserve to 21 without changing today's selected fact or fact history.
+- Editorial range: the new facts span community custodians, remote population, living traditions, human records, music, dance, festivals and craft across Europe, Africa, Asia and the South Atlantic.
+- Evidence: every addition has an authoritative UNESCO, government, Guinness World Records or national-tourism source, explicit location context and a directly matched, reusable Wikimedia Commons image with attribution.
+- Isolation: this catalogue maintenance is separate from the 8 September brief recovery and changes no profile content, route, layout, section contract or current selection.
+
+
 ## 7 September 2026: Fluid widescreen layout
 
 Status: implemented; publication follows the normal responsive and protected release gates
