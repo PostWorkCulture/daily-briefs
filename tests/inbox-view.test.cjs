@@ -7,16 +7,19 @@ const appSource = fs.readFileSync('js/app.js','utf8');
 const loadSource = appSource.slice(appSource.indexOf('async function loadProfile('), appSource.indexOf('\nfunction scrollBehavior'));
 test('profile JSON resolves before choosing the current renderer, and stale responses are ignored', async () => {
   let finish;
+  let markStarted;
+  let started = new Promise(resolve=>{markStarted=resolve});
   const state = {profile:'pete'};
   const rendered = [];
-  const context = {state,localStorage:{setItem(){}},$$:()=>[],console,Date,fetch:async()=>({ok:true,json:()=>new Promise(resolve=>{finish=resolve})}),render:()=>rendered.push('old')};
+  const context = {state,localStorage:{setItem(){}},$$:()=>[],console,Date,fetch:async()=>({ok:true,json:()=>new Promise(resolve=>{finish=resolve;markStarted()})}),render:()=>rendered.push('old')};
   vm.createContext(context);vm.runInContext(loadSource,context);
   const pending = context.loadProfile('pete');
-  await Promise.resolve();
+  await started;
   context.render=()=>rendered.push('new');
   finish({});await pending;
   assert.deepEqual(rendered,['new']);
-  const stale=context.loadProfile('pete');await Promise.resolve();state.profile='sofia';finish({});await stale;
+  started=new Promise(resolve=>{markStarted=resolve});
+  const stale=context.loadProfile('pete');await started;state.profile='sofia';finish({});await stale;
   assert.deepEqual(rendered,['new']);
 });
 function setup(profile, privatePage = false) {
