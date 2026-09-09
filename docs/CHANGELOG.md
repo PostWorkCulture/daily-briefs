@@ -4,7 +4,7 @@
 - Removed the branding markup and styles. The desktop navigation now scrolls internally on short screens, with buttons retaining their usable height.
 - Recorded that unrequested branding, labels and interface additions require Pete’s explicit approval; this supersedes the former navigation branding requirement.
 - Preserved mobile navigation, Pete-only Inbox routing and all brief content.
-- Validation: pending release checks.
+- Validation: all four Inbox routing tests pass locally. Responsive UI workflow 34390485053 passed the existing content guards and mobile (390 px), desktop (1366 px) and widescreen (1920 px) browser checks, including navigation containment and removed branding. PR #49 merged; GitHub Pages publication follows.
 
 ## 9 September 2026: Pete-only private Inbox integration
 
