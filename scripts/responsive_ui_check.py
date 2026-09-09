@@ -173,6 +173,7 @@ def check_profile_routes(browser) -> None:
     for url, profile in cases:
         context = browser.new_context(viewport={"width": 390, "height": 844})
         page = context.new_page()
+        page.on('pageerror', lambda error: print(f'Browser script error: {error}'))
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=15000)
             for attempt in range(2):
@@ -185,6 +186,7 @@ def check_profile_routes(browser) -> None:
                     break
                 except PlaywrightTimeoutError:
                     if attempt:
+                        print('Profile readiness:', page.url, page.evaluate("({greeting:document.querySelector('#greeting')?.textContent,navProfile:document.querySelector('#primaryNav')?.dataset.profile,scripts:[...document.scripts].map(s=>s.src)})"))
                         raise
                     page.reload(wait_until="domcontentloaded", timeout=15000)
             route_state = page.evaluate(
