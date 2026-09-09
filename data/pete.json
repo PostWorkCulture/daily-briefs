@@ -1,36 +1,27 @@
 {
-  "updatedLabel": "Tuesday, 8 September 2026 · refreshed 7:14am",
+  "updatedLabel": "Wednesday, 9 September 2026 · refreshed 7:00am",
   "worldFact": {
-    "id": "kerala-kutiyattam-sanskrit-theatre-gestures",
+    "id": "gesar-epic-sung-living-art",
     "editorialPriority": "human-first",
-    "category": "Ancient theatre tradition",
-    "country": "India",
-    "place": "Kerala's Kutiyattam theatre",
+    "category": "Epic storytelling tradition",
+    "country": "China",
+    "place": "Tibetan and Mongolian communities",
     "source": "UNESCO Intangible Cultural Heritage",
-    "sourceUrl": "https://ich.unesco.org/en/RL/kutiyattam-sanskrit-theatre-00010",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A_Kutiyattam_scene_performed_at_Irinjalakuda_Thrissur_district_Kerala.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:A_Kutiyattam_scene_performed_at_Irinjalakuda_Thrissur_district_Kerala.jpg",
-    "photoCredit": "Tomislav Medak · CC BY-SA 2.0",
-    "fact": "Kutiyattam is one of India's oldest living theatrical traditions. Performers use an intricate language of eye movements, facial expressions and hand gestures to unfold Sanskrit drama for an audience.",
-    "locationContext": "Kerala · south-western India",
-    "date": "2026-09-08",
-    "sequence": 18
+    "sourceUrl": "https://ich.unesco.org/en/RL/gesar-epic-tradition-00204",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gesar_of_Ling_riding_a_deer._Distemper_painting._Wellcome_L0040371.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gesar_of_Ling_riding_a_deer._Distemper_painting._Wellcome_L0040371.jpg",
+    "photoCredit": "Wellcome Collection · CC BY 4.0",
+    "fact": "The enormous Epic of King Gesar survives not just as text but through singers and storytellers who perform its episodes. The tradition also feeds Tibetan opera, painting and other community arts.",
+    "locationContext": "Tibetan Plateau and Inner Mongolia · China",
+    "date": "2026-09-09",
+    "sequence": 19
   },
   "weather": {
-    "temp": "17°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "13°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-09-08",
-        "high": 19,
-        "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
-        "rainChance": 10,
-        "source": "Met Office"
-      },
       {
         "date": "2026-09-09",
         "high": 20,
@@ -46,21 +37,21 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-11",
-        "high": 22,
-        "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
         "rainChance": 50,
         "source": "Met Office"
       },
       {
-        "date": "2026-09-12",
+        "date": "2026-09-11",
         "high": 23,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 60,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-12",
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -71,8 +62,8 @@
         "date": "2026-09-13",
         "high": 23,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
@@ -82,13 +73,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-15",
+        "high": 22,
+        "low": null,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Check hourly Met Office forecast",
-      "detail": "Light Rain expected · rain chance around 10%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -96,37 +96,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Monday 7 September 2026",
+      "dateLabel": "Tuesday 8 September 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Cavendish",
-        "town": "West Suffolk",
-        "county": "Suffolk",
+        "location": "Pershore",
+        "town": "Pershore",
+        "county": "Worcestershire",
         "country": "England",
-        "displayLocation": "West Suffolk, Suffolk",
-        "value": "26.4°C",
+        "displayLocation": "Pershore, Worcestershire",
+        "value": "20.4°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=9341a1f1509d",
-          "page": "https://commons.wikimedia.org/wiki/File:Cavendish_railway_station_(1970)_02.JPG",
-          "credit": "Lamberhurst · CC BY-SA 4.0",
-          "alt": "Looking west at Cavendish railway station .",
+          "src": "assets/weather-extremes/hot.webp?v=bf5c87f318b0",
+          "page": "https://commons.wikimedia.org/wiki/File:Zebra_crossing,_High_Street,_Pershore_-_geograph.org.uk_-_4249419.jpg",
+          "credit": "Jaggery · CC BY-SA 2.0",
+          "alt": "Zebra crossing, High Street, Pershore",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Kielder Castle",
-        "town": "Kielder",
-        "county": "Northumberland",
+        "location": "Warcop Range",
+        "town": "Warcop",
+        "county": "Cumbria",
         "country": "England",
-        "displayLocation": "Kielder, Northumberland",
-        "value": "11.4°C",
+        "displayLocation": "Warcop, Cumbria",
+        "value": "8.9°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
-          "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
-          "credit": "Jim Walton · CC BY 3.0",
-          "alt": "Kielder Water in Kielder, Northumberland",
+          "src": "assets/weather-extremes/cold.webp?v=82f87521463b",
+          "page": "https://commons.wikimedia.org/wiki/File:Warcop_-_geograph.org.uk_-_30200.jpg",
+          "credit": "Carl Bendelow · CC BY-SA 2.0",
+          "alt": "Warcop village in Cumbria near the Warcop Training Area",
           "width": 1600,
           "height": 900
         }
@@ -163,20 +163,6 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Choir - PU 4pm (reception)",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-10T00:00:00+01:00",
-      "end": "2026-09-11T00:00:00+01:00",
-      "date": "2026-09-10",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "3run6j31214s7kppppc402okok",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "School Start",
       "summary": "",
       "url": "",
@@ -188,6 +174,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "6r1qu4tf6vlehpbq020a94br34",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-09-10T00:00:00+01:00",
+      "end": "2026-09-11T00:00:00+01:00",
+      "date": "2026-09-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
       "calendarColorSource": "google"
     },
     {
@@ -471,9 +471,9 @@
       "opponentScore": null,
       "result": "",
       "url": "https://www.skysports.com/football/napoli-vs-arsenal/7514562318752605232",
-      "source": "Sky Sports",
+      "source": "Sky Sports / Arsenal.com / BBC Sport",
       "tvChannel": "TBC",
-      "stadium": "TBC",
+      "stadium": "Stadio Diego Armando Maradona",
       "previousMeeting": {
         "score": "No previous meeting found",
         "date": "",
@@ -486,53 +486,54 @@
     "played": null,
     "news": [
       {
-        "title": "How to watch Napoli v Arsenal live on TV",
+        "title": "Mylo Bernard joins Arsenal",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T09:54:01+01:00",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T13:11:49+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQkc4c2ZnYzhmaWY3X011Nm1WQk1MTkt6OFV5SXZQblZ0alJoWHM0SlVRbWJaWU9sdmtmakVDSzJTXzFfUy1OVkJPOWx1RW94MF9XLXFhbmxEeEtqb3J4NzhCZFo1eEFRXy0wLVluTFA2MlEyWFlGWWFGYWxZSFdzb3k5b0NyLVNRM1E?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4ydzl4a3pfczFyaFNWcHRfVEFIcVVETEFRY0V0UGdSUkROX1d2eDB2Vm5Cb2MxdjBQbk1nVmhWZHhpbmJjMXVYZ3dyaDFCN0duWDJGRm5ESW9VQzhnc000SjdVSnBGOGh5dURFa3RwbG10b25pTUZV?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Match report: Arsenal 2-1 Chelsea | News | Official Site",
+        "title": "Air traffic chaos delays Arsenal flight to Naples for Champions League",
         "summary": "",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T18:00:00+01:00",
-        "source": "Chelsea Football Club",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUThFTkludm9kOUJQdVozenlpMXFCZS1YR0xHMEM0T2tKMHRaTzBPcXNxUDhLMEYzT296eTBBdXJKSldTQ3B3UzhCdUR0YUd2alpJcXBjYjZ6TzBBVnMyRktQbEktbW1tbVNVUlEzSGF5SVFzVFJFRmdzUlZjVDlFT2tTeGlYM1U?oc=5",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T02:30:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjNTM3N0RVFxUUR5NGV6eVE2NGxQdUpCV0lYelpCeGQ2TlpOckdMNWN2UTFzR3Y1cnNIVG5NWUhVMzFHVVl4WlRQWlVkdUItUUZjYldyazdnUjNsU0N0WE1yOWZCVHZtQ1RRWktFcF9fNFVwUVd4MlQ3QVNjeDR0SHZDVUFTUDBFTTN4Ym01MVZNblQ0NFNFODdNMUNlR3pMc0RuVzBkZ3Y3eUtKUVFodmFBYXdNZ19fOTlB?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal marks second year of Together Against Suicide",
+        "title": "Napoli vs Arsenal: UEFA Champions League stats & head-to-head",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T14:46:18+01:00",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T04:51:43+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXMFFJdjhqclFicVh3MmVDQ1NTVUFkR05YN25LOTBqT1V0SWtJUVFGYWJ4TDhNQ3ZacTJlLVBvc29IM3c3c3JUYXlHS0ZZMmlTMUU3UDdFVjdfcTZyRzNEeC1XTQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Seven players could miss Napoli vs Arsenal as statement released confirming surgery",
+        "summary": "",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T05:20:20+01:00",
+        "source": "Football London",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVlpPNExZY1N4THBPUDFQU1pCdENYamdEOVo2a2t3eU5Sd1pES0hkNFY4cy0wVFh3SjBhMFV0SWFjUXV1R1ljOVlwRUsxS2E0MnJTczFJMzFKYVJ3cTc2UlVUb00wZTZSdHN2cWFOeHBpbjlOUF9SVzJOZFBnUDJUX21jdUtwRW4tV0RQd1lGVlJYUdIBlwFBVV95cUxPYy1KSklFcGZDNW1NYnE2bTBsMnJmQWR1MVVoY1Zkd0N5TEQ5M2FzUllxWWN0dXRwUVFQandIQm9ZNlZuYUtOWVFROEpJYUNFQm5DN0Z6clRXT0hOZjZmZVRfQy1QdTNidGN3MEJ6QzZtYmJlRHhmenRFZk1IVUoxWHIwNkJ1TTdQMi01THlZMldhYmo1YzAw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Gunners recognised in Ballon d'Or nominations",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T10:38:52+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXMybVhicDVBYWF3VUVsRGtxMWhROVNsd2tHRHJpZ2wzRlgyWXFnbURpR2VHdnRHNUNobDFOQ3lVZWdPWVpXNXUzblZIMDdSRmhlTExOQTR4amw1NU5JMlBpZ3NpN2RDUE80S3N4N1JJS0U4ZlhKOUNBRENnRmV5MG9wa2ZpU1lvT3g0U2NBb0RiYnZ5SVVFM1pQSQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal get new Gabriel red card verdict after kick to Martinez's head",
-        "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T18:50:45+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM2kxUTVYVXFQWEVUZzdmdmF5RnNqVjN6dTdhd0c5TnpSM2JtNHVRNlFIZ19WRFRHUm8xVG8tZ2EySlVpempkSk1wRWlaTHpwcWk4cTN3dmFmaC1ab0NnMUdwN3lQMTNydHZHU09WQV9hT1g0c2FXTlRUbHp2N21PNUdnblFrTU9TYWpYNHZLQlduc21MTDV4ZWZzNlljVzhuZmFFYjEwMA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Fixture details confirmed for WSL matches",
-        "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T16:02:25+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVnY1N3hNV2Y5Y0wyLVJmUUdGT0wwdUh0YlQwZjJkNWs5LV9qanEtOVpSSGFaTWdpNG9iclNYYlNFeEo4YUEzQ1U1djA1dU5neUNYN2dfUG9Mb2RfeDdMaVJkVDExU01hdTBsOGtFYVJqV3g2UUVjeGE0b28tcTRYUThCdTZBQ2FlLU5j?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdkhpXzRNOHhXeWc5ejFCREhkeUZ5b3R0dWRhb3BoS0pmMVYycURWZHdjeGlERzgya29KQ0UtYXBtZFVzZ1ZnSHBVY0xvVWZuZG9GUmVTUWY0TTlONHNfeFp4MmNoZHdWVHNQNVpUYXBxQzRuSEhQaEVxcW1xd0wxckZoV2ZmTWN3TWFZUTZpbw?oc=5",
         "contentType": "article"
       }
     ],
     "sources": [
       "Sky Sports",
+      "BBC Sport",
       "PremierLeague.com",
       "Arsenal.com",
       "ESPN"
@@ -560,6 +561,16 @@
         "trust": "Trusted report"
       },
       {
+        "title": "Arsenal: Will Gunners regret missing out on transfer targets? | Transfer Talk Podcast",
+        "summary": "",
+        "meta": "Thu 3 Sep",
+        "publishedAt": "2026-09-03T18:47:37+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZk5hTHcyN2tiNVN0bk5Yc0E1WklTQlkwYnBlMnZvclVwRXZhRy1mU2dZRllpTWhRSWJGUFpWWmpRRm1lSXI3MU1GbURVaTdlcU9XM1E2cUJmODBTOXpWOXMwV05uWFZEaWZfZklMU1VVRGJ5UTJmeWJRNFMxandYSGZtUXo1dlBqXzdzZHFTQ0M5ano0R2FSbGxEdEFfZV9qd2tCbzFYcGNzdEhXM2V4c1BPS2NVNjA0SDZnaWlkRUJpMU9UR3ZTYw?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
         "title": "Gabriel Martinelli joins Al-Hilal",
         "summary": "",
         "meta": "Thu 3 Sep",
@@ -569,39 +580,29 @@
         "contentType": "transfer-update",
         "trust": "Official",
         "corroboratedBy": {
-          "title": "Gabriel Martinelli transfer news: Al Hilal and Arsenal make progress on deal for Brazilian winger",
+          "title": "Gabriel Martinelli transfer news: Forward joins Al Hilal in club-record sale for Arsenal in £60m deal",
           "source": "Sky Sports",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVWJzQ21uazg0SXlNVTJUSGUzZkhxdWFOYzNwRThWdG40dGVQNFVQdTlOWFlNRzU0S1lEZDQyb3J4OENxMUFBOG9PemIxOEdBU3AwRE5abHA3UDB3VERSUnViUDB6SlQ5X0h2d2tlMUNJcFlEUUJSNHhlWXhZeEtxV0VnR3RMSF80VDVhd0MzM2xOYW1mMGMxX3p3b2tvbDV2OUFic0ota3pqWEJGQTBxTDdLemhlNW5QYWpHLW1FZVRXWEdqUzdZcWJ0cGxMUUxzTHhLRFJnaDlLNEZjNFgwbC1Ccl81Zw?oc=5",
-          "publishedAt": "2026-08-25T08:00:00+01:00"
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMWVRMVVpd0x5ZzEycE8tWjZkajd0RjJrNUFDQW5WWkh4X3hZSHM4UGI4dGphVUZ0WHM2MXhLZlZvTUpoQjB4U1RMUjRaOUFvSGRya25HNXVMTHlncUxLaDJsX29FWXJjX0ZPMkJMZGl6RGxXU0FmMkttVXhydEFkMUs2dklNNTEwOUR0VkdoUTVHVUR6Y2NjSm9jM1F5MXJQXzlfMEhaMFEwbGMyOVJIV3FZSmVjYlVkdWRqU19JNzRXNVVtdlQ3SExha2hFdlJLMGlOeFQ4WXl5SXpqdlEzenN1blhvUFdOQng3YjZndw?oc=5",
+          "publishedAt": "2026-09-03T18:58:04+01:00"
         }
       },
       {
-        "title": "Arsenal agree £55.7m club-record Gabriel Martinelli sale to Al Hilal with deal also agreed in principle with Barcelona for Gabriel Jesus",
+        "title": "Gabriel Jesus: Arsenal forward completes Barcelona transfer in £8.6m deal on Deadline Day",
+        "summary": "",
+        "meta": "Tue 1 Sep",
+        "publishedAt": "2026-09-01T15:17:24+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZExQUklsRW90NTVEMFFtaWxpLUYzTVl2TkV6RTUtQUxnUlRlaVFMZU1zWXFMQnRlOVltTHM1TVlYMnlsdGtXZlhVdmJjcXpTbW9BNHB2T1gxdVNieXpfeUwyZnJYQTBJbTItbHlwSEw1Z3A5bnliRlViU1V5WlNZTDRkVTVva3Jyb25aYjVRRVBvLWNnenNiQzZWQlFVU2NoLVhET3Y0bHdkWTdpM2U2OUQzYU8xRC01NTNsczFHdEpGNHUxYXdhT1FybzFhNWtGdDkxV3hERkdQZmtq?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Arsenal agree £55.7m club-record Gabriel Martinelli sale to Al Hilal with deal also agreed in principle with Barcelona for Gabriel Jesus | Football News",
         "summary": "",
         "meta": "Sun 30 Aug",
         "publishedAt": "2026-08-30T08:00:00+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQaWROWkdudm5OQ1lDemRFX0tkWDI2bjFiSWhULWFkR3BaVWFiRkFZVFJRdHp4ekJ6ckZybkFFS21HVmhIRUdNZkV0RTNUYk9wNGdqQ0Rzc21TSnBUVktmUUJxeEVJbWE3ZC0xenRoalQxRG5pTnphOElIeHF1M0lVeDBUWFBlWDQ1SXRSVzkxOTFHS0MtR3M5eUlpY21IeGRNTEJNNDVrd2pRNmFXd1JVcmY0QXZkNXhzVWdmMG1ReldCRlR2bFE0Q3VyUzJjNE5kZ1ByV1VLY0xqcVdnT28zNHVxNGZxVGE1R25vZWxkOWZjX1FlbC1INnNRbDBUa0gwMmJHaTFxdTJvbFRKX1c0Q0IzY05HVzdGVWNQcQ?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Saturday Social: How 'star signing' Bruno Guimaraes improves Arsenal",
-        "summary": "",
-        "meta": "Sat 29 Aug",
-        "publishedAt": "2026-08-29T08:00:00+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVndwMkx3N1RTLTlQUTFTUXpWTkVCTnd1VjdoQlZQMDVTc05EWUNJSUxLQVJHUWE1Ml83UGdTX3g1Tk9DTDZRNVZsdG5HQVlwTktsQ0t3VXkwRkpXV2xJdkRUblpHdERTeFhRMmRiaEMwN1lxdWFRSk1uV19BeWlyX3prSmJCWDNIMVA3ZHlENVdaU1lCMVRJRTJ0cHc5eEQ5M3Y0clBNTjFnVEU1ZW1qWmlncFA1WVNYR3JseXp3?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Julian Alvarez transfer news: Atletico Madrid set deadline for striker to decide whether he stays or joins Arsenal",
-        "summary": "",
-        "meta": "Fri 28 Aug",
-        "publishedAt": "2026-08-28T08:00:00+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSC14M2Z6M2xIblc5ajRJMGM0NXBoRlUzN1QzZzFUaVJXOFNuWWI2Z0w4cHB3Z251ZmNrRy1pZHlHcFc4dG9zN0REUkNmUjg3OHhyaGNieWx0cXdhOHpmWFhqaUhnLUJ5cThDYkdCRUZGMkJIRDg2MlJ3MTRScHZzUnNzZE1fVllQV1B3c09TOEtfNFhTS2RBNGhZWHFQZ1B4VmRsS3pyamg0aE4wT2VqNmZsaUtvSVdLY3pmV2dLVExUelBvMi1CUGgtX3JFenZsYXpfQV92S1hpLXZzN2wxNnJxMkk0Vms0elF6YW5sVVV4S1JiX3RHZVUzRXc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       }
@@ -680,42 +681,42 @@
     ]
   },
   "lead": {
-    "title": "Supporting independent journalism in Ukraine",
-    "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-    "meta": "Mon 7 Sep",
-    "publishedAt": "2026-09-07T01:00:00+01:00",
+    "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+    "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+    "meta": "Tue 8 Sep",
+    "publishedAt": "2026-09-08T18:00:00+01:00",
     "source": "OpenAI",
-    "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Supporting independent journalism in Ukraine",
-      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-      "meta": "Mon 7 Sep",
-      "publishedAt": "2026-09-07T01:00:00+01:00",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "meta": "Tue 8 Sep",
+      "publishedAt": "2026-09-08T18:00:00+01:00",
       "source": "OpenAI",
-      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "How to watch Napoli v Arsenal live on TV",
+      "title": "Mylo Bernard joins Arsenal",
       "summary": "",
-      "meta": "Mon 7 Sep",
-      "publishedAt": "2026-09-07T09:54:01+01:00",
+      "meta": "Tue 8 Sep",
+      "publishedAt": "2026-09-08T13:11:49+01:00",
       "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQkc4c2ZnYzhmaWY3X011Nm1WQk1MTkt6OFV5SXZQblZ0alJoWHM0SlVRbWJaWU9sdmtmakVDSzJTXzFfUy1OVkJPOWx1RW94MF9XLXFhbmxEeEtqb3J4NzhCZFo1eEFRXy0wLVluTFA2MlEyWFlGWWFGYWxZSFdzb3k5b0NyLVNRM1E?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4ydzl4a3pfczFyaFNWcHRfVEFIcVVETEFRY0V0UGdSUkROX1d2eDB2Vm5Cb2MxdjBQbk1nVmhWZHhpbmJjMXVYZ3dyaDFCN0duWDJGRm5ESW9VQzhnc000SjdVSnBGOGh5dURFa3RwbG10b25pTUZV?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "Kingston and Surbiton MP asks for Reform UK to be investigated after allegedly breaking election law",
+      "title": "Kingston Council boosts support for youth jobs and careers",
       "summary": "",
-      "meta": "Mon 7 Sep",
-      "publishedAt": "2026-09-07T17:00:00+01:00",
-      "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNRDVLUWQzT0VJa010X1dSaExPZnNyb3JtbnVjRVJ6SDFJdXRBVUFQdDNZdjhLWS1kQ0lVNGNDQllTTkNhcldZczhnclhnakRYX1NmVndESTROcXRaMUVqeDNxa2xBYWczMW82X2NsOFN3NWtvZGEyNGV2aUVaQWVnak5fb0RvN2Z0RDlVbUg1LXpUS29PTG9KcDZKOE9RSHRqbUxaTW5aaklqSTY2R3BwVXpmUTgzc3hxLUhnZks0U1gyQXRiSHl2TmItRkM4WlZGSnd0TGtvVTNiTmRvT255YWdESQ?oc=5",
+      "meta": "Wed 9 Sep",
+      "publishedAt": "2026-09-09T05:00:00+01:00",
+      "source": "Surrey Comet",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcmdCVlk4aGFQYV9BZndlVUNudXY2MWo3MGJGemM5UE05QktsWnRQNkcyY0xmajlaaHpPWWlQWEVKeTJrQnBHQ3hWX0JLT0Q1VV90M1A0STZ2MXFtRVpzOW9kWDA1TFZoclhSem9iWC1nZFRabzVhWnpGUl9neXBxOW1Ia2lxQ3g3c0U2TzE4TUFxSkc5LURYWmJiLWlhOVBoOGRj?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -726,7 +727,7 @@
     {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Available since yesterday",
+      "meta": "BBC Two · Available since Mon 7 Sep",
       "source": "BBC Two",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
@@ -740,35 +741,13 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 434.8
-    },
-    {
-      "title": "True Crime Presents",
-      "summary": "A look at the murder of Peter McMahon in 2012, whose ex-partner Sharon Swinhoe and her accomplice Joseph Collins were sentenced to life for his financially motivated killing.",
-      "meta": "ITV1 · Available since Tue 1 Sep",
-      "source": "ITV1",
-      "url": "https://www.itv.com/",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/591/1477670.jpg",
-      "artworkAlt": "True Crime Presents programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-01",
-      "showId": 82050,
-      "episodeId": 3718033,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 408.9
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 427.0
     },
     {
       "title": "999: What Happened Next",
       "summary": "Police launch a complex investigation when a train passenger notices something disturbing on a fellow traveller's phone. And officers investigate a series of thefts of luxury 4x4s.",
-      "meta": "Channel 4 · Available since yesterday",
+      "meta": "Channel 4 · Available since Mon 7 Sep",
       "source": "Channel 4",
       "url": "https://www.channel4.com/programmes/999-what-happened-next",
       "badge": "Documentary",
@@ -784,13 +763,13 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 390.2
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 382.2
     },
     {
       "title": "The Bodies on the Bridge",
       "summary": "The discovery of suitcases containing human remains on Clifton Suspension Bridge, leading to one of the UK's most disturbing murder investigations.",
-      "meta": "Crime & Investigation · Available since yesterday",
+      "meta": "Crime & Investigation · Available since Mon 7 Sep",
       "source": "Crime & Investigation",
       "url": "https://www.crimeandinvestigation.co.uk/shows/bodies-on-the-bridge",
       "badge": "True crime",
@@ -804,88 +783,111 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 373.9
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 367.9
     },
     {
-      "title": "Vigil",
-      "summary": "Amy arrives to help Kirsten when she is faced with the wrath of the Russians. Determined to clear Kirsten's name, Amy and Kirsten dig into the complex motivations within the hub whilst…",
-      "meta": "BBC iPlayer · Available since Sun 6 Sep",
-      "source": "BBC iPlayer",
-      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599356.jpg",
-      "artworkAlt": "Vigil programme artwork",
+      "title": "Love Cheats",
+      "summary": "When 24-year-old Michelle met charismatic head chef Stuart, she thought she'd found the perfect family man. The couple began planning a lavish wedding and a trendy new cocktail bar. But…",
+      "meta": "Channel 4 · Available since Mon 7 Sep",
+      "source": "Channel 4",
+      "url": "https://www.channel4.com/programmes/love-cheats",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349372.jpg",
+      "artworkAlt": "Love Cheats programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-06",
-      "showId": 45879,
-      "episodeId": 3701701,
+      "airdate": "2026-09-07",
+      "showId": 80197,
+      "episodeId": 3717213,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime",
+        "Romance"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 356.0
+    },
+    {
+      "title": "Neagley",
+      "summary": "Frances Neagley is a private investigator in Chicago and former military protege of Jack Reacher in the Army's 110th Special Investigations Unit. When she learns that a beloved friend from…",
+      "meta": "Prime Video · New wed 16 sep",
+      "source": "Prime Video",
+      "url": "https://www.primevideo.com",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1591760.jpg",
+      "artworkAlt": "Neagley programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-16",
+      "showId": 82707,
+      "episodeId": 3658349,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Thriller",
-        "Mystery"
+        "Action",
+        "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 231.0
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 194.9
     }
   ],
   "sections": {
     "AI": [
       {
-        "title": "Supporting independent journalism in Ukraine",
-        "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T01:00:00+01:00",
+        "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+        "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T18:00:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+        "url": "https://openai.com/index/codex-quantum-computing-experiments",
         "contentType": "article"
       },
       {
-        "title": "An Alien Mind",
-        "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T10:00:00+01:00",
+        "title": "The Work Now Within Reach",
+        "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T14:00:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/an-alien-mind",
+        "url": "https://openai.com/index/the-work-now-within-reach",
         "contentType": "article"
       },
       {
-        "title": "Research acceleration: The view inside OpenAI",
-        "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T09:00:00+01:00",
+        "title": "Introducing ChatGPT Images 2.5",
+        "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T12:30:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+        "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
         "contentType": "article"
       },
       {
-        "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-        "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T14:15:00+01:00",
+        "title": "On the Navier–Stokes Millennium Prize Problem",
+        "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T11:00:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+        "url": "https://openai.com/index/navier-stokes-solution",
         "contentType": "article"
       },
       {
-        "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-        "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T13:00:00+01:00",
+        "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+        "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T01:00:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+        "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
         "contentType": "article"
       },
       {
-        "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-        "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
-        "meta": "Thu 3 Sep",
-        "publishedAt": "2026-09-03T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+        "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+        "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T15:00:15+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
         "contentType": "article"
       },
       {
@@ -914,74 +916,127 @@
         "source": "Google DeepMind",
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
         "contentType": "article"
-      },
-      {
-        "title": "Introducing agentic video understanding with Gemini",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T18:08:51+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-        "contentType": "article"
       }
     ],
     "Arsenal news": [
       {
-        "title": "How to watch Napoli v Arsenal live on TV",
+        "title": "Mylo Bernard joins Arsenal",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T09:54:01+01:00",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T13:11:49+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQkc4c2ZnYzhmaWY3X011Nm1WQk1MTkt6OFV5SXZQblZ0alJoWHM0SlVRbWJaWU9sdmtmakVDSzJTXzFfUy1OVkJPOWx1RW94MF9XLXFhbmxEeEtqb3J4NzhCZFo1eEFRXy0wLVluTFA2MlEyWFlGWWFGYWxZSFdzb3k5b0NyLVNRM1E?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4ydzl4a3pfczFyaFNWcHRfVEFIcVVETEFRY0V0UGdSUkROX1d2eDB2Vm5Cb2MxdjBQbk1nVmhWZHhpbmJjMXVYZ3dyaDFCN0duWDJGRm5ESW9VQzhnc000SjdVSnBGOGh5dURFa3RwbG10b25pTUZV?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Match report: Arsenal 2-1 Chelsea | News | Official Site",
+        "title": "Air traffic chaos delays Arsenal flight to Naples for Champions League",
         "summary": "",
-        "meta": "Sun 6 Sep",
-        "publishedAt": "2026-09-06T18:00:00+01:00",
-        "source": "Chelsea Football Club",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUThFTkludm9kOUJQdVozenlpMXFCZS1YR0xHMEM0T2tKMHRaTzBPcXNxUDhLMEYzT296eTBBdXJKSldTQ3B3UzhCdUR0YUd2alpJcXBjYjZ6TzBBVnMyRktQbEktbW1tbVNVUlEzSGF5SVFzVFJFRmdzUlZjVDlFT2tTeGlYM1U?oc=5",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T02:30:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjNTM3N0RVFxUUR5NGV6eVE2NGxQdUpCV0lYelpCeGQ2TlpOckdMNWN2UTFzR3Y1cnNIVG5NWUhVMzFHVVl4WlRQWlVkdUItUUZjYldyazdnUjNsU0N0WE1yOWZCVHZtQ1RRWktFcF9fNFVwUVd4MlQ3QVNjeDR0SHZDVUFTUDBFTTN4Ym01MVZNblQ0NFNFODdNMUNlR3pMc0RuVzBkZ3Y3eUtKUVFodmFBYXdNZ19fOTlB?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal marks second year of Together Against Suicide",
+        "title": "Napoli vs Arsenal: UEFA Champions League stats & head-to-head",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T14:46:18+01:00",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T04:51:43+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXMFFJdjhqclFicVh3MmVDQ1NTVUFkR05YN25LOTBqT1V0SWtJUVFGYWJ4TDhNQ3ZacTJlLVBvc29IM3c3c3JUYXlHS0ZZMmlTMUU3UDdFVjdfcTZyRzNEeC1XTQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Seven players could miss Napoli vs Arsenal as statement released confirming surgery",
+        "summary": "",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T05:20:20+01:00",
+        "source": "Football London",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVlpPNExZY1N4THBPUDFQU1pCdENYamdEOVo2a2t3eU5Sd1pES0hkNFY4cy0wVFh3SjBhMFV0SWFjUXV1R1ljOVlwRUsxS2E0MnJTczFJMzFKYVJ3cTc2UlVUb00wZTZSdHN2cWFOeHBpbjlOUF9SVzJOZFBnUDJUX21jdUtwRW4tV0RQd1lGVlJYUdIBlwFBVV95cUxPYy1KSklFcGZDNW1NYnE2bTBsMnJmQWR1MVVoY1Zkd0N5TEQ5M2FzUllxWWN0dXRwUVFQandIQm9ZNlZuYUtOWVFROEpJYUNFQm5DN0Z6clRXT0hOZjZmZVRfQy1QdTNidGN3MEJ6QzZtYmJlRHhmenRFZk1IVUoxWHIwNkJ1TTdQMi01THlZMldhYmo1YzAw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Gunners recognised in Ballon d'Or nominations",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T10:38:52+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXMybVhicDVBYWF3VUVsRGtxMWhROVNsd2tHRHJpZ2wzRlgyWXFnbURpR2VHdnRHNUNobDFOQ3lVZWdPWVpXNXUzblZIMDdSRmhlTExOQTR4amw1NU5JMlBpZ3NpN2RDUE80S3N4N1JJS0U4ZlhKOUNBRENnRmV5MG9wa2ZpU1lvT3g0U2NBb0RiYnZ5SVVFM1pQSQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdkhpXzRNOHhXeWc5ejFCREhkeUZ5b3R0dWRhb3BoS0pmMVYycURWZHdjeGlERzgya29KQ0UtYXBtZFVzZ1ZnSHBVY0xvVWZuZG9GUmVTUWY0TTlONHNfeFp4MmNoZHdWVHNQNVpUYXBxQzRuSEhQaEVxcW1xd0wxckZoV2ZmTWN3TWFZUTZpbw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal get new Gabriel red card verdict after kick to Martinez's head",
+        "title": "Arsenal hit by travel disruption with Champions League press conference cancelled",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T18:50:45+01:00",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T18:00:54+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM2kxUTVYVXFQWEVUZzdmdmF5RnNqVjN6dTdhd0c5TnpSM2JtNHVRNlFIZ19WRFRHUm8xVG8tZ2EySlVpempkSk1wRWlaTHpwcWk4cTN3dmFmaC1ab0NnMUdwN3lQMTNydHZHU09WQV9hT1g0c2FXTlRUbHp2N21PNUdnblFrTU9TYWpYNHZLQlduc21MTDV4ZWZzNlljVzhuZmFFYjEwMA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdHhucUFtRjdCMEh2ZnNkM3NlR3AySmNXUFF3YjYyUDNVOEtDdE4tcVFUOHRLSDVMQTMyUE5DU1p3UzRudUZHNUFCMnVwWTdwQlZVLVN2NklxekpUVnF1d080NXRRMzFGRUZwZlF2X182WUVSS0U4bmN3WUlTa0d4aGdmWGFONk16bWlLSUlINkpGUllQYkwwa3ZpTGhESzJJQlRnUVdGOGM1b0otZEpfeURYZVk4aWk0eGc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Fixture details confirmed for WSL matches",
+        "title": "Arteta on Champions League return and Napoli trip",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T16:02:25+01:00",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T21:45:12+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVnY1N3hNV2Y5Y0wyLVJmUUdGT0wwdUh0YlQwZjJkNWs5LV9qanEtOVpSSGFaTWdpNG9iclNYYlNFeEo4YUEzQ1U1djA1dU5neUNYN2dfUG9Mb2RfeDdMaVJkVDExU01hdTBsOGtFYVJqV3g2UUVjeGE0b28tcTRYUThCdTZBQ2FlLU5j?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRjFTWGRSS25HSkFsNkExTkxQdjRycGphUWpJbmdtaEc4OWstWWlrdE4wVzg2ZjZVNk1JUmxMSlNhbzgzaXVtQWxFRk5BcEpnLTNrQXZhTU9ZMVBtLUZTU2UwNlljOFpVMmliUEpBOHpGVkpHaUFqamxzWko1ZDBUWTQ2b25rM2FiTmlid2g5SEQwRVpFOUE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal injury update: Timber, Mosquera and Guimaraes latest return dates",
+        "title": "Arsenal XI vs Napoli: Confirmed team news and predicted lineup",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T12:02:45+01:00",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T14:44:06+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUVFwQ3kwWnplWE1Wc2JrRnUwMWJLUGVpMjlvQVZONDBGODR2Um52TVJERzZIWGtHN2NTLXlSNi13QTlvTW9HYXpiODl4bWZpbDdLT2VmbG1CMmhsbkIxSFg1Sl9sRFRnRUxwV2EycXNBY0xfaUd2NmpXNU40cVpIQ1VUTURicXRHSW5pYzZJUXk1SW0tS3U0NThwZUJCeFRGdExtQ3JaQ1M5SEdaSmo0TGpIWXo2R3QwWkswel9fVGx4U3NUOEhwNmxMZw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNeUZGaUJKSFE3LXFWbmRDdl9LNDJnTEtjM2JtUm0xeE9SbHR4UE5ocFN2UXN3T0xqV2ZuZVp4eE92Vk9uVWdDZ1ZvSUhpTGZLVGI0TDJuSGFMMVgyYXlVdDZGcHNIMGZlUWQ5YjhoYUUxZjhrTmoxcWFkM3lIM1djS1d3ckFyWjlxYnVGcjV6SmVqZlJVNnJSOGNrdnN2SFBTS3BKZGtxY2Yyd3FGRGU5YTlHOEowaGtYeHRidFh0Nzd1X194VzlqdWNNMkgxR1JPNXF6bV9YZy0zU1l4X3NXTktNeUs4cGs?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Kingston Council boosts support for youth jobs and careers",
+        "summary": "",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T05:00:00+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcmdCVlk4aGFQYV9BZndlVUNudXY2MWo3MGJGemM5UE05QktsWnRQNkcyY0xmajlaaHpPWWlQWEVKeTJrQnBHQ3hWX0JLT0Q1VV90M1A0STZ2MXFtRVpzOW9kWDA1TFZoclhSem9iWC1nZFRabzVhWnpGUl9neXBxOW1Ia2lxQ3g3c0U2TzE4TUFxSkc5LURYWmJiLWlhOVBoOGRj?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington RNLI to feature in latest series of BBC’s ‘Saving Lives at Sea’",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T17:48:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOVo2XzAyWTRXNkg0d09sa0NSbWE2RDNkeWhSYWhWb0hxMUo4S1pGcmFnLUtrWWtlcVFvT2lndEo0OU43Ni1GdlZCSGxkNnhxSFZVMllmWXZQNHp1QUpLVDVkZzctSHBMZDlEb1g0TklMaDNzUmdLWjA3WEUzRGdFOURDWFlJaWQ1bS1MOTFkYzdHY2tRNHJzRzE5X2x6UnFtaFE1RlpQeWZQcEJBaHNNMnVMSHpZUzk0UGV0OGpjTQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston non-profit to host fundraiser for Nepal flood victims",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T16:30:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMThXVkdRaTR0UUdBN0ltSlgxTU5ya3lkTnMzeFRLVUp0LXpkY0xjT2h4NkswcUI4Wm9SMFBxQjJoWF9hcElacEJEcC1JU1dCcU1hY2FYUjduamlXU3NrN09jMVNkVFVidmZaNnctR0ZSc3YtYnAzb1JiMFEyMVBWSmRxUXQ4cV9hUnNqYV9zUjQ2SFhYN3RYTDNuaTcwRkllZ2pUM0tKWkg5Z09lMzc3dQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Jobs in Teddington | Sales",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T15:03:43+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBWOU1pbkhaZzdwbkFwR3lEZTJ0QkNPNm9VMEgzeEtTM0JkT3FBMVVxektyTm8ySy1odDVjQlU5QVdBVFJ1WjhObW1iaU9aOTQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "Kingston and Surbiton MP asks for Reform UK to be investigated after allegedly breaking election law",
         "summary": "",
@@ -1113,163 +1168,136 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
-      },
-      {
-        "title": "Student stalker given more prison time at Kingston Crown Court for benefit fraud",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T12:30:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcEh2MWhyQzNWZWcySXdyblZIeFVsOUxEZkhxUTQtTlZNeUlNY21MZC0tdEVrWGVIMi1WSHNPcTlpWml2RHlPNy1fMWpicXNLZjYxd2pvbVBYa0RNNFdjWjE5Y25ESmd1d0RDRWIzWFo5b0E0SjlIT0EzbG03cjY0TjQ0blZ4azJET19YMkNzT3Uxck8yQzB2ZFpEYS1mMzR5U1hnVk11bm03OG53YnpONmlIdUxjMEVOQ0JuQ3N1QUlqSmE0bEhBMw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Thames Water challenged over pollution risks in Teddington river project",
-        "summary": "",
-        "meta": "Wed 2 Sep",
-        "publishedAt": "2026-09-02T08:34:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWTVyLUZJbjJLdkJWUHhJdkFtbThLb2x6UTBuVDdmc0UycFhKcVZvUTU4STAwVFlsSFAyaWZoQmt1dTdVeUt6NVVaTV9DdUozN2dDellrSVV0c01jWXpqZ2FqRzNDemo2b294TTNNZXJZVjJBWmx6UVBucHdvenlhMUtYN3RBeGl2R1J1WWttT25kcnZiV0RrbC1TbnJKRklqZzBnMGVmLXpObkJYTHpBeHBfWTBSakxxSklFOU1OZmpjQ3J2c0o4XzQxZHZ4dTUxVGFDbldXOEVhSngzdGpzWFFKLVc?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Beloved Teddington pub manager moves on after nearly two years",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T16:58:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTlBjeXFnVlRIUjNBb0piY0hLSmwyRzhKVTREa1ZwZDU2UEFzekc4LUhJY2NVb2QxTE9mSzBSQXpoYk5hX3l6RHRfdTNtLTV6Qi1qdmlQQnBVeTI5a3plLWVOWWgyYTF0Q3FLSVA5OHBqSjRwX2hQTWhCYWhBNzE3ZWtWRmxrMGwxWElMdjRmZnhwUlhBTGN0RzMxSm82WG5PMHRVSUlSaFk1S3EtUTg1RkRqVQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
-        "summary": "",
-        "meta": "Tue 1 Sep",
-        "publishedAt": "2026-09-01T11:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVENzSlNabldobjhhYkJ2blJRVlhIcFlxcUFaSHh3Nk1NSjc2YzBUWDc4YzhuRl9nUjlMbm8wNktUX0JqU0JNdGVVUWlMN3hzOW5TdGFMeHRubm1sLW5VMHQ2S2p6Y2Jia2hvX0NNMFFDM1pxaXV6YzZGTjYycTh2a2VzUFRELVVPWVNDRHNSZlNjMXRNYTBiRmJQYWpNc3B6X1VoMXpwbHRQTGhLSmdraFVPMVVyLVRuS2VIcmViVnlrSFBYcDNrS3RXUzBOek0?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
       }
     ],
     "UK news": [
       {
-        "title": "Fire service seeks volunteers to support community safety activities",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T06:00:00+01:00",
-        "source": "southwalesguardian.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS0xUbDJENmhPTXNhU2lXZGRiR3otQWRhRHBpN3lDRVBUSE5QaE1TbFN6UXJ6RjhwcVM2NUhXNDB3Ulp5bXZydG1IcDRDVzlsWnEwNTdha21Ja1Qxb0tmQVZFcENycWg2alliaWltRVYzTVd0VlZ6clV5RE5wTm5NcmNOTENhOTAwcjBvckF3NjNnbVdzUEtEWFFSLV9oQWNuY3A0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "New mums 'left to get on with it' as C-section numbers hit record high",
-        "summary": "Mothers have described being left to recover from caesarean sections with \"no support\".",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T05:57:46+01:00",
+        "title": "Alan Carr holds back tears on special night at National Television Awards",
+        "summary": "The comedian and Celebrity Traitors win big - see a full list of winners and nominees from the 26th edition of the awards.",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T02:28:19+01:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/clylwxgknyxo?at_medium=RSS&at_campaign=rss",
+        "url": "https://www.bbc.co.uk/news/articles/clyl6866j1jo?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
-        "title": "Ms Great Britain Ayrshire Celebrates The Spectacular Low Green Ayr Show",
+        "title": "Star Wars Fan Fun Day organisers put forward for Pride of Britain Award",
         "summary": "",
         "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T00:50:20+01:00",
-        "source": "ayrshiredailynews.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZVgzRkFPbnlWMG5RNDhLZGRZWUdaSk9GNDlUTVh6QWhvZFlCUk1JWGF2ZEh3ckViTUNhTjhyVEFqMW5WZEdZOXFHTjc0NEhNS2NsMTRVOEJwY1VadUNqczNKMVBrOTVRUWpFZU1ud2pfNU01TjI4NHZ0aEZPaUVnLWhibjBGdkhPRnRNLTVKOEp2Sk1lUS1lZ3kxaFFoU1lhM0Z0X0tBVm82MFZQcEVsag?oc=5",
+        "publishedAt": "2026-09-08T22:18:59+01:00",
+        "source": "fanthatracks.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ2tnNnB2ZXRoNGwtUkVCUU1SRklHeW1hczdFLVBhS0tFbUUyeDE2SHcza1hTYk00LTJ3TlRDcmg2cUtTNGJRY1B4RjJkdFJFeTFHYlV4bHlFMGowMmZvd0NyOVhGenROLTUyMlJJSUdpVFVxMmpWWDdsY3RzYW01VGJzRzNMWnluNEZWTkJFRWJNYXZyaXphbDBCNkdNb3JSQnRvSEs1TFFqUGJEUlRDRWxNaXJsdHlQSjRiOTZMcng4Mzg?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Italian town of Barga celebrates its long links with Scotland",
+        "title": "Alan Carr gets Special Recognition Award at National Television Awards",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T23:28:35+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1yN1UybFMyYmVvUDYyQkZtMmRiRXJxT1doVGRETzhTak45Z09EMnRDRjF6Z1FGWlhqdGcxZHFjaXZzbElXckNtbmVGQkRUYklVYWlmd3hEWTZCWTVj?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T22:00:00+01:00",
+        "source": "comedy.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWjVoRWd6YUl2NHpweHc3R3QyM2JYMVEyMng1T2VHelVETVk4eTRkblpGVUZCQVhWWldaVXd6MWdIYWFCaDdYb0ttNTlCVGhqbHZoTUJiMEUxQUtIRWdCWkZibFZlaDYtS0ZBQ1BNQnJkSmdsMENHM1AwQS03Y2dyNEJ2VkQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Riders rescued from stuck roller coaster in England",
+        "title": "Greyhound rescue charity calls for earliest possible end to racing in Wales",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T19:11:35+01:00",
-        "source": "Central Oregon Daily",
-        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPczNBcklvNWE5dVpGQ3RnTFExT0FkQjVSVkhCc1Q2cXdlWXBDSzh5Sk15NVJkTlIyTG9ZNHJxYmNLMUVEN2NqNFRRMU9xY3hwX1AtTWVZZ0dvaUtXS1V0X3Y1VGNidEVwdGROc3NxNE95MkQ4QmtIUk92UC02cWtBekFMQXBPSlkwY21mX2ZRTU00eVd3OHVHWUI1anlQdEdqMnNySUJlcjFwX2QtMTZTTEd3RHVQYXZvRnNVQlluMElfb3Z0c0YzSldTbDdVZlpWRVMtTkZnUlVEdVExTF9qVk1RNnc5WWM?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T20:49:36+01:00",
+        "source": "Nation.Cymru",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSndGZ0RIMVFMVzhRMkRNbWo2MlI0MmhvX1BsZUZSTkVpaWc3VFlRMkxyODloenlNM0tCM0VqVUZjY2l4MmpESGFxODM0ZFNmRDJiYldXTjIySFN5RXNJTkdxeW13MTJlSnNadWloaTV3YlVFTkJfNWg5NFlGNXVvZ3NFdTFBRXlfb3lUX1JEenhVWWc2YURsR1pIaXFuVjZTRmVyMw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "British American Tobacco set to award global media account",
+        "title": "Reform MS celebrates her party being ‘in government’ in Wales and Scotland",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T18:33:35+01:00",
-        "source": "Campaign UK",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORTBDNlIwenNGNVBjTF9aT2NpWDdCRHA0Wm12dmFhbzBuRy1DWGVfcHdTcE9EdWc3MTNESnNpeE9sb2tfMXp2MGNYMFZmTk1wRlJuZkdKLWxmdDFvMUF5NVZWWTVwbE9LVXBhOU9PZFNVcnNKRlZkd1FEVnhoc2pIYTVfSUNMSm1mV0otc240M1RNUlhyUnpVMkduRHd2cjhxMEdpc0FKX0hnTVZQN19rN3owOGZUVFYtOVNuWTJoakxDZw?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T20:29:36+01:00",
+        "source": "Nation.Cymru",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUFUzaWpicVhXdHJtVUxIS2ozNGgwTW5mX2YtZjJ5WWd0Y1FuVzBPT0IwTXdRaC00QUw2bk1tOGE3Y3BZaVlhODBoemtPZVQ4Y0J6TzlHM1ppanJGMWs1STJQVXQtS0pQOWRKMGdJc0dBZ0ZpUlN5M2gyUUU2MlJfMHFVb1dpNEhsYmtwdzAtclkyY3I0OTVCbG1od0s4TkNW?oc=5",
         "contentType": "article"
       },
       {
-        "title": "German designer Liesenfeld wins latest Redress Design Award",
+        "title": "Wales Site Managers Win Top Award for High Quality House Building",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T16:27:35+01:00",
-        "source": "FashionNetwork France",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMi1NRFQtM2tCYkotNFJrTGUtVkJTS3pzVzRSaFFIQTBNbU5WbEs4V254VGJNUTdKNUVmWFRGazNWY2tZR09HMFdLdW5OTk85bTFMNHdqSF9TTzJlVzNLbkJ3VFF6eWtqblo1ZmE5bjl5c1RxWC02aFNuNy1MdE1FMXNCQW11a1VJSHJkZWJNUDFHMUlocGowOEZ3X3pwZVBZd2NhYW55S1JrV28?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T19:32:34+01:00",
+        "source": "businessnewswales.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdGk0TklDLURBZHNkcXFOZWhEMTFNck1uNG9ESS0yYjNvZkpqTlNUdmJndHdiMXBPY0lLWnRUcEZHdGc5OUE4T2piUEYtWmlYQ2ljYVg3TWRNLUQ3TnY1SFF5NHJBV0F3UWtUVG52ZXpSWlU4enc0LWoyY19lZUxLWE5Kb0ZFejJNQ2hiQ0tPeTRSMEJtTlY0TC13QUo?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Four-star Llandudno historic hotel shortlisted for prestigious wedding award",
+        "title": "Scotland and Lyon star shortlisted again for prestigious Ballon d'Or award",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T16:06:44+01:00",
-        "source": "North Wales Pioneer",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM2dWTXNodEdtempFVHZWMFBpeXZlNi1ma0pxbGdBMFc0RXVFYkRKM0lOVkcyb19FcEM0cDIxQURyXzRyMVc1OG1ycENiU1B1U0QwbnVFdU13NlZFTVE4RGVCMk5LX01uUUFFd0Zpa1VDWG83dFpqOVlRc3NPeUxUVzlHMV9QRkI4SXREdlNtc3VPLUhXRnQyc0hpTDZ2a3Z4N0MtXzd4MlF3aWc?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T19:31:34+01:00",
+        "source": "Yahoo Sports UK",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeURpd25LZ2pIRjZGMXk3YjVTTDl0a0hDSm5idW5wRl96Zmw4YXB6aTR2bDR5OEJzVm1WQy1oVk9Ec3JaODJDc3Z4S2lTT2NIMHVFRGlqaU5ZdHhjWFlwZHVMSzZYanpVUHZVMnNJSUx0eVMwa3JTV2hySjJabnhCOHhyTHczaUxadl85MQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "“Hard work starts now”: Charity unveiled plans for volunteer resilience force across Scotland",
+        "title": "Selkirk tartan maker Lochcarron shortlisted for Manufacturer of the Year award",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T15:03:13+01:00",
-        "source": "Third Force News",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVWJOTmN3d3MyTlM3TWF1b0dmQXY5VDlkZkl5Vks2V2NtUDl5SzlEVDdmWVJXVGpIR1RxV04zY2ZiWTZFazFBSGxGcE84NmhSREtkcERHVlVVTld4SnVjVHRGTDRXNXJOc2RfRUZPYk1ydVVtVVdWRDk2VmVwcTlWbFljTU9XSU1vRmp2a0RKTDhrbXB2eS1sMVhLNlNTQ1FpQVJYZl9DdndTdXNqdjhCUHBn?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T19:03:28+01:00",
+        "source": "The Herald",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZWxQVlFiTkc3OEZRbi1yakU4R1ZGdU56VS12WnN3ZzlYaEFPLW91N2Nka21Yd01Mb3M0N1lscFZsQi1nMVFMLXJpX0E2SDZFUkRHT0NubVU0dGVrLU1OMEVxd1AtSkFJUTcyU0NDWmpkZnRNNEQwYnY2dGlxa2s2cUNBa2FycHh1dEdYTzc4N0k4eWl6YmV5Ukdn?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Scottish department store celebrates 170th year in business",
+        "title": "Wales Air Ambulance celebrates Air Ambulance Week 2026",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T14:21:07+01:00",
-        "source": "heraldscotland.com",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa2lCNnNtYUZ6ZnUtckdnWTdoa3pNdFBNXzN4dXRZTjJpZlZROFpmRXF3V1hMMml1OE0tOXVPWU9aZmFDZkphdFpVeTdFaElzTGJ5bExZQ0l2a0E3c08wdnkySDJla1pEVG1nZWNIM0V3Y3dvem54eTRiTFhEcHRWa0R4NWw4Yzh6S0VQUEhIQ2xMRFFjTjFZNlo1RGI4dU5kU2VjZQ?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T18:15:39+01:00",
+        "source": "aberdareonline.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTUpZWUVPRGVQMWpBdnVsd0dYV1gybUFiY1BNMzFmYURoWHZuUFFhYkx1TGlRQm9GQjhicWdWaXNRMnJqbk9MbG1YaEgtbVpjdUZ0S0dZcmhsRV96SVZLRWxyNktCdTRTM2ROOTc2bGd4Vk5KaGpKMnlrWVd5eGZXUEd4cVFjMUR0VHdLSElWMDdIYXNWY3djTnRObWJZY3Q0?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Wales site managers win top award for high quality house building",
+        "title": "'An incredible achievement': Top UK and European food company celebrates 100 years in Northern Ireland",
         "summary": "",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T13:44:16+01:00",
-        "source": "newsfromwales.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVDJpT1NEMDdCR25zNFRrODJPNUdpQ0prYW40MlRxZktaV3JoeWxweWM4clBqSG9ZYWVsZ2drTDFtZmhZZDVhNXI2Qi1EZkIwOVhadEQzQlJYa0pjaEN6YU1UVGdIZlVTSzJvTmZNaXhHNDdUNk1CcmZnd0Q1cHNEbTB2SDhlVlkteEpNeVdsam04Tk05TzB5R0N3?oc=5",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T17:23:00+01:00",
+        "source": "Belfast News Letter",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUFhsQ3B5dEY1T0l6YkwxVDRyNk1McTdXcDFITUJFY0FBM2UzTkZJTjludmQ0cDY1T2dYb0wzdnBlTU03S2MtWGItbW5TNzV5WTBlRHJHZDY1cWxuTWNOTWpkVEN3OElsM2t1Sno2MENoOFd2d2lfMVBERnhnZjdESkpPN29VbGZHZ0kwTHJuOVo1dTVSb0kyYjRqTHZrTGQtZ05LVjhZSngyTmRiQTdQaW5IYTVCQ05XRTE2QUVWSHRrLWN2YnM4dmZuSUp5MkhKNHJHeTRiMDJzWXdDVmc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Pioneering fossil hunter recognised with blue plaque",
-        "summary": "Dorothea Bate discovered the dwarf elephant and the myotragus, an extinct goat-like antelope.",
-        "meta": "Mon 7 Sep",
-        "publishedAt": "2026-09-07T07:01:33+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cx2zx1v8ye3o?at_medium=RSS&at_campaign=rss",
+        "title": "Winner of Scotland's Best Indian Restaurant award revealed",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T17:13:52+01:00",
+        "source": "The Herald",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdmtXZlNPWUhHTnFfRERsQnB5S0lPMUI2ZUZuUERmc3FNUGxFWC0xeGtaWi1wT256V0xxWHJfeDlQc0laSmRvcDl5NmtxVERvNktsSzFGTHktb1BMbWQya1FwanpHZEJrenJNLVZOZTZUeEsxMUdzcEE4WWMyZFhLcHdkbVFhRVJIUFlZQWFDdUUyVndXSU1nT0h1QQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "VCUarts alum wins prestigious Fulbright Award to continue ‘World Wide Water’ project in Scotland",
+        "summary": "",
+        "meta": "Tue 8 Sep",
+        "publishedAt": "2026-09-08T17:08:56+01:00",
+        "source": "VCU News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxON2JQcWxQTHNJMDBENU9UcEtRSnNRUk9IeEJhWmgwZEplTklENVF2NC13bDNpbS1rOXVIbk9hR0FlOHlfanZmZG5BQlV0MUlUeDNwdUt6NWJRTjQ0bXRzdUNXTXgtM3ZzS3hVZ3MzYWprOHNZaTNOOTVWaTk2Z2F3RXZ3ZXZDeHZvZXlIT1Ytbk95MUZDSXNMTFMwRlZubno4VFNxdWtDV0JQdXpvcWYwckVTWUp2YVdTUGxXZU1OZno?oc=5",
         "contentType": "article"
       }
     ],
     "Career": [
+      {
+        "title": "Data and AI Adoption Lead",
+        "company": "Ofgem",
+        "description": "Build data and AI literacy across Ofgem through capability assessments, training, learning frameworks and practitioner communities, with attention to ethical use and privacy.",
+        "salary": "London salary £52,397–£62,699; Glasgow/Cardiff £49,452–£58,519.",
+        "postedDate": "8 September 2026 · LinkedIn listing date",
+        "source": "LinkedIn",
+        "location": "London, Cardiff or Glasgow; Currently one office day per week; policy is kept under review.; Journey time from KT8 has not been verified.",
+        "url": "https://uk.linkedin.com/jobs/view/data-and-ai-adoption-lead-at-ofgem-4458060558",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "metadataSourceUrl": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=2010317",
+        "metadataVerifiedAt": "2026-09-05",
+        "postedAt": "2026-09-08"
+      },
       {
         "title": "Lead Technical Architect - AI",
         "company": "Department for Environment, Food and Rural Affairs",
@@ -1284,21 +1312,6 @@
         "sector": "Public sector",
         "aiRelated": true,
         "postedAt": "2026-09-07"
-      },
-      {
-        "title": "Deputy Director, Head of AI Assurance",
-        "company": "HM Revenue & Customs",
-        "description": "Description not supplied by publisher.",
-        "salary": "Not stated",
-        "postedDate": "5 September 2026 · LinkedIn listing date",
-        "source": "LinkedIn",
-        "location": "Manchester, England, United Kingdom",
-        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4462613535",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "sector": "Public sector",
-        "aiRelated": true,
-        "postedAt": "2026-09-05"
       },
       {
         "title": "AI Lead",
@@ -1350,85 +1363,25 @@
         "postedAt": "2026-09-02"
       },
       {
-        "title": "Data and AI Adoption Lead",
-        "company": "Ofgem",
-        "description": "Build data and AI literacy across Ofgem through capability assessments, training, learning frameworks and practitioner communities, with attention to ethical use and privacy.",
-        "salary": "London salary £52,397–£62,699; Glasgow/Cardiff £49,452–£58,519.",
-        "postedDate": "28 August 2026 · LinkedIn listing date",
+        "title": "Deputy Director Head of AI Assurance",
+        "company": "HM Revenue & Customs",
+        "description": "Lead HMRC's AI assurance function, set proportionate governance and evidence requirements, and coordinate specialist teams so AI services can progress safely from experiments into live use.",
+        "salary": "£86,000–£110,000",
+        "postedDate": "1 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
-        "location": "London, Cardiff or Glasgow; Currently one office day per week; policy is kept under review.; Journey time from KT8 has not been verified.",
-        "url": "https://uk.linkedin.com/jobs/view/data-and-ai-adoption-lead-at-ofgem-4458060558",
+        "location": "Manchester · hybrid; Manchester is the only advertised base. Hybrid working is confirmed; exact weekly office attendance was not established for this advert.; Journey time from KT8 has not been verified.",
+        "url": "https://uk.linkedin.com/jobs/view/deputy-director-head-of-ai-assurance-at-hm-revenue-customs-4448429970",
         "contentType": "job",
         "countryFocus": "UK",
         "sector": "Public sector",
         "aiRelated": true,
-        "metadataSourceUrl": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=2010317",
+        "metadataSourceUrl": "https://careers.hmrc.gov.uk/jobs/deputy-director-head-of-ai-assurance-manchester-united-kingdom",
         "metadataVerifiedAt": "2026-09-05",
-        "postedAt": "2026-08-28"
-      },
-      {
-        "title": "AI Transformation Lead - 2 year FTC",
-        "company": "Ofgem",
-        "description": "Lead Ofgem's portfolio of AI initiatives, coordinate multidisciplinary delivery teams, and manage budgets, dependencies, governance and risks as AI moves into everyday regulatory work.",
-        "salary": "London salary £52,397–£62,699; Glasgow/Cardiff £49,452–£58,519.",
-        "postedDate": "28 August 2026 · LinkedIn listing date",
-        "source": "LinkedIn",
-        "location": "London, Cardiff or Glasgow; Currently one office day per week; policy is kept under review.; Journey time from KT8 has not been verified.",
-        "url": "https://uk.linkedin.com/jobs/view/ai-transformation-lead-2-year-ftc-at-ofgem-4458061537",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "sector": "Public sector",
-        "aiRelated": true,
-        "metadataSourceUrl": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=2010313",
-        "metadataVerifiedAt": "2026-09-05",
-        "postedAt": "2026-08-28"
+        "postedAt": "2026-09-01"
       }
     ]
   },
   "watchAlternatives": [
-    {
-      "title": "Love Cheats",
-      "summary": "When 24-year-old Michelle met charismatic head chef Stuart, she thought she'd found the perfect family man. The couple began planning a lavish wedding and a trendy new cocktail bar. But…",
-      "meta": "Channel 4 · Available since yesterday",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/love-cheats",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349372.jpg",
-      "artworkAlt": "Love Cheats programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-07",
-      "showId": 80197,
-      "episodeId": 3717213,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime",
-        "Romance"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 364.0
-    },
-    {
-      "title": "Paul C. Brunson: Red Flag",
-      "summary": "The relationship expert speaks to Jak, who spent 6 months manipulated by 'The Tinder Predator' Christopher Harkins - a serial fraudster later convicted of assault, fraud and rape.",
-      "meta": "U&W · Today, 10pm",
-      "source": "U&W",
-      "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600741.jpg",
-      "artworkAlt": "Paul C. Brunson: Red Flag programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-08",
-      "showId": 94157,
-      "episodeId": 3744719,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 318.0
-    },
     {
       "title": "Panorama",
       "summary": "It's a sex abuse scandal that has gripped the world. But despite all the headlines and stories, important questions remain unanswered about Jeffrey Epstein. How did he become so powerful?",
@@ -1446,13 +1399,33 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 311.4
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 319.5
+    },
+    {
+      "title": "Paul C. Brunson: Red Flag",
+      "summary": "The relationship expert speaks to Jak, who spent 6 months manipulated by 'The Tinder Predator' Christopher Harkins - a serial fraudster later convicted of assault, fraud and rape.",
+      "meta": "U&W · Available since yesterday",
+      "source": "U&W",
+      "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600741.jpg",
+      "artworkAlt": "Paul C. Brunson: Red Flag programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-08",
+      "showId": 94157,
+      "episodeId": 3744719,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 311.3
     },
     {
       "title": "Police Interceptors",
       "summary": "Officers pursue a 15-year-old suspected of stealing his grandparents' car, while a man causing disturbances in Kettering threatens to spit at a sergeant and is eventually wrestled to the…",
-      "meta": "5 · Available since yesterday",
+      "meta": "5 · Available since Mon 7 Sep",
       "source": "5",
       "url": "https://www.channel5.com/show/police-interceptors",
       "badge": "Documentary",
@@ -1468,8 +1441,8 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 277.4
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 269.6
     },
     {
       "title": "9/11: Days That Shocked the World",
@@ -1488,8 +1461,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 271.7
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 263.7
     },
     {
       "title": "How the Tudors Lost Their Heads",
@@ -1510,13 +1483,13 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 261.6
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 253.9
     },
     {
       "title": "Hitler's Last Stand",
       "summary": "While trying to take a ridge held by German troops, the legendary Canadian regiment known as The Black Watch suffers devastating losses. Outgunned and cut off from command, a ragged band…",
-      "meta": "National Geographic · Today, 8pm",
+      "meta": "National Geographic · Available since yesterday",
       "source": "National Geographic",
       "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
       "badge": "Documentary",
@@ -1533,8 +1506,8 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 257.6
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 245.6
     },
     {
       "title": "Turning Point: Generation 9/11",
@@ -1553,8 +1526,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 250.1
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 242.1
     },
     {
       "title": "Eye Investigations",
@@ -1573,13 +1546,37 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 235.0
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 227.0
+    },
+    {
+      "title": "Vigil",
+      "summary": "Amy arrives to help Kirsten when she is faced with the wrath of the Russians. Determined to clear Kirsten's name, Amy and Kirsten dig into the complex motivations within the hub whilst…",
+      "meta": "BBC iPlayer · Available since Sun 6 Sep",
+      "source": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599356.jpg",
+      "artworkAlt": "Vigil programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-06",
+      "showId": 45879,
+      "episodeId": 3701701,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 223.0
     },
     {
       "title": "Star Trek: Strange New Worlds",
       "summary": "Enterprise is commandeered by Admiral Reeger to track down an alien ship.",
-      "meta": "Paramount+ · New thu 10 sep",
+      "meta": "Paramount+ · New tomorrow",
       "source": "Paramount+",
       "url": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/",
       "badge": "Sci-fi",
@@ -1597,13 +1594,13 @@
         "Science-Fiction"
       ],
       "interestLane": "sci-fi",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 176.0
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 184.0
     },
     {
       "title": "Reacher",
       "summary": "Reacher and Tamara finally get the answers they've been waiting for, while Jacob discovers that their woes have just begun when Plum's sources provide crucial information.",
-      "meta": "Prime Video · New tomorrow",
+      "meta": "Prime Video · New today",
       "source": "Prime Video",
       "url": "https://www.amazon.com/dp/B09MKZTJF4",
       "badge": "Thriller",
@@ -1621,8 +1618,8 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 169.0
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 177.0
     },
     {
       "title": "Lioness",
@@ -1645,8 +1642,8 @@
         "Espionage"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-08",
-      "preferenceScore": 155.0
+      "generatedDate": "2026-09-09",
+      "preferenceScore": 147.0
     }
   ]
 }
