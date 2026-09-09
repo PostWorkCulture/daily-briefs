@@ -110,6 +110,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 **News, AI, Career, Dida**
 - Keep each destination working and independent.
+- Jobs belong only in Career. Never put vacancy adverts, contractor roles, jobs directories, job-search pages or recruitment round-ups in Local News, UK News, Sweden, AI, Arsenal news, or their preview cards, even when a local newspaper publishes them or a feed labels them as articles. Apply the same checks to fresh, cached and fallback items before selection and again before publication. Career still requires individually verified AI-related public-sector roles; do not move rejected listings there automatically. Genuine editorial reporting about employment remains eligible News. Every section must retain its own content type.
 - Enforce permanent content-type isolation between destinations. Local News, UK News, Sweden, AI, and Arsenal Club news contain editorial articles only, explicitly marked `contentType: article`; Career contains job vacancies only, explicitly marked `contentType: job`. Quarantine any mismatched optional item before selection, never let it count towards a section minimum, and fail publication if a mismatch survives into generated profile data. An article reporting that jobs were created remains News; an advert for a specific role belongs only in Career.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.

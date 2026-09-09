@@ -1,3 +1,12 @@
+## 9 September 2026: Jobs directory isolation and permanent project memory
+
+Status: implemented; release verification pending.
+
+- Removed `Jobs in Teddington | Sales` from both profiles. Fifteen Local News articles remain in each; Career and unrelated content are unchanged.
+- Root cause: the Google News redirect concealed a publisher jobs directory, which had neither vacancy wording nor salary. Added directory and recruitment-round-up title checks and root jobs/careers/vacancies URL checks to the shared selection and publication validator.
+- Recorded the permanent jobs-only-in-Career rule in AGENTS.md, PROJECT-INSTRUCTIONS.md, the master brief and QA checklist, explicitly covering previews, caches and fallback data.
+- Regression checks cover the exact indexed title across all editorial sections, directory URLs and legitimate employment reporting.
+
 ## 9 September 2026: Sky and BBC next-fixture protection
 
 Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.

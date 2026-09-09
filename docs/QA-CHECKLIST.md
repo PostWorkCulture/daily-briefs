@@ -50,6 +50,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 
 ## Editorial hierarchy and content
 
+- [ ] No jobs directories, job-search pages, recruitment round-ups, vacancy adverts or contractor roles appear in editorial sections or previews, including cached and fallback items. Check content rather than trusting the article label.
+
 - [ ] Desktop Home has no dead grid row between Calendar, Around the world, and TV Picks.
 - [ ] Desktop Calendar uses two summary filters in one row above a natural-height event list; short event lists do not stretch.
 - [ ] News groups use lead, supporting, and compact stream tiers without changing source order.

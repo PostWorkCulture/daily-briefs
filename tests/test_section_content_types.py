@@ -10,6 +10,33 @@ from scripts.refresh import (
 
 
 class SectionContentTypeTests(unittest.TestCase):
+    def test_job_directories_and_roundups_rejected_in_every_editorial_section(self) -> None:
+        for title in (
+            "Jobs in Teddington | Sales", "Jobs in Kingston", "Latest jobs in Hampton",
+            "Local jobs: Sales", "Jobs of the week in Surbiton",
+            "Teddington jobs roundup", "Browse local jobs", "Job listings in Kingston",
+        ):
+            item = {"title": title, "contentType": "article", "source": "Teddington Nub News",
+                    "url": "https://news.google.com/rss/articles/opaque-id"}
+            with self.subTest(title=title):
+                self.assertEqual(editorial_news([item]), [])
+                for section in ("Local news", "UK news", "Sweden", "AI", "Arsenal news"):
+                    self.assertTrue(section_content_type_errors({section: [item]}))
+
+    def test_job_directory_root_paths_rejected_without_title_clues(self) -> None:
+        for suffix in ("/jobs", "/jobs/", "/jobs?category=sales", "/careers#roles", "/vacancies"):
+            with self.subTest(suffix=suffix):
+                self.assertTrue(news_item_is_job_vacancy({
+                    "title": "Sales", "url": "https://teddington.nub.news" + suffix,
+                }))
+
+    def test_genuine_employment_and_careers_reporting_remains_news(self) -> None:
+        for title in ("Kingston Council boosts support for youth jobs and careers",
+                      "Council creates 200 new jobs in Kingston",
+                      "Jobs saved as Kingston factory reopens"):
+            with self.subTest(title=title):
+                self.assertFalse(news_item_is_job_vacancy({"title": title}))
+
     def test_contractor_adverts_are_quarantined_even_when_labelled_article(self) -> None:
         for title in (
             "Cybersecurity Engineer - £495pd - Outside IR35 - Surbiton, Surrey (Hybrid)",
