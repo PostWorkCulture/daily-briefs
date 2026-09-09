@@ -598,6 +598,11 @@ def check_viewport(browser, name: str) -> None:
             card = page.locator(selector).first
             card.hover()
             page.wait_for_timeout(250)
+            # Scrolling/lazy media can move the card after the pointer arrives.
+            # Reacquire it once if the pointer is no longer over the target.
+            if not card.evaluate("el => el.matches(':hover')"):
+                card.hover()
+                page.wait_for_timeout(250)
             shadow = card.evaluate("el => getComputedStyle(el).boxShadow")
             transform = card.evaluate("el => getComputedStyle(el).transform")
             if "124, 244, 106" not in shadow or transform != "none":
