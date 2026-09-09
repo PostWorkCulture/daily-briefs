@@ -1,3 +1,18 @@
+## 9 September 2026: Restore previous Napoli meeting
+
+- Corrected the pinned empty previous-meeting field to Napoli 0–1 Arsenal, 18 April 2019, Europa League, checked against Pete's AiScore H2H page and Arsenal's own match report. AiScore uses a different display timezone; the card uses the UK match date.
+- Empty pinned meeting metadata no longer bypasses the normal lookup. Added Europa League to recent-history searches and regression coverage for both the exact Napoli card and empty pinned data.
+- Updated only Pete's next-fixture previousMeeting field; the latest-result card and fixture details are preserved.
+
+## 9 September 2026: Jobs directory isolation and permanent project memory
+
+Status: implemented; release verification pending.
+
+- Removed `Jobs in Teddington | Sales` from both profiles. Fifteen Local News articles remain in each; Career and unrelated content are unchanged.
+- Root cause: the Google News redirect concealed a publisher jobs directory, which had neither vacancy wording nor salary. Added directory and recruitment-round-up title checks and root jobs/careers/vacancies URL checks to the shared selection and publication validator.
+- Recorded the permanent jobs-only-in-Career rule in AGENTS.md, PROJECT-INSTRUCTIONS.md, the master brief and QA checklist, explicitly covering previews, caches and fallback data.
+- Regression checks cover the exact indexed title across all editorial sections, directory URLs and legitimate employment reporting.
+
 ## 9 September 2026: Sky and BBC next-fixture protection
 
 Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.

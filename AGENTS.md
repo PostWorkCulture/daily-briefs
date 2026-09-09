@@ -25,6 +25,8 @@ After editing:
 
 Hard rules:
 
+- Jobs belong only in Career. Never put vacancy adverts, contractor roles, jobs directories, job-search pages or recruitment round-ups in Local News, UK News, Sweden, AI, Arsenal news, or their preview cards, even when a local newspaper publishes them or a feed labels them as articles. Apply the same checks to fresh, cached and fallback items before selection and again before publication. Career still requires individually verified AI-related public-sector roles; do not move rejected listings there automatically. Genuine editorial reporting about employment remains eligible News. Every section must retain its own content type.
+
 - Weather uses the Met Office for the home area.
 - Weather icons match written conditions. Rain probability alone does not produce a rain icon.
 - No weather advice or best-time content.

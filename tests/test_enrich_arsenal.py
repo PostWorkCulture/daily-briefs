@@ -337,5 +337,21 @@ class UpcomingFixtureTests(unittest.TestCase):
         self.assertEqual(fixture["source"], "Sky Sports / Arsenal.com / BBC Sport")
 
 
+        self.assertEqual(fixture["previousMeeting"]["score"], "Napoli 0–1 Arsenal")
+        self.assertEqual(fixture["previousMeeting"]["date"], "18 Apr 2019")
+        self.assertEqual(fixture["previousMeeting"]["competition"], "Europa League")
+
+    def test_empty_verified_meeting_does_not_bypass_lookup(self) -> None:
+        key = ("2026-09-09", "napoli")
+        verified = {**enrich_next_fixture.VERIFIED_FIXTURES[key],
+                    "previousMeeting": {"score": "No previous meeting found", "date": ""}}
+        meeting = enrich_next_fixture.HISTORICAL_MEETINGS["napoli"]
+        with patch.dict(enrich_next_fixture.VERIFIED_FIXTURES, {key: verified}), \
+             patch.object(enrich_next_fixture, "latest_recent_meeting", return_value=meeting) as lookup:
+            fixture = enrich_next_fixture.enrich_fixture({"date": "2026-09-09T20:00:00+01:00", "opponent": "Napoli"})
+        lookup.assert_called_once_with("Napoli")
+        self.assertEqual(fixture["previousMeeting"], meeting)
+
+
 if __name__ == "__main__":
     unittest.main()
