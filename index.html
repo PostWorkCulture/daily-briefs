@@ -41,6 +41,7 @@
   <link rel="stylesheet" href="css/dida-activities.css?v=20260905a">
   <link rel="stylesheet" href="css/tv-feedback.css?v=20260905a">
   <link rel="stylesheet" href="css/fluid-widescreen.css?v=20260907a">
+  <link rel="stylesheet" href="css/inbox-view.css?v=20260909a">
 </head>
 <body>
   <main class="app-shell">
@@ -53,6 +54,7 @@
       <section class="hero">
         <div class="eyebrow" id="briefDate">Loading brief…</div>
         <h1 id="greeting">Hey Pete</h1>
+        <button type="button" class="inbox-mobile-entry" data-open-inbox hidden>Inbox</button>
       </section>
 
       <div hidden aria-hidden="true"><span id="intro"></span><span id="weatherTemp"></span><span id="weatherSummary"></span><span id="calendarCount"></span><span id="calendarSummary"></span><span id="storyCount"></span></div>
@@ -169,6 +171,7 @@
     <div class="brief-view" id="view-dida" data-view="dida">
       <section class="panel-block tab-panel dida-shell"><div class="section-head"><h2>Dida</h2></div><div id="didaContent"></div></section>
     </div>
+    <div class="brief-view" id="view-inbox" data-view="inbox"></div>
   </main>
 
   <nav class="bottom-nav" id="primaryNav" aria-label="Primary navigation">
@@ -181,15 +184,17 @@
     <button data-view-target="career"><b>↗</b>Career</button>
     <button data-view-target="dida"><b><svg class="nav-dida-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5c2.8-.8 5.5-.2 8 1.8v11c-2.5-2-5.2-2.6-8-1.8Z"/><path d="M20 5.5c-2.8-.8-5.5-.2-8 1.8v11c2.5-2 5.2-2.6 8-1.8Z"/></svg></b>Dida</button>
     <button data-view-target="birthdays"><b class="birthday-nav-mark" aria-hidden="true"><svg class="nav-balloon" viewBox="0 0 24 28"><path d="M12 2C7.6 2 4 5.7 4 10.3c0 5.8 5.2 10.2 8 11.7 2.8-1.5 8-5.9 8-11.7C20 5.7 16.4 2 12 2Z"/><path d="m10.2 22 1.8 2 1.8-2M12 24c2 1.1 2.5 2.4 1.2 3"/></svg></b>Birthday</button>
+    <button data-view-target="inbox" hidden><b><svg class="nav-inbox-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></b>Inbox</button>
   </nav>
 
-  <script src="js/app.js?v=20260905a" defer></script>
+  <script src="js/app.js?v=20260909a" defer></script>
   <script src="js/calendar-view.js?v=20260903a" defer></script>
   <script src="js/home-reminders.js?v=20260830a" defer></script>
   <script src="js/date-cleanup.js?v=20260817f" defer></script>
   <script src="js/dida-library.js?v=20260905a" defer></script>
   <script src="js/dida-activities.js?v=20260905a" defer></script>
-  <script src="js/tabs-dida.js?v=20260905a" defer></script>
+  <script src="js/inbox-view.js?v=20260909a" defer></script>
+  <script src="js/tabs-dida.js?v=20260909a" defer></script>
   <script src="js/calendar-cleanup.js?v=20260903b" defer></script>
   <script src="js/weather-met.js?v=20260817f" defer></script>
   <script src="js/weather-extremes.js?v=20260818b" defer></script>

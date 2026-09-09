@@ -173,6 +173,9 @@ def check_profile_routes(browser) -> None:
     for url, profile in cases:
         context = browser.new_context(viewport={"width": 390, "height": 844})
         page = context.new_page()
+        page.on('pageerror', lambda error: print(f'Browser script error: {error}'))
+        page.on('console', lambda message: print(f'Browser {message.type}: {message.text}') if message.type == 'error' else None)
+        page.on('requestfailed', lambda request: print(f'Request failed: {request.url}: {request.failure}'))
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=15000)
             for attempt in range(2):
@@ -185,6 +188,7 @@ def check_profile_routes(browser) -> None:
                     break
                 except PlaywrightTimeoutError:
                     if attempt:
+                        print('Profile readiness:', page.url, page.evaluate("({greeting:document.querySelector('#greeting')?.textContent,navExists:!!document.querySelector('#primaryNav'),navProfile:document.querySelector('#primaryNav')?.dataset.profile,ready:document.readyState,renderType:typeof render,viewType:typeof window.showBriefView,state:typeof state==='undefined'?null:{profile:state.profile,hasData:!!state.data},scripts:[...document.scripts].map(s=>s.src)})"))
                         raise
                     page.reload(wait_until="domcontentloaded", timeout=15000)
             route_state = page.evaluate(
@@ -212,6 +216,14 @@ def check_profile_routes(browser) -> None:
                 raise AssertionError(f"{url}: locked switch still occupies space: {route_state}")
             if route_state["arsenalVisible"] != (profile == "pete"):
                 raise AssertionError(f"{url}: Arsenal visibility does not match profile: {route_state}")
+            if page.locator('[data-open-inbox]').is_visible() != (profile == "pete"):
+                raise AssertionError(f"{url}: Inbox visibility does not match profile")
+            if page.locator('#view-inbox iframe').count():
+                raise AssertionError(f"{url}: public brief must never embed private email")
+            if profile == "sofia":
+                page.evaluate("window.showBriefView('inbox')")
+                if not page.locator('#view-home').is_visible():
+                    raise AssertionError(f"{url}: Sofia can enter Pete's Inbox view")
         finally:
             context.close()
 
@@ -586,6 +598,11 @@ def check_viewport(browser, name: str) -> None:
             card = page.locator(selector).first
             card.hover()
             page.wait_for_timeout(250)
+            # Scrolling/lazy media can move the card after the pointer arrives.
+            # Reacquire it once if the pointer is no longer over the target.
+            if not card.evaluate("el => el.matches(':hover')"):
+                card.hover()
+                page.wait_for_timeout(250)
             shadow = card.evaluate("el => getComputedStyle(el).boxShadow")
             transform = card.evaluate("el => getComputedStyle(el).transform")
             if "124, 244, 106" not in shadow or transform != "none":
@@ -1130,8 +1147,11 @@ def check_viewport(browser, name: str) -> None:
             "career": "rgb(212, 216, 213)",
             "dida": "rgb(155, 224, 83)",
             "birthdays": "rgb(255, 150, 205)",
+            "inbox": "rgb(108, 232, 255)",
         }
         for target, expected_colour in expected_nav_hover_colours.items():
+            if target == "inbox" and name == "mobile":
+                continue
             nav_button = page.locator(f'[data-view-target="{target}"]')
             nav_button.hover()
             page.wait_for_timeout(220)
@@ -1183,6 +1203,8 @@ def check_viewport(browser, name: str) -> None:
             "dida",
             "birthdays",
         ]
+        if name != "mobile":
+            expected_nav_targets.append("inbox")
         actual_nav_targets = [button["target"] for button in buttons]
         if actual_nav_targets != expected_nav_targets:
             failures.append(
