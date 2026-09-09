@@ -1,13 +1,13 @@
 ## 9 September 2026: Pete-only private Inbox integration
 
-Status: implemented; release verification pending.
+Status: validated and published on 9 September 2026.
 
 - Requested: bring the Inbox Command Centre into Pete's brief, excluding Sofia. Pete permits private access where useful.
 - Added: Pete-only Inbox navigation on desktop and a Home button on mobile into an owner-authenticated companion brief. The mobile bar keeps eight 44px-or-wider destinations. Same-origin email frame retains existing Inbox functionality; public pages never load email content.
 - Protected: Sofia's profile, routes and public access; all existing brief destinations, data, content selection and refresh workflows; Inbox authorisation and triage schedule.
 - Startup repair: resolve the current render function after JSON finishes downloading; ignore a response for a profile that is no longer active. This fixes a race exposed by the new script load and protects profile isolation.
 - Release infrastructure: use Chromium system libraries already installed on the hosted Ubuntu runner, avoiding a repeatedly broken unrelated apt index; actual browser checks remain mandatory.
-- Validation: 89 existing Python tests and four new Inbox profile/routing/startup tests pass. Private-route allowlist, owner access and upstream credential isolation checked separately in the Inbox project. Responsive CI pending; live signed-in Gmail interaction still requires Pete's session.
+- Validation: 89 existing Python tests and four new Inbox profile/routing/startup tests pass. Private-route allowlist, owner access and upstream credential isolation checked separately in the Inbox project. Responsive CI passed on 390px mobile, 1366px desktop and 1920px widescreen, including Pete/Sofia route isolation. GitHub Pages deployment and owner-only companion deployment both succeeded. Live signed-in Gmail interaction still requires Pete's session.
 - Conflicts/unexpected changes: none. The private companion does not remove Pete's old public pages.
 - Master brief: v5.4 records the authorised integration and privacy boundary.
 
