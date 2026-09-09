@@ -1,3 +1,9 @@
+## 9 September 2026: Restore previous Napoli meeting
+
+- Corrected the pinned empty previous-meeting field to Napoli 0–1 Arsenal, 18 April 2019, Europa League, checked against Pete's AiScore H2H page and Arsenal's own match report. AiScore uses a different display timezone; the card uses the UK match date.
+- Empty pinned meeting metadata no longer bypasses the normal lookup. Added Europa League to recent-history searches and regression coverage for both the exact Napoli card and empty pinned data.
+- Updated only Pete's next-fixture previousMeeting field; the latest-result card and fixture details are preserved.
+
 ## 9 September 2026: Jobs directory isolation and permanent project memory
 
 Status: implemented; release verification pending.

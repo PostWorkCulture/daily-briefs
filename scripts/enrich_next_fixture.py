@@ -21,6 +21,7 @@ COMPETITIONS = {
     "eng.fa": "FA Cup",
     "eng.league_cup": "League Cup",
     "uefa.champions": "Champions League",
+    "uefa.europa": "Europa League",
     "eng.charity": "FA Community Shield",
 }
 
@@ -56,6 +57,13 @@ STADIUMS = {
 
 # Historical fallbacks are only used when recent ESPN schedules do not contain a meeting.
 HISTORICAL_MEETINGS = {
+    "napoli": {
+        "score": "Napoli 0–1 Arsenal",
+        "date": "18 Apr 2019",
+        "competition": "Europa League",
+        "source": "Arsenal.com / AiScore",
+        "url": "https://www.arsenal.com/news/napoli-0-1-arsenal-0-3-agg-how-it-happened-ajp7K8K8dp42",
+    },
     "coventry city": {
         "score": "Arsenal 4–0 Coventry City",
         "date": "24 Jan 2014",
@@ -129,12 +137,7 @@ VERIFIED_FIXTURES = {
         "competition": "UEFA Champions League",
         "tvChannel": "TBC",
         "source": "Sky Sports / Arsenal.com / BBC Sport",
-        "previousMeeting": {
-            "score": "No previous meeting found",
-            "date": "",
-            "competition": "",
-            "source": "",
-        },
+        "previousMeeting": HISTORICAL_MEETINGS["napoli"],
     },
 }
 
@@ -276,8 +279,10 @@ def enrich_fixture(fixture: dict) -> dict:
     verified = VERIFIED_FIXTURES.get(key)
     if verified:
         fixture.update({k: v for k, v in verified.items() if k != "previousMeeting"})
-        fixture["previousMeeting"] = dict(verified["previousMeeting"])
-        return fixture
+        meeting = verified.get("previousMeeting") or {}
+        if all(meeting.get(field) for field in ("score", "date", "competition", "source")):
+            fixture["previousMeeting"] = dict(meeting)
+            return fixture
 
     previous = latest_recent_meeting(opponent) or HISTORICAL_MEETINGS.get(norm_team(opponent))
     fixture["previousMeeting"] = previous or {
