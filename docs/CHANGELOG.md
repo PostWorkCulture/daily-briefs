@@ -1,3 +1,11 @@
+## 9 September 2026: Remove unwanted navigation branding and contain Inbox
+
+- Requested: remove Open Horizon / Live briefing and keep Inbox inside the navigation box.
+- Removed the branding markup and styles. The desktop navigation now scrolls internally on short screens, with buttons retaining their usable height.
+- Recorded that unrequested branding, labels and interface additions require Pete’s explicit approval; this supersedes the former navigation branding requirement.
+- Preserved mobile navigation, Pete-only Inbox routing and all brief content.
+- Validation: pending release checks.
+
 ## 9 September 2026: Pete-only private Inbox integration
 
 Status: validated and published on 9 September 2026.

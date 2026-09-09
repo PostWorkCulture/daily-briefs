@@ -1,12 +1,14 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.4, 9 September 2026. Owner: Pete.
+Version 5.5, 9 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
 This is the single source of truth. Preserve every requirement unless Pete explicitly supersedes it. Never change or remove an unrelated section, route, control, field, data source, link, colour treatment, or responsive behaviour. Flag conflicts before editing. Update this file and CHANGELOG.md after approved specification changes. Run QA-CHECKLIST.md after material work.
 
 ## Product
+
+- Do not add branding, labels, taglines, sections or other unrequested interface elements without Pete’s explicit approval. Remove the previously specified Open Horizon / Live briefing navigation text. Keep every desktop navigation destination, including Inbox, inside the navigation box; scroll within the box on short screens.
 
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use the selected `Signal Grid` direction: a near-black `#030504` canvas, graphite modules, warm-white `#F4F7F2` copy, thin technical rules, restrained luminous green `#7CF46A` signals, bold legible type, and meaningful photography. Keep the grid extremely faint and functional rather than decorative. Around the world and TV Picks always retain full-colour source imagery. Preserve header styling during unrelated work.
 
@@ -17,7 +19,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - The Home greeting and section or page titles on the black canvas use warm-white `#F4F7F2`, giving at least 4.5:1 contrast. The main date uses signal green `#7CF46A`. Main copy on graphite surfaces remains warm white, with muted grey reserved for secondary metadata.
 
 - Do not show a visible `Daily Briefs` wordmark in page content. Retain the Daily Briefs browser title, bookmark, manifest, icon, and sharing metadata.
-- Primary navigation uses solid near-black `#070908` with white text and icons at rest, including the active destination. Desktop uses the selected wider labelled rail with the Open Horizon name and live status; mobile keeps the stable compact horizontal bar. Each destination uses a brighter version of its existing colour only on hover or keyboard focus so the feedback remains readable against the dark surface.
+- Primary navigation uses solid near-black `#070908` with white text and icons at rest, including the active destination. Desktop uses the selected wider labelled rail without a brand name, tagline or live-status label; mobile keeps the stable compact horizontal bar. Each destination uses a brighter version of its existing colour only on hover or keyboard focus so the feedback remains readable against the dark surface.
 - Respect `prefers-reduced-motion`: destination changes and in-page controls must not request smooth scrolling, navigation decoration must not animate, and hover/focus transitions must become effectively immediate. Keep a real visible keyboard-focus outline in addition to destination glows.
 - On mobile, primary navigation remains fixed, fully visible, and clickable while switching destinations or interacting with content. Use immediate mobile view changes and a stable opaque navigation surface to avoid compositor flicker.
 - Home `Coming up` cards use graphite surfaces with a slim section-specific colour signal and Pete-supplied artwork as a cropped right-side visual where a matched image exists. Keep all live card text inside a dedicated left-side text column with no overlap into the artwork. Recycling, general and garden waste, clocks, Halloween, and Christmas each use their matching supplied image. General-bin weeks must be titled `General & garden waste` with the concise instruction `Put out both bins`; garden waste remains collected on those weeks. Crop out the dates, countdown numbers, and fake controls embedded in the source compositions so the live dynamic card text remains authoritative. Halloween retains orange as its accent. From 700 px upwards, all four cards must fit on one compact row.
