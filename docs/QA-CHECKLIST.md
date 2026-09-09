@@ -96,6 +96,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Trusted transfers contain no academy, youth, women's-team, job-vacancy, marketing, or commercial-role items; ambiguous Arsenal.com items have separate approved-source player corroboration.
 - [ ] Latest completed and nearest upcoming fixture are correct.
 - [ ] Sky's embedded match data yields the current nearest men's first-team fixture even when its visible localisation wording changes; Arsenal Women is excluded.
+- [ ] BBC Sport's embedded current-day and forward-month data independently covers the nearest men's first-team fixture; a later league-only fallback cannot displace a nearer cup or European match.
+- [ ] Publication fails when the next fixture is missing, already stale, or lacks Sky Sports/BBC Sport verification after the last verified fixture expires.
 - [ ] Latest completed match visibly includes score, scorers, competition, quick factual summary, kickoff time and stadium; publication fails if any field is unavailable.
 - [ ] Required upcoming fixture details and real links remain.
 - [ ] No invented scores or fixtures.

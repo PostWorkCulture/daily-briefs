@@ -122,6 +122,20 @@ VERIFIED_FIXTURES = {
             "source": "Arsenal.com",
         },
     },
+    ("2026-09-09", "napoli"): {
+        "opponent": "Napoli",
+        "stadium": "Stadio Diego Armando Maradona",
+        "kickoff": "8:00pm",
+        "competition": "UEFA Champions League",
+        "tvChannel": "TBC",
+        "source": "Sky Sports / Arsenal.com / BBC Sport",
+        "previousMeeting": {
+            "score": "No previous meeting found",
+            "date": "",
+            "competition": "",
+            "source": "",
+        },
+    },
 }
 
 

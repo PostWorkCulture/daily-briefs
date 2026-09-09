@@ -22,6 +22,7 @@ OFFICIAL_PL_FIXTURE_URLS = (
     "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season/",
     "https://www.premierleague.com/en/news/4675132/all-of-arsenals-fixtures-for-202627-premier-league-season",
 )
+BBC_FIXTURES_URL = "https://www.bbc.co.uk/sport/football/teams/arsenal/scores-fixtures"
 
 # Never surface gambling / betting material in Daily Briefs.
 BETTING_TERMS = {
@@ -426,6 +427,95 @@ def all_sky_matches() -> list[dict]:
     return combined
 
 
+def parse_bbc_state_matches(html: str, final_url: str) -> list[dict]:
+    """Parse BBC Sport's embedded fixtures state without relying on page copy."""
+    soup = BeautifulSoup(html, "html.parser")
+    script = next(
+        (
+            node.string
+            for node in soup.find_all("script")
+            if node.string and "window.__INITIAL_DATA__=" in node.string
+        ),
+        "",
+    )
+    match = re.search(r'window\.__INITIAL_DATA__=(".*");?$', script, re.S)
+    if not match:
+        return []
+    try:
+        initial = json.loads(json.loads(match.group(1)))
+    except (TypeError, json.JSONDecodeError):
+        return []
+
+    out: list[dict] = []
+    for block in (initial.get("data") or {}).values():
+        if not isinstance(block, dict) or block.get("name") != "sport-data-scores-fixtures":
+            continue
+        for group in ((block.get("data") or {}).get("eventGroups") or []):
+            for secondary in group.get("secondaryGroups") or []:
+                for event in secondary.get("events") or []:
+                    status = str(event.get("status") or "").casefold()
+                    period = str((event.get("periodLabel") or {}).get("value") or "").casefold()
+                    if status not in {"preevent", "pre-event"} and period != "scheduled":
+                        continue
+                    home = str((event.get("home") or {}).get("fullName") or "").strip()
+                    away = str((event.get("away") or {}).get("fullName") or "").strip()
+                    arsenal_home = home.casefold() == "arsenal"
+                    arsenal_away = away.casefold() == "arsenal"
+                    if not arsenal_home and not arsenal_away:
+                        continue
+                    try:
+                        dt = dateparser.parse(
+                            str(event.get("startDateTime") or (event.get("date") or {}).get("iso") or "")
+                        ).astimezone(TZ)
+                    except Exception:
+                        continue
+                    tournament = event.get("tournament") or {}
+                    competition = str(
+                        tournament.get("disambiguatedName")
+                        or tournament.get("name")
+                        or secondary.get("displayLabel")
+                        or "Football"
+                    ).strip()
+                    journey = str(event.get("onwardJourneyLink") or "").strip()
+                    out.append({
+                        "date": dt.isoformat(),
+                        "dateLabel": dt.strftime("%a %-d %b"),
+                        "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+                        "opponent": away if arsenal_home else home,
+                        "competition": competition,
+                        "homeAway": "home" if arsenal_home else "away",
+                        "completed": False,
+                        "arsenalScore": None,
+                        "opponentScore": None,
+                        "result": "",
+                        "url": urljoin(final_url, journey) if journey else final_url,
+                        "source": "BBC Sport",
+                        "tvChannel": "TBC",
+                    })
+    return out
+
+
+def all_bbc_matches() -> list[dict]:
+    """Fetch BBC's current-day and forward month views across a month boundary."""
+    first = NOW.replace(day=1)
+    next_month = (first.replace(day=28) + timedelta(days=4)).replace(day=1)
+    urls = [
+        BBC_FIXTURES_URL,
+        f"{BBC_FIXTURES_URL}/{first.year}-{first.month:02d}?filter=fixtures",
+        f"{BBC_FIXTURES_URL}/{next_month.year}-{next_month.month:02d}?filter=fixtures",
+    ]
+    combined: list[dict] = []
+    for url in urls:
+        html, final_url = get_html(url)
+        if html:
+            combined.extend(parse_bbc_state_matches(html, final_url))
+    unique: dict[tuple, dict] = {}
+    for item in combined:
+        key = (item.get("date"), item.get("opponent"), item.get("competition"))
+        unique.setdefault(key, item)
+    return list(unique.values())
+
+
 def parse_official_pl_fixtures(
     html: str, url: str, now: datetime | None = None
 ) -> list[dict]:
@@ -542,13 +632,18 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
     existing_arsenal = existing_arsenal or {}
     espn_fixtures, position, points, played = espn_snapshot()
     sky_fixtures = all_sky_matches()
+    bbc_fixtures = all_bbc_matches()
 
     official_fixture = official_pl_next_fixture()
     all_fixtures = reconcile_official_fixture(
-        sky_fixtures + espn_fixtures, official_fixture
+        sky_fixtures + bbc_fixtures + espn_fixtures, official_fixture
     )
     sky_future = [
         item for item in sky_fixtures
+        if not item.get("completed") and dateparser.parse(item["date"]) >= NOW - timedelta(hours=3)
+    ]
+    bbc_future = [
+        item for item in bbc_fixtures
         if not item.get("completed") and dateparser.parse(item["date"]) >= NOW - timedelta(hours=3)
     ]
     existing_next = existing_arsenal.get("nextFixture") or {}
@@ -559,9 +654,9 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
         )
     except Exception:
         existing_next_is_future = False
-    if not sky_future and existing_next_is_future:
-        # A transient Sky parse or network failure must not skip a still-upcoming
-        # verified match and jump to a later fallback fixture.
+    if existing_next_is_future:
+        # A partial or transient Sky/BBC response must not skip a still-upcoming
+        # verified match and jump to a later fixture.
         all_fixtures.append(existing_next)
     unique = {}
     for item in all_fixtures:
@@ -600,9 +695,11 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
         last_result = strip_internal(last_result)
     next_fixture = strip_internal(next_fixture)
 
-    # Retain the official PL fallback when no all-competition source returns anything.
-    if not next_fixture:
-        next_fixture = official_fixture
+    # A Premier League-only fallback can miss a nearer cup or European match.
+    # Fail closed once the last verified fixture has expired unless Sky or BBC
+    # independently supplies an upcoming men's first-team fixture.
+    if not sky_future and not bbc_future and not existing_next_is_future:
+        next_fixture = None
 
     return {
         "lastResult": last_result,
@@ -611,7 +708,7 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
         "points": points,
         "played": played,
         "news": clean_news[:5],
-        "sources": ["Sky Sports", "PremierLeague.com", "Arsenal.com", "ESPN"],
+        "sources": ["Sky Sports", "BBC Sport", "PremierLeague.com", "Arsenal.com", "ESPN"],
         "scope": "Arsenal men's first team · all competitions",
     }
 
