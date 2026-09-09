@@ -23,7 +23,7 @@ test('profile JSON resolves before choosing the current renderer, and stale resp
   assert.deepEqual(rendered,['new']);
 });
 function setup(profile, privatePage = false) {
-  const node = () => ({ children: [], classList: {remove() {}}, append(...children) {this.children.push(...children)}, replaceChildren() {this.children=[]}, querySelector() {return this.children.find(c => c.tag==='iframe')} });
+  const node = () => ({ children: [], addEventListener() {}, classList: {remove() {}}, append(...children) {this.children.push(...children)}, replaceChildren() {this.children=[]}, querySelector() {return this.children.find(c => c.tag==='iframe')} });
   const view = node(), button = node(); let destination;
   const state = {profile};
   const window = {};

@@ -58,7 +58,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 ## Pete-only Inbox integration
 
-- Add Inbox after the existing primary destinations for Pete only. Sofia must never see or enter this view, including after switching profiles or calling the view controller directly.
+- Add Inbox after the existing primary destinations on desktop and as a Home button on mobile for Pete only. Keep the existing mobile navigation at eight usable destinations. Sofia must never see or enter this view, including after switching profiles or calling the view controller directly.
 - The public brief's Inbox destination opens the owner-authenticated private brief at `https://inbox-command-centre.pyro-pete.chatgpt.site/brief/?profile=pete&locked=1&view=inbox` in the same tab.
 - This private companion mirrors the current public brief, pins Pete's locked profile, and embeds the existing Inbox app on its own authenticated origin. It preserves Gmail controls, Needs Action defaults, protection/review state and the existing triage schedule. No email data or credentials enter the public repository, JSON, or public brief.
 - Sofia's routes and public access stay unchanged. Pete's existing public brief remains available; the private companion does not retroactively make those public pages private.

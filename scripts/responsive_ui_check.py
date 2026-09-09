@@ -216,7 +216,7 @@ def check_profile_routes(browser) -> None:
                 raise AssertionError(f"{url}: locked switch still occupies space: {route_state}")
             if route_state["arsenalVisible"] != (profile == "pete"):
                 raise AssertionError(f"{url}: Arsenal visibility does not match profile: {route_state}")
-            if page.locator('[data-view-target="inbox"]').is_visible() != (profile == "pete"):
+            if page.locator('[data-open-inbox]').is_visible() != (profile == "pete"):
                 raise AssertionError(f"{url}: Inbox visibility does not match profile")
             if page.locator('#view-inbox iframe').count():
                 raise AssertionError(f"{url}: public brief must never embed private email")
@@ -1145,6 +1145,8 @@ def check_viewport(browser, name: str) -> None:
             "inbox": "rgb(108, 232, 255)",
         }
         for target, expected_colour in expected_nav_hover_colours.items():
+            if target == "inbox" and name == "mobile":
+                continue
             nav_button = page.locator(f'[data-view-target="{target}"]')
             nav_button.hover()
             page.wait_for_timeout(220)
@@ -1196,6 +1198,8 @@ def check_viewport(browser, name: str) -> None:
             "dida",
             "birthdays",
         ]
+        if name != "mobile":
+            expected_nav_targets.append("inbox")
         actual_nav_targets = [button["target"] for button in buttons]
         if actual_nav_targets != expected_nav_targets:
             failures.append(

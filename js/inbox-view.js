@@ -4,9 +4,12 @@
   const isPrivateBrief = location.origin === privateOrigin && location.pathname.startsWith('/brief');
   const view = document.getElementById('view-inbox');
   const button = document.querySelector('[data-view-target="inbox"]');
+  const mobileButton = document.querySelector('[data-open-inbox]');
+  mobileButton.addEventListener('click', () => window.showBriefView('inbox'));
 
   window.syncBriefInbox = function (profile) {
     button.hidden = profile !== 'pete';
+    mobileButton.hidden = profile !== 'pete';
     if (profile !== 'pete') {
       view.replaceChildren();
       view.classList.remove('active');
