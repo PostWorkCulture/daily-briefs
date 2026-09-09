@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.2, 7 September 2026. Owner: Pete.
+Version 5.3, 9 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -99,6 +99,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - No betting, odds, gambling promotion, or gambling information.
 - Men's first team, all competitions.
 - Latest completed and nearest upcoming fixtures.
+- Treat Sky Sports and BBC Sport as independent authoritative sources for the nearest upcoming fixture. Check the current day plus forward month coverage so a nearer European or cup match cannot be displaced by a later Premier League-only fallback. Preserve a still-upcoming verified fixture during a partial outage, but fail publication once it expires if neither Sky nor BBC supplies a current replacement.
 - The latest completed match must always show score, scorers, competition, a concise factual game summary, actual kickoff time, and stadium. If any required result field cannot be verified, fail the refresh instead of publishing an incomplete result.
 - Preserve opponent, stadium, kickoff, competition, TV channel, and previous-meeting details for the upcoming fixture when available.
 - Put Transfer watch at the bottom of the Arsenal view and always order it newest first. Its trusted list includes only official announcements or reports from Arsenal.com, BBC Sport, Sky Sports, The Athletic/The New York Times, The Guardian, Reuters, or ESPN. Reject rumour roundups, gossip, paper talk, betting, odds, job vacancies, commercial roles, academy, and women's-team items from this trusted list. An Arsenal.com item without explicit first-team context must be corroborated by a separate approved source identifying the same player before it can appear.

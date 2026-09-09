@@ -198,12 +198,16 @@ jobs:
           fixture=(pete.get('arsenal') or {}).get('nextFixture')
           position=(pete.get('arsenal') or {}).get('leaguePosition')
           assert isinstance(position,int) and 1<=position<=20, 'Arsenal current Premier League position is unavailable'
-          if fixture:
-              required=('opponent','stadium','kickoff','competition','tvChannel')
-              for key in required:
-                  assert str(fixture.get(key) or '').strip(), f'Arsenal next fixture missing {key}'
-              previous=fixture.get('previousMeeting') or {}
-              assert str(previous.get('score') or '').strip(), 'Arsenal next fixture missing previous-meeting score'
+          assert fixture, 'Arsenal next fixture is unavailable'
+          required=('opponent','stadium','kickoff','competition','tvChannel')
+          for key in required:
+              assert str(fixture.get(key) or '').strip(), f'Arsenal next fixture missing {key}'
+          fixture_dt=datetime.fromisoformat(str(fixture.get('date') or ''))
+          assert fixture_dt>=datetime.now(ZoneInfo('Europe/London'))-timedelta(hours=3), 'Arsenal next fixture is already stale'
+          fixture_sources=str(fixture.get('source') or '').casefold()
+          assert 'sky sports' in fixture_sources or 'bbc sport' in fixture_sources, 'Arsenal next fixture lacks Sky Sports or BBC Sport verification'
+          previous=fixture.get('previousMeeting') or {}
+          assert str(previous.get('score') or '').strip(), 'Arsenal next fixture missing previous-meeting score'
 
           trusted_sources={'arsenal.com','bbc sport','sky sports','the athletic','the guardian','reuters','espn','the new york times'}
           transfers=(pete.get('arsenal') or {}).get('transfers') or []

@@ -93,6 +93,51 @@ class UpcomingFixtureTests(unittest.TestCase):
             "https://www.skysports.com/football/arsenal-vs-chelsea/7193893630913215232",
         )
 
+    def test_current_bbc_embedded_state_is_parsed_as_independent_fallback(self) -> None:
+        event = {
+            "home": {"fullName": "Napoli"},
+            "away": {"fullName": "Arsenal"},
+            "startDateTime": "2026-09-09T19:00:00Z",
+            "date": {"iso": "2026-09-09T19:00:00Z"},
+            "periodLabel": {"value": "Scheduled"},
+            "status": "PreEvent",
+            "tournament": {
+                "name": "UEFA Champions League",
+                "disambiguatedName": "UEFA Champions League",
+            },
+            "onwardJourneyLink": "/sport/football/live/c6z9zywpj3l5t",
+        }
+        women = dict(event)
+        women["away"] = {"fullName": "Arsenal Women"}
+        state = {
+            "data": {
+                "fixtures": {
+                    "name": "sport-data-scores-fixtures",
+                    "data": {
+                        "eventGroups": [{
+                            "secondaryGroups": [{"events": [event, women]}],
+                        }],
+                    },
+                },
+            },
+        }
+        html = (
+            "<script>window.__INITIAL_DATA__="
+            + json.dumps(json.dumps(state))
+            + ";</script>"
+        )
+
+        fixtures = enrich_arsenal.parse_bbc_state_matches(
+            html,
+            "https://www.bbc.co.uk/sport/football/teams/arsenal/scores-fixtures",
+        )
+
+        self.assertEqual(len(fixtures), 1)
+        self.assertEqual(fixtures[0]["date"], "2026-09-09T20:00:00+01:00")
+        self.assertEqual(fixtures[0]["opponent"], "Napoli")
+        self.assertEqual(fixtures[0]["competition"], "UEFA Champions League")
+        self.assertEqual(fixtures[0]["source"], "BBC Sport")
+
     def test_nearest_sky_fixture_beats_later_official_fallback(self) -> None:
         chelsea = {
             "date": "2026-09-06T16:30:00+01:00", "opponent": "Chelsea",
@@ -106,6 +151,7 @@ class UpcomingFixtureTests(unittest.TestCase):
             patch.object(enrich_arsenal, "NOW", datetime(2026, 9, 1, 9, 0, tzinfo=ZoneInfo("Europe/London"))),
             patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 2, None, None)),
             patch.object(enrich_arsenal, "all_sky_matches", return_value=[chelsea]),
+            patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]),
             patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=leeds),
         ):
             result = enrich_arsenal.snapshot([])
@@ -126,12 +172,57 @@ class UpcomingFixtureTests(unittest.TestCase):
             patch.object(enrich_arsenal, "NOW", datetime(2026, 9, 4, 14, 0, tzinfo=ZoneInfo("Europe/London"))),
             patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 2, None, None)),
             patch.object(enrich_arsenal, "all_sky_matches", return_value=[]),
+            patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]),
             patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=leeds),
         ):
             result = enrich_arsenal.snapshot([], {"nextFixture": chelsea})
 
         self.assertEqual(result["nextFixture"]["opponent"], "Chelsea")
         self.assertEqual(result["nextFixture"]["date"], "2026-09-06T16:30:00+01:00")
+
+    def test_bbc_fixture_prevents_jump_to_later_league_fallback(self) -> None:
+        napoli = {
+            "date": "2026-09-09T20:00:00+01:00",
+            "opponent": "Napoli",
+            "competition": "UEFA Champions League",
+            "completed": False,
+            "source": "BBC Sport",
+        }
+        leeds = {
+            "date": "2026-10-10T12:30:00+01:00",
+            "opponent": "Leeds United",
+            "competition": "Premier League",
+            "completed": False,
+        }
+        with (
+            patch.object(enrich_arsenal, "NOW", datetime(2026, 9, 9, 6, 0, tzinfo=ZoneInfo("Europe/London"))),
+            patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 2, None, None)),
+            patch.object(enrich_arsenal, "all_sky_matches", return_value=[]),
+            patch.object(enrich_arsenal, "all_bbc_matches", return_value=[napoli]),
+            patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=leeds),
+        ):
+            result = enrich_arsenal.snapshot([])
+
+        self.assertEqual(result["nextFixture"]["opponent"], "Napoli")
+        self.assertEqual(result["nextFixture"]["source"], "BBC Sport")
+
+    def test_expired_fixture_and_missing_sky_bbc_fail_closed(self) -> None:
+        leeds = {
+            "date": "2026-10-10T12:30:00+01:00",
+            "opponent": "Leeds United",
+            "competition": "Premier League",
+            "completed": False,
+        }
+        with (
+            patch.object(enrich_arsenal, "NOW", datetime(2026, 9, 9, 6, 0, tzinfo=ZoneInfo("Europe/London"))),
+            patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 2, None, None)),
+            patch.object(enrich_arsenal, "all_sky_matches", return_value=[]),
+            patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]),
+            patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=leeds),
+        ):
+            result = enrich_arsenal.snapshot([])
+
+        self.assertIsNone(result["nextFixture"])
 
     def test_official_reschedule_replaces_stale_same_opponent_fixture(self) -> None:
         stale = {
@@ -229,6 +320,21 @@ class UpcomingFixtureTests(unittest.TestCase):
         self.assertEqual(fixture["kickoff"], "4:30pm")
         self.assertEqual(fixture["tvChannel"], "Sky Sports Premier League")
         self.assertEqual(fixture["previousMeeting"]["score"], "Arsenal 2–1 Chelsea")
+
+    def test_verified_napoli_details_are_complete(self) -> None:
+        fixture = enrich_next_fixture.enrich_fixture({
+            "date": "2026-09-09T20:00:00+01:00",
+            "dateLabel": "Wed 9 Sep",
+            "kickoff": "8pm",
+            "opponent": "Napoli",
+            "competition": "UEFA Champions League",
+            "homeAway": "away",
+            "source": "BBC Sport",
+        })
+
+        self.assertEqual(fixture["stadium"], "Stadio Diego Armando Maradona")
+        self.assertEqual(fixture["kickoff"], "8:00pm")
+        self.assertEqual(fixture["source"], "Sky Sports / Arsenal.com / BBC Sport")
 
 
 if __name__ == "__main__":

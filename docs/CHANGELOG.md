@@ -1,3 +1,14 @@
+## 9 September 2026: Sky and BBC next-fixture protection
+
+Status: recovery repair prepared; publication follows the protected responsive and morning-refresh gates.
+
+- Morning incident: neither of the first two scheduled refresh opportunities was emitted, leaving both public profiles dated 8 September. The merge-triggered catch-up path will refresh 9 September immediately.
+- Fixture sources: added BBC Sport's embedded current-day and forward-month fixture data as an independent structured source alongside Sky Sports, without relying on visible page wording.
+- Selection safety: Sky remains first preference; BBC can rescue a nearer European or cup match before ESPN or the Premier League-only fallback. A still-upcoming verified fixture survives a partial response, but publication fails once it expires if neither Sky nor BBC provides a replacement.
+- Current verification: Sky Sports, BBC Sport and Arsenal.com all identify Napoli v Arsenal on Wednesday 9 September at 8:00pm as the nearest men's first-team fixture. Its verified stadium is Stadio Diego Armando Maradona.
+- Content and reserve checks: both 8 September profile files have valid article/job separation and no vacancy leak; the active unused human-first reserve is 21, so no catalogue maintenance is required.
+- Scope protected: no visual, profile, calendar, weather, news, Career, TV, Dida, Birthday, fact selection or unrelated Arsenal behaviour changed.
+
 # 8 September 2026: Reject contractor adverts from News
 
 Status: implemented, release verification pending
