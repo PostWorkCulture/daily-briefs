@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.3, 9 September 2026. Owner: Pete.
+Version 5.4, 9 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -55,6 +55,14 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 Primary views: Home, Calendar, News, Arsenal, AI, Career, Dida, Birthday.
 Home: Weather, Calendar, Coming up, Around the world, TV Picks.
 Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal in any shared flow.
+
+## Pete-only Inbox integration
+
+- Add Inbox after the existing primary destinations for Pete only. Sofia must never see or enter this view, including after switching profiles or calling the view controller directly.
+- The public brief's Inbox destination opens the owner-authenticated private brief at `https://inbox-command-centre.pyro-pete.chatgpt.site/brief/?profile=pete&locked=1&view=inbox` in the same tab.
+- This private companion mirrors the current public brief, pins Pete's locked profile, and embeds the existing Inbox app on its own authenticated origin. It preserves Gmail controls, Needs Action defaults, protection/review state and the existing triage schedule. No email data or credentials enter the public repository, JSON, or public brief.
+- Sofia's routes and public access stay unchanged. Pete's existing public brief remains available; the private companion does not retroactively make those public pages private.
+- Keep an Open full inbox link available within the private Inbox view. Only load the email frame when Inbox is selected. Removing Pete's profile must remove any email frame.
 
 ## Protected requirements
 

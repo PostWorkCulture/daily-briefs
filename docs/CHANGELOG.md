@@ -1,3 +1,14 @@
+## 9 September 2026: Pete-only private Inbox integration
+
+Status: implemented; release verification pending.
+
+- Requested: bring the Inbox Command Centre into Pete's brief, excluding Sofia. Pete permits private access where useful.
+- Added: Pete-only Inbox navigation into an owner-authenticated companion brief. Same-origin email frame retains existing Inbox functionality; public pages never load email content.
+- Protected: Sofia's profile, routes and public access; all existing brief destinations, data, content selection and refresh workflows; Inbox authorisation and triage schedule.
+- Validation: 89 existing Python tests and three new Inbox profile/routing tests pass. Private-route allowlist, owner access and upstream credential isolation checked separately in the Inbox project. Responsive CI pending; live signed-in Gmail interaction still requires Pete's session.
+- Conflicts/unexpected changes: none. The private companion does not remove Pete's old public pages.
+- Master brief: v5.4 records the authorised integration and privacy boundary.
+
 ## 9 September 2026: Restore previous Napoli meeting
 
 - Corrected the pinned empty previous-meeting field to Napoli 0–1 Arsenal, 18 April 2019, Europa League, checked against Pete's AiScore H2H page and Arsenal's own match report. AiScore uses a different display timezone; the card uses the UK match date.

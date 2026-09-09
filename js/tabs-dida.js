@@ -154,6 +154,7 @@
 
   function renderProfileViews(data,profile){
     if(nav)nav.dataset.profile=profile;
+    window.syncBriefInbox(profile);
     const news=[];
     if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden]);
     news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
@@ -162,12 +163,13 @@
     document.getElementById('careerTabGroups').innerHTML=group('',newestJobsFirst(data.sections?.Career||[]),'career');
     const dida=didaReferenceParts();
     window.mountDidaActivities(profile,dida.reference,dida.seasonal);
-    if(profile==='sofia'&&document.getElementById('view-arsenal')?.classList.contains('active'))showView('home');
+    if(profile==='sofia'&&(document.getElementById('view-arsenal')?.classList.contains('active')||document.querySelector('[data-view-target="inbox"].active')))showView('home');
   }
   window.renderProfileViews=renderProfileViews;
 
   function showView(view){
-    if(state.profile==='sofia'&&view==='arsenal')view='home';
+    if(state.profile==='sofia'&&['arsenal','inbox'].includes(view))view='home';
+    if(view==='inbox'&&!window.openBriefInbox())return;
     document.querySelectorAll('.brief-view').forEach(v=>v.classList.toggle('active',v.dataset.view===view));
     document.querySelectorAll('[data-view-target]').forEach(b=>{
       const active=b.dataset.viewTarget===view;

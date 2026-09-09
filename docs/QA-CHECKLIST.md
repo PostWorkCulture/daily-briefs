@@ -132,3 +132,12 @@ Recommendation: pass | pass with known issues | fail
 - [ ] Picker changes the activity; favourites, tried stickers, restoration and profile-local storage work without opening unrelated parent folds.
 - [ ] TV feedback hides the named programme, survives rerender and restores it correctly.
 - [ ] Low fact stock is a warning; exhaustion still blocks repeats. Weather merge preserves latest editorial fields and independent profile extremes.
+
+## Pete-only Inbox
+
+- [ ] Inbox appears only for Pete; Sofia cannot enter it through navigation or the view controller.
+- [ ] Public brief never loads an email frame or inbox API; Pete's Inbox button opens the authenticated private companion.
+- [ ] Private companion pins Pete, checks owner access for every mirrored resource, and never forwards credentials upstream.
+- [ ] Inbox frame uses the same authenticated origin, has a descriptive title and Open full inbox fallback, and is removed on profile change.
+- [ ] Mobile, Chromebook and widescreen navigation fit; existing sections and Sofia's access are preserved.
+- [ ] Live signed-in Gmail interactions verified, or clearly reported as untested.
