@@ -857,6 +857,8 @@ def check_viewport(browser, name: str) -> None:
                 })),
                 offenders,
                 nav: {
+                  top: navRect.top,
+                  bottom: navRect.bottom,
                   width: navRect.width,
                   height: navRect.height,
                   buttons: navButtons.map(item => ({
@@ -1191,6 +1193,9 @@ def check_viewport(browser, name: str) -> None:
                 f"upcoming Arsenal fixture is stale or incomplete: {result['fixtureText']}"
             )
 
+        if page.locator(".nav-brand").count():
+            failures.append("unrequested navigation branding remains")
+
         nav = result["nav"]
         buttons = nav["buttons"]
         expected_nav_targets = [
@@ -1213,6 +1218,8 @@ def check_viewport(browser, name: str) -> None:
         if any(button["width"] < 44 for button in buttons):
             failures.append(f"nav buttons squeezed below 44px: {buttons}")
         if name != "mobile":
+            if any(button["top"] < nav["top"] or button["bottom"] > nav["bottom"] for button in buttons):
+                failures.append(f"navigation destination spills outside its box: {buttons}")
             if len({round(button["left"]) for button in buttons}) != 1:
                 failures.append(f"desktop nav is not a single vertical column: {buttons}")
             if len({round(button["top"]) for button in buttons}) != len(buttons):

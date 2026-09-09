@@ -42,7 +42,6 @@ body{
 body:after{background:#030504!important}
 
 .app-shell{isolation:isolate}
-.nav-brand{display:none}
 .profile-switch{
   border-color:var(--signal-line)!important;
   background:#090c0a!important;
@@ -393,47 +392,18 @@ body #homeReminders .home-reminder-card.birthday:focus-visible{
     padding:18px 12px!important;
     display:flex!important;
     flex-direction:column;
+    overflow-y:auto;
+    overscroll-behavior:contain;
     gap:4px!important;
     transform:none!important;
     border-radius:10px!important;
-  }
-  .nav-brand{
-    display:block;
-    margin:0 6px 22px;
-    padding:2px 4px 20px;
-    border-bottom:1px solid var(--signal-line);
-  }
-  .nav-brand strong{
-    display:block;
-    color:#fff;
-    font-size:13px;
-    font-weight:650;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    white-space:nowrap;
-  }
-  .nav-brand small{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    margin-top:12px;
-    color:var(--signal-green);
-    font:10px/1 ui-monospace,SFMono-Regular,Consolas,monospace;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-  }
-  .nav-brand i{
-    width:7px;
-    height:7px;
-    border-radius:50%;
-    background:var(--signal-green);
-    box-shadow:0 0 10px rgba(124,244,106,.7);
   }
   .bottom-nav button{
     display:grid;
     grid-template-columns:32px minmax(0,1fr);
     align-items:center;
     min-height:52px!important;
+    flex-shrink:0;
     padding:8px 10px!important;
     text-align:left;
     font-size:14px!important;

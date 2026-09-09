@@ -8,6 +8,8 @@ Never remove, rename, hide, reorder, restyle, or change an existing section, rou
 
 If a request conflicts with the master brief, state the conflict and wait for Pete's decision. If the build conflicts with the brief, the brief wins unless Pete changes it. Missing history is not permission to remove current behaviour.
 
+Do not add branding, labels, taglines or other unrequested interface elements without Pete’s explicit approval.
+
 Before editing:
 
 1. Read the master brief and changelog.
