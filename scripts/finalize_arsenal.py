@@ -171,6 +171,32 @@ def verified_chelsea_result() -> dict:
     }
 
 
+def verified_napoli_result() -> dict:
+    return {
+        "date": "2026-09-09T20:00:00+01:00",
+        "dateLabel": "Wed 9 Sep",
+        "kickoff": "8pm",
+        "opponent": "Napoli",
+        "competition": "UEFA Champions League",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 1,
+        "opponentScore": 0,
+        "result": "1–0",
+        "scorers": [
+            {"name": "Martin Ødegaard", "team": "Arsenal", "minute": "75'"},
+        ],
+        "scorersLabel": "Martin Ødegaard 75'",
+        "stadium": "Stadio Diego Armando Maradona",
+        "summary": (
+            "Martin Ødegaard's 75th-minute strike completed a dominant Arsenal display "
+            "and secured a 1–0 away win over Napoli in their Champions League opener."
+        ),
+        "url": "https://www.theguardian.com/football/live/2026/sep/09/napoli-v-arsenal-champions-league-live-updates",
+        "source": "The Guardian",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -404,7 +430,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-09-06T18:30:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-09-09T22:00:00+01:00"):
+        fallback = verified_napoli_result()
+    elif NOW >= datetime.fromisoformat("2026-09-06T18:30:00+01:00"):
         fallback = verified_chelsea_result()
     elif NOW >= datetime.fromisoformat("2026-08-31T22:00:00+01:00"):
         fallback = verified_aston_villa_result()
