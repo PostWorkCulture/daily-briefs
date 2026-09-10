@@ -1,65 +1,38 @@
 {
-  "updatedLabel": "Wednesday, 9 September 2026 · refreshed 7:42pm",
+  "updatedLabel": "Thursday, 10 September 2026 · refreshed 6:43am",
   "worldFact": {
-    "id": "gesar-epic-sung-living-art",
+    "id": "caravaca-wine-horses-embroidered-race",
     "editorialPriority": "human-first",
-    "category": "Epic storytelling tradition",
-    "country": "China",
-    "place": "Tibetan and Mongolian communities",
+    "category": "Festival tradition",
+    "country": "Spain",
+    "place": "Wine Horses of Caravaca de la Cruz",
     "source": "UNESCO Intangible Cultural Heritage",
-    "sourceUrl": "https://ich.unesco.org/en/RL/gesar-epic-tradition-00204",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gesar_of_Ling_riding_a_deer._Distemper_painting._Wellcome_L0040371.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Gesar_of_Ling_riding_a_deer._Distemper_painting._Wellcome_L0040371.jpg",
-    "photoCredit": "Wellcome Collection · CC BY 4.0",
-    "fact": "The enormous Epic of King Gesar survives not just as text but through singers and storytellers who perform its episodes. The tradition also feeds Tibetan opera, painting and other community arts.",
-    "locationContext": "Tibetan Plateau and Inner Mongolia · China",
-    "date": "2026-09-09",
-    "sequence": 19
+    "sourceUrl": "https://ich.unesco.org/en/RL/wine-horses-00860",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Interior_del_museo_de_los_Caballos_del_Vino_12.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Interior_del_museo_de_los_Caballos_del_Vino_12.jpg",
+    "photoCredit": "Anidae · CC BY 4.0",
+    "fact": "Each May in Caravaca de la Cruz, horses wear spectacular cloaks embroidered with silk and gold thread. Four handlers then run beside each horse in a race up the steep approach to the castle.",
+    "locationContext": "Caravaca de la Cruz, Murcia · south-eastern Spain",
+    "date": "2026-09-10",
+    "sequence": 20
   },
   "weather": {
-    "temp": "16°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "12°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-09-09",
-        "high": 19,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
       {
         "date": "2026-09-10",
         "high": 20,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 30,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-11",
-        "high": 23,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 70,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-12",
-        "high": 23,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-13",
         "high": 24,
         "low": null,
         "summary": "Sunny intervals",
@@ -68,11 +41,29 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-14",
-        "high": 23,
+        "date": "2026-09-12",
+        "high": 24,
+        "low": null,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-13",
+        "high": 24,
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-14",
+        "high": 25,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
@@ -82,13 +73,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-16",
+        "high": 20,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 4,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Sunny · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -96,37 +96,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Tuesday 8 September 2026",
+      "dateLabel": "Wednesday 9 September 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Pershore",
-        "town": "Pershore",
-        "county": "Worcestershire",
+        "location": "Frittenden",
+        "town": "Tunbridge Wells",
+        "county": "Kent",
         "country": "England",
-        "displayLocation": "Pershore, Worcestershire",
-        "value": "20.4°C",
+        "displayLocation": "Tunbridge Wells, Kent",
+        "value": "21.1°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=bf5c87f318b0",
-          "page": "https://commons.wikimedia.org/wiki/File:Zebra_crossing,_High_Street,_Pershore_-_geograph.org.uk_-_4249419.jpg",
-          "credit": "Jaggery · CC BY-SA 2.0",
-          "alt": "Zebra crossing, High Street, Pershore",
+          "src": "assets/weather-extremes/hot.webp?v=941233031b28",
+          "page": "https://commons.wikimedia.org/wiki/File:Tunbridge_Wells_town_centre_-_geograph.org.uk_-_2489312.jpg",
+          "credit": "nick macneill · CC BY-SA 2.0",
+          "alt": "Tunbridge Wells town centre",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Warcop Range",
-        "town": "Warcop",
+        "location": "Shap",
+        "town": "Shap",
         "county": "Cumbria",
         "country": "England",
-        "displayLocation": "Warcop, Cumbria",
-        "value": "8.9°C",
+        "displayLocation": "Shap, Cumbria",
+        "value": "3.6°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=82f87521463b",
-          "page": "https://commons.wikimedia.org/wiki/File:Warcop_-_geograph.org.uk_-_30200.jpg",
-          "credit": "Carl Bendelow · CC BY-SA 2.0",
-          "alt": "Warcop village in Cumbria near the Warcop Training Area",
+          "src": "assets/weather-extremes/cold.webp?v=8e8504d9fd4c",
+          "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(A6),_Shap_-_geograph.org.uk_-_3344660.jpg",
+          "credit": "David Dixon · CC BY-SA 2.0",
+          "alt": "Main Street (A6), Shap",
           "width": 1600,
           "height": 900
         }
@@ -134,20 +134,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Full Day",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-07T00:00:00+01:00",
-      "end": "2026-09-09T00:00:00+01:00",
-      "date": "2026-09-07",
-      "time": "All day",
-      "allDay": true,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "3gc60jq425jci4tn5ljaevtl8u",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Blag Day",
       "summary": "",
@@ -432,9 +418,9 @@
   "lead": {
     "title": "‘It’s like a death sentence’ says British widow facing deportation from Sweden",
     "summary": "",
-    "meta": "Wed 9 Sep",
-    "publishedAt": "2026-09-09T18:50:00+01:00",
-    "source": "The Guardian",
+    "meta": "Thu 10 Sep",
+    "publishedAt": "2026-09-10T02:31:00+01:00",
+    "source": "theguardian.com",
     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdzZJN28xbWh5aFA0aG12ZzNMTUl6VkN6Tk1FdlllTm55ckpJOUU4TmhvM3pvWi12ai1pTTl6X2FmR1ozQXByTVdPNkxTRFV0NTk5eFpkVGt6RFIxZ3NORy11WjNramdXT0dvUVhPZjZhRTVSWVNxSGJvbnRSSHh4dzNDVVc5WS1qUHcxX0pqUEd2N0lGWGdtaGljdGRINVRENllRVEJEdERDaDRCbXlqUUd3a0xvT20tck9PTV92Wm8yTXo2RjNpMHlCWVowUllR?oc=5",
     "contentType": "article"
   },
@@ -442,9 +428,9 @@
     {
       "title": "‘It’s like a death sentence’ says British widow facing deportation from Sweden",
       "summary": "",
-      "meta": "Wed 9 Sep",
-      "publishedAt": "2026-09-09T18:50:00+01:00",
-      "source": "The Guardian",
+      "meta": "Thu 10 Sep",
+      "publishedAt": "2026-09-10T02:31:00+01:00",
+      "source": "theguardian.com",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdzZJN28xbWh5aFA0aG12ZzNMTUl6VkN6Tk1FdlllTm55ckpJOUU4TmhvM3pvWi12ai1pTTl6X2FmR1ozQXByTVdPNkxTRFV0NTk5eFpkVGt6RFIxZ3NORy11WjNramdXT0dvUVhPZjZhRTVSWVNxSGJvbnRSSHh4dzNDVVc5WS1qUHcxX0pqUEd2N0lGWGdtaGljdGRINVRENllRVEJEdERDaDRCbXlqUUd3a0xvT20tck9PTV92Wm8yTXo2RjNpMHlCWVowUllR?oc=5",
       "contentType": "article",
       "section": "Sweden"
@@ -462,7 +448,7 @@
       "section": "Local"
     },
     {
-      "title": "Apple TV’s global hit drama “Silo” to return for fourth and final season on July 9, 2027",
+      "title": "Apple TV’s hit drama “Silo” to return for fourth and final season on July 9, 2027",
       "summary": "",
       "meta": "Sat 5 Sep",
       "publishedAt": "2026-09-05T00:07:18+01:00",
@@ -491,31 +477,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 427.2
-    },
-    {
-      "title": "Love Cheats",
-      "summary": "When 24-year-old Michelle met charismatic head chef Stuart, she thought she'd found the perfect family man. The couple began planning a lavish wedding and a trendy new cocktail bar. But…",
-      "meta": "Channel 4 · Available since Mon 7 Sep",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/love-cheats",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349372.jpg",
-      "artworkAlt": "Love Cheats programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-07",
-      "showId": 80197,
-      "episodeId": 3717213,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime",
-        "Romance"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 356.0
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 419.2
     },
     {
       "title": "999: What Happened Next",
@@ -536,8 +499,28 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 382.4
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 374.4
+    },
+    {
+      "title": "Panorama",
+      "summary": "It's a sex abuse scandal that has gripped the world. But despite all the headlines and stories, important questions remain unanswered about Jeffrey Epstein. How did he become so powerful?",
+      "meta": "BBC One · Mon 14 Sep, 8pm",
+      "source": "BBC One",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
+      "artworkAlt": "Panorama programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-14",
+      "showId": 8534,
+      "episodeId": 3732006,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 327.6
     },
     {
       "title": "The Bodies on the Bridge",
@@ -556,32 +539,32 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 368.1
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 360.1
     },
     {
-      "title": "Neagley",
-      "summary": "Frances Neagley is a private investigator in Chicago and former military protege of Jack Reacher in the Army's 110th Special Investigations Unit. When she learns that a beloved friend from…",
-      "meta": "Prime Video · New wed 16 sep",
-      "source": "Prime Video",
-      "url": "https://www.primevideo.com",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1591760.jpg",
-      "artworkAlt": "Neagley programme artwork",
+      "title": "Monster: The Lizzie Borden Story",
+      "summary": "Monster: The Lizzie Borden Story tells the story of how one young woman changed what the world believed a killer could be... all it took was an axe. When the repressed daughter of a…",
+      "meta": "Netflix · New thu 17 sep",
+      "source": "Netflix",
+      "url": "https://www.netflix.com/title/82068293",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/635/1588436.jpg",
+      "artworkAlt": "Monster: The Lizzie Borden Story programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-16",
-      "showId": 82707,
-      "episodeId": 3658349,
+      "airdate": "2026-09-17",
+      "showId": 87597,
+      "episodeId": 3395527,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Action",
-        "Thriller"
+        "Crime",
+        "Horror"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 194.9
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 245.8
     }
   ],
   "sections": {
@@ -589,10 +572,28 @@
       {
         "title": "‘It’s like a death sentence’ says British widow facing deportation from Sweden",
         "summary": "",
-        "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T18:50:00+01:00",
-        "source": "The Guardian",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T02:31:00+01:00",
+        "source": "theguardian.com",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdzZJN28xbWh5aFA0aG12ZzNMTUl6VkN6Tk1FdlllTm55ckpJOUU4TmhvM3pvWi12ai1pTTl6X2FmR1ozQXByTVdPNkxTRFV0NTk5eFpkVGt6RFIxZ3NORy11WjNramdXT0dvUVhPZjZhRTVSWVNxSGJvbnRSSHh4dzNDVVc5WS1qUHcxX0pqUEd2N0lGWGdtaGljdGRINVRENllRVEJEdERDaDRCbXlqUUd3a0xvT20tck9PTV92Wm8yTXo2RjNpMHlCWVowUllR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Debate over Swedish school model rages ahead of elections",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T05:03:48+01:00",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUTVva1ZqbkhlWWh3MjI4aE1ZNHc3aS1aSVZWTUVZU3I1ZkRTSnN2WENaUU95ZjdTY2hQWU84QzFNSTNMVW9XSUZOT3B5di1vcVdic1JST3NiLUx2R2h0dTBEVTlNMWhDdVhhY3p5SU9DRUpWU0RPSEU1U1N6bjNTSGduUzc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sjobo, cradle of Sweden's now-mainstream anti-migrant sentiment",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T02:49:26+01:00",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZkdYZlI1Z0k2Zk04b0MtRnlMQ0JIS29NNEpTWjdpY0NsV2MwaDFzNWo5VUhqazRwalRZUXVETExKdGJMeFdRYTI2UDlwd1E4UFcyWkFLaFBqRC1qRHFXVmdacllCWnJxalNLRFhjVzNNek8wdmh2S1MycDRaRzZFRWxJMFlMY3IwTnlyYW41cGdrTVBrVjJwTEUwOTdGb3JPLTNxaWZJM2lKcENnLWc?oc=5",
         "contentType": "article"
       },
       {
@@ -605,33 +606,6 @@
         "contentType": "article"
       },
       {
-        "title": "Saab tapped to continue work on Sweden’s next flagship fighter jet",
-        "summary": "",
-        "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T16:52:02+01:00",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb2pFc2tiRDRtQXBDZVFtSThtYmh1bUdKQkNkY0pKamxIcTNrMTJNWFFHWWRsay1HV0VHUnFJblZqcEpfc0N5dm9RWDQxdjhzTkp2NDI3YnFnRXpoRmxOWjA2dDJDNWxxTFJnWnZvaGZPMGNlSENSdGx6RnlFdEtRemNKMUw5Wi1xaWJGOUk1aWZZcEtJc3RCbmtScHlRdUZGUHFvQUo3dGZVZTJ6SEVhdklyOWlCbHB1WW00?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "BetComply aids Playbook Fusion’s Sweden launch",
-        "summary": "",
-        "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T15:48:54+01:00",
-        "source": "sbcnews.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8waEFEaFNQVlFrVE5UU3h5RkdEcjJ6V2VPdXFsVXRKVHd1RHp3d1NhZkNIQWVJY0gwN3h1RXZ1eVNEYWpZSjUxdlg3MlZ3ajZodjBTUzd5NnFiT3RjUUpBSzVwSXVxUkJ1d3ZMT0lDYVVrWlUwMHNnZWVn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden Democrats ride Europe’s nationalist wave",
-        "summary": "",
-        "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T11:00:08+01:00",
-        "source": "Financial Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ2VTZ0FUdzlHVWFEdWhIdlh2VFI0STk4dmRhVjE3NjNKS3NYS1o3VElMTGZ3ajhFMjNsRzNkanU3bHhUV201YTlhNFRoWUhHZFN6SzBpRnlwLU5qbHZrUlZDLW9LRkl2OVZSNXZ1eWdwVG1OWFpkeDB1SFo0Y2hCeVVzbHQ?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "British widow faces deportation from Sweden after 22 years",
         "summary": "",
         "meta": "Tue 8 Sep",
@@ -641,12 +615,21 @@
         "contentType": "article"
       },
       {
-        "title": "Saab wins $303 million order from Sweden for work on future combat aircraft",
+        "title": "Saab tapped to continue work on Sweden’s next flagship fighter jet",
         "summary": "",
         "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T14:17:53+01:00",
-        "source": "Euronext Markets: Real-time Stock Market Data | live",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPY0lJNXpsbkYwWVE4R081NWFLb2llX3NCTWJwdks4WDlRNGNJNlAwVGlQdzBfMkZ4ZDFZci1PVUFMLVk4dzYyd2o3ZUhJYkJXMTkySFBDc1Q0aFFJVnhtb0xGR1dYRmVsYV8td0luWXVIVjlqM0d1QTNaUUo3NnNWZWU0b2FnR1o3dWNVWVRtQUdSZVBaMlBWWjV4SnhvT0ctWldlX2VNU0lwZw?oc=5",
+        "publishedAt": "2026-09-09T16:52:02+01:00",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb2pFc2tiRDRtQXBDZVFtSThtYmh1bUdKQkNkY0pKamxIcTNrMTJNWFFHWWRsay1HV0VHUnFJblZqcEpfc0N5dm9RWDQxdjhzTkp2NDI3YnFnRXpoRmxOWjA2dDJDNWxxTFJnWnZvaGZPMGNlSENSdGx6RnlFdEtRemNKMUw5Wi1xaWJGOUk1aWZZcEtJc3RCbmtScHlRdUZGUHFvQUo3dGZVZTJ6SEVhdklyOWlCbHB1WW00?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "‘They poison the population’: Swedish Muslims challenge far right ahead of election",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T05:00:00+01:00",
+        "source": "theguardian.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQczFoQWhxd3A2c3hfNmJjaDl0enIzck9JRjRUUDNqRnk1VmVvVVBxaF9NOUJ2b04tMndxSHpwSmlpc2NmbEFSSDkyWkIzZ3pTSVJBdlVXV2ZIc2k4QkJoNXkzZzN2MmUySWtKa1B6OFY0aWNmUkVaVzZVU0hzMDk2SGxMUlMyQmJyVzJmV0NUWXBZREE?oc=5",
         "contentType": "article"
       }
     ],
@@ -751,17 +734,6 @@
         "familyActivity": false
       },
       {
-        "title": "Good Morning Choir @ The Elleray Centre, Teddington",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T12:23:55+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcGpNRC1jOTQ5LUk5NENBczRrc0VjaG96c0JhUk9nMzIyR0RJaTQxcmNvT3lybWdCNWFrbWJYSXRwb1ZfODlkeGI0NXhNSVhYOFByUU1qbVJOM0FoejJPcVZjSVJuRy1wckt0eG5rcWpUaFozR3B6Zkh3OGthWHE0Z3FHaFNVc0MybkRTNi1ucDdYelRyQmdKTk04ZEtVVUYtR0E?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Kingston and Surbiton MP asks for Reform UK to be investigated after allegedly breaking election law",
         "summary": "",
         "meta": "Mon 7 Sep",
@@ -826,16 +798,72 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
+      },
+      {
+        "title": "Teddington High Street Is Evolving as Residents Reshape How They Shop",
+        "summary": "",
+        "meta": "Fri 4 Sep",
+        "publishedAt": "2026-09-04T00:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeHlobUtnTXdlM3BKNXBxODBRQ3ZfcE5XV3RDNDRjN3Y4VWFlNTJwcXN4cUx1d2FaOC1LVDdRVTlEUjQ0ZnVfbGN2RmZhY0hBeGNkeGdqeHIxY2UyU1JzZkpuTm5UaXhwaGRkTlg4NGVpQmhxc001X3BiYVRGWmtRcDluWjNQeWhtbFBFY3ZlN0swalVaRTlvd3Z5YXp5S1ZDZnpGX0dXWTBfNVpoQ1RuSDFQTU5MdVZDQWxmTV81ZmpKSUxlZlZN?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
       }
     ],
     "UK news": [
       {
+        "title": "Scotland's renewable revolution hinges on one worrying decision in Westminster",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T06:22:16+01:00",
+        "source": "The Herald",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbkVWT29MNmFSTzd0ZkVKOUR6SkVFSGRmcWZsRUgzQ0dFTG1LTmk0aV9JNFZIQVFRdWhFb04zZ2sxSEw1dGR0U3M1b2VaekZLNVlUZFpMM2RreVVWSzhvYnBidW1XWk1adVZBSF92REFLaUJNaW9hSndqTy1ZUHphWWt2NzI3Wi14azF2V0F2ZnZ0eFJqS2gwZnhlZXg3RWp1c19CcUFTNTdSa3JXUzFoemRoaG9kd0xMM1RIeExaVQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Darlington charity set up to honour girl, 8, shortlisted for Pride of Britain award",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T05:30:00+01:00",
+        "source": "The Northern Echo",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbXBNVmRGWVBGUkk5bmNPSTdKaUFIaVFZaGdGT2lCRGZ0djlJQVhuVW51NHd1cjhCczZhTjJJMHNLRURQd2Y5NFRvRE5hVXhNZGRxdWRjZW5QTmxWV25wQ2VmV0sxRkFtYWo4VGpPM2V0N3d0SEdUdFViT2F0WlhkU0ZKVzhNZnNlQ1B1WDB6VXpVeE5pRW1LdjNzNXU5SzJhUFh6eXBqZ1ZFMVU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "CORD by Le Cordon Bleu celebrates the British game season, cooked by two of its best",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T04:41:36+01:00",
+        "source": "London TV",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYkxiS0tiYzQ4ZXQwc0kwMzRuYVV0TGdmZG01UDZ6bzFtVUtuajJzNUh2VlVkWjdzc0c1QmhwOThMMUR3UUZXdHVPal85YWFFdk5FSzNiampFWHg2Z1ZBeHUyeERfdXM2YThudFBsN21KLUd5eU5wZnJ0d056MEpmQkNjaFZsRXFnRjhmNXhzbWpTcTZod3llakZRSE1GdjJvNHNwS1cyeU90eDcz?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Eknath Shinde honoured with Commonwealth Public Leadership Award at British Parliament, credits Maharashtra schemes",
+        "summary": "",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T01:38:00+01:00",
+        "source": "ANI News",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNb0Zqd1BqTDNZRzFUdnVUckVjTlJpQnNBdkJhbUdvZ3pia2ZQdkF6dml1dWlBYlhWVmxuQWZYZnNPZ1lJa0RhVjZjM1hodHEzUEpiTFNYQ1FKTUV3dEtDT2w4aldCaFloTnJBbGVKZzlxMFVjMDNJZWU4NzZUUEpvWWtmSGdqWV8zLVM4czRLNDFaMVlwTTAxREQ4Ymo2cTFxeHJwUjBQLVFlbzlOS1NvVFFaTkdPWHBYQVQ0d0QxSzJTR3JINkVQcjZyc3FiYWlKWmRTQzRjbEF1dXpNb3VYMkFUNHdGZlhkdU4tRXgyMUt4VzJoUEMzSjNlV3poM3JNWUE?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Police launch criminal investigation into Reform UK donations",
         "summary": "The investigation, which follows a broadcast by Channel 4 News, is being folded into the inquiry that has been under way into other donations.",
         "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T18:21:14+01:00",
+        "publishedAt": "2026-09-09T21:22:00+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cp3k72k1y3vo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Fledgling Experience North East England bags its first major award nomination following successful Media Getaway event",
+        "summary": "",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T15:10:06+01:00",
+        "source": "Prolific North",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQcWFlcHIwWnY1UFRNanB6RzhPQUZfbFoyR3luZlBnU0dJOTQ0QzN0VWY0dXRuNW5JZ2RTYmo1bUoySTBlUDZ4NGFMU05HMllaR0ZIQ1dob1d6c3A2bXNHem8weEc3V0ppWFpOZkhzNW9nRUdpU1NTTmViWi05TnJxdWJXOF90dUQ3bnBWRm1ZS2Q0dGUzTmNmN3c2ckJYS3JqcTVVSC1kVl9ld1YyNFRqSEJNTmRIc3htWmNTVEVkSHJ5dGVwRFFNOUc4a1pJYWpGTVlUdUxyQzZMT1FfTFI5SUJxZHBxTy1RVzc1UQ?oc=5",
         "contentType": "article"
       },
       {
@@ -870,7 +898,7 @@
         "summary": "",
         "meta": "Tue 8 Sep",
         "publishedAt": "2026-09-08T20:29:36+01:00",
-        "source": "nation.cymru",
+        "source": "Nation.Cymru",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUFUzaWpicVhXdHJtVUxIS2ozNGgwTW5mX2YtZjJ5WWd0Y1FuVzBPT0IwTXdRaC00QUw2bk1tOGE3Y3BZaVlhODBoemtPZVQ4Y0J6TzlHM1ppanJGMWs1STJQVXQtS0pQOWRKMGdJc0dBZ0ZpUlN5M2gyUUU2MlJfMHFVb1dpNEhsYmtwdzAtclkyY3I0OTVCbG1od0s4TkNW?oc=5",
         "contentType": "article"
       },
@@ -891,54 +919,27 @@
         "source": "Yahoo Sports UK",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeURpd25LZ2pIRjZGMXk3YjVTTDl0a0hDSm5idW5wRl96Zmw4YXB6aTR2bDR5OEJzVm1WQy1oVk9Ec3JaODJDc3Z4S2lTT2NIMHVFRGlqaU5ZdHhjWFlwZHVMSzZYanpVUHZVMnNJSUx0eVMwa3JTV2hySjJabnhCOHhyTHczaUxadl85MQ?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Selkirk tartan maker Lochcarron shortlisted for Manufacturer of the Year award",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T19:03:28+01:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZWxQVlFiTkc3OEZRbi1yakU4R1ZGdU56VS12WnN3ZzlYaEFPLW91N2Nka21Yd01Mb3M0N1lscFZsQi1nMVFMLXJpX0E2SDZFUkRHT0NubVU0dGVrLU1OMEVxd1AtSkFJUTcyU0NDWmpkZnRNNEQwYnY2dGlxa2s2cUNBa2FycHh1dEdYTzc4N0k4eWl6YmV5Ukdn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Wales Air Ambulance celebrates Air Ambulance Week 2026",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T18:15:39+01:00",
-        "source": "aberdareonline.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTUpZWUVPRGVQMWpBdnVsd0dYV1gybUFiY1BNMzFmYURoWHZuUFFhYkx1TGlRQm9GQjhicWdWaXNRMnJqbk9MbG1YaEgtbVpjdUZ0S0dZcmhsRV96SVZLRWxyNktCdTRTM2ROOTc2bGd4Vk5KaGpKMnlrWVd5eGZXUEd4cVFjMUR0VHdLSElWMDdIYXNWY3djTnRObWJZY3Q0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "'An incredible achievement': Top UK and European food company celebrates 100 years in Northern Ireland",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T17:23:00+01:00",
-        "source": "Belfast News Letter",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUFhsQ3B5dEY1T0l6YkwxVDRyNk1McTdXcDFITUJFY0FBM2UzTkZJTjludmQ0cDY1T2dYb0wzdnBlTU03S2MtWGItbW5TNzV5WTBlRHJHZDY1cWxuTWNOTWpkVEN3OElsM2t1Sno2MENoOFd2d2lfMVBERnhnZjdESkpPN29VbGZHZ0kwTHJuOVo1dTVSb0kyYjRqTHZrTGQtZ05LVjhZSngyTmRiQTdQaW5IYTVCQ05XRTE2QUVWSHRrLWN2YnM4dmZuSUp5MkhKNHJHeTRiMDJzWXdDVmc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Winner of Scotland's Best Indian Restaurant award revealed",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T17:13:52+01:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdmtXZlNPWUhHTnFfRERsQnB5S0lPMUI2ZUZuUERmc3FNUGxFWC0xeGtaWi1wT256V0xxWHJfeDlQc0laSmRvcDl5NmtxVERvNktsSzFGTHktb1BMbWQya1FwanpHZEJrenJNLVZOZTZUeEsxMUdzcEE4WWMyZFhLcHdkbVFhRVJIUFlZQWFDdUUyVndXSU1nT0h1QQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "VCUarts alum wins prestigious Fulbright Award to continue ‘World Wide Water’ project in Scotland",
-        "summary": "",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T17:08:56+01:00",
-        "source": "VCU News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxON2JQcWxQTHNJMDBENU9UcEtRSnNRUk9IeEJhWmgwZEplTklENVF2NC13bDNpbS1rOXVIbk9hR0FlOHlfanZmZG5BQlV0MUlUeDNwdUt6NWJRTjQ0bXRzdUNXTXgtM3ZzS3hVZ3MzYWprOHNZaTNOOTVWaTk2Z2F3RXZ3ZXZDeHZvZXlIT1Ytbk95MUZDSXNMTFMwRlZubno4VFNxdWtDV0JQdXpvcWYwckVTWUp2YVdTUGxXZU1OZno?oc=5",
-        "contentType": "article"
       }
     ],
     "AI": [
+      {
+        "title": "The AI policy window is open. We need to act.",
+        "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T14:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/ai-policy-window",
+        "contentType": "article"
+      },
+      {
+        "title": "GPT-6 Astra: The next generation in intelligence for work",
+        "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+        "meta": "Wed 9 Sep",
+        "publishedAt": "2026-09-09T12:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+        "contentType": "article"
+      },
       {
         "title": "Paul Christiano joins OpenAI Foundation Board",
         "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
@@ -976,15 +977,6 @@
         "contentType": "article"
       },
       {
-        "title": "On the Navier–Stokes Millennium Prize Problem",
-        "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-        "meta": "Tue 8 Sep",
-        "publishedAt": "2026-09-08T11:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/navier-stokes-solution",
-        "contentType": "article"
-      },
-      {
         "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
         "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
         "meta": "Tue 8 Sep",
@@ -1003,21 +995,21 @@
         "contentType": "article"
       },
       {
-        "title": "Exclusive | Anthropic Researcher Quits Over ‘Out-of-Control’ AI Fears",
+        "title": "An alignment assessment of recent cybersecurity incidents",
         "summary": "",
         "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T18:37:00+01:00",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNkJNMUhyUzQ3M1FsRFZMcUhKMGFFeFpsdnJaVzM4T2duWVVFYTk4ZUpXN0dRemFMUjZ3bC1CZ29ETjF4dWlScEQ5UVZDYVhLOUt0YVVmV1JfdjVoZWVpcXVyTFhDdjNTN0NIc2h6bXdRbkZDek5RX3poR0JkRE5XdG55ZFFJRGNqRWllSzllQk56LWJHYURn?oc=5",
+        "publishedAt": "2026-09-09T20:13:44+01:00",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic researchers say AI could cause human extinction by 2030",
+        "title": "GPT-6 Astra: A new generation of intelligence",
         "summary": "",
-        "meta": "Wed 9 Sep",
-        "publishedAt": "2026-09-09T18:47:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSVlEaEpsMXNNdTNyNTY5VzZyTDVfQkFyNTJTTTNyZkM1amhPQnZtRFpCdFU1X245b1lSUEQ4Y0Zqa0x5Nkgzb3NjX1BxX1BlcUo1LThfUDNyVXpGd08wTFJ1cE4tb19SSnlXMERDc2tMUDZfN3VjZm02QjVQMmVmelVYYnhRV3pEQ2pqSXRVUlpSRGhwemdr?oc=5",
+        "meta": "Thu 10 Sep",
+        "publishedAt": "2026-09-10T06:34:45+01:00",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11QUxBUVJLdC1jSmtJbmcxQzg4Qm9yUlNPS3JEMEVBanIyY1FRT2k2R0hBTlNnX2VqcWpTSDJUMDV0TjBJN1VGamlrZzVPZw?oc=5",
         "contentType": "article"
       }
     ],
@@ -1042,8 +1034,8 @@
       {
         "title": "Lead Technical Architect - AI",
         "company": "Department for Environment, Food and Rural Affairs",
-        "description": "Bristol, London, York Job Summary Defra is the UK government department responsible for safeguarding our natural environment, supporting our world-leading food and farming industry, and sustaining a thriving rural economy. Our broad remit means we play a major role in people's day-to-day life, from the food we eat, and the air we breathe, to the water we drink. Digital, Data, Technology and Security (DDTS) is the…",
-        "salary": "£56,375",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
         "postedDate": "7 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
         "location": "London, England, United Kingdom",
@@ -1068,21 +1060,6 @@
         "sector": "Public sector",
         "aiRelated": true,
         "postedAt": "2026-09-05"
-      },
-      {
-        "title": "AI Lead",
-        "company": "Money and Pensions Service",
-        "description": "Description not supplied by publisher.",
-        "salary": "Not stated",
-        "postedDate": "3 September 2026 · LinkedIn listing date",
-        "source": "LinkedIn",
-        "location": "Bedford, England, United Kingdom",
-        "url": "https://uk.linkedin.com/jobs/view/ai-lead-at-money-and-pensions-service-4460477229",
-        "contentType": "job",
-        "countryFocus": "UK",
-        "sector": "Public sector",
-        "aiRelated": true,
-        "postedAt": "2026-09-03"
       },
       {
         "title": "AI Industry Opportunities Advisor",
@@ -1122,29 +1099,32 @@
   },
   "watchAlternatives": [
     {
-      "title": "Panorama",
-      "summary": "It's a sex abuse scandal that has gripped the world. But despite all the headlines and stories, important questions remain unanswered about Jeffrey Epstein. How did he become so powerful?",
-      "meta": "BBC One · Mon 14 Sep, 8pm",
-      "source": "BBC One",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "title": "Love Cheats",
+      "summary": "When 24-year-old Michelle met charismatic head chef Stuart, she thought she'd found the perfect family man. The couple began planning a lavish wedding and a trendy new cocktail bar. But…",
+      "meta": "Channel 4 · Available since Mon 7 Sep",
+      "source": "Channel 4",
+      "url": "https://www.channel4.com/programmes/love-cheats",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
-      "artworkAlt": "Panorama programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/539/1349372.jpg",
+      "artworkAlt": "Love Cheats programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-14",
-      "showId": 8534,
-      "episodeId": 3732006,
+      "airdate": "2026-09-07",
+      "showId": 80197,
+      "episodeId": 3717213,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
-      "genres": [],
+      "genres": [
+        "Crime",
+        "Romance"
+      ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 319.6
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 348.0
     },
     {
       "title": "Paul C. Brunson: Red Flag",
       "summary": "The relationship expert speaks to Jak, who spent 6 months manipulated by 'The Tinder Predator' Christopher Harkins - a serial fraudster later convicted of assault, fraud and rape.",
-      "meta": "U&W · Available since yesterday",
+      "meta": "U&W · Available since Tue 8 Sep",
       "source": "U&W",
       "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
       "badge": "Documentary",
@@ -1158,8 +1138,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 311.6
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 303.6
     },
     {
       "title": "Police Interceptors",
@@ -1180,28 +1160,8 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 269.6
-    },
-    {
-      "title": "9/11: Days That Shocked the World",
-      "summary": "9/11 remains one of the most shocking events in world history. In the first of a two-part documentary to mark the 25th anniversary of the tragedy, rescue workers, survivors and witnesses…",
-      "meta": "Channel 4 · Available since Wed 2 Sep",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/911-days-that-shocked-the-world",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1598676.jpg",
-      "artworkAlt": "9/11: Days That Shocked the World programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-02",
-      "showId": 93909,
-      "episodeId": 3723308,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 263.7
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 261.6
     },
     {
       "title": "How the Tudors Lost Their Heads",
@@ -1222,13 +1182,13 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 253.9
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 245.9
     },
     {
       "title": "Hitler's Last Stand",
       "summary": "While trying to take a ridge held by German troops, the legendary Canadian regiment known as The Black Watch suffers devastating losses. Outgunned and cut off from command, a ragged band…",
-      "meta": "National Geographic · Available since yesterday",
+      "meta": "National Geographic · Available since Tue 8 Sep",
       "source": "National Geographic",
       "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
       "badge": "Documentary",
@@ -1245,28 +1205,55 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 245.6
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 237.6
     },
     {
-      "title": "Turning Point: Generation 9/11",
-      "summary": "One-off",
-      "meta": "Netflix · Available since Wed 2 Sep",
-      "source": "Netflix",
-      "url": "https://www.netflix.com/title/82091553",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1598467.jpg",
-      "artworkAlt": "Turning Point: Generation 9/11 programme artwork",
+      "title": "Route 187",
+      "summary": "Citizens combat urban violence until a bus driver and student's murders by thugs spark outrage, leading authorities to hunt the culprits captured on video.",
+      "meta": "Paramount+ · New thu 17 sep",
+      "source": "Paramount+",
+      "url": "https://www.paramountplus.com/",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599881.jpg",
+      "artworkAlt": "Route 187 programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-02",
-      "showId": 93614,
-      "episodeId": 3703754,
+      "airdate": "2026-09-17",
+      "showId": 93997,
+      "episodeId": 3729387,
       "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 242.1
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 231.3
+    },
+    {
+      "title": "Vigil",
+      "summary": "The truth of Jia's discovery has dangerous consequences for the team, who have to band together to go on a rescue mission that could spell disaster. As enemies both old and new draw nearer…",
+      "meta": "BBC iPlayer · Sun 13 Sep, 6am",
+      "source": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1597618.jpg",
+      "artworkAlt": "Vigil programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-13",
+      "showId": 45879,
+      "episodeId": 3701703,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 227.0
     },
     {
       "title": "Eye Investigations",
@@ -1285,37 +1272,37 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 227.0
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 219.0
     },
     {
-      "title": "Vigil",
-      "summary": "Amy arrives to help Kirsten when she is faced with the wrath of the Russians. Determined to clear Kirsten's name, Amy and Kirsten dig into the complex motivations within the hub whilst…",
-      "meta": "BBC iPlayer · Available since Sun 6 Sep",
-      "source": "BBC iPlayer",
-      "url": "https://www.bbc.co.uk/programmes/p09pm77q",
+      "title": "Neagley",
+      "summary": "Frances Neagley is a private investigator in Chicago and former military protege of Jack Reacher in the Army's 110th Special Investigations Unit. When she learns that a beloved friend from…",
+      "meta": "Prime Video · New wed 16 sep",
+      "source": "Prime Video",
+      "url": "https://www.primevideo.com",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599356.jpg",
-      "artworkAlt": "Vigil programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1591760.jpg",
+      "artworkAlt": "Neagley programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-06",
-      "showId": 45879,
-      "episodeId": 3701701,
+      "airdate": "2026-09-16",
+      "showId": 82707,
+      "episodeId": 3658349,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Thriller",
-        "Mystery"
+        "Action",
+        "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 223.0
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 202.9
     },
     {
       "title": "Star Trek: Strange New Worlds",
       "summary": "Enterprise is commandeered by Admiral Reeger to track down an alien ship.",
-      "meta": "Paramount+ · New tomorrow",
+      "meta": "Paramount+ · New today",
       "source": "Paramount+",
       "url": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/",
       "badge": "Sci-fi",
@@ -1333,13 +1320,13 @@
         "Science-Fiction"
       ],
       "interestLane": "sci-fi",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 184.0
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 192.0
     },
     {
       "title": "Reacher",
       "summary": "Reacher and Tamara finally get the answers they've been looking for. Meanwhile, Jacob learns that their problems are just beginning when Plum's sources come through with some timely…",
-      "meta": "Prime Video · New today",
+      "meta": "Prime Video · Available since yesterday",
       "source": "Prime Video",
       "url": "https://www.amazon.com/dp/B09MKZTJF4",
       "badge": "Thriller",
@@ -1357,22 +1344,22 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 177.0
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 165.0
     },
     {
       "title": "Lioness",
-      "summary": "Neal tries to hold the family steady as Kaitlyn, Kyle, and the team bid to decode hints through a hidden network.",
-      "meta": "Paramount+ · Available since Sun 6 Sep",
+      "summary": "As the operation erupts into open conflict Kaitlyn and Westfield coordinate a massive search.",
+      "meta": "Paramount+ · New sun 13 sep",
       "source": "Paramount+",
       "url": "https://www.paramountplus.com/shows/lioness/",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600228.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600274.jpg",
       "artworkAlt": "Lioness programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-06",
+      "airdate": "2026-09-13",
       "showId": 50415,
-      "episodeId": 3638308,
+      "episodeId": 3638309,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
@@ -1381,8 +1368,8 @@
         "Espionage"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-09",
-      "preferenceScore": 147.0
+      "generatedDate": "2026-09-10",
+      "preferenceScore": 151.0
     }
   ]
 }
