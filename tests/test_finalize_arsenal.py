@@ -83,6 +83,52 @@ class FirstTeamResultTests(unittest.TestCase):
         self.assertEqual(result["stadium"], "Emirates Stadium")
         self.assertEqual(result["kickoff"], "4:30pm")
 
+    def test_verified_napoli_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_napoli_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["arsenalScore"], 1)
+        self.assertEqual(result["opponentScore"], 0)
+        self.assertEqual(result["scorers"], [
+            {"name": "Martin Ødegaard", "team": "Arsenal", "minute": "75'"}
+        ])
+        self.assertEqual(result["stadium"], "Stadio Diego Armando Maradona")
+        self.assertEqual(result["kickoff"], "8pm")
+
+    def test_verified_napoli_result_completes_partial_report(self) -> None:
+        payload = {
+            "sections": {
+                "Arsenal news": [
+                    news_item(
+                        "Report: Napoli 0-1 Arsenal",
+                        "2026-09-09T22:20:00+01:00",
+                    )
+                ]
+            },
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-09-09T20:00:00+01:00",
+                    "dateLabel": "Wed 9 Sep",
+                    "opponent": "Napoli",
+                    "completed": True,
+                    "arsenalScore": 1,
+                    "opponentScore": 0,
+                    "result": "1–0",
+                    "source": "Arsenal.com",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-10T06:00:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
+        result = payload["arsenal"]["lastResult"]
+        self.assertEqual(result, finalize_arsenal.verified_napoli_result())
+
 
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {

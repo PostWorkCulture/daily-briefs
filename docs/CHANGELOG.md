@@ -765,3 +765,11 @@ Status: proposed | approved | implemented | validated | reverted
 - Unexpected changes:
 - Master brief update:
 - Follow-up:
+# 10 September 2026: Verified Napoli result recovery
+
+Status: repair prepared after the protected catch-up identified incomplete result metadata.
+
+- The refresh correctly detected Napoli 0–1 Arsenal on 9 September but stopped before publication because the incoming report lacked scorers, summary, kickoff and stadium.
+- Added the verified complete result: Martin Ødegaard 75', UEFA Champions League, 8pm kickoff, Stadio Diego Armando Maradona, with a concise match summary and Guardian result source.
+- The verified result is used only after the match completed and reconciles the partial Arsenal.com result rather than weakening the required-field guard.
+- Scope is limited to Arsenal result completion; no current profile data, News, Career, fact catalogue, selected fact or unrelated section changes are included.
