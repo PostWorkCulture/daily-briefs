@@ -1,3 +1,9 @@
+## 12 September 2026: Align morning refresh to 05:30 UK time
+
+- Pete changed the requested daily refresh time to 05:30. The repository still held a 06:00 gate; aligned the gate and UTC triggers to 05:30 Europe/London across GMT and BST.
+- Preserve half-hour stale-edition recovery and skip retries once both profiles are current.
+- Added summer/winter UTC boundary coverage. Publication and today's refresh verification pending.
+
 ## 9 September 2026: Remove unwanted navigation branding and contain Inbox
 
 - Requested: remove Open Horizon / Live briefing and keep Inbox inside the navigation box.
