@@ -54,8 +54,8 @@ KNOWN_PHOTOS = {
         "alt": "Pulborough Brooks nature reserve in Wiggonholt, West Sussex",
     },
     "topcliffe": {
-        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Church_Street_from_above%2C_Topcliffe_-_geograph.org.uk_-_6405522.jpg?width=1600",
-        "page": "https://commons.wikimedia.org/wiki/File:Church_Street_from_above,_Topcliffe_-_geograph.org.uk_-_6405522.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Church_Street_from_above_-_geograph.org.uk_-_6179037.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Church_Street_from_above_-_geograph.org.uk_-_6179037.jpg",
         "credit": "Gordon Hatton · CC BY-SA 2.0",
         "alt": "Church Street in Topcliffe, North Yorkshire",
     },
