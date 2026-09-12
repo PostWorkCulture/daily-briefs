@@ -3,12 +3,13 @@
 - Morning run 34675213736 failed its protected weather validation because the pinned Topcliffe photo filename did not exist (HTTP 404).
 - Corrected it to Gordon Hatton's Church Street from above, Geograph 6179037. Verified the Commons source page, Topcliffe location, CC BY-SA 2.0 credit and original 3945 × 2762 image on 12 September. Use its actual original-file URL and retain local 1600 × 900 output.
 - Added regression coverage for the corrected source and attribution. No content validation was weakened.
+- Verified original download and local 1600 × 900 render. Responsive workflow 34675363724 passed. Full refresh 34675448559 passed every protected content check and committed both 12 September editions.
 
 ## 12 September 2026: Align morning refresh to 05:30 UK time
 
 - Pete changed the requested daily refresh time to 05:30. The repository still held a 06:00 gate; aligned the gate and UTC triggers to 05:30 Europe/London across GMT and BST.
 - Preserve half-hour stale-edition recovery and skip retries once both profiles are current.
-- Added summer/winter UTC boundary coverage. Publication and today's refresh verification pending.
+- Added summer/winter UTC boundary coverage; all seven schedule tests passed. Schedule published in PR #53. Today's full refresh passed after the separately documented Topcliffe image correction.
 
 ## 9 September 2026: Remove unwanted navigation branding and contain Inbox
 
