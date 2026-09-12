@@ -10,6 +10,19 @@ from enrich_weather_v2 import england_place, exact_commons_photo, met_office_hea
 
 
 class EnglandPlaceTests(unittest.TestCase):
+    def test_topcliffe_photo_uses_verified_original_and_source_page(self):
+        photo = exact_commons_photo("Topcliffe", "Topcliffe", "North Yorkshire")
+        self.assertEqual(
+            photo["src"],
+            "https://upload.wikimedia.org/wikipedia/commons/4/4c/Church_Street_from_above_-_geograph.org.uk_-_6179037.jpg",
+        )
+        self.assertEqual(
+            photo["page"],
+            "https://commons.wikimedia.org/wiki/File:Church_Street_from_above_-_geograph.org.uk_-_6179037.jpg",
+        )
+        self.assertIn("Gordon Hatton", photo["credit"])
+        self.assertIn("Topcliffe", photo["alt"])
+
     def test_albemarle_has_verified_county(self):
         self.assertEqual(england_place("Albemarle"), ("Albemarle", "Northumberland"))
 
