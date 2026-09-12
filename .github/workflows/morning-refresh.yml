@@ -2,13 +2,13 @@ name: Morning refresh
 
 on:
   schedule:
-    # GitHub cron is UTC. Half-hour opportunities from 05:00 through 08:30
-    # cover a 06:00 Europe/London start under both GMT and BST, then recover
-    # from a delayed or missed event. The gate skips pre-06:00 and fresh runs.
+    # GitHub cron is UTC. Include 04:30 UTC for 05:30 BST and 05:30 UTC
+    # for 05:30 GMT, then retain half-hour recovery opportunities to 08:30 UTC.
+    # The London-time gate skips pre-05:30 and already-published editions.
     # Keep the same half-hour recovery window as two explicit schedules. Saving
     # these entries re-registers the cron after a repository visibility change.
     - cron: '0 5-8 * * *'
-    - cron: '30 5-8 * * *'
+    - cron: '30 4-8 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -35,7 +35,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check 6am London freshness
+      - name: Check 05:30 London freshness
         id: refresh-gate
         env:
           EVENT_NAME: ${{ github.event_name }}

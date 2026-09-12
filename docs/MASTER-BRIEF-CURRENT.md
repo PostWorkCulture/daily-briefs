@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.5, 9 September 2026. Owner: Pete.
+Version 5.6, 12 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -36,7 +36,7 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - Use only PostWorkCulture/daily-briefs. The old Claude/API repo is obsolete.
 - No Anthropic/OpenAI API dependency or paid API credits.
 - Static responsive GitHub Pages app with JSON data and Python/GitHub Actions refresh.
-- Target the full morning refresh for 06:00 `Europe/London` every day. Use GMT/BST-safe UTC triggers, retry at 30-minute intervals while today's edition is still stale, and skip the remaining retries as soon as both profiles carry today's publication date.
+- Target the full morning refresh for 05:30 `Europe/London` every day. Use GMT/BST-safe UTC triggers, retry at 30-minute intervals while today's edition is still stale, and skip the remaining retries as soon as both profiles carry today's publication date.
 - Never commit private calendar credentials.
 - Mobile first. Chromebook/desktop must have an intentional larger-screen layout.
 - Always use real, clickable links. Never invent data, URLs, sources, or test results.

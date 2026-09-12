@@ -24,8 +24,8 @@ def should_run_refresh(event_name: str, now: datetime, root: Path) -> tuple[bool
         return True, f"{event_name or 'manual'} event"
 
     london_now = now.astimezone(LONDON)
-    if london_now.hour < 6:
-        return False, f"before 06:00 Europe/London ({london_now:%H:%M})"
+    if (london_now.hour, london_now.minute) < (5, 30):
+        return False, f"before 05:30 Europe/London ({london_now:%H:%M})"
 
     today = london_now.date().isoformat()
     stale = [
