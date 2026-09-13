@@ -197,6 +197,38 @@ def verified_napoli_result() -> dict:
     }
 
 
+def verified_sunderland_result() -> dict:
+    return {
+        "date": "2026-09-12T20:00:00+01:00",
+        "dateLabel": "Sat 12 Sep",
+        "kickoff": "8pm",
+        "opponent": "Sunderland",
+        "competition": "Premier League",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 2,
+        "opponentScore": 0,
+        "result": "2–0",
+        "scorers": [
+            {"name": "Bruno Guimarães", "team": "Arsenal", "minute": "58'"},
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "90+7'"},
+        ],
+        "scorersLabel": "Bruno Guimarães 58', Bukayo Saka 90+7' (pen)",
+        "stadium": "Stadium of Light",
+        "summary": (
+            "David Raya saved Enzo Le Fée's second-half penalty before Bruno Guimarães "
+            "put Arsenal ahead, and Bukayo Saka's stoppage-time penalty completed a "
+            "hard-fought 2–0 away win."
+        ),
+        "url": (
+            "https://www.skysports.com/football/news/33694/13583579/"
+            "sunderland-0-2-arsenal-bruno-guimaraes-haunts-black-cats-with-stunner-"
+            "after-david-raya-penalty-save"
+        ),
+        "source": "Sky Sports / Reuters",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -430,7 +462,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-09-09T22:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-09-12T22:00:00+01:00"):
+        fallback = verified_sunderland_result()
+    elif NOW >= datetime.fromisoformat("2026-09-09T22:00:00+01:00"):
         fallback = verified_napoli_result()
     elif NOW >= datetime.fromisoformat("2026-09-06T18:30:00+01:00"):
         fallback = verified_chelsea_result()
