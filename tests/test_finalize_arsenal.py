@@ -129,6 +129,49 @@ class FirstTeamResultTests(unittest.TestCase):
         result = payload["arsenal"]["lastResult"]
         self.assertEqual(result, finalize_arsenal.verified_napoli_result())
 
+    def test_verified_sunderland_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_sunderland_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["arsenalScore"], 2)
+        self.assertEqual(result["opponentScore"], 0)
+        self.assertEqual(result["scorers"], [
+            {"name": "Bruno Guimarães", "team": "Arsenal", "minute": "58'"},
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "90+7'"},
+        ])
+        self.assertEqual(result["stadium"], "Stadium of Light")
+        self.assertEqual(result["kickoff"], "8pm")
+
+    def test_verified_sunderland_result_completes_partial_sky_result(self) -> None:
+        payload = {
+            "sections": {"Arsenal news": []},
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-09-12T20:00:00+01:00",
+                    "dateLabel": "Sat 12 Sep",
+                    "opponent": "Sunderland",
+                    "completed": True,
+                    "arsenalScore": 2,
+                    "opponentScore": 0,
+                    "result": "2–0",
+                    "source": "Sky Sports",
+                    "url": "https://www.skysports.com/football/sunderland-vs-arsenal/8685166056824498232",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-13T05:40:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
+        self.assertEqual(
+            payload["arsenal"]["lastResult"],
+            finalize_arsenal.verified_sunderland_result(),
+        )
+
 
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {

@@ -1,3 +1,10 @@
+## 13 September 2026: Verified Sunderland result recovery
+
+- The protected Sunday catch-up detected Sunderland 0–2 Arsenal but stopped before publication because Sky's structured score lacked the scorers, summary, kick-off and stadium required by the Arsenal card.
+- Added the complete result verified against Sky Sports and Reuters: Bruno Guimarães 58', Bukayo Saka 90+7' (pen), Premier League, 8pm kick-off and Stadium of Light.
+- The verified record completes the partial live result only after full time; it does not relax the required-field or freshness guards.
+- Scope is limited to the Arsenal result dependency and regression coverage. News/Career separation, the fact catalogue and today's selected fact remain unchanged.
+
 ## 12 September 2026: Repair Topcliffe image blocking today's refresh
 
 - Morning run 34675213736 failed its protected weather validation because the pinned Topcliffe photo filename did not exist (HTTP 404).
