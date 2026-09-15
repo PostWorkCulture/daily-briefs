@@ -17,18 +17,18 @@
     "sequence": 25
   },
   "weather": {
-    "temp": "22°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "20°",
+    "summary": "Clear",
+    "condition": "Clear",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-09-15",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -46,15 +46,15 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-09-18",
-        "high": 20,
+        "high": 19,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 40,
         "source": "Met Office"
       },
@@ -64,7 +64,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -78,17 +78,17 @@
       },
       {
         "date": "2026-09-21",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 10%",
+      "detail": "Sunny intervals · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
