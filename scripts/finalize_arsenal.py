@@ -229,6 +229,36 @@ def verified_sunderland_result() -> dict:
     }
 
 
+def verified_ipswich_result() -> dict:
+    return {
+        "date": "2026-09-15T20:00:00+01:00",
+        "dateLabel": "Tue 15 Sep",
+        "kickoff": "8pm",
+        "opponent": "Ipswich Town",
+        "competition": "Carabao Cup",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 4,
+        "opponentScore": 2,
+        "result": "4–2",
+        "scorers": [
+            {"name": "Max Dowman", "team": "Arsenal", "minute": "7'"},
+            {"name": "Noni Madueke", "team": "Arsenal", "minute": "16'"},
+            {"name": "Max Dowman", "team": "Arsenal", "minute": "47'"},
+            {"name": "Mikel Merino", "team": "Arsenal", "minute": "58'"},
+        ],
+        "scorersLabel": "Max Dowman 7', 47', Noni Madueke 16', Mikel Merino 58'",
+        "stadium": "Portman Road",
+        "summary": (
+            "Max Dowman scored twice as Arsenal beat Ipswich Town 4–2 away in the "
+            "Carabao Cup third round, with Noni Madueke and Mikel Merino also scoring "
+            "before Ipswich replied through Anis Mehmeti and Chuba Akpom."
+        ),
+        "url": "https://www.skysports.com/football/ipswich-vs-arsenal/report/577577",
+        "source": "Sky Sports / Reuters",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -462,7 +492,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-09-12T22:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-09-15T22:00:00+01:00"):
+        fallback = verified_ipswich_result()
+    elif NOW >= datetime.fromisoformat("2026-09-12T22:00:00+01:00"):
         fallback = verified_sunderland_result()
     elif NOW >= datetime.fromisoformat("2026-09-09T22:00:00+01:00"):
         fallback = verified_napoli_result()
