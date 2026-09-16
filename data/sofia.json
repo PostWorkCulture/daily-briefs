@@ -17,7 +17,7 @@
     "sequence": 26
   },
   "weather": {
-    "temp": "13°",
+    "temp": "19°",
     "summary": "Cloudy",
     "condition": "Cloudy",
     "currentRainChance": 4,
@@ -28,12 +28,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-09-17",
-        "high": 20,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -53,8 +53,8 @@
         "date": "2026-09-19",
         "high": 23,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
       },
@@ -78,7 +78,7 @@
       },
       {
         "date": "2026-09-22",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -88,7 +88,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
