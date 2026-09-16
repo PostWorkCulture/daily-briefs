@@ -172,6 +172,51 @@ class FirstTeamResultTests(unittest.TestCase):
             finalize_arsenal.verified_sunderland_result(),
         )
 
+    def test_verified_ipswich_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_ipswich_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["arsenalScore"], 4)
+        self.assertEqual(result["opponentScore"], 2)
+        self.assertEqual(result["scorers"], [
+            {"name": "Max Dowman", "team": "Arsenal", "minute": "7'"},
+            {"name": "Noni Madueke", "team": "Arsenal", "minute": "16'"},
+            {"name": "Max Dowman", "team": "Arsenal", "minute": "47'"},
+            {"name": "Mikel Merino", "team": "Arsenal", "minute": "58'"},
+        ])
+        self.assertEqual(result["stadium"], "Portman Road")
+        self.assertEqual(result["kickoff"], "8pm")
+
+    def test_verified_ipswich_result_completes_partial_arsenal_report(self) -> None:
+        payload = {
+            "sections": {"Arsenal news": []},
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-09-15T20:00:00+01:00",
+                    "dateLabel": "Tue 15 Sep",
+                    "opponent": "Ipswich Town",
+                    "completed": True,
+                    "arsenalScore": 4,
+                    "opponentScore": 2,
+                    "result": "4–2",
+                    "source": "Arsenal.com",
+                    "url": "https://www.arsenal.com/news",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-16T05:40:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
+        self.assertEqual(
+            payload["arsenal"]["lastResult"],
+            finalize_arsenal.verified_ipswich_result(),
+        )
+
 
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {

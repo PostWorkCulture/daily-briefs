@@ -1,3 +1,10 @@
+## 16 September 2026: Verified Ipswich result recovery
+
+- The protected Wednesday catch-up detected Ipswich Town 2–4 Arsenal but stopped before publication because the incoming Arsenal.com score lacked the scorers, summary, kick-off and stadium required by the Arsenal card.
+- Added the complete result verified against Sky Sports and Reuters: Max Dowman 7' and 47', Noni Madueke 16', Mikel Merino 58', Carabao Cup, 8pm kick-off and Portman Road.
+- The verified record completes the partial result only after full time; it does not relax any required-field, freshness or first-team guard.
+- Scope is limited to the Arsenal result dependency and regression coverage. News/Career separation, the fact catalogue and today's selected fact remain unchanged.
+
 ## 13 September 2026: Verified Sunderland result recovery
 
 - The protected Sunday catch-up detected Sunderland 0–2 Arsenal but stopped before publication because Sky's structured score lacked the scorers, summary, kick-off and stadium required by the Arsenal card.
