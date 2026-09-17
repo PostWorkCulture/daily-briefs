@@ -17,10 +17,10 @@
     "sequence": 27
   },
   "weather": {
-    "temp": "14°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 60,
+    "temp": "21°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-09-17",
@@ -28,12 +28,12 @@
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 60,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-09-18",
-        "high": 20,
+        "high": 21,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -44,18 +44,18 @@
         "date": "2026-09-19",
         "high": 23,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-09-20",
-        "high": 24,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -69,11 +69,11 @@
       },
       {
         "date": "2026-09-22",
-        "high": 23,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -82,13 +82,13 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Light Rain expected · rain chance around 60%",
+      "detail": "Light Rain expected · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
