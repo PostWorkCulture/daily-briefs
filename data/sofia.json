@@ -17,9 +17,9 @@
     "sequence": 29
   },
   "weather": {
-    "temp": "17°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "21°",
+    "summary": "Overcast",
+    "condition": "Overcast",
     "currentRainChance": 30,
     "daily": [
       {
@@ -28,7 +28,7 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -37,7 +37,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 40,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -51,10 +51,10 @@
       },
       {
         "date": "2026-09-22",
-        "high": 25,
+        "high": 24,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -62,23 +62,23 @@
         "date": "2026-09-23",
         "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-09-24",
-        "high": 21,
+        "high": 20,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-09-25",
-        "high": 23,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -88,7 +88,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 50%",
+      "detail": "Overcast · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
