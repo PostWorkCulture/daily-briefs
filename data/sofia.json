@@ -1,48 +1,39 @@
 {
-  "updatedLabel": "Friday, 18 September 2026 · refreshed 5:36am",
+  "updatedLabel": "Saturday, 19 September 2026 · refreshed 5:37am",
   "worldFact": {
-    "id": "aceh-saman-seated-rhythm-dance",
+    "id": "bangladesh-baul-mystic-minstrels",
     "editorialPriority": "human-first",
-    "category": "Community dance tradition",
-    "country": "Indonesia",
-    "place": "Saman dance of the Gayo people",
-    "source": "UNESCO Archives",
-    "sourceUrl": "https://www.unesco.org/archives/multimedia/document-2219",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Penari_Saman_Aceh.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Penari_Saman_Aceh.jpg",
-    "photoCredit": "Muhammad Iqbal · CC BY-SA 4.0",
-    "fact": "Saman dancers perform in tight seated rows, creating rapid shared rhythms by clapping, striking their chests and thighs, tapping the ground and clicking their fingers while singing verses.",
-    "locationContext": "Gayo communities · Aceh province, Sumatra, Indonesia",
-    "date": "2026-09-18",
-    "sequence": 28
+    "category": "Mystic music tradition",
+    "country": "Bangladesh",
+    "place": "Baul singers and musicians",
+    "source": "UNESCO Intangible Cultural Heritage",
+    "sourceUrl": "https://ich.unesco.org/en/RL/baul-songs-00107",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Existence_in_Nature.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Existence_in_Nature.jpg",
+    "photoCredit": "Jahid Apu · CC BY-SA 4.0",
+    "fact": "Bauls are mystic minstrels who travel from village to village, singing a spiritual philosophy with simple instruments including the one-string ektara. Their song language keeps evolving to stay meaningful to new listeners.",
+    "locationContext": "Rural Bangladesh · Bengal region, South Asia",
+    "date": "2026-09-19",
+    "sequence": 29
   },
   "weather": {
-    "temp": "18°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 80,
+    "temp": "17°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 30,
     "daily": [
       {
-        "date": "2026-09-18",
-        "high": 21,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 90,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-09-19",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-09-20",
-        "high": 21,
+        "high": 20,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -51,7 +42,7 @@
       },
       {
         "date": "2026-09-21",
-        "high": 25,
+        "high": 23,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -69,7 +60,7 @@
       },
       {
         "date": "2026-09-23",
-        "high": 21,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -82,13 +73,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
+        "rainChance": 4,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-25",
+        "high": 23,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 90%",
+      "detail": "Overcast · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -96,37 +96,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Thursday 17 September 2026",
+      "dateLabel": "Friday 18 September 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Teddington, Bushy Park",
-        "town": "Teddington",
+        "location": "Heathrow",
+        "town": "Heathrow",
         "county": "Greater London",
         "country": "England",
-        "displayLocation": "Teddington, Greater London",
-        "value": "22.8°C",
+        "displayLocation": "Heathrow, Greater London",
+        "value": "21.5°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=1515d27d3b5a",
-          "page": "https://commons.wikimedia.org/wiki/File:Diana_Fountain,_Bushy_Park.jpeg",
-          "credit": "Jonathan Cardy · CC BY 3.0",
-          "alt": "Diana Fountain in Bushy Park, Teddington, Greater London",
+          "src": "assets/weather-extremes/hot.webp?v=3c5073c33c58",
+          "page": "https://commons.wikimedia.org/wiki/File:Terminal_5_car_park,_Heathrow_-_geograph.org.uk_-_5645514.jpg",
+          "credit": "Derek Harper · CC BY-SA 2.0",
+          "alt": "Terminal 5 car park, Heathrow",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Kielder Castle",
-        "town": "Kielder",
-        "county": "Northumberland",
+        "location": "Shobdon Airfield",
+        "town": "Shobdon",
+        "county": "Herefordshire",
         "country": "England",
-        "displayLocation": "Kielder, Northumberland",
-        "value": "8.0°C",
+        "displayLocation": "Shobdon, Herefordshire",
+        "value": "7.0°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
-          "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
-          "credit": "Jim Walton · CC BY 3.0",
-          "alt": "Kielder Water in Kielder, Northumberland",
+          "src": "assets/weather-extremes/cold.webp?v=7e32cab26d01",
+          "page": "https://commons.wikimedia.org/wiki/File:Shobdon,_St._John_the_Evangelist%27s_Church,_Ceiling_detail_-_geograph.org.uk_-_5750368.jpg",
+          "credit": "Michael Garlick · CC BY-SA 2.0",
+          "alt": "Shobdon, St. John the Evangelist's Church: Ceiling detail",
           "width": 1600,
           "height": 900
         }
@@ -134,20 +134,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Dentist",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-18T15:15:00+01:00",
-      "end": "2026-09-18T16:00:00+01:00",
-      "date": "2026-09-18",
-      "time": "3:15pm",
-      "allDay": false,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "2trclnm94b6p5ssasra8ik37vl",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Kids",
       "summary": "",
@@ -304,44 +290,44 @@
     }
   ],
   "lead": {
-    "title": "Sweden’s PM resigns after centre-left bloc wins slim majority in election",
+    "title": "Sweden’s soul and worrying political shift | Letters",
     "summary": "",
     "meta": "Fri 18 Sep",
-    "publishedAt": "2026-09-18T02:31:00+01:00",
+    "publishedAt": "2026-09-18T17:54:00+01:00",
     "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOR28xNGtYVnlWVW4xTXBENVo3aFlrdWdFbFVGS2JoQUs4WVZrbk9CV1dYUFIyUVhTSTZ1T0pqMUxSZFFJUWc5Sl9ZZU9CMXVxaVlJTUdxazE0cG5zWGtMdVljUDJ6YmRkWHpTelVVanpIYU9aU3dqMmlYUU5XZlR2bmdkd0RUSzNlWDZaV1h3?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR1V5UUV3eHNMM0w5bGxRVmJldW9NbE01bVFBLWhNVGJqRV84Y0t2LUNreGFmUXVHSnRhTlVSNkV4MWdwdFYwNnNLVzU3X0ZMRFdjU2FPbnNHeWFvb2V4WnFLVEE3X0ZuLTZodk9DdENIdzVsVElYaDluNlJUTnhCZkJmN185aTRDOVhpeklIRzQ?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Sweden’s PM resigns after centre-left bloc wins slim majority in election",
+      "title": "Sweden’s soul and worrying political shift | Letters",
       "summary": "",
       "meta": "Fri 18 Sep",
-      "publishedAt": "2026-09-18T02:31:00+01:00",
+      "publishedAt": "2026-09-18T17:54:00+01:00",
       "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOR28xNGtYVnlWVW4xTXBENVo3aFlrdWdFbFVGS2JoQUs4WVZrbk9CV1dYUFIyUVhTSTZ1T0pqMUxSZFFJUWc5Sl9ZZU9CMXVxaVlJTUdxazE0cG5zWGtMdVljUDJ6YmRkWHpTelVVanpIYU9aU3dqMmlYUU5XZlR2bmdkd0RUSzNlWDZaV1h3?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR1V5UUV3eHNMM0w5bGxRVmJldW9NbE01bVFBLWhNVGJqRV84Y0t2LUNreGFmUXVHSnRhTlVSNkV4MWdwdFYwNnNLVzU3X0ZMRFdjU2FPbnNHeWFvb2V4WnFLVEE3X0ZuLTZodk9DdENIdzVsVElYaDluNlJUTnhCZkJmN185aTRDOVhpeklIRzQ?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Couple cruise 124 miles from Lechlade to Teddington in solar-powered boat",
+      "title": "Citizen scientists uncover dangerous pollution levels in the Thames at Kingston",
       "summary": "",
-      "meta": "Thu 17 Sep",
-      "publishedAt": "2026-09-17T17:30:00+01:00",
-      "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdWdpaGs5cFZZWWFKNFZYTVduZDVXQzlvd1FTTFA2TjRfV1ZabEpOVHpuV0R3SHgyX2tacXBydXh1c1JLcl92cTgwN0hvUHdUQldZcC1fZ0ZWYVlic2dJMGJYTkJiYkdMSjBhTWFVcUpBcUR5NUR4Sl9QT2VTcW54UTQwcXd0OTlHbHZjaFgyM1Rpc3dxVFJURFNFdWhoTV9mcGZ2VlNmWHZzMW9feU4walMyYW9uT2FUeGpTTTJjNFdndw?oc=5",
+      "meta": "Fri 18 Sep",
+      "publishedAt": "2026-09-18T17:00:00+01:00",
+      "source": "Kingston Nub News",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX2k0Rl9TQlNQY09xTnFMLXc3cnkteFdmVlRHYWs0dEFQVEJhYWdlWjVMRlhzTFl4RXdiR2VPcWFNaXRlWlVURFNlWHVqLWhLQzFNT0ZKRnZvbE1nTjl2ZEVUVlVSSW41ZWhpRFBHUFRLTXNnNUxrcVN6WDRETGtFcnl3NW9LZWV4d3BfRG05ZEJpWmt0SmU1ekxmRllFZjd5eFA2QzNHUkY0dk4tVHR4Q20yNUdRbVpWejNUdmYyMlVVa0h5bmc4?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
       "section": "Local"
     },
     {
-      "title": "Apple TV’s hit drama “Silo” to return for fourth and final season on July 9, 2027",
+      "title": "Apple TV’s SILO Announces Season 4 Premiere Following Dramatic Season 3 Finale",
       "summary": "",
-      "meta": "Fri 4 Sep",
-      "publishedAt": "2026-09-04T08:00:00+01:00",
-      "source": "Apple",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcXQyNnEyYUowTmpRR1pBYUI4N1lKRzdIdV81M0dKaUxnS0dUV19wNUZJMU95cE5sX0JmUThrTHlpR3dvUUpqY01JOWdTekRYWmVXQU9saXV3aXV0ZzFQQVVlQlktYkVSVXN2ZU9IQkt2OFJuNFE2VVZXejRWY25ET01KN3lablVIdXFGeV9BeU1ONGJ6U28wQlJubUM3UElZVTJjTFRWN1ZRU1NBSTVYcGRkNkFGaWRhanZjNTdEaWEzQ0hC?oc=5",
+      "meta": "Sat 5 Sep",
+      "publishedAt": "2026-09-05T07:47:30+01:00",
+      "source": "Get Your Comic On",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdWN3OUEtREpVc2NJVlE4YV96UjhpUXlkeFJPQ3hiNWU1QWlMV3pMcXVGVUI3NEI3ZHQ3WnNZNkxZZ05xZFl2bHNYei11YUFFX1ljTXZNNlZLMGN2YWp1cUlPRkFVeUljcThTUjNFcnRNb3I5U25vMU1ubzBYeWQzeHBZa2RQZG13N1lyd2tUQ2h2Q3dQQ1Jyeko5ZnBuZTZ4cVVBTVNyUzRpN2k5aDM4TG1WanRobGx3T2NvSHNTaDI?oc=5",
       "contentType": "article",
       "preferenceScore": 130,
       "section": "Watch"
@@ -365,13 +351,13 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 421.8
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 430.5
     },
     {
       "title": "This Much is True Crime",
       "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
-      "meta": "TRUE CRIME · Today, 10pm",
+      "meta": "TRUE CRIME · Available since yesterday",
       "source": "TRUE CRIME",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
       "badge": "True crime",
@@ -385,30 +371,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 375.9
-    },
-    {
-      "title": "999: What Happened Next",
-      "summary": "A woman preparing for a Christmas night out is brutally stabbed in her own home. And detectives pursue an international burglary gang who are raiding affluent Surrey homes.",
-      "meta": "Channel 4 · Mon 21 Sep, 9pm",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/999-what-happened-next",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527705.jpg",
-      "artworkAlt": "999: What Happened Next programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-21",
-      "showId": 90023,
-      "episodeId": 3763600,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 304.5
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 363.9
     },
     {
       "title": "The Bodies on the Bridge",
@@ -427,13 +391,33 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 324.3
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 316.3
+    },
+    {
+      "title": "Panorama",
+      "summary": "It's a sex abuse scandal that has gripped the world. But despite all the headlines and stories, important questions remain unanswered about Jeffrey Epstein. How did he become so powerful?",
+      "meta": "BBC One · Available since Mon 14 Sep",
+      "source": "BBC One",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
+      "artworkAlt": "Panorama programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-14",
+      "showId": 8534,
+      "episodeId": 3732006,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 315.6
     },
     {
       "title": "Monster: The Lizzie Borden Story",
       "summary": "With the public transfixed by the lurid scandal, Lizzie must deliver a life-or-death performance, with help from an unexpected ally.",
-      "meta": "Netflix · Available since yesterday",
+      "meta": "Netflix · Available since Thu 17 Sep",
       "source": "Netflix",
       "url": "https://www.netflix.com/title/82068293",
       "badge": "Crime",
@@ -451,23 +435,32 @@
         "Horror"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 315.8
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 307.8
     }
   ],
   "sections": {
     "Sweden": [
       {
-        "title": "Sweden’s PM resigns after centre-left bloc wins slim majority in election",
+        "title": "Sweden’s soul and worrying political shift | Letters",
         "summary": "",
         "meta": "Fri 18 Sep",
-        "publishedAt": "2026-09-18T02:31:00+01:00",
+        "publishedAt": "2026-09-18T17:54:00+01:00",
         "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOR28xNGtYVnlWVW4xTXBENVo3aFlrdWdFbFVGS2JoQUs4WVZrbk9CV1dYUFIyUVhTSTZ1T0pqMUxSZFFJUWc5Sl9ZZU9CMXVxaVlJTUdxazE0cG5zWGtMdVljUDJ6YmRkWHpTelVVanpIYU9aU3dqMmlYUU5XZlR2bmdkd0RUSzNlWDZaV1h3?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR1V5UUV3eHNMM0w5bGxRVmJldW9NbE01bVFBLWhNVGJqRV84Y0t2LUNreGFmUXVHSnRhTlVSNkV4MWdwdFYwNnNLVzU3X0ZMRFdjU2FPbnNHeWFvb2V4WnFLVEE3X0ZuLTZodk9DdENIdzVsVElYaDluNlJUTnhCZkJmN185aTRDOVhpeklIRzQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Swedish PM Kristersson resigns after election loss",
+        "title": "Sweden’s left-wing opposition leader begins efforts to form government",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T18:58:16+01:00",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeUdtWFlfS0xSY3IwRWZuN2NhaHJ1cUtBRGloOHkzRndJR0JvWS1pa3BRdGJRek84d29aUVRFcTgwQm5tSGVsWDR5OURkWHpLRjdLR2RkV2c1T19fZDZaZ01GNUpWbWNmdHVZazNKMS1tNEVjcEc3eVhWa1lWcWl0N2RGRUtvTHczVXEzZmQ1TUUxdlBWVy1NbllBQWlTcFgzTzZGbTZFamVkeFFsZDU00gG0AUFVX3lxTE4yeG5wYjQ5ZUxTaUh1SVlhM0hnN3lJUmpxSE9GVVpndkJQVExCYzh6X0hXRXFJNF80UjVBY0RQQXFzM2g1bWpBWkJtQUFmSURfNThFSWlRaHBCLWJSXzZ5V2JmeWNMSTVGc01FRDNKMUZ1NjlyLTQ3YlFhbE15X3dxYnNVSlF2ajd4R2VYN1FqVVJGZHFTcE81ZjdfM3dYbjRfOENmRklYRW1ldUVkY3NnQlNsNg?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swedish PM Ulf Kristersson resigns after election loss",
         "summary": "",
         "meta": "Thu 17 Sep",
         "publishedAt": "2026-09-17T13:41:05+01:00",
@@ -476,52 +469,109 @@
         "contentType": "article"
       },
       {
-        "title": "Sweden prime minister to resign as left-wing bloc seals narrow election win",
+        "title": "Newsletter: Sweden’s left-wing victory isn’t quite so left-wing",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T14:41:20+01:00",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdWhBVDlRcjYtblU3REtiV3ZXVThteHNPX3F6emlKQ1dndUJIUnE0N1BXYXhBOFhQZ3ZhdjBVYUNNc0pxNVRia2N1YXNIVWNPVjVQNk5ITkk3bDFabjNhZEIzVS0ya3hPRkNwMC1lRHR5R09RWkdPMFJPVjNVcGlhWm9wZmVIT2QxcjA3VExSN0tnY01oUUw0ZFBpTWZJUHFxUzhpdngwV0stOWJQMzd6dDFBNnczYjDSAbwBQVVfeXFMTWVnRk1ocjJtdUdfVWtJbElaN0hlcXhjLU9kRDZTcjVwekZXeFhwSk5rR0V4d2ZSTVpBQW44em44LVdkWF9McjN1QW95VFFWRURhU0NDbGdNczEyTzBaU1U5YUw5S0JVc2MySnVNRzZySVZkR3VTc0lseFQtX2pJc0NsQXR6YXBjNTh4cEJJLUhaR0FwSXJMbHh1OEFMXy1vMW5IS2ZYal9lT3NQdlNKTG1fbnBMbjRHOVNZX3U?oc=5",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T10:31:51+01:00",
+        "source": "The Parliament Magazine",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb1FUY0lQTGtKTHB6QXVGV2JDT2g5Rm5UZTQxbG1LTVh1RDd5UGVpNXVacXV5bjVnVEJQVzFISC1YVUs1aW43aWtENTdESEIwdEMxbUxkcHN5VTJvMXZRMHZyME1kQ0dxaUxIaFg5UFhDdlZPRjFGWnVBSG1mc0F2ejFQa2VxV1NxZGdxNXcyVWl0d3o2UmRRLUtmaFhLQQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Left alliance wins Swedish election as PM Kristersson quits",
+        "title": "Swedish teenager jailed for attempted murder, rape and assault committed online, with victims in Germany and Australia",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T13:25:00+01:00",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYUxFazlUZmMzdkxGSUhiTzZGWGxxZ2V4Nm9lM1gyblppVDltZGs4ZjU0YUxfbFpGT2ppaUhuV2xxOEtBUTZMTjM2SHlwOE5sdlNteG1uQV80RUd4UGFFZnNlUm0yR0JzYy1pTE5yMG56UnNhVy1pVy0xZEx0Qng3cUxBMTVHQ1pqX3c?oc=5",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T16:02:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQzFURjh0VDlOTHpUWURyNWp3Y25OUWFlNG5NLXJFc0duQ1FUZlJ6UElxaHhkd2xuMWhjRE80Y0xoQ0VaYS1JSXJpUW1nNk1Zc21icmZ3cjRaOExGVE45UEQzVzkwMlE0VEVEbGNjaXVTSi1QUmpMcmpkdEFfRTFvWlQyUmtvSTNiTzd1MUxnY0tCQVJ3V2J5cW5PYkZGRC1zTmdEb1NjLUdoc3o0dTNhN1ZPM1RPSHNpYVI1ZnMtaGVGbnJpSjRqcHZnQzE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Sweden's centre-left win election as right wing bloc suffers narrow defeat",
+        "title": "Important Update: MANOWAR Iceland, Norway & Sweden Shows Rescheduled",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T15:26:19+01:00",
-        "source": "Euronews.com",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY194Q1ZTUmlLckNKdXk0ZUVhVjFVX3ZfVEVhWFA0SkxnR3BuX2FuM1FtRUlGclYybG13bGNmaUVDWWFOZWtMWWozaWJ6UEJlVTZRTTRINWpGYUh2N19aOEJwRmlyU0hpOU5ORkxGWFhCeE1WNGluMm5UMV9nZXJOVnoxTGZKdS1tM3ptcE9KdmdyU3d6cEFDNVZxZzd2dVV0ZkM0bnZmekh2cXJabm8wdFNmUmVJUnJFT2Fj?oc=5",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T12:00:17+01:00",
+        "source": "manowar.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSDZJb2xwWXpBV3FWMHNGRFFNaDU2ZWMzV0NsWUoxN0dfSFFfeUNlYThYbmgxRVZSUWJrQ3FGVlZJaWM5OVFxVU0wQXQ5eUVXZmlrUlZPbktIM004SjBEM2R1RU05RGRXYWY1MWtWYnhkZExTU01iUzBuWUY4YllVVWVlQWN4SHJUdmdPWkNR?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Sweden’s prime minister steps down as left-wing opposition clinches narrow election victory",
+        "title": "Sweden's centre-left leader Andersson tasked with forming government after election",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T17:04:04+01:00",
-        "source": "NBC News",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWWcxYjN2ZktxOXpsT1UtSUZYUjNSeTJnc0ROQXRFRlk5SUp0bVQtaWp6NHJQRWRobGhvc1hZM1JqWjZpSFpOOE9WN200MjFUU1g3RGRMNlZKUkVScUN3aWp3T1RkX0lRcDhTaG82WHA1MXJ1RnRMTG1EbWlPdXltT0pMM3VMRk9HVnN0T2tSNlEwUHVXVU0yeTVZU3FsbVBLMlpoMjRydEdKUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden's prime minister steps down after losing election",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T16:19:55+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOE03WWgtcW00SlpMdnI5VEg4OHRTRVYxdHQ2YU9EN2dKR0VGLXIzZi1ZcFIyblJGSzdUaG81V0dlTlcwOTN4MDhzTE1Dd1Z0QnVDTDNsdWhaNER2VnpMUF82RXRBSFRYeGN0UjVrVExvNUUxTlFYLXJFclkzc3BCb0JkNHlKam1tYVdCNzRyUG9mc04tbVptSG9yYTB2anFKdTd4MW44cjJxcGNWVnc?oc=5",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T17:01:11+01:00",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObWh4TGZyR3QwOHRZYTBKbUJjZFB0dTNnRzZqR2Q5aXFLYmk4RkhHa1EtZlNfdzhPNWRUdnJySW4tdThDeTJfQ2NYRDVsTG1DbUNWME1FSWN2a2lPemdWUlQ1dldhdEhqdnY2MTRlS1pWLThSV0syQm9rYkNkWGZHNV9wemQxNGkwak9GOUpLM0E2S21qN2lCcHJ5OGVjTXdIUU04Vm9ETDZubXNDVXg3MDJqLS1FdmxvU2t3SVFkdnh2bVZTZ3c?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Citizen scientists uncover dangerous pollution levels in the Thames at Kingston",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T17:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX2k0Rl9TQlNQY09xTnFMLXc3cnkteFdmVlRHYWs0dEFQVEJhYWdlWjVMRlhzTFl4RXdiR2VPcWFNaXRlWlVURFNlWHVqLWhLQzFNT0ZKRnZvbE1nTjl2ZEVUVlVSSW41ZWhpRFBHUFRLTXNnNUxrcVN6WDRETGtFcnl3NW9LZWV4d3BfRG05ZEJpWmt0SmU1ekxmRllFZjd5eFA2QzNHUkY0dk4tVHR4Q20yNUdRbVpWejNUdmYyMlVVa0h5bmc4?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Three-storey house conversion planned for former Teddington ambulance hall",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T16:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWGIzcjBHUThUUllYUXRQUlVhanNEUzFHX1RncWdqOWZGUUVhYXJ5Tk54U3NCSE1mZzZJOU94YmloYy1xQXBjakFzdXo5SHgwcXlwOWJ6Vzhfelpia0FGeWtkWEx2UDlPdzFfTGYzX3pDLTA0Q3JhcF90bmN3UTVGalRVVVRmX1ZYZ1NoS3owTFl0dlhGUnVqbl9XdzlDb0wwYUZOemdpM0FaNUxjTVZQaG9oanZqVnRhLXE0NE1UcGtCUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Nationwide retail thief jailed at Kingston Crown Court",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T13:50:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZFFFVzhpUG1POXh4MGk2Z29FdEd4MnZDNGNZODJIdHRSam9lS3BQTlVyQ2RxTkJvbTJ2M21TZ3U2TVBRVGVqT2FIeXRrbnM2ZkJHTGhad1VMbHdVNkxSMDN6QklHSHIySzBSU29NeWQ1WkRPOXZqYkkwN28ycHhkMzZzbTNJUGViOXl2dFprYkFPSTNVZW51Q0E2UVVYdEE1akN6MnFB?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington restaurant and bar to host pre-match lunch for Rugby Autumn Nations",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T10:55:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVVJXb2laYkxqZTJtZTlXWnluVnZDOVN4bVFuVkpDTFJ3bXpBTEdsY052Q3BYLTg5TURlNkNIMzBjN2YwRWNuTkVKTmVpVlZ4UmFrZVgydFJObjc0SlV5NnpzU3VxOXNncUhCSVNsNFRDUjNHY19RX1VxU3N6dnJvaVFWVURXUkJOR25nU3RWUFF4c0xHcmI5UjI3Z1F3SnFtTTFnZ0RiSVNyRmwzTDgtNWlvS0laUlgyLW5LT1QtcUxxb085Z3FZYm44QmFGV1dEMmc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Surbiton tutor offers advice for starting the school year ‘well’",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T10:30:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZFZBYlNoU1Q2UXlYS3ZFbkl0RGU5VHhtWEZfbm1NMm9kdUNJYS1lV3FxbnJuLTRTVVdMNXI5UlF4eEF3dUhFZHNrYVhIRk9KRnJwZXYxbHd6dDRBUEpDRC05SXdXcklsamhuN3MxSEhyYTlPQmVGQ1p2c082RUx5aWFKbW9BVFYzelN6RjNTbXlOVzlEOURzeHYwZWV4UEVMekRmaHhlUjhLODluX19JQUhaZ0QyYk5oSG9Ld1hNaw?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston Council validates plans for tree works, extensions and loft conversion",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T09:59:59+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVm81a2V4ZENCRG5vWEdNVHRsUlMyeDhFQ2ppLU5fSndxWHVUeUZxeEN2NDFaS25YODhzcTNrMy1WVlFlVHJOUkFnM2YyRFYwdVpYTVNNOXpWNU9EaEJmV2VFTjFkcVZoNmN2ZVVWUEVLRGZLQnlCY1E0VUxwM2wzRmlVTkhwNGVyMU50VGJtMV8xR1NSSjNhUFRpNmFfS2Zp?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "Couple cruise 124 miles from Lechlade to Teddington in solar-powered boat",
         "summary": "",
@@ -631,181 +681,115 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
-      },
-      {
-        "title": "Teddington art centre's 30th anniversary celebrations start today",
-        "summary": "",
-        "meta": "Wed 16 Sep",
-        "publishedAt": "2026-09-16T09:25:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ2ljU3pzYWs4WlBELTl0c0wtc1hFZlZGWWFtc2p4SUdPVjJFQ2kxYkcwbUFVNGt1WElwZ3YtcF9ibVNqbm9ubW9BNTQyMzRVbFhWMHF4TVhyTTBDSG1FRWd4RnRDSnVndjlYcnFVOURhQlNLSTU1MVFiQTZRNW5UbVh4bW5HSTZlRWFKbU5aSG9LRXJNaE5yV21zZG9KRU43MmN4ZG52blF3c0N4OEpHaTRyeFdKdw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Kingston brewery to close after 12 years",
-        "summary": "",
-        "meta": "Tue 15 Sep",
-        "publishedAt": "2026-09-15T13:29:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNS2VyNlpFeXQzQ1ZWVUdmcnkzLXh6MUM3dmZHeEtWaHlxeXBKMExqRDlBVWFTQ1g2VmszY2k4eW9hQkVfMGpCTmtIb1lQZks3US1zZ3JVcDV2QWJPZUp3VlluMXl1NDlSYkJTSDVhNGF3dU9pb2lFLVBwMlJlN2NrWFo5OThfM2JaellIdDNFNzJURkk?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Miami-inspired smash burger restaurant SoBe Burger to open in Kingston",
-        "summary": "",
-        "meta": "Tue 15 Sep",
-        "publishedAt": "2026-09-15T10:39:00+01:00",
-        "source": "Surrey Live",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSDc2X0piWWRhdHhMc0FFbWJIZkZHUnBYZHhmXy1wZDhEdFVqVXpCVXRhazc2eUEzMVg3UmtVZWN0by1qMTFuZk11NEpKSnV0YzlWbWY4SVYxUWNSU3RrRFQtREVhTUtpQnFNdkJacmZkOTRmaUNkS1RQZnBzeS05LWRRdS1UdjVDOXJ2b1F4OVAzS0c4a2o3aGhGVVhKUlVfRWfSAacBQVVfeXFMTnpjOVJCSnZQSGcxM0QtSXFIcWlFd1JzTkpzY2lmUUFabG9PZEhSeFctcl95VWpfX3ladjdPU3QtX1R5TVFndHZRU1JEelpxdWFEejdGRDhHZGRlRTFwbU01dkphZldPR0h0WVRjOVJITTRHZmhvcmZrQnBoUFVmejJ6ODE3S1FPdlA3aFRNNHozbTNGdWlCRGdBTmh3Q09XcW9OMDJrNUE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington author brings Bushy House's hidden history to life with new novel",
-        "summary": "",
-        "meta": "Sun 13 Sep",
-        "publishedAt": "2026-09-13T17:00:01+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVVM2VWFlLWdqMmRWRTM1OGxBZ0dITnM0d2NtOTR4S3pJU0ptZFcyWU01WkZKOC1vSmZaQmI4ZFFrLUdSSk5lUllvSzBFb1V0ektSN3hudDFRbWRESTNTejRlc3lIM2NRRkIzTThMa21hNnNMVm1SRDhSSm9hUEI0c2l4ZFg3VWpubklXX2UzcVVrbzJPSGdiRGpVNGotTHAtNWVqSkt2a0I5VFZndjdwbDk2eGpQN2N6WDhqN2NGNFVNalpyOUpSR2FB?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "What you need to know about parking updates at Teddington Memorial Hospital",
-        "summary": "",
-        "meta": "Fri 11 Sep",
-        "publishedAt": "2026-09-11T12:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNaGl1bF84X0tVYlFUTkwzZHJCdDdTR3ctRFVONF9PVjBCWkFuY3RGUFptZGRQb05EQVE3MGxxS3BoUWVlWmhmZlptQnUyQzJxRW5rZ2lXTjg3TXpTVHlBV04xOFJQQ04xT1pWVE84eGE4djBoaUtra283bWNuYXdneXhEeVltQUk1Zk9FNjBVOTZmLWxtSTZMZnZnV0F1SUtmbC0zWEVxMGx0X2dsR05ONlk5cnVFUlVnS2NDS1U4NnNXYWpr?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington nursery champions risky play for childhood development",
-        "summary": "",
-        "meta": "Fri 11 Sep",
-        "publishedAt": "2026-09-11T11:05:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQelR1ZE9UV1RzbjNVU29qM0F6Q01JNVFBbTRzaDZwUEJGbExLeEVCSlQxbnJQdnktbnN3RVVWeDVvT0ZOb0haZzdEZkMxZUZrSlZQTWMyX2JVV1E3T3J4MHFlYjF6Ry1TSlUtMU9IQnFjUHhXRFlSSDA0MVY0MmlCSVZBVVZGaEFvb2R1bG9SNVRiR0p5aDBXdXRhQ1dheXpScEg3akEzdnBIOWNpM0hzU09LMm9MeERXSE1WLTg2V2haUQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
       }
     ],
     "UK news": [
       {
-        "title": "Flintshire dealership helps reunite BMW imported from Japan with former owner",
+        "title": "Head of Church of England Gives—Then Rescinds— Peace Award to Imam Who Praised Osama bin Laden",
         "summary": "",
         "meta": "Fri 18 Sep",
-        "publishedAt": "2026-09-18T05:00:00+01:00",
-        "source": "leaderlive.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQkNaMXNMSFV4dkVyU1Z0eHN4TlpfbXF4SklBa2tQcTR6QVNXT1UtMFJ0X3I1MVFFeTJwQzQ4cVd5SzJFR3NaV1ZydmVCcHVwMHh3VmN0R2dIN2ZubU1yb1lUc1ZZRTF0MjhkVmJXZkpPbkZwV3o3Z0g4cWdZLV9YcUhiYkJ3cEU?oc=5",
+        "publishedAt": "2026-09-18T22:25:02+01:00",
+        "source": "Billy Graham Evangelistic Association",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZFdBQ3FYWFFfZUVtaVpuVEZ1amlRQ1JfZUs1eHZ0aXhyeEZrdzRndjRmclVjQ3ZUa1BXdHVRWGh0anZNMHZUdk5HWC12ODNhaWtqRTMtbFhsc2tKOXZ2TUFkZ2JaV2RqTjR4YUY0Zkk1Ykc0THE4bGk2Q0VhQ0JEMVpRZmhQTUhvdGZjUDlXUXJmNF9IVURRR3NaZEJ3M3JDX3JTT2pZREN4RnFZcVM1RzdadEg3VHJXcGJheURMM0g0QTFTV3V2YklMTlZHSGZwR2lXS0dyc1FsSWs?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Inside the Prestwich takeaway shortlisted for a British Kebab Award",
+        "title": "Church of England Withdraws Award To Muslim Cleric Who Praised Osama bin Laden",
         "summary": "",
         "meta": "Fri 18 Sep",
-        "publishedAt": "2026-09-18T05:00:00+01:00",
+        "publishedAt": "2026-09-18T22:00:15+01:00",
+        "source": "The New York Sun",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVE84WEcxT3h4ZTM4MVZ6QVNzUER2QVp5d1BQa1BkYlVsZDRtUUkzVlVTZ05XNjladFBwMWtoeVJ1RENjY2hQLXFhdVBFY3UwVEJVWmxHcGItQUYzUmlUdk5jNEJuZkNpSTdEbWxsUXNvaE1XbjJtN0NZM1diMU43ZHBjd1FaYlZrdW1IU01qME8wYm5tVGZWVTNBeE1fWms3WmpaZzRZYzNZZFQy?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "British woman who was kidnapped in Malawi rescued by police after shootout",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T17:42:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc3hCV2kwTVR4dko4VlZjOVU3YWQxZEZEczZ1WWRZSlp0WWhEWGpjNjZYTk9YLW5GMHc1N08wSlNTRFItZHlnb3dqZ1BOcHlUYkFScVVfanFqYTdiLXRlOFkwd093REhqWlQ3VDI2SWpwZjk5SkNLY0FLTnM5MFVDWnZXOE5LYV9yUGt5d05iT3l0MmJoSVpv?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Wales Air Ambulance manager left terrified by stalker volunteer",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T17:05:00+01:00",
+        "source": "North Wales Live",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdXJkMDNmeW9CWE0ybnpDYlQyMVQ5bkw0QV9QclBiUkFMenMxblJxZkg3ZHRmUzhEbm1NZ2ktTjR5TG5aWldhZ0dWdk45V1Jka3J3ZlU1TjVyV2otNWtHczIyMzdmd252eXpCaVJwNzV1U0hQcUJwN2MwaVlLVmwzRzRoMmxQS2ZZUjl6RHdoSHpmWjJyS0xr?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Church of England revokes award to Muslim cleric who praised Osama bin Laden",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T15:41:00+01:00",
+        "source": "Christian Post",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORmIwVU9mWk9GbTR1LVhBTU11a2pHS0h6QUpFU2JmMnNGVWppS2dsaVhGQUNRT19BMmd6WVpIWU9teUdmQWRmeElJelF0OHo4M09DNHE2SmtyUmg1MWZOM0MzSmRPQncxaWtQUDdhX1FtVjVuTDZuZWdteE9DbHh3eHNWbEwtRFczVlVobFNmZnRCWTFmdDZPUFVhRjVvVEhWNlE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Police investigate break-in at award-winning Cardiff bakery",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T15:38:00+01:00",
+        "source": "Wales Online",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMWYyWkdaUk9rNjdsUWRxT0Z5Wi1ILUt6LThxQnJBZ0QydUVVVHFRbTZzMjhCRllQbTYwM0loUXdRd1RRNW1PZG9tWkhPdEFCZTBTV2ZaV2ZMM0g0VGZvWDdocWpOZ0VnVkl6ZHVIUzZldHpnNzlWalVBTkJDSEx4d3ZuQWpKT0x6akVJRE9YOGxvcTBpZ3RYbtIBngFBVV95cUxQLWVVV18tN2ppeHAwXzdhdU1sMVlpTHlPUkF5NXpQMWJVdzdvNWlzaUtSMWVoQVktSGs1aVlrWEJqWU5fN1FJVl9HR3k2d3VDS0xHR1Y1VDFLdEZCYUp3N1ctSTZON3kwN2oyb0ZfZXpOZjg5VVZGWlBFX1NlSVplaFJQNVhGMzh2cUlPY3JJcEVvMGU2a0NYVklYQmEyQQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "New “Indie Beer Fest Wales” celebrates thriving Welsh beer scene",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T13:37:12+01:00",
+        "source": "British Guild of Beer Writers",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUU5nLW96VmIwbFJXVWxwNWdET0gzcTc5MUJDRURiTDQ1YnM0UHVueHZTU05UaDVHSXJBUTB0SldOV2h2UzNYTEZoUVEtellaTjdPOU5KZ2VUTmtlajE4Vkh0YUZMTFNMcjY5eGRFY0NncTRFcHFNaUE3YjJnNUlJaW5uOW1Dd0FucEo5b2pHbkt3d2ZyeExLODQ5aw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "British-Turkish novelist and storyteller Elif Shafak wins Helena Vaz da Silva European Award 2026",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T09:49:30+01:00",
+        "source": "Europa Nostra",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPYVhISmtpUGw3WFV1bVdMSThKLVZ2a3ZxcTZTamdvcjJkOTA5ZXY5SXVSZDdBNEd1WGp1RVVmTkszekoxaGUxckNGQzI4YUFhSl9QT2hSSDZOcUdjbmh4Q25Wdkh4MlRMZVVUOVpHdWlzWDd4a2JuYksyeTRsdi1fM1YxOWVET3hodnNfZkZEZDd4QkNsUnhSTzE0YTdQUTFqWXNSbDBPLVVPcXV2Zm5VQ3psWlVicnlhbHZlRUhBYnFzSVh5Ymc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "British woman kidnapped in Malawi 'rescued and reunited with family'",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T08:52:00+01:00",
+        "source": "v2radio.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb1hBNzZEZXd3XzRjdHJqaDVGZDB2cDg2by1RVERlQ1Z4dldxMVY3MVBsZ01NelJyWHVLT1JUSldIdmZfUlg4ZWxrTEJiWUxNcDhNN1RBUFpDS1dQLURtVUxhLTNwSkYzRTk5aTNvWXVPc2hWb3F6c2E0RExHNkJuVGZjTnhaSVc1TGJVQmZsdXZUX3pVc2hrM0NfRzMyN3FsdzNHeVRWMmxqRmJ6WGt5QVlOMXQ5bDZiUHc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "British mum rescued in police shootout after being kidnapped in Malawi",
+        "summary": "",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T07:50:00+01:00",
         "source": "Yahoo News UK",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONDFiWW1aQnNiQ01yNWxLdHRLZG82STY3Y1JvdFpFMkdRaDdXTlNVVlV1WVhNY3BHa0R3dTlZNjZBOHFFZl9EYmQxdml6VDViQWgyMmtHdkFqME85OVlaSnFSYnRSMDRqcjhONV9NdTJnRDRqUHJXNnFPOVNGaHVva1pBczJEN1llS3lQZnVOTQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQM054TnhPOHE0M1d3MHU4bUQ0V2h2Y01vX181cV9hUU9IRnQySEh4SlJKNVB3TU5zVDRvd3pFbk1DaWw1QUJIOF9zNEoyUmtwSWZNUFVpblRwRzJjM05Za2xFY0ZJd2YxM05zdGJ0UDZOSWZpN0ZJNnhBd0VzZWxDNWN3?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Learner drivers turn to YouTube and TikTok to cut costs - but instructors warn of risks",
-        "summary": "One learner says social media clips saved her money, but there was also misinformation online.",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T22:11:37+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvgjnz7md4lo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "A British woman who was kidnapped in Malawi has been rescued, police say - ABC News",
+        "title": "Fine dining restaurant in Conwy celebrates 'incredible' fifth anniversary",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T21:52:27+01:00",
-        "source": "Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQREhvOG9oNGVKSG9sM3ZxTjR1RmZVN1ljWkZ2aW9hUkFxVWJ0aXl6SGRDN1lqdGdjakptU2t1aGZESGpqVF9yVUc3XzVNYXhHdG1IckU1NlFVTW5vV0ZNRGhrODF3WkkzZU1iNDFLRExUbGZLMm9XVHJPT1ZrY3BjMTJDSjV2M0gyOE1vdXh2S09WazRMdVlmdVZ0MjlnTUlH0gGmAUFVX3lxTE1vVWJMX1BLeVFRcS1DX0NET0xzcnJkRnhiV3VkOV9yZEQ1ckJpMFpVLWZQOFFibkpFY2pwNzVlaTFIclhNcHJLOTlMaUFfa0x2azU3Rzd6czFBYi15OGZxZldTNFA3c2JFN0JkdkpKbDVhYzg1Nmw3cmNDUVZuakRDVWplQWx3bmJET0NYaW5YZEV4dWhOY01tSi1sdkpuOUw0NVM3aFE?oc=5",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T07:00:00+01:00",
+        "source": "North Wales Pioneer",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdzZ2TUsyeGtvcGNjRnRSTVU3NFNUSmNEY09zZmp3dVhsMEdaQnlhRUdaczhiRmZHTVpYVjV6eDAtTkNTZXkwM3pFYjJXYlltQ2xPUnFMLUROaXR2bnIzMlJHa28wZkRtRDRFOUhOS2dibGw1NGFqVlRGdXVfWjlySm9iUDNJaEVQTFAtTF82b0VycDBVRGRiRW4zX0tmNThtNjJKbnJQaDg3QXV0?oc=5",
         "contentType": "article"
       },
       {
-        "title": "A British woman who was kidnapped in Malawi has been rescued, police say",
+        "title": "British mum kidnapped in Malawi rescued after police shootout",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T20:22:26+01:00",
-        "source": "Ottumwa Courier",
-        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOOVVNM2hzSHF3RGd5NWJnTFdqaEN6VFVOdlFnTmMtY21VRzU0YU93TmtLcG4yaFBwcXhvYjlpWGpFVDN5czZXZWtpZUZreGc5dU5nMVplckFwaG5vVGNVTklzRWV5ZHYzOHk3SXE2X1RyeEtITjV3T203WExYRFNibEZZYmp6emxZeTlIbTBmZnBwNTZxdjJBcHlnTFlzMmUycEpJa1FsY3BBRjRUWHhIR1l4VG1rVjhwTGdFaU1HWHFsM2JhbXZEam81WGs3UUZiaGVHUkNNTm56VklwWFVmM01ySF84NW1qZWxIaHQ3QWtZaXlYZ3MxdHV1ckF3ZGQ2?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Lambeth Palace withdraws award to Muslim cleric over Osama bin Laden remarks",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T18:53:43+01:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQc2ZiXzI3UHNsaC02b0VWQ2M1RzlqV1hLSW8tX29ma3htVC1scjVZT0FBVWtxLV9OeG9meUJfaTAyODhyRXkwVGlyY0gyWGN2dzNOaXNCT2ViVl9WLW1Gd1NlYjhVTVRxS1owRjBwR2hKZ2w3TnlLZ0ZlNDZsZTFBZ0tVOS1SaVlieFhMTm1lalpEVlVRbk9oU0ZjV0I1b1NwcW1VN2tldzdtZk52NlkyX0hXOE5kaVViLURpM0JSUDJJQnkyc1V3aGJR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Church rescinds honour for cleric who praised Bin Laden, awarded on 9/11 anniversary",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T18:36:00+01:00",
-        "source": "Jewish News",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdTlKMGJraGRLeEVENEwwRUhaWVhMaTJNMkNHZmFCSWRRN1BiLWktSkM2cUhXd2N0OEU1YkprN3NlWTliNE40ZmxMQ29nWFBCZnRyR1dST09Jam16SlBLWWQ4T25fbEtTZDV5YjFhNWVTcW1EZzhKNF9LLXhIM0VHcnQtVWZIVnM3QUlKbDk5a2d2MWFSR0Frc04zQ3FPYmNzUFZjODRnVlpoR2d6aE1IZkhzLWoxaW9zdFHSAb8BQVVfeXFMTk9YSENYVV9sUWFIdmpsc2JRSnRLZGlPeEJuYlBrbnlfZUszcnVQM1JZa2VfSURDQ1RLb1JLWjB5VlMwZFJkenh0ZWRGUHVRNnAyNERVY1A4bGNvclItWGlnUmxXa2d3SWFNejZIRGJpemRiZkNnMDJwbnFtSWRNb2FpOVpMZWlxcnJ2OW9kUno5NENVczlpelBqaVBVdkJwQjZ6ZDhTcDhXUFFieDh0emt6ZUp2blVCcE9PbEpHZjA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Keep It Grief shortlisted for major podcast award just six months after launch",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T14:00:50+01:00",
-        "source": "newsfromwales.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQm1vdFdsbHJVS0lwN1pGSEFCZDg2WVY3YzVJaDhHQ2NjSDlnTmJ3Qm9sdGNzTlFuMXViUDhZWkRXQ2hNYXRYSjE2ZjhRSU1rOC1aMWRGVWpCX1FnVGl2MjE4dlNxLTU0X3FpRXhSMW9jZnRWd3NlbjNDNUJZbGpDczFoTEk1MHJHQ01BYUJkbXpxWEtjUUZMcWtjdjRuUDZxbFcxS1EwbFI2d28?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Law Society of Northern Ireland celebrates 2026 Advanced Advocacy Course graduates",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T11:11:00+01:00",
-        "source": "Irish Legal News",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWGlLYURLbDV6Sm44c2NmWUZwNVdFSm9XclM3TGg4TjV1ai1zd19FekVMMDlYSTVtOHFsZEZOdHRjNHlpUGdUV3gzNzBXSS00b2l6TzVnYS05WXJMZmQ5Q0Q1QXluQkctSWxYV0ZQeHJmalRDUEtIQkpNUUVwaDh6ODZEQzgtbV9fVV9PdnN0akI0SmdKaDB5MzRnaS1kN3JnX0ZZaXNfR0dELTM4Q2wtbkJ1R1R3d2dhR2c?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Great British Energy launches £30 million fund for community-owned clean energy projects",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T10:50:11+01:00",
-        "source": "Review Energy",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQlpJNWdva3pyaUJCV0tuaEdmNUFZNXVDYVc4bXZNSjhNcFpVMXExbURXRkFvVHVjSmV3blh0LTZYLXBxMFM4UmVrVmNndnFLbjdFRUlVQmt4eUhDYldubDFCMTYtdlluMUotSTdya3ZWcm5WTV9uUW9oQ0xHZmphWjdHbXhzWlNWZGlLRXRjX2hvX2k3Nnp5c01ibXhMS3hPdXpFM2RGZ2c1U2tEcjR1M1N6NVBnMFA5NHA1S1FoSHlOTHlZbmowOTdJRQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "CFAs: High Sheriff of Hertfordshire Award Grant (United Kingdom)",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T10:46:19+01:00",
-        "source": "fundsforNGOs",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRDZfV2VJdjFnOFVHSDE5Tm8xcnk3V2dWRW9hX0NNdzM1bEpRNnFGSXFaSWR1cl8zZXN6QlBkSy1BTkxqUUthNldFc3RvZTJsZ1Y3QmZJNjNfSXNrcDR2NmRPN2VFTkRJTkxhY1JIa01fZk44RlJHQVpiLVBydXFOSWZBWE5BOHN0X0NPRm1nZlFkblIxQkRkcjFlVHVkdTJmU0gtTzM0YTVhX2RjZHh6S01adlpyVWfSAbwBQVVfeXFMT2xNeXZhMDdXbElzc3M0dzNUbWo4U3ZLdnRnRHlsWjNNN0hrY2xxbXlTSjViRzFDT2pnTmZmek8wS25QNHFyZkU5VXIyQVlUWDNoM0prdmpfN3R3VTNEZ3gtS2xqblM0NXNSZXdnQzFSUXdyNUJ2ZzBUazh0TVJmX3RjY1Z1T2hVdllDT3FsNU5pZEljZk1ZdVQtMWN4ekRFOE1xMlo3NXZtNHdDS2x1bHU0eHJwUDZfX1BOZ0Y?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Community group raises £3,000 for Wales Air Ambulance",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T10:33:57+01:00",
-        "source": "Caerphilly Observer",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMUhfNzFNNFdFT0xmUXZiUFZZN1NKN3lyeVpWdDBZSHBHb18yQlJQbkdKVWMxOHFTT0hlSDVaUnA4RC1Ec3hqSUlhVzVfV0tWX1VBaFBVcUdWaEFNNy1Wa3RFbHVFM2xmZnJfMlRxTGd2WXhPQ3B4X0NJM0FpY21kMHBrLUd5LTJsUmtrTmV0RVF6a0NFaTktSg?oc=5",
+        "meta": "Fri 18 Sep",
+        "publishedAt": "2026-09-18T06:44:00+01:00",
+        "source": "The Independent",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbHF4NV84RVFFNGVpdldhM1ZRclRqSkZxLTg0LTlzTmdtc3RrNG0wSklJLWlFSzlwejlXZXEtSzhJRS1Vcms2T09NdVlNQy15cThqLWRoSE11LXB6SFJQM21IOUlhbE9UeVd6RDV6VGdIT2xPV0lxUlVfZ1NLOG03ZEtnWlBxVW5QaWZXbmkyVkE4S19oazNfUTk2Rm5CS18tYUhF?oc=5",
         "contentType": "article"
       }
     ],
@@ -847,21 +831,21 @@
         "contentType": "article"
       },
       {
+        "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+        "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.",
+        "meta": "Wed 16 Sep",
+        "publishedAt": "2026-09-16T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/hex-gpt-6-astra",
+        "contentType": "article"
+      },
+      {
         "title": "How to connect AI usage to business value",
         "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
         "meta": "Wed 16 Sep",
         "publishedAt": "2026-09-16T13:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-        "contentType": "article"
-      },
-      {
-        "title": "Our framework for reporting model misalignment",
-        "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-        "meta": "Wed 16 Sep",
-        "publishedAt": "2026-09-16T18:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/model-misalignment-reporting-framework",
         "contentType": "article"
       },
       {
@@ -874,39 +858,54 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI breached by researchers using Anthropic models",
+        "title": "OpenAI expects to burn $280bn by 2030",
         "summary": "",
         "meta": "Fri 18 Sep",
-        "publishedAt": "2026-09-18T04:31:31+01:00",
-        "source": "ft.com",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONHNONlc4OVZ4WWJUbjlZanhNNURqN21yTHRZYlU4SzdIZkhQQ0pacVh2cEpXWENPM0NCbjVwbWNxOTJhWTlHZzVyX1R0M1BqWjFlRzV1QUgwQjJOcTdqRnY5clRycUs2SmtEalBJd2JkLUtORlgyazNXaDJLbW53RV9GaEE?oc=5",
+        "publishedAt": "2026-09-18T23:33:32+01:00",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcFJUYnM1WGQ5aHhEU0FMdHRPbjkzSWI4UnNHTkRESlJ6OURsTlNzN25fWWsyTHhHcGpSM0xQZXVuU1FtRW1WNFZ6T3BJcXRNTWFoRlhZcktaVE1IUmZ4Ykkwc253em1Jai10dGxUbFk0d0t5VEUyemwtajF2MURaQnFKTW8?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Measurements for understanding the pace of AI development inside frontier labs",
+        "title": "OpenAI ‘ethically hacked’ with help of Anthropic’s Claude chatbot",
         "summary": "",
         "meta": "Fri 18 Sep",
-        "publishedAt": "2026-09-18T01:09:23+01:00",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hSlNaZU5CMXdjOERiMTltcEVxMXduUXVrT1UtSExlUGlUUHFCc2huOVM0NEY0cmhCMVF6X0o2QjMwUUZOQkhuSGlHVjFlaWdKelR3ZTEzUV9SRzRIdkxhV3RfQ0N2OUI5U214a0RqZjh3c2MxUktr?oc=5",
+        "publishedAt": "2026-09-18T15:49:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORGtkcDVTUGdMQW5OWHpxVmFVLXlyel9IRVJhNVVmTWF6NFk2enhmOFNVdnJyY3RkMzRhbWpXaXBjVWk4YzJxekdLSzM4SHJWRW56QzFWZDlncUtPdUlZb1Zva1VtdWF0anZSejVWanJnWlNhb0xXSUU3R0VRRmlneWVqMmRoUWdwMGNSd3p3TUJObUU?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Breaking news: OpenAI unveils Astra for Law",
+        "title": "Anthropic, OpenAI, SpaceXAI, Google sued over call to ‘pace’ AI development",
         "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T20:59:40+01:00",
-        "source": "Legal IT Insider",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9JNE1rV1Z5ek41SnN6SWE1MF84dkp0SzNNSGY5VWVGSEJRdnlJaFRZWmFYQ2ZCbTdNTmhSa1BUNWJKaVBRSGtGWDB3N0VYSVlJVE9WYnI3clJVaUp0VjVPMVNKd3ZmZTJaV0hhVm9hUXRrNlBXaFdqaHZ0cw?oc=5",
+        "meta": "Sat 19 Sep",
+        "publishedAt": "2026-09-19T02:04:00+01:00",
+        "source": "Politico",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQY2RBMnFCQ3BDbW1ZM0VJa2lWbGd6cExDbVI5elZTSmdvTUlmSDZ1S3BzYnRLLU9LSlltWTZCektKb2FQSU1tX1FKWWFuWUs0Q1JiUndJRGpJc3pQbGlvN0J3WTBLTE5ycnFtN3Q4Z0FuWUNlLUxNYmlyazhranVVZGlBSS1aTmlXWWViT2sxaEgwZTh0bnRIQk1zRWMtbGNxNkZGYXlWVWE4c2ZBbHZxQzVLeXpQMTlqZFI1Wmhn?oc=5",
         "contentType": "article"
       }
     ],
     "Career": [
       {
-        "title": "Communications AI Integration Lead",
-        "company": "HM Land Registry",
+        "title": "Senior Test Engineer (AI)",
+        "company": "Ofgem",
         "description": "Description not supplied by publisher.",
         "salary": "Not stated",
+        "postedDate": "18 September 2026 · LinkedIn listing date",
+        "source": "LinkedIn",
+        "location": "England, United Kingdom",
+        "url": "https://uk.linkedin.com/jobs/view/senior-test-engineer-ai-at-ofgem-4466685438",
+        "contentType": "job",
+        "countryFocus": "UK",
+        "sector": "Public sector",
+        "aiRelated": true,
+        "postedAt": "2026-09-18"
+      },
+      {
+        "title": "Communications AI Integration Lead",
+        "company": "HM Land Registry",
+        "description": "Birkenhead, North West England, CH41 6DU : Croydon, London (region), CR0 2AQ : Coventry, West Midlands (England), CV1 2WT : Durham, North East England, DH1 5TR : Weymouth, South West England, DT4 9TT : Gloucester, South West England, GL1 1DQ : Kingston upon Hull, Yorkshire and the Humber, HU2 8JN : Leicester, East Midlands (England), LE3 5DR : Nottingham, East Midlands (England), NG2 1AW : Peterborough, East of…",
+        "salary": "£47,084",
         "postedDate": "17 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
         "location": "London, England, United Kingdom",
@@ -920,7 +919,7 @@
       {
         "title": "Deputy Director, Head of AI Assurance",
         "company": "HM Revenue & Customs",
-        "description": "Description not supplied by publisher.",
+        "description": "HM Revenue and Customs is one of the UK’s largest and most important public organisations. We touch the lives of almost everyone in the country, and we are transforming the way we work so we can better support customers, colleagues and the wider economy. AI has the potential to help us deliver better services, improve productivity and tackle some of the most complex challenges facing the tax system. As our Deputy…",
         "salary": "Not stated",
         "postedDate": "15 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
@@ -935,7 +934,7 @@
       {
         "title": "Strategic Manager Artificial Intelligence",
         "company": "Durham County Council",
-        "description": "Description not supplied by publisher.",
+        "description": "Help us shape the future of AI at Durham County Council We are looking for an inspiring Strategic Manager to lead our approach to artificial intelligence and help shape how AI and emerging technologies are used responsibly across Durham County Council. This is an exciting opportunity to set the strategic direction for AI, develop our governance framework and identify where new technology can improve services for…",
         "salary": "Not stated",
         "postedDate": "11 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
@@ -950,8 +949,8 @@
       {
         "title": "Senior AI Engineer (Prototyping and Integration)",
         "company": "Department for Energy Security and Net Zero",
-        "description": "Aberdeen, Birmingham, Bristol, Cardiff, Darlington, Edinburgh, London, Salford Job Summary The Integrated Corporate Services (ICS) is a shared corporate service. It provides corporate services (HR, Finance, Digital, Commercial, Security and Estates) across the Department for Energy Security & Net Zero (DESNZ) and the Department for Science, Innovation & Technology (DSIT). Our team of over 400 professionals will be…",
-        "salary": "£43,765",
+        "description": "Description not supplied by publisher.",
+        "salary": "Not stated",
         "postedDate": "10 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
         "location": "London, England, United Kingdom",
@@ -965,8 +964,8 @@
       {
         "title": "Lead Technical Architect - AI",
         "company": "Department for Environment, Food and Rural Affairs",
-        "description": "Description not supplied by publisher.",
-        "salary": "Not stated",
+        "description": "Bristol, London, York Job Summary Defra is the UK government department responsible for safeguarding our natural environment, supporting our world-leading food and farming industry, and sustaining a thriving rural economy. Our broad remit means we play a major role in people's day-to-day life, from the food we eat, and the air we breathe, to the water we drink. Digital, Data, Technology and Security (DDTS) is the…",
+        "salary": "£56,375",
         "postedDate": "7 September 2026 · LinkedIn listing date",
         "source": "LinkedIn",
         "location": "London, England, United Kingdom",
@@ -996,46 +995,48 @@
   },
   "watchAlternatives": [
     {
-      "title": "Panorama",
-      "summary": "It's a sex abuse scandal that has gripped the world. But despite all the headlines and stories, important questions remain unanswered about Jeffrey Epstein. How did he become so powerful?",
-      "meta": "BBC One · Available since Mon 14 Sep",
-      "source": "BBC One",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
-      "artworkAlt": "Panorama programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-14",
-      "showId": 8534,
-      "episodeId": 3732006,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 323.6
-    },
-    {
-      "title": "Geordie Coppers",
-      "summary": "In the first episode, consecutive robberies on a busy road have PC Siobhan baffled, but a house search and a warm Big Mac suggest an unlikely suspect. Street ranger and wannabe cop…",
-      "meta": "Channel 4 · Available since Mon 14 Sep",
+      "title": "999: What Happened Next",
+      "summary": "A woman preparing for a Christmas night out is brutally stabbed in her own home. And detectives pursue an international burglary gang who are raiding affluent Surrey homes.",
+      "meta": "Channel 4 · Mon 21 Sep, 9pm",
       "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/geordie-coppers",
+      "url": "https://www.channel4.com/programmes/999-what-happened-next",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603850.jpg",
-      "artworkAlt": "Geordie Coppers programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527705.jpg",
+      "artworkAlt": "999: What Happened Next programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-14",
-      "showId": 94471,
-      "episodeId": 3763723,
+      "airdate": "2026-09-21",
+      "showId": 90023,
+      "episodeId": 3763600,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 317.9
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 312.5
+    },
+    {
+      "title": "Geordie Coppers",
+      "summary": "Sgt Craig is far from amused by the arrival in town of online adult star Bonnie Blue and her touring bus, concerned she is proving a distraction to the local students. PC Siobhan is…",
+      "meta": "Channel 4 · Mon 21 Sep, 10pm",
+      "source": "Channel 4",
+      "url": "https://www.channel4.com/programmes/geordie-coppers",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603848.jpg",
+      "artworkAlt": "Geordie Coppers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-21",
+      "showId": 94471,
+      "episodeId": 3763724,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 309.9
     },
     {
       "title": "Neagley",
@@ -1058,8 +1059,8 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 281.0
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 273.0
     },
     {
       "title": "Route 187",
@@ -1081,8 +1082,74 @@
         "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 267.7
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 259.7
+    },
+    {
+      "title": "The Blame",
+      "summary": "The series begins when the body of teenage figure skater Sophie Madsen is discovered, sending shockwaves through the town of Wakestead. As DI Crane and DI Radley dig deeper, what starts as…",
+      "meta": "ITVX · Tomorrow, 6am",
+      "source": "ITVX",
+      "url": "https://www.itv.com/watch/the-blame/10a3705/",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1592107.jpg",
+      "artworkAlt": "The Blame programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-20",
+      "showId": 86463,
+      "episodeId": 3741445,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 252.8
+    },
+    {
+      "title": "Paul C. Brunson: Red Flag",
+      "summary": "The relationship expert speaks to Ellie, who told she was a worthless a sex object by her misogynist boyfriend who bragged online about abusing her - until she fought back.",
+      "meta": "U&W · Tue 22 Sep, 9pm",
+      "source": "U&W",
+      "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600741.jpg",
+      "artworkAlt": "Paul C. Brunson: Red Flag programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-22",
+      "showId": 94157,
+      "episodeId": 3744722,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 251.5
+    },
+    {
+      "title": "How the Tudors Lost Their Heads",
+      "summary": "Executed on charges of adultery and treason, Anne Boleyn is often remembered as the ‘harlot' who seduced Henry VIII into annulling his first marriage and forcing his country into religious…",
+      "meta": "National Geographic · Tomorrow, 8pm",
+      "source": "National Geographic",
+      "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
+      "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-20",
+      "showId": 94035,
+      "episodeId": 3731960,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "History"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 248.1
     },
     {
       "title": "Police Interceptors",
@@ -1103,88 +1170,22 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 253.6
-    },
-    {
-      "title": "Paul C. Brunson: Red Flag",
-      "summary": "The relationship expert speaks to Megan, whose escape from an abusive and violent partner was followed by something worse: both she and her ex were attacked by a stalker.",
-      "meta": "U&W · Available since Tue 15 Sep",
-      "source": "U&W",
-      "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600741.jpg",
-      "artworkAlt": "Paul C. Brunson: Red Flag programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-15",
-      "showId": 94157,
-      "episodeId": 3744720,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 247.6
-    },
-    {
-      "title": "The Blame",
-      "summary": "The series begins when the body of teenage figure skater Sophie Madsen is discovered, sending shockwaves through the town of Wakestead. As DI Crane and DI Radley dig deeper, what starts as…",
-      "meta": "ITVX · Sun 20 Sep, 6am",
-      "source": "ITVX",
-      "url": "https://www.itv.com/watch/the-blame/10a3705/",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1592107.jpg",
-      "artworkAlt": "The Blame programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-20",
-      "showId": 86463,
-      "episodeId": 3741445,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime",
-        "Thriller"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 244.8
-    },
-    {
-      "title": "How the Tudors Lost Their Heads",
-      "summary": "Executed on charges of adultery and treason, Anne Boleyn is often remembered as the ‘harlot' who seduced Henry VIII into annulling his first marriage and forcing his country into religious…",
-      "meta": "National Geographic · Sun 20 Sep, 8pm",
-      "source": "National Geographic",
-      "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
-      "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-20",
-      "showId": 94035,
-      "episodeId": 3731960,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "History"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 240.1
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 245.6
     },
     {
       "title": "Hitler's Last Stand",
-      "summary": "In August 1944, as Allied forces push east from Normandy, a British battalion encounters fierce German resistance while trying to cross the Seine River. With bridges destroyed and no tank…",
-      "meta": "National Geographic · Available since Tue 15 Sep",
+      "summary": "With US Medics unable to rescue seven casualties because of heavy fire, Technical Sergeant Stephen Gregg retrieves a .30 calibre machine gun and advances, firing from the hip to protect…",
+      "meta": "National Geographic · Tue 22 Sep, 8pm",
       "source": "National Geographic",
       "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/157/394083.jpg",
       "artworkAlt": "Hitler's Last Stand programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-15",
+      "airdate": "2026-09-22",
       "showId": 37030,
-      "episodeId": 3707969,
+      "episodeId": 3707970,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
@@ -1192,55 +1193,8 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 229.5
-    },
-    {
-      "title": "En Coma",
-      "summary": "A current scripted to consider.",
-      "meta": "Netflix · Available since Fri 11 Sep",
-      "source": "Netflix",
-      "url": "https://www.netflix.com/",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1602279.jpg",
-      "artworkAlt": "En Coma programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-11",
-      "showId": 94366,
-      "episodeId": 3758330,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Thriller",
-        "Mystery"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 211.1
-    },
-    {
-      "title": "MobLand",
-      "summary": "Maeve and Conrad go to the dogs, leaving Harry to deal with the messy fallout. Jan makes a startling confession. Kevin and Seraphina both look to the future. Tattersall puts his cards on…",
-      "meta": "Paramount+ · New today",
-      "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/mobland/",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604671.jpg",
-      "artworkAlt": "MobLand programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-18",
-      "showId": 75026,
-      "episodeId": 3667751,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 210.0
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 233.5
     },
     {
       "title": "Vigil",
@@ -1263,8 +1217,55 @@
         "Mystery"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-18",
-      "preferenceScore": 207.0
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 199.0
+    },
+    {
+      "title": "MobLand",
+      "summary": "Maeve and Conrad go to the dogs, leaving Harry to deal with the messy fallout. Jan makes a startling confession. Kevin and Seraphina both look to the future. Tattersall puts his cards on…",
+      "meta": "Paramount+ · Available since yesterday",
+      "source": "Paramount+",
+      "url": "https://www.paramountplus.com/shows/mobland/",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604707.jpg",
+      "artworkAlt": "MobLand programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-18",
+      "showId": 75026,
+      "episodeId": 3667751,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 198.0
+    },
+    {
+      "title": "Star Trek: Strange New Worlds",
+      "summary": "We return to the Elysian Kingdom, but this time on a REAL fantasy planet.",
+      "meta": "Paramount+ · Available since Thu 17 Sep",
+      "source": "Paramount+",
+      "url": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/",
+      "badge": "Sci-fi",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604449.jpg",
+      "artworkAlt": "Star Trek: Strange New Worlds programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-17",
+      "showId": 48090,
+      "episodeId": 3604741,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "interestLane": "sci-fi",
+      "generatedDate": "2026-09-19",
+      "preferenceScore": 172.0
     }
   ]
 }
