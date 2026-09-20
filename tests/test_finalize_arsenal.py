@@ -261,6 +261,15 @@ class FirstTeamResultTests(unittest.TestCase):
             finalize_arsenal.verified_brighton_result(),
         )
 
+    def test_brighton_short_name_matches_full_club_name(self) -> None:
+        self.assertTrue(
+            finalize_arsenal.same_team("Brighton", "Brighton and Hove Albion")
+        )
+        self.assertTrue(
+            finalize_arsenal.same_team("Brighton & Hove Albion", "Brighton")
+        )
+        self.assertFalse(finalize_arsenal.same_team("Brighton", "Arsenal"))
+
 
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {
