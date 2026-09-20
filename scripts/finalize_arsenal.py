@@ -259,6 +259,37 @@ def verified_ipswich_result() -> dict:
     }
 
 
+def verified_brighton_result() -> dict:
+    return {
+        "date": "2026-09-19T15:00:00+01:00",
+        "dateLabel": "Sat 19 Sep",
+        "kickoff": "3pm",
+        "opponent": "Brighton and Hove Albion",
+        "competition": "Premier League",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 0,
+        "opponentScore": 3,
+        "result": "0–3",
+        "scorers": [
+            {"name": "Pascal Groß", "team": "Brighton", "minute": "31'"},
+            {"name": "Charalampos Kostoulas", "team": "Brighton", "minute": "45'"},
+            {"name": "Chema Andrés", "team": "Brighton", "minute": "57'"},
+        ],
+        "scorersLabel": (
+            "Pascal Groß 31', Charalampos Kostoulas 45', Chema Andrés 57' (Brighton)"
+        ),
+        "stadium": "Amex Stadium",
+        "summary": (
+            "Brighton's pressing and clinical finishing ended Arsenal's winning start "
+            "with a 3–0 defeat, as Pascal Groß and Charalampos Kostoulas scored before "
+            "half-time and Chema Andrés headed in the third after the break."
+        ),
+        "url": "https://www.skysports.com/football/brighton-and-hove-albion-vs-arsenal/report/559486",
+        "source": "Sky Sports / Reuters",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -492,7 +523,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-09-15T22:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-09-19T18:00:00+01:00"):
+        fallback = verified_brighton_result()
+    elif NOW >= datetime.fromisoformat("2026-09-15T22:00:00+01:00"):
         fallback = verified_ipswich_result()
     elif NOW >= datetime.fromisoformat("2026-09-12T22:00:00+01:00"):
         fallback = verified_sunderland_result()

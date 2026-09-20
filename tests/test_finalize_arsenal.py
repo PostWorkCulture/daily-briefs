@@ -217,6 +217,50 @@ class FirstTeamResultTests(unittest.TestCase):
             finalize_arsenal.verified_ipswich_result(),
         )
 
+    def test_verified_brighton_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_brighton_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["arsenalScore"], 0)
+        self.assertEqual(result["opponentScore"], 3)
+        self.assertEqual(result["scorers"], [
+            {"name": "Pascal Groß", "team": "Brighton", "minute": "31'"},
+            {"name": "Charalampos Kostoulas", "team": "Brighton", "minute": "45'"},
+            {"name": "Chema Andrés", "team": "Brighton", "minute": "57'"},
+        ])
+        self.assertEqual(result["stadium"], "Amex Stadium")
+        self.assertEqual(result["kickoff"], "3pm")
+
+    def test_verified_brighton_result_completes_partial_sky_result(self) -> None:
+        payload = {
+            "sections": {"Arsenal news": []},
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-09-19T15:00:00+01:00",
+                    "dateLabel": "Sat 19 Sep",
+                    "opponent": "Brighton and Hove Albion",
+                    "completed": True,
+                    "arsenalScore": 0,
+                    "opponentScore": 3,
+                    "result": "0–3",
+                    "source": "Sky Sports",
+                    "url": "https://www.skysports.com/football/brighton-and-hove-albion-vs-arsenal/5214191621633298232",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-20T05:40:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
+        self.assertEqual(
+            payload["arsenal"]["lastResult"],
+            finalize_arsenal.verified_brighton_result(),
+        )
+
 
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {

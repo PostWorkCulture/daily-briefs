@@ -1,3 +1,10 @@
+## 20 September 2026: Verified Brighton result recovery
+
+- The protected Sunday catch-up detected Brighton 3–0 Arsenal but stopped before publication because the incoming Sky score lacked the scorers, summary and stadium required by the Arsenal card.
+- Added the complete result verified against Sky Sports and Reuters: Pascal Groß 31', Charalampos Kostoulas 45' and Chema Andrés 57', Premier League, 3pm kick-off and Amex Stadium.
+- The verified record completes the partial result only after full time; it does not relax any required-field, freshness or first-team guard.
+- Scope is limited to the Arsenal result dependency and regression coverage. News/Career separation, the fact catalogue and today's selected fact remain unchanged.
+
 ## 16 September 2026: Verified Ipswich result recovery
 
 - The protected Wednesday catch-up detected Ipswich Town 2–4 Arsenal but stopped before publication because the incoming Arsenal.com score lacked the scorers, summary, kick-off and stadium required by the Arsenal card.
