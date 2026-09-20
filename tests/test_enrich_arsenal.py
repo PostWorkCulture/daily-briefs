@@ -252,6 +252,38 @@ class UpcomingFixtureTests(unittest.TestCase):
         self.assertIn(official, fixtures)
         self.assertNotIn(stale, fixtures)
 
+    def test_official_fixture_preserves_sky_and_bbc_verification(self) -> None:
+        sky = {
+            "date": "2026-10-10T12:30:00+01:00",
+            "opponent": "Leeds United",
+            "competition": "Premier League",
+            "completed": False,
+            "source": "Sky Sports",
+            "url": "https://www.skysports.com/football/arsenal-vs-leeds-united/example",
+        }
+        bbc = {
+            "date": "2026-10-10T12:30:00+01:00",
+            "opponent": "Leeds United",
+            "competition": "Premier League",
+            "completed": False,
+            "source": "BBC Sport",
+            "url": "https://www.bbc.co.uk/sport/football/example",
+        }
+        official = {
+            "date": "2026-10-10T12:30:00+01:00",
+            "opponent": "Leeds United",
+            "competition": "Premier League",
+            "completed": False,
+            "source": "PremierLeague.com",
+            "url": "https://www.premierleague.com/example",
+        }
+
+        fixtures = enrich_arsenal.reconcile_official_fixture([sky, bbc], official)
+
+        self.assertEqual(len(fixtures), 1)
+        self.assertEqual(fixtures[0]["source"], "Sky Sports / BBC Sport")
+        self.assertEqual(fixtures[0]["url"], sky["url"])
+
 
     def test_completed_result_includes_all_required_match_details(self) -> None:
         event = {

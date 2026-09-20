@@ -3,6 +3,7 @@
 - The protected Sunday catch-up detected Brighton 3–0 Arsenal but stopped before publication because the incoming Sky score lacked the scorers, summary and stadium required by the Arsenal card.
 - Added the complete result verified against Sky Sports and Reuters: Pascal Groß 31', Charalampos Kostoulas 45' and Chema Andrés 57', Premier League, 3pm kick-off and Amex Stadium.
 - Normalised the trusted short name `Brighton` and structured name `Brighton and Hove Albion` as the same club, preventing a false same-day disagreement without weakening score checks.
+- Preserved Sky Sports and BBC Sport verification when their Leeds fixture is reconciled with the official Premier League record, preventing the correct fixture from losing its required independent source labels.
 - The verified record completes the partial result only after full time; it does not relax any required-field, freshness or first-team guard.
 - Scope is limited to the Arsenal result dependency and regression coverage. News/Career separation, the fact catalogue and today's selected fact remain unchanged.
 
