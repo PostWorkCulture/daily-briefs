@@ -580,6 +580,42 @@ def reconcile_official_fixture(fixtures: list[dict], official: dict | None) -> l
         r"\s+", " ", str(official.get("opponent") or "")
     ).strip().lower()
     official_competition = str(official.get("competition") or "").strip().lower()
+    try:
+        official_day = dateparser.parse(str(official.get("date") or "")).date()
+    except Exception:
+        official_day = None
+    trusted_confirmations = []
+    for fixture in fixtures:
+        source = str(fixture.get("source") or "")
+        try:
+            fixture_day = dateparser.parse(str(fixture.get("date") or "")).date()
+        except Exception:
+            fixture_day = None
+        if (
+            fixture_day == official_day
+            and re.sub(r"\s+", " ", str(fixture.get("opponent") or "")).strip().lower()
+            == official_opponent
+            and str(fixture.get("competition") or "").strip().lower()
+            == official_competition
+            and ("Sky Sports" in source or "BBC Sport" in source)
+        ):
+            trusted_confirmations.append(fixture)
+
+    confirmed_official = dict(official)
+    if trusted_confirmations:
+        source_names = [
+            name for name in ("Sky Sports", "BBC Sport")
+            if any(name in str(item.get("source") or "") for item in trusted_confirmations)
+        ]
+        confirmed_official["source"] = " / ".join(source_names)
+        preferred = next(
+            (item for item in trusted_confirmations if "Sky Sports" in str(item.get("source") or "")),
+            trusted_confirmations[0],
+        )
+        if preferred.get("url"):
+            confirmed_official["url"] = preferred["url"]
+        if preferred.get("tvChannel") and preferred.get("tvChannel") != "TBC":
+            confirmed_official["tvChannel"] = preferred["tvChannel"]
     reconciled = [
         fixture
         for fixture in fixtures
@@ -589,7 +625,7 @@ def reconcile_official_fixture(fixtures: list[dict], official: dict | None) -> l
         or str(fixture.get("competition") or "").strip().lower()
         != official_competition
     ]
-    reconciled.append(official)
+    reconciled.append(confirmed_official)
     return reconciled
 
 
