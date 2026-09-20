@@ -314,6 +314,19 @@ def clean_team(value: str) -> str:
     return text.strip(" .:-|")
 
 
+def team_key(value: str) -> str:
+    key = re.sub(r"[^a-z0-9]+", "", str(value or "").casefold())
+    aliases = {
+        "brightonandhovealbion": "brighton",
+        "brightonhovealbion": "brighton",
+    }
+    return aliases.get(key, key)
+
+
+def same_team(left: str, right: str) -> bool:
+    return bool(team_key(left)) and team_key(left) == team_key(right)
+
+
 def infer_competition(texts: list[str]) -> str:
     blob = " ".join(texts).lower()
     checks = (
@@ -464,7 +477,7 @@ def use_fixture_details(candidate: dict, arsenal: dict) -> dict:
         candidate_dt
         and fixture_dt
         and candidate_dt.date() == fixture_dt.date()
-        and str(candidate.get("opponent") or "").lower() == str(fixture.get("opponent") or "").lower()
+        and same_team(candidate.get("opponent"), fixture.get("opponent"))
     ):
         enriched = dict(candidate)
         for key in ("date", "dateLabel", "kickoff", "competition", "homeAway"):
@@ -483,8 +496,7 @@ def reconcile_news_result_with_structured(news_result: dict, structured: dict | 
     if not news_dt or not structured_dt:
         return news_result
     same_result = (
-        str(news_result.get("opponent") or "").casefold()
-        == str(structured.get("opponent") or "").casefold()
+        same_team(news_result.get("opponent"), structured.get("opponent"))
         and news_result.get("arsenalScore") == structured.get("arsenalScore")
         and news_result.get("opponentScore") == structured.get("opponentScore")
     )
@@ -512,8 +524,7 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
             if not parsed or not parsed_dt or parsed_dt.date() != candidate_dt.date():
                 continue
             if (
-                str(parsed.get("opponent") or "").lower()
-                == str(candidate.get("opponent") or "").lower()
+                same_team(parsed.get("opponent"), candidate.get("opponent"))
                 and parsed.get("arsenalScore") == candidate.get("arsenalScore")
                 and parsed.get("opponentScore") == candidate.get("opponentScore")
             ):
@@ -619,7 +630,10 @@ def apply_last_result_fallback(payload: dict) -> None:
                 arsenal["lastResult"].get("arsenalScore") == newest_news.get("arsenalScore")
                 and arsenal["lastResult"].get("opponentScore") == newest_news.get("opponentScore")
             )
-            same_opponent = str(arsenal["lastResult"].get("opponent") or "").lower() == str(newest_news.get("opponent") or "").lower()
+            same_opponent = same_team(
+                arsenal["lastResult"].get("opponent"),
+                newest_news.get("opponent"),
+            )
             if not (same_score and same_opponent):
                 raise RuntimeError(
                     "Arsenal lastResult disagrees with trusted same-day result news"
