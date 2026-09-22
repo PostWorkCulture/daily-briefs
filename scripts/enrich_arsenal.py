@@ -2,10 +2,17 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timedelta
+import sys
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
+
+
+def safe_strftime(dt: date | datetime, fmt: str) -> str:
+    if sys.platform == "win32":
+        fmt = fmt.replace("%-d", "%#d").replace("%-I", "%#I")
+    return dt.strftime(fmt)
 
 import requests
 from bs4 import BeautifulSoup
@@ -189,8 +196,8 @@ def parse_fixture(event: dict, competition: str, competition_code: str = "") -> 
     a_score = arsenal.get("score", {}).get("value") if isinstance(arsenal.get("score"), dict) else arsenal.get("score")
     o_score = opponent.get("score", {}).get("value") if isinstance(opponent.get("score"), dict) else opponent.get("score")
     item = {
-        "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
-        "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+        "date": dt.isoformat(), "dateLabel": safe_strftime(dt, "%a %-d %b"),
+        "kickoff": safe_strftime(dt, "%-I:%M%p").lower().replace(":00", ""),
         "opponent": opponent.get("team", {}).get("displayName", "Opponent"),
         "competition": competition, "homeAway": arsenal.get("homeAway", ""),
         "completed": completed, "arsenalScore": a_score, "opponentScore": o_score,
@@ -297,8 +304,8 @@ def parse_sky_state_matches(html: str, final_url: str, month_date: datetime) -> 
         channel = str((state.get("channel") or {}).get("description") or "TBC").strip()
         match_url = str(state.get("matchURL") or "").strip()
         item = {
-            "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
-            "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+            "date": dt.isoformat(), "dateLabel": safe_strftime(dt, "%a %-d %b"),
+            "kickoff": safe_strftime(dt, "%-I:%M%p").lower().replace(":00", ""),
             "opponent": away if arsenal_home else home, "competition": competition,
             "homeAway": "home" if arsenal_home else "away", "completed": completed,
             "arsenalScore": arsenal_score if completed else None,
@@ -386,8 +393,8 @@ def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
                 dt = current_date
             opponent = away if home.casefold() == "arsenal" else home
             out.append({
-                "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
-                "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+                "date": dt.isoformat(), "dateLabel": safe_strftime(dt, "%a %-d %b"),
+                "kickoff": safe_strftime(dt, "%-I:%M%p").lower().replace(":00", ""),
                 "opponent": opponent, "competition": current_comp,
                 "homeAway": "home" if home.casefold() == "arsenal" else "away",
                 "completed": False, "arsenalScore": None, "opponentScore": None,
@@ -404,7 +411,7 @@ def sky_month_matches(month_date: datetime | None = None) -> list[dict]:
             arsenal_home = home.casefold() == "arsenal"
             opponent = away if arsenal_home else home
             out.append({
-                "date": current_date.isoformat(), "dateLabel": current_date.strftime("%a %-d %b"),
+                "date": current_date.isoformat(), "dateLabel": safe_strftime(current_date, "%a %-d %b"),
                 "kickoff": "", "opponent": opponent, "competition": current_comp,
                 "homeAway": "home" if arsenal_home else "away", "completed": True,
                 "arsenalScore": h_score if arsenal_home else a_score,
@@ -479,8 +486,8 @@ def parse_bbc_state_matches(html: str, final_url: str) -> list[dict]:
                     journey = str(event.get("onwardJourneyLink") or "").strip()
                     out.append({
                         "date": dt.isoformat(),
-                        "dateLabel": dt.strftime("%a %-d %b"),
-                        "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+                        "dateLabel": safe_strftime(dt, "%a %-d %b"),
+                        "kickoff": safe_strftime(dt, "%-I:%M%p").lower().replace(":00", ""),
                         "opponent": away if arsenal_home else home,
                         "competition": competition,
                         "homeAway": "home" if arsenal_home else "away",
@@ -551,8 +558,8 @@ def parse_official_pl_fixtures(
         home, away = parts
         opponent = away if home.lower() == "arsenal" else home
         candidates.append({
-            "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"),
-            "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", "") if m.group(5) else "TBC",
+            "date": dt.isoformat(), "dateLabel": safe_strftime(dt, "%a %-d %b"),
+            "kickoff": safe_strftime(dt, "%-I:%M%p").lower().replace(":00", "") if m.group(5) else "TBC",
             "opponent": opponent, "competition": "Premier League",
             "homeAway": "home" if home.lower() == "arsenal" else "away",
             "completed": False, "arsenalScore": None, "opponentScore": None,

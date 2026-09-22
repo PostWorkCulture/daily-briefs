@@ -1,3 +1,11 @@
+## 22 September 2026: Restore verified Leeds United previous meeting and cross-platform date parity
+
+- Added verified previous meeting for upcoming fixture Arsenal vs Leeds United: Arsenal 4–1 Leeds United, 1 Apr 2023, Premier League, Emirates Stadium, sourced from BBC Sport / PremierLeague.com.
+- Added `leeds united` and `leeds` entries to `HISTORICAL_MEETINGS` in `scripts/enrich_next_fixture.py` and regenerated Pete's next fixture record in `data/pete.json`.
+- Added unit test regression coverage in `tests/test_enrich_arsenal.py` verifying Leeds United historical meeting retrieval.
+- Implemented platform-safe `safe_strftime` cross-platform helper across `scripts/enrich_tv_picks.py`, `scripts/enrich_next_fixture.py`, `scripts/finalize_arsenal.py`, `scripts/enrich_arsenal.py`, and `scripts/refresh.py` resolving MSVC `ValueError: Invalid format string` for `%-d` and `%-I` on Windows while maintaining character-identical output on Linux.
+- All 102 unit tests and 4 node integration tests pass locally. Sofia's profile and data remain completely unaffected.
+
 ## 20 September 2026: Verified Brighton result recovery
 
 - The protected Sunday catch-up detected Brighton 3–0 Arsenal but stopped before publication because the incoming Sky score lacked the scorers, summary and stadium required by the Arsenal card.

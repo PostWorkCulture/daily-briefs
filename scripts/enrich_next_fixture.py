@@ -2,12 +2,19 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime
+import sys
+from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
 from dateutil import parser as dateparser
+
+
+def safe_strftime(dt: date | datetime, fmt: str) -> str:
+    if sys.platform == "win32":
+        fmt = fmt.replace("%-d", "%#d").replace("%-I", "%#I")
+    return dt.strftime(fmt)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -87,6 +94,20 @@ HISTORICAL_MEETINGS = {
         "date": "8 Mar 2016",
         "competition": "FA Cup",
         "source": "BBC Sport",
+    },
+    "leeds united": {
+        "score": "Arsenal 4–1 Leeds United",
+        "date": "1 Apr 2023",
+        "competition": "Premier League",
+        "source": "BBC Sport / PremierLeague.com",
+        "url": "https://www.bbc.co.uk/sport/football/65070230",
+    },
+    "leeds": {
+        "score": "Arsenal 4–1 Leeds United",
+        "date": "1 Apr 2023",
+        "competition": "Premier League",
+        "source": "BBC Sport / PremierLeague.com",
+        "url": "https://www.bbc.co.uk/sport/football/65070230",
     },
 }
 
@@ -209,7 +230,7 @@ def parse_meeting(event: dict, competition: str, wanted: str) -> dict | None:
     score = f"Arsenal {a_score}–{o_score} {opp_name}" if arsenal_home else f"{opp_name} {o_score}–{a_score} Arsenal"
     return {
         "score": score,
-        "date": dt.strftime("%-d %b %Y"),
+        "date": safe_strftime(dt, "%-d %b %Y"),
         "competition": competition,
         "source": "ESPN",
         "sortDate": dt.isoformat(),

@@ -6,6 +6,7 @@ import json
 import os
 import re
 import time
+import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,12 @@ from zoneinfo import ZoneInfo
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+
+def safe_strftime(dt: date | datetime, fmt: str) -> str:
+    if sys.platform == "win32":
+        fmt = fmt.replace("%-d", "%#d").replace("%-I", "%#I")
+    return dt.strftime(fmt)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -170,15 +177,15 @@ def availability_label(episode: dict[str, Any], day: date) -> str:
     elif offset == -1:
         when = "Available since yesterday"
     elif offset < -1:
-        when = f"Available since {airdate.strftime('%a %-d %b')}"
+        when = f"Available since {safe_strftime(airdate, '%a %-d %b')}"
     else:
-        when = airdate.strftime("%a %-d %b")
+        when = safe_strftime(airdate, "%a %-d %b")
     airtime = str(episode.get("airtime") or "").strip()
     if offset < 0:
         return when
     if airtime:
         try:
-            airtime = datetime.strptime(airtime, "%H:%M").strftime("%-I:%M%p").lower().replace(":00", "")
+            airtime = safe_strftime(datetime.strptime(airtime, "%H:%M"), "%-I:%M%p").lower().replace(":00", "")
         except ValueError:
             pass
         return f"{when}, {airtime}"

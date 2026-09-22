@@ -4,11 +4,18 @@ import html
 import json
 import os
 import re
+import sys
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import quote_plus
 from zoneinfo import ZoneInfo
+
+
+def safe_strftime(dt: date | datetime, fmt: str) -> str:
+    if sys.platform == "win32":
+        fmt = fmt.replace("%-d", "%#d").replace("%-I", "%#I")
+    return dt.strftime(fmt)
 
 import feedparser
 import requests
@@ -464,7 +471,7 @@ def google_news(query: str, limit: int = 6, max_age_days: int = 4) -> list[dict]
             dt = dateparser.parse(entry.get("published", "")).astimezone(TZ)
             if NOW - dt > timedelta(days=max_age_days):
                 continue
-            meta = dt.strftime("%a %-d %b")
+            meta = safe_strftime(dt, "%a %-d %b")
             published_at = dt.isoformat()
         except Exception:
             meta = "Recent"
@@ -485,7 +492,7 @@ def rss(url: str, section: str, limit: int = 6, max_age_days: int = 4) -> list[d
         try:
             dt = dateparser.parse(entry.get("published", "")).astimezone(TZ)
             if NOW - dt > timedelta(days=max_age_days): continue
-            meta = dt.strftime("%a %-d %b")
+            meta = safe_strftime(dt, "%a %-d %b")
             published_at = dt.isoformat()
         except Exception: meta = section
         seen.add(key)
@@ -970,7 +977,7 @@ def sofia_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         score += 1
 
     work_label = "Remote" if arrangement == "remote" else "3+ WFH days"
-    posted_label = posted.strftime("Posted %a %-d %b") if posted else "Current posting"
+    posted_label = safe_strftime(posted, "Posted %a %-d %b") if posted else "Current posting"
     item = {
         "title": title,
         "summary": f"{company} · {location}",
@@ -1217,7 +1224,7 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
         score += 3
     if source == "LinkedIn":
         score += 1
-    posted_date = posted.strftime("%-d %B %Y") if posted else "Date not stated"
+    posted_date = safe_strftime(posted, "%-d %B %Y") if posted else "Date not stated"
     item = {
         "title": title,
         "company": company,
@@ -1418,7 +1425,7 @@ def parse_fixture(event: dict, competition: str) -> dict | None:
     a_score = arsenal.get("score", {}).get("value") if isinstance(arsenal.get("score"), dict) else arsenal.get("score")
     o_score = opp.get("score", {}).get("value") if isinstance(opp.get("score"), dict) else opp.get("score")
     return {
-        "date": dt.isoformat(), "dateLabel": dt.strftime("%a %-d %b"), "kickoff": dt.strftime("%-I:%M%p").lower().replace(":00", ""),
+        "date": dt.isoformat(), "dateLabel": safe_strftime(dt, "%a %-d %b"), "kickoff": safe_strftime(dt, "%-I:%M%p").lower().replace(":00", ""),
         "opponent": opp.get("team", {}).get("displayName", "Opponent"), "competition": competition,
         "homeAway": arsenal.get("homeAway", ""), "completed": completed,
         "arsenalScore": a_score, "opponentScore": o_score,
@@ -1497,7 +1504,7 @@ def build_profiles() -> dict[str, dict]:
     sweden = editorial_news(google_news('(Sweden OR Swedish) news when:4d', 7, 4), 7)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
 
-    stamp = NOW.strftime("%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
+    stamp = safe_strftime(NOW, "%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
     pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": pete_career}
     sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": sofia_career}
     for profile, sections in (("Pete", pete_sections), ("Sofia", sofia_sections)):

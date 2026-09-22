@@ -2,9 +2,16 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timedelta
+import sys
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
+
+
+def safe_strftime(dt: date | datetime, fmt: str) -> str:
+    if sys.platform == "win32":
+        fmt = fmt.replace("%-d", "%#d").replace("%-I", "%#I")
+    return dt.strftime(fmt)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -376,7 +383,7 @@ def parse_news_result(item: dict) -> dict | None:
 
     return {
         "date": published.replace(hour=12, minute=0, second=0, microsecond=0).isoformat(),
-        "dateLabel": published.strftime("%a %-d %b"),
+        "dateLabel": safe_strftime(published, "%a %-d %b"),
         "kickoff": "",
         "opponent": opponent,
         "competition": infer_competition([title]),
@@ -459,7 +466,7 @@ def newest_news_result(payload: dict) -> dict | None:
     )
     match_dt = datetime(match_day.year, match_day.month, match_day.day, 12, tzinfo=TZ)
     chosen["date"] = match_dt.isoformat()
-    chosen["dateLabel"] = match_dt.strftime("%a %-d %b")
+    chosen["dateLabel"] = safe_strftime(match_dt, "%a %-d %b")
     chosen["competition"] = infer_competition([x.get("_title", "") for x in group])
 
     for private_key in ("_publishedAt", "_sourcePriority", "_title"):

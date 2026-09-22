@@ -384,6 +384,22 @@ class UpcomingFixtureTests(unittest.TestCase):
         lookup.assert_called_once_with("Napoli")
         self.assertEqual(fixture["previousMeeting"], meeting)
 
+    def test_verified_leeds_united_meeting_is_retrieved(self) -> None:
+        with patch.object(enrich_next_fixture, "latest_recent_meeting", return_value=None):
+            fixture = enrich_next_fixture.enrich_fixture({
+                "date": "2026-10-10T12:30:00+01:00",
+                "dateLabel": "Sat 10 Oct",
+                "kickoff": "12:30pm",
+                "opponent": "Leeds United",
+                "competition": "Premier League",
+                "homeAway": "home",
+            })
+
+        self.assertEqual(fixture["previousMeeting"]["score"], "Arsenal 4–1 Leeds United")
+        self.assertEqual(fixture["previousMeeting"]["date"], "1 Apr 2023")
+        self.assertEqual(fixture["previousMeeting"]["competition"], "Premier League")
+        self.assertIn("BBC Sport", fixture["previousMeeting"]["source"])
+
 
 if __name__ == "__main__":
     unittest.main()
