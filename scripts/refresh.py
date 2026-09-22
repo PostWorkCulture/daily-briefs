@@ -754,6 +754,15 @@ SPECULATION_EXCLUSIONS = re.compile(
     r"\b(?:paper talk|odds|betting|women|women's|u21|u18|academy|youth|girls)\b",
     re.I,
 )
+ARSENAL_FIGURES = re.compile(
+    r"\b(?:arsenal|gunners|arteta|saka|odegaard|ødegaard|timber|saliba|havertz|calafiori|merino|raya)\b|"
+    r"\bdeclan rice\b|\bben white\b|\bgabriel magalh[aã]es\b|\bgabriel martinelli\b",
+    re.I,
+)
+OTHER_CLUBS_ONLY = re.compile(
+    r"\b(?:tottenham|spurs|chelsea|manchester united|man utd|liverpool|man city|barcelona|real madrid|juventus|bayern)\b",
+    re.I,
+)
 
 
 def news_timestamp(item: dict) -> float:
@@ -776,6 +785,14 @@ TRANSFER_NAME_STOPWORDS = {
     "report", "official", "update", "first", "team", "player", "new", "the",
     "with", "from", "into", "amid", "after", "ahead", "agree", "agreed",
 }
+TRANSFER_STOPWORDS = {
+    "arsenal", "transfer", "news", "sign", "signs", "signed", "signing",
+    "join", "joins", "joined", "deal", "move", "loan", "contract", "target",
+    "report", "official", "update", "first", "team", "player", "new", "the",
+    "with", "from", "into", "amid", "after", "ahead", "agree", "agreed",
+    "mikel", "arteta", "boss", "manager", "says", "admit", "admits", "rule",
+    "rules", "out", "could", "will", "latest", "about",
+}
 
 
 def transfer_identity_words(title: str) -> set[str]:
@@ -783,6 +800,28 @@ def transfer_identity_words(title: str) -> set[str]:
         word for word in re.findall(r"[a-zà-öø-ÿ'’-]{3,}", clean_html(title).lower())
         if word not in TRANSFER_NAME_STOPWORDS
     }
+
+
+def transfer_subject_words(title: str) -> set[str]:
+    return {
+        word for word in re.findall(r"[a-zà-öø-ÿ'’-]{3,}", clean_html(title).lower())
+        if word not in TRANSFER_STOPWORDS
+    }
+
+
+def dedupe_transfer_updates(items: list[dict]) -> list[dict]:
+    deduped = []
+    seen_subjects = []
+    for item in newest_first(items):
+        title = item.get("title", "")
+        subj = transfer_subject_words(title)
+        if len(subj) >= 2 and any(len(subj & prev) >= 2 for prev in seen_subjects):
+            continue
+        if any(len(w) >= 5 and any(w in prev for prev in seen_subjects) for w in subj if w in ("dowman", "konsa", "sesko", "gyokeres", "zubimendi", "calafiori", "merino")):
+            continue
+        seen_subjects.append(subj)
+        deduped.append(item)
+    return deduped
 
 
 def corroborating_transfer_report(item: dict, trusted_reports: list[dict]) -> dict | None:
@@ -849,7 +888,7 @@ def scope_transfer_updates(candidates: list[dict]) -> list[dict]:
         }
         scoped_updates.append(official)
 
-    return newest_first(scoped_updates)[:6]
+    return dedupe_transfer_updates(scoped_updates)[:6]
 
 
 def arsenal_transfer_updates() -> list[dict]:
@@ -864,13 +903,19 @@ def arsenal_transfer_updates() -> list[dict]:
 def arsenal_transfer_rumours() -> list[dict]:
     rumours = []
     for reporter in X_TRANSFER_REPORTERS:
-        query = f'site:x.com/{reporter["handle"]}/status Arsenal (transfer OR signing OR deal OR move OR bid OR talks OR loan OR contract OR exit) when:7d'
-        for item in google_news(query, 10, 7):
+        query = f'site:x.com/{reporter["handle"]} (Arsenal OR Arteta OR Saka OR Odegaard OR Rice OR Timber OR Saliba) when:14d'
+        for item in google_news(query, 15, 14):
             title = clean_html(item.get("title", ""))
-            if "arsenal" not in title.lower() or not TRANSFER_TERMS.search(title) or SPECULATION_EXCLUSIONS.search(title):
+            title = re.sub(r"\s*-\s*x\.com$", "", title, flags=re.I).strip()
+            if not title or SPECULATION_EXCLUSIONS.search(title):
+                continue
+            if not ARSENAL_FIGURES.search(title):
+                continue
+            if OTHER_CLUBS_ONLY.search(title) and not re.search(r"\b(?:arsenal|gunners|arteta)\b", title, re.I):
                 continue
             update = dict(item)
             update.update({
+                "title": title,
                 "contentType": "transfer-rumour",
                 "trust": "Unconfirmed",
                 "speculative": True,
@@ -1346,8 +1391,10 @@ def previous_arsenal_position() -> int | None:
 
 def calendar_colour_data() -> dict:
     path = DATA / "calendar-colors.json"
-    try: return json.loads(path.read_text(encoding="utf-8"))
-    except Exception: return {"eventPalette": {}, "events": {}}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {"eventPalette": {}, "events": {}, "keywords": {}}
 
 
 def normalize_google_uid(component) -> str:
@@ -1355,32 +1402,95 @@ def normalize_google_uid(component) -> str:
     return uid.split("@", 1)[0] if "@" in uid else uid
 
 
+def base_google_uid(uid: str) -> str:
+    return re.sub(r"_R?\d+.*$", "", uid)
+
+
 def calendar_events() -> list[dict]:
     url = os.getenv("GOOGLE_CALENDAR_ICS_URL", "").strip()
-    if not url: return []
+    if not url:
+        return []
     try:
-        r = requests.get(url, headers=UA, timeout=30); r.raise_for_status(); cal = Calendar.from_ical(r.content)
-    except Exception: return []
-    colours = calendar_colour_data(); palette = colours.get("eventPalette", {}); event_colours = colours.get("events", {})
+        r = requests.get(url, headers=UA, timeout=30)
+        r.raise_for_status()
+        cal = Calendar.from_ical(r.content)
+    except Exception:
+        return []
+    colours = calendar_colour_data()
+    palette = colours.get("eventPalette", {})
+    event_colours = colours.get("events", {})
+    keywords = colours.get("keywords", {})
     start_window = NOW.replace(hour=0, minute=0, second=0, microsecond=0)
     next_month = (start_window.replace(day=28) + timedelta(days=4)).replace(day=1)
     following = (next_month.replace(day=28) + timedelta(days=4)).replace(day=1)
     end_window = following - timedelta(seconds=1)
     events = []
     for component in cal.walk("VEVENT"):
-        start = component.decoded("dtstart"); end = component.decoded("dtend") if component.get("dtend") else start
+        start = component.decoded("dtstart")
+        end = component.decoded("dtend") if component.get("dtend") else start
         all_day = not isinstance(start, datetime)
-        if all_day: start = datetime.combine(start, datetime.min.time(), TZ)
-        elif start.tzinfo is None: start = start.replace(tzinfo=TZ)
-        else: start = start.astimezone(TZ)
-        if not isinstance(end, datetime): end = datetime.combine(end, datetime.min.time(), TZ)
-        elif end.tzinfo is None: end = end.replace(tzinfo=TZ)
-        else: end = end.astimezone(TZ)
-        if end < start_window or start > end_window: continue
+        if all_day:
+            start = datetime.combine(start, datetime.min.time(), TZ)
+        elif start.tzinfo is None:
+            start = start.replace(tzinfo=TZ)
+        else:
+            start = start.astimezone(TZ)
+        if not isinstance(end, datetime):
+            end = datetime.combine(end, datetime.min.time(), TZ)
+        elif end.tzinfo is None:
+            end = end.replace(tzinfo=TZ)
+        else:
+            end = end.astimezone(TZ)
+        if end < start_window or start > end_window:
+            continue
         title = clean_html(str(component.get("summary", "Calendar event"))) or "Calendar event"
-        event_id = normalize_google_uid(component); color_id = event_colours.get(event_id); colour = palette.get(str(color_id)) if color_id else None
-        time_label = "All day" if all_day else start.strftime("%-I:%M%p").lower().replace(":00", "")
-        events.append({"title": title, "summary": "", "url": "", "start": start.isoformat(), "end": end.isoformat(), "date": start.date().isoformat(), "time": time_label, "allDay": all_day, "color": colour, "colorId": color_id, "googleEventId": event_id, "calendarColorSource": "google" if color_id else "calendar-default"})
+        event_id = normalize_google_uid(component)
+        base_id = base_google_uid(event_id)
+
+        ics_color = str(component.get("COLOR") or component.get("X-APPLE-CALENDAR-COLOR") or "").strip()
+        color_id = None
+        colour = None
+
+        if event_id in event_colours and event_colours[event_id] is not None:
+            color_id = str(event_colours[event_id])
+            colour = palette.get(color_id)
+        elif base_id in event_colours and event_colours[base_id] is not None:
+            color_id = str(event_colours[base_id])
+            colour = palette.get(color_id)
+        elif ics_color:
+            if ics_color in palette:
+                color_id = ics_color
+                colour = palette[ics_color]
+            elif ics_color.startswith("#"):
+                colour = ics_color
+                for k, v in palette.items():
+                    if v.lower() == ics_color.lower():
+                        color_id = k
+                        break
+
+        if not colour and keywords:
+            title_lower = title.lower()
+            for kw, cid in keywords.items():
+                if kw in title_lower:
+                    color_id = str(cid)
+                    colour = palette.get(color_id)
+                    break
+
+        time_label = "All day" if all_day else safe_strftime(start, "%-I:%M%p").lower().replace(":00", "")
+        events.append({
+            "title": title,
+            "summary": "",
+            "url": "",
+            "start": start.isoformat(),
+            "end": end.isoformat(),
+            "date": start.date().isoformat(),
+            "time": time_label,
+            "allDay": all_day,
+            "color": colour,
+            "colorId": color_id,
+            "googleEventId": event_id,
+            "calendarColorSource": "google" if colour else "calendar-default",
+        })
     events.sort(key=lambda x: x["start"])
     return events
 

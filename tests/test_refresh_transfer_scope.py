@@ -8,6 +8,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from refresh import (
     TRANSFER_EXCLUSIONS,
+    base_google_uid,
+    dedupe_transfer_updates,
     official_transfer_is_corroborated,
     scope_transfer_updates,
 )
@@ -75,6 +77,42 @@ class ArsenalTransferScopeTests(unittest.TestCase):
 
         self.assertEqual(
             published_official["corroboratedBy"]["source"], "Sky Sports"
+        )
+
+    def test_duplicate_player_transfer_stories_are_deduplicated(self):
+        newer_story = {
+            "title": "Arsenal boss Mikel Arteta refuses to rule out loan move for Max Dowman",
+            "source": "Sky Sports",
+            "publishedAt": "2026-09-18T22:37:32+01:00",
+        }
+        older_duplicate = {
+            "title": "Max Dowman: Mikel Arteta admits 16-year-old Arsenal wonderkid could go out on loan in the future",
+            "source": "Sky Sports",
+            "publishedAt": "2026-09-18T22:32:05+01:00",
+        }
+        unrelated_story = {
+            "title": "Arsenal latest: Mikel Arteta relaxed about new contract",
+            "source": "Sky Sports",
+            "publishedAt": "2026-09-18T09:35:26+01:00",
+        }
+
+        deduped = dedupe_transfer_updates([newer_story, older_duplicate, unrelated_story])
+        self.assertEqual(len(deduped), 2)
+        self.assertEqual(deduped[0]["title"], newer_story["title"])
+        self.assertEqual(deduped[1]["title"], unrelated_story["title"])
+
+    def test_recurring_calendar_uid_normalization(self):
+        self.assertEqual(
+            base_google_uid("1nnb47dr2n0np88mfiugnjidfp_R20261012"),
+            "1nnb47dr2n0np88mfiugnjidfp"
+        )
+        self.assertEqual(
+            base_google_uid("event123_20261012T080000Z"),
+            "event123"
+        )
+        self.assertEqual(
+            base_google_uid("standalone_uid"),
+            "standalone_uid"
         )
 
 

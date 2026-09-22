@@ -1,3 +1,12 @@
+## 22 September 2026: Calendar colours, transfer deduplication, and Twitter watch expansion
+
+- Restored calendar event colour propagation in `scripts/refresh.py` by adding `base_google_uid()` to normalize Google Calendar recurring event UIDs (stripping `_R...` instance suffixes so base UIDs match), checking direct iCalendar `COLOR` and `X-APPLE-CALENDAR-COLOR` attributes, and adding keyword fallback mappings in `data/calendar-colors.json`.
+- Mapped all 19 current calendar events in `data/pete.json` and `data/sofia.json` to their Google Calendar palette colours (football/footy to Basil green `#51b749`, dentist to Banana yellow `#fbd75b`, birthday parties to Grape purple `#dbadff`, personal events to Flamingo `#ff887c`, kids to Graphite `#e1e1e1`, half term / halloween to Tangerine `#ffb878`, and time off to Sage `#7ae7bf`).
+- Implemented transfer story deduplication (`dedupe_transfer_updates`) in `scripts/refresh.py` and `scripts/finalize_arsenal.py`, comparing player/subject identity words so near-identical articles covering the same development retain only the newest report. Consolidated the duplicate Max Dowman loan stories in `arsenal.transfers` down to a single trusted report.
+- Added regression tests in `tests/test_refresh_transfer_scope.py` for recurring calendar UID normalization and transfer story deduplication.
+- Expanded Reporter Watch in `scripts/refresh.py` by querying allowlisted reporter profiles (`site:x.com/{handle}`) with Arsenal first-team entity matching (`ARSENAL_FIGURES`) and non-Arsenal club filtering, populating 5 fresh, verified posts from James Benge, Fabrizio Romano, and Charles Watts under `arsenal.transferRumours`.
+- Sofia's profile remains untouched with zero Arsenal content or private inbox access.
+
 ## 22 September 2026: Restore verified Leeds United previous meeting and cross-platform date parity
 
 - Added verified previous meeting for upcoming fixture Arsenal vs Leeds United: Arsenal 4–1 Leeds United, 1 Apr 2023, Premier League, Emirates Stadium, sourced from BBC Sport / PremierLeague.com.

@@ -647,6 +647,38 @@ def apply_last_result_fallback(payload: dict) -> None:
                 )
 
 
+TRANSFER_STOPWORDS = {
+    "arsenal", "transfer", "news", "sign", "signs", "signed", "signing",
+    "join", "joins", "joined", "deal", "move", "loan", "contract", "target",
+    "report", "official", "update", "first", "team", "player", "new", "the",
+    "with", "from", "into", "amid", "after", "ahead", "agree", "agreed",
+    "mikel", "arteta", "boss", "manager", "says", "admit", "admits", "rule",
+    "rules", "out", "could", "will", "latest", "about",
+}
+
+
+def transfer_subject_words(title: str) -> set[str]:
+    return {
+        word for word in re.findall(r"[a-zà-öø-ÿ'’-]{3,}", str(title or "").lower())
+        if word not in TRANSFER_STOPWORDS
+    }
+
+
+def dedupe_transfer_updates(items: list[dict]) -> list[dict]:
+    deduped = []
+    seen_subjects = []
+    for item in sorted(items, key=lambda x: str(x.get("publishedAt") or ""), reverse=True):
+        title = item.get("title", "")
+        subj = transfer_subject_words(title)
+        if len(subj) >= 2 and any(len(subj & prev) >= 2 for prev in seen_subjects):
+            continue
+        if any(len(w) >= 5 and any(w in prev for prev in seen_subjects) for w in subj if w in ("dowman", "konsa", "sesko", "gyokeres", "zubimendi", "calafiori", "merino")):
+            continue
+        seen_subjects.append(subj)
+        deduped.append(item)
+    return deduped
+
+
 def main() -> None:
     path = DATA / "pete.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
@@ -682,10 +714,11 @@ def main() -> None:
 
     arsenal = payload.setdefault("arsenal", {})
     arsenal["news"] = arsenal_news[:5]
-    arsenal["transfers"] = sorted([
+    transfers = [
         x for x in arsenal.get("transfers", [])
         if not betting_item(x) and x.get("contentType") == "transfer-update" and x.get("trust")
-    ], key=lambda x: str(x.get("publishedAt") or ""), reverse=True)[:6]
+    ]
+    arsenal["transfers"] = dedupe_transfer_updates(transfers)[:6]
     arsenal["transferRumours"] = sorted([
         x for x in arsenal.get("transferRumours", [])
         if not betting_item(x)
