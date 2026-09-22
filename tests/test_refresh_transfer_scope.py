@@ -115,6 +115,12 @@ class ArsenalTransferScopeTests(unittest.TestCase):
             "standalone_uid"
         )
 
+    def test_calendar_colour_data_reads_local_file(self):
+        from refresh import calendar_colour_data
+        data = calendar_colour_data()
+        self.assertIn("eventPalette", data)
+        self.assertIn("events", data)
+
 
 if __name__ == "__main__":
     unittest.main()

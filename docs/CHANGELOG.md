@@ -1,3 +1,10 @@
+## 22 September 2026: Google Calendar API color synchronization (Option 2)
+
+- Implemented automated Google Calendar event color synchronization in `scripts/refresh.py` via `GOOGLE_CALENDAR_COLORS_URL`, allowing live color mapping directly from Pete's Google Calendar account while gracefully falling back to `data/calendar-colors.json`.
+- Provided standalone Google Apps Script integration in `scripts/google_apps_script_calendar_sync.js` (`doGet` Web App endpoint and `syncCalendarColors` console runner) reading `event.getColor()` from the native Google Calendar API.
+- Configured `.github/workflows/morning-refresh.yml` to supply `GOOGLE_CALENDAR_COLORS_URL` secret to the morning refresh job.
+- Added unit tests in `tests/test_refresh_transfer_scope.py` covering calendar color fetching and fallback.
+
 ## 22 September 2026: Calendar colours, transfer deduplication, and Twitter watch expansion
 
 - Restored calendar event colour propagation in `scripts/refresh.py` by adding `base_google_uid()` to normalize Google Calendar recurring event UIDs (stripping `_R...` instance suffixes so base UIDs match), checking direct iCalendar `COLOR` and `X-APPLE-CALENDAR-COLOR` attributes, and adding keyword fallback mappings in `data/calendar-colors.json`.

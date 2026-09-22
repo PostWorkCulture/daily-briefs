@@ -1390,6 +1390,16 @@ def previous_arsenal_position() -> int | None:
 
 
 def calendar_colour_data() -> dict:
+    url = os.getenv("GOOGLE_CALENDAR_COLORS_URL", "").strip()
+    if url:
+        try:
+            r = requests.get(url, headers=UA, timeout=15)
+            r.raise_for_status()
+            data = r.json()
+            if isinstance(data, dict) and "events" in data:
+                return data
+        except Exception:
+            pass
     path = DATA / "calendar-colors.json"
     try:
         return json.loads(path.read_text(encoding="utf-8"))

@@ -62,6 +62,7 @@ jobs:
         if: steps.refresh-gate.outputs.should_run == 'true'
         env:
           GOOGLE_CALENDAR_ICS_URL: ${{ secrets.GOOGLE_CALENDAR_ICS_URL }}
+          GOOGLE_CALENDAR_COLORS_URL: ${{ secrets.GOOGLE_CALENDAR_COLORS_URL }}
         run: |
           python scripts/refresh.py
           python scripts/enrich_weather_v2.py
