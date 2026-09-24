@@ -17,17 +17,17 @@
     "sequence": 34
   },
   "weather": {
-    "temp": "23°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "19°",
+    "summary": "Clear",
+    "condition": "Clear",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-09-24",
         "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -37,7 +37,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -46,30 +46,12 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-09-27",
-        "high": 23,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-28",
-        "high": 23,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-09-29",
-        "high": 26,
+        "high": 24,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -77,18 +59,36 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-30",
-        "high": 24,
+        "date": "2026-09-28",
+        "high": 21,
         "low": null,
-        "summary": "Heavy Showers",
-        "condition": "Heavy Showers",
-        "rainChance": 50,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-29",
+        "high": 25,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-30",
+        "high": 23,
+        "low": null,
+        "summary": "Light Showers",
+        "condition": "Light Showers",
+        "rainChance": 4,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Sunny · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
