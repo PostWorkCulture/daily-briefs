@@ -132,7 +132,7 @@ Recommendation: pass | pass with known issues | fail
 
 - [ ] Neither profile contains Career navigation, job cards or Career profile data.
 - [ ] Fun is available to both profiles and lists only sourced local family activities.
-- [ ] All / Outdoors / Indoors / Seasonal filters work; dates, location, cost, age guidance and booking links remain readable.
+- [ ] No Fun filter controls remain; only current/next-month dated events appear. Dates, location, cost, age guidance and booking links remain readable.
 - [ ] Expired events are removed; unavailable sources are skipped individually and cached check dates are not renewed.
 - [ ] Mobile, Chromebook and widescreen have no clipping or horizontal overflow.
 
