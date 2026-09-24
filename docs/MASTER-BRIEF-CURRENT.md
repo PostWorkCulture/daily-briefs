@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.6, 12 September 2026. Owner: Pete.
+Version 5.7, 24 September 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -8,7 +8,7 @@ This is the single source of truth. Preserve every requirement unless Pete expli
 
 ## Product
 
-- Do not add branding, labels, taglines, sections or other unrequested interface elements without Pete’s explicit approval. Remove the previously specified Open Horizon / Live briefing navigation text. Keep every desktop navigation destination, including Inbox, inside the navigation box; scroll within the box on short screens.
+- Do not add branding, labels, taglines, sections or other unrequested interface elements without Pete’s explicit approval. Remove the previously specified Open Horizon / Live briefing navigation text. Keep every desktop navigation destination,  inside the navigation box; scroll within the box on short screens.
 
 Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE OS structure, Morning Story speed and emotion, and Pete/Sofia family personalisation. Use the selected `Signal Grid` direction: a near-black `#030504` canvas, graphite modules, warm-white `#F4F7F2` copy, thin technical rules, restrained luminous green `#7CF46A` signals, bold legible type, and meaningful photography. Keep the grid extremely faint and functional rather than decorative. Around the world and TV Picks always retain full-colour source imagery. Preserve header styling during unrelated work.
 
@@ -54,11 +54,22 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 ## Current structure
 
-Primary views: Home, Calendar, News, Arsenal, AI, Career, Dida, Birthday.
+Primary views: Home, Calendar, News, Arsenal, AI, Fun, Dida, Birthday.
 Home: Weather, Calendar, Coming up, Around the world, TV Picks.
 Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal in any shared flow.
 
-## Pete-only Inbox integration
+## Fun: local family activities
+
+- 24 September 2026: Pete replaces Career in both briefs with Fun. This explicitly supersedes all earlier Career UI, job-display and job-discovery requirements. No Career view or job listings are published; jobs must not move to another section.
+- Keep Fun in the former Career navigation slot, with the existing dark styling, responsive grid and neutral navigation accent. Keep Dida separate.
+- Curate local family outings around Molesey, Hampton Court, Hampton, Teddington, Kingston and Walton, with nearby KT8 activities. Mix outdoor play, indoor options and seasonal events.
+- Every card includes title, description, location, when, age guidance, cost information and the official details/booking link. Do not infer prices or exact age restrictions. Filters: All, Outdoors, Indoors, Seasonal.
+- Store sourced activities in `data/fun-catalog.json`. The morning refresh checks each source independently, validates activity type and event expiry, and sorts dated activities before regular outings. Curated source evidence must still be present; changed pages are omitted for review. New outings are added through verified catalogue maintenance.
+- An individual source failure must not block the brief. Retain last-checked entries for at most seven days with the original check date; never retain expired events. If none remain, show an honest empty state. The browser also hides expired events between refreshes.
+
+## Pete-only Inbox integration (temporarily paused)
+
+- 24 September 2026: Pete requested removal of Inbox from the brief for now. Hide both desktop and mobile entries for every profile and disable direct opening, redirects and embedded email frames. The integration requirements below are retained for a future explicitly approved restoration. The standalone Inbox service is unchanged.
 
 - Add Inbox after the existing primary destinations on desktop and as a Home button on mobile for Pete only. Keep the existing mobile navigation at eight usable destinations. Sofia must never see or enter this view, including after switching profiles or calling the view controller directly.
 - The public brief's Inbox destination opens the owner-authenticated private brief at `https://inbox-command-centre.pyro-pete.chatgpt.site/brief/?profile=pete&locked=1&view=inbox` in the same tab.
@@ -118,10 +129,10 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Apply the red edge-glow hover/focus treatment to every Arsenal card, including fixtures, league position, news, and transfer updates.
 - Render the five Club news items with explicit lead, two-support, and two-stream roles while preserving source order and exact-image eligibility.
 
-**News, AI, Career, Dida**
+**News, AI, Fun, Dida**
 - Keep each destination working and independent.
-- Jobs belong only in Career. Never put vacancy adverts, contractor roles, jobs directories, job-search pages or recruitment round-ups in Local News, UK News, Sweden, AI, Arsenal news, or their preview cards, even when a local newspaper publishes them or a feed labels them as articles. Apply the same checks to fresh, cached and fallback items before selection and again before publication. Career still requires individually verified AI-related public-sector roles; do not move rejected listings there automatically. Genuine editorial reporting about employment remains eligible News. Every section must retain its own content type.
-- Enforce permanent content-type isolation between destinations. Local News, UK News, Sweden, AI, and Arsenal Club news contain editorial articles only, explicitly marked `contentType: article`; Career contains job vacancies only, explicitly marked `contentType: job`. Quarantine any mismatched optional item before selection, never let it count towards a section minimum, and fail publication if a mismatch survives into generated profile data. An article reporting that jobs were created remains News; an advert for a specific role belongs only in Career.
+- Jobs and recruitment listings are excluded from every published section now that Career is removed. Do not move rejected vacancies into Fun or News.
+- Enforce permanent content-type isolation: News, Sweden, AI and Arsenal Club news use `article`; Fun uses `activity`. No job listings are published.
 - Use current content and real source links.
 - Keep at least 10 current items in Local News and at least 10 current items in UK News for both profiles.
 - UK News contains only explicitly positive, constructive or uplifting stories. Require clear positive-outcome evidence in the headline or summary; exclude conflict, crime, deaths, disaster, scandal, crisis, fear-led, adversarial and otherwise distressing stories. Search the freshest 14 days first, extend to 30 days only when needed for depth, and fail publication instead of using a negative fallback.
@@ -131,15 +142,15 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - Add an article media block in the browser only after its exact publisher image has loaded, decoded, and met the 1,200 × 675 minimum. A failed or slow image must leave the story text-only instead of reserving an empty dark media slab.
-- AI and Career never show article photography. AI uses the exact company mark when OpenAI or ChatGPT, Google or Gemini, Google DeepMind, Anthropic, or Claude is unambiguous in the story metadata; use the generic code-native AI symbol as fallback. Career retains stylish code-native section icons.
-- Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement.
-- Career uses neutral light grey `#D4D8D5` for its field labels and navigation hover or keyboard focus. Do not use yellow in the Career treatment.
+- AI uses exact company marks or the existing code-native fallback. Fun uses decorative activity icons; no unrelated article imagery.
+<!-- Historical Career requirement, superseded 24 September 2026: - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement. -->
+<!-- Historical Career requirement, superseded 24 September 2026: - Career uses neutral light grey `#D4D8D5` for its field labels and navigation hover or keyboard focus. Do not use yellow in the Career treatment. -->
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.
 - Article images must be at least 1,200 × 675 pixels. Reject logos, icons, placeholders, low-resolution sources, duplicate sources, and near-duplicate publisher imagery.
 - Do not change them as a side effect of other work.
-- Both profiles use the same Career rule: show only current UK public-sector jobs with explicit AI relevance. A private-sector AI job and a public-sector role without explicit AI relevance are both ineligible.
-- Always order Career newest first. Every card must show these seven fields in this exact order: `Job Title`, `Company`, `Description`, `Salary`, `Posted Date`, `Where it was posted`, `Location`. Use `Not stated`, `Date not stated`, or `Description not supplied by publisher` when a publisher omits a field; never infer it.
-- Career discovery uses focused public LinkedIn searches for UK government, NHS, machine-learning, responsible-AI, AI-governance, and generative-AI vacancies. Reject duplicates, listings older than 30 days, detectable passed closing dates, inactive listings, and links that are not real HTTP(S) job pages. A last-good fallback may retain only jobs already carrying the same verified public-sector, AI-related, and seven-field contract.
+<!-- Historical Career requirement, superseded 24 September 2026: - Both profiles use the same Career rule: show only current UK public-sector jobs with explicit AI relevance. A private-sector AI job and a public-sector role without explicit AI relevance are both ineligible. -->
+<!-- Historical Career requirement, superseded 24 September 2026: - Always order Career newest first. Every card must show these seven fields in this exact order: `Job Title`, `Company`, `Description`, `Salary`, `Posted Date`, `Where it was posted`, `Location`. Use `Not stated`, `Date not stated`, or `Description not supplied by publisher` when a publisher omits a field; never infer it. -->
+<!-- Historical Career requirement, superseded 24 September 2026: - Career discovery uses focused public LinkedIn searches for UK government, NHS, machine-learning, responsible-AI, AI-governance, and generative-AI vacancies. Reject duplicates, listings older than 30 days, detectable passed closing dates, inactive listings, and links that are not real HTTP(S) job pages. A last-good fallback may retain only jobs already carrying the same verified public-sector, AI-related, and seven-field contract. -->
 - Reject job listings whose title names Government Digital Service but whose listed employer is a different organisation; this is treated as a mismatched aggregator duplicate.
 - Dida is for a six-year-old. Use age-six development guidance, learning ideas, games, seasonal missions, and birthday activities, with a real age-appropriate source link.
 - Dida has one page-level title and three independent graphite zones: Play together, Explore this season, and Parent guide. This approved September 5 update replaces the old This week, Seasonal missions, and Reference library labels. Keep bright green titles/outlines, neutral copy, and 28 px mobile / 36 px desktop zone gaps. Play together has one complete featured activity and two alternatives. Explore this season offers a season selector and real instructions; Parent guide preserves all four existing reference folds, closed by default. Preserve existing learning/game/seasonal ideas and the CDC source.
@@ -152,7 +163,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 
 - Ambiguous Kingston/Hampton headlines require an approved local publication or explicit UK-local context. Exclude foreign namesakes, expired weekend listings, duplicated local editions, standalone weather forecasts and routine results. General reporting about weather impacts may remain News. Bare “park” does not make a story a family activity; adult-only nightlife is not family-first content.
 - Positive UK selection requires explicit positive evidence. Generic promising, benefit, win or reopened wording does not rescue disputes, benefit denials, boxing negotiations or closures.
-- Career can use exact-vacancy primary metadata verified in `data/career-verified.json` for up to 14 days, never after a confirmed closing date. Record the evidence and preserve the publisher's actual listing-date identity. Show office choices/hybrid requirements, real employer links, and honest missing details. Do not claim a sub-one-hour commute from KT8 without verified journey evidence.
+<!-- Historical Career requirement, superseded 24 September 2026: - Career can use exact-vacancy primary metadata verified in `data/career-verified.json` for up to 14 days, never after a confirmed closing date. Record the evidence and preserve the publisher's actual listing-date identity. Show office choices/hybrid requirements, real employer links, and honest missing details. Do not claim a sub-one-hour commute from KT8 without verified journey evidence. -->
 - TV still publishes five qualifying primary picks and may retain up to 12 equally in-scope, current, programme-image-verified alternatives. Per-profile device feedback offers Already watched / Not interested and individual Restore. Hidden titles stay excluded on that device. Refill with eligible alternatives; show fewer picks honestly when none remain. Do not weaken interests or invent replacement programmes.
 - Fact stock below seven emits a maintenance warning, never blocks an otherwise valid edition. The independent recovery task checks/replenishes the verified reserve toward 21. Actual exhaustion remains a hard no-repeat publication failure.
 - Weather and morning writers share a non-cancelling concurrency group. Weather merges only fresh forecast fields into the latest profiles and preserves each profile's own extremes. Morning commits its actual changed files and rebases, failing on conflict rather than restoring stale copies of every JSON file.

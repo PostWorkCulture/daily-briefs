@@ -18,13 +18,13 @@
     grid-column: span 3;
   }
 
-  #view-career .tab-list,
-  #view-career .story-stream-grid {
+  #view-fun .tab-list,
+  #view-fun .story-stream-grid {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)) !important;
   }
 
-  #view-career .tab-group-career .tab-list > .career-story,
-  #view-career .tab-group-career .tab-list > .career-story:last-child {
+  #view-fun .tab-group-fun .tab-list > .fun-story,
+  #view-fun .tab-group-fun .tab-list > .fun-story:last-child {
     grid-column: auto !important;
   }
 

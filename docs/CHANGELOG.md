@@ -1,3 +1,17 @@
+## 24 September 2026: Replace Career with local family Fun
+
+- Replace Career in both profile navigation bars and views with Fun, preserving the existing slot and responsive dark design.
+- Publish seven verified local ideas from Historic Royal Palaces, The Royal Parks and Kingston Heritage, with dates, location, ages, cost guidance and official links. Add outdoor, indoor and seasonal filters.
+- Stop daily job discovery and remove jobs from both profile payloads. Keep News isolation guards.
+- Recheck curated activity sources independently during morning refresh, expire dated events, and retain original verification dates during bounded seven-day fallback. A failed activity does not fail the brief.
+- Update the master specification, content validation and responsive checks for the approved replacement.
+
+## 24 September 2026: Temporarily remove Inbox from the brief
+
+- Hide the desktop Inbox destination and mobile Home entry for both profiles at Pete's request.
+- Disable direct Inbox opening, private redirects and embedded frames; preserve standalone Inbox service.
+- Refresh the script cache key and update routing tests and responsive navigation expectations.
+
 ## 22 September 2026: Google Calendar API color synchronization (Option 2)
 
 - Implemented automated Google Calendar event color synchronization in `scripts/refresh.py` via `GOOGLE_CALENDAR_COLORS_URL`, allowing live color mapping directly from Pete's Google Calendar account while gracefully falling back to `data/calendar-colors.json`.

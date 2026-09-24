@@ -178,19 +178,11 @@ jobs:
           non_mens_arsenal=__import__('re').compile(r'\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|youth|women(?:[\'’]?s)?|girls?)\b', __import__('re').I)
           arsenal_items=((pete.get('sections') or {}).get('Arsenal news') or []) + ((pete.get('arsenal') or {}).get('news') or [])
           assert not any(non_mens_arsenal.search(' '.join(str(item.get(key,'')) for key in ('title','summary','source'))) for item in arsenal_items), 'Arsenal first-team news contains academy, youth, women or girls content'
-          required_job_fields=('title','company','description','salary','postedDate','source','location')
+          from scripts.fun_activities import eligible
           for profile,data in (('Pete',pete),('Sofia',sofia)):
-              jobs=(data.get('sections') or {}).get('Career') or []
-              assert jobs, f'{profile} Career has no current jobs'
-              dates=[str(job.get('postedAt') or '') for job in jobs]
-              assert dates==sorted(dates,reverse=True), f'{profile} Career is not newest first'
-              for job in jobs:
-                  assert job.get('contentType')=='job', f'{profile} Career contains non-job content'
-                  assert job.get('countryFocus')=='UK', f'{profile} Career contains a non-UK role'
-                  assert job.get('sector')=='Public sector', f'{profile} Career contains a private-sector role'
-                  assert job.get('aiRelated') is True, f'{profile} Career contains a non-AI role'
-                  assert all(str(job.get(key) or '').strip() for key in required_job_fields), f'{profile} Career is missing a requested field'
-                  assert str(job.get('url') or '').startswith(('https://','http://')), f'{profile} Career job missing real link'
+              assert 'Career' not in data.get('sections',{}), f'{profile}: removed Career section returned'
+              for item in (data.get('sections') or {}).get('Fun') or []:
+                  assert eligible(item,today_date), f'{profile}: invalid or expired family activity'
 
           last_result=(pete.get('arsenal') or {}).get('lastResult') or {}
           for key in ('result','scorersLabel','competition','summary','kickoff','stadium'):

@@ -59,7 +59,6 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Desktop stream stories share one flat divided paper rail with no individual tile rounding or shadow; mobile secondary stories remain one divided feed.
 - [ ] An image-verified desktop lead places media left and copy right; mobile keeps lead media above its copy.
 - [ ] News and Arsenal media blocks appear only after the exact publisher image loads and decodes at 1,200 × 675 or larger; failed or slow images leave a text-only story with no empty dark slab.
-- [ ] AI and Career have no orphan stream card at 900–1,099 px or at the current Chromebook width.
 - [ ] On mobile, only an image-verified lead uses full-width media; later verified images use compact thumbnails.
 - [ ] Around the world leads with its sourced fact and then its precisely matched linked image.
 - [ ] Around the world imagery and all five TV Pick artworks render in full colour with no grayscale filter.
@@ -78,11 +77,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] Every Local News story has headline or summary evidence for the approved KT8 cluster; broad Surrey, Elmbridge, or London references and foreign/unrelated namesakes are rejected. The refresh may extend from 14 to 30 days for depth but does not widen the geography.
 - [ ] Local News targets 16 stories, prioritises named local publications and family or child activities, and excludes routine sports results unless the item covers an opening, major change, or major event.
-- [ ] Local News, UK News, Sweden, AI, and Arsenal Club news contain only `contentType: article`; Career contains only `contentType: job`. Vacancy-shaped items are quarantined before News selection and no wrong content type survives publication.
 - [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; the refresh fails instead of using a negative fallback.
-- [ ] Both Career sections contain only explicitly AI-related UK public-sector jobs, newest first, with Job Title, Company, Description, Salary, Posted Date, Where it was posted, and Location in that exact order.
-- [ ] Career field labels and navigation hover/focus use light grey `#D4D8D5`; no Career treatment remains yellow.
-- [ ] News, AI, Career, and Dida still open and were not altered unexpectedly.
 - [ ] Dida has one page-level title followed by exactly three graphite age-six zones with bright green titles and outlines.
 - [ ] Birthday months use a full-width single card, two balanced half-width cards, or three equal cards on one Chromebook row.
 - [ ] All offered sources and destinations are real and clickable.
@@ -133,11 +128,16 @@ Recommendation: pass | pass with known issues | fail
 - [ ] TV feedback hides the named programme, survives rerender and restores it correctly.
 - [ ] Low fact stock is a warning; exhaustion still blocks repeats. Weather merge preserves latest editorial fields and independent profile extremes.
 
-## Pete-only Inbox
+## Fun replaces Career
 
-- [ ] Inbox appears only for Pete; Sofia cannot enter it through navigation or the view controller.
-- [ ] Public brief never loads an email frame or inbox API; Pete's Inbox button opens the authenticated private companion.
-- [ ] Private companion pins Pete, checks owner access for every mirrored resource, and never forwards credentials upstream.
-- [ ] Inbox frame uses the same authenticated origin, has a descriptive title and Open full inbox fallback, and is removed on profile change.
-- [ ] Mobile, Chromebook and widescreen navigation fit; existing sections and Sofia's access are preserved.
-- [ ] Live signed-in Gmail interactions verified, or clearly reported as untested.
+- [ ] Neither profile contains Career navigation, job cards or Career profile data.
+- [ ] Fun is available to both profiles and lists only sourced local family activities.
+- [ ] All / Outdoors / Indoors / Seasonal filters work; dates, location, cost, age guidance and booking links remain readable.
+- [ ] Expired events are removed; unavailable sources are skipped individually and cached check dates are not renewed.
+- [ ] Mobile, Chromebook and widescreen have no clipping or horizontal overflow.
+
+## Inbox temporarily paused
+
+- [ ] Neither profile shows an Inbox entry on mobile, Chromebook or widescreen.
+- [ ] Direct Inbox opening does not redirect or create an email frame.
+- [ ] Existing sections and both profile routes remain usable.

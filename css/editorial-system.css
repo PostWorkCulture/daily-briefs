@@ -138,7 +138,7 @@ body.profile-unlocked .profile-switch{
 #view-news .section-head h2,
 #view-news .tab-group>h3,
 #view-ai .section-head h2,
-#view-career .section-head h2,
+#view-fun .section-head h2,
 .birthday-panel .section-head h2,
 .occasion-month h3{
   color:var(--editorial-ink)!important;
@@ -278,7 +278,7 @@ body.profile-unlocked .profile-switch{
 .tonight-block .watch-card b{font-size:18px!important}
 .tonight-block .watch-card em{font-size:11px!important}
 
-/* Editorial content hierarchy for News, AI and Career. */
+/* Editorial content hierarchy for News, AI and Fun. */
 .tab-panel{margin-top:18px}
 .tab-panel>.section-head{margin-bottom:22px}
 .tab-groups{gap:38px}

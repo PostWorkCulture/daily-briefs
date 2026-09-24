@@ -93,7 +93,7 @@ body:after{background:#030504!important}
 #view-news .section-head h2,
 #view-news .tab-group>h3,
 #view-ai .section-head h2,
-#view-career .section-head h2,
+#view-fun .section-head h2,
 #view-dida>.tab-panel>.section-head h2,
 #view-calendar .calendar-page-head h2,
 html body .birthday-panel .section-head h2,
@@ -231,7 +231,7 @@ body #homeReminders .home-reminder-card.birthday{
   outline:none;
 }
 
-/* News, AI and Career */
+/* News, AI and Fun */
 .tab-group>h3{border-bottom-color:var(--editorial-rule-strong)!important}
 .tab-group>h3:after,
 #view-news .tab-group>h3:after{background:var(--signal-green)!important}
