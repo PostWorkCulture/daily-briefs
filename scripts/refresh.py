@@ -269,7 +269,8 @@ SECTION_CONTENT_TYPES = {
     "Sweden": "article",
     "AI": "article",
     "Arsenal news": "article",
-    "Career": "job",
+    "Career": "job",  # legacy validation only; no longer generated
+    "Fun": "activity",
 }
 JOB_BOARD_SOURCE = re.compile(
     r"\b(?:Indeed|CV[- ]Library|Totaljobs|Reed(?:\.co\.uk)?|LinkedIn Jobs?|Glassdoor|"
@@ -1617,16 +1618,17 @@ def build_profiles() -> dict[str, dict]:
     local = local_news()
     uk = uk_news()
     tonight = tonight_recommendations()
-    career_candidates = career_job_candidates()
-    current_career = public_ai_career_jobs(career_candidates)
-    pete_career = current_career or previous_career("pete")
-    sofia_career = current_career or previous_career("sofia")
+    try:
+        from scripts.fun_activities import refresh_activities
+    except ModuleNotFoundError:
+        from fun_activities import refresh_activities
+    fun = refresh_activities(NOW.date())
     sweden = editorial_news(google_news('(Sweden OR Swedish) news when:4d', 7, 4), 7)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
 
     stamp = safe_strftime(NOW, "%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
-    pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Career": pete_career}
-    sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Career": sofia_career}
+    pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Fun": fun}
+    sofia_sections = {"Sweden": sweden, "Local news": local, "UK news": uk, "AI": ai, "Fun": fun}
     for profile, sections in (("Pete", pete_sections), ("Sofia", sofia_sections)):
         errors = section_content_type_errors(sections)
         if errors:

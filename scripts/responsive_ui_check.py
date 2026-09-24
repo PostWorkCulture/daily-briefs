@@ -64,21 +64,12 @@ def check_icon_metadata_files() -> None:
             raise AssertionError(f"{profile} route does not use the v3 bookmark cache key")
 
         profile_data = json.loads((ROOT / "data" / f"{profile}.json").read_text(encoding="utf-8"))
-        career = (profile_data.get("sections") or {}).get("Career") or []
-        posted_dates = [str(job.get("postedAt") or "") for job in career]
-        if posted_dates != sorted(posted_dates, reverse=True):
-            raise AssertionError(f"{profile} Career is not newest first: {posted_dates}")
-        required_job_fields = ("title", "company", "description", "salary", "postedDate", "source", "location")
-        for job in career:
-            missing = [field for field in required_job_fields if field not in job or not str(job.get(field) or "").strip()]
-            if missing:
-                raise AssertionError(f"{profile} Career job is missing requested fields {missing}: {job}")
-            if job.get("sector") != "Public sector" or job.get("aiRelated") is not True:
-                raise AssertionError(f"{profile} Career includes a job outside the AI public-sector scope: {job}")
-            title = str(job.get("title") or "").casefold()
-            company = str(job.get("company") or "").casefold()
-            if "government digital service" in title and "government digital service" not in company:
-                raise AssertionError(f"{profile} Career includes a mismatched GDS aggregator duplicate")
+        sections = profile_data.get('sections') or {}
+        if 'Career' in sections:
+            raise AssertionError(f'{profile}: Career must be removed')
+        for item in sections.get('Fun', []):
+            if item.get('contentType') != 'activity' or not item.get('url','').startswith('https://'):
+                raise AssertionError(f'{profile}: invalid family activity')
 
         local_news = (profile_data.get("sections") or {}).get("Local news") or []
         sports_topic = __import__('re').compile(
@@ -216,8 +207,8 @@ def check_profile_routes(browser) -> None:
                 raise AssertionError(f"{url}: locked switch still occupies space: {route_state}")
             if route_state["arsenalVisible"] != (profile == "pete"):
                 raise AssertionError(f"{url}: Arsenal visibility does not match profile: {route_state}")
-            if page.locator('[data-open-inbox]').is_visible() != (profile == "pete"):
-                raise AssertionError(f"{url}: Inbox visibility does not match profile")
+            if page.locator('[data-open-inbox]').is_visible() or page.locator('[data-view-target="inbox"]').is_visible():
+                raise AssertionError(f"{url}: Paused Inbox entry is visible")
             if page.locator('#view-inbox iframe').count():
                 raise AssertionError(f"{url}: public brief must never embed private email")
             if profile == "sofia":
@@ -467,7 +458,7 @@ def check_viewport(browser, name: str) -> None:
             if not feed["titleBeforeMeta"]:
                 raise AssertionError(f"{name}: News lead metadata appears before its headline: {feed}")
 
-        for target in ("ai", "career"):
+        for target in ("ai", "fun"):
             page.locator(f'[data-view-target="{target}"]').click()
             cards = page.locator(f'#view-{target} .tab-story')
             icons = page.locator(f'#view-{target} .section-story-icon')
@@ -664,42 +655,20 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: restoring TV pick failed")
         page.locator('#tvPreferences summary').click()
 
-        page.locator('[data-view-target="career"]').click()
+        page.locator('[data-view-target="fun"]').click()
         page.wait_for_function("window.scrollY < 2")
-        career_render = page.evaluate(
-            """
-            () => ({
-              expected: [...(state.data?.sections?.Career || [])]
-                .sort((a,b) => (Date.parse(b.postedAt || '') || 0) - (Date.parse(a.postedAt || '') || 0))
-                .map(item => item.title),
-              actual: [...document.querySelectorAll('#view-career .career-story')]
-                .map(card => card.querySelector('.career-field:first-child dd')?.textContent.trim()),
-              labels: [...document.querySelectorAll('#view-career .career-story.story-lead dt')]
-                .map(node => node.textContent.trim()),
-              labelColours: [...document.querySelectorAll('#view-career .career-field dt')]
-                .map(node => getComputedStyle(node).color)
-            })
-            """
-        )
-        expected_labels = [
-            "Job Title", "Company", "Description", "Salary", "Posted Date", "Where it was posted", "Location"
-        ]
-        if career_render["actual"] != career_render["expected"]:
-            raise AssertionError(f"{name}: Career is not rendered newest first: {career_render}")
-        if career_render["labels"] != expected_labels:
-            raise AssertionError(f"{name}: Career fields are missing or out of order: {career_render}")
-        if set(career_render["labelColours"]) != {"rgb(212, 216, 213)"}:
-            raise AssertionError(f"{name}: Career labels are not light grey: {career_render}")
-        career_card = page.locator('#view-career .tab-story').first
-        career_card.hover()
-        page.wait_for_timeout(250)
-        career_shadow = career_card.evaluate("el => getComputedStyle(el).boxShadow")
-        career_transform = career_card.evaluate("el => getComputedStyle(el).transform")
-        if "124, 244, 106" not in career_shadow or career_transform != "none":
-            raise AssertionError(
-                f"{name}: Career hover does not match Calendar glow or moves: "
-                f"shadow={career_shadow}, transform={career_transform}"
-            )
+        if page.locator('[data-view-target="fun"]').count():
+            raise AssertionError(f"{name}: Career navigation remains")
+        cards = page.locator('#view-fun .fun-story')
+        if cards.count() < 1:
+            raise AssertionError(f"{name}: Fun has no activities")
+        for category in ('Outdoors', 'Indoors', 'Seasonal', 'All'):
+            page.locator(f'[data-fun-filter="{category}"]').click()
+            visible = page.locator('#view-fun .fun-story:visible')
+            if category != 'All' and visible.evaluate_all("els => els.some(el => !el.dataset.funTags.split(' ').includes(" + json.dumps(category) + "))"):
+                raise AssertionError(f"{name}: Fun filter failed for {category}")
+        if page.locator('#view-fun .fun-link').count() != cards.count():
+            raise AssertionError(f"{name}: Fun booking links missing")
 
         page.locator('[data-view-target="arsenal"]').click()
         page.locator('#nextFixtureCard.fixture-detail-card').wait_for(state="visible", timeout=10000)
@@ -928,7 +897,7 @@ def check_viewport(browser, name: str) -> None:
                 '#view-news > .tab-panel > .section-head h2',
                 '#view-news .tab-group > h3',
                 '#view-ai .section-head h2',
-                '#view-career .section-head h2',
+                '#view-fun .section-head h2',
                 '#view-dida > .tab-panel > .section-head h2',
                 '#view-calendar .calendar-page-head h2',
                 '.birthday-panel .section-head h2',
@@ -1146,10 +1115,9 @@ def check_viewport(browser, name: str) -> None:
             "news": "rgb(140, 185, 255)",
             "arsenal": "rgb(255, 155, 160)",
             "ai": "rgb(235, 170, 255)",
-            "career": "rgb(212, 216, 213)",
+            "fun": "rgb(212, 216, 213)",
             "dida": "rgb(155, 224, 83)",
             "birthdays": "rgb(255, 150, 205)",
-            "inbox": "rgb(108, 232, 255)",
         }
         for target, expected_colour in expected_nav_hover_colours.items():
             if target == "inbox" and name == "mobile":
@@ -1204,12 +1172,10 @@ def check_viewport(browser, name: str) -> None:
             "news",
             "arsenal",
             "ai",
-            "career",
+            "fun",
             "dida",
             "birthdays",
         ]
-        if name != "mobile":
-            expected_nav_targets.append("inbox")
         actual_nav_targets = [button["target"] for button in buttons]
         if actual_nav_targets != expected_nav_targets:
             failures.append(
@@ -1227,7 +1193,7 @@ def check_viewport(browser, name: str) -> None:
         else:
             if len({round(button["top"]) for button in buttons}) != 1:
                 failures.append(f"mobile nav is not a single horizontal row: {buttons}")
-            for target in ("home", "calendar", "news", "dida", "birthday", "career", "home"):
+            for target in ("home", "calendar", "news", "dida", "birthday", "fun", "home"):
                 target_name = "birthdays" if target == "birthday" else target
                 page.locator(f'[data-view-target="{target_name}"]').click()
                 page.wait_for_timeout(60)
@@ -1575,7 +1541,7 @@ def check_viewport(browser, name: str) -> None:
         page.evaluate("document.getElementById('dida-feedback').textContent = ''")
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
-        for target in ("home", "calendar", "news", "arsenal", "ai", "career", "dida", "birthdays"):
+        for target in ("home", "calendar", "news", "arsenal", "ai", "fun", "dida", "birthdays"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(
@@ -1587,7 +1553,7 @@ def check_viewport(browser, name: str) -> None:
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
         )
-        for target in ("home", "calendar", "news", "career"):
+        for target in ("home", "calendar", "news", "fun"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)
             page.screenshot(

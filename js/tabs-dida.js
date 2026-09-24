@@ -31,8 +31,8 @@
         '<path d="M12 3c.8 4.8 3.2 7.2 7.5 7.5-4.3.3-6.7 2.7-7.5 7.5-.8-4.8-3.2-7.2-7.5-7.5C8.8 10.2 11.2 7.8 12 3Z"/><path d="M19 16v5M16.5 18.5h5"/>',
         '<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="m8.4 10.9 7.2-3M8.4 13.1l7.2 3"/>'
       ],
-      career:[
-        '<rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7V5h8v2M3 12h18M10 12v2h4v-2"/>',
+      fun:[
+        '<path d="M12 3 4 9v11h16V9Z"/><path d="M9 20v-7h6v7"/>',
         '<path d="M5 19 19 5M11 5h8v8"/><path d="M5 6v13h13"/>',
         '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/>'
       ]
@@ -50,36 +50,27 @@
     const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
     return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
-  function careerStory(item,index=0){
-    const tag='article';
-    const attrs='';
-    const fields=[
-      ['Job Title',item?.title||'Untitled'],
-      ['Company',item?.company||'Employer not stated'],
-      ['Description',item?.description||'Description not supplied by publisher.'],
-      ['Salary',item?.salary||'Not stated'],
-      ['Posted Date',item?.postedDate||'Date not stated'],
-      ['Where it was posted',item?.source||'Source not stated'],
-      ['Location',item?.location||'Location not stated']
-    ];
-    const link=(url,value)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(value)}</a>`;
-    const details=fields.map(([label,value])=>{
-      let content=esc(value);
-      if((label==='Job Title'||label==='Where it was posted')&&item.url)content=link(item.url,value);
-      if(label==='Where it was posted'&&item.metadataSourceUrl)content+=` · ${link(item.metadataSourceUrl,'Employer details')}`;
-      return `<div class="career-field"><dt>${esc(label)}</dt><dd>${content}</dd></div>`;
-    }).join('');
-    const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
-    return `<${tag} class="tab-story section-story career-story${hierarchy}"${attrs}><span class="section-story-icon section-story-icon-career">${sectionIcon('career',index)}</span><dl class="career-details">${details}</dl></${tag}>`;
+  function funStory(item,index=0){
+    const tags=(item.tags||[]).map(tag=>`<span class="fun-tag">${esc(tag)}</span>`).join('');
+    return `<article class="tab-story section-story fun-story" data-fun-tags="${esc((item.tags||[]).join(' '))}"><span class="section-story-icon section-story-icon-fun">${sectionIcon('fun',index)}</span><div class="section-story-copy"><div class="fun-tags">${tags}</div><h4>${esc(item.title)}</h4><p class="fun-location">${esc(item.location)}</p><p>${esc(item.summary)}</p><dl class="fun-details">${[['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><small class="fun-source">${esc(item.source)} · Checked ${esc(item.verifiedAt)}</small></div></article>`;
   }
+  let funFilter='All';
+  function filterFun(){
+    const cards=[...document.querySelectorAll('#funTabGroups .fun-story')];
+    let visible=0;
+    cards.forEach(card=>{card.hidden=funFilter!=='All'&&!card.dataset.funTags.split(' ').includes(funFilter);if(!card.hidden)visible++});
+    document.querySelectorAll('[data-fun-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.funFilter===funFilter)));
+    document.getElementById('funCount').textContent=`${visible} ${visible===1?'idea':'ideas'}`;
+  }
+  document.querySelectorAll('[data-fun-filter]').forEach(button=>button.addEventListener('click',()=>{funFilter=button.dataset.funFilter;filterFun()}));
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     const heading=title?`<h3>${esc(title)}</h3>`:'';
-    const stories=(items||[]).map((item,index)=>section==='career'?careerStory(item,index):story(item,section,index));
+    const stories=(items||[]).map((item,index)=>section==='fun'?funStory(item,index):story(item,section,index));
     const primary=stories.slice(0,3).join('');
     const stream=stories.slice(3);
     const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
-    const content=stories.length?(section==='career'?stories.join(''):`${primary}${streamFeed}`):'<div class="empty">Nothing listed today.</div>';
+    const content=stories.length?(section==='fun'?stories.join(''):`${primary}${streamFeed}`):'<div class="empty">Nothing listed today.</div>';
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
@@ -160,7 +151,8 @@
     news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
-    document.getElementById('careerTabGroups').innerHTML=group('',newestJobsFirst(data.sections?.Career||[]),'career');
+    document.getElementById('funTabGroups').innerHTML=group('',(data.sections?.Fun||[]).filter(item=>!item.endDate||item.endDate>=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())),'fun');
+    filterFun();
     const dida=didaReferenceParts();
     window.mountDidaActivities(profile,dida.reference,dida.seasonal);
     if(profile==='sofia'&&(document.getElementById('view-arsenal')?.classList.contains('active')||document.querySelector('[data-view-target="inbox"].active')))showView('home');
@@ -168,6 +160,7 @@
   window.renderProfileViews=renderProfileViews;
 
   function showView(view){
+    if(view==='career')view='fun';
     if(state.profile==='sofia'&&['arsenal','inbox'].includes(view))view='home';
     if(view==='inbox'&&!window.openBriefInbox())return;
     document.querySelectorAll('.brief-view').forEach(v=>v.classList.toggle('active',v.dataset.view===view));

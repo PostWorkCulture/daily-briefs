@@ -9,7 +9,7 @@ body{color:var(--text);background:var(--bg)}
 .profile-switch button{color:var(--text)}.profile-switch button.active{background:#d7eaf5;color:var(--text);box-shadow:0 7px 18px rgba(48,95,130,.12)}
 .hero{padding:32px 0 6px}.hero h1{margin:17px 0 4px;color:#fff}.eyebrow{color:var(--text)}
 .section-kicker{color:var(--text)}.section-head h2{color:#173650}
-#homeRemindersSection .section-head h2,#calendarSection .section-head h2,#sceneryPanel .section-head h2,.tonight-block>.section-head h2,#view-news .section-head h2,#view-news .tab-group h3,#view-ai .section-head h2,#view-career .section-head h2,.birthday-panel .section-head h2,.occasion-month h3{color:var(--text)!important}
+#homeRemindersSection .section-head h2,#calendarSection .section-head h2,#sceneryPanel .section-head h2,.tonight-block>.section-head h2,#view-news .section-head h2,#view-news .tab-group h3,#view-ai .section-head h2,#view-fun .section-head h2,.birthday-panel .section-head h2,.occasion-month h3{color:var(--text)!important}
 #weatherPanel .section-head h2{color:var(--text)!important}
 .status-card,.list-card,.content-group,.interest-card,.calendar-list{background:rgba(249,252,255,.88);border-color:var(--line);box-shadow:var(--shadow)}
 .list-row,.calendar-row{border-color:rgba(27,65,95,.11)}
@@ -33,7 +33,7 @@ body{color:var(--text);background:var(--bg)}
 .tab-story{background:linear-gradient(180deg,#fbfdff,#edf5fa);border-color:var(--line);box-shadow:0 10px 25px rgba(50,82,108,.08)}
 .tab-story .meta,.tab-story p{color:var(--text)}
 .section-story-icon{background:rgba(255,255,255,.72);box-shadow:inset 0 0 17px rgba(42,94,126,.04)}
-.section-story-icon-ai{color:#8d36aa;background:#f4e7f8}.section-story-icon-career{color:#545b57;background:#e4e7e5}
+.section-story-icon-ai{color:#8d36aa;background:#f4e7f8}.section-story-icon-fun{color:#545b57;background:#e4e7e5}
 .arsenal-panel{background:radial-gradient(circle at 90% 0,rgba(239,49,62,.10),transparent 30rem),linear-gradient(145deg,#fffafa,#f5eef1);border-color:rgba(198,42,49,.22)}
 .match-card,.table-card,.arsenal-news-item,.arsenal-transfer-item{background:rgba(255,255,255,.72);border-color:rgba(122,51,59,.14)}
 .match-card.next{background:linear-gradient(145deg,#fdebed,#fff)}

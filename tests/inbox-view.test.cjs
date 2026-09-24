@@ -31,27 +31,17 @@ function setup(profile, privatePage = false) {
   vm.runInNewContext(source, {window, document, state, location:{origin:privatePage?'https://inbox-command-centre.pyro-pete.chatgpt.site':'https://postworkculture.github.io', pathname:privatePage?'/brief/':'/daily-briefs/', assign(url){destination=url}}});
   return {window, view, button, state, destination:()=>destination};
 }
-test('public Pete enters the authenticated private brief without loading email publicly', () => {
-  const env = setup('pete');
-  assert.equal(env.button.hidden, false);
-  assert.equal(env.window.openBriefInbox(), false);
-  assert.equal(env.destination(), 'https://inbox-command-centre.pyro-pete.chatgpt.site/brief/?profile=pete&locked=1&view=inbox');
-  assert.equal(env.view.children.length, 0);
-});
-test('Sofia has no Inbox entry and cannot open it directly', () => {
-  const env = setup('sofia', true);
-  assert.equal(env.button.hidden, true);
-  assert.equal(env.window.openBriefInbox(), false);
-  assert.equal(env.view.children.length, 0);
-});
-test('private Inbox is same-origin, reused between views and removed on profile change', () => {
-  const env = setup('pete', true);
-  assert.equal(env.window.openBriefInbox(), true);
-  assert.equal(env.window.openBriefInbox(), true);
-  assert.equal(env.view.children.length, 2);
-  assert.equal(env.view.children[1].src, '/?from=brief');
-  env.state.profile='sofia';
-  env.window.syncBriefInbox('sofia');
-  assert.equal(env.view.children.length, 0);
-  assert.equal(env.button.hidden, true);
-});
+for (const profile of ['pete', 'sofia']) {
+  for (const privatePage of [false, true]) {
+    test(`${profile} has no Inbox entry or redirect while paused (private=${privatePage})`, () => {
+      const env = setup(profile, privatePage);
+      assert.equal(env.button.hidden, true);
+      assert.equal(env.window.openBriefInbox(), false);
+      assert.equal(env.destination(), undefined);
+      assert.equal(env.view.children.length, 0);
+      env.view.children.push({tag: 'iframe'});
+      env.window.syncBriefInbox(profile);
+      assert.equal(env.view.children.length, 0);
+    });
+  }
+}

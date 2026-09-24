@@ -1,4 +1,4 @@
-/* Exact publisher image layer for News / Arsenal. AI uses company marks or code-native fallback icons; Career uses code-native icons.
+/* Exact publisher image layer for News / Arsenal. AI uses company marks or code-native fallback icons; Fun uses code-native icons.
    Rules: max one image per article, max five image-led cards per tab view,
    never reuse an image, and reject every generic or inferred fallback. */
 (function(){
@@ -49,7 +49,7 @@
     card.append(copy,media);card.classList.add('has-image');card.dataset.imageEnhanced='1';card.dataset.imageKey=key;
   }
   async function enhanceView(view){
-    if(view.matches('#view-ai,#view-career'))return;
+    if(view.matches('#view-ai,#view-fun'))return;
     const run=(viewRuns.get(view)||0)+1;viewRuns.set(view,run);
     const cards=[...view.querySelectorAll('.tab-story[href],.arsenal-news-item[href]')];
     const used=new Set();let count=0;
