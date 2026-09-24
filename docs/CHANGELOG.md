@@ -1,3 +1,9 @@
+## 24 September 2026: Simplify Fun to this month and next
+
+- Removed all Fun filter controls for both profiles.
+- Fresh, cached and browser-rendered Fun items must have valid dates and overlap today through the end of next calendar month. Ongoing events remain eligible; expired events and undated attractions do not.
+- Preserved the catalogue for later months and all unrelated brief content.
+
 # 24 September 2026 — Event-led Fun within roughly 30 minutes
 
 - Moved Fun immediately before News for both profiles.

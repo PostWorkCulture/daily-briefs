@@ -10,6 +10,17 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_HOSTS = {'www.hrp.org.uk', 'www.royalparks.org.uk', 'www.kingstonheritage.org.uk', 'www.elmbridge.gov.uk', 'www.kingston.gov.uk', 'www.orleanshousegallery.org', 'www.landmarkartscentre.org', 'kemptonsteam.merlintickets.co.uk', 'www.brooklandsmuseum.com', 'www.teddingtonbeerfestival.co.uk'}
 
+def in_event_window(item, today):
+    """Upcoming/ongoing dated events, through the end of next calendar month."""
+    try:
+        start = date.fromisoformat(item['startDate'])
+        end = date.fromisoformat(item['endDate'])
+        month_index = today.year * 12 + today.month - 1 + 2
+        cutoff = date(month_index // 12, month_index % 12 + 1, 1)
+        return start <= end and end >= today and start < cutoff
+    except (KeyError, ValueError, TypeError):
+        return False
+
 def eligible(item, today):
     from urllib.parse import urlparse
     try:
@@ -18,7 +29,7 @@ def eligible(item, today):
                 urlparse(item['url']).hostname in ALLOWED_HOSTS and
                 item['url'].startswith('https://') and
                 0 <= (today - checked).days <= 7 and
-                (not item.get('endDate') or date.fromisoformat(item['endDate']) >= today) and
+                in_event_window(item, today) and
                 all(item.get(k) for k in ('id','title','location','summary','when','ages','cost','source','tags')))
     except (KeyError, ValueError, TypeError):
         return False
@@ -36,7 +47,7 @@ def refresh_activities(today, fetch=requests.get):
         except (OSError, ValueError, KeyError):
             pass
     def check(item):
-        if item.get('endDate') and item['endDate'] < today.isoformat():
+        if not in_event_window(item, today):
             return None
         try:
             response = fetch(item['url'], timeout=12, headers={'User-Agent':'DailyBriefs/3.0'})

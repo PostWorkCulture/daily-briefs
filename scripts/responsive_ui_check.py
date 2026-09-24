@@ -664,11 +664,8 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Fun has no activities")
         if cards.evaluate_all("els => els.some(el => el.querySelector('h4').getBoundingClientRect().top >= el.querySelector('dl').getBoundingClientRect().top)"):
             raise AssertionError(f"{name}: Fun title must precede practical details")
-        for category in ('Events', 'Festivals', 'Beer', 'Fairs', 'Open-days', 'Creative', 'Parks', 'Outdoors', 'Indoors', 'Seasonal', 'All'):
-            page.locator(f'[data-fun-filter="{category}"]').click()
-            visible = page.locator('#view-fun .fun-story:visible')
-            if category != 'All' and visible.evaluate_all("els => els.some(el => !el.dataset.funTags.split(' ').includes(" + json.dumps(category) + "))"):
-                raise AssertionError(f"{name}: Fun filter failed for {category}")
+        if page.locator('[data-fun-filter], #view-fun .fun-filters').count():
+            raise AssertionError(f"{name}: removed Fun filters remain")
         if page.locator('#view-fun .fun-link').count() != cards.count():
             raise AssertionError(f"{name}: Fun booking links missing")
 

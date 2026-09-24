@@ -54,15 +54,6 @@
     const tags=(item.tags||[]).map(tag=>`<span class="fun-tag">${esc(tag.replaceAll('-',' '))}</span>`).join('');
     return `<article class="tab-story section-story fun-story" data-fun-tags="${esc((item.tags||[]).join(' '))}"><span class="section-story-icon section-story-icon-fun">${sectionIcon('fun',index)}</span><div class="section-story-copy"><div class="fun-tags">${tags}</div><h4>${esc(item.title)}</h4><p class="fun-location">${esc(item.location)}</p><p>${esc(item.summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(item.location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a><small class="fun-source">${esc(item.source)} · Checked ${esc(item.verifiedAt)}</small></div></article>`;
   }
-  let funFilter='All';
-  function filterFun(){
-    const cards=[...document.querySelectorAll('#funTabGroups .fun-story')];
-    let visible=0;
-    cards.forEach(card=>{card.hidden=funFilter!=='All'&&!card.dataset.funTags.split(' ').includes(funFilter);if(!card.hidden)visible++});
-    document.querySelectorAll('[data-fun-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.funFilter===funFilter)));
-    document.getElementById('funCount').textContent=`${visible} ${visible===1?'idea':'ideas'}`;
-  }
-  document.querySelectorAll('[data-fun-filter]').forEach(button=>button.addEventListener('click',()=>{funFilter=button.dataset.funFilter;filterFun()}));
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     const heading=title?`<h3>${esc(title)}</h3>`:'';
@@ -151,8 +142,9 @@
     news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
-    document.getElementById('funTabGroups').innerHTML=group('',(data.sections?.Fun||[]).filter(item=>!item.endDate||item.endDate>=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())),'fun');
-    filterFun();
+    const funItems=(data.sections?.Fun||[]).filter(item=>funEventInWindow(item));
+    document.getElementById('funTabGroups').innerHTML=group('',funItems,'fun');
+    document.getElementById('funCount').textContent=`${funItems.length} ${funItems.length===1?'event':'events'}`;
     const dida=didaReferenceParts();
     window.mountDidaActivities(profile,dida.reference,dida.seasonal);
     if(profile==='sofia'&&(document.getElementById('view-arsenal')?.classList.contains('active')||document.querySelector('[data-view-target="inbox"].active')))showView('home');
