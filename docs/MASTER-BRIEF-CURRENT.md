@@ -54,16 +54,16 @@ Pete and Sofia each have a personal brief. Root switch contains Pete and Sofia o
 
 ## Current structure
 
-Primary views: Home, Calendar, News, Arsenal, AI, Fun, Dida, Birthday.
+Primary views: Home, Calendar, Fun, News, Arsenal, AI, Dida, Birthday.
 Home: Weather, Calendar, Coming up, Around the world, TV Picks.
 Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal in any shared flow.
 
 ## Fun: local family activities
 
 - 24 September 2026: Pete replaces Career in both briefs with Fun. This explicitly supersedes all earlier Career UI, job-display and job-discovery requirements. No Career view or job listings are published; jobs must not move to another section.
-- Keep Fun in the former Career navigation slot, with the existing dark styling, responsive grid and neutral navigation accent. Keep Dida separate.
-- Curate local family outings around Molesey, Hampton Court, Hampton, Teddington, Kingston and Walton, with nearby KT8 activities. Mix outdoor play, indoor options and seasonal events.
-- Every card includes title, description, location, when, age guidance, cost information and the official details/booking link. Do not infer prices or exact age restrictions. Filters: All, Outdoors, Indoors, Seasonal.
+- Place Fun immediately before News in both profiles, with the existing dark styling, responsive grid and neutral navigation accent. Keep Dida separate.
+- Use an approximate 30-minute driving catchment from KT8 2LE, including Surbiton, Twickenham, Teddington, Hanworth, Esher and Weybridge. Traffic varies; provide route checks, never guaranteed drive times. Prioritise dated beer festivals, community festivals, fairs, open days, creative events and park activities. Cap each venue at two listings and regular outings at one; label regular places separately from events. Beer events must state verified age restrictions.
+- Every card includes title, description, location, when, age guidance, cost information and the official details/booking link. Do not infer prices or exact age restrictions. Filters: All, Events, Festivals, Beer festivals, Fairs, Open days, Creative, Parks, Outdoors, Indoors, Seasonal.
 - Store sourced activities in `data/fun-catalog.json`. The morning refresh checks each source independently, validates activity type and event expiry, and sorts dated activities before regular outings. Curated source evidence must still be present; changed pages are omitted for review. New outings are added through verified catalogue maintenance.
 - An individual source failure must not block the brief. Retain last-checked entries for at most seven days with the original check date; never retain expired events. If none remain, show an honest empty state. The browser also hides expired events between refreshes.
 

@@ -664,7 +664,7 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Fun has no activities")
         if cards.evaluate_all("els => els.some(el => el.querySelector('h4').getBoundingClientRect().top >= el.querySelector('dl').getBoundingClientRect().top)"):
             raise AssertionError(f"{name}: Fun title must precede practical details")
-        for category in ('Outdoors', 'Indoors', 'Seasonal', 'All'):
+        for category in ('Events', 'Festivals', 'Beer', 'Fairs', 'Open-days', 'Creative', 'Parks', 'Outdoors', 'Indoors', 'Seasonal', 'All'):
             page.locator(f'[data-fun-filter="{category}"]').click()
             visible = page.locator('#view-fun .fun-story:visible')
             if category != 'All' and visible.evaluate_all("els => els.some(el => !el.dataset.funTags.split(' ').includes(" + json.dumps(category) + "))"):
@@ -1171,10 +1171,10 @@ def check_viewport(browser, name: str) -> None:
         expected_nav_targets = [
             "home",
             "calendar",
+            "fun",
             "news",
             "arsenal",
             "ai",
-            "fun",
             "dida",
             "birthdays",
         ]
@@ -1555,6 +1555,9 @@ def check_viewport(browser, name: str) -> None:
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
         )
+        ordered = page.locator('#primaryNav button:visible').evaluate_all("els => els.sort((a,b) => {const x=a.getBoundingClientRect(),y=b.getBoundingClientRect();return x.top-y.top || x.left-y.left}).map(e=>e.dataset.viewTarget)")
+        if ordered.index('fun') + 1 != ordered.index('news'):
+            failures.append('Sofia Fun must immediately precede News')
         for target in ("home", "calendar", "news", "fun"):
             page.locator(f'[data-view-target="{target}"]').click()
             page.wait_for_timeout(250)

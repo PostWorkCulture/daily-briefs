@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED_HOSTS = {'www.hrp.org.uk', 'www.royalparks.org.uk', 'www.kingstonheritage.org.uk', 'www.elmbridge.gov.uk'}
+ALLOWED_HOSTS = {'www.hrp.org.uk', 'www.royalparks.org.uk', 'www.kingstonheritage.org.uk', 'www.elmbridge.gov.uk', 'www.kingston.gov.uk', 'www.orleanshousegallery.org', 'www.landmarkartscentre.org', 'kemptonsteam.merlintickets.co.uk', 'www.brooklandsmuseum.com', 'www.teddingtonbeerfestival.co.uk'}
 
 def eligible(item, today):
     from urllib.parse import urlparse
@@ -58,4 +58,18 @@ def refresh_activities(today, fetch=requests.get):
             return None
     with ThreadPoolExecutor(max_workers=4) as pool:
         items = [item for item in pool.map(check,catalog) if item]
-    return sorted(items,key=activity_sort)
+    return select_activities(items)
+
+
+def select_activities(items):
+    """Keep an event-led mix: at most two per venue and one regular outing."""
+    selected, venues, regular = [], {}, 0
+    for item in sorted(items, key=activity_sort):
+        venue = item.get('venue', item['location'])
+        is_regular = not item.get('startDate')
+        if venues.get(venue, 0) >= 2 or (is_regular and regular >= 1):
+            continue
+        selected.append(item)
+        venues[venue] = venues.get(venue, 0) + 1
+        regular += is_regular
+    return selected

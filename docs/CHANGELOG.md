@@ -1,3 +1,10 @@
+# 24 September 2026 — Event-led Fun within roughly 30 minutes
+
+- Moved Fun immediately before News for both profiles.
+- Replaced repetitive permanent palace outings with seven dated events across Surbiton, Twickenham, Teddington, Hanworth and Weybridge, plus one labelled park option. Official dates, booking links and age guidance checked.
+- Added event-category filters and route checks from KT8 2LE; drive catchment is approximate and traffic-dependent. Daily selection caps venue repetition and regular outings.
+- Local News geography and unrelated sections remain unchanged.
+
 ## 24 September 2026: Replace Career with local family Fun
 
 - Replace Career in both profile navigation bars and views with Fun, preserving the existing slot and responsive dark design.
