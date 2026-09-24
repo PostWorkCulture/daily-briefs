@@ -28,3 +28,11 @@ class FunTests(unittest.TestCase):
             text='<html>Page removed</html>'
             def raise_for_status(self):pass
         self.assertEqual(refresh_activities(date(2026,9,24),fetch=lambda *a,**kw:Response()),[])
+    def test_selection_limits_repeated_venues_and_regular_outings(self):
+        from scripts.fun_activities import select_activities
+        events=[dict(self.item,id=str(n),venue='same') for n in range(4)]
+        regular=[{k:v for k,v in dict(self.item,id='park'+str(n),venue='park'+str(n)).items() if k not in ('startDate','endDate')} for n in range(3)]
+        result=select_activities(regular+events)
+        self.assertEqual(len(result),3)
+        self.assertTrue(all(i.get('startDate') for i in result[:2]))
+        self.assertFalse(result[-1].get('startDate'))

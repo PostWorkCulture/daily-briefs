@@ -22,3 +22,4 @@
 #view-fun .fun-location{color:#7cf46a!important}
 #view-fun .tab-group-fun .tab-list > .fun-story:last-child{grid-column:auto!important}
 @media(max-width:500px){#view-fun .fun-story{grid-template-columns:1fr!important}}
+#view-fun .fun-route{display:inline-block;margin:10px 0;color:inherit;text-underline-offset:3px;font-size:12px}
