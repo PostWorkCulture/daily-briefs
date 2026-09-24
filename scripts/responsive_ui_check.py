@@ -657,7 +657,7 @@ def check_viewport(browser, name: str) -> None:
 
         page.locator('[data-view-target="fun"]').click()
         page.wait_for_function("window.scrollY < 2")
-        if page.locator('[data-view-target="fun"]').count():
+        if page.locator('[data-view-target="career"]').count():
             raise AssertionError(f"{name}: Career navigation remains")
         cards = page.locator('#view-fun .fun-story')
         if cards.count() < 1:
