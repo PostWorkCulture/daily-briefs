@@ -662,6 +662,8 @@ def check_viewport(browser, name: str) -> None:
         cards = page.locator('#view-fun .fun-story')
         if cards.count() < 1:
             raise AssertionError(f"{name}: Fun has no activities")
+        if cards.evaluate_all("els => els.some(el => el.querySelector('h4').getBoundingClientRect().top >= el.querySelector('dl').getBoundingClientRect().top)"):
+            raise AssertionError(f"{name}: Fun title must precede practical details")
         for category in ('Outdoors', 'Indoors', 'Seasonal', 'All'):
             page.locator(f'[data-fun-filter="{category}"]').click()
             visible = page.locator('#view-fun .fun-story:visible')
