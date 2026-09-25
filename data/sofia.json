@@ -1,42 +1,33 @@
 {
-  "updatedLabel": "Thursday, 24 September 2026 · refreshed 2:27pm",
+  "updatedLabel": "Friday, 25 September 2026 · refreshed 5:30am",
   "worldFact": {
-    "id": "sultan-kosen-tallest-living-man",
+    "id": "jyoti-amge-shortest-living-woman",
     "editorialPriority": "human-first",
     "category": "Human record",
-    "country": "Türkiye",
-    "place": "Sultan Kösen's height record",
+    "country": "India",
+    "place": "Jyoti Amge's height record",
     "source": "Guinness World Records",
-    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/tallest-man-living",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_tallest_man_in_the_world%2C_Sultan_Kosen_%284046630148%29.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:The_tallest_man_in_the_world,_Sultan_Kosen_(4046630148).jpg",
-    "photoCredit": "Helgi Halldórsson · CC BY-SA 2.0",
-    "fact": "Sultan Kösen was first confirmed as the world's tallest living man in 2009 at 246.5 centimetres. Guinness also measured his hands at 28.5 centimetres from wrist to middle fingertip.",
-    "locationContext": "Mardin · south-eastern Türkiye",
-    "date": "2026-09-24",
-    "sequence": 34
+    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/730291-shortest-woman-living",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jyoti_amge_%281%29.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jyoti_amge_(1).jpg",
+    "photoCredit": "Ashesh Shah · CC BY-SA 4.0",
+    "fact": "Jyoti Amge was measured at 62.8 centimetres tall in Nagpur on her eighteenth birthday, 16 December 2011, earning the Guinness title of shortest woman living.",
+    "locationContext": "Nagpur, Maharashtra · central India",
+    "date": "2026-09-25",
+    "sequence": 35
   },
   "weather": {
-    "temp": "19°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "temp": "10°",
+    "summary": "Mist",
+    "condition": "Mist",
     "currentRainChance": 4,
     "daily": [
       {
-        "date": "2026-09-24",
-        "high": 23,
-        "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-09-25",
-        "high": 25,
+        "high": 24,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
       },
@@ -46,12 +37,12 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-09-27",
-        "high": 24,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -69,7 +60,7 @@
       },
       {
         "date": "2026-09-29",
-        "high": 25,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -80,15 +71,15 @@
         "date": "2026-09-30",
         "high": 23,
         "low": null,
-        "summary": "Light Showers",
-        "condition": "Light Showers",
-        "rainChance": 4,
+        "summary": "Heavy Rain",
+        "condition": "Heavy Rain",
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 4%",
+      "detail": "Sunny intervals · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -96,37 +87,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Wednesday 23 September 2026",
+      "dateLabel": "Thursday 24 September 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Frittenden",
-        "town": "Tunbridge Wells",
-        "county": "Kent",
+        "location": "Yeovilton",
+        "town": "Yeovilton",
+        "county": "Somerset",
         "country": "England",
-        "displayLocation": "Tunbridge Wells, Kent",
-        "value": "25.6°C",
+        "displayLocation": "Yeovilton, Somerset",
+        "value": "22.9°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=941233031b28",
-          "page": "https://commons.wikimedia.org/wiki/File:Tunbridge_Wells_town_centre_-_geograph.org.uk_-_2489312.jpg",
-          "credit": "nick macneill · CC BY-SA 2.0",
-          "alt": "Tunbridge Wells town centre",
+          "src": "assets/weather-extremes/hot.webp?v=7a5604aced6d",
+          "page": "https://commons.wikimedia.org/wiki/File:Saint_Bartholomew_Yeovilton_(geograph_3541120).jpg",
+          "credit": "Steve Barnes · CC BY-SA 2.0",
+          "alt": "St Bartholomew's parish church, Yeovilton, Somerset, seen from the north",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Exeter Airport No 2",
-        "town": "Exeter",
-        "county": "Devon",
+        "location": "Topcliffe",
+        "town": "Topcliffe",
+        "county": "North Yorkshire",
         "country": "England",
-        "displayLocation": "Exeter, Devon",
-        "value": "8.0°C",
+        "displayLocation": "Topcliffe, North Yorkshire",
+        "value": "2.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=20cf098a152c",
-          "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
-          "credit": "Edward Ashworth · Public domain",
-          "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
+          "src": "assets/weather-extremes/cold.webp?v=b8ef08b00659",
+          "page": "https://commons.wikimedia.org/wiki/File:Church_Street_from_above_-_geograph.org.uk_-_6179037.jpg",
+          "credit": "Gordon Hatton · CC BY-SA 2.0",
+          "alt": "Church Street in Topcliffe, North Yorkshire",
           "width": 1600,
           "height": 900
         }
@@ -134,20 +125,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Dentist 11:15 (1.5 hr)",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-24T11:15:00+01:00",
-      "end": "2026-09-24T12:30:00+01:00",
-      "date": "2026-09-24",
-      "time": "11:15am",
-      "allDay": false,
-      "color": "#fbd75b",
-      "colorId": "5",
-      "googleEventId": "cdhj2eb469j68b9pcosj4b9kc5gm6bb1cko3ab9h6phj8p9j6gs68e34cc",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Football 10-11am",
       "summary": "",
@@ -191,20 +168,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "AMAZON PRIME DAY",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-06T00:00:00+01:00",
-      "end": "2026-10-07T00:00:00+01:00",
-      "date": "2026-10-06",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "12d8e92cu07t8kl7ucnf7i0u86",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Dad - Gazette End",
       "summary": "",
       "url": "",
@@ -217,6 +180,20 @@
       "colorId": "2",
       "googleEventId": "ckqj8o9j75j3abb674pm6b9kcdi32bb161j3gb9g6os3achk6oq3ge9gc4",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "AMAZON PRIME DAY",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-06T00:00:00+01:00",
+      "end": "2026-10-07T00:00:00+01:00",
+      "date": "2026-10-06",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "12d8e92cu07t8kl7ucnf7i0u86",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Summer's b-day party",
@@ -331,20 +308,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
       "url": "",
@@ -357,6 +320,20 @@
       "colorId": null,
       "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
     },
     {
       "title": "Hygienist- 10am",
@@ -430,32 +407,32 @@
     }
   ],
   "lead": {
-    "title": "Gallery: Gers In Sweden Against Hammarby",
+    "title": "Sweden vs Romania: UEFA Nations League stats & head-to-head",
     "summary": "",
-    "meta": "Thu 24 Sep",
-    "publishedAt": "2026-09-24T08:43:42+01:00",
-    "source": "Rangers Football Club",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wZ1FCdndsTDl0RFIxMG1DcFMyWFhUdVRCUjZmdHd0NjlNUEtCaER5NENIWlNOM2RnVGhHZmxZOTN1T3hCZ1RxVURBdVd5djZDUTA3R3U1UkxfRzRvRWpROTlSQ2wtbVZmalR0VTF6U05RcHVub2c?oc=5",
+    "meta": "Fri 25 Sep",
+    "publishedAt": "2026-09-25T00:00:32+01:00",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wUkRTSmUwNjJwTWV0b2tiU3NEZndWVjZJcFZsUHhMR1FtOWhqbFFsNVdtSnNVMzI4cHJkbjNCVkp2ejBmRWJRS3BLc3ZTMktpRnN0a0N6cV9mbFZENFlNeW03Zjl3dw?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Gallery: Gers In Sweden Against Hammarby",
+      "title": "Sweden vs Romania: UEFA Nations League stats & head-to-head",
       "summary": "",
-      "meta": "Thu 24 Sep",
-      "publishedAt": "2026-09-24T08:43:42+01:00",
-      "source": "Rangers Football Club",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wZ1FCdndsTDl0RFIxMG1DcFMyWFhUdVRCUjZmdHd0NjlNUEtCaER5NENIWlNOM2RnVGhHZmxZOTN1T3hCZ1RxVURBdVd5djZDUTA3R3U1UkxfRzRvRWpROTlSQ2wtbVZmalR0VTF6U05RcHVub2c?oc=5",
+      "meta": "Fri 25 Sep",
+      "publishedAt": "2026-09-25T00:00:32+01:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wUkRTSmUwNjJwTWV0b2tiU3NEZndWVjZJcFZsUHhMR1FtOWhqbFFsNVdtSnNVMzI4cHJkbjNCVkp2ejBmRWJRS3BLc3ZTMktpRnN0a0N6cV9mbFZENFlNeW03Zjl3dw?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Residents make final plea to save Teddington allotments from graveyard expansion",
+      "title": "Kingston Council validates plans for homes, office conversion and tree works",
       "summary": "",
       "meta": "Thu 24 Sep",
-      "publishedAt": "2026-09-24T10:49:00+01:00",
-      "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOV9qMXhPVlhhYUFLMldxa05DeUJpbFc0ZVZRRGZXaXowT2U2ZU5ZbVFZakpJSTc2SmFMaURjTTlLZFVEWDhJejJyUmlGUmlFdGhiVnM3YnloZm1leGxnWUN1ZDJBZGhNYzEtU0s1UXE2a1BablBjYkMxMGZfRGdNcG4xNkE2RTZJRmlaOTN2WVdYZHRMRFlULXFud2oySGltTENRRU5sQWZfSzRkT0lGdmw2TmZ4V0M4Uk8wV0hVLUNYNUhBODdSM1ZmRQ?oc=5",
+      "publishedAt": "2026-09-24T17:28:55+01:00",
+      "source": "Surrey Comet",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdi1QdUJKUlRmUzZrLURUSUhtdHNzMnBJOEJzTUt0OHZobWlYdTFNWVVuTFc2S1hqenBoYVJ1d0J5SFFrb1NOZ2V4cDRLaXA1bjlzekdxbmQzVXhnazdHbTJUZm9OVjZIanJ1LXJGN19vLXprSXktcmtxNml6MGZ5bDNfbnU1ZkhQWk9YXy10ZjZrQW9reWlUbjJicW9MLThWaWc?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -475,29 +452,49 @@
   ],
   "watch": [
     {
+      "title": "Britain's Countryside Killers",
+      "summary": "The story of what happened when three Essex drug dealers were lured to their deaths in 1995. Jack Whomes and Michael Steele were convicted of the murders in 1998.",
+      "meta": "TRUE CRIME · Available since yesterday",
+      "source": "TRUE CRIME",
+      "url": "https://www.tvmaze.com/episodes/3770906/britains-countryside-killers-3x01-field-of-blood",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
+      "artworkAlt": "Britain's Countryside Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-24",
+      "showId": 82837,
+      "episodeId": 3770906,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 392.3
+    },
+    {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Available since Mon 21 Sep",
+      "meta": "BBC Two · Mon 28 Sep, 7pm",
       "source": "BBC Two",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467593.jpg",
       "artworkAlt": "Global Eye programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-21",
+      "airdate": "2026-09-28",
       "showId": 87011,
-      "episodeId": 3763619,
+      "episodeId": 3767975,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 419.0
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 423.0
     },
     {
       "title": "This Much is True Crime",
       "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
-      "meta": "TRUE CRIME · Tomorrow, 10pm",
+      "meta": "TRUE CRIME · Today, 10pm",
       "source": "TRUE CRIME",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
       "badge": "True crime",
@@ -511,82 +508,111 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 367.8
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 375.8
     },
     {
-      "title": "999: What Happened Next",
-      "summary": "A woman preparing for a Christmas night out is brutally stabbed in her own home. And detectives pursue an international burglary gang who are raiding affluent Surrey homes.",
-      "meta": "Channel 4 · Available since Mon 21 Sep",
+      "title": "Geordie Coppers",
+      "summary": "A group of youths assault a man in the city centre. PC Adam investigates an 18-year-old who's well known to the police and is spotted on CCTV in yet another brawl. PC Sherrie is called to…",
+      "meta": "Channel 4 · Mon 28 Sep, 10pm",
       "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/999-what-happened-next",
+      "url": "https://www.channel4.com/programmes/geordie-coppers",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527705.jpg",
-      "artworkAlt": "999: What Happened Next programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603848.jpg",
+      "artworkAlt": "Geordie Coppers programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-21",
-      "showId": 90023,
-      "episodeId": 3763600,
+      "airdate": "2026-09-28",
+      "showId": 94471,
+      "episodeId": 3763725,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 300.6
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 302.5
     },
     {
-      "title": "Monster: The Lizzie Borden Story",
-      "summary": "With the public transfixed by the lurid scandal, Lizzie must deliver a life-or-death performance, with help from an unexpected ally.",
-      "meta": "Netflix · Available since Thu 17 Sep",
-      "source": "Netflix",
-      "url": "https://www.netflix.com/title/82068293",
+      "title": "Blue Lights",
+      "summary": "As Gerry's murder trial begins, Mo's unstable mental health ignites a struggle between the state and justice. Shane has a tense stand-off with Lee.",
+      "meta": "BBC iPlayer · Tue 29 Sep, 6am",
+      "source": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/programmes/p0f2cxpr",
       "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604466.jpg",
-      "artworkAlt": "Monster: The Lizzie Borden Story programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474873.jpg",
+      "artworkAlt": "Blue Lights programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-17",
-      "showId": 87597,
-      "episodeId": 3692737,
+      "airdate": "2026-09-29",
+      "showId": 54401,
+      "episodeId": 3765867,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Crime",
-        "Horror"
+        "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 267.8
-    },
-    {
-      "title": "The Blame",
-      "summary": "While investigating a murder, DI Emma Crane and DI Tom Radley uncover serious misconduct within Wakestead Police Station.",
-      "meta": "ITVX · Available since Sun 20 Sep",
-      "source": "ITVX",
-      "url": "https://www.itv.com/watch/the-blame/10a3705/",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/642/1605635.jpg",
-      "artworkAlt": "The Blame programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-20",
-      "showId": 86463,
-      "episodeId": 3741445,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime",
-        "Thriller"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 302.8
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 261.9
     }
   ],
   "sections": {
     "Sweden": [
+      {
+        "title": "Sweden vs Romania: UEFA Nations League stats & head-to-head",
+        "summary": "",
+        "meta": "Fri 25 Sep",
+        "publishedAt": "2026-09-25T00:00:32+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wUkRTSmUwNjJwTWV0b2tiU3NEZndWVjZJcFZsUHhMR1FtOWhqbFFsNVdtSnNVMzI4cHJkbjNCVkp2ejBmRWJRS3BLc3ZTMktpRnN0a0N6cV9mbFZENFlNeW03Zjl3dw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Jardell Kanga included in Sweden Under 21 squad",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T19:53:42+01:00",
+        "source": "Motherwell Football Club",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeFA3S0hLeDBvVXY0WXFFVEJXTFpaNjh4SlRreC1ycWdXc2xzUl8tWWI4eS0yMFBKZjloX1BVNzhMOHJ6c1JzZHR2VlhfVnAxZlhVSHJabU9zWWJOM1JZZFpwZndoYzBvUDF3VTUzRTkyUFpaZ2x0S2Jsd05kMFhTWmRFSkN6SE9vVjZ3SHlGVUlOcXla?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Record level of challenges after Swedish vote, officials say",
+        "summary": "",
+        "meta": "Fri 25 Sep",
+        "publishedAt": "2026-09-25T03:01:00+01:00",
+        "source": "The Japan Times",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNkZJcGN2ZzQ3c1U5UENMYVhaQVVxOVhWY0xRUVI3SjhNZlMxY0RzdUtZaHpodUc3YWdNRjZrRmh2c0o5OHJTaDZmcmYycG5XQVM3bTBzcU5kZVBwZlhZSExZd0hQUmJfbnVaR0s0YlRHRWdPazJ2aS1rRG5GSmxoWnJWWnFDWWR1R1F2NTZnOF8?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "This concrete and timber villa in Sweden is inspired by a tortoise’s shell",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T15:58:06+01:00",
+        "source": "wallpaper.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYXNXNmE3SlVEakc2VHNjeDBDYlJ0VEd2QjdaTmJENEpwZlAyMUpuY3QtQ1c4XzUzYW5rNkNydU9NcjU3R21VWUdMM0Z3R0dkazlMZmV5R0I4bUFuY3FXb3F5azNaeXJvZ0dNYUtUNTE3eksyWWI0TDZlY1NkeXYyS0xYNzk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden sees rise in reported adverse reactions to semaglutide",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T08:35:58+01:00",
+        "source": "euractiv.com",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZjhmRW9ZT1hYUTdxYmkxYkRwRnlhaGhjcGhoRVgtQ19hSm5uQXdXTy1lekR4Snh1NDdaT01MZTdUQ1dDV2s4bUdCZEFvR2ZyTDhhSUNlZkY4UzZUMXFLMUx5LW1aYXc1eFlsZ1VKdV9ZZV9wcXZRdzdwVFF4VWpjTmVrTW82WUMxaE1wVzB0Xzh0SFAwdWNV?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "School bus driver Anna clinches top spot in Swedish championship",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T09:46:16+01:00",
+        "source": "IRU | World Road Transport Organisation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQU3ZndDBaMmlaMmU2Mmh5Y1F2OUx4c2Y0M1lvbEk0cFpBcEt2UzEwZWV5TlZhQkd3c1RiZ05FaWFmTHhQd1gzT3ZJTlVtMEZNZ0RTNVhwNG14QkRyRmpSYzB6dUwwM2t4SHlHbUdqc2hLV1ZReHlGYjVvV1lOZ3FHdlNNUVJLcVNGbXNpUklzVUk4QS1MNC1yNGNXdkFkcGFwdWpFdVo4V1U?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "Gallery: Gers In Sweden Against Hammarby",
         "summary": "",
@@ -595,63 +621,31 @@
         "source": "Rangers Football Club",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wZ1FCdndsTDl0RFIxMG1DcFMyWFhUdVRCUjZmdHd0NjlNUEtCaER5NENIWlNOM2RnVGhHZmxZOTN1T3hCZ1RxVURBdVd5djZDUTA3R3U1UkxfRzRvRWpROTlSQ2wtbVZmalR0VTF6U05RcHVub2c?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Sweden sees rise in reported adverse reactions to semaglutide",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T08:32:43+01:00",
-        "source": "euractiv.com",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZjhmRW9ZT1hYUTdxYmkxYkRwRnlhaGhjcGhoRVgtQ19hSm5uQXdXTy1lekR4Snh1NDdaT01MZTdUQ1dDV2s4bUdCZEFvR2ZyTDhhSUNlZkY4UzZUMXFLMUx5LW1aYXc1eFlsZ1VKdV9ZZV9wcXZRdzdwVFF4VWpjTmVrTW82WUMxaE1wVzB0Xzh0SFAwdWNV?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Voltimum+ Sweden: Earn Rewards with Product Finder",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T13:30:47+01:00",
-        "source": "Voltimum",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUnJUNEFHR1EzNk5CZzRJeDVlWjA0LU5GMG1HdDlpQzg2MFVrWEFvOVJfTUw3WWNWeFFMeHhjV3ZRM2luWU1xV3dVRmRPb01KZUdhc0lnYWRxMDJSeVMtS2tsSVFZNkdXMEVaSzhOZkNBeWJhRERlejFweFZuZGd3b0hXSV9lSWdwVFFVd3RyM25RYTFST2c?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Fortum looks to data centres to boost Swedish nuclear power",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T08:38:48+01:00",
-        "source": "Montel News",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOTA0NUNuRFh4Wld1MENKd0s0S1dHVUZoYjZfeEhqTlduVXUtNlc4N09zWl9aX1VXU25qcVFuS01kdk0wOTZscHpaa2d5R3RBZ3Zhak50eUxpQmF3bjEwd0FIelpHTzFwYWdtNWhPOVZkaFdqejl6Y09Na3JkRjVoYVV5WTFBWVJkN2d1bjFVcEFlLUNtZzdWT3lBUkJLTm1rd0RxSkZ6ODlCZ2JSVTZocHpySVlDX2ZPOGNNcXRRMTQ5UQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Italy’s ABS strengthens northern European presence with new service center in Sweden",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:33:22+01:00",
-        "source": "EUROMETAL",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeG5uVkw3LXpnbU1NYmdYbzRPR1BJbnNWNHByMHZvS2RucUY4Z2hfcXVUREE3ZDN2UmhXUjd2LTNSYWJOZ2E1ZHBKaTRRTVV6blVyUm9EYkswb2ItZEpvbUo5N1dLNXF0amVFS2E1V05YV1lnWTRoa19wNHBwSE53dFpjT0dNdDFQdk1BNkVkNzZiYlRwdkZJTDdESjFOMkMyOXVvR2QzbjN1UQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden's central bank leaves rates on hold",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:28:00+01:00",
-        "source": "London South East",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOFg1djBtTVgzcnlpenpKQkVtYWhuMFd0a0szYzFNYWVIMkQ4ajFMb0FjSHJVUHlBNlZucV9wcVZTY2RGN0hWaXRSWmk0RzFZOHlyMGJYUTBKbUFlelA0bDdLaUFMVjNEZjdBSkdtQ1YzRzJNY0ZEbDZZRmVUN1hHOHJ5UlFUTFFuSEU2N0FHTWczT00?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "‘Potentially…’ – Graham Potter hints at how heavily Alexander Isak could feature for Sweden",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T11:59:41+01:00",
-        "source": "The Empire of The Kop",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkwyaTdyVldIVnZTUWZtTEs4SEdyUkVxZVl3TjRQYWpTOEI5Z2tDVG1Nd2FTWldjT0xrQzVENFdvM3M4dm1fWXdsMEtfUkZQYjA5MlZBU0FIREFCVE9jaGNFb0hsRFhBQXRkTUx3Tk9DUk5CNjdQUEdTM2F3cDBxZUs5VDZ1Y1RrVE5pTDJ1VXplODVpY1HSAZsBQVVfeXFMTms4OHJiU2xvUHkyOWJ3cFZXVndrbE0tQ1B3MzhBbUlLNHVqUTRPQW1aNnVtYmxULUtKRnc5U2FpSlotb0huYmdVMWdpcWhtOHMtUF84bEpvdEs0aVVxZnRwQW5mTXlwa3c3MThJZzY3dnNaV3lKTWtOVWFoWEFGUE8td0ZSQll3cFk5YlUxSDB0YU5GaW92WEFOOTA?oc=5",
-        "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Kingston Council validates plans for homes, office conversion and tree works",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T17:28:55+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdi1QdUJKUlRmUzZrLURUSUhtdHNzMnBJOEJzTUt0OHZobWlYdTFNWVVuTFc2S1hqenBoYVJ1d0J5SFFrb1NOZ2V4cDRLaXA1bjlzekdxbmQzVXhnazdHbTJUZm9OVjZIanJ1LXJGN19vLXprSXktcmtxNml6MGZ5bDNfbnU1ZkhQWk9YXy10ZjZrQW9reWlUbjJicW9MLThWaWc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "More tables and chairs could come to Kingston micro pub’s seating area",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T16:05:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTnUyTEFieGdMQVBtQ3ZnaVZ2UkdHVTc4RUZBMFNzUjJnbFo2TWlvbkFkYWJLcWIzS0w3dzJyNzdxWl9xa19OUnVsSU1oSUJfQVJXWXM5ckZxbGROc3F4N1dOaW5vclo0TENROEhjRXl0dEVxUU1vQk1EVm1DdUlFQ2ZNXzlGUVc1dXBPZDZNdjhaTjlhSW1HOFVuUXpQT3dsbDI5RFRfb2N2ZVpiNmJVWXFuVGw1enVUUEE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "Residents make final plea to save Teddington allotments from graveyard expansion",
         "summary": "",
@@ -659,6 +653,28 @@
         "publishedAt": "2026-09-24T10:49:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOV9qMXhPVlhhYUFLMldxa05DeUJpbFc0ZVZRRGZXaXowT2U2ZU5ZbVFZakpJSTc2SmFMaURjTTlLZFVEWDhJejJyUmlGUmlFdGhiVnM3YnloZm1leGxnWUN1ZDJBZGhNYzEtU0s1UXE2a1BablBjYkMxMGZfRGdNcG4xNkE2RTZJRmlaOTN2WVdYZHRMRFlULXFud2oySGltTENRRU5sQWZfSzRkT0lGdmw2TmZ4V0M4Uk8wV0hVLUNYNUhBODdSM1ZmRQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Fringe show exploring austerity Britain to come to Kingston",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T10:24:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPczdEYm42aVlZUGxua2pJdFZwVjFPc0twMUsxLUF6MzFsSzlVcEpteHFxYUYycDdVOWtSR0JKM1liM1dacWFFdkpOd0tLdXBCaHgwc2VvekxqT0UtNjh6bTVpUGhHSFdkSHFPWXdYNkJITHhxSHptcmFrM3VJRnVDV19wSHMyUkNtdVlkcGgtaWtLY0hzY0I1REg1MmxvUUMzVFFzSXRjWVNHVGZG?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Celebrate Surbiton",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T10:05:15+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUTFteG94R1E3YkRRallBV2ZIQWJyLWVRM1dnTVdXSjZuUkNDb0ZqeFFxRlpGV1lOenR3RTVzeFQ5b2NwQXhfekFYaXRwejREYnJreXo1TkNtNS1rbENyVndqaWRvSzBwcHI3dWRSMERGZzZwQVM0VGpYa2dGZ0g5YlFB?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -741,56 +757,12 @@
         "familyActivity": false
       },
       {
-        "title": "Mobile Vehicle Technician - Esher",
-        "summary": "",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T12:21:25+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWFZEZXQxSzRscTFrTURLNkROaE5ZN3p1WWZfZGxSTW43QlpHakxuY2J3UDlZT3ZPSC1hOWNhY0laQkh0Q3JzTFpiWE1xaDE3XzJVdmNYd3BGQzVxeElacXpNbTRYUFdESHB4amUtYXdPbDRVRVVnQVhEYXpWczJNZnRsUGNXNHh2TWowSTZvRWhwZkNjWEE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Kingston crowned London's best borough for tourists in new study",
         "summary": "",
         "meta": "Wed 23 Sep",
         "publishedAt": "2026-09-23T10:00:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdHo5eUJremlGN1Qyem4wV0FIdGlveUthcjVXNjYyY1BHTGFzdHZMX2kyd09FeFFPYUhuTzZiNmUtN3piMGhDdUxnN2JOU3NrclFTeFdsM2MwWmNVN09CN3ZBajkwLS1DalY1bHFpSHFqd2h6cVA3cEFobXZ1cXMteHhIcl9sMmJ0OXN3SGd5Z29DcVlUcXIwX2YzTEFSTlZlYm9XU3FpeEo5S2Z0N0wxajR3?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "New navigators and Head Launchers boost Teddington RNLI's emergency response",
-        "summary": "",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T08:44:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa25kQ3pHTzRUSG5tSmZUbkNWdEV0Wl9waXhrNksxcUNVRmpub0ozdTYwelA5UXVFRVhQS2x2MW5DQ0ZBR2ttbzljR28xbmVTc3lTSmY5VFZOaG5RaUp4NDctU0hUTnlsblFsNzR4R2pGcUhEZG51REc3Z1VpazZyZGI1WmxEakVFbWpmSHU4dXJqYU9pbllwbnNpUGI5cEtiSk1ndVhmdGNIQ1Q3cm9xNWk3Y3Zpb2RwRGtmZXU4aGU0cHdU?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Kingston to get new Santander Work Cafe",
-        "summary": "",
-        "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T16:52:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZHhZSkRnV2xhU0RwcnlvcEQ3ZU5ncWg4aktmakN3Z3l6b2RKTDRXX2Y5eUdYeHdueFlaZFl5RGRRb2RYWUkzUjM2a3Z3dm1DMlF1N05yQUtRdmlhQWlTNl9GNlZOekdDc3A1V1pUZ2twWTlWWVNHX01NalVYRHlXemliV1RiR0hwaVcxa2lhV1llQQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Stock Replenishment Assistant - Esher",
-        "summary": "",
-        "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T16:16:15+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNREQ2ZGtRM29rTnVON0FHbTlseEN4d3ExMEhHRVgycU1FQzA0M0YxSjZYS3Nubno5d2ItLTIzalZZeUJUWVU5Q2FiTXg4NV9tMkN6VW1iWlA3VzR4c3Rpcm9NcXI0LW5rRU42cTJMal9LSUZfQTFXSlZIaUp5NU1kNldWS0hxbC1McVpiWjBpZmhMV0ZVWjB6aWNoSklyY1JidWg5Ug?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -831,111 +803,111 @@
     ],
     "UK news": [
       {
-        "title": "Jude Bellingham earns World Cup award he didn’t even know existed",
+        "title": "Exmouth Running Club named England Athletics award runner-up",
         "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T11:14:07+01:00",
-        "source": "talkSPORT",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMWVVenpmcG9RVGlaeEtXdmlIVmxwNXhFNU5OQlU2c3pSV0ZRZHlsNW5sSHB5U1dOZ0NZMHhjNFk3OWdZMjJ2R2xub3VmQ2VJM1RxOE1XRUNyaGlLN244ZGRJVUM4cjFOUGo3NVczREpkVThKcmNNVkc2ZFRLam82WUVJcHhYM3MwMDk1UnBBQW1tb0hodXo2UVFJaw?oc=5",
+        "meta": "Fri 25 Sep",
+        "publishedAt": "2026-09-25T05:00:00+01:00",
+        "source": "uk.news.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYnhVRlJDc1d6ZE1EY0x0aUJONDRUOWNyRnlfYkRwMktlbXVXSlRYb0FUSEVSTmlMWWJKX3c5Rk9iWGxIMVlvSDFFeDJjZFlVTDd3cHE1WUlkLVBGQ20tMjRwaG1Sa1JONEI3VzJuVjlZNG5nVU5EbkV2NjJDeHJNZA?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Award-winning restaurant Inver on Loch Fyne hits the market",
+        "title": "Catterick Garrison fire could burn through night, authorities say",
+        "summary": "North Yorkshire Fire and Rescue Service said in a statement that multiple crews were at the scene.",
+        "meta": "Fri 25 Sep",
+        "publishedAt": "2026-09-25T00:36:42+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cm1j41kxk0w8o?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Late Scottish artist’s album makes longlist for coveted award",
         "summary": "",
         "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:44:54+01:00",
+        "publishedAt": "2026-09-24T21:32:12+01:00",
+        "source": "North Wales Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPS0E5T0NwMkRCWDlJY3gzWlNzaUZYai1OMXRjcmM5cDRDZ3hEZWlZdmdNd2xWRGxXa3ZRSHJBblBNVDA5TmExWmlGdTlpb1FJcDFlM0pEREwyU05BMUJkSWdKa2RYSFROYkFmVEdDUmtqTWRSYk04Nk5Ca09iNFZqdDlfY3h0RXF3Yy14RmZhSTVremtRR2otQW5kYTNvSmJkTVNXZXB0TXNpdmZhRHRDUDE4eExvTTcydmc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Activists found guilty of theft of King's lambs",
+        "summary": "They believed the King \"would have consented to their rescue\" due to being an \"environmentalist\".",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T16:44:00+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/ckj0639455rro?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Major £20,000 grants reopened to restore Scotland’s vital river woodlands",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T16:33:00+01:00",
+        "source": "uk.news.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1YcS1UdWxET3gtOFpGX1FUVWYtYk5jUEJqVWpHTDlWb1p1dU4ySk9qSEFVM0tSVlVrYzRQU04weEZITERsU1N5cnUzUWRnaGN1blA5eXNiTkNPTzBiTXU4cE04Z2NDMkhVWXA2X3dFdWowSXVmXzdPOQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Traitors winner, Balamory star and Dr Who up for BAFTA Scotland award",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T14:38:00+01:00",
+        "source": "scotsman.com",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTlFJYmM1N1RWeU1DSlhvNGYySjFsZ3ZoR1drZkRxN0lZd3lzN180bUEyVC1lcDRmNWdGNzhPTjJMWEhsVnlVYWl5dGxlOTdhRl9BX3NSVmo5dFIwQ2tXZUlSRE13OG5nVWNLcEFnekdQb0xMNm52Y3BDaTFxSzU3bktRU0VVYnhydU8xNVJhempmcjZvT0hLM1JSajB0akVUVHZOc0U0aVRQRDJFWFBlbmZUYkhiVGNYRGc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Surrey wildlife charity raises £10k for poisoned animals' care",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T14:36:10+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zbDBoTU9xQl9IeUtia1lTUG90T0V1SmRpdXRUdktHbU5SYS1uT0dUTG1LUmNleEkzU1cxWFNjUHpyX2tkakp4RzBFYThBNXBjcmFuMS1Vb1dPY1E?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Glasgow’s Atlantic Bar & Brasserie celebrates double award success",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T14:29:59+01:00",
         "source": "DRAM Scotland",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRGZTR29QelprYXROcGU5OXoxRmdpWS1ManJJSXdfS29MSUxQNEt0NVlmZ3NPNS1zczZudUJfbFk4NjdybWN2amNOSUljLW5QanFBQnBCYmdCUklrWkNqejNibGxJd25NYjllNy1QN1VoMm41Ui1KbEg5eTRWX1lBWVd2NGR1Wkh2bU95NXZyLUNadzd0UnNHTlQxYjFOLWc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaHgzTDZsMDNsMS1VN294eTZVWTB4cHJ3YXJZS19rWGU0aXZfSm5fRS0ydjA4RzV5d2c2UXFXTWdTak9qN200UVNvQ2p5M3UzSnJnUjI3RXFPNGhNakNCeUM2NFdQMWJoWDZuVzZFMmJKNm56SkxjeVhvTTMtcVU1TEZhbGE2UnZRUVo0Q1pTQmtMOXVNcEtTV3VZLWN2Wk1ITVR5OA?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Shortlist revealed for 2026 RIAS Andrew Doolan Best Building in Scotland Award",
+        "title": "Meet Grumpygran1948 - Fornite's record breaking streamer",
+        "summary": "Cath Bowie, from Moray, began playing the online shooter in 2017 and now has an audience of around 24,000 followers.",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T12:48:18+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cx7v4gzn26qzo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Nominees revealed for the 2026 BAFTA Scotland Audience Award in partnership with Screen Scotland",
         "summary": "",
         "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:19:10+01:00",
-        "source": "Trending Now Sustainable Construction",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNTA5WS1KTGIyeEFJNXQxVTRWNlZxeC1XNW5PUHJWMng3bGI4MEQ0T3U0N0N2R0pWWGxIS29LVjczQzVzMHVpSVBrbEZqQXZCTWgtVUZrZEhNdHpSeHRJTzFKUTdnM3FidGRGaDNMMnotNDNIU2Nib0RObEhTODE3MnI2ekZWVWVsTW9RWmlQU3VQRHVLWTZZRVZUdFZValNzUzNCU1ZpQnRvUEdXdlFGTDBKak9sQ2M3QlVIUC1zd2NHTlFvSUYzWG15ZkFGUElMTjhj?oc=5",
+        "publishedAt": "2026-09-24T12:26:41+01:00",
+        "source": "Screen Scotland",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNnR6ZWhNSlhQWFFzY0NNaHN0M1h2VGFWekZWaW9rclg2Wk03TUhZOW53aXJQQWpyczZ6cGpmTDR6aVRzcEVubXFPbHhScXhRMEFpS1Fya1d4MTNDUF8yNGd1NUszTlBuQUxPUHdLWERiMGhPaHpJM1Y0ODN2QTJlOTNGWXZscGpUOWdacG8xSV9pWm96YldnQkJteVBQWkVGWUN4aGE4RQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "South Wales furniture showroom celebrates 60 years with huge anniversary sale",
+        "title": "Volleyball England and Social Value Engine launch pioneering volunteer impact pilot",
         "summary": "",
         "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T09:35:00+01:00",
-        "source": "Wales Online",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS1hIUFh4RHdPXzUycGhfNUFKcWF6ZXdyR0dkZVlzeHo3MUpyVHh5X3BuU1BNZ2RzUE5rR05kcmtmU0ZoRnh2YkctOGtjSEZfNWtFN3pRbHhSSS1iaGZoUDBUYzdJbFJaVWFFc195ZnlHYjhWQzAtcjdBbE9yNk5kT2UyTFVZOGFxR2RZdFM2dkJmcXpRM1AtQmZGWnIzaTloNGNNUtIBqgFBVV95cUxNN012TlFhdms1eThBbWdOVEtwdTRzWGFiU0dUcEs5WEJsdlhXOVhrNHNfR3BDdDd1aGZGN1doVzFmZFlKNmktOHVtNTRsWGJNVUE3U2R0NWE0R21iZklna0g3eW8xNVhTeHdSaklYc05EX1FJeEh3ZnFlQnY4ZEtWbmRXbTd2TWN6TmZMZDlRelIxNEFKN3B4ekVyS0pYOVBMS1ZJYVZfcHlTQQ?oc=5",
+        "publishedAt": "2026-09-24T12:08:19+01:00",
+        "source": "Volleyball England",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSjY0ZnNLc0tzMFpXOWlZM0hyMGkxQUdZaTZOVWVqWU82ZUc2VFpzNmJWTHU5ZFV3cXJOMlA4Tmo2ZzdaZmt0SHFYRmtYcEVtdG8zODlfS2ZSbV8tR0V5dEUtRlA4Z01CWDRKSjczMmxJZ2JzSllVXzRsNHJ0RXBLRWZzQ0lJMFhqUl9PQUdUMEs5d2l3bXNJTjNFOHF1QnE4X0JNOVhtb2duRTMyVGVKcEJXcmJScTd6ODlFOVdHM1RydWYxUFBGMUZn?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Edinburgh student development shortlisted for national award",
+        "title": "Historic Transformations Dominate Shortlist for Scotland’s Prestigious Architectural Award",
         "summary": "",
         "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T09:21:03+01:00",
-        "source": "Project Scotland",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUExYdGR0OU1keFNiNUpOOU43NmgwN1ZXOElDTnN1cjVRaUtiZkF6QVBaTHZiX2thTDg1LTFMS29GNXg4dHVvX1Y5aHRCamhHNHdDY2FCdDNhdTZoX3dSZE1LSDhPSEVMRE5DNUpyZ3g4WTNCMUVGMGZ4a1M5NXB4cGpjRnJ6aHc1RG5hN29VV01JM1BiVW8yZg?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Restored historic buildings make Scottish architecture shortlist",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T06:27:31+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrLUVFMmVFSWs5ZTFzTTZ5V2kwdlo1ZnNmZHNPNm9KaHVKRUZYeGp6c05fOGRvZTJMR2xRaUNKYmRwVHAxOWFaZVJzRkdPOUI5Z2VKSGN6UUJod2VnNmc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Welsh composer ‘bowled over’ by surprise award from Sir Bryn Terfel",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T06:18:12+01:00",
-        "source": "Wales 247",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWG1CTlFucVBxRXhucDl2YUxfejhFLWxfV3k1TWdPMTFDOHowZWR5TUx0eEVsUExEZkVRbnBBY1hkTEg4MnJJV08ybGxITWVUN1lINUhrZDMwYVVOeDlSMWFwX0hyb0tvVlJWdkg3djBxU0FKYXJNcnNJSUdxVU16UE1xWm1Pb3NlMTJ0YlRMdTdpNzNNaFg0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Newcastle photographer's Matty Healy photo shortlisted for award",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T06:07:41+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFaWNkVk8xbWNnWE10dWtUTnF0eTZyc0ZObTN6MjFqS1htOV9PMEdRbDY2UGZybmtMUEVtTkl6aWhUVDVkcmNSYUtaMWVkRGNicWctc0VCbmhHd1E?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Paisley Central Library shortlisted for Scotland’s top building award",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T06:00:00+01:00",
-        "source": "Renfrewshire Gazette",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNS1dIWDI2MGhoUlRwb0tDRE5ieHZQVGt6YUJGQ1VNN2FJSkVEZW1DcTJXYVZicU4wY0owWjJqNkM4Nk5yX2U5SVdMcnJWZ190TDZhSl9xcFZVQ2QzUzJPTDZ6LURsRFdSTDZsM0NJUF80ZHNFalozdVVLRUtYV2FYZDRLLV9CUm9tUmxFTmZvZ0FBczg3TkpZVDRPcjVWLU1PckE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Royal composer Paul Mealor stunned by secret award from Sir Bryn Terfel",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T05:00:00+01:00",
-        "source": "Wrexham and Flintshire News, Sport, Events | The Leader",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVlJUSzlkbkh5dXZ6c1VhRVJwTFFBTTV6UGpwcjduX0RnYWVDeGdmVkJ0YWdJWDRBdXpQQndnbzNhV3hBNjhub1ZBYktFX0lfS1lFZVNpR3o1aDh2dzI4SWVXSjZJdnBlckFvM1k1VWcyTDV2ZzBiMnptb0c1c1JlUmdXbEpCSTBBeWZJMjl0b3pXN2hCTV94dHV3Yw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Jamaica celebrates that its reparations case against Britain referred to final appeals court",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T03:34:51+01:00",
-        "source": "The Washington Post",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRUJDMzhGUUY2YmlELXFCNTR6djl6TVJ6am1JWmVVVm54Uk1DOVhZTFNRMVJLWnI4QjhBd09Ra1NKOURDMElEMC02WWd4WGZYRGVXQUFYdG9ZcmgwbTl6ejFTYmFtNzA4MHRCNklHM194blR1dkpBM3J2cWpVUm1TcUtXOHZ2dVRQa0xHUFlUeGJKb2VLc0xiWk1HWUFKLTN4VTVjSnJSZTMxTkdsOWJJR1pJZ1FJT2dqc016SXBvX0M3Z09VaUVmNlJScnBvTktsbWVOb1JFT2Y2cUlROE5kWS1GeXU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Wood Leisure shortlisted for major award as family business celebrates 45 years",
-        "summary": "",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T17:00:58+01:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT1EzMWhVN243cDBPUGplQllXNnRkZWwzTktuSlFDLWUxclpmZ0ttUlIxeFZaUXVoMmhuM2hFbzVWSW9uWFNMdW9TN3V5TUowY1prMFlqSnhrVlRPeXctaHBYang2Rno4dlNBS1NOY3lqYnUyT1UtbXR1NVgwcFl0Y05xUFRJTGJFY1lLS0RJd3dXSHB4bi1B?oc=5",
+        "publishedAt": "2026-09-24T11:57:39+01:00",
+        "source": "freeyork",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWWVPbXJQN1R2ZGgxRl9rdDNZNkFoTWpiTUxGWW5vWmJYRmFXWURQUm93NDJ0V3FNMHFpVllEelNpYXpXNWF6Z1lfWFhnLVlQdElZTkEtRnhqTndqWG8zMVhBNy05MVB1eF91NTBHcmJMd2FIUkQtcUFyeWVuWjNiaHNOQm4wbkZGcHY4RDJB?oc=5",
         "contentType": "article"
       }
     ],
@@ -995,6 +967,15 @@
         "contentType": "article"
       },
       {
+        "title": "Introducing Gemini 3.8 Live with Live Avatar",
+        "summary": "",
+        "meta": "Thu 24 Sep",
+        "publishedAt": "2026-09-24T17:20:39+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+        "contentType": "article"
+      },
+      {
         "title": "Advancing Private AI Compute with secure, server-side memory",
         "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
         "meta": "Wed 23 Sep",
@@ -1013,20 +994,11 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI’s A.I. Tried Breaching 4 Other Targets, Without Prompting",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T03:50:25+01:00",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZmdNdEU4T2dVMHUwV05rNkZjM0hrcWZRWUlLOTBoOU9BLVl1VTVCR3c5MkQ5QTRkSHFTb0dFUU1lUW56S2R5X3ZRaUR3UFViaGJuTm5FRk5LTmJXanFoUWVEbklfdVI3azB6dEMzbXdwUnhNZUd0UFJDWjFVS21wOXdzRQ?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Measurements for understanding the pace of AI development inside frontier labs",
         "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T11:08:40+01:00",
-        "source": "anthropic.com",
+        "meta": "Fri 25 Sep",
+        "publishedAt": "2026-09-25T02:15:57+01:00",
+        "source": "Anthropic",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hSlNaZU5CMXdjOERiMTltcEVxMXduUXVrT1UtSExlUGlUUHFCc2huOVM0NEY0cmhCMVF6X0o2QjMwUUZOQkhuSGlHVjFlaWdKelR3ZTEzUV9SRzRIdkxhV3RfQ0N2OUI5U214a0RqZjh3c2MxUktr?oc=5",
         "contentType": "article"
       }
@@ -1052,7 +1024,7 @@
         "venue": "surbiton-town-centre",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-24"
+        "verifiedAt": "2026-09-25"
       },
       {
         "id": "orleans-natty-2026",
@@ -1097,7 +1069,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-24"
+        "verifiedAt": "2026-09-25"
       },
       {
         "id": "kempton-steam-oct-2026",
@@ -1119,7 +1091,7 @@
         "venue": "kempton-steam",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-24"
+        "verifiedAt": "2026-09-25"
       },
       {
         "id": "transportfest-2026",
@@ -1141,7 +1113,7 @@
         "venue": "brooklands",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-24"
+        "verifiedAt": "2026-09-25"
       },
       {
         "id": "hampton-halloween-2026",
@@ -1170,26 +1142,50 @@
   },
   "watchAlternatives": [
     {
-      "title": "Geordie Coppers",
-      "summary": "Sgt Craig is far from amused by the arrival in town of online adult star Bonnie Blue and her touring bus, concerned she is proving a distraction to the local students. PC Siobhan is…",
+      "title": "The Blame",
+      "summary": "While investigating a murder, DI Emma Crane and DI Tom Radley uncover serious misconduct within Wakestead Police Station.",
+      "meta": "ITVX · Available since Sun 20 Sep",
+      "source": "ITVX",
+      "url": "https://www.itv.com/watch/the-blame/10a3705/",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/642/1605635.jpg",
+      "artworkAlt": "The Blame programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-20",
+      "showId": 86463,
+      "episodeId": 3741445,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 294.8
+    },
+    {
+      "title": "999: What Happened Next",
+      "summary": "A woman preparing for a Christmas night out is brutally stabbed in her own home. And detectives pursue an international burglary gang who are raiding affluent Surrey homes.",
       "meta": "Channel 4 · Available since Mon 21 Sep",
       "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/geordie-coppers",
+      "url": "https://www.channel4.com/programmes/999-what-happened-next",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603848.jpg",
-      "artworkAlt": "Geordie Coppers programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527705.jpg",
+      "artworkAlt": "999: What Happened Next programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-09-21",
-      "showId": 94471,
-      "episodeId": 3763724,
+      "showId": 90023,
+      "episodeId": 3763600,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 298.5
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 292.6
     },
     {
       "title": "Panorama",
@@ -1208,30 +1204,30 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 277.5
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 269.5
     },
     {
       "title": "Police Interceptors",
-      "summary": "The driver of a hatchback being pursued causes mayhem when he crashes into a bollard, exposing live wires and shorting out the power at the local boating lake. In Wellingborough, a…",
-      "meta": "5 · Available since Mon 21 Sep",
+      "summary": "A speeding driver tries all sorts of tricks to lose pursuing officer, from last-minute swerves at junctions and running red lights to accelerating and then suddenly braking. In Corby, a…",
+      "meta": "5 · Mon 28 Sep, 8pm",
       "source": "5",
       "url": "https://www.channel5.com/show/police-interceptors",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/593/1484726.jpg",
       "artworkAlt": "Police Interceptors programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-21",
+      "airdate": "2026-09-28",
       "showId": 3607,
-      "episodeId": 3769262,
+      "episodeId": 3769263,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 261.6
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 265.6
     },
     {
       "title": "Paul C. Brunson: Red Flag",
@@ -1250,31 +1246,30 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 255.6
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 247.6
     },
     {
-      "title": "Blue Lights",
-      "summary": "As Gerry's murder trial begins, Mo's unstable mental health ignites a struggle between the state and justice. Shane has a tense stand-off with Lee.",
-      "meta": "BBC iPlayer · Tue 29 Sep, 6am",
-      "source": "BBC iPlayer",
-      "url": "https://www.bbc.co.uk/programmes/p0f2cxpr",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474873.jpg",
-      "artworkAlt": "Blue Lights programme artwork",
+      "title": "How the Tudors Lost Their Heads",
+      "summary": "Robert Devereux, Earl of Essex, was Elizabeth I's golden boy: a charming, reckless war hero. He stood at the Queen's side as she rallied troops against the Spanish Armada. But just twelve…",
+      "meta": "National Geographic · Sun 27 Sep, 8pm",
+      "source": "National Geographic",
+      "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
+      "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-29",
-      "showId": 54401,
-      "episodeId": 3765867,
+      "airdate": "2026-09-27",
+      "showId": 94035,
+      "episodeId": 3731966,
       "contentType": "tv-pick",
-      "programmeType": "Scripted",
+      "programmeType": "Documentary",
       "genres": [
-        "Drama",
-        "Crime"
+        "History"
       ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 253.9
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 240.3
     },
     {
       "title": "Hitler's Last Stand",
@@ -1296,35 +1291,36 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 237.5
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 229.5
     },
     {
-      "title": "How the Tudors Lost Their Heads",
-      "summary": "Robert Devereux, Earl of Essex, was Elizabeth I's golden boy: a charming, reckless war hero. He stood at the Queen's side as she rallied troops against the Spanish Armada. But just twelve…",
-      "meta": "National Geographic · Sun 27 Sep, 8pm",
-      "source": "National Geographic",
-      "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
-      "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
+      "title": "MobLand",
+      "summary": "With Conrad's self-control slipping, Maeve make plans of her own while Jan hits Harry with a hard truth. Smelling blood, Frankie and Tattersall circle like sharks.",
+      "meta": "Paramount+ · New today",
+      "source": "Paramount+",
+      "url": "https://www.paramountplus.com/shows/mobland/",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604671.jpg",
+      "artworkAlt": "MobLand programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-27",
-      "showId": 94035,
-      "episodeId": 3731966,
+      "airdate": "2026-09-25",
+      "showId": 75026,
+      "episodeId": 3704057,
       "contentType": "tv-pick",
-      "programmeType": "Documentary",
+      "programmeType": "Scripted",
       "genres": [
-        "History"
+        "Drama",
+        "Crime"
       ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 232.3
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 182.0
     },
     {
       "title": "Star Trek: Strange New Worlds",
       "summary": "A time ripple damages the Enterprise, forcing young and old Uhura to cooperate and fix the timeline.",
-      "meta": "Paramount+ · New today",
+      "meta": "Paramount+ · Available since yesterday",
       "source": "Paramount+",
       "url": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/",
       "badge": "Sci-fi",
@@ -1342,31 +1338,8 @@
         "Science-Fiction"
       ],
       "interestLane": "sci-fi",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 192.0
-    },
-    {
-      "title": "MobLand",
-      "summary": "With Conrad's self-control slipping, Maeve make plans of her own while Jan hits Harry with a hard truth. Smelling blood, Frankie and Tattersall circle like sharks.",
-      "meta": "Paramount+ · New tomorrow",
-      "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/mobland/",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604671.jpg",
-      "artworkAlt": "MobLand programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-25",
-      "showId": 75026,
-      "episodeId": 3704057,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 174.0
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 180.0
     },
     {
       "title": "Winter",
@@ -1388,8 +1361,8 @@
         "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 167.8
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 175.8
     },
     {
       "title": "Sacrifice",
@@ -1412,32 +1385,30 @@
         "Legal"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 154.6
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 162.6
     },
     {
-      "title": "Lioness",
-      "summary": "Kyle's chase sparks deadly fallout as Joe uncovers a wider plot.",
-      "meta": "Paramount+ · Available since Sun 20 Sep",
-      "source": "Paramount+",
-      "url": "https://www.paramountplus.com/shows/lioness/",
+      "title": "Kill Jackie",
+      "summary": "Jackie Price has been living a luxurious existence for the last twenty years – travelling the world, selling fine art using sophisticated tax loopholes, and, above all, trying to stay…",
+      "meta": "Prime Video · New fri 2 oct",
+      "source": "Prime Video",
+      "url": "https://www.primevideo.com",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/642/1605519.jpg",
-      "artworkAlt": "Lioness programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/637/1594286.jpg",
+      "artworkAlt": "Kill Jackie programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-20",
-      "showId": 50415,
-      "episodeId": 3638310,
+      "airdate": "2026-10-02",
+      "showId": 82618,
+      "episodeId": 3705520,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
-        "Drama",
-        "Thriller",
-        "Espionage"
+        "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-24",
-      "preferenceScore": 139.0
+      "generatedDate": "2026-09-25",
+      "preferenceScore": 148.8
     }
   ]
 }
