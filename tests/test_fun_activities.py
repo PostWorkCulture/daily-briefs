@@ -6,9 +6,23 @@ from scripts.fun_activities import eligible,refresh_activities
 
 class FunTests(unittest.TestCase):
     def setUp(self):
-        import json
-        from scripts.fun_activities import ROOT
-        self.item=json.loads((ROOT/'data/fun-catalog.json').read_text())[0]
+        import json, tempfile
+        from pathlib import Path
+        self.item=dict(id='fixture-event', title='Fixture event', location='Teddington',
+                       summary='Test-only event', when='October 2026', ages='Families',
+                       cost='Free', tags=['Events'], source='Test fixture',
+                       url='https://www.hrp.org.uk/test-event/', evidence=['Fixture event'],
+                       startDate='2026-10-01', endDate='2026-10-31',
+                       verifiedAt='2026-09-24', contentType='activity')
+        temporary=tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.fixture_root=Path(temporary.name)
+        (self.fixture_root/'data').mkdir()
+        (self.fixture_root/'data/fun-catalog.json').write_text(json.dumps([self.item]))
+        # Cached dates deliberately differ from the catalogue to prove preservation.
+        cached=dict(self.item, verifiedAt='2026-09-25')
+        for profile in ('pete','sofia'):
+            (self.fixture_root/f'data/{profile}.json').write_text(json.dumps({'sections':{'Fun':[cached]}}))
     def test_expired_events_and_stale_sources_rejected(self):
         item=dict(self.item,verifiedAt='2026-11-02')
         self.assertFalse(eligible(item,date(2026,11,2)))
@@ -19,15 +33,18 @@ class FunTests(unittest.TestCase):
         self.assertFalse(eligible(dict(self.item,url='https://untrusted.example/activity'),date(2026,9,24)))
     def test_outage_keeps_recent_items_without_renewing_dates(self):
         def unavailable(*args,**kwargs):raise requests.Timeout()
-        items=refresh_activities(date(2026,9,25),fetch=unavailable)
-        self.assertTrue(items)
-        self.assertTrue(all(i['verifiedAt']=='2026-09-24' for i in items))
-        self.assertEqual(refresh_activities(date(2026,10,10),fetch=unavailable),[])
+        with patch('scripts.fun_activities.ROOT', self.fixture_root):
+            items=refresh_activities(date(2026,9,26),fetch=unavailable)
+            self.assertEqual(len(items),1)
+            self.assertEqual(items[0]['verifiedAt'],'2026-09-25')
+            self.assertEqual(len(refresh_activities(date(2026,10,2),fetch=unavailable)),1)
+            self.assertEqual(refresh_activities(date(2026,10,3),fetch=unavailable),[])
     def test_source_mismatch_does_not_fall_back(self):
         class Response:
             text='<html>Page removed</html>'
             def raise_for_status(self):pass
-        self.assertEqual(refresh_activities(date(2026,9,24),fetch=lambda *a,**kw:Response()),[])
+        with patch('scripts.fun_activities.ROOT', self.fixture_root):
+            self.assertEqual(refresh_activities(date(2026,9,26),fetch=lambda *a,**kw:Response()),[])
     def test_selection_limits_repeated_venues_and_regular_outings(self):
         from scripts.fun_activities import select_activities
         events=[dict(self.item,id=str(n),venue='same') for n in range(4)]

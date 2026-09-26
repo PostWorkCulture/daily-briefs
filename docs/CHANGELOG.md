@@ -1,3 +1,8 @@
+## 26 September 2026: Repair morning refresh regression fixture
+
+- The Fun outage test read changing published data but expected a fixed check date, blocking the 05:30 refresh after yesterday’s successful edition.
+- Isolate Fun tests with temporary catalogue/profile fixtures; explicitly test preservation of a newer cached date and both sides of the seven-day fallback boundary. Production freshness and publication guards remain intact.
+
 ## 24 September 2026: Simplify Fun to this month and next
 
 - Removed all Fun filter controls for both profiles.
