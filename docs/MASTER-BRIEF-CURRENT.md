@@ -37,6 +37,8 @@ Daily Briefs is an exciting, futuristic daily-use morning brief. Combine FABLE O
 - No Anthropic/OpenAI API dependency or paid API credits.
 - Static responsive GitHub Pages app with JSON data and Python/GitHub Actions refresh.
 - Target the full morning refresh for 05:30 `Europe/London` every day. Use GMT/BST-safe UTC triggers, retry at 30-minute intervals while today's edition is still stale, and skip the remaining retries as soon as both profiles carry today's publication date.
+- Maintain the independent ChatGPT `Daily Brief Recovery` automation (ID `6a93c7cea924819198568ba6b0ca52cd`) enabled at 05:30 Europe/London, then hourly through 10:30. It checks both live publication dates, triggers a missing refresh, inspects failures and verifies deployment. Never pause it after success, no-op or failure.
+- GitHub cron and external scheduling are best-effort: do not promise zero failures or exact-time delivery. Recovery must preserve content validation, avoid duplicate active runs, and report unresolved blockers without relabelling stale data.
 - Never commit private calendar credentials.
 - Mobile first. Chromebook/desktop must have an intentional larger-screen layout.
 - Always use real, clickable links. Never invent data, URLs, sources, or test results.
