@@ -1,3 +1,9 @@
+## 27 September 2026: Restore independent daily delivery recovery
+
+- At 07:46 London, no morning GitHub run existed for today; the independent recovery automation was disabled. Yesterday’s regression repair remained in place.
+- Re-enabled the existing recovery automation at 05:30 London with hourly checks through 10:30, live-site verification for both profiles, duplicate-run avoidance and explicit instructions to remain enabled.
+- Triggered today’s recovery. No content validations or UI requirements were weakened. GitHub scheduler non-delivery cause is not established.
+
 ## 26 September 2026: Repair morning refresh regression fixture
 
 - The Fun outage test read changing published data but expected a fixed check date, blocking the 05:30 refresh after yesterday’s successful edition.
