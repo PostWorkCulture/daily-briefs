@@ -17,10 +17,10 @@
     "sequence": 37
   },
   "weather": {
-    "temp": "15°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
-    "currentRainChance": 40,
+    "temp": "20°",
+    "summary": "Light rain",
+    "condition": "Light rain",
+    "currentRainChance": 70,
     "daily": [
       {
         "date": "2026-09-27",
@@ -28,33 +28,33 @@
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 30,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-09-28",
-        "high": 19,
+        "high": 20,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-09-29",
-        "high": 25,
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 60,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-09-30",
-        "high": 24,
+        "high": 23,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Light Rain",
+        "condition": "Light Rain",
         "rainChance": 70,
         "source": "Met Office"
       },
@@ -64,7 +64,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -73,7 +73,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Light Rain expected · rain chance around 30%",
+      "detail": "Light Rain expected · rain chance around 90%",
       "source": "Met Office"
     },
     "source": "Met Office",
