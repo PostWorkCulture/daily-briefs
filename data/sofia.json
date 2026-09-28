@@ -17,14 +17,14 @@
     "sequence": 38
   },
   "weather": {
-    "temp": "18°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
-    "currentRainChance": 10,
+    "temp": "17°",
+    "summary": "Overcast",
+    "condition": "Overcast",
+    "currentRainChance": 20,
     "daily": [
       {
         "date": "2026-09-28",
-        "high": 19,
+        "high": 18,
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
@@ -37,7 +37,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -53,26 +53,26 @@
         "date": "2026-10-01",
         "high": 21,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-02",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-10-03",
-        "high": 21,
+        "high": 20,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
