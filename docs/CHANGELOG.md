@@ -1,3 +1,9 @@
+## 28 September 2026: Keep women's result reports out of men's match data
+
+- A trusted Chelsea–Arsenal Women's Super League report was misclassified as the men's latest result and correctly stopped publication because it lacked the six protected match fields.
+- Added explicit WSL/UWCL competition signals and a fixture-window guard: a report inside a confirmed gap between the men's last result and next fixture is ignored, while a late report matching the real last result is retained.
+- Added regression coverage for the WSL marker, the confirmed men's fixture gap and late same-match reports. The protected score, scorers, competition, summary, kickoff and stadium publication gate remains unchanged.
+
 ## 27 September 2026: Restore independent daily delivery recovery
 
 - At 07:46 London, no morning GitHub run existed for today; the independent recovery automation was disabled. Yesterday’s regression repair remained in place.
