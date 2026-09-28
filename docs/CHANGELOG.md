@@ -1,3 +1,12 @@
+## 28 September 2026: Align morning refresh to 05:00 UK time for pre-05:30 publication
+
+- Pete requested that the daily brief is refreshed, published, and ready before waking up at 5:30am, without late morning execution.
+- Aligned the morning freshness gate in `scripts/refresh_gate.py` to 05:00 Europe/London time.
+- Updated `.github/workflows/morning-refresh.yml` scheduled cron triggers to `0 4-6 * * *` and `30 4-6 * * *`, triggering at 04:00 UTC in BST (05:00 London) and 05:00 UTC in GMT (05:00 London), with half-hour backup triggers through 06:30 UTC.
+- Capped recovery retry opportunities at 06:30 UTC, eliminating later runs through 08:30 UTC / 10:30 BST once the brief is published.
+- Added regression tests in `tests/test_refresh_gate.py` verifying the 05:00 London gate threshold, summer and winter UTC boundaries, and updated workflow cron specifications.
+- Updated master specification in `docs/MASTER-BRIEF-CURRENT.md` to version 5.8.
+
 ## 28 September 2026: Keep women's result reports out of men's match data
 
 - A trusted Chelsea–Arsenal Women's Super League report was misclassified as the men's latest result and correctly stopped publication because it lacked the six protected match fields.
