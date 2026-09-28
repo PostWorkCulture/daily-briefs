@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Monday, 28 September 2026 · refreshed 5:42am",
+  "updatedLabel": "Monday, 28 September 2026 · refreshed 7:15pm",
   "worldFact": {
     "id": "kyoto-gion-sacred-messenger-floats",
     "editorialPriority": "human-first",
@@ -17,14 +17,23 @@
     "sequence": 38
   },
   "weather": {
-    "temp": "20°",
+    "temp": "18°",
     "summary": "Cloudy",
     "condition": "Cloudy",
-    "currentRainChance": 4,
+    "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-09-28",
-        "high": 20,
+        "high": 19,
+        "low": null,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-09-29",
+        "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -32,20 +41,11 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-09-29",
-        "high": 27,
-        "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-09-30",
         "high": 24,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 80,
         "source": "Met Office"
       },
@@ -55,15 +55,15 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-02",
         "high": 21,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
@@ -82,13 +82,13 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Overcast · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -177,20 +177,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "AMAZON PRIME DAY",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-06T00:00:00+01:00",
-      "end": "2026-10-07T00:00:00+01:00",
-      "date": "2026-10-06",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "12d8e92cu07t8kl7ucnf7i0u86",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Dad - Gazette End",
       "summary": "",
       "url": "",
@@ -203,6 +189,20 @@
       "colorId": "2",
       "googleEventId": "ckqj8o9j75j3abb674pm6b9kcdi32bb161j3gb9g6os3achk6oq3ge9gc4",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "AMAZON PRIME DAY",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-06T00:00:00+01:00",
+      "end": "2026-10-07T00:00:00+01:00",
+      "date": "2026-10-06",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "12d8e92cu07t8kl7ucnf7i0u86",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Summer's b-day party",
@@ -478,12 +478,30 @@
     "played": null,
     "news": [
       {
+        "title": "Arsenal suffer double injury blow as international break woes mount",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T13:45:56+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNWlIN05hcEpIdVdoZGtwOW1HNHlrRG0xYTBSNVBpX0tBNlZXbW9XYXlYOWpOZE01QndHcVVfaF9kWlQyRlRsOWpTOWotRGJaRUdEVE1fdm5ZSDhERk9Yak9DZlRkWXk3ZW5GTUFUa09fSGlVNEJFaUdteWEzeEUtRUxoNndxMS1SMUp6UW9Nbm01MWxRWV9GWQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Match report: Chelsea 1-0 Arsenal | News | Official Site",
         "summary": "",
         "meta": "Sun 27 Sep",
         "publishedAt": "2026-09-27T18:30:00+01:00",
         "source": "Chelsea",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS1hNbDZ6SE5USlJVMm1rZ1VEMlY1TGJvc3I1eGxqamZVZlFKbzc5TXBqeEhIVXFZd1NZMzFqazBJaENlZlJKU2xyWi1YLTROa29rWW1sNTh0aWlrRXZQSnJMQ3c0anhyU29rUm51dXFZWjJlMUk1aTVtYjNkdUdjR2FsVl9fZVNPUFBRLXVmcXR6c0JjZ3JGcUh3?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Away hospitality packages available for Arsenal fixture",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T19:01:45+01:00",
+        "source": "Fleetwood Town Football Club",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTlNDX2lKSVh2bUtRa0ZCT3dOYlBoZmExNVMtWDYta2dVeDllV0xrQXBaNjNXbkYwQmJKZG0wOXZQWjFfSHVTbEFZc1B3SHhYb1U2U0tWZGhUWVVNVEhmT1ZHSUxOcXVUUExUOG5MV0ZMVE92aHdkTlE4a0pSd2JIaVV5TWRuVHkxTnlWMXBtM2FMUQ?oc=5",
         "contentType": "article"
       },
       {
@@ -496,12 +514,12 @@
         "contentType": "article"
       },
       {
-        "title": "Arsenal reminded they have 'one of the best strikers in Europe' amid Havertz injury",
+        "title": "Aaron Ramsdale: What has gone wrong for ex-Arsenal goalkeeper at Southampton?",
         "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T16:49:50+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ3BQNmpHWWgxbWdjSDdka2M0OHpaRTBOZFc0b21FSnliV0YxLUs3QTZzSVh3Ml9qeUFQN1NEaE9HSXBmU1NCT3ZJQWFxX0ZPSmRwYW9oQ2tPVEdCMkc3ZDRpRE8xZUxXZ3lZcnI3WTJqdXh5M1AydTExQ1hCSFdEMmtpUGR2YVptb3RZVmNwOWItcUtp?oc=5",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T09:10:08+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlN3paSkpvclF6T3N5VHhNVEU1Nk9JSkRHYk1kOW5ybXF5Ym1tal9xS1JTa0o4RHRnaEVEbnpjRGtMeFo4SFZvLUo2cTJrSU9TNzhNNUFRVkVZSEg1U2dkWnlaWVR1RFFlVHc?oc=5",
         "contentType": "article"
       }
     ],
@@ -538,7 +556,7 @@
         "title": "Mikel Arteta set to sign new Arsenal contract",
         "summary": "",
         "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T19:05:49+01:00",
+        "publishedAt": "2026-09-22T19:05:41+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZUdGUVFCVGVIMnhmRHZPRjdNX09mcWU5dGV4bUQ5NUhkOEoxYmxwLWhQcFJ4ZVB4YUd3REpBOGJFSEk3eklpWlFEOV9jTmZkaUJEbGd1M3FzR0dsUWY3U3hKUnVUSzdzcnV6dGYzWmVhcWlHaU1xdXdURnIxUlJqeDEyaWtZazdKOWVkbUlnbmVpcGNfb2pXT1VoV1hKR3FSQzR1WkdEODk2NFVUWG40RDYtbFBkenc?oc=5",
         "contentType": "transfer-update",
@@ -558,7 +576,7 @@
         "title": "Transfer Talk: Would a loan move for Arsenal's Max Dowman be a good option?",
         "summary": "",
         "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T17:22:27+01:00",
+        "publishedAt": "2026-09-22T17:22:21+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdzFyeUFKV2JFT19SaUdJOVNJREdKVzIydDZmdjVkMlVpVzJfY1BwUmJsMVJsRzdvMFp3T191cUhiekY4bFZpRkotbmFjeHFsUzZtbllRcXhEZ3JFUy1TaWRHVGZSdWNLdWR2Nmhpa2ZMRGF1NnI5SjRmTElpaFBKQnY4SjJrdTgwMVNUd1ZFRW1ja3NYd1ZKRWQ1S01PWmEzQzFqT1pGSFNmd3dmbDRhR3dIWDNLbE1JcHhHRXNkSQ?oc=5",
         "contentType": "transfer-update",
@@ -576,6 +594,20 @@
       }
     ],
     "transferRumours": [
+      {
+        "title": "You never see Odegaard this angry. He knows full well Bernardo has gone out purely to hurt him. Understandably furious.",
+        "summary": "",
+        "meta": "Sun 27 Sep",
+        "publishedAt": "2026-09-27T22:30:35+01:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4MDB4aVpPbUlrekdWSTNjUnAwaVROVk5rWXNCMks3TDdfQ0o4T2ZoeGlIenROUWpCUms0LWVMeGpJQTBmcVUxN25uLUdadHQ5Z2Z4R3lHM1l2SDlzMkRmLVFablI?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
       {
         "title": "State of that challenge from Bernardo on Odegaard. Ball had long gone. Just clearly went out to hurt him.",
         "summary": "",
@@ -631,60 +663,46 @@
         "sourceType": "X",
         "confidence": "Arsenal specialist",
         "sourceUrl": "https://x.com/charles_watts"
-      },
-      {
-        "title": "🚨 Kai Havertz to leave Germany national team camp after suffering hamstring injury in 1st half of Nations League draw vs Netherlands. Optimism issue sustained by 27yo Arsenal forward not serious but returning to #AFC for assessment/recovery @TheAthletic",
-        "summary": "",
-        "meta": "Fri 25 Sep",
-        "publishedAt": "2026-09-25T10:01:53+01:00",
-        "source": "David Ornstein",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjN1lheEc3RUtaMlFrUTlUTTBuTjhMT3diS1pFOGI5aTRJM19SUUFfc1ZhNTdXZFktSTZVWWo5YnlDbk00X3NQX3lFMUZGbVRYNDB3T2RlZk9nUnJpQnVyMTRMank1QQ?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Tier-one reporter",
-        "sourceUrl": "https://x.com/David_Ornstein"
       }
     ]
   },
   "lead": {
-    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-    "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-    "meta": "Fri 25 Sep",
-    "publishedAt": "2026-09-25T20:00:00+01:00",
+    "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+    "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+    "meta": "Mon 28 Sep",
+    "publishedAt": "2026-09-28T08:00:00+01:00",
     "source": "OpenAI",
-    "url": "https://openai.com/index/proaction",
+    "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-      "meta": "Fri 25 Sep",
-      "publishedAt": "2026-09-25T20:00:00+01:00",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+      "meta": "Mon 28 Sep",
+      "publishedAt": "2026-09-28T08:00:00+01:00",
       "source": "OpenAI",
-      "url": "https://openai.com/index/proaction",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Match report: Chelsea 1-0 Arsenal | News | Official Site",
+      "title": "Arsenal suffer double injury blow as international break woes mount",
       "summary": "",
-      "meta": "Sun 27 Sep",
-      "publishedAt": "2026-09-27T18:30:00+01:00",
-      "source": "Chelsea",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS1hNbDZ6SE5USlJVMm1rZ1VEMlY1TGJvc3I1eGxqamZVZlFKbzc5TXBqeEhIVXFZd1NZMzFqazBJaENlZlJKU2xyWi1YLTROa29rWW1sNTh0aWlrRXZQSnJMQ3c0anhyU29rUm51dXFZWjJlMUk1aTVtYjNkdUdjR2FsVl9fZVNPUFBRLXVmcXR6c0JjZ3JGcUh3?oc=5",
+      "meta": "Mon 28 Sep",
+      "publishedAt": "2026-09-28T13:45:56+01:00",
+      "source": "London Evening Standard",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNWlIN05hcEpIdVdoZGtwOW1HNHlrRG0xYTBSNVBpX0tBNlZXbW9XYXlYOWpOZE01QndHcVVfaF9kWlQyRlRsOWpTOWotRGJaRUdEVE1fdm5ZSDhERk9Yak9DZlRkWXk3ZW5GTUFUa09fSGlVNEJFaUdteWEzeEUtRUxoNndxMS1SMUp6UW9Nbm01MWxRWV9GWQ?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "New nail salon to replace former hardware store in Teddington",
+      "title": "How Teddington residents can find checked house and pet sitters",
       "summary": "",
-      "meta": "Sun 27 Sep",
-      "publishedAt": "2026-09-27T17:00:02+01:00",
+      "meta": "Mon 28 Sep",
+      "publishedAt": "2026-09-28T12:30:00+01:00",
       "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVHd1UmpmMjRmdURMa01nODNfNzBEbWNrMkgwUC0zUkNQeVhaNGtJdjNKQjZhSHQ2c2RaMXVQTERkZ3FxdlVpLVoxUG1JMlZnZU4ySXN5TUVkM3Z2WFNSYl8yVTg0QVRvMEJ6aEFreWxDclJaLVY0ZHBvNmxDamNBT1BqMXNTU2dXanRudlhJM0xpeHdiaUdBUGlVS2YzbzA0d0lMQXd0bzZSTFhyb1F5MUJB?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXdLbGRtaXVrS196ZFhoMUE5SU5iWFBCUXBuaVFvWmNsYWFiNFZxam13S21ZRjhLWEJNZ011eXFBM0tjaGl2WjE4bzFXNWdGSnZoUGFZaGYtQ1RtSktUblo1R0tGOFNUU2dCbE9TdnBBZmg0bzFYeGY4cFRvU2RISDAzeEpTLVpnUUlQUzhIdUdCTUt3Z3llaEotNzF2Y3RsNlFwdmtqQmRyRlFYTEozM0NZQjdWTUFldld1S0VwUQ?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -730,7 +748,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-28",
-      "preferenceScore": 368.6
+      "preferenceScore": 368.7
     },
     {
       "title": "Crime Scene Raw",
@@ -739,7 +757,7 @@
       "source": "Sky Crime",
       "url": "https://www.tvmaze.com/episodes/3772885/crime-scene-raw-1x05-aaron-friar",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608183.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608353.jpg",
       "artworkAlt": "Crime Scene Raw programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-09-27",
@@ -750,7 +768,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-28",
-      "preferenceScore": 322.7
+      "preferenceScore": 322.8
     },
     {
       "title": "Blood Legacy",
@@ -793,11 +811,20 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-28",
-      "preferenceScore": 347.3
+      "preferenceScore": 347.6
     }
   ],
   "sections": {
     "AI": [
+      {
+        "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+        "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T08:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+        "contentType": "article"
+      },
       {
         "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
         "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
@@ -823,15 +850,6 @@
         "publishedAt": "2026-09-23T14:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-        "contentType": "article"
-      },
-      {
-        "title": "Sam Altman’s remarks at the United Nations Security Council",
-        "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
         "contentType": "article"
       },
       {
@@ -880,16 +898,25 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI halts training of latest models as reports mount of AI agents going rogue",
+        "title": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
         "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T11:01:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWZCRDBDd0E2YnBTeGJZNXhZLURBOXlJZTR2dGhwY0c1bWlNX3N6MkhWcVRiSF9oNjJLWmJfY0Nwcy05SFB0RGJ2ckhaNjdueWFxMjdnWHhodFM1MEJkRXVnUzJZTTJidXdGckk1ZkI0RDZRNmVQQXYyTmxtbnJKZFdMNFRMbFhwcWY5RHdFeGpIY3prOVo1RWstRWhPVVRldXgyV1E1Q2FaOEZxSC1rTld2eFFHWnJTcXk2WmgxRG15a0ViblgzYzh3TQ?oc=5",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T12:32:00+01:00",
+        "source": "WIRED",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0k5TC1vcnZBVEctaGxwT1VMVmtpQ2tWZzljUjBjOTlSazd1UUZtOFQ5Z0xLcVhtMXdBazNTWlhRZ3JySHBJS1ozdUhQQkpRdUhWVS1wcG5hWlFIVTZCa3dBXzFuU1BBZXh0WnF2Vm9tUFBRUmZ4R3VkcmZ0WGdNeUhXRS1icXNWV1hmQktNLUN6aTJQenZvTHBNUzh6akREMHBsS0pPVDhOQ1RSTUE?oc=5",
         "contentType": "article"
       }
     ],
     "Arsenal news": [
+      {
+        "title": "Arsenal suffer double injury blow as international break woes mount",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T13:45:56+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNWlIN05hcEpIdVdoZGtwOW1HNHlrRG0xYTBSNVBpX0tBNlZXbW9XYXlYOWpOZE01QndHcVVfaF9kWlQyRlRsOWpTOWotRGJaRUdEVE1fdm5ZSDhERk9Yak9DZlRkWXk3ZW5GTUFUa09fSGlVNEJFaUdteWEzeEUtRUxoNndxMS1SMUp6UW9Nbm01MWxRWV9GWQ?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "Match report: Chelsea 1-0 Arsenal | News | Official Site",
         "summary": "",
@@ -897,6 +924,15 @@
         "publishedAt": "2026-09-27T18:30:00+01:00",
         "source": "Chelsea",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS1hNbDZ6SE5USlJVMm1rZ1VEMlY1TGJvc3I1eGxqamZVZlFKbzc5TXBqeEhIVXFZd1NZMzFqazBJaENlZlJKU2xyWi1YLTROa29rWW1sNTh0aWlrRXZQSnJMQ3c0anhyU29rUm51dXFZWjJlMUk1aTVtYjNkdUdjR2FsVl9fZVNPUFBRLXVmcXR6c0JjZ3JGcUh3?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Away hospitality packages available for Arsenal fixture",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T19:01:45+01:00",
+        "source": "Fleetwood Town Football Club",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTlNDX2lKSVh2bUtRa0ZCT3dOYlBoZmExNVMtWDYta2dVeDllV0xrQXBaNjNXbkYwQmJKZG0wOXZQWjFfSHVTbEFZc1B3SHhYb1U2U0tWZGhUWVVNVEhmT1ZHSUxOcXVUUExUOG5MV0ZMVE92aHdkTlE4a0pSd2JIaVV5TWRuVHkxTnlWMXBtM2FMUQ?oc=5",
         "contentType": "article"
       },
       {
@@ -909,16 +945,80 @@
         "contentType": "article"
       },
       {
-        "title": "Arsenal reminded they have 'one of the best strikers in Europe' amid Havertz injury",
+        "title": "Aaron Ramsdale: What has gone wrong for ex-Arsenal goalkeeper at Southampton?",
         "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T16:49:50+01:00",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T09:10:08+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlN3paSkpvclF6T3N5VHhNVEU1Nk9JSkRHYk1kOW5ybXF5Ym1tal9xS1JTa0o4RHRnaEVEbnpjRGtMeFo4SFZvLUo2cTJrSU9TNzhNNUFRVkVZSEg1U2dkWnlaWVR1RFFlVHc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal injury update: Odegaard, Rice and Havertz latest return dates",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T12:05:38+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ3BQNmpHWWgxbWdjSDdka2M0OHpaRTBOZFc0b21FSnliV0YxLUs3QTZzSVh3Ml9qeUFQN1NEaE9HSXBmU1NCT3ZJQWFxX0ZPSmRwYW9oQ2tPVEdCMkc3ZDRpRE8xZUxXZ3lZcnI3WTJqdXh5M1AydTExQ1hCSFdEMmtpUGR2YVptb3RZVmNwOWItcUtp?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMjNMc1N2RHAxRXF1MWRHU2JSV2pUZWJWclh6VEg0RXU5TmxRRVdCVDlLNmJpckxsT3BuNFI2NlZIRk5mYUJIT0NwNXhSUTc2Y1ZZSDItbFJKVjVYTEl4RDU1Z0dFamgxblJwWDRXWjBtTlRicjJzZGpRMWVjYk43UGV3QU5LNDdyWUo1MHlnN0ppaXA0MFBJN0VTZlFVR3FDMzJHU0R5a3ZRVUl3VzgwNWliNTVkV3pKeW42cVdnajlGRm5aaUE?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "How Teddington residents can find checked house and pet sitters",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T12:30:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXdLbGRtaXVrS196ZFhoMUE5SU5iWFBCUXBuaVFvWmNsYWFiNFZxam13S21ZRjhLWEJNZ011eXFBM0tjaGl2WjE4bzFXNWdGSnZoUGFZaGYtQ1RtSktUblo1R0tGOFNUU2dCbE9TdnBBZmg0bzFYeGY4cFRvU2RISDAzeEpTLVpnUUlQUzhIdUdCTUt3Z3llaEotNzF2Y3RsNlFwdmtqQmRyRlFYTEozM0NZQjdWTUFldld1S0VwUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "TEDx Kingston Upon Thames presents \"Human, Amplified\"",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T12:02:33+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSFJlS01LTkxMQllFV3RwWnE0U3pJYzNfZmc0dW1YWWZ3SmZKOWhtR0d1ZnhiNGViQmtSVG5Ha0tQWXFQeVJNRzMzbmpvNVBoMzJBaEdoeFhZOFpyWXNEbXBBdzdlamVCZm5KaGFMMnEtNWJueTE1RVVXRElPSjlhbzVqbmZmRTBDa3JFMGlUWUhsYU1NaHprVHFCRW9SOU9jdGtV?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston's most dangerous school run revealed",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T11:40:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1Lb2VFM2VBZXlHRzRZWVZ1VkV3b3VhVk1wbHVPOXNDTWRHTUJYdTc4WFdqejRTYVIwR3d6NnJTMmpldUtsVkpuODB0TmdjQVVFYXhLLTF4amFVbmRyUENLZDNsamR2Y1dkNmU1ZlVWQmFfanhYYndod3BR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Burst pipe leaves parts of Kingston without water",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T11:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOERlRm5kVENLcVhCWFJzUlFjbEJvYjhYNTFFVnQ3TzhNOFI0SkUxR1YxUEpVREhwc3dybGhBMFBpNGliNzNGTHV3aXdhZVJ3NzNaUVFKcTRmd1NCSC1ELXZoN0l6RVNnd0Z0YjV0QnpPRThNSWxXVWdYUGtJYnpLbXF6UG5PcW5PSW1XeWc4MWZULWlDSldtYjhtMjBZNTA?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "The Lensbury’s new Riverside Restaurant and Sports Bar delight members with exquisite cuisine and a touch of Teddington’s history",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T10:26:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQaWxxNjVTV1NYaExGODVpVTF6cXJ2TmZTN3U1dXl5VUNER1J5bWNZY2RMblVsRW9Nc1FQRXJBLTl3dkI2NC1WR08xTUt4OFVUM1FDLU9zbVV4UkhvXzhsSE5ET0xSV0hHZE5hQlNtbm5TcXhJeFA4Z2VUWXJJMDAtaUxQSXZDTFFMd3BIQVl2NTZuWlN1SGdyT3FHMGd1X24xME5vV2VxSmQwckMwVGJmOE5XRldBNGx1V1BJWjhQd280cEdZRDFneFNVdGQ4aW9wMlduSzJkUFU5WEVxWVlTVG9wTHQ2T0hNT0l5bjZkVndYWWlXdGVEQXVmM3p5NFh3NmdhVkdBTlNhaXRRcTJVX0NIQ3hTRm1W?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "New nail salon to replace former hardware store in Teddington",
         "summary": "",
@@ -942,23 +1042,23 @@
         "familyActivity": false
       },
       {
+        "title": "Hampton Court's fairytale ice rink returns to the grounds of Henry VIII's Surrey palace",
+        "summary": "",
+        "meta": "Sun 27 Sep",
+        "publishedAt": "2026-09-27T14:00:00+01:00",
+        "source": "Surrey Live",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPc1dxNGxhSF9MaU5Xclp1Umdwbm1yU2p6X0lmRE12emtzTFEwVmROc0NfYWJOQURkOGpvYTF6bU94T0VHal9ES2docWh2LWVnOGkwNENoZldsM2ZKSmtEZnZlNUJMUmpEZ29kd1M1Rm5aVUtxWDFLbGxBV0VXSkdNWUZQYXpid3dZeGI3SEI1QVpkM28yME03aktGd0jSAaIBQVVfeXFMT1hNcm1ITENBWUVFRlBPYS1hZHo3OUpIenQ0YUNZeGkxeWdMOUlpQTlhSDkzMVZZUFd6ajlXSks2ek5sc2o5eTVTQ29uOF9RajV5NTRtNElndjB0b1VsNnhid3VsVXVmY19rZWxRQV94QzlXNExjbVRMa3UyU0c0cmZfM1JkS2V6VllnWUVvaDR2YkE2TmNYdmtBOUh1VXJWTUVR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "Teddington Nandos re-opens following refurb",
         "summary": "",
         "meta": "Fri 25 Sep",
         "publishedAt": "2026-09-25T16:30:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQ2VFSDViRmw1TnAtamVjRUNNM3paVDJNN1JjdW1tZzFnYXJiSWh1Wk96eEN5VjV1bzAyTHM4ODhPVWp5WXNCY0FaNGc1SDNkUDhNNDNXLWU2TVRpLVpFS1BLdlFyX2JXNVVUNWtVWnI2V3hnVzhNXzl3a3NzeDRLNlBoUFFfZVJ1dTM3enphNkRuOGdwckM0ZmxB?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "New Kingston Age Friendly Forum to meet quarterly, shaping local policies",
-        "summary": "",
-        "meta": "Fri 25 Sep",
-        "publishedAt": "2026-09-25T16:30:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPczgySUlXOTRQMTRXTlE5aXZndXVzbG9sSHFjLXVMdkJsU2liSGhzamVOc25Tc3ZrYnhoMW9jNEhZZlhGMzN5NVBCaDRUVFBSZlpDdW9jSzRYaTQwQWJsNEhwTllURlpQbHlLTkNxbXp2TWdJUlF2eWNqcHpaLVhqb05zZFpSRnNjZkNiRDVPbzBrbW9fRFBUSm5fbGtFeEJFOFFjRDFNdjk1Vml1dWRNanR6bXpQQTJ0LXdGU0NB?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -997,50 +1097,6 @@
         "familyActivity": false
       },
       {
-        "title": "Residents make final plea to save Teddington allotments from graveyard expansion",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:49:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOV9qMXhPVlhhYUFLMldxa05DeUJpbFc0ZVZRRGZXaXowT2U2ZU5ZbVFZakpJSTc2SmFMaURjTTlLZFVEWDhJejJyUmlGUmlFdGhiVnM3YnloZm1leGxnWUN1ZDJBZGhNYzEtU0s1UXE2a1BablBjYkMxMGZfRGdNcG4xNkE2RTZJRmlaOTN2WVdYZHRMRFlULXFud2oySGltTENRRU5sQWZfSzRkT0lGdmw2TmZ4V0M4Uk8wV0hVLUNYNUhBODdSM1ZmRQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington neighbours make final plea to save area's last allotments from graveyard conversion",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:42:32+01:00",
-        "source": "mylondon.news",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOano5SjlsdW5ENTVLb2R2RVdBYUNjaXhCOTVNOVNrenh4ckxqZGlnbHlUdmQ1aUZ0NVg0SjlBQjNQMEI1N2NNb3FZM0hBZHM0YXJkUjZLOFJMY294XzNna09vUU9UY1hXbVllcjR2b2Q2VE5feXNtVjZaZTl5Yy0wWEpoTDY0eUFkWE5VQVE3Q1AtNHo4M0RNTnZRQdIBoAFBVV95cUxORjN6TVVSZlBMZERFdDVXUkxxUXdWTG1NMnMtYjh4Y0JFaUl3Wi1jRWZ3NDRKVDJWMlNSWXNhdmRlLTJtUWVZRnpLXzhHOW5vNHh3cy0teHhLSF9zSDdJQlFoaE1CVjAway1wNThFRmJNa3B2dC1WMzRNX2lrMnBSWksxWFV2czVxWHJUMW5iVHVaX3pXRDFwU1RkZUVUYjBI?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Fringe show exploring austerity Britain to come to Kingston",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:24:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPczdEYm42aVlZUGxua2pJdFZwVjFPc0twMUsxLUF6MzFsSzlVcEpteHFxYUYycDdVOWtSR0JKM1liM1dacWFFdkpOd0tLdXBCaHgwc2VvekxqT0UtNjh6bTVpUGhHSFdkSHFPWXdYNkJITHhxSHptcmFrM3VJRnVDV19wSHMyUkNtdVlkcGgtaWtLY0hzY0I1REg1MmxvUUMzVFFzSXRjWVNHVGZG?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Celebrate Surbiton",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T10:05:15+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUTFteG94R1E3YkRRallBV2ZIQWJyLWVRM1dnTVdXSjZuUkNDb0ZqeFFxRlpGV1lOenR3RTVzeFQ5b2NwQXhfekFYaXRwejREYnJreXo1TkNtNS1rbENyVndqaWRvSzBwcHI3dWRSMERGZzZwQVM0VGpYa2dGZ0g5YlFB?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Winter Palace: The Christmas Beast Ball Comes to Hampton Court Palace for Christmas 2026",
         "summary": "",
         "meta": "Wed 23 Sep",
@@ -1074,17 +1130,6 @@
         "familyActivity": true
       },
       {
-        "title": "18,000 Lights, a Giant Christmas Tree and a Bigger Rink: Hampton Court Palace Ice Rink Returns for 2026",
-        "summary": "",
-        "meta": "Sun 20 Sep",
-        "publishedAt": "2026-09-20T16:06:18+01:00",
-        "source": "London Post",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNWUySGhrSTBnSERRWG4wbEVFcDVnX0xSS21WbFZvczRkRlIyX0tZSDM0TzNsZ28yV1JKZmd2WkFVQlFZTk56T0xMb1VoeFhzOC05M25Wa2RHRXMtT2oxUUdOcVJMdDh2dTNGd1RXTnZZNzNhTGh6VWdKYVE4VTZXaG1ucXJBVzdsXzNFTVdiSG9kellwUU5FRFBETzVCVlFTTHI0TlhxRlVrY2FnZTRCM1BuLWpXYzdTM21mN284TW0wVGZ3R1E?oc=5",
-        "contentType": "article",
-        "localPublication": false,
-        "familyActivity": true
-      },
-      {
         "title": "Skate at Hampton Court Palace's festive ice rink this Christmas",
         "summary": "",
         "meta": "Fri 18 Sep",
@@ -1098,21 +1143,102 @@
     ],
     "UK news": [
       {
+        "title": "Housebuilder donates defibrillator to Ratho Station community",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T16:46:09+01:00",
+        "source": "projectscot.com",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWlgwdWo1RXBJc1ZFcWdhTUFzcXJsbXlrMm5XS0QzY25oc0FmbzR1Q2NlSGFJdXRnUUQ3VEc2R1BCWEV5VXFfNDNUWlduc0dnMDlCMS1jcDZic1hMdWQ4NWNWRGZla05qd1BjNmVmVDJNUS0xTnFkei1SVFhzZEJPVDN3ZmJrSnhMQi1kMGQ1aTdIaDdCUFBzemxR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Cumbrian manufacturer Oxley Group shortlisted for national Global Britain Award",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T15:57:12+01:00",
+        "source": "Evening Mail",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdEhNQkFBYmJKSE1RdWJ3Xy10eXBxZG9wbnB6N1k0dE53RFFEdEpEeHN3Q01TOTl0ejhrQWd6ZFBqbUpoMmRSSldEUzFxLTJGZ2RlSURnMmdxR0NqYl9YZGVDcDN2eENCNWk1akE4ZHA1QUxXMnVzOTdNOEMxQ0x0M1I1QU5mNnZfYTZNUXVkNEhxUEE4NENKbWlxOA?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Avanti West Coast services to be nationalised from March",
         "summary": "The move is part of a plan to improve rail infrastructure, cut train delays and improve experiences for passengers.",
         "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T04:05:50+01:00",
+        "publishedAt": "2026-09-28T13:52:56+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c60qxk7d2539o?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
-        "title": "You need £17,000 for a first home - here's how to do it",
+        "title": "Wales Celebrates World-Class Customer Experience Talent at Cnect Awards",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T13:31:03+01:00",
+        "source": "contact-centres.com",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYWdBQjRyUXdzNkZISVZXQzMzbldOZUt4YUNqbml6LUV4N210TlUyZUowMmdNbVI5ZGI1TmRxbUhjbU8ybUZqVFpFOXBQSl9MdHFhMy1lbmNwLThrTFR5ejVseG5yandKRnVRRFBKN01lUktZN1lCOS1YM3pLUDY4cVZyRU5mSkFjYWxJbk1POVBsbGFqX3JvRkN5QjIwVG0wVkE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Regional Volunteer Awards 2026: Yorkshire and Humberside",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T11:54:11+01:00",
+        "source": "England Athletics",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMzNJZTM1Qk9VWkZUUVBHUGd1TFBLN3NMTzBTVlEwcWRBVU9MRDFJTVM2TUJ6WTJjSHRNZkc2RGdEUVRuZ3JlRk1sMDJIa3JSU3NUeEtJT1laT01PeklZcXE4dkhTT1hzVEt0UmlMdlN1NWFYQ255N3hRcU5aZ05VNlpWbHRVbG1OWWpWSGNtOEktV1MtZHhqdURR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Winners of 2026 BBC Northern Ireland Make a Difference Awards revealed",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T10:10:43+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRVZkeHFtNE1xSEdVVWlPcklIVGNDaG1NRFlYdnNmWGQ3MVhkMjhrWlZBRHlka1lDalZkdnZCUFdkZXo0Uk5uMHEzQlJoWXZKaEVaTEIzOEticzUzZTNQQkVOa20ta3lMY3VYbU01bE80ZzNYMjRrdnItdWZUUlBqQmFQR3RFSmFHTGJkQThaa1MzWTdmYmNTdVVB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Jude Bellingham’s World Cup haul earns second England award",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T10:05:00+01:00",
+        "source": "Yahoo Sports",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNV3BJNG1DNWJISjBYSHNwRkZ5Qm5lcFlDZGJ6SGZ6d1ZKY1dQVkhzVE1uaFFsX0QxYnp1QjNCcGkzR3hqTjBGbnAwYl9VemxuZkltYUlXQU1kZWQzZW02THN4OTNYSlVmd0FyejAxMTVpems5dDI3dTV4a2o5UUxGMEo4N1FFUQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Renfrew travel business wins major award after growing into £1.1m enterprise",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T09:32:58+01:00",
+        "source": "the-gazette.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcUFwY1dYd2xoTTJLeHc1MmhDSGxMOF9lQ1BGWTFQenVCOUhDYkJzSWhGTFE3TGpJUEZ6TlBtbWdtMERVQi1lVjFGYTVQTXpYR1JsX0dTT3dVb1g5cUtSdnE0aGs0eldOeFRkMmFMb2hqWlUwd2tBSnVfWXJDVFVRbGFSRGxOeGF6RDJTam9pYWhYZlo3cXNVdHRuS2lWVmth?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Ulverston’s Oxley Group named finalist for Global Britain Award",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T09:23:15+01:00",
+        "source": "Business Crack",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWWk0czFmcjVhdUZ2dUp1ZDl0amg0M0tsSEVDZWZfb2tkQTBTNFFmS3V6a25FRDlJRnBRQVVwYnJWSWg3akJfN19LTDhfZzFRc3dTOEdVUksxOVVsdnFETkxGVEhyOVFqZzh6UDBhRGd3b20zY01CZFhZSTJXRzctRWIwM2FUNER3QkxhM045ZnBvNmJRSnpoRzNkOEdzRHBXX0JTWA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "You need £17,000 for a first home - here's how to save it",
         "summary": "Here are four ways you can put money aside to save enough for a deposit on your first home.",
         "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T00:20:43+01:00",
+        "publishedAt": "2026-09-28T09:21:54+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cqvgy09kep21o?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Spar Scotland celebrates Collaboration at Tradeshow",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T09:01:33+01:00",
+        "source": "Scottish Grocer & Convenience Retailer",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSXB1VERfLXNoVG9LVkEzUmJJMWJwb1FpRGlaaWZVQjR5cXRabkJaWU5QOUhveDMxbXE3T1d0eW1kYWFwUkYzSHYwNzBDOVdmdTBKUmY2QkZ5VkhfNzFPbWg1eTRsTTNRdFJoTGtXdHlVQWYzOGN0N3VLd3UtNmRUQjlWbXFhRFRhcVdZNHFuaXpVUkRvN3dZ?oc=5",
         "contentType": "article"
       },
       {
@@ -1120,89 +1246,8 @@
         "summary": "",
         "meta": "Sun 27 Sep",
         "publishedAt": "2026-09-27T20:37:22+01:00",
-        "source": "The Herald",
+        "source": "heraldscotland.com",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZUxJR3ZjaENQTERaWEdoQUw3MnBjczV0Y1VFWXpWVDRXeFBFZEtFSXRnMUtDU3Z4Q0oyeG05NHRpeU9hSGNtc2JIMUp1RDRic3l1N0RZR25DYmVzU25DSW5Ydk9OM0tpbzhSWGQtcGkxcktMbzd0TTB4VzdDYjU3aGdaMlVBMUNKU2xrQkI3WjFQb0xX?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Renfrew travel business wins West of Scotland tourism award",
-        "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T13:52:24+01:00",
-        "source": "renfrewshire24.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVFhvYXg0LUEzVENTc3NEcDFmQUFZc2pMM0pIMDRsTjlIMFJDM0JnRmpOcm96amR3WVBHX3h6UDZ3dWFMZV9YWUh3OUpVczNrR1ZGaG9uQXh1YXJLOXI2R1BrUnZxMGFDNy14dldZaEJ5ckgwOGtDZU0xZE5pd1htTjAyQlRvMUFiTnk1MjlORnNhMUw4T19VZTU2ZFpmbmtHNlhVNzYzTQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "From pet lamb to national award, a Devon teen's farming success",
-        "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T12:22:00+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81MmhkbTJLVF9GTWZUOThtQUdQMUFKVDJLTFktZV9yUTBjVTlKcVlOcUxBUVhqT1d6VW13V2ZCQWR6SHJWTG1nZHZtX29KM1VFNEswR1VQZmR4bUk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Dog rescued from cliff ledge at landmark waterfall",
-        "summary": "Eight-year-old Labrador Penny was stranded on a narrow ledge in Ingleton, rescue services say.",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T09:20:49+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/crn4554kxwdlo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "Nominations are now open for Gwobr Dewi Sant: The National Award of Wales",
-        "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T05:00:00+01:00",
-        "source": "leaderlive.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUW9KeTRpYjRFTnBiQ05sN3VNaWFJeW5uOVBNMTJSYnZtVmg1MVBNUVA0RFc0NUVmZVl5Z0Y4SVVSejNtMjB0WmRSU1M2d1ZiRXFGYmhKM0FPTGVnRTJGNEhKTFIyZUY2ZGpmd0lEZnM0NVFwRENEMWlwY08td3BaZDdsclhhMzdWU3J5cmFn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "A small fine dining restaurant has won a UK award for its wine list and is right inside a medieval Welsh town",
-        "summary": "",
-        "meta": "Sat 26 Sep",
-        "publishedAt": "2026-09-26T14:45:00+01:00",
-        "source": "Wales Online",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdFNpT09CbUNhUW5KNldULWtqLUx1bW1NS3FBeWR6S21vTnNCSzhuMXlXc3NlRzA0RjRCNGRfTWdEUnZqYmxKdW1YLXpEYW1aTFJzRjVONEVNbDRSOWE2bFdTeG9BVUQ5aXpUNnVBSndWbFNMOEZYM25LLWtJNTZrY1llczY2YVYzY0p4VklHb1BCWWRaZFlEaU0yeVlfd9IBowFBVV95cUxQWFktNmE1cW5fRnJzWjJpaVB6ZWtIUFZVTVJ5WlhFelJXRWRQOTJhV3F6cUFqUE92NWVpNzNSRVR1Y3oybHZ6S0tjWWU5NFRYUGJsOUtLYWhFNkNhQnNOQUlHVTZwMEw5Uldjb2lubVJZeWYwRW9vd2FBWFRhd2lESnV2WW9fT3hfQjB3cXhDZ0hTaVF3ZjJEdHA2RFJrdzhSeEhr?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "British Arrows celebrates 40 years at the Walker with ads from Stanley Tucci, Barry Keoghan, A$AP Rocky",
-        "summary": "",
-        "meta": "Sat 26 Sep",
-        "publishedAt": "2026-09-26T13:09:23+01:00",
-        "source": "Bring Me The News",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPd2NLcGRGQmFjQTFWYnhZSURJTHVQZnBsbkk5dXRUNDdEQzY4bDVkMl9QV0RxQmtmeGI2dFV4NFlOS3BuM3ExbHdpVTZOeTZ2bFBlbGpYS1dZcFJiVTJ2am1haXhRa3NOeERGb3NoUk1uVzNXN0VoTkgzYTVYRTVnVXV2azlYN2hEV0xyTEZ6TzVlVkx0N09KTEpHT1NfLXlKQXI2cno0OF9FRUZEOW56bmUyaWdQd0RnOU5lSmxpT3V6YURFWXNyS2dqVU5DdEJkX25xZ3pnR3JUdkZVTnozMg?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "£160m Investment Zone set to accelerate South East Wales’ innovation economy",
-        "summary": "",
-        "meta": "Sat 26 Sep",
-        "publishedAt": "2026-09-26T12:01:31+01:00",
-        "source": "Herald.Wales",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUFNXYnJXUFRzd3YtdGdXVUlMUU11TEJYTlhVVm5jWllJTG5BQjhjM1VGUTlwU0dyWkhtTlVQT3p5c2xUa2JKSUJNc0l2c3RNOVptQzM0SXRCVnZvQllHLVU2d2k4bHl1aGNGeTNwV2NvdEVTdzRqRkZZaGtjelY1a2p6czBVUVVmcFpOVGhPOUZLaW1QTXhpckViVDRtc0dheGtYelM2SnNfTzFM?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Bellingham retains England Player of the Year award",
-        "summary": "",
-        "meta": "Sat 26 Sep",
-        "publishedAt": "2026-09-26T07:22:50+01:00",
-        "source": "The Nation Newspaper",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaHF5VHQ1NkxqT0JpVGk2SnVrQ196a3cwNDROVEZ3cjB3cjhMXzJRZTZrVUNiN2pEV3NtTGhkWDg4X2VqS1Q4MmJfR3NUeVZDT25FVTlhR2psVFBDRWNvZmR3TTQ2T2lGLWtPVHhNOUxYOVozdEdJUGlpYnBqZEc4a01JaW92TXlUa1HSAY8BQVVfeXFMT2gwSDR3S0ZFX1Q0NXBkR1JlQ1dhTEJwVVYzU0NRNEt3RTR4V2ZvSUdGSUlvYkZ1RVhFa0JOd1c4cENlNHpuQ0JRQTdDNGpwMkZxcWJqVHhkTVJwNU5PamhrZ3M4RFdSV0prZDQxR19qcFcyaGQ0V3Jxa3UyYkJrdW9kSXp2ZElPTGZOam53QmM?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Thought for the week: Deserved award for health service in Northern Ireland",
-        "summary": "",
-        "meta": "Sat 26 Sep",
-        "publishedAt": "2026-09-26T01:00:00+01:00",
-        "source": "Belfast News Letter",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPYm9nMjJHOGFrMkdPUlBtaE5vc1pnMVljRlZzRS1KbUhwbDJQQjVPSGlTeVIzR1VmMmhmWFZ6elVUc3FudmdOcjFXNU5ZR1VTM0xsOF9JbUpoTWtaRE9XU1BweGlEeUhOU0VNTXMyQW5QaEE5WDBtT3k3Y0dtbVVPZ05oalV4eGY4ZGtxdjUzWGI3OTVEWU1TV3QxM3JkTVk5RVEyUDhJOHZsaDJIUjNIcXU0Y2dyZFlmeW5iNDRWWmdJaWJERll2MU40Z2VxX1UwM2xVOWg1bDl4YkZVRXNqVEY5ejBuNFRjVmNJ?oc=5",
         "contentType": "article"
       }
     ],
@@ -1365,7 +1410,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-28",
-      "preferenceScore": 289.6
+      "preferenceScore": 289.5
     },
     {
       "title": "Blue Lights",
@@ -1410,7 +1455,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-28",
-      "preferenceScore": 268.6
+      "preferenceScore": 268.5
     },
     {
       "title": "Panorama",
@@ -1430,7 +1475,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-09-28",
-      "preferenceScore": 263.5
+      "preferenceScore": 263.1
     },
     {
       "title": "How the Tudors Lost Their Heads",
