@@ -35,7 +35,8 @@ TRUSTED_RESULT_SOURCES = {
 RESULT_SIGNAL = re.compile(r"\b(?:report|result|highlights?|full[- ]time|full time)\b", re.I)
 NON_MENS_ARSENAL = re.compile(
     r"\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|"
-    r"youth|women(?:['’]?s)?|girls?)\b",
+    r"youth|women(?:['’]?s)?|girls?|wsl|uwcl|women['’]?s super league|"
+    r"women['’]?s champions league)\b",
     re.I,
 )
 SCORELINE = re.compile(
@@ -409,6 +410,27 @@ def result_signal_priority(title: str) -> int:
     return 2
 
 
+def result_conflicts_with_known_fixture_window(candidate: dict, arsenal: dict) -> bool:
+    """Reject reports that fall inside a confirmed gap in the men's fixture list."""
+    candidate_dt = parse_dt(candidate.get("date"))
+    last = arsenal.get("lastResult") or {}
+    fixture = arsenal.get("nextFixture") or {}
+    last_dt = parse_dt(last.get("date"))
+    fixture_dt = parse_dt(fixture.get("date"))
+    if not candidate_dt or not last_dt or not fixture_dt:
+        return False
+    if not last_dt.date() < candidate_dt.date() < fixture_dt.date():
+        return False
+
+    same_last_result = (
+        same_team(candidate.get("opponent"), last.get("opponent"))
+        and candidate.get("arsenalScore") == last.get("arsenalScore")
+        and candidate.get("opponentScore") == last.get("opponentScore")
+    )
+    publication_delay = (candidate_dt.date() - last_dt.date()).days
+    return not (same_last_result and publication_delay in (1, 2))
+
+
 def newest_news_result(payload: dict) -> dict | None:
     sections = payload.get("sections") or {}
     arsenal = payload.get("arsenal") or {}
@@ -423,6 +445,10 @@ def newest_news_result(payload: dict) -> dict | None:
             items.append(item)
 
     parsed = [x for x in (parse_news_result(item) for item in items) if x]
+    parsed = [
+        candidate for candidate in parsed
+        if not result_conflicts_with_known_fixture_window(candidate, arsenal)
+    ]
     if not parsed:
         return None
 
