@@ -15,10 +15,10 @@ assert SPEC.loader
 SPEC.loader.exec_module(finalize_arsenal)
 
 
-def news_item(title: str, published_at: str) -> dict:
+def news_item(title: str, published_at: str, summary: str = "") -> dict:
     return {
         "title": title,
-        "summary": "",
+        "summary": summary,
         "source": "Arsenal.com",
         "publishedAt": published_at,
         "url": "https://www.arsenal.com/news",
@@ -52,6 +52,79 @@ class FirstTeamResultTests(unittest.TestCase):
                     )
                 )
 
+
+    def test_wsl_marker_in_summary_is_rejected(self) -> None:
+        item = news_item(
+            "Highlights: Chelsea 1-0 Arsenal",
+            "2026-09-27T18:30:00+01:00",
+            "Chelsea ended Arsenal's unbeaten run in the Women's Super League.",
+        )
+        self.assertIsNone(finalize_arsenal.parse_news_result(item))
+
+    def test_result_inside_known_mens_fixture_gap_is_rejected(self) -> None:
+        payload = {
+            "sections": {
+                "Arsenal news": [
+                    news_item(
+                        "Highlights: Chelsea 1-0 Arsenal",
+                        "2026-09-27T18:30:00+01:00",
+                    )
+                ]
+            },
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-09-19T15:00:00+01:00",
+                    "opponent": "Brighton and Hove Albion",
+                    "arsenalScore": 0,
+                    "opponentScore": 3,
+                },
+                "nextFixture": {
+                    "date": "2026-10-10T12:30:00+01:00",
+                    "opponent": "Leeds United",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-28T05:40:00+01:00"),
+        ):
+            self.assertIsNone(finalize_arsenal.newest_news_result(payload))
+
+    def test_late_matching_report_inside_fixture_gap_is_retained(self) -> None:
+        payload = {
+            "sections": {
+                "Arsenal news": [
+                    news_item(
+                        "Match report: Brighton 3-0 Arsenal",
+                        "2026-09-20T09:00:00+01:00",
+                    )
+                ]
+            },
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-09-19T15:00:00+01:00",
+                    "opponent": "Brighton and Hove Albion",
+                    "arsenalScore": 0,
+                    "opponentScore": 3,
+                },
+                "nextFixture": {
+                    "date": "2026-10-10T12:30:00+01:00",
+                    "opponent": "Leeds United",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-09-21T05:40:00+01:00"),
+        ):
+            result = finalize_arsenal.newest_news_result(payload)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["opponent"], "Brighton")
+        self.assertEqual(result["result"], "0–3")
 
     def test_verified_latest_result_has_all_six_requested_fields(self) -> None:
         result = finalize_arsenal.verified_coventry_result()
