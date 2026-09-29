@@ -1,51 +1,42 @@
 {
-  "updatedLabel": "Monday, 28 September 2026 · refreshed 7:15pm",
+  "updatedLabel": "Tuesday, 29 September 2026 · refreshed 5:40am",
   "worldFact": {
-    "id": "kyoto-gion-sacred-messenger-floats",
+    "id": "cambodia-royal-ballet-hand-language",
     "editorialPriority": "human-first",
-    "category": "Festival tradition",
-    "country": "Japan",
-    "place": "Kyoto's Gion Matsuri",
-    "source": "Japan National Tourism Organization",
-    "sourceUrl": "https://www.japan.travel/en/spot/83/",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E7%A5%87%E5%9C%92%E7%A5%AD%E9%96%A2%E4%BF%82_6.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:%E7%A5%87%E5%9C%92%E7%A5%AD%E9%96%A2%E4%BF%82_6.jpg",
-    "photoCredit": "Syuichi Shiina · CC BY 2.0",
-    "fact": "At Kyoto's Gion Matsuri, a local boy serves as a sacred messenger whose feet do not touch the ground from 13 July until the first parade ends. The largest hoko floats can reach 25 metres and weigh 12 tonnes.",
-    "locationContext": "Gion district, Kyoto · central Japan",
-    "date": "2026-09-28",
-    "sequence": 38
+    "category": "Court dance tradition",
+    "country": "Cambodia",
+    "place": "Royal Ballet of Cambodia",
+    "source": "UNESCO Intangible Cultural Heritage",
+    "sourceUrl": "https://ich.unesco.org/en/RL/royal-ballet-of-cambodia-00060",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2016_Phnom_Penh%2C_Tradycyjny_Kambod%C5%BCa%C5%84ski_Pokaz_Ta%C5%84ca_%28017%29.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Phnom_Penh,_Tradycyjny_Kambod%C5%BCa%C5%84ski_Pokaz_Ta%C5%84ca_(017).jpg",
+    "photoCredit": "Marcin Konsek · CC BY-SA 4.0",
+    "fact": "The Royal Ballet of Cambodia uses codified hand gestures, controlled movement and elaborate costumes to enact legends. Its dancers were closely associated with the Khmer royal court for centuries.",
+    "locationContext": "Phnom Penh · Cambodia, South-east Asia",
+    "date": "2026-09-29",
+    "sequence": 39
   },
   "weather": {
-    "temp": "17°",
-    "summary": "Overcast",
-    "condition": "Overcast",
-    "currentRainChance": 20,
+    "temp": "16°",
+    "summary": "Mist",
+    "condition": "Mist",
+    "currentRainChance": 10,
     "daily": [
-      {
-        "date": "2026-09-28",
-        "high": 18,
-        "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 20,
-        "source": "Met Office"
-      },
       {
         "date": "2026-09-29",
         "high": 26,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-09-30",
-        "high": 24,
+        "high": 25,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 80,
         "source": "Met Office"
       },
@@ -64,16 +55,16 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-03",
-        "high": 20,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -84,11 +75,20 @@
         "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
+      },
+      {
+        "date": "2026-10-05",
+        "high": 21,
+        "low": null,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 4,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Overcast · rain chance around 20%",
+      "detail": "Sunny intervals · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -96,21 +96,21 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Sunday 27 September 2026",
+      "dateLabel": "Monday 28 September 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Writtle",
-        "town": "Writtle",
-        "county": "Essex",
+        "location": "Hull, East Park",
+        "town": "Hull",
+        "county": "Kingston upon Hull",
         "country": "England",
-        "displayLocation": "Writtle, Essex",
-        "value": "23.6°C",
+        "displayLocation": "Hull, Kingston upon Hull",
+        "value": "21.1°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=7a3b051988bc",
-          "page": "https://commons.wikimedia.org/wiki/File:Former_Crompton_%5E_Co_Factory,_Writtle_Road_-_geograph.org.uk_-_3351975.jpg",
-          "credit": "Paul Franks · CC BY-SA 2.0",
-          "alt": "Former Crompton & Co Factory, Writtle Road",
+          "src": "assets/weather-extremes/hot.webp?v=dc13174feb3e",
+          "page": "https://commons.wikimedia.org/wiki/File:A_Hull_Landmark_Closed_-_geograph.org.uk_-_3851378.jpg",
+          "credit": "Martin Dawes · CC BY-SA 2.0",
+          "alt": "A Hull Landmark Closed",
           "width": 1600,
           "height": 900
         }
@@ -121,7 +121,7 @@
         "county": "Northumberland",
         "country": "England",
         "displayLocation": "Kielder, Northumberland",
-        "value": "4.5°C",
+        "value": "3.0°C",
         "photo": {
           "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
           "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
@@ -134,20 +134,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-09-27T00:00:00+01:00",
-      "end": "2026-09-28T00:00:00+01:00",
-      "date": "2026-09-27",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccp3ecph70pjibb56lhm2b9k6opj6b9p74r3cb9mc8oj6e346kpjccb5ck",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Annabelle's b-day party",
       "summary": "",
@@ -177,20 +163,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Dad - Gazette End",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-06T00:00:00+01:00",
-      "end": "2026-10-07T00:00:00+01:00",
-      "date": "2026-10-06",
-      "time": "All day",
-      "allDay": true,
-      "color": "#7ae7bf",
-      "colorId": "2",
-      "googleEventId": "ckqj8o9j75j3abb674pm6b9kcdi32bb161j3gb9g6os3achk6oq3ge9gc4",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "AMAZON PRIME DAY",
       "summary": "",
       "url": "",
@@ -203,6 +175,20 @@
       "colorId": null,
       "googleEventId": "12d8e92cu07t8kl7ucnf7i0u86",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Dad - Gazette End",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-06T00:00:00+01:00",
+      "end": "2026-10-07T00:00:00+01:00",
+      "date": "2026-10-06",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7ae7bf",
+      "colorId": "2",
+      "googleEventId": "ckqj8o9j75j3abb674pm6b9kcdi32bb161j3gb9g6os3achk6oq3ge9gc4",
+      "calendarColorSource": "google"
     },
     {
       "title": "Summer's b-day party",
@@ -317,20 +303,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Holiday Camp 9:30-4:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "HALF TERM",
       "summary": "",
       "url": "",
@@ -343,6 +315,20 @@
       "colorId": "6",
       "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Holiday Camp 9:30-4:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Hygienist- 10am",
@@ -416,32 +402,32 @@
     }
   ],
   "lead": {
-    "title": "Sweden vs Poland: UEFA Nations League stats & head-to-head",
+    "title": "Nations League highlights: Sweden 3-1 Poland",
     "summary": "",
     "meta": "Mon 28 Sep",
-    "publishedAt": "2026-09-28T19:00:37+01:00",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5kTHJ1S2JSWTBmdVVkaE5sZGpxcDdXN3hFTi1vTUdaREMyRndYbHNlSW1QenpVU0hFMzJNV2tpSFB6X2RQSy11TnZfRVljUnlJdnVjRjh0QUJiVW5KeWJwUHlVOXFuZw?oc=5",
+    "publishedAt": "2026-09-28T23:35:13+01:00",
+    "source": "UEFA.com",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSUhULW9KRzNlemRMcmw1UEVXQk0wMXhqdF83RW9wM1RNSjBidzNQOE5fMU1jZ1laM19lSU9hMVkzNG16QlpXQnRRSF9uaU5hZ01SR29kWF83WmR3eUpWV3dOZTV1cEdrMEpYUklnWnJKOExVUXdGMFpLcUw4YmJYeFdVelUxY1ZSRGoxaDBmbEw0SGNJUXhnZjdpT0Rvd19LWWRtV1I4dEctbmxCOGtrb3llaHpXeG5HYzlNdXB3LUFvaDByZk5FR2FJcEY4bDVRQk40?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Sweden vs Poland: UEFA Nations League stats & head-to-head",
+      "title": "Nations League highlights: Sweden 3-1 Poland",
       "summary": "",
       "meta": "Mon 28 Sep",
-      "publishedAt": "2026-09-28T19:00:37+01:00",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5kTHJ1S2JSWTBmdVVkaE5sZGpxcDdXN3hFTi1vTUdaREMyRndYbHNlSW1QenpVU0hFMzJNV2tpSFB6X2RQSy11TnZfRVljUnlJdnVjRjh0QUJiVW5KeWJwUHlVOXFuZw?oc=5",
+      "publishedAt": "2026-09-28T23:35:13+01:00",
+      "source": "UEFA.com",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSUhULW9KRzNlemRMcmw1UEVXQk0wMXhqdF83RW9wM1RNSjBidzNQOE5fMU1jZ1laM19lSU9hMVkzNG16QlpXQnRRSF9uaU5hZ01SR29kWF83WmR3eUpWV3dOZTV1cEdrMEpYUklnWnJKOExVUXdGMFpLcUw4YmJYeFdVelUxY1ZSRGoxaDBmbEw0SGNJUXhnZjdpT0Rvd19LWWRtV1I4dEctbmxCOGtrb3llaHpXeG5HYzlNdXB3LUFvaDByZk5FR2FJcEY4bDVRQk40?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "How Teddington residents can find checked house and pet sitters",
+      "title": "Kingston University to host inaugural conference connecting students internationally",
       "summary": "",
       "meta": "Mon 28 Sep",
-      "publishedAt": "2026-09-28T12:30:00+01:00",
-      "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXdLbGRtaXVrS196ZFhoMUE5SU5iWFBCUXBuaVFvWmNsYWFiNFZxam13S21ZRjhLWEJNZ011eXFBM0tjaGl2WjE4bzFXNWdGSnZoUGFZaGYtQ1RtSktUblo1R0tGOFNUU2dCbE9TdnBBZmg0bzFYeGY4cFRvU2RISDAzeEpTLVpnUUlQUzhIdUdCTUt3Z3llaEotNzF2Y3RsNlFwdmtqQmRyRlFYTEozM0NZQjdWTUFldld1S0VwUQ?oc=5",
+      "publishedAt": "2026-09-28T17:00:00+01:00",
+      "source": "Kingston Nub News",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQY3JOU3VseldhakRHUDNqWXZoY2p6M0ZPdXlILVM1UnlKSVdjYmhzSTVHeFZ5U3FXV2hUTGp0T2lEQ0RJeE54b1lyODc3LTNMclBsUk5nODY0SjhDMkFVSlNsV2cwRDBWcVdsZW1LRXRzbUFwanJIQ2xIT2JNOUMxOTY0T05mbkp3M2lpZkRWb25oT0FKVVFVQ21tMEM2d21PTEZxTldxUkI4ZEhab01Lb2loaC1sYkREM2xxOFpYSTY5YnpjRndvYlJjakRUZzBrWlpHa2hOME9CcUxPUE50STYxWmwzZw?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -461,9 +447,31 @@
   ],
   "watch": [
     {
+      "title": "The Incident Room",
+      "summary": "Examining the death of 26-year-old Elle Edwards, who was killed by a gunman armed with a military-grade machine gun outside a pub on Christmas Eve, 2022. The shooter fled, attempting to…",
+      "meta": "5 · Tomorrow, 8pm",
+      "source": "5",
+      "url": "https://www.channel5.com/",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223832.jpg",
+      "artworkAlt": "The Incident Room programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-30",
+      "showId": 71387,
+      "episodeId": 3774940,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 430.3
+    },
+    {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Today, 7pm",
+      "meta": "BBC Two · Available since yesterday",
       "source": "BBC Two",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
@@ -477,48 +485,48 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 442.6
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 430.6
+    },
+    {
+      "title": "UK Forensic Breakthroughs",
+      "summary": "The story of Edwin Hiles, who was found murdered in his home. Tiernan Coyle's pioneering fibre mapping technique linked Paul Weedon to the crime.",
+      "meta": "TRUE CRIME · Available since Tue 22 Sep",
+      "source": "TRUE CRIME",
+      "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608644.jpg",
+      "artworkAlt": "UK Forensic Breakthroughs programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-22",
+      "showId": 94755,
+      "episodeId": 3774933,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 388.0
     },
     {
       "title": "Britain's Countryside Killers",
-      "summary": "The story of what happened when three Essex drug dealers were lured to their deaths in 1995. Jack Whomes and Michael Steele were convicted of the murders in 1998.",
-      "meta": "TRUE CRIME · Available since Thu 24 Sep",
+      "summary": "The story of Godalming postman Bill Williamson, who was murdered by Ann Browning after moving in with her. She faked his survival and simulated car movements before confessing.",
+      "meta": "TRUE CRIME · Thu 1 Oct, 10pm",
       "source": "TRUE CRIME",
-      "url": "https://www.tvmaze.com/episodes/3770906/britains-countryside-killers-3x01-field-of-blood",
+      "url": "https://www.tvmaze.com/episodes/3770907/britains-countryside-killers-3x02-hidden-motive",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
       "artworkAlt": "Britain's Countryside Killers programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-24",
+      "airdate": "2026-10-01",
       "showId": 82837,
-      "episodeId": 3770906,
+      "episodeId": 3770907,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 368.7
-    },
-    {
-      "title": "Crime Scene Raw",
-      "summary": "When an Oregon father disappears without a trace, detectives suspect a sinister kidnapping. But the investigation uncovers a chilling plot, revealing a shocking betrayal by someone closest…",
-      "meta": "Sky Crime · Available since yesterday",
-      "source": "Sky Crime",
-      "url": "https://www.tvmaze.com/episodes/3772885/crime-scene-raw-1x05-aaron-friar",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608353.jpg",
-      "artworkAlt": "Crime Scene Raw programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-27",
-      "showId": 93837,
-      "episodeId": 3772885,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 322.8
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 360.7
     },
     {
       "title": "Blood Legacy",
@@ -540,39 +548,28 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 347.9
-    },
-    {
-      "title": "This Much is True Crime",
-      "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
-      "meta": "TRUE CRIME · Available since Fri 25 Sep",
-      "source": "TRUE CRIME",
-      "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603698.jpg",
-      "artworkAlt": "This Much is True Crime programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-25",
-      "showId": 94363,
-      "episodeId": 3758320,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 347.6
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 339.9
     }
   ],
   "sections": {
     "Sweden": [
       {
-        "title": "Sweden vs Poland: UEFA Nations League stats & head-to-head",
+        "title": "Nations League highlights: Sweden 3-1 Poland",
         "summary": "",
         "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T19:00:37+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5kTHJ1S2JSWTBmdVVkaE5sZGpxcDdXN3hFTi1vTUdaREMyRndYbHNlSW1QenpVU0hFMzJNV2tpSFB6X2RQSy11TnZfRVljUnlJdnVjRjh0QUJiVW5KeWJwUHlVOXFuZw?oc=5",
+        "publishedAt": "2026-09-28T23:35:13+01:00",
+        "source": "UEFA.com",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSUhULW9KRzNlemRMcmw1UEVXQk0wMXhqdF83RW9wM1RNSjBidzNQOE5fMU1jZ1laM19lSU9hMVkzNG16QlpXQnRRSF9uaU5hZ01SR29kWF83WmR3eUpWV3dOZTV1cEdrMEpYUklnWnJKOExVUXdGMFpLcUw4YmJYeFdVelUxY1ZSRGoxaDBmbEw0SGNJUXhnZjdpT0Rvd19LWWRtV1I4dEctbmxCOGtrb3llaHpXeG5HYzlNdXB3LUFvaDByZk5FR2FJcEY4bDVRQk40?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "‘The same struggles as 100 years ago’: exhibition highlights lives of Sami people in Sweden",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T19:23:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2pLcTJtT1p0Ri1yWTNCYVFoVWxFUTVjdG9acDMtc3RZWTY1STlMbmdoRldlLTFzVXplWnJKNm1qWmJEb1NoV3gzLVpaZ2dQUEFOeDRUelJPZ0Y0V2h3ZlFEMnBScnMwdkNKWGZkOTNtaHdNZVA3T2E3TGlTaFZiUHlpMWg5Y0ZDTzVXbU9jQjQ4cEdBaGNpaGNJRUNQWjlSQUxEbDBpUG0tMUU?oc=5",
         "contentType": "article"
       },
       {
@@ -580,35 +577,8 @@
         "summary": "",
         "meta": "Mon 28 Sep",
         "publishedAt": "2026-09-28T16:35:44+01:00",
-        "source": "reuters.com",
+        "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN0xVd08xc25HQjlSNU5kWTVzZVJ0T2FkaWtIbnR5WFVuekJObFNTdzJ4Y3dKUEVoVmZHZUpzVkZwV050WVNDeDhMZ3hjQlZaRXJDVExYSURDUGh1RFBHZHZNMDlGTW1jOVdfQWh5YlNOWEtUYzlvck00RFctVWRMNnZVU3BMSThpZldNVmpnTHVuMk9kY3JpenVqNkFYb3NvbXZCRDRmZzNFRnpKRFUxTDkzMGZZV1p2cDVPa01OYmY?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "‘The same struggles as 100 years ago’: exhibition highlights lives of Sami people in Sweden",
-        "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T11:19:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2pLcTJtT1p0Ri1yWTNCYVFoVWxFUTVjdG9acDMtc3RZWTY1STlMbmdoRldlLTFzVXplWnJKNm1qWmJEb1NoV3gzLVpaZ2dQUEFOeDRUelJPZ0Y0V2h3ZlFEMnBScnMwdkNKWGZkOTNtaHdNZVA3T2E3TGlTaFZiUHlpMWg5Y0ZDTzVXbU9jQjQ4cEdBaGNpaGNJRUNQWjlSQUxEbDBpUG0tMUU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden vs Poland live stream: TV channel, kick-off time and how to watch UEFA Nations League B",
-        "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T19:07:24+01:00",
-        "source": "Goal.com",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMzEwRWZMX0pwYTZZQ2ZQMkRRcDMwYWpoUmp6cDZaQmdINHN3c0RGSE5XWkpnWUtmRVNMRGhURTl3cWxyaWdxYS0yc2daMkY3blgwT0lSa3hWVVpwY25lYkVGTUtvZm13c1Z4aUI2Y3JGcktwNHB5SzRadGxFVEpfRmJiM3gzU2N1NTRZQzZTWHNYeHM2dTZqcFo1LVFwTEZCXzA0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden faces political deadlock as center-left bloc fails to form government",
-        "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T10:25:46+01:00",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUmRkUURfS25PbnhVaHhiVVNRUDBWbzhKb0k0LW82eW4xclozclduNlgwaTI4LVZfSGJSVklNbHJwaXREZ2tQQTBqMUNKOGk4c1J2S29YaEI4ZGNJSkFLclFZWmtSTFBaMzdUbVFxMHRZbUdwdG1NSHR4QUFaaUhPMHd5ZW5XSDNmVkJ3TE5LelBzaHJLSEJNRko5dE52VFdwcWVoN0x2b0pYY3dQZXVHNWoxbXZzRk5RNm9XNmxxZnFrci1LWWQ3adIByAFBVV95cUxOVlEtdmdQcWxGbWh2eXN2MFJUY0MxUGNlZzNwRTlPR2JoZ1ZHbVVvODJHTFY2QUlMVHJma3puc2EyOTg4dks5U3BKQmpTamlzU3NIMENXWGVJMTM0ZnhjRXVpU0tGRnhVNkNrLVpKc0NjaVBzbGZBYkxlRzM3YmVuRjR3V1A0cmNKVkkwUkx4YldaT1l0YUlqc2p2akV2SE9mSTNSeDVDTF9lbEZOUHF4V3EtejNhTHNMM2c1TnBJUWlsNDNROEVZSA?oc=5",
         "contentType": "article"
       },
       {
@@ -618,6 +588,24 @@
         "publishedAt": "2026-09-28T10:02:25+01:00",
         "source": "Le Monde.fr",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNzNCZE9XeEJ5NmVYVFAwSndJeFNETFV5d05oS3U0bm5MTkNUT3RwaHVDS1B6YzhEQktyall4YU04Q25Wd0F3LWhTNS1oY2VfQ2lXTjJQOVVkMFBtMkEtdGpmOVg0MFRnS2NaeE5zSEJ1MEZWRlZFclR6VkZZSlQwazVaUW9YSnRxS3pLeTVjZ1htWFVBSHh4NWVmbjBETUJHa2s2NWlEdDA5d1Y0VlVBcmVGVjRsQXFrdkd2RzlMSXZUSEtHbmJEMzlB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden faces political deadlock as center-left bloc fails to form government",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T10:54:02+01:00",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUmRkUURfS25PbnhVaHhiVVNRUDBWbzhKb0k0LW82eW4xclozclduNlgwaTI4LVZfSGJSVklNbHJwaXREZ2tQQTBqMUNKOGk4c1J2S29YaEI4ZGNJSkFLclFZWmtSTFBaMzdUbVFxMHRZbUdwdG1NSHR4QUFaaUhPMHd5ZW5XSDNmVkJ3TE5LelBzaHJLSEJNRko5dE52VFdwcWVoN0x2b0pYY3dQZXVHNWoxbXZzRk5RNm9XNmxxZnFrci1LWWQ3adIByAFBVV95cUxOVlEtdmdQcWxGbWh2eXN2MFJUY0MxUGNlZzNwRTlPR2JoZ1ZHbVVvODJHTFY2QUlMVHJma3puc2EyOTg4dks5U3BKQmpTamlzU3NIMENXWGVJMTM0ZnhjRXVpU0tGRnhVNkNrLVpKc0NjaVBzbGZBYkxlRzM3YmVuRjR3V1A0cmNKVkkwUkx4YldaT1l0YUlqc2p2akV2SE9mSTNSeDVDTF9lbEZOUHF4V3EtejNhTHNMM2c1TnBJUWlsNDNROEVZSA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden vs Poland live stream: TV channel, kick-off time and how to watch UEFA Nations League B",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T19:45:00+01:00",
+        "source": "Goal.com",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMzEwRWZMX0pwYTZZQ2ZQMkRRcDMwYWpoUmp6cDZaQmdINHN3c0RGSE5XWkpnWUtmRVNMRGhURTl3cWxyaWdxYS0yc2daMkY3blgwT0lSa3hWVVpwY25lYkVGTUtvZm13c1Z4aUI2Y3JGcktwNHB5SzRadGxFVEpfRmJiM3gzU2N1NTRZQzZTWHNYeHM2dTZqcFo1LVFwTEZCXzA0?oc=5",
         "contentType": "article"
       },
       {
@@ -632,12 +620,23 @@
     ],
     "Local news": [
       {
-        "title": "How Teddington residents can find checked house and pet sitters",
+        "title": "Kingston University to host inaugural conference connecting students internationally",
         "summary": "",
         "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T12:30:00+01:00",
+        "publishedAt": "2026-09-28T17:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQY3JOU3VseldhakRHUDNqWXZoY2p6M0ZPdXlILVM1UnlKSVdjYmhzSTVHeFZ5U3FXV2hUTGp0T2lEQ0RJeE54b1lyODc3LTNMclBsUk5nODY0SjhDMkFVSlNsV2cwRDBWcVdsZW1LRXRzbUFwanJIQ2xIT2JNOUMxOTY0T05mbkp3M2lpZkRWb25oT0FKVVFVQ21tMEM2d21PTEZxTldxUkI4ZEhab01Lb2loaC1sYkREM2xxOFpYSTY5YnpjRndvYlJjakRUZzBrWlpHa2hOME9CcUxPUE50STYxWmwzZw?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T14:30:00+01:00",
         "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXdLbGRtaXVrS196ZFhoMUE5SU5iWFBCUXBuaVFvWmNsYWFiNFZxam13S21ZRjhLWEJNZ011eXFBM0tjaGl2WjE4bzFXNWdGSnZoUGFZaGYtQ1RtSktUblo1R0tGOFNUU2dCbE9TdnBBZmg0bzFYeGY4cFRvU2RISDAzeEpTLVpnUUlQUzhIdUdCTUt3Z3llaEotNzF2Y3RsNlFwdmtqQmRyRlFYTEozM0NZQjdWTUFldld1S0VwUQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRE0yV2FCb203Z1lsa2ZQTzltc3ozc0dUNVhqZXIydW1nQThQa3M3STN5OFZfNTBNY3BTcWs4V1pRUnVya1IweW9USVhfbWhvYldkZEpUOHRudmdROEw5MmRKZzJmMUNIOVVtWjFjandpMVBuQUdBc1NlTFRpM2k2dDR3d1ZVNERDNE53R3lhQ1puYnBuejQ2MFRKVjllZHZYWGltU2k2UVRObWxsRjA5cnlsN2tqbXM0Z1VqLVJtSWw4TkUyY1NvSTVfa2dLdk0?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -665,7 +664,7 @@
         "familyActivity": false
       },
       {
-        "title": "Burst pipe leaves parts of Kingston without water",
+        "title": "Water supplies return across Kingston after burst pipe",
         "summary": "",
         "meta": "Mon 28 Sep",
         "publishedAt": "2026-09-28T11:00:00+01:00",
@@ -753,17 +752,6 @@
         "familyActivity": false
       },
       {
-        "title": "Kingston Council validates plans for homes, office conversion and tree works",
-        "summary": "",
-        "meta": "Thu 24 Sep",
-        "publishedAt": "2026-09-24T17:28:55+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdi1QdUJKUlRmUzZrLURUSUhtdHNzMnBJOEJzTUt0OHZobWlYdTFNWVVuTFc2S1hqenBoYVJ1d0J5SFFrb1NOZ2V4cDRLaXA1bjlzekdxbmQzVXhnazdHbTJUZm9OVjZIanJ1LXJGN19vLXprSXktcmtxNml6MGZ5bDNfbnU1ZkhQWk9YXy10ZjZrQW9reWlUbjJicW9MLThWaWc?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Winter Palace: The Christmas Beast Ball Comes to Hampton Court Palace for Christmas 2026",
         "summary": "",
         "meta": "Wed 23 Sep",
@@ -810,11 +798,47 @@
     ],
     "UK news": [
       {
+        "title": "Blue Lights: The police drama hitting home in Northern Ireland",
+        "summary": "As the award winning series returns, it highlights tensions between police and communities in Northern Ireland.",
+        "meta": "Tue 29 Sep",
+        "publishedAt": "2026-09-29T04:24:39+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c6grvpppvw5eo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Annual Sheep Drive Celebrates Britain’s Wool Trade",
+        "summary": "",
+        "meta": "Tue 29 Sep",
+        "publishedAt": "2026-09-29T00:22:42+01:00",
+        "source": "mb.ntd.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYzVNMGlzeEdlWVZhZjNCaktsZ0g0eWt5MlU5blhJeEZPZm1ORUlNNWNQb19RdXF2SVdmN3lDczRxOU1URG83RVdEcFI2aTFZZ3JKb05uX2NvVEdSR2hJaVlUaWs4ZmpUM0V3UEttOGJyWURzLXhHWWl3UDhNb20tOEU2ZjJjWmZzcHhqc295aDhhQkk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Nominations are now OPEN for the 2027 British Gymnastics Awards",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T20:57:08+01:00",
+        "source": "British Gymnastics",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORjJmTzU4UURPdW9JVU93cWR0Q0FCNGVGRHptLUZRMDFTVmVQNkJOOTFSWDhMS1c5dGFfWGloTWJDQjlFb08wMFdPT0Jnd3BQRmpqUXN4UEtMQmtqc3k1OVRZaWJwczBRVmRxY3VjeVRHWHkzOV9RUWpHQk9jTmJfSVJSWkxvSkVvcnhyM3h5TFlhRnFmLVhTY2dPRGZVUVhMVGJHSEhaRU1DU0E?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Willis happy with England exile after retains Top 14 player award",
+        "summary": "",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T20:30:13+01:00",
+        "source": "RFI",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdG5qSGtOYVpZNXNoSzV1ZkhlSm9PT2RDSzk0WXBHa2FwcDliN0hrRjUwWDRUWHJ1U1M4emRFRmJyT19fZlBHQUZ1ekNlVlJDaUZNRzhGZXZlM1NmVjZkMnhCTkJTNVh6QTd0NDdrSzdidmUwY0pWX3BTbWphLTZOWUFvcUh6U0J1WEhzSElLU1d3S3JHeEZ6SkNNOXo4RUNmWUxVdkdR?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Housebuilder donates defibrillator to Ratho Station community",
         "summary": "",
         "meta": "Mon 28 Sep",
         "publishedAt": "2026-09-28T16:46:09+01:00",
-        "source": "projectscot.com",
+        "source": "Project Scotland",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWlgwdWo1RXBJc1ZFcWdhTUFzcXJsbXlrMm5XS0QzY25oc0FmbzR1Q2NlSGFJdXRnUUQ3VEc2R1BCWEV5VXFfNDNUWlduc0dnMDlCMS1jcDZic1hMdWQ4NWNWRGZla05qd1BjNmVmVDJNUS0xTnFkei1SVFhzZEJPVDN3ZmJrSnhMQi1kMGQ1aTdIaDdCUFBzemxR?oc=5",
         "contentType": "article"
       },
@@ -825,15 +849,6 @@
         "publishedAt": "2026-09-28T15:57:12+01:00",
         "source": "Evening Mail",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdEhNQkFBYmJKSE1RdWJ3Xy10eXBxZG9wbnB6N1k0dE53RFFEdEpEeHN3Q01TOTl0ejhrQWd6ZFBqbUpoMmRSSldEUzFxLTJGZ2RlSURnMmdxR0NqYl9YZGVDcDN2eENCNWk1akE4ZHA1QUxXMnVzOTdNOEMxQ0x0M1I1QU5mNnZfYTZNUXVkNEhxUEE4NENKbWlxOA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Avanti West Coast services to be nationalised from March",
-        "summary": "The move is part of a plan to improve rail infrastructure, cut train delays and improve experiences for passengers.",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T13:52:56+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c60qxk7d2539o?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
@@ -858,18 +873,9 @@
         "title": "Winners of 2026 BBC Northern Ireland Make a Difference Awards revealed",
         "summary": "",
         "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T10:10:43+01:00",
+        "publishedAt": "2026-09-28T10:00:00+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRVZkeHFtNE1xSEdVVWlPcklIVGNDaG1NRFlYdnNmWGQ3MVhkMjhrWlZBRHlka1lDalZkdnZCUFdkZXo0Uk5uMHEzQlJoWXZKaEVaTEIzOEticzUzZTNQQkVOa20ta3lMY3VYbU01bE80ZzNYMjRrdnItdWZUUlBqQmFQR3RFSmFHTGJkQThaa1MzWTdmYmNTdVVB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Jude Bellingham’s World Cup haul earns second England award",
-        "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T10:05:00+01:00",
-        "source": "Yahoo Sports",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNV3BJNG1DNWJISjBYSHNwRkZ5Qm5lcFlDZGJ6SGZ6d1ZKY1dQVkhzVE1uaFFsX0QxYnp1QjNCcGkzR3hqTjBGbnAwYl9VemxuZkltYUlXQU1kZWQzZW02THN4OTNYSlVmd0FyejAxMTVpems5dDI3dTV4a2o5UUxGMEo4N1FFUQ?oc=5",
         "contentType": "article"
       },
       {
@@ -877,7 +883,7 @@
         "summary": "",
         "meta": "Mon 28 Sep",
         "publishedAt": "2026-09-28T09:32:58+01:00",
-        "source": "the-gazette.co.uk",
+        "source": "Renfrewshire Gazette",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcUFwY1dYd2xoTTJLeHc1MmhDSGxMOF9lQ1BGWTFQenVCOUhDYkJzSWhGTFE3TGpJUEZ6TlBtbWdtMERVQi1lVjFGYTVQTXpYR1JsX0dTT3dVb1g5cUtSdnE0aGs0eldOeFRkMmFMb2hqWlUwd2tBSnVfWXJDVFVRbGFSRGxOeGF6RDJTam9pYWhYZlo3cXNVdHRuS2lWVmth?oc=5",
         "contentType": "article"
       },
@@ -891,15 +897,6 @@
         "contentType": "article"
       },
       {
-        "title": "You need £17,000 for a first home - here's how to save it",
-        "summary": "Here are four ways you can put money aside to save enough for a deposit on your first home.",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T09:21:54+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cqvgy09kep21o?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
         "title": "Spar Scotland celebrates Collaboration at Tradeshow",
         "summary": "",
         "meta": "Mon 28 Sep",
@@ -907,18 +904,18 @@
         "source": "Scottish Grocer & Convenience Retailer",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSXB1VERfLXNoVG9LVkEzUmJJMWJwb1FpRGlaaWZVQjR5cXRabkJaWU5QOUhveDMxbXE3T1d0eW1kYWFwUkYzSHYwNzBDOVdmdTBKUmY2QkZ5VkhfNzFPbWg1eTRsTTNRdFJoTGtXdHlVQWYzOGN0N3VLd3UtNmRUQjlWbXFhRFRhcVdZNHFuaXpVUkRvN3dZ?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Scottish family butcher wins national award for 40-year-old sausage roll recipe",
-        "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T20:37:22+01:00",
-        "source": "heraldscotland.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZUxJR3ZjaENQTERaWEdoQUw3MnBjczV0Y1VFWXpWVDRXeFBFZEtFSXRnMUtDU3Z4Q0oyeG05NHRpeU9hSGNtc2JIMUp1RDRic3l1N0RZR25DYmVzU25DSW5Ydk9OM0tpbzhSWGQtcGkxcktMbzd0TTB4VzdDYjU3aGdaMlVBMUNKU2xrQkI3WjFQb0xX?oc=5",
-        "contentType": "article"
       }
     ],
     "AI": [
+      {
+        "title": "How we will do better for Australia",
+        "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T20:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+        "contentType": "article"
+      },
       {
         "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
         "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
@@ -926,6 +923,24 @@
         "publishedAt": "2026-09-28T08:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+        "contentType": "article"
+      },
+      {
+        "title": "Are you a Codex Original?",
+        "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T01:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/form/codex-originals",
+        "contentType": "article"
+      },
+      {
+        "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+        "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T01:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/basis-tax-workbook-with-astra",
         "contentType": "article"
       },
       {
@@ -944,33 +959,6 @@
         "publishedAt": "2026-09-23T17:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/two-years-of-openai-academy",
-        "contentType": "article"
-      },
-      {
-        "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-        "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T14:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-        "contentType": "article"
-      },
-      {
-        "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-        "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-        "contentType": "article"
-      },
-      {
-        "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-        "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
-        "meta": "Wed 23 Sep",
-        "publishedAt": "2026-09-23T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
         "contentType": "article"
       },
       {
@@ -1001,12 +989,12 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
+        "title": "Exclusive | OpenAI Scraps Release of New AI Model Over Safety Concerns",
         "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T12:32:00+01:00",
-        "source": "WIRED",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0k5TC1vcnZBVEctaGxwT1VMVmtpQ2tWZzljUjBjOTlSazd1UUZtOFQ5Z0xLcVhtMXdBazNTWlhRZ3JySHBJS1ozdUhQQkpRdUhWVS1wcG5hWlFIVTZCa3dBXzFuU1BBZXh0WnF2Vm9tUFBRUmZ4R3VkcmZ0WGdNeUhXRS1icXNWV1hmQktNLUN6aTJQenZvTHBNUzh6akREMHBsS0pPVDhOQ1RSTUE?oc=5",
+        "meta": "Tue 29 Sep",
+        "publishedAt": "2026-09-29T00:07:00+01:00",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcC0xNDExdTJodUowZi1yeWdFN3M5RlpvY3FvZ1lQeHltWGVkeG01ZTVlaHJ0TldqVVRhekJhWl9ZRTRLNHRqX1NQQVFKMW5NRnhBTmlUNWNpX1FBX3Myc3VlaGIxbFZTZDZYRlYwTGNVLTUtNnJScGJWcm5rX0hMMmNadFFmZw?oc=5",
         "contentType": "article"
       }
     ],
@@ -1032,7 +1020,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-28"
+        "verifiedAt": "2026-09-29"
       },
       {
         "id": "kempton-steam-oct-2026",
@@ -1054,7 +1042,7 @@
         "venue": "kempton-steam",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-28"
+        "verifiedAt": "2026-09-29"
       },
       {
         "id": "transportfest-2026",
@@ -1076,7 +1064,7 @@
         "venue": "brooklands",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-09-28"
+        "verifiedAt": "2026-09-29"
       },
       {
         "id": "hampton-halloween-2026",
@@ -1105,9 +1093,49 @@
   },
   "watchAlternatives": [
     {
+      "title": "This Much is True Crime",
+      "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
+      "meta": "TRUE CRIME · Available since Fri 25 Sep",
+      "source": "TRUE CRIME",
+      "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603698.jpg",
+      "artworkAlt": "This Much is True Crime programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-25",
+      "showId": 94363,
+      "episodeId": 3758320,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 339.6
+    },
+    {
+      "title": "Paul C. Brunson: Red Flag",
+      "summary": "The relationship expert speaks to Melanie, whose life was shattered when she discovered her new husband was a serial fraudster with a double life who was conning women.",
+      "meta": "U&W · Today, 10pm",
+      "source": "U&W",
+      "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600741.jpg",
+      "artworkAlt": "Paul C. Brunson: Red Flag programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-29",
+      "showId": 94157,
+      "episodeId": 3774932,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 323.6
+    },
+    {
       "title": "Geordie Coppers",
       "summary": "A group of youths assault a man in the city centre. PC Adam investigates an 18-year-old who's well known to the police and is spotted on CCTV in yet another brawl. PC Sherrie is called to…",
-      "meta": "Channel 4 · Today, 10pm",
+      "meta": "Channel 4 · Available since yesterday",
       "source": "Channel 4",
       "url": "https://www.channel4.com/programmes/geordie-coppers",
       "badge": "Documentary",
@@ -1123,13 +1151,33 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 326.9
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 314.9
+    },
+    {
+      "title": "Crime Scene Raw",
+      "summary": "When an Oregon father disappears without a trace, detectives suspect a sinister kidnapping. But the investigation uncovers a chilling plot, revealing a shocking betrayal by someone closest…",
+      "meta": "Sky Crime · Available since Sun 27 Sep",
+      "source": "Sky Crime",
+      "url": "https://www.tvmaze.com/episodes/3772885/crime-scene-raw-1x05-aaron-friar",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608353.jpg",
+      "artworkAlt": "Crime Scene Raw programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-27",
+      "showId": 93837,
+      "episodeId": 3772885,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 314.8
     },
     {
       "title": "Winter",
       "summary": "A brutal double murder sparks a twisting investigation for Winter, Bell and Daldry, while Winter risks everything in his ongoing search for the truth behind Simone's death.",
-      "meta": "ITVX · New wed 30 sep",
+      "meta": "ITVX · New tomorrow",
       "source": "ITVX",
       "url": "https://www.itv.com/watch/winter/10a7342/",
       "badge": "Crime",
@@ -1146,13 +1194,36 @@
         "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 295.8
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 303.8
+    },
+    {
+      "title": "Blue Lights",
+      "summary": "As Gerry's murder trial begins, Mo's unstable mental health ignites a struggle between the state and justice. Shane has a tense stand-off with Lee.",
+      "meta": "BBC iPlayer · Today, 6am",
+      "source": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/programmes/p0f2cxpr",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608503.jpg",
+      "artworkAlt": "Blue Lights programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-29",
+      "showId": 54401,
+      "episodeId": 3765867,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 293.9
     },
     {
       "title": "Police Interceptors",
       "summary": "A speeding driver tries all sorts of tricks to lose pursuing officer, from last-minute swerves at junctions and running red lights to accelerating and then suddenly braking. In Corby, a…",
-      "meta": "5 · Today, 8pm",
+      "meta": "5 · Available since yesterday",
       "source": "5",
       "url": "https://www.channel5.com/show/police-interceptors",
       "badge": "Documentary",
@@ -1168,58 +1239,13 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 289.5
-    },
-    {
-      "title": "Blue Lights",
-      "summary": "As Gerry's murder trial begins, Mo's unstable mental health ignites a struggle between the state and justice. Shane has a tense stand-off with Lee.",
-      "meta": "BBC iPlayer · Tomorrow, 6am",
-      "source": "BBC iPlayer",
-      "url": "https://www.bbc.co.uk/programmes/p0f2cxpr",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474873.jpg",
-      "artworkAlt": "Blue Lights programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-29",
-      "showId": 54401,
-      "episodeId": 3765867,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 285.9
-    },
-    {
-      "title": "999: What Happened Next",
-      "summary": "A woman preparing for a Christmas night out is brutally stabbed in her own home. And detectives pursue an international burglary gang who are raiding affluent Surrey homes.",
-      "meta": "Channel 4 · Available since Mon 21 Sep",
-      "source": "Channel 4",
-      "url": "https://www.channel4.com/programmes/999-what-happened-next",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527705.jpg",
-      "artworkAlt": "999: What Happened Next programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-21",
-      "showId": 90023,
-      "episodeId": 3763600,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 268.5
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 277.5
     },
     {
       "title": "Panorama",
       "summary": "How cloned and ghost number plates are leaving innocent motorists facing fines, debt collection threats and years of stress.",
-      "meta": "BBC One · Today, 8pm",
+      "meta": "BBC One · Available since yesterday",
       "source": "BBC One",
       "url": "http://www.bbc.co.uk/programmes/b006t14n",
       "badge": "Documentary",
@@ -1233,30 +1259,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 263.1
-    },
-    {
-      "title": "How the Tudors Lost Their Heads",
-      "summary": "Robert Devereux, Earl of Essex, was Elizabeth I's golden boy: a charming, reckless war hero. He stood at the Queen's side as she rallied troops against the Spanish Armada. But just twelve…",
-      "meta": "National Geographic · Available since yesterday",
-      "source": "National Geographic",
-      "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
-      "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-09-27",
-      "showId": 94035,
-      "episodeId": 3731966,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "History"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 244.4
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 251.1
     },
     {
       "title": "Mysteries From Above",
@@ -1275,42 +1279,44 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 233.1
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 241.1
     },
     {
-      "title": "Paul C. Brunson: Red Flag",
-      "summary": "The relationship expert speaks to Ellie, who told she was a worthless a sex object by her misogynist boyfriend who bragged online about abusing her - until she fought back.",
-      "meta": "U&W · Available since Tue 22 Sep",
-      "source": "U&W",
-      "url": "https://u.co.uk/shows/paul-c-brunson-red-flag/watch-online",
+      "title": "How the Tudors Lost Their Heads",
+      "summary": "Robert Devereux, Earl of Essex, was Elizabeth I's golden boy: a charming, reckless war hero. He stood at the Queen's side as she rallied troops against the Spanish Armada. But just twelve…",
+      "meta": "National Geographic · Available since Sun 27 Sep",
+      "source": "National Geographic",
+      "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600741.jpg",
-      "artworkAlt": "Paul C. Brunson: Red Flag programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
+      "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-22",
-      "showId": 94157,
-      "episodeId": 3744722,
+      "airdate": "2026-09-27",
+      "showId": 94035,
+      "episodeId": 3731966,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
-      "genres": [],
+      "genres": [
+        "History"
+      ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 223.6
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 236.4
     },
     {
       "title": "Hitler's Last Stand",
-      "summary": "With US Medics unable to rescue seven casualties because of heavy fire, Technical Sergeant Stephen Gregg retrieves a .30 calibre machine gun and advances, firing from the hip to protect…",
-      "meta": "National Geographic · Available since Tue 22 Sep",
+      "summary": "During Operation Market Garden, paratroopers of the 82nd Airborne race to seize the vital bridges at Nijmegen. As savage street fighting erupts, German counterattacks close-in on lightly…",
+      "meta": "National Geographic · Today, 8pm",
       "source": "National Geographic",
       "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/157/394083.jpg",
       "artworkAlt": "Hitler's Last Stand programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-22",
+      "airdate": "2026-09-29",
       "showId": 37030,
-      "episodeId": 3707970,
+      "episodeId": 3707971,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
@@ -1318,13 +1324,13 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 205.5
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 212.5
     },
     {
       "title": "Sacrifice",
       "summary": "Sacrifice follows Daniella Hernandez, a highly sought-after entertainment lawyer, as she navigates the nefarious lives of her rich and famous clients.",
-      "meta": "Paramount+ · New wed 30 sep",
+      "meta": "Paramount+ · New tomorrow",
       "source": "Paramount+",
       "url": "https://www.paramountplus.com/shows/sacrifice/",
       "badge": "Thriller",
@@ -1342,30 +1348,8 @@
         "Legal"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 186.6
-    },
-    {
-      "title": "Kill Jackie",
-      "summary": "Jackie Price has been living a luxurious existence for the last twenty years – travelling the world, selling fine art using sophisticated tax loopholes, and, above all, trying to stay…",
-      "meta": "Prime Video · New fri 2 oct",
-      "source": "Prime Video",
-      "url": "https://www.primevideo.com",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/637/1594286.jpg",
-      "artworkAlt": "Kill Jackie programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-02",
-      "showId": 82618,
-      "episodeId": 3705520,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Thriller"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-09-28",
-      "preferenceScore": 172.8
+      "generatedDate": "2026-09-29",
+      "preferenceScore": 194.6
     }
   ]
 }
