@@ -17,36 +17,36 @@
     "sequence": 40
   },
   "weather": {
-    "temp": "24°",
-    "summary": "Sunny",
-    "condition": "Sunny",
-    "currentRainChance": 4,
+    "temp": "18°",
+    "summary": "Light showers",
+    "condition": "Light showers",
+    "currentRainChance": 40,
     "daily": [
       {
         "date": "2026-09-30",
-        "high": 25,
+        "high": 19,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Light Showers",
+        "condition": "Light Showers",
         "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-01",
-        "high": 21,
+        "high": 20,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-02",
-        "high": 23,
+        "high": 21,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -60,10 +60,10 @@
       },
       {
         "date": "2026-10-04",
-        "high": 21,
+        "high": 22,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -73,13 +73,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
+        "rainChance": 4,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-06",
+        "high": 21,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny · peak rain chance around 40%",
+      "label": "Check hourly Met Office forecast",
+      "detail": "Light Showers expected · rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
