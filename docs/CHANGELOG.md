@@ -1,6 +1,7 @@
-## 30 September 2026: Replenish human-first fact reserve and recover 30 September edition
+## 30 September 2026: Replenish human-first fact reserve for remainder of the year
 
-- Sourced and verified 21 new human-first world facts from UNESCO Intangible Cultural Heritage with verified Wikimedia Commons photography and regional context, restoring the fact reserve to its 21-item target.
+- Sourced and verified 97 new human-first world facts from UNESCO Intangible Cultural Heritage with verified Wikimedia Commons photography and regional context.
+- Expanded the human-first fact reserve to 96 unused items, guaranteeing daily publication without exhaustion through January 2027.
 - Resolved fact catalogue exhaustion error that halted morning publication.
 - Completed full data refresh and validation for Wednesday, 30 September 2026.
 
