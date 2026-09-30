@@ -10,6 +10,8 @@ on:
     - cron: '0 4-6 * * *'
     - cron: '30 4-6 * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [morning_refresh, external_timer]
   push:
     branches: [main]
     paths:

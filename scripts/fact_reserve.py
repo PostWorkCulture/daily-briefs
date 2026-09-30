@@ -15,8 +15,8 @@ def reserve_report(catalog: list[dict], history: dict) -> dict:
 
 
 def main() -> None:
-    result = reserve_report(json.loads((ROOT/'data/fact-catalog.json').read_text()),
-                            json.loads((ROOT/'data/fact-history.json').read_text()))
+    result = reserve_report(json.loads((ROOT/'data/fact-catalog.json').read_text(encoding='utf-8')),
+                            json.loads((ROOT/'data/fact-history.json').read_text(encoding='utf-8')))
     message = f"Verified human-first fact reserve: {result['remaining']} unused. Replenishment target: 21."
     print(('::warning::' if result['needsReplenishment'] else '') + message)
     if os.getenv('GITHUB_STEP_SUMMARY'):

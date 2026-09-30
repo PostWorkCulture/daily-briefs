@@ -1,3 +1,9 @@
+## 30 September 2026: Replenish human-first fact reserve and recover 30 September edition
+
+- Sourced and verified 21 new human-first world facts from UNESCO Intangible Cultural Heritage with verified Wikimedia Commons photography and regional context, restoring the fact reserve to its 21-item target.
+- Resolved fact catalogue exhaustion error that halted morning publication.
+- Completed full data refresh and validation for Wednesday, 30 September 2026.
+
 ## 28 September 2026: Align morning refresh to 05:00 UK time for pre-05:30 publication
 
 - Pete requested that the daily brief is refreshed, published, and ready before waking up at 5:30am, without late morning execution.
