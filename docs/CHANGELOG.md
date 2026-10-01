@@ -1,3 +1,10 @@
+## 1 October 2026: Protect calendar persistence on refresh and resolve responsive layout check
+
+- Guarded `scripts/refresh.py` against wiping calendar events when `GOOGLE_CALENDAR_ICS_URL` is omitted or unavailable, retaining verified existing future events.
+- Restored verified calendar schedule in Pete and Sofia profile datasets, fixing month grid assertion in `scripts/responsive_ui_check.py`.
+- Added configurable port support in `scripts/responsive_ui_check.py` for isolated local smoke validation.
+- All 114 unit tests, node inbox tests, and responsive Playwright checks (mobile, desktop, widescreen) pass cleanly.
+
 ## 1 October 2026: Add native Windows Task Scheduler daily runner
 
 - Registered a local Windows scheduled task (`DailyBriefMorningRefresh`) configured to trigger daily at 05:00 AM with `WakeToRun` and `StartWhenAvailable`.

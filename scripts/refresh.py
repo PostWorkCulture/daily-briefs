@@ -1417,16 +1417,31 @@ def base_google_uid(uid: str) -> str:
     return re.sub(r"_R?\d+.*$", "", uid)
 
 
+def existing_calendar_events() -> list[dict]:
+    try:
+        path = DATA / "pete.json"
+        if path.is_file():
+            data = json.loads(path.read_text(encoding="utf-8"))
+            items = data.get("calendar") or []
+            today_str = NOW.strftime("%Y-%m-%d")
+            future_or_current = [e for e in items if str(e.get("date") or "") >= today_str]
+            return future_or_current or items
+    except Exception:
+        pass
+    return []
+
+
 def calendar_events() -> list[dict]:
+    fallback = existing_calendar_events()
     url = os.getenv("GOOGLE_CALENDAR_ICS_URL", "").strip()
     if not url:
-        return []
+        return fallback
     try:
         r = requests.get(url, headers=UA, timeout=30)
         r.raise_for_status()
         cal = Calendar.from_ical(r.content)
     except Exception:
-        return []
+        return fallback
     colours = calendar_colour_data()
     palette = colours.get("eventPalette", {})
     event_colours = colours.get("events", {})

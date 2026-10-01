@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import json
 import sys
+import os
 from pathlib import Path
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, sync_playwright
 
-BASE_URL = "http://127.0.0.1:4173/?profile=pete"
-LOCKED_URL = "http://127.0.0.1:4173/?profile=pete&locked=1"
+PORT = os.environ.get("DAILY_BRIEFS_PORT", "4173")
+BASE_URL = f"http://127.0.0.1:{PORT}/?profile=pete"
+LOCKED_URL = f"http://127.0.0.1:{PORT}/?profile=pete&locked=1"
 VIEWPORTS = {
     "mobile": {"width": 390, "height": 844},
     "desktop": {"width": 1366, "height": 900},
@@ -156,10 +158,10 @@ def check_icon_metadata_files() -> None:
 
 def check_profile_routes(browser) -> None:
     cases = (
-        ("http://127.0.0.1:4173/pete/", "pete"),
-        ("http://127.0.0.1:4173/sofia/", "sofia"),
-        ("http://127.0.0.1:4173/?profile=pete&locked=1", "pete"),
-        ("http://127.0.0.1:4173/?profile=sofia&locked=1", "sofia"),
+        (f"http://127.0.0.1:{PORT}/pete/", "pete"),
+        (f"http://127.0.0.1:{PORT}/sofia/", "sofia"),
+        (f"http://127.0.0.1:{PORT}/?profile=pete&locked=1", "pete"),
+        (f"http://127.0.0.1:{PORT}/?profile=sofia&locked=1", "sofia"),
     )
     for url, profile in cases:
         context = browser.new_context(viewport={"width": 390, "height": 844})
