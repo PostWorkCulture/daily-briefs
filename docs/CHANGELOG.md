@@ -1,3 +1,9 @@
+## 1 October 2026: Add native Windows Task Scheduler daily runner
+
+- Registered a local Windows scheduled task (`DailyBriefMorningRefresh`) configured to trigger daily at 05:00 AM with `WakeToRun` and `StartWhenAvailable`.
+- Created `scripts/daily_refresh_runner.ps1` to sync with GitHub, run the full pipeline locally, validate content, and commit/push directly to GitHub Pages independently of GitHub cloud queue delays.
+- Added `.gitignore` for python cache and local runner logs.
+
 ## 1 October 2026: Fix calendar month boundary in career test fixture and publish 1 October edition
 
 - Isolated career scope test fixture by freezing `refresh.NOW` during test execution, preventing 30-day vacancy freshness checks from expiring across month boundaries.
