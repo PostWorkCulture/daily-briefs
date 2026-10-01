@@ -852,6 +852,10 @@ def check_viewport(browser, name: str) -> None:
         page.evaluate("document.activeElement?.blur()")
         page.mouse.move(1, 1)
         page.wait_for_timeout(250)
+        page.wait_for_function(
+            "() => !document.querySelector('#sceneryImage')?.hidden && document.querySelector('#sceneryImage')?.naturalWidth > 0",
+            timeout=5000,
+        )
         failures = []
         shell_width = page.locator(".app-shell").evaluate(
             "el => el.getBoundingClientRect().width"
@@ -928,6 +932,9 @@ def check_viewport(browser, name: str) -> None:
                 canvasTitleContrasts: canvasTitles.map(node => contrast(parseRgb(getComputedStyle(node).color), rgb)),
                 weatherTitleColour: getComputedStyle(document.querySelector('#weatherPanel .section-head h2')).color,
                 sceneryImageFilter: getComputedStyle(document.querySelector('#sceneryImage')).filter,
+                sceneryImageVisible: !document.querySelector('#sceneryImage')?.hidden,
+                sceneryImageNaturalWidth: document.querySelector('#sceneryImage')?.naturalWidth || 0,
+                sceneryImageQuality: document.querySelector('#sceneryImage')?.dataset.quality || '',
                 tvArtworkFilters: [...document.querySelectorAll('#watchStrip .watch-card.artwork')]
                   .map(card => getComputedStyle(card).filter),
                 heroBrandCount: document.querySelectorAll('.hero .hero-brand').length,
@@ -1028,6 +1035,12 @@ def check_viewport(browser, name: str) -> None:
             failures.append(
                 "Around the world or TV Picks artwork is not rendered in full colour: "
                 f"scenery={visual['sceneryImageFilter']}, tv={visual['tvArtworkFilters']}"
+            )
+        if not visual.get("sceneryImageVisible") or visual.get("sceneryImageNaturalWidth", 0) <= 0:
+            failures.append(
+                "Around the world scenery image is not visible or not loaded: "
+                f"visible={visual.get('sceneryImageVisible')}, width={visual.get('sceneryImageNaturalWidth')}, "
+                f"quality={visual.get('sceneryImageQuality')}"
             )
         if visual["navBackgroundColour"] != "rgb(7, 9, 8)":
             failures.append(f"navigation is not Signal Grid black: {visual['navBackgroundColour']}")

@@ -1,3 +1,12 @@
+## 1 October 2026: Fix Around the World scenery image rendering and replenish clean catalogue through 2027
+
+- Diagnosed missing scenery image caused by overly restrictive candidate dimensions (2200x1000) in `js/scenery-facts.js` that rejected standard and HD photos.
+- Reduced minimum dimension threshold to 320x240 and implemented local-first caching with remote fallback in `js/scenery-facts.js`.
+- Implemented build-time WebP optimization and caching (`assets/scenery/world-fact.webp`) in `scripts/refresh.py` with version digest hashes to avoid third-party Wikimedia rate limits.
+- Staged `assets/scenery/*.webp` in `.github/workflows/morning-refresh.yml` and `scripts/daily_refresh_runner.ps1`, and added path trigger in `.github/workflows/responsive-ui-check.yml`.
+- Replaced 76 unparsed wikitext entries with 85 curated, verified UNESCO Intangible Cultural Heritage facts, expanding the active reserve to 104 unused facts (guaranteeing daily facts through mid-January 2027).
+- Added explicit assertions in `scripts/responsive_ui_check.py` verifying `#sceneryImage` visibility and decoded natural dimensions across mobile, desktop, and widescreen viewports.
+
 ## 1 October 2026: Protect calendar persistence on refresh and resolve responsive layout check
 
 - Guarded `scripts/refresh.py` against wiping calendar events when `GOOGLE_CALENDAR_ICS_URL` is omitted or unavailable, retaining verified existing future events.

@@ -17,6 +17,9 @@ def safe_strftime(dt: date | datetime, fmt: str) -> str:
         fmt = fmt.replace("%-d", "%#d").replace("%-I", "%#I")
     return dt.strftime(fmt)
 
+from io import BytesIO
+import hashlib
+from PIL import Image, ImageOps
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -26,6 +29,7 @@ from icalendar import Calendar
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 DATA.mkdir(exist_ok=True)
+SCENERY_IMAGE_DIR = ROOT / "assets" / "scenery"
 TZ = ZoneInfo("Europe/London")
 NOW = datetime.now(TZ)
 UA = {"User-Agent": "DailyBriefs/3.0 (+https://github.com/PostWorkCulture/daily-briefs)"}
@@ -373,6 +377,29 @@ def world_fact_for_today() -> dict:
     result = dict(item)
     result.update({"date": today, "sequence": next(i for i, row in enumerate(used, 1) if row["id"] == selected_id)})
     return result
+
+
+def cache_world_fact_image(fact: dict) -> None:
+    src = str(fact.get("image") or "")
+    if not src.startswith("https://"):
+        return
+    output = SCENERY_IMAGE_DIR / "world-fact.webp"
+    SCENERY_IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        response = requests.get(
+            src,
+            headers={**UA, "Accept": "image/avif,image/webp,image/*,*/*;q=0.8"},
+            timeout=25,
+        )
+        response.raise_for_status()
+        image = ImageOps.exif_transpose(Image.open(BytesIO(response.content))).convert("RGB")
+        image.save(output, "WEBP", quality=85, method=6)
+    except Exception:
+        if not output.is_file():
+            return
+    if output.is_file():
+        digest = hashlib.sha256(output.read_bytes()).hexdigest()[:12]
+        fact["localImage"] = f"assets/scenery/world-fact.webp?v={digest}"
 
 
 def clean_html(value: str) -> str:
@@ -1615,6 +1642,7 @@ def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: 
 def build_profiles() -> dict[str, dict]:
     previous_position = previous_arsenal_position()
     wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
+    cache_world_fact_image(world_fact)
     ai = editorial_news(
         merge_news(
             rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),

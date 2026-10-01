@@ -1,28 +1,44 @@
-const MIN_SCENERY_WIDTH=2200;
-const MIN_SCENERY_HEIGHT=1000;
+const MIN_SCENERY_WIDTH=320;
+const MIN_SCENERY_HEIGHT=240;
 
 function loadHighQualityImage(image,item){
   image.hidden=true;
   image.removeAttribute('src');
   image.dataset.quality='checking';
-  if(!item.image){
+  const primarySrc=item.localImage||item.image;
+  if(!primarySrc){
     image.dataset.quality='unavailable';
     return;
   }
-  const candidate=new Image();
-  candidate.onload=()=>{
-    if(candidate.naturalWidth<MIN_SCENERY_WIDTH||candidate.naturalHeight<MIN_SCENERY_HEIGHT){
-      image.dataset.quality='rejected';
-      return;
-    }
-    image.src=candidate.src;
-    image.hidden=false;
-    image.dataset.quality='high';
-    image.dataset.sourceWidth=String(candidate.naturalWidth);
-    image.dataset.sourceHeight=String(candidate.naturalHeight);
-  };
-  candidate.onerror=()=>{image.dataset.quality='unavailable'};
-  candidate.src=item.image;
+
+  function tryApply(src,isFallback){
+    const candidate=new Image();
+    candidate.onload=()=>{
+      if(candidate.naturalWidth<MIN_SCENERY_WIDTH||candidate.naturalHeight<MIN_SCENERY_HEIGHT){
+        if(!isFallback&&item.image&&primarySrc!==item.image){
+          tryApply(item.image,true);
+          return;
+        }
+        image.dataset.quality='rejected';
+        return;
+      }
+      image.src=candidate.src;
+      image.hidden=false;
+      image.dataset.quality='high';
+      image.dataset.sourceWidth=String(candidate.naturalWidth);
+      image.dataset.sourceHeight=String(candidate.naturalHeight);
+    };
+    candidate.onerror=()=>{
+      if(!isFallback&&item.image&&primarySrc!==item.image){
+        tryApply(item.image,true);
+        return;
+      }
+      image.dataset.quality='unavailable';
+    };
+    candidate.src=src;
+  }
+
+  tryApply(primarySrc,false);
 }
 
 function renderWorldFact(item={}){

@@ -50,7 +50,7 @@ Try {
     & $Py -m unittest discover -s tests
 
     # 5. Commit and push if changed
-    & git add assets/weather-extremes/*.webp data/*.json
+    & git add assets/weather-extremes/*.webp assets/scenery/*.webp data/*.json
     $Diff = & git status --porcelain
     If ($Diff) {
         Log-Message "Committing and pushing refreshed brief for $DateStr..."
