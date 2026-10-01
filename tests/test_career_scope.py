@@ -6,10 +6,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from datetime import datetime, timezone
+import refresh
 from refresh import pete_job_item, public_ai_career_jobs
 
 
 class PeteCareerScopeTests(unittest.TestCase):
+    def setUp(self):
+        self._orig_now = refresh.NOW
+        refresh.NOW = datetime(2026, 9, 10, tzinfo=timezone.utc)
+
+    def tearDown(self):
+        refresh.NOW = self._orig_now
     def test_gds_title_rejects_mismatched_employer(self):
         job = {
             "title": "Head of Applied Data Governance and Capability - Government Digital Service - G6",

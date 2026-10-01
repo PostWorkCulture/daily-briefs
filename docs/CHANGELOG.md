@@ -1,3 +1,8 @@
+## 1 October 2026: Fix calendar month boundary in career test fixture and publish 1 October edition
+
+- Isolated career scope test fixture by freezing `refresh.NOW` during test execution, preventing 30-day vacancy freshness checks from expiring across month boundaries.
+- Completed full data refresh and validation for Thursday, 1 October 2026.
+
 ## 30 September 2026: Replenish human-first fact reserve for remainder of the year
 
 - Sourced and verified 97 new human-first world facts from UNESCO Intangible Cultural Heritage with verified Wikimedia Commons photography and regional context.
