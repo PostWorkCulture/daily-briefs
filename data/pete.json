@@ -18,14 +18,14 @@
     "localImage": "assets/scenery/world-fact.webp?v=6d3672633912"
   },
   "weather": {
-    "temp": "19°",
+    "temp": "20°",
     "summary": "Sunny intervals",
     "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-01",
-        "high": 20,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -38,24 +38,24 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-10-03",
-        "high": 23,
-        "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
-        "date": "2026-10-04",
+        "date": "2026-10-03",
         "high": 22,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 4,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-04",
+        "high": 23,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -65,12 +65,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-06",
-        "high": 21,
+        "high": 20,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -83,7 +83,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       }
     ],
