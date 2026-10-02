@@ -272,6 +272,61 @@ class TvPickTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "Only 2 dark or investigative documentaries"):
             tv.select_picks([item for item in [*documentaries, *scripted] if item], date(2026, 8, 27), [])
 
+    def test_crime_and_scandals_on_preferred_services_receive_priority(self) -> None:
+        cable_crime = tv.candidate(
+            episode(
+                "Cable Murder Case",
+                episode_id=101,
+                source="TRUE CRIME",
+                summary="A serial killer investigation into unsolved murder cases.",
+            ),
+            date(2026, 8, 27),
+        )
+        netflix_scandal = tv.candidate(
+            episode(
+                "Corporate Corruption Scandal",
+                episode_id=102,
+                source="Netflix",
+                summary="An investigative docuseries exposing fraud, corruption, and financial crime.",
+            ),
+            date(2026, 8, 27),
+        )
+        bbc_investigation = tv.candidate(
+            episode(
+                "Police Crime Investigation",
+                episode_id=103,
+                source="BBC One",
+                summary="Detectives investigate a series of crimes and police corruption.",
+            ),
+            date(2026, 8, 27),
+        )
+        c4_scandal = tv.candidate(
+            episode(
+                "Secret Injustice Scandal",
+                episode_id=104,
+                source="Channel 4",
+                summary="An undercover investigation exposing a political scandal and abuse of power.",
+            ),
+            date(2026, 8, 27),
+        )
+        assert cable_crime and netflix_scandal and bbc_investigation and c4_scandal
+        self.assertGreater(netflix_scandal["preferenceScore"], cable_crime["preferenceScore"])
+        self.assertGreater(bbc_investigation["preferenceScore"], cable_crime["preferenceScore"])
+        self.assertGreater(c4_scandal["preferenceScore"], cable_crime["preferenceScore"])
+
+    def test_candidate_exposes_channel_and_release_date_fields(self) -> None:
+        item = tv.candidate(
+            episode("Crime Scene Live", episode_id=105, source="Channel 4", airdate="2026-08-27"),
+            date(2026, 8, 27),
+        )
+        assert item is not None
+        self.assertEqual(item["channel"], "Channel 4")
+        self.assertEqual(item["releaseDate"], "2026-08-27")
+        self.assertIn("Today", item["releaseDateLabel"])
+        self.assertTrue(bool(item["title"]))
+        self.assertTrue(bool(item["summary"]))
+
 
 if __name__ == "__main__":
     unittest.main()
+

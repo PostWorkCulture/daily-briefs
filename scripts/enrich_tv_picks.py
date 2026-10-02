@@ -110,18 +110,38 @@ HISTORY_SCORE_PENALTY = 35
 DOCUMENTARY_TARGET = 3
 DOCUMENTARY_CAP_WHEN_MIXED = 4
 PREFERRED_SERVICE_WEIGHTS = {
-    "BBC iPlayer": 42,
-    "Channel 4": 40,
-    "Netflix": 38,
+    "Netflix": 60,
+    "BBC iPlayer": 60,
+    "Channel 4": 60,
+    "BBC One": 55,
+    "BBC Two": 55,
+    "BBC Three": 55,
+    "BBC Four": 55,
     "Apple TV+": 34,
-    "BBC One": 26,
-    "BBC Two": 26,
     "ITVX": 14,
     "ITV1": 12,
     "Sky Atlantic": 12,
     "Prime Video": 10,
     "Paramount+": 8,
 }
+PREFERRED_CRIME_SCANDAL_SERVICES = {
+    "Netflix",
+    "Channel 4",
+    "BBC iPlayer",
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "BBC Four",
+}
+CRIME_SCANDAL_TERMS = re.compile(
+    r"\b(?:crimes?|criminals?|true crime|murders?|murdered|murderers?|homicides?|"
+    r"killers?|serial killers?|police|detectives?|investigat(?:e|es|ed|ing|ion|ions|ive)|"
+    r"scandals?|scandalous|frauds?|fraudulent|corruption|injustice|cults?|abuse|prisons?|"
+    r"conspirac(?:y|ies)|heists?|courtroom|trials?|unsolved)\b",
+    re.I,
+)
+CRIME_SCANDAL_PREFERRED_BONUS = 160
+
 
 DEEMPHASIS_WEIGHTS = {
     "celebrity travel": 70,
@@ -293,6 +313,12 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
         "major-sport": 44,
     }[lane]
     score += PREFERRED_SERVICE_WEIGHTS.get(source, 0)
+    if source in PREFERRED_CRIME_SCANDAL_SERVICES and (
+        CRIME_SCANDAL_TERMS.search(haystack)
+        or "Crime" in genres
+        or lane in ("dark-documentary", "dark-scripted")
+    ):
+        score += CRIME_SCANDAL_PREFERRED_BONUS
     if episode.get("number") == 1:
         score += 28
         if source == "Apple TV+":
@@ -308,6 +334,9 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
         "summary": summary,
         "meta": f"{source or 'TV'} · {availability}",
         "source": source or "TVMaze",
+        "channel": source or "TVMaze",
+        "releaseDate": airdate.isoformat(),
+        "releaseDateLabel": availability,
         "url": official,
         "badge": category_label(show, haystack),
         "artwork": artwork,

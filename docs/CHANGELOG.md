@@ -1,4 +1,18 @@
+## 2 October 2026: Prioritise crime and scandals on Netflix, BBC, and Channel 4 in TV Picks and refine card display
+
+- Updated `scripts/enrich_tv_picks.py` to boost base service weights for Netflix, BBC (iPlayer, One, Two, Three, Four), and Channel 4 to 55–60.
+- Added explicit +160 scoring bonus for crime, scandal, investigative, and true-crime programmes streaming or broadcast on Netflix, BBC, and Channel 4, ensuring quality public broadcaster and streaming titles displace minor cable reruns.
+- Exposed explicit `channel`, `releaseDate`, and `releaseDateLabel` properties on TV candidate dictionaries.
+- Updated `js/app.js` `renderWatch()` to visibly display programme title (`<b>`), blurb (`<p class="watch-blurb">`), channel/service, and release date (`<small class="watch-meta">`).
+- Removed category badges and category tag repetition from TV cards, reflecting that section criteria already define the editorial scope.
+- Enhanced `css/tv-picks-restored.css` to cleanly style and clamp `.watch-blurb` (2 lines on mobile/supporting desktop cards, 3 lines on desktop lead card) with crisp text shadow and legible gold channel/date metadata.
+- Replaced low-resolution Wikimedia thumbnail for today's Around the World mariachi fact with a 3840x2564 photograph and updated local WebP cache.
+- Added unit tests in `tests/test_enrich_tv_picks.py` validating preferred-service crime/scandal priority and field availability.
+- All 116 unit tests, node inbox tests, and responsive UI tests pass across mobile, desktop, and widescreen viewports.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to record the approved specification change.
+
 ## 1 October 2026: Fix Around the World scenery image rendering and replenish clean catalogue through 2027
+
 
 - Diagnosed missing scenery image caused by overly restrictive candidate dimensions (2200x1000) in `js/scenery-facts.js` that rejected standard and HD photos.
 - Reduced minimum dimension threshold to 320x240 and implemented local-first caching with remote fallback in `js/scenery-facts.js`.

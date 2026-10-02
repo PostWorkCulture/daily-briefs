@@ -3,6 +3,19 @@
 .tonight-block .watch-card.artwork{position:relative;overflow:hidden;flex:0 0 min(82%,360px);aspect-ratio:16/10;min-height:210px;border-color:rgba(255,212,119,.38);background-image:linear-gradient(180deg,rgba(3,8,15,.01) 24%,rgba(3,8,15,.14) 52%,rgba(3,8,15,.94) 100%),var(--pick-image)!important;background-size:cover!important;background-position:var(--pick-pos,center)!important;background-repeat:no-repeat!important;box-shadow:inset 0 -76px 86px rgba(3,8,15,.25);transform:none!important}
 .tonight-block .watch-card.artwork:before{background:linear-gradient(180deg,rgba(3,8,15,.01) 25%,rgba(3,8,15,.08) 48%,rgba(3,8,15,.76) 100%)!important}
 .tonight-block .watch-card.artwork:hover{border-color:#ffd477;box-shadow:0 0 24px rgba(255,212,119,.22),inset 0 -76px 86px rgba(3,8,15,.30);transform:none!important}
-.tonight-block .watch-card.artwork small{color:#ffd477;text-shadow:0 1px 9px #000}.tonight-block .watch-card.artwork b{font-size:17px;line-height:1.18;text-shadow:0 2px 12px #000}.tonight-block .watch-card.artwork em{color:#d9e4ee;text-shadow:0 1px 8px #000}
-@media(min-width:900px){.tonight-block .watch-card.artwork{flex-basis:min(46%,390px);min-height:235px}}
+.tonight-block .watch-card.artwork small,
+.tonight-block .watch-card small{display:block;color:#ffd477;text-shadow:0 1px 9px #000;text-transform:none;font-size:11px!important;font-weight:700;letter-spacing:0;margin-bottom:3px}
+.tonight-block .watch-card.artwork b,
+.tonight-block .watch-card b{display:block;font-size:17px!important;line-height:1.2;text-shadow:0 2px 12px #000}
+.tonight-block .watch-card.artwork .watch-blurb,
+.tonight-block .watch-card .watch-blurb{margin:4px 0 0;font-size:12px;line-height:1.35;color:#d9e4ee;text-shadow:0 1px 8px #000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tonight-block .watch-card.artwork em{color:#d9e4ee;text-shadow:0 1px 8px #000}
+@media(min-width:900px){
+  .tonight-block .watch-card.artwork{flex-basis:min(46%,390px);min-height:235px}
+  .tonight-block .watch-card.artwork:first-child b,
+  .tonight-block .watch-card:first-child b{font-size:24px!important}
+  .tonight-block .watch-card.artwork:first-child .watch-blurb,
+  .tonight-block .watch-card:first-child .watch-blurb{-webkit-line-clamp:3;font-size:13px;line-height:1.4}
+}
 @media(max-width:420px){.tonight-block .watch-card.artwork{flex-basis:86%;min-height:205px}}
+
