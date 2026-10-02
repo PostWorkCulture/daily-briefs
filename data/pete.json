@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 2 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Friday, 2 October 2026 · refreshed 12:08pm",
   "worldFact": {
     "id": "mariachi-string-trumpet-music",
     "editorialPriority": "human-first",
@@ -18,14 +18,14 @@
     "localImage": "assets/scenery/world-fact.webp?v=26b08e047fa5"
   },
   "weather": {
-    "temp": "12°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "20°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-02",
-        "high": 21,
+        "high": 20,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -34,7 +34,7 @@
       },
       {
         "date": "2026-10-03",
-        "high": 23,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -43,7 +43,7 @@
       },
       {
         "date": "2026-10-04",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-10-05",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -65,21 +65,21 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-07",
-        "high": 17,
+        "high": 16,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-08",
-        "high": 16,
+        "high": 15,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -124,10 +124,10 @@
         "displayLocation": "Exeter, Devon",
         "value": "7.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=20cf098a152c",
-          "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
-          "credit": "Edward Ashworth · Public domain",
-          "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
+          "src": "assets/weather-extremes/cold.webp?v=29b3920bdb6d",
+          "page": "https://commons.wikimedia.org/wiki/File:Council_offices,_Marsh_Barton,_Exeter_-_geograph.org.uk_-_4307390.jpg",
+          "credit": "David Smith · CC BY-SA 2.0",
+          "alt": "Council offices, Marsh Barton, Exeter",
           "width": 1600,
           "height": 900
         }
@@ -164,20 +164,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Dad - Gazette End",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-06T00:00:00+01:00",
-      "end": "2026-10-07T00:00:00+01:00",
-      "date": "2026-10-06",
-      "time": "All day",
-      "allDay": true,
-      "color": "#7ae7bf",
-      "colorId": "2",
-      "googleEventId": "ckqj8o9j75j3abb674pm6b9kcdi32bb161j3gb9g6os3achk6oq3ge9gc4",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "AMAZON PRIME DAY",
       "summary": "",
       "url": "",
@@ -190,6 +176,20 @@
       "colorId": null,
       "googleEventId": "12d8e92cu07t8kl7ucnf7i0u86",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Dad - Gazette End",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-06T00:00:00+01:00",
+      "end": "2026-10-07T00:00:00+01:00",
+      "date": "2026-10-06",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7ae7bf",
+      "colorId": "2",
+      "googleEventId": "ckqj8o9j75j3abb674pm6b9kcdi32bb161j3gb9g6os3achk6oq3ge9gc4",
+      "calendarColorSource": "google"
     },
     {
       "title": "Summer's b-day party",
@@ -486,6 +486,20 @@
       "calendarColorSource": "calendar-default"
     },
     {
+      "title": "Adina's B-day party 10-2pm (11-1pm)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-28T00:00:00+00:00",
+      "end": "2026-11-29T00:00:00+00:00",
+      "date": "2026-11-28",
+      "time": "All day",
+      "allDay": true,
+      "color": "#dbadff",
+      "colorId": "3",
+      "googleEventId": "71gj2ohpc4r38b9j70r66b9k60q30b9p6pi3gb9h6cp66phnchj66cb174",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -497,20 +511,6 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "c9h34e3560o6cbb5c5gj2b9kc9i38b9ocgrj4b9g6gs64c9jcpijed9hco",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "Adina's B-day party 10-1pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-29T00:00:00+00:00",
-      "end": "2026-11-30T00:00:00+00:00",
-      "date": "2026-11-29",
-      "time": "All day",
-      "allDay": true,
-      "color": "#dbadff",
-      "colorId": "3",
-      "googleEventId": "71gj2ohpc4r38b9j70r66b9k60q30b9p6pi3gb9h6cp66phnchj66cb174",
       "calendarColorSource": "google"
     }
   ],
@@ -577,48 +577,48 @@
     "played": 5,
     "news": [
       {
+        "title": "Kai Havertz takes on Ask Me Anything",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T11:25:13+01:00",
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSXNKRjhxWjNkaEt2ZTgtbFBoM0dFdHRoMlE2RXcxRFpxeF9ycVdJN01lUDJhenZPRHVZajc4NVVUVmNqQlBoM25hRjFzZndCeWhuLTNacE15Q1hxdGtmVzN4OFVVUjFITnJBT2NueE53WldZT09mZkxieXZKcGlOcW1mWWQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal decide against expanding Emirates Stadium to 80,000",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T10:00:28+01:00",
+        "source": "The Times",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzdtdVN6N09Udm9wY2JsQW9URG41REZrNDRtTlZUd2s5SnNhcGJobUZBRXRiSU0zT3UzY0pkYzNIM29zUkRYUVhidzl3MVFSN2NOMXZBTGFTelpLNVpxaEtSZXpNNkRTWi1DaFdidldMc3pxWnNQOXkyUmZmdzJTcUJDUzMteEZGMnlOLS1jOXBjd1FsNDJsaDJ6WmM4V1NreXVsTjVaTFZYcjVYNEZydThvbW1ReXc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "How to get tickets for Bayern Munich vs. Arsenal: Everything you need to know",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T11:06:05+01:00",
+        "source": "Football Ground Guide",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkNVQm1jdUR2LWhjQ0RvQnB1Z1NLejNEWmtfLTdHQnJaUWFRTGl2OHV3R3Q5V3h2OG1lb0w3S1diWEItYXdQSy0zRmxfbHE1Y19lbk8yYmF1VFhObFVfR2tRc0VfUXd6Qzl4bHp2SGlFMFE0TDBrOFdQSFkyQk1tdkoyTTMtSWs3NzRGbHlrclpfSFU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden boss Graham Potter joked about Arsenal striker Viktor Gyokeres' ability during his press conference.",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T08:03:34+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSnZQSU9yaFlPZzA5ZDRYZ1ROSFBhSHdQa2MxM0NYN1drMlh1amRKUE9heWRzZnVUNjFfVEdST2hKem5YUkR3OEJnWjhMTE1FNHVoU3ZKSzJCVXFWWGgtSzdONFpRRkZjaFJ0VzhjY0ZpMUwtM0RNa25YYVhFZ0J3dVF4ZGJ2M1Bpemw2R3VYd1FrUnhoQ0dkR2tMcmN1X2xWTlhvendnSlBhS0RPQ2RmNWRibEhkdllleHRuLXVJb3liaEY5Nl9YY0NXQ2VndnRxMjB4NTdn?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arsenal transfer rumours today: £38.5m deal 'quoted' as Haaland 'makes decision'",
         "summary": "",
         "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T04:45:38+01:00",
+        "publishedAt": "2026-10-02T10:45:38+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNXzhsakZleTFVMjZPaER2NmRVRXlkTjUyTllYQWE2NFFuR1VBT1lVWDlmZTBHdmkxcG9ZY18yX1pmY1JaUWNCN2d6R2d0QTlyQ29rSXl2Ym53emZfR0tRd0hLV2Q5Sy1CWG12clFuZTVacW9Vc0IzWkY4V3lvRVA4OU5SM2E4V0VObWR0MjNTZGF6MlRNT21OWmU0dTBIdU5KaDR0RDl3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Ticket Information: Arsenal v Real Madrid CF",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T14:06:02+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaVl4WTJERE5rSG5tS251UU0yaE5rTUdHSE4xdEZSZjBUdy1JQ2ZGTGlRa3NER0hkV2l5eGJ3UTNsbDJoQzFvVkNsQVBwR2hORnA5bTJqR2ZmcVFCOUNIVV84T0lLMllybG5qRGRjZE9zeDlIdjQ2ZmtyVG5iUGJSeWoxS1M1TWZZeGxDZ0dqLUdTYjhSSnhjTi1FcTVDTExi?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal could lose millions if Andrea Berta doesn't solve £353m problem",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T16:33:25+01:00",
-        "source": "Football London",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVFNPTXhMNWRuZlNoVmVVNHNTMlFyNWVMRTgtY3pRYzRWb3Z0amFzdHp0LUVVUVRqVzVSTkpPNHlOV2hOLXpCV0N1Nk1LY0RYTGtoWlVfVjEwMDdiRVlBS2JHUU14MTRrV1ZJQ2JWTnlTeFJNTEw2V1N1cE5vajd5YU1URW42eXRpR2pyWlJMcmjSAZYBQVVfeXFMUDRMdlNyVHp6VEg5TXI2T3ZZR2RsYXliX3ZTN1o5WGhjRUFYYUk0bWNtWE5kWUVjbHpvbXJJbVFtZUtaZEtxZEpTZVF2aHN0bWQ4ZzBuVWthN1huSFl5TXFJS05rQTNnSVFPc1RaVjFFV24xaW5WSUFuUW5LSWFnWXktVzAzdXJqNlQ0aFg4SzJXNno2N2dn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Highlights - Champions League - Paris FC 2-2 Arsenal",
-        "summary": "",
-        "meta": "Wed 30 Sep",
-        "publishedAt": "2026-09-30T19:55:13+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EaDVjRzBZZ0ZHTjgxZjFvYkNKY3V6VzdMUjFFUmozQlV3ZjhZS3N1MnAtQ2pfTFByYThnd19aNk9tMlJjVzVCSnJuaHB6amVJYUt1NUhwU3dkUmRZVlAtOG5rZGxSVGl5?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "The full inside story of Arsène Wenger's arrival in 1996",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T13:18:45+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdi0wSENSY2dEczFOZUw3ZXFaeW45Q1dlSGZsVkNvbWpsbG1OUHQ3X1ctbmM3eFNMamF2NmlsVVR6ZlB6ZF9DVE5uTWJqenpNMUNUeHEwVWM1TGF6YkluSGFNbm5qX185Qlh6MENpcnFrUW9KQWZjYW90WkRCTHgwNFZLdTNQLTJxTHpRa3FVSTFBV2hDVDl5UHV3YVhqS2ZqN1pGZw?oc=5",
         "contentType": "article"
       }
     ],
@@ -642,22 +642,22 @@
         "trust": "Trusted report"
       },
       {
+        "title": "Mikel Arteta set to sign new Arsenal contract | Football News",
+        "summary": "",
+        "meta": "Wed 23 Sep",
+        "publishedAt": "2026-09-23T08:00:00+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZUdGUVFCVGVIMnhmRHZPRjdNX09mcWU5dGV4bUQ5NUhkOEoxYmxwLWhQcFJ4ZVB4YUd3REpBOGJFSEk3eklpWlFEOV9jTmZkaUJEbGd1M3FzR0dsUWY3U3hKUnVUSzdzcnV6dGYzWmVhcWlHaU1xdXdURnIxUlJqeDEyaWtZazdKOWVkbUlnbmVpcGNfb2pXT1VoV1hKR3FSQzR1WkdEODk2NFVUWG40RDYtbFBkenc?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
         "title": "Mikel Arteta contract: Arsenal boss agrees new deal to extend stay at Premier League champions",
         "summary": "",
         "meta": "Wed 23 Sep",
         "publishedAt": "2026-09-23T08:00:00+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYU5vMzhQWlBPM2NCWUc3S0Via1FVSkUyZ1RxZVdIb2FvcV9VS3lndkFFZENuV2oyMXh4UW9QRlVNRFR1NEdtdjNTc2ktYWphdUY3OUpMQk5xMHFmSnlnd2VNcmc4Y2QzYUZjTzBSd0ZiY19TUjkyTGxkd3dNNHd6NmpHVWZJZzFTa2plNXJ6SzZPOXRSSUNWcWRvRHpIWVZQNlNWQ3hhcm5DVHdvXzdYQUxHdXh4VWZEVGhUbWxBZTZHR05EQm55eUxKM3EwVG1WbEp2WGdGOVZ2dw?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Mikel Arteta set to sign new Arsenal contract | Football News",
-        "summary": "",
-        "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T19:05:49+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZUdGUVFCVGVIMnhmRHZPRjdNX09mcWU5dGV4bUQ5NUhkOEoxYmxwLWhQcFJ4ZVB4YUd3REpBOGJFSEk3eklpWlFEOV9jTmZkaUJEbGd1M3FzR0dsUWY3U3hKUnVUSzdzcnV6dGYzWmVhcWlHaU1xdXdURnIxUlJqeDEyaWtZazdKOWVkbUlnbmVpcGNfb2pXT1VoV1hKR3FSQzR1WkdEODk2NFVUWG40RDYtbFBkenc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -680,6 +680,16 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZ1pBLUNQM3lSY29tTUNGS09faTFHMnJNWWdxeDJPWGhjeTZKdHNoMXViVVpoQTU4YWxOejJ3ejdZX0Y3aUZaaUIzZl9wZ1VUZmJTbi1CTndwUnVjWWRSNVBmNTBkZVFnN3d4NlRGRXNBeVRNMWVqeHlOSFZnRkhiaXZMY19McDZIOHRKYllxVmhYTzBPTmc?oc=5",
         "contentType": "transfer-update",
         "trust": "Tier-one report"
+      },
+      {
+        "title": "Arteta agrees new Arsenal contract, BBC reports",
+        "summary": "",
+        "meta": "Tue 22 Sep",
+        "publishedAt": "2026-09-22T08:00:00+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR3JGdHVrZWdPZkJndWw0cFRaTGFPZ3dQdG8xdWJwY0ZId09GakxVQVdMVG5QRG90dW5tdWE4OGgwTlpSTnRqQ01WQU80dXY2bl81VVJuMkZlOF9fVDdfcDIwUzFCM29HVWpnSV9RQ1IwbmRsN3lPRTRrdFZTMFRTLVdza3NtU0ktLS1jMzE1OXgxY1FWRlNQazhMMEo?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
       }
     ],
     "transferRumours": [
@@ -776,12 +786,12 @@
       "section": "AI"
     },
     {
-      "title": "Arsenal transfer rumours today: £38.5m deal 'quoted' as Haaland 'makes decision'",
+      "title": "Kai Havertz takes on Ask Me Anything",
       "summary": "",
       "meta": "Fri 2 Oct",
-      "publishedAt": "2026-10-02T04:45:38+01:00",
-      "source": "London Evening Standard",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNXzhsakZleTFVMjZPaER2NmRVRXlkTjUyTllYQWE2NFFuR1VBT1lVWDlmZTBHdmkxcG9ZY18yX1pmY1JaUWNCN2d6R2d0QTlyQ29rSXl2Ym53emZfR0tRd0hLV2Q5Sy1CWG12clFuZTVacW9Vc0IzWkY4V3lvRVA4OU5SM2E4V0VObWR0MjNTZGF6MlRNT21OWmU0dTBIdU5KaDR0RDl3?oc=5",
+      "publishedAt": "2026-10-02T11:25:13+01:00",
+      "source": "arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSXNKRjhxWjNkaEt2ZTgtbFBoM0dFdHRoMlE2RXcxRFpxeF9ycVdJN01lUDJhenZPRHVZajc4NVVUVmNqQlBoM25hRjFzZndCeWhuLTNacE15Q1hxdGtmVzN4OFVVUjFITnJBT2NueE53WldZT09mZkxieXZKcGlOcW1mWWQ?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
@@ -996,12 +1006,12 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI fires workers for mishandling 'sensitive information'",
+        "title": "OpenAI fires workers for 'mishandling sensitive information'",
         "summary": "",
         "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T02:01:24+01:00",
+        "publishedAt": "2026-10-02T09:20:32+01:00",
         "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9zUUhFVnVxaXJzeG0xV093THUySDk3WThBbzF3cWVVSmZ4X1dBbF9Id00td21XbmcxWnA4em9yQVE3Zkt3Ykp6RTlLc3lTU2ZvZmpRT3ctNHVnSmpWU1E?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9mdmxTeGdPLUpjZUg2UXlsNWRXTTJ5MW10aXZEVEh6QXM2NXBhVDhCZk5tNWJlaUZ3REtNeEpHMFdxMWNwRGpqbE5MUkZ2NXRubndLYkRHSkM0NEk?oc=5",
         "contentType": "article"
       },
       {
@@ -1016,30 +1026,57 @@
     ],
     "Arsenal news": [
       {
+        "title": "Kai Havertz takes on Ask Me Anything",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T11:25:13+01:00",
+        "source": "arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSXNKRjhxWjNkaEt2ZTgtbFBoM0dFdHRoMlE2RXcxRFpxeF9ycVdJN01lUDJhenZPRHVZajc4NVVUVmNqQlBoM25hRjFzZndCeWhuLTNacE15Q1hxdGtmVzN4OFVVUjFITnJBT2NueE53WldZT09mZkxieXZKcGlOcW1mWWQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal decide against expanding Emirates Stadium to 80,000",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T10:00:28+01:00",
+        "source": "The Times",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzdtdVN6N09Udm9wY2JsQW9URG41REZrNDRtTlZUd2s5SnNhcGJobUZBRXRiSU0zT3UzY0pkYzNIM29zUkRYUVhidzl3MVFSN2NOMXZBTGFTelpLNVpxaEtSZXpNNkRTWi1DaFdidldMc3pxWnNQOXkyUmZmdzJTcUJDUzMteEZGMnlOLS1jOXBjd1FsNDJsaDJ6WmM4V1NreXVsTjVaTFZYcjVYNEZydThvbW1ReXc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "How to get tickets for Bayern Munich vs. Arsenal: Everything you need to know",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T11:06:05+01:00",
+        "source": "Football Ground Guide",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkNVQm1jdUR2LWhjQ0RvQnB1Z1NLejNEWmtfLTdHQnJaUWFRTGl2OHV3R3Q5V3h2OG1lb0w3S1diWEItYXdQSy0zRmxfbHE1Y19lbk8yYmF1VFhObFVfR2tRc0VfUXd6Qzl4bHp2SGlFMFE0TDBrOFdQSFkyQk1tdkoyTTMtSWs3NzRGbHlrclpfSFU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden boss Graham Potter joked about Arsenal striker Viktor Gyokeres' ability during his press conference.",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T08:03:34+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSnZQSU9yaFlPZzA5ZDRYZ1ROSFBhSHdQa2MxM0NYN1drMlh1amRKUE9heWRzZnVUNjFfVEdST2hKem5YUkR3OEJnWjhMTE1FNHVoU3ZKSzJCVXFWWGgtSzdONFpRRkZjaFJ0VzhjY0ZpMUwtM0RNa25YYVhFZ0J3dVF4ZGJ2M1Bpemw2R3VYd1FrUnhoQ0dkR2tMcmN1X2xWTlhvendnSlBhS0RPQ2RmNWRibEhkdllleHRuLXVJb3liaEY5Nl9YY0NXQ2VndnRxMjB4NTdn?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arsenal transfer rumours today: £38.5m deal 'quoted' as Haaland 'makes decision'",
         "summary": "",
         "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T04:45:38+01:00",
+        "publishedAt": "2026-10-02T10:45:38+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNXzhsakZleTFVMjZPaER2NmRVRXlkTjUyTllYQWE2NFFuR1VBT1lVWDlmZTBHdmkxcG9ZY18yX1pmY1JaUWNCN2d6R2d0QTlyQ29rSXl2Ym53emZfR0tRd0hLV2Q5Sy1CWG12clFuZTVacW9Vc0IzWkY4V3lvRVA4OU5SM2E4V0VObWR0MjNTZGF6MlRNT21OWmU0dTBIdU5KaDR0RDl3?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Ticket Information: Arsenal v Real Madrid CF",
+        "title": "How Arsenal could line up vs Leeds with enforced changes after eight-player injury update",
         "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T14:06:02+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaVl4WTJERE5rSG5tS251UU0yaE5rTUdHSE4xdEZSZjBUdy1JQ2ZGTGlRa3NER0hkV2l5eGJ3UTNsbDJoQzFvVkNsQVBwR2hORnA5bTJqR2ZmcVFCOUNIVV84T0lLMllybG5qRGRjZE9zeDlIdjQ2ZmtyVG5iUGJSeWoxS1M1TWZZeGxDZ0dqLUdTYjhSSnhjTi1FcTVDTExi?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal could lose millions if Andrea Berta doesn't solve £353m problem",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T16:33:25+01:00",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T06:46:07+01:00",
         "source": "Football London",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVFNPTXhMNWRuZlNoVmVVNHNTMlFyNWVMRTgtY3pRYzRWb3Z0amFzdHp0LUVVUVRqVzVSTkpPNHlOV2hOLXpCV0N1Nk1LY0RYTGtoWlVfVjEwMDdiRVlBS2JHUU14MTRrV1ZJQ2JWTnlTeFJNTEw2V1N1cE5vajd5YU1URW42eXRpR2pyWlJMcmjSAZYBQVVfeXFMUDRMdlNyVHp6VEg5TXI2T3ZZR2RsYXliX3ZTN1o5WGhjRUFYYUk0bWNtWE5kWUVjbHpvbXJJbVFtZUtaZEtxZEpTZVF2aHN0bWQ4ZzBuVWthN1huSFl5TXFJS05rQTNnSVFPc1RaVjFFV24xaW5WSUFuUW5LSWFnWXktVzAzdXJqNlQ0aFg4SzJXNno2N2dn?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVFFnY0FZRjNYZkM0c3lkZWNRUXVoeDNKUGJ1TmtnaUE5a01uVVR2eXBlWV8xY2FUVklYTmZIbmFUNVA2Nk9Eb1NCYnBBdFRoY1VfWHFoWW5BX2s1ZGxUbnZoWms1MDVKWXVXNDlxM2Jhc2hMcnp4WWxjbWNmWktxMDdKdEMtWFFtTDRJZXZR0gGTAUFVX3lxTE1tUV8xRXJjYnFSZHlqaGRMTTNlaEg1QXFjZTFJTy16a3c2MFlYR1B5WUZxWWR1UUZIOHZPNk5nT1ozUlFlVjk5ZExVbnNXbFBNMGZCYTBHRUFncmNLZkxTeWlqOGZveGxibmFITjZ2V1hNTVRSWmlBeExubXNPRDdXZFEzX0ZZcV9CenpULTB1VmFRbw?oc=5",
         "contentType": "article"
       },
       {
@@ -1049,33 +1086,6 @@
         "publishedAt": "2026-09-30T19:55:13+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EaDVjRzBZZ0ZHTjgxZjFvYkNKY3V6VzdMUjFFUmozQlV3ZjhZS3N1MnAtQ2pfTFByYThnd19aNk9tMlJjVzVCSnJuaHB6amVJYUt1NUhwU3dkUmRZVlAtOG5rZGxSVGl5?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "The full inside story of Arsène Wenger's arrival in 1996",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T13:18:45+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdi0wSENSY2dEczFOZUw3ZXFaeW45Q1dlSGZsVkNvbWpsbG1OUHQ3X1ctbmM3eFNMamF2NmlsVVR6ZlB6ZF9DVE5uTWJqenpNMUNUeHEwVWM1TGF6YkluSGFNbm5qX185Qlh6MENpcnFrUW9KQWZjYW90WkRCTHgwNFZLdTNQLTJxTHpRa3FVSTFBV2hDVDl5UHV3YVhqS2ZqN1pGZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Saliba, Rice, Odegaard, Havertz, Hincapie - Arsenal injury updates and return dates",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T12:43:53+01:00",
-        "source": "Football London",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ3lvbzNXTmtSajN5OGlMVnVSdVp6OXViLVpXY09wblZiaGQ4cEFwSVB2MHZpUjNhY29wNWRBZVZIZUY0MjlzMVd1SGQ3X3RLbWpqaGJGZ25IeWJCWnYwdkcyTXJqa2JRVU01OXl1SmtGQm5sbFROMGVBNHFRdFF4aXlIc2ZjNU9WM3IyTHFLd9IBlAFBVV95cUxNZV9LM0NHUXo5OGhFNXhGVU9FZFdaODNZSEV0U25ud0RibmN1Uk5YdHNmcnRTNjQ0ekJZdUdsT2VRNG1pLWZYTHBGOHFXVV9DMXJhZVU0THduUlBkVERjMV90eXBTd0VCbXl0WHlmb0ZWaVBuaVVuOGUzc2liOC04TUJEdmI4VWYxRVFYbzJvQkhoczdm?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal injury update: Tzolis, Rice and Havertz latest return dates",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T01:25:36+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUU9ORTZ5bmRwM0VteV9RNmZMVGw1b3EyVXZlRExNclFENE9tYlBVbzNmaDBtRURiLTNQNlF1bi1lbWNNQkdrby05RVIzNlZPNTFMYkFzTURYNUItVVBlYU1IaFpVdmVmUmNxYmRtZENacDdfc2ZUbndwMEhadUNvTGJDVW16Y09MZ2VmdDhXMXlKanNrUVR2ZWpaMFdSUko0anVWT0g0UnJFQ0VSdFI5X2Ewd3pzUTdCd29VZEk4UHNpeVE?oc=5",
         "contentType": "article"
       }
     ],
@@ -1114,23 +1124,23 @@
         "familyActivity": false
       },
       {
-        "title": "Teddington duo to takeover local pub with £332k investment",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T15:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdUxVaUdQbEpjenc0bGFwQ3RLVl9UaWloT2s4SUltSGZQbV9UU2xadTlRRWJZdGYxQmstVUZqT3lDUnRxUGRVNTRoSU9HREVqSUozS3czYW1CZjI0VFhCaUJ2aWswbXpNTzFMdVpjaWlhd2x2cTRGZnhLWi1fcHB0NWpxS3dmTVRzWS1DQWJPYnVHZ0J6dkNaeUFrUERGRFpEcUx5MS0yYzZfZ1VFWDJn?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "New revamped Surbiton pub to offer London-style pizzas and unique design",
         "summary": "",
         "meta": "Thu 1 Oct",
         "publishedAt": "2026-10-01T15:00:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVUdESEt6aWtkQWNIbE5XaXBMbFk2R216OUpfN0VvX2JIUDlkcF9HSGhEdnZCN0FFbnlHd05fT3BZeHVCUktKS29zTnVHVVlwTzdSeHFZWTBLT3hWcjdSX1hKYUZERnFSbjRmNW1MVER6eC1XbXZEeHRKMDVlWmpCdmMzMkVqWVlmRHN5MVBLNEp0UE9ycm9OcjR2UEk5eEhSY2k4ZUlDaHZKRDhkVzNVMmdPVzkzckxp?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington duo to takeover local pub with £332k investment",
+        "summary": "",
+        "meta": "Thu 1 Oct",
+        "publishedAt": "2026-10-01T15:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdUxVaUdQbEpjenc0bGFwQ3RLVl9UaWloT2s4SUltSGZQbV9UU2xadTlRRWJZdGYxQmstVUZqT3lDUnRxUGRVNTRoSU9HREVqSUozS3czYW1CZjI0VFhCaUJ2aWswbXpNTzFMdVpjaWlhd2x2cTRGZnhLWi1fcHB0NWpxS3dmTVRzWS1DQWJPYnVHZ0J6dkNaeUFrUERGRFpEcUx5MS0yYzZfZ1VFWDJn?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1164,6 +1174,17 @@
         "publishedAt": "2026-10-01T11:12:59+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLXZQSzUzSWtNamdKYl9PZHdYalRnMmJxZmhRNWltRGJjU1ZKc3RNR25QXzBrTHQ0d2xCd3NwaU10X3BObElBQldLeEFoNmVSYjE5c0dMUVpHYUt2alJMZTZLRktqTkVGMzdLeXljMTFYaVJTcmpXRWVXaEhPN3dta0szQWM5TWdNb0otNEgyaFdMNmNyVVZPVFhtV3U?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Blues legend to play intimate Teddington show",
+        "summary": "",
+        "meta": "Thu 1 Oct",
+        "publishedAt": "2026-10-01T11:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPR2VKSnNHRTVJTllDS3NRQ3I0aDlmV3E4RFNjUGpVY25CbkFDY2RIZnB6MWlVNEhzcXE0YUVqUW9XYkNLQTdld3N6MER0eVJEcndtTDdPaHU1MnhiOXAxOHdFRDlyckdQZUZEeEZfQks2T2NJZUFSYjlNRlZKcWJ0RUNQTTdfc3RoN1RibloxWHY0dVE2NHdTSFlrZHYtQmhWVTE2SDU2cFdfODVoWDRnWkRscG84Ulk?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1244,27 +1265,52 @@
         "contentType": "article",
         "localPublication": false,
         "familyActivity": true
-      },
-      {
-        "title": "Skate at Hampton Court Palace's festive ice rink this Christmas",
-        "summary": "",
-        "meta": "Fri 18 Sep",
-        "publishedAt": "2026-09-18T08:00:00+01:00",
-        "source": "Time Out Worldwide",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcV9CdWpTTE1QdU1qU0tqRERJSkUtdWpWYktFMV9wVEJOZDhjZWFrTVBCNlRfb2F5aFNKaEVPTm5uRC1wZ05yclgyc3NnSldfV2ZTMUxneFp1QWxwQmRkUjM5Q0JLWi1wM2xDQzNfeUFNTUdSUVpuTmFMRjVhMTlZMA?oc=5",
-        "contentType": "article",
-        "localPublication": false,
-        "familyActivity": true
       }
     ],
     "UK news": [
       {
-        "title": "Bill Nighy wins best host at British Podcast Awards",
+        "title": "Jodie Comer to receive first ever Outstanding Achievement in British Theatre Award",
         "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T10:21:06+01:00",
+        "source": "Ticketmaster Discover",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYTU0S0gybm9EWEdVUnAydFhmbWo0dGMybUdGS0Rnci1VUXJxQzU2b3BYNkJhSmpFellKRDA5S2o0N3RkWVNGU3dVMzZ2UFFQTjVlbFlCMU5aTS1wS25hSm5kX3JXUno0TFR6NnR0R0xzb2MwdkdvUzFSYXl6WlpDcmo4b3RZdm9nOG9adG9Tc0loWkRQWmxKYlM2a0l6OHl0UDZyWVJoOEItSGxjdnFuWW9DNzB2V1hYMmpRRFVwVDM0bFh6RmhwX0tRMGk2Zw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "£500,000 fund to reopen for community groups building links between Northern Ireland and Great Britain",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T07:38:26+01:00",
+        "source": "loveballymena.online",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTXJkaURUU3Ayc0tsWE1wNVJhd2tDeDY2X1VKZTNydkVPVG9CejhNc3dqWXdzNV90YUVOc25hYXpxU18tRS1hZDZVZmNWOS1NZVlGQjdIekg4UHk4YnB2VDFwWjRkZDlPekViOFhaczNhZmlrRDlheU1Qc3lVWWdtbWt0dG5zZFRSblNJcVZzWmNDVjJLZ00xTm43d0FqUWwzaGF0UlMxZU1HVWdpcXpmaDBwTjVOZFhvZzRzY05UbFN5WTNPS1E2dUJkUGZuUVcy?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "What went right this week: the good news that matters",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T06:54:36+01:00",
+        "source": "Positive News",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPem5BTFFjZHZUdFItWjh2QkdkbVFxaFdiaDRzS2NQeXIydU03ay1qckk3eWxCdGo1TjZ0Ni1OcUVjb29rWlZ5SU1vQVBuTE1XWDI0emFnSVFEam5PTUlFZjJNMUtabGF2MG9zNDN5eGc2N1kwTEpIR080OHdySjdhYzNpX0ZDZ3p2Snc4?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Japanese Shinto ceremonial sand-digging in London celebrates start of British Library expansion",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T05:00:17+01:00",
+        "source": "SoraNews24",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSU9nMUUtRjZfWnczU1JPWjduSXh1M05OOGwwY0NDRXpoc01TdU5ydHRoQWh1VEdsRXFlTkFEeElSUURLYzNGWWVXLTVTMno0aWNtTUdhU0s2TFZOc3NGc2JvTlhLbEUtajNwb2dMQTJfZEw4b2ZXNzBjcjhZTGdQYk51T3BKZnRGZXJWWkJBeHl0bUQ2cFhscDBLbUtfUnRIN1RiSlV4QmZZZW1KU01FYUtGVVlEWnRuZlhuVkp1NNIBxAFBVV95cUxNNk5Xa1VZYUFyYmY0RUhhWFVLWkV0T1NHOUJMZDlFMDlpQlhDU1RjMl90c0h1TE5samNSUHhBTHNvQ3U2S3dEbHZyUVhlMVJDUjdmN0ZmTDZHLW8tQVJXcFh5VHBjR0dyM08xUjZNNjNzQnZFb1o2V3ZYQzZyNkFiYVVTMFp5OVhjaVNzY0NXY2kya01WXzIwNzB6VHFKVWtIdm1uVFdqLU5MMFJSVmFCc01QR21HOTYyeC1LNlBiWjdmX2xR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Bill Nighy wins best host at British Podcast Awards",
+        "summary": "The actor has become an agony uncle in what award organisers called an \"irresistibly endearing series\".",
         "meta": "Thu 1 Oct",
         "publishedAt": "2026-10-01T22:30:29+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tLXF5cEhUTmlvV0RKNGw2V2NxN0FJenotdEVHaHM1SENPTERQSUhnMTVnQjFwaEhKQTlQSmlKRVhjRzhwS0hYd1NaaGh5WE9NZDBOS0NPenpFSHFPanc?oc=5",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cvrl6l0klw1go?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
@@ -1290,7 +1336,7 @@
         "summary": "",
         "meta": "Thu 1 Oct",
         "publishedAt": "2026-10-01T18:22:00+01:00",
-        "source": "The Independent",
+        "source": "independent.co.uk",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT01leEM0ZWc3Qk5aN2F5SFBVRnFfMmg1SXRuRHFqU2RneTRsdkhKWUttclBKcUxCWDNHeDlkRXZYcjVtdEVSV3VXc2V6cU94MnJmOFNRdGktb19KcWtmaVdqYjg4M3JMVnlvbzFXazA5MG5xR1k3M2x1V0ZzcVVEU2NsR25GUDBDZzdxN1M1R0pmUQ?oc=5",
         "contentType": "article"
       },
@@ -1299,7 +1345,7 @@
         "summary": "",
         "meta": "Thu 1 Oct",
         "publishedAt": "2026-10-01T18:03:25+01:00",
-        "source": "Glasgow Times",
+        "source": "glasgowtimes.co.uk",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaXBEbzVMemZLS21yRGwzbUthblB2VzJQZmhxRVFia3JoYkNhNy1NbWhHOXJqT2dvZmZGVFV6Z0tzd1FBRWN0X1l4YmFwYjdLWno2OGlfZlcwZkdFX2NLaUc1Y185cUZ5ZUd3R0g5RU03b2NnWVEtVDFUdGJDbW1Wc3dvY19Ja3NzRTdrOWZzMUZMOVpJMXRmQ0JwUG43anBscjZIRGgxeHRxUDUyQUxtR2p3?oc=5",
         "contentType": "article"
       },
@@ -1329,55 +1375,19 @@
         "source": "WhatsOnStage",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVlhteXpIb2xJRExBdTBhNm5ad2xRay1oY1U3UEhyTU5vdTUyOU1pTDhETDJwNG5iWDVYYjRyZDhoUEkxZTR5NDd0b1VqS1RHMmpNNXNLc1lRZTJNTzkxSmNYRzFZSUNDUTFLZGJ4bnNSQ2pVRVVwNmxOaEh0TXdQRnJqb0lzVmtsVmdiTWJKcDlMbmdPcGhlakhZVHpNNFRwb0x1VS10N2dIYVlIcU1ZWXhOV2w?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Powerful drama leads BAFTA Scotland Awards nominations with seven nods",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T12:30:19+01:00",
-        "source": "Glasgow Times",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQekg5UkVNRTEyMHZrQlhyMnpWcmxMQ0hpOHRvTTZLTDBJMmhJc2NtUXR1Z01jVVZtN1BsYk9wSk5meUt6Y1V6Z0xIR3pVTmZpa0FuaHp0aVBReUZUa1JRdWhnWllGRlVKeVFRQ01fajhRQlFaNUtfcy1rRGhmUURMdFZUc1IwaW1QYjNoeG1qbTdQaVNlY3VUbUpBUUI?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Jodie Comer to receive inaugural Outstanding Achievement in British Theatre Award at UK Theatre Awards 2026",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T12:23:13+01:00",
-        "source": "theatreweekly.com",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQS2VLYjQzRF9fZHRGbGQ1WDFEc2NKZ0FpOGtyd0xhRUZYNzh5VUUtV1kwZzFpMGxoZmJqaFU4WmxHRmxtX2EydnYwbnJaNktvMHJ1MXg0d1RoS0wxZ3g4SUpSNVZqVXpxTi03eDV0Tjh4bVd0R0RJUlUyR0ZCRGh3RlVzUU1tZTl1Z3N0OFNjSVJEQWxDSjAtNzdsQUVzQy1KRmtQcFVPZDlRRWZqRzBPZXBkVGtnbHNqaU1tdElJaGxmdjloM1FLSEx3S0RKaTg?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Jodie Comer to receive inaugural outstanding achievement prize at UK Theatre Awards",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T12:10:00+01:00",
-        "source": "The Stage",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaHhMZzRJRURGaW5VaHNRbVJDNHZWRUtrMWgxOHJzbEw2dUJqX0I2dndMd2VzQW1ucmtmb1FTR2h2LU1xREIybEZVVl9JQ0xLRy1NOVpWSjl2c1ZBenFyM3BKZVc2RXFLbnJRS3BIWC0zSUk5bE5WSnpBY2l0aGF3eHc1dmxhbUtlSDZuVXdQMjVmci1zTzR5c2tQdDdxWlBQM2dyMl9qTVlyd2pfMU5TUGEyNA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Phoenix Energy Celebrates 30 Years In Northern Ireland",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T11:08:49+01:00",
-        "source": "Business Eye",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRnh3dHlpSzVTZk9rTnNvUjBWS0VOSkJiUHZucU9uaVFYaWVSaExCRTNNdk9BWlhvSWNSbmN6bmEzdjhJX0FNT00yUjkxSWVtMG5LcUdJRjd1VDFPbjN6UmNieDl3RnhPeDJUb0hPbmpiRWVGYVlQQmpGRlQwZUxaRnlEOG1hang5MDg0czRoNHkxSmF2?oc=5",
-        "contentType": "article"
       }
     ],
     "Fun": [
       {
         "id": "landmark-art-fair-2026",
         "title": "Landmark Autumn Art Fair",
-        "location": "Landmark Arts Centre Â· Teddington",
+        "location": "Landmark Arts Centre · Teddington",
         "summary": "Meet artists and browse paintings, ceramics, sculpture and prints across more than 75 stands. A creative fair with free entry for under-16s.",
-        "when": "16â€“18 October Â· Sat/Sun 10amâ€“5pm; check Friday booking time",
+        "when": "16–18 October · Sat/Sun 10am–5pm; check Friday booking time",
         "startDate": "2026-10-16",
         "endDate": "2026-10-18",
         "ages": "Under-16s welcome",
-        "cost": "Â£5; concessions Â£4; under-16s free",
+        "cost": "£5; concessions £4; under-16s free",
         "tags": [
           "Events",
           "Fairs",
@@ -1394,9 +1404,9 @@
       {
         "id": "kempton-steam-oct-2026",
         "title": "Kempton Steam Museum steaming weekend",
-        "location": "Kempton Steam Museum Â· Hanworth",
+        "location": "Kempton Steam Museum · Hanworth",
         "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
-        "when": "17â€“18 October Â· 10.30amâ€“4pm",
+        "when": "17–18 October · 10.30am–4pm",
         "startDate": "2026-10-17",
         "endDate": "2026-10-18",
         "ages": "Supervise children; engine-climb access requires height over 1.4m",
@@ -1416,8 +1426,8 @@
       {
         "id": "transportfest-2026",
         "title": "London Bus Museum TransportFest",
-        "location": "Brooklands Â· Weybridge",
-        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiserâ€™s programme and admission details before booking.",
+        "location": "Brooklands · Weybridge",
+        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiser’s programme and admission details before booking.",
         "when": "Sunday 18 October 2026",
         "startDate": "2026-10-18",
         "endDate": "2026-10-18",
@@ -1431,6 +1441,28 @@
         "source": "Brooklands Museum",
         "url": "https://www.brooklandsmuseum.com/discover/latest-news/brooklands-museums-2026-events-calendar-grand-prix-centenary/",
         "venue": "brooklands",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "teddington-beer-2026",
+        "title": "Teddington Beer Festival",
+        "location": "Landmark Arts Centre · Teddington",
+        "summary": "Beer, cider, food and entertainment across bookable sessions. An option for the grown-ups: the organiser restricts entry to over-18s, with babies in arms welcome.",
+        "when": "5–8 November · choose an afternoon or evening session",
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-08",
+        "ages": "18+; babies in arms welcome",
+        "cost": "£16.50 + £1.50 booking fee; includes first beer token",
+        "tags": [
+          "Events",
+          "Beer",
+          "Indoors"
+        ],
+        "source": "Teddington Beer Festival",
+        "url": "https://www.teddingtonbeerfestival.co.uk/",
+        "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-02"
