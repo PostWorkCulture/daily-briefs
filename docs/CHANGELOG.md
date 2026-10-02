@@ -1,3 +1,12 @@
+## 2 October 2026: Elevate Around the World with astonishing human-first feats and retire dull cultural listings
+
+- Retired dull mariachi band fact (`mariachi-string-trumpet-music`) and commonplace folklore listings (`flamenco-andalusian-cante-baile`, `tango-buenos-aires-milonga`, `fado-urban-popular-song-lisbon`, `reggae-music-jamaica-kingston`) in `data/fact-catalog.json`.
+- Published today's replacement fact: The Living Root Bridges of Meghalaya (`meghalaya-living-root-bridges`), highlighting 500-year-old botanical suspension engineering across monsoon torrents in the wettest place on Earth.
+- Downloaded and cached 3840x2371 high-resolution photograph to `assets/scenery/world-fact.webp` with cache-busting digest `2cab50c90200`.
+- Expanded the human-first fact queue with verified extraordinary feats of human adaptation and subterranean engineering (Derinkuyu underground city, Lake Titicaca Uros floating reed islands, Meteora cliff monasteries, Kawah Ijen volcanic sulfur miners, Sagada hanging cliff coffins, and Skellig Michael 6th-century beehive monastery).
+- Maintained a verified human-first reserve of 105 unused facts in `data/fact-catalog.json`, ensuring uninterrupted daily publication through 2027.
+- Verified clean passes across all 117 unit tests, node tests, and responsive viewports (mobile, desktop, widescreen).
+
 ## 2 October 2026: Ensure Google updates are always top in the AI section
 
 - Updated `js/tabs-dida.js` renderer to replace `openAIFirst()` with `googleFirst()`, ensuring Google, Google DeepMind, and Gemini updates always lead the AI section.
