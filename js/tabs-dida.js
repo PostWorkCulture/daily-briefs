@@ -66,7 +66,7 @@
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
   function newestJobsFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.postedAt||'')||0)-(Date.parse(a.postedAt||'')||0))}
-  function openAIFirst(items){return [...(items||[])].sort((a,b)=>{const score=x=>/openai|chatgpt/i.test(`${x.title||''} ${x.source||''} ${x.url||''}`)?0:1;return score(a)-score(b)})}
+  function googleFirst(items){return [...(items||[])].sort((a,b)=>{const isGoogle=x=>/\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);return (isGoogle(b)?1:0)-(isGoogle(a)?1:0)})}
   function didaIcon(name){
     const paths={
       star:'<path d="m12 2.8 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/>',
@@ -141,7 +141,7 @@
     if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden]);
     news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
-    document.getElementById('aiTabGroups').innerHTML=group('',openAIFirst(data.sections?.AI||[]),'ai');
+    document.getElementById('aiTabGroups').innerHTML=group('',googleFirst(data.sections?.AI||[]),'ai');
     const funItems=(data.sections?.Fun||[]).filter(item=>funEventInWindow(item));
     document.getElementById('funTabGroups').innerHTML=group('',funItems,'fun');
     document.getElementById('funCount').textContent=`${funItems.length} ${funItems.length===1?'event':'events'}`;

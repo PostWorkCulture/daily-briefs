@@ -4,9 +4,11 @@ import unittest
 
 from scripts.refresh import (
     editorial_news,
+    google_first,
     news_item_is_job_vacancy,
     section_content_type_errors,
 )
+
 
 
 class SectionContentTypeTests(unittest.TestCase):
@@ -129,6 +131,21 @@ class SectionContentTypeTests(unittest.TestCase):
 
         self.assertEqual(section_content_type_errors(sections), [])
 
+    def test_google_updates_are_always_top_in_ai(self) -> None:
+        items = [
+            {"title": "OpenAI announces model", "source": "OpenAI", "url": "https://openai.com/1"},
+            {"title": "Anthropic releases Claude update", "source": "Anthropic", "url": "https://anthropic.com/1"},
+            {"title": "Gemini 4 Argon frontier model", "source": "Google DeepMind", "url": "https://deepmind.google/1"},
+            {"title": "Google announces new AI features", "source": "Google", "url": "https://blog.google/1"},
+            {"title": "ChatGPT enterprise expansion", "source": "Reuters", "url": "https://reuters.com/1"},
+        ]
+        sorted_items = google_first(items)
+        self.assertEqual(sorted_items[0]["source"], "Google DeepMind")
+        self.assertEqual(sorted_items[1]["source"], "Google")
+        self.assertEqual(sorted_items[2]["source"], "OpenAI")
+        self.assertEqual(sorted_items[3]["source"], "Anthropic")
+
 
 if __name__ == "__main__":
     unittest.main()
+

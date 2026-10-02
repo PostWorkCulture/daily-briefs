@@ -1,4 +1,14 @@
+## 2 October 2026: Ensure Google updates are always top in the AI section
+
+- Updated `js/tabs-dida.js` renderer to replace `openAIFirst()` with `googleFirst()`, ensuring Google, Google DeepMind, and Gemini updates always lead the AI section.
+- Updated `scripts/refresh.py` to prioritize Google DeepMind and Google Technology RSS feeds, include Google DeepMind / Gemini in the news query, and apply `google_first()` during profile builds.
+- Re-sorted today's AI feeds in `data/pete.json` and `data/sofia.json`, promoting Google DeepMind's Gemini 4 Argon update to the top of the AI section and Pete's lead story.
+- Added unit test `test_google_updates_are_always_top_in_ai` in `tests/test_section_content_types.py`.
+- Verified clean passes across all 117 unit tests, node tests, and responsive viewports (mobile, desktop, widescreen).
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to reflect Pete's approved specification.
+
 ## 2 October 2026: Prioritise crime and scandals on Netflix, BBC, and Channel 4 in TV Picks and refine card display
+
 
 - Updated `scripts/enrich_tv_picks.py` to boost base service weights for Netflix, BBC (iPlayer, One, Two, Three, Four), and Channel 4 to 55–60.
 - Added explicit +160 scoring bonus for crime, scandal, investigative, and true-crime programmes streaming or broadcast on Netflix, BBC, and Channel 4, ensuring quality public broadcaster and streaming titles displace minor cable reruns.

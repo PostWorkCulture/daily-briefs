@@ -144,7 +144,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Stack News groups vertically, with UK News directly underneath Local News. Sofia keeps Sweden above Local News.
 - Show up to five unique, high-resolution article images in each News and Arsenal view, with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - Add an article media block in the browser only after its exact publisher image has loaded, decoded, and met the 1,200 × 675 minimum. A failed or slow image must leave the story text-only instead of reserving an empty dark media slab.
-- AI uses exact company marks or the existing code-native fallback. Fun uses decorative activity icons; no unrelated article imagery.
+- AI uses exact company marks or the existing code-native fallback. Google, Google DeepMind, and Gemini updates are always placed top in the AI section. Fun uses decorative activity icons; no unrelated article imagery.
 <!-- Historical Career requirement, superseded 24 September 2026: - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement. -->
 <!-- Historical Career requirement, superseded 24 September 2026: - Career uses neutral light grey `#D4D8D5` for its field labels and navigation hover or keyboard focus. Do not use yellow in the Career treatment. -->
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.

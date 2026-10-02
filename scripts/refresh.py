@@ -554,6 +554,15 @@ def newest_news(items: list[dict], limit: int) -> list[dict]:
     )[:limit]
 
 
+def google_first(items: list[dict]) -> list[dict]:
+    """Ensure Google, Google DeepMind, and Gemini updates are placed top in AI."""
+    def is_google(x: dict) -> bool:
+        text = f"{x.get('title', '')} {x.get('source', '')} {x.get('summary', '')} {x.get('url', '')}"
+        return bool(re.search(r"\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+", text, re.I))
+    return sorted(items, key=lambda x: 0 if is_google(x) else 1)
+
+
+
 def news_item_is_job_vacancy(item: dict) -> bool:
     """Identify vacancy listings without rejecting reporting about jobs being created."""
     if str(item.get("contentType") or "").casefold() == "job":
@@ -1644,11 +1653,14 @@ def build_profiles() -> dict[str, dict]:
     wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
     cache_world_fact_image(world_fact)
     ai = editorial_news(
-        merge_news(
-            rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
-            rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
-            google_news('(OpenAI OR Anthropic OR "Google DeepMind" OR "AI model") when:3d', 12, 3),
-            limit=10,
+        google_first(
+            merge_news(
+                rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
+                rss('https://blog.google/technology/ai/rss/', 'Google', 6, 7),
+                rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
+                google_news('("Google DeepMind" OR Gemini OR OpenAI OR Anthropic OR "AI model") when:3d', 12, 3),
+                limit=10,
+            )
         ),
         10,
     )
