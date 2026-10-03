@@ -29,12 +29,12 @@
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 10,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-04",
-        "high": 22,
+        "high": 23,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -65,7 +65,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Cloudy · rain chance around 10%",
+      "detail": "Cloudy · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
