@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Saturday, 3 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Saturday, 3 October 2026 · refreshed 11:35am",
   "worldFact": {
     "id": "cappadocia-derinkuyu-underground-city",
     "editorialPriority": "human-first",
@@ -18,18 +18,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=c721ffbf1667"
   },
   "weather": {
-    "temp": "11°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "temp": "19°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-03",
         "high": 21,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-10-06",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -63,8 +63,8 @@
         "date": "2026-10-07",
         "high": 16,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Cloudy · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -246,6 +246,20 @@
       "colorId": "4",
       "googleEventId": "c5hjge9h6li6ab9jcoqm4b9k6thj2bb2cgs6cb9k74pm2o9n6cpmap9g6k",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Plumber Coming",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-14T10:00:00+01:00",
+      "end": "2026-10-14T12:00:00+01:00",
+      "date": "2026-10-14",
+      "time": "10am",
+      "allDay": false,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "65h36dj4cdj62bb574s3cb9k74r38b9p74o64bb4ccsjeo9k74r34o9n68",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Kids",
@@ -593,46 +607,46 @@
       {
         "title": "Arsenal release new training footage to confirm quadruple injury boost",
         "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T16:31:51+01:00",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T01:33:08+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb0VwTlA2WDRDWTU2aHV6SVR2eEVJLVBuS09OOVhVNkJFWWYxUjh3dVZjSDZkZTBXMkRQbFlsa29WODZOYmNvSWZnSEhWcE1yS0lWR01ER3Z2VFhHOUZEWU1iNTBhbmRsVnEzT0NEM05NVHh0eElJcVRxRjF1MHBMUVAtOHRXaEQxWU9EbFpEb3M5U3VWVG1nSnNoWXlXcTRqNy1wbQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Training Gallery: All set for City",
+        "title": "On This Day | Di Canio double destroys Arsenal",
         "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T17:09:30+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTm5lMHFpcF9jR3NUSkFKZEFpNlVxSmhvZm1Gb216emg5SnBMTC1VLUpLeVpwRVlMZHNUczVLenZCN09KbzE3Y3RXM2ZTWWNCTzFxbENlVVFnaTBJLXZ0eFEtdFdOZE9mY3cxcHBLYlhLemM1R1ZpS240THdvVkw0RQ?oc=5",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T08:09:19+01:00",
+        "source": "West Ham United",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSHQzSXE5WE5YRnVVQldFNkNJSDZIY1h6TEtVSG42c0lENmR0alNELWJUR1F4WkhmaU8yMFQ5OW12ZlR0bWg5UlhwTlVNb3AyUDA2SmtDeVl5NjNZZ1dBZG9ibDJPUkU5SGNJcWMta1U5OU1iSjM0V0dzLVBndGwxN1o4WQ?oc=5",
         "contentType": "article"
       },
       {
         "title": "Arsenal games Christos Tzolis will miss as injury timeline is 'revealed'",
         "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T17:28:00+01:00",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T02:28:32+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM1lYbE05c3RGcjFkSnA0MlAxSEtqOC1Oam5VWjhybHhGcUpkMm9uZDBYU25kVE5kR1JjNnJJOHNEMVd0S0p4bXZZTHppdHhWMTIwVUo2QUFlMWZJdXNDX1BxS09rbG1qWHVCZlhPYzhKWmZMcEFhRlFkOURhMmJpQzJYVElheC00M2Jhdl9DeDRLbEphQ3JBa2kxRXJPRXJ2MVI4MnRwMWtIQXN2WjNZ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Renée: “What we need is laser focus”",
+        "title": "Arsenal and Topps sign new exclusive licensing deal",
         "summary": "",
         "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T15:29:09+01:00",
+        "publishedAt": "2026-10-02T15:29:10+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORUZJaHpEdlkyeERvZ1VQVmVwVlhQa19mOUpRY0x6RVB2bTRfLVRYNnltVXJQV2tsQ1k5VE9rbkl2ZGJ2Z2djV0lkYy1TdW90YnBKem1WSWlrcU9oaUhRalNzM2ktMF9fMlRmX3VXZjlwbTBFNXRvQ1o2czZ4M04zNA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQXzhiRXJkMG1LdFc2MVJGY1R2elhGbXdaeEt3ZFpUNFFXcURUY3NHWThyOWh1a0V6NFFKSHRma3NLVGdmejhWUGE4cVRwMUtzWnhYdjhvUVIwVkQtT1c3TE9QQ0Z6OHJuVkt4NHZKR2NrT2ozOFlpdEx3SnFiVnh6WG9JTlpyVnZfYUhjV2FaYVhDWFppV2RlQw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Inside Training: Building over the break",
+        "title": "Arsenal handed new Kroupi update after 'green light' for transfer",
         "summary": "",
         "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T13:44:54+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUzctU2tOX2U5ckl6VGNqX1p5ZGlhaExoN2NCUjI5Rk5fTFM2Vll0YXN5YlpabGFHeWNjTEd0ckhOS3lDZXd5U0Q5RTBubTZnYnkyVTlNbXFkS3E4c3hIQ242WmdJRjQxM2RGSHBORE44MnhWcm5LLWlKX0pVNUg3TkJLSFpQNF9z?oc=5",
+        "publishedAt": "2026-10-02T19:52:31+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPd1NnbjBQek9uWmFGeTFoZFJydmt1UlhYN09aUmk2MW94aGtYaENkc21USUk5TjY3ODhqakx1SFh0ZlFGOF9IdDlNWDFCdnB3NlJqbGNUWFJUTmtBNE4tTUhvQ19RenhYRV9IV3Vib2lrdXV6ZFFvM1BLbFFkdE02RFVSOUxJSFFfam5GdldoVUdob2s?oc=5",
         "contentType": "article"
       }
     ],
@@ -656,22 +670,22 @@
         "trust": "Trusted report"
       },
       {
+        "title": "Mikel Arteta set to sign new Arsenal contract | Football News",
+        "summary": "",
+        "meta": "Wed 23 Sep",
+        "publishedAt": "2026-09-23T08:00:00+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZUdGUVFCVGVIMnhmRHZPRjdNX09mcWU5dGV4bUQ5NUhkOEoxYmxwLWhQcFJ4ZVB4YUd3REpBOGJFSEk3eklpWlFEOV9jTmZkaUJEbGd1M3FzR0dsUWY3U3hKUnVUSzdzcnV6dGYzWmVhcWlHaU1xdXdURnIxUlJqeDEyaWtZazdKOWVkbUlnbmVpcGNfb2pXT1VoV1hKR3FSQzR1WkdEODk2NFVUWG40RDYtbFBkenc?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
         "title": "Mikel Arteta contract: Arsenal boss agrees new deal to extend stay at Premier League champions",
         "summary": "",
         "meta": "Wed 23 Sep",
         "publishedAt": "2026-09-23T08:00:00+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYU5vMzhQWlBPM2NCWUc3S0Via1FVSkUyZ1RxZVdIb2FvcV9VS3lndkFFZENuV2oyMXh4UW9QRlVNRFR1NEdtdjNTc2ktYWphdUY3OUpMQk5xMHFmSnlnd2VNcmc4Y2QzYUZjTzBSd0ZiY19TUjkyTGxkd3dNNHd6NmpHVWZJZzFTa2plNXJ6SzZPOXRSSUNWcWRvRHpIWVZQNlNWQ3hhcm5DVHdvXzdYQUxHdXh4VWZEVGhUbWxBZTZHR05EQm55eUxKM3EwVG1WbEp2WGdGOVZ2dw?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Mikel Arteta agrees contract extension expected to keep him at Arsenal until 2030",
-        "summary": "",
-        "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T08:00:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWnJTdUNkQlI1YVZnWmNOZkdxRkhGaURDWVl1VDdrNXBCOTN1YkxtRWQwSnpHZldJSlJwcmFvdHdWREJBSmlEUUI3WGJsWENQMXp3cGVvTHdZeWxaeXhjamJwdS12YWFscnp4WjRRaHBsMWJKckoySWI3cjhTYzlsTkhpVTJVTmcybFFJT2N5Q3BHdXJrOWQ5VlcxX0JDN3BoUFE?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       },
@@ -684,19 +698,23 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZ1pBLUNQM3lSY29tTUNGS09faTFHMnJNWWdxeDJPWGhjeTZKdHNoMXViVVpoQTU4YWxOejJ3ejdZX0Y3aUZaaUIzZl9wZ1VUZmJTbi1CTndwUnVjWWRSNVBmNTBkZVFnN3d4NlRGRXNBeVRNMWVqeHlOSFZnRkhiaXZMY19McDZIOHRKYllxVmhYTzBPTmc?oc=5",
         "contentType": "transfer-update",
         "trust": "Tier-one report"
-      },
-      {
-        "title": "Arteta agrees new Arsenal contract, BBC reports",
-        "summary": "",
-        "meta": "Tue 22 Sep",
-        "publishedAt": "2026-09-22T08:00:00+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR3JGdHVrZWdPZkJndWw0cFRaTGFPZ3dQdG8xdWJwY0ZId09GakxVQVdMVG5QRG90dW5tdWE4OGgwTlpSTnRqQ01WQU80dXY2bl81VVJuMkZlOF9fVDdfcDIwUzFCM29HVWpnSV9RQ1IwbmRsN3lPRTRrdFZTMFRTLVdza3NtU0ktLS1jMzE1OXgxY1FWRlNQazhMMEo?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
       }
     ],
     "transferRumours": [
+      {
+        "title": "So good from the magic man! I was stood in the Junior Gunners section for this. Merse scored some great lobs during this era. Think the one in the 7-1 against Sheffield Wednesday was probably the best.",
+        "summary": "",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T11:09:00+01:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11c3pWc1lGSmZIZExGdHdHTmtKSTF4cEVXYmViQk4zdmFVamx4WGVnSjliNWkyWUJYSms4dVVObk9SS042akhkenEtWklyNTdXbktWWl9jUG5FS2xQZmEzTW01RE4?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
       {
         "title": "Quality from Odegaard.",
         "summary": "",
@@ -752,20 +770,6 @@
         "sourceType": "X",
         "confidence": "Arsenal specialist",
         "sourceUrl": "https://x.com/charles_watts"
-      },
-      {
-        "title": "State of that challenge from Bernardo on Odegaard. Ball had long gone. Just clearly went out to hurt him.",
-        "summary": "",
-        "meta": "Sun 27 Sep",
-        "publishedAt": "2026-09-27T22:06:04+01:00",
-        "source": "Charles Watts",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11MW50LU1hWVpJR2VKNkZmNWsyLTNXMS05WWxzV0VfZFh5TElTbWVYNlItY2Z2b0hvcWhjMTFyRWN2QmlTN1R5b2o5Z0FkS24tRXpOMnhSQWp6MDhhV2VZczVkYUw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/charles_watts"
       }
     ]
   },
@@ -792,8 +796,8 @@
     {
       "title": "Arsenal release new training footage to confirm quadruple injury boost",
       "summary": "",
-      "meta": "Fri 2 Oct",
-      "publishedAt": "2026-10-02T16:31:51+01:00",
+      "meta": "Sat 3 Oct",
+      "publishedAt": "2026-10-03T01:33:08+01:00",
       "source": "London Evening Standard",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb0VwTlA2WDRDWTU2aHV6SVR2eEVJLVBuS09OOVhVNkJFWWYxUjh3dVZjSDZkZTBXMkRQbFlsa29WODZOYmNvSWZnSEhWcE1yS0lWR01ER3Z2VFhHOUZEWU1iNTBhbmRsVnEzT0NEM05NVHh0eElJcVRxRjF1MHBMUVAtOHRXaEQxWU9EbFpEb3M5U3VWVG1nSnNoWXlXcTRqNy1wbQ?oc=5",
       "contentType": "article",
@@ -857,30 +861,30 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-03",
-      "preferenceScore": 568.9
+      "preferenceScore": 568.5
     },
     {
-      "title": "Panorama",
-      "summary": "Rates of bowel, breast and other cancers are rising among younger generations according to NHS data. Why are more younger people getting cancer?",
-      "meta": "BBC One · Mon 5 Oct, 8pm",
-      "source": "BBC One",
-      "channel": "BBC One",
+      "title": "Convictions Gone Bad with Will Mellor",
+      "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
+      "meta": "Crime & Investigation · Mon 5 Oct, 9pm",
+      "source": "Crime & Investigation",
+      "channel": "Crime & Investigation",
       "releaseDate": "2026-10-05",
-      "releaseDateLabel": "Mon 5 Oct, 8pm",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
-      "artworkAlt": "Panorama programme artwork",
+      "releaseDateLabel": "Mon 5 Oct, 9pm",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609034.jpg",
+      "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-05",
-      "showId": 8534,
-      "episodeId": 3776663,
+      "showId": 94772,
+      "episodeId": 3776672,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-03",
-      "preferenceScore": 436.7
+      "preferenceScore": 409.3
     },
     {
       "title": "Below",
@@ -910,30 +914,27 @@
       "preferenceScore": 416.9
     },
     {
-      "title": "Blue Lights",
-      "summary": "As Gerry's murder trial begins, Mo's unstable mental health ignites a struggle between the state and justice. Shane has a tense stand-off with Lee.",
-      "meta": "BBC iPlayer · Available since Tue 29 Sep",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-09-29",
-      "releaseDateLabel": "Available since Tue 29 Sep",
-      "url": "https://www.bbc.co.uk/programmes/p0f2cxpr",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608503.jpg",
-      "artworkAlt": "Blue Lights programme artwork",
+      "title": "Panorama",
+      "summary": "Rates of bowel, breast and other cancers are rising among younger generations according to NHS data. Why are more younger people getting cancer?",
+      "meta": "BBC One · Mon 5 Oct, 8pm",
+      "source": "BBC One",
+      "channel": "BBC One",
+      "releaseDate": "2026-10-05",
+      "releaseDateLabel": "Mon 5 Oct, 8pm",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
+      "artworkAlt": "Panorama programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-09-29",
-      "showId": 54401,
-      "episodeId": 3765867,
+      "airdate": "2026-10-05",
+      "showId": 8534,
+      "episodeId": 3776663,
       "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "interestLane": "dark-scripted",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
       "generatedDate": "2026-10-03",
-      "preferenceScore": 435.9
+      "preferenceScore": 436.7
     }
   ],
   "sections": {
@@ -1033,46 +1034,28 @@
       {
         "title": "Arsenal release new training footage to confirm quadruple injury boost",
         "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T16:31:51+01:00",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T01:33:08+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb0VwTlA2WDRDWTU2aHV6SVR2eEVJLVBuS09OOVhVNkJFWWYxUjh3dVZjSDZkZTBXMkRQbFlsa29WODZOYmNvSWZnSEhWcE1yS0lWR01ER3Z2VFhHOUZEWU1iNTBhbmRsVnEzT0NEM05NVHh0eElJcVRxRjF1MHBMUVAtOHRXaEQxWU9EbFpEb3M5U3VWVG1nSnNoWXlXcTRqNy1wbQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Training Gallery: All set for City",
+        "title": "On This Day | Di Canio double destroys Arsenal",
         "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T17:09:30+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTm5lMHFpcF9jR3NUSkFKZEFpNlVxSmhvZm1Gb216emg5SnBMTC1VLUpLeVpwRVlMZHNUczVLenZCN09KbzE3Y3RXM2ZTWWNCTzFxbENlVVFnaTBJLXZ0eFEtdFdOZE9mY3cxcHBLYlhLemM1R1ZpS240THdvVkw0RQ?oc=5",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T08:09:19+01:00",
+        "source": "West Ham United",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSHQzSXE5WE5YRnVVQldFNkNJSDZIY1h6TEtVSG42c0lENmR0alNELWJUR1F4WkhmaU8yMFQ5OW12ZlR0bWg5UlhwTlVNb3AyUDA2SmtDeVl5NjNZZ1dBZG9ibDJPUkU5SGNJcWMta1U5OU1iSjM0V0dzLVBndGwxN1o4WQ?oc=5",
         "contentType": "article"
       },
       {
         "title": "Arsenal games Christos Tzolis will miss as injury timeline is 'revealed'",
         "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T17:28:00+01:00",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T02:28:32+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM1lYbE05c3RGcjFkSnA0MlAxSEtqOC1Oam5VWjhybHhGcUpkMm9uZDBYU25kVE5kR1JjNnJJOHNEMVd0S0p4bXZZTHppdHhWMTIwVUo2QUFlMWZJdXNDX1BxS09rbG1qWHVCZlhPYzhKWmZMcEFhRlFkOURhMmJpQzJYVElheC00M2Jhdl9DeDRLbEphQ3JBa2kxRXJPRXJ2MVI4MnRwMWtIQXN2WjNZ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Renée: “What we need is laser focus”",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T15:29:09+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORUZJaHpEdlkyeERvZ1VQVmVwVlhQa19mOUpRY0x6RVB2bTRfLVRYNnltVXJQV2tsQ1k5VE9rbkl2ZGJ2Z2djV0lkYy1TdW90YnBKem1WSWlrcU9oaUhRalNzM2ktMF9fMlRmX3VXZjlwbTBFNXRvQ1o2czZ4M04zNA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Inside Training: Building over the break",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T13:44:54+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUzctU2tOX2U5ckl6VGNqX1p5ZGlhaExoN2NCUjI5Rk5fTFM2Vll0YXN5YlpabGFHeWNjTEd0ckhOS3lDZXd5U0Q5RTBubTZnYnkyVTlNbXFkS3E4c3hIQ242WmdJRjQxM2RGSHBORE44MnhWcm5LLWlKX0pVNUg3TkJLSFpQNF9z?oc=5",
         "contentType": "article"
       },
       {
@@ -1082,6 +1065,33 @@
         "publishedAt": "2026-10-02T15:29:10+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQXzhiRXJkMG1LdFc2MVJGY1R2elhGbXdaeEt3ZFpUNFFXcURUY3NHWThyOWh1a0V6NFFKSHRma3NLVGdmejhWUGE4cVRwMUtzWnhYdjhvUVIwVkQtT1c3TE9QQ0Z6OHJuVkt4NHZKR2NrT2ozOFlpdEx3SnFiVnh6WG9JTlpyVnZfYUhjV2FaYVhDWFppV2RlQw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal handed new Kroupi update after 'green light' for transfer",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T19:52:31+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPd1NnbjBQek9uWmFGeTFoZFJydmt1UlhYN09aUmk2MW94aGtYaENkc21USUk5TjY3ODhqakx1SFh0ZlFGOF9IdDlNWDFCdnB3NlJqbGNUWFJUTmtBNE4tTUhvQ19RenhYRV9IV3Vib2lrdXV6ZFFvM1BLbFFkdE02RFVSOUxJSFFfam5GdldoVUdob2s?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Gyokeres makes Nations League history for Sweden",
+        "summary": "",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T08:48:35+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWHl6Y3JyZmpUSjN4ek13ZnBQUV9nT3dDaVJleGhDNHlJSHl3YTVhUk5JRk1pMk1JWnVmMVdJLUpGVXdQbE55TE8zRWQwaFNBRXpTT1ZRdzRGQUxSUmtzd2hYVm9MWlJDQU9qemtjQThsVmp1TFhqM2hJS1RIZVlWRnJLYVpBM1lQOTNrMVRqWDFDRTNF?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal transfer mistake exposed as major gamble gives Arteta problem",
+        "summary": "",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T09:04:13+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSlVkQ3R0UDhqTlYteXZ2RmVEUGhoWmd5MkRmaFpodS1WUkhxTjlseUxWWTk0d21od1JpNF9xOHdsR2JVZXZDY2JJd1dCUmJGbDByWE82YXE5RTV3RmNMZzVmWktCblNJbGp6U1lBOU1qVGVKSTBKVGZYMnVNM1dGX09TbEdpVGJCMHJNYnJSY3JoY2FWdWRVbl9mcw?oc=5",
         "contentType": "article"
       }
     ],
@@ -1098,6 +1108,17 @@
         "familyActivity": false
       },
       {
+        "title": "Kingston among top 10 council areas with the biggest falls in crisis support",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T11:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVnRKbVdPM3BmeG53b25FRW9aOFNkbXhjZmZUZXI4aGFnZHhneWtiR2N4UzZfUXNNeFlrdGE3Q3lBYTNxNDNwTmZzVkpmS3psTXNjY2dkU3JDbFJ6UjV6SkNIbzFUajhEUDRQeFVDSTUyMFhTYTlSX0VPZE5mc25qRHFlMWlSU0p0WGJjRy0taHllRjZxeWhUZWVaVHhpWFZNbmdiRjFYWjY2dnZwTTBDbm1DRFJXdWsxcWZlYWNPbzhWWWc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "'No Palantir in the NHS' say Kingston demonstrators",
         "summary": "",
         "meta": "Thu 1 Oct",
@@ -1109,12 +1130,12 @@
         "familyActivity": false
       },
       {
-        "title": "Kingston e-bike contract faces calls for affordable fares and marked parking bays",
+        "title": "New visitor guide spotlights Teddington attractions",
         "summary": "",
         "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T16:24:05+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTJfUDJORjdvN01zSFZZSHg2ZVVpalBrazUyR1lycUEwenowWkNWSXN3U1B0VGM5cld0N2M4NnNiMkJSc1FYdUdSYUhSeGx5VlN6akdZYmxrekFzUzZMc3RvSl8tamFGR20zZm1xSUg5b3otbWlMdFNVRUltSl9JVjdWOWVnZUVMek5XR0lZQlZKUTh0SlE?oc=5",
+        "publishedAt": "2026-10-01T16:43:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcThHOXVHT3JoQzRlVlRpbDBQcjZoN2c2R2pHNWt0Z2FaZlk5ci0yLVBlS2JRazJESUN1MGFOa2l3NjJnTHZsNFB0Q2ZjRkNmM1BmTGw2M2JLVjNyb1o5TF9sUUNTMkNVd2ItYnZydndZUHdkSHZnOW1Na05HQTRYSmFmcl9zVk5PVnlHbkE4Mk14djlaazZDRGJNenpfakxrQVY1WA?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1126,6 +1147,17 @@
         "publishedAt": "2026-10-01T15:00:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVUdESEt6aWtkQWNIbE5XaXBMbFk2R216OUpfN0VvX2JIUDlkcF9HSGhEdnZCN0FFbnlHd05fT3BZeHVCUktKS29zTnVHVVlwTzdSeHFZWTBLT3hWcjdSX1hKYUZERnFSbjRmNW1MVER6eC1XbXZEeHRKMDVlWmpCdmMzMkVqWVlmRHN5MVBLNEp0UE9ycm9OcjR2UEk5eEhSY2k4ZUlDaHZKRDhkVzNVMmdPVzkzckxp?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington duo to takeover local pub with £332k investment",
+        "summary": "",
+        "meta": "Thu 1 Oct",
+        "publishedAt": "2026-10-01T15:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdUxVaUdQbEpjenc0bGFwQ3RLVl9UaWloT2s4SUltSGZQbV9UU2xadTlRRWJZdGYxQmstVUZqT3lDUnRxUGRVNTRoSU9HREVqSUozS3czYW1CZjI0VFhCaUJ2aWswbXpNTzFMdVpjaWlhd2x2cTRGZnhLWi1fcHB0NWpxS3dmTVRzWS1DQWJPYnVHZ0J6dkNaeUFrUERGRFpEcUx5MS0yYzZfZ1VFWDJn?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1153,12 +1185,12 @@
         "familyActivity": false
       },
       {
-        "title": "Kingston adds 15 electrical recycling points as 570 tonnes are wrongly discarded",
+        "title": "Blues legend to play intimate Teddington show",
         "summary": "",
         "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T11:12:59+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLXZQSzUzSWtNamdKYl9PZHdYalRnMmJxZmhRNWltRGJjU1ZKc3RNR25QXzBrTHQ0d2xCd3NwaU10X3BObElBQldLeEFoNmVSYjE5c0dMUVpHYUt2alJMZTZLRktqTkVGMzdLeXljMTFYaVJTcmpXRWVXaEhPN3dta0szQWM5TWdNb0otNEgyaFdMNmNyVVZPVFhtV3U?oc=5",
+        "publishedAt": "2026-10-01T11:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPR2VKSnNHRTVJTllDS3NRQ3I0aDlmV3E4RFNjUGpVY25CbkFDY2RIZnB6MWlVNEhzcXE0YUVqUW9XYkNLQTdld3N6MER0eVJEcndtTDdPaHU1MnhiOXAxOHdFRDlyckdQZUZEeEZfQks2T2NJZUFSYjlNRlZKcWJ0RUNQTTdfc3RoN1RibloxWHY0dVE2NHdTSFlrZHYtQmhWVTE2SDU2cFdfODVoWDRnWkRscG84Ulk?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1223,10 +1255,10 @@
         "summary": "",
         "meta": "Wed 23 Sep",
         "publishedAt": "2026-09-23T16:00:00+01:00",
-        "source": "teddington.nub.news",
+        "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZkJ3NjkxS19xZ1drX0w3cjU2eFRmVGcwX09teVM5c3huaklTdHFDZ3Y0T2JkX0FEY1kzVk1hVF9qdGtaQkpfTl9Cb3V1RG1lZEhQempNTVZCcDlKaFl2QUZxQ195c2pQTDhPVmt2NXQ3VXZ1NEpxNExxSzE5MVZpTVF4dzNyQmtvZjdyVmxyZWZZOGFhSW1pNFN1YnBQaW1PYjVqT1cyclhGNWFfMjllbTZCY2JvRjRMQlhzRUl6N0ItMXJsVHh1aDJHM2xxeEhXdktuTGZ0Y0tYcGM2dEhWSDFKVWN0aDZ4bG42YXNB?oc=5",
         "contentType": "article",
-        "localPublication": false,
+        "localPublication": true,
         "familyActivity": true
       },
       {
@@ -1234,7 +1266,7 @@
         "summary": "",
         "meta": "Mon 21 Sep",
         "publishedAt": "2026-09-21T00:00:00+01:00",
-        "source": "timeout.com",
+        "source": "Time Out Worldwide",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQlhzNmRoNHFFcWxEeUtGWk1KTGRVbzd4OFN3NHRDdmV4QVVBaDlpX2gxcWV1UThlVXhGYTl2LVVrNlcwaVlucTkwSUNBVXVYRGlrUWlHS2pkd1VSNkJBcGVJUF9ZbUtkaXdwYW54TVc2cTdKQ201Y05xenU1UGstQjI2X29HZXQ3UXlNTHdhcWprQQ?oc=5",
         "contentType": "article",
         "localPublication": false,
@@ -1242,6 +1274,24 @@
       }
     ],
     "UK news": [
+      {
+        "title": "Eden Voss wins Birmingham Breaking Talent Award 2026",
+        "summary": "",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T11:14:00+01:00",
+        "source": "British Comedy Guide",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcEt6NEgtbG5PeDJ0MGJPZzhZUG15alplMm95S2pZYll4Y0NibFEtdVZvT0VqVVRzUERyMThWeXVQQTVteFpSM1RvSURqY0RVYnVTNXFWVi1venBSMTNxN0ZINzIwdTNWU2pDbkF1TncyV2RFLUxvMlNHeHBRa25qXzVoeFBSNVd6UkgwaUxjaFU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Tenby engineer raises £2,510 for Wales Air Ambulance after 186-mile walk",
+        "summary": "",
+        "meta": "Sat 3 Oct",
+        "publishedAt": "2026-10-03T05:00:00+01:00",
+        "source": "The Western Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYlJKTmxoYlZ6Rk80MU94MDljVmhPUjBEdlZQejVBS2hWQTVlLUhXVWUtblhXeDl2cUZmcVFxMVk3NW13aXprUFVFdS1KYTJXODN3MGZpeWg1bzIyOXVndzE0dG9xSkV2blhCNUh2OENlMExYb3AxNS1xWWR6QmN0QkhKcTFkc2ZUcjhXLTIzOC12ZDRGWk1WQ2VrQVg2dw?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "Helping it Happen Awards crown Scotland’s new Rural Champion",
         "summary": "",
@@ -1328,97 +1378,12 @@
         "summary": "",
         "meta": "Fri 2 Oct",
         "publishedAt": "2026-10-02T06:44:45+01:00",
-        "source": "wales247.co.uk",
+        "source": "Wales 247",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeTI1enFFVkJZOU9sSzU4djViTGtvWUlTeUNoOVBhSlg0WXRFci1KVGk2ekcya2t2eXhhM0dqdXI4M0tQRVJtX2VTdkhsZHA5UV9FQ1lTa0lRQ1FtLUg5M1NDUmRia1E1dzhPdHpqcWpFWFNZX3p0R2VDTFNFM1RLZ0ZwTTBLOVNFekIxbWRob05Zbjd6MGJHbW1QaE1ZSWxEbUhLNUhZdFhaNFk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Japanese Shinto ceremonial sand-digging in London celebrates start of British Library expansion",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T05:00:17+01:00",
-        "source": "soranews24.com",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSU9nMUUtRjZfWnczU1JPWjduSXh1M05OOGwwY0NDRXpoc01TdU5ydHRoQWh1VEdsRXFlTkFEeElSUURLYzNGWWVXLTVTMno0aWNtTUdhU0s2TFZOc3NGc2JvTlhLbEUtajNwb2dMQTJfZEw4b2ZXNzBjcjhZTGdQYk51T3BKZnRGZXJWWkJBeHl0bUQ2cFhscDBLbUtfUnRIN1RiSlV4QmZZZW1KU01FYUtGVVlEWnRuZlhuVkp1NNIBxAFBVV95cUxNNk5Xa1VZYUFyYmY0RUhhWFVLWkV0T1NHOUJMZDlFMDlpQlhDU1RjMl90c0h1TE5samNSUHhBTHNvQ3U2S3dEbHZyUVhlMVJDUjdmN0ZmTDZHLW8tQVJXcFh5VHBjR0dyM08xUjZNNjNzQnZFb1o2V3ZYQzZyNkFiYVVTMFp5OVhjaVNzY0NXY2kya01WXzIwNzB6VHFKVWtIdm1uVFdqLU5MMFJSVmFCc01QR21HOTYyeC1LNlBiWjdmX2xR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Bill Nighy wins best host at British Podcast Awards",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T22:30:29+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Ia3FUZUwxNm1QdlVETk9kWjFtVzNteW9fbkJaSmZhRUxSNmJnTHlqc3hXR21SMWE2SDczbUx2TWRDM1EzcmZaN0FGNFdfWGZOT1BrQkFjaGJ6WWM?oc=5",
         "contentType": "article"
       }
     ],
     "Fun": [
-      {
-        "id": "landmark-art-fair-2026",
-        "title": "Landmark Autumn Art Fair",
-        "location": "Landmark Arts Centre Â· Teddington",
-        "summary": "Meet artists and browse paintings, ceramics, sculpture and prints across more than 75 stands. A creative fair with free entry for under-16s.",
-        "when": "16â€“18 October Â· Sat/Sun 10amâ€“5pm; check Friday booking time",
-        "startDate": "2026-10-16",
-        "endDate": "2026-10-18",
-        "ages": "Under-16s welcome",
-        "cost": "Â£5; concessions Â£4; under-16s free",
-        "tags": [
-          "Events",
-          "Fairs",
-          "Creative",
-          "Indoors"
-        ],
-        "source": "Landmark Arts Centre",
-        "url": "https://www.landmarkartscentre.org/visual-arts/autumn-art-fair/",
-        "venue": "landmark",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-03"
-      },
-      {
-        "id": "kempton-steam-oct-2026",
-        "title": "Kempton Steam Museum steaming weekend",
-        "location": "Kempton Steam Museum Â· Hanworth",
-        "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
-        "when": "17â€“18 October Â· 10.30amâ€“4pm",
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-18",
-        "ages": "Supervise children; engine-climb access requires height over 1.4m",
-        "cost": "Paid admission; see booking page for ticket options",
-        "tags": [
-          "Events",
-          "Open-days",
-          "Indoors"
-        ],
-        "source": "Kempton Steam Museum",
-        "url": "https://kemptonsteam.merlintickets.co.uk/product/EVNT00018",
-        "venue": "kempton-steam",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-03"
-      },
-      {
-        "id": "transportfest-2026",
-        "title": "London Bus Museum TransportFest",
-        "location": "Brooklands Â· Weybridge",
-        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiserâ€™s programme and admission details before booking.",
-        "when": "Sunday 18 October 2026",
-        "startDate": "2026-10-18",
-        "endDate": "2026-10-18",
-        "ages": "Family outing; check event visitor guidance",
-        "cost": "See organiser for event admission",
-        "tags": [
-          "Events",
-          "Festivals",
-          "Outdoors"
-        ],
-        "source": "Brooklands Museum",
-        "url": "https://www.brooklandsmuseum.com/discover/latest-news/brooklands-museums-2026-events-calendar-grand-prix-centenary/",
-        "venue": "brooklands",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-03"
-      },
       {
         "id": "teddington-family-fun-weekend-2026",
         "title": "Bushy Park Charity Day & Family Fun Morning",
@@ -1462,10 +1427,125 @@
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "landmark-art-fair-2026",
+        "title": "Landmark Autumn Art Fair",
+        "location": "Landmark Arts Centre · Teddington",
+        "summary": "Meet artists and browse paintings, ceramics, sculpture and prints across more than 75 stands. A creative fair with free entry for under-16s.",
+        "when": "16–18 October · Sat/Sun 10am–5pm; check Friday booking time",
+        "startDate": "2026-10-16",
+        "endDate": "2026-10-18",
+        "ages": "Under-16s welcome",
+        "cost": "£5; concessions £4; under-16s free",
+        "tags": [
+          "Events",
+          "Fairs",
+          "Creative",
+          "Indoors"
+        ],
+        "source": "Landmark Arts Centre",
+        "url": "https://www.landmarkartscentre.org/visual-arts/autumn-art-fair/",
+        "venue": "landmark",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "kempton-steam-oct-2026",
+        "title": "Kempton Steam Museum steaming weekend",
+        "location": "Kempton Steam Museum · Hanworth",
+        "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
+        "when": "17–18 October · 10.30am–4pm",
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-18",
+        "ages": "Supervise children; engine-climb access requires height over 1.4m",
+        "cost": "Paid admission; see booking page for ticket options",
+        "tags": [
+          "Events",
+          "Open-days",
+          "Indoors"
+        ],
+        "source": "Kempton Steam Museum",
+        "url": "https://kemptonsteam.merlintickets.co.uk/product/EVNT00018",
+        "venue": "kempton-steam",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "transportfest-2026",
+        "title": "London Bus Museum TransportFest",
+        "location": "Brooklands · Weybridge",
+        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiser’s programme and admission details before booking.",
+        "when": "Sunday 18 October 2026",
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "ages": "Family outing; check event visitor guidance",
+        "cost": "See organiser for event admission",
+        "tags": [
+          "Events",
+          "Festivals",
+          "Outdoors"
+        ],
+        "source": "Brooklands Museum",
+        "url": "https://www.brooklandsmuseum.com/discover/latest-news/brooklands-museums-2026-events-calendar-grand-prix-centenary/",
+        "venue": "brooklands",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "teddington-beer-2026",
+        "title": "Teddington Beer Festival",
+        "location": "Landmark Arts Centre · Teddington",
+        "summary": "Beer, cider, food and entertainment across bookable sessions. An option for the grown-ups: the organiser restricts entry to over-18s, with babies in arms welcome.",
+        "when": "5–8 November · choose an afternoon or evening session",
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-08",
+        "ages": "18+; babies in arms welcome",
+        "cost": "£16.50 + £1.50 booking fee; includes first beer token",
+        "tags": [
+          "Events",
+          "Beer",
+          "Indoors"
+        ],
+        "source": "Teddington Beer Festival",
+        "url": "https://www.teddingtonbeerfestival.co.uk/",
+        "venue": "landmark",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
   "watchAlternatives": [
+    {
+      "title": "Blue Lights",
+      "summary": "As Gerry's murder trial begins, Mo's unstable mental health ignites a struggle between the state and justice. Shane has a tense stand-off with Lee.",
+      "meta": "BBC iPlayer · Available since Tue 29 Sep",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-09-29",
+      "releaseDateLabel": "Available since Tue 29 Sep",
+      "url": "https://www.bbc.co.uk/programmes/p0f2cxpr",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608503.jpg",
+      "artworkAlt": "Blue Lights programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-09-29",
+      "showId": 54401,
+      "episodeId": 3765867,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-10-03",
+      "preferenceScore": 435.9
+    },
     {
       "title": "The Incident Room",
       "summary": "Examining the death of 26-year-old Elle Edwards, who was killed by a gunman armed with a military-grade machine gun outside a pub on Christmas Eve, 2022. The shooter fled, attempting to…",
@@ -1492,29 +1572,6 @@
       "preferenceScore": 413.1
     },
     {
-      "title": "Convictions Gone Bad with Will Mellor",
-      "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
-      "meta": "Crime & Investigation · Mon 5 Oct, 9pm",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-05",
-      "releaseDateLabel": "Mon 5 Oct, 9pm",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609034.jpg",
-      "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-05",
-      "showId": 94772,
-      "episodeId": 3776672,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-03",
-      "preferenceScore": 408.1
-    },
-    {
       "title": "Britain's Countryside Killers",
       "summary": "The story of Danielle Jones, who vanished from East Tilbury in 2001. Stuart Campbell was convicted of her murder after DNA and fake texts exposed his crimes.",
       "meta": "TRUE CRIME · Thu 8 Oct, 10pm",
@@ -1535,7 +1592,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-03",
-      "preferenceScore": 388.6
+      "preferenceScore": 388.7
     },
     {
       "title": "This Much is True Crime",
@@ -1676,7 +1733,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-03",
-      "preferenceScore": 277.2
+      "preferenceScore": 277.3
     },
     {
       "title": "Mysteries From Above",
