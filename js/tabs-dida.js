@@ -139,7 +139,9 @@
     window.syncBriefInbox(profile);
     const news=[];
     if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden]);
-    news.push(['Local News',newestFirst(data.sections?.['Local news']||[])],['UK News',data.sections?.['UK news']||[]]);
+    const whatsOnRegex=/\b(?:what['’]?s\s+(?:going\s+)?on|what\s+is\s+(?:going\s+)?on|things\s+to\s+do)\b/i;
+    const localNews=newestFirst((data.sections?.['Local news']||[]).filter(item=>!whatsOnRegex.test(`${item.title||''} ${item.summary||''}`)));
+    news.push(['Local News',localNews],['UK News',data.sections?.['UK news']||[]]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',googleFirst(data.sections?.AI||[]),'ai');
     const funItems=(data.sections?.Fun||[]).filter(item=>funEventInWindow(item));

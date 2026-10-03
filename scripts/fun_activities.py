@@ -8,7 +8,13 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED_HOSTS = {'www.hrp.org.uk', 'www.royalparks.org.uk', 'www.kingstonheritage.org.uk', 'www.elmbridge.gov.uk', 'www.kingston.gov.uk', 'www.orleanshousegallery.org', 'www.landmarkartscentre.org', 'kemptonsteam.merlintickets.co.uk', 'www.brooklandsmuseum.com', 'www.teddingtonbeerfestival.co.uk'}
+ALLOWED_HOSTS = {
+    'www.hrp.org.uk', 'www.royalparks.org.uk', 'www.kingstonheritage.org.uk',
+    'www.elmbridge.gov.uk', 'www.kingston.gov.uk', 'www.orleanshousegallery.org',
+    'www.landmarkartscentre.org', 'kemptonsteam.merlintickets.co.uk',
+    'www.brooklandsmuseum.com', 'www.teddingtonbeerfestival.co.uk',
+    'teddington.nub.news', 'kingston.nub.news'
+}
 
 def in_event_window(item, today):
     """Upcoming/ongoing dated events, through the end of next calendar month."""

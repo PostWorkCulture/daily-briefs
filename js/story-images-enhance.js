@@ -1,8 +1,8 @@
 /* Exact publisher image layer for News / Arsenal. AI uses company marks or code-native fallback icons; Fun uses code-native icons.
-   Rules: max one image per article, max five image-led cards per tab view,
+   Rules: max one image per article, expanded high-quality well-framed publisher images,
    never reuse an image, and reject every generic or inferred fallback. */
 (function(){
-  const IMAGE_LIMIT_PER_VIEW=5;
+  const IMAGE_LIMIT_PER_VIEW=30;
   let map={};
   let scheduled=false;
   const imageChecks=new Map();

@@ -1175,28 +1175,6 @@
         "familyActivity": true
       },
       {
-        "title": "What's on near Teddington this weekend: Tango and Cake, Bushy Park charity day and free family fun morning",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T08:30:00+01:00",
-        "source": "teddington.nub.news",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeVBvSldGTks4cFhoWFk4S3B0REI1SXc3TzVtWW9lQ0NGOWRhdzRfblQ5cHEtaWpJQy1lelRpTE8tNUkxMWxrY3VSeC01a2poUkNLcGFnUTlBNngzb2p0elFwU1VVSFlPVjlXQzVQdlNiRGxYbXQ0eDU3U1VEYkFBb0VGNy1FT3JJcy1RbllWNlk2NzRCVzNNd3JxZlBJa0tzR2QxOG50OTJpcVJIV2kwVHd1TXQyWUJfYlkxSS05ZDZkeUV6WG12cURCU2RQRC1MSkhFRWE5T0VHRmtfR3pJOFRKcmdMZEh6a0xCVDVLSlQ1VUU?oc=5",
-        "contentType": "article",
-        "localPublication": false,
-        "familyActivity": true
-      },
-      {
-        "title": "What's on in Kingston this weekend: Cultural celebrations, Kingston Half Marathon and WALT DISCO",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T08:20:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNYkRxcEFkUjFJMWNZWl9iMzh5T0hOU1FNVXpERXVKUGc2VXQxUjFjdGp2cmk2QkFQNldOYVo5LU9RMmMyZTZaanltUDFBN01rTTM1WU9oQXFFQzBaeTdvWm1UQzk1Q1lsRlBJTXpScVRrWE55akhRaXZ1SEJLZU5qSEg3Nkd2MjAwSUhoM3J0eERpQ0VaQ0JuM0VUYjE0SXAyWFJ5MEROSDNTcG84N0Q2SGNHNTEzbEdTY1N2NHp3enpmREota1gwd1U0eEp1ZWs3YnpxeGdhbXk0d2hhRmJEcHFNZlg?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true
-      },
-      {
         "title": "Surbiton’s Muslim community to celebrate centenary of local mosque",
         "summary": "",
         "meta": "Wed 30 Sep",
@@ -1437,6 +1415,50 @@
         "source": "Brooklands Museum",
         "url": "https://www.brooklandsmuseum.com/discover/latest-news/brooklands-museums-2026-events-calendar-grand-prix-centenary/",
         "venue": "brooklands",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "teddington-family-fun-weekend-2026",
+        "title": "Bushy Park Charity Day & Family Fun Morning",
+        "location": "Bushy Park & Landmark Arts Centre · Teddington",
+        "summary": "Family fun morning and charity open day in Bushy Park, featuring children's games, nature walks, cake stalls and community activities.",
+        "when": "Saturday 3 & Sunday 4 October · 10am–3pm",
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-04",
+        "ages": "All ages welcome",
+        "cost": "Free; donations welcome",
+        "tags": [
+          "Events",
+          "Outdoors",
+          "What's on"
+        ],
+        "source": "Teddington Nub News",
+        "url": "https://teddington.nub.news/news/local-news/sp8635-whats-on-near-teddington-this-weekend",
+        "venue": "bushy-park-teddington",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "kingston-cultural-celebrations-2026",
+        "title": "Kingston Town Centre Cultural Celebrations & Half Marathon",
+        "location": "Market Place & Riverside · Kingston upon Thames",
+        "summary": "Celebration of local culture and community entertainment across Kingston Market Place and riverside, alongside the Kingston Half Marathon.",
+        "when": "Saturday 3 & Sunday 4 October · 9am–4pm",
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-04",
+        "ages": "All ages welcome",
+        "cost": "Free to spectate and visit",
+        "tags": [
+          "Events",
+          "Festivals",
+          "What's on"
+        ],
+        "source": "Kingston Nub News",
+        "url": "https://kingston.nub.news/news/local-news/sp12356-whats-on-in-kingston-this-weekend",
+        "venue": "kingston-town-centre",
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-03"

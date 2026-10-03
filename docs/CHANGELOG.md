@@ -1,3 +1,15 @@
+## 3 October 2026: Move what's on items to Fun and expand high-quality news images
+
+- Sourced and routed "what's going on" / "what's on" / "things to do" weekend listings exclusively into the Fun section as verified community activities (`teddington-family-fun-weekend-2026` and `kingston-cultural-celebrations-2026`) in `data/fun-catalog.json`, `data/pete.json`, and `data/sofia.json`.
+- Enforced strict rejection of "what's on" / "what's going on" items from Local News across build queries and selection in `scripts/refresh.py` and client-side rendering in `js/tabs-dida.js`.
+- Added `teddington.nub.news` and `kingston.nub.news` to `ALLOWED_HOSTS` in `scripts/fun_activities.py`.
+- Implemented Google News URL resolution in `scripts/refresh_story_images.py` to decode opaque redirect links directly to publisher articles and extract exact OpenGraph social imagery.
+- Sourced, validated, and cached high-quality, well-framed 1200x675 (16:9) WebP images in `assets/news-images/` for stories across Local News and UK News.
+- Expanded the per-view image limit from 5 to 30 in `js/story-images-enhance.js` and `scripts/refresh_story_images.py`, dramatically increasing visual rich media in the News section.
+- Added regression tests in `tests/test_section_content_types.py` verifying "what's on" items are excluded from Local News and accepted as activities in Fun.
+- Updated `docs/MASTER-BRIEF-CURRENT.md`, `.github/workflows/morning-refresh.yml`, and `scripts/daily_refresh_runner.ps1`.
+- Verified 119 Python unit tests, 5 Node tests, and responsive UI Playwright checks pass cleanly across mobile, desktop, and widescreen viewports.
+
 ## 2 October 2026: Elevate Around the World with astonishing human-first feats and retire dull cultural listings
 
 - Retired dull mariachi band fact (`mariachi-string-trumpet-music`) and commonplace folklore listings (`flamenco-andalusian-cante-baile`, `tango-buenos-aires-milonga`, `fado-urban-popular-song-lisbon`, `reggae-music-jamaica-kingston`) in `data/fact-catalog.json`.

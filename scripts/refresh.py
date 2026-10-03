@@ -154,7 +154,7 @@ LOCAL_NEWS_PUBLICATION_QUERIES = (
 )
 LOCAL_NEWS_FAMILY_QUERIES = (
     '(Molesey OR Kingston OR Surbiton OR Teddington OR Hampton) '
-    '(family OR kids OR children OR festival OR park OR "what\'s on" OR Halloween OR Christmas)',
+    '(family OR kids OR children OR festival OR park OR Halloween OR Christmas)',
     '("Hampton Court" OR "Walton-on-Thames" OR Hersham OR Esher OR "Thames Ditton") '
     '(family OR kids OR children OR festival OR event OR trail OR workshop OR "open day")',
 )
@@ -184,6 +184,10 @@ LOCAL_NEWS_LOW_VALUE_CONTENT = re.compile(
     r"MOT|weather forecast|sponsored content|advertorial|download[^.]{0,80}\bapp)\b",
     re.I,
 )
+LOCAL_NEWS_WHATS_ON = re.compile(
+    r"\b(?:what['’]?s\s+(?:going\s+)?on|what\s+is\s+(?:going\s+)?on|things\s+to\s+do)\b",
+    re.I,
+)
 PLAIN_HAMPTON = re.compile(r"\bhampton\b", re.I)
 PLAIN_HAMPTON_LOCAL_CONTEXT = re.compile(
     r"\b(?:resident|council|road|street|park|school|pool|pub|shop|business|planning|police|"
@@ -199,7 +203,7 @@ LOCAL_NEWS_PUBLICATIONS = re.compile(
 LOCAL_FAMILY_ACTIVITY = re.compile(
     r"\b(?:child-friendly|festival|fete|fair|carnival|fun day|family day|kids? day|"
     r"Halloween|Christmas|Easter|half[- ]term|school holiday|playground|trail|"
-    r"workshop|open day|what['’]s on|things to do|activities|fireworks|lantern|grotto|"
+    r"workshop|open day|activities|fireworks|lantern|grotto|"
     r"pumpkin|Santa|outdoor cinema|fun day)\b",
     re.I,
 )
@@ -628,6 +632,7 @@ def local_news_item_is_in_scope(item: dict) -> bool:
         or LOCAL_NEWS_FALSE_LOCATIONS.search(f"{text} {source}")
         or LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE.search(source)
         or LOCAL_NEWS_LOW_VALUE_CONTENT.search(text)
+        or LOCAL_NEWS_WHATS_ON.search(text)
         or local_event_has_expired(item)
     ):
         return False

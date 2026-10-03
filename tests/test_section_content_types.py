@@ -5,6 +5,7 @@ import unittest
 from scripts.refresh import (
     editorial_news,
     google_first,
+    local_news_item_is_in_scope,
     news_item_is_job_vacancy,
     section_content_type_errors,
 )
@@ -144,6 +145,43 @@ class SectionContentTypeTests(unittest.TestCase):
         self.assertEqual(sorted_items[1]["source"], "Google")
         self.assertEqual(sorted_items[2]["source"], "OpenAI")
         self.assertEqual(sorted_items[3]["source"], "Anthropic")
+
+    def test_whats_on_and_whats_going_on_items_rejected_from_local_news(self) -> None:
+        for title in (
+            "What's on near Teddington this weekend: Tango and Cake",
+            "What's on in Kingston this weekend: Cultural celebrations",
+            "What's going on in Surbiton this week",
+            "Things to do in Hampton Court this weekend",
+        ):
+            item = {
+                "title": title,
+                "summary": "Local listings",
+                "source": "Kingston Nub News",
+                "contentType": "article",
+                "url": "https://kingston.nub.news/whats-on",
+            }
+            with self.subTest(title=title):
+                self.assertFalse(
+                    local_news_item_is_in_scope(item),
+                    f"{title} should be rejected from Local News"
+                )
+
+    def test_whats_on_activities_belong_in_fun_section(self) -> None:
+        sections = {
+            "Fun": [{
+                "title": "Bushy Park Charity Day & Family Fun Morning",
+                "location": "Bushy Park · Teddington",
+                "summary": "Family activities and stalls",
+                "when": "Saturday 3 & Sunday 4 October",
+                "ages": "All ages",
+                "cost": "Free",
+                "source": "Teddington Nub News",
+                "url": "https://teddington.nub.news/whats-on",
+                "tags": ["Events", "What's on"],
+                "contentType": "activity",
+            }],
+        }
+        self.assertEqual(section_content_type_errors(sections), [])
 
 
 if __name__ == "__main__":
