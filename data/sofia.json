@@ -18,18 +18,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=c721ffbf1667"
   },
   "weather": {
-    "temp": "19°",
+    "temp": "18°",
     "summary": "Cloudy",
     "condition": "Cloudy",
-    "currentRainChance": 4,
+    "currentRainChance": 20,
     "daily": [
       {
         "date": "2026-10-03",
         "high": 21,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-10-06",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -65,7 +65,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -74,22 +74,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-09",
-        "high": 17,
+        "high": 18,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Cloudy · rain chance around 30%",
+      "detail": "Sunny intervals · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
