@@ -1,3 +1,11 @@
+## 4 October 2026: Update web page and bookmark icon to bright lime green DB mark
+
+- Generated new ultra-simple icon assets with a solid bright lime green background (`#7CF46A`) and bold white **DB** lettering.
+- Replaced production icons across all formats and resolutions: `daily-brief-signal-grid-512-v3.png`, `daily-brief-signal-grid-master-v3.png` (1024x1024), `daily-brief-signal-grid-192-v3.png`, `daily-brief-signal-grid-touch-v3.png` (180x180), `daily-brief-signal-grid-favicon-32-v3.png`, and `daily-brief-signal-grid-maskable-512-v3.png`.
+- Rebuilt multi-size `favicon.ico` (16, 24, 32, 48, 64, 128, 256) and root `apple-touch-icon.png` to maintain full origin-level browser compatibility.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to reflect the approved icon specification.
+- Verified 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 4 October 2026: Move TV Picks metadata to bottom, enforce explicit channels, and expand obscure world facts
 
 - Reordered TV Picks card DOM layout in `js/app.js` (`renderWatch`) so the programme title (`<b>`) and blurb (`<p class="watch-blurb">`) appear above the yellow channel/availability metadata (`<small class="watch-meta">`).
