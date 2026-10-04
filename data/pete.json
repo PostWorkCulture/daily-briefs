@@ -18,9 +18,9 @@
     "localImage": "assets/scenery/world-fact.webp?v=4476431aa373"
   },
   "weather": {
-    "temp": "11°",
-    "summary": "Fog",
-    "condition": "Fog",
+    "temp": "21°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
       {
@@ -36,8 +36,8 @@
         "date": "2026-10-05",
         "high": 23,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -47,12 +47,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-07",
-        "high": 16,
+        "high": 15,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
@@ -70,11 +70,11 @@
       },
       {
         "date": "2026-10-09",
-        "high": 17,
+        "high": 16,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 60,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
