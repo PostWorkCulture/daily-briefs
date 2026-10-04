@@ -253,6 +253,22 @@ def preference_lane(show: dict[str, Any], episode: dict[str, Any], haystack: str
     return None
 
 
+CHANNEL_NAME_OVERRIDES = {
+    "5": "Channel 5",
+    "4": "Channel 4",
+    "ITV": "ITV1",
+    "ITV 1": "ITV1",
+    "Amazon": "Prime Video",
+    "Amazon Prime": "Prime Video",
+    "Amazon Prime Video": "Prime Video",
+}
+
+
+def normalize_channel_name(name: str) -> str:
+    cleaned = clean_text(name or "", 50)
+    return CHANNEL_NAME_OVERRIDES.get(cleaned, cleaned)
+
+
 def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     show = show_for(episode)
     title = clean_text(show.get("name") or "", 90)
@@ -267,7 +283,9 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
         return None
 
     channel = channel_for(show)
-    source = clean_text(channel.get("name") or "", 50)
+    source = normalize_channel_name(channel.get("name") or "")
+    if not source or source.lower() in ("tv", "tvmaze", "unknown", "none"):
+        return None
     web_channel = show.get("webChannel") or {}
     network = show.get("network") or {}
     network_country = (network.get("country") or {}).get("code")
@@ -332,9 +350,9 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     return {
         "title": title,
         "summary": summary,
-        "meta": f"{source or 'TV'} · {availability}",
-        "source": source or "TVMaze",
-        "channel": source or "TVMaze",
+        "meta": f"{source} · {availability}",
+        "source": source,
+        "channel": source,
         "releaseDate": airdate.isoformat(),
         "releaseDateLabel": availability,
         "url": official,

@@ -4,7 +4,7 @@
 .tonight-block .watch-card.artwork:before{background:linear-gradient(180deg,rgba(3,8,15,.01) 25%,rgba(3,8,15,.08) 48%,rgba(3,8,15,.76) 100%)!important}
 .tonight-block .watch-card.artwork:hover{border-color:#ffd477;box-shadow:0 0 24px rgba(255,212,119,.22),inset 0 -76px 86px rgba(3,8,15,.30);transform:none!important}
 .tonight-block .watch-card.artwork small,
-.tonight-block .watch-card small{display:block;color:#ffd477;text-shadow:0 1px 9px #000;text-transform:none;font-size:11px!important;font-weight:700;letter-spacing:0;margin-bottom:3px}
+.tonight-block .watch-card small{display:block;color:#ffd477;text-shadow:0 1px 9px #000;text-transform:none;font-size:11px!important;font-weight:700;letter-spacing:0;margin-top:6px;margin-bottom:0}
 .tonight-block .watch-card.artwork b,
 .tonight-block .watch-card b{display:block;font-size:17px!important;line-height:1.2;text-shadow:0 2px 12px #000}
 .tonight-block .watch-card.artwork .watch-blurb,

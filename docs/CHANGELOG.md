@@ -1,3 +1,15 @@
+## 4 October 2026: Move TV Picks metadata to bottom, enforce explicit channels, and expand obscure world facts
+
+- Reordered TV Picks card DOM layout in `js/app.js` (`renderWatch`) so the programme title (`<b>`) and blurb (`<p class="watch-blurb">`) appear above the yellow channel/availability metadata (`<small class="watch-meta">`).
+- Adjusted `.tonight-block .watch-card small` styling in `css/tv-picks-restored.css` to sit naturally beneath the blurb with `margin-top: 6px; margin-bottom: 0`.
+- Implemented `watchMeta()` helper in `js/app.js` to normalize numeric/abbreviated channel names (e.g. `5` to `Channel 5`) and guarantee that every TV pick visibly and reliably identifies its channel or streaming service.
+- Enforced strict channel normalization and mandatory non-empty platform validation in `scripts/enrich_tv_picks.py`, preventing generic `TVMaze`/`TV` fallbacks or raw channel numbers.
+- Cleaned existing instances in `data/pete.json` and `data/sofia.json` where `The Incident Room` previously displayed raw `5` instead of `Channel 5`.
+- Expanded `data/fact-catalog.json` with 14 verified obscure facts, Guinness World Records, remote tribes, and bizarre geographic/population anomalies (Bajau Sea Nomads' genetically enlarged spleens, Oymyakon coldest town, Darvaza Door to Hell, Coober Pedy underground desert town, Catatumbo lightning record, Mount Thor vertical cliff, Point Roberts Canadian border anomaly, Baldwin Street steepest street, Chimborazo closest place to outer space, Hadza hunter-gatherer tribe, Dallol sulfur desert, Baarle-Hertog 22 border enclaves, Mir diamond mine vortex, and Dead Sea lowest point).
+- Verified all 14 new facts against live Wikimedia Commons image endpoints with 100% resolution, credit, and license compliance.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to reflect the refined TV card layout and expanded obscure fact/world record scope.
+- Verified 119 Python unit tests, 5 Node tests, and responsive layout checks across mobile, desktop, and widescreen viewports.
+
 ## 3 October 2026: Move what's on items to Fun and expand high-quality news images
 
 - Sourced and routed "what's going on" / "what's on" / "things to do" weekend listings exclusively into the Fun section as verified community activities (`teddington-family-fun-weekend-2026` and `kingston-cultural-celebrations-2026`) in `data/fun-catalog.json`, `data/pete.json`, and `data/sofia.json`.
