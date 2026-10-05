@@ -18,9 +18,9 @@
     "localImage": "assets/scenery/world-fact.webp?v=c62e1fbb89a5"
   },
   "weather": {
-    "temp": "11°",
-    "summary": "Fog",
-    "condition": "Fog",
+    "temp": "21°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
@@ -34,16 +34,16 @@
       },
       {
         "date": "2026-10-06",
-        "high": 22,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-07",
-        "high": 15,
+        "high": 17,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
@@ -54,17 +54,17 @@
         "date": "2026-10-08",
         "high": 15,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-09",
-        "high": 18,
+        "high": 19,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 60,
         "source": "Met Office"
       },
@@ -74,12 +74,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-11",
-        "high": 16,
+        "high": 17,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
