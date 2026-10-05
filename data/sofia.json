@@ -18,9 +18,9 @@
     "localImage": "assets/scenery/world-fact.webp?v=c62e1fbb89a5"
   },
   "weather": {
-    "temp": "21°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "15°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
     "currentRainChance": 4,
     "daily": [
       {
@@ -34,20 +34,20 @@
       },
       {
         "date": "2026-10-06",
-        "high": 21,
+        "high": 22,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-07",
-        "high": 17,
+        "high": 16,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
-        "rainChance": 60,
+        "summary": "Heavy Rain",
+        "condition": "Heavy Rain",
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
@@ -56,15 +56,15 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-09",
         "high": 19,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 60,
         "source": "Met Office"
       },
@@ -81,9 +81,9 @@
         "date": "2026-10-11",
         "high": 17,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
