@@ -18,18 +18,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=3ae406635f1f"
   },
   "weather": {
-    "temp": "15°",
+    "temp": "13°",
     "summary": "Light rain",
     "condition": "Light rain",
     "currentRainChance": 60,
     "daily": [
       {
         "date": "2026-10-07",
-        "high": 16,
+        "high": 14,
         "low": null,
-        "summary": "Heavy Rain",
-        "condition": "Heavy Rain",
-        "rainChance": 60,
+        "summary": "Light Rain",
+        "condition": "Light Rain",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -38,7 +38,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -47,7 +47,7 @@
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 50,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
@@ -56,7 +56,7 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -72,24 +72,24 @@
         "date": "2026-10-12",
         "high": 18,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
-        "rainChance": 30,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-13",
-        "high": 20,
+        "high": 19,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Heavy Rain expected · rain chance around 60%",
+      "detail": "Light Rain expected · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
