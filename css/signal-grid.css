@@ -58,14 +58,8 @@ body:after{background:#030504!important}
   border-bottom:1px solid var(--editorial-rule-strong);
 }
 .hero:after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-1px;
-  width:88px;
-  height:1px;
-  background:var(--signal-green);
-  box-shadow:0 0 14px rgba(124,244,106,.72);
+  content:none!important;
+  display:none!important;
 }
 .eyebrow{
   color:var(--signal-green)!important;
@@ -82,11 +76,11 @@ body:after{background:#030504!important}
   border-bottom-color:var(--editorial-rule-strong)!important;
 }
 .section-head:after,
-.weather-block .section-head:after{
-  width:42px;
-  height:2px;
-  background:var(--signal-green)!important;
-  box-shadow:0 0 12px rgba(124,244,106,.48);
+.weather-block .section-head:after,
+.tab-group>h3:after,
+#view-news .tab-group>h3:after{
+  content:none!important;
+  display:none!important;
 }
 .section-head h2,
 #view-home .section-head h2,
@@ -127,8 +121,8 @@ html body .occasion-month h3{
   box-shadow:none!important;
 }
 .forecast-day.today{
-  border-top:3px solid var(--signal-green)!important;
-  box-shadow:inset 0 0 24px rgba(124,244,106,.035)!important;
+  border-top:1px solid var(--signal-line)!important;
+  box-shadow:none!important;
 }
 .forecast-day span,
 .forecast-day .fd-rain,
@@ -138,7 +132,7 @@ html body .occasion-month h3{
 .forecast-day em,
 .uk-yesterday-title strong,
 .uk-yesterday-title span{color:var(--text)!important}
-.weather-svg{stroke:var(--signal-green)!important;filter:drop-shadow(0 0 10px rgba(124,244,106,.18))!important}
+.weather-svg{stroke:var(--text)!important;filter:none!important}
 .uk-yesterday{border-top-color:var(--signal-line)!important}
 .uk-extreme{border-radius:8px!important;border-color:var(--signal-line)!important}
 
@@ -182,12 +176,12 @@ body #homeReminders .home-reminder-card.birthday{
   background:#0b0e0c!important;
   box-shadow:none!important;
 }
-.calendar-summary button b{color:var(--signal-green)!important}
+.calendar-summary button b{color:var(--text)!important}
 .calendar-summary button span,
 .calendar-row p{color:var(--text)!important}
 .calendar-row{border-bottom-color:var(--signal-line)!important}
-.calendar-row:first-child{background:rgba(124,244,106,.035)!important}
-.event-time{color:var(--signal-green)!important}
+.calendar-row:first-child{background:transparent!important}
+.event-time{color:var(--signal-muted)!important}
 
 .scenery-fact{
   color:var(--text)!important;
@@ -196,7 +190,7 @@ body #homeReminders .home-reminder-card.birthday{
   background:#090c0a!important;
   box-shadow:var(--editorial-shadow)!important;
 }
-.scenery-fact span{color:var(--signal-green)!important}
+.scenery-fact span{color:var(--signal-muted)!important}
 .scenery-fact p,
 .scenery-fact small{color:var(--text)!important}
 .scenery-card{
@@ -243,7 +237,7 @@ body #homeReminders .home-reminder-card.birthday{
   background:#090c0a!important;
   box-shadow:none!important;
 }
-.tab-story.story-lead{border-top-color:var(--signal-green)!important}
+.tab-story.story-lead{border-top-color:var(--signal-line)!important}
 .tab-story h4,
 .tab-story p,
 .tab-story .meta,
@@ -278,7 +272,7 @@ body #homeReminders .home-reminder-card.birthday{
 .section-story-icon{
   border-color:var(--signal-line)!important;
   border-radius:8px!important;
-  color:var(--signal-green)!important;
+  color:var(--text)!important;
   background:#0d110e!important;
 }
 .section-story-icon-company{background:#fff!important}
@@ -382,11 +376,33 @@ body #homeReminders .home-reminder-card.birthday:focus-visible{
 }
 .bottom-nav:before{content:none!important;animation:none!important}
 .bottom-nav button{color:#fff!important}
+.bottom-nav button b,
+.bottom-nav .home-brand-mark,
+.bottom-nav .birthday-nav-mark{
+  display:none!important;
+}
 .bottom-nav button.active:not(:hover):not(:focus-visible){
   color:#fff!important;
-  background:rgba(124,244,106,.055)!important;
-  border-color:rgba(124,244,106,.18)!important;
-  box-shadow:inset 3px 0 0 var(--signal-green)!important;
+  background:rgba(255,255,255,.08)!important;
+  border-color:rgba(255,255,255,.2)!important;
+  box-shadow:none!important;
+}
+#primaryNav[data-profile="sofia"] [data-view-target="arsenal"],
+.bottom-nav button[hidden]{
+  display:none!important;
+}
+
+@media(max-width:899px){
+  .bottom-nav button{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:44px!important;
+    padding:6px 2px!important;
+    font-size:11px!important;
+    font-weight:600;
+  }
+  .bottom-nav button.active:not(:hover):not(:focus-visible){box-shadow:none!important}
 }
 
 @media(max-width:699px){
@@ -394,7 +410,6 @@ body #homeReminders .home-reminder-card.birthday:focus-visible{
   .tab-list{background:#090c0a!important}
   .tab-story:not(.story-lead){border-bottom-color:var(--signal-line)!important}
   .scenery-card{height:310px!important}
-  .bottom-nav button.active:not(:hover):not(:focus-visible){box-shadow:inset 0 3px 0 var(--signal-green)!important}
 }
 
 @media(min-width:900px){
@@ -416,28 +431,17 @@ body #homeReminders .home-reminder-card.birthday:focus-visible{
     border-radius:10px!important;
   }
   .bottom-nav button{
-    display:grid;
-    grid-template-columns:32px minmax(0,1fr);
-    align-items:center;
-    min-height:52px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    min-height:46px!important;
     flex-shrink:0;
-    padding:8px 10px!important;
+    padding:10px 16px!important;
     text-align:left;
     font-size:14px!important;
-    font-weight:560;
+    font-weight:550;
+    letter-spacing:.01em;
   }
-  .bottom-nav button b,
-  .bottom-nav .home-brand-mark,
-  .bottom-nav .birthday-nav-mark{
-    display:grid;
-    place-items:center;
-    width:24px;
-    height:24px;
-    margin:0!important;
-  }
-  .bottom-nav .nav-home-logo{width:24px;height:22px;margin:0}
-  .bottom-nav .nav-cannon{width:27px!important;margin:0!important}
-  .bottom-nav .nav-balloon{margin:0 auto}
 }
 
 @media(min-width:1100px){
