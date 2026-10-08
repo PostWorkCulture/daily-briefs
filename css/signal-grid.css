@@ -267,6 +267,14 @@ body #homeReminders .home-reminder-card.birthday{
   border-color:var(--signal-line)!important;
   background:var(--signal-line)!important;
 }
+#view-news .story-stream-grid,
+#view-ai .story-stream-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+#view-news .story-stream-grid > .story-stream,
+#view-ai .story-stream-grid > .story-stream {
+  grid-column: auto !important;
+}
 .story-stream-grid>.story-stream{border-radius:0!important}
 .story-media{border-color:var(--signal-line)!important}
 .section-story-icon{

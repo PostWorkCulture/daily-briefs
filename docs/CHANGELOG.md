@@ -1,3 +1,10 @@
+## 8 October 2026: Cap News and AI sections to a maximum of 2 items per row
+
+- Enforced a strict maximum of two items per row across News (`#view-news`) and AI (`#view-ai`) across all desktop and widescreen viewports.
+- Updated `.story-stream-grid` in `css/editorial-system.css`, `css/fluid-widescreen.css`, and `css/signal-grid.css` to `grid-template-columns: repeat(2, minmax(0, 1fr)) !important;` with `grid-column: auto !important;`, replacing 3- and 4-column desktop spans.
+- Maintained mobile single-column stacking and desktop lead-and-supporting 2-column horizontal rhythm.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 8 October 2026: Text-only menu navigation, removal of lime green accents, AI section alignment, and Fun section expansion
 
 - Removed all icons from the primary menu navigation across desktop and mobile; the navigation now displays clean, elegant text only (`Home`, `Calendar`, `Fun`, `News`, `Arsenal`, `AI`, `Dida`, `Birthday`).

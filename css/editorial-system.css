@@ -719,10 +719,10 @@ body.profile-unlocked .profile-switch{
     min-height:152px;
   }
   .story-stream-grid{
-    grid-template-columns:repeat(12,minmax(0,1fr));
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
   }
-  .story-stream-grid>.story-stream{grid-column:span 4}
-  .tab-groups.single .story-stream-grid:has(>.story-stream:nth-child(7):last-child)>.story-stream:nth-last-child(-n+4){grid-column:span 3}
+  .story-stream-grid>.story-stream{grid-column:auto!important}
+  .tab-groups.single .story-stream-grid:has(>.story-stream:nth-child(7):last-child)>.story-stream:nth-last-child(-n+4){grid-column:auto!important}
   .tab-story.story-lead.has-image{
     display:grid!important;
     grid-template-columns:minmax(0,1.55fr) minmax(250px,.85fr)!important;

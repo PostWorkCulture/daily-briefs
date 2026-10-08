@@ -14,8 +14,11 @@
     column-gap: clamp(14px, 1.15vw, 24px) !important;
   }
 
+  .story-stream-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
   .story-stream-grid > .story-stream {
-    grid-column: span 3;
+    grid-column: auto !important;
   }
 
   #view-fun .tab-list,
