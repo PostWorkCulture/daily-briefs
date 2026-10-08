@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 8 October 2026 · refreshed 3:10pm",
+  "updatedLabel": "Thursday, 8 October 2026 · refreshed 7:31pm",
   "worldFact": {
     "id": "coober-pedy-underground-desert-town",
     "editorialPriority": "human-first",
@@ -18,23 +18,23 @@
     "localImage": "assets/scenery/world-fact.webp?v=46012b37e98d"
   },
   "weather": {
-    "temp": "15°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 4,
+    "temp": "13°",
+    "summary": "Light rain",
+    "condition": "Light rain",
+    "currentRainChance": 90,
     "daily": [
       {
         "date": "2026-10-08",
-        "high": 15,
+        "high": 14,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 50,
+        "summary": "Light Rain",
+        "condition": "Light Rain",
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-10-09",
-        "high": 19,
+        "high": 18,
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
@@ -43,16 +43,16 @@
       },
       {
         "date": "2026-10-10",
-        "high": 16,
+        "high": 15,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-11",
-        "high": 16,
+        "high": 15,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -65,16 +65,16 @@
         "low": null,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-13",
-        "high": 19,
+        "high": 20,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 30,
+        "summary": "Drizzle",
+        "condition": "Drizzle",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 50%",
+      "label": "Check hourly Met Office forecast",
+      "detail": "Light Rain expected · rain chance around 90%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -139,11 +139,11 @@
       "title": "Summer's b-day party",
       "summary": "",
       "url": "",
-      "start": "2026-10-10T00:00:00+01:00",
-      "end": "2026-10-11T00:00:00+01:00",
+      "start": "2026-10-10T14:30:00+01:00",
+      "end": "2026-10-10T16:30:00+01:00",
       "date": "2026-10-10",
-      "time": "All day",
-      "allDay": true,
+      "time": "2:30pm",
+      "allDay": false,
       "color": "#dbadff",
       "colorId": "3",
       "googleEventId": "6pj3ge1j69gjcb9m6tij2b9k61i3ib9oc8o34bb36cp62or360p62e1hc4",
@@ -167,11 +167,11 @@
       "title": "Demi Playdate",
       "summary": "",
       "url": "",
-      "start": "2026-10-11T00:00:00+01:00",
-      "end": "2026-10-12T00:00:00+01:00",
+      "start": "2026-10-11T13:30:00+01:00",
+      "end": "2026-10-11T15:30:00+01:00",
       "date": "2026-10-11",
-      "time": "All day",
-      "allDay": true,
+      "time": "1:30pm",
+      "allDay": false,
       "color": null,
       "colorId": null,
       "googleEventId": "6ksj6phjc4sj2bb474q3gb9k64rj6bb264om2b9k60r38opj65j3ee1mcc",
@@ -276,20 +276,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
       "url": "",
@@ -302,6 +288,20 @@
       "colorId": null,
       "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
     },
     {
       "title": "Hygienist- 10am",
@@ -402,20 +402,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Godstone Farm - Gruffalo?",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -428,6 +414,20 @@
       "colorId": "10",
       "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Godstone Farm - Gruffalo?",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Let it glow disco 3-4pm",
@@ -549,12 +549,12 @@
       "section": "Sweden"
     },
     {
-      "title": "Fridge electrical fault believed to have caused Kingston Market fire",
+      "title": "Faulty fridge thought to be cause of Kingston Market fire",
       "summary": "",
       "meta": "Thu 8 Oct",
-      "publishedAt": "2026-10-08T12:40:12+01:00",
-      "source": "Surrey Comet",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ2JVUVgyMXZxWDRON2VkYUhrSjBHOGhNSExBdDZFVGlSVXp1dFpMTFFXbjJEX1lTRVJjTGRySjljUEwxM2FzRnFLNDBzc1RvYnFjeGJvVnJ1aGlkTjFVN2VuUnFTMjdKWjFySFR0bVNyc1dKVHhrQ2QzSnREMEFkUjgwemhXRkswUWFseTVZb1NIaUpENG5ldlJR?oc=5",
+      "publishedAt": "2026-10-08T13:44:00+01:00",
+      "source": "Teddington Nub News",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbm9lanVkNVc2Snk3dEhTMzNKOFFGNkNnXzZ1Z1luZDltYkRIbUFqMS1mNUN1MGh4TDd6YVdNV0Etc1V5OWVSWmNWQUVsUkh2UEhyQ3BTTnJFVk9nZ3NLaFlZRzdQNTZzeHA4YXpQSVlmLWpFQ0pqd1lCZ1p5X2VJZDE0a3c0OTF6c3FyNnBjTnB3UWNwaUhGX2lZbk9VS2xmTEtiSm9lN1VzajhC?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -708,12 +708,30 @@
         "contentType": "article"
       },
       {
-        "title": "Strengthened Swedish collaboration on Gripen E/F’s engine",
+        "title": "Stena Bulk seeks to boost Swedish national security with two tankers reflagged",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T07:32:37+01:00",
-        "source": "Saab",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONG5NbVJqaE04Ri1oMzlrdDA3eGttVXpXRWp2em9ycVZmODlnV1JHWmZmcjM2VE80VzctWm93SjhFakxXakpXZndCLXFMY0Zydk5aak1QNW9VWWRVcjh2dmZ6LTZPbHpUbUtRMkM1M09TNlJreXg5bUt4M2JhOC11bFRad3cwamVGbHVvQ1RRam9LeWlPOU5tUWpLUVVSbWtRTWQyNmItb3o?oc=5",
+        "publishedAt": "2026-10-08T14:56:18+01:00",
+        "source": "TradeWinds News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQLUJrTnpwOXpKT005ZWtaa3k4QmxBcTRMWHNoX0F0eXVwNDRQTUhaWUw2ZHpCNlMwMjFQazAzNnhpU0xjcGl5elFnaDlObGVPTVg0X3A0b29OVk51dWtvaEJOV3dSTG4yRVhuazhZVGpPUmxqQzdubDFfeE5PODNYQUVGcm1uZjRPVXVHNE1Wdlp0OUI1eVdUajNOWHdxbjRsN0ZEdEM4VWdzd041eHJvclE3cVRmSXdzMEF0dU5IV3ZpM0I0dmtlag?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arla to close packaging plant in Sweden",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:05:22+01:00",
+        "source": "just-food.com",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3ZzVTcjAtZW1FaG1uZ1hpaHZ6VW96ZHJabVg5RkxJYU1qZHJjTzdFd3cyS21RZUFlMkFPekxzenRNZFgyVWpOWWFWU1ZWRGxDeFh1cV9NQ0x0bTU0OVpEbTk0NDdVNnFsM3Q2Y2JMcF9lci1qVmpQdFdTMA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden shares lower at close of trade; OMX Stockholm 30 down 0.76%",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T17:00:00+01:00",
+        "source": "Investing.com UK",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMm9icl9xdlFFM2s0aXBqbk9mQmxBTG15eDNCX0lYS2dzWGdDRmZqbDBpOXhCVlI4c3NBSnhFSi1wNnFDTzFqTWNtT0tMbk9xOHpfNnJsc1dwSXo3VzRRbVYyX0hUZjl2ZUVDcFdwc0xGdnNLX0xiX1BQR0pYLUVfUnVQNmlKaEFWTWV2dUhuZEt1bzk2SzJmS0NNRVRaU3dNckh6VDdfNVNpWkM3M3hLaDN6eVRCNWhiY29j?oc=5",
         "contentType": "article"
       },
       {
@@ -726,43 +744,36 @@
         "contentType": "article"
       },
       {
-        "title": "Stena Bulk seeks to boost Swedish national security with two tankers reflagged",
+        "title": "Sweden Has 267,570 Islands. I Walked Across 20 of Them.",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T14:56:36+01:00",
-        "source": "TradeWinds News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQLUJrTnpwOXpKT005ZWtaa3k4QmxBcTRMWHNoX0F0eXVwNDRQTUhaWUw2ZHpCNlMwMjFQazAzNnhpU0xjcGl5elFnaDlObGVPTVg0X3A0b29OVk51dWtvaEJOV3dSTG4yRVhuazhZVGpPUmxqQzdubDFfeE5PODNYQUVGcm1uZjRPVXVHNE1Wdlp0OUI1eVdUajNOWHdxbjRsN0ZEdEM4VWdzd041eHJvclE3cVRmSXdzMEF0dU5IV3ZpM0I0dmtlag?oc=5",
+        "publishedAt": "2026-10-08T19:02:27+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOV2FhWC14UVQ1N3lDWTBGYVRsekI3U1h0Q1hPRHMzaDBsWEtadHlnNlVmR1JWeExZRlF6M0kyQ2JuZE02VTlOY2hyOU1jSm9aeXZBTGxWWDNHYUFBc0ViQ0h5cENmQWVKMHR3NllQVGtMRXFRTVFwbGswWjRmWG1LWDJR?oc=5",
         "contentType": "article"
       },
       {
-        "title": "ATG confirms tech leaders for overhaul of Swedish racing",
+        "title": "'Bold and inventive' Canadian poet Anne Carson wins Nobel Literature Prize",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T14:00:49+01:00",
-        "source": "SBC News",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPa0RveWEwZUtLcVhnYnZSYVV1ME00c25HQXVGQTM0cWZOTXB0bUZfV0Y4UlF3RDRZMFR6S1BIc1pDVXN3TUcxYXIwTVVVeXd3QTIzZlRhSS1YWlBkaS0tcmJkNV94Mkt1WDdUNWh3a2c2OXlvbkpZMlpobWYwYXNmbk9FcDQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arla to close packaging plant in Sweden",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T13:05:54+01:00",
-        "source": "www.just-food.com",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3ZzVTcjAtZW1FaG1uZ1hpaHZ6VW96ZHJabVg5RkxJYU1qZHJjTzdFd3cyS21RZUFlMkFPekxzenRNZFgyVWpOWWFWU1ZWRGxDeFh1cV9NQ0x0bTU0OVpEbTk0NDdVNnFsM3Q2Y2JMcF9lci1qVmpQdFdTMA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Swedish nuclear output hits lowest in at least a decade at 2.2 GW",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T07:27:07+01:00",
-        "source": "Montel News",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbGc3TlV0a1VLQ3h3YXlQT0gtc0J6NzNuMTdnTk1OVEFnYm5Yd3EzbXJKTVg3Ny1razNudHkwN0FDZ2ZaTUxUdDMwRk91eEZXaFBDclVjNDBZdUFNbXpXNDRUVG9BV21SclFyTHc4N05mQzFCbUw5NzB6cFRWcHZnQ25QT0hPbzQwdWFPczlEODc3VDJrMzRMMDg0NnBOZ2oyemk4WjRXbUlvUU5EVFlFQTVKUnZLd0VTRXU2UmtoTVpVaTBzUmREY0hn?oc=5",
+        "publishedAt": "2026-10-08T15:33:23+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9SQjd5WW5lcEpOSVRTUlR0T3liS3BfU2lXNDk5YVNyOHRKaTVfckxiMVl1elBXTDVYbHVpM21abEd3cXN2bEZoU3RVazlDM21vLVNzZklta0cxcVE?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Faulty fridge thought to be cause of Kingston Market fire",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:44:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbm9lanVkNVc2Snk3dEhTMzNKOFFGNkNnXzZ1Z1luZDltYkRIbUFqMS1mNUN1MGh4TDd6YVdNV0Etc1V5OWVSWmNWQUVsUkh2UEhyQ3BTTnJFVk9nZ3NLaFlZRzdQNTZzeHA4YXpQSVlmLWpFQ0pqd1lCZ1p5X2VJZDE0a3c0OTF6c3FyNnBjTnB3UWNwaUhGX2lZbk9VS2xmTEtiSm9lN1VzajhC?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
       {
         "title": "Fridge electrical fault believed to have caused Kingston Market fire",
         "summary": "",
@@ -770,6 +781,17 @@
         "publishedAt": "2026-10-08T12:40:12+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ2JVUVgyMXZxWDRON2VkYUhrSjBHOGhNSExBdDZFVGlSVXp1dFpMTFFXbjJEX1lTRVJjTGRySjljUEwxM2FzRnFLNDBzc1RvYnFjeGJvVnJ1aGlkTjFVN2VuUnFTMjdKWjFySFR0bVNyc1dKVHhrQ2QzSnREMEFkUjgwemhXRkswUWFseTVZb1NIaUpENG5ldlJR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Kingston care home raises over £1,000 for dementia charity",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc2t6bUR3aXctR2lpOC1VZEF3ZmJxbk44SWdJa0NQTnhfWXBybjM4RE01cmtQYk1vNDlVSUVMTXRhZmtQeFRfTEh5dVN6M3BMVm9LNGh6Rk4zbFo4TVN5TGlnbWpfNWlpU3c4ZFlXaG9TcVJFdVp6ZnBEZlB6YzJ6dGdOSnBXc0xvZGdZWFZTdWJockkxZXZXczNWbEoxSWhrcGttUEdZU0NSc3BINEJVVkc4WGU2SThsV1NJ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -830,17 +852,6 @@
         "familyActivity": false
       },
       {
-        "title": "Kingston Market fire cordon remains as special investigators reveal latest findings",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T08:18:17+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOHFFb05vM2xvZ3huU1FJbVFIUHlyVTF3SFBPQ0RDSzZBdjB0R3dsUVJDeW5NVFNwSEtZOHZTcVVfSnE4X0RoQThjay0xYmZZTHBRM2Z0QXJIU3pBb0FYQkpPMEdQYU9ENkkwRFpRcW85SUZnRWRaYjRGeXROZE1qbEsySm9pb0QwN21XMGc5N2pSeDZGSVY0ZmJYWnVIWkRGMkxHTWZ5VkplZw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Kingston Council leader ‘shocked and saddened’ by Market Place fire",
         "summary": "",
         "meta": "Tue 6 Oct",
@@ -869,17 +880,6 @@
         "publishedAt": "2026-10-06T14:20:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQXzRfLVdmeHhiYTJJOEt2ZU9hVExyZDJsaTBjd1dtSGcwek9fUjhBYnJQMjFoRXF2T2ZiXzRxenRHSXo0dW0tTTR6TnJORm82d0lzLW9ZbGNXbTBQQXMzVDloQi02TjVfODFsZ0lMWHN5dTlhWUZYdWxIeTJmczE2azM1RTktbzAwTVJRMVRaSUozUEZrdEJCbVBVellWYm05Y0w3dVFGZnNpV3ZYY1dRWDBGNmZ4blRVaUNPRTZiZ0ZLa3E0eEVqcVl0TmY2bFM4LXpyZw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
-        "summary": "",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T13:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbmlnelhmSnhaTjlIRjg3bXA3TmF2R0NhYjhkOTFja1IzQ1lQU2JOYjBsYklFR0ZnSkxpT3hab1dzcngyVXlCQ3hfUXBUNHlVajBxZTc5XzJ4S1QzdHRKc1pNRk9ZZXFUWE41X2xuWmI0dVh2NjFzbUZvSFBkQnVIdWZOSlBydlBESW1IU2xvUVE1aGtMbmZsd2ZJZnN6c2lYNlVZbEVNQnV1dXdpQy1KZUtQcWxFbkZPT2RjY1R0TTdwdjFyUHI5Yl9JUXdBMHc?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -929,21 +929,131 @@
         "familyActivity": false
       },
       {
-        "title": "Displaced Kingston resident faces legal threat after reporting council housing neglect",
+        "title": "‘Bridgerton’ actor to star in Kingston’s Rose Theatre’s upcoming Christmas panto",
         "summary": "",
-        "meta": "Sun 4 Oct",
-        "publishedAt": "2026-10-04T17:00:02+01:00",
+        "meta": "Thu 1 Oct",
+        "publishedAt": "2026-10-01T09:30:00+01:00",
         "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNTVQQmtHVGZKcnNsUEswcF9sbUFyci03QlByZmNOUlJaMWRveTdoQmpFSGFXTWE2bXFFUmUwbnNCVkJOQ0FScnpjWWx3dWItV2N4TU5EMVV1bHBXYURMTVhDLTZQRmlWSHptTjhpVHM2Rkl4RWtMN2gzcGt4YjRKTTVnZTdsRUpzY3VUV2dNQnEzblhtTG5jVnd4cjktSncyM3g2cnN4VUV1Q3N4MzZNOEQ0aXVjNGZKZ3V5TERSdk1Md2VMdFAzZG9mdDJWajhp?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMGMwaVV6dGlXbzNCcjRPd3BiOTlveEZFLTI0czJ6blRBd0IwN2FRc2tRa09XaVMyM2JuRENKMmlfckxqa09YS21MVG5DbWRiZXJSVlJvWUNmRzdSUW56VDZqM1ZRaGhXeTd6WVJpLWdDUjdBQ3BEZlhVS2lLTjJaX0NWa1JPcDVrcjRIdFBXS3JMVXRob0kwNXhSeEtHNHVaeV9Zd1BTQXVkZXpraHhudGhXdWtRYjhkRmM2LVFmRW1HV1E?oc=5",
         "contentType": "article",
         "localPublication": true,
-        "familyActivity": false
+        "familyActivity": true
+      }
+    ],
+    "UK news": [
+      {
+        "title": "Musto’s Championship Collection Smock nominated for British Yachting Award 2026",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T17:28:24+01:00",
+        "source": "www.allatsea.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXpGUkc5NWJVRFJmdUtHZFVHX1NiejZMbHdxdXpxUl9jZWJmQ09SNmxvdzBLeDRLZjlZRWtHb3V5WUFkajA3MklJX2Jqa25nYmF5Q0g5bWtVWldPYm4zbXVhcWVqbkItWjlCMzJuRG9hRWVsdjJ3T3JpQ1NQRmRudGYzcEM4LVFaYV82TTlBSGcybjVWXzN0bTF6Q2UwLS14Q2NkcU9adUExV2RBTXlaTA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Georgia Hunter Bell: British 800m and 1500m runner celebrates team's female track success",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T17:12:58+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYnh2Z1FYWGltZkg1QjQ1RGhzRUFCaTI0N05nemRJY2xucnlJRVdLN1hIU21pSjAzQ0RBdWZfN3g4OU1WS2R1U2JmZUNWZURxV2dJekNBQU44WlRuc1d2V3hoVTVPZFh4NW9oYkowbXRDdTB5OXI5b3FiVHRZdTJuQy01T2JYQmE4UFVPZjFRUGhFTEYxM2tEYVdRdEhna05uX2RiZzZYNnp0UnY1a3J6ZjM5SWh5WW5lVnZOQUFVUU1TSVNmQlVnSld6T0dDYXdGbFFBcHllTnZiMFBWd0o5UVFJWQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swansea Office Wins Britain’s Best Commercial Workplace Award",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T14:45:08+01:00",
+        "source": "News from Wales",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbzl2RUIxTzhaWTRfdUxDTW4tZ2xkeHA3Y09maW43d1NGZmdmOXljZGpFSm4zQTE4RFVWdjRjWHozbnQ1MFNrQUJFcGNPSktyNTA1VF80RUxRZGlKOHJHSGNUS2JrV2l4QVZPMU5SZlpxWlA1cWMxdER2a29yelR1cUJlSjE1MXpfbG5qR3Mya1VDWUk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Video. Back to the 90s! Tate Britain celebrates the decade's art and fashion",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:04:41+01:00",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSDJ5TklOX29NUWlIRnJpcVJrTlNfTFR2cGNHMEVXQjhPWXZWSDJnSFdia0I2c0NGRlpJMk8wbDhrRmhJdTB3emhXaEJXMGt3bmtpelZfUDlTRFkydUNKOFZtYWJJRFVVbTgwdGdMenZKY0d3R2hVcVcxWWJsQXRDNndfVHh2aTRvdTlOZFJjaG0wTzM3a3E5MFVsWXR6ODg2OTdqTEs1SXFrWm5mOTA1WERCaFJKS1ZUc1MtWnBHcE1lSGFqWk1MTUdPUUU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Pink hair and powerful plaids: Tate Britain celebrates the chaotic creativity of 90s culture",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:04:41+01:00",
+        "source": "Yahoo News Canada",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pQ1VrNXBGZERuNnU3S191eURNdTF6c1BtRmpSUFVVM1R6OTVncFhEcjdaci1pa0dhWUd6SmRxY0V2WHA0Rmp0MnZ2SHY5RmJlTTlQTHVjd1AtWGJQUUh5RnZCcm5oV2dPYU5ESzMtMHkwT0phT3RkM1dBSQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Dedicated Teesside dentist honoured by NHS England with special award",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:21:00+01:00",
+        "source": "Teesside Live",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQkhuV2pBSTZ1V2VwdFI2OWFob2t2ckFUMTdoTi1DMmo5MTFyMnVHSG9sYlhGaHhxOEFiMkZFOFQ4NGh6Mlk5WE9RdDFmUmJnZG5jamxNOFB3N3pUbE1LV0xabkh3NlQtX04tVjhXNG40dzlER3A0Z1otWHU4eUh5RU5oV0E0a3ctX2gtdUFqTkQxTUJzekNRQjdFVnliUdIBowFBVV95cUxOQUJ2cjZ4S3RtcDdYNmR1NjVnakR1aUtmUXgwR1pGcXVheDJFYWY4VHoxRHFXaktDQldDejJ4eWJjcGVhWjNJRE9wWVpIYmEzV0RwaWhRdFZEUTc5c0tndkl1M1RqLVROTmlzMTBtNTE0ZHFXdzdBczMyODByTV9qaDZqdWhhZHR4RUlqeWFhN1NYd0RFd1RKVWg1c3haZTE0YXBj?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Julie Hesmondhalgh given Great British Theatres Lifetime Achievement Award for Oldham Coliseum campaigning",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T11:27:04+01:00",
+        "source": "Not Really Here Group",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNYkZwdWxpMDd4S3pIVTFMWWJFdDZodXBXV2xlR2VBcGp1MGRJSHR3cHprcU1rZ2NjMTF4TUNVckZoUUZHYXAzTHNWZmNPVWZ0bFhkeHdwVHZnNndNX1VkTFpfUE9XdFd6czV6VFlzem1sa29kTjZ5MFE1ZzUyZXJkZWlmM3hyN2pITmRoRWh3M1YtbUs2M2lkZVZJR29qWHNBd1ZkbWU5cGFiLWZnbWcxQl82dk9kWm0wMWJfYm5RZkZxci14c2JTRFFXemQ1MjI5aFRld1JDbXRySk9mUzhKczdYS0tOUjM4NUVJM1RRWWtLTVJtT1E?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Renishaw celebrates 15 years in South Wales with £70m expansion",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T06:58:38+01:00",
+        "source": "Wales 247",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeC1QX3pOMF9yWHVSX3BiX3FlQTZ6b1RhNUhic1ZsOEdpclMxZmpaWjZ0MFZveXJmWlFVS0djUmNSYk5OcVBqUTY2dUx0NVJtMTluZGlnZTFTbkw1Y05JVF82T25qRkdCUUtnbTBQaEZvdS00SnpMQzc4UlJEYVQwRWtmQnZMTmZfdjBKdVF5YzdSbkE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "UK bluefin tuna comeback shows nature can recover, says WWF",
+        "summary": "The tuna is one of several wildlife recoveries highlighted in a major new report from WWF.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T06:00:04+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c5rmyzgdjzkwo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Tate Britain celebrates the 90s with new Edward Enninful-curated exhibition",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T15:46:29+01:00",
+        "source": "Luxury London",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcm5kZDlPeGlXbUVWb25HYTlDSnh6S0xXZHRuVktqY2hmSm5yVWhLNkFXMk1jMko3ckFXallId2ZGSGdtekV4ektPZlNUcGstYlBidTAyQS1xRDJaZnpuTWpjY01kc25CYUtBT0E5M3NIWHRGdDRaSUh2QUtHa0l3b0tn?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "News | British Council for Offices' top national award goes to Swansea regeneration project",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T14:59:51+01:00",
+        "source": "CoStar",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR21RYjh3M0RULW5UMmhDWTZCY3BaYW5VUlVrRWh4VlBBVVlsYnZUSnowS3I4VmtGcEhGNV9Cck1ZTWY1elMzZXZWS0JxSWp5Q192M1UwajZCcjd5dWdjV3FuLVlWMzRVMHk5NG9yeUtQZVZIelNHV2xoZ3RXM3ZYWUYyMFFQQi1KcTdxWUZKRnB6aXpUbHlEMzNRWGtjVWxXbVI1aXl0U0pKR0RKSF9RRzJaTDZfaldrZE45cUVDUUdIZw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "New Scale-up Pathway connects regional strengths to keep British innovation growing in the UK",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T14:35:14+01:00",
+        "source": "Imperial College London",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVWRINnpna212Slo0SUl0dE0yMnJkYkFaaE1BSm1EUnc4dGQ0akk2MEdpSXpFUEFvQktjS0tvaVRQUVlvR2p5akRaSnNFZWVkb2xadjllTHk4clVrUVVGampRZkdqMktwODJjTmRFRkNndjdXSEVLMmFvQ0l2VE5ZSkNxb24zUUFXdVk2SVZVeEd5em4tUmY4VnJkdHc2LWk4b0VwNXhXc3htNlpWU2dQelRGRFl1YjJsRmJOXzdSVlphTHRZMlkzTHN2amFES2JLLUpWME1Vdw?oc=5",
+        "contentType": "article"
       }
     ],
     "AI": [
       {
         "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-        "summary": "New lightweight embedding model for text and image retrieval from Google DeepMind.",
+        "summary": "",
         "meta": "Tue 6 Oct",
         "publishedAt": "2026-10-06T20:57:04+01:00",
         "source": "Google DeepMind",
@@ -952,7 +1062,7 @@
       },
       {
         "title": "Introducing Playground: Create and play custom games",
-        "summary": "Google introduces Playground, an experimental gaming platform powered by Gemini.",
+        "summary": "Overview of Playground",
         "meta": "Wed 7 Oct",
         "publishedAt": "2026-10-07T13:00:00+01:00",
         "source": "Google",
@@ -961,7 +1071,7 @@
       },
       {
         "title": "The latest AI news we announced in September 2026",
-        "summary": "Monthly roundup of new Gemini capabilities and search integrations.",
+        "summary": "A video showing the September AI updates",
         "meta": "Fri 2 Oct",
         "publishedAt": "2026-10-02T16:00:00+01:00",
         "source": "Google",
@@ -969,66 +1079,66 @@
         "contentType": "article"
       },
       {
-        "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
-        "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:00:00+01:00",
-        "source": "Anthropic",
-        "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+        "title": "OpenAI annualised revenues $20bn less than previously signalled",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T17:42:34+01:00",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZWVveXJiRHFiS1dWdDdYZWtlWDdFZ3JjckdfMnRGLVpiZWxzRjdGNGZHcnZtMmZTaXQ4U1Fmc2ZhVzhFNXBxbDRwcThvR2pVMGdKdUR2QW5fQ0ZhSDB5ZzFwOHZLellkZXA1ZW4ySUd5bFo3Uno0VE92Y1ZHVm54MU5DTVA?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Claude Sonnet 5.5: advancing performance and efficiency",
-        "summary": "Significant speed and efficiency improvements across enterprise reasoning and software engineering.",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T14:00:00+01:00",
-        "source": "Anthropic",
-        "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
+        "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+        "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T17:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/oracle",
+        "contentType": "article"
+      },
+      {
+        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/pollo-ai",
+        "contentType": "article"
+      },
+      {
+        "title": "Disrupting AI-enabled “false front” operations",
+        "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T01:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+        "contentType": "article"
+      },
+      {
+        "title": "Helping teens learn, plan, and shape the future of AI",
+        "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/teens-learn-and-plan",
+        "contentType": "article"
+      },
+      {
+        "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+        "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T08:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/radisson",
         "contentType": "article"
       },
       {
         "title": "GPT-6 and Intelligent UI for everyone",
-        "summary": "OpenAI rolls out GPT-6 with real-time interactive canvas and direct visual synthesis.",
+        "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
         "meta": "Wed 7 Oct",
         "publishedAt": "2026-10-07T01:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/gpt-6-for-everyone",
-        "contentType": "article"
-      },
-      {
-        "title": "Sharing AI progress in mathematics",
-        "summary": "Formalizing open mathematical conjectures with neural theorem provers in Lean.",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-        "contentType": "article"
-      },
-      {
-        "title": "DeepSeek-V4.1: faster inference and native multimodal understanding",
-        "summary": "DeepSeek releases V4.1 with optimized Mixture-of-Experts architecture and long-context vision reasoning.",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T10:00:00+01:00",
-        "source": "DeepSeek",
-        "url": "https://api-docs.deepseek.com/news/news202609",
-        "contentType": "article"
-      },
-      {
-        "title": "Qwen-Image-3.0 and Qwen Code: autonomous task execution across enterprise tools",
-        "summary": "Alibaba Cloud unveils unified image generation and autonomous terminal coding agent models.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T08:00:00+01:00",
-        "source": "Qwen",
-        "url": "https://qwenlm.github.io/blog/qwen-image-3.0/",
-        "contentType": "article"
-      },
-      {
-        "title": "Kimi K3: scaling open long-horizon agentic reasoning models",
-        "summary": "Moonshot AI details Kimi K3 architecture for complex multi-step reasoning and autonomous coding.",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T12:00:00+01:00",
-        "source": "Moonshot AI",
-        "url": "https://www.moonshot.cn/news/kimi-k3",
         "contentType": "article"
       }
     ],
