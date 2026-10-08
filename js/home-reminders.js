@@ -101,19 +101,92 @@
       .sort((a, b) => a.nextDate - b.nextDate || a.name.localeCompare(b.name));
   }
 
+  function ordinal(n) {
+    const s = ['th', 'st', 'nd', 'rd'], v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+  }
+
+  function birthdayRowText(item) {
+    const d = item.nextDate;
+    const dayOrdinal = ordinal(d.getDate());
+    const monthName = d.toLocaleDateString('en-GB', { month: 'long' });
+    const weekday = d.toLocaleDateString('en-GB', { weekday: 'long' });
+    const datePart = `${dayOrdinal} ${monthName} - ${weekday}`;
+
+    let milestone = '';
+    if (item.year) {
+      const age = d.getFullYear() - Number(item.year);
+      if (Number.isFinite(age) && age >= 0) {
+        if (item.type === 'anniversary') {
+          milestone = ` - ${age} YEARS!`;
+        } else {
+          milestone = ` - TURNS ${age}!`;
+        }
+      }
+    }
+    return `${item.name} - ${datePart}${milestone}`;
+  }
+
+  const GIRLY_PALETTES = [
+    ['#ff4f93','#ff85b6','#ffc2dc'],
+    ['#d63384','#ff66c4','#fce4ec'],
+    ['#a855f7','#d946ef','#fae8ff'],
+    ['#f43f5e','#fb7185','#ffe4e6'],
+    ['#ec4899','#f472b6','#fdf2f8'],
+    ['#8b5cf6','#c084fc','#f3e8ff']
+  ];
+
+  const BOY_PALETTES = [
+    ['#0ea5e9','#38bdf8','#e0f2fe'],
+    ['#2563eb','#60a5fa','#dbeafe'],
+    ['#10b981','#34d399','#ecfdf5'],
+    ['#06b6d4','#22d3ee','#cffafe'],
+    ['#16a34a','#4ade80','#dcfce7'],
+    ['#0284c7','#38bdf8','#e0f2fe']
+  ];
+
+  const GIRLS_SET = new Set(['Sofia','Adina','Aurelia',"Pete's Mum","Sofia's Mum",'Ash & Sophia']);
+  const BOYS_SET = new Set(['Pete','Trey','Arthur','Isaac','Oscar',"Sofia's Dad",'Patrick','Maffi']);
+
+  function isGirlName(name='') {
+    const clean = (name||'').trim();
+    if (GIRLS_SET.has(clean)) return true;
+    if (BOYS_SET.has(clean)) return false;
+    return /\b(mum|mother|grandma|sister|daughter|girl|she|her|sophia|sofia|adina|aurelia|emma|olivia|charlotte|amelia|isabella|mia|harper|evelyn)\b/i.test(clean);
+  }
+
+  function hashStr(str='') {
+    let hash = 2166136261;
+    for (const ch of str) {
+      hash ^= ch.charCodeAt(0);
+      hash = Math.imul(hash, 16777619) >>> 0;
+    }
+    return hash >>> 0;
+  }
+
+  function paletteForPerson(name='') {
+    const pool = isGirlName(name) ? GIRLY_PALETTES : BOY_PALETTES;
+    return pool[hashStr(name) % pool.length];
+  }
+
+  function renderBalloonSvg(p, name='', compact=false) {
+    const [a, b, accent] = p;
+    const id = `${compact ? 'c' : 'f'}${hashStr(name).toString(36)}`;
+    return `<svg class="hq-balloon${compact ? ' compact' : ''}" viewBox="0 0 70 86" aria-hidden="true"><defs><linearGradient id="g-${id}" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="${a}"/><stop offset="100%" stop-color="${b}"/></linearGradient><filter id="s-${id}" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="rgba(0,0,0,.45)"/></filter></defs><g filter="url(#s-${id})"><ellipse cx="36" cy="31" rx="22" ry="26" fill="url(#g-${id})" stroke="rgba(255,255,255,.2)" stroke-width="1.3"/><ellipse cx="27" cy="21" rx="7" ry="10" fill="rgba(255,255,255,.45)" transform="rotate(-18 27 21)"/><path d="M36 56C34 60 32 62 29 64c4 0 7 2 10 5 2-3 5-5 9-5-4-2-6-4-8-8Z" fill="${accent}"/><path d="M37 68c3 6 5 9 8 15" fill="none" stroke="${accent}" stroke-width="2.3" stroke-linecap="round"/></g></svg>`;
+  }
+
   function milestoneText(item) {
     if (!item.year) return '';
     const number = item.nextDate.getFullYear() - Number(item.year);
     if (!Number.isFinite(number) || number < 0) return '';
-    if (item.type === 'birthday') return `turning ${number}`;
     if (item.type === 'anniversary') return `${number} years`;
-    return `${number} years`;
+    return `turning ${number}`;
   }
 
   function iconFor(item) {
     if (item.type === 'anniversary') return '♥';
     if (item.type === 'occasion') return '★';
-    return '🎂';
+    return renderBalloonSvg(paletteForPerson(item.name), item.name, true);
   }
 
   function typeLabel(item) {
@@ -162,26 +235,35 @@
       style.id = 'birthdayStyles';
       style.textContent = `
         @media(max-width:899px){#primaryNav{grid-template-columns:repeat(7,minmax(0,1fr))}}
-        .birthday-panel .section-head h2,.occasion-month h3{color:#142a3d!important}.birthday-list{display:grid;gap:22px}.occasion-month{display:grid;gap:10px}.occasion-month h3{margin:0 0 2px;font-size:15px}.birthday-month-grid{display:grid;grid-template-columns:1fr;gap:10px}
-        .birthday-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px;border:1px solid rgba(217,0,119,.48);border-radius:20px;background:#fff!important;box-shadow:0 12px 28px rgba(73,79,111,.10)}
-        .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
-        .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(0,124,184,.88)!important;box-shadow:inset 0 0 0 2px rgba(39,147,199,.16),0 0 0 3px rgba(255,255,255,.45),0 0 20px rgba(23,128,183,.40),0 0 38px rgba(57,135,255,.22)!important;transform:none!important;outline:none}
-        .birthday-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(217,0,119,.08);font-size:22px}
-        .birthday-card strong{display:block;font-size:16px}.birthday-card small{display:block;color:#142a3d;margin-top:3px}.birthday-card b{color:#8f004f;font-size:14px;text-align:right}
-        .birthday-empty{padding:24px;border:1px dashed var(--line);border-radius:20px;color:var(--muted)}
-        #homeReminders .home-reminder-card.birthday{background:#ffc1dc!important;border-color:rgba(217,0,119,.48);box-shadow:0 12px 28px rgba(73,79,111,.10)}
-        .home-reminder-card.birthday .home-reminder-top,.home-reminder-card.birthday small{color:#142a3d}.home-reminder-card.birthday b{color:#142a3d}
+        .birthday-panel .section-head h2,.occasion-month h3{color:var(--text,#fff)!important}
+        .birthday-list{display:flex;flex-direction:column;gap:18px}
+        .occasion-month{display:flex;flex-direction:column;gap:8px}
+        .occasion-month h3{margin:0 0 2px;font-size:15px;color:rgba(255,255,255,0.7)!important}
+        .birthday-month-grid{display:grid;grid-template-columns:1fr;gap:10px}
         @media(min-width:700px){.birthday-month-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
+        .birthday-card{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid var(--signal-line,rgba(255,255,255,0.08))!important;border-radius:12px;background:#0b0e0c!important;box-shadow:none!important;color:var(--text,#fff)!important}
+        .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
+        .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(124,244,106,.72)!important;box-shadow:inset 0 0 0 1px rgba(124,244,106,.12),0 0 0 1px rgba(124,244,106,.52),0 0 22px rgba(124,244,106,.18)!important;transform:none!important;outline:none}
+        .birthday-avatar{width:46px;height:54px;display:grid;place-items:center;background:transparent!important;border-radius:0}
+        .birthday-copy{flex:1;min-width:0}
+        .birthday-card strong{display:block;font-size:15px;font-weight:600;color:var(--text,#fff)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        .birthday-card small{display:none}
+        .birthday-empty{padding:24px;border:1px dashed var(--signal-line,rgba(255,255,255,0.1));border-radius:12px;color:var(--muted,#8b949e)}
+        #homeReminders .home-reminder-card.birthday{background:#0b0e0c!important;border-color:var(--signal-line,rgba(255,255,255,0.08))!important;box-shadow:none!important}
+        .home-reminder-card.birthday .home-reminder-top{color:var(--text,#fff)}.home-reminder-card.birthday b{color:var(--text,#fff)}
+        .hq-balloon{width:44px;height:52px;display:block;overflow:visible}.hq-balloon.compact{width:28px;height:35px}
       `;
       document.head.appendChild(style);
     }
   }
 
   function occasionCard(item) {
-    const days = dayDiff(new Date(), item.nextDate);
-    const milestone = milestoneText(item);
-    return `<article class="birthday-card" tabindex="0"><div class="birthday-avatar">${iconFor(item)}</div><div><strong>${esc(item.name)}</strong><small>${typeLabel(item)} · ${fmtDate(item.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></div><b>${days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : `${days} days`}</b></article>`;
+    const text = birthdayRowText(item);
+    const p = paletteForPerson(item.name);
+    const balloon = renderBalloonSvg(p, item.name, false);
+    return `<article class="birthday-card hq-colour" data-person-name="${esc(item.name)}" tabindex="0"><div class="birthday-avatar hq-balloon-avatar" data-hq-name="${esc(item.name)}">${balloon}</div><div class="birthday-copy"><strong class="birthday-text">${esc(text)}</strong></div></article>`;
   }
+
 
   function renderBirthdayTab() {
     const list = document.getElementById('birthdayList');
@@ -242,7 +324,7 @@
       const milestone = milestoneText(nextOccasion);
       cards.push({
         date: nextOccasion.nextDate,
-        html: `<article class="home-reminder-card birthday" tabindex="0"><div class="home-reminder-top"><span class="home-reminder-icon">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`
+        html: `<article class="home-reminder-card birthday" data-person-name="${esc(nextOccasion.name)}" tabindex="0"><div class="home-reminder-top"><span class="home-reminder-icon hq-balloon-home" data-hq-name="${esc(nextOccasion.name)}">${iconFor(nextOccasion)}</span><span>Next ${typeLabel(nextOccasion).toLowerCase()}</span></div><strong>${esc(nextOccasion.name)}</strong><b>${days === 0 ? `${typeLabel(nextOccasion)} today` : days === 1 ? `${typeLabel(nextOccasion)} tomorrow` : `${days} days to go`}</b><small>${fmtDate(nextOccasion.nextDate)}${milestone ? ` · ${esc(milestone)}` : ''}</small></article>`
       });
     }
 

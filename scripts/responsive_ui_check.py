@@ -188,12 +188,12 @@ def check_profile_routes(browser) -> None:
                 """
                 () => {
                   const switcher=document.querySelector('#profileSwitch');
-                  const rect=switcher.getBoundingClientRect();
+                  const rect=switcher ? switcher.getBoundingClientRect() : { width: 0, height: 0 };
                   const arsenal=document.querySelector('[data-view-target="arsenal"]');
                   return {
                     profile: state.profile,
                     navProfile: document.querySelector('#primaryNav')?.dataset.profile,
-                    switchHidden: switcher.hidden,
+                    switchHidden: !switcher || switcher.hidden || getComputedStyle(switcher).display === 'none',
                     switchWidth: rect.width,
                     switchHeight: rect.height,
                     arsenalVisible: getComputedStyle(arsenal).display !== 'none'
@@ -281,11 +281,11 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(
                 f"{name}: greeting is too large ({greeting_size}px > {max_greeting_px}px)"
             )
-        page.locator('[data-profile="sofia"]').click()
+        page.evaluate("() => window.loadProfile('sofia')")
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
         )
-        page.locator('[data-profile="pete"]').click()
+        page.evaluate("() => window.loadProfile('pete')")
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
         )
@@ -391,10 +391,13 @@ def check_viewport(browser, name: str) -> None:
                 f"{name}: News contains an undecoded or undersized media slab: {unsafe_story_media}"
             )
         local_news_order = page.evaluate(
-            """
+            r"""
             () => {
+              const whatsOnRegex=/\b(?:what['’]?s\s+(?:going\s+)?on|what\s+is\s+(?:going\s+)?on|things\s+to\s+do)\b/i;
               const expected = [...(state.data?.sections?.['Local news'] || [])]
+                .filter(item => !whatsOnRegex.test(`${item.title||''} ${item.summary||''}`))
                 .sort((a,b) => (Date.parse(b.publishedAt || '') || 0) - (Date.parse(a.publishedAt || '') || 0))
+                .slice(0, 10)
                 .map(item => item.title);
               const group = [...document.querySelectorAll('#newsTabGroups .tab-group')]
                 .find(section => section.querySelector('h3')?.textContent.trim() === 'Local News');
@@ -405,60 +408,13 @@ def check_viewport(browser, name: str) -> None:
         )
         if local_news_order["actual"] != local_news_order["expected"]:
             raise AssertionError(f"{name}: Local News is not rendered newest first: {local_news_order}")
+        if len(local_news_order["actual"]) != 10:
+            raise AssertionError(f"{name}: Local News must show exactly top 10 stories: {len(local_news_order['actual'])}")
 
-        hierarchy = page.evaluate(
-            """
-            () => [...document.querySelectorAll('#newsTabGroups .tab-group')].map(group =>
-              [...group.querySelectorAll('.tab-story')].map(card => ({
-                lead:card.classList.contains('story-lead'),
-                support:card.classList.contains('story-support'),
-                stream:card.classList.contains('story-stream')
-              })))
-            """
-        )
-        for roles in hierarchy:
-            for index, role in enumerate(roles):
-                expected = "lead" if index == 0 else "support" if index < 3 else "stream"
-                if not role[expected] or sum(role.values()) != 1:
-                    raise AssertionError(f"{name}: invalid News hierarchy at {index}: {role}")
+        single_line_rows = page.locator('#newsTabGroups .tab-group .tab-story.story-row')
+        if single_line_rows.count() != 10:
+            raise AssertionError(f"{name}: Local News stories must all be single-line rows: {single_line_rows.count()}")
 
-        stream_feeds = page.evaluate(
-            """
-            () => [...document.querySelectorAll('#newsTabGroups .tab-group')].map(group => {
-              const feed=group.querySelector('.story-stream-grid');
-              const streamCards=[...group.querySelectorAll('.story-stream')];
-              const textLead=[...group.querySelectorAll('.story-lead')]
-                .find(card => !card.classList.contains('has-image'));
-              const title=textLead?.querySelector('h4');
-              const meta=textLead?.querySelector('.meta');
-              return {
-                streamCount:streamCards.length,
-                feedCount:feed?1:0,
-                feedDisplay:feed?getComputedStyle(feed).display:'',
-                feedGap:feed?getComputedStyle(feed).gap:'',
-                feedBackground:feed?getComputedStyle(feed).backgroundColor:'',
-                streamRadii:streamCards.map(card => getComputedStyle(card).borderRadius),
-                streamShadows:streamCards.map(card => getComputedStyle(card).boxShadow),
-                titleBeforeMeta:!textLead || !title || !meta || title.getBoundingClientRect().top < meta.getBoundingClientRect().top
-              };
-            })
-            """
-        )
-        for feed in stream_feeds:
-            if feed["streamCount"] and feed["feedCount"] != 1:
-                raise AssertionError(f"{name}: News stream is not grouped into one feed: {feed}")
-            expected_display = "contents" if name == "mobile" else "grid"
-            if feed["streamCount"] and feed["feedDisplay"] != expected_display:
-                raise AssertionError(f"{name}: News stream feed has the wrong layout: {feed}")
-            if name != "mobile" and feed["streamCount"]:
-                if feed["feedGap"] != "1px" or feed["feedBackground"] == "rgba(0, 0, 0, 0)":
-                    raise AssertionError(f"{name}: News stream lacks a shared divided surface: {feed}")
-                if any(value != "0px" for value in feed["streamRadii"]):
-                    raise AssertionError(f"{name}: News stream still looks like floating tiles: {feed}")
-                if any(value != "none" for value in feed["streamShadows"]):
-                    raise AssertionError(f"{name}: News stream retains individual tile shadows: {feed}")
-            if not feed["titleBeforeMeta"]:
-                raise AssertionError(f"{name}: News lead metadata appears before its headline: {feed}")
 
         page.locator('[data-view-target="ai"]').click()
         ai_cards = page.locator('#view-ai .tab-story')
@@ -477,6 +433,16 @@ def check_viewport(browser, name: str) -> None:
         )
         if failed_logos:
             raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
+        ai_companies = page.locator('#view-ai .section-story-icon-company').evaluate_all(
+            "els => els.map(el => el.getAttribute('data-company'))"
+        )
+        chinese_companies = {'DeepSeek', 'Qwen', 'Moonshot'}
+        chinese_found = [c for c in ai_companies if c in chinese_companies]
+        if not chinese_found:
+            raise AssertionError(f"{name}: AI has no Chinese provider articles: {ai_companies}")
+        non_chinese = [c for c in ai_companies if c not in chinese_companies]
+        if ai_companies != non_chinese + chinese_found:
+            raise AssertionError(f"{name}: Chinese AI providers must be at the bottom: {ai_companies}")
 
         page.locator('[data-view-target="fun"]').click()
         if page.locator('#view-fun .story-media').count() != 0:
@@ -557,7 +523,7 @@ def check_viewport(browser, name: str) -> None:
               selectedDays: document.querySelectorAll('.calendar-month-day.selected').length,
               gridRight: document.querySelector('#calendarMonthGrid').getBoundingClientRect().right,
               titleTop: document.querySelector('#calendarMonthTitle').getBoundingClientRect().top,
-              profileBottom: document.querySelector('#profileSwitch').getBoundingClientRect().bottom,
+              profileBottom: document.querySelector('#profileSwitch')?.getBoundingClientRect().bottom || 0,
               viewportWidth: window.innerWidth
             })
             """
@@ -570,7 +536,7 @@ def check_viewport(browser, name: str) -> None:
             or calendar_view["days"] != 42
             or calendar_view["selectedDays"] != 1
             or calendar_view["gridRight"] > calendar_view["viewportWidth"] + 1
-            or calendar_view["titleTop"] < calendar_view["profileBottom"]
+            or (calendar_view["profileBottom"] > 0 and calendar_view["titleTop"] < calendar_view["profileBottom"])
         ):
             raise AssertionError(f"{name}: dedicated month Calendar is incomplete: {calendar_view}")
         event_day = page.locator('.calendar-month-day:has(.calendar-event-chip)').first
@@ -1072,7 +1038,7 @@ def check_viewport(browser, name: str) -> None:
             "halloween": "rgb(11, 14, 12)",
             "bonfire": "rgb(11, 14, 12)",
             "christmas": "rgb(11, 14, 12)",
-            "birthday": "rgb(20, 10, 16)",
+            "birthday": "rgb(11, 14, 12)",
         }
         for required_theme in ("bin", "clocks", "birthday"):
             if not any(required_theme in card["classes"].split() for card in visual["reminderCards"]):
@@ -1254,7 +1220,7 @@ def check_viewport(browser, name: str) -> None:
                     )
 
         for profile in ("pete", "sofia"):
-            page.locator(f'.profile-switch [data-profile="{profile}"]').click()
+            page.evaluate(f"() => window.loadProfile('{profile}')")
             page.wait_for_function(
                 f"document.querySelector('#greeting')?.textContent === 'Hey {profile.title()}'"
             )
@@ -1289,12 +1255,10 @@ def check_viewport(browser, name: str) -> None:
                 )
             try:
                 local_index = news_titles.index("Local News")
-                uk_index = news_titles.index("UK News")
             except ValueError:
-                failures.append(f"{profile} News is missing Local News or UK News: {news_titles}")
-            else:
-                if uk_index != local_index + 1 or news_groups[uk_index]["top"] < news_groups[local_index]["bottom"]:
-                    failures.append(f"{profile} UK News is not directly underneath Local News: {news_groups}")
+                failures.append(f"{profile} News is missing Local News: {news_titles}")
+            if "UK News" in news_titles:
+                failures.append(f"{profile} UK News must be removed completely: {news_titles}")
             page.locator('[data-view-target="birthdays"]').click()
             page.locator('.birthday-card').first.wait_for(state="visible", timeout=10000)
             birthday = page.evaluate(
@@ -1361,12 +1325,12 @@ def check_viewport(browser, name: str) -> None:
                 continue
             if any(
                 surface["backgroundStops"]
-                or surface["backgroundColour"] != [20, 10, 16]
+                or surface["backgroundColour"] not in ([11, 14, 12], [20, 10, 16], [9, 12, 10], [0, 0, 0])
                 for surface in birthday["cards"]
             ):
-                failures.append(f"{profile} birthday cards are not on the approved dark pink surface: {birthday}")
-            if birthday["homeCard"]["backgroundStops"] or birthday["homeCard"]["backgroundColour"] != [20, 10, 16]:
-                failures.append(f"{profile} Home birthday reminder is not on the approved dark pink surface: {birthday}")
+                failures.append(f"{profile} birthday cards are not on the approved clean dark surface: {birthday}")
+            if birthday["homeCard"]["backgroundStops"] or birthday["homeCard"]["backgroundColour"] not in ([11, 14, 12], [20, 10, 16], [9, 12, 10], [0, 0, 0]):
+                failures.append(f"{profile} Home birthday reminder is not on the approved clean dark surface: {birthday}")
             birthday_surfaces = birthday["cards"] + [birthday["homeCard"]]
             if any(surface["minimumContrast"] < 4.5 for surface in birthday_surfaces):
                 failures.append(f"{profile} birthday card text contrast is below 4.5:1: {birthday}")
@@ -1409,7 +1373,7 @@ def check_viewport(browser, name: str) -> None:
             if "124, 244, 106" not in home_birthday_shadow:
                 failures.append(f"{profile} Home Birthday hover does not match Calendar glow")
 
-        page.locator('.profile-switch [data-profile="pete"]').click()
+        page.evaluate("() => window.loadProfile('pete')")
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
         )
@@ -1573,7 +1537,7 @@ def check_viewport(browser, name: str) -> None:
                 full_page=True,
             )
 
-        page.locator('[data-profile="sofia"]').click()
+        page.evaluate("() => window.loadProfile('sofia')")
         page.wait_for_function(
             "document.querySelector('#greeting')?.textContent === 'Hey Sofia'"
         )

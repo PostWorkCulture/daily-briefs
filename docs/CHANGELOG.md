@@ -1,3 +1,15 @@
+## 8 October 2026: Remove line under Hey Pete, remove Pete/Sofia toggle, clean birthdays with gender-specific balloon colours, single-line News and AI with Chinese providers at bottom, and remove UK News
+
+- Removed the dividing line under "Hey Pete" / "Hey Sofia" (`.hero`, `#view-home > .hero`).
+- Removed the Pete/Sofia toggle (`.profile-switch`): Pete and Sofia access their respective briefs directly via dedicated routes (`/pete/`, `/sofia/`) with no toggle between them.
+- Cleaned up Birthdays completely: eliminated excessive borders, multi-colored backgrounds, and pink accents in favour of a minimal dark Signal Grid card (`#0b0e0c`) with subtle borders.
+- Updated Birthday row text format to: `Name - Date - Day - TURNS X!` (e.g. `Trey - 12th December - Saturday - TURNS 1!`).
+- Enhanced Birthday balloons with dedicated gender-specific colour palettes: girls receive girly balloon colours (pinks, purples, soft magentas, rose) and boys receive blues and greens.
+- Removed UK News completely from News (`#view-news`); News now exclusively features Local News.
+- Formatted Local News as the top 10 local stories, single line each (`.tab-story.story-row`), with all old lead/support/stream top formatting removed.
+- Formatted AI as the top 10 AI stories, single line each (`.tab-story.story-row`), adding Anthropic/Claude and Chinese frontier providers (DeepSeek, Qwen, Moonshot) with Chinese providers placed strictly at the bottom.
+- All 119 unit tests, 5 node tests, and Playwright responsive checks across mobile, desktop, and widescreen pass.
+
 ## 8 October 2026: Fun section intro update, compact sale cards at top, and removal of icons and tags
 
 - Updated the Fun section intro text in `index.html` to `'30 Minutes from home'`.

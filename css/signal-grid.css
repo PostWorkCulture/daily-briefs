@@ -43,19 +43,13 @@ body:after{background:#030504!important}
 
 .app-shell{isolation:isolate}
 .profile-switch{
-  border-color:var(--signal-line)!important;
-  background:#090c0a!important;
-  box-shadow:0 12px 28px rgba(0,0,0,.28)!important;
-}
-.profile-switch button{color:var(--signal-muted)!important}
-.profile-switch button.active{
-  color:#030504!important;
-  background:var(--signal-green)!important;
+  display:none!important;
 }
 
-.hero{
+.hero,
+#view-home>.hero{
   position:relative;
-  border-bottom:1px solid var(--editorial-rule-strong);
+  border-bottom:none!important;
 }
 .hero:after{
   content:none!important;
@@ -150,7 +144,7 @@ body #homeReminders .home-reminder-card.birthday{
 }
 .home-reminder-card.bin{--signal-card-accent:#7cf46a}
 .home-reminder-card.clocks{--signal-card-accent:#b9a7ff}
-.home-reminder-card.birthday{--signal-card-accent:#ff96cd}
+.home-reminder-card.birthday{--signal-card-accent:var(--signal-green)}
 .home-reminder-card.festive.halloween{--signal-card-accent:#ff9b50}
 .home-reminder-card.festive.christmas{--signal-card-accent:#ff7387}
 .home-reminder-card.festive{--signal-card-accent:#ffd477}
@@ -263,6 +257,91 @@ body #homeReminders .home-reminder-card.birthday{
   font-weight:500!important;
   letter-spacing:.02em!important;
 }
+#view-news .tab-list,
+#view-ai .tab-list,
+.tab-list.single-line-list{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:6px!important;
+  border-radius:8px!important;
+  background:transparent!important;
+}
+.story-row{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:12px!important;
+  padding:10px 14px!important;
+  min-height:44px!important;
+  border:1px solid var(--signal-line)!important;
+  border-radius:6px!important;
+  background:#090c0a!important;
+  text-decoration:none!important;
+  box-shadow:none!important;
+  transition:border-color .18s,background .18s,box-shadow .18s;
+}
+.story-row:hover,
+.story-row:focus-visible{
+  border-color:rgba(255,255,255,.28)!important;
+  background:#111613!important;
+  box-shadow:0 0 16px rgba(124,244,106,.2)!important;
+}
+.story-row .story-copy{
+  display:flex!important;
+  align-items:baseline!important;
+  justify-content:space-between!important;
+  flex:1!important;
+  min-width:0!important;
+  gap:12px!important;
+}
+.story-row .story-title,
+.story-row h4{
+  margin:0!important;
+  font-size:14.5px!important;
+  font-weight:500!important;
+  line-height:1.35!important;
+  color:var(--text)!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  min-width:0!important;
+}
+.story-row .story-meta,
+.story-row .meta{
+  margin:0!important;
+  font-size:11.5px!important;
+  font-weight:500!important;
+  color:var(--signal-muted,#7891aa)!important;
+  white-space:nowrap!important;
+  flex-shrink:0!important;
+  letter-spacing:normal!important;
+  text-transform:none!important;
+}
+.story-row .story-arrow{
+  color:#7cf46a!important;
+  font-size:12px!important;
+  flex-shrink:0!important;
+  opacity:.8!important;
+}
+.story-row.section-story{
+  display:flex!important;
+  align-items:center!important;
+  grid-template-columns:none!important;
+}
+.story-row .section-story-icon{
+  width:24px!important;
+  height:24px!important;
+  min-width:24px!important;
+  border-radius:6px!important;
+  flex-shrink:0!important;
+  margin:0!important;
+  display:grid!important;
+  place-items:center!important;
+}
+.story-row .section-company-logo{
+  width:15px!important;
+  height:15px!important;
+}
 .story-stream-grid{
   border-color:var(--signal-line)!important;
   background:var(--signal-line)!important;
@@ -321,20 +400,18 @@ body #homeReminders .home-reminder-card.birthday{
 .dida-ref-card p{color:var(--text)!important}
 .dida-source a{color:var(--signal-green)!important}
 
-/* Birthday retains the pink identity without returning to a light card system. */
+/* Clean birthday card styling matching Signal Grid */
 #view-birthdays .birthday-card,
 body #homeReminders .home-reminder-card.birthday{
   color:var(--text)!important;
-  border-color:rgba(255,150,205,.56)!important;
-  background-color:#140a10!important;
+  border-color:var(--signal-line)!important;
+  background-color:#0b0e0c!important;
   background-image:none!important;
   box-shadow:none!important;
 }
-#view-birthdays .birthday-card strong,
-#view-birthdays .birthday-card small{color:var(--text)!important}
-#view-birthdays .birthday-card b{color:#ff96cd!important}
-.birthday-avatar{background:rgba(255,150,205,.08)!important}
-.occasion-month h3:after{height:2px;background:#ff96cd!important;box-shadow:0 0 12px rgba(255,150,205,.38)}
+#view-birthdays .birthday-card strong{color:var(--text)!important}
+.birthday-avatar{background:transparent!important}
+.occasion-month h3:after{display:none!important}
 
 /* Shared stationary signal response. */
 .calendar-summary button,
@@ -458,5 +535,14 @@ body #homeReminders .home-reminder-card.birthday:focus-visible{
 }
 
 @media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{
+    scroll-behavior:auto!important;
+    transition:none!important;
+    transition-duration:0s!important;
+    transition-delay:0s!important;
+    animation:none!important;
+    animation-duration:0s!important;
+  }
   body{background-attachment:scroll!important}
 }
+

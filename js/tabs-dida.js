@@ -17,7 +17,10 @@
       {name:'Google Gemini',match:/\b(?:gemini|google deepmind|deepmind)\b/i,src:'assets/company-logos/google-gemini.svg'},
       {name:'Anthropic',match:/\b(?:anthropic|claude)\b/i,src:'assets/company-logos/anthropic.svg'},
       {name:'OpenAI',match:/\b(?:openai|chatgpt)\b/i,src:'assets/company-logos/openai.svg'},
-      {name:'Google',match:/\bgoogle\b|(?:^|\.)google\.[a-z.]+/i,src:'assets/company-logos/google.svg'}
+      {name:'Google',match:/\bgoogle\b|(?:^|\.)google\.[a-z.]+/i,src:'assets/company-logos/google.svg'},
+      {name:'DeepSeek',match:/\bdeepseek\b/i,src:'assets/company-logos/deepseek.svg'},
+      {name:'Qwen',match:/\b(?:qwen|alibaba)\b/i,src:'assets/company-logos/qwen.svg'},
+      {name:'Moonshot',match:/\b(?:moonshot|kimi)\b/i,src:'assets/company-logos/moonshot.svg'}
     ];
     return companies.find(company=>company.match.test(value))||null;
   }
@@ -43,12 +46,11 @@
   function story(item,section='',index=0){
     const tag=item?.url?'a':'article';
     const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
-    const copy=`${item?.meta||item?.source?`<div class="meta">${esc(item.meta||'')}${item.meta&&item.source?' · ':''}${esc(item.source||'')}</div>`:''}<h4>${esc(item?.title||'Untitled')}</h4>${item?.summary?`<p>${esc(item.summary)}</p>`:''}`;
     const company=section==='ai'?aiCompany(item):null;
     const companyAttrs=company?` section-story-icon-company" data-company="${esc(company.name)}`:'';
-    const icon=section?`<span class="section-story-icon section-story-icon-${section}${companyAttrs}">${sectionIcon(section,index,company)}</span>`:'';
-    const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
-    return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
+    const icon=section==='ai'?`<span class="section-story-icon section-story-icon-${section}${companyAttrs}">${sectionIcon(section,index,company)}</span>`:'';
+    const metaText=esc(item?.source||item?.meta||'');
+    return `<${tag} class="tab-story story-row${section?` section-story section-story-${section}`:''}"${attrs}>${icon}<div class="story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
   }
   function funSaleCard(item){
     const headline=item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On');
@@ -71,16 +73,23 @@
       const content=items.length?`${salesStrip}<div class="tab-list">${activityCards}</div>`:'<div class="empty">Nothing listed today.</div>';
       return `<section class="tab-group tab-group-fun" data-section-key="${esc(key)}">${heading}${content}</section>`;
     }
-    const stories=(items||[]).map((item,index)=>story(item,section,index));
-    const primary=stories.slice(0,3).join('');
-    const stream=stories.slice(3);
-    const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
-    const content=stories.length?`${primary}${streamFeed}`:'<div class="empty">Nothing listed today.</div>';
-    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
+    const list=(items||[]).slice(0,10);
+    const stories=list.map((item,index)=>story(item,section,index));
+    const content=stories.length?stories.join(''):'<div class="empty">Nothing listed today.</div>';
+    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list single-line-list">${content}</div></section>`;
+  }
+  function aiOrder(items){
+    const isGoogle=x=>/\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);
+    const isChinese=x=>/\b(?:deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|minimax|01\.ai)\b/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);
+    const tier=x=>isGoogle(x)?0:(isChinese(x)?2:1);
+    return [...(items||[])].sort((a,b)=>{
+      const diff=tier(a)-tier(b);
+      if(diff!==0)return diff;
+      return (Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0);
+    });
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
-  function newestJobsFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.postedAt||'')||0)-(Date.parse(a.postedAt||'')||0))}
-  function googleFirst(items){return [...(items||[])].sort((a,b)=>{const isGoogle=x=>/\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);return (isGoogle(b)?1:0)-(isGoogle(a)?1:0)})}
+
   function didaIcon(name){
     const paths={
       star:'<path d="m12 2.8 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/>',
@@ -152,12 +161,12 @@
     if(nav)nav.dataset.profile=profile;
     window.syncBriefInbox(profile);
     const news=[];
-    if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden]);
+    if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden.slice(0,10)]);
     const whatsOnRegex=/\b(?:what['’]?s\s+(?:going\s+)?on|what\s+is\s+(?:going\s+)?on|things\s+to\s+do)\b/i;
-    const localNews=newestFirst((data.sections?.['Local news']||[]).filter(item=>!whatsOnRegex.test(`${item.title||''} ${item.summary||''}`)));
-    news.push(['Local News',localNews],['UK News',data.sections?.['UK news']||[]]);
+    const localNews=newestFirst((data.sections?.['Local news']||[]).filter(item=>!whatsOnRegex.test(`${item.title||''} ${item.summary||''}`))).slice(0,10);
+    news.push(['Local News',localNews]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
-    document.getElementById('aiTabGroups').innerHTML=group('',googleFirst(data.sections?.AI||[]),'ai');
+    document.getElementById('aiTabGroups').innerHTML=group('',aiOrder(data.sections?.AI||[]).slice(0,10),'ai');
     const funItems=(data.sections?.Fun||[]).filter(item=>funEventInWindow(item));
     document.getElementById('funTabGroups').innerHTML=group('',funItems,'fun');
     document.getElementById('funCount').textContent=`${funItems.length} ${funItems.length===1?'event':'events'}`;
