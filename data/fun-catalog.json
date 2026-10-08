@@ -288,7 +288,11 @@
     "venue": "amazon-uk",
     "kind": "event",
     "contentType": "activity",
-    "verifiedAt": "2026-10-08"
+    "verifiedAt": "2026-10-08",
+    "saleHeadline": "Prime Day Sale Now On",
+    "saleDate": "8 & 9 October 2026",
+    "discount": "Up to 50% off",
+    "isSale": true
   },
   {
     "id": "next-autumn-sale-2026",
@@ -314,7 +318,11 @@
     "venue": "next-kingston",
     "kind": "event",
     "contentType": "activity",
-    "verifiedAt": "2026-10-08"
+    "verifiedAt": "2026-10-08",
+    "saleHeadline": "Next Autumn Clearance Now On",
+    "saleDate": "Throughout October 2026",
+    "discount": "Up to 50% off or more",
+    "isSale": true
   },
   {
     "id": "zara-autumn-sale-2026",
@@ -340,7 +348,11 @@
     "venue": "zara-kingston",
     "kind": "event",
     "contentType": "activity",
-    "verifiedAt": "2026-10-08"
+    "verifiedAt": "2026-10-08",
+    "saleHeadline": "Zara Mid-Season Sale Now On",
+    "saleDate": "10–28 October 2026",
+    "discount": "Up to 40% off",
+    "isSale": true
   },
   {
     "id": "hm-autumn-sale-2026",
@@ -366,7 +378,11 @@
     "venue": "hm-kingston",
     "kind": "event",
     "contentType": "activity",
-    "verifiedAt": "2026-10-08"
+    "verifiedAt": "2026-10-08",
+    "saleHeadline": "H&M Autumn Sale Now On",
+    "saleDate": "9–19 October 2026",
+    "discount": "Up to 50% off",
+    "isSale": true
   },
   {
     "id": "bentalls-autumn-shopping-2026",
@@ -379,6 +395,7 @@
     "ages": "All ages / families",
     "cost": "Free entry",
     "tags": [
+      "Sales",
       "Shopping",
       "Kingston",
       "Family"
@@ -392,7 +409,11 @@
     "venue": "bentalls-kingston",
     "kind": "event",
     "contentType": "activity",
-    "verifiedAt": "2026-10-08"
+    "verifiedAt": "2026-10-08",
+    "saleHeadline": "Bentalls Autumn Promotions Now On",
+    "saleDate": "October & November 2026",
+    "discount": "Up to 30% off",
+    "isSale": true
   },
   {
     "id": "kew-halloween-trail-2026",

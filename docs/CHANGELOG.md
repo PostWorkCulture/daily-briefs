@@ -1,3 +1,13 @@
+## 8 October 2026: Fun section intro update, compact sale cards at top, and removal of icons and tags
+
+- Updated the Fun section intro text in `index.html` to `'30 Minutes from home'`.
+- Removed all tags (`.fun-tags`, including Sales, Shopping, Autumn, etc.) from the top of cards in the Fun section.
+- Removed all section icons (`.section-story-icon`) from the Fun section for a clean editorial presentation.
+- Redesigned sale items into much smaller, compact sale cards (`.fun-sale-card`) rendered at the top of Fun in a dedicated responsive grid (`.fun-sales-grid`) before regular activities.
+- Each sale card displays simple, high-signal details: sale status/headline (e.g. `Prime Day Sale Now On`), event date range, discount percentage (e.g. `Up to 50% off`), and direct shopping link.
+- Enriched sale entries in `data/fun-catalog.json`, `data/pete.json`, and `data/sofia.json` with `saleHeadline`, `saleDate`, `discount`, and `isSale: true`.
+- Updated Fun section specifications in `docs/MASTER-BRIEF-CURRENT.md` and Playwright responsive checks in `scripts/responsive_ui_check.py`.
+
 ## 8 October 2026: Cap News and AI sections to a maximum of 2 items per row
 
 - Enforced a strict maximum of two items per row across News (`#view-news`) and AI (`#view-ai`) across all desktop and widescreen viewports.

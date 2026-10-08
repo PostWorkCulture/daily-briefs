@@ -50,18 +50,32 @@
     const hierarchy=index===0?' story-lead':index<3?' story-support':' story-stream';
     return `<${tag} class="tab-story${section?' section-story':''}${hierarchy}"${attrs}>${icon}${section?`<div class="section-story-copy">${copy}</div>`:copy}</${tag}>`;
   }
+  function funSaleCard(item){
+    const headline=item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On');
+    const dates=item.saleDate||item.when||'';
+    const discount=item.discount||item.cost||'';
+    return `<a class="tab-story fun-sale-card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"><div class="fun-sale-copy"><h4 class="fun-sale-title">${esc(headline)}</h4><div class="fun-sale-meta"><span class="fun-sale-date">${esc(dates)}</span><span class="fun-sale-sep" aria-hidden="true">·</span><span class="fun-sale-discount">${esc(discount)}</span></div></div><span class="fun-sale-cta" aria-hidden="true">Shop ↗</span></a>`;
+  }
   function funStory(item,index=0){
-    const tags=(item.tags||[]).map(tag=>`<span class="fun-tag">${esc(tag.replaceAll('-',' '))}</span>`).join('');
-    return `<article class="tab-story section-story fun-story" data-fun-tags="${esc((item.tags||[]).join(' '))}"><span class="section-story-icon section-story-icon-fun">${sectionIcon('fun',index)}</span><div class="section-story-copy"><div class="fun-tags">${tags}</div><h4>${esc(item.title)}</h4><p class="fun-location">${esc(item.location)}</p><p>${esc(item.summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(item.location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a><small class="fun-source">${esc(item.source)} · Checked ${esc(item.verifiedAt)}</small></div></article>`;
+    return `<article class="tab-story fun-story" data-fun-tags="${esc((item.tags||[]).join(' '))}"><div class="fun-story-copy"><h4>${esc(item.title)}</h4><p class="fun-location">${esc(item.location)}</p><p>${esc(item.summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(item.location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a><small class="fun-source">${esc(item.source)} · Checked ${esc(item.verifiedAt)}</small></div></article>`;
   }
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     const heading=title?`<h3>${esc(title)}</h3>`:'';
-    const stories=(items||[]).map((item,index)=>section==='fun'?funStory(item,index):story(item,section,index));
+    if(section==='fun'){
+      const isSale=item=>Boolean(item.isSale||(item.tags||[]).some(t=>/^sales?$/i.test(t)));
+      const sales=items.filter(isSale);
+      const activities=items.filter(item=>!isSale(item));
+      const salesStrip=sales.length?`<div class="fun-sales-grid">${sales.map(funSaleCard).join('')}</div>`:'';
+      const activityCards=activities.map((item,index)=>funStory(item,index)).join('');
+      const content=items.length?`${salesStrip}<div class="tab-list">${activityCards}</div>`:'<div class="empty">Nothing listed today.</div>';
+      return `<section class="tab-group tab-group-fun" data-section-key="${esc(key)}">${heading}${content}</section>`;
+    }
+    const stories=(items||[]).map((item,index)=>story(item,section,index));
     const primary=stories.slice(0,3).join('');
     const stream=stories.slice(3);
     const streamFeed=stream.length?`<div class="story-stream-grid">${stream.join('')}</div>`:'';
-    const content=stories.length?(section==='fun'?stories.join(''):`${primary}${streamFeed}`):'<div class="empty">Nothing listed today.</div>';
+    const content=stories.length?`${primary}${streamFeed}`:'<div class="empty">Nothing listed today.</div>';
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list">${content}</div></section>`;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}

@@ -460,27 +460,33 @@ def check_viewport(browser, name: str) -> None:
             if not feed["titleBeforeMeta"]:
                 raise AssertionError(f"{name}: News lead metadata appears before its headline: {feed}")
 
-        for target in ("ai", "fun"):
-            page.locator(f'[data-view-target="{target}"]').click()
-            cards = page.locator(f'#view-{target} .tab-story')
-            icons = page.locator(f'#view-{target} .section-story-icon')
-            if cards.count() < 1 or icons.count() != cards.count():
-                raise AssertionError(
-                    f"{name}: {target} cards do not consistently use section icons"
-                )
-            if page.locator(f'#view-{target} .story-media').count() != 0:
-                raise AssertionError(f"{name}: {target} still shows article photography")
-            if target == "ai":
-                company_icons = page.locator('#view-ai .section-story-icon-company')
-                if company_icons.count() < 1:
-                    raise AssertionError(f"{name}: AI has no recognised company logos")
-                if company_icons.count() != page.locator('#view-ai .section-company-logo').count():
-                    raise AssertionError(f"{name}: an AI company icon is missing its logo image")
-                failed_logos = page.locator('#view-ai .section-company-logo').evaluate_all(
-                    "els => els.filter(el => !el.complete || !el.naturalWidth).map(el => el.src)"
-                )
-                if failed_logos:
-                    raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
+        page.locator('[data-view-target="ai"]').click()
+        ai_cards = page.locator('#view-ai .tab-story')
+        ai_icons = page.locator('#view-ai .section-story-icon')
+        if ai_cards.count() < 1 or ai_icons.count() != ai_cards.count():
+            raise AssertionError(f"{name}: ai cards do not consistently use section icons")
+        if page.locator('#view-ai .story-media').count() != 0:
+            raise AssertionError(f"{name}: ai still shows article photography")
+        company_icons = page.locator('#view-ai .section-story-icon-company')
+        if company_icons.count() < 1:
+            raise AssertionError(f"{name}: AI has no recognised company logos")
+        if company_icons.count() != page.locator('#view-ai .section-company-logo').count():
+            raise AssertionError(f"{name}: an AI company icon is missing its logo image")
+        failed_logos = page.locator('#view-ai .section-company-logo').evaluate_all(
+            "els => els.filter(el => !el.complete || !el.naturalWidth).map(el => el.src)"
+        )
+        if failed_logos:
+            raise AssertionError(f"{name}: AI company logos failed to decode: {failed_logos}")
+
+        page.locator('[data-view-target="fun"]').click()
+        if page.locator('#view-fun .story-media').count() != 0:
+            raise AssertionError(f"{name}: fun still shows article photography")
+        if page.locator('#view-fun .section-story-icon').count() != 0:
+            raise AssertionError(f"{name}: Fun cards must not have icons")
+        if page.locator('#view-fun .fun-tag').count() != 0:
+            raise AssertionError(f"{name}: Fun cards must not have tags")
+        if page.locator('#view-fun .fun-sale-card').count() < 1:
+            raise AssertionError(f"{name}: Fun has no sale cards at top")
 
         page.locator('[data-view-target="home"]').click()
         home_order = page.evaluate(
@@ -664,6 +670,10 @@ def check_viewport(browser, name: str) -> None:
         cards = page.locator('#view-fun .fun-story')
         if cards.count() < 1:
             raise AssertionError(f"{name}: Fun has no activities")
+        sales = page.locator('#view-fun .fun-sale-card')
+        if sales.count() > 0 and cards.count() > 0:
+            if sales.first.bounding_box()['y'] >= cards.first.bounding_box()['y']:
+                raise AssertionError(f"{name}: Fun sale cards must precede regular activity cards")
         if cards.evaluate_all("els => els.some(el => el.querySelector('h4').getBoundingClientRect().top >= el.querySelector('dl').getBoundingClientRect().top)"):
             raise AssertionError(f"{name}: Fun title must precede practical details")
         if page.locator('[data-fun-filter], #view-fun .fun-filters').count():
