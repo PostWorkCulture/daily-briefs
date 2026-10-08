@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 8 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Thursday, 8 October 2026 · refreshed 3:10pm",
   "worldFact": {
     "id": "coober-pedy-underground-desert-town",
     "editorialPriority": "human-first",
@@ -18,27 +18,27 @@
     "localImage": "assets/scenery/world-fact.webp?v=46012b37e98d"
   },
   "weather": {
-    "temp": "8°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "temp": "15°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-08",
         "high": 15,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 40,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-09",
-        "high": 18,
+        "high": 19,
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -47,34 +47,34 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-11",
-        "high": 15,
+        "high": 16,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 17,
+        "high": 18,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-13",
         "high": 19,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -83,13 +83,13 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny · peak rain chance around 40%",
+      "detail": "Sunny intervals · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -150,20 +150,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Demi Playdate",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-11T00:00:00+01:00",
-      "end": "2026-10-12T00:00:00+01:00",
-      "date": "2026-10-11",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "6ksj6phjc4sj2bb474q3gb9k64rj6bb264om2b9k60r38opj65j3ee1mcc",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -176,6 +162,20 @@
       "colorId": "10",
       "googleEventId": "cgs32e9j6oomcbb161hjib9k68p64b9o6gq36b9ocgqm8opocoq3ad1g6k",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Demi Playdate",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-11T00:00:00+01:00",
+      "end": "2026-10-12T00:00:00+01:00",
+      "date": "2026-10-11",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6ksj6phjc4sj2bb474q3gb9k64rj6bb264om2b9k60r38opj65j3ee1mcc",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Footy - PU 4.15pm (main playground)",
@@ -276,20 +276,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Holiday Camp 9:30-4:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "HALF TERM",
       "summary": "",
       "url": "",
@@ -302,6 +288,20 @@
       "colorId": "6",
       "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Holiday Camp 9:30-4:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Hygienist- 10am",
@@ -318,7 +318,7 @@
       "calendarColorSource": "calendar-default"
     },
     {
-      "title": "Pumkin Festival?",
+      "title": "Pumkin Festival",
       "summary": "",
       "url": "",
       "start": "2026-10-24T00:00:00+01:00",
@@ -591,48 +591,48 @@
     "played": 5,
     "news": [
       {
-        "title": "Mikel Arteta to begin new era at Arsenal as club eye Premier League dominance and Champions League success",
+        "title": "34 photos as stars return to training",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T03:43:55+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQX0NBRmdNSjdxRksxSmVrNjFDaXNTdzJhWDREa0xmY3QxUkdLeUU1YmVFUVBzS1FJSGh5NXg0aDc1cm5FR0doMzNac1NxaFhHSlp3Um5xUVFpTVZEb1NlNkxiTXBYMEp1YVlTdU81UU1HRWhPWnQzcE12MzJqVTVMVDdFdHhoWkIycV80ZkI3TU5FSk91MkVteE9laDZ0Ylc0LTMxT3VOODZxU3ZZS19tbUxYQndxZHZfbENvUGZUMjN4VHVKWUFlRjZHS24tSmxIb2E5QnJ3cDQ2QXF6d3pEWlhISTZtSTlIdXpZ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Mikel Arteta signs new Arsenal contract",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T12:10:48+01:00",
+        "publishedAt": "2026-10-08T15:03:51+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRjlfbGk5Zjg4c2NINWZrbVVlUTZnRE9oR0d6eTNtQmJmb1hXXzN3NGs5QnhjZHpwdE1DaXV1WlpmaTJPRUFZLWhrTUZGTFh3bk9NNjBlblNKWWlrc2kxei1mS2Y4N01uVHpVMThmLTRSVGR1VkpvQWZWZS1iNVh5Ym5uRVdYUEc4?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Revealed: Man Utd, Liverpool, Arsenal and Spurs were handed Man City guilty verdict early",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T15:09:00+01:00",
-        "source": "The Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcjhldHc2NE10UlgtRjRfWUpnT29ybTFmcVY3amNNSF9mNmRnM3lfYVBFZG1kTFQzejg3N3h4R2ZZRHRabDUtcUhYVUp0d1djdm5paG5hRkw3MWVkYWo5OGE1Y3VCQlBrdlZlMFZNT05NZ05mSjJ6Vzgza09ZMmtaWncyTFRqX0oySEJBd1VfekQzeGktT3VteVc2bkZrUVVEUl9CMQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal FC’s veteran legal chief departs",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T07:40:46+01:00",
-        "source": "The Lawyer",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0yMHBzR01lMkc5V2otWFplVklRc0JhWmRDZko4YzlQdm1ZRDMtQW5keXRDSWhHOTZqQ29lTk9BTUFiVGdwTXYzSDBoV0ktSkc1cXZTTVozQm91bEY0UmJXU3d1SGVFS3AxMHM5Xzd4YVBkMWN1?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
         "contentType": "article"
       },
       {
         "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
         "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:24:09+01:00",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T03:43:54+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal vs Leeds preview: Injuries, suspensions, and predicted lineups",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:30:00+01:00",
+        "source": "The Short Fuse",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdTV5T0V6ZDVHZXM4S3BOY0FZTGh3amZXZWVEY0VKTWx1WVBJdE9uenBRa3ZiVU10T0tGcmxVVXhub3pUZXJEVkFyRG1DemdKdl8yY1lyMkE2VGRHSFhhcElzc3VRLTQ3NmwxSHdncm4zV0ZwQ003YTlXX1YzeEVBZjA5SS11ZGY2LVdOZk9mcDFfRHVsc0Y0VzVKam9HTjhUbjhKUkt0WmdubXVsMlhVUVVHUzlkeUp6bFd6YkQzemdRVUdZRlE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Mikel Arteta’s new contract reflects where the power now lies at Arsenal",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:47:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOEtiRmJ4LW1BZTJ5ZU5fcC1CdUZMVDdfOFowY1M2TTlrSHhVMXc5WERMaGNyTUljMklaRmhJaFlTdFBnamhIUHZWSHN3eEVUZ1hHS19fMVZLazlPcjkzbHdacnloellITHdCdkY3RUNVMTRfTXVHZTNlRWtoMEFZRU1uMlU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Mikel Arteta exclusive interview: ‘I have poison in my veins at Champions League defeat. It left a scar’ - The Athletic",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:56:52+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOX3ZjM2VhNW1lcG9vbE1lWVU1TERzYlBjSGhIVndpSkU2V2RLTlZUazRaZ01Pemt3emo1UjNYMUFsSmV2OENXOE1VNHZELW5NSHVnNzRYdkVSeG5LUWFBekZQSENsM09ZTDQza1RFeV9UMFdWYnBfV0ktQUItWHo3aFQzVlVsOUo4SHFVN0dnTkJSR0RNX0JEVg?oc=5",
         "contentType": "article"
       }
     ],
@@ -646,6 +646,46 @@
     "scope": "Arsenal men's first team · all competitions",
     "transfers": [
       {
+        "title": "Mikel Arteta’s new contract reflects where the power now lies at Arsenal",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:47:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOEtiRmJ4LW1BZTJ5ZU5fcC1CdUZMVDdfOFowY1M2TTlrSHhVMXc5WERMaGNyTUljMklaRmhJaFlTdFBnamhIUHZWSHN3eEVUZ1hHS19fMVZLazlPcjkzbHdacnloellITHdCdkY3RUNVMTRfTXVHZTNlRWtoMEFZRU1uMlU?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Mikel Arteta's new contract: The challenges facing Arsenal boss as he enters 'step five' of his project",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T08:54:55+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQQkN0Njd1RGgyQWlwVlFUalQwQU5kWF9tVzZnTTFoSDBndEJsNjU2TFQ0dHFZRVJRLVZVRGRkMjh5bHJoYkg4ZE1VU3hnMThzYW9oQWhwNDA4YXlPRFRsY2x6V09Eem0zWUZxZGQtQ25Jbm5kUGxOZi1OaHZNdTd4YmFRLWV6Q0ptVGd2QW9paU9wc0taOVp6amVVYXQzOTRBWGNZT01udk43clNDRDBBbjA5eng2blctRHFVbmxlYW1wTDN2dldoUGpZY1JwOHRmcmY0Nzd0MHNjNGJFaEM3RHp3?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T03:43:54+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
+        "title": "Arsenal fans sit down for a heartfelt chat with Mikel Arteta after he renewed his contract at the club",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T19:50:38+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSjI2VDItQzdJUVM1alNZNUQxbjNFSFRwTHNLZ2JuWmRJemNySUZEV1FrRVY4UUMycUxWSVVJTVozR1ZRQWJGYThlSUdhbHZhNmtvYWlVWFF0a1UtM0pTM0JTbGdzcDhESEFlNUtiVlY0bFJLVHVLZlQ3ci1JM1g1WHE3RjlKaVd2aEdLeEZUUTc4WFRIdWhqYVlGcUNKVy0yU01oZVcwYVFEMWRsa3ZCWm1mc0FtRGRZVmJKRWxjSl9pbk1oNThwZGU3aTFNbTlxTXFGVjRsdW1iYU5qRkp4c0g1bWhkTWc?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Trusted report"
+      },
+      {
         "title": "'That is beautiful' - Arsenal's emotional contract video for Mikel Arteta",
         "summary": "",
         "meta": "Wed 7 Oct",
@@ -656,43 +696,37 @@
         "trust": "Trusted report"
       },
       {
-        "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
+        "title": "The best photos from Mikel Arteta's contract signing",
         "summary": "",
         "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:24:09+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "‘This is only the beginning,’ vows Mikel Arteta after signing £80m-plus Arsenal deal",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T12:13:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTlFnd2pweFd1VWhLZUUzRnROdkhrNk0xS01QdFBCV3dWcmRyallOa09TOVFXY1lpUDdfeXd5Wi1ncFFnblVwaHlQUHZ3ZDgtSzFReFNQMjJyODdPYnhwdnJZc25sTW1ramZ5WU9VNGh6Sm9ySHZMeDdGeC15N2hUU09EVnlYQmZmZ2ZkQXdTeVVQay1FLUZqb0xyRTNjcDd4eVN3NFFR?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
-        "title": "Mikel Arteta signs new Arsenal contract",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T12:10:48+01:00",
+        "publishedAt": "2026-10-07T13:35:44+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRjlfbGk5Zjg4c2NINWZrbVVlUTZnRE9oR0d6eTNtQmJmb1hXXzN3NGs5QnhjZHpwdE1DaXV1WlpmaTJPRUFZLWhrTUZGTFh3bk9NNjBlblNKWWlrc2kxei1mS2Y4N01uVHpVMThmLTRSVGR1VkpvQWZWZS1iNVh5Ym5uRVdYUEc4?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVmJPM1lDT3FQNDkwZGtfUE9TVlVOOEZ6X2p2QnZLRXo1Tkt0TG94WUZCaWU4SEdfaXZfVXpaV0c1SHpnWkVlVi1jOFk2MHBJbWl2eHdFZnoyb1cyMjlHeDNlczVBTEcyWUI4R0otLXhFbGxrZUJubWtqLUtMQkttbHhveWtRQm1XZFdLdDVmZHlmaVFYNWhSLQ?oc=5",
         "contentType": "transfer-update",
         "trust": "Official",
         "corroboratedBy": {
-          "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
+          "title": "Mikel Arteta's new contract: The challenges facing Arsenal boss as he enters 'step five' of his project",
           "source": "Sky Sports",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
-          "publishedAt": "2026-10-07T13:24:09+01:00"
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQQkN0Njd1RGgyQWlwVlFUalQwQU5kWF9tVzZnTTFoSDBndEJsNjU2TFQ0dHFZRVJRLVZVRGRkMjh5bHJoYkg4ZE1VU3hnMThzYW9oQWhwNDA4YXlPRFRsY2x6V09Eem0zWUZxZGQtQ25Jbm5kUGxOZi1OaHZNdTd4YmFRLWV6Q0ptVGd2QW9paU9wc0taOVp6amVVYXQzOTRBWGNZT01udk43clNDRDBBbjA5eng2blctRHFVbmxlYW1wTDN2dldoUGpZY1JwOHRmcmY0Nzd0MHNjNGJFaEM3RHp3?oc=5",
+          "publishedAt": "2026-10-08T08:54:55+01:00"
         }
       }
     ],
     "transferRumours": [
+      {
+        "title": "🚨🔴⚪️ Arsenal are closing in on new deal for Declan Rice after Mikel Arteta, plan 100% confirmed. Rice has already decided to stay and sign soon with final details of new deal now being discussed. #AFC confident to close it soon, as @SamiMokbel_BBC rep",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T11:35:54+01:00",
+        "source": "Fabrizio Romano",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBnSkJsWXFnSmI1WnJCY2xxb0R4cjBjdjdad0FyR3N0YzRWczF3TWRVSE9RcDJFeVhuTXNuanlnektNbXQ3akJtM1Z4d1ZCT1NfMkpraVM5NUFIV0RTcEhpZDZRb2g1QQ?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Established reporter",
+        "sourceUrl": "https://x.com/FabrizioRomano"
+      },
       {
         "title": "Stan and Josh Kroenke: “It has been an incredible journey so far and we are excited for what lies ahead in this special relationship. “Last season was an incredible moment in Arsenal’s history, a moment in which we created memories that will last a lifetime. W",
         "summary": "",
@@ -748,20 +782,6 @@
         "sourceType": "X",
         "confidence": "Established reporter",
         "sourceUrl": "https://x.com/FabrizioRomano"
-      },
-      {
-        "title": "New contracts coming soon 🔐🔜 Mikel Arteta puts pen to paper at Arsenal, Raphinha at Barcelona and Arda Güler at Real Madrid. 🫱🏼‍🫲🏽 Download the @BetwayScores app: https://t.co/LRiiMkIKTc ⚽️📲",
-        "summary": "",
-        "meta": "Mon 5 Oct",
-        "publishedAt": "2026-10-05T11:41:35+01:00",
-        "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12YklmVFR2NVlrQlBGbjU2dVBGZnZBZ0xlNk1YQ1JEVjY4M2Eta2x1MGw1SXNWUTFuYWVhN0NPV2Z1RlpQTk9iRWFlbTRUaDA2eHFhelNnUHRNbGxHS0NjNHhQNnZvdw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Established reporter",
-        "sourceUrl": "https://x.com/FabrizioRomano"
       }
     ]
   },
@@ -786,22 +806,22 @@
       "section": "AI"
     },
     {
-      "title": "Mikel Arteta to begin new era at Arsenal as club eye Premier League dominance and Champions League success",
+      "title": "34 photos as stars return to training",
       "summary": "",
       "meta": "Thu 8 Oct",
-      "publishedAt": "2026-10-08T03:43:55+01:00",
-      "source": "Sky Sports",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQX0NBRmdNSjdxRksxSmVrNjFDaXNTdzJhWDREa0xmY3QxUkdLeUU1YmVFUVBzS1FJSGh5NXg0aDc1cm5FR0doMzNac1NxaFhHSlp3Um5xUVFpTVZEb1NlNkxiTXBYMEp1YVlTdU81UU1HRWhPWnQzcE12MzJqVTVMVDdFdHhoWkIycV80ZkI3TU5FSk91MkVteE9laDZ0Ylc0LTMxT3VOODZxU3ZZS19tbUxYQndxZHZfbENvUGZUMjN4VHVKWUFlRjZHS24tSmxIb2E5QnJ3cDQ2QXF6d3pEWlhISTZtSTlIdXpZ?oc=5",
+      "publishedAt": "2026-10-08T15:03:51+01:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "Cancer survivor to take part in charity fundraising brewery walk in Kingston",
+      "title": "Fridge electrical fault believed to have caused Kingston Market fire",
       "summary": "",
-      "meta": "Wed 7 Oct",
-      "publishedAt": "2026-10-07T17:00:00+01:00",
-      "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWTgwUmtneWs2VFI0QUFKaDFNaFBHRTQyd2VlUDgxZkZhN1ZXQk1DSnJBeC1WbjFZZTRMVUZNTU1JODRITGlWOFIwdVNKNEpEZFhMOWMzR2p5YnlvWkZ5OWJZUkhJR3Q5bVEyMU5WZnJmdlZjajBYNWs5emVMZk1uYlpFMTdQcm1ZTUItVXNHOGhLdDlHUnl6enpGdXhQRlJnc21xOGxnZUtFNXAyRTRfUXRhMGJjaW5MT01Sbk50OEZpbWc?oc=5",
+      "meta": "Thu 8 Oct",
+      "publishedAt": "2026-10-08T12:40:12+01:00",
+      "source": "Surrey Comet",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ2JVUVgyMXZxWDRON2VkYUhrSjBHOGhNSExBdDZFVGlSVXp1dFpMTFFXbjJEX1lTRVJjTGRySjljUEwxM2FzRnFLNDBzc1RvYnFjeGJvVnJ1aGlkTjFVN2VuUnFTMjdKWjFySFR0bVNyc1dKVHhrQ2QzSnREMEFkUjgwemhXRkswUWFseTVZb1NIaUpENG5ldlJR?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -830,7 +850,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 608.0
+      "preferenceScore": 607.8
     },
     {
       "title": "Aileen Wuornos: Damsel of Death",
@@ -876,11 +896,37 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 458.3
+      "preferenceScore": 459.1
+    },
+    {
+      "title": "Time",
+      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
+      "meta": "BBC iPlayer · Sun 11 Oct, 6am",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-11",
+      "releaseDateLabel": "Sun 11 Oct, 6am",
+      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
+      "artworkAlt": "Time programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-11",
+      "showId": 50374,
+      "episodeId": 3776044,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-10-08",
+      "preferenceScore": 424.9
     },
     {
       "title": "Below",
-      "summary": "Calvin Penney is a big hearted but stubborn fisherman living in a small Newfoundland town, who's still haunted by his father's mysterious death from decades ago. When an unidentified sea…",
+      "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
       "meta": "Netflix · New today",
       "source": "Netflix",
       "channel": "Netflix",
@@ -888,7 +934,7 @@
       "releaseDateLabel": "New today",
       "url": "https://www.netflix.com/title/81652677",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612494.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
       "artworkAlt": "Below programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-08",
@@ -904,31 +950,6 @@
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-08",
       "preferenceScore": 456.9
-    },
-    {
-      "title": "The Incident Room",
-      "summary": "The murder investigation sparked by the discovery of partial human remains inside a discarded bag in Greater Manchester woodland. The race to identify a victim with no name, no face and no…",
-      "meta": "Channel 5 · Available since yesterday",
-      "source": "Channel 5",
-      "channel": "Channel 5",
-      "releaseDate": "2026-10-07",
-      "releaseDateLabel": "Available since yesterday",
-      "url": "https://www.channel5.com/",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223832.jpg",
-      "artworkAlt": "The Incident Room programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-07",
-      "showId": 71387,
-      "episodeId": 3774941,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-08",
-      "preferenceScore": 401.1
     }
   ],
   "sections": {
@@ -961,12 +982,12 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI says teen ChatGPT use limited but research finds it an 'unacceptable risk'",
+        "title": "OpenAI used AI to help write email warning Australian government AI had hacked its websites",
         "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T21:21:58+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kNEt0LWM4QTlGMUtZLTdOOFd5Rlk4WE9pMzBvQ3I3NndNY2pKdkM2TDRGNmg3Q2RWMWdESy1mRklJWUFHRTM3VmRVTEp1RXR2UXFEOEpaMHIzdzBTUVE?oc=5",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T14:30:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUkM3NTBLWW04VFkzdWJWellLSjVTNkJMblhnaTU3OEVFckkzTTdOY0RWSTItY3pEejhmY1NUN1FBTG9xakFyLXZJNnlvcGVqdi1ERHUySFFnbFVIdFFrM0dFVDBpbFdwXzhRTFlyXzNydnRERUItM2lIRHRfaG5PTUpYMzRyTEdSMDFkRTFjdHZxS2xFM1BGS0RFNUtab1Nkc3FfcGJtMGVkNDl3NmN2dVJucS0yMUh4Q1VXblBoOWxZTTkwM256ekU0T0ZIbXNuaVo4RmZublZfQjgyYWF3?oc=5",
         "contentType": "article"
       },
       {
@@ -1026,86 +1047,97 @@
     ],
     "Arsenal news": [
       {
-        "title": "Mikel Arteta to begin new era at Arsenal as club eye Premier League dominance and Champions League success",
+        "title": "34 photos as stars return to training",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T03:43:55+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQX0NBRmdNSjdxRksxSmVrNjFDaXNTdzJhWDREa0xmY3QxUkdLeUU1YmVFUVBzS1FJSGh5NXg0aDc1cm5FR0doMzNac1NxaFhHSlp3Um5xUVFpTVZEb1NlNkxiTXBYMEp1YVlTdU81UU1HRWhPWnQzcE12MzJqVTVMVDdFdHhoWkIycV80ZkI3TU5FSk91MkVteE9laDZ0Ylc0LTMxT3VOODZxU3ZZS19tbUxYQndxZHZfbENvUGZUMjN4VHVKWUFlRjZHS24tSmxIb2E5QnJ3cDQ2QXF6d3pEWlhISTZtSTlIdXpZ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Mikel Arteta signs new Arsenal contract",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T12:10:48+01:00",
+        "publishedAt": "2026-10-08T15:03:51+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRjlfbGk5Zjg4c2NINWZrbVVlUTZnRE9oR0d6eTNtQmJmb1hXXzN3NGs5QnhjZHpwdE1DaXV1WlpmaTJPRUFZLWhrTUZGTFh3bk9NNjBlblNKWWlrc2kxei1mS2Y4N01uVHpVMThmLTRSVGR1VkpvQWZWZS1iNVh5Ym5uRVdYUEc4?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Revealed: Man Utd, Liverpool, Arsenal and Spurs were handed Man City guilty verdict early",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T15:09:00+01:00",
-        "source": "The Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcjhldHc2NE10UlgtRjRfWUpnT29ybTFmcVY3amNNSF9mNmRnM3lfYVBFZG1kTFQzejg3N3h4R2ZZRHRabDUtcUhYVUp0d1djdm5paG5hRkw3MWVkYWo5OGE1Y3VCQlBrdlZlMFZNT05NZ05mSjJ6Vzgza09ZMmtaWncyTFRqX0oySEJBd1VfekQzeGktT3VteVc2bkZrUVVEUl9CMQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal FC’s veteran legal chief departs",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T07:40:46+01:00",
-        "source": "The Lawyer",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0yMHBzR01lMkc5V2otWFplVklRc0JhWmRDZko4YzlQdm1ZRDMtQW5keXRDSWhHOTZqQ29lTk9BTUFiVGdwTXYzSDBoV0ktSkc1cXZTTVozQm91bEY0UmJXU3d1SGVFS3AxMHM5Xzd4YVBkMWN1?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
         "contentType": "article"
       },
       {
         "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
         "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:24:09+01:00",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T03:43:54+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The story behind the box containing Mikel Arteta's contract",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T12:15:39+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPczVlalFCeHNRcVl3OWtVMmlMY3FnY2dGQm5Ed0NrOHBNeTdRdldseFctX1Q4TWt6SnN6U3BZa0ItR0JNQkpHZXktemdhb0EwRUc1aFo4Ql90RC1NamI1YWQ2enhza0NoNllXWjhkOEdaSG00Wi02ZmlYNXBpZmZTQl9xOTYyUkJvSGZKaUtIdU4xWXFlMmhGNExxV2V4WUF6QXc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Dowman honoured as Arsenal wonderkid wins THREE prestigious awards",
+        "title": "Arsenal vs Leeds preview: Injuries, suspensions, and predicted lineups",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T01:28:01+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQLTdHUUhJWkN3RGxmODBiX0RuSXh3b3c3N25WNF9IWEVCMUZhOFZ2VE96T0lzNlp2RnQ3dUhqZjlWYWNOMkh2VGVJaDhlaGJhXzhwbDIySTRlM2JxZ2hUMWREaWdOYTZNZUI2VzA0SVE5cjQxbWxEWERsZ2pId1M1TDkzTkJPVTBmTlpyRlVaSQ?oc=5",
+        "publishedAt": "2026-10-08T12:30:00+01:00",
+        "source": "The Short Fuse",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdTV5T0V6ZDVHZXM4S3BOY0FZTGh3amZXZWVEY0VKTWx1WVBJdE9uenBRa3ZiVU10T0tGcmxVVXhub3pUZXJEVkFyRG1DemdKdl8yY1lyMkE2VGRHSFhhcElzc3VRLTQ3NmwxSHdncm4zV0ZwQ003YTlXX1YzeEVBZjA5SS11ZGY2LVdOZk9mcDFfRHVsc0Y0VzVKam9HTjhUbjhKUkt0WmdubXVsMlhVUVVHUzlkeUp6bFd6YkQzemdRVUdZRlE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Ticket Information: Arsenal v AFC Bournemouth",
+        "title": "Mikel Arteta’s new contract reflects where the power now lies at Arsenal",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:47:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOEtiRmJ4LW1BZTJ5ZU5fcC1CdUZMVDdfOFowY1M2TTlrSHhVMXc5WERMaGNyTUljMklaRmhJaFlTdFBnamhIUHZWSHN3eEVUZ1hHS19fMVZLazlPcjkzbHdacnloellITHdCdkY3RUNVMTRfTXVHZTNlRWtoMEFZRU1uMlU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Mikel Arteta exclusive interview: ‘I have poison in my veins at Champions League defeat. It left a scar’ - The Athletic",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:56:52+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOX3ZjM2VhNW1lcG9vbE1lWVU1TERzYlBjSGhIVndpSkU2V2RLTlZUazRaZ01Pemt3emo1UjNYMUFsSmV2OENXOE1VNHZELW5NSHVnNzRYdkVSeG5LUWFBekZQSENsM09ZTDQza1RFeV9UMFdWYnBfV0ktQUItWHo3aFQzVlVsOUo4SHFVN0dnTkJSR0RNX0JEVg?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Declan Rice contract: Arsenal and England midfielder close to agreeing new deal",
         "summary": "",
         "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:07:36+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbXA2SmZDa0VweHFIcUZySzloYU9Xa2lsY08wbkMwalk0U2VBWFd4UlhIc1A2YmdBdXZYeGdVTGJqMFVsUXlDWDhFa0lzTWZKc2FhRmJMZHVRTng5ZkFWbTJ0Q29mSV8wcUN1ZDg2UVQ0UEFxekZpQllZX200bW5fRUxXSG15LUpJek5NWm4xT0Fna2lId24xSWZSdk5mUk9PdEE?oc=5",
+        "publishedAt": "2026-10-07T19:30:21+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sdkswemZnaEVJYjdhTE5MM0IwcHloMm5ZcUlsejUxUTc5VUM0R29hZzBoUmdrU19fR252T20xQ2FIVnRlQVJ0c2pQZXRNSWFOX0pvaWZzd1dhQy1feXBFOXllTEpIS1o2RFNZ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal fans celebrate Arteta’s new contract with special messages, Arsenal FC",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T09:09:55+01:00",
+        "source": "Forza Football",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ2FraElLSEdSMmdqVkxINU5ielUyM0lxVFB6Vm5fOEdoNDZfTVl2dFBCVlNMVnJDRFVKNUlDaEkwcnpkZEhmN2NzdlM2RUFEOVJvS3Q4anRVNFVEOTg1UnNabzJsOTgteWMxRkNPTjFpTWZ5Z0I4STRueUxlNGlhU0NOaTI3Y0VocWhaejgxYTB2V180YnpldTZJYWJobVJNR1A0Z2dMTGxzZw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Will Arsenal’s attack suffer for the international break?",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T14:35:00+01:00",
+        "source": "VAVEL.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPekJDQWxWcm40Qk90RTNRT19JVHVES3hnNlVlWnBRYklvU2xZSWFTaWY5LWFDZjZ5djFtaHN2eDI4RWZwNkZZdUNac2lNamJkYmgwSmJ2aE1pWFZOMkZSTFdmN01mLXFDOEdpd3Y5Q2ZEQXdCc216cGd5bHVtaEV3MjJpWktBUGpLMTBNd0lGUzFwUE9DRnhUNGQ5OGhjdjlGRjNOalFMRml5V096dldTNkRLOEJYakZrbEwzRG9TNA?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
       {
-        "title": "Cancer survivor to take part in charity fundraising brewery walk in Kingston",
+        "title": "Fridge electrical fault believed to have caused Kingston Market fire",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:40:12+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ2JVUVgyMXZxWDRON2VkYUhrSjBHOGhNSExBdDZFVGlSVXp1dFpMTFFXbjJEX1lTRVJjTGRySjljUEwxM2FzRnFLNDBzc1RvYnFjeGJvVnJ1aGlkTjFVN2VuUnFTMjdKWjFySFR0bVNyc1dKVHhrQ2QzSnREMEFkUjgwemhXRkswUWFseTVZb1NIaUpENG5ldlJR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Cancer survivor to take part in charity fundraising brewery walk in Teddington",
         "summary": "",
         "meta": "Wed 7 Oct",
         "publishedAt": "2026-10-07T17:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWTgwUmtneWs2VFI0QUFKaDFNaFBHRTQyd2VlUDgxZkZhN1ZXQk1DSnJBeC1WbjFZZTRMVUZNTU1JODRITGlWOFIwdVNKNEpEZFhMOWMzR2p5YnlvWkZ5OWJZUkhJR3Q5bVEyMU5WZnJmdlZjajBYNWs5emVMZk1uYlpFMTdQcm1ZTUItVXNHOGhLdDlHUnl6enpGdXhQRlJnc21xOGxnZUtFNXAyRTRfUXRhMGJjaW5MT01Sbk50OEZpbWc?oc=5",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOc1FTRTR4OGJ4dUtkMHN3NXp0bi1NcjVtRDZfWk1Lb3kxVWJaeHhvNDFzc1FXcmhJYWlhNjF1ZW1lYWRkQ0xyQTVVX0xIaWZYTGx3dmVCVnZwekpiSWFpSmlHMUVuWkZ4VVk3VWNpLU9meDJEVlJuckhLN1h5ZEE4LXBJYTRxVGE4VnhabzBVSFBmdXpqeFhiWndKVThIM2xjY2U2UUtSclV3QVF3b3VnRG5qalE5NUtXT3Q1cnJ0dXdUdjFpMnRXSQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1199,6 +1231,17 @@
         "familyActivity": false
       },
       {
+        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
+        "summary": "",
+        "meta": "Tue 6 Oct",
+        "publishedAt": "2026-10-06T13:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbmlnelhmSnhaTjlIRjg3bXA3TmF2R0NhYjhkOTFja1IzQ1lQU2JOYjBsYklFR0ZnSkxpT3hab1dzcngyVXlCQ3hfUXBUNHlVajBxZTc5XzJ4S1QzdHRKc1pNRk9ZZXFUWE41X2xuWmI0dVh2NjFzbUZvSFBkQnVIdWZOSlBydlBESW1IU2xvUVE1aGtMbmZsd2ZJZnN6c2lYNlVZbEVNQnV1dXdpQy1KZUtQcWxFbkZPT2RjY1R0TTdwdjFyUHI5Yl9JUXdBMHc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "Kingston launches forum to give older people a stronger voice in borough planning",
         "summary": "",
         "meta": "Tue 6 Oct",
@@ -1252,31 +1295,72 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
-      },
-      {
-        "title": "UP CLOSE: with the Teddington estate agent cutting the cost of moving, and putting honesty back into the job",
-        "summary": "",
-        "meta": "Sun 4 Oct",
-        "publishedAt": "2026-10-04T17:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQS1hRMXlob2xIRmJ4d3E1bllYZ281WTBNbF9CWHRRYWpKdDk5a2x0M1JsRVluS1N2RDc4Zy14cVZIcnJpNkJMZUVVdTBuQW1PVlIxdzhPVkZpaXZGUFc0SXozcXdZc1JrTVpyLUlfMkpfTE0xb3NMM25rcVZlWlpTTWs1SHBuRHloQjVZQkZyTzhKbTRqRUtwQVR4RFJidS02Z2pYbEJ3SXR3MTlaRXZUb0hYenRyeklnZnBRTXFpbUh0Q1ZQeHo2TUtJR29aSE5NTk9acFVSMm93aUZhRzEtUGEzY3dVYVF4MEdfRXppSVlDS2hoQUFjZ0JkOG5TZw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Locals invited to plant crocuses for polio eradication with Teddington Rotary Club",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T15:01:53+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUkVmb1M5OTZDOS01U1dMQ1NSeXdCclR5bkllODRxV2N3WGV3VHloNTJJVzlfSWRVZUNtRmtESnhRS3BleU03dFM3SVN6S0hEeklzaGxKdnA0VzFRV3U4eDF1eWFINzM3SUwzT1lqZEs3MWk5LWIwYk9KekNDa2s3UzdRWk1Oekg5NVFJend5cl9FZC05SzNFZTl6Z2p1dXBsVmg0cUExYlJDUVAtR2pmVnRJbFcwV1VMMTBtYzh5akpyWGg2ZlpEazg5WWZkQQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
       }
     ],
     "UK news": [
+      {
+        "title": "Video. Back to the 90s! Tate Britain celebrates the decade's art and fashion",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:04:41+01:00",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSDJ5TklOX29NUWlIRnJpcVJrTlNfTFR2cGNHMEVXQjhPWXZWSDJnSFdia0I2c0NGRlpJMk8wbDhrRmhJdTB3emhXaEJXMGt3bmtpelZfUDlTRFkydUNKOFZtYWJJRFVVbTgwdGdMenZKY0d3R2hVcVcxWWJsQXRDNndfVHh2aTRvdTlOZFJjaG0wTzM3a3E5MFVsWXR6ODg2OTdqTEs1SXFrWm5mOTA1WERCaFJKS1ZUc1MtWnBHcE1lSGFqWk1MTUdPUUU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Pink hair and powerful plaids: Tate Britain celebrates the chaotic creativity of 90s culture",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:04:41+01:00",
+        "source": "AOL.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT2NJRm90XzY4WEx1SkdGVmZIbnh0MnVKSkNqTHoxR1Q1RjdubjdmaEU0cWhQV2lRMjAtajJRTHhnQVJ2MzdZRVJiOHFYZGMxTVQxX3JtSU5Gd2JqTEJydGMtalo3Z3ZHV0pvSUZzcEpubTl5QzVnaDlnY1pldlB0VlBn?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Dedicated Teesside dentist honoured by NHS England with special award",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:21:00+01:00",
+        "source": "Teesside Live",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQkhuV2pBSTZ1V2VwdFI2OWFob2t2ckFUMTdoTi1DMmo5MTFyMnVHSG9sYlhGaHhxOEFiMkZFOFQ4NGh6Mlk5WE9RdDFmUmJnZG5jamxNOFB3N3pUbE1LV0xabkh3NlQtX04tVjhXNG40dzlER3A0Z1otWHU4eUh5RU5oV0E0a3ctX2gtdUFqTkQxTUJzekNRQjdFVnliUdIBowFBVV95cUxOQUJ2cjZ4S3RtcDdYNmR1NjVnakR1aUtmUXgwR1pGcXVheDJFYWY4VHoxRHFXaktDQldDejJ4eWJjcGVhWjNJRE9wWVpIYmEzV0RwaWhRdFZEUTc5c0tndkl1M1RqLVROTmlzMTBtNTE0ZHFXdzdBczMyODByTV9qaDZqdWhhZHR4RUlqeWFhN1NYd0RFd1RKVWg1c3haZTE0YXBj?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swansea Office Wins Britain’s Best Commercial Workplace Award",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:19:23+01:00",
+        "source": "newsfromwales.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbzl2RUIxTzhaWTRfdUxDTW4tZ2xkeHA3Y09maW43d1NGZmdmOXljZGpFSm4zQTE4RFVWdjRjWHozbnQ1MFNrQUJFcGNPSktyNTA1VF80RUxRZGlKOHJHSGNUS2JrV2l4QVZPMU5SZlpxWlA1cWMxdER2a29yelR1cUJlSjE1MXpfbG5qR3Mya1VDWUk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Julie Hesmondhalgh given Great British Theatres Lifetime Achievement Award for Oldham Coliseum campaigning",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T11:27:04+01:00",
+        "source": "Not Really Here Group",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNYkZwdWxpMDd4S3pIVTFMWWJFdDZodXBXV2xlR2VBcGp1MGRJSHR3cHprcU1rZ2NjMTF4TUNVckZoUUZHYXAzTHNWZmNPVWZ0bFhkeHdwVHZnNndNX1VkTFpfUE9XdFd6czV6VFlzem1sa29kTjZ5MFE1ZzUyZXJkZWlmM3hyN2pITmRoRWh3M1YtbUs2M2lkZVZJR29qWHNBd1ZkbWU5cGFiLWZnbWcxQl82dk9kWm0wMWJfYm5RZkZxci14c2JTRFFXemQ1MjI5aFRld1JDbXRySk9mUzhKczdYS0tOUjM4NUVJM1RRWWtLTVJtT1E?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Renishaw celebrates 15 years in South Wales with £70m expansion",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T06:58:38+01:00",
+        "source": "Wales 247",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeC1QX3pOMF9yWHVSX3BiX3FlQTZ6b1RhNUhic1ZsOEdpclMxZmpaWjZ0MFZveXJmWlFVS0djUmNSYk5OcVBqUTY2dUx0NVJtMTluZGlnZTFTbkw1Y05JVF82T25qRkdCUUtnbTBQaEZvdS00SnpMQzc4UlJEYVQwRWtmQnZMTmZfdjBKdVF5YzdSbkE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "UK bluefin tuna comeback shows nature can recover, says WWF",
+        "summary": "The tuna is one of several wildlife recoveries highlighted in a major new report from WWF.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T06:00:04+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c5rmyzgdjzkwo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
       {
         "title": "Tate Britain celebrates the 90s with new Edward Enninful-curated exhibition",
         "summary": "",
@@ -1321,76 +1405,13 @@
         "source": "Volleyball England",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYXB4R0hjYnA0MHdLSzU3Tlh4clFOZTFZbkFlMlgtWURkS3k5aFM1emk5WGtHUENOUjRucXRfRW1WTkN4eUZtdVdkdHBGUlBtTGtBZ2ZiSUZOcnMzX3A3TE9TMy1ndnRteTU0cDdDWVdnRmN1UkZvdVpLNi1zUzh1MmRNeVJyQWtJUXpoVF8tamdtVUs2Zmc1Qjh5TTY0cjdFaTZwYk1ScTZTMVVfbml5el9OcEdEbDZpLXdMUkl3UQ?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Crown Estate Scotland wins climate award for rural housing decarbonisation programme",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T09:52:49+01:00",
-        "source": "Scottish Housing News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMUpYaXZnV2R4cC0tcmFYTGt2ME91MFB1dFpSSHVFOUlqaEZsczFLbHEwbmVzbWxXazRLYVpMa01CZDktaWd4MmJHQU43NDNkYUZYaXIzRXFGYUR2UXJjaUphOExwLTVJcXYxQXJ5UzVzVExoZVRsdGVDMTktclhnTm9paURzN2pZaUhfOUVCNjltNS1yNTRqa0hvc3AyaHZud01ZbnlfYnlFMU8yV1Nfekx6cWh4S3RmY2d2UTFNU3dmSUUyOS1aTg?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "‘Job of my dreams’ says nurse shortlisted for prestigious Wales award",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T05:30:30+01:00",
-        "source": "Wales 247",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQakJXRzJ0anNpNUVFTDZDR0xMbXE4RHEyYXV1MjUwZnd4UVlsUDl6MTE2Zl9QbzFwME1aYUh1a1FoZTQyQXNEeXNJRjJLSXBsUldwVXlpN0NUTUtVNlRsZndHalk2YkF5Wk5ZNFRtdkU4RnpnV3BrN09FUUg2MFl1emUyX2Z2S1Z1WnVBb3RGZnkxWXV5bHBON2JR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "UK Theatre Awards 2026 to Honour Alan Finch CBE with Outstanding Contribution to British Theatre Award",
-        "summary": "",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T14:00:15+01:00",
-        "source": "Theatre Weekly",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPc3QtUU1PZWFZdFV6RFNpT3o0Wlhvb204VnNEZ0dScHJYdUtCTnU0cWx1NGtMRHE5Q3JoTUZ2VlRpaHB6QkhaMm1XaS1DcnRmYUoxRndETHI1RkxzZzRrdG45Z1k3R3BBYWJRbXFtSEQzczhSa1ZqdWFNOF9QNWl3dGF3djBCM25Yc1lVTWhPSWw2b1p4WGNJY1Bha2RReVFyMU5YeGZIakdvdktwcDdtLTI2VnBZTHlUNGtSOUs4aHlfLVZ3dlQwVA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "News-Event celebrates British farming",
-        "summary": "",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T13:56:00+01:00",
-        "source": "Durham County Council",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVU9UNHFHMlNXM0p4Q04zS0dyUGVBNWE4VHlDbnBVUkpiekJhTXVOM01hVzNRaWtvOFkyblliWWVlNFpHWjIteWhzYjJlUWtLelR3UWRVa0pNYW1rVmh4ZkpLV0EycWMyZHdhRFlodWtBVVpXcl9GbFkwNEZYUWQ5VER1aw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Award recognition for rural housing decarbonisation programme",
-        "summary": "",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T13:55:27+01:00",
-        "source": "Project Scotland",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWHJHM1JJdEtGTFkyWV9UVFQwY252ei13ODJPSWdSREU1LWpmZ3J2QUVPN1lCbEZLOENSaW1Wc1A2MkpsMUxsQUxvQ2pOZHhRWkNYNUVBZ3QwcHozQXAyQkgwTHVNUWFLdU1hbFBESWhCVTQ5WER6cW5iaUtVal80dE5lYVpwdkdyNWctRzN5ckZGOTdsUkVVMW1n?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "New Red Tractor film celebrates British farmers and growers",
-        "summary": "",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T13:20:48+01:00",
-        "source": "Yahoo News UK",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVVdTdE5UdTMyZjFySXo5NkZwMlloMUxXZWVqSXZWRWFueWZIei12RUVxbUthYkRlcWJiMjZyZTlUM2h4V0tHQnBBalBfYmNRRHh0TnJMZmxxYlhCNWtycERwUmJIZnk5eEQzdDdwU2VUbmtiQTUyYjV4MFJnb2Z4Q1dB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Four-year-old British girl with autism rescued in rain on Costa Blanca after escaping holiday rental",
-        "summary": "",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T12:37:50+01:00",
-        "source": "Sur in English",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVDcxX1FOb0lmcXc1YzZUYjJHc3h3SS1jRVZsamZ3OWlaemN4REIwN0VTamFtdzNwX09FVWJiUmc1bmVwZTNHVXdiNzR4T2VLOXpTZ3FqVXVvV1pHTlhtUHVhU2RiU1dXZmtmOGhYVXRkN2FMTnVFRXNtbV9ZY3JadVEwMDc0TjdZTU1uQzRRRUhBR0pySmxxNVE4blhma3A1M2lIci1qRUtnT0k?oc=5",
-        "contentType": "article"
       }
     ],
     "Fun": [
       {
         "id": "amazon-prime-big-deal-days-2026",
         "title": "Amazon Prime Big Deal Days Autumn Event",
-        "location": "Online & Prime App Â· Nationwide UK",
+        "location": "Online & Prime App · Nationwide UK",
         "summary": "Major seasonal shopping event with 48 hours of discounts across tech, home, kids toys, fashion and festive gifts.",
         "when": "Tuesday 8 & Wednesday 9 October 2026",
         "startDate": "2026-10-08",
@@ -1412,7 +1433,7 @@
       {
         "id": "bentalls-autumn-shopping-2026",
         "title": "Bentalls Kingston Autumn Shopping & Seasonal Promotions",
-        "location": "The Bentall Centre, Wood Street Â· Kingston upon Thames",
+        "location": "The Bentall Centre, Wood Street · Kingston upon Thames",
         "summary": "Four floors of seasonal promotions, toy demonstrations, family dining and fashion showcases under the central atrium.",
         "when": "Daily throughout October & November 2026",
         "startDate": "2026-10-08",
@@ -1500,13 +1521,13 @@
       {
         "id": "landmark-art-fair-2026",
         "title": "Landmark Autumn Art Fair",
-        "location": "Landmark Arts Centre Â· Teddington",
+        "location": "Landmark Arts Centre · Teddington",
         "summary": "Meet artists and browse paintings, ceramics, sculpture and prints across more than 75 stands. A creative fair with free entry for under-16s.",
-        "when": "16â€“18 October Â· Sat/Sun 10amâ€“5pm; check Friday booking time",
+        "when": "16–18 October · Sat/Sun 10am–5pm; check Friday booking time",
         "startDate": "2026-10-16",
         "endDate": "2026-10-18",
         "ages": "Under-16s welcome",
-        "cost": "Â£5; concessions Â£4; under-16s free",
+        "cost": "£5; concessions £4; under-16s free",
         "tags": [
           "Events",
           "Fairs",
@@ -1523,9 +1544,9 @@
       {
         "id": "chessington-howloween-2026",
         "title": "Chessington Howl'o'ween Spooktacular",
-        "location": "Chessington World of Adventures Â· Leatherhead Road, Chessington",
+        "location": "Chessington World of Adventures · Leatherhead Road, Chessington",
         "summary": "Rides in the dark, costume parades, live street entertainment, spooky walkthroughs, and trick-or-treat surprises just 15 minutes away.",
-        "when": "17 October â€“ 3 November 2026 Â· 10amâ€“7pm",
+        "when": "17 October – 3 November 2026 · 10am–7pm",
         "startDate": "2026-10-17",
         "endDate": "2026-11-03",
         "ages": "Families and children of all ages",
@@ -1546,9 +1567,9 @@
       {
         "id": "kempton-steam-oct-2026",
         "title": "Kempton Steam Museum steaming weekend",
-        "location": "Kempton Steam Museum Â· Hanworth",
+        "location": "Kempton Steam Museum · Hanworth",
         "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
-        "when": "17â€“18 October Â· 10.30amâ€“4pm",
+        "when": "17–18 October · 10.30am–4pm",
         "startDate": "2026-10-17",
         "endDate": "2026-10-18",
         "ages": "Supervise children; engine-climb access requires height over 1.4m",
@@ -1568,13 +1589,13 @@
       {
         "id": "kew-halloween-trail-2026",
         "title": "Halloween at Kew Gardens After-Dark Trail",
-        "location": "Royal Botanic Gardens Kew Â· Richmond / Kew",
+        "location": "Royal Botanic Gardens Kew · Richmond / Kew",
         "summary": "An enchanting after-dark family trail through glowing autumn woods with flickering fire performers, illuminated pumpkins and spooky illusions.",
-        "when": "18 October â€“ 3 November 2026 Â· 6pmâ€“9.30pm",
+        "when": "18 October – 3 November 2026 · 6pm–9.30pm",
         "startDate": "2026-10-18",
         "endDate": "2026-11-03",
         "ages": "All ages; spooky family fun",
-        "cost": "Adults Â£17â€“Â£20, Children Â£12â€“Â£15, under 4s free; advance booking",
+        "cost": "Adults £17–£20, Children £12–£15, under 4s free; advance booking",
         "tags": [
           "Events",
           "Halloween",
@@ -1591,8 +1612,8 @@
       {
         "id": "transportfest-2026",
         "title": "London Bus Museum TransportFest",
-        "location": "Brooklands Â· Weybridge",
-        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiserâ€™s programme and admission details before booking.",
+        "location": "Brooklands · Weybridge",
+        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiser’s programme and admission details before booking.",
         "when": "Sunday 18 October 2026",
         "startDate": "2026-10-18",
         "endDate": "2026-10-18",
@@ -1657,6 +1678,28 @@
         "verifiedAt": "2026-10-08"
       },
       {
+        "id": "teddington-beer-2026",
+        "title": "Teddington Beer Festival",
+        "location": "Landmark Arts Centre · Teddington",
+        "summary": "Beer, cider, food and entertainment across bookable sessions. An option for the grown-ups: the organiser restricts entry to over-18s, with babies in arms welcome.",
+        "when": "5–8 November · choose an afternoon or evening session",
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-08",
+        "ages": "18+; babies in arms welcome",
+        "cost": "£16.50 + £1.50 booking fee; includes first beer token",
+        "tags": [
+          "Events",
+          "Beer",
+          "Indoors"
+        ],
+        "source": "Teddington Beer Festival",
+        "url": "https://www.teddingtonbeerfestival.co.uk/",
+        "venue": "landmark",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-08"
+      },
+      {
         "id": "kingston-christmas-market-2026",
         "title": "Kingston Traditional European Christmas Market",
         "location": "Ancient Market Place & Alpine Village Â· Kingston upon Thames",
@@ -1682,13 +1725,13 @@
       {
         "id": "christmas-at-kew-2026",
         "title": "Christmas at Kew Botanical Light & Lantern Trail",
-        "location": "Royal Botanic Gardens Kew Â· Richmond",
+        "location": "Royal Botanic Gardens Kew · Richmond",
         "summary": "Over a million sparkling lights, singing trees, the tunnel of light, and spectacular water fountain projections across the Palm House lake.",
-        "when": "18 November â€“ 31 December 2026 Â· 4.20pmâ€“10pm",
+        "when": "18 November – 31 December 2026 · 4.20pm–10pm",
         "startDate": "2026-11-18",
         "endDate": "2026-12-31",
         "ages": "All ages; fully accessible pathway",
-        "cost": "Adult off-peak Â£22.50 / peak Â£29; Child Â£15; under 4s free",
+        "cost": "Adult off-peak £22.50 / peak £29; Child £15; under 4s free",
         "tags": [
           "Events",
           "Christmas",
@@ -1724,29 +1767,6 @@
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-08"
-      },
-      {
-        "id": "landmark-sparkle-festive-fair-2026",
-        "title": "Sparkle Festive Contemporary Craft Fair",
-        "location": "Landmark Arts Centre, Ferry Road Â· Teddington",
-        "summary": "Dozens of independent craft makers, jewellers, ceramicists and local artisans in the historic cathedral-like setting of the Landmark Centre.",
-        "when": "20â€“22 November 2026 Â· Fri 4â€“8.30pm; Sat/Sun 10amâ€“4.30pm",
-        "startDate": "2026-11-20",
-        "endDate": "2026-11-22",
-        "ages": "All ages; under-16s accompanied",
-        "cost": "Â£4 entry; free for under-16s and Landmark members",
-        "tags": [
-          "Events",
-          "Christmas",
-          "Craft",
-          "Teddington"
-        ],
-        "source": "Landmark Arts Centre",
-        "url": "https://www.landmarkartscentre.org/visual-arts/sparkle-festive-fair/",
-        "venue": "landmark",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08"
       }
     ]
   },
@@ -1775,32 +1795,6 @@
       "preferenceScore": 428.7
     },
     {
-      "title": "Time",
-      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
-      "meta": "BBC iPlayer · Sun 11 Oct, 6am",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Sun 11 Oct, 6am",
-      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
-      "artworkAlt": "Time programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 50374,
-      "episodeId": 3776044,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-08",
-      "preferenceScore": 424.9
-    },
-    {
       "title": "Panorama",
       "summary": "Rates of bowel, breast and other cancers are rising among younger generations according to NHS data. Why are more younger people getting cancer?",
       "meta": "BBC One · Available since Mon 5 Oct",
@@ -1824,6 +1818,31 @@
       "preferenceScore": 424.6
     },
     {
+      "title": "The Incident Room",
+      "summary": "The murder investigation sparked by the discovery of partial human remains inside a discarded bag in Greater Manchester woodland. The race to identify a victim with no name, no face and no…",
+      "meta": "Channel 5 · Available since yesterday",
+      "source": "Channel 5",
+      "channel": "Channel 5",
+      "releaseDate": "2026-10-07",
+      "releaseDateLabel": "Available since yesterday",
+      "url": "https://www.channel5.com/",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223832.jpg",
+      "artworkAlt": "The Incident Room programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-07",
+      "showId": 71387,
+      "episodeId": 3774941,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-08",
+      "preferenceScore": 401.1
+    },
+    {
       "title": "Convictions Gone Bad with Will Mellor",
       "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
       "meta": "Crime & Investigation · Available since Mon 5 Oct",
@@ -1844,7 +1863,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 397.9
+      "preferenceScore": 398.1
     },
     {
       "title": "This Much is True Crime",
@@ -1916,7 +1935,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 353.7
+      "preferenceScore": 353.6
     },
     {
       "title": "Mafia: Behind the Bloodshed",
