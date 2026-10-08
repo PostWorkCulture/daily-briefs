@@ -250,8 +250,25 @@ body #homeReminders .home-reminder-card.birthday{
 .section-story-copy h4,
 .section-story-copy p,
 .section-story-copy .meta{color:var(--text)!important}
+.tab-story h4,
+.section-story-copy h4{
+  font-weight:550!important;
+  line-height:1.4!important;
+  letter-spacing:-.008em!important;
+}
+.tab-story.story-lead h4{
+  font-weight:580!important;
+  line-height:1.28!important;
+  letter-spacing:-.015em!important;
+}
+.tab-story p,
+.section-story-copy p{line-height:1.55!important}
 .tab-story .meta,
-.section-story-copy .meta{color:var(--signal-muted)!important}
+.section-story-copy .meta{
+  color:var(--signal-muted)!important;
+  font-weight:500!important;
+  letter-spacing:.02em!important;
+}
 .story-stream-grid{
   border-color:var(--signal-line)!important;
   background:var(--signal-line)!important;

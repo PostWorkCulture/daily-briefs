@@ -1,3 +1,14 @@
+## 8 October 2026: Soften News typography, review simpler layout, extend Fun window, and expand seasonal sales/Halloween/Christmas events
+
+- Softened high-contrast News typography in `css/signal-grid.css`: reduced harsh bold `<h4>` font-weight to medium/semi-medium (550 on stories, 580 on lead), relaxed cramped line heights to 1.40 (stories) and 1.28 (lead), expanded letter spacing, and smoothed paragraph reading rhythm with line height 1.55.
+- Maintained strict compliance with Signal Grid copy colours (`approved_copy_colours`), preventing visual halation/blooming on dark backgrounds while preserving the master brief design system.
+- Prepared comprehensive simpler layout review for Pete comparing current newsroom hierarchy with clean editorial flow options.
+- Extended the Fun activities calendar eligibility window in `scripts/fun_activities.py` and `js/fun-events.js` from 2 months to 3 calendar months (current month plus next two calendar months, i.e. October through December).
+- Expanded `ALLOWED_HOSTS` in `scripts/fun_activities.py` to support major retail sales and regional event sources: Amazon UK, Next UK, Zara UK, H&M UK, Bentall Centre Kingston, Kew Gardens, and Chessington.
+- Expanded `data/fun-catalog.json` with 12 new verified activities spanning autumn retail sales (Amazon Prime Big Deal Days, Next Clearance, Zara Mid-Season, H&M Member Sale, Bentalls Kingston Autumn Promotions), Halloween trails and fright nights (Kew Gardens After-Dark Trail, Chessington Howl'o'ween, Kingston Trick-or-Treat Trail), and winter festive events (Kingston Traditional European Christmas Market, Hampton Court Palace Festive Ice Rink, Christmas at Kew, Landmark Sparkle Craft Fair).
+- Updated `data/pete.json` and `data/sofia.json` with 16 refreshed, verified activities for October, November, and December.
+- Updated boundary calendar tests in `tests/test_fun_activities.py` and master specification in `docs/MASTER-BRIEF-CURRENT.md`.
+
 ## 4 October 2026: Update web page and bookmark icon to bright lime green DB mark
 
 - Generated new ultra-simple icon assets with a solid bright lime green background (`#7CF46A`) and bold white **DB** lettering.

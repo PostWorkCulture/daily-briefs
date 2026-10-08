@@ -13,15 +13,17 @@ ALLOWED_HOSTS = {
     'www.elmbridge.gov.uk', 'www.kingston.gov.uk', 'www.orleanshousegallery.org',
     'www.landmarkartscentre.org', 'kemptonsteam.merlintickets.co.uk',
     'www.brooklandsmuseum.com', 'www.teddingtonbeerfestival.co.uk',
-    'teddington.nub.news', 'kingston.nub.news'
+    'teddington.nub.news', 'kingston.nub.news',
+    'www.amazon.co.uk', 'www.next.co.uk', 'www.zara.com', 'www.hm.com',
+    'www.bentallcentre.co.uk', 'www.kew.org', 'www.chessington.com'
 }
 
 def in_event_window(item, today):
-    """Upcoming/ongoing dated events, through the end of next calendar month."""
+    """Upcoming/ongoing dated events, through the end of the next two calendar months."""
     try:
         start = date.fromisoformat(item['startDate'])
         end = date.fromisoformat(item['endDate'])
-        month_index = today.year * 12 + today.month - 1 + 2
+        month_index = today.year * 12 + today.month - 1 + 3
         cutoff = date(month_index // 12, month_index % 12 + 1, 1)
         return start <= end and end >= today and start < cutoff
     except (KeyError, ValueError, TypeError):
