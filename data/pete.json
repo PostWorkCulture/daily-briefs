@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 8 October 2026 · refreshed 9:10pm",
+  "updatedLabel": "Thursday, 8 October 2026 · refreshed 9:45pm",
   "worldFact": {
     "id": "coober-pedy-underground-desert-town",
     "editorialPriority": "human-first",
@@ -25,7 +25,7 @@
     "daily": [
       {
         "date": "2026-10-08",
-        "high": 14,
+        "high": 13,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
@@ -43,7 +43,7 @@
       },
       {
         "date": "2026-10-10",
-        "high": 15,
+        "high": 16,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -52,11 +52,11 @@
       },
       {
         "date": "2026-10-11",
-        "high": 15,
+        "high": 16,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -74,16 +74,16 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 20,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-14",
-        "high": 16,
+        "high": 19,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       }
     ],
@@ -402,20 +402,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Godstone Farm - Gruffalo?",
       "summary": "",
       "url": "",
@@ -428,6 +414,20 @@
       "colorId": null,
       "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
+      "calendarColorSource": "google"
     },
     {
       "title": "Let it glow disco 3-4pm",
@@ -591,21 +591,12 @@
     "played": 5,
     "news": [
       {
-        "title": "34 photos as stars return to training",
+        "title": "Stats: How do we fare after international breaks?",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T15:03:51+01:00",
+        "publishedAt": "2026-10-08T17:52:54+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal injury update: Konsa, Tzolis and Havertz latest return dates",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T14:53:40+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRzBRaFJ6YU5HYXVBMmo1YUtNSXhrQkYyUUZUQ0tIWU9paF9KaTFRR2xqaERiekRnSnhxa0t6S3h4bXIteTZ4TTlQSlNKNTdjVEFmZnFVdnVtbnU3LW5jeG1QUFY3b2ZjWlRFRllFY0d3cEIxS2ZuQ2RjMklvRVZYZldybldfVXZkSEtoQmttanNrdHFaTXVwdWFucjNmOEVJNjY5Wms2R01odmxXNThzYWlVWmItS3JScXNEYzNUaHdqVGtt?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
         "contentType": "article"
       },
       {
@@ -633,6 +624,15 @@
         "publishedAt": "2026-10-08T16:59:00+01:00",
         "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOEtiRmJ4LW1BZTJ5ZU5fcC1CdUZMVDdfOFowY1M2TTlrSHhVMXc5WERMaGNyTUljMklaRmhJaFlTdFBnamhIUHZWSHN3eEVUZ1hHS19fMVZLazlPcjkzbHdacnloellITHdCdkY3RUNVMTRfTXVHZTNlRWtoMEFZRU1uMlU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T03:43:54+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
         "contentType": "article"
       }
     ],
@@ -686,16 +686,6 @@
         "trust": "Trusted report"
       },
       {
-        "title": "Arsenal fans sit down for a heartfelt chat with Mikel Arteta after he renewed his contract at the club",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T19:50:38+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSjI2VDItQzdJUVM1alNZNUQxbjNFSFRwTHNLZ2JuWmRJemNySUZEV1FrRVY4UUMycUxWSVVJTVozR1ZRQWJGYThlSUdhbHZhNmtvYWlVWFF0a1UtM0pTM0JTbGdzcDhESEFlNUtiVlY0bFJLVHVLZlQ3ci1JM1g1WHE3RjlKaVd2aEdLeEZUUTc4WFRIdWhqYVlGcUNKVy0yU01oZVcwYVFEMWRsa3ZCWm1mc0FtRGRZVmJKRWxjSl9pbk1oNThwZGU3aTFNbTlxTXFGVjRsdW1iYU5qRkp4c0g1bWhkTWc?oc=5",
-        "contentType": "transfer-update",
-        "trust": "Trusted report"
-      },
-      {
         "title": "'That is beautiful' - Arsenal's emotional contract video for Mikel Arteta",
         "summary": "",
         "meta": "Wed 7 Oct",
@@ -704,6 +694,22 @@
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQLTVRejVpTE5HR0tGVHVGTjFqZnI0ZElSam4wNHZLWm10REVMT0xDRTFYQU9GVlFiTmNIQTJZNHJfQ2d2bnU0RzRMdDZDNWxfUXZFQWR1Y1BQejVhRFo3U0V0R3hnN183Q1U3bUZ4ZHF6akZkejFucmkzSHE5WVQxYVRTaFNBMVRTQnlpNW5sdng1M1AzWDFpVFlxOUg1VldUMzZGYkM0X2xUNG03SGMxWDVlb3NtNU9kSEE?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
+      },
+      {
+        "title": "The best photos from Mikel Arteta's contract signing",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T13:35:44+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVmJPM1lDT3FQNDkwZGtfUE9TVlVOOEZ6X2p2QnZLRXo1Tkt0TG94WUZCaWU4SEdfaXZfVXpaV0c1SHpnWkVlVi1jOFk2MHBJbWl2eHdFZnoyb1cyMjlHeDNlczVBTEcyWUI4R0otLXhFbGxrZUJubWtqLUtMQkttbHhveWtRQm1XZFdLdDVmZHlmaVFYNWhSLQ?oc=5",
+        "contentType": "transfer-update",
+        "trust": "Official",
+        "corroboratedBy": {
+          "title": "Mikel Arteta's new contract: The challenges facing Arsenal boss as he enters 'step five' of his project",
+          "source": "Sky Sports",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQQkN0Njd1RGgyQWlwVlFUalQwQU5kWF9tVzZnTTFoSDBndEJsNjU2TFQ0dHFZRVJRLVZVRGRkMjh5bHJoYkg4ZE1VU3hnMThzYW9oQWhwNDA4YXlPRFRsY2x6V09Eem0zWUZxZGQtQ25Jbm5kUGxOZi1OaHZNdTd4YmFRLWV6Q0ptVGd2QW9paU9wc0taOVp6amVVYXQzOTRBWGNZT01udk43clNDRDBBbjA5eng2blctRHFVbmxlYW1wTDN2dldoUGpZY1JwOHRmcmY0Nzd0MHNjNGJFaEM3RHp3?oc=5",
+          "publishedAt": "2026-10-08T08:54:55+01:00"
+        }
       }
     ],
     "transferRumours": [
@@ -780,32 +786,32 @@
     ]
   },
   "lead": {
-    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-    "summary": "",
-    "meta": "Tue 6 Oct",
-    "publishedAt": "2026-10-06T20:57:04+01:00",
-    "source": "Google DeepMind",
-    "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
+    "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
+    "meta": "Wed 7 Oct",
+    "publishedAt": "2026-10-07T13:00:00+01:00",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-haiku-5-5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "summary": "",
-      "meta": "Tue 6 Oct",
-      "publishedAt": "2026-10-06T20:57:04+01:00",
-      "source": "Google DeepMind",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
+      "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
+      "meta": "Wed 7 Oct",
+      "publishedAt": "2026-10-07T13:00:00+01:00",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news/claude-haiku-5-5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "34 photos as stars return to training",
+      "title": "Stats: How do we fare after international breaks?",
       "summary": "",
       "meta": "Thu 8 Oct",
-      "publishedAt": "2026-10-08T15:03:51+01:00",
+      "publishedAt": "2026-10-08T17:52:54+01:00",
       "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
@@ -949,33 +955,6 @@
   "sections": {
     "AI": [
       {
-        "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-        "summary": "New lightweight embedding model for text and image retrieval from Google DeepMind.",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T20:57:04+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-        "contentType": "article"
-      },
-      {
-        "title": "Introducing Playground: Create and play custom games",
-        "summary": "Google introduces Playground, an experimental gaming platform powered by Gemini.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:00:00+01:00",
-        "source": "Google",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-        "contentType": "article"
-      },
-      {
-        "title": "The latest AI news we announced in September 2026",
-        "summary": "Monthly roundup of new Gemini capabilities and search integrations.",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T16:00:00+01:00",
-        "source": "Google",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-        "contentType": "article"
-      },
-      {
         "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
         "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
         "meta": "Wed 7 Oct",
@@ -994,21 +973,48 @@
         "contentType": "article"
       },
       {
-        "title": "GPT-6 and Intelligent UI for everyone",
-        "summary": "OpenAI rolls out GPT-6 with real-time interactive canvas and direct visual synthesis.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T01:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/gpt-6-for-everyone",
+        "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+        "summary": "",
+        "meta": "Tue 6 Oct",
+        "publishedAt": "2026-10-06T20:57:04+01:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
         "contentType": "article"
       },
       {
-        "title": "Sharing AI progress in mathematics",
-        "summary": "Formalizing open mathematical conjectures with neural theorem provers in Lean.",
-        "meta": "Tue 6 Oct",
-        "publishedAt": "2026-10-06T13:00:00+01:00",
+        "title": "Introducing Playground: Create and play custom games",
+        "summary": "Overview of Playground",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T13:00:00+01:00",
+        "source": "Google",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+        "contentType": "article"
+      },
+      {
+        "title": "The latest AI news we announced in September 2026",
+        "summary": "A video showing the September AI updates",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T16:00:00+01:00",
+        "source": "Google",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+        "contentType": "article"
+      },
+      {
+        "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+        "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T17:00:00+01:00",
         "source": "OpenAI",
-        "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+        "url": "https://openai.com/index/oracle",
+        "contentType": "article"
+      },
+      {
+        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/pollo-ai",
         "contentType": "article"
       },
       {
@@ -1041,21 +1047,12 @@
     ],
     "Arsenal news": [
       {
-        "title": "34 photos as stars return to training",
+        "title": "Stats: How do we fare after international breaks?",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T15:03:51+01:00",
+        "publishedAt": "2026-10-08T17:52:54+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal injury update: Konsa, Tzolis and Havertz latest return dates",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T14:53:40+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRzBRaFJ6YU5HYXVBMmo1YUtNSXhrQkYyUUZUQ0tIWU9paF9KaTFRR2xqaERiekRnSnhxa0t6S3h4bXIteTZ4TTlQSlNKNTdjVEFmZnFVdnVtbnU3LW5jeG1QUFY3b2ZjWlRFRllFY0d3cEIxS2ZuQ2RjMklvRVZYZldybldfVXZkSEtoQmttanNrdHFaTXVwdWFucjNmOEVJNjY5Wms2R01odmxXNThzYWlVWmItS3JScXNEYzNUaHdqVGtt?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
         "contentType": "article"
       },
       {
@@ -1095,21 +1092,30 @@
         "contentType": "article"
       },
       {
-        "title": "Stats: How do we fare after international breaks?",
+        "title": "Arsenal Predicted Lineup vs. Leeds: Gyokeres Gifted Golden Opportunity",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T17:52:54+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
+        "publishedAt": "2026-10-08T19:00:02+01:00",
+        "source": "Sports Illustrated",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2RPWVFvN1BuZUQ5Mi1PS0FkblNyaTBYWmZBZkF4dl9GTENfdkJ4SVRIMDYtSGNvM2s0ZzVNTDFieTZpY1V6aDdja1FsVGpZUEFOY0x1ME53blp6V2RCTUFlVURQZ3RqZTlKakdGRXVKVnNMbnBndUxtNFhLblNMVWExbjNSalZHb1ZpRUhTMHl6MkQyWTNqc2tPRkFYekRvYjNlbXh3?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Mikel Arteta exclusive interview: ‘I have poison in my veins at Champions League defeat. It left a scar’ - The Athletic",
+        "title": "34 photos as stars return to training",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T12:56:52+01:00",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOX3ZjM2VhNW1lcG9vbE1lWVU1TERzYlBjSGhIVndpSkU2V2RLTlZUazRaZ01Pemt3emo1UjNYMUFsSmV2OENXOE1VNHZELW5NSHVnNzRYdkVSeG5LUWFBekZQSENsM09ZTDQza1RFeV9UMFdWYnBfV0ktQUItWHo3aFQzVlVsOUo4SHFVN0dnTkJSR0RNX0JEVg?oc=5",
+        "publishedAt": "2026-10-08T15:03:51+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDFBbTNIVWZ0R2ZkWEo1ZHllQlZ6QkF5YlU0TlNoYlJ3cTgyV2ZZaE9BTTB5VExmY21BamY2RWp5bUUxNlowYW43NTFFMGZhYTRSU01xSVhDN3EwU3U4RmFyelFUbFpPdDFFVUdrWlhrMTc2YU1IaGV1dnB0UmlXOFEzOUlNZw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal starlet Lisa Baum (19) looks forward to first Germany senior team cap",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T20:31:29+01:00",
+        "source": "Get German Football News",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00eVRxVDdxSEhPZ2VsQ1NRUTZZSTFIU1d5VExBWWxRd0tySjR6aXdXSzBHaGVSQmxxMU9ncExvWGN6NDdqb1dwOUh2eHVXeWpYWWhBMDh4bDBKX01XUGcxaGdwOWxrTEswN1hrR1MxQQ?oc=5",
         "contentType": "article"
       }
     ],
@@ -1225,6 +1231,17 @@
         "familyActivity": false
       },
       {
+        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
+        "summary": "",
+        "meta": "Tue 6 Oct",
+        "publishedAt": "2026-10-06T13:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbmlnelhmSnhaTjlIRjg3bXA3TmF2R0NhYjhkOTFja1IzQ1lQU2JOYjBsYklFR0ZnSkxpT3hab1dzcngyVXlCQ3hfUXBUNHlVajBxZTc5XzJ4S1QzdHRKc1pNRk9ZZXFUWE41X2xuWmI0dVh2NjFzbUZvSFBkQnVIdWZOSlBydlBESW1IU2xvUVE1aGtMbmZsd2ZJZnN6c2lYNlVZbEVNQnV1dXdpQy1KZUtQcWxFbkZPT2RjY1R0TTdwdjFyUHI5Yl9JUXdBMHc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "Kingston launches forum to give older people a stronger voice in borough planning",
         "summary": "",
         "meta": "Tue 6 Oct",
@@ -1264,17 +1281,6 @@
         "publishedAt": "2026-10-04T17:00:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQS1hRMXlob2xIRmJ4d3E1bllYZ281WTBNbF9CWHRRYWpKdDk5a2x0M1JsRVluS1N2RDc4Zy14cVZIcnJpNkJMZUVVdTBuQW1PVlIxdzhPVkZpaXZGUFc0SXozcXdZc1JrTVpyLUlfMkpfTE0xb3NMM25rcVZlWlpTTWs1SHBuRHloQjVZQkZyTzhKbTRqRUtwQVR4RFJidS02Z2pYbEJ3SXR3MTlaRXZUb0hYenRyeklnZnBRTXFpbUh0Q1ZQeHo2TUtJR29aSE5NTk9acFVSMm93aUZhRzEtUGEzY3dVYVF4MEdfRXppSVlDS2hoQUFjZ0JkOG5TZw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Get rid of old gadgets - Kingston's new scheme gives tech a second life",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T17:15:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS05XSGFPX2hqVHd3ckt2WExzV2ttVEhXUVBGZ1d2eWpVLS1xVWpKY2tWa3pMSFE1TVZmUUlxMGFyREtHRE5TSnYwcnk5TUtmTXV5ZVJFTlpJTGozcWpPOUVNNlVrMnAwS0JScDFocFlmeFlpLTk4R2h4dF9fYlEwQmdXY2VZYjBtY0pDZW5hc1ZUNGhxVU5qVnpqWnpLRHVhQm9xdmNhakk1MmdUVWxtUGZvYnhpWktJ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1326,6 +1332,15 @@
         "publishedAt": "2026-10-08T14:45:08+01:00",
         "source": "News from Wales",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbzl2RUIxTzhaWTRfdUxDTW4tZ2xkeHA3Y09maW43d1NGZmdmOXljZGpFSm4zQTE4RFVWdjRjWHozbnQ1MFNrQUJFcGNPSktyNTA1VF80RUxRZGlKOHJHSGNUS2JrV2l4QVZPMU5SZlpxWlA1cWMxdER2a29yelR1cUJlSjE1MXpfbG5qR3Mya1VDWUk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Julie Hesmondhalgh Receives Inaugural Great British Theatres Lifetime Achievement Award",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T14:34:08+01:00",
+        "source": "BroadwayWorld",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONVBxSlF0MWc2V1pQS21LNUx6eUlVMmpqd0lMN1doZWNlZGcwVEptVVlZZHB3Y3lhbVluZG5JemhTOTRjdm9fVkZzZG1IVTcxZzNVdW5DVW9fMUVWMW5FcVBEX0paYUxnQ2tVZExIdXpTM3BBR1hQd19MRG5UZEVNczVjRkdaX2VGRkQzeXJqZWhZMi0yMW53LS12QldaMVpNZi16d0xzWWxxdUZSLXNkREYyV3VRcGV2djlqeElzNHdQTkMtVVB2RUI5UlJDQ0VUcGVfVVFST1l6QQ?oc=5",
         "contentType": "article"
       },
       {
@@ -1389,15 +1404,6 @@
         "publishedAt": "2026-10-08T06:00:04+01:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c5rmyzgdjzkwo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "Tate Britain celebrates the 90s with new Edward Enninful-curated exhibition",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T15:46:29+01:00",
-        "source": "Luxury London",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcm5kZDlPeGlXbUVWb25HYTlDSnh6S0xXZHRuVktqY2hmSm5yVWhLNkFXMk1jMko3ckFXallId2ZGSGdtekV4ektPZlNUcGstYlBidTAyQS1xRDJaZnpuTWpjY01kc25CYUtBT0E5M3NIWHRGdDRaSUh2QUtHa0l3b0tn?oc=5",
         "contentType": "article"
       }
     ],
@@ -1927,7 +1933,7 @@
       ],
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 359
+      "preferenceScore": 359.0
     },
     {
       "title": "UK Forensic Breakthroughs",
@@ -1996,7 +2002,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 275
+      "preferenceScore": 275.0
     },
     {
       "title": "Crime Scene Raw",
