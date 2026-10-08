@@ -1,3 +1,11 @@
+## 8 October 2026: Clean lines across Calendar, Fun, News, and Birthday; restore prominent AI company logos; simplify Dida to 3-step activities
+
+- Removed dividing lines under dates/headers across Calendar (`#view-calendar .calendar-page-head`), Fun (`#view-fun .section-head`, `.fun-intro`), and Birthday (`#view-birthdays .section-head`, `.birthday-panel .section-head`, `.birthday-card`, `.birthday-list`, `.occasion-month`).
+- News section header cleaned: removed redundant `News` title and dividing line; `Local News` is now the sole title in `#view-news`.
+- Restored prominent AI frontier company logos (Google Gemini, Anthropic, OpenAI, DeepSeek, Qwen, Moonshot) in the AI story rows with 36px white rounded badges and 24px SVG brand marks.
+- Completely simplified the Dida section into clean activity cards with distinct colorful titles (cycling vibrant palette), exactly 3 numbered steps per activity starting with `Autumn Colour Hunt`, and removed all save favourite/sticker/accordion interactions.
+- All 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen pass.
+
 ## 8 October 2026: Restore verified news photography and eliminate duplicate news stories
 
 - Restored verified publisher pictures for all Local News stories in `#view-news`: each card displays its verified publisher imagery (`.story-media`, min 1200x675 source) cleanly framed on the right (desktop) or top (mobile).

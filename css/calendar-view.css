@@ -32,8 +32,7 @@ body.profile-unlocked #view-calendar .calendar-page{padding-top:58px}
   justify-content:space-between;
   gap:18px;
   margin-bottom:18px;
-  padding-bottom:16px;
-  border-bottom:1px solid rgba(244,247,242,.2);
+  border-bottom:none!important;
 }
 .calendar-page-kicker,
 .calendar-day-head>span{

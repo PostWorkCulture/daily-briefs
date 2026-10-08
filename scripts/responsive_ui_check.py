@@ -1386,155 +1386,51 @@ def check_viewport(browser, name: str) -> None:
             "document.querySelector('#greeting')?.textContent === 'Hey Pete'"
         )
         page.locator('[data-view-target="dida"]').click()
-        page.locator('.dida-zone').first.wait_for(state="visible", timeout=10000)
+        page.locator('.dida-card').first.wait_for(state="visible", timeout=10000)
         dida = page.evaluate(
             r"""
             () => {
-              const zoneRects = [...document.querySelectorAll('.dida-zone')]
-                .map(zone => zone.getBoundingClientRect());
-              const textSelectors = [
-                '.dida-source',
-                '.dida-intro',
-                '.dida-steps li',
-                '.dida-challenge',
-                '.dida-fold summary p',
-                '.dida-ref-card p'
-              ];
+              const cards = [...document.querySelectorAll('#didaContent .dida-card')];
+              const titles = cards.map(c => ({
+                text: c.querySelector('.dida-card-title')?.textContent.trim() || '',
+                color: c.querySelector('.dida-card-title')?.style.color || ''
+              }));
+              const steps = cards.map(c => [...c.querySelectorAll('.dida-steps li')].map(li => li.textContent.trim()));
+              const hasSaveBtn = document.querySelectorAll('[data-dida-action="save"]').length;
+              const hasTriedBtn = document.querySelectorAll('[data-dida-action="tried"]').length;
+              const autumnHunt = cards.find(c => (c.querySelector('.dida-card-title')?.textContent || '').toLowerCase().includes('autumn colour hunt'));
+              const autumnSteps = autumnHunt ? [...autumnHunt.querySelectorAll('.dida-steps li')].map(li => li.textContent.trim()) : [];
               return {
-                accent: getComputedStyle(document.querySelector('.dida-shell')).getPropertyValue('--dida').trim(),
-                shellBackground: getComputedStyle(document.querySelector('.dida-shell')).backgroundImage,
-                shellShadow: getComputedStyle(document.querySelector('.dida-shell')).boxShadow,
-                heroes: document.querySelectorAll('.dida-hero').length,
-                heroIcons: document.querySelectorAll('.dida-hero-icons span').length,
-                activityCards: document.querySelectorAll('.dida-activity').length,
-                steps: [...document.querySelectorAll('.dida-activity')].map(card => card.querySelectorAll('.dida-steps li').length),
-                images: [...document.querySelectorAll('#didaContent .dida-scene')].map(img => ({src:img.getAttribute('src'), loaded:img.complete && img.naturalWidth > 0, filter:getComputedStyle(img).filter})),
-                foldIcons: document.querySelectorAll('.dida-fold-icon').length,
-                zones: document.querySelectorAll('.dida-zone').length,
-                zoneBackgrounds: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).backgroundImage),
-                zoneBackgroundColours: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).backgroundColor),
-                zoneBorders: [...document.querySelectorAll('.dida-zone')].map(zone => getComputedStyle(zone).borderColor),
-                innerBackgroundColours: [...document.querySelectorAll('.dida-quick,.dida-season,.dida-season-item,.dida-fold,.dida-ref-card,.dida-quick-icon,.dida-fold-icon')].map(item => getComputedStyle(item).backgroundColor),
-                titleColours: [...document.querySelectorAll('.dida-zone-head h3,.dida-quick h4,.dida-season h4,.dida-fold summary h4,.dida-ref-card h5')].map(item => getComputedStyle(item).color),
-                zoneGaps: zoneRects.slice(1).map((rect, index) => rect.top - zoneRects[index].bottom),
-                sectionLinks: document.querySelectorAll('.dida-section-nav a').length,
-                zoneHeaders: [...document.querySelectorAll('.dida-zone-head')].map(head => ({
-                  text: head.textContent.trim(),
-                  h3Count: head.querySelectorAll(':scope > h3').length,
-                  extraCount: head.querySelectorAll(':scope > :not(h3), small, p, .dida-zone-number').length
-                })),
-                folds: document.querySelectorAll('.dida-fold').length,
-                openFolds: document.querySelectorAll('.dida-fold[open]').length,
-                bodyTextColours: textSelectors.map(selector => ({
-                  selector,
-                  colour: getComputedStyle(document.querySelector(selector)).color
-                })),
-                copy: document.querySelector('#didaContent').textContent,
-                sourceHref: document.querySelector('.dida-source a')?.href || ''
+                cardCount: cards.length,
+                titles,
+                steps,
+                colors: [...new Set(titles.map(t => t.color))],
+                hasSaveBtn,
+                hasTriedBtn,
+                hasAutumnHunt: !!autumnHunt,
+                autumnSteps
               };
             }
             """
         )
-        dida_accent = dida["accent"].lower()
-        if dida_accent != "#7cf46a":
-            failures.append(f"Dida accent is not the approved bright green: {dida['accent']}")
-        if dida["heroes"] != 0 or dida["heroIcons"] != 0 or dida["sectionLinks"] != 0:
-            failures.append(f"Dida top section or duplicate section navigation remains: {dida}")
-        if dida["activityCards"] < 5 or any(count != 3 for count in dida["steps"]):
-            failures.append(f"Dida does not offer complete three-step activities: {dida}")
-        if len(dida["images"]) != 3 or any(image['filter'] != 'none' for image in dida['images']):
-            failures.append(f"Dida needs three full-colour original illustrations: {dida}")
-        if dida["foldIcons"] != 4:
-            failures.append(f"Dida parent guide icons are missing: {dida}")
-        if dida["zones"] != 3:
-            failures.append(f"Dida is not split into three clear sections: {dida}")
-        expected_zone_titles = ["Play together", "Explore this season", "Parent guide"]
-        if [head["text"] for head in dida["zoneHeaders"]] != expected_zone_titles or any(
-            head["h3Count"] != 1 or head["extraCount"] != 0
-            for head in dida["zoneHeaders"]
-        ):
-            failures.append(f"Dida zone headers contain more than their title: {dida['zoneHeaders']}")
-        if dida["shellBackground"] != "none" or dida["shellShadow"] != "none":
-            failures.append(f"Dida still has a shared outer container: {dida}")
-        if any(value != "none" for value in dida["zoneBackgrounds"]):
-            failures.append(f"Dida zones still use gradient backgrounds: {dida}")
-        if any(value != "rgb(9, 12, 10)" for value in dida["zoneBackgroundColours"]):
-            failures.append(f"Dida zones are not on the approved dark surface: {dida}")
-        if any(value != "rgb(13, 17, 14)" for value in dida["innerBackgroundColours"]):
-            failures.append(f"Dida inner cards or icon surfaces are not on the approved dark surface: {dida}")
-        if any("124, 244, 106" not in value for value in dida["zoneBorders"]):
-            failures.append(f"Dida zone outlines do not use the bright green: {dida}")
-        if any(value != "rgb(124, 244, 106)" for value in dida["titleColours"]):
-            failures.append(f"Dida titles do not use the bright green: {dida}")
-        minimum_zone_gap = 28 if name == "mobile" else 36
-        if len(dida["zoneGaps"]) != 2 or any(
-            gap < minimum_zone_gap - 1 for gap in dida["zoneGaps"]
-        ):
-            failures.append(
-                f"Dida zone gaps are below {minimum_zone_gap}px: {dida['zoneGaps']}"
-            )
-        if dida["folds"] != 4 or dida["openFolds"] != 0:
-            failures.append(f"Dida reference library is not compact by default: {dida}")
-        expected_text_colour = "rgb(244, 247, 242)"
-        non_neutral_text = [
-            item for item in dida["bodyTextColours"]
-            if item["colour"] != expected_text_colour
-        ]
-        if non_neutral_text:
-            failures.append(f"Dida body text is not consistently neutral: {non_neutral_text}")
-        if "Age-six development" not in dida["copy"]:
-            failures.append("Dida age-six reference content is missing")
-        removed_dida_copy = (
-            "DIDA · AGE 6",
-            "What matters now",
-            "START HERE",
-            "Three focused ideas. Do one, not everything.",
-            "EXPLORE & PLAY",
-            "KEEP FOR LATER",
-        )
-        if any(value in dida["copy"] for value in removed_dida_copy):
-            failures.append(f"Dida still renders removed top or header copy: {dida['copy']}")
-        if any(old_copy in dida["copy"] for old_copy in ("AGE 5", "Five-year-old", "turning five", "turning six", "6 things before I’m 6")):
-            failures.append("Dida still renders age-five wording")
-        if dida["sourceHref"] != "https://stacks.cdc.gov/view/cdc/155268":
-            failures.append(f"Dida age-six source changed or is not real: {dida['sourceHref']}")
-        dida_zone = page.locator('.dida-zone').first
-        dida_zone.hover()
-        page.wait_for_timeout(250)
-        dida_hover_shadow = dida_zone.evaluate("el => getComputedStyle(el).boxShadow")
-        dida_hover_transform = dida_zone.evaluate("el => getComputedStyle(el).transform")
-        if "124, 244, 106" not in dida_hover_shadow or dida_hover_transform != "none":
-            failures.append(
-                "Dida hover does not match Calendar glow or moves: "
-                f"shadow={dida_hover_shadow}, transform={dida_hover_transform}"
-            )
+        if dida["cardCount"] < 5:
+            failures.append(f"Dida does not show enough activity cards: {dida['cardCount']}")
+        if len(dida["colors"]) < 4:
+            failures.append(f"Dida card titles do not use different colours: {dida['colors']}")
+        if not dida["hasAutumnHunt"]:
+            failures.append("Dida is missing the Autumn Colour Hunt activity")
+        if any(len(s) != 3 for s in dida["steps"]):
+            failures.append(f"Dida activities do not all have exactly 3 steps: {dida['steps']}")
+        if dida["hasSaveBtn"] != 0 or dida["hasTriedBtn"] != 0:
+            failures.append("Dida still has save favourite or tried buttons")
 
-        # Exercise the saved activity controls, disclosure state and per-profile persistence.
-        featured_id = page.locator('.dida-featured').get_attribute('data-activity-id')
-        page.locator('.dida-fold summary').first.click()
-        page.locator('.dida-featured [data-dida-action="save"]').click()
-        if page.locator('.dida-fold[open]').count() != 1:
-            raise AssertionError(f"{name}: saving an activity changed unrelated parent disclosures")
-        if page.locator('.dida-featured [data-dida-action="save"]').get_attribute('aria-pressed') != 'true':
-            raise AssertionError(f"{name}: activity favourite did not save")
-        page.locator('.dida-featured [data-dida-action="tried"]').click()
-        if page.locator('.dida-featured [data-dida-action="tried"]').get_attribute('aria-pressed') != 'true':
-            raise AssertionError(f"{name}: activity sticker did not save")
-        page.evaluate("renderProfileViews(state.data, state.profile)")
-        if page.locator('.dida-featured').get_attribute('data-activity-id') != featured_id:
-            raise AssertionError(f"{name}: background refresh replaced the selected adventure")
-        page.locator('[data-dida-action="pick"]').click()
-        if page.locator('.dida-featured').get_attribute('data-activity-id') == featured_id:
-            raise AssertionError(f"{name}: Pick another repeats the same adventure")
-        page.locator('#dida-season-choice').select_option('christmas')
-        if page.locator('#dida-seasonal .dida-activity').count() < 2:
-            raise AssertionError(f"{name}: seasonal selector has no usable activities")
-        page.locator('#dida-season-choice').select_option('autumn')
-        for img in page.locator('#didaContent .dida-scene').all():
-            img.scroll_into_view_if_needed()
-            img.evaluate("img => img.decode()")
-        page.locator('.dida-fold[open] summary').click()
-        page.evaluate("document.getElementById('dida-feedback').textContent = ''")
+        dida_card = page.locator('.dida-card').first
+        dida_card.hover()
+        page.wait_for_timeout(250)
+        dida_card_transform = dida_card.evaluate("el => getComputedStyle(el).transform")
+        if dida_card_transform != "none":
+            failures.append(f"Dida card moves on hover: transform={dida_card_transform}")
+
 
         ARTIFACTS.mkdir(parents=True, exist_ok=True)
         for target in ("home", "calendar", "news", "arsenal", "ai", "fun", "dida", "birthdays"):
