@@ -257,7 +257,6 @@ body #homeReminders .home-reminder-card.birthday{
   font-weight:500!important;
   letter-spacing:.02em!important;
 }
-#view-news .tab-list,
 #view-ai .tab-list,
 .tab-list.single-line-list{
   display:flex!important;
@@ -341,6 +340,98 @@ body #homeReminders .home-reminder-card.birthday{
 .story-row .section-company-logo{
   width:15px!important;
   height:15px!important;
+}
+.news-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+@media(max-width:680px){
+  .news-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+.tab-story.news-card{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:space-between!important;
+  border:1px solid var(--signal-line)!important;
+  border-radius:6px!important;
+  background:#090c0a!important;
+  text-decoration:none!important;
+  padding:14px 16px!important;
+  min-height:120px!important;
+  box-sizing:border-box!important;
+  transition:border-color .18s,background .18s,box-shadow .18s;
+}
+.tab-story.news-card:hover,
+.tab-story.news-card:focus-visible{
+  border-color:rgba(255,255,255,.28)!important;
+  background:#111613!important;
+  box-shadow:0 0 16px rgba(124,244,106,.2)!important;
+}
+.tab-story.news-card.has-image{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 160px!important;
+  gap:0!important;
+  align-items:stretch!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+.tab-story.news-card.has-image .story-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:space-between!important;
+  padding:14px 16px!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+.tab-story.news-card .story-title,
+.tab-story.news-card h4{
+  margin:0 0 10px 0!important;
+  font-size:14.5px!important;
+  font-weight:500!important;
+  line-height:1.4!important;
+  color:var(--text)!important;
+  letter-spacing:-.005em!important;
+  white-space:normal!important;
+}
+.tab-story.news-card .story-meta,
+.tab-story.news-card .meta{
+  margin:0!important;
+  font-size:11.5px!important;
+  font-weight:500!important;
+  color:var(--signal-muted,#7891aa)!important;
+  letter-spacing:.02em!important;
+  font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important;
+}
+.tab-story.news-card.has-image .story-media{
+  min-height:120px!important;
+  width:160px!important;
+  background-size:cover!important;
+  background-position:center!important;
+  border-left:1px solid var(--signal-line)!important;
+  position:relative!important;
+  flex-shrink:0!important;
+}
+.tab-story.news-card.has-image .story-media:after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  background:linear-gradient(90deg,rgba(6,17,31,.08),rgba(6,17,31,0) 38%)!important;
+  pointer-events:none!important;
+}
+@media(max-width:680px){
+  .tab-story.news-card.has-image{
+    grid-template-columns:1fr!important;
+  }
+  .tab-story.news-card.has-image .story-media{
+    order:-1!important;
+    width:100%!important;
+    min-height:150px!important;
+    border-left:none!important;
+    border-bottom:1px solid var(--signal-line)!important;
+  }
 }
 .story-stream-grid{
   border-color:var(--signal-line)!important;

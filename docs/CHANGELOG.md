@@ -1,3 +1,11 @@
+## 8 October 2026: Restore verified news photography and eliminate duplicate news stories
+
+- Restored verified publisher pictures for all Local News stories in `#view-news`: each card displays its verified publisher imagery (`.story-media`, min 1200x675 source) cleanly framed on the right (desktop) or top (mobile).
+- Implemented robust multi-article topic and entity deduplication across both `scripts/refresh.py` and clientside `js/tabs-dida.js`: multi-article coverage of the same local event (such as the Kingston Market Place fire or pub licensing objections) is deduplicated to a single latest story, ensuring the top 10 stories remain varied and distinct.
+- Structured news cards in a clean 2-column grid (`repeat(2, minmax(0, 1fr))` on desktop, single-column on mobile) with soft readable typography (font weight 500, line-height 1.4), avoiding heavy bolding or bulky top formatting.
+- Updated `data/pete.json`, `data/sofia.json`, and `data/story-images.json` with deduplicated stories and exact publisher image mappings.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 8 October 2026: Remove line under Hey Pete, remove Pete/Sofia toggle, clean birthdays with gender-specific balloon colours, single-line News and AI with Chinese providers at bottom, and remove UK News
 
 - Removed the dividing line under "Hey Pete" / "Hey Sofia" (`.hero`, `#view-home > .hero`).

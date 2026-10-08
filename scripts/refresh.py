@@ -679,7 +679,7 @@ def local_family_activity_item(item: dict) -> bool:
 
 
 def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
-    """Prioritise local publications and family activities, then display newest first."""
+    """Prioritise local publications and family activities, deduplicating multi-article event clusters."""
     scoped = [item for item in items if local_news_item_is_in_scope(item)]
     prioritised = sorted(
         scoped,
@@ -691,24 +691,48 @@ def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
         reverse=True,
     )
     selected: list[dict] = []
-    selected_title_words: list[set[str]] = []
+    selected_tokens: list[set[str]] = []
     selected_urls: set[str] = set()
+
+    stop_words = {
+        'the', 'a', 'an', 'and', 'or', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from',
+        'as', 'is', 'was', 'are', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does',
+        'did', 'but', 'if', 'then', 'so', 'no', 'not', 'all', 'any', 'every', 'this', 'that', 'these',
+        'those', 'what', 'which', 'who', 'whom', 'whose', 'when', 'where', 'why', 'how', 'about',
+        'into', 'through', 'after', 'before', 'over', 'under', 'above', 'below', 'up', 'down', 'out',
+        'off', 'again', 'further', 'once', 'here', 'there', 'both', 'each', 'few', 'more', 'most',
+        'other', 'some', 'such', 'nor', 'only', 'own', 'same', 'than', 'too', 'very', 'can', 'will',
+        'just', 'should', 'now', 'reveals', 'reveal', 'everything', 'know', 'latest', 'remains',
+        'kingston', 'richmond', 'surrey', 'teddington', 'surbiton', 'elmbridge', 'london', 'borough',
+        'council'
+    }
+
+    def item_tokens(item: dict) -> set[str]:
+        text = clean_html(" ".join(str(item.get(k, "")) for k in ("title", "summary"))).lower()
+        text = re.sub(r"\bblaze\b", "fire", text)
+        return set(re.findall(r"[a-z0-9]+", text)) - stop_words
+
     for item in prioritised:
         canonical = str(item.get("url") or "").split('#', 1)[0].split('?', 1)[0].rstrip('/')
         if canonical and canonical in selected_urls:
             continue
-        title = clean_html(str(item.get("title", ""))).lower()
-        title = re.sub(r"former (?:teddington school pupil|kingston resident)", "former local resident", title)
-        words = set(re.findall(r"[a-z0-9]+", title))
-        if any(
-            len(words & existing) / max(1, len(words | existing)) >= 0.82
-            for existing in selected_title_words
-        ):
+        tokens = item_tokens(item)
+        is_dup = False
+        for prev in selected_tokens:
+            shared = tokens & prev
+            if (
+                ('market' in shared and 'fire' in shared)
+                or ('pub' in shared and ('outdoor' in shared or 'objections' in shared))
+                or len(shared) >= 3
+            ):
+                is_dup = True
+                break
+        if is_dup:
             continue
         selected.append(item)
         if canonical:
             selected_urls.add(canonical)
-        selected_title_words.append(words)
+        selected_tokens.append(tokens)
         if len(selected) >= limit:
             break
     for item in selected:

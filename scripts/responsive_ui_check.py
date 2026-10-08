@@ -411,9 +411,17 @@ def check_viewport(browser, name: str) -> None:
         if len(local_news_order["actual"]) != 10:
             raise AssertionError(f"{name}: Local News must show exactly top 10 stories: {len(local_news_order['actual'])}")
 
-        single_line_rows = page.locator('#newsTabGroups .tab-group .tab-story.story-row')
-        if single_line_rows.count() != 10:
-            raise AssertionError(f"{name}: Local News stories must all be single-line rows: {single_line_rows.count()}")
+        news_cards = page.locator('#newsTabGroups .tab-group .tab-story.news-card')
+        if news_cards.count() != 10:
+            raise AssertionError(f"{name}: Local News stories must show exactly 10 news cards: {news_cards.count()}")
+
+        fire_stories = [t for t in local_news_order["actual"] if "fire" in t.lower() or "blaze" in t.lower()]
+        if len(fire_stories) > 1:
+            raise AssertionError(f"{name}: Local News contains duplicate fire stories: {fire_stories}")
+
+        news_media_count = page.locator('#newsTabGroups .tab-group .story-media').count()
+        if news_media_count < 1:
+            raise AssertionError(f"{name}: Local News stories must display verified publisher pictures (found {news_media_count})")
 
 
         page.locator('[data-view-target="ai"]').click()

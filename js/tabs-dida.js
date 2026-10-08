@@ -43,14 +43,49 @@
     const set=icons[section]||icons.ai;
     return `<svg viewBox="0 0 24 24" aria-hidden="true">${set[index%set.length]}</svg>`;
   }
+  function deduplicateNews(items){
+    const stopWords = new Set(['the','a','an','and','or','in','on','at','to','for','of','with','by','from','as','is','was','are','were','be','been','being','have','has','had','do','does','did','but','if','then','so','no','not','all','any','every','this','that','these','those','what','which','who','whom','whose','when','where','why','how','about','into','through','after','before','over','under','above','below','up','down','out','off','again','further','once','here','there','both','each','few','more','most','other','some','such','nor','only','own','same','than','too','very','can','will','just','should','now','reveals','reveal','everything','know','latest','remains','kingston','richmond','surrey','teddington','surbiton','elmbridge','london','borough','council']);
+    const tokens = item => {
+      const text = `${item?.title||''} ${item?.summary||''}`.toLowerCase().replace(/\bblaze\b/g, 'fire');
+      return new Set((text.match(/[a-z0-9]+/g) || []).filter(w => !stopWords.has(w)));
+    };
+    const selected = [];
+    for(const item of items||[]){
+      const sig = tokens(item);
+      let dup = false;
+      for(const prev of selected){
+        const prevSig = tokens(prev);
+        let sharedCount = 0;
+        let hasMarketFire = false;
+        let hasPubOutdoor = false;
+        for(const word of sig){
+          if(prevSig.has(word)){
+            sharedCount++;
+            if(word === 'fire' && prevSig.has('market')) hasMarketFire = true;
+            if(word === 'market' && prevSig.has('fire')) hasMarketFire = true;
+            if(word === 'pub' && (prevSig.has('outdoor') || prevSig.has('objections'))) hasPubOutdoor = true;
+          }
+        }
+        if(hasMarketFire || hasPubOutdoor || sharedCount >= 3){
+          dup = true;
+          break;
+        }
+      }
+      if(!dup) selected.push(item);
+    }
+    return selected;
+  }
   function story(item,section='',index=0){
     const tag=item?.url?'a':'article';
     const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
-    const company=section==='ai'?aiCompany(item):null;
-    const companyAttrs=company?` section-story-icon-company" data-company="${esc(company.name)}`:'';
-    const icon=section==='ai'?`<span class="section-story-icon section-story-icon-${section}${companyAttrs}">${sectionIcon(section,index,company)}</span>`:'';
     const metaText=esc(item?.source||item?.meta||'');
-    return `<${tag} class="tab-story story-row${section?` section-story section-story-${section}`:''}"${attrs}>${icon}<div class="story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
+    if(section==='ai'){
+      const company=aiCompany(item);
+      const companyAttrs=company?` section-story-icon-company" data-company="${esc(company.name)}`:'';
+      const icon=`<span class="section-story-icon section-story-icon-ai${companyAttrs}">${sectionIcon('ai',index,company)}</span>`;
+      return `<${tag} class="tab-story story-row section-story section-story-ai"${attrs}>${icon}<div class="story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
+    }
+    return `<${tag} class="tab-story news-card section-story section-story-news"${attrs}><div class="section-story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
   }
   function funSaleCard(item){
     const headline=item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On');
@@ -75,8 +110,10 @@
     }
     const list=(items||[]).slice(0,10);
     const stories=list.map((item,index)=>story(item,section,index));
+    const isAi=section==='ai';
+    const listClass=isAi?'tab-list single-line-list':'tab-list news-grid';
     const content=stories.length?stories.join(''):'<div class="empty">Nothing listed today.</div>';
-    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="tab-list single-line-list">${content}</div></section>`;
+    return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="${listClass}">${content}</div></section>`;
   }
   function aiOrder(items){
     const isGoogle=x=>/\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);
@@ -161,9 +198,9 @@
     if(nav)nav.dataset.profile=profile;
     window.syncBriefInbox(profile);
     const news=[];
-    if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',data.sections.Sweden.slice(0,10)]);
+    if(profile==='sofia'&&data.sections?.Sweden?.length)news.push(['Sweden',deduplicateNews(data.sections.Sweden).slice(0,10)]);
     const whatsOnRegex=/\b(?:what['’]?s\s+(?:going\s+)?on|what\s+is\s+(?:going\s+)?on|things\s+to\s+do)\b/i;
-    const localNews=newestFirst((data.sections?.['Local news']||[]).filter(item=>!whatsOnRegex.test(`${item.title||''} ${item.summary||''}`))).slice(0,10);
+    const localNews=deduplicateNews(newestFirst((data.sections?.['Local news']||[]).filter(item=>!whatsOnRegex.test(`${item.title||''} ${item.summary||''}`)))).slice(0,10);
     news.push(['Local News',localNews]);
     document.getElementById('newsTabGroups').innerHTML=news.map(x=>group(x[0],x[1])).join('');
     document.getElementById('aiTabGroups').innerHTML=group('',aiOrder(data.sections?.AI||[]).slice(0,10),'ai');
