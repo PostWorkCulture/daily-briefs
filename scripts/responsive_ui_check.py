@@ -1398,6 +1398,7 @@ def check_viewport(browser, name: str) -> None:
               const steps = cards.map(c => [...c.querySelectorAll('.dida-steps li')].map(li => li.textContent.trim()));
               const hasSaveBtn = document.querySelectorAll('[data-dida-action="save"]').length;
               const hasTriedBtn = document.querySelectorAll('[data-dida-action="tried"]').length;
+              const hasImages = cards.every(c => !!c.querySelector('.dida-card-img'));
               const autumnHunt = cards.find(c => (c.querySelector('.dida-card-title')?.textContent || '').toLowerCase().includes('autumn colour hunt'));
               const autumnSteps = autumnHunt ? [...autumnHunt.querySelectorAll('.dida-steps li')].map(li => li.textContent.trim()) : [];
               return {
@@ -1407,14 +1408,17 @@ def check_viewport(browser, name: str) -> None:
                 colors: [...new Set(titles.map(t => t.color))],
                 hasSaveBtn,
                 hasTriedBtn,
+                hasImages,
                 hasAutumnHunt: !!autumnHunt,
                 autumnSteps
               };
             }
             """
         )
-        if dida["cardCount"] < 5:
-            failures.append(f"Dida does not show enough activity cards: {dida['cardCount']}")
+        if dida["cardCount"] != 4:
+            failures.append(f"Dida does not show exactly 4 activity cards: {dida['cardCount']}")
+        if not dida["hasImages"]:
+            failures.append("Dida activity cards are missing images")
         if len(dida["colors"]) < 4:
             failures.append(f"Dida card titles do not use different colours: {dida['colors']}")
         if not dida["hasAutumnHunt"]:

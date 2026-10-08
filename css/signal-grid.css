@@ -502,15 +502,21 @@ body #homeReminders .home-reminder-card.birthday{
 }
 .dida-grid{
   display:grid!important;
-  grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))!important;
-  gap:16px!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:20px!important;
   margin-top:14px!important;
+}
+@media(max-width:699px){
+  .dida-grid{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+  }
 }
 .dida-card{
   border:1px solid var(--signal-line)!important;
   border-radius:12px!important;
   background:#090c0a!important;
-  padding:20px!important;
+  padding:16px!important;
   display:flex!important;
   flex-direction:column!important;
   gap:12px!important;
@@ -522,6 +528,21 @@ body #homeReminders .home-reminder-card.birthday{
   border-color:rgba(255,255,255,.28)!important;
   background:#111613!important;
   box-shadow:0 0 16px rgba(124,244,106,.2)!important;
+  transform:none!important;
+}
+.dida-card-media{
+  width:100%!important;
+  aspect-ratio:16/9!important;
+  border-radius:8px!important;
+  overflow:hidden!important;
+  background:#141916!important;
+  position:relative!important;
+}
+.dida-card-img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  display:block!important;
 }
 .dida-card-title{
   margin:0!important;

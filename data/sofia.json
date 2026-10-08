@@ -1053,7 +1053,7 @@
     "AI": [
       {
         "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-        "summary": "",
+        "summary": "New lightweight embedding model for text and image retrieval from Google DeepMind.",
         "meta": "Tue 6 Oct",
         "publishedAt": "2026-10-06T20:57:04+01:00",
         "source": "Google DeepMind",
@@ -1062,7 +1062,7 @@
       },
       {
         "title": "Introducing Playground: Create and play custom games",
-        "summary": "Overview of Playground",
+        "summary": "Google introduces Playground, an experimental gaming platform powered by Gemini.",
         "meta": "Wed 7 Oct",
         "publishedAt": "2026-10-07T13:00:00+01:00",
         "source": "Google",
@@ -1071,7 +1071,7 @@
       },
       {
         "title": "The latest AI news we announced in September 2026",
-        "summary": "A video showing the September AI updates",
+        "summary": "Monthly roundup of new Gemini capabilities and search integrations.",
         "meta": "Fri 2 Oct",
         "publishedAt": "2026-10-02T16:00:00+01:00",
         "source": "Google",
@@ -1079,66 +1079,66 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI annualised revenues $20bn less than previously signalled",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T17:42:34+01:00",
-        "source": "Financial Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZWVveXJiRHFiS1dWdDdYZWtlWDdFZ3JjckdfMnRGLVpiZWxzRjdGNGZHcnZtMmZTaXQ4U1Fmc2ZhVzhFNXBxbDRwcThvR2pVMGdKdUR2QW5fQ0ZhSDB5ZzFwOHZLellkZXA1ZW4ySUd5bFo3Uno0VE92Y1ZHVm54MU5DTVA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-        "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T17:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/oracle",
-        "contentType": "article"
-      },
-      {
-        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/pollo-ai",
-        "contentType": "article"
-      },
-      {
-        "title": "Disrupting AI-enabled “false front” operations",
-        "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T01:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-        "contentType": "article"
-      },
-      {
-        "title": "Helping teens learn, plan, and shape the future of AI",
-        "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+        "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
+        "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
         "meta": "Wed 7 Oct",
         "publishedAt": "2026-10-07T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/teens-learn-and-plan",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-haiku-5-5",
         "contentType": "article"
       },
       {
-        "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-        "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T08:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/radisson",
+        "title": "Claude Sonnet 5.5: advancing performance and efficiency",
+        "summary": "Significant speed and efficiency improvements across enterprise reasoning and software engineering.",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T14:00:00+01:00",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
         "contentType": "article"
       },
       {
         "title": "GPT-6 and Intelligent UI for everyone",
-        "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+        "summary": "OpenAI rolls out GPT-6 with real-time interactive canvas and direct visual synthesis.",
         "meta": "Wed 7 Oct",
         "publishedAt": "2026-10-07T01:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/gpt-6-for-everyone",
+        "contentType": "article"
+      },
+      {
+        "title": "Sharing AI progress in mathematics",
+        "summary": "Formalizing open mathematical conjectures with neural theorem provers in Lean.",
+        "meta": "Tue 6 Oct",
+        "publishedAt": "2026-10-06T13:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+        "contentType": "article"
+      },
+      {
+        "title": "DeepSeek-V4.1: faster inference and native multimodal understanding",
+        "summary": "DeepSeek releases V4.1 with optimized Mixture-of-Experts architecture and long-context vision reasoning.",
+        "meta": "Mon 28 Sep",
+        "publishedAt": "2026-09-28T10:00:00+01:00",
+        "source": "DeepSeek",
+        "url": "https://api-docs.deepseek.com/news/news202609",
+        "contentType": "article"
+      },
+      {
+        "title": "Qwen-Image-3.0 and Qwen Code: autonomous task execution across enterprise tools",
+        "summary": "Alibaba Cloud unveils unified image generation and autonomous terminal coding agent models.",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T08:00:00+01:00",
+        "source": "Qwen",
+        "url": "https://qwenlm.github.io/blog/qwen-image-3.0/",
+        "contentType": "article"
+      },
+      {
+        "title": "Kimi K3: scaling open long-horizon agentic reasoning models",
+        "summary": "Moonshot AI details Kimi K3 architecture for complex multi-step reasoning and autonomous coding.",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T12:00:00+01:00",
+        "source": "Moonshot AI",
+        "url": "https://www.moonshot.cn/news/kimi-k3",
         "contentType": "article"
       }
     ],
@@ -1668,7 +1668,7 @@
       ],
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 359.0
+      "preferenceScore": 359
     },
     {
       "title": "UK Forensic Breakthroughs",
@@ -1737,7 +1737,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-08",
-      "preferenceScore": 275.0
+      "preferenceScore": 275
     },
     {
       "title": "Crime Scene Raw",

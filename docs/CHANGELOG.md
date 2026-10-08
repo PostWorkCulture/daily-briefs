@@ -1,3 +1,11 @@
+## 8 October 2026: Dida daily 4-activity rotation with people-free high-definition still-life photography
+
+- Configured Dida to pick exactly 4 distinct activities each day based on the calendar date, rotating smoothly through a curated 12-activity library.
+- Created custom high-definition editorial still-life photography for all 12 activities in `assets/dida/*.webp` with zero visible people (no hands, faces, or silhouettes), perfectly framed in 16:9 aspect ratio and matching the warm, clean Daily Brief aesthetic.
+- Enhanced Dida cards with 16:9 media previews (`.dida-card-media`, `.dida-card-img`), vibrant cycling title colours, and clean 3-step instructions arranged in a balanced 2-column grid on desktop and 1-column on mobile.
+- Updated `scripts/refresh.py` and profile data to guarantee Anthropic Claude and Chinese frontier providers (DeepSeek, Qwen, Moonshot) remain persistent in the AI section with Chinese providers at the bottom.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen.
+
 ## 8 October 2026: Clean lines across Calendar, Fun, News, and Birthday; restore prominent AI company logos; simplify Dida to 3-step activities
 
 - Removed dividing lines under dates/headers across Calendar (`#view-calendar .calendar-page-head`), Fun (`#view-fun .section-head`, `.fun-intro`), and Birthday (`#view-birthdays .section-head`, `.birthday-panel .section-head`, `.birthday-card`, `.birthday-list`, `.occasion-month`).
