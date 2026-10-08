@@ -23,7 +23,7 @@
 
   #view-fun .tab-list,
   #view-fun .story-stream-grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   #view-fun .tab-group-fun .tab-list > .fun-story,

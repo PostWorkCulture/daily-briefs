@@ -1,3 +1,12 @@
+## 8 October 2026: AI row spacing, Fun green removal, ultra-compact sale tiles, max 2 events per row, and removing checked dates
+
+- In the AI section, significantly increased spacing between article rows (`gap: 18px !important;`, row padding `16px 20px !important;`, min-height 56px) so each article row has generous breathing room and is uncrowded.
+- In the Fun section, removed all green accents, borders, and text from the top sale tiles; redesigned them into ultra-compact ribbons (`min-height: 36px`, `padding: 6px 12px`, `font-size: 12.5px`, neutral silver/white discount and cta).
+- Removed all green from other Fun event cards and details: `.fun-location` set to neutral silver/grey (`#a0aba4`), `.fun-link` set to crisp white underlined link (`#f4f7f2`), `.fun-field` dividers set to subtle neutral border (`rgba(255,255,255,.08)`), and active filter buttons set to dark neutral charcoal.
+- Enforced a strict maximum of 2 events per row across desktop and widescreen viewports (`grid-template-columns: repeat(2, minmax(0, 1fr)) !important;`), single-column on mobile.
+- Removed all "Checked [date]" verification metadata from Fun cards, aligning with the principle that all information in the brief is verified daily.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 8 October 2026: Dida daily 4-activity rotation with people-free high-definition still-life photography
 
 - Configured Dida to pick exactly 4 distinct activities each day based on the calendar date, rotating smoothly through a curated 12-activity library.

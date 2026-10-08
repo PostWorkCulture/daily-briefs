@@ -274,13 +274,35 @@ body #homeReminders .home-reminder-card.birthday{
   font-weight:500!important;
   letter-spacing:.02em!important;
 }
-#view-ai .tab-list,
+#view-ai .tab-list{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:18px!important;
+  border-radius:8px!important;
+  background:transparent!important;
+}
 .tab-list.single-line-list{
   display:flex!important;
   flex-direction:column!important;
   gap:6px!important;
   border-radius:8px!important;
   background:transparent!important;
+}
+#view-ai .story-row{
+  padding:16px 20px!important;
+  min-height:56px!important;
+  gap:16px!important;
+}
+#view-fun .tab-list{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:18px!important;
+}
+@media(max-width:699px){
+  #view-fun .tab-list{
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
 }
 .story-row{
   display:flex!important;
