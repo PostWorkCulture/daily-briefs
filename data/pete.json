@@ -21,7 +21,7 @@
     "temp": "11°",
     "summary": "Light rain",
     "condition": "Light rain",
-    "currentRainChance": 80,
+    "currentRainChance": 50,
     "daily": [
       {
         "date": "2026-10-08",
@@ -29,7 +29,7 @@
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 90,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Light Rain expected · rain chance around 90%",
+      "detail": "Light Rain expected · rain chance around 80%",
       "source": "Met Office"
     },
     "source": "Met Office",
