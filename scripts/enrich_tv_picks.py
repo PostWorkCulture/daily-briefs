@@ -179,11 +179,44 @@ def channel_for(show: dict[str, Any]) -> dict[str, Any]:
     return show.get("webChannel") or show.get("network") or {}
 
 
-def exact_artwork(episode: dict[str, Any], show: dict[str, Any]) -> str:
-    for image in (episode.get("image") or {}, show.get("image") or {}):
-        src = str(image.get("original") or "").strip()
-        if src.startswith("https://static.tvmaze.com/uploads/images/original_untouched/"):
-            return src
+SHOW_IMAGES_CACHE: dict[int, list[dict[str, Any]]] = {}
+
+
+def exact_artwork(episode: dict[str, Any], show: dict[str, Any], client: requests.Session | None = None) -> str:
+    ep_img = str((episode.get("image") or {}).get("original") or "").strip()
+    if ep_img.startswith("https://static.tvmaze.com/uploads/images/original_untouched/"):
+        return ep_img
+
+    show_id = show.get("id")
+    if show_id and client:
+        if show_id not in SHOW_IMAGES_CACHE:
+            try:
+                res = client.get(f"https://api.tvmaze.com/shows/{show_id}/images", timeout=8)
+                if res.status_code == 200:
+                    SHOW_IMAGES_CACHE[show_id] = res.json()
+                else:
+                    SHOW_IMAGES_CACHE[show_id] = []
+            except Exception:
+                SHOW_IMAGES_CACHE[show_id] = []
+        gallery = SHOW_IMAGES_CACHE.get(show_id) or []
+        backgrounds = [
+            img for img in gallery
+            if img.get("type") == "background"
+            and str(img.get("resolutions", {}).get("original", {}).get("url") or "").startswith("https://static.tvmaze.com/uploads/images/original_untouched/")
+        ]
+        if backgrounds:
+            backgrounds.sort(
+                key=lambda x: (
+                    x.get("resolutions", {}).get("original", {}).get("width", 0) *
+                    x.get("resolutions", {}).get("original", {}).get("height", 0)
+                ),
+                reverse=True
+            )
+            return backgrounds[0]["resolutions"]["original"]["url"]
+
+    show_img = str((show.get("image") or {}).get("original") or "").strip()
+    if show_img.startswith("https://static.tvmaze.com/uploads/images/original_untouched/"):
+        return show_img
     return ""
 
 
@@ -269,7 +302,7 @@ def normalize_channel_name(name: str) -> str:
     return CHANNEL_NAME_OVERRIDES.get(cleaned, cleaned)
 
 
-def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
+def candidate(episode: dict[str, Any], day: date, client: requests.Session | None = None) -> dict[str, Any] | None:
     show = show_for(episode)
     title = clean_text(show.get("name") or "", 90)
     if not title or EXCLUDED_TITLES.search(title):
@@ -294,7 +327,7 @@ def candidate(episode: dict[str, Any], day: date) -> dict[str, Any] | None:
     if not web_channel and network_country != "GB":
         return None
 
-    artwork = exact_artwork(episode, show)
+    artwork = exact_artwork(episode, show, client=client)
     if not artwork:
         return None
     try:
@@ -399,7 +432,7 @@ def fetch_candidates(day: date, client: requests.Session | None = None) -> list[
 
     by_show: dict[str, dict[str, Any]] = {}
     for episode in episodes:
-        item = candidate(episode, day)
+        item = candidate(episode, day, client=client)
         if not item:
             continue
         key = str(item.get("showId") or item["title"]).lower()

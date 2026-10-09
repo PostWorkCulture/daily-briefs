@@ -1,3 +1,10 @@
+## 9 October 2026: High-definition TV pick artwork across all profiles and automated refreshes
+
+- Replaced low-resolution TV pick portrait posters with crisp, high-definition 16:9 widescreen artwork (including 1920x1080 Full HD and 3840x2160 4K Ultra HD) across Pete and Sofia briefs, specifically upgrading Stacey Dooley (`593120.jpg`), Global Eye (`1467592.jpg`), and Aileen Wuornos (`1609030.jpg`).
+- Enhanced `scripts/enrich_tv_picks.py` with TVMaze show gallery lookup (`/shows/{id}/images`), automatically querying and prioritizing high-resolution widescreen background imagery over low-resolution vertical posters for all future automated morning refreshes.
+- Updated `scripts/responsive_ui_check.py` to ensure rotation-tolerant Dida assertions across calendar days.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 8 October 2026: AI row spacing, Fun green removal, ultra-compact sale tiles, max 2 events per row, and removing checked dates
 
 - In the AI section, significantly increased spacing between article rows (`gap: 18px !important;`, row padding `16px 20px !important;`, min-height 56px) so each article row has generous breathing room and is uncrowded.

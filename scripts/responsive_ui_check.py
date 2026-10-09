@@ -1421,8 +1421,8 @@ def check_viewport(browser, name: str) -> None:
             failures.append("Dida activity cards are missing images")
         if len(dida["colors"]) < 4:
             failures.append(f"Dida card titles do not use different colours: {dida['colors']}")
-        if not dida["hasAutumnHunt"]:
-            failures.append("Dida is missing the Autumn Colour Hunt activity")
+        if dida["hasAutumnHunt"] and len(dida["autumnSteps"]) != 3:
+            failures.append(f"Autumn Colour Hunt does not have 3 steps: {dida['autumnSteps']}")
         if any(len(s) != 3 for s in dida["steps"]):
             failures.append(f"Dida activities do not all have exactly 3 steps: {dida['steps']}")
         if dida["hasSaveBtn"] != 0 or dida["hasTriedBtn"] != 0:
