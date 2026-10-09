@@ -475,7 +475,9 @@ body #homeReminders .home-reminder-card.birthday{
   grid-column:auto!important;
   grid-row:auto!important;
 }
-#view-arsenal .arsenal-news-item{
+#view-arsenal .arsenal-news-item,
+#view-arsenal .arsenal-transfer-item,
+#view-arsenal .arsenal-rumour-item{
   display:flex!important;
   flex-direction:column!important;
   justify-content:space-between!important;
@@ -491,7 +493,11 @@ body #homeReminders .home-reminder-card.birthday{
   transition:border-color .18s,background .18s,box-shadow .18s;
 }
 #view-arsenal .arsenal-news-item:hover,
-#view-arsenal .arsenal-news-item:focus-visible{
+#view-arsenal .arsenal-news-item:focus-visible,
+#view-arsenal .arsenal-transfer-item:hover,
+#view-arsenal .arsenal-transfer-item:focus-visible,
+#view-arsenal .arsenal-rumour-item:hover,
+#view-arsenal .arsenal-rumour-item:focus-visible{
   border-color:rgba(227,6,19,.45)!important;
   box-shadow:0 0 16px rgba(227,6,19,.18)!important;
 }
@@ -534,7 +540,13 @@ body #homeReminders .home-reminder-card.birthday{
 }
 #view-arsenal .arsenal-news-item .story-title,
 #view-arsenal .arsenal-news-item h4,
-#view-arsenal .arsenal-news-item b{
+#view-arsenal .arsenal-news-item b,
+#view-arsenal .arsenal-transfer-item .story-title,
+#view-arsenal .arsenal-transfer-item h4,
+#view-arsenal .arsenal-transfer-item b,
+#view-arsenal .arsenal-rumour-item .story-title,
+#view-arsenal .arsenal-rumour-item h4,
+#view-arsenal .arsenal-rumour-item b{
   margin:0 0 10px 0!important;
   font-size:16px!important;
   font-weight:600!important;
@@ -545,32 +557,17 @@ body #homeReminders .home-reminder-card.birthday{
 }
 #view-arsenal .arsenal-news-item .story-meta,
 #view-arsenal .arsenal-news-item .meta,
-#view-arsenal .arsenal-news-item span{
+#view-arsenal .arsenal-news-item span,
+#view-arsenal .arsenal-transfer-item .story-meta,
+#view-arsenal .arsenal-transfer-item .meta,
+#view-arsenal .arsenal-transfer-item span,
+#view-arsenal .arsenal-rumour-item .story-meta,
+#view-arsenal .arsenal-rumour-item .meta,
+#view-arsenal .arsenal-rumour-item span{
   margin:0!important;
   font-size:11.5px!important;
   font-weight:500!important;
   color:#66728c!important;
-  letter-spacing:.02em!important;
-  text-transform:none!important;
-}
-#view-arsenal .arsenal-transfer-item .story-title,
-#view-arsenal .arsenal-transfer-item h4,
-#view-arsenal .arsenal-transfer-item b{
-  margin:0 0 10px 0!important;
-  font-size:16px!important;
-  font-weight:600!important;
-  line-height:1.35!important;
-  color:#fff!important;
-  letter-spacing:-.005em!important;
-  white-space:normal!important;
-}
-#view-arsenal .arsenal-transfer-item .story-meta,
-#view-arsenal .arsenal-transfer-item .meta,
-#view-arsenal .arsenal-transfer-item span{
-  margin:0!important;
-  font-size:11.5px!important;
-  font-weight:500!important;
-  color:rgba(255,255,255,.68)!important;
   letter-spacing:.02em!important;
   text-transform:none!important;
 }

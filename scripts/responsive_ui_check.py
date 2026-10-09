@@ -732,9 +732,22 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(
                 f"{name}: supplied cannon is not shared by the Arsenal masthead and nav: {cannon_asset}"
             )
-        transfer_background = page.locator('.arsenal-transfers').evaluate("el => getComputedStyle(el).backgroundImage")
-        if 'rgb(7, 29, 73)' not in transfer_background:
-            raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")
+        transfer_card_info = page.evaluate(
+            """
+            () => {
+              const card = document.querySelector('.arsenal-transfer-item');
+              const title = document.querySelector('.arsenal-transfer-item .story-title, .arsenal-transfer-item b');
+              return {
+                bg: card ? getComputedStyle(card).backgroundColor : '',
+                titleColor: title ? getComputedStyle(title).color : ''
+              };
+            }
+            """
+        )
+        if transfer_card_info["bg"] != "rgb(255, 255, 255)":
+            raise AssertionError(f"{name}: Arsenal transfer cards do not match Club news white theme: {transfer_card_info}")
+        if transfer_card_info["titleColor"] != "rgb(7, 29, 73)":
+            raise AssertionError(f"{name}: Arsenal transfer titles are not navy on white: {transfer_card_info}")
         fixture_card_info = page.evaluate(
             """
             () => {
@@ -762,7 +775,7 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Arsenal current league position is missing: {league_text}")
         if __import__('re').search(r'\b(?:pts?|points?|played|matches)\b', league_text, __import__('re').I):
             raise AssertionError(f"{name}: Arsenal position card still shows table details: {league_text}")
-        for selector in ('#lastResultCard', '#nextFixtureCard', '#leagueCard', '.arsenal-news-item'):
+        for selector in ('#lastResultCard', '#nextFixtureCard', '#leagueCard', '.arsenal-news-item', '.arsenal-transfer-item'):
             locator = page.locator(selector).first
             if locator.count():
                 locator.hover()

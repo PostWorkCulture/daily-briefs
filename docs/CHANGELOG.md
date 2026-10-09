@@ -1,3 +1,15 @@
+## 9 October 2026: Match all content below Latest Club news (Transfer watch and Reporter watch) to white/red theme
+
+- Converted the entire section below Latest Club news (Transfer watch and Reporter watch) to the same clean white/red colour format:
+  - Container `.arsenal-transfers` transitioned from dark navy gradient to the panel's clean light paper background with a subtle top border (`rgba(7,29,73,.12)`).
+  - Category kickers (`TRUSTED SOURCES ONLY`, `UNCONFIRMED · PUBLIC X POSTS`) updated to bold uppercase Arsenal red (`#e30613`).
+  - Section titles (`Transfer watch`, `Reporter watch`) styled in crisp deep navy (`#071d49`).
+  - Source links (`.arsenal-transfer-sources a`) restyled as clean white pills with deep navy ink, subtle border, and vibrant red hover.
+  - Transfer and Reporter cards (`.arsenal-transfer-item`, `.arsenal-rumour-item`) converted from dark/yellow tinted backgrounds to clean white cards (`background: #fff; border: 1px solid rgba(7,29,73,.12)`) with deep navy headlines (`#071d49`), muted secondary metadata (`#66728c`), and red edge-glow on hover/focus.
+- Updated `scripts/responsive_ui_check.py` to assert that transfer cards use the white theme and deep navy typography with red hover feedback.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to record the approved white/red theme across all content below match centre.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Format Birthday tiles on separate lines and update balloon style to glossy triple balloons
 
 - Formatted all Birthday tiles on three clean, separate lines:

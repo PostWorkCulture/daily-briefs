@@ -92,23 +92,23 @@
 #view-arsenal .arsenal-news-item span,#view-arsenal .arsenal-news-item .meta{color:#66728c!important;font-size:11.5px!important;font-weight:500!important;letter-spacing:.02em;text-transform:none!important}
 #view-arsenal .arsenal-news-item b,#view-arsenal .arsenal-news-item .story-title,#view-arsenal .arsenal-news-item h4{margin:0 0 10px 0!important;font-size:16px!important;font-weight:600!important;line-height:1.35!important;color:var(--arsenal-navy)!important;letter-spacing:-.005em!important}
 
-#view-arsenal .arsenal-transfers{margin:0;padding:24px 20px 22px;border:0;color:#fff;background:linear-gradient(145deg,var(--arsenal-navy-soft),var(--arsenal-navy))}
+#view-arsenal .arsenal-transfers{margin:0;padding:24px 20px 22px;border:0;border-top:1px solid rgba(7,29,73,.12);color:var(--arsenal-ink);background:transparent!important}
 #view-arsenal .arsenal-transfer-head{margin-bottom:13px}
-#view-arsenal .arsenal-transfer-head span{color:var(--arsenal-yellow)}
-#view-arsenal .arsenal-transfer-head h3{color:#fff;font-size:23px;letter-spacing:-.035em}
-#view-arsenal .arsenal-transfer-sources a{border-color:rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.08)}
+#view-arsenal .arsenal-transfer-head span{color:var(--arsenal-red)!important;font-size:9px;font-weight:950;letter-spacing:.15em;text-transform:uppercase}
+#view-arsenal .arsenal-transfer-head h3{color:var(--arsenal-navy)!important;font-size:22px;letter-spacing:-.035em}
+#view-arsenal .arsenal-transfer-sources a{border:1px solid rgba(7,29,73,.18);color:var(--arsenal-navy);background:#fff;border-radius:999px;padding:6px 12px;font-size:11px;font-weight:700;text-decoration:none;transition:border-color .18s,color .18s,box-shadow .18s}
 #view-arsenal .arsenal-transfer-sources a:hover,
-#view-arsenal .arsenal-transfer-sources a:focus-visible{border-color:var(--arsenal-yellow);box-shadow:0 0 0 2px rgba(255,213,31,.16),0 0 18px rgba(255,213,31,.28)}
+#view-arsenal .arsenal-transfer-sources a:focus-visible{border-color:var(--arsenal-red);color:var(--arsenal-red);box-shadow:0 0 12px rgba(227,6,19,.2)}
 #view-arsenal .arsenal-transfer-list{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
-#view-arsenal .arsenal-transfer-item{display:flex!important;flex-direction:column!important;justify-content:space-between!important;min-height:100px;padding:14px 16px!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:6px!important;color:#fff;background:rgba(255,255,255,.08)!important;text-decoration:none!important;box-sizing:border-box!important}
-#view-arsenal .arsenal-transfer-item .story-title,#view-arsenal .arsenal-transfer-item b,#view-arsenal .arsenal-transfer-item h4{margin:0 0 10px 0!important;font-size:16px!important;font-weight:600!important;line-height:1.35!important;color:#fff!important;letter-spacing:-.005em!important}
-#view-arsenal .arsenal-transfer-item .story-meta,#view-arsenal .arsenal-transfer-item span,#view-arsenal .arsenal-transfer-item small{color:rgba(255,255,255,.68)!important;font-size:11.5px!important;font-weight:500!important;letter-spacing:.02em;text-transform:none!important}
-#view-arsenal .arsenal-transfer-empty{border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.66)}
-#view-arsenal .arsenal-rumour-head{border-top-color:rgba(255,213,31,.24)}
-#view-arsenal .arsenal-rumour-head span{color:var(--arsenal-yellow)}
-#view-arsenal .arsenal-rumour-head h4{color:#fff}
-#view-arsenal .arsenal-rumour-head p{color:rgba(255,255,255,.62)}
-#view-arsenal .arsenal-rumour-item{border-color:rgba(255,213,31,.2);background:rgba(255,213,31,.08)!important}
+#view-arsenal .arsenal-transfer-item{display:flex!important;flex-direction:column!important;justify-content:space-between!important;min-height:120px!important;padding:14px 16px!important;border:1px solid rgba(7,29,73,.12)!important;border-radius:6px!important;color:var(--arsenal-ink)!important;background:#fff!important;box-shadow:0 4px 14px rgba(7,29,73,.06)!important;text-decoration:none!important;box-sizing:border-box!important}
+#view-arsenal .arsenal-transfer-item .story-title,#view-arsenal .arsenal-transfer-item b,#view-arsenal .arsenal-transfer-item h4{margin:0 0 10px 0!important;font-size:16px!important;font-weight:600!important;line-height:1.35!important;color:var(--arsenal-navy)!important;letter-spacing:-.005em!important}
+#view-arsenal .arsenal-transfer-item .story-meta,#view-arsenal .arsenal-transfer-item span,#view-arsenal .arsenal-transfer-item small{color:#66728c!important;font-size:11.5px!important;font-weight:500!important;letter-spacing:.02em;text-transform:none!important}
+#view-arsenal .arsenal-transfer-empty{border:1px dashed rgba(7,29,73,.2)!important;border-radius:6px!important;padding:16px!important;color:#66728c!important;background:#fff!important;font-size:13px!important}
+#view-arsenal .arsenal-rumour-head{margin-top:24px;padding-top:16px;border-top:1px solid rgba(7,29,73,.12)!important}
+#view-arsenal .arsenal-rumour-head span{color:var(--arsenal-red)!important;font-size:9px;font-weight:950;letter-spacing:.15em;text-transform:uppercase}
+#view-arsenal .arsenal-rumour-head h4{color:var(--arsenal-navy)!important;font-size:18px;margin:4px 0 0}
+#view-arsenal .arsenal-rumour-head p{color:#66728c!important;font-size:12px;margin:4px 0 12px}
+#view-arsenal .arsenal-rumour-item{border:1px solid rgba(7,29,73,.12)!important;border-radius:6px!important;background:#fff!important;box-shadow:0 4px 14px rgba(7,29,73,.06)!important}
 
 #view-arsenal .match-card:hover,
 #view-arsenal .match-card:focus-within,
