@@ -1,3 +1,14 @@
+## 9 October 2026: Transparent red sale tiles in Fun section
+
+- **Subtle transparent red styling for sale tiles**:
+  - Replaced the opaque solid dark red background (`linear-gradient(135deg, #b71c1c, #8e0000)`) with a translucent red tint (`linear-gradient(135deg, rgba(220, 38, 38, 0.15), rgba(185, 28, 28, 0.08))`).
+  - Replaced the solid red border with a subtle transparent red border (`1px solid rgba(239, 68, 68, 0.28)`).
+  - Removed the prominent red outer glow shadow (`box-shadow: none`).
+  - Softened the discount badge to a quiet pastel rose pill (`color: #fca5a5; background: rgba(239, 68, 68, 0.16); border: 1px solid rgba(239, 68, 68, 0.25)`).
+  - Streamlined CTA button with transparent accents and responsive hover states.
+  - Sanitized date range strings in H&M and Zara sales to standard clean hyphens (`9-19 October 2026`, `10-28 October 2026`).
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Clean Arsenal section headers, remove emojis, align Transfer watch text, and strip 'Unconfirmed' / 'Trusted report' labels
 
 - **Arsenal headers**:
