@@ -170,9 +170,7 @@
   }
 
   function renderBalloonSvg(p, name='', compact=false) {
-    const [a, b, accent] = p;
-    const id = `${compact ? 'c' : 'f'}${hashStr(name).toString(36)}`;
-    return `<svg class="hq-balloon${compact ? ' compact' : ''}" viewBox="0 0 70 86" aria-hidden="true"><defs><linearGradient id="g-${id}" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="${a}"/><stop offset="100%" stop-color="${b}"/></linearGradient><filter id="s-${id}" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="rgba(0,0,0,.45)"/></filter></defs><g filter="url(#s-${id})"><ellipse cx="36" cy="31" rx="22" ry="26" fill="url(#g-${id})" stroke="rgba(255,255,255,.2)" stroke-width="1.3"/><ellipse cx="27" cy="21" rx="7" ry="10" fill="rgba(255,255,255,.45)" transform="rotate(-18 27 21)"/><path d="M36 56C34 60 32 62 29 64c4 0 7 2 10 5 2-3 5-5 9-5-4-2-6-4-8-8Z" fill="${accent}"/><path d="M37 68c3 6 5 9 8 15" fill="none" stroke="${accent}" stroke-width="2.3" stroke-linecap="round"/></g></svg>`;
+    return `<img class="hq-balloon${compact ? ' compact' : ''}" src="assets/icons/birthday-balloons.webp" alt="" aria-hidden="true" width="${compact ? 28 : 46}" height="${compact ? 35 : 54}">`;
   }
 
   function milestoneText(item) {
@@ -241,27 +239,41 @@
         .occasion-month h3{margin:0 0 2px;font-size:15px;color:rgba(255,255,255,0.7)!important}
         .birthday-month-grid{display:grid;grid-template-columns:1fr;gap:10px}
         @media(min-width:700px){.birthday-month-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
-        .birthday-card{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid var(--signal-line,rgba(255,255,255,0.08))!important;border-radius:12px;background:#0b0e0c!important;box-shadow:none!important;color:var(--text,#fff)!important}
+        .birthday-card{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid transparent!important;border-radius:12px;background:#0b0e0c!important;box-shadow:none!important;color:var(--text,#fff)!important;min-height:86px}
         .birthday-card,.home-reminder-card.birthday{transition:border-color .18s,box-shadow .18s;transform:none!important}
         .birthday-card:hover,.birthday-card:focus-visible,.home-reminder-card.birthday:hover,.home-reminder-card.birthday:focus-visible{border-color:rgba(124,244,106,.72)!important;box-shadow:inset 0 0 0 1px rgba(124,244,106,.12),0 0 0 1px rgba(124,244,106,.52),0 0 22px rgba(124,244,106,.18)!important;transform:none!important;outline:none}
-        .birthday-avatar{width:46px;height:54px;display:grid;place-items:center;background:transparent!important;border-radius:0}
-        .birthday-copy{flex:1;min-width:0}
-        .birthday-card strong{display:block;font-size:15px;font-weight:600;color:var(--text,#fff)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        .birthday-avatar{width:46px;height:54px;display:grid;place-items:center;background:transparent!important;border-radius:0;flex-shrink:0}
+        .birthday-copy{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+        .birthday-name{display:block;font-size:16px;font-weight:700;color:var(--text,#fff)!important;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        .birthday-date{display:block;font-size:13px;font-weight:500;color:rgba(255,255,255,0.75)!important;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        .birthday-milestone{display:block;font-size:12.5px;font-weight:600;color:#ffd477!important;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
         .birthday-card small{display:none}
         .birthday-empty{padding:24px;border:1px dashed var(--signal-line,rgba(255,255,255,0.1));border-radius:12px;color:var(--muted,#8b949e)}
         #homeReminders .home-reminder-card.birthday{background:#0b0e0c!important;border-color:var(--signal-line,rgba(255,255,255,0.08))!important;box-shadow:none!important}
         .home-reminder-card.birthday .home-reminder-top{color:var(--text,#fff)}.home-reminder-card.birthday b{color:var(--text,#fff)}
-        .hq-balloon{width:44px;height:52px;display:block;overflow:visible}.hq-balloon.compact{width:28px;height:35px}
+        .hq-balloon{width:44px;height:52px;object-fit:contain;display:block;overflow:visible}.hq-balloon.compact{width:28px;height:35px}
       `;
       document.head.appendChild(style);
     }
   }
 
   function occasionCard(item) {
-    const text = birthdayRowText(item);
+    const d = item.nextDate;
+    const dayOrdinal = ordinal(d.getDate());
+    const monthName = d.toLocaleDateString('en-GB', { month: 'long' });
+    const weekday = d.toLocaleDateString('en-GB', { weekday: 'long' });
+    const datePart = `${dayOrdinal} ${monthName} - ${weekday}`;
+
+    let milestone = '';
+    if (item.year) {
+      const age = d.getFullYear() - Number(item.year);
+      if (Number.isFinite(age) && age >= 0) {
+        milestone = item.type === 'anniversary' ? `${age} years!` : `Turns ${age}!`;
+      }
+    }
     const p = paletteForPerson(item.name);
     const balloon = renderBalloonSvg(p, item.name, false);
-    return `<article class="birthday-card hq-colour" data-person-name="${esc(item.name)}" tabindex="0"><div class="birthday-avatar hq-balloon-avatar" data-hq-name="${esc(item.name)}">${balloon}</div><div class="birthday-copy"><strong class="birthday-text">${esc(text)}</strong></div></article>`;
+    return `<article class="birthday-card hq-colour" data-person-name="${esc(item.name)}" tabindex="0"><div class="birthday-avatar hq-balloon-avatar" data-hq-name="${esc(item.name)}">${balloon}</div><div class="birthday-copy"><strong class="birthday-name">${esc(item.name)}</strong><span class="birthday-date">${esc(datePart)}</span>${milestone ? `<span class="birthday-milestone">${esc(milestone)}</span>` : ''}</div></article>`;
   }
 
 

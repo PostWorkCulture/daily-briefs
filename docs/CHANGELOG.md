@@ -1,3 +1,15 @@
+## 9 October 2026: Format Birthday tiles on separate lines and update balloon style to glossy triple balloons
+
+- Formatted all Birthday tiles on three clean, separate lines:
+  - Line 1: `Name` (`.birthday-name`, 16px, 700 bold, crisp white).
+  - Line 2: `Birthdate - Day` (`.birthday-date`, 13px, 500 medium, silver e.g. `12th December - Saturday`).
+  - Line 3: `Turns...` (`.birthday-milestone`, 12.5px, 600 semibold, festive gold accent e.g. `Turns 1!` or anniversary duration).
+- Replaced previous code-generated SVG balloons in birthday cards and Home reminders with high-definition, transparent-background glossy triple-balloon artwork (red, gold, and blue balloons tied with curled ribbons) sourced from Pete's attachment (`assets/icons/birthday-balloons.webp` and `assets/icons/birthday-balloons.png`).
+- Preserved single code-native balloon icon (`.nav-balloon`) for bottom navigation.
+- Maintained clean Signal Grid dark surface (`#0b0e0c`) without dividing lines and stationary cyan hover/focus edge-glow.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to reflect the multi-line card format and new balloon artwork.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Enlarge news titles, remove news card arrows, match Arsenal fixture card to white score theme, and format Arsenal articles like News section
 
 - Enlarged news card titles to 16px font size with comfortable 1.35 line height and 600 weight across all news cards.

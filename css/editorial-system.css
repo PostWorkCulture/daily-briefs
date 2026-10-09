@@ -630,14 +630,8 @@ body.profile-unlocked .profile-switch{
     min-height:96px;
     padding:12px!important;
   }
-  .birthday-card>div:nth-child(2){padding-right:62px}
-  .birthday-card>b{
-    position:absolute;
-    top:15px;
-    right:12px;
-  }
   .birthday-avatar.hq-balloon-avatar{width:54px!important;height:62px!important}
-  .hq-balloon:not(.compact){width:52px!important;height:64px!important}
+  .hq-balloon:not(.compact){width:52px!important;height:64px!important;object-fit:contain!important}
 }
 
 @media(min-width:1100px){

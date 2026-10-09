@@ -63,9 +63,7 @@
   }
 
   function balloonSvg(p, name='', compact=false) {
-    const [a,b,accent]=p;
-    const id=svgKey(name,compact);
-    return `<svg class="hq-balloon${compact?' compact':''}" viewBox="0 0 70 86" aria-hidden="true"><defs><linearGradient id="g-${id}" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="${a}"/><stop offset="100%" stop-color="${b}"/></linearGradient><filter id="s-${id}" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="rgba(0,0,0,.45)"/></filter></defs><g filter="url(#s-${id})"><ellipse cx="36" cy="31" rx="22" ry="26" fill="url(#g-${id})" stroke="rgba(255,255,255,.2)" stroke-width="1.3"/><ellipse cx="27" cy="21" rx="7" ry="10" fill="rgba(255,255,255,.45)" transform="rotate(-18 27 21)"/><path d="M36 56C34 60 32 62 29 64c4 0 7 2 10 5 2-3 5-5 9-5-4-2-6-4-8-8Z" fill="${accent}"/><path d="M37 68c3 6 5 9 8 15" fill="none" stroke="${accent}" stroke-width="2.3" stroke-linecap="round"/></g></svg>`;
+    return `<img class="hq-balloon${compact?' compact':''}" src="assets/icons/birthday-balloons.webp" alt="" aria-hidden="true" width="${compact?28:46}" height="${compact?35:54}">`;
   }
 
   function ensureStyles() {
@@ -73,9 +71,9 @@
     const style=document.createElement('style');
     style.id='hqBirthdayBalloonStyles';
     style.textContent=`
-      .birthday-avatar.hq-balloon-avatar{width:46px;height:54px;border-radius:0;background:transparent!important;overflow:visible;display:grid;place-items:center}
-      .hq-balloon{width:44px;height:52px;display:block;overflow:visible}.hq-balloon.compact{width:28px;height:35px}
-      .home-reminder-card.birthday .home-reminder-icon.hq-balloon-home{width:30px;height:36px;background:transparent!important;overflow:visible}
+      .birthday-avatar.hq-balloon-avatar{width:46px;height:54px;border-radius:0;background:transparent!important;overflow:visible;display:grid;place-items:center;flex-shrink:0}
+      .hq-balloon{width:44px;height:52px;object-fit:contain;display:block;overflow:visible}.hq-balloon.compact{width:28px;height:35px}
+      .home-reminder-card.birthday .home-reminder-icon.hq-balloon-home{width:30px;height:36px;background:transparent!important;overflow:visible;display:grid;place-items:center}
     `;
     document.head.appendChild(style);
   }
