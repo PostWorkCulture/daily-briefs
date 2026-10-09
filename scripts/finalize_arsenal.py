@@ -24,6 +24,17 @@ BETTING_TERMS = (
     " sportsbook", " casino ",
 )
 
+EMOJI_PATTERN = re.compile(
+    r"[\U00010000-\U0010ffff\u2600-\u26ff\u2700-\u27bf\u2300-\u23ff\u2b50\u2b55\u200d\ufe0f]+"
+)
+
+
+def strip_emojis(text: str) -> str:
+    if not text:
+        return ""
+    cleaned = EMOJI_PATTERN.sub("", str(text))
+    return re.sub(r"\s{2,}", " ", cleaned).strip()
+
 TRUSTED_RESULT_SOURCES = {
     "arsenal.com": 0,
     "bbc": 1,
@@ -753,6 +764,12 @@ def main() -> None:
         and x.get("sourceType") == "X"
     ], key=lambda x: str(x.get("publishedAt") or ""), reverse=True)[:5]
     arsenal["scope"] = "Arsenal men's first team · all competitions"
+    for coll in (arsenal.get("news", []), arsenal.get("transfers", []), arsenal.get("transferRumours", [])):
+        for item in coll:
+            if "title" in item and item["title"]:
+                item["title"] = strip_emojis(item["title"])
+            if "summary" in item and item["summary"]:
+                item["summary"] = strip_emojis(item["summary"])
 
     apply_last_result_fallback(payload)
 

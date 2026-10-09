@@ -75,17 +75,19 @@
     }
     return selected;
   }
+  const stripEmojis=str=>typeof window.stripEmojis==='function'?window.stripEmojis(str):String(str||'').replace(/\p{Extended_Pictographic}/gu,'').replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{2300}-\u{23FF}\u{2B50}\u{2B55}\u{FE0F}\u{200D}]/gu,'').replace(/\s{2,}/g,' ').trim();
   function story(item,section='',index=0){
     const tag=item?.url?'a':'article';
     const attrs=item?.url?` href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"`:'';
     const metaText=esc(item?.source||item?.meta||'');
+    const titleText=esc(stripEmojis(item?.title||'Untitled'));
     if(section==='ai'){
       const company=aiCompany(item);
       const companyAttrs=company?` section-story-icon-company" data-company="${esc(company.name)}`:'';
       const icon=`<span class="section-story-icon section-story-icon-ai${companyAttrs}">${sectionIcon('ai',index,company)}</span>`;
-      return `<${tag} class="tab-story story-row section-story section-story-ai"${attrs}>${icon}<div class="story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
+      return `<${tag} class="tab-story story-row section-story section-story-ai"${attrs}>${icon}<div class="story-copy"><h4 class="story-title">${titleText}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
     }
-    return `<${tag} class="tab-story news-card section-story section-story-news"${attrs}><div class="section-story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div></${tag}>`;
+    return `<${tag} class="tab-story news-card section-story section-story-news"${attrs}><div class="section-story-copy"><h4 class="story-title">${titleText}</h4><span class="meta story-meta">${metaText}</span></div></${tag}>`;
   }
   function funSaleCard(item){
     const headline=item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On');

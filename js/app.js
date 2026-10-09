@@ -3,6 +3,14 @@ const savedProfile=localStorage.getItem('dailyBriefProfile');
 const requestedProfile=new URLSearchParams(location.search).get('profile');
 const state={profile:['pete','sofia'].includes(requestedProfile)?requestedProfile:['pete','sofia'].includes(savedProfile)?savedProfile:'pete',data:null,calendarRange:'todayTomorrow'};
 const meta={pete:{name:'Pete',intro:'Your day, filtered down to the things worth knowing.'},sofia:{name:'Sofia',intro:'Your personalised day, without having to hunt for it.'}};
+function stripEmojis(str){
+  return String(str||'')
+    .replace(/\p{Extended_Pictographic}/gu,'')
+    .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{2300}-\u{23FF}\u{2B50}\u{2B55}\u{FE0F}\u{200D}]/gu,'')
+    .replace(/\s{2,}/g,' ')
+    .trim();
+}
+if(typeof window!=='undefined'){window.stripEmojis=stripEmojis;}
 function linkEl(tag,item,cls){const el=document.createElement(item?.url?'a':tag);el.className=cls;if(item?.url){el.href=item.url;el.target='_blank';el.rel='noopener noreferrer'}return el}
 function renderRows(container,items=[],empty='Nothing listed'){container.innerHTML='';if(!items.length){container.innerHTML=`<div class="empty">${empty}</div>`;return}items.forEach(item=>{const el=linkEl('div',item,'list-row');el.innerHTML=`${item.meta?`<div class="meta">${item.meta}${item.source?` · ${item.source}`:''}</div>`:''}<h3>${item.title}</h3>${item.summary?`<p>${item.summary}</p>`:''}`;container.appendChild(el)})}
 function renderInterests(items=[]){const box=$('#interestGrid');box.innerHTML='';items.slice(0,3).forEach((item,i)=>{const el=linkEl('div',item,'interest-card'+(i===2?' wide':''));el.innerHTML=`<span>${item.section||'For you'}</span><h3>${item.title}</h3>${item.source?`<small>${item.source}</small>`:''}${item.summary?`<p>${item.summary}</p>`:''}`;box.appendChild(el)});if(!items.length)box.innerHTML='<div class="empty">No personalised items yet.</div>'}
@@ -30,19 +38,19 @@ function renderArsenal(a){
   $('#nextFixtureCard').innerHTML=next?`<span>Next fixture · ${next.competition}</span><strong>${next.opponent}</strong><small>${next.dateLabel} · ${next.kickoff} · ${next.homeAway==='home'?'Home':'Away'}</small>`:'<span>Next fixture</span><strong>—</strong><small>Fixture unavailable</small>';
   $('#leagueCard').innerHTML=a.leaguePosition?`<span>Premier League</span><strong>${a.leaguePosition}${a.leaguePosition===1?'st':a.leaguePosition===2?'nd':a.leaguePosition===3?'rd':'th'}</strong><small>Current position</small>`:'<span>Premier League</span><strong>—</strong><small>Position unavailable</small>';
   const news=$('#arsenalNews');news.innerHTML='';
-  (a.news||[]).slice(0,5).forEach((n,index)=>{const hierarchy=index===0?' arsenal-news-lead':index<3?' arsenal-news-support':' arsenal-news-stream',el=linkEl('div',n,`arsenal-news-item news-card tab-story${hierarchy}`);el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${n.title}</h4><span class="meta story-meta">${n.source||'Team news'}</span></div>`;news.appendChild(el)});
+  (a.news||[]).slice(0,5).forEach((n,index)=>{const hierarchy=index===0?' arsenal-news-lead':index<3?' arsenal-news-support':' arsenal-news-stream',el=linkEl('div',n,`arsenal-news-item news-card tab-story${hierarchy}`);el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${stripEmojis(n.title)}</h4><span class="meta story-meta">${n.source||'Team news'}</span></div>`;news.appendChild(el)});
   const newest=items=>[...(items||[])].sort((left,right)=>(Date.parse(right.publishedAt||'')||0)-(Date.parse(left.publishedAt||'')||0));
   const transfers=$('#arsenalTransfers');transfers.innerHTML='';
   newest(a.transfers).slice(0,6).forEach(item=>{
     const el=linkEl('article',item,'arsenal-transfer-item news-card tab-story');
-    el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${item.title}</h4><span class="meta story-meta">${item.trust||'Trusted report'}${item.source?` · ${item.source}`:''}${item.meta?` · ${item.meta}`:''}</span></div>`;
+    el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${stripEmojis(item.title)}</h4><span class="meta story-meta">${[item.source,item.meta].filter(Boolean).join(' · ')}</span></div>`;
     transfers.appendChild(el);
   });
   if(!transfers.children.length)transfers.innerHTML='<div class="arsenal-transfer-empty">No new trusted men’s first-team transfer update today.</div>';
   const rumours=$('#arsenalTransferRumours');rumours.innerHTML='';
   newest(a.transferRumours).slice(0,5).forEach(item=>{
     const el=linkEl('article',item,'arsenal-transfer-item arsenal-rumour-item news-card tab-story');
-    el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${item.title}</h4><span class="meta story-meta">Unconfirmed · X · ${item.source||'Reporter'}${item.confidence?` · ${item.confidence}`:''}${item.meta?` · ${item.meta}`:''}</span></div>`;
+    el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${stripEmojis(item.title)}</h4><span class="meta story-meta">${['X',item.source||'Reporter',item.meta].filter(Boolean).join(' · ')}</span></div>`;
     rumours.appendChild(el);
   });
   if(!rumours.children.length)rumours.innerHTML='<div class="arsenal-transfer-empty arsenal-rumour-empty">No qualifying reporter posts in the last seven days.</div>';

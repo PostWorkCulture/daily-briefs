@@ -1,3 +1,21 @@
+## 9 October 2026: Clean Arsenal section headers, remove emojis, align Transfer watch text, and strip 'Unconfirmed' / 'Trusted report' labels
+
+- **Arsenal headers**:
+  - Removed "Latest" from before "Club news" (`<h3>Club news</h3>`).
+  - Removed "TRUSTED SOURCES ONLY" kicker from above Transfer watch (`<h3 id="arsenalTransfersTitle">Transfer watch</h3>`).
+  - Removed "UNCONFIRMED · PUBLIC X POSTS" strap and "Useful early signals..." description from above Reporter watch (`<h4>Reporter watch</h4>`).
+- **Tile copy & metadata**:
+  - Removed "Unconfirmed" and "Trusted report" labels completely from all transfer and rumour cards.
+  - Kept verified sources and dates clean and legible (`Sky Sports · Fri 9 Oct`, `X · Fabrizio Romano · Fri 9 Oct`).
+- **Emoji removal across all articles**:
+  - Stripped all emojis from all news, transfers, rumours, and general articles clientside (`stripEmojis`), during Python finalization, and in the data store.
+  - Cleaned broken trailing quotes and truncated sentence fragments in transfer rumours.
+- **Transfer watch text alignment**:
+  - Standardized `.arsenal-transfer-head` flex alignment to vertically center the `Transfer watch` title with the source pills (`Arsenal.com`, `Sky Sports`).
+  - Set `.arsenal-transfer-item` and `.arsenal-news-item` `.section-story-copy` to full-height flex column layout (`height: 100%; flex: 1 1 auto; justify-content: space-between`).
+  - Anchored headlines to the top with left alignment and pinned metadata baselines to the bottom with `margin-top: auto`, creating a neat, uniform grid alignment across all rows.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Single 3D glossy birthday balloon and Fun poster-style cards with custom event colour themes & red sales
 
 - **Single birthday balloon**:
