@@ -1,3 +1,30 @@
+## 9 October 2026: Single 3D glossy birthday balloon and Fun poster-style cards with custom event colour themes & red sales
+
+- **Single birthday balloon**:
+  - Replaced the triple-balloon clusters with high-definition, transparent-background **single** 3D glossy realistic balloons with curling ribbon bows for all birthday tiles and Home reminder cards (`birthday-balloons-girl-1..3.webp`, `birthday-balloons-boy-1..3.webp`).
+  - Preserved dedicated gender-coded palettes:
+    - **Girls**: Pink, purple, and sunny yellow balloons with matching ribbons.
+    - **Boys**: Royal blue, cyan / sky blue, and emerald green balloons with matching ribbons.
+  - Sized and rendered cleanly with stationary hover states and zero layout shift.
+- **Fun section sales**:
+  - Transformed top sale tiles (`.fun-sale-card`) with a vibrant red gradient background (`linear-gradient(135deg, #b71c1c, #8e0000)`), crisp white typography, bold discount pill badge, and white CTA button (`Shop ↗`).
+- **Fun section events (Poster style)**:
+  - Redesigned event cards (`.fun-story.fun-poster`) inspired by the attached poster design:
+    - Deep dark background with prominent 2px solid rounded border (`border-radius: 20px`).
+    - Centered top strap/kicker (`.fun-poster-intro`), large bold uppercase primary title (`h4.fun-poster-title`), elegant cursive/italic script secondary title (`.fun-poster-sub`), and centered location.
+    - Standout date and time pill badge (`.fun-date-pill`).
+    - Centered summary copy, practical details container (`dl.fun-details`), and prominent pill action button (`.fun-link`).
+  - Implemented dynamic custom event colour themes:
+    - **Halloween**: Vibrant orange text, border, and date badge (`#ff7a00`).
+    - **Christmas**: Festive red (`#ef4444`), white, and green (`#22c55e`).
+    - **Autumn / Art Fairs**: Warm golden yellow (`#f5b700`).
+    - **Heritage / Transport / Steam**: Vintage brass amber (`#f59e0b`).
+    - **Food & Drink Festivals**: Rich beer gold (`#eab308`).
+    - **Nature & Botanical**: Lush emerald green (`#10b981`).
+    - **Default / General**: Poster gold (`#ffd214`).
+- Maintained max 2 events per row across desktop (`repeat(2, minmax(0, 1fr))`) and single-column on mobile.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Gender-specific colour palettes for glossy triple-balloon clusters
 
 - Retained the high-definition 3D glossy triple-balloon cluster style (tied with curly ribbons) while applying dedicated gender-specific colour palettes:

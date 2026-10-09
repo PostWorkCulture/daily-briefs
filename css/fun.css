@@ -1,13 +1,13 @@
-/* Local family activities - clean editorial layout, max 2 per row, neutral palette */
+/* Local family activities - clean poster layout, max 2 per row */
 #view-fun .tab-list{
   display:grid!important;
   grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  gap:18px!important;
+  gap:20px!important;
 }
 @media(max-width:699px){
   #view-fun .tab-list{
     grid-template-columns:1fr!important;
-    gap:14px!important;
+    gap:16px!important;
   }
 }
 #view-fun .fun-story,#view-fun .fun-story:last-child{
@@ -16,66 +16,320 @@
   align-content:start;
 }
 #view-fun .fun-story[hidden]{display:none!important}
-#view-fun .fun-field{
-  grid-template-columns:48px minmax(0,1fr);
-  padding:7px 0;
-  border-top:1px solid rgba(255,255,255,.08)!important;
-}
-#view-fun .fun-field:first-child{border-top:none!important}
-#view-fun .fun-field:first-child dd{font-size:12px;font-weight:500;line-height:1.48}
+
+/* Poster Card Base */
 #view-fun .fun-story{
   display:flex!important;
   flex-direction:column!important;
-  padding:20px 22px!important;
-  border:1px solid var(--signal-line)!important;
-  border-radius:6px!important;
-  background:#090c0a!important;
-  box-shadow:none!important;
+  padding:24px 22px!important;
+  border:2px solid var(--fun-border,var(--fun-accent,#ffd214))!important;
+  border-radius:20px!important;
+  background:#0c1015!important;
+  box-shadow:0 4px 24px rgba(0,0,0,.45)!important;
   transition:border-color .18s,background .18s,box-shadow .18s;
+  transform:none!important;
 }
 #view-fun .fun-story:hover,
 #view-fun .fun-story:focus-visible{
-  border-color:rgba(255,255,255,.28)!important;
-  background:#111613!important;
-  box-shadow:0 0 16px rgba(255,255,255,.08)!important;
   transform:none!important;
 }
 #view-fun .fun-story-copy{min-width:0;width:100%}
-#view-fun .fun-story h4{font-size:20px!important;line-height:1.25!important;margin:0 0 6px!important;color:#f4f7f2!important}
-#view-fun .fun-story p{font-size:14px;line-height:1.6;color:#d4d8d5}
-#view-fun .fun-location{color:#a0aba4!important;margin-bottom:12px;font-weight:500}
-.fun-intro{color:#91aa9e;font-size:14px;line-height:1.5;margin:4px 0 0}
-.fun-filters{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
-.fun-filters button{min-height:44px;padding:10px 18px;border-radius:24px;border:1px solid #56645b;background:#111914;color:#f4f7f2;cursor:pointer}
-.fun-filters button[aria-pressed="true"]{background:#2a342d!important;color:#f4f7f2!important;border-color:#445449!important}
-.fun-filters button:focus-visible,.fun-link:focus-visible{outline:2px solid rgba(255,255,255,.6)!important;outline-offset:4px}
-.fun-tags,#view-fun .fun-tags,#view-fun .section-story-icon{display:none!important}
-.fun-link{
-  display:inline-block;
-  margin:16px 0 10px;
-  color:#f4f7f2!important;
-  text-decoration:underline;
-  text-underline-offset:4px;
-  font-weight:600;
-  min-height:24px;
-}
-.fun-link:hover{color:#fff!important}
-.fun-source{display:block;color:#b3bfb7;font-size:10px;line-height:1.6}.fun-details{margin-top:16px}
-#funCount{color:#bdc8c0;font-size:12px}
-#view-fun .tab-group-fun .tab-list > .fun-story:last-child{grid-column:auto!important}
-#view-fun .fun-route{display:inline-block;margin:10px 0;color:#91aa9e!important;text-underline-offset:3px;font-size:12px}
 
-/* Ultra-compact Sale cards at top of Fun - no green, minimal neutral aesthetic */
+/* Poster Header */
+.fun-poster-header{
+  text-align:center;
+  margin-bottom:6px;
+}
+.fun-poster-intro{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  font-weight:700;
+  color:var(--fun-kicker,#cbd5e1);
+  margin-bottom:8px;
+  line-height:1.4;
+  text-align:center;
+}
+#view-fun .fun-story h4,
+#view-fun .fun-poster-title{
+  font-size:24px!important;
+  font-weight:900!important;
+  text-transform:uppercase!important;
+  letter-spacing:0.5px!important;
+  line-height:1.15!important;
+  color:var(--fun-title,var(--fun-accent,#ffd214))!important;
+  margin:0 0 4px!important;
+  text-align:center!important;
+  font-family:var(--font-display,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif)!important;
+}
+.fun-poster-sub{
+  font-family:'Playfair Display',Georgia,'Times New Roman',serif!important;
+  font-style:italic!important;
+  font-size:24px!important;
+  font-weight:500!important;
+  line-height:1.25!important;
+  color:var(--fun-sub,#ffffff)!important;
+  margin:0 0 10px!important;
+  text-align:center!important;
+  display:block;
+}
+#view-fun .fun-location{
+  color:#cbd5e1!important;
+  margin:0 0 12px!important;
+  font-weight:500!important;
+  text-align:center!important;
+  font-size:13px!important;
+  line-height:1.4!important;
+}
+
+/* Standout Date & Time Pill Badge */
+.fun-date-pill{
+  display:table!important;
+  margin:4px auto 14px!important;
+  padding:7px 20px!important;
+  border-radius:999px!important;
+  background:var(--fun-pill-bg,var(--fun-accent,#ffd214))!important;
+  color:var(--fun-pill-ink,#0b0e0c)!important;
+  font-weight:800!important;
+  font-size:13px!important;
+  letter-spacing:0.2px!important;
+  text-align:center!important;
+  border:var(--fun-pill-border,none)!important;
+  box-shadow:0 2px 10px rgba(0,0,0,.3)!important;
+}
+
+/* Body and Details */
+#view-fun .fun-poster-summary{
+  font-size:13.5px!important;
+  line-height:1.6!important;
+  color:#d4d8d5!important;
+  text-align:center!important;
+  margin:0 0 14px!important;
+}
+#view-fun .fun-details{
+  margin:12px 0 16px!important;
+  padding:10px 14px!important;
+  background:rgba(255,255,255,.03)!important;
+  border:1px solid rgba(255,255,255,.08)!important;
+  border-radius:12px!important;
+}
+#view-fun .fun-field{
+  grid-template-columns:48px minmax(0,1fr);
+  padding:6px 0;
+  border-top:1px solid rgba(255,255,255,.08)!important;
+  text-align:left;
+}
+#view-fun .fun-field:first-child{border-top:none!important}
+#view-fun .fun-field:first-child dd{font-size:12px;font-weight:500;line-height:1.48}
+#view-fun .fun-field dt{
+  color:#94a3b8;
+  font-weight:600;
+  font-size:11px;
+}
+#view-fun .fun-field dd{
+  color:#f1f5f9;
+  font-size:12px;
+}
+
+/* Action buttons */
+.fun-poster-actions{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:14px!important;
+  flex-wrap:wrap!important;
+  margin:12px 0 6px!important;
+}
+.fun-link{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:38px!important;
+  padding:8px 22px!important;
+  border-radius:999px!important;
+  background:var(--fun-btn-bg,var(--fun-accent,#ffd214))!important;
+  color:var(--fun-btn-ink,#0b0e0c)!important;
+  font-weight:700!important;
+  font-size:13px!important;
+  text-decoration:none!important;
+  margin:0!important;
+  box-shadow:0 2px 10px rgba(0,0,0,.25)!important;
+  transition:filter .18s,background .18s,color .18s!important;
+}
+.fun-link:hover{
+  filter:brightness(1.15)!important;
+  color:var(--fun-btn-ink,#0b0e0c)!important;
+}
+.fun-link:focus-visible{
+  outline:2px solid rgba(255,255,255,.8)!important;
+  outline-offset:3px;
+}
+#view-fun .fun-route{
+  display:inline-flex!important;
+  align-items:center!important;
+  margin:0!important;
+  color:#a0aba4!important;
+  text-decoration:underline!important;
+  text-underline-offset:3px!important;
+  font-size:12.5px!important;
+}
+#view-fun .fun-route:hover{color:#f4f7f2!important}
+.fun-source{
+  display:block!important;
+  text-align:center!important;
+  color:#8a9990!important;
+  font-size:10.5px!important;
+  line-height:1.6;
+  margin-top:10px!important;
+}
+.fun-tags,#view-fun .fun-tags,#view-fun .section-story-icon{display:none!important}
+#funCount{color:#bdc8c0;font-size:12px}
+
+/* Theme 1: Halloween (Orange text, orange border, orange pill badge) */
+#view-fun .fun-theme-halloween{
+  --fun-accent:#ff7a00;
+  --fun-title:#ff7a00;
+  --fun-sub:#ffd180;
+  --fun-kicker:#ff9e40;
+  --fun-border:#ff7a00;
+  --fun-pill-bg:#ff7a00;
+  --fun-pill-ink:#000000;
+  --fun-btn-bg:#ff7a00;
+  --fun-btn-ink:#000000;
+  box-shadow:0 0 20px rgba(255,122,0,.15)!important;
+}
+#view-fun .fun-theme-halloween:hover,
+#view-fun .fun-theme-halloween:focus-visible{
+  border-color:#ff9e40!important;
+  box-shadow:0 0 28px rgba(255,122,0,.3)!important;
+}
+
+/* Theme 2: Christmas (Red, white, and green) */
+#view-fun .fun-theme-christmas{
+  --fun-accent:#ef4444;
+  --fun-title:#ef4444;
+  --fun-sub:#22c55e;
+  --fun-kicker:#ffffff;
+  --fun-border:#22c55e;
+  --fun-pill-bg:#dc2626;
+  --fun-pill-ink:#ffffff;
+  --fun-pill-border:1px solid #22c55e;
+  --fun-btn-bg:#22c55e;
+  --fun-btn-ink:#000000;
+  box-shadow:0 0 20px rgba(34,197,94,.15)!important;
+}
+#view-fun .fun-theme-christmas:hover,
+#view-fun .fun-theme-christmas:focus-visible{
+  border-color:#4ade80!important;
+  box-shadow:0 0 28px rgba(239,68,68,.25),0 0 14px rgba(34,197,94,.25)!important;
+}
+
+/* Theme 3: Autumn / Art & Craft Fairs (Golden yellow) */
+#view-fun .fun-theme-autumn{
+  --fun-accent:#f5b700;
+  --fun-title:#f5b700;
+  --fun-sub:#ffffff;
+  --fun-kicker:#fde047;
+  --fun-border:#f5b700;
+  --fun-pill-bg:#f5b700;
+  --fun-pill-ink:#0b0e0c;
+  --fun-btn-bg:#f5b700;
+  --fun-btn-ink:#0b0e0c;
+  box-shadow:0 0 20px rgba(245,183,0,.15)!important;
+}
+#view-fun .fun-theme-autumn:hover,
+#view-fun .fun-theme-autumn:focus-visible{
+  border-color:#fde047!important;
+  box-shadow:0 0 28px rgba(245,183,0,.3)!important;
+}
+
+/* Theme 4: Heritage / Transport / Steam (Warm brass amber) */
+#view-fun .fun-theme-heritage{
+  --fun-accent:#f59e0b;
+  --fun-title:#fbbf24;
+  --fun-sub:#fef08a;
+  --fun-kicker:#f59e0b;
+  --fun-border:#d97706;
+  --fun-pill-bg:#f59e0b;
+  --fun-pill-ink:#0b0e0c;
+  --fun-btn-bg:#f59e0b;
+  --fun-btn-ink:#0b0e0c;
+  box-shadow:0 0 20px rgba(245,158,11,.15)!important;
+}
+#view-fun .fun-theme-heritage:hover,
+#view-fun .fun-theme-heritage:focus-visible{
+  border-color:#fbbf24!important;
+  box-shadow:0 0 28px rgba(245,158,11,.3)!important;
+}
+
+/* Theme 5: Food & Drink Festivals (Rich gold) */
+#view-fun .fun-theme-festival{
+  --fun-accent:#eab308;
+  --fun-title:#facc15;
+  --fun-sub:#ffffff;
+  --fun-kicker:#fef08a;
+  --fun-border:#ca8a04;
+  --fun-pill-bg:#eab308;
+  --fun-pill-ink:#0b0e0c;
+  --fun-btn-bg:#eab308;
+  --fun-btn-ink:#0b0e0c;
+  box-shadow:0 0 20px rgba(234,179,8,.15)!important;
+}
+#view-fun .fun-theme-festival:hover,
+#view-fun .fun-theme-festival:focus-visible{
+  border-color:#facc15!important;
+  box-shadow:0 0 28px rgba(234,179,8,.3)!important;
+}
+
+/* Theme 6: Nature & Botanical (Emerald green) */
+#view-fun .fun-theme-nature{
+  --fun-accent:#10b981;
+  --fun-title:#34d399;
+  --fun-sub:#ffffff;
+  --fun-kicker:#a7f3d0;
+  --fun-border:#059669;
+  --fun-pill-bg:#10b981;
+  --fun-pill-ink:#022c22;
+  --fun-btn-bg:#10b981;
+  --fun-btn-ink:#022c22;
+  box-shadow:0 0 20px rgba(16,185,129,.15)!important;
+}
+#view-fun .fun-theme-nature:hover,
+#view-fun .fun-theme-nature:focus-visible{
+  border-color:#34d399!important;
+  box-shadow:0 0 28px rgba(16,185,129,.3)!important;
+}
+
+/* Theme 7: Default / General (Warm poster yellow) */
+#view-fun .fun-theme-default{
+  --fun-accent:#ffd214;
+  --fun-title:#ffd214;
+  --fun-sub:#ffffff;
+  --fun-kicker:#ffe082;
+  --fun-border:#ffd214;
+  --fun-pill-bg:#ffd214;
+  --fun-pill-ink:#0b0e0c;
+  --fun-btn-bg:#ffd214;
+  --fun-btn-ink:#0b0e0c;
+  box-shadow:0 0 20px rgba(255,210,20,.15)!important;
+}
+#view-fun .fun-theme-default:hover,
+#view-fun .fun-theme-default:focus-visible{
+  border-color:#ffe082!important;
+  box-shadow:0 0 28px rgba(255,210,20,.3)!important;
+}
+
+/* Top Sale tiles in Fun - Rich red background */
 .fun-sales-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:6px;
-  margin:12px 0 16px;
+  gap:8px;
+  margin:12px 0 18px;
 }
 @media(max-width:699px){
   .fun-sales-grid{
     grid-template-columns:1fr;
-    gap:6px;
+    gap:8px;
   }
 }
 .fun-sale-card{
@@ -83,18 +337,20 @@
   align-items:center;
   justify-content:space-between;
   gap:10px;
-  padding:6px 12px!important;
-  min-height:36px!important;
+  padding:8px 14px!important;
+  min-height:38px!important;
   text-decoration:none!important;
-  border:1px solid var(--signal-line,rgba(255,255,255,.09))!important;
-  border-radius:4px!important;
-  background:#090c0a!important;
-  transition:border-color .18s,background .18s;
+  border:1px solid #c62828!important;
+  border-radius:6px!important;
+  background:linear-gradient(135deg,#b71c1c,#8e0000)!important;
+  box-shadow:0 2px 8px rgba(183,28,28,.25)!important;
+  transition:border-color .18s,background .18s,box-shadow .18s;
 }
 .fun-sale-card:hover,.fun-sale-card:focus-visible{
-  border-color:rgba(255,255,255,.28)!important;
-  background:#111613!important;
-  box-shadow:none!important;
+  border-color:#ff5252!important;
+  background:linear-gradient(135deg,#c62828,#9b0000)!important;
+  box-shadow:0 0 16px rgba(229,57,53,.35)!important;
+  transform:none!important;
 }
 .fun-sale-copy{
   min-width:0;
@@ -107,35 +363,44 @@
 .fun-sale-title{
   margin:0!important;
   font-size:12.5px!important;
-  font-weight:600!important;
-  color:#f4f7f2!important;
+  font-weight:700!important;
+  color:#ffffff!important;
   line-height:1.25!important;
 }
 .fun-sale-meta{
   display:flex;
   align-items:center;
-  gap:5px;
+  gap:6px;
   margin:0;
   font-size:11px;
-  color:#8a9990;
+  color:#ffcdd2;
 }
 .fun-sale-date{
-  color:#a0aba4;
+  color:#ffebee;
 }
 .fun-sale-sep{
-  color:#455449;
+  color:rgba(255,255,255,.45);
 }
 .fun-sale-discount{
-  color:#f4f7f2!important;
-  font-weight:600;
+  color:#ffffff!important;
+  font-weight:700;
+  background:rgba(0,0,0,.25);
+  padding:1px 6px;
+  border-radius:4px;
 }
 .fun-sale-cta{
   flex-shrink:0;
   font-size:11px;
-  font-weight:600;
-  color:#a0aba4!important;
+  font-weight:700;
+  color:#ffffff!important;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.3);
+  padding:3px 9px;
+  border-radius:4px;
   white-space:nowrap;
+  transition:background .18s,color .18s;
 }
 .fun-sale-card:hover .fun-sale-cta{
-  color:#f4f7f2!important;
+  background:#ffffff;
+  color:#b71c1c!important;
 }

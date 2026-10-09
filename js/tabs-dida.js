@@ -93,8 +93,59 @@
     const discount=item.discount||item.cost||'';
     return `<a class="tab-story fun-sale-card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"><div class="fun-sale-copy"><h4 class="fun-sale-title">${esc(headline)}</h4><div class="fun-sale-meta"><span class="fun-sale-date">${esc(dates)}</span><span class="fun-sale-sep" aria-hidden="true">·</span><span class="fun-sale-discount">${esc(discount)}</span></div></div><span class="fun-sale-cta" aria-hidden="true">Shop ↗</span></a>`;
   }
+  function detectFunTheme(item){
+    const text=`${item.title||''} ${(item.tags||[]).join(' ')} ${item.summary||''}`.toLowerCase();
+    if(/halloween|howl'?o'?ween|spook|trick-or-treat|pumpkin|ghost/i.test(text))return 'halloween';
+    if(/christmas|xmas|festive|santa|carols?|ice[- ]rink/i.test(text))return 'christmas';
+    if(/beer|cider|brew|wine|tasting/i.test(text))return 'festival';
+    if(/autumn|art fair|craft fair|harvest/i.test(text))return 'autumn';
+    if(/steam|bus museum|transport|railway|historic|engine/i.test(text))return 'heritage';
+    if(/garden|kew|park|nature|wildlife|botanic/i.test(text))return 'nature';
+    return 'default';
+  }
+  function splitFunTitle(title){
+    const clean=String(title||'').trim();
+    const suffixRegex=/\s+(Spooktacular|After-Dark Trail|Trick-or-Treat Trail|Light & Lantern Trail|Festive Ice Rink|Ice Rink|TransportFest|Beer Festival|steaming weekend|Steaming Weekend|Art Fair \d+|Art Fair|Christmas Market|European Christmas Market|Festival|Fair|Trail|Market|Weekend|Exhibition|Experience)$/i;
+    const m=clean.match(suffixRegex);
+    if(m){
+      let main=clean.slice(0,m.index).trim();
+      let sub=m[1].trim();
+      if(sub.toLowerCase()==='steaming weekend')sub='Steaming Weekend';
+      return {main,sub};
+    }
+    if(/^Halloween at\s+/i.test(clean)){
+      return {main:'HALLOWEEN',sub:clean.replace(/^Halloween\s+/i,'')};
+    }
+    if(/^Christmas at\s+/i.test(clean)){
+      return {main:'CHRISTMAS',sub:clean.replace(/^Christmas\s+/i,'')};
+    }
+    const parts=clean.split(/\s*[:–—·]\s*/);
+    if(parts.length>1){
+      return {main:parts[0].trim(),sub:parts.slice(1).join(' ').trim()};
+    }
+    const words=clean.split(' ');
+    if(words.length>3){
+      return {main:words.slice(0,-2).join(' '),sub:words.slice(-2).join(' ')};
+    }
+    return {main:clean,sub:'Experience'};
+  }
+  function funKicker(theme){
+    switch(theme){
+      case 'halloween':return 'Join us for a spooky family celebration and adventure!';
+      case 'christmas':return 'Join us for a magical festive holiday celebration!';
+      case 'autumn':return 'Join us for an inspiring celebration of art and craft!';
+      case 'heritage':return 'Join us for a historic transport and steam celebration!';
+      case 'festival':return 'Join us for a lively celebration of local food, drink and music!';
+      case 'nature':return 'Join us for an inspiring outdoor botanical adventure!';
+      default:return 'Join us for an unforgettable family celebration and adventure!';
+    }
+  }
   function funStory(item,index=0){
-    return `<article class="tab-story fun-story" data-fun-tags="${esc((item.tags||[]).join(' '))}"><div class="fun-story-copy"><h4>${esc(item.title)}</h4><p class="fun-location">${esc(item.location)}</p><p>${esc(item.summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(item.location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a><small class="fun-source">${esc(item.source)}</small></div></article>`;
+    const theme=detectFunTheme(item);
+    const {main,sub}=splitFunTitle(item.title);
+    const kicker=funKicker(theme);
+    const dateText=esc((item.when||'').replace(/\s*·\s*/g,' | '));
+    return `<article class="tab-story fun-story fun-poster fun-theme-${theme}" data-fun-tags="${esc((item.tags||[]).join(' '))}"><div class="fun-story-copy fun-poster-frame"><div class="fun-poster-header"><div class="fun-poster-intro">${esc(kicker)}</div><h4 class="fun-poster-title">${esc(main)}</h4><div class="fun-poster-sub">${esc(sub)}</div><p class="fun-location">${esc(item.location)}</p><div class="fun-date-pill">${dateText}</div></div><p class="fun-poster-summary">${esc(item.summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><div class="fun-poster-actions"><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(item.location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a></div><small class="fun-source">${esc(item.source)}</small></div></article>`;
   }
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
