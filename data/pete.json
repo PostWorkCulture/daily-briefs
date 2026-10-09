@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 9 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Friday, 9 October 2026 · refreshed 6:54am",
   "worldFact": {
     "id": "catatumbo-lightning-most-strikes",
     "editorialPriority": "human-first",
@@ -19,9 +19,9 @@
   },
   "weather": {
     "temp": "16°",
-    "summary": "Overcast",
-    "condition": "Overcast",
-    "currentRainChance": 20,
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-10-09",
@@ -29,15 +29,15 @@
         "low": null,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-10",
         "high": 15,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 40,
         "source": "Met Office"
       },
@@ -45,18 +45,18 @@
         "date": "2026-10-11",
         "high": 15,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 18,
+        "high": 19,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 40,
+        "summary": "Light Rain",
+        "condition": "Light Rain",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 40%",
+      "detail": "Overcast · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -276,20 +276,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
       "url": "",
@@ -302,6 +288,20 @@
       "colorId": null,
       "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
     },
     {
       "title": "Hygienist- 10am",
@@ -402,20 +402,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Godstone Farm - Gruffalo?",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -428,6 +414,20 @@
       "colorId": "10",
       "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Godstone Farm - Gruffalo?",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Let it glow disco 3-4pm",
@@ -594,7 +594,7 @@
         "title": "Stats: How do we fare after international breaks?",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T02:57:10+01:00",
+        "publishedAt": "2026-10-09T05:59:55+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
         "contentType": "article"
@@ -809,7 +809,7 @@
       "title": "Stats: How do we fare after international breaks?",
       "summary": "",
       "meta": "Fri 9 Oct",
-      "publishedAt": "2026-10-09T02:57:10+01:00",
+      "publishedAt": "2026-10-09T05:59:55+01:00",
       "source": "Arsenal.com",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
       "contentType": "article",
@@ -1050,7 +1050,7 @@
         "title": "Stats: How do we fare after international breaks?",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T02:57:10+01:00",
+        "publishedAt": "2026-10-09T05:59:55+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
         "contentType": "article"
@@ -1092,15 +1092,6 @@
         "contentType": "article"
       },
       {
-        "title": "Arsenal Predicted Lineup vs. Leeds: Gyokeres Gifted Golden Opportunity",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T19:00:02+01:00",
-        "source": "Sports Illustrated",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2RPWVFvN1BuZUQ5Mi1PS0FkblNyaTBYWmZBZkF4dl9GTENfdkJ4SVRIMDYtSGNvM2s0ZzVNTDFieTZpY1V6aDdja1FsVGpZUEFOY0x1ME53blp6V2RCTUFlVURQZ3RqZTlKakdGRXVKVnNMbnBndUxtNFhLblNMVWExbjNSalZHb1ZpRUhTMHl6MkQyWTNqc2tPRkFYekRvYjNlbXh3?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "34 photos as stars return to training",
         "summary": "",
         "meta": "Thu 8 Oct",
@@ -1110,10 +1101,19 @@
         "contentType": "article"
       },
       {
+        "title": "Mikel Arteta contract: Arsenal boss signs new deal to extend stay at Premier League champions",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T03:43:54+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arsenal injury update: Konsa, Tzolis and Havertz latest return dates",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T17:48:26+01:00",
+        "publishedAt": "2026-10-08T15:49:02+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRzBRaFJ6YU5HYXVBMmo1YUtNSXhrQkYyUUZUQ0tIWU9paF9KaTFRR2xqaERiekRnSnhxa0t6S3h4bXIteTZ4TTlQSlNKNTdjVEFmZnFVdnVtbnU3LW5jeG1QUFY3b2ZjWlRFRllFY0d3cEIxS2ZuQ2RjMklvRVZYZldybldfVXZkSEtoQmttanNrdHFaTXVwdWFucjNmOEVJNjY5Wms2R01odmxXNThzYWlVWmItS3JScXNEYzNUaHdqVGtt?oc=5",
         "contentType": "article"
@@ -1411,7 +1411,7 @@
       {
         "id": "amazon-prime-big-deal-days-2026",
         "title": "Amazon Prime Big Deal Days Autumn Event",
-        "location": "Online & Prime App Â· Nationwide UK",
+        "location": "Online & Prime App · Nationwide UK",
         "summary": "Major seasonal shopping event with 48 hours of discounts across tech, home, kids toys, fashion and festive gifts.",
         "when": "Tuesday 8 & Wednesday 9 October 2026",
         "startDate": "2026-10-08",
@@ -1437,7 +1437,7 @@
       {
         "id": "bentalls-autumn-shopping-2026",
         "title": "Bentalls Kingston Autumn Shopping & Seasonal Promotions",
-        "location": "The Bentall Centre, Wood Street Â· Kingston upon Thames",
+        "location": "The Bentall Centre, Wood Street · Kingston upon Thames",
         "summary": "Four floors of seasonal promotions, toy demonstrations, family dining and fashion showcases under the central atrium.",
         "when": "Daily throughout October & November 2026",
         "startDate": "2026-10-08",
@@ -1542,13 +1542,13 @@
       {
         "id": "landmark-art-fair-2026",
         "title": "Landmark Autumn Art Fair",
-        "location": "Landmark Arts Centre Â· Teddington",
+        "location": "Landmark Arts Centre · Teddington",
         "summary": "Meet artists and browse paintings, ceramics, sculpture and prints across more than 75 stands. A creative fair with free entry for under-16s.",
-        "when": "16â€“18 October Â· Sat/Sun 10amâ€“5pm; check Friday booking time",
+        "when": "16–18 October · Sat/Sun 10am–5pm; check Friday booking time",
         "startDate": "2026-10-16",
         "endDate": "2026-10-18",
         "ages": "Under-16s welcome",
-        "cost": "Â£5; concessions Â£4; under-16s free",
+        "cost": "£5; concessions £4; under-16s free",
         "tags": [
           "Events",
           "Fairs",
@@ -1565,9 +1565,9 @@
       {
         "id": "chessington-howloween-2026",
         "title": "Chessington Howl'o'ween Spooktacular",
-        "location": "Chessington World of Adventures Â· Leatherhead Road, Chessington",
+        "location": "Chessington World of Adventures · Leatherhead Road, Chessington",
         "summary": "Rides in the dark, costume parades, live street entertainment, spooky walkthroughs, and trick-or-treat surprises just 15 minutes away.",
-        "when": "17 October â€“ 3 November 2026 Â· 10amâ€“7pm",
+        "when": "17 October – 3 November 2026 · 10am–7pm",
         "startDate": "2026-10-17",
         "endDate": "2026-11-03",
         "ages": "Families and children of all ages",
@@ -1588,9 +1588,9 @@
       {
         "id": "kempton-steam-oct-2026",
         "title": "Kempton Steam Museum steaming weekend",
-        "location": "Kempton Steam Museum Â· Hanworth",
+        "location": "Kempton Steam Museum · Hanworth",
         "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
-        "when": "17â€“18 October Â· 10.30amâ€“4pm",
+        "when": "17–18 October · 10.30am–4pm",
         "startDate": "2026-10-17",
         "endDate": "2026-10-18",
         "ages": "Supervise children; engine-climb access requires height over 1.4m",
@@ -1610,13 +1610,13 @@
       {
         "id": "kew-halloween-trail-2026",
         "title": "Halloween at Kew Gardens After-Dark Trail",
-        "location": "Royal Botanic Gardens Kew Â· Richmond / Kew",
+        "location": "Royal Botanic Gardens Kew · Richmond / Kew",
         "summary": "An enchanting after-dark family trail through glowing autumn woods with flickering fire performers, illuminated pumpkins and spooky illusions.",
-        "when": "18 October â€“ 3 November 2026 Â· 6pmâ€“9.30pm",
+        "when": "18 October – 3 November 2026 · 6pm–9.30pm",
         "startDate": "2026-10-18",
         "endDate": "2026-11-03",
         "ages": "All ages; spooky family fun",
-        "cost": "Adults Â£17â€“Â£20, Children Â£12â€“Â£15, under 4s free; advance booking",
+        "cost": "Adults £17–£20, Children £12–£15, under 4s free; advance booking",
         "tags": [
           "Events",
           "Halloween",
@@ -1628,13 +1628,13 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-08"
+        "verifiedAt": "2026-10-09"
       },
       {
         "id": "transportfest-2026",
         "title": "London Bus Museum TransportFest",
-        "location": "Brooklands Â· Weybridge",
-        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiserâ€™s programme and admission details before booking.",
+        "location": "Brooklands · Weybridge",
+        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiser’s programme and admission details before booking.",
         "when": "Sunday 18 October 2026",
         "startDate": "2026-10-18",
         "endDate": "2026-10-18",
@@ -1699,6 +1699,28 @@
         "verifiedAt": "2026-10-08"
       },
       {
+        "id": "teddington-beer-2026",
+        "title": "Teddington Beer Festival",
+        "location": "Landmark Arts Centre · Teddington",
+        "summary": "Beer, cider, food and entertainment across bookable sessions. An option for the grown-ups: the organiser restricts entry to over-18s, with babies in arms welcome.",
+        "when": "5–8 November · choose an afternoon or evening session",
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-08",
+        "ages": "18+; babies in arms welcome",
+        "cost": "£16.50 + £1.50 booking fee; includes first beer token",
+        "tags": [
+          "Events",
+          "Beer",
+          "Indoors"
+        ],
+        "source": "Teddington Beer Festival",
+        "url": "https://www.teddingtonbeerfestival.co.uk/",
+        "venue": "landmark",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-09"
+      },
+      {
         "id": "kingston-christmas-market-2026",
         "title": "Kingston Traditional European Christmas Market",
         "location": "Ancient Market Place & Alpine Village Ã‚Â· Kingston upon Thames",
@@ -1724,13 +1746,13 @@
       {
         "id": "christmas-at-kew-2026",
         "title": "Christmas at Kew Botanical Light & Lantern Trail",
-        "location": "Royal Botanic Gardens Kew Â· Richmond",
+        "location": "Royal Botanic Gardens Kew · Richmond",
         "summary": "Over a million sparkling lights, singing trees, the tunnel of light, and spectacular water fountain projections across the Palm House lake.",
-        "when": "18 November â€“ 31 December 2026 Â· 4.20pmâ€“10pm",
+        "when": "18 November – 31 December 2026 · 4.20pm–10pm",
         "startDate": "2026-11-18",
         "endDate": "2026-12-31",
         "ages": "All ages; fully accessible pathway",
-        "cost": "Adult off-peak Â£22.50 / peak Â£29; Child Â£15; under 4s free",
+        "cost": "Adult off-peak £22.50 / peak £29; Child £15; under 4s free",
         "tags": [
           "Events",
           "Christmas",
@@ -1742,7 +1764,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-08"
+        "verifiedAt": "2026-10-09"
       },
       {
         "id": "hampton-court-ice-rink-2026",
@@ -1766,29 +1788,6 @@
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-08"
-      },
-      {
-        "id": "landmark-sparkle-festive-fair-2026",
-        "title": "Sparkle Festive Contemporary Craft Fair",
-        "location": "Landmark Arts Centre, Ferry Road Â· Teddington",
-        "summary": "Dozens of independent craft makers, jewellers, ceramicists and local artisans in the historic cathedral-like setting of the Landmark Centre.",
-        "when": "20â€“22 November 2026 Â· Fri 4â€“8.30pm; Sat/Sun 10amâ€“4.30pm",
-        "startDate": "2026-11-20",
-        "endDate": "2026-11-22",
-        "ages": "All ages; under-16s accompanied",
-        "cost": "Â£4 entry; free for under-16s and Landmark members",
-        "tags": [
-          "Events",
-          "Christmas",
-          "Craft",
-          "Teddington"
-        ],
-        "source": "Landmark Arts Centre",
-        "url": "https://www.landmarkartscentre.org/visual-arts/sparkle-festive-fair/",
-        "venue": "landmark",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-09"
       }
     ]
   },
@@ -1826,7 +1825,7 @@
       "releaseDateLabel": "Available since Mon 5 Oct",
       "url": "http://www.bbc.co.uk/programmes/b006t14n",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/596/1490794.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
       "artworkAlt": "Panorama programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-05",
@@ -1849,7 +1848,7 @@
       "releaseDateLabel": "Available since Wed 7 Oct",
       "url": "https://www.channel5.com/",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223832.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223830.jpg",
       "artworkAlt": "The Incident Room programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-07",
@@ -1874,7 +1873,7 @@
       "releaseDateLabel": "Available since Mon 5 Oct",
       "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609034.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
       "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-05",
@@ -1920,7 +1919,7 @@
       "releaseDateLabel": "New thu 15 oct",
       "url": "https://www.netflix.com/title/81288983",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604939.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/590/1475860.jpg",
       "artworkAlt": "The Diplomat programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-15",
@@ -1969,7 +1968,7 @@
       "releaseDateLabel": "Available since Tue 6 Oct",
       "url": "https://www.tvmaze.com/episodes/3777418/mafia-behind-the-bloodshed-1x01-russian-vory",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609395.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609396.jpg",
       "artworkAlt": "Mafia: Behind the Bloodshed programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-06",
@@ -1992,7 +1991,7 @@
       "releaseDateLabel": "Tue 13 Oct, 9pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/last-night-out",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/576/1440732.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/576/1440733.jpg",
       "artworkAlt": "Last Night Out programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-13",
@@ -2015,7 +2014,7 @@
       "releaseDateLabel": "Sun 11 Oct, 8pm",
       "url": "https://www.tvmaze.com/episodes/3772887/crime-scene-raw-1x07-clifford-jones-and-joseph-celestine",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608353.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597392.jpg",
       "artworkAlt": "Crime Scene Raw programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-11",
@@ -2038,7 +2037,7 @@
       "releaseDateLabel": "Sun 11 Oct, 8pm",
       "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600109.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600111.jpg",
       "artworkAlt": "How the Tudors Lost Their Heads programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-11",
@@ -2063,7 +2062,7 @@
       "releaseDateLabel": "Today, 10:03pm",
       "url": "https://www.history.co.uk/shows/mysteries-from-above",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/561/1404636.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/485/1214237.jpg",
       "artworkAlt": "Mysteries From Above programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-09",
