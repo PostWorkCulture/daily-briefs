@@ -18,40 +18,31 @@
     "localImage": "assets/scenery/world-fact.webp?v=7e7ece6473af"
   },
   "weather": {
-    "temp": "19°",
-    "summary": "Overcast",
-    "condition": "Overcast",
-    "currentRainChance": 20,
+    "temp": "18°",
+    "summary": "Heavy showers",
+    "condition": "Heavy showers",
+    "currentRainChance": 30,
     "daily": [
       {
         "date": "2026-10-09",
         "high": 19,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Light Showers",
+        "condition": "Light Showers",
         "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-10",
-        "high": 15,
-        "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-10-11",
         "high": 16,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
-        "date": "2026-10-12",
+        "date": "2026-10-11",
         "high": 18,
         "low": null,
         "summary": "Overcast",
@@ -60,7 +51,7 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-10-13",
+        "date": "2026-10-12",
         "high": 21,
         "low": null,
         "summary": "Sunny",
@@ -69,7 +60,7 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-10-14",
+        "date": "2026-10-13",
         "high": 19,
         "low": null,
         "summary": "Sunny intervals",
@@ -78,18 +69,27 @@
         "source": "Met Office"
       },
       {
-        "date": "2026-10-15",
+        "date": "2026-10-14",
         "high": 19,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
+      },
+      {
+        "date": "2026-10-15",
+        "high": 15,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 30%",
+      "label": "Check hourly Met Office forecast",
+      "detail": "Light Showers expected · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
