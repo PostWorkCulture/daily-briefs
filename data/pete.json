@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 9 October 2026 · refreshed 11:14am",
+  "updatedLabel": "Friday, 9 October 2026 · refreshed 1:23pm",
   "worldFact": {
     "id": "catatumbo-lightning-most-strikes",
     "editorialPriority": "human-first",
@@ -18,23 +18,23 @@
     "localImage": "assets/scenery/world-fact.webp?v=7e7ece6473af"
   },
   "weather": {
-    "temp": "18°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 70,
+    "temp": "19°",
+    "summary": "Overcast",
+    "condition": "Overcast",
+    "currentRainChance": 20,
     "daily": [
       {
         "date": "2026-10-09",
         "high": 19,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
-        "rainChance": 60,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-10",
-        "high": 16,
+        "high": 15,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -43,19 +43,19 @@
       },
       {
         "date": "2026-10-11",
-        "high": 15,
+        "high": 16,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 20,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 19,
+        "high": 18,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 30,
         "source": "Met Office"
       },
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Check hourly Met Office forecast",
-      "detail": "Light Rain expected · rain chance around 60%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -276,20 +276,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
       "url": "",
@@ -302,6 +288,20 @@
       "colorId": null,
       "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
     },
     {
       "title": "Hygienist- 10am",
@@ -591,12 +591,12 @@
     "played": 5,
     "news": [
       {
-        "title": "Stats: How do we fare after international breaks?",
+        "title": "Go Inside Training ahead of Premier League return",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T09:00:57+01:00",
+        "publishedAt": "2026-10-09T11:07:21+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVzNvQi1iNG9CeHNRdmw3ZFY3OG1WSndnM3AzNk9JbU5TUHQ3TnJsS1h1MFpKVzdMY19aNnlOajVZdmpMMEdiYlQxRWRHZ3VCVXUzUWxPOUtldDdCSFA4anlncC04dmxDa3h0Um43cUQ1eXp1ekw4T3ltcU1FZTNtYUpFN01BS1VfcTBVanJ1TVhiTkVZVVE?oc=5",
         "contentType": "article"
       },
       {
@@ -606,6 +606,15 @@
         "publishedAt": "2026-10-09T08:39:06+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRzBRaFJ6YU5HYXVBMmo1YUtNSXhrQkYyUUZUQ0tIWU9paF9KaTFRR2xqaERiekRnSnhxa0t6S3h4bXIteTZ4TTlQSlNKNTdjVEFmZnFVdnVtbnU3LW5jeG1QUFY3b2ZjWlRFRllFY0d3cEIxS2ZuQ2RjMklvRVZYZldybldfVXZkSEtoQmttanNrdHFaTXVwdWFucjNmOEVJNjY5Wms2R01odmxXNThzYWlVWmItS3JScXNEYzNUaHdqVGtt?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal's Max Dowman presented with three World Records!",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T10:20:49+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb1VTOXNxWlpwMEhLZUR6T2tJdTJuOFpPOU1rUVlzMEQtLWFyekZlNWVSbTN2VHQwZnZ5aUFWamJVZUFuVElWYkVRQWttbTBCV3ZaRm9yQXNQWGJKRnFtRVcxX0w2cG96WDRjNEp1Wk1RdF9zeTBnU0tidGt3YkNRNlI5VlRhd2dBT3FmZFVrak1QS3lPenJ2WWMyWHhQWXIxcnozMy1FWQ?oc=5",
         "contentType": "article"
       },
       {
@@ -624,15 +633,6 @@
         "publishedAt": "2026-10-09T07:30:00+01:00",
         "source": "The Telegraph",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZnoxRDJPeGtuWHdFZFFPRGFfTW5DREZjTm5zcDlDb1NsUlpmNmNzakdhdzVTRmF2Vm1tSUVxUHZoUmoycGdsdkNDdEtaMGhSNkJtMkNQR3hNd25WODVSRlk0S3dUU3VHZG9lanZxbDIxU1I5YndpTHM2amFqTjB5OWlfRU5XOWVtOU94bjM4WmNSMUczZDdwZXZXU0FsdE0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "\"Travel with no fear\" Daniel Farke previews Arsenal, Trafford and more! - Leeds United | Official Website",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T13:47:25+01:00",
-        "source": "Leeds United",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeEFUa0FxOVhTM1FHcWdMU2VaZXc5REhmVEZmaXlhUXFNOFBLeDFBcjl4MkhoejYwXzctT3BiY3MyZVlGSlk1dVVsejE1ZjRVbVNfRG95Sy0ybEZzRkV5alZjWnZRaVpZOGZ4c016MWRlM3UzTzBVQVRkMWloQVZpbzdMb2RqNy1udlFXQ0toVmp3ZXBFa0RfeW5FcHpUSkRWYUFtN0NB?oc=5",
         "contentType": "article"
       }
     ],
@@ -806,12 +806,12 @@
       "section": "AI"
     },
     {
-      "title": "Stats: How do we fare after international breaks?",
+      "title": "Go Inside Training ahead of Premier League return",
       "summary": "",
       "meta": "Fri 9 Oct",
-      "publishedAt": "2026-10-09T09:00:57+01:00",
+      "publishedAt": "2026-10-09T11:07:21+01:00",
       "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVzNvQi1iNG9CeHNRdmw3ZFY3OG1WSndnM3AzNk9JbU5TUHQ3TnJsS1h1MFpKVzdMY19aNnlOajVZdmpMMEdiYlQxRWRHZ3VCVXUzUWxPOUtldDdCSFA4anlncC04dmxDa3h0Um43cUQ1eXp1ekw4T3ltcU1FZTNtYUpFN01BS1VfcTBVanJ1TVhiTkVZVVE?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
@@ -1047,12 +1047,12 @@
     ],
     "Arsenal news": [
       {
-        "title": "Stats: How do we fare after international breaks?",
+        "title": "Go Inside Training ahead of Premier League return",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T09:00:57+01:00",
+        "publishedAt": "2026-10-09T11:07:21+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVzNvQi1iNG9CeHNRdmw3ZFY3OG1WSndnM3AzNk9JbU5TUHQ3TnJsS1h1MFpKVzdMY19aNnlOajVZdmpMMEdiYlQxRWRHZ3VCVXUzUWxPOUtldDdCSFA4anlncC04dmxDa3h0Um43cUQ1eXp1ekw4T3ltcU1FZTNtYUpFN01BS1VfcTBVanJ1TVhiTkVZVVE?oc=5",
         "contentType": "article"
       },
       {
@@ -1062,6 +1062,15 @@
         "publishedAt": "2026-10-09T08:39:06+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRzBRaFJ6YU5HYXVBMmo1YUtNSXhrQkYyUUZUQ0tIWU9paF9KaTFRR2xqaERiekRnSnhxa0t6S3h4bXIteTZ4TTlQSlNKNTdjVEFmZnFVdnVtbnU3LW5jeG1QUFY3b2ZjWlRFRllFY0d3cEIxS2ZuQ2RjMklvRVZYZldybldfVXZkSEtoQmttanNrdHFaTXVwdWFucjNmOEVJNjY5Wms2R01odmxXNThzYWlVWmItS3JScXNEYzNUaHdqVGtt?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal's Max Dowman presented with three World Records!",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T10:20:49+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb1VTOXNxWlpwMEhLZUR6T2tJdTJuOFpPOU1rUVlzMEQtLWFyekZlNWVSbTN2VHQwZnZ5aUFWamJVZUFuVElWYkVRQWttbTBCV3ZaRm9yQXNQWGJKRnFtRVcxX0w2cG96WDRjNEp1Wk1RdF9zeTBnU0tidGt3YkNRNlI5VlRhd2dBT3FmZFVrak1QS3lPenJ2WWMyWHhQWXIxcnozMy1FWQ?oc=5",
         "contentType": "article"
       },
       {
@@ -1083,21 +1092,21 @@
         "contentType": "article"
       },
       {
-        "title": "\"Travel with no fear\" Daniel Farke previews Arsenal, Trafford and more! - Leeds United | Official Website",
+        "title": "Stats: How do we fare after international breaks?",
         "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T13:47:25+01:00",
-        "source": "Leeds United",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeEFUa0FxOVhTM1FHcWdMU2VaZXc5REhmVEZmaXlhUXFNOFBLeDFBcjl4MkhoejYwXzctT3BiY3MyZVlGSlk1dVVsejE1ZjRVbVNfRG95Sy0ybEZzRkV5alZjWnZRaVpZOGZ4c016MWRlM3UzTzBVQVRkMWloQVZpbzdMb2RqNy1udlFXQ0toVmp3ZXBFa0RfeW5FcHpUSkRWYUFtN0NB?oc=5",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T09:00:57+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHFkdTNkdmdRN2JlbTZ2U085aXZjNk5BdW9nU21JZlJOVjhUdTg2LU1aeEU4eGY1SEhGVVZRNjhBVmJpTnlmQW1ZUEs3Z3B6YndZMldMdDA2NjBzMGdJRGc3MjNLanIwRlRJOGxsZHVzc3R4QVhrYURvbVVha2JWNFFLbDhCb1pmeXZWbTQ5cmhGM2c?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Mikel Arteta’s new contract reflects where the power now lies at Arsenal | Ed Aarons",
+        "title": "Mikel Arteta to give eight-player Arsenal injury update ahead of Leeds amid Kai Havertz hint",
         "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T16:59:00+01:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOEtiRmJ4LW1BZTJ5ZU5fcC1CdUZMVDdfOFowY1M2TTlrSHhVMXc5WERMaGNyTUljMklaRmhJaFlTdFBnamhIUHZWSHN3eEVUZ1hHS19fMVZLazlPcjkzbHdacnloellITHdCdkY3RUNVMTRfTXVHZTNlRWtoMEFZRU1uMlU?oc=5",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T06:21:19+01:00",
+        "source": "Football London",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdmd6ZEtTNk9rUjl2YWVUZnhRUE8xNGtMSTdlY2RraEE3akoxMlNJQmxxb291QXNvdGM0TVdTNU8xaElyN3k2S21CVjJuQXNobjVDem00VnFFRGFxdUc4bGdoLU9MU1FTYkdrOWVmYnhQUkxibVZMRFI1eDNiVzJhelFoNTdkNGvSAYwBQVVfeXFMUDFXc1BLNmE3ZU5EU1gwZWZGTERiMGItdjVsZHdVWVpzN0c0d19hMGQtOThXX2kxUGV5RnAzaHFKRWJ1Tm9IZlNONjJyOENSbXlnUnpBQ1dhdmZzMzNKU0JNUzhBOUkyeXE2ZHZXQ21Zb2dCQlJnS2hoLUNDNWEyakNjeXQ2aWloUkYzOFE?oc=5",
         "contentType": "article"
       }
     ],
@@ -1169,23 +1178,23 @@
         "familyActivity": true
       },
       {
-        "title": "School students shine in Kingston art competition",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T14:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSDlNc1NWTjVUcnNkNzdiT0FhN1FxaVhIM3FVV0R6QndUS3NjMjVSeFpqVkNaOWtDbDdaN2JwYWhIT2FVTGJ4NHlXUUZJX2RFbWNha29ZM2pMdTZZejlMdjFkOUR1b2I2bGZHQWpCRmZ2SU9oLVZhcW5hRXpXb1IwdUxKbnFtc0FUTU42QlR5bm9LMjAybEdxN1RZcUcyNkozZm5ZbG54QV9JVmM0ZXFoM3RRclE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "What your Teddington home is really worth, and why most valuations get it wrong",
         "summary": "",
         "meta": "Tue 6 Oct",
         "publishedAt": "2026-10-06T16:00:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMVo1ZUIzcVFDalNZUzVMc1BoSlpVdUVrMV9jUzgzNTZSSlpid1ExWFFYWFlicDRPNmZSVlF1a1RuVUl5VkdfaEhRZ0puWU1OM21JdzBEejNGNmdKS1FkRW1wSEFwb2VYT0JqLVlEamh4NTQxSTRCWTg4WHh0U19FWEZUMUdjMjRiWTNLZ1RyUHFRT2NIVVNFVkRYelZUVGtjM2RlOEVLUlpyYmhaUEZjMzVRQUFtRkk1WFpJRktGZm1xQ3hNczRoaFlXdnJHUmZyVEZ1NGNWeE05a00?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
+        "summary": "",
+        "meta": "Tue 6 Oct",
+        "publishedAt": "2026-10-06T13:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbmlnelhmSnhaTjlIRjg3bXA3TmF2R0NhYjhkOTFja1IzQ1lQU2JOYjBsYklFR0ZnSkxpT3hab1dzcngyVXlCQ3hfUXBUNHlVajBxZTc5XzJ4S1QzdHRKc1pNRk9ZZXFUWE41X2xuWmI0dVh2NjFzbUZvSFBkQnVIdWZOSlBydlBESW1IU2xvUVE1aGtMbmZsd2ZJZnN6c2lYNlVZbEVNQnV1dXdpQy1KZUtQcWxFbkZPT2RjY1R0TTdwdjFyUHI5Yl9JUXdBMHc?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -1257,6 +1266,17 @@
         "familyActivity": false
       },
       {
+        "title": "Kingston e-bike contract faces calls for affordable fares and marked parking bays",
+        "summary": "",
+        "meta": "Thu 1 Oct",
+        "publishedAt": "2026-10-01T16:24:05+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTJfUDJORjdvN01zSFZZSHg2ZVVpalBrazUyR1lycUEwenowWkNWSXN3U1B0VGM5cld0N2M4NnNiMkJSc1FYdUdSYUhSeGx5VlN6akdZYmxrekFzUzZMc3RvSl8tamFGR20zZm1xSUg5b3otbWlMdFNVRUltSl9JVjdWOWVnZUVMek5XR0lZQlZKUTh0SlE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "Waste Removal Surrey - Chums Clearance 54A Coombe Rd, Kingston upon Thames, United Kingdom, KT2 7AF",
         "summary": "",
         "meta": "Thu 1 Oct",
@@ -1266,20 +1286,45 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
-      },
-      {
-        "title": "Kingston adds 15 electrical recycling points as 570 tonnes are wrongly discarded",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T11:12:59+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLXZQSzUzSWtNamdKYl9PZHdYalRnMmJxZmhRNWltRGJjU1ZKc3RNR25QXzBrTHQ0d2xCd3NwaU10X3BObElBQldLeEFoNmVSYjE5c0dMUVpHYUt2alJMZTZLRktqTkVGMzdLeXljMTFYaVJTcmpXRWVXaEhPN3dta0szQWM5TWdNb0otNEgyaFdMNmNyVVZPVFhtV3U?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
       }
     ],
     "UK news": [
+      {
+        "title": "DWP update over 'deeply demoralising' award cuts",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T13:12:00+01:00",
+        "source": "North Wales Live",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSElucGc5LVlGQkpqTlJVS3ZNNlNrMnNnVnVYYXlFYlcwLV9EaGJWS1pFY1hPc1U4VTdWa0x6ZjlOaG0xRGdsbk91NXRaTHVyTVljamd0R1ZrUmVrbGlNdEptM3ZNWW9kQWxEY0xvVFZHSG9lS1dQOFgwZW5qTGs3RUc2X21iMVpnNnR6dlFlZWgzOEsx?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Police Scotland: Improved local service under new community policing model – The NEN - The NEN",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T12:30:00+01:00",
+        "source": "North Edinburgh News",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVHZOVXVtM2g1aFZVVXNNWWdIcUlweF9SN0RzTWJlSDI5ODJFNk4zUklRMkRUY083TUtqamhlQVR0MXdPblAtdEs4bzVuSXpHNEhDTDl1eFZTTFUzVHpqSGpaMzktRkNySzdZU3VIUDRJQjE3anhsLXZMXy1XR3pnb1dfZWl5RDBESnp2WWZ6TVNyNkRTR1FF?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "CORD by Le Cordon Bleu celebrates the British game season, cooked by two of its best chefs",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T12:05:10+01:00",
+        "source": "The London Economic",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ3kzenRFQUw1bTNodU1VTmd5SGpQdThmdUFQT1NJRmktbWtNXzBHQktLc21COHlCZjQ2THNUYTVWZlNmdnlRRWZaNHpFTG9qbVlOWGNpXzdGLVpnZVZDNXptVUpPSEZ5Nnd6ZHMxdjU2UzJ5MC1HN0pwLU5rZjZxakN6UWI3UzZWV293aElkTFlqR2I5dWgwcXE3dUo2eVZPRGNDbURvMGo1VFJaMS1Da0I1ZGFXUF9xQ0FBWlZGUElreUlIcmV6MU9QdXhVNnRYMXNGUUlrQlN5QQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "North Wales care home artist gets surprise award from opera star Sir Bryn Terfel",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T10:56:15+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORnVCMG42NHNPQ2NBakQ3dGVEZWl0NmpaUUNDMXp3bC12c1J2X0M3TTVfS1pFQTlJWUtqdUlkWHlGb0x4RGYwam1wZG9pY3NiY3U0NTZvMXM0U1lpNXBxOW5xMWVrQ3BnY0RDcXlhRmlYZFhjZFlHcnd0WDRpOWpSRWxNcGg5THpBNDZ1OUUyaklFQkFyelhCV1hseGhnSmZNZVFQN3JlbEdhNWZNb0V1U3huNlM?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "SWAN RESCUED AFTER CRASHING INTO BRITISH HEART FOUNDATION BUILDING IN NEWPORT",
         "summary": "",
@@ -1287,15 +1332,6 @@
         "publishedAt": "2026-10-09T10:17:40+01:00",
         "source": "Island Echo",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMy1QWnl1emtxaVNyOWc5VWJYcnFINHpMVVVkRDkzTmJMTWtRbDdVcmhwUGl2YjRDV2tNMU5XZGUxQzNjMlAtVWk0djZUQmZpc2lFZ3hzdUFqazNWR3FueXJHN0pfSXpMMi1iMS1TdlNNeFpVb2NhVkhKdnJhbVE1UktwamNjRFBudnAtOUFKQm5LZEtrNVQ4TXN2T1psM296MEpBR2RPRUNRaEU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Emotions run high at the round table as Celebrity Traitors banish two players",
-        "summary": "Viewers watched to see whether Richard E Grant could save himself at the first round table of the series.",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T00:08:09+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cm9dzl7wx2qyo?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
@@ -1323,15 +1359,6 @@
         "publishedAt": "2026-10-08T17:28:24+01:00",
         "source": "At Sea",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXpGUkc5NWJVRFJmdUtHZFVHX1NiejZMbHdxdXpxUl9jZWJmQ09SNmxvdzBLeDRLZjlZRWtHb3V5WUFkajA3MklJX2Jqa25nYmF5Q0g5bWtVWldPYm4zbXVhcWVqbkItWjlCMzJuRG9hRWVsdjJ3T3JpQ1NQRmRudGYzcEM4LVFaYV82TTlBSGcybjVWXzN0bTF6Q2UwLS14Q2NkcU9adUExV2RBTXlaTA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Georgia Hunter Bell: British 800m and 1500m runner celebrates team's female track success",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T17:12:58+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYnh2Z1FYWGltZkg1QjQ1RGhzRUFCaTI0N05nemRJY2xucnlJRVdLN1hIU21pSjAzQ0RBdWZfN3g4OU1WS2R1U2JmZUNWZURxV2dJekNBQU44WlRuc1d2V3hoVTVPZFh4NW9oYkowbXRDdTB5OXI5b3FiVHRZdTJuQy01T2JYQmE4UFVPZjFRUGhFTEYxM2tEYVdRdEhna05uX2RiZzZYNnp0UnY1a3J6ZjM5SWh5WW5lVnZOQUFVUU1TSVNmQlVnSld6T0dDYXdGbFFBcHllTnZiMFBWd0o5UVFJWQ?oc=5",
         "contentType": "article"
       },
       {
@@ -1368,24 +1395,6 @@
         "publishedAt": "2026-10-08T14:34:08+01:00",
         "source": "BroadwayWorld",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONVBxSlF0MWc2V1pQS21LNUx6eUlVMmpqd0lMN1doZWNlZGcwVEptVVlZZHB3Y3lhbVluZG5JemhTOTRjdm9fVkZzZG1IVTcxZzNVdW5DVW9fMUVWMW5FcVBEX0paYUxnQ2tVZExIdXpTM3BBR1hQd19MRG5UZEVNczVjRkdaX2VGRkQzeXJqZWhZMi0yMW53LS12QldaMVpNZi16d0xzWWxxdUZSLXNkREYyV3VRcGV2djlqeElzNHdQTkMtVVB2RUI5UlJDQ0VUcGVfVVFST1l6QQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Print Scotland celebrates apprentices at 2026 awards",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T13:39:09+01:00",
-        "source": "Printweek",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWTJzcFhtQlk5b3NhZ3Vvc3pobjhrT3h2SDRHMVpwVGJxTU8tdGhMM3dpTXNSU0VIVmwyXzFrcVBsS2w2ZVJzNFVLMElwTVp2X1RXUjJ4djBIQUdKT1FIa0dvdUJiTm4takNmYzN3YUNqOXRmRVlmVkpTNGNxQkFtMHUzRk9IY2gwSXpNNUUxZnAwNktpOUE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Pink hair and powerful plaids: Tate Britain celebrates the chaotic creativity of 90s culture",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T13:04:41+01:00",
-        "source": "AOL.co.uk",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT2NJRm90XzY4WEx1SkdGVmZIbnh0MnVKSkNqTHoxR1Q1RjdubjdmaEU0cWhQV2lRMjAtajJRTHhnQVJ2MzdZRVJiOHFYZGMxTVQxX3JtSU5Gd2JqTEJydGMtalo3Z3ZHV0pvSUZzcEpubTl5QzVnaDlnY1pldlB0VlBn?oc=5",
         "contentType": "article"
       }
     ],
