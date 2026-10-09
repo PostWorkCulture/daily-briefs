@@ -169,8 +169,15 @@
     return pool[hashStr(name) % pool.length];
   }
 
+  function balloonSrcFor(name='') {
+    const isGirl = isGirlName(name);
+    const variant = (hashStr(name) % 3) + 1;
+    return isGirl ? `assets/icons/birthday-balloons-girl-${variant}.webp` : `assets/icons/birthday-balloons-boy-${variant}.webp`;
+  }
+
   function renderBalloonSvg(p, name='', compact=false) {
-    return `<img class="hq-balloon${compact ? ' compact' : ''}" src="assets/icons/birthday-balloons.webp" alt="" aria-hidden="true" width="${compact ? 28 : 46}" height="${compact ? 35 : 54}">`;
+    const src = balloonSrcFor(name);
+    return `<img class="hq-balloon${compact ? ' compact' : ''}" src="${src}" alt="" aria-hidden="true" width="${compact ? 28 : 46}" height="${compact ? 35 : 54}">`;
   }
 
   function milestoneText(item) {

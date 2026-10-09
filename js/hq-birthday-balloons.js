@@ -62,8 +62,15 @@
     return `${compact?'c':'f'}${hashName(name).toString(36)}`;
   }
 
+  function balloonSrcFor(name='') {
+    const isGirlUser = isGirl(name);
+    const variant = (hashName(name) % 3) + 1;
+    return isGirlUser ? `assets/icons/birthday-balloons-girl-${variant}.webp` : `assets/icons/birthday-balloons-boy-${variant}.webp`;
+  }
+
   function balloonSvg(p, name='', compact=false) {
-    return `<img class="hq-balloon${compact?' compact':''}" src="assets/icons/birthday-balloons.webp" alt="" aria-hidden="true" width="${compact?28:46}" height="${compact?35:54}">`;
+    const src = balloonSrcFor(name);
+    return `<img class="hq-balloon${compact?' compact':''}" src="${src}" alt="" aria-hidden="true" width="${compact?28:46}" height="${compact?35:54}">`;
   }
 
   function ensureStyles() {

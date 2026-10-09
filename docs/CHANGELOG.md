@@ -1,3 +1,12 @@
+## 9 October 2026: Gender-specific colour palettes for glossy triple-balloon clusters
+
+- Retained the high-definition 3D glossy triple-balloon cluster style (tied with curly ribbons) while applying dedicated gender-specific colour palettes:
+  - **Girls**: Festive combinations featuring pink, yellow, and purple balloons with matching curled ribbons (`birthday-balloons-girl-1.webp`, `birthday-balloons-girl-2.webp`, `birthday-balloons-girl-3.webp`).
+  - **Boys**: Boy colours featuring blues, cyans, and emerald greens with matching curled ribbons (`birthday-balloons-boy-1.webp`, `birthday-balloons-boy-2.webp`, `birthday-balloons-boy-3.webp`).
+- Updated `js/home-reminders.js` and `js/hq-birthday-balloons.js` with `balloonSrcFor(name)` to automatically assign the appropriate gender palette variant to each birthday card and Home reminder card.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to specify gender-specific triple-balloon clusters.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Match all content below Latest Club news (Transfer watch and Reporter watch) to white/red theme
 
 - Converted the entire section below Latest Club news (Transfer watch and Reporter watch) to the same clean white/red colour format:
