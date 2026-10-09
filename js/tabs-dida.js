@@ -85,7 +85,7 @@
       const icon=`<span class="section-story-icon section-story-icon-ai${companyAttrs}">${sectionIcon('ai',index,company)}</span>`;
       return `<${tag} class="tab-story story-row section-story section-story-ai"${attrs}>${icon}<div class="story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
     }
-    return `<${tag} class="tab-story news-card section-story section-story-news"${attrs}><div class="section-story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div><span class="story-arrow" aria-hidden="true">↗</span></${tag}>`;
+    return `<${tag} class="tab-story news-card section-story section-story-news"${attrs}><div class="section-story-copy"><h4 class="story-title">${esc(item?.title||'Untitled')}</h4><span class="meta story-meta">${metaText}</span></div></${tag}>`;
   }
   function funSaleCard(item){
     const headline=item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On');

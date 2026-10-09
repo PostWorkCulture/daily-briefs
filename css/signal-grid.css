@@ -434,12 +434,16 @@ body #homeReminders .home-reminder-card.birthday{
 .tab-story.news-card .story-title,
 .tab-story.news-card h4{
   margin:0 0 10px 0!important;
-  font-size:14.5px!important;
-  font-weight:500!important;
-  line-height:1.4!important;
+  font-size:16px!important;
+  font-weight:600!important;
+  line-height:1.35!important;
   color:var(--text)!important;
   letter-spacing:-.005em!important;
   white-space:normal!important;
+}
+.tab-story.news-card .story-arrow,
+.news-card .story-arrow{
+  display:none!important;
 }
 .tab-story.news-card .story-meta,
 .tab-story.news-card .meta{
@@ -449,6 +453,126 @@ body #homeReminders .home-reminder-card.birthday{
   color:var(--signal-muted,#7891aa)!important;
   letter-spacing:.02em!important;
   font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important;
+}
+
+/* Arsenal articles formatted like News section */
+#view-arsenal .arsenal-news,
+#view-arsenal .arsenal-transfer-list{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+@media(max-width:680px){
+  #view-arsenal .arsenal-news,
+  #view-arsenal .arsenal-transfer-list{
+    grid-template-columns:1fr!important;
+  }
+}
+#view-arsenal .arsenal-news-item,
+#view-arsenal .arsenal-news-lead,
+#view-arsenal .arsenal-news-support,
+#view-arsenal .arsenal-news-stream{
+  grid-column:auto!important;
+  grid-row:auto!important;
+}
+#view-arsenal .arsenal-news-item{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:space-between!important;
+  border:1px solid rgba(7,29,73,.12)!important;
+  border-radius:6px!important;
+  background:#fff!important;
+  color:var(--arsenal-ink)!important;
+  text-decoration:none!important;
+  padding:14px 16px!important;
+  min-height:120px!important;
+  box-sizing:border-box!important;
+  box-shadow:0 4px 14px rgba(7,29,73,.06)!important;
+  transition:border-color .18s,background .18s,box-shadow .18s;
+}
+#view-arsenal .arsenal-news-item:hover,
+#view-arsenal .arsenal-news-item:focus-visible{
+  border-color:rgba(227,6,19,.45)!important;
+  box-shadow:0 0 16px rgba(227,6,19,.18)!important;
+}
+#view-arsenal .arsenal-news-item.has-image{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 160px!important;
+  gap:0!important;
+  align-items:stretch!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+#view-arsenal .arsenal-news-item.has-image .story-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:space-between!important;
+  padding:14px 16px!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+#view-arsenal .arsenal-news-item.has-image .story-media{
+  min-height:120px!important;
+  width:160px!important;
+  background-size:cover!important;
+  background-position:center!important;
+  border-left:1px solid rgba(7,29,73,.12)!important;
+  position:relative!important;
+  flex-shrink:0!important;
+}
+@media(max-width:680px){
+  #view-arsenal .arsenal-news-item.has-image{
+    grid-template-columns:1fr!important;
+  }
+  #view-arsenal .arsenal-news-item.has-image .story-media{
+    order:-1!important;
+    width:100%!important;
+    min-height:150px!important;
+    border-left:none!important;
+    border-bottom:1px solid rgba(7,29,73,.12)!important;
+  }
+}
+#view-arsenal .arsenal-news-item .story-title,
+#view-arsenal .arsenal-news-item h4,
+#view-arsenal .arsenal-news-item b{
+  margin:0 0 10px 0!important;
+  font-size:16px!important;
+  font-weight:600!important;
+  line-height:1.35!important;
+  color:var(--arsenal-navy)!important;
+  letter-spacing:-.005em!important;
+  white-space:normal!important;
+}
+#view-arsenal .arsenal-news-item .story-meta,
+#view-arsenal .arsenal-news-item .meta,
+#view-arsenal .arsenal-news-item span{
+  margin:0!important;
+  font-size:11.5px!important;
+  font-weight:500!important;
+  color:#66728c!important;
+  letter-spacing:.02em!important;
+  text-transform:none!important;
+}
+#view-arsenal .arsenal-transfer-item .story-title,
+#view-arsenal .arsenal-transfer-item h4,
+#view-arsenal .arsenal-transfer-item b{
+  margin:0 0 10px 0!important;
+  font-size:16px!important;
+  font-weight:600!important;
+  line-height:1.35!important;
+  color:#fff!important;
+  letter-spacing:-.005em!important;
+  white-space:normal!important;
+}
+#view-arsenal .arsenal-transfer-item .story-meta,
+#view-arsenal .arsenal-transfer-item .meta,
+#view-arsenal .arsenal-transfer-item span{
+  margin:0!important;
+  font-size:11.5px!important;
+  font-weight:500!important;
+  color:rgba(255,255,255,.68)!important;
+  letter-spacing:.02em!important;
+  text-transform:none!important;
 }
 .tab-story.news-card.has-image .story-media{
   min-height:120px!important;

@@ -1,3 +1,12 @@
+## 9 October 2026: Enlarge news titles, remove news card arrows, match Arsenal fixture card to white score theme, and format Arsenal articles like News section
+
+- Enlarged news card titles to 16px font size with comfortable 1.35 line height and 600 weight across all news cards.
+- Removed arrows (`↗`) completely from all news cards in both clientside templates (`js/tabs-dida.js`) and styles (`css/signal-grid.css`).
+- In the Arsenal section, kept the top red banner and the latest score box on the left, while matching the dark blue nearest fixture box (`#nextFixtureCard`) to the same clean white card colour theme as the latest score box (white background, 5px red top border, deep navy headings, red labels, and dark navy fixture facts).
+- Formatted all Arsenal articles below the match centre (Club news, Transfer watch, and Reporter watch) to follow the exact format of the News section: balanced 2-column desktop grid (single-column on mobile), max 2 articles per row, generous 16px headlines, clean metadata, 160px publisher pictures on the right when available, and no arrows.
+- Updated `docs/MASTER-BRIEF-CURRENT.md` to record the approved Arsenal match card white theme and News section article formatting.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: High-definition TV pick artwork across all profiles and automated refreshes
 
 - Replaced low-resolution TV pick portrait posters with crisp, high-definition 16:9 widescreen artwork (including 1920x1080 Full HD and 3840x2160 4K Ultra HD) across Pete and Sofia briefs, specifically upgrading Stacey Dooley (`593120.jpg`), Global Eye (`1467592.jpg`), and Aileen Wuornos (`1609030.jpg`).

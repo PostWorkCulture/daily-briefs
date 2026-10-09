@@ -30,19 +30,19 @@ function renderArsenal(a){
   $('#nextFixtureCard').innerHTML=next?`<span>Next fixture · ${next.competition}</span><strong>${next.opponent}</strong><small>${next.dateLabel} · ${next.kickoff} · ${next.homeAway==='home'?'Home':'Away'}</small>`:'<span>Next fixture</span><strong>—</strong><small>Fixture unavailable</small>';
   $('#leagueCard').innerHTML=a.leaguePosition?`<span>Premier League</span><strong>${a.leaguePosition}${a.leaguePosition===1?'st':a.leaguePosition===2?'nd':a.leaguePosition===3?'rd':'th'}</strong><small>Current position</small>`:'<span>Premier League</span><strong>—</strong><small>Position unavailable</small>';
   const news=$('#arsenalNews');news.innerHTML='';
-  (a.news||[]).slice(0,5).forEach((n,index)=>{const hierarchy=index===0?' arsenal-news-lead':index<3?' arsenal-news-support':' arsenal-news-stream',el=linkEl('div',n,`arsenal-news-item${hierarchy}`);el.innerHTML=`<span>${n.source||'Team news'}</span><b>${n.title}</b>`;news.appendChild(el)});
+  (a.news||[]).slice(0,5).forEach((n,index)=>{const hierarchy=index===0?' arsenal-news-lead':index<3?' arsenal-news-support':' arsenal-news-stream',el=linkEl('div',n,`arsenal-news-item news-card tab-story${hierarchy}`);el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${n.title}</h4><span class="meta story-meta">${n.source||'Team news'}</span></div>`;news.appendChild(el)});
   const newest=items=>[...(items||[])].sort((left,right)=>(Date.parse(right.publishedAt||'')||0)-(Date.parse(left.publishedAt||'')||0));
   const transfers=$('#arsenalTransfers');transfers.innerHTML='';
   newest(a.transfers).slice(0,6).forEach(item=>{
-    const el=linkEl('article',item,'arsenal-transfer-item');
-    el.innerHTML=`<div><span>${item.trust||'Trusted report'}</span><small>${item.source||'Trusted source'}${item.meta?` · ${item.meta}`:''}</small></div><b>${item.title}</b>`;
+    const el=linkEl('article',item,'arsenal-transfer-item news-card tab-story');
+    el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${item.title}</h4><span class="meta story-meta">${item.trust||'Trusted report'}${item.source?` · ${item.source}`:''}${item.meta?` · ${item.meta}`:''}</span></div>`;
     transfers.appendChild(el);
   });
   if(!transfers.children.length)transfers.innerHTML='<div class="arsenal-transfer-empty">No new trusted men’s first-team transfer update today.</div>';
   const rumours=$('#arsenalTransferRumours');rumours.innerHTML='';
   newest(a.transferRumours).slice(0,5).forEach(item=>{
-    const el=linkEl('article',item,'arsenal-transfer-item arsenal-rumour-item');
-    el.innerHTML=`<div><span>Unconfirmed · X</span><small>${item.source||'Reporter'}${item.confidence?` · ${item.confidence}`:''}${item.meta?` · ${item.meta}`:''}</small></div><b>${item.title}</b>`;
+    const el=linkEl('article',item,'arsenal-transfer-item arsenal-rumour-item news-card tab-story');
+    el.innerHTML=`<div class="section-story-copy"><h4 class="story-title">${item.title}</h4><span class="meta story-meta">Unconfirmed · X · ${item.source||'Reporter'}${item.confidence?` · ${item.confidence}`:''}${item.meta?` · ${item.meta}`:''}</span></div>`;
     rumours.appendChild(el);
   });
   if(!rumours.children.length)rumours.innerHTML='<div class="arsenal-transfer-empty arsenal-rumour-empty">No qualifying reporter posts in the last seven days.</div>';

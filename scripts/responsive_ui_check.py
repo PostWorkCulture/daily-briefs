@@ -735,25 +735,27 @@ def check_viewport(browser, name: str) -> None:
         transfer_background = page.locator('.arsenal-transfers').evaluate("el => getComputedStyle(el).backgroundImage")
         if 'rgb(7, 29, 73)' not in transfer_background:
             raise AssertionError(f"{name}: Arsenal transfer area does not use the approved navy: {transfer_background}")
-        fixture_copy_colours = page.evaluate(
+        fixture_card_info = page.evaluate(
             """
             () => {
+              const card = document.querySelector('#nextFixtureCard');
               const primary = document.querySelector('#nextFixtureCard .fixture-fact>b');
               const supporting = document.querySelector('#nextFixtureCard .fixture-fact>small');
               return {
+                bg: card ? getComputedStyle(card).backgroundColor : '',
                 primary: primary ? getComputedStyle(primary).color : '',
                 supporting: supporting ? getComputedStyle(supporting).color : null
               };
             }
             """
         )
-        if fixture_copy_colours["primary"] != "rgb(255, 255, 255)":
+        if fixture_card_info["bg"] != "rgb(255, 255, 255)":
             raise AssertionError(
-                f"{name}: Arsenal fixture copy is not white on navy: {fixture_copy_colours}"
+                f"{name}: Arsenal next fixture card does not match latest score white theme: {fixture_card_info}"
             )
-        if fixture_copy_colours["supporting"] and not fixture_copy_colours["supporting"].startswith("rgba(255, 255, 255,"):
+        if fixture_card_info["primary"] != "rgb(7, 29, 73)":
             raise AssertionError(
-                f"{name}: Arsenal supporting fixture copy is not light on navy: {fixture_copy_colours}"
+                f"{name}: Arsenal fixture copy is not navy on white: {fixture_card_info}"
             )
         league_text = page.locator('#leagueCard').inner_text()
         if not __import__('re').search(r'\b(?:1st|2nd|3rd|(?:[4-9]|1[0-9]|20)th)\b', league_text):
