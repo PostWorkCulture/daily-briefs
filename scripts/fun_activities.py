@@ -46,11 +46,11 @@ def activity_sort(item):
     return (0 if item.get('startDate') else 1, item.get('startDate',''), item['title'])
 
 def refresh_activities(today, fetch=requests.get):
-    catalog = json.loads((ROOT/'data/fun-catalog.json').read_text())
+    catalog = json.loads((ROOT/'data/fun-catalog.json').read_text(encoding='utf-8'))
     cached = {}
     for profile in ('pete', 'sofia'):
         try:
-            for item in json.loads((ROOT/f'data/{profile}.json').read_text()).get('sections',{}).get('Fun',[]):
+            for item in json.loads((ROOT/f'data/{profile}.json').read_text(encoding='utf-8')).get('sections',{}).get('Fun',[]):
                 cached[item['id']] = item
         except (OSError, ValueError, KeyError):
             pass

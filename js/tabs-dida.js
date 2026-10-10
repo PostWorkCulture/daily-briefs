@@ -89,10 +89,21 @@
     }
     return `<${tag} class="tab-story news-card section-story section-story-news"${attrs}><div class="section-story-copy"><h4 class="story-title">${titleText}</h4><span class="meta story-meta">${metaText}</span></div></${tag}>`;
   }
+  function cleanMojibake(str){
+    if(!str)return '';
+    return String(str)
+      .replace(/Ã¢â‚¬â€œ|â€“/g,'–')
+      .replace(/Ã‚Â·|Â·/g,'·')
+      .replace(/Ã‚Â£|Â£/g,'£')
+      .replace(/Ã¢â‚¬â„¢|â€™/g,"'")
+      .replace(/Ã¢â‚¬Å“|Ã¢â‚¬Â|â€œ|â€/g,'"')
+      .replace(/ÃƒÂ©|Ã©/g,'é')
+      .replace(/\uFFFD/g,'-');
+  }
   function funSaleCard(item){
-    const headline=item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On');
-    const dates=item.saleDate||item.when||'';
-    const discount=item.discount||item.cost||'';
+    const headline=cleanMojibake(item.saleHeadline||(item.title?`${item.title.replace(/ Event| Shopping.*$/i,'')} Now On`:'Sale Now On'));
+    const dates=cleanMojibake(item.saleDate||item.when||'');
+    const discount=cleanMojibake(item.discount||item.cost||'');
     return `<a class="tab-story fun-sale-card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer"><div class="fun-sale-copy"><h4 class="fun-sale-title">${esc(headline)}</h4><div class="fun-sale-meta"><span class="fun-sale-date">${esc(dates)}</span><span class="fun-sale-sep" aria-hidden="true">·</span><span class="fun-sale-discount">${esc(discount)}</span></div></div><span class="fun-sale-cta" aria-hidden="true">Shop ↗</span></a>`;
   }
   function detectFunTheme(item){
@@ -144,10 +155,15 @@
   }
   function funStory(item,index=0){
     const theme=detectFunTheme(item);
-    const {main,sub}=splitFunTitle(item.title);
+    const {main,sub}=splitFunTitle(cleanMojibake(item.title));
     const kicker=funKicker(theme);
-    const dateText=esc((item.when||'').replace(/\s*·\s*/g,' | '));
-    return `<article class="tab-story fun-story fun-poster fun-theme-${theme}" data-fun-tags="${esc((item.tags||[]).join(' '))}"><div class="fun-story-copy fun-poster-frame"><div class="fun-poster-header"><div class="fun-poster-intro">${esc(kicker)}</div><h4 class="fun-poster-title">${esc(main)}</h4><div class="fun-poster-sub">${esc(sub)}</div><p class="fun-location">${esc(item.location)}</p><div class="fun-date-pill">${dateText}</div></div><p class="fun-poster-summary">${esc(item.summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',item.when],['Ages',item.ages],['Cost',item.cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><div class="fun-poster-actions"><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(item.location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a></div><small class="fun-source">${esc(item.source)}</small></div></article>`;
+    const cleanWhen=cleanMojibake(item.when||'');
+    const dateText=esc(cleanWhen.replace(/\s*·\s*/g,' | '));
+    const location=cleanMojibake(item.location||'');
+    const summary=cleanMojibake(item.summary||'');
+    const ages=cleanMojibake(item.ages||'');
+    const cost=cleanMojibake(item.cost||'');
+    return `<article class="tab-story fun-story fun-poster fun-theme-${theme}" data-fun-tags="${esc((item.tags||[]).join(' '))}"><div class="fun-story-copy fun-poster-frame"><div class="fun-poster-header"><div class="fun-poster-intro">${esc(kicker)}</div><h4 class="fun-poster-title">${esc(main)}</h4><div class="fun-poster-sub">${esc(sub)}</div><p class="fun-location">${esc(location)}</p><div class="fun-date-pill">${dateText}</div></div><p class="fun-poster-summary">${esc(summary)}</p><dl class="fun-details">${[['Type',item.kind==='event'?'Dated event':'Regular place to visit'],['When',cleanWhen],['Ages',ages],['Cost',cost]].map(([label,value])=>`<div class="fun-field"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><div class="fun-poster-actions"><a class="fun-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Details &amp; booking ↗</a><a class="fun-route" href="https://www.google.com/maps/dir/?api=1&amp;origin=KT8+2LE&amp;destination=${encodeURIComponent(location)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Check drive ↗</a></div><small class="fun-source">${esc(item.source)}</small></div></article>`;
   }
   function group(title,items,section=''){
     const key=String(title||section||'items').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');

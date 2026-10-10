@@ -1363,7 +1363,7 @@ def pete_job_item(job: dict, source: str) -> tuple[int, datetime, dict] | None:
 def verified_career_details(job: dict) -> dict:
     """Retain researched primary metadata only for the exact current vacancy."""
     try:
-        catalog = json.loads((DATA / 'career-verified.json').read_text())
+        catalog = json.loads((DATA / 'career-verified.json').read_text(encoding='utf-8'))
         verified = catalog.get(str(job.get('url') or '').split('?', 1)[0])
         normal_title = lambda title: re.sub(r'\W+', '', str(title).casefold())
         if not verified or normal_title(verified.get('title')) != normal_title(job.get('title')):

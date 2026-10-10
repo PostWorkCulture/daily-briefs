@@ -1,3 +1,12 @@
+## 10 October 2026: Fix corrupted date characters and UTF-8 mojibake in Fun section
+
+- **Root-cause encoding fix**:
+  - Added explicit `encoding='utf-8'` to `Path.read_text()` in `scripts/fun_activities.py` and `scripts/refresh.py` to prevent Windows default CP1252 decoding of UTF-8 text files.
+  - Re-synced authoritative clean event and sale entries from `data/fun-catalog.json` into `data/pete.json` and `data/sofia.json`, eliminating all residual double-encoded sequences (`Ã¢â‚¬â€œ`, `Ã‚Â·`, `Ã‚Â£`, `Ã¢â‚¬â„¢`, `ÃƒÂ©`).
+- **Client-side defensive sanitization**:
+  - Added `cleanMojibake()` helper in `js/tabs-dida.js` to automatically sanitize titles, date ranges, summaries, locations, and costs before rendering into cards, ensuring date badges and details tables always render cleanly.
+- Verified all 119 Python unit tests, 5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 9 October 2026: Transparent red sale tiles in Fun section
 
 - **Subtle transparent red styling for sale tiles**:
