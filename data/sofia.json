@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Saturday, 10 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Saturday, 10 October 2026 · refreshed 7:23am",
   "worldFact": {
     "id": "mount-thor-steepest-vertical-cliff",
     "editorialPriority": "human-first",
@@ -19,26 +19,26 @@
   },
   "weather": {
     "temp": "10°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-10",
-        "high": 15,
+        "high": 16,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-11",
         "high": 15,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 20,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -52,16 +52,16 @@
       },
       {
         "date": "2026-10-13",
-        "high": 21,
+        "high": 20,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-14",
-        "high": 19,
+        "high": 20,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 50%",
+      "detail": "Sunny intervals · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -416,20 +416,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Godstone Farm - Gruffalo?",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -442,6 +428,20 @@
       "colorId": "10",
       "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Godstone Farm - Gruffalo?",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Let it glow disco 3-4pm",
@@ -657,6 +657,29 @@
       "preferenceScore": 475.1
     },
     {
+      "title": "Panorama",
+      "summary": "Rates of bowel, breast and other cancers are rising among younger generations according to NHS data. Why are more younger people getting cancer?",
+      "meta": "BBC One · Available since Mon 5 Oct",
+      "source": "BBC One",
+      "channel": "BBC One",
+      "releaseDate": "2026-10-05",
+      "releaseDateLabel": "Available since Mon 5 Oct",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
+      "artworkAlt": "Panorama programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-05",
+      "showId": 8534,
+      "episodeId": 3776663,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 408.7
+    },
+    {
       "title": "Time",
       "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
       "meta": "BBC iPlayer · Tomorrow, 6am",
@@ -681,33 +704,6 @@
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-10",
       "preferenceScore": 440.9
-    },
-    {
-      "title": "Below",
-      "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
-      "meta": "Netflix · Available since Thu 8 Oct",
-      "source": "Netflix",
-      "channel": "Netflix",
-      "releaseDate": "2026-10-08",
-      "releaseDateLabel": "Available since Thu 8 Oct",
-      "url": "https://www.netflix.com/title/81652677",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
-      "artworkAlt": "Below programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-08",
-      "showId": 93115,
-      "episodeId": 3673506,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Thriller",
-        "Mystery",
-        "Supernatural"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-10",
-      "preferenceScore": 436.9
     }
   ],
   "sections": {
@@ -724,8 +720,8 @@
       {
         "title": "Sweden Has 267,570 Islands. I Walked Across 20 of Them.",
         "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T20:39:00+01:00",
+        "meta": "Sat 10 Oct",
+        "publishedAt": "2026-10-10T05:25:38+01:00",
         "source": "The New York Times",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOV2FhWC14UVQ1N3lDWTBGYVRsekI3U1h0Q1hPRHMzaDBsWEtadHlnNlVmR1JWeExZRlF6M0kyQ2JuZE02VTlOY2hyOU1jSm9aeXZBTGxWWDNHYUFBc0ViQ0h5cENmQWVKMHR3NllQVGtMRXFRTVFwbGswWjRmWG1LWDJR?oc=5",
         "contentType": "article"
@@ -740,15 +736,6 @@
         "contentType": "article"
       },
       {
-        "title": "Viktor Gyökeres has shone for Sweden. Can he do it for Arsenal now?",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T11:35:00+01:00",
-        "source": "ESPN",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQlBfMTNub0dPMFBvTWlubmVhMmxCU2FaMm55a08tQ0pWWFZjdzAtaUxMTE52OUFtVEs0ckNLMzBRemhxV2h1R1JoUGd6TGpVUzl1UEJJMDU1TV9wWExPLU5jNi1lUDZGdGJIMHFEY2JIYVBXdml1Q3ZwS3FWcFhGNjByZ2luNVZKbDVCclE3SEZpUHppQnQ4QThwbw?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "NEWS: Industrial-scale Russian money laundering in Sweden flows to neobanks including Revolut, police say",
         "summary": "",
         "meta": "Fri 9 Oct",
@@ -758,12 +745,12 @@
         "contentType": "article"
       },
       {
-        "title": "National Construction College Scotland Hosts Swedish Delegation",
+        "title": "Viktor Gyökeres has shone for Sweden. Can he do it for Arsenal now?",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T12:04:59+01:00",
-        "source": "Roofing Today",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaGRLVDd1bEN6WDZ6amdXS2I2RjJOSk9UVlNJeUlDOTNfNHQ4ZzV1TllIMlFxdko0S3BlVkhLbllfRTYtLVZfOXZMdTBXaWV4dV9ucjloZHhld1ExanZyRnlZcjNtUE1qdTNVV182MkVhc2ZDMHRxRW1zeG1CV1VYQ2JjRU93MVFuZ0RVTHZPNUVkQ1hEOUE?oc=5",
+        "publishedAt": "2026-10-09T11:35:00+01:00",
+        "source": "ESPN",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQlBfMTNub0dPMFBvTWlubmVhMmxCU2FaMm55a08tQ0pWWFZjdzAtaUxMTE52OUFtVEs0ckNLMzBRemhxV2h1R1JoUGd6TGpVUzl1UEJJMDU1TV9wWExPLU5jNi1lUDZGdGJIMHFEY2JIYVBXdml1Q3ZwS3FWcFhGNjByZ2luNVZKbDVCclE3SEZpUHppQnQ4QThwbw?oc=5",
         "contentType": "article"
       },
       {
@@ -773,6 +760,15 @@
         "publishedAt": "2026-10-09T15:41:24+01:00",
         "source": "Trustnet",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qckFsYXVpRk1URjZSeTBlbjBXcnZfNk8ydXlZRlBIM1E5bHByY2s1ejNEbXdDZG9hb1owUlA5c0dLMWdzRkdIejR5a09tTUtSUnJ4TUh3R0FpcmpwR1lucg?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "National Construction College Scotland Hosts Swedish Delegation",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T12:04:59+01:00",
+        "source": "Roofing Today",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaGRLVDd1bEN6WDZ6amdXS2I2RjJOSk9UVlNJeUlDOTNfNHQ4ZzV1TllIMlFxdko0S3BlVkhLbllfRTYtLVZfOXZMdTBXaWV4dV9ucjloZHhld1ExanZyRnlZcjNtUE1qdTNVV182MkVhc2ZDMHRxRW1zeG1CV1VYQ2JjRU93MVFuZ0RVTHZPNUVkQ1hEOUE?oc=5",
         "contentType": "article"
       }
     ],
@@ -811,17 +807,6 @@
         "familyActivity": false
       },
       {
-        "title": "Kingston care home raises over £1,000 for dementia charity",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T12:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc2t6bUR3aXctR2lpOC1VZEF3ZmJxbk44SWdJa0NQTnhfWXBybjM4RE01cmtQYk1vNDlVSUVMTXRhZmtQeFRfTEh5dVN6M3BMVm9LNGh6Rk4zbFo4TVN5TGlnbWpfNWlpU3c4ZFlXaG9TcVJFdVp6ZnBEZlB6YzJ6dGdOSnBXc0xvZGdZWFZTdWJockkxZXZXczNWbEoxSWhrcGttUEdZU0NSc3BINEJVVkc4WGU2SThsV1NJ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Cancer survivor to take part in charity fundraising brewery walk in Teddington",
         "summary": "",
         "meta": "Wed 7 Oct",
@@ -842,6 +827,17 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true
+      },
+      {
+        "title": "School students shine in Kingston art competition",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T14:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSDlNc1NWTjVUcnNkNzdiT0FhN1FxaVhIM3FVV0R6QndUS3NjMjVSeFpqVkNaOWtDbDdaN2JwYWhIT2FVTGJ4NHlXUUZJX2RFbWNha29ZM2pMdTZZejlMdjFkOUR1b2I2bGZHQWpCRmZ2SU9oLVZhcW5hRXpXb1IwdUxKbnFtc0FUTU42QlR5bm9LMjAybEdxN1RZcUcyNkozZm5ZbG54QV9JVmM0ZXFoM3RRclE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
       },
       {
         "title": "What your Teddington home is really worth, and why most valuations get it wrong",
@@ -921,6 +917,17 @@
         "familyActivity": false
       },
       {
+        "title": "Kingston e-bike contract faces calls for affordable fares and marked parking bays",
+        "summary": "",
+        "meta": "Thu 1 Oct",
+        "publishedAt": "2026-10-01T08:00:00+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTJfUDJORjdvN01zSFZZSHg2ZVVpalBrazUyR1lycUEwenowWkNWSXN3U1B0VGM5cld0N2M4NnNiMkJSc1FYdUdSYUhSeGx5VlN6akdZYmxrekFzUzZMc3RvSl8tamFGR20zZm1xSUg5b3otbWlMdFNVRUltSl9JVjdWOWVnZUVMek5XR0lZQlZKUTh0SlE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
         "title": "Teddington's 100-year-old allotments close for good today",
         "summary": "",
         "meta": "Wed 30 Sep",
@@ -941,27 +948,25 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
-      },
-      {
-        "title": "16-year-old crowned Miss Teen Kingston upon Thames and enters national final",
-        "summary": "",
-        "meta": "Tue 29 Sep",
-        "publishedAt": "2026-09-29T08:00:00+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTlk2S1FJUDVGRlVMTVdzSFJ5YzlpbzZ6OGtUa29GSy0zYnNNTnZzVTdtbm0wSkFIRmhqLTF0d2syRnpDQUt0dUkxS2ZLSUNNMGotSlVHa3BldlA3YlpCcGhnemJ1MUtHLWxfYWxKeXRRVlJwNUphbVdYRmVMMWRiTTJnUUd6UWowMlh5c0ROVVM4M1hwN19sc3hsX1ZoV1U?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
       }
     ],
     "UK news": [
       {
-        "title": "Gwent van retailer wins Autotrader award for second year running",
+        "title": "Sixth-generation success as Berkshire farm wins at Great British Food Awards",
         "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T23:30:00+01:00",
-        "source": "South Wales Argus",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc3pmMXpoLVB3akVEQkN0SGFCS0pNeUhsTmFrR1cwc2NXNGY2Zk5ZSTQwWlJIaWNRVDgyQ1JTbUg2LW9fdEc1WERZZTJpb0dvVVBHY21sTlRlMW1oV19XV05wTWhLRnVpWFhwZGg4eGdndm5uMGdLMWdJTjZIMGtVYjBTd0JHQ05feUhlTlpJcklzSGVyV0hlT1hRRWtpOGdYRHVmaQ?oc=5",
+        "meta": "Sat 10 Oct",
+        "publishedAt": "2026-10-10T05:00:00+01:00",
+        "source": "Slough Observer",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMTA0NVl1OFF2VE1wZGpYNXduN0ljSjQ5YVFKa1l4em5pMXlIbXV2QUZFS2ctSHVlZ0ZIMVJqbU5TLVBHTU1VNlZSaHdGb2RfTWNTQ1RMV1NOa19IQVZfOTlHT1NJaUUxZW1lQnBfZlhMaE5NZVpmeWdqRFhpZVRXYkFVdV8wUm1WX2wxc1I1U1ZPcDRleS1XVVdXMXNleEFNVWYyYUJvLVZVSmM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Oldest family business in England celebrates 511th birthday",
+        "summary": "",
+        "meta": "Sat 10 Oct",
+        "publishedAt": "2026-10-10T02:31:00+01:00",
+        "source": "Bridport News",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUt3MkE0ck9CdUJ0bm1SUEdXcHZHS3VBOUpkREl4M25lcFV3d19IYTVXLS1XaHhyVUp1bThsQ19iU0FLbURFcE8yZXRWMUswdzBhZnhxaXFxWVpZa3pCc1FEZWlTVTZRSmJpLUM2RmZxWVdhQmtseV9Ld2Z5RXd0US1HQ1dGU1ZDMGFtZXBQVWNXNU9ubzNZZmJYaw?oc=5",
         "contentType": "article"
       },
       {
@@ -971,6 +976,15 @@
         "publishedAt": "2026-10-09T18:28:02+01:00",
         "source": "Oldham Evening Chronicle",
         "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUERwb3FMWWdzWHVCNnBidndya2hLZkZhLVlXaEVna00tVVFQSURXMGNLU0FFc1hjeU9oeHRWMkVJb21SY1JMc0p0UTd6RnpSM21VTFZhZGdrOHNyM01rUDJRdDBKdk9QUUZBaDJsOVNGaFcxbVBNcGlzbUp6d2ZLM2hNcXZIeFYtbHZMa2VvTmVrN3djYXlYX0VDM0U4d2Z3N2RCeU1FeklsSzRGNllCaE9QSEhsYVpkMzA4SEdEVWpneVlVZE9ia0VmcEZlWlNodFdpc0VmOVJtQ1RnbEx4dWtTbkVUcGViMnNhMWlUNVlUTHAxdmgxMlNyU0JNc3B4djdGTEVNcC1hMndxYUw4?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sunkanmi Omobolanle Celebrates British Citizenship With Wife",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T15:46:00+01:00",
+        "source": "TVC News",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRndWa0hPREJ2bFpfRkhmMHFJZEpidmtud2xUcGRYNUhuOWVDRVNudkdsQVUwc0xyTkJIOHM5alQzYU1GTjRSMnZobjFDd0pxM0tfbl9SSFdkZUFOM29LN0pkT3d5WDg4YzhpTnpWSWVwLWI4OXJVTkkwUXc1UndjZG9JUnl5N3l2Nm1VRg?oc=5",
         "contentType": "article"
       },
       {
@@ -1028,30 +1042,12 @@
         "contentType": "article"
       },
       {
-        "title": "South Wales Community Awards 2026 crowns its winners after inspiring night",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T00:00:00+01:00",
-        "source": "South Wales Argus",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYkhUODV4YzBZby1nTVIwRWZZOTA2OHVRZEU0TFZGSm5MTVlkQ0tLV1N3YzgzWVpfMmNpdGhYdXhjcHJRblhBS1dGRzJxRGxGYmotOVdZUVRjbjJMemszRUhVQ2ZCeDd4N0V4Vlcwb18xN2xDdW42UTlHNGQzVUJPM1Q2a0FrWm9vN0s0WkZoakNibUJRY0lYcDFWbUxheWppM3c?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "South Wales Community Awards 2026 - recap",
+        "title": "Great Britain: CNC Shortlisted For National Occupational Health Award",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T18:50:12+01:00",
-        "source": "South Wales Argus",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWGhJVDJzVUFWNEtCTnpzeVpTOEs4d2cyVzBGUzYycjVmaWFraVo1YXFtTFJFLU9QYTVUTE5jRlpvZ1piRFRjcFJkdDM5R0d5MU54VzRfNTZHVmZuNGZ5Y25UbXdzWFNrVFF0d1lGOXVHTkZwdG1aVjUtYklYMWRtV2d4elRWNEdzdE8wQmtOUVM2VkhT?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "South Wales Community Awards 2026 - live updates",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T18:50:12+01:00",
-        "source": "South Wales Argus",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMU81OXhQV0UtZlM4N1B2bEhyTzJnYTlxWExGYWgyOVpBNUNMcXRkbXRROURzWlFSMm5UaVBqSi1xeFp4TFI0Z1lvZWFOdFJCNUxjR2huV1JEZFJWUnBfMkFZSUh6QlBmeDFKQS0xaUNZVHFZdjlCTEhDemlRYlBMRzRFQzBYOENuYk0zVHZ1WFpobFE?oc=5",
+        "publishedAt": "2026-10-08T23:21:59+01:00",
+        "source": "The St Kitts Nevis Observer",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZkNVSmtFZjJBanRtX2k5d3VxMHd1MExDRVVoanZhVWUtNzJpNUdNLWlCYnZERkVPSnhEWEJRdVNuX1JYQzExa0RCNFhsVlQyQ1kwYWdJakhyQm03NTNWTU1ocWQ1X0t4WU1BeHd6NUsxMDljaEhsM3ZGZGRnUTUydFhkN3k3YnlOeG9LVGwyMzBLV0dZQUNkWEFQX3ZzRlJWWTRHZTVEUHhTWkdPcVE?oc=5",
         "contentType": "article"
       },
       {
@@ -1351,7 +1347,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09"
+        "verifiedAt": "2026-10-10"
       },
       {
         "id": "transportfest-2026",
@@ -1422,6 +1418,28 @@
         "verifiedAt": "2026-10-08"
       },
       {
+        "id": "teddington-beer-2026",
+        "title": "Teddington Beer Festival",
+        "location": "Landmark Arts Centre · Teddington",
+        "summary": "Beer, cider, food and entertainment across bookable sessions. An option for the grown-ups: the organiser restricts entry to over-18s, with babies in arms welcome.",
+        "when": "5–8 November · choose an afternoon or evening session",
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-08",
+        "ages": "18+; babies in arms welcome",
+        "cost": "£16.50 + £1.50 booking fee; includes first beer token",
+        "tags": [
+          "Events",
+          "Beer",
+          "Indoors"
+        ],
+        "source": "Teddington Beer Festival",
+        "url": "https://www.teddingtonbeerfestival.co.uk/",
+        "venue": "landmark",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-10"
+      },
+      {
         "id": "kingston-christmas-market-2026",
         "title": "Kingston Traditional European Christmas Market",
         "location": "Ancient Market Place & Alpine Village · Kingston upon Thames",
@@ -1465,7 +1483,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09"
+        "verifiedAt": "2026-10-10"
       },
       {
         "id": "hampton-court-ice-rink-2026",
@@ -1489,55 +1507,36 @@
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-08"
-      },
-      {
-        "id": "landmark-sparkle-festive-fair-2026",
-        "title": "Sparkle Festive Contemporary Craft Fair",
-        "location": "Landmark Arts Centre, Ferry Road · Teddington",
-        "summary": "Dozens of independent craft makers, jewellers, ceramicists and local artisans in the historic cathedral-like setting of the Landmark Centre.",
-        "when": "20–22 November 2026 · Fri 4–8.30pm; Sat/Sun 10am–4.30pm",
-        "startDate": "2026-11-20",
-        "endDate": "2026-11-22",
-        "ages": "All ages; under-16s accompanied",
-        "cost": "£4 entry; free for under-16s and Landmark members",
-        "tags": [
-          "Events",
-          "Christmas",
-          "Craft",
-          "Teddington"
-        ],
-        "source": "Landmark Arts Centre",
-        "url": "https://www.landmarkartscentre.org/visual-arts/sparkle-festive-fair/",
-        "venue": "landmark",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-10"
       }
     ]
   },
   "watchAlternatives": [
     {
-      "title": "Panorama",
-      "summary": "Rates of bowel, breast and other cancers are rising among younger generations according to NHS data. Why are more younger people getting cancer?",
-      "meta": "BBC One · Available since Mon 5 Oct",
-      "source": "BBC One",
-      "channel": "BBC One",
-      "releaseDate": "2026-10-05",
-      "releaseDateLabel": "Available since Mon 5 Oct",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
-      "artworkAlt": "Panorama programme artwork",
+      "title": "Below",
+      "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
+      "meta": "Netflix · Available since Thu 8 Oct",
+      "source": "Netflix",
+      "channel": "Netflix",
+      "releaseDate": "2026-10-08",
+      "releaseDateLabel": "Available since Thu 8 Oct",
+      "url": "https://www.netflix.com/title/81652677",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
+      "artworkAlt": "Below programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-05",
-      "showId": 8534,
-      "episodeId": 3776663,
+      "airdate": "2026-10-08",
+      "showId": 93115,
+      "episodeId": 3673506,
       "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
+      "programmeType": "Scripted",
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Supernatural"
+      ],
+      "interestLane": "dark-scripted",
       "generatedDate": "2026-10-10",
-      "preferenceScore": 408.7
+      "preferenceScore": 436.9
     },
     {
       "title": "Britain's Countryside Killers",
