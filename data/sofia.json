@@ -18,10 +18,10 @@
     "localImage": "assets/scenery/world-fact.webp?v=46c0dbcf2a07"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 4,
+    "temp": "15°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 20,
     "daily": [
       {
         "date": "2026-10-10",
@@ -29,42 +29,42 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-11",
-        "high": 15,
+        "high": 16,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 18,
+        "high": 19,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 40,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-10-13",
-        "high": 20,
+        "high": 21,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 40,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-14",
-        "high": 20,
+        "high": 19,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 40%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
