@@ -1,62 +1,53 @@
 {
-  "updatedLabel": "Friday, 9 October 2026 · refreshed 1:56pm",
+  "updatedLabel": "Saturday, 10 October 2026 · refreshed 5:00am",
   "worldFact": {
-    "id": "catatumbo-lightning-most-strikes",
+    "id": "mount-thor-steepest-vertical-cliff",
     "editorialPriority": "human-first",
     "category": "World record",
-    "country": "Venezuela",
-    "place": "Catatumbo lightning · Lake Maracaibo",
-    "locationContext": "Zulia State · Lake Maracaibo, South America",
+    "country": "Canada",
+    "place": "Mount Thor · Auyuittuq National Park",
+    "locationContext": "Baffin Island · Nunavut, Arctic Canada",
     "source": "Guinness World Records",
-    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/highest-concentration-of-lightning-flashes",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Catatumbo_Lightning_-_Rayo_del_Catatumbo.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Catatumbo_Lightning_-_Rayo_del_Catatumbo.jpg",
-    "photoCredit": "Fernando Flores · CC BY-SA 2.0",
-    "fact": "Where the Catatumbo River empties into Lake Maracaibo, thunderstorms generate up to 250 lightning flashes per square kilometre each year—a Guinness World Record. The flashes occur up to 280 times per hour for nearly 300 nights annually without audible thunder.",
-    "date": "2026-10-09",
-    "sequence": 49,
-    "localImage": "assets/scenery/world-fact.webp?v=7e7ece6473af"
+    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/greatest-vertical-drop",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mount_Thor,_Akshayuk_Pass,_Baffin_Island.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mount_Thor,_Akshayuk_Pass,_Baffin_Island.jpg",
+    "photoCredit": "Paul Gierszewski · CC BY-SA 3.0",
+    "fact": "Mount Thor features Earth's greatest purely vertical cliff drop, plunging 1,250 metres (4,101 feet) straight down from its granite summit at an average overhang angle of 105 degrees. A bowling ball dropped from the precipice takes 26 uninterrupted seconds to hit bottom.",
+    "date": "2026-10-10",
+    "sequence": 50,
+    "localImage": "assets/scenery/world-fact.webp?v=46c0dbcf2a07"
   },
   "weather": {
-    "temp": "13°",
+    "temp": "10°",
     "summary": "Clear",
     "condition": "Clear",
     "currentRainChance": 4,
     "daily": [
       {
-        "date": "2026-10-09",
-        "high": 14,
-        "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
-      {
         "date": "2026-10-10",
-        "high": 16,
+        "high": 15,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-11",
-        "high": 16,
+        "high": 15,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 19,
+        "high": 18,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 30,
+        "summary": "Light Rain",
+        "condition": "Light Rain",
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -65,7 +56,7 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -74,12 +65,21 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-10-15",
-        "high": 19,
+        "high": 20,
+        "low": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-16",
+        "high": 15,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 4%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -97,37 +97,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Thursday 8 October 2026",
+      "dateLabel": "Friday 9 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Swanage",
-        "town": "Swanage",
-        "county": "Dorset",
+        "location": "Cambridge, Niab",
+        "town": "Cambridge",
+        "county": "Cambridgeshire",
         "country": "England",
-        "displayLocation": "Swanage, Dorset",
-        "value": "17.3°C",
+        "displayLocation": "Cambridge, Cambridgeshire",
+        "value": "21.1°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=9ed084ed26c0",
-          "page": "https://commons.wikimedia.org/wiki/File:60163_Tornado,_16_June_2010.jpg",
-          "credit": "slideshow bob from Poole, UK · CC BY-SA 2.0",
-          "alt": "Steam locomotive 60163 Tornado on the level crossing across the High Street in Poole , Dorset. Despite appearances, she's actually going backwards, attached to a rake of 12 coaches carrying around 500 passengers, with a diesel locomotive pulling the whole lot from the other end. This was the return trip of The Purbeck Tornado charter, which was Tornado's first visit to the Swanage Railway , a heritage steam line in the Purbeck District of Dorset. Having departed London Victoria station in the morning, after a water stop at Northam, the train arrived at Swanage around lunchtime. For this return journey however, because there are no suitable turning facilities at Swanage, Tornado had to be hauled backwards like this as far as Southampton , where she could then take over for the leg back to London, terminating in London Waterloo rather than Victoria.",
+          "src": "assets/weather-extremes/hot.webp?v=768e48f2094d",
+          "page": "https://commons.wikimedia.org/wiki/File:Shire_Hall,_Cambridge.JPG",
+          "credit": "Marvinthefish · CC BY-SA 4.0",
+          "alt": "Photo of Shire Hall, Cambridge, UK. Photo taken from the top of Castle Hill.",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Shap",
-        "town": "Shap",
-        "county": "Cumbria",
+        "location": "Fylingdales",
+        "town": "Fylingdales",
+        "county": "North Yorkshire",
         "country": "England",
-        "displayLocation": "Shap, Cumbria",
-        "value": "-0.8°C",
+        "displayLocation": "Fylingdales, North Yorkshire",
+        "value": "6.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=8e8504d9fd4c",
-          "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(A6),_Shap_-_geograph.org.uk_-_3344660.jpg",
-          "credit": "David Dixon · CC BY-SA 2.0",
-          "alt": "Main Street (A6), Shap",
+          "src": "assets/weather-extremes/cold.webp?v=94320cfc0658",
+          "page": "https://commons.wikimedia.org/wiki/File:Bridleway_crossing_a_field,_Fylingdales_and_Hawsker_Common_-_geograph.org.uk_-_4566438.jpg",
+          "credit": "Humphrey Bolton · CC BY-SA 2.0",
+          "alt": "Bridleway crossing a field, Fylingdales and Hawsker Common",
           "width": 1600,
           "height": 900
         }
@@ -543,32 +543,32 @@
     }
   ],
   "lead": {
-    "title": "Copy Sweden: How Burnham's Labour can finally tackle the UK’s ISA headache",
+    "title": "Council of Europe anti-torture Committee (CPT) carries out a visit to Sweden",
     "summary": "",
     "meta": "Fri 9 Oct",
-    "publishedAt": "2026-10-09T11:31:20+01:00",
-    "source": "Trustnet",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFRDejhkR0hneWpicGFXaW51Q1dncDl2YWhlN19MTm1rVkN3c1FUZFZPbGZxbGFuanJmSDdFRVNCeTBneXkwTFVOeWs0aEhLeXJIV2Z3bUZ3YkxxRFNhOHNJME00eWRuNDU2RzQtSkMxa2tORGVVOUVIVkFheG13Um5iMlp4ZWxGU1pkVjM2ZEFSU2RYUjhFMTZpNk1VTHlLRlhiXzZ4SzNOeUpYeVJ3?oc=5",
+    "publishedAt": "2026-10-09T21:12:16+01:00",
+    "source": "www.coe.int",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSDVjeFRLdUZ3QnBHWjJ5U2xZUHBJcXpuUWtSVmlQVnowUF9aQTJCOXFkUVNUTVdCRVlZd2N5RGFNbGF3cG41YWtSTDVMUl9JTGRuQVlEZDlpVTA1Q2VZR0JyZ0JJeWZqQXVCUmQzT3M1akJ5UDR3anpmS3BwSVRQOWRwVHlUZXRtZlJGVjVzdC14OVBNd3QyQkw1Qy00VHI0eUZCb2l0Q3VwZE0?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Copy Sweden: How Burnham's Labour can finally tackle the UK’s ISA headache",
+      "title": "Council of Europe anti-torture Committee (CPT) carries out a visit to Sweden",
       "summary": "",
       "meta": "Fri 9 Oct",
-      "publishedAt": "2026-10-09T11:31:20+01:00",
-      "source": "Trustnet",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFRDejhkR0hneWpicGFXaW51Q1dncDl2YWhlN19MTm1rVkN3c1FUZFZPbGZxbGFuanJmSDdFRVNCeTBneXkwTFVOeWs0aEhLeXJIV2Z3bUZ3YkxxRFNhOHNJME00eWRuNDU2RzQtSkMxa2tORGVVOUVIVkFheG13Um5iMlp4ZWxGU1pkVjM2ZEFSU2RYUjhFMTZpNk1VTHlLRlhiXzZ4SzNOeUpYeVJ3?oc=5",
+      "publishedAt": "2026-10-09T21:12:16+01:00",
+      "source": "www.coe.int",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSDVjeFRLdUZ3QnBHWjJ5U2xZUHBJcXpuUWtSVmlQVnowUF9aQTJCOXFkUVNUTVdCRVlZd2N5RGFNbGF3cG41YWtSTDVMUl9JTGRuQVlEZDlpVTA1Q2VZR0JyZ0JJeWZqQXVCUmQzT3M1akJ5UDR3anpmS3BwSVRQOWRwVHlUZXRtZlJGVjVzdC14OVBNd3QyQkw1Qy00VHI0eUZCb2l0Q3VwZE0?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Will Kingston Christmas Market return this year? Council releases update after fire",
+      "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
       "summary": "",
       "meta": "Fri 9 Oct",
-      "publishedAt": "2026-10-09T09:46:00+01:00",
+      "publishedAt": "2026-10-09T17:30:00+01:00",
       "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRjM2ajRwZnc0ZzZ1TXF6bGVqWFNnb044OFhFYkxhSGNXaDdNZFpGRXllMjN3VHNxaEVia2xuNU5sUWozdEs4TU11QWFCMjJkV0JYUk80UmxzUVo4dUZpLXMwZ0treV9XeUUxSjdoR0VmNnVxNGZSaWRCdXU5OHZqUXZZU01JVlhJcW01QnJtYm1rMjgwVnQtVF9RVUhQWG5wNDFXV1RoWnN3SG9PX3VRb1VGdXBUSnE3bTZYbjcyQmxabWlzbl85TTR4RQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": true,
@@ -607,17 +607,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 611.8
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 619.8
     },
     {
       "title": "Aileen Wuornos: Damsel of Death",
       "summary": "Concluding the profile of the serial killer, revealing how a body found beside a Florida highway sparked a chilling investigation into a drifter linked to a series of murders.",
-      "meta": "Crime & Investigation · Sun 11 Oct, 9pm",
+      "meta": "Crime & Investigation · Tomorrow, 9pm",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
       "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Sun 11 Oct, 9pm",
+      "releaseDateLabel": "Tomorrow, 9pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/aileen-wuornos-damsel-of-death",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609030.jpg",
@@ -630,8 +630,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 533.9
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 541.9
     },
     {
       "title": "Stacey Dooley",
@@ -653,17 +653,43 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 467.1
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 475.1
+    },
+    {
+      "title": "Time",
+      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
+      "meta": "BBC iPlayer · Tomorrow, 6am",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-11",
+      "releaseDateLabel": "Tomorrow, 6am",
+      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
+      "artworkAlt": "Time programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-11",
+      "showId": 50374,
+      "episodeId": 3776044,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 440.9
     },
     {
       "title": "Below",
       "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
-      "meta": "Netflix · Available since yesterday",
+      "meta": "Netflix · Available since Thu 8 Oct",
       "source": "Netflix",
       "channel": "Netflix",
       "releaseDate": "2026-10-08",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Thu 8 Oct",
       "url": "https://www.netflix.com/title/81652677",
       "badge": "Thriller",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
@@ -680,45 +706,37 @@
         "Supernatural"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 444.9
-    },
-    {
-      "title": "Time",
-      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
-      "meta": "BBC iPlayer · Sun 11 Oct, 6am",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Sun 11 Oct, 6am",
-      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
-      "artworkAlt": "Time programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 50374,
-      "episodeId": 3776044,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 432.9
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 436.9
     }
   ],
   "sections": {
     "Sweden": [
       {
-        "title": "Copy Sweden: How Burnham's Labour can finally tackle the UK’s ISA headache",
+        "title": "Council of Europe anti-torture Committee (CPT) carries out a visit to Sweden",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T11:31:20+01:00",
-        "source": "Trustnet",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFRDejhkR0hneWpicGFXaW51Q1dncDl2YWhlN19MTm1rVkN3c1FUZFZPbGZxbGFuanJmSDdFRVNCeTBneXkwTFVOeWs0aEhLeXJIV2Z3bUZ3YkxxRFNhOHNJME00eWRuNDU2RzQtSkMxa2tORGVVOUVIVkFheG13Um5iMlp4ZWxGU1pkVjM2ZEFSU2RYUjhFMTZpNk1VTHlLRlhiXzZ4SzNOeUpYeVJ3?oc=5",
+        "publishedAt": "2026-10-09T21:12:16+01:00",
+        "source": "www.coe.int",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSDVjeFRLdUZ3QnBHWjJ5U2xZUHBJcXpuUWtSVmlQVnowUF9aQTJCOXFkUVNUTVdCRVlZd2N5RGFNbGF3cG41YWtSTDVMUl9JTGRuQVlEZDlpVTA1Q2VZR0JyZ0JJeWZqQXVCUmQzT3M1akJ5UDR3anpmS3BwSVRQOWRwVHlUZXRtZlJGVjVzdC14OVBNd3QyQkw1Qy00VHI0eUZCb2l0Q3VwZE0?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden Has 267,570 Islands. I Walked Across 20 of Them.",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T20:39:00+01:00",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOV2FhWC14UVQ1N3lDWTBGYVRsekI3U1h0Q1hPRHMzaDBsWEtadHlnNlVmR1JWeExZRlF6M0kyQ2JuZE02VTlOY2hyOU1jSm9aeXZBTGxWWDNHYUFBc0ViQ0h5cENmQWVKMHR3NllQVGtMRXFRTVFwbGswWjRmWG1LWDJR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swedish spouses and putting AI in the therapists’ chair",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T10:30:01+01:00",
+        "source": "Resolution Foundation",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVDNqelU1djB4clVXSmFDc1NrYlNvRWVtQlhWR0NMUW83YWVjMzI5RndFZHNrbWFKeDB2eFpIRTR3bGhFQ294cmJybTBVa2t2Mjc1WWo4RHFnb0FHVTYzSWJnT0xndmF1cm95blBhbV91QWF6THFHdG51anFlYUNVbEZyQjNTbi0wXzNoSEVUMFlWQmIzYkJja3c4dDVJWVYwSXc?oc=5",
         "contentType": "article"
       },
       {
@@ -731,52 +749,45 @@
         "contentType": "article"
       },
       {
-        "title": "Internationals | Victory for young Sweden duo",
+        "title": "NEWS: Industrial-scale Russian money laundering in Sweden flows to neobanks including Revolut, police say",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T08:44:39+01:00",
-        "source": "Tottenham Hotspur",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTWZxWEp4aTNxeWdQNUdSeHhHUmZvSUpJLWV0bGxpY0tRUmRweXU5MkRiZjRJdXpHUnQ2MVZJTk1qdkNKMU0tVVhXMnhuYzhHYW0tdmxiUmp5Rmc4bkJtcFpOb2tHS2syNDg0VG91bGRCSXZzbzMxN2tMZ3pMUmdvRFgyR1djT1RsTG8xVzJlLWMxSE0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Your EU – Your projects in Sweden: advancing technologies powered by nature",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T08:35:50+01:00",
-        "source": "European Climate, Infrastructure and Environment Executive Agency",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdVZnQU9ZVnhHczFVemFQTU1fQTVRWE9hblJqb0V2NTh5Qm1jOW5udHZxSGdoaXd2dThjbzh2WC1RM3BxcTVxNDR6Vzl0WDFJdnFYNlgtLWxNVG1fNUY1TVdpYmJGMEt0cnVINUZfd1ZFVjJpc2kzcURVZ1FnbllFSWpaMHRJclJ4U3RMNFhQX1VlTzhUM3V5eklRM0hRVGd2VE50Nm9CWjdFZE9TXzVBeWd2N0lyQUNfeGFLWi1zdFZlQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Lithuania vs Sweden: Women's WC Qualification Europe stats & head-to-head",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T10:53:21+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9nQUhnTkxhY28zUDhuUGpDNEhIQTJkaFpHRXlITVluX0VYUGFjTWZnM0N3algwSjJlNFNHaFdZaWJHb1Y3alNrQkNOYmRMUGgtTlR4U1gwS0U0NkRnMzRpWkJQbHpTZw?oc=5",
+        "publishedAt": "2026-10-09T16:46:56+01:00",
+        "source": "AML Intelligence",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPdWxMMllpemdSOFBiVmsyVGF5ZjltTkVzaDhuXzdFSnppUjMzUEZxZUFuWE1PaktTc1hIVS1MWkhQNnNNbzRaTlhEaUdJN19xdXctZ0l4UTBDRW1LMGo3UmJyZ1lqZkFSV2tkOElmUFR2RER3YnB3RDV6NGZTV2YySWs0eDJJaUIzUml6Y3NzUjJYellPWDRyczNaY1lpbFhIdlNtQWNDR2k0Tjh4eVhNbGpTbTQ4V2ZFcmsyU1M5S2VPR1g4elBjRG15cWtwY0ZrVC1IaEVPQkVxbjNO?oc=5",
         "contentType": "article"
       },
       {
         "title": "National Construction College Scotland Hosts Swedish Delegation",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T10:40:39+01:00",
+        "publishedAt": "2026-10-09T12:04:59+01:00",
         "source": "Roofing Today",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaGRLVDd1bEN6WDZ6amdXS2I2RjJOSk9UVlNJeUlDOTNfNHQ4ZzV1TllIMlFxdko0S3BlVkhLbllfRTYtLVZfOXZMdTBXaWV4dV9ucjloZHhld1ExanZyRnlZcjNtUE1qdTNVV182MkVhc2ZDMHRxRW1zeG1CV1VYQ2JjRU93MVFuZ0RVTHZPNUVkQ1hEOUE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Swedish home energy firm Elvy attracts Leonardo DiCaprio as backer",
+        "title": "Copy Sweden: How Burnham's Labour can finally tackle the UK’s ISA headache",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T12:53:06+01:00",
-        "source": "Renewables Now",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRnlkWERPRmJHa0lGZDBxOFdXMjV0Wm1nazc5dkNXc0J0UEJiM1U1MWFWU0xMcXVBWE1mUjFWZlFQRjFvLTNMbllJOTNWRnRubklUNTJqMVR3WE1OMWpUbWREWnNwRl9zYVVCS0ZfU25HdlpmQWpQNWtlUXRUUkRzS2lfNDdMMXJRMXlCNDQxRDltY0s1cHh5UnFpX2dkZTlkdnI3S0pTUUVGUQ?oc=5",
+        "publishedAt": "2026-10-09T15:41:24+01:00",
+        "source": "Trustnet",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qckFsYXVpRk1URjZSeTBlbjBXcnZfNk8ydXlZRlBIM1E5bHByY2s1ejNEbXdDZG9hb1owUlA5c0dLMWdzRkdIejR5a09tTUtSUnJ4TUh3R0FpcmpwR1lucg?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T17:30:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true
+      },
       {
         "title": "Will Kingston Christmas Market return this year? Council releases update after fire",
         "summary": "",
@@ -795,17 +806,6 @@
         "publishedAt": "2026-10-08T17:00:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaGJiQmNVNVFOODNEYll6LTktT2JNWC1kTHFJcFE0Yld5dzFGM09RNnFVYWZPYUpxcXMtaGpTb0NxUnI1RFdSeWJWSTJHMUlrMUF3MldHVWZQc2VyZGZsbHBnU1pmQjdvb0RCeHZwVFRYRXFLTXlwQk5YVWQzNHRJUU5TM3N0VnA4QmJIZWRZS3RVcnVDMW1DYjA2dkxhOS1LcjB2dWl6X2luWjA?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Soaring for support - 10 brave souls zip across Twickenham for Kingston-based charity",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T15:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNS3lHMmY4QzRqRnJrU0lnSWE2ZG9LUDhFVVAzQi01U0dQUnZMU1pDLWE3d0s5TFRjXzh2SEdVUkZhaXJuRno1WWlyRjN3YnlPQldGakM5MGNoaldqVmU1LW1DWFZjTmVacnRWdDFpUGNvemtRcW1HR3ZrTDVfT0VHVGZlQlYyMkwtUDBfdGFyRy1yeXFiOWpZWGt3UmJMMFNjZ1RsUk5pYlN3WC1kcV9RYVF5eFE3WkYxRWFkaVY5SHF0aHZ5b0ZUM0IteVY?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -880,20 +880,9 @@
         "title": "Displaced Kingston resident faces legal threat after reporting council housing neglect",
         "summary": "",
         "meta": "Sun 4 Oct",
-        "publishedAt": "2026-10-04T17:00:02+01:00",
+        "publishedAt": "2026-10-04T17:00:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNTVQQmtHVGZKcnNsUEswcF9sbUFyci03QlByZmNOUlJaMWRveTdoQmpFSGFXTWE2bXFFUmUwbnNCVkJOQ0FScnpjWWx3dWItV2N4TU5EMVV1bHBXYURMTVhDLTZQRmlWSHptTjhpVHM2Rkl4RWtMN2gzcGt4YjRKTTVnZTdsRUpzY3VUV2dNQnEzblhtTG5jVnd4cjktSncyM3g2cnN4VUV1Q3N4MzZNOEQ0aXVjNGZKZ3V5TERSdk1Md2VMdFAzZG9mdDJWajhp?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
-        "title": "Locals invited to plant crocuses for polio eradication with Teddington Rotary Club",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T15:01:53+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUkVmb1M5OTZDOS01U1dMQ1NSeXdCclR5bkllODRxV2N3WGV3VHloNTJJVzlfSWRVZUNtRmtESnhRS3BleU03dFM3SVN6S0hEeklzaGxKdnA0VzFRV3U4eDF1eWFINzM3SUwzT1lqZEs3MWk5LWIwYk9KekNDa2s3UzdRWk1Oekg5NVFJend5cl9FZC05SzNFZTl6Z2p1dXBsVmg0cUExYlJDUVAtR2pmVnRJbFcwV1VMMTBtYzh5akpyWGg2ZlpEazg5WWZkQQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
@@ -921,21 +910,10 @@
         "familyActivity": false
       },
       {
-        "title": "Kingston e-bike contract faces calls for affordable fares and marked parking bays",
-        "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T16:24:05+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTJfUDJORjdvN01zSFZZSHg2ZVVpalBrazUyR1lycUEwenowWkNWSXN3U1B0VGM5cld0N2M4NnNiMkJSc1FYdUdSYUhSeGx5VlN6akdZYmxrekFzUzZMc3RvSl8tamFGR20zZm1xSUg5b3otbWlMdFNVRUltSl9JVjdWOWVnZUVMek5XR0lZQlZKUTh0SlE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false
-      },
-      {
         "title": "Kingston adds 15 electrical recycling points as 570 tonnes are wrongly discarded",
         "summary": "",
         "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T11:12:59+01:00",
+        "publishedAt": "2026-10-01T08:00:00+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLXZQSzUzSWtNamdKYl9PZHdYalRnMmJxZmhRNWltRGJjU1ZKc3RNR25QXzBrTHQ0d2xCd3NwaU10X3BObElBQldLeEFoNmVSYjE5c0dMUVpHYUt2alJMZTZLRktqTkVGMzdLeXljMTFYaVJTcmpXRWVXaEhPN3dta0szQWM5TWdNb0otNEgyaFdMNmNyVVZPVFhtV3U?oc=5",
         "contentType": "article",
@@ -943,18 +921,67 @@
         "familyActivity": false
       },
       {
-        "title": "Blues legend to play intimate Teddington show",
+        "title": "Teddington's 100-year-old allotments close for good today",
         "summary": "",
-        "meta": "Thu 1 Oct",
-        "publishedAt": "2026-10-01T11:00:00+01:00",
+        "meta": "Wed 30 Sep",
+        "publishedAt": "2026-09-30T11:44:00+01:00",
         "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPR2VKSnNHRTVJTllDS3NRQ3I0aDlmV3E4RFNjUGpVY25CbkFDY2RIZnB6MWlVNEhzcXE0YUVqUW9XYkNLQTdld3N6MER0eVJEcndtTDdPaHU1MnhiOXAxOHdFRDlyckdQZUZEeEZfQks2T2NJZUFSYjlNRlZKcWJ0RUNQTTdfc3RoN1RibloxWHY0dVE2NHdTSFlrZHYtQmhWVTE2SDU2cFdfODVoWDRnWkRscG84Ulk?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdVNOcXhMYm1COUhsQlgzZWluQlRfQ2ZBNElhZW9pNTNfMHhpSUNORVRaSXI5NFpNODRpWndON3RtUEljSWNXV3hnRHp2ZkU4VGVpbE9IVmRzZTdZWjlDSWlZQ01EWjFsaUg5bGZ4ZXBlZEM1U1YtcDkwVEl5NHZkWWM1aGlGc0RKdE00UHR3NnR0X0ZzdzZPNUtRaWFTTWw5ZUFxclhsN09RYms?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "Royal British Legion's Teddington branch closes its doors",
+        "summary": "",
+        "meta": "Tue 29 Sep",
+        "publishedAt": "2026-09-29T13:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTzZ0N2VLOE5xdzE4am1sbk9TNGdJMXZaOUdEeHJOUG4wOUMyX1hhSUF6TGh5YlVlS1gzOG5BaUxpN3BRV2RCd3A5cjhCbTlMbG5KS3JiWmN6UlhEOENiaFJYYkxBWDZDdUxyLXBuQXgzeWwtTGJaNDY3VktTVjdnZExKTlA4LWk5Rzl0RGZtczE1S1dXZDR3a0hiU2VDSWUwWWc2UDF6UzhPMDg?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false
+      },
+      {
+        "title": "16-year-old crowned Miss Teen Kingston upon Thames and enters national final",
+        "summary": "",
+        "meta": "Tue 29 Sep",
+        "publishedAt": "2026-09-29T08:00:00+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTlk2S1FJUDVGRlVMTVdzSFJ5YzlpbzZ6OGtUa29GSy0zYnNNTnZzVTdtbm0wSkFIRmhqLTF0d2syRnpDQUt0dUkxS2ZLSUNNMGotSlVHa3BldlA3YlpCcGhnemJ1MUtHLWxfYWxKeXRRVlJwNUphbVdYRmVMMWRiTTJnUUd6UWowMlh5c0ROVVM4M1hwN19sc3hsX1ZoV1U?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false
       }
     ],
     "UK news": [
+      {
+        "title": "Gwent van retailer wins Autotrader award for second year running",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T23:30:00+01:00",
+        "source": "South Wales Argus",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc3pmMXpoLVB3akVEQkN0SGFCS0pNeUhsTmFrR1cwc2NXNGY2Zk5ZSTQwWlJIaWNRVDgyQ1JTbUg2LW9fdEc1WERZZTJpb0dvVVBHY21sTlRlMW1oV19XV05wTWhLRnVpWFhwZGg4eGdndm5uMGdLMWdJTjZIMGtVYjBTd0JHQ05feUhlTlpJcklzSGVyV0hlT1hRRWtpOGdYRHVmaQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Julie Hesmondhalgh given Great British Theatres Lifetime Achievement Award for Oldham Coliseum campaigning and theatre advocacy",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T18:28:02+01:00",
+        "source": "Oldham Evening Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUERwb3FMWWdzWHVCNnBidndya2hLZkZhLVlXaEVna00tVVFQSURXMGNLU0FFc1hjeU9oeHRWMkVJb21SY1JMc0p0UTd6RnpSM21VTFZhZGdrOHNyM01rUDJRdDBKdk9QUUZBaDJsOVNGaFcxbVBNcGlzbUp6d2ZLM2hNcXZIeFYtbHZMa2VvTmVrN3djYXlYX0VDM0U4d2Z3N2RCeU1FeklsSzRGNllCaE9QSEhsYVpkMzA4SEdEVWpneVlVZE9ia0VmcEZlWlNodFdpc0VmOVJtQ1RnbEx4dWtTbkVUcGViMnNhMWlUNVlUTHAxdmgxMlNyU0JNc3B4djdGTEVNcC1hMndxYUw4?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "CORD by Le Cordon Bleu celebrates the British game season, cooked by two of its best chefs",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T13:39:45+01:00",
+        "source": "The London Economic",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ3kzenRFQUw1bTNodU1VTmd5SGpQdThmdUFQT1NJRmktbWtNXzBHQktLc21COHlCZjQ2THNUYTVWZlNmdnlRRWZaNHpFTG9qbVlOWGNpXzdGLVpnZVZDNXptVUpPSEZ5Nnd6ZHMxdjU2UzJ5MC1HN0pwLU5rZjZxakN6UWI3UzZWV293aElkTFlqR2I5dWgwcXE3dUo2eVZPRGNDbURvMGo1VFJaMS1Da0I1ZGFXUF9xQ0FBWlZGUElreUlIcmV6MU9QdXhVNnRYMXNGUUlrQlN5QQ?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "King pays Andrew's £1.5m repair bill on Royal Lodge",
         "summary": "Andrew Mountbatten-Windsor was charged £1.5m in repair and restoration costs after surrendering the lease on the 30-room mansion.",
@@ -983,30 +1010,12 @@
         "contentType": "article"
       },
       {
-        "title": "CORD by Le Cordon Bleu celebrates the British game season, cooked by two of its best chefs",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T12:05:10+01:00",
-        "source": "The London Economic",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ3kzenRFQUw1bTNodU1VTmd5SGpQdThmdUFQT1NJRmktbWtNXzBHQktLc21COHlCZjQ2THNUYTVWZlNmdnlRRWZaNHpFTG9qbVlOWGNpXzdGLVpnZVZDNXptVUpPSEZ5Nnd6ZHMxdjU2UzJ5MC1HN0pwLU5rZjZxakN6UWI3UzZWV293aElkTFlqR2I5dWgwcXE3dUo2eVZPRGNDbURvMGo1VFJaMS1Da0I1ZGFXUF9xQ0FBWlZGUElreUlIcmV6MU9QdXhVNnRYMXNGUUlrQlN5QQ?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "North Wales care home artist gets surprise award from opera star Sir Bryn Terfel",
         "summary": "",
         "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T10:56:15+01:00",
+        "publishedAt": "2026-10-09T10:57:16+01:00",
         "source": "Herald.Wales",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORnVCMG42NHNPQ2NBakQ3dGVEZWl0NmpaUUNDMXp3bC12c1J2X0M3TTVfS1pFQTlJWUtqdUlkWHlGb0x4RGYwam1wZG9pY3NiY3U0NTZvMXM0U1lpNXBxOW5xMWVrQ3BnY0RDcXlhRmlYZFhjZFlHcnd0WDRpOWpSRWxNcGg5THpBNDZ1OUUyaklFQkFyelhCV1hseGhnSmZNZVFQN3JlbEdhNWZNb0V1U3huNlM?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "SWAN RESCUED AFTER CRASHING INTO BRITISH HEART FOUNDATION BUILDING IN NEWPORT",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T10:17:40+01:00",
-        "source": "Island Echo",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMy1QWnl1emtxaVNyOWc5VWJYcnFINHpMVVVkRDkzTmJMTWtRbDdVcmhwUGl2YjRDV2tNMU5XZGUxQzNjMlAtVWk0djZUQmZpc2lFZ3hzdUFqazNWR3FueXJHN0pfSXpMMi1iMS1TdlNNeFpVb2NhVkhKdnJhbVE1UktwamNjRFBudnAtOUFKQm5LZEtrNVQ4TXN2T1psM296MEpBR2RPRUNRaEU?oc=5",
         "contentType": "article"
       },
       {
@@ -1019,21 +1028,30 @@
         "contentType": "article"
       },
       {
-        "title": "Great Britain: CNC Shortlisted For National Occupational Health Award",
+        "title": "South Wales Community Awards 2026 crowns its winners after inspiring night",
         "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T23:21:59+01:00",
-        "source": "The St Kitts Nevis Observer",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZkNVSmtFZjJBanRtX2k5d3VxMHd1MExDRVVoanZhVWUtNzJpNUdNLWlCYnZERkVPSnhEWEJRdVNuX1JYQzExa0RCNFhsVlQyQ1kwYWdJakhyQm03NTNWTU1ocWQ1X0t4WU1BeHd6NUsxMDljaEhsM3ZGZGRnUTUydFhkN3k3YnlOeG9LVGwyMzBLV0dZQUNkWEFQX3ZzRlJWWTRHZTVEUHhTWkdPcVE?oc=5",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T00:00:00+01:00",
+        "source": "South Wales Argus",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYkhUODV4YzBZby1nTVIwRWZZOTA2OHVRZEU0TFZGSm5MTVlkQ0tLV1N3YzgzWVpfMmNpdGhYdXhjcHJRblhBS1dGRzJxRGxGYmotOVdZUVRjbjJMemszRUhVQ2ZCeDd4N0V4Vlcwb18xN2xDdW42UTlHNGQzVUJPM1Q2a0FrWm9vN0s0WkZoakNibUJRY0lYcDFWbUxheWppM3c?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Dedicated Teesside dentist honoured by NHS England with special award",
+        "title": "South Wales Community Awards 2026 - recap",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T20:41:11+01:00",
-        "source": "Yahoo News UK",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNeFUwZV9nc2FhNXkxTFZVLUZGT2FEMUtLMWdJSHN1SzRpNTRTSERsaF84RE1DWmdqejR3ZDFON3BUcTVPcHp0TlJIZlY3MjJJUGZNWHVlZnp0YjdqeWxJT3lIYkxlMUxBZllaT2cyc043a0JwRDk3aU9jYjcycHA4OUkyUGk1aVU?oc=5",
+        "publishedAt": "2026-10-08T18:50:12+01:00",
+        "source": "South Wales Argus",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWGhJVDJzVUFWNEtCTnpzeVpTOEs4d2cyVzBGUzYycjVmaWFraVo1YXFtTFJFLU9QYTVUTE5jRlpvZ1piRFRjcFJkdDM5R0d5MU54VzRfNTZHVmZuNGZ5Y25UbXdzWFNrVFF0d1lGOXVHTkZwdG1aVjUtYklYMWRtV2d4elRWNEdzdE8wQmtOUVM2VkhT?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "South Wales Community Awards 2026 - live updates",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T18:50:12+01:00",
+        "source": "South Wales Argus",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMU81OXhQV0UtZlM4N1B2bEhyTzJnYTlxWExGYWgyOVpBNUNMcXRkbXRROURzWlFSMm5UaVBqSi1xeFp4TFI0Z1lvZWFOdFJCNUxjR2huV1JEZFJWUnBfMkFZSUh6QlBmeDFKQS0xaUNZVHFZdjlCTEhDemlRYlBMRzRFQzBYOENuYk0zVHZ1WFpobFE?oc=5",
         "contentType": "article"
       },
       {
@@ -1043,24 +1061,6 @@
         "publishedAt": "2026-10-08T17:28:24+01:00",
         "source": "At Sea",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXpGUkc5NWJVRFJmdUtHZFVHX1NiejZMbHdxdXpxUl9jZWJmQ09SNmxvdzBLeDRLZjlZRWtHb3V5WUFkajA3MklJX2Jqa25nYmF5Q0g5bWtVWldPYm4zbXVhcWVqbkItWjlCMzJuRG9hRWVsdjJ3T3JpQ1NQRmRudGYzcEM4LVFaYV82TTlBSGcybjVWXzN0bTF6Q2UwLS14Q2NkcU9adUExV2RBTXlaTA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Thornliebank apprentice who helped save man's life wins top apprentice award",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T16:20:31+01:00",
-        "source": "East Renfrewshire News",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT1U3azZSYUNDam01SGlfSUxyX01yVjRCc1FBa2YwZEFCSE5mM3BmX08zRHZIXzVucGF1ZnNjTXBsQVlTOWlUUXNnMFExd3RKS3RWb2hiNTRuOVFjNUxFcWZrSFBKai1XMGNiZHJBRUZEWk5aMWNYSVgxejFGMkRLZVZaY0I4bjI0VlctWjFQSVVTYmw0bnl3VzRwS0NGeW1wX2t3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "British New Homes Mortgage Senate: Lenders assess what's holding back homeownership",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T15:29:23+01:00",
-        "source": "Mortgage Solutions",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMGZ1STBGQktDLThjcGF2UUtFLS14Uk5IZzJULUhCSGRSekVFYzVndm5yS1drQ1pRX3dGWlVlQ01VUHZuMXpKeVpwSUhwd0RrYmZ4TzZmNTNfSEtzS25sangwVldXbXBnRnQ5bkM2WHFKcUNPMHkwbUhzZVp0NDk2X09nTGhGOWtod1JuMVpySDJVQVF0SjRMUURjdTlYeWpTSjRyQ3p4LW9wWGczbG9vUy1YeHR1RzlTUHFLN0IweFdrU1hLVnM5d3FTaF9ESElXQ3FfTmZyQ1BlU00?oc=5",
         "contentType": "article"
       }
     ],
@@ -1102,21 +1102,21 @@
         "contentType": "article"
       },
       {
-        "title": "The latest AI news we announced in September 2026",
-        "summary": "A video showing the September AI updates",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T16:00:00+01:00",
-        "source": "Google",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-        "contentType": "article"
-      },
-      {
         "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
         "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
         "meta": "Fri 9 Oct",
         "publishedAt": "2026-10-09T08:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/sophos",
+        "contentType": "article"
+      },
+      {
+        "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+        "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T08:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/asana-browser-agent",
         "contentType": "article"
       },
       {
@@ -1158,35 +1158,9 @@
     ],
     "Fun": [
       {
-        "id": "amazon-prime-big-deal-days-2026",
-        "title": "Amazon Prime Big Deal Days Autumn Event",
-        "location": "Online & Prime App · Nationwide UK",
-        "summary": "Major seasonal shopping event with 48 hours of discounts across tech, home, kids toys, fashion and festive gifts.",
-        "when": "Tuesday 8 & Wednesday 9 October 2026",
-        "startDate": "2026-10-08",
-        "endDate": "2026-10-09",
-        "ages": "All ages / account holders",
-        "cost": "Free access with Prime membership or 30-day trial",
-        "tags": [
-          "Sales",
-          "Shopping",
-          "Autumn"
-        ],
-        "source": "Amazon UK",
-        "url": "https://www.amazon.co.uk/primebigdealdays",
-        "venue": "amazon-uk",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-09",
-        "saleHeadline": "Prime Day Sale Now On",
-        "saleDate": "8 & 9 October 2026",
-        "discount": "Up to 50% off",
-        "isSale": true
-      },
-      {
         "id": "bentalls-autumn-shopping-2026",
         "title": "Bentalls Kingston Autumn Shopping & Seasonal Promotions",
-        "location": "The Bentall Centre, Wood Street · Kingston upon Thames",
+        "location": "The Bentall Centre, Wood Street Â· Kingston upon Thames",
         "summary": "Four floors of seasonal promotions, toy demonstrations, family dining and fashion showcases under the central atrium.",
         "when": "Daily throughout October & November 2026",
         "startDate": "2026-10-08",
@@ -1204,7 +1178,7 @@
         "venue": "bentalls-kingston",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09",
+        "verifiedAt": "2026-10-10",
         "saleHeadline": "Bentalls Autumn Promotions Now On",
         "saleDate": "October & November 2026",
         "discount": "Up to 30% off",
@@ -1213,9 +1187,9 @@
       {
         "id": "next-autumn-sale-2026",
         "title": "Next Autumn & Mid-Season Clearance Sale",
-        "location": "The Bentall Centre, Wood Street Ã‚Â· Kingston upon Thames",
+        "location": "The Bentall Centre, Wood Street Ãƒâ€šÃ‚Â· Kingston upon Thames",
         "summary": "Extensive seasonal clearance across children's fashion, schoolwear, autumn coats, knitwear and home collections in Kingston.",
-        "when": "Throughout October 2026 Ã‚Â· MonÃ¢â‚¬â€œSat 9.30amÃ¢â‚¬â€œ6pm, Sun 11amÃ¢â‚¬â€œ5pm",
+        "when": "Throughout October 2026 Ãƒâ€šÃ‚Â· MonÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Sat 9.30amÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“6pm, Sun 11amÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5pm",
         "startDate": "2026-10-08",
         "endDate": "2026-10-31",
         "ages": "All ages welcome",
@@ -1239,9 +1213,9 @@
       {
         "id": "hm-autumn-sale-2026",
         "title": "H&M Member Event & Seasonal Autumn Sale",
-        "location": "Clarence Street Ã‚Â· Kingston upon Thames",
+        "location": "Clarence Street Ãƒâ€šÃ‚Â· Kingston upon Thames",
         "summary": "Autumn seasonal discounts across baby, toddler, children's clothes and everyday essentials, plus H&M member bonus deals.",
-        "when": "9Ã¢â‚¬â€œ19 October 2026 Ã‚Â· Daily in-store",
+        "when": "9ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“19 October 2026 Ãƒâ€šÃ‚Â· Daily in-store",
         "startDate": "2026-10-09",
         "endDate": "2026-10-19",
         "ages": "All ages",
@@ -1265,9 +1239,9 @@
       {
         "id": "zara-autumn-sale-2026",
         "title": "Zara Mid-Season Reductions & Autumn Collection",
-        "location": "The Bentall Centre, Clarence Street · Kingston upon Thames",
+        "location": "The Bentall Centre, Clarence Street Â· Kingston upon Thames",
         "summary": "Mid-season price cuts across womenswear, menswear and kids' seasonal fashion at Zara's flagship Kingston store.",
-        "when": "10-28 October 2026 · Standard store opening hours",
+        "when": "10-28 October 2026 Â· Standard store opening hours",
         "startDate": "2026-10-10",
         "endDate": "2026-10-28",
         "ages": "All ages",
@@ -1291,13 +1265,13 @@
       {
         "id": "landmark-art-fair-2026",
         "title": "Landmark Autumn Art Fair",
-        "location": "Landmark Arts Centre · Teddington",
+        "location": "Landmark Arts Centre Â· Teddington",
         "summary": "Meet artists and browse paintings, ceramics, sculpture and prints across more than 75 stands. A creative fair with free entry for under-16s.",
-        "when": "16–18 October · Sat/Sun 10am–5pm; check Friday booking time",
+        "when": "16â€“18 October Â· Sat/Sun 10amâ€“5pm; check Friday booking time",
         "startDate": "2026-10-16",
         "endDate": "2026-10-18",
         "ages": "Under-16s welcome",
-        "cost": "£5; concessions £4; under-16s free",
+        "cost": "Â£5; concessions Â£4; under-16s free",
         "tags": [
           "Events",
           "Fairs",
@@ -1309,14 +1283,14 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09"
+        "verifiedAt": "2026-10-10"
       },
       {
         "id": "chessington-howloween-2026",
         "title": "Chessington Howl'o'ween Spooktacular",
-        "location": "Chessington World of Adventures · Leatherhead Road, Chessington",
+        "location": "Chessington World of Adventures Â· Leatherhead Road, Chessington",
         "summary": "Rides in the dark, costume parades, live street entertainment, spooky walkthroughs, and trick-or-treat surprises just 15 minutes away.",
-        "when": "17 October – 3 November 2026 · 10am–7pm",
+        "when": "17 October â€“ 3 November 2026 Â· 10amâ€“7pm",
         "startDate": "2026-10-17",
         "endDate": "2026-11-03",
         "ages": "Families and children of all ages",
@@ -1332,14 +1306,14 @@
         "venue": "chessington",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09"
+        "verifiedAt": "2026-10-10"
       },
       {
         "id": "kempton-steam-oct-2026",
         "title": "Kempton Steam Museum steaming weekend",
-        "location": "Kempton Steam Museum · Hanworth",
+        "location": "Kempton Steam Museum Â· Hanworth",
         "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
-        "when": "17–18 October · 10.30am–4pm",
+        "when": "17â€“18 October Â· 10.30amâ€“4pm",
         "startDate": "2026-10-17",
         "endDate": "2026-10-18",
         "ages": "Supervise children; engine-climb access requires height over 1.4m",
@@ -1354,18 +1328,18 @@
         "venue": "kempton-steam",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09"
+        "verifiedAt": "2026-10-10"
       },
       {
         "id": "kew-halloween-trail-2026",
         "title": "Halloween at Kew Gardens After-Dark Trail",
-        "location": "Royal Botanic Gardens Kew · Richmond / Kew",
+        "location": "Royal Botanic Gardens Kew Â· Richmond / Kew",
         "summary": "An enchanting after-dark family trail through glowing autumn woods with flickering fire performers, illuminated pumpkins and spooky illusions.",
-        "when": "18 October – 3 November 2026 · 6pm–9.30pm",
+        "when": "18 October â€“ 3 November 2026 Â· 6pmâ€“9.30pm",
         "startDate": "2026-10-18",
         "endDate": "2026-11-03",
         "ages": "All ages; spooky family fun",
-        "cost": "Adults £17–£20, Children £12–£15, under 4s free; advance booking",
+        "cost": "Adults Â£17â€“Â£20, Children Â£12â€“Â£15, under 4s free; advance booking",
         "tags": [
           "Events",
           "Halloween",
@@ -1382,8 +1356,8 @@
       {
         "id": "transportfest-2026",
         "title": "London Bus Museum TransportFest",
-        "location": "Brooklands · Weybridge",
-        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiser’s programme and admission details before booking.",
+        "location": "Brooklands Â· Weybridge",
+        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiserâ€™s programme and admission details before booking.",
         "when": "Sunday 18 October 2026",
         "startDate": "2026-10-18",
         "endDate": "2026-10-18",
@@ -1399,17 +1373,17 @@
         "venue": "brooklands",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-09"
+        "verifiedAt": "2026-10-10"
       },
       {
         "id": "hampton-halloween-2026",
         "title": "Halloween at Hampton Court Palace",
-        "location": "Hampton Court Palace Ã‚Â· East Molesey",
-        "summary": "Follow the autumn trail through the Wilderness, then explore the palaceÃ¢â‚¬â„¢s ghostly displays and storytelling. Some indoor scenes have loud noises and jump scares.",
-        "when": "24 October Ã¢â‚¬â€œ 1 November 2026",
+        "location": "Hampton Court Palace Ãƒâ€šÃ‚Â· East Molesey",
+        "summary": "Follow the autumn trail through the Wilderness, then explore the palaceÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s ghostly displays and storytelling. Some indoor scenes have loud noises and jump scares.",
+        "when": "24 October ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 1 November 2026",
         "startDate": "2026-10-24",
         "endDate": "2026-11-01",
-        "ages": "Families; check the organiserÃ¢â‚¬â„¢s scare guidance",
+        "ages": "Families; check the organiserÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s scare guidance",
         "cost": "Included in palace admission",
         "tags": [
           "Events",
@@ -1427,12 +1401,12 @@
       {
         "id": "kingston-halloween-trail-2026",
         "title": "Kingston Children's Halloween Trick-or-Treat Trail",
-        "location": "Ancient Market Place & Town Centre Ã‚Â· Kingston upon Thames",
+        "location": "Ancient Market Place & Town Centre Ãƒâ€šÃ‚Â· Kingston upon Thames",
         "summary": "A free daytime Halloween activity trail across Kingston town centre shops with fancy dress competitions, spooky craft stations, and treats.",
-        "when": "29Ã¢â‚¬â€œ31 October 2026 Ã‚Â· 10amÃ¢â‚¬â€œ4pm",
+        "when": "29ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“31 October 2026 Ãƒâ€šÃ‚Â· 10amÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4pm",
         "startDate": "2026-10-29",
         "endDate": "2026-10-31",
-        "ages": "Aimed at ages 3Ã¢â‚¬â€œ11 with accompanying adults",
+        "ages": "Aimed at ages 3ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“11 with accompanying adults",
         "cost": "Free community trail; trail sheets in Market Place",
         "tags": [
           "Events",
@@ -1448,33 +1422,11 @@
         "verifiedAt": "2026-10-08"
       },
       {
-        "id": "teddington-beer-2026",
-        "title": "Teddington Beer Festival",
-        "location": "Landmark Arts Centre · Teddington",
-        "summary": "Beer, cider, food and entertainment across bookable sessions. An option for the grown-ups: the organiser restricts entry to over-18s, with babies in arms welcome.",
-        "when": "5–8 November · choose an afternoon or evening session",
-        "startDate": "2026-11-05",
-        "endDate": "2026-11-08",
-        "ages": "18+; babies in arms welcome",
-        "cost": "£16.50 + £1.50 booking fee; includes first beer token",
-        "tags": [
-          "Events",
-          "Beer",
-          "Indoors"
-        ],
-        "source": "Teddington Beer Festival",
-        "url": "https://www.teddingtonbeerfestival.co.uk/",
-        "venue": "landmark",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-09"
-      },
-      {
         "id": "kingston-christmas-market-2026",
         "title": "Kingston Traditional European Christmas Market",
-        "location": "Ancient Market Place & Alpine Village Ã‚Â· Kingston upon Thames",
+        "location": "Ancient Market Place & Alpine Village Ãƒâ€šÃ‚Â· Kingston upon Thames",
         "summary": "Traditional wooden chalets serving mulled wine, bratwurst, artisan gifts, children's carousel rides, and live festive music on the pyramid stage.",
-        "when": "12 November Ã¢â‚¬â€œ 24 December 2026 Ã‚Â· Daily from 10am",
+        "when": "12 November ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 24 December 2026 Ãƒâ€šÃ‚Â· Daily from 10am",
         "startDate": "2026-11-12",
         "endDate": "2026-12-24",
         "ages": "All ages welcome; very family-friendly",
@@ -1495,13 +1447,13 @@
       {
         "id": "christmas-at-kew-2026",
         "title": "Christmas at Kew Botanical Light & Lantern Trail",
-        "location": "Royal Botanic Gardens Kew · Richmond",
+        "location": "Royal Botanic Gardens Kew Â· Richmond",
         "summary": "Over a million sparkling lights, singing trees, the tunnel of light, and spectacular water fountain projections across the Palm House lake.",
-        "when": "18 November – 31 December 2026 · 4.20pm–10pm",
+        "when": "18 November â€“ 31 December 2026 Â· 4.20pmâ€“10pm",
         "startDate": "2026-11-18",
         "endDate": "2026-12-31",
         "ages": "All ages; fully accessible pathway",
-        "cost": "Adult off-peak £22.50 / peak £29; Child £15; under 4s free",
+        "cost": "Adult off-peak Â£22.50 / peak Â£29; Child Â£15; under 4s free",
         "tags": [
           "Events",
           "Christmas",
@@ -1518,13 +1470,13 @@
       {
         "id": "hampton-court-ice-rink-2026",
         "title": "Hampton Court Palace Open-Air Festive Ice Rink",
-        "location": "Tudor Palace Forecourt Ã‚Â· East Molesey",
-        "summary": "Skate under the illuminated Tudor facade of Henry VIII's palace right in East Molesey. Features skate aids for young children and a heated cafÃƒÂ©.",
-        "when": "20 November Ã¢â‚¬â€œ 31 December 2026 Ã‚Â· 10amÃ¢â‚¬â€œ9pm daily",
+        "location": "Tudor Palace Forecourt Ãƒâ€šÃ‚Â· East Molesey",
+        "summary": "Skate under the illuminated Tudor facade of Henry VIII's palace right in East Molesey. Features skate aids for young children and a heated cafÃƒÆ’Ã‚Â©.",
+        "when": "20 November ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 31 December 2026 Ãƒâ€šÃ‚Â· 10amÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“9pm daily",
         "startDate": "2026-11-20",
         "endDate": "2026-12-31",
         "ages": "Ages 3+ (skate aids available for toddlers)",
-        "cost": "Adults Ã‚Â£18Ã¢â‚¬â€œÃ‚Â£21, Children Ã‚Â£13Ã¢â‚¬â€œÃ‚Â£15; booking essential",
+        "cost": "Adults Ãƒâ€šÃ‚Â£18ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â£21, Children Ãƒâ€šÃ‚Â£13ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â£15; booking essential",
         "tags": [
           "Events",
           "Christmas",
@@ -1537,6 +1489,29 @@
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-08"
+      },
+      {
+        "id": "landmark-sparkle-festive-fair-2026",
+        "title": "Sparkle Festive Contemporary Craft Fair",
+        "location": "Landmark Arts Centre, Ferry Road Â· Teddington",
+        "summary": "Dozens of independent craft makers, jewellers, ceramicists and local artisans in the historic cathedral-like setting of the Landmark Centre.",
+        "when": "20â€“22 November 2026 Â· Fri 4â€“8.30pm; Sat/Sun 10amâ€“4.30pm",
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-22",
+        "ages": "All ages; under-16s accompanied",
+        "cost": "Â£4 entry; free for under-16s and Landmark members",
+        "tags": [
+          "Events",
+          "Christmas",
+          "Craft",
+          "Teddington"
+        ],
+        "source": "Landmark Arts Centre",
+        "url": "https://www.landmarkartscentre.org/visual-arts/sparkle-festive-fair/",
+        "venue": "landmark",
+        "kind": "event",
+        "contentType": "activity",
+        "verifiedAt": "2026-10-10"
       }
     ]
   },
@@ -1561,17 +1536,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 416.7
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 408.7
     },
     {
       "title": "Britain's Countryside Killers",
       "summary": "The story of Danielle Jones, who vanished from East Tilbury in 2001. Stuart Campbell was convicted of her murder after DNA and fake texts exposed his crimes.",
-      "meta": "TRUE CRIME · Available since yesterday",
+      "meta": "TRUE CRIME · Available since Thu 8 Oct",
       "source": "TRUE CRIME",
       "channel": "TRUE CRIME",
       "releaseDate": "2026-10-08",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Thu 8 Oct",
       "url": "https://www.tvmaze.com/episodes/3770908/britains-countryside-killers-3x03-betrayal-by-blood",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
@@ -1584,8 +1559,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 416.7
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 408.7
     },
     {
       "title": "The Incident Room",
@@ -1609,54 +1584,31 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 393.1
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 385.1
     },
     {
       "title": "Convictions Gone Bad with Will Mellor",
       "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
-      "meta": "Crime & Investigation · Available since Mon 5 Oct",
+      "meta": "Crime & Investigation · Mon 12 Oct, 9pm",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-05",
-      "releaseDateLabel": "Available since Mon 5 Oct",
+      "releaseDate": "2026-10-12",
+      "releaseDateLabel": "Mon 12 Oct, 9pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
       "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-05",
+      "airdate": "2026-10-12",
       "showId": 94772,
-      "episodeId": 3776672,
+      "episodeId": 3776673,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 390.1
-    },
-    {
-      "title": "This Much is True Crime",
-      "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
-      "meta": "TRUE CRIME · Today, 10pm",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-10-09",
-      "releaseDateLabel": "Today, 10pm",
-      "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603698.jpg",
-      "artworkAlt": "This Much is True Crime programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-09",
-      "showId": 94363,
-      "episodeId": 3776573,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 374.5
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 382.1
     },
     {
       "title": "The Diplomat",
@@ -1681,31 +1633,54 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 367.0
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 375.0
+    },
+    {
+      "title": "This Much is True Crime",
+      "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
+      "meta": "TRUE CRIME · Available since yesterday",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-10-09",
+      "releaseDateLabel": "Available since yesterday",
+      "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603698.jpg",
+      "artworkAlt": "This Much is True Crime programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-09",
+      "showId": 94363,
+      "episodeId": 3776573,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 362.5
     },
     {
       "title": "UK Forensic Breakthroughs",
-      "summary": "Special-needs teacher Jane Longhurst visited the flat of Graham Coutts, a guitarist and part-time salesman, in March of 2003 and never left.",
-      "meta": "TRUE CRIME · Available since Tue 6 Oct",
+      "summary": "Kim Banyard was the mother of a ten-week-old baby boy. In 2003, she went to a party at a friend's house, and it was the last time anyone outside her own home saw her alive.",
+      "meta": "TRUE CRIME · Tue 13 Oct, 10pm",
       "source": "TRUE CRIME",
       "channel": "TRUE CRIME",
-      "releaseDate": "2026-10-06",
-      "releaseDateLabel": "Available since Tue 6 Oct",
+      "releaseDate": "2026-10-13",
+      "releaseDateLabel": "Tue 13 Oct, 10pm",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608644.jpg",
       "artworkAlt": "UK Forensic Breakthroughs programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-06",
+      "airdate": "2026-10-13",
       "showId": 94755,
-      "episodeId": 3774935,
+      "episodeId": 3774936,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 345.5
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 349.5
     },
     {
       "title": "Mafia: Behind the Bloodshed",
@@ -1727,8 +1702,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 307.9
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 299.9
     },
     {
       "title": "Last Night Out",
@@ -1750,17 +1725,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 283.0
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 291.0
     },
     {
       "title": "Crime Scene Raw",
       "summary": "Crime Scene Raw focuses on a different high-profile case each episode, utilizing police bodycam footage and forensic evidence.",
-      "meta": "Sky Crime · Sun 11 Oct, 8pm",
+      "meta": "Sky Crime · Tomorrow, 8pm",
       "source": "Sky Crime",
       "channel": "Sky Crime",
       "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Sun 11 Oct, 8pm",
+      "releaseDateLabel": "Tomorrow, 8pm",
       "url": "https://www.tvmaze.com/episodes/3772887/crime-scene-raw-1x07-clifford-jones-and-joseph-celestine",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597392.jpg",
@@ -1773,17 +1748,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 272.7
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 280.7
     },
     {
       "title": "How the Tudors Lost Their Heads",
       "summary": "Born royal, Margaret Pole lost her status and riches as a child. She fought back to win unprecedented power for a woman in Tudor times, even defying Henry VIII. But she became caught in a…",
-      "meta": "National Geographic · Sun 11 Oct, 8pm",
+      "meta": "National Geographic · Tomorrow, 8pm",
       "source": "National Geographic",
       "channel": "National Geographic",
       "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Sun 11 Oct, 8pm",
+      "releaseDateLabel": "Tomorrow, 8pm",
       "url": "https://www.natgeotv.com/uk/special/how-the-tudors-lost-their-heads",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/640/1600111.jpg",
@@ -1798,25 +1773,25 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 240.5
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 248.5
     },
     {
       "title": "Hitler's Last Stand",
-      "summary": "An isolated American battalion fights to hold a vital mountain stronghold in Italy, known as \"Battle Mountain\". But the Germans won't give it up without a fight; with artillery and…",
-      "meta": "National Geographic · Available since Tue 6 Oct",
+      "summary": "On his first day of command, American Colonel George Mabry leads a broken battalion through the unforgiving Hurtgen Forest, to take the Roer River dams before the Nazis flood the area. The…",
+      "meta": "National Geographic · Tue 13 Oct, 8pm",
       "source": "National Geographic",
       "channel": "National Geographic",
-      "releaseDate": "2026-10-06",
-      "releaseDateLabel": "Available since Tue 6 Oct",
+      "releaseDate": "2026-10-13",
+      "releaseDateLabel": "Tue 13 Oct, 8pm",
       "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/223/559965.jpg",
       "artworkAlt": "Hitler's Last Stand programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-06",
+      "airdate": "2026-10-13",
       "showId": 37030,
-      "episodeId": 3707976,
+      "episodeId": 3707977,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [
@@ -1824,8 +1799,8 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-09",
-      "preferenceScore": 229.5
+      "generatedDate": "2026-10-10",
+      "preferenceScore": 233.5
     }
   ]
 }
