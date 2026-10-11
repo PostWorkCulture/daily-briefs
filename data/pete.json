@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 11 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Sunday, 11 October 2026 · refreshed 11:08am",
   "worldFact": {
     "id": "point-roberts-american-border-anomaly",
     "editorialPriority": "human-first",
@@ -18,27 +18,27 @@
     "localImage": "assets/scenery/world-fact.webp?v=642ad41d91c8"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
+    "temp": "13°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-11",
         "high": 15,
         "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 4,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 17,
+        "high": 18,
         "low": null,
         "summary": "Light Rain",
         "condition": "Light Rain",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -47,16 +47,16 @@
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-14",
         "high": 19,
         "low": null,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 10,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -74,22 +74,22 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-17",
         "high": 15,
         "low": null,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Overcast · rain chance around 4%",
+      "detail": "Sunny intervals · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -566,7 +566,7 @@
     "nextFixture": {
       "date": "2026-10-13T20:00:00+01:00",
       "dateLabel": "Tue 13 Oct",
-      "kickoff": "8pm",
+      "kickoff": "8:00pm",
       "opponent": "Lille",
       "competition": "UEFA Champions League",
       "homeAway": "home",
@@ -576,12 +576,37 @@
       "result": "",
       "url": "https://www.skysports.com/football/arsenal-vs-lille/8048664293087483232",
       "source": "Sky Sports",
-      "tvChannel": "TBC"
+      "tvChannel": "TBC",
+      "stadium": "Emirates Stadium",
+      "previousMeeting": {
+        "score": "No previous meeting found",
+        "date": "",
+        "competition": "",
+        "source": ""
+      }
     },
     "leaguePosition": 2,
     "points": 15,
     "played": 6,
     "news": [
+      {
+        "title": "Arsenal 2-1 Leeds: Riccardo Calafiori and Bruno Guimaraes on target as champions fight back to go level with Man City",
+        "summary": "",
+        "meta": "Sun 11 Oct",
+        "publishedAt": "2026-10-11T08:59:40+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcG5JQW1GRkc0czR3dUVxR3hUYlR4SFhxd0dkRzNUR0xBTW51U1ZIVjlMOTZhLTlsRm9iZXlCVC1xS015VWRsUVFiYl8zaVVPajA4VjhRUTBiRjNQXy1iS2FNX2toZVlCcHN2R3JzbzVzOXlIVmlPMEQxbG9DaG5KYUhZU1pVMVVIUm9RQVpqOEhmZ3AzczVVVDZDak9kUV9RVHMzYVpRQkt1dFJuQVY4d3JBUEhQU0lQNjdfZGFibUd0M2VGX2FkcGdOMmFmZXdOT0FqYmdaVTBBOW9qck9uWTF3MTVaUVBjcGlDc3ktSWlLZ0ZLaFFQaw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Bruno on \"feeling the love\" after home debut winner",
+        "summary": "",
+        "meta": "Sat 10 Oct",
+        "publishedAt": "2026-10-10T16:03:16+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa3dJbzVYcWZoZmlSbENRN1dFM3RObi00QnNKWEozZnZsRGtmQ1NVMmhpeHoxLTktQnlFcEdXTlRtRHQxWjlneXUzX2ttaXJhZVZPeUxSU1RCc0FhRWxiMDVlRUJvRUZKVmRFRXpfcHIyNTVvYnJoMnh2MnpscEtJV3QtNmZLOUxKc015RFlEQXFtUnphS1E?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "Report: Arsenal 2-1 Leeds United",
         "summary": "",
@@ -589,24 +614,6 @@
         "publishedAt": "2026-10-10T14:47:00+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RcnJLWGJPTURiX1M2bE5pbmNkTWUyRC0tM25SVXNvQkxqZk9ZZ0RKUkNvOEFxYVJJNl91QmM5T2lQMGp3eDVRSzlQSU5DOGlWbG5lSVRXamo0T3pna0xkV2ZnOGlxUkVCcXF4LUVkSDRsWF9fREswSW9iSlJNQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal 2-1 Leeds: Riccardo Calafiori and Bruno Guimaraes on target as champions fight back to go level with Man City",
-        "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T02:56:08+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcG5JQW1GRkc0czR3dUVxR3hUYlR4SFhxd0dkRzNUR0xBTW51U1ZIVjlMOTZhLTlsRm9iZXlCVC1xS015VWRsUVFiYl8zaVVPajA4VjhRUTBiRjNQXy1iS2FNX2toZVlCcHN2R3JzbzVzOXlIVmlPMEQxbG9DaG5KYUhZU1pVMVVIUm9RQVpqOEhmZ3AzczVVVDZDak9kUV9RVHMzYVpRQkt1dFJuQVY4d3JBUEhQU0lQNjdfZGFibUd0M2VGX2FkcGdOMmFmZXdOT0FqYmdaVTBBOW9qck9uWTF3MTVaUVBjcGlDc3ktSWlLZ0ZLaFFQaw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Daniel Farke's mixed emotions and half-time message as Leeds lose narrowly at Arsenal - Leeds United | Official Website",
-        "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T15:47:24+01:00",
-        "source": "Leeds United",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYkh3TGI5RWxCUWN1eDhPMHdLUTlnYm9LZ0ZXM2NDbExXemVoamhaQjRndW5pNU9tSktnWmhDa1AtdXRHal96Y0Z5OWpjVEg5WHRQZW5CdmZHc2JLa2RFUTN0RVJIemd4OWNZbG9Qc1FROEoxX2pWSS1UQnFqVEpvYWtsMElGQ2RBU3JEUmpwTnRTUzdjR0NQR0tZRExKZ1g1dllaNjl4Q0l2SzM4Yy1SNkNmS1VlWWxuNUJNTg?oc=5",
         "contentType": "article"
       },
       {
@@ -619,12 +626,12 @@
         "contentType": "article"
       },
       {
-        "title": "Arsenal 2-1 Leeds | Premier League highlights",
+        "title": "How to watch Arsenal v Lille live on TV",
         "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T17:15:59+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZnRuNWNEYmQxWDQwQlJQV01fdFFmaXZyaGFWcVpqbnJ4MldLc1lnRXVtQ0xwQk14RVdUMXZmQjJqODBxOUozeE5UdnJCWDBQMDZ5V21wUEdIWFNoaWpsa1JVU25taV9IOUhGcjA5OFZiVDl1NGpJSlphOVRkMmZfTjRGdG9Za1dOZTJjRnBoRmNuUktONGZqUg?oc=5",
+        "meta": "Sun 11 Oct",
+        "publishedAt": "2026-10-11T09:35:14+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR2F3R05OT1dGWHJxZHJtOWY2LUNwTzFlUUg3Rm54SFpnQmxvREtQT3JBcXlNYXdzeFh5Q1J3X3I5RlQ0bnJ5bk5WTWFkUlBhM0xOQ0QtVE5NSU5NcEhxUEJrWVgwUWd4a2lmbUR5Y201U3lsd1RTU0NidGNrbFpSb29SNTdOZEVj?oc=5",
         "contentType": "article"
       }
     ],
@@ -804,12 +811,12 @@
       "section": "AI"
     },
     {
-      "title": "Report: Arsenal 2-1 Leeds United",
+      "title": "Arsenal 2-1 Leeds: Riccardo Calafiori and Bruno Guimaraes on target as champions fight back to go level with Man City",
       "summary": "",
-      "meta": "Sat 10 Oct",
-      "publishedAt": "2026-10-10T14:47:00+01:00",
-      "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RcnJLWGJPTURiX1M2bE5pbmNkTWUyRC0tM25SVXNvQkxqZk9ZZ0RKUkNvOEFxYVJJNl91QmM5T2lQMGp3eDVRSzlQSU5DOGlWbG5lSVRXamo0T3pna0xkV2ZnOGlxUkVCcXF4LUVkSDRsWF9fREswSW9iSlJNQQ?oc=5",
+      "meta": "Sun 11 Oct",
+      "publishedAt": "2026-10-11T08:59:40+01:00",
+      "source": "Sky Sports",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcG5JQW1GRkc0czR3dUVxR3hUYlR4SFhxd0dkRzNUR0xBTW51U1ZIVjlMOTZhLTlsRm9iZXlCVC1xS015VWRsUVFiYl8zaVVPajA4VjhRUTBiRjNQXy1iS2FNX2toZVlCcHN2R3JzbzVzOXlIVmlPMEQxbG9DaG5KYUhZU1pVMVVIUm9RQVpqOEhmZ3AzczVVVDZDak9kUV9RVHMzYVpRQkt1dFJuQVY4d3JBUEhQU0lQNjdfZGFibUd0M2VGX2FkcGdOMmFmZXdOT0FqYmdaVTBBOW9qck9uWTF3MTVaUVBjcGlDc3ktSWlLZ0ZLaFFQaw?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
@@ -895,7 +902,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-11",
-      "preferenceScore": 511.2
+      "preferenceScore": 511.4
     },
     {
       "title": "Time",
@@ -944,7 +951,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-11",
-      "preferenceScore": 400.6
+      "preferenceScore": 400.7
     }
   ],
   "sections": {
@@ -1042,30 +1049,30 @@
     ],
     "Arsenal news": [
       {
+        "title": "Arsenal 2-1 Leeds: Riccardo Calafiori and Bruno Guimaraes on target as champions fight back to go level with Man City",
+        "summary": "",
+        "meta": "Sun 11 Oct",
+        "publishedAt": "2026-10-11T08:59:40+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcG5JQW1GRkc0czR3dUVxR3hUYlR4SFhxd0dkRzNUR0xBTW51U1ZIVjlMOTZhLTlsRm9iZXlCVC1xS015VWRsUVFiYl8zaVVPajA4VjhRUTBiRjNQXy1iS2FNX2toZVlCcHN2R3JzbzVzOXlIVmlPMEQxbG9DaG5KYUhZU1pVMVVIUm9RQVpqOEhmZ3AzczVVVDZDak9kUV9RVHMzYVpRQkt1dFJuQVY4d3JBUEhQU0lQNjdfZGFibUd0M2VGX2FkcGdOMmFmZXdOT0FqYmdaVTBBOW9qck9uWTF3MTVaUVBjcGlDc3ktSWlLZ0ZLaFFQaw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Bruno on \"feeling the love\" after home debut winner",
+        "summary": "",
+        "meta": "Sat 10 Oct",
+        "publishedAt": "2026-10-10T16:03:16+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa3dJbzVYcWZoZmlSbENRN1dFM3RObi00QnNKWEozZnZsRGtmQ1NVMmhpeHoxLTktQnlFcEdXTlRtRHQxWjlneXUzX2ttaXJhZVZPeUxSU1RCc0FhRWxiMDVlRUJvRUZKVmRFRXpfcHIyNTVvYnJoMnh2MnpscEtJV3QtNmZLOUxKc015RFlEQXFtUnphS1E?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Report: Arsenal 2-1 Leeds United",
         "summary": "",
         "meta": "Sat 10 Oct",
         "publishedAt": "2026-10-10T14:47:00+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RcnJLWGJPTURiX1M2bE5pbmNkTWUyRC0tM25SVXNvQkxqZk9ZZ0RKUkNvOEFxYVJJNl91QmM5T2lQMGp3eDVRSzlQSU5DOGlWbG5lSVRXamo0T3pna0xkV2ZnOGlxUkVCcXF4LUVkSDRsWF9fREswSW9iSlJNQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal 2-1 Leeds: Riccardo Calafiori and Bruno Guimaraes on target as champions fight back to go level with Man City",
-        "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T02:56:08+01:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcG5JQW1GRkc0czR3dUVxR3hUYlR4SFhxd0dkRzNUR0xBTW51U1ZIVjlMOTZhLTlsRm9iZXlCVC1xS015VWRsUVFiYl8zaVVPajA4VjhRUTBiRjNQXy1iS2FNX2toZVlCcHN2R3JzbzVzOXlIVmlPMEQxbG9DaG5KYUhZU1pVMVVIUm9RQVpqOEhmZ3AzczVVVDZDak9kUV9RVHMzYVpRQkt1dFJuQVY4d3JBUEhQU0lQNjdfZGFibUd0M2VGX2FkcGdOMmFmZXdOT0FqYmdaVTBBOW9qck9uWTF3MTVaUVBjcGlDc3ktSWlLZ0ZLaFFQaw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Daniel Farke's mixed emotions and half-time message as Leeds lose narrowly at Arsenal - Leeds United | Official Website",
-        "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T15:47:24+01:00",
-        "source": "Leeds United",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYkh3TGI5RWxCUWN1eDhPMHdLUTlnYm9LZ0ZXM2NDbExXemVoamhaQjRndW5pNU9tSktnWmhDa1AtdXRHal96Y0Z5OWpjVEg5WHRQZW5CdmZHc2JLa2RFUTN0RVJIemd4OWNZbG9Qc1FROEoxX2pWSS1UQnFqVEpvYWtsMElGQ2RBU3JEUmpwTnRTUzdjR0NQR0tZRExKZ1g1dllaNjl4Q0l2SzM4Yy1SNkNmS1VlWWxuNUJNTg?oc=5",
         "contentType": "article"
       },
       {
@@ -1078,6 +1085,24 @@
         "contentType": "article"
       },
       {
+        "title": "How to watch Arsenal v Lille live on TV",
+        "summary": "",
+        "meta": "Sun 11 Oct",
+        "publishedAt": "2026-10-11T09:35:14+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR2F3R05OT1dGWHJxZHJtOWY2LUNwTzFlUUg3Rm54SFpnQmxvREtQT3JBcXlNYXdzeFh5Q1J3X3I5RlQ0bnJ5bk5WTWFkUlBhM0xOQ0QtVE5NSU5NcEhxUEJrWVgwUWd4a2lmbUR5Y201U3lsd1RTU0NidGNrbFpSb29SNTdOZEVj?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Highlights | Arsenal 2-1 Leeds United | Extended",
+        "summary": "",
+        "meta": "Sun 11 Oct",
+        "publishedAt": "2026-10-11T08:06:29+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1BMVJOU1ZLaWZtMXBKYU9jSlhNaHkyZnIxU2JLSmlQWnFqeHlRQ3F6M20yUzQ1S3U4b3JYUlBVYTc5SjVRTXkyNVdlSWVZRXZac2dPZmJ6Wk1xU0w5WlBN?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arsenal 2-1 Leeds | Premier League highlights",
         "summary": "",
         "meta": "Sat 10 Oct",
@@ -1087,30 +1112,12 @@
         "contentType": "article"
       },
       {
-        "title": "Arsenal XI vs Leeds: Starting lineup and confirmed team news",
-        "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T11:26:37+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOOHpIV01KZE1HcE5IMFRkcjNJeFhodkpXTTBVLWc4NzRuYXpNSmNLUk55eUg0OEw3SGdTdVJVNG1zVExMWHRCS21venJwX0Z5QU1wY0FJMjhuRkxWdVFmdWJZSzI3RW5KS0g1cTI3eUZNV3dVM282djd6UmNEbVpKclVvaTc5RXpkenVHMk8xcmxNajFXREFFeUNiRnJyWDA4Zk5PdGo4aVNGUmVmMzJmLXN4dVZYRnVsdjlYWFJpdXM0VGdMRzJXNjJMRHMxdFpOSElqckFlUU9CM0ZOY2EwN25OelA2WWpJaG40QTFSRTJvTUJS?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Arsenal vs Leeds LIVE! Premier League match updates, news and score",
         "summary": "",
         "meta": "Sat 10 Oct",
         "publishedAt": "2026-10-10T16:15:09+01:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRzBDamVwTDBFMVA2TjYwZS1lVDk1eVZhS3gwZ3JkTmFIVEc3bVc1Y1Y0MVNWdVVJUzgzeXhHZGZ5TzlBaURjMnJuRVl4TXB5UFN4eVg4NzZtNGZaNnRzTHF0ZHk3a18zMlZoNUJadVRLcEhid0ZiQ0ZobVpjcGFndzZkTEhtZEd5VEVrNE56eDRuNWotZmVWN000bVFKM01yLVBNWUlQY3V4bW9DbW43Q21UbWVoRDBKVGxr?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Trio fit, three more come in for Leeds test",
-        "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T11:26:22+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTEgyYlhzN3NmUnVMMWVtaXkzRG15cHVfLWFQMXg4X2VvZnRhb0pBeXlzeGc2TnNfQkp6SDhxMkN6MFFoSnUtXzZKVVNCNVhaeTJwY1VSa0VLZUJnOUVHQ0N2MlhFTE9ZeUZHbzRRaDdQV1VMa0RoSGN1WXp2T3N6MUlkNktZVjdyRHd6Z0RETFIzZlk0REZhMGR3?oc=5",
         "contentType": "article"
       }
     ],
@@ -1271,24 +1278,6 @@
         "contentType": "article"
       },
       {
-        "title": "Codebreaker, 103, kept his WW2 heroics a secret for decades",
-        "summary": "Fred Vanke was sworn to secrecy but has now been honoured by Bletchley Park.",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T07:07:16+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cwvgrljzy7zmo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "Oldest family business in England celebrates 511th birthday",
-        "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T02:31:00+01:00",
-        "source": "Bridport News",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUt3MkE0ck9CdUJ0bm1SUEdXcHZHS3VBOUpkREl4M25lcFV3d19IYTVXLS1XaHhyVUp1bThsQ19iU0FLbURFcE8yZXRWMUswdzBhZnhxaXFxWVpZa3pCc1FEZWlTVTZRSmJpLUM2RmZxWVdhQmtseV9Ld2Z5RXd0US1HQ1dGU1ZDMGFtZXBQVWNXNU9ubzNZZmJYaw?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Julie Hesmondhalgh given Great British Theatres Lifetime Achievement Award for Oldham Coliseum campaigning and theatre advocacy",
         "summary": "",
         "meta": "Fri 9 Oct",
@@ -1313,15 +1302,6 @@
         "publishedAt": "2026-10-09T13:39:45+01:00",
         "source": "The London Economic",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ3kzenRFQUw1bTNodU1VTmd5SGpQdThmdUFQT1NJRmktbWtNXzBHQktLc21COHlCZjQ2THNUYTVWZlNmdnlRRWZaNHpFTG9qbVlOWGNpXzdGLVpnZVZDNXptVUpPSEZ5Nnd6ZHMxdjU2UzJ5MC1HN0pwLU5rZjZxakN6UWI3UzZWV293aElkTFlqR2I5dWgwcXE3dUo2eVZPRGNDbURvMGo1VFJaMS1Da0I1ZGFXUF9xQ0FBWlZGUElreUlIcmV6MU9QdXhVNnRYMXNGUUlrQlN5QQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "King pays Andrew's £1.5m repair bill on Royal Lodge",
-        "summary": "Andrew Mountbatten-Windsor was charged £1.5m in repair and restoration costs after surrendering the lease on the 30-room mansion.",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T13:29:02+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c8040nl9q24do?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
@@ -1367,6 +1347,33 @@
         "publishedAt": "2026-10-08T13:04:41+01:00",
         "source": "AOL.co.uk",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT2NJRm90XzY4WEx1SkdGVmZIbnh0MnVKSkNqTHoxR1Q1RjdubjdmaEU0cWhQV2lRMjAtajJRTHhnQVJ2MzdZRVJiOHFYZGMxTVQxX3JtSU5Gd2JqTEJydGMtalo3Z3ZHV0pvSUZzcEpubTl5QzVnaDlnY1pldlB0VlBn?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Video. Back to the 90s! Tate Britain celebrates the decade's art and fashion",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T13:04:41+01:00",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSDJ5TklOX29NUWlIRnJpcVJrTlNfTFR2cGNHMEVXQjhPWXZWSDJnSFdia0I2c0NGRlpJMk8wbDhrRmhJdTB3emhXaEJXMGt3bmtpelZfUDlTRFkydUNKOFZtYWJJRFVVbTgwdGdMenZKY0d3R2hVcVcxWWJsQXRDNndfVHh2aTRvdTlOZFJjaG0wTzM3a3E5MFVsWXR6ODg2OTdqTEs1SXFrWm5mOTA1WERCaFJKS1ZUc1MtWnBHcE1lSGFqWk1MTUdPUUU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swansea Office Wins Britain’s Best Commercial Workplace Award",
+        "summary": "",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T12:19:23+01:00",
+        "source": "News from Wales",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbzl2RUIxTzhaWTRfdUxDTW4tZ2xkeHA3Y09maW43d1NGZmdmOXljZGpFSm4zQTE4RFVWdjRjWHozbnQ1MFNrQUJFcGNPSktyNTA1VF80RUxRZGlKOHJHSGNUS2JrV2l4QVZPMU5SZlpxWlA1cWMxdER2a29yelR1cUJlSjE1MXpfbG5qR3Mya1VDWUk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Tate Britain celebrates the 90s with new Edward Enninful-curated exhibition",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T15:46:29+01:00",
+        "source": "Luxury London",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcm5kZDlPeGlXbUVWb25HYTlDSnh6S0xXZHRuVktqY2hmSm5yVWhLNkFXMk1jMko3ckFXallId2ZGSGdtekV4ektPZlNUcGstYlBidTAyQS1xRDJaZnpuTWpjY01kc25CYUtBT0E5M3NIWHRGdDRaSUh2QUtHa0l3b0tn?oc=5",
         "contentType": "article"
       }
     ],
@@ -1565,7 +1572,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-10"
+        "verifiedAt": "2026-10-11"
       },
       {
         "id": "transportfest-2026",
@@ -1701,7 +1708,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-10"
+        "verifiedAt": "2026-10-11"
       },
       {
         "id": "hampton-court-ice-rink-2026",
@@ -1874,7 +1881,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-11",
-      "preferenceScore": 357.7
+      "preferenceScore": 357.5
     },
     {
       "title": "This Much is True Crime",
@@ -1897,7 +1904,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-11",
-      "preferenceScore": 354.5
+      "preferenceScore": 354.6
     },
     {
       "title": "Last Night Out",
@@ -2014,7 +2021,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-11",
-      "preferenceScore": 246.4
+      "preferenceScore": 246.5
     }
   ]
 }
