@@ -309,6 +309,34 @@ def verified_brighton_result() -> dict:
     }
 
 
+def verified_leeds_result() -> dict:
+    return {
+        "date": "2026-10-10T12:30:00+01:00",
+        "dateLabel": "Sat 10 Oct",
+        "kickoff": "12:30pm",
+        "opponent": "Leeds United",
+        "competition": "Premier League",
+        "homeAway": "home",
+        "completed": True,
+        "arsenalScore": 2,
+        "opponentScore": 1,
+        "result": "2–1",
+        "scorers": [
+            {"name": "Riccardo Calafiori", "team": "Arsenal", "minute": "28'"},
+            {"name": "Bruno Guimarães", "team": "Arsenal", "minute": "74'"},
+            {"name": "Georginio Rutter", "team": "Leeds United", "minute": "14'"},
+        ],
+        "scorersLabel": "Calafiori 28', Bruno Guimarães 74' · Rutter 14'",
+        "stadium": "Emirates Stadium",
+        "summary": (
+            "Riccardo Calafiori and Bruno Guimarães scored as Arsenal came from behind "
+            "to beat Leeds United 2–1 at Emirates Stadium."
+        ),
+        "url": "https://www.skysports.com/football/arsenal-vs-leeds-united/6597748919932588232",
+        "source": "Sky Sports",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -338,6 +366,13 @@ def team_key(value: str) -> str:
     aliases = {
         "brightonandhovealbion": "brighton",
         "brightonhovealbion": "brighton",
+        "leedsunited": "leeds",
+        "newcastleunited": "newcastle",
+        "westhamunited": "westham",
+        "wolverhamptonwanderers": "wolves",
+        "tottenhamhotspur": "tottenham",
+        "ipswichtown": "ipswich",
+        "coventrycity": "coventry",
     }
     return aliases.get(key, key)
 
@@ -578,7 +613,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-09-19T18:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-10-10T14:30:00+01:00"):
+        fallback = verified_leeds_result()
+    elif NOW >= datetime.fromisoformat("2026-09-19T18:00:00+01:00"):
         fallback = verified_brighton_result()
     elif NOW >= datetime.fromisoformat("2026-09-15T22:00:00+01:00"):
         fallback = verified_ipswich_result()

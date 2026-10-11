@@ -136,8 +136,15 @@ INACTIVE_LISTING = re.compile(
     re.I,
 )
 
+LOCAL_NEWS_HOME_QUERIES = (
+    '("West Molesey" OR "East Molesey")',
+    '(Molesey AND (Surrey OR Elmbridge OR Thames OR "Hurst Park" OR "Hurst Pool" OR "Molesey Heath" OR "Apps Court"))',
+    'site:elmbridge.gov.uk (Molesey OR Hurst OR "West Molesey" OR "East Molesey")',
+    'site:bbc.co.uk/news ("East Molesey" OR "West Molesey" OR Molesey)',
+    'site:surreycomet.co.uk ("West Molesey" OR "East Molesey" OR Molesey)',
+    'site:surreylive.news ("West Molesey" OR "East Molesey" OR Molesey)',
+)
 LOCAL_NEWS_QUERIES = (
-    '(Molesey OR "East Molesey" OR "West Molesey" OR "Hurst Pool" OR "Hurst Park")',
     '("Kingston upon Thames" OR "Kingston Surrey" OR Surbiton)',
     '("Hampton Court" OR Teddington OR "Hampton Wick" OR "Hampton Hill" OR "Bushy Park")',
     '(Hampton AND (London OR Surrey OR Richmond))',
@@ -145,15 +152,15 @@ LOCAL_NEWS_QUERIES = (
     '("Thames Ditton" OR "Long Ditton" OR "Hinchley Wood" OR Esher OR "Sunbury-on-Thames")',
 )
 LOCAL_NEWS_PUBLICATION_QUERIES = (
-    'site:surreycomet.co.uk (Molesey OR Kingston OR Surbiton OR Teddington OR "Thames Ditton")',
-    'site:surreylive.news (Molesey OR Kingston OR Teddington OR Walton OR Esher OR Hersham)',
     'site:kingston.nub.news (Kingston OR Surbiton OR "Hampton Wick")',
     'site:teddington.nub.news (Teddington OR "Hampton Wick" OR "Bushy Park")',
     'site:weybridgeandwalton.nub.news ("Walton-on-Thames" OR Hersham)',
     'site:richmondandtwickenhamtimes.co.uk (Teddington OR Hampton OR "Bushy Park")',
+    'site:surreycomet.co.uk (Kingston OR Surbiton OR Teddington OR "Thames Ditton")',
+    'site:surreylive.news (Kingston OR Teddington OR Walton OR Esher OR Hersham)',
 )
 LOCAL_NEWS_FAMILY_QUERIES = (
-    '(Molesey OR Kingston OR Surbiton OR Teddington OR Hampton) '
+    '("West Molesey" OR "East Molesey" OR Molesey OR Kingston OR Surbiton OR Teddington OR Hampton) '
     '(family OR kids OR children OR festival OR park OR Halloween OR Christmas)',
     '("Hampton Court" OR "Walton-on-Thames" OR Hersham OR Esher OR "Thames Ditton") '
     '(family OR kids OR children OR festival OR event OR trail OR workshop OR "open day")',
@@ -168,6 +175,10 @@ LOCAL_NEWS_PLACE_EVIDENCE = (
     re.compile(r"\besher\b|\bhersham\b|\bsurbiton\b|\bsunbury(?:-|\s+)on(?:-|\s+)thames\b", re.I),
     re.compile(r"\bhurst\s+(?:park|pool)\b|\bmolesey\s+(?:heath|lock|boat\s+club)\b|\bapps\s+court\s+farm\b|\bimber\s+court\b", re.I),
 )
+LOCAL_HOME_AREA_PLACES = re.compile(
+    r"\b(?:west\s+molesey|east\s+molesey|molesey|hurst\s+(?:park|pool)|molesey\s+(?:heath|lock|boat\s+club)|apps\s+court\s+farm|imber\s+court)\b",
+    re.I,
+)
 LOCAL_NEWS_FALSE_LOCATIONS = re.compile(
     r"\b(?:kingston\s+upon\s+hull|kingston,?\s+(?:jamaica|ontario|rhode\s+island|tennessee|tasmania)|"
     r"east\s+hampton|hampton\s+roads|hampton\s+university|hampton\s+(?:inn|by\s+hilton)|the\s+hamptons|"
@@ -176,7 +187,9 @@ LOCAL_NEWS_FALSE_LOCATIONS = re.compile(
     re.I,
 )
 LOCAL_NEWS_FOREIGN_OR_LOW_VALUE_SOURCE = re.compile(
-    r"\b(?:WTKR|IRIE FM|Jamaica Gleaner|Tasmanian Country|Teagasc|Legacy obituary|funeral home|obituary|YouTube)\b",
+    r"\b(?:WTKR|IRIE FM|Jamaica Gleaner|Tasmanian Country|Teagasc|Legacy obituary|funeral home|obituary|YouTube|"
+    r"BettingOdds|Betting|Gambling|Casino|Oddschecker|The Rugby Paper|The Non-League Football Paper|FotMob|Transfermarkt|"
+    r"[A-Za-z]+ (?:FC|RFC|CC|Football Club|Rugby Club))\b",
     re.I,
 )
 LOCAL_NEWS_LOW_VALUE_CONTENT = re.compile(
@@ -197,7 +210,7 @@ PLAIN_HAMPTON_LOCAL_CONTEXT = re.compile(
 LOCAL_NEWS_PUBLICATIONS = re.compile(
     r"\b(?:Surrey Comet|Surrey Live|Kingston Nub News|Teddington Nub News|"
     r"Weybridge and Walton Nub News|Richmond and Twickenham Times|Molesey Matters|"
-    r"Elmbridge Today|This Is Local London|MyLondon)\b",
+    r"Elmbridge Today|This Is Local London|MyLondon|Elmbridge Borough Council|London Daily News)\b",
     re.I,
 )
 LOCAL_FAMILY_ACTIVITY = re.compile(
@@ -209,13 +222,15 @@ LOCAL_FAMILY_ACTIVITY = re.compile(
 )
 LOCAL_SPORT_TOPIC = re.compile(
     r"\b(?:football|rugby|cricket|hockey|tennis|netball|basketball|golf|cycling|"
-    r"athletics|swimming|rowing|fixture|match|league|cup|tournament|FC|RFC|CC)\b",
+    r"athletics|swimming|rowing|fixture|match|league|cup|tournament|FC|RFC|CC|unbeaten|derby|clash|side|team|hosts?|"
+    r"women|men|season|forward|striker|winger|midfielder|defender|goalkeeper|players?|squad|injur(?:y|ies))\b",
     re.I,
 )
 LOCAL_SPORT_RESULT = re.compile(
-    r"\b(?:score|result|match report|beat|beats|beaten|defeat|defeats|defeated|"
+    r"\b(?:score|result|match report|match sheet|beat|beats|beaten|defeat|defeats|defeated|"
     r"win|wins|won|loss|lost|draw|drew|victory|goals?|points?|innings|wickets?|"
-    r"fixture|standings|table|round-up|roundup)\b|\b\d+\s*[-–]\s*\d+\b",
+    r"fixture|standings|table|round-up|roundup|vs\.?|v\b|head-to-head|stats|on loan|signing|signs|transfer|"
+    r"injur(?:y|ies)|squad|players?)\b|\b\d+\s*[-–]\s*\d+\b",
     re.I,
 )
 LOCAL_SPORT_EXCEPTION = re.compile(
@@ -227,6 +242,13 @@ LOCAL_SPORT_EXCEPTION = re.compile(
     r"get involved|sign up)\b",
     re.I,
 )
+TOPIC_ONLY_TITLES = frozenset({
+    'east molesey', 'west molesey', 'molesey', 'kingston', 'kingston upon thames',
+    'teddington', 'surbiton', 'hersham', 'esher', 'walton', 'walton-on-thames',
+    'walton on thames', 'hampton', 'hampton court', 'hampton wick', 'hampton hill',
+    'bushy park', 'thames ditton', 'long ditton', 'hinchley wood', 'sunbury',
+    'sunbury-on-thames'
+})
 
 UK_POSITIVE_NEWS_QUERIES = (
     '("United Kingdom" OR Britain OR British OR England OR Scotland OR Wales OR "Northern Ireland") '
@@ -622,8 +644,45 @@ def section_content_type_errors(sections: dict) -> list[str]:
     return errors
 
 
+def is_topic_page_only(title: str) -> bool:
+    cleaned = re.sub(r"\s*-\s*BBC.*$", "", title, flags=re.I).strip().lower()
+    return cleaned in TOPIC_ONLY_TITLES
+
+
+def local_home_area_item(item: dict) -> bool:
+    text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
+    return bool(LOCAL_HOME_AREA_PLACES.search(text))
+
+
+def local_news_item_hub(item: dict) -> str:
+    title_sum = clean_html(" ".join(str(item.get(k, "")) for k in ("title", "summary"))).lower()
+    if LOCAL_HOME_AREA_PLACES.search(title_sum):
+        return "molesey"
+    if "surbiton" in title_sum:
+        return "surbiton"
+    if "kingston" in title_sum:
+        return "kingston"
+    if "teddington" in title_sum:
+        return "teddington"
+    if "hampton" in title_sum or "bushy" in title_sum:
+        return "hampton"
+    if "walton" in title_sum or "hersham" in title_sum:
+        return "walton"
+    if "ditton" in title_sum or "esher" in title_sum:
+        return "esher"
+    source = str(item.get("source", "")).lower()
+    if "kingston" in source:
+        return "kingston"
+    if "teddington" in source:
+        return "teddington"
+    return "other"
+
+
 def local_news_item_is_in_scope(item: dict) -> bool:
     """Require approved local evidence and reject routine sports coverage."""
+    title = clean_html(str(item.get("title") or ""))
+    if is_topic_page_only(title):
+        return False
     text = clean_html(" ".join(str(item.get(key, "")) for key in ("title", "summary")))
     source = clean_html(str(item.get("source", "")))
     if (
@@ -642,7 +701,7 @@ def local_news_item_is_in_scope(item: dict) -> bool:
     )
     if not local:
         return False
-    routine_sport = LOCAL_SPORT_TOPIC.search(text) and LOCAL_SPORT_RESULT.search(text)
+    routine_sport = bool(re.search(r"\b(?:The Rugby Paper|The Non-League Football Paper|FotMob|Transfermarkt|[A-Za-z]+ (?:FC|RFC|CC|Football Club|Rugby Club))\b", source, re.I)) or bool(LOCAL_SPORT_TOPIC.search(text) and LOCAL_SPORT_RESULT.search(f"{text} {source}"))
     return not routine_sport or bool(LOCAL_SPORT_EXCEPTION.search(text))
 
 
@@ -650,7 +709,8 @@ def local_publication_item(item: dict) -> bool:
     text = " ".join(str(item.get(key, "")) for key in ("source", "url"))
     return bool(LOCAL_NEWS_PUBLICATIONS.search(text) or re.search(
         r"https?://(?:www\.)?(?:surreycomet\.co\.uk|surreylive\.news|kingston\.nub\.news|"
-        r"teddington\.nub\.news|weybridgeandwalton\.nub\.news|richmondandtwickenhamtimes\.co\.uk)/", text, re.I))
+        r"teddington\.nub\.news|weybridgeandwalton\.nub\.news|richmondandtwickenhamtimes\.co\.uk|"
+        r"elmbridge\.gov\.uk|londondaily\.news)/", text, re.I))
 
 
 def local_event_has_expired(item: dict) -> bool:
@@ -679,11 +739,12 @@ def local_family_activity_item(item: dict) -> bool:
 
 
 def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
-    """Prioritise local publications and family activities, deduplicating multi-article event clusters."""
+    """Prioritise home area (Molesey), local publications and family activities, with hub balancing."""
     scoped = [item for item in items if local_news_item_is_in_scope(item)]
     prioritised = sorted(
         scoped,
         key=lambda item: (
+            local_home_area_item(item),
             local_family_activity_item(item),
             local_publication_item(item),
             str(item.get("publishedAt") or ""),
@@ -712,6 +773,18 @@ def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
         text = re.sub(r"\bblaze\b", "fire", text)
         return set(re.findall(r"[a-z0-9]+", text)) - stop_words
 
+    hub_counts: dict[str, int] = {}
+    hub_limits = {
+        "kingston": 2,
+        "teddington": 2,
+        "surbiton": 1,
+        "esher": 1,
+        "hampton": 1,
+        "walton": 1,
+        "other": 1,
+    }
+
+    deferred = []
     for item in prioritised:
         canonical = str(item.get("url") or "").split('#', 1)[0].split('?', 1)[0].rstrip('/')
         if canonical and canonical in selected_urls:
@@ -729,36 +802,83 @@ def select_local_news(items: list[dict], limit: int = 16) -> list[dict]:
                 break
         if is_dup:
             continue
+
+        is_home = local_home_area_item(item)
+        hub = local_news_item_hub(item)
+        if not is_home and hub_counts.get(hub, 0) >= hub_limits.get(hub, 1):
+            deferred.append((item, canonical, tokens))
+            continue
+
         selected.append(item)
+        if not is_home:
+            hub_counts[hub] = hub_counts.get(hub, 0) + 1
         if canonical:
             selected_urls.add(canonical)
         selected_tokens.append(tokens)
         if len(selected) >= limit:
             break
+
+    # Identify if home area items are selected and their newest date
+    home_dates = [str(it.get("publishedAt") or "") for it in selected if local_home_area_item(it)]
+    newest_home_date = max(home_dates) if home_dates else ""
+
+    # Pass 2: Fill up to limit from deferred items with deduplication check
+    if len(selected) < limit:
+        for item, canonical, tokens in deferred:
+            is_dup = False
+            for prev in selected_tokens:
+                shared = tokens & prev
+                if len(shared) >= 3:
+                    is_dup = True
+                    break
+            if is_dup:
+                continue
+
+            # If home area items exist, don't let deferred items newer than newest_home_date
+            # push home area items past position 10 in the final newest_first order.
+            item_date = str(item.get("publishedAt") or "")
+            if newest_home_date and item_date > newest_home_date:
+                newer_count = sum(1 for it in selected if str(it.get("publishedAt") or "") > newest_home_date)
+                if newer_count >= 7:
+                    continue
+
+            selected.append(item)
+            if canonical:
+                selected_urls.add(canonical)
+            selected_tokens.append(tokens)
+            if len(selected) >= limit:
+                break
+
     for item in selected:
         item["localPublication"] = local_publication_item(item)
         item["familyActivity"] = local_family_activity_item(item)
+        item["homeArea"] = local_home_area_item(item)
     return newest_news(selected, limit)
 
 
 def local_news() -> list[dict]:
-    # Prefer the freshest fortnight. If that cannot fill the 16-story target,
-    # extend time to 30 days without widening beyond the approved KT8 cluster.
+    # Always search 30 days for Pete's immediate home area (Molesey/West Molesey),
+    # and 14 days (extending to 30 days if needed) for neighbouring KT8 hubs.
     for max_age_days in (14, 30):
-        queries = (
-            *LOCAL_NEWS_QUERIES,
-            *LOCAL_NEWS_PUBLICATION_QUERIES,
-            *LOCAL_NEWS_FAMILY_QUERIES,
-        )
         with ThreadPoolExecutor(max_workers=8) as pool:
-            groups = list(pool.map(
-                lambda query: google_news(f'{query} when:{max_age_days}d', 32, max_age_days),
-                queries,
+            home_groups = list(pool.map(
+                lambda query: google_news(f'{query} when:30d', 32, 30),
+                LOCAL_NEWS_HOME_QUERIES,
             ))
-        candidates = merge_news(*groups, limit=448)
+            other_queries = (
+                *LOCAL_NEWS_QUERIES,
+                *LOCAL_NEWS_PUBLICATION_QUERIES,
+                *LOCAL_NEWS_FAMILY_QUERIES,
+            )
+            other_groups = list(pool.map(
+                lambda query: google_news(f'{query} when:{max_age_days}d', 32, max_age_days),
+                other_queries,
+            ))
+        candidates = merge_news(*home_groups, *other_groups, limit=512)
         scoped = [item for item in candidates if local_news_item_is_in_scope(item)]
         selected = select_local_news(scoped, 16)
-        if len(selected) >= 16 or max_age_days == 30:
+        has_home = any(local_home_area_item(item) for item in selected)
+        if (len(selected) >= 10 and has_home) or max_age_days == 30:
             return selected
     return []
 

@@ -343,6 +343,29 @@ class FirstTeamResultTests(unittest.TestCase):
         )
         self.assertFalse(finalize_arsenal.same_team("Brighton", "Arsenal"))
 
+    def test_verified_leeds_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_leeds_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["arsenalScore"], 2)
+        self.assertEqual(result["opponentScore"], 1)
+        self.assertEqual(result["scorers"], [
+            {"name": "Riccardo Calafiori", "team": "Arsenal", "minute": "28'"},
+            {"name": "Bruno Guimarães", "team": "Arsenal", "minute": "74'"},
+            {"name": "Georginio Rutter", "team": "Leeds United", "minute": "14'"},
+        ])
+        self.assertEqual(result["stadium"], "Emirates Stadium")
+        self.assertEqual(result["kickoff"], "12:30pm")
+
+    def test_leeds_short_name_matches_full_club_name(self) -> None:
+        self.assertTrue(
+            finalize_arsenal.same_team("Leeds", "Leeds United")
+        )
+        self.assertTrue(
+            finalize_arsenal.same_team("Leeds United", "Leeds")
+        )
+
 
     def test_verified_fallback_completes_late_actual_report(self) -> None:
         payload = {

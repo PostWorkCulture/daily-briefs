@@ -150,6 +150,61 @@ class LocalNewsOrderTests(unittest.TestCase):
         self.assertTrue(next(item for item in result if item["title"] == family["title"])["familyActivity"])
         self.assertTrue(next(item for item in result if item["title"] == local_paper["title"])["localPublication"])
 
+    def test_selection_prioritises_home_area_molesey_news(self) -> None:
+        kingston_items = [
+            {
+                "title": f"Kingston shopping update {index}",
+                "summary": "",
+                "source": "Kingston Nub News",
+                "url": f"https://kingston.nub.news/{index}",
+                "publishedAt": f"2026-10-{index + 1:02d}T10:00:00+01:00",
+            }
+            for index in range(8)
+        ]
+        teddington_items = [
+            {
+                "title": f"Teddington traffic notice {index}",
+                "summary": "",
+                "source": "Teddington Nub News",
+                "url": f"https://teddington.nub.news/{index}",
+                "publishedAt": f"2026-10-{index + 1:02d}T11:00:00+01:00",
+            }
+            for index in range(5)
+        ]
+        molesey_home = {
+            "title": "East Molesey riverside repair work completed",
+            "summary": "Thames Water concludes emergency repair work along East Molesey reach.",
+            "source": "BBC",
+            "url": "https://www.bbc.co.uk/news/molesey-water",
+            "publishedAt": "2026-09-30T08:00:00+01:00",
+        }
+        hurst_pool = {
+            "title": "Hurst Pool refurbishment update",
+            "summary": "Elmbridge Borough Council shares progress on West Molesey pool.",
+            "source": "Elmbridge Borough Council",
+            "url": "https://www.elmbridge.gov.uk/hurst-pool-update",
+            "publishedAt": "2026-09-17T09:00:00+01:00",
+        }
+
+        candidates = [*kingston_items, *teddington_items, molesey_home, hurst_pool]
+        result = refresh.select_local_news(candidates, 16)
+
+        # Both home area items are selected
+        titles = [item["title"] for item in result]
+        self.assertIn(molesey_home["title"], titles)
+        self.assertIn(hurst_pool["title"], titles)
+        # Home area items are flagged
+        self.assertTrue(next(item for item in result if item["title"] == molesey_home["title"])["homeArea"])
+        self.assertTrue(next(item for item in result if item["title"] == hurst_pool["title"])["homeArea"])
+        # Display order remains strictly newest to oldest
+        self.assertEqual(
+            [item["publishedAt"] for item in result],
+            sorted((item["publishedAt"] for item in result), reverse=True),
+        )
+        # Home area story is visible in the top 10 displayed stories
+        top_10_titles = titles[:10]
+        self.assertIn(molesey_home["title"], top_10_titles)
+
 
 if __name__ == "__main__":
     unittest.main()

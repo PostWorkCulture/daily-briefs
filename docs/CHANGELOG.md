@@ -1,3 +1,18 @@
+## 11 October 2026: Enhance West Molesey home news coverage, hub balancing & Arsenal finalization
+
+- **Local News Molesey home area coverage & hub balancing**:
+  - Expanded Local News RSS queries in `scripts/refresh.py` with dedicated 30-day queries targeting Pete's home in West Molesey, East Molesey, Hurst Pool, Hurst Park, Molesey Heath, and Elmbridge Borough Council (`site:elmbridge.gov.uk`).
+  - Recognized `Elmbridge Borough Council` and `London Daily News` as authoritative local publications, and defined `LOCAL_HOME_AREA_PLACES` and `local_home_area_item()` for Molesey home area detection.
+  - Implemented hub balancing in `select_local_news()` with neighbouring town quotas (Kingston, Teddington, Surbiton, Esher, Hampton) and Tier 1 home area prioritization so high-volume neighbouring feeds do not crowd out Molesey stories, while preserving strict newest-to-oldest final chronological ordering.
+  - Hardened quality and sports filtering: excluded bare locality topic tags (e.g. `Hinchley Wood - BBC`) and sports squad/fixture reports (`Transfermarkt`, `FotMob`, `The Rugby Paper`, club rosters).
+  - Added unit test `test_selection_prioritises_home_area_molesey_news` in `tests/test_local_news_order.py`.
+- **Arsenal fixture finalization & verification**:
+  - Added verified fixture details for Arsenal's 2–1 Premier League victory over Leeds United on 10 Oct 2026 in `scripts/finalize_arsenal.py` and `data/pete.json` (`stadium: Emirates Stadium`, `scorers`, `scorersLabel`, `summary`).
+  - Added club alias mapping in `team_key()` (`leedsunited -> leeds`, `ipswichtown -> ipswich`, `coventrycity -> coventry`, etc.) to reconcile news headline variants.
+  - Added unit tests in `tests/test_finalize_arsenal.py`.
+- **Validation**:
+  - Verified 122/122 Python unit tests, 5/5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+
 ## 10 October 2026: Fix corrupted date characters and UTF-8 mojibake in Fun section
 
 - **Root-cause encoding fix**:
