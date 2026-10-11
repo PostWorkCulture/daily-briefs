@@ -18,36 +18,36 @@
     "localImage": "assets/scenery/world-fact.webp?v=642ad41d91c8"
   },
   "weather": {
-    "temp": "15°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 4,
+    "temp": "13°",
+    "summary": "Overcast",
+    "condition": "Overcast",
+    "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-10-11",
-        "high": 15,
+        "high": 14,
         "low": null,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 40,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-12",
-        "high": 18,
+        "high": 17,
         "low": null,
-        "summary": "Light Rain",
-        "condition": "Light Rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-13",
-        "high": 20,
+        "high": 21,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -74,12 +74,12 @@
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-17",
-        "high": 15,
+        "high": 14,
         "low": null,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Cloudy · peak rain chance around 40%",
+      "label": "Good outdoor day",
+      "detail": "Overcast · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
