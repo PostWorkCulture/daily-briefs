@@ -1,17 +1,22 @@
-## 11 October 2026: Enhance West Molesey home news coverage, hub balancing & Arsenal finalization
+## 11 October 2026: Arsenal scorers verification, enhanced card font sizes & West Molesey home news
 
+- **Arsenal scorers verification & pipeline hardening**:
+  - Restored verified scorers (`Calafiori 28'`, `Bruno Guimarães 74'` · `Rutter 14'`), stadium (`Emirates Stadium`), and match summary for the 10 Oct 2026 2–1 victory over Leeds United in `data/pete.json`.
+  - Updated `scripts/enrich_arsenal.py` to preserve existing verified scorers, scorers label, stadium, and summary when updating completed matches, preventing transient or empty ESPN schedule data from erasing verified scorers during morning refreshes. Added support for `--dry-run`.
+  - Added unit test `test_snapshot_preserves_existing_verified_scorers_when_espn_empty` in `tests/test_enrich_arsenal.py`.
+- **Arsenal Last Game & Next Game typography & readability**:
+  - Substantially increased font sizes across `#lastResultCard` and `#nextFixtureCard` to make both cards clear and effortless to read on mobile and desktop:
+    - **Last result card**: Category kicker increased to `11px` (`var(--arsenal-red)`); scoreline increased to `25px` navy; date/stadium meta increased to `13px` (`#55607a`); `SCORERS` kicker increased to `11px`; scorer names increased to `14px` bold navy with natural mixed-case typography (`text-transform: none`); match summary increased to `13px` (`#374151`) with `1.45` line-height.
+    - **Next fixture card**: Kicker increased to `11px`; opponent name increased to `25px` navy; fixture facts field labels (`STADIUM`, `ACTUAL KICK-OFF`, `COMPETITION`, `TV CHANNEL`, `SCORE LAST TIME THEY PLAYED`) increased to `11px` bold red; values increased from `11px` to `14px` bold navy; supporting details increased to `11.5px`.
+    - Maintained fully responsive layout with zero horizontal overflow on mobile (`390px`), desktop (`1280px`), and widescreen (`1600px`).
 - **Local News Molesey home area coverage & hub balancing**:
   - Expanded Local News RSS queries in `scripts/refresh.py` with dedicated 30-day queries targeting Pete's home in West Molesey, East Molesey, Hurst Pool, Hurst Park, Molesey Heath, and Elmbridge Borough Council (`site:elmbridge.gov.uk`).
   - Recognized `Elmbridge Borough Council` and `London Daily News` as authoritative local publications, and defined `LOCAL_HOME_AREA_PLACES` and `local_home_area_item()` for Molesey home area detection.
   - Implemented hub balancing in `select_local_news()` with neighbouring town quotas (Kingston, Teddington, Surbiton, Esher, Hampton) and Tier 1 home area prioritization so high-volume neighbouring feeds do not crowd out Molesey stories, while preserving strict newest-to-oldest final chronological ordering.
   - Hardened quality and sports filtering: excluded bare locality topic tags (e.g. `Hinchley Wood - BBC`) and sports squad/fixture reports (`Transfermarkt`, `FotMob`, `The Rugby Paper`, club rosters).
   - Added unit test `test_selection_prioritises_home_area_molesey_news` in `tests/test_local_news_order.py`.
-- **Arsenal fixture finalization & verification**:
-  - Added verified fixture details for Arsenal's 2–1 Premier League victory over Leeds United on 10 Oct 2026 in `scripts/finalize_arsenal.py` and `data/pete.json` (`stadium: Emirates Stadium`, `scorers`, `scorersLabel`, `summary`).
-  - Added club alias mapping in `team_key()` (`leedsunited -> leeds`, `ipswichtown -> ipswich`, `coventrycity -> coventry`, etc.) to reconcile news headline variants.
-  - Added unit tests in `tests/test_finalize_arsenal.py`.
 - **Validation**:
-  - Verified 122/122 Python unit tests, 5/5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
+  - Verified 123/123 Python unit tests, 5/5 Node tests, and Playwright responsive checks across mobile, desktop, and widescreen viewports.
 
 ## 10 October 2026: Fix corrupted date characters and UTF-8 mojibake in Fun section
 

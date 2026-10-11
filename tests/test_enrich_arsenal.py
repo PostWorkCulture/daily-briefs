@@ -284,6 +284,42 @@ class UpcomingFixtureTests(unittest.TestCase):
         self.assertEqual(fixtures[0]["source"], "Sky Sports / BBC Sport")
         self.assertEqual(fixtures[0]["url"], sky["url"])
 
+    def test_snapshot_preserves_existing_verified_scorers_when_espn_empty(self) -> None:
+        sky_completed = {
+            "date": "2026-10-10T12:30:00+01:00",
+            "dateLabel": "Sat 10 Oct",
+            "kickoff": "12:30pm",
+            "opponent": "Leeds United",
+            "competition": "Premier League",
+            "homeAway": "home",
+            "completed": True,
+            "arsenalScore": 2,
+            "opponentScore": 1,
+            "result": "2–1",
+            "source": "Sky Sports",
+            "url": "https://www.skysports.com/football/arsenal-vs-leeds-united/123",
+        }
+        existing = {
+            "lastResult": {
+                "date": "2026-10-10T12:30:00+01:00",
+                "opponent": "Leeds United",
+                "stadium": "Emirates Stadium",
+                "scorers": [{"name": "Riccardo Calafiori", "team": "Arsenal", "minute": "28'"}],
+                "scorersLabel": "Calafiori 28'",
+                "summary": "Calafiori scored as Arsenal beat Leeds United 2–1.",
+            }
+        }
+        with patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 1, 15, 6)), \
+             patch.object(enrich_arsenal, "all_sky_matches", return_value=[sky_completed]), \
+             patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]), \
+             patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=None):
+            result = enrich_arsenal.snapshot([], existing_arsenal=existing)
+
+        self.assertIsNotNone(result["lastResult"])
+        self.assertEqual(result["lastResult"]["stadium"], "Emirates Stadium")
+        self.assertEqual(result["lastResult"]["scorersLabel"], "Calafiori 28'")
+        self.assertEqual(result["lastResult"]["summary"], "Calafiori scored as Arsenal beat Leeds United 2–1.")
+
 
     def test_completed_result_includes_all_required_match_details(self) -> None:
         event = {

@@ -735,6 +735,21 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             for key in ("stadium", "scorers", "scorersLabel", "summary"):
                 if details.get(key):
                     last_result[key] = details[key]
+        existing_last = existing_arsenal.get("lastResult") or {}
+        if existing_last:
+            try:
+                existing_day = dateparser.parse(existing_last.get("date", "")).date()
+            except Exception:
+                existing_day = None
+            if (
+                existing_day
+                and last_day == existing_day
+                and str(existing_last.get("opponent", "")).casefold() == str(last_result.get("opponent", "")).casefold()
+            ):
+                last_result = dict(last_result)
+                for key in ("stadium", "scorers", "scorersLabel", "summary"):
+                    if not last_result.get(key) and existing_last.get(key):
+                        last_result[key] = existing_last[key]
         last_result = strip_internal(last_result)
     next_fixture = strip_internal(next_fixture)
 
@@ -767,6 +782,7 @@ def retain_verified_league_position(enriched: dict, existing: dict) -> dict:
 
 
 def main() -> None:
+    dry_run = "--dry-run" in sys.argv
     path = DATA / "pete.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
     existing_arsenal = payload.get("arsenal") or {}
@@ -780,8 +796,9 @@ def main() -> None:
     enriched["transfers"] = transfers
     enriched["transferRumours"] = transfer_rumours
     payload["arsenal"] = enriched
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("Arsenal enrichment complete")
+    if not dry_run:
+        path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("Arsenal enrichment complete" + (" (dry-run)" if dry_run else ""))
 
 
 if __name__ == "__main__":
