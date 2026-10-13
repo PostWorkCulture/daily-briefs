@@ -1,37 +1,28 @@
 {
-  "updatedLabel": "Monday, 12 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Tuesday, 13 October 2026 · refreshed 5:00am",
   "worldFact": {
-    "id": "baldwin-street-steepest-residential-street",
+    "id": "chimborazo-closest-place-to-stars",
     "editorialPriority": "human-first",
-    "category": "World record",
-    "country": "New Zealand",
-    "place": "Baldwin Street · North East Valley",
-    "locationContext": "Dunedin · South Island, New Zealand",
-    "source": "Guinness World Records",
-    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/steepest-street",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Baldwin_St_Dunedin_MRD.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Baldwin_St_Dunedin_MRD.jpg",
-    "photoCredit": "Mike Dickison · CC BY-SA 4.0",
-    "fact": "Baldwin Street in Dunedin holds the official Guinness World Record as the steepest residential street on Earth, climbing at an extreme maximum gradient of 34.8%. City builders paved its upper slopes in ribbed concrete because bitumen asphalt would melt and slide downhill during summer.",
-    "date": "2026-10-12",
-    "sequence": 52,
-    "localImage": "assets/scenery/world-fact.webp?v=b4ada6730e40"
+    "category": "Planet oddity",
+    "country": "Ecuador",
+    "place": "Mount Chimborazo summit",
+    "locationContext": "Cordillera Occidental · Andes Mountains, Ecuador",
+    "source": "National Geographic",
+    "sourceUrl": "https://www.nationalgeographic.com/science/article/the-highest-mountain-on-earth-is-not-mount-everest",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chimborazo_2022-12-05.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chimborazo_2022-12-05.jpg",
+    "photoCredit": "Morgen Mills · CC BY-SA 4.0",
+    "fact": "Because Earth is an oblate spheroid bulging outward at the equator, the summit of Mount Chimborazo is 2,072 metres farther from Earth's core than the peak of Mount Everest, making its peak the closest point on the planet's surface to the Moon and outer space.",
+    "date": "2026-10-13",
+    "sequence": 53,
+    "localImage": "assets/scenery/world-fact.webp?v=33a65811d4c1"
   },
   "weather": {
     "temp": "17°",
-    "summary": "Mist",
-    "condition": "Mist",
-    "currentRainChance": 20,
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-10-12",
-        "high": 17,
-        "low": null,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 30,
-        "source": "Met Office"
-      },
       {
         "date": "2026-10-13",
         "high": 21,
@@ -52,11 +43,11 @@
       },
       {
         "date": "2026-10-15",
-        "high": 20,
+        "high": 21,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -72,14 +63,23 @@
         "date": "2026-10-17",
         "high": 14,
         "low": null,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-18",
+        "high": 13,
+        "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
-        "date": "2026-10-18",
-        "high": 14,
+        "date": "2026-10-19",
+        "high": 15,
         "low": null,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Overcast · rain chance around 30%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -97,21 +97,21 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Sunday 11 October 2026",
+      "dateLabel": "Monday 12 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Frittenden",
-        "town": "Tunbridge Wells",
-        "county": "Kent",
+        "location": "Exeter Airport No 2",
+        "town": "Exeter",
+        "county": "Devon",
         "country": "England",
-        "displayLocation": "Tunbridge Wells, Kent",
-        "value": "17.4°C",
+        "displayLocation": "Exeter, Devon",
+        "value": "21.3°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=941233031b28",
-          "page": "https://commons.wikimedia.org/wiki/File:Tunbridge_Wells_town_centre_-_geograph.org.uk_-_2489312.jpg",
-          "credit": "nick macneill · CC BY-SA 2.0",
-          "alt": "Tunbridge Wells town centre",
+          "src": "assets/weather-extremes/hot.webp?v=20cf098a152c",
+          "page": "https://commons.wikimedia.org/wiki/File:A_Bird%E2%80%99s_Eye_View_of_Wynards_Hospital,_Exeter.jpg",
+          "credit": "Edward Ashworth · Public domain",
+          "alt": "This watercolour by architect and amateur artist Edward Ashworth shows Wynard’s Hospital on Magdalen Street. Wynard’s was founded as almshouses for the poor and infirm of Exeter in 1435. They continued to house the poor until 1973 when they became council offices, today they have been converted to private housing.",
           "width": 1600,
           "height": 900
         }
@@ -122,7 +122,7 @@
         "county": "Northumberland",
         "country": "England",
         "displayLocation": "Kielder, Northumberland",
-        "value": "-0.1°C",
+        "value": "-0.5°C",
         "photo": {
           "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
           "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
@@ -135,20 +135,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Footy - PU 4.15pm (main playground)",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-12T00:00:00+01:00",
-      "end": "2026-10-13T00:00:00+01:00",
-      "date": "2026-10-12",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "1nnb47dr2n0np88mfiugnjidfp_R20261012",
-      "calendarColorSource": "google"
-    },
     {
       "title": "See Kate",
       "summary": "",
@@ -501,32 +487,32 @@
     }
   ],
   "lead": {
-    "title": "Swedish listeners are changing their tune – and ‘Aftonbladet’ has launched a radio station to stay on their wavelength",
+    "title": "What Andy Burnham can learn from Sweden about defending against Russian disinformation",
     "summary": "",
     "meta": "Mon 12 Oct",
-    "publishedAt": "2026-10-12T00:38:43+01:00",
-    "source": "Monocle",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RcnVQdTd2VE11RUg4aDZoR2RVenhJTWtOYVg2Rmp6LWlubmtmSXBFd0tHZjhGVjFZNl9rWnd0Qm9NbENzR3BfeFFyai1VUVE3Nmd1X2ludE5xd3l3SXMxWg?oc=5",
+    "publishedAt": "2026-10-12T12:20:36+01:00",
+    "source": "The Conversation",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSVhjWVAxbWdsUFk3c254aW5pc19kRTA2ZWxKYXBZMGlmaWZvNTZXQnViNTdyQ3JuUUh1RHBwZHBLa0JVaEUtZ0FoNkF2VWZkbGI5UFpoVkk4UXBMUjN3WS1od2tveXlHeTNXN3RGWXgtYUJJMUMwak1PbGs4UmFUeUJRLV9Da2hoTHAzU29VamtIWU9Ta1BUSXU5VkJsT2lOcU1kYnhucUZzV1V2RE5KVDgwdm5Wem5aT0JYUUNB?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Swedish listeners are changing their tune – and ‘Aftonbladet’ has launched a radio station to stay on their wavelength",
+      "title": "What Andy Burnham can learn from Sweden about defending against Russian disinformation",
       "summary": "",
       "meta": "Mon 12 Oct",
-      "publishedAt": "2026-10-12T00:38:43+01:00",
-      "source": "Monocle",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RcnVQdTd2VE11RUg4aDZoR2RVenhJTWtOYVg2Rmp6LWlubmtmSXBFd0tHZjhGVjFZNl9rWnd0Qm9NbENzR3BfeFFyai1VUVE3Nmd1X2ludE5xd3l3SXMxWg?oc=5",
+      "publishedAt": "2026-10-12T12:20:36+01:00",
+      "source": "The Conversation",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSVhjWVAxbWdsUFk3c254aW5pc19kRTA2ZWxKYXBZMGlmaWZvNTZXQnViNTdyQ3JuUUh1RHBwZHBLa0JVaEUtZ0FoNkF2VWZkbGI5UFpoVkk4UXBMUjN3WS1od2tveXlHeTNXN3RGWXgtYUJJMUMwak1PbGs4UmFUeUJRLV9Da2hoTHAzU29VamtIWU9Ta1BUSXU5VkJsT2lOcU1kYnhucUZzV1V2RE5KVDgwdm5Wem5aT0JYUUNB?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Local plumbers defeat adversity to raise £10k for Teddington disability charity",
+      "title": "Community efforts to buy Teddington playing fields put on hold over legal hurdles",
       "summary": "",
-      "meta": "Sun 11 Oct",
-      "publishedAt": "2026-10-11T17:00:01+01:00",
+      "meta": "Mon 12 Oct",
+      "publishedAt": "2026-10-12T15:30:00+01:00",
       "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMWZRZklYQndOblZkQXlHdWZ1QktncC15ZGtHWUxFdS1ESS1OLXR5U09YSnpxTzcxSk5JZzlFWjA0LUNYQld6ekp6bjZMMDdMSlZQelFDQ3QtTmFhTkNLN1poYzZPZW5YQ3ZFalh0b1hqUTRWQkE2MDhMX1NYdHZTYXY4QlhER25MMkI0cEVaQlNscWxCX1VoU29HWXBTNnloRl93WF9TMEhLNjRDYWMtLW50cGUxTkF3a0o4QUtHTFhJaDBJdXh5MkdhVQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSzJXbk8yYmN3M3ByQWdRank3ZXFBdTNFTF9BZDJXRDBKdU5GQ1BCZUtnZDZLWEgxcVJ2d2kzalFNRzdnb3VyMGh2VTJReVJGUHY3SEJLV1QteFBZcGd5aXNCWnFxbldTMDR6VjFsUzFZc3ZRWGlxWXZ3dFJhTTh5M0hmcTRjalN6NnJJamMtTW04NTBNWTUyekI1V3BXTE1kU2E5SVZRTE9vbG9wWTZTdGVNc2JjT1Y4WHFzMENEdmh2SzFSVlRKNUFELUs?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -549,11 +535,11 @@
     {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Today, 7pm",
+      "meta": "BBC Two · Available since yesterday",
       "source": "BBC Two",
       "channel": "BBC Two",
       "releaseDate": "2026-10-12",
-      "releaseDateLabel": "Today, 7pm",
+      "releaseDateLabel": "Available since yesterday",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467592.jpg",
@@ -566,8 +552,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 634.1
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 619.8
     },
     {
       "title": "Crimewatch Live",
@@ -591,17 +577,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 583.8
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 575.8
     },
     {
       "title": "Aileen Wuornos: Damsel of Death",
       "summary": "Concluding the profile of the serial killer, revealing how a body found beside a Florida highway sparked a chilling investigation into a drifter linked to a series of murders.",
-      "meta": "Crime & Investigation · Available since yesterday",
+      "meta": "Crime & Investigation · Available since Sun 11 Oct",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
       "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Sun 11 Oct",
       "url": "https://www.crimeandinvestigation.co.uk/shows/aileen-wuornos-damsel-of-death",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609030.jpg",
@@ -614,17 +600,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 537.9
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 530.2
     },
     {
       "title": "Stacey Dooley",
       "summary": "Stacey Dooley looks into the deaths of women who have fallen from heights, interrogating how these deaths are investigated and exploring whether domestic abuse played a part.",
-      "meta": "BBC iPlayer · Tomorrow, 6am",
+      "meta": "BBC iPlayer · Today, 6am",
       "source": "BBC iPlayer",
       "channel": "BBC iPlayer",
       "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Tomorrow, 6am",
+      "releaseDateLabel": "Today, 6am",
       "url": "https://www.bbc.co.uk/programmes/b048vy8l",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
@@ -637,45 +623,91 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 519.4
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 527.4
     },
     {
-      "title": "Time",
-      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
-      "meta": "BBC iPlayer · Available since yesterday",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since yesterday",
-      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
+      "title": "Below",
+      "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
+      "meta": "Netflix · Available since Thu 8 Oct",
+      "source": "Netflix",
+      "channel": "Netflix",
+      "releaseDate": "2026-10-08",
+      "releaseDateLabel": "Available since Thu 8 Oct",
+      "url": "https://www.netflix.com/title/81652677",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
-      "artworkAlt": "Time programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
+      "artworkAlt": "Below programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 50374,
-      "episodeId": 3776044,
+      "airdate": "2026-10-08",
+      "showId": 93115,
+      "episodeId": 3673506,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
-        "Drama",
-        "Thriller"
+        "Thriller",
+        "Mystery",
+        "Supernatural"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 436.9
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 412.9
     }
   ],
   "sections": {
     "Sweden": [
       {
-        "title": "Swedish listeners are changing their tune – and ‘Aftonbladet’ has launched a radio station to stay on their wavelength",
+        "title": "What Andy Burnham can learn from Sweden about defending against Russian disinformation",
         "summary": "",
         "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T00:38:43+01:00",
-        "source": "Monocle",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RcnVQdTd2VE11RUg4aDZoR2RVenhJTWtOYVg2Rmp6LWlubmtmSXBFd0tHZjhGVjFZNl9rWnd0Qm9NbENzR3BfeFFyai1VUVE3Nmd1X2ludE5xd3l3SXMxWg?oc=5",
+        "publishedAt": "2026-10-12T12:20:36+01:00",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSVhjWVAxbWdsUFk3c254aW5pc19kRTA2ZWxKYXBZMGlmaWZvNTZXQnViNTdyQ3JuUUh1RHBwZHBLa0JVaEUtZ0FoNkF2VWZkbGI5UFpoVkk4UXBMUjN3WS1od2tveXlHeTNXN3RGWXgtYUJJMUMwak1PbGs4UmFUeUJRLV9Da2hoTHAzU29VamtIWU9Ta1BUSXU5VkJsT2lOcU1kYnhucUZzV1V2RE5KVDgwdm5Wem5aT0JYUUNB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "WCC shares message for the 60th Jubilee of Focolare in Sweden",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T16:58:32+01:00",
+        "source": "World Council of Churches",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdmw4R1ZtQkFHYjIybjQ5Q1VUUmhZOE1zMG5yXzlkUm1Za1FYVjl2allCQ2hwcWc1UERoZEFpVjhENnlsbjk0YmRTenpOSkxwZmFqbUhFcDFCYkZLcnEzMW5qd05TdGV3Mm00X0ZWR251SWF2b2U5anNRTG9DSlJxbk8zbU5xUS11ZWd1a29DN3VPcnpHMG9B?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden Releases Sanctioned Tanker After Seven-Month Detention",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T16:37:46+01:00",
+        "source": "The Maritime Executive",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNejdUSXo2NU5LVWs3c25GcktBSGM0T3JHcm9PdFl6cWFTbnFzdkNfbzFpdmN3Q2lURHQtU0ROVWZOWFJaLTJndnpqYlViTmxZalIzR095dnhXdXdiQ1NIRDJVTUR3R2hIWXdOQ0VKSHI5cUJqQ1RnY29Xd3FTSVBuXzU1VllsMEFjYnB1bHRndm40emtISXZFd1d4U2I5NWJzYWc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Swedish delegation visits National Construction College Scotland",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T09:06:37+01:00",
+        "source": "FE News",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSWYxcDZuU3J6RzNGOFVYSkJHY3dNMzRPODVFNDk5SzRyM0dDZFdUSUFLS0laR1pGRkFDTTNTNVZCdWYxTTgyWW04OEtQbmQ2SHlqZGQyZWFTWUd4TXpreEd3QnJVRHZOSmJ5SUJpelpNZ3BxUjJUVmU1ZHFFVU9LclFBZUVPQUhZM1E1NUt1WGJ0NEt5MHdvLXR5X25sZw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "My friends and I found this obscure Swedish golf video game on the Internet. Now we’re addicted",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T13:59:26+01:00",
+        "source": "Golf Digest",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeFV2TGdaMGozOGVwWERmeDNQWmMxSVVFeDB4Ty1NY0Fvb0E3eW1yMU9sYmI0UDdaRWRCQnp3WXFBWU5HTlN2a2JLTHFCWk5aVDVUVUZIOTlYdG9DTGdWQ1NXUEtGLTUxZ04tbm14b3hnWkJJMk9JWVJmcWxoV0J5ZjE5d1lNTU1DZDBSc3NJX19UbDlsTENfWFE5M2VlQQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Stena Bulk Registers Fourth and Fifth Vessels Under the Swedish Flag",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T01:00:58+01:00",
+        "source": "Marine Link",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdlBsYkRzS3lLS1pwTzI4aUdKNVFZOUZuN0twSngyclF3b0Y5WWJ4UGtVcFEyRk9KUlNycklIVFpkaGFVQnVjdTJJQ2ZJblNYc1Z0djRuaUhNd1paNkhfNXBPMFBFNnlBRVk3dUdDeEdSbVpfbjQtdVdOaHlVd3Q0VnFVWUM2S0U?oc=5",
         "contentType": "article"
       },
       {
@@ -686,61 +718,28 @@
         "source": "The Telegraph",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNM0JhakpVOVBrYS00MVRubllXOEJNQUZpV3IyNE5iMnBEeHFlMndjSG5pMEZaN3lhaUdnZHhoSHd5NzA2cXJwSTVxQ0dEOGxDOEd0YVdRQ2dpcjM2VU1QX2doQkNDNi04NE42akxFeFhtc0RFTC11QUtEZ0dQQ2o5R3h5b3U3c1JTN1BVYUtlcEpYYU1qV2xfWUYweEs?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Ireland goes Swedish on investment, but deemed disposal remains a problem",
-        "summary": "",
-        "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T04:01:15+01:00",
-        "source": "The Irish Times",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXVVWVM3SGc0QVdWcnpEUXlueGZCSkNTSWdhVk9reHdEc21YVU54U3hwOWVnUDQzTjA0SzZKWG5qcDl4SkZIc1kxZmRCX25pM25fNjJIOVBrZjFua2pRU1loU0dNY0t0UnJ1aDJ5M3VLZU5ibWRZc2x6aFhIeDZlajV3NXBwQTZkZ21rY05HdEFxUEUxbTR5VktQN3AtMGtVVXJPYVQ4OEtMaGIxb0U1bjVteGRUUHlpM045Nm5WUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Häcken vs Örgryte: Swedish Allsvenskan stats & head-to-head",
-        "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T17:05:05+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yTDIyV3JrS2FHa3N2b09ITGRvVkk3TEdFWlpMMjdMN1JLZHpYRFVEOUxOQlJWaHNhZVJpWUVoeWs3bjBhYzlkbmw3Zi1CbnYxYjV1bnZZZjM4bU9jSTVnd1VPdw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Swedish PressTurned a Tragedy Into an Indictment of Israel",
-        "summary": "",
-        "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T00:34:00+01:00",
-        "source": "The Times of Israel",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTndMMFBKNHNSOHg3V1JWeWpRUGg5dXVjVktKbzRYbEs0MkFrc2NXZGJFdy0zMDN0STkwS01obVRxcVZyWUlLWWc0RVcwcVp0dk5sSlRJSDhKdjdQUFRLTGZDYkpIYnpGenhwTUNOT1JLWUFPbkk3cXNRMkVjbFc3UTJpeEpvR0dOV2FUSWw0RkNUMEc5NFE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Why Sweden Is So Much Better Off Than Britain and Other Countries",
-        "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T08:00:05+01:00",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdDBlUE9WTnhoaERPRjRiYWRaTWduQk5iN3U3dzkwWkx4dG4tV3E2QTlkZEI0OXZwZldPdlByVTRWQ3l0VXBCR2thcHlMa0FrbTRESG9TOVZ6WGVTYzFDal9GSjFwcFkyR3hnTkV3MHlMeHdRbzVjazBoSDdnVGZTVXZpYTYtRk1GN1l4cm1MaWJBY0luenlwenZKY0pudHFH?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Council of Europe anti-torture Committee (CPT) carries out a visit to Sweden",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T21:12:16+01:00",
-        "source": "www.coe.int",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSDVjeFRLdUZ3QnBHWjJ5U2xZUHBJcXpuUWtSVmlQVnowUF9aQTJCOXFkUVNUTVdCRVlZd2N5RGFNbGF3cG41YWtSTDVMUl9JTGRuQVlEZDlpVTA1Q2VZR0JyZ0JJeWZqQXVCUmQzT3M1akJ5UDR3anpmS3BwSVRQOWRwVHlUZXRtZlJGVjVzdC14OVBNd3QyQkw1Qy00VHI0eUZCb2l0Q3VwZE0?oc=5",
-        "contentType": "article"
       }
     ],
     "Local news": [
       {
-        "title": "Local plumbers defeat adversity to raise £10k for Teddington disability charity",
+        "title": "Community efforts to buy Teddington playing fields put on hold over legal hurdles",
         "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T17:00:01+01:00",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T15:30:00+01:00",
         "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMWZRZklYQndOblZkQXlHdWZ1QktncC15ZGtHWUxFdS1ESS1OLXR5U09YSnpxTzcxSk5JZzlFWjA0LUNYQld6ekp6bjZMMDdMSlZQelFDQ3QtTmFhTkNLN1poYzZPZW5YQ3ZFalh0b1hqUTRWQkE2MDhMX1NYdHZTYXY4QlhER25MMkI0cEVaQlNscWxCX1VoU29HWXBTNnloRl93WF9TMEhLNjRDYWMtLW50cGUxTkF3a0o4QUtHTFhJaDBJdXh5MkdhVQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSzJXbk8yYmN3M3ByQWdRank3ZXFBdTNFTF9BZDJXRDBKdU5GQ1BCZUtnZDZLWEgxcVJ2d2kzalFNRzdnb3VyMGh2VTJReVJGUHY3SEJLV1QteFBZcGd5aXNCWnFxbldTMDR6VjFsUzFZc3ZRWGlxWXZ3dFJhTTh5M0hmcTRjalN6NnJJamMtTW04NTBNWTUyekI1V3BXTE1kU2E5SVZRTE9vbG9wWTZTdGVNc2JjT1Y4WHFzMENEdmh2SzFSVlRKNUFELUs?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Local app creator seeks Teddington schools to join uniform recycling initiative",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T09:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOU1jdlhxTEVzT3dUeHBic2Q0Rm5ZY2JHM0E0dS1Va3NwX2lOdzdWMXBpU1ZNNzl6RS1zZ2EwLTVKNWpRUTVzbmZNQ3A1YlBwZWNkd1l4VzhFZkYxdm80NVlzeVZydnFzWUZYeVlRSkpJS0hKOFN3WWhLSDZMYktnVkdCMFZqMzBOXzFCRkJVY3B6b3dYVzBmOTliUjIzQ3Q2eUVybFRCRmtZZUlMN2NQcjh4TXRsa1d0RHgyV2xrOXBCWUVhTFJVbktB?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -783,27 +782,15 @@
         "homeArea": false
       },
       {
-        "title": "Cancer survivor to take part in charity fundraising brewery walk in Teddington",
+        "title": "Surbiton one-bedroom flat could become three-bedroom home under new plans",
         "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T17:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOc1FTRTR4OGJ4dUtkMHN3NXp0bi1NcjVtRDZfWk1Lb3kxVWJaeHhvNDFzc1FXcmhJYWlhNjF1ZW1lYWRkQ0xyQTVVX0xIaWZYTGx3dmVCVnZwekpiSWFpSmlHMUVuWkZ4VVk3VWNpLU9meDJEVlJuckhLN1h5ZEE4LXBJYTRxVGE4VnhabzBVSFBmdXpqeFhiWndKVThIM2xjY2U2UUtSclV3QVF3b3VnRG5qalE5NUtXT3Q1cnJ0dXdUdjFpMnRXSQ?oc=5",
+        "meta": "Thu 8 Oct",
+        "publishedAt": "2026-10-08T16:46:13+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaFgya0RnRXd2a0xzM3dQdGcySmxkbzhiN01iSFpDa0ptcloyYThIZlh6M01iWWt6dXR6Y185bnliQWpqc3VQZlpBSFFFZjlLMkpuWWxoWHZXQ2ZzanVMdmhxZ1RaNnZhcjJJTDlmazFDYkVqS0xmcEpMQmUwZ0wybERWNHFLYkJrX19xdE1RY3F4OVhE?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Little dancers debut at Surbiton Festival",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T15:03:28+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWEROV2FjTVVuMkVmamV5NU41VzhBMndySkFMdExZMWV2anFmSDM1Yk0ydzY5S2lvM3pZYTJxdkpoNEtSbllyWWdYcnVCNU1Ca29JQ3F0b040d0RjYWZiZHdmdnVOMHZYYk5HQnU0N3o2RkFpRE5oeVh5c2FBam9SMl9YQkhzMGNzeUkwcml5UmhEMy1UMDdkOGFWbVhFajg?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
         "homeArea": false
       },
       {
@@ -829,18 +816,6 @@
         "localPublication": true,
         "familyActivity": false,
         "homeArea": true
-      },
-      {
-        "title": "The Lensbury’s new Riverside Restaurant and Sports Bar delight members with exquisite cuisine and a touch of Teddington’s history",
-        "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQaWxxNjVTV1NYaExGODVpVTF6cXJ2TmZTN3U1dXl5VUNER1J5bWNZY2RMblVsRW9Nc1FQRXJBLTl3dkI2NC1WR08xTUt4OFVUM1FDLU9zbVV4UkhvXzhsSE5ET0xSV0hHZE5hQlNtbm5TcXhJeFA4Z2VUWXJJMDAtaUxQSXZDTFFMd3BIQVl2NTZuWlN1SGdyT3FHMGd1X24xME5vV2VxSmQwckMwVGJmOE5XRldBNGx1V1BJWjhQd280cEdZRDFneFNVdGQ4aW9wMlduSzJkUFU5WEVxWVlTVG9wTHQ2T0hNT0l5bjZkVndYWWlXdGVEQXVmM3p5NFh3NmdhVkdBTlNhaXRRcTJVX0NIQ3hTRm1W?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
       },
       {
         "title": "Thames Water outage confirmed in London as Richmond, Sutton, and Kingston all hit",
@@ -893,111 +868,111 @@
     ],
     "UK news": [
       {
+        "title": "‘Go-to strategic partner’: Belfast fund manager marks £70m Northern Ireland investment milestone",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T00:01:00+01:00",
+        "source": "Belfast News Letter",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVUVULU1wMjllWlloSlNrdUNPdjN4LUNGU3dONnNCYnhLRV9UaHg2eXluS1lOQUNHZG84eU9SUW1LTnRkMzdWM3VlWWNUZ0V0RXNtNlNDV3FDcVVHOGtHM2VJaXdJUEhLTkVfZGVFWjltcTR4NmhKTHczbTJnQmlrZGFBVXBvQ3FNd19HbzVGcUF2Rk4yekNIc181U0ZlMWdNRDViQ1V5VnhlZWZIWmgzbXZMMDhyazdCVVhGdnY2ZkVQRWwtOUR4ek41QkdNbTFJR3JzVThJWQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "New Britain-based CW Resources honors Waterford Group with award",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T23:00:00+01:00",
+        "source": "New Britain Herald",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxObzk4RHlVZEloYVpQMUUxSzNJTS1VaHZmQ0V4eG9SOFZmN0c4dEt4azRHWWNrRHVBUEhuclVZWjVnVHBLSHgtY2hhX0VxV2pJQTBINmQ2cDlGMVRzZWw1ckR0YUlaTnF5YlN0NDRsaUdwamZ5eUNrOXlKYXBFa2drQkJhUEU4TUdKSDdvRnhGTThFYlIycEJUd29rX29lN05yRjVPSnlhOWh3dmVWWlY5c0RQVk82ZU13NWN1MkVWendSNGhqeFhNY0YtSnd2ZUtDOVdCS2tkdHRabm5xbno0bUREY3ZhRGM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "£160m Investment Zone set to accelerate South East Wales’ world-leading innovation economy",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T19:02:51+01:00",
+        "source": "Cardiff Capital Region",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOOWpYcElWcVk5V0FiUk9mSVE0QjU3eXV5cTlSdzBmTVlSWVQtc0xhOF8tS0w4Zlo3cE5ESWM2Q0lhYV9Vc0dRM1NnbHZ6a0VBcHByeXJrRmJNNFBmemZjOTRzdVA5VWZhdWhCWUxPeHJjaHl1Zmh1SUwyMjBaczZZejNXQmxDSXNaSUpyRDdUS2lDbkJZazVsalNMMVBMckh5b01pZXFHUUNqUy1rUkZWOWFjd096ZEhLOVNrLW94VHA2eXg3UGJTaWw5SG5JMnpwUnVXbm54RE4yZ2V0MTk1YWNMaG5xQWM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Two London train stations shortlisted for Britain’s best station award",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T17:32:45+01:00",
+        "source": "Yahoo News UK",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdzdDUWlENUJkd25kNDBiM0pRb3JzZ3d0dGxTSGRDVzlGX3I1ZDVqaWxKTE1BWndUUjJQejlzS3NEUlZUZS1XMHU1cWNFWFNKaENjdkxYXzZmMndoVUpacmUySk4yUDhTNE1DajdlLWt2ZlQ4Y2laN1hJYVpxRkU2dVdpT3Q?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Northern Ireland Creative Duo Helps Australian Agency To Top Award",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T16:36:37+01:00",
+        "source": "Business Eye",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSXNjQjdWT3ZETFdHVU5MRU9DbEluNWF4QXNzclgtMVBjbDJ4S3R0dVNLc3Y2NUdDSDNYa0Q3VGxXNEM2UVppYkp3eWFYMWV2a1pIZkxVRlphZzRtTzdVdDZ5NnNBVXp1bXlKdW13LVBVWWthTVRUMnVSeWlKdjZSQXRxMDQ3RXk4UENiZ3pFM2FhdENPVmhTcjVkTGVGLURHT25SSw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Lurpak 125th anniversary campaign celebrates the evolution of British home cooking",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T15:48:10+01:00",
+        "source": "Talking Retail",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNW1xTjVZRGltMnJod1k3TUVwa3NKQks1VWNoZXZleHBBVUcwNmxCRmJTSDBZWEcya3R0ZjJoM1ZMOGpuQWRiM0hNZ0Y2TjNldWdCM1hNT256aG9sV3ZlZ1Z5c0JoeGtiSklzYnlidWNQM0c0NHJLdHZUVVVVSkJheFZnUmNKYnFiNkdmUmVsdGViRlMtdHVJb3pUVUEwVHhZWUl5aUVXcDh6VTZ1ekh6TVNsa2FGWWwxM0dLODFnMTFQaTFWZGFVYk5FTFpWNll5RTlPNWRZc0k5TW5PVGVn?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "From Gandhi Hall To Communities Across Britain, Hindi Pakhwada 2026 Celebrates A Living Language",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T14:58:49+01:00",
+        "source": "Outlook Business",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPRWkxblc4QlFySS1ZQ2g5R0JxaDEtLTN5cVJnX3J2WEJ4NUVEdzRFMUdMSFRReTJlX2hTMFRkak4wOTVUZkl5T0xYT0h0eUZsc3lIcVNqb1dEZUVCUTRCSmdNR1RRWDgybzNvU3B5ckE1MVl6T0VGM3JIdXIyTENzZGhIY1Jua3BsNzJHRFNidy04LXlBazZnTi1rekZHdXNuTEtLSGlITXB2QjB6OHFUZTVBMzhPSDdqUGs2TjE0Q1dMeFJqR1pQMUNrdHllX0FybnV0cXFSVEhSamgzVjQtT9IB7gFBVV95cUxPNEQ2ZFhuZ0pKc2J2WTVhbUxvcUtNWWRQanFCVFo0enZsZTJuOWl5ZWYxclRMZGJpSnJDNDZPemVGT0dzeDV2NWVxRk82MmYtMWJ2OU91TC10UGlpOXFkYmtkd2x1VlZMMF8tNlFwbEVHLWtsY1l1aHUtOUlSblhlX09VYXpSQlJLcGx1Ukk4UUNuVE9sQUhtOU54SDJ5RG5SWVNSUVdBZ184eE83aWNQSkJhN0piTHctMC1wdDFEeU9RU19lSk10elZrQzFWRGJNQU1uMGU2OEF4ZkltZldaU0VzdVlrUUNjejRrbHZR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Popular Edinburgh bar wins world's best cocktail menu award",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T14:47:26+01:00",
+        "source": "The Herald",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSkNxVEtpWnZnMUgtMnRpX2dOZm1KS2hnXzd2TnFKeXRoNS1YeVBfZmJrUnlwMGh2SktvOXVGU21oY1htcjk1VjNuTGFiWjVJbTlLaEN5ZlRmYUM0Vm1od1hORlNVVFFkd1pjWXZMR1Z5SlBvZHNIb0JfYlUyRTFnczdUbjFPdDlPZHhUUDc3bXp0cGVYenI4Q2QtZHhndjhj?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "ADHD podcast pioneer scoops top industry award",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T14:43:54+01:00",
+        "source": "The Jewish Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZTdRRHpwY2ozdTRJZWZIMTh1NU5GaUNsaWlFQ2pfNWVuTHgxdUNhRmx3SExSU19wNTdkOFFFeWtpREZpUk5tQnE0MzdUV2lpSVdvR2FWbTh4c0NzU09yLXQ5eGhJdG53STctaEwxY1FwNGFnekIwR1E0RHpfcHRYaHZfeWUwR2JsblJ2aWYzZ0k?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "New exhibition celebrates Blaenau Ffestiniog’s slate landscape",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T08:00:46+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNa05wcmZaSTd2RUNBQmZWMm9fOHR6bGNIY3R6SDdPZm1XaUQtSEVrVHNVSlZYU3FHVGtqVFJlSEpYWlRPQzVWazF3ZF85bnRseGlNYmlRd051aGFpOXlkQUNfcTVnLW9nbmtReG9qT0dXQW1tRzB1M1F5VURFSjdROVM2U0NKRERDbU9lOXRYdm10dERCN3I2djJTOG85d1NNUXVfM013?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Hy-Hybrid Energy Wins a Scotland Prestige Award 2026",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T05:40:00+01:00",
+        "source": "EIN News",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOck5UWjM5LU4zX0FPeFhSeS1xTVNYUktodW5UMUJJLWdDZ2N5YjBiZWdlTHV4ZllDWWJYcnZSTVJUNnNtUE8tdEt3aTBqY2Qwb0xERlNvdU53OVhSWUU4SWxrTUdBY3lXb2hjQVR6UDRUbFRINnNMSDhFYkxsNUZ5YjZGdE1tc3BKdzNTYzU4M00yc3lnT3FzM2x3?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Wonder in Wales: All Wales poetry event celebrates national poetry day",
         "summary": "",
         "meta": "Sun 11 Oct",
         "publishedAt": "2026-10-11T17:03:43+01:00",
         "source": "Nation.Cymru",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSmpzRnI2TWJNWlJjVjlSem9YTlNUUkx2MkVnZDVtU1BzenI0VXd1Yl9GTzZNWFdfMWJicEQxX1E0YkZldlBodzZrWDJHNmswWVNpaFRYVjJ1TnBjSjk2U1BHT3J0Vk04R1hVYUpWcDFhNVhkNDVmaWY3ZkRpR3BmcFRNa0pPbWF2LVd4N1ZlTjlKSFpaNTVvdUs5YVpMRTV3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Firefighters spend second night at scene of Glasgow scrapyard blaze",
-        "summary": "The Scottish Fire and Rescue Service said the alarm was raised at the business in the Scotstoun area of the city on Friday night.",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T16:56:50+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cxp8gy3r0800o?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "British MP Bob Blackman Condemns Pahlavi Award Decision and Urges Accountability for Iran’s Regime",
-        "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T08:27:54+01:00",
-        "source": "Iran News Update",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdUh4dDc3YjE5N3Q1QWFUejFnaG9YS0VSNnBWVlgtLWNhemxMb0pOdGZHRXZORkxPNEgzajFvYWZnb0Y4OGNFcTQ5MUlsM3NNbEJXM0wza0RRN3pvdktuVWhadHZUZVVKby1wUzdYMnZfUmF3aTNLR0F3LUNLSkxlWXlWN1JYRWJsZm1OODloM2UwNEdkVVRVcUNwdU54cS1zcjNPbmFpOUVTNmpGYi1QMjdpOE83d2pzY3cyN1U4MUNOcloyWnkxUm84MjRIZDF3RUc4UjFBb25nTlXSAdsBQVVfeXFMTnVIeHQ3N2IxOTd0NUFhVHoxZ2hvWEtFUjZwVlZYLS1jYXpsTG9KTnRmR0V2TkZMTzRIM2oxb2FmZ29GODhjRXE0OTFJbDNzTWxCVzNMM2tEUTd6b3ZLblVoWnR2VGVVSm8tcFM3WDJ2X1Jhd2kzS0dBdy1DS0pMZVl5VjdSWEVibGZtTjg5aDNlMDRHZFVUVXFDcHVOeHEtc3IzT25haTlFUzZqRmItUDI3aThPN3dqc2N3MjdVODFDTnJaMlp5MVJvODI0SGQxd0VHOFIxQW9uZ05V?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Oldest family business in England celebrates 511th birthday",
-        "summary": "",
-        "meta": "Sat 10 Oct",
-        "publishedAt": "2026-10-10T02:31:00+01:00",
-        "source": "Bridport News",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUt3MkE0ck9CdUJ0bm1SUEdXcHZHS3VBOUpkREl4M25lcFV3d19IYTVXLS1XaHhyVUp1bThsQ19iU0FLbURFcE8yZXRWMUswdzBhZnhxaXFxWVpZa3pCc1FEZWlTVTZRSmJpLUM2RmZxWVdhQmtseV9Ld2Z5RXd0US1HQ1dGU1ZDMGFtZXBQVWNXNU9ubzNZZmJYaw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Julie Hesmondhalgh given Great British Theatres Lifetime Achievement Award for Oldham Coliseum campaigning and theatre advocacy",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T18:28:02+01:00",
-        "source": "Oldham Evening Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUERwb3FMWWdzWHVCNnBidndya2hLZkZhLVlXaEVna00tVVFQSURXMGNLU0FFc1hjeU9oeHRWMkVJb21SY1JMc0p0UTd6RnpSM21VTFZhZGdrOHNyM01rUDJRdDBKdk9QUUZBaDJsOVNGaFcxbVBNcGlzbUp6d2ZLM2hNcXZIeFYtbHZMa2VvTmVrN3djYXlYX0VDM0U4d2Z3N2RCeU1FeklsSzRGNllCaE9QSEhsYVpkMzA4SEdEVWpneVlVZE9ia0VmcEZlWlNodFdpc0VmOVJtQ1RnbEx4dWtTbkVUcGViMnNhMWlUNVlUTHAxdmgxMlNyU0JNc3B4djdGTEVNcC1hMndxYUw4?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Nominations are now open for the Irish Post Building Britain Award 2016",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T17:25:36+01:00",
-        "source": "www.irishpost.com",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc1N4TUpjTlBEaGxiaWJaZVpBRjdDYXEwN1JWT0R1LVpyUFhKQVhuT2FyOGFNeXNzM1BjX05JWVJKcWlSd2w5Z19wdWdjRkpIUGdmYXE2OFhjQ041Ulg0SERTVWQ5MmJNb04zZ1R5OVdHN0NKcUp5aXRTRGJRQlExOWtDM1BOLTRUNnY3djUxS2RBWGs1eDFmRmtKWkFlQ3NTVEJOcHpDQk1tbXRWaVZn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Health and Care Research Wales announces latest funding award recipients",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T17:08:18+01:00",
-        "source": "Cardiff University",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQWJNZXRTcFpwUGhiUHRkWG9VUi1VaFNITEttbzdyRTFxT1pON09nczlURUdMbWFXNHg4cndzVzdKM2JId1NuUE1YdHdmUTN6V29kcTI0SU95Z3ptdEhwU1JYV2ZGYmtncHV5S1JpQVpScnAyOEZMU1BDYU13MndvN3VGX1B3ZWJneF82UXQyTXdHbDF0aVZNTVlSQXZtc1BsekZjM3ktVmZCcVA4d2hsbXZ2SGZsZ0E?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "100 new UK jobs created as Kuwait buys British-made AI-enabled air defence systems",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T14:24:48+01:00",
-        "source": "GOV.UK",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNblhmS3UteThrMkVHR1IxQlhDZ1dwX1FkWGw1XzRZc0l4WHo4ZjVsRF9hZGstLV9SM1Q2MGlCWDRqN0ZwYmg2UWZXbDlST2hjZzdySDY2cTd2YmpFX0lGa283SjkyZjFKWG9JZE5nWEdUVXZCVTdpZjRrMGl2Vm1VZnBQR3YxcW1yNGRVblVoUkN3eHlUZWo0X2pFSnhSb21vQTZNQmxBMkJtNjZoQjJXMkxNMHE4UjNp?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "DWP update over 'deeply demoralising' award cuts",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T13:12:00+01:00",
-        "source": "North Wales Live",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSElucGc5LVlGQkpqTlJVS3ZNNlNrMnNnVnVYYXlFYlcwLV9EaGJWS1pFY1hPc1U4VTdWa0x6ZjlOaG0xRGdsbk91NXRaTHVyTVljamd0R1ZrUmVrbGlNdEptM3ZNWW9kQWxEY0xvVFZHSG9lS1dQOFgwZW5qTGs3RUc2X21iMVpnNnR6dlFlZWgzOEsx?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "What went right this week: the good news that matters",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T08:57:58+01:00",
-        "source": "Positive News",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9OcncwUFRoUUNfRGxxTUtSVzBRbDBDMzY1aHB6U1FPSHlUNVFQOVpsTnVlZy1xOUIxTzg1aDdfQ1J2cHdkeXFiWWtvUC12amJmY0oteUt4SnJVYktyZ0JOX2tzcGszM2RsdEdyX0h5U2l5U2tTQ1gxR21qRFd5dw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Musto’s Championship Collection Smock nominated for British Yachting Award 2026",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T17:28:24+01:00",
-        "source": "At Sea",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXpGUkc5NWJVRFJmdUtHZFVHX1NiejZMbHdxdXpxUl9jZWJmQ09SNmxvdzBLeDRLZjlZRWtHb3V5WUFkajA3MklJX2Jqa25nYmF5Q0g5bWtVWldPYm4zbXVhcWVqbkItWjlCMzJuRG9hRWVsdjJ3T3JpQ1NQRmRudGYzcEM4LVFaYV82TTlBSGcybjVWXzN0bTF6Q2UwLS14Q2NkcU9adUExV2RBTXlaTA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Thornliebank apprentice who helped save man's life wins top apprentice award",
-        "summary": "",
-        "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T16:20:31+01:00",
-        "source": "East Renfrewshire News",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT1U3azZSYUNDam01SGlfSUxyX01yVjRCc1FBa2YwZEFCSE5mM3BmX08zRHZIXzVucGF1ZnNjTXBsQVlTOWlUUXNnMFExd3RKS3RWb2hiNTRuOVFjNUxFcWZrSFBKai1XMGNiZHJBRUZEWk5aMWNYSVgxejFGMkRLZVZaY0I4bjI0VlctWjFQSVVTYmw0bnl3VzRwS0NGeW1wX2t3?oc=5",
         "contentType": "article"
       }
     ],
@@ -1115,7 +1090,7 @@
         "venue": "bentalls-kingston",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-12",
+        "verifiedAt": "2026-10-13",
         "saleHeadline": "Bentalls Autumn Promotions Now On",
         "saleDate": "October & November 2026",
         "discount": "Up to 30% off",
@@ -1220,7 +1195,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-12"
+        "verifiedAt": "2026-10-13"
       },
       {
         "id": "chessington-howloween-2026",
@@ -1243,7 +1218,7 @@
         "venue": "chessington",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-12"
+        "verifiedAt": "2026-10-13"
       },
       {
         "id": "kempton-steam-oct-2026",
@@ -1265,7 +1240,7 @@
         "venue": "kempton-steam",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-12"
+        "verifiedAt": "2026-10-13"
       },
       {
         "id": "kew-halloween-trail-2026",
@@ -1310,7 +1285,7 @@
         "venue": "brooklands",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-12"
+        "verifiedAt": "2026-10-13"
       },
       {
         "id": "hampton-halloween-2026",
@@ -1378,7 +1353,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-12"
+        "verifiedAt": "2026-10-13"
       },
       {
         "id": "kingston-christmas-market-2026",
@@ -1453,63 +1428,39 @@
   },
   "watchAlternatives": [
     {
-      "title": "Below",
-      "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
-      "meta": "Netflix · Available since Thu 8 Oct",
-      "source": "Netflix",
-      "channel": "Netflix",
-      "releaseDate": "2026-10-08",
-      "releaseDateLabel": "Available since Thu 8 Oct",
-      "url": "https://www.netflix.com/title/81652677",
+      "title": "Time",
+      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
+      "meta": "BBC iPlayer · Available since Sun 11 Oct",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-11",
+      "releaseDateLabel": "Available since Sun 11 Oct",
+      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
-      "artworkAlt": "Below programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
+      "artworkAlt": "Time programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-08",
-      "showId": 93115,
-      "episodeId": 3673506,
+      "airdate": "2026-10-11",
+      "showId": 50374,
+      "episodeId": 3776044,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
-        "Thriller",
-        "Mystery",
-        "Supernatural"
+        "Drama",
+        "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 420.9
-    },
-    {
-      "title": "Convictions Gone Bad with Will Mellor",
-      "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
-      "meta": "Crime & Investigation · Today, 9pm",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-12",
-      "releaseDateLabel": "Today, 9pm",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
-      "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-12",
-      "showId": 94772,
-      "episodeId": 3776673,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 398.1
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 428.9
     },
     {
       "title": "The Incident Room",
       "summary": "The death of 96-year-old Emma Finch, whose body was found inside a bungalow on fire in the Hampshire village of Liss. Investigators determined that fire wasn't an accident after noticing…",
-      "meta": "Channel 5 · Wed 14 Oct, 8pm",
+      "meta": "Channel 5 · Tomorrow, 8pm",
       "source": "Channel 5",
       "channel": "Channel 5",
       "releaseDate": "2026-10-14",
-      "releaseDateLabel": "Wed 14 Oct, 8pm",
+      "releaseDateLabel": "Tomorrow, 8pm",
       "url": "https://www.channel5.com/",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223830.jpg",
@@ -1524,54 +1475,8 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 397.2
-    },
-    {
-      "title": "Britain's Countryside Killers",
-      "summary": "The story of Danielle Jones, who vanished from East Tilbury in 2001. Stuart Campbell was convicted of her murder after DNA and fake texts exposed his crimes.",
-      "meta": "TRUE CRIME · Available since Thu 8 Oct",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-10-08",
-      "releaseDateLabel": "Available since Thu 8 Oct",
-      "url": "https://www.tvmaze.com/episodes/3770908/britains-countryside-killers-3x03-betrayal-by-blood",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
-      "artworkAlt": "Britain's Countryside Killers programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-08",
-      "showId": 82837,
-      "episodeId": 3770908,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 392.7
-    },
-    {
-      "title": "Panorama",
-      "summary": "Rates of bowel, breast and other cancers are rising among younger generations according to NHS data. Why are more younger people getting cancer?",
-      "meta": "BBC One · Available since Mon 5 Oct",
-      "source": "BBC One",
-      "channel": "BBC One",
-      "releaseDate": "2026-10-05",
-      "releaseDateLabel": "Available since Mon 5 Oct",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
-      "artworkAlt": "Panorama programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-05",
-      "showId": 8534,
-      "episodeId": 3776663,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 392.6
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 405.2
     },
     {
       "title": "The Diplomat",
@@ -1596,17 +1501,63 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 391.0
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 399.0
+    },
+    {
+      "title": "Convictions Gone Bad with Will Mellor",
+      "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
+      "meta": "Crime & Investigation · Available since yesterday",
+      "source": "Crime & Investigation",
+      "channel": "Crime & Investigation",
+      "releaseDate": "2026-10-12",
+      "releaseDateLabel": "Available since yesterday",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
+      "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-12",
+      "showId": 94772,
+      "episodeId": 3776673,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 386.1
+    },
+    {
+      "title": "Britain's Countryside Killers",
+      "summary": "The story of Danielle Jones, who vanished from East Tilbury in 2001. Stuart Campbell was convicted of her murder after DNA and fake texts exposed his crimes.",
+      "meta": "TRUE CRIME · Available since Thu 8 Oct",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-10-08",
+      "releaseDateLabel": "Available since Thu 8 Oct",
+      "url": "https://www.tvmaze.com/episodes/3770908/britains-countryside-killers-3x03-betrayal-by-blood",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
+      "artworkAlt": "Britain's Countryside Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-08",
+      "showId": 82837,
+      "episodeId": 3770908,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 384.6
     },
     {
       "title": "UK Forensic Breakthroughs",
       "summary": "Kim Banyard was the mother of a ten-week-old baby boy. In 2003, she went to a party at a friend's house, and it was the last time anyone outside her own home saw her alive.",
-      "meta": "TRUE CRIME · Tomorrow, 10pm",
+      "meta": "TRUE CRIME · Today, 10pm",
       "source": "TRUE CRIME",
       "channel": "TRUE CRIME",
       "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Tomorrow, 10pm",
+      "releaseDateLabel": "Today, 10pm",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608644.jpg",
@@ -1619,40 +1570,40 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 365.5
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 373.5
     },
     {
       "title": "This Much is True Crime",
       "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
-      "meta": "TRUE CRIME · Available since Fri 9 Oct",
+      "meta": "TRUE CRIME · Fri 16 Oct, 10pm",
       "source": "TRUE CRIME",
       "channel": "TRUE CRIME",
-      "releaseDate": "2026-10-09",
-      "releaseDateLabel": "Available since Fri 9 Oct",
+      "releaseDate": "2026-10-16",
+      "releaseDateLabel": "Fri 16 Oct, 10pm",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603698.jpg",
       "artworkAlt": "This Much is True Crime programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-09",
+      "airdate": "2026-10-16",
       "showId": 94363,
-      "episodeId": 3776573,
+      "episodeId": 3776574,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 346.6
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 350.5
     },
     {
       "title": "Last Night Out",
       "summary": "A look at the 1974 abduction and murder of Carla Walker after she attended a Valentine's Day highschool dance in Fort Worth, Texas.",
-      "meta": "Crime & Investigation · Tomorrow, 9pm",
+      "meta": "Crime & Investigation · Today, 9pm",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
       "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Tomorrow, 9pm",
+      "releaseDateLabel": "Today, 9pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/last-night-out",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/576/1440733.jpg",
@@ -1665,17 +1616,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 307.0
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 315.0
     },
     {
       "title": "Mafia: Behind the Bloodshed",
       "summary": "Filmmaker Max Serio ventures into Japan's fading Yakuza underworld, uncovering its rituals, tattoos and enduring legacy through former members, experts and rare insight.",
-      "meta": "Sky History · Tomorrow, 9pm",
+      "meta": "Sky History · Today, 9pm",
       "source": "Sky History",
       "channel": "Sky History",
       "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Tomorrow, 9pm",
+      "releaseDateLabel": "Today, 9pm",
       "url": "https://www.tvmaze.com/episodes/3777419/mafia-behind-the-bloodshed-1x02-yakuza",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609396.jpg",
@@ -1688,17 +1639,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 299.9
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 308.1
     },
     {
       "title": "Crime Scene Raw",
       "summary": "Crime Scene Raw focuses on a different high-profile case each episode, utilizing police bodycam footage and forensic evidence.",
-      "meta": "Sky Crime · Available since yesterday",
+      "meta": "Sky Crime · Available since Sun 11 Oct",
       "source": "Sky Crime",
       "channel": "Sky Crime",
       "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Sun 11 Oct",
       "url": "https://www.tvmaze.com/episodes/3772887/crime-scene-raw-1x07-clifford-jones-and-joseph-celestine",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597392.jpg",
@@ -1711,17 +1662,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 276.8
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 268.9
     },
     {
       "title": "The Search for Leah Croucher: A Parent's Nightmare",
       "summary": "When Leah Croucher vanishes on her way to work in 2019, her family begin a frantic search. As leads turn into dead ends, her brother struggles to cope - with tragic consequences.",
-      "meta": "U&W · Tomorrow, 9pm",
+      "meta": "U&W · Today, 9pm",
       "source": "U&W",
       "channel": "U&W",
       "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Tomorrow, 9pm",
+      "releaseDateLabel": "Today, 9pm",
       "url": "https://u.co.uk/shows/the-search-for-leah-croucher-a-parents-nightmare/watch-online",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1613525.jpg",
@@ -1734,8 +1685,34 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-12",
-      "preferenceScore": 254.5
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 262.5
+    },
+    {
+      "title": "Hitler's Last Stand",
+      "summary": "On his first day of command, American Colonel George Mabry leads a broken battalion through the unforgiving Hurtgen Forest, to take the Roer River dams before the Nazis flood the area. The…",
+      "meta": "National Geographic · Today, 8pm",
+      "source": "National Geographic",
+      "channel": "National Geographic",
+      "releaseDate": "2026-10-13",
+      "releaseDateLabel": "Today, 8pm",
+      "url": "https://www.natgeotv.com/uk/shows/natgeo/hitlers-last-stand",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/223/559965.jpg",
+      "artworkAlt": "Hitler's Last Stand programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-13",
+      "showId": 37030,
+      "episodeId": 3707977,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "War",
+        "History"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-13",
+      "preferenceScore": 257.5
     }
   ]
 }
