@@ -1,3 +1,10 @@
+## 14 October 2026: Restore verified Arsenal-Lille match details after incomplete RSS result
+
+- **Root cause:** the Arsenal.com RSS item for the 13 October Lille match contained the scoreline but not verified scorers, stadium, or match summary. The refresh correctly refused to publish this incomplete latest-result record.
+- Added a verified Lille fallback based on the Sky Sports match report, including the 3–0 score, scorers and minutes, UEFA Champions League, 8pm kick-off, Emirates Stadium, and a concise match summary. It becomes eligible only after 22:00 BST on matchday.
+- Updated `tests/test_finalize_arsenal.py` to make the current latest-result contract explicit and cover an incomplete same-day RSS report.
+- Publication validation remains fail-closed; no required fields or content checks were relaxed.
+
 ## 11 October 2026: Arsenal scorers verification, enhanced card font sizes & West Molesey home news
 
 - **Arsenal scorers verification & pipeline hardening**:

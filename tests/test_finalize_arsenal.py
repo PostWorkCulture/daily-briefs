@@ -127,11 +127,57 @@ class FirstTeamResultTests(unittest.TestCase):
         self.assertEqual(result["result"], "0–3")
 
     def test_verified_latest_result_has_all_six_requested_fields(self) -> None:
-        result = finalize_arsenal.verified_coventry_result()
+        result = finalize_arsenal.verified_lille_result()
         for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
             with self.subTest(key=key):
                 self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["opponent"], "Lille")
+        self.assertEqual(result["result"], "3–0")
         self.assertEqual(len(result["scorers"]), 3)
+
+    def test_verified_lille_result_completes_partial_arsenal_report(self) -> None:
+        payload = {
+            "sections": {
+                "Arsenal news": [
+                    news_item(
+                        "Match report: Arsenal 3-0 Lille",
+                        "2026-10-13T22:20:00+01:00",
+                    )
+                ]
+            },
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-10-13T20:00:00+01:00",
+                    "dateLabel": "Tue 13 Oct",
+                    "opponent": "Lille",
+                    "completed": True,
+                    "arsenalScore": 3,
+                    "opponentScore": 0,
+                    "result": "3–0",
+                    "source": "Arsenal.com",
+                    "url": "https://www.arsenal.com/news",
+                },
+                "news": [],
+            },
+        }
+
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-10-14T06:00:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
+
+        result = payload["arsenal"]["lastResult"]
+        verified = finalize_arsenal.verified_lille_result()
+        self.assertEqual(result["date"], verified["date"])
+        self.assertEqual(result["opponent"], "Lille")
+        self.assertEqual(result["scorers"], verified["scorers"])
+        self.assertEqual(result["scorersLabel"], verified["scorersLabel"])
+        self.assertEqual(result["stadium"], "Emirates Stadium")
+        self.assertEqual(result["summary"], verified["summary"])
+        self.assertEqual(result["url"], verified["url"])
+        self.assertEqual(result["source"], "Sky Sports")
 
 
     def test_verified_villa_result_has_all_requested_fields(self) -> None:
