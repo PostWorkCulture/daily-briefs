@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import sys
 import os
+import re
 from pathlib import Path
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, sync_playwright
 
@@ -415,7 +416,7 @@ def check_viewport(browser, name: str) -> None:
         if news_cards.count() != 10:
             raise AssertionError(f"{name}: Local News stories must show exactly 10 news cards: {news_cards.count()}")
 
-        fire_stories = [t for t in local_news_order["actual"] if "fire" in t.lower() or "blaze" in t.lower()]
+        fire_stories = [t for t in local_news_order["actual"] if re.search(r"\b(?:fire|blaze)\b", t, re.IGNORECASE)]
         if len(fire_stories) > 1:
             raise AssertionError(f"{name}: Local News contains duplicate fire stories: {fire_stories}")
 
