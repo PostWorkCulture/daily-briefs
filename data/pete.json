@@ -484,9 +484,28 @@
       "arsenalScore": 3,
       "opponentScore": 0,
       "result": "3–0",
-      "url": "https://www.skysports.com/football/arsenal-vs-lille/8048664293087483232",
-      "source": "Sky Sports",
-      "tvChannel": "TBC"
+      "scorers": [
+        {
+          "name": "Jurriën Timber",
+          "team": "Arsenal",
+          "minute": "64'"
+        },
+        {
+          "name": "Eberechi Eze",
+          "team": "Arsenal",
+          "minute": "67'"
+        },
+        {
+          "name": "Bukayo Saka",
+          "team": "Arsenal",
+          "minute": "71'"
+        }
+      ],
+      "scorersLabel": "Jurriën Timber 64', Eberechi Eze 67', Bukayo Saka 71'",
+      "stadium": "Emirates Stadium",
+      "summary": "Arsenal scored three times in seven second-half minutes, with Jurriën Timber opening the scoring before Eberechi Eze and Bukayo Saka completed a 3–0 Champions League win over Lille at Emirates Stadium.",
+      "url": "https://www.skysports.com/football/arsenal-vs-lille/577615",
+      "source": "Sky Sports"
     },
     "nextFixture": {
       "date": "2026-10-18T16:30:00+01:00",
@@ -868,7 +887,7 @@
       ],
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-14",
-      "preferenceScore": 407.0
+      "preferenceScore": 407
     }
   ],
   "sections": {
@@ -1835,7 +1854,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-14",
-      "preferenceScore": 355.0
+      "preferenceScore": 355
     },
     {
       "title": "Last Night Out",
