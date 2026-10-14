@@ -1,3 +1,9 @@
+## 14 October 2026: Verified Arsenal-Lille result fallback
+
+- Fixed the morning refresh failure caused by the 13 October men's first-team Champions League result against Lille being selected without its required verified scorers, stadium, summary and kickoff details.
+- Added a source-backed structured result for Arsenal's 3–0 win over Lille, including Timber (64'), Eze (67') and Saka (71'), and made it the fallback after the fixture's verified completion time.
+- Added regression coverage for the result's required fields and for replacing an incomplete same-day result with the complete verified record. Existing validation remains enabled.
+
 ## 11 October 2026: Arsenal scorers verification, enhanced card font sizes & West Molesey home news
 
 - **Arsenal scorers verification & pipeline hardening**:

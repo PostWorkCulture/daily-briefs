@@ -394,6 +394,50 @@ class FirstTeamResultTests(unittest.TestCase):
         self.assertEqual(result["stadium"], "Villa Park")
         self.assertEqual(result["scorersLabel"], "Bukayo Saka 59'")
 
+    def test_verified_lille_result_has_all_requested_fields(self) -> None:
+        result = finalize_arsenal.verified_lille_result()
+        for key in ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium"):
+            with self.subTest(key=key):
+                self.assertTrue(str(result.get(key) or "").strip())
+        self.assertEqual(result["date"], "2026-10-13T20:00:00+01:00")
+        self.assertEqual(result["opponent"], "Lille")
+        self.assertEqual(result["result"], "3–0")
+        self.assertEqual(result["stadium"], "Emirates Stadium")
+        self.assertEqual(result["scorers"], [
+            {"name": "Jurriën Timber", "team": "Arsenal", "minute": "64'"},
+            {"name": "Eberechi Eze", "team": "Arsenal", "minute": "67'"},
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "71'"},
+        ])
+
+    def test_verified_lille_fallback_replaces_incomplete_same_day_result(self) -> None:
+        payload = {
+            "sections": {"Arsenal news": []},
+            "arsenal": {
+                "lastResult": {
+                    "date": "2026-10-13T20:00:00+01:00",
+                    "dateLabel": "Tue 13 Oct",
+                    "opponent": "Lille",
+                    "completed": True,
+                    "arsenalScore": 3,
+                    "opponentScore": 0,
+                    "result": "3–0",
+                    "source": "Sky Sports",
+                    "url": "https://www.skysports.com/football/arsenal-vs-lille/577615",
+                },
+                "news": [],
+            },
+        }
+        with patch.object(
+            finalize_arsenal,
+            "NOW",
+            finalize_arsenal.datetime.fromisoformat("2026-10-14T05:40:00+01:00"),
+        ):
+            finalize_arsenal.apply_last_result_fallback(payload)
+        self.assertEqual(
+            payload["arsenal"]["lastResult"],
+            finalize_arsenal.verified_lille_result(),
+        )
+
     def test_incomplete_new_result_fails_closed(self) -> None:
         payload = {
             "sections": {"Arsenal news": []},
