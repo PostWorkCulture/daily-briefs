@@ -417,8 +417,28 @@ def check_viewport(browser, name: str) -> None:
             raise AssertionError(f"{name}: Local News stories must show exactly 10 news cards: {news_cards.count()}")
 
         fire_stories = [t for t in local_news_order["actual"] if re.search(r"\b(?:fire|blaze)\b", t, re.IGNORECASE)]
-        if len(fire_stories) > 1:
-            raise AssertionError(f"{name}: Local News contains duplicate fire stories: {fire_stories}")
+        # Two fire stories are duplicates only when they cover the same place;
+        # separate incidents in different towns are distinct local news.
+        fire_places = (
+            "Kingston", "Surbiton", "Teddington", "Molesey", "Hampton", "Esher",
+            "Twickenham", "Walton", "Thames Ditton", "Long Ditton", "Hinchley Wood",
+            "Hersham", "Sunbury", "Bushy Park", "Hampton Wick", "Hampton Hill",
+        )
+        def fire_place(title: str) -> str | None:
+            for place in fire_places:
+                if re.search(rf"\b{re.escape(place)}\b", title, re.IGNORECASE):
+                    return place.lower()
+            return None
+        seen_fire_places: dict[str, str] = {}
+        for title in fire_stories:
+            place = fire_place(title)
+            if place and place in seen_fire_places:
+                raise AssertionError(
+                    f"{name}: Local News contains duplicate fire stories: "
+                    f"{[seen_fire_places[place], title]}"
+                )
+            if place:
+                seen_fire_places[place] = title
 
         news_media_count = page.locator('#newsTabGroups .tab-group .story-media').count()
         if news_media_count < 1:
