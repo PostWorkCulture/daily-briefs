@@ -1,3 +1,9 @@
+## 15 October 2026: Verified Arsenal 3–0 Lille result unblocks the morning refresh
+
+- **Cause**: Every scheduled Morning refresh on 15 October failed in `scripts/finalize_arsenal.py` because the latest completed match (Arsenal 3–0 Lille, Champions League, Tue 13 Oct) had no verified scorers, summary or stadium, so the protected-result rule correctly refused publication and both briefs stayed on the 14 October edition.
+- **Fix**: Added `verified_lille_result()` from the Sky Sports match report (Timber 64', Eze 67', Saka 71'; Emirates Stadium; 8pm kick-off) and made it the fallback from 22:00 on 13 October. No other section, rule or data source changed.
+- **Validation**: 123/123 Python unit tests pass; `finalize_arsenal.py` now completes on the published data with the full Lille result.
+
 ## 11 October 2026: Arsenal scorers verification, enhanced card font sizes & West Molesey home news
 
 - **Arsenal scorers verification & pipeline hardening**:

@@ -337,6 +337,35 @@ def verified_leeds_result() -> dict:
     }
 
 
+def verified_lille_result() -> dict:
+    return {
+        "date": "2026-10-13T20:00:00+01:00",
+        "dateLabel": "Tue 13 Oct",
+        "kickoff": "8pm",
+        "opponent": "Lille",
+        "competition": "UEFA Champions League",
+        "homeAway": "home",
+        "completed": True,
+        "arsenalScore": 3,
+        "opponentScore": 0,
+        "result": "3–0",
+        "scorers": [
+            {"name": "Jurrien Timber", "team": "Arsenal", "minute": "64'"},
+            {"name": "Eberechi Eze", "team": "Arsenal", "minute": "67'"},
+            {"name": "Bukayo Saka", "team": "Arsenal", "minute": "71'"},
+        ],
+        "scorersLabel": "Timber 64', Eze 67', Saka 71'",
+        "stadium": "Emirates Stadium",
+        "summary": (
+            "Arsenal scored three times in seven second-half minutes through Jurrien "
+            "Timber, Eberechi Eze and substitute Bukayo Saka to beat Lille 3–0 in the "
+            "Champions League league phase."
+        ),
+        "url": "https://www.skysports.com/football/arsenal-vs-lille/8048664293087483232",
+        "source": "Sky Sports",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -613,7 +642,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-10-10T14:30:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-10-13T22:00:00+01:00"):
+        fallback = verified_lille_result()
+    elif NOW >= datetime.fromisoformat("2026-10-10T14:30:00+01:00"):
         fallback = verified_leeds_result()
     elif NOW >= datetime.fromisoformat("2026-09-19T18:00:00+01:00"):
         fallback = verified_brighton_result()
