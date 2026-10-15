@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 15 October 2026 · refreshed 2:04pm",
+  "updatedLabel": "Thursday, 15 October 2026 · refreshed 7:20pm",
   "worldFact": {
     "id": "dallol-hydrothermal-sulfur-desert",
     "editorialPriority": "human-first",
@@ -18,14 +18,14 @@
     "localImage": "assets/scenery/world-fact.webp?v=a6cc046aef25"
   },
   "weather": {
-    "temp": "18°",
+    "temp": "17°",
     "summary": "Cloudy",
     "condition": "Cloudy",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-15",
-        "high": 20,
+        "high": 19,
         "low": 10,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -44,7 +44,7 @@
       {
         "date": "2026-10-17",
         "high": 14,
-        "low": 8,
+        "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 40,
@@ -54,9 +54,9 @@
         "date": "2026-10-18",
         "high": 13,
         "low": 9,
-        "summary": "Forecast",
-        "condition": "Forecast",
-        "rainChance": 60,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
@@ -388,20 +388,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Kids",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-23T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": "#e1e1e1",
-      "colorId": "8",
-      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir Performance 10:30-2:30",
       "summary": "",
       "url": "",
@@ -414,6 +400,20 @@
       "colorId": null,
       "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-23T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
+      "calendarColorSource": "google"
     },
     {
       "title": "Football 10-11am",
@@ -534,48 +534,48 @@
     "played": 6,
     "news": [
       {
+        "title": "Report: Arsenal 2-1 Leeds United",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:22:49+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RcnJLWGJPTURiX1M2bE5pbmNkTWUyRC0tM25SVXNvQkxqZk9ZZ0RKUkNvOEFxYVJJNl91QmM5T2lQMGp3eDVRSzlQSU5DOGlWbG5lSVRXamo0T3pna0xkV2ZnOGlxUkVCcXF4LUVkSDRsWF9fREswSW9iSlJNQQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arteta's injury update on Hincapie, Zubimendi and Saliba",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T12:37:19+01:00",
+        "publishedAt": "2026-10-15T15:34:09+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNTlyLUowYWJKLUt0aUFMaTFHbnBuZXZfVmdoMzl2bFpHTnJwcFN4SC1mY1NHZHdPV3BUWVVsWFhfeGRLUy1vVkRiWFpvUkRrSjV1WFhuR0g3dVQ2WGxZU1dsQk53Rm1kbGhHdXdhRGd3b3U1ZGlTRl95MUtELTBZTjZNQTlScXVUT0o3TlQ4Z3ItOTdEaHE1T2s3bkM?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Ancelotti makes Arsenal claim after 'harsh' Champions League defeat",
+        "title": "Eze gets big move, Saliba absence and Salmon role confirmed as Arsenal squad photo examined",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:53:21+01:00",
+        "publishedAt": "2026-10-15T12:31:18+01:00",
+        "source": "Football London",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaHpSbUxfOHd3Tm04WVBlT0lkeDF5SUNqZGluYmJHMVRGSFI2ZUZ3WXBHaU56R2NVRlF5czY5UnY3OFZVT2xZcEFzVGM3MGJUOU85azFzQjZ3bDlZejhET3NyZzY2SUR3d21TWld1SXZqa1AxU1F0bU1OUlV2eWhFZmZwWdIBiAFBVV95cUxNX3ZWOS1MdzdNOUFyRXNZdUVfbHlGcmVtUGR4TmlPR2Q1NkNjQ0dibVZvQ0RDejJwN281bjM1dlJJYjN6a3FrQkhBNHQ4MkxESDFMdHphV1dxaVd3dEFvVk1Nakx4ZGYwejFRbUxOYkxUQ3U1bjkzWFlSV3J2V0JSeGFQVmNISzE3?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal XI vs Nottingham Forest: Confirmed team news, predicted lineup and injury latest for Premier League",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T14:42:20+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOWlZbUJQcjhRc2lUTjBlYUltRjNZNE5FRC1iY2poclYtNGxPZHZXQVRvSjdueDR4RjFrUEdpRk1FcGVBbUR5NVBadGFnZXdzTXhlNGt1SkJucExERVVqdkYzckdJOS1SZzMtcmdBLUFfS1htNURhbzlmb19BNUgtWlc2S0FvQUFYSHNsb25mSGxsUnJQM2dtRw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbllxNGJoa1Q4eGd5VUUzaVR1Z3UycHJjTlZ2Mm9hNGdfN0c5Wi0wX3kwUEVudjdzOGpoZGpKRWc3ajRUS3MxMXNOajBYUTRkRlphb1RKaWlWZEdoNDIxLUYtazNUbGx5dWR4aGQtd3FiaFZFWUM1U1dyV0NTVFhFVDJ4LXdSQms1V3NPMUhSMVRZTzI0MWp5TFhGbWNjek01N0ZjbFF5UFJObmF6V3RSaW11UlFfakdPNXdTUHpPeEp1MHdfcnpReTJLSTFaMjZ6NktqbmVvWlk?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The story behind the box containing Mikel Arteta's contract",
+        "title": "Every word from Mikel Arteta's pre-Lille presser",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T11:28:15+01:00",
+        "publishedAt": "2026-10-15T10:15:55+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPczVlalFCeHNRcVl3OWtVMmlMY3FnY2dGQm5Ed0NrOHBNeTdRdldseFctX1Q4TWt6SnN6U3BZa0ItR0JNQkpHZXktemdhb0EwRUc1aFo4Ql90RC1NamI1YWQ2enhza0NoNllXWjhkOEdaSG00Wi02ZmlYNXBpZmZTQl9xOTYyUkJvSGZKaUtIdU4xWXFlMmhGNExxV2V4WUF6QXc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal's wildcard option as Arteta searches for left-wing solution",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:50:33+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMnd3UzE5b1ZmdGVEdldMS1RfSllmT2VyMF9sb2xrMVJ4RlN2NjdEazl5VkkzUjJFeWYtajZaTWEwLWxHekxTTVQ2ekstUDl1eUVSZjY5Zzh2WURJY2tLRWR6OS1NcFF6WjFDNG1jTDlHT25xNVFHbXViWmtsZEFvV0FvQW9VODlIdGFaZEd2T3JBWUtEbWhIZ1NqTW1PWEZsSkE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "FPL Focus: Calafiori in-demand and Seagulls shine",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T10:48:13+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNmVVb2Q0ei01OHhuV19DREJkS0Y0ejlzcTJtZXZWUVNuUE1xT3doc1hBYnV6RW9SMUpFa3V2WTAyX1VBb0tnRXp1UjVxR1V2eEd2ak5JREtjS3VOYjFienhaTm52TFFsZnF6LW5LX05JSld4M2F4WENpbWIzWTViV3A0bWNzb2YzOUhkTlE2dlRwYW9jdHRPMA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUnd2X3A2VFk0WEwwUmpWQkNrcllhSlRDbThmMENUQlFVMDBOZnZOX3lrMzd5SFlJZ19EYzdKQVpQeXhvbFZEdWJoTENLUmlyalQ3YW9jQlBmTk1MTnpOdExjN3c2LUtKdGdSZUEyX18zb3J4ODQ3UGV0LThjMkozVU0tVG5va3p6R3NpZUw0S0xQU2s?oc=5",
         "contentType": "article"
       }
     ],
@@ -729,44 +729,44 @@
     ]
   },
   "lead": {
-    "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
-    "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
-    "meta": "Wed 7 Oct",
-    "publishedAt": "2026-10-07T13:00:00+01:00",
-    "source": "Anthropic",
-    "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+    "title": "Anthropic's $2 trln dream faces deflation trap",
+    "summary": "",
+    "meta": "Thu 15 Oct",
+    "publishedAt": "2026-10-15T19:04:48+01:00",
+    "source": "Breakingviews",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMC1Gc1lJeUFsdUw5ZUQzTFlGdkZITlA4OW11ekpXVVpFRDZZUjAxck0tbmxFZDRtU242ZXFXQldJOE44VXhYY0JGbWRqbXVPNFBmMmhrWC1DM0lkRlBMajNRZEhqN0I3R2hENHQ4Zk9wcUphYjhMT0VjWEw4VHUwVkhBZzQyd2pFUWlQZi14ZFZWeXl2R3dYTElEbGZlNS1zZ3hSOE5hdVdNSVBlOERkRzZtRXhGN1o1ZXItdF9R?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
-      "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
-      "meta": "Wed 7 Oct",
-      "publishedAt": "2026-10-07T13:00:00+01:00",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+      "title": "Anthropic's $2 trln dream faces deflation trap",
+      "summary": "",
+      "meta": "Thu 15 Oct",
+      "publishedAt": "2026-10-15T19:04:48+01:00",
+      "source": "Breakingviews",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMC1Gc1lJeUFsdUw5ZUQzTFlGdkZITlA4OW11ekpXVVpFRDZZUjAxck0tbmxFZDRtU242ZXFXQldJOE44VXhYY0JGbWRqbXVPNFBmMmhrWC1DM0lkRlBMajNRZEhqN0I3R2hENHQ4Zk9wcUphYjhMT0VjWEw4VHUwVkhBZzQyd2pFUWlQZi14ZFZWeXl2R3dYTElEbGZlNS1zZ3hSOE5hdVdNSVBlOERkRzZtRXhGN1o1ZXItdF9R?oc=5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Arteta's injury update on Hincapie, Zubimendi and Saliba",
+      "title": "Report: Arsenal 2-1 Leeds United",
       "summary": "",
       "meta": "Thu 15 Oct",
-      "publishedAt": "2026-10-15T12:37:19+01:00",
+      "publishedAt": "2026-10-15T17:22:49+01:00",
       "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNTlyLUowYWJKLUt0aUFMaTFHbnBuZXZfVmdoMzl2bFpHTnJwcFN4SC1mY1NHZHdPV3BUWVVsWFhfeGRLUy1vVkRiWFpvUkRrSjV1WFhuR0g3dVQ2WGxZU1dsQk53Rm1kbGhHdXdhRGd3b3U1ZGlTRl95MUtELTBZTjZNQTlScXVUT0o3TlQ4Z3ItOTdEaHE1T2s3bkM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RcnJLWGJPTURiX1M2bE5pbmNkTWUyRC0tM25SVXNvQkxqZk9ZZ0RKUkNvOEFxYVJJNl91QmM5T2lQMGp3eDVRSzlQSU5DOGlWbG5lSVRXamo0T3pna0xkV2ZnOGlxUkVCcXF4LUVkSDRsWF9fREswSW9iSlJNQQ?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "Plans for 206 homes on former Esher golf course rejected",
+      "title": "REVIEW: Electrifying Jane Eyre adaptation captivates theatre audiences in Kingston",
       "summary": "",
-      "meta": "Wed 14 Oct",
-      "publishedAt": "2026-10-14T16:52:09+01:00",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBBZ0M4X19sRFFjZDUzejRXUEpVMS01RmxuZlFVWUVpZ3R2N0xFVlZxT2owbS1pS3RXbGVqUEctd1luRnhQUlhPeHVLZDNpdUdjNGduS3B3aGVIakZySVE?oc=5",
+      "meta": "Thu 15 Oct",
+      "publishedAt": "2026-10-15T17:44:00+01:00",
+      "source": "Kingston Nub News",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdGxQdlFPWkFDa2J5VDJiRkFTTE1qOWhSTXNNWlJxWTVDTi15SFB6cGlyZmJWeTFSQlJ0SDc0bzhRcHJYNXdvNnJFQk9MbUJKSS1rSHFBd0Z1M3pLWjZ2REhSUmt5eTcwM05HODFieUpNMmZFQmpCTjRId1FCSGxBdUl4YTRZRUcteVl3RG9xZTJyaFdTazRIRFhXWnhNSW5oTElDOFhBaV9SVjQ3V01NMkFsVW8tRlRCSFl1WTg4a2N5c3Y2U3RoS2IwckV0YW8?oc=5",
       "contentType": "article",
-      "localPublication": false,
+      "localPublication": true,
       "familyActivity": false,
       "homeArea": false,
       "section": "Local"
@@ -899,39 +899,48 @@
   "sections": {
     "AI": [
       {
-        "title": "Claude Haiku 5.5: our most cost-effective and fastest model",
-        "summary": "Anthropic releases Claude Haiku 5.5 with frontier-class coding and reasoning at reduced latency.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T13:00:00+01:00",
-        "source": "Anthropic",
-        "url": "https://www.anthropic.com/news/claude-haiku-5-5",
-        "contentType": "article"
-      },
-      {
-        "title": "Claude Sonnet 5.5: advancing performance and efficiency",
-        "summary": "Significant speed and efficiency improvements across enterprise reasoning and software engineering.",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T14:00:00+01:00",
-        "source": "Anthropic",
-        "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
-        "contentType": "article"
-      },
-      {
-        "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-        "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T03:00:14+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-        "contentType": "article"
-      },
-      {
-        "title": "Developing Gemini 4 Argon responsibly and safely",
+        "title": "Anthropic's $2 trln dream faces deflation trap",
         "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T20:43:07+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T19:04:48+01:00",
+        "source": "Breakingviews",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMC1Gc1lJeUFsdUw5ZUQzTFlGdkZITlA4OW11ekpXVVpFRDZZUjAxck0tbmxFZDRtU242ZXFXQldJOE44VXhYY0JGbWRqbXVPNFBmMmhrWC1DM0lkRlBMajNRZEhqN0I3R2hENHQ4Zk9wcUphYjhMT0VjWEw4VHUwVkhBZzQyd2pFUWlQZi14ZFZWeXl2R3dYTElEbGZlNS1zZ3hSOE5hdVdNSVBlOERkRzZtRXhGN1o1ZXItdF9R?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "🚨 Anthropic: The agony and the ecstasy",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:29:01+01:00",
+        "source": "Exponential View | Azeem Azhar",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xLXdJdXRQbmZuU2xROXhyb1pLX2FGUFlGRFBzaWM1eXQwbWhNZnBtbmJIQ0ljYlpiMWFXSmxGanhLcGVzaWJZOEJuTTBXU3BBaHVsZTVSdUQyWDNVVFRaWDAwTlBfRlZCWUJ0VTNUZ0tUS3JiM2pv?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic Selects Build Circle As A UK Partner To Help Supercharge AI Realisation For Clients",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:03:06+01:00",
+        "source": "TechRound",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb2p4VXRKVVNZMmNrWXF0djlIMmlkaGZCNnM1dTd5T28xSUp4YXR2VEVVU2ladkRHUWMzenpyektuWjJaYWVYOWVNNUEwc3haVnljSDhRSDFOWWx4VVN5TUgyWmFrNXhHMXVxUGVhSGQtaVh2cmtobU1LY1NqQk9JYkJiQVdweklEZGZZXzR6ZnM3bXN2VElnOU1Gay1UaUVPUzdoWmRYcHd4QQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "FTC subpoenas Anthropic and OpenAI over artificial intelligence safety concerns",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:16:00+01:00",
+        "source": "The Independent",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNa2FGR3A2SzZNaVZ4eXg4U1VLaXlKcEpxc001V2NlTktTSGNkZnpFcGN2NTRDRjBuYTBtTlBfcnoxdDY0MlpZSHc5Rk83ek1YYnhxWTJNYmx3VHlIaG5lTGp5NFA5ZUZiNWZCUDYyMDExS0haSmRSeV81THA2N0FrOFAxQ3hWMGNlczBKekNSWndLc0pCR2tIcGlB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "US FTC subpoenas OpenAI and Anthropic over consumer harms, Axios reports",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T15:50:34+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjB0ci1GS09NczVkMHZGUlZQVE5PUWJuYlZUODlnZUtxWWxQVVNNcGRHVjh2U0p3ZU9iTHQ3aThVOWpnYXVZRGQxaTc0Q293bGFoeUowbnloOU1qNm1ZMlloOGl0c251c2pQRXh6cExNQXo5OXQ3ZDRpSVZZZ211alY0ZENWb0FJT3QwRzQyb1lRejMxTkFreExtLXhIUm9oUFBkRzRCZ1dzSGN6MVhNSGl3?oc=5",
         "contentType": "article"
       },
       {
@@ -950,15 +959,6 @@
         "publishedAt": "2026-10-13T17:01:52+01:00",
         "source": "Google DeepMind",
         "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-        "contentType": "article"
-      },
-      {
-        "title": "Amp puts AI agents to work beyond code with OpenAI models",
-        "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T13:00:00+01:00",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/amp-beyond-coding",
         "contentType": "article"
       },
       {
@@ -991,79 +991,115 @@
     ],
     "Arsenal news": [
       {
+        "title": "Report: Arsenal 2-1 Leeds United",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:22:49+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RcnJLWGJPTURiX1M2bE5pbmNkTWUyRC0tM25SVXNvQkxqZk9ZZ0RKUkNvOEFxYVJJNl91QmM5T2lQMGp3eDVRSzlQSU5DOGlWbG5lSVRXamo0T3pna0xkV2ZnOGlxUkVCcXF4LUVkSDRsWF9fREswSW9iSlJNQQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arteta's injury update on Hincapie, Zubimendi and Saliba",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T12:37:19+01:00",
+        "publishedAt": "2026-10-15T15:34:09+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNTlyLUowYWJKLUt0aUFMaTFHbnBuZXZfVmdoMzl2bFpHTnJwcFN4SC1mY1NHZHdPV3BUWVVsWFhfeGRLUy1vVkRiWFpvUkRrSjV1WFhuR0g3dVQ2WGxZU1dsQk53Rm1kbGhHdXdhRGd3b3U1ZGlTRl95MUtELTBZTjZNQTlScXVUT0o3TlQ4Z3ItOTdEaHE1T2s3bkM?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Ancelotti makes Arsenal claim after 'harsh' Champions League defeat",
+        "title": "Eze gets big move, Saliba absence and Salmon role confirmed as Arsenal squad photo examined",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:53:21+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOWlZbUJQcjhRc2lUTjBlYUltRjNZNE5FRC1iY2poclYtNGxPZHZXQVRvSjdueDR4RjFrUEdpRk1FcGVBbUR5NVBadGFnZXdzTXhlNGt1SkJucExERVVqdkYzckdJOS1SZzMtcmdBLUFfS1htNURhbzlmb19BNUgtWlc2S0FvQUFYSHNsb25mSGxsUnJQM2dtRw?oc=5",
+        "publishedAt": "2026-10-15T12:31:18+01:00",
+        "source": "Football London",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaHpSbUxfOHd3Tm04WVBlT0lkeDF5SUNqZGluYmJHMVRGSFI2ZUZ3WXBHaU56R2NVRlF5czY5UnY3OFZVT2xZcEFzVGM3MGJUOU85azFzQjZ3bDlZejhET3NyZzY2SUR3d21TWld1SXZqa1AxU1F0bU1OUlV2eWhFZmZwWdIBiAFBVV95cUxNX3ZWOS1MdzdNOUFyRXNZdUVfbHlGcmVtUGR4TmlPR2Q1NkNjQ0dibVZvQ0RDejJwN281bjM1dlJJYjN6a3FrQkhBNHQ4MkxESDFMdHphV1dxaVd3dEFvVk1Nakx4ZGYwejFRbUxOYkxUQ3U1bjkzWFlSV3J2V0JSeGFQVmNISzE3?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The story behind the box containing Mikel Arteta's contract",
+        "title": "Arsenal XI vs Nottingham Forest: Confirmed team news, predicted lineup and injury latest for Premier League",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T11:28:15+01:00",
+        "publishedAt": "2026-10-15T14:42:20+01:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbllxNGJoa1Q4eGd5VUUzaVR1Z3UycHJjTlZ2Mm9hNGdfN0c5Wi0wX3kwUEVudjdzOGpoZGpKRWc3ajRUS3MxMXNOajBYUTRkRlphb1RKaWlWZEdoNDIxLUYtazNUbGx5dWR4aGQtd3FiaFZFWUM1U1dyV0NTVFhFVDJ4LXdSQms1V3NPMUhSMVRZTzI0MWp5TFhGbWNjek01N0ZjbFF5UFJObmF6V3RSaW11UlFfakdPNXdTUHpPeEp1MHdfcnpReTJLSTFaMjZ6NktqbmVvWlk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Every word from Mikel Arteta's pre-Lille presser",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T10:15:55+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPczVlalFCeHNRcVl3OWtVMmlMY3FnY2dGQm5Ed0NrOHBNeTdRdldseFctX1Q4TWt6SnN6U3BZa0ItR0JNQkpHZXktemdhb0EwRUc1aFo4Ql90RC1NamI1YWQ2enhza0NoNllXWjhkOEdaSG00Wi02ZmlYNXBpZmZTQl9xOTYyUkJvSGZKaUtIdU4xWXFlMmhGNExxV2V4WUF6QXc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUnd2X3A2VFk0WEwwUmpWQkNrcllhSlRDbThmMENUQlFVMDBOZnZOX3lrMzd5SFlJZ19EYzdKQVpQeXhvbFZEdWJoTENLUmlyalQ3YW9jQlBmTk1MTnpOdExjN3c2LUtKdGdSZUEyX18zb3J4ODQ3UGV0LThjMkozVU0tVG5va3p6R3NpZUw0S0xQU2s?oc=5",
         "contentType": "article"
       },
       {
         "title": "Arsenal's wildcard option as Arteta searches for left-wing solution",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:50:33+01:00",
+        "publishedAt": "2026-10-15T09:56:57+01:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMnd3UzE5b1ZmdGVEdldMS1RfSllmT2VyMF9sb2xrMVJ4RlN2NjdEazl5VkkzUjJFeWYtajZaTWEwLWxHekxTTVQ2ekstUDl1eUVSZjY5Zzh2WURJY2tLRWR6OS1NcFF6WjFDNG1jTDlHT25xNVFHbXViWmtsZEFvV0FvQW9VODlIdGFaZEd2T3JBWUtEbWhIZ1NqTW1PWEZsSkE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "FPL Focus: Calafiori in-demand and Seagulls shine",
+        "title": "Havertz takes on Calafiori in What Do You Know?",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T10:48:13+01:00",
+        "publishedAt": "2026-10-15T17:24:43+01:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNmVVb2Q0ei01OHhuV19DREJkS0Y0ejlzcTJtZXZWUVNuUE1xT3doc1hBYnV6RW9SMUpFa3V2WTAyX1VBb0tnRXp1UjVxR1V2eEd2ak5JREtjS3VOYjFienhaTm52TFFsZnF6LW5LX05JSld4M2F4WENpbWIzWTViV3A0bWNzb2YzOUhkTlE2dlRwYW9jdHRPMA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSWdsNmFHd3lEM05FWkdBaWx6ODRUR0QyeUo5OGVnblBOc3RaaDlTS1RaR1lTLU9GSFdUNUw5R0dvczdjb3U1VURVVExxQzROSHYwZEdRRi15NzlGRTRxYzl2NFNTV0tLM09OMTZSZ0lMRXo1cFBkNktvZFVPeERfUWFuZGw3X1lfMjYzZDhXQkFqZw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal XI vs Nottingham Forest: Confirmed team news, predicted lineup and injury latest",
+        "title": "Ancelotti makes Arsenal claim after 'harsh' Champions League defeat",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:45:00+01:00",
+        "publishedAt": "2026-10-15T09:09:20+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbllxNGJoa1Q4eGd5VUUzaVR1Z3UycHJjTlZ2Mm9hNGdfN0c5Wi0wX3kwUEVudjdzOGpoZGpKRWc3ajRUS3MxMXNOajBYUTRkRlphb1RKaWlWZEdoNDIxLUYtazNUbGx5dWR4aGQtd3FiaFZFWUM1U1dyV0NTVFhFVDJ4LXdSQms1V3NPMUhSMVRZTzI0MWp5TFhGbWNjek01N0ZjbFF5UFJObmF6V3RSaW11UlFfakdPNXdTUHpPeEp1MHdfcnpReTJLSTFaMjZ6NktqbmVvWlk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Every word of Arteta's pre-Leeds press conference",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T12:16:19+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOV9JcnFBMkdhalBwS2dJejFUdWV2dmljQXFFT1RWOFpYTVpQWnZyZmRCNXVia1FtUGhsamUxbmVVZ0c4Ql9VclNRdmNfZ3pmbWVMUUVQdmp1MGFpZmdxZ1NraWMwSVFnalFTN0xtMnBuN1JXSng1OElUUGxTLUpRWkJLZGhvYk5Lc1dQQzRlN1ZJVHkw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "How to watch Nottingham Forest v Arsenal live on TV",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T09:03:30+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWEp2T0NSZDhfQkRwTk5tSWRoZDkzdmtScG8wc2VXZnJxT05WSjh4eUlIbEJOdUpheVp0OS1DdVFSNlpYNHo2cUtiM0x2amxCRDlzOUMyalNvMFlDTHhxZEJtdWplYzdDOXBHOVZ2SHVfYjRsX3BaNl9ERGxpRXVaMjFia3J6TlJRLTZxcHhjcEhfQUZiQjM0MA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOWlZbUJQcjhRc2lUTjBlYUltRjNZNE5FRC1iY2poclYtNGxPZHZXQVRvSjdueDR4RjFrUEdpRk1FcGVBbUR5NVBadGFnZXdzTXhlNGt1SkJucExERVVqdkYzckdJOS1SZzMtcmdBLUFfS1htNURhbzlmb19BNUgtWlc2S0FvQUFYSHNsb25mSGxsUnJQM2dtRw?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "REVIEW: Electrifying Jane Eyre adaptation captivates theatre audiences in Kingston",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:44:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdGxQdlFPWkFDa2J5VDJiRkFTTE1qOWhSTXNNWlJxWTVDTi15SFB6cGlyZmJWeTFSQlJ0SDc0bzhRcHJYNXdvNnJFQk9MbUJKSS1rSHFBd0Z1M3pLWjZ2REhSUmt5eTcwM05HODFieUpNMmZFQmpCTjRId1FCSGxBdUl4YTRZRUcteVl3RG9xZTJyaFdTazRIRFhXWnhNSW5oTElDOFhBaV9SVjQ3V01NMkFsVW8tRlRCSFl1WTg4a2N5c3Y2U3RoS2IwckV0YW8?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Plans submitted to turn Surbiton one-bed flat into five-person three-bed home",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:47:49+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOTF0bG9BZHIxN0lQTE9TZFpNM0M1Si12Z08wVF94Yk9kZW1fN0QwRzlDbHpVXzdTRVlHQzF0dUtKaTY5OFlnUzNMWWtuLTRfMmIzdjVLZklxMHduMDJTb0kxc24tdm5HM1duQS1sTjRtRll2QVI3Zlk3dS15X0plbldhQnZab05yeEpQb2pVRnZncm5BaTMzbFEyT2VyMkk?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Teddington’s new butchers available for Christmas bird orders",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T15:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3dTV0YxdzJBWEdSS3lqajhscHg1Y1RZWUhadUVFVHJhNlBPTFhSOG9Ca3J5LWVUT200U2lQQ0FWcmw4eTNacjFoNlpZUzFNN1Mwd0dtb1NwcWRwT0FiOF9jS3h4c2VGWDRjbkZIeHRqbFJUYlJoczI2bzdIYnZiaE1XZF82OXZzTm1UYkE5T01MYV9QN24zQTlSc1ZYVzg1OXhBTEhadlZFRWZhSjF1LQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
       {
         "title": "Plans for 206 homes on former Esher golf course rejected",
         "summary": "",
@@ -1085,42 +1121,6 @@
         "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTEU1UHJRMk13end5dVZUWkFNOWJZM205bnFxTUZ1elY3YWZxcGRnajJ0VmdBSnhoRFRUdkJGamZ2T1A4NGxpVjF4ZzRJbV9RZFBCR1RNVlV1NTFTU1FVU1FHUk9TTUhwb0N1ZzJqR3M1TUxGTkMweHpqVFR0WVV4ZU54YmZaY2JaWkYzN0lfM2J1VXdHTW45bkVZNG04VG05N3BPdlhGeFpjRWNoVk1PMndILVZHQXZ1elJDT0pXZFkyLTZWWUdOT043WUUzYTF0WWlhSWZVb2M5YnZP?oc=5",
         "contentType": "article",
         "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Kingston’s Rose Theatre announces new stage adaptation and tour of Judith Kerr family classic",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T15:26:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObjZwOUtlMWsxNkpQMThES3o3UGgycEpxQ3hzNExqTk9NemFsZDdDeXpLbWVWRGJBYUtEVXNQemQ3eWhpWWZSYk5sMTI1dHRBbU4zN1FIbUtBbHdGTmJ6MjdBNnBPa19ycHd4SmF5TWpxenZnb2stTkhnaUNMWEx3VU9zdV9UZWVZdkEtXzQwM091ZDNuYzUxNExGdDZyUGtDLVNnS2ZYNzBkZFpsMFlpN2RDLWM3al8wRnlBZEhraklObUk0ekJGc0N1cmJGazdwQkc2and0bXY?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Roof destroyed as 40 firefighters tackle house blaze in Surbiton",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T11:13:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSEJLR2dQb2NaNVBHYW1rdFRqcVhlSWc3OEZQekdUd1c3eS1MS1gwNlN2OW9jODJQVFNUTWxaSE9LMFNPLWs3RUJxUTRzWElxSGtVdDFZdm03a1F2dWl6cU5lY0ZCa3FzejROV3g0R0tzSmxTci1SbzEwN2R0Xy03Q0lCVzhCbWNIc0NmVy1JanN4WllmTWk5M3hFUTRMcnBGd1pXd0pPdTBXYkZqcmFvVjNWOA?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
-        "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T17:00:00+01:00",
-        "source": "Twickenham Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQY1BnbFJnRXhEOTBwYjNhUFp2Tks5RjJaNkFOQ3RRX0xKUkNWcWVfWnZxcFFETUp0NXp1SFcyMWFTSTdHUkhPSGNpZ0dpNTdxdlVFMHpTQ1lRMUpKcDluN200dV81X3RtNThjR1ZJcW1UMVJ6cHVXVmxEZ21YVHF1LW9CM3NsbFk2Smlqd3dQYnVBbnJ1Wk45bTdJZmQ4YWVfeXZtNDJRaTNEWFVpYkRSRXFDUWs3UE03dUViSVZGS1NqRi1WdUxpeVJyalVxd05kNThqWkh3MTQ4eWpqbG9TVXhQYnZ6VGxLWjJn?oc=5",
-        "contentType": "article",
-        "localPublication": false,
         "familyActivity": true,
         "homeArea": false
       },
@@ -1199,21 +1199,84 @@
     ],
     "UK news": [
       {
+        "title": "Actor and author Ciaran McMenamin’s Skintown screenplay nominated for British Independent Film Award",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:34:28+01:00",
+        "source": "The Irish News",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOT0FPMUNGVEZFMkkzUlNscUtWd0JITnVvVXVkTkV2YkxNanhZc2dMZHEyQ2pqbm5ETlk5UmNvVlZtTDRwMXktcVU4RmNRWm9faF9lZGNBN002NDBIMUNKYW9ZeDZfRm0zaGRUQnlfcHp4T3lQSS15MWtpcFZfT0gxdm5PczBQV19LLVJFSUtCYzZTSTZIRTlic3ktVHNDM0dwREE3ZnNTSW1RRTN6Y3A4YXo5LVdCcVUtUF9vWlJQallTaXF3TE1CcHYwMEc2enFCcjRNM2szVWhvU0tPRFlNYXRMY2hmeFBXbHJCVk5HSTdqZnAzenBaeG80TXRESFJuOHYyMG9B?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "We’re Shortlisted for 16 Great British Care Awards",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:55:08+01:00",
+        "source": "Community Integrated Care",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeGZyMi1xWGVfcTNtVWNTNFR3MmlTY08wQ0E1ZHh2SHRaYkdvQWJzVm93R1VjS0JzcTRDY0pJS1hMZG45SlAwRWppT29pRmFBZU9UV2gzNWZSUnlSUW9MU0hmdXo0OFNZWVdvQzhMSkc3N0pRRVdTZ3NWcUVkV3pYZTVfcXNPbjJmQ1dBMnBRVWp5SWdkdVI5bngzSEpoWUdsMk1VM1hrOWN0QmVaeTNVSnQ5dXBleUhFVXh1X21GMm9nQQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Welsh Charity Awards finalists reflect on issues facing communities across Wales",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:00:00+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdlMwcENlVHN1R0Qwb3F0YkNRWXpGbFJFaWtKVEtOTjZERk5laHhYek9oLWlsTGd1R1NFenViR3AyZmlfd0o4bVg4R2JRaFppSGNHZnlWLWctTUxfbWE4cHZJUndYVDVYZ2liUVk3LTQ1YjM3cTBjQmFxSDVwejBHLU9KNDVCc2J2dFpCdW1seXd0cXpueExUTWRyUENGaW5CVHdoOFBJRDk5WWhBbDFfelFxeHJGRkRKSGhMMkVVWFVCRmc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Lone sailor rescued moments before yacht sinks in Bristol Channel",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:00:00+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQjdXdVN3Q1VOTWg0bkludTNickZLZk4yQlYtV3NXdnpGdGVzOVEwQ1FoTlFYdTJkTXBfUTZCUjBGZXZMT2kweWxHRC0yOW52Ni14YkhVcVE2TFd6MGZEcGRkNzdJRDhnZ2xoUDIzV0xsNUhxV0FGSVIzTXJPNV84b1M0VXdqai1GYU9yNklCVDk5YXhL?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Action for Children’s Skills Plus+ services win Best Wellbeing Service award",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:00:00+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNG5pVml4RE9RTEtZSVgtU2NWNXBud1lQLWJaSExOZkZxNEs1T2ZYQklPUHhZZ2ZjS0hYZ3dLQ3VWNDBxdUdSZFV2cFVGdFpRbFEwN29WM3I1SnQ4TXhOcWF5c2xEa0NXcnJId3d6Y2ludjAwYnBDQ2c5VlhxU0VoLUl6YlNrSDdkNXNaQ3BydHBqWUU5d255MzFXVXViVHpZNXhCWEpvN0wyXzluU1FnZnVCdzlTVDVWVVE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Breakthrough in battle to save GP surgery with 4,000 patients",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T15:33:00+01:00",
+        "source": "Wales Online",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSU40SVE2WXJhQUUtWFBsajBqMzNUdUhhRUo4V0dfcW5TR3g0TWtQWkJ4LVgxbFJ5dkpJa1NLWEpXbHBVdy1uZUVVQ1hXNWRqdmlrZkRpYlRqQzdhUGM1NUI2UWF5LUswREpVS004b0xFX05KcHItOFNWZXJmYWtQNGNDUVQtVXdNWVFOQTFnVkRHYWVh0gGaAUFVX3lxTE1RMHFrRDFzMDZuaUpZRGZPbEhDZmx4MXlvN2hmbC0wczkwV1Z1YU5WS2xIMW9uMl9jX3NDSHE4UjZ0dk9UQlg4VmdCMWdONGo5eHJxNjQ5V1d5RTE1cUVocmc2bUthcS1sSHI2MkJDV2pkZ2dqeFg4elBlNDdEVUh6LW5iOUZzVGVYeVpqZEd3dVBkUEU5eklZa0E?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "The Scottish Album of the Year Award announces 10 albums on Shortlist",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T14:54:40+01:00",
+        "source": "Creative Scotland",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUDJwejctelVqSXo3SW0tRDhveTAxWXFmRjBGZ2xrZjNVejVhR3h0a0p1MkVLT0t6U2laSE9BMlhxRkFOV0ltWldQQURwcTQyVm96bXVqaWlYX3luWFhzN0N5THQyU0l1NUVQYkRxR0VWcHNIb2g5SGM3bE1iQ1pSclc4OWJpTWpFU2hrU3lva05BWGZrN0F4R2ExNkNpeFp2UkRPSnlhaTU1ZnRQeUdWeS1IRlJoNXVCb2kwQndXTUYzZUVaeVl3M0ZJUzJ5ZzQ3U1RWeHJDYXI4YTA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Shortlist revealed for Scottish Album of the Year Award 2026",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T14:51:25+01:00",
+        "source": "The National Scot",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdU13OU1CeDl0TS0xSFdiQUNfUndLVHEzeUF1OFVUT3NTYjI1YzgxR2VJQ2hqRmdfVkZkWkhwTV8wVWhNRTVIcktjcjVXTktQckRFZU54eEI1OWJJaXNraEJTYXBVbjB4Ql96eG56MWxiSTR4NXAzWTNZeFlOdHNHNThLS2piNEdxaUtXZE1pRWZERVFmclYwTg?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Team England's Thomas Young surprised with Sporting Icon Award",
         "summary": "",
         "meta": "Thu 15 Oct",
         "publishedAt": "2026-10-15T13:34:48+01:00",
         "source": "Commonwealth Games England",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWnJaVmVLaFNUamYxYzRPeGg2SW9uckVTVl85OG5IeWxMeHd3YmQxSlgxeEVvLUZ3YnBvY0RCeTAxcDhGU2VSenVQVVU5MXB2WkJwZ0xYMkZQb2lFTDBONHh2REZEOHhTZ3l1S2tWQmFWX0xTeTdHZFM5NVpDS3ZPaEI3VWtJS1BSejl1enZyYWl5SEJM?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "NCEA Duke's Secondary School celebrates British Council International School Award reaccreditation",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T13:21:00+01:00",
-        "source": "Northumberland Gazette",
-        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQenlaUjZGQ0FlNVY0NEY4ZVdqTjNDNFJIV05QU1JsQUJWNmlmR292aHZNUjJYR3B0R19DSThqVGk1RlU5Z1hmMF93OXlQYUtuM2tvMnVnem9BNnNtTUJSQVdYOVJXV1lHbjkwa2NNcWhlQU9fQTJUWHpIODdvbFhIZC0yMnJDTWkzcHcxQm02bVlnMTZMa2ZadUZxV285UHIzTVdYLVF6V0lGdmU3dFhZNTk0bkU1Yl9uUThkdmV0ZjBMb1g2ZGhxZDQxaTRYcTl5NHlENkdHb1doRXJSazY1NTVEa2M2R3hBR3I3Xw?oc=5",
         "contentType": "article"
       },
       {
@@ -1235,75 +1298,12 @@
         "contentType": "article"
       },
       {
-        "title": "Banknotes donated to Edinburgh charity shop fetch £85,000 at auction",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T09:24:02+01:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSGd6eF9ZTHJodi1IcEd4YmVRYXAzcUJkd1JzX0xRSkNtN0x0UTJFX0hmRUd1VTFySDJkcXkyMHBYeGY0M09xY3dOdm9Za19VelZIQlhfS2JmT0M3REtQMkVlZ2gzSnZRODRCSGtBblktRUQ3OWVVYjNrY0hVT2hUTzl1OWpjazgxMG1zN3F3MGpHM2dTdE5ucmRyLU1uVDV0ajJGb2IyNl9LM1E?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Person rescued after becoming stuck underneath bridge in Gwynedd",
         "summary": "",
         "meta": "Thu 15 Oct",
         "publishedAt": "2026-10-15T09:22:43+01:00",
         "source": "North Wales Chronicle",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbDctNndBWGxURTNETW0ybEh4OWVwam5uWnVhQk5TZVpaTlpISHFKbzg2Z0pHSkd3MzgxckdkSGlwUWRiUUxFZ05qWXFYcGZndlpKYnJ3SkdSclJUeTMtdTlEcUJOZVdKTlRHZ2pRQXZCUEFtUW9xUkFMMlNtVTZ5cTNNdW1NaGg0dmU0MnNhNDVrdw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Bradford Council to launch review to improve disadvantaged boys' prospects",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T07:59:33+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiM01YQ0tfX2VDbndoWmR1Z1BtQ0F3b2ppUkZKOGVzaFFCajFFRXJLQVhDTU84SVp3TWx6dmxYTUZ0ZmZ5N0g5aGtjR195ck5iYV85YkhuODNXWlU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Dog that hunts invasive 'sea vomit' honoured as animal of the year",
-        "summary": "Sgiath is thought to be the UK's first sea squirt-hunting dog and has been trained to sniff out the marine pest.",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T00:35:40+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cvwy761zyx7eo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "The future of photography is bright – these award-winning talents demonstrate why, with images of a shrinking glacier in Iceland and a first-of-its-kind school in Scotland",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T19:00:00+01:00",
-        "source": "Digital Camera World",
-        "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPMkpHT0hYU1pCSndMZTJVYjlGVkJQOVlCekVEempyaVJGdGY0R3huRWZhVlVaSVRabnBqZVV2cHp1Wm9mRjhPQkpETi1UQVdhLUNPSTlRSnd1VlJRREllc09uYURYa3hDNVRndkdjRm9CVkpPb2xiOE5TOEZPclZOWkRJZmJDZUFBNVdyeFhMYVZzNDhjLVJ2SXA2NHRvdVpoVk9pTmJwcWkybVEzYVN1VU1valFfdDIxdUx4Q0dHZ2xqYWRTTjJpLTRGMDludFhBOGRodm5hUUI3c1B2eEVLWFVKekxVLWJWLVVROFZ5d1kxZTJZaFJ5QjFBNk9Odi1wc0lycGVGbURFRmxGd2JyWUg0YWZKbjh6U0I5NHltMEk0WGdKeXhORVpjZjRua3lPdkJVRjdYckplcjNwMmJyQzBtLVdpc2FkUEx4a1c3emYyN3RjMUFnWVdIUFktSWRk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Original AVA minute book restored and returned to Volleyball England",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T17:06:14+01:00",
-        "source": "Volleyball England",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcVNaQ2tTRmVrV1Vxd0Z3VWgyWDVqSXhKajhyZ0lpM3hqTkIzcm5samtlanhaNnFXYWZadGVFUk5kWWJuQTVwOVhlMnNQRnk1d2NEbW4yUlpGOHYwVDRlR2J5akV5RjRWMkpIaERudGo2QndFLVVPZHZiWks1dThKek4teDF1TkZuSWdaV29xU29BSWdUUjhLWTFKTm5zM0c4V19jNzVKRFlzRDhMMlhmSUZFZG8zZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Award-winning Indian cuisine Comes to Hamilton as Avonbridge reopens",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T16:16:53+01:00",
-        "source": "Border Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRTF3OVBueU5Vbmg2TE5GODBSMVZsT19HajlVZU5UMWYxNlEtRGtEeU0tcmlwMEpoTW5XQzI5ZTJndUlBaEdITm1hVzhfN1VFc1EwSHZVQm9reUdlZ2ZCQlV4Nnd3SEowbVc0d2FpRW02ZDJyNk13SktHaUV1eUZqdDRTaFhpbkw2VWpqVVdZbG94R2J5SUZqVXNGOGFWTWQ2QUsyclVHa1p1d3AwLUZZcGs2LU5Iei1OcnFHWUdhZUE2RFZ0QlRUcDhRZU1aZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "London's oldest restaurant Rules donated to Europe's biggest conservation charity",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T14:40:00+01:00",
-        "source": "The Independent",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWhKblQzVmJwOVFyX0lOeUt1d05iNWFaeXpWQU51T2N3X1VrNDM3WlJaTjRYWDQzcTEzcVBzQ2FQTkZUaW9Ib2dHX1pfbzhZSHYwS3F5eWZadzd4UE1vUk9iVENqcUE1LXRteFdSNkdMWXoxR1RsbnFHcDJYRWhxTU1Yd21UbEN3a0I1ZzhTRTBVZk14cEEtVTdweWcxTXFLUUJ3RQ?oc=5",
         "contentType": "article"
       }
     ],
@@ -1699,7 +1699,7 @@
       "releaseDateLabel": "New today",
       "url": "https://www.netflix.com/title/81288983",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/590/1475860.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615648.jpg",
       "artworkAlt": "The Diplomat programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-15",
