@@ -1,8 +1,10 @@
-## 15 October 2026: Verified Arsenal 3–0 Lille result unblocks the morning refresh
+## 15 October 2026: Verified Arsenal 3–0 Lille result unblocks the morning refresh; Arsenal stream-spam filter
 
 - **Cause**: Every scheduled Morning refresh on 15 October failed in `scripts/finalize_arsenal.py` because the latest completed match (Arsenal 3–0 Lille, Champions League, Tue 13 Oct) had no verified scorers, summary or stadium, so the protected-result rule correctly refused publication and both briefs stayed on the 14 October edition.
 - **Fix**: Added `verified_lille_result()` from the Sky Sports match report (Timber 64', Eze 67', Saka 71'; Emirates Stadium; 8pm kick-off) and made it the fallback from 22:00 on 13 October. No other section, rule or data source changed.
-- **Validation**: 123/123 Python unit tests pass; `finalize_arsenal.py` now completes on the published data with the full Lille result.
+- **Arsenal news spam filter**: Added `spam_stream_item()` to `scripts/finalize_arsenal.py`, removing pirate live-stream spam (e.g. `!$>[LIVE!#NOW]* … live Stream!`) from Arsenal news, Arsenal match-centre news and the Home Arsenal interest card. Genuine broadcast guides (Arsenal.com, Goal.com) remain eligible.
+- **Checked, unchanged**: The published JSON still carries a `UK news` section and a `bestOutdoor` weather field, but neither is rendered (News shows only Sweden/Local News; the Met Office weather renderer ignores `bestOutdoor`), so no visible requirement is breached and the pipeline was left untouched.
+- **Validation**: 124/124 Python unit tests pass, including a new stream-spam test; `finalize_arsenal.py` completes on the published data with the full Lille result and no spam item.
 
 ## 11 October 2026: Arsenal scorers verification, enhanced card font sizes & West Molesey home news
 

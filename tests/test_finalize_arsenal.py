@@ -53,6 +53,27 @@ class FirstTeamResultTests(unittest.TestCase):
                 )
 
 
+    def test_pirate_stream_spam_is_rejected_but_broadcast_guides_remain(self) -> None:
+        spam = news_item(
+            "!$>[LIVE!#NOW]* Lille OSC vs Arsenal FC live Stream! 14 October 2026",
+            "2026-10-13T18:00:00+01:00",
+        )
+        free = news_item("Arsenal vs Lille live stream free HD", "2026-10-13T18:00:00+01:00")
+        self.assertTrue(finalize_arsenal.spam_stream_item(spam))
+        self.assertTrue(finalize_arsenal.spam_stream_item(free))
+        for title in (
+            "How to watch Arsenal v Lille live on TV",
+            "Arsenal, all the broadcast information at a glance: Who shows the "
+            "Gunners’ matches live on TV and via live stream?",
+            "Report: Arsenal 3-0 Lille",
+        ):
+            with self.subTest(title=title):
+                self.assertFalse(
+                    finalize_arsenal.spam_stream_item(
+                        news_item(title, "2026-10-13T18:00:00+01:00")
+                    )
+                )
+
     def test_wsl_marker_in_summary_is_rejected(self) -> None:
         item = news_item(
             "Highlights: Chelsea 1-0 Arsenal",

@@ -66,6 +66,20 @@ def betting_item(item: dict) -> bool:
     return any(term in text for term in BETTING_TERMS)
 
 
+
+STREAM_PHRASE = re.compile(r"\blive[\s-]*streams?\b|\bstreams?\s+(?:free|online|now)\b", re.I)
+SPAM_PUNCTUATION = re.compile(r"[!$#*\[\]<>{}|]{2,}")
+SPAM_STREAM_WORDS = re.compile(r"\b(?:free|reddit|crackstreams|hd\s*free|watch\s+now)\b", re.I)
+
+
+def spam_stream_item(item: dict) -> bool:
+    """Reject pirate live-stream spam; genuine broadcast guides remain eligible."""
+    title = str(item.get("title", ""))
+    text = " ".join(str(item.get(key, "")) for key in ("title", "summary"))
+    if not STREAM_PHRASE.search(text):
+        return False
+    return bool(SPAM_PUNCTUATION.search(title) or SPAM_STREAM_WORDS.search(text))
+
 def non_mens_item(item: dict) -> bool:
     text = " ".join(
         str(item.get(key, "")) for key in ("title", "summary", "source")
@@ -791,7 +805,7 @@ def main() -> None:
     sections = payload.setdefault("sections", {})
     arsenal_news = [
         x for x in sections.get("Arsenal news", [])
-        if not betting_item(x) and not non_mens_item(x)
+        if not betting_item(x) and not non_mens_item(x) and not spam_stream_item(x)
     ]
     sections["Arsenal news"] = arsenal_news
 
@@ -800,7 +814,7 @@ def main() -> None:
     for item in payload.get("interests", []):
         if (
             str(item.get("section", "")).lower() == "arsenal"
-            and (betting_item(item) or non_mens_item(item))
+            and (betting_item(item) or non_mens_item(item) or spam_stream_item(item))
         ):
             if arsenal_news and not replaced_arsenal_interest:
                 replacement = dict(arsenal_news[0])
