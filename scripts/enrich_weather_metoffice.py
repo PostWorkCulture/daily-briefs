@@ -64,12 +64,46 @@ def parse_current(text: str) -> tuple[int | None, str | None, int | None]:
     return None, None, None
 
 
+def symbol_condition(container) -> str | None:
+    """Read the forecast condition from the day card's weather-symbol alt text."""
+    if not container:
+        return None
+    for img in container.find_all("img", alt=True):
+        condition = condition_from(img["alt"])
+        if condition:
+            return condition
+    return None
+
+
+def hourly_peak_rain(soup: BeautifulSoup) -> dict[str, int]:
+    """Peak hourly chance of precipitation per date from the Met Office hourly tables."""
+    peaks: dict[str, int] = {}
+    for section in soup.find_all(attrs={"data-date": True}):
+        date_key = str(section.get("data-date", ""))[:10]
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", date_key):
+            continue
+        for row in section.select("tr.precipitation-chance-row"):
+            values = []
+            for cell in row.find_all(["td", "th"]):
+                text = clean(cell.get_text(" ", strip=True))
+                if text.startswith("<"):
+                    values.append(4)
+                    continue
+                m = re.fullmatch(r"[≥>]?\s*(\d+)%", text)
+                if m:
+                    values.append(int(m.group(1)))
+            if values:
+                peaks[date_key] = max(peaks.get(date_key, 0), max(values))
+    return peaks
+
+
 def daily_blocks(soup: BeautifulSoup) -> list[dict]:
+    hourly_rain = hourly_peak_rain(soup)
     # Forecast-day cards have headings such as “Today” or “Mon 17 Aug”.
     headings = []
     for h in soup.find_all(["h2", "h3", "h4"]):
         label = clean(h.get_text(" ", strip=True))
-        if label == "Today" or re.match(r"^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)(day)?(?:\s+\d{1,2}\s+[A-Za-z]+)?$", label, re.I):
+        if label == "Today" or re.match(r"^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)(day)?(?:\s+\d{1,2}(?:\s+[A-Za-z]+)?)?$", label, re.I):
             headings.append(h)
 
     out = []
@@ -91,7 +125,16 @@ def daily_blocks(soup: BeautifulSoup) -> list[dict]:
             continue
 
         label = clean(h.get_text(" ", strip=True))
-        if label.lower() == "today":
+        time_tag = container.find("time", attrs={"datetime": True}) if container else None
+        time_date = None
+        if time_tag:
+            try:
+                time_date = datetime.strptime(time_tag["datetime"][:10], "%Y-%m-%d").date()
+            except ValueError:
+                time_date = None
+        if time_date:
+            day = time_date
+        elif label.lower() == "today":
             day = NOW.date()
         else:
             dm = re.search(r"(\d{1,2})\s+([A-Za-z]+)", label)
@@ -110,15 +153,16 @@ def daily_blocks(soup: BeautifulSoup) -> list[dict]:
             continue
         seen_dates.add(day.isoformat())
 
-        condition = condition_from(block) or "Forecast"
+        condition = symbol_condition(container) or condition_from(block) or "Forecast"
         rain_match = re.search(r"Rain\s+(<5%|\d+%)", block, re.I)
+        rain_chance = pct(rain_match.group(1)) if rain_match else hourly_rain.get(day.isoformat())
         out.append({
             "date": day.isoformat(),
             "high": int(temps.group(1)),
             "low": int(temps.group(2)),
             "summary": condition,
             "condition": condition,
-            "rainChance": pct(rain_match.group(1)) if rain_match else None,
+            "rainChance": rain_chance,
             "source": "Met Office",
         })
         if len(out) >= 7:

@@ -1,3 +1,9 @@
+## 15 October 2026: Restore the seven-day Met Office forecast
+
+- **Cause**: The Met Office forecast page changed its day tabs to short labels (`Fri 16`, no month), moved each day's condition into the weather-symbol alt text, and moved rain chance into the hourly tables. `scripts/enrich_weather_metoffice.py` only accepted `Today`, so the Weather strip showed one day labelled `Forecast` with no rain chance.
+- **Fix**: The parser now accepts short day labels, takes each date from the card's `<time datetime>`, reads the condition from the symbol alt text, and uses the peak hourly chance of precipitation for each day. Still Met Office only for KT8 2LE; icons still follow the written condition, never rain probability alone. No layout or renderer change.
+- **Validation**: New `tests/test_metoffice_daily.py` mirrors the live page structure (seven days, conditions, temperatures, peak rain); 126/126 Python tests pass.
+
 ## 15 October 2026: Verified Arsenal 3–0 Lille result unblocks the morning refresh; Arsenal stream-spam filter
 
 - **Cause**: Every scheduled Morning refresh on 15 October failed in `scripts/finalize_arsenal.py` because the latest completed match (Arsenal 3–0 Lille, Champions League, Tue 13 Oct) had no verified scorers, summary or stadium, so the protected-result rule correctly refused publication and both briefs stayed on the 14 October edition.
