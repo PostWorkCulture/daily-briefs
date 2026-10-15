@@ -1,3 +1,11 @@
+## 15 October 2026: Anthropic/Claude leads AI; Google limited to major announcements
+
+- **Approved specification change (Pete)**: Anthropic is now the favoured AI company. Master brief updated to v5.9, superseding the Google-first AI rule.
+- **Sources**: Added live Anthropic coverage (`site:anthropic.com` and Anthropic/Claude Google News queries) so Claude stories no longer depend on the hardcoded fallback. Candidates are merged before selection instead of being cut at seven first.
+- **Selection** (`scripts/refresh.py`, `anthropic_first()` replaces `google_first()`): Anthropic/Claude first (newest first, up to five); Google/DeepMind/Gemini only for major announcements (new model names such as `Gemini 4 …`, or launch/release/unveil/introduce/announce wording; tips, guides, safety, partnership and other minor posts rejected), at most two; then OpenAI and others; Chinese labs remain last.
+- **Display** (`js/tabs-dida.js`, `aiOrder()`): Same tiering in the browser: Anthropic → Google → others → Chinese labs, newest first within each tier. Layout, logos and styling unchanged.
+- **Validation**: Replaced the Google-first test with an Anthropic-first/major-Google test; 126/126 Python tests and Node tests pass.
+
 ## 15 October 2026: Restore the seven-day Met Office forecast
 
 - **Cause**: The Met Office forecast page changed its day tabs to short labels (`Fri 16`, no month), moved each day's condition into the weather-symbol alt text, and moved rain chance into the hourly tables. `scripts/enrich_weather_metoffice.py` only accepted `Today`, so the Weather strip showed one day labelled `Forecast` with no rain chance.

@@ -185,9 +185,11 @@
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="${listClass}">${content}</div></section>`;
   }
   function aiOrder(items){
-    const isGoogle=x=>/\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);
-    const isChinese=x=>/\b(?:deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|minimax|01\.ai)\b/i.test(`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`);
-    const tier=x=>isGoogle(x)?0:(isChinese(x)?2:1);
+    const text=x=>`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`;
+    const isAnthropic=x=>/\b(?:anthropic|claude)\b|(?:^|[/.])anthropic\.com/i.test(text(x));
+    const isGoogle=x=>!isAnthropic(x)&&/\b(?:google|deepmind|gemini|gemma)\b|(?:^|[/.])(?:google|deepmind)\.[a-z.]+/i.test(text(x));
+    const isChinese=x=>/\b(?:deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|minimax|01\.ai)\b/i.test(text(x));
+    const tier=x=>isAnthropic(x)?0:(isGoogle(x)?1:(isChinese(x)?3:2));
     return [...(items||[])].sort((a,b)=>{
       const diff=tier(a)-tier(b);
       if(diff!==0)return diff;

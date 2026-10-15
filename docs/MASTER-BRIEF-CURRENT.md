@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 5.8, 28 September 2026. Owner: Pete.
+Version 5.9, 15 October 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -145,7 +145,7 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Sofia keeps Sweden above Local News.
 - Display expanded high-quality, well-framed article images in eligible sections (and up to five in Arsenal news), with no more than one image per article, but only when the exact matching publisher page supplies that image. Keep the article text-only when exact publisher provenance cannot be verified.
 - Add an article media block in the browser only after its exact publisher image has loaded, decoded, and met the 1,200 × 675 minimum. A failed or slow image must leave the story text-only instead of reserving an empty dark media slab.
-- AI displays the top 10 AI stories, single line each (`.tab-story.story-row`), with all top formatting removed. AI uses exact company marks or the existing code-native fallback. Google, Google DeepMind, and Gemini updates are always placed at the top (tier 0); Western frontier labs (Anthropic/OpenAI) in the middle; and Chinese frontier labs (DeepSeek, Qwen, Moonshot) are placed strictly at the bottom (tier 2). Fun uses decorative activity icons; no unrelated article imagery.
+- AI displays the top 10 AI stories, single line each (`.tab-story.story-row`), with all top formatting removed. AI uses exact company marks or the existing code-native fallback. 15 October 2026: Pete makes Anthropic/Claude the favoured AI company. Anthropic and Claude stories are always placed at the top (tier 0, newest first, up to five), sourced from anthropic.com and Anthropic/Claude news coverage. Google, Google DeepMind, and Gemini items appear only for major announcements (new models or genuine launches/releases, at most two; tips, guides, safety write-ups, partnerships and other minor posts are excluded) and sit next (tier 1); other Western frontier labs such as OpenAI follow (tier 2); Chinese frontier labs (DeepSeek, Qwen, Moonshot) stay strictly at the bottom (tier 3). This supersedes the earlier Google-first rule. Fun uses decorative activity icons; no unrelated article imagery.
 <!-- Historical Career requirement, superseded 24 September 2026: - Career cards use the same cyan edge-glow as Calendar summary boxes on hover and keyboard focus, without movement. -->
 <!-- Historical Career requirement, superseded 24 September 2026: - Career uses neutral light grey `#D4D8D5` for its field labels and navigation hover or keyboard focus. Do not use yellow in the Career treatment. -->
 - Never use stock, topic-level, personality, search-library, Wikimedia, tab-level, generic, inferred, or guessed article-image fallbacks. This exact-relevance rule supersedes the earlier five-image minimum.

@@ -4,7 +4,7 @@ import unittest
 
 from scripts.refresh import (
     editorial_news,
-    google_first,
+    anthropic_first,
     local_news_item_is_in_scope,
     news_item_is_job_vacancy,
     section_content_type_errors,
@@ -132,19 +132,32 @@ class SectionContentTypeTests(unittest.TestCase):
 
         self.assertEqual(section_content_type_errors(sections), [])
 
-    def test_google_updates_are_always_top_in_ai(self) -> None:
+    def test_anthropic_always_leads_ai_and_google_keeps_only_major_announcements(self) -> None:
         items = [
-            {"title": "OpenAI announces model", "source": "OpenAI", "url": "https://openai.com/1"},
-            {"title": "Anthropic releases Claude update", "source": "Anthropic", "url": "https://anthropic.com/1"},
-            {"title": "Gemini 4 Argon frontier model", "source": "Google DeepMind", "url": "https://deepmind.google/1"},
-            {"title": "Google announces new AI features", "source": "Google", "url": "https://blog.google/1"},
-            {"title": "ChatGPT enterprise expansion", "source": "Reuters", "url": "https://reuters.com/1"},
+            {"title": "OpenAI announces model", "source": "OpenAI", "url": "https://openai.com/1", "publishedAt": "2026-10-14T10:00:00+01:00"},
+            {"title": "Gemini 4 Argon: Built to solve your hardest problems", "source": "Google DeepMind", "url": "https://deepmind.google/1", "publishedAt": "2026-10-13T10:00:00+01:00"},
+            {"title": "Developing Gemini 4 Argon responsibly and safely", "source": "Google DeepMind", "url": "https://deepmind.google/2", "publishedAt": "2026-10-13T11:00:00+01:00"},
+            {"title": "Google DeepMind and Singapore Government collaborate on scam model", "source": "Google DeepMind", "url": "https://deepmind.google/3", "publishedAt": "2026-10-14T09:00:00+01:00"},
+            {"title": "5 tips for using Gemini in Gmail", "source": "Google", "url": "https://blog.google/1", "publishedAt": "2026-10-14T12:00:00+01:00"},
+            {"title": "Google launches new AI Mode in Search", "source": "Google", "url": "https://blog.google/2", "publishedAt": "2026-10-12T12:00:00+01:00"},
+            {"title": "Gemini 4 Argon for Robotics", "source": "Google DeepMind", "url": "https://deepmind.google/4", "publishedAt": "2026-10-11T12:00:00+01:00"},
+            {"title": "Anthropic expands Claude Code to teams", "source": "Reuters", "url": "https://reuters.com/2", "publishedAt": "2026-10-10T10:00:00+01:00"},
+            {"title": "Claude Opus 5.5 release notes", "source": "Anthropic", "url": "https://www.anthropic.com/news/opus", "publishedAt": "2026-10-12T10:00:00+01:00"},
         ]
-        sorted_items = google_first(items)
-        self.assertEqual(sorted_items[0]["source"], "Google DeepMind")
-        self.assertEqual(sorted_items[1]["source"], "Google")
-        self.assertEqual(sorted_items[2]["source"], "OpenAI")
-        self.assertEqual(sorted_items[3]["source"], "Anthropic")
+        ordered = anthropic_first(items)
+        titles = [item["title"] for item in ordered]
+        self.assertEqual(titles[:2], ["Claude Opus 5.5 release notes", "Anthropic expands Claude Code to teams"])
+        self.assertEqual(titles[2:4], [
+            "Gemini 4 Argon: Built to solve your hardest problems",
+            "Google launches new AI Mode in Search",
+        ])
+        self.assertEqual(titles[4:], ["OpenAI announces model"])
+        for minor in (
+            "Developing Gemini 4 Argon responsibly and safely",
+            "Google DeepMind and Singapore Government collaborate on scam model",
+            "5 tips for using Gemini in Gmail",
+        ):
+            self.assertNotIn(minor, titles)
 
     def test_whats_on_and_whats_going_on_items_rejected_from_local_news(self) -> None:
         for title in (

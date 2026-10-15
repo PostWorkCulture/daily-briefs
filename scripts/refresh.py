@@ -580,13 +580,55 @@ def newest_news(items: list[dict], limit: int) -> list[dict]:
     )[:limit]
 
 
-def google_first(items: list[dict]) -> list[dict]:
-    """Ensure Google, Google DeepMind, and Gemini updates are placed top in AI."""
-    def is_google(x: dict) -> bool:
-        text = f"{x.get('title', '')} {x.get('source', '')} {x.get('summary', '')} {x.get('url', '')}"
-        return bool(re.search(r"\b(?:google|deepmind|gemini)\b|(?:^|\.)google\.[a-z.]+", text, re.I))
-    return sorted(items, key=lambda x: 0 if is_google(x) else 1)
+AI_ANTHROPIC = re.compile(r"\b(?:anthropic|claude)\b|(?:^|[/.])anthropic\.com", re.I)
+AI_GOOGLE = re.compile(r"\b(?:google|deepmind|gemini|gemma)\b|(?:^|[/.])(?:google|deepmind)\.[a-z.]+", re.I)
+GOOGLE_MAJOR_MODEL = re.compile(
+    r"^(?:introducing\s+)?(?:gemini|gemma|veo|imagen|lyria|genie|alpha[a-z]+)\s+\d[\w.]*", re.I
+)
+GOOGLE_MAJOR_ACTION = re.compile(
+    r"\b(?:launch(?:es|ed)?|unveil(?:s|ed)?|introduc(?:es|ing|ed)|announc(?:es|ed|ing)|"
+    r"releas(?:es|ed)|rolls? out|now available|general availability|new (?:frontier )?model)\b",
+    re.I,
+)
+GOOGLE_MINOR = re.compile(
+    r"\b(?:tips?|how to|ways to|guide|responsibl[ey]|safely|safety|podcast|recap|behind the|"
+    r"case study|collaborat\w*|partner\w*|customers?|students?|classroom|teachers?|"
+    r"hackathon|webinar|workshop|award|q&a|interview|explainer)\b",
+    re.I,
+)
+GOOGLE_AI_MAX = 2
+ANTHROPIC_AI_MAX = 5
 
+
+def ai_text(item: dict) -> str:
+    return f"{item.get('title', '')} {item.get('source', '')} {item.get('summary', '')} {item.get('url', '')}"
+
+
+def is_anthropic_ai(item: dict) -> bool:
+    return bool(AI_ANTHROPIC.search(ai_text(item)))
+
+
+def is_google_ai(item: dict) -> bool:
+    return not is_anthropic_ai(item) and bool(AI_GOOGLE.search(ai_text(item)))
+
+
+def google_major_announcement(item: dict) -> bool:
+    """Google/DeepMind/Gemini items qualify only as major launches or new models."""
+    title = clean_html(item.get("title", ""))
+    if GOOGLE_MINOR.search(title):
+        return False
+    return bool(GOOGLE_MAJOR_MODEL.search(title) or GOOGLE_MAJOR_ACTION.search(title))
+
+
+def anthropic_first(items: list[dict]) -> list[dict]:
+    """Anthropic/Claude stories always lead AI; Google keeps only major announcements."""
+    def newest(group: list[dict]) -> list[dict]:
+        return sorted(group, key=lambda x: str(x.get("publishedAt") or ""), reverse=True)
+
+    anthropic = newest([x for x in items if is_anthropic_ai(x)])[:ANTHROPIC_AI_MAX]
+    google = newest([x for x in items if is_google_ai(x) and google_major_announcement(x)])[:GOOGLE_AI_MAX]
+    others = newest([x for x in items if not is_anthropic_ai(x) and not is_google_ai(x)])
+    return anthropic + google + others
 
 
 def news_item_is_job_vacancy(item: dict) -> bool:
@@ -1802,13 +1844,15 @@ def build_profiles() -> dict[str, dict]:
     wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
     cache_world_fact_image(world_fact)
     frontier_ai = editorial_news(
-        google_first(
+        anthropic_first(
             merge_news(
+                google_news('site:anthropic.com when:21d', 12, 21),
+                google_news('(Anthropic OR "Claude AI" OR "Claude Opus" OR "Claude Sonnet" OR "Claude Haiku" OR "Claude Code") when:4d', 16, 4),
                 rss('https://deepmind.google/blog/rss.xml', 'Google DeepMind', 6, 7),
                 rss('https://blog.google/technology/ai/rss/', 'Google', 6, 7),
                 rss('https://openai.com/news/rss.xml', 'OpenAI', 6, 7),
-                google_news('("Google DeepMind" OR Gemini OR OpenAI OR Anthropic OR "AI model") when:3d', 12, 3),
-                limit=7,
+                google_news('("Google DeepMind" OR Gemini OR OpenAI OR "AI model") when:3d', 12, 3),
+                limit=60,
             )
         ),
         7,
@@ -1834,7 +1878,7 @@ def build_profiles() -> dict[str, dict]:
                 "contentType": "article",
             },
         ]
-        frontier_ai = (anthropic_fallback + frontier_ai)[:7]
+        frontier_ai = anthropic_first(anthropic_fallback + frontier_ai)[:7]
 
     chinese_ai = [
         {
