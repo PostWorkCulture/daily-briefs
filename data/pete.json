@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 15 October 2026 · refreshed 1:50pm",
+  "updatedLabel": "Thursday, 15 October 2026 · refreshed 2:04pm",
   "worldFact": {
     "id": "dallol-hydrothermal-sulfur-desert",
     "editorialPriority": "human-first",
@@ -19,23 +19,77 @@
   },
   "weather": {
     "temp": "21°",
-    "summary": "Overcast",
-    "condition": "Overcast",
-    "currentRainChance": 20,
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 40,
     "daily": [
       {
         "date": "2026-10-15",
         "high": 21,
         "low": 10,
-        "summary": "Forecast",
-        "condition": "Forecast",
-        "rainChance": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-16",
+        "high": 16,
+        "low": 7,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 95,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-17",
+        "high": 14,
+        "low": 7,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-18",
+        "high": 14,
+        "low": 9,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 50,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-19",
+        "high": 15,
+        "low": 9,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-20",
+        "high": 15,
+        "low": 9,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-21",
+        "high": 16,
+        "low": 11,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Forecast · rain chance around 20%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -278,20 +332,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Godstone Farm - Gruffalo?",
       "summary": "",
       "url": "",
@@ -304,6 +344,20 @@
       "colorId": null,
       "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
+      "calendarColorSource": "google"
     },
     {
       "title": "Let it glow disco 3-4pm",
@@ -334,20 +388,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Choir Performance 10:30-2:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-22T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -360,6 +400,20 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 10:30-2:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-22T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -591,12 +645,12 @@
         "trust": "Trusted report"
       },
       {
-        "title": "'That is beautiful' - Arsenal's emotional contract video for Mikel Arteta",
+        "title": "Arsenal fans sit down for a heartfelt chat with Mikel Arteta after he renewed his contract at the club",
         "summary": "",
         "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T14:04:12+01:00",
+        "publishedAt": "2026-10-07T19:50:38+01:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQLTVRejVpTE5HR0tGVHVGTjFqZnI0ZElSam4wNHZLWm10REVMT0xDRTFYQU9GVlFiTmNIQTJZNHJfQ2d2bnU0RzRMdDZDNWxfUXZFQWR1Y1BQejVhRFo3U0V0R3hnN183Q1U3bUZ4ZHF6akZkejFucmkzSHE5WVQxYVRTaFNBMVRTQnlpNW5sdng1M1AzWDFpVFlxOUg1VldUMzZGYkM0X2xUNG03SGMxWDVlb3NtNU9kSEE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSjI2VDItQzdJUVM1alNZNUQxbjNFSFRwTHNLZ2JuWmRJemNySUZEV1FrRVY4UUMycUxWSVVJTVozR1ZRQWJGYThlSUdhbHZhNmtvYWlVWFF0a1UtM0pTM0JTbGdzcDhESEFlNUtiVlY0bFJLVHVLZlQ3ci1JM1g1WHE3RjlKaVd2aEdLeEZUUTc4WFRIdWhqYVlGcUNKVy0yU01oZVcwYVFEMWRsa3ZCWm1mc0FtRGRZVmJKRWxjSl9pbk1oNThwZGU3aTFNbTlxTXFGVjRsdW1iYU5qRkp4c0g1bWhkTWc?oc=5",
         "contentType": "transfer-update",
         "trust": "Trusted report"
       }
@@ -991,6 +1045,15 @@
         "contentType": "article"
       },
       {
+        "title": "Every word of Arteta's pre-Leeds press conference",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T12:16:19+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOV9JcnFBMkdhalBwS2dJejFUdWV2dmljQXFFT1RWOFpYTVpQWnZyZmRCNXVia1FtUGhsamUxbmVVZ0c4Ql9VclNRdmNfZ3pmbWVMUUVQdmp1MGFpZmdxZ1NraWMwSVFnalFTN0xtMnBuN1JXSng1OElUUGxTLUpRWkJLZGhvYk5Lc1dQQzRlN1ZJVHkw?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "How to watch Nottingham Forest v Arsenal live on TV",
         "summary": "",
         "meta": "Thu 15 Oct",
@@ -1139,7 +1202,7 @@
         "title": "Team England's Thomas Young surprised with Sporting Icon Award",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T13:35:10+01:00",
+        "publishedAt": "2026-10-15T13:34:48+01:00",
         "source": "Commonwealth Games England",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWnJaVmVLaFNUamYxYzRPeGg2SW9uckVTVl85OG5IeWxMeHd3YmQxSlgxeEVvLUZ3YnBvY0RCeTAxcDhGU2VSenVQVVU5MXB2WkJwZ0xYMkZQb2lFTDBONHh2REZEOHhTZ3l1S2tWQmFWX0xTeTdHZFM5NVpDS3ZPaEI3VWtJS1BSejl1enZyYWl5SEJM?oc=5",
         "contentType": "article"

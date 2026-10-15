@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 15 October 2026 · refreshed 1:50pm",
+  "updatedLabel": "Thursday, 15 October 2026 · refreshed 2:04pm",
   "worldFact": {
     "id": "dallol-hydrothermal-sulfur-desert",
     "editorialPriority": "human-first",
@@ -19,23 +19,77 @@
   },
   "weather": {
     "temp": "21°",
-    "summary": "Overcast",
-    "condition": "Overcast",
-    "currentRainChance": 20,
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 40,
     "daily": [
       {
         "date": "2026-10-15",
         "high": 21,
         "low": 10,
-        "summary": "Forecast",
-        "condition": "Forecast",
-        "rainChance": null,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-16",
+        "high": 16,
+        "low": 7,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 95,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-17",
+        "high": 14,
+        "low": 7,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-18",
+        "high": 14,
+        "low": 9,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 50,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-19",
+        "high": 15,
+        "low": 9,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 40,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-20",
+        "high": 15,
+        "low": 9,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-21",
+        "high": 16,
+        "low": 11,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Forecast · rain chance around 20%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -278,20 +332,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Godstone Farm - Gruffalo?",
       "summary": "",
       "url": "",
@@ -304,6 +344,20 @@
       "colorId": null,
       "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
+      "calendarColorSource": "google"
     },
     {
       "title": "Let it glow disco 3-4pm",
@@ -334,20 +388,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Choir Performance 10:30-2:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-22T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -360,6 +400,20 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 10:30-2:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-22T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -452,12 +506,12 @@
       "section": "Local"
     },
     {
-      "title": "How ‘Silo’ Helped Make Apple TV the Home of Brandon Sanderson’s ‘Mistborn’ [Exclusive]",
+      "title": "Silo Writer Hugh Howey Has 3 Potential Spin-Off Ideas For The Apple TV Series",
       "summary": "",
-      "meta": "Tue 6 Oct",
-      "publishedAt": "2026-10-06T08:00:00+01:00",
-      "source": "Collider",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOT0VXU2htVWhfdU9WN20tRnZtZzNnelVNQXFpVTJObF8xR2JSUTFhN0oySUZQUWRrOURCdFdITjg5UjR3bWthdTR1NE9naUhCc3dtcURpemNLU3pXamlqQWREbWNJeVZvZG9tT1BObWtuRjBINnF2WWJLMVhrVUdNNmpsallzUGtnSE9mTW93?oc=5",
+      "meta": "Sat 10 Oct",
+      "publishedAt": "2026-10-10T17:00:00+01:00",
+      "source": "SlashFilm",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOU3ozQXBWN29JdkJGTFVTZWVzMHRqZWM5b196cmVIUWpNN0pWYTctb2NYdlpxdnUxcEJZbi1JRUpPUHltOUl3NURXdC1BY0VTTzU2X0dqQ0lhUUhrczh1eWRzTURyaVE3OUxiZ2xHWXZOUUZYMGF2Q0tiTWJaVm5ZanRjMFFjMHNPd014R1BUMVRlUQ?oc=5",
       "contentType": "article",
       "preferenceScore": 130,
       "section": "Watch"
@@ -617,12 +671,12 @@
         "contentType": "article"
       },
       {
-        "title": "bet365 avoids Swedish gambling licence suspension",
+        "title": "Swedish political deadlock extends as minority government bid rejected",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T11:51:34+01:00",
-        "source": "SBC News",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jWkZhbUJCYVpZRUYtZ2QyYnR3M3V3VTI0Z2VVazhjOHo0OGJqMWRpUDFtUG5IVHRJdnhiaG42d3B4UFZiOEJ3YVdUYVVrM1lONkc3X015OWtzMFNKV3BUczhXelJRbDFQbmIyZnBmZ3R1My1Z?oc=5",
+        "publishedAt": "2026-10-15T13:04:20+01:00",
+        "source": "CGTN",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUW9LNHpLTWxVNFRlRDAyTFRzY0psdFZJcTQ4OWg1OUJEZ3BTV2dDZ1gzVnBZa1BKckRJNXI2Z2V3U1BqUHR1VXM4QWNvNHdtbXR0SVZwV0wwOHVTUlM0RGN0VlZvZS16ZEVETHpBNmlmV1RUNTN0MlZTbmdiejBlMkszbm93Mzc2bGpQVHgwX1FFWWk2VlhFMS1SWFBkaThFUzEzYUgxbndmQWxlRkhRa0lScGwyRndTNEl4ZDhXaXhUaXNGNWpONA?oc=5",
         "contentType": "article"
       },
       {
@@ -635,21 +689,21 @@
         "contentType": "article"
       },
       {
+        "title": "bet365 avoids Swedish gambling licence suspension",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T11:51:34+01:00",
+        "source": "SBC News",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jWkZhbUJCYVpZRUYtZ2QyYnR3M3V3VTI0Z2VVazhjOHo0OGJqMWRpUDFtUG5IVHRJdnhiaG42d3B4UFZiOEJ3YVdUYVVrM1lONkc3X015OWtzMFNKV3BUczhXelJRbDFQbmIyZnBmZ3R1My1Z?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Scotland set up World Cup play-off against Sweden after thrilling win in Paisley",
         "summary": "",
         "meta": "Wed 14 Oct",
         "publishedAt": "2026-10-14T01:07:41+01:00",
         "source": "Scottish Football Association",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb2tTUWphaVBFN20xYVlfT2xKc002emJEaFRMWWdiLTFidW9lek5pQXRsWWMwUEhieHp0NmZFVkhxYWhuZmhqX08yUlJsckNzaEUxRWh5MUNMZ0dvTVRUR3lzRm42RVh5WmJqTVBXZk5HMmIwbFd2RGd3TTNUTUxOWmU2YW02VHNLQ0NBclNxNU9zbkNmRnFieEpPX0FWZVZYWGdwdFhoeVB3UlVT?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden’s Andersson Loses First Vote on Bid to Be Prime Minister",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T12:15:02+01:00",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObHRMMFRkeVJBNHZreUJuUW5MVnRDNHNTbVl3S2trYVE4amhmU2pEVWJrSFJwVVJpUXd4ams5NHlNRm8tUnVvSHJscFVCZHhjU0k3UFJjbi14WjdoMEYyMWpzQVBmNnpUUTRuZnFsNm9WN1ByUERIcnlZaVJJZHRkb3NQX3lCQnhuU2NUWUtVT1dQTkdCeXRYemY5SGZLYkdXb1F2VVo5cTJldmc1X1lWeUprTVQ?oc=5",
         "contentType": "article"
       }
     ],
@@ -792,7 +846,7 @@
         "title": "Team England's Thomas Young surprised with Sporting Icon Award",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T13:35:10+01:00",
+        "publishedAt": "2026-10-15T13:34:48+01:00",
         "source": "Commonwealth Games England",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWnJaVmVLaFNUamYxYzRPeGg2SW9uckVTVl85OG5IeWxMeHd3YmQxSlgxeEVvLUZ3YnBvY0RCeTAxcDhGU2VSenVQVVU5MXB2WkJwZ0xYMkZQb2lFTDBONHh2REZEOHhTZ3l1S2tWQmFWX0xTeTdHZFM5NVpDS3ZPaEI3VWtJS1BSejl1enZyYWl5SEJM?oc=5",
         "contentType": "article"
