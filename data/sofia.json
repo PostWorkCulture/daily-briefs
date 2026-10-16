@@ -1,37 +1,28 @@
 {
-  "updatedLabel": "Thursday, 15 October 2026 · refreshed 7:20pm",
+  "updatedLabel": "Friday, 16 October 2026 · refreshed 5:00am",
   "worldFact": {
-    "id": "dallol-hydrothermal-sulfur-desert",
+    "id": "baarle-hertog-twenty-two-enclaves",
     "editorialPriority": "human-first",
-    "category": "Faraway lands",
-    "country": "Ethiopia",
-    "place": "Dallol hydrothermal terraces",
-    "locationContext": "Danakil Depression · Afar Region, Northeast Africa",
-    "source": "Nature / Scientific Reports",
-    "sourceUrl": "https://www.nature.com/articles/s41598-019-51444-4",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/ET_Afar_asv2018-01_img36_Dallol.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img36_Dallol.jpg",
-    "photoCredit": "A.Savin · FAL",
-    "fact": "Situated 130 metres below sea level in the Danakil Depression, Dallol holds the record for Earth's highest average year-round temperature at 35°C (95°F). Its acidic geothermal springs erupt boiling neon-green brine, toxic sulfur fumes and magnesium salts where almost no microbial life can survive.",
-    "date": "2026-10-15",
-    "sequence": 55,
-    "localImage": "assets/scenery/world-fact.webp?v=a6cc046aef25"
+    "category": "Crazy borders",
+    "country": "Belgium / Netherlands",
+    "place": "Baarle-Hertog & Baarle-Nassau",
+    "locationContext": "North Brabant & Antwerp · Western Europe",
+    "source": "BBC News",
+    "sourceUrl": "https://www.bbc.com/travel/article/20171210-the-curious-borders-of-baarle",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Baarle-Nassau_grenspaal.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Baarle-Nassau_grenspaal.jpg",
+    "photoCredit": "MPhernambucq · CC BY-SA 3.0",
+    "fact": "Baarle is divided by 22 separate Belgian parcels inside the Netherlands and eight Dutch counter-enclaves inside Belgium. The international border cuts directly through streets, bars and living rooms, where a resident's nationality and tax status are legally determined by which side their front door sits on.",
+    "date": "2026-10-16",
+    "sequence": 56,
+    "localImage": "assets/scenery/world-fact.webp?v=15e09268ff04"
   },
   "weather": {
-    "temp": "17°",
-    "summary": "Cloudy",
-    "condition": "Cloudy",
-    "currentRainChance": 4,
+    "temp": "15°",
+    "summary": "Heavy rain",
+    "condition": "Heavy rain",
+    "currentRainChance": 20,
     "daily": [
-      {
-        "date": "2026-10-15",
-        "high": 19,
-        "low": 10,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
       {
         "date": "2026-10-16",
         "high": 16,
@@ -45,42 +36,51 @@
         "date": "2026-10-17",
         "high": 14,
         "low": 7,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-18",
-        "high": 13,
+        "high": 14,
         "low": 9,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Forecast",
+        "condition": "Forecast",
         "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-10-19",
         "high": 16,
-        "low": 10,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 40,
+        "low": 11,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-10-20",
-        "high": 15,
+        "high": 18,
         "low": 10,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-21",
         "high": 16,
         "low": 10,
+        "summary": "Forecast",
+        "condition": "Forecast",
+        "rainChance": 30,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-22",
+        "high": 15,
+        "low": 9,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 30,
@@ -88,8 +88,8 @@
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 95%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -97,37 +97,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Wednesday 14 October 2026",
+      "dateLabel": "Thursday 15 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Heathrow",
-        "town": "Heathrow",
-        "county": "Greater London",
+        "location": "Holbeach No 2",
+        "town": "Holbeach",
+        "county": "Lincolnshire",
         "country": "England",
-        "displayLocation": "Heathrow, Greater London",
-        "value": "20.6°C",
+        "displayLocation": "Holbeach, Lincolnshire",
+        "value": "22.8°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=3c5073c33c58",
-          "page": "https://commons.wikimedia.org/wiki/File:Terminal_5_car_park,_Heathrow_-_geograph.org.uk_-_5645514.jpg",
-          "credit": "Derek Harper · CC BY-SA 2.0",
-          "alt": "Terminal 5 car park, Heathrow",
+          "src": "assets/weather-extremes/hot.webp?v=0d2ea599ba6d",
+          "page": "https://commons.wikimedia.org/wiki/File:High_Street,_Holbeach_-_geograph.org.uk_-_4099367.jpg",
+          "credit": "Dave Hitchborne · CC BY-SA 2.0",
+          "alt": "High Street, Holbeach",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Kielder Castle",
-        "town": "Kielder",
-        "county": "Northumberland",
+        "location": "Frittenden",
+        "town": "Tunbridge Wells",
+        "county": "Kent",
         "country": "England",
-        "displayLocation": "Kielder, Northumberland",
-        "value": "2.2°C",
+        "displayLocation": "Tunbridge Wells, Kent",
+        "value": "9.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
-          "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
-          "credit": "Jim Walton · CC BY 3.0",
-          "alt": "Kielder Water in Kielder, Northumberland",
+          "src": "assets/weather-extremes/cold.webp?v=941233031b28",
+          "page": "https://commons.wikimedia.org/wiki/File:Tunbridge_Wells_town_centre_-_geograph.org.uk_-_2489312.jpg",
+          "credit": "nick macneill · CC BY-SA 2.0",
+          "alt": "Tunbridge Wells town centre",
           "width": 1600,
           "height": 900
         }
@@ -135,20 +135,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Window Cleaner",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-15T00:00:00+01:00",
-      "end": "2026-10-16T00:00:00+01:00",
-      "date": "2026-10-15",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "70o38db1c4rj0bb460r30b9k75gjcb9pcop3cb9k75hm6o9i6cpj0c9mcc",
-      "calendarColorSource": "calendar-default"
-    },
     {
       "title": "Kids",
       "summary": "",
@@ -493,12 +479,12 @@
       "section": "Sweden"
     },
     {
-      "title": "REVIEW: Electrifying Jane Eyre adaptation captivates theatre audiences in Kingston",
+      "title": "Plans submitted to turn Surbiton one-bed flat into five-person three-bed home",
       "summary": "",
       "meta": "Thu 15 Oct",
-      "publishedAt": "2026-10-15T17:44:00+01:00",
-      "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdGxQdlFPWkFDa2J5VDJiRkFTTE1qOWhSTXNNWlJxWTVDTi15SFB6cGlyZmJWeTFSQlJ0SDc0bzhRcHJYNXdvNnJFQk9MbUJKSS1rSHFBd0Z1M3pLWjZ2REhSUmt5eTcwM05HODFieUpNMmZFQmpCTjRId1FCSGxBdUl4YTRZRUcteVl3RG9xZTJyaFdTazRIRFhXWnhNSW5oTElDOFhBaV9SVjQ3V01NMkFsVW8tRlRCSFl1WTg4a2N5c3Y2U3RoS2IwckV0YW8?oc=5",
+      "publishedAt": "2026-10-15T16:47:49+01:00",
+      "source": "Surrey Comet",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOTF0bG9BZHIxN0lQTE9TZFpNM0M1Si12Z08wVF94Yk9kZW1fN0QwRzlDbHpVXzdTRVlHQzF0dUtKaTY5OFlnUzNMWWtuLTRfMmIzdjVLZklxMHduMDJTb0kxc24tdm5HM1duQS1sTjRtRll2QVI3Zlk3dS15X0plbldhQnZab05yeEpQb2pVRnZncm5BaTMzbFEyT2VyMkk?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -506,12 +492,12 @@
       "section": "Local"
     },
     {
-      "title": "Silo Writer Hugh Howey Has 3 Potential Spin-Off Ideas For The Apple TV Series",
+      "title": "How ‘Silo’ Helped Make Apple TV the Home of Brandon Sanderson’s ‘Mistborn’ [Exclusive]",
       "summary": "",
-      "meta": "Sat 10 Oct",
-      "publishedAt": "2026-10-10T17:00:00+01:00",
-      "source": "SlashFilm",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOU3ozQXBWN29JdkJGTFVTZWVzMHRqZWM5b196cmVIUWpNN0pWYTctb2NYdlpxdnUxcEJZbi1JRUpPUHltOUl3NURXdC1BY0VTTzU2X0dqQ0lhUUhrczh1eWRzTURyaVE3OUxiZ2xHWXZOUUZYMGF2Q0tiTWJaVm5ZanRjMFFjMHNPd014R1BUMVRlUQ?oc=5",
+      "meta": "Tue 6 Oct",
+      "publishedAt": "2026-10-06T08:00:00+01:00",
+      "source": "Collider",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOT0VXU2htVWhfdU9WN20tRnZtZzNnelVNQXFpVTJObF8xR2JSUTFhN0oySUZQUWRrOURCdFdITjg5UjR3bWthdTR1NE9naUhCc3dtcURpemNLU3pXamlqQWREbWNJeVZvZG9tT1BObWtuRjBINnF2WWJLMVhrVUdNNmpsallzUGtnSE9mTW93?oc=5",
       "contentType": "article",
       "preferenceScore": 130,
       "section": "Watch"
@@ -521,34 +507,34 @@
     {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Available since Mon 12 Oct",
+      "meta": "BBC Two · Mon 19 Oct, 7pm",
       "source": "BBC Two",
       "channel": "BBC Two",
-      "releaseDate": "2026-10-12",
-      "releaseDateLabel": "Available since Mon 12 Oct",
+      "releaseDate": "2026-10-19",
+      "releaseDateLabel": "Mon 19 Oct, 7pm",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467592.jpg",
       "artworkAlt": "Global Eye programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-12",
+      "airdate": "2026-10-19",
       "showId": 87011,
-      "episodeId": 3781737,
+      "episodeId": 3786689,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 603.8
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 607.8
     },
     {
       "title": "Crimewatch Live",
       "summary": "Fourteen-year-old Corey Junior Davis was killed in a drive-by shooting. Can you help find who was involved? Plus, how another teen's murder was solved.",
-      "meta": "BBC One · Today, 10:45am",
+      "meta": "BBC One · Available since yesterday",
       "source": "BBC One",
       "channel": "BBC One",
       "releaseDate": "2026-10-15",
-      "releaseDateLabel": "Today, 10:45am",
+      "releaseDateLabel": "Available since yesterday",
       "url": "http://www.bbc.co.uk/programmes/b00ss27z",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/222/557126.jpg",
@@ -563,17 +549,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 581.8
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 569.8
     },
     {
       "title": "Hunting Gary Glitter",
       "summary": "A string of dogged journalists chases fugitive pop star Gary Glitter across the globe — from Cuba to Cambodia to Vietnam — determined to expose the child sexual abuse he concealed behind…",
-      "meta": "Netflix · Available since yesterday",
+      "meta": "Netflix · Available since Wed 14 Oct",
       "source": "Netflix",
       "channel": "Netflix",
       "releaseDate": "2026-10-14",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Wed 14 Oct",
       "url": "https://www.netflix.com/",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1614798.jpg",
@@ -588,8 +574,8 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 566.7
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 558.7
     },
     {
       "title": "Aileen Wuornos: Damsel of Death",
@@ -611,34 +597,34 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 514.2
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 506.2
     },
     {
-      "title": "Time",
-      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
-      "meta": "BBC iPlayer · Available since Sun 11 Oct",
+      "title": "The Northumbria Mysteries",
+      "summary": "When an exclusive, high-roller poker night ends with the murder of oil magnate and seemingly devoted family man Jeremy Hare, Rose and Raj find themselves completely out of their depth in…",
+      "meta": "BBC iPlayer · Fri 23 Oct, 6am",
       "source": "BBC iPlayer",
       "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since Sun 11 Oct",
-      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
-      "artworkAlt": "Time programme artwork",
+      "releaseDate": "2026-10-23",
+      "releaseDateLabel": "Fri 23 Oct, 6am",
+      "url": "https://www.bbc.co.uk/programmes/m0030tpd",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1614869.jpg",
+      "artworkAlt": "The Northumbria Mysteries programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 50374,
-      "episodeId": 3776044,
+      "airdate": "2026-10-23",
+      "showId": 91133,
+      "episodeId": 3783629,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Thriller"
+        "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 412.9
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 415.7
     }
   ],
   "sections": {
@@ -662,6 +648,24 @@
         "contentType": "article"
       },
       {
+        "title": "The Church of Sweden listens in",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:11:10+01:00",
+        "source": "Shots",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5YanZaNkZobzc2dUxxQ005RHNwTUFsaFNEQk5CUXlxU3UtcUQxaHozaVNFUTFyOHgzSWRMQWgtSHBoLU9VbXZVa2pydTdCYnJtX0F0QjN6SHAycTRMOHQ4cUZJdjBpVWNrTHZ3?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Scotland set up World Cup play-off against Sweden after thrilling win in Paisley",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T01:07:41+01:00",
+        "source": "Scottish Football Association",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb2tTUWphaVBFN20xYVlfT2xKc002emJEaFRMWWdiLTFidW9lek5pQXRsWWMwUEhieHp0NmZFVkhxYWhuZmhqX08yUlJsckNzaEUxRWh5MUNMZ0dvTVRUR3lzRm42RVh5WmJqTVBXZk5HMmIwbFd2RGd3TTNUTUxOWmU2YW02VHNLQ0NBclNxNU9zbkNmRnFieEpPX0FWZVZYWGdwdFhoeVB3UlVT?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Russia detains Swedish citizen as Moscow eyes future prisoner swaps",
         "summary": "",
         "meta": "Thu 15 Oct",
@@ -671,55 +675,25 @@
         "contentType": "article"
       },
       {
-        "title": "The Church of Sweden listens in",
+        "title": "Did AI Just Erase an Entire Swedish TV Show?",
         "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T13:48:38+01:00",
-        "source": "Shots",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5YanZaNkZobzc2dUxxQ005RHNwTUFsaFNEQk5CUXlxU3UtcUQxaHozaVNFUTFyOHgzSWRMQWgtSHBoLU9VbXZVa2pydTdCYnJtX0F0QjN6SHAycTRMOHQ4cUZJdjBpVWNrTHZ3?oc=5",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T01:00:22+01:00",
+        "source": "CNET",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOU0lmX3NtUG9zWGhyZkcteHZ3MW4tZ2RYc2h6U1JpQ0JPSTF0STlnMm9FWUgyRUxLNmdIbGVOaFN3YVJ2YTh1TC1aSVZkRlg4T3V3NDljQkRIZUpQLUtBXzlBazh5ZVZBZ0JvbHZUQmctSUFhV3dlLTg3UzhLV1JSUl9B?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Russian security service detains Swedish citizen for espionage",
+        "title": "Next Gen Brings 70 Young Female Judoka Together for International Camp in Malmö, Sweden",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:09:00+01:00",
-        "source": "POLITICO.eu",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcDhLMEJiZHo1QWtfdTBiUWprbkJxN0JXN0lBWFp3VWxHelk3dkRFTWZaeVZnQ2djcXVwYzlzYWswYkZDcFk2TWE1ak9NQ05hUXRtbHNYNm8zU0VZaUgxaFlPSEdkTVMzRjlOQ0JCZDVwWGlCWmdEVmRHS2ZfUnZXQjk1YTdMbTNUZDlzajNTSHMxMklXYmp3Z0U0TWQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Sweden shares lower at close of trade; OMX Stockholm 30 down 0.62%",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T17:00:00+01:00",
-        "source": "Investing.com UK",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc1NZeWZ4VVRKcE1UWURxaVpLY3dqdHhRSXhmMkdfVjB6LXUzQU5HRUF4U2V6V1FoeU5nWWdjNXg1RUtaSEdSVGhsZ3JyZFlwbmU0M0dLb0lvSXJJUWZjV1RlNXpubTYtVzNDS1NXdnNscFI1cHRyNlUyZTJKRHVVNE8wMm4yN28xSVI4V21iY2RJVDR2dEZMR1IzQkN2S2pNMU51WFc3RE9NSXE3RzBKSE4xU2NacVp6VmlZ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "TV4 Sweden visits CJ ENM’s Couple Palace",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:18:06+01:00",
-        "source": "C21media",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1STFlTdXJqWlJYak9vaUxIYXRYdnlBWWVyMHdDYU9jUFhVd1UtVnVEMTF0QjBSM0V2VC1sOTF5d2YwY0kzdF9vcVZfa2ZYR3lmZnNkVERneGVSRHRYOVZqRXAtT2RFaG9oWHUwaERPT1lrYUZ4Z0hQRHZB?oc=5",
+        "publishedAt": "2026-10-15T17:30:43+01:00",
+        "source": "European Judo Union",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMFhBT2NFSGpkUHJudnVRVnloelMyQlMzY1NUY2FVNXJmMzd2X3dKem15dUVUUVNhQUJOMkJxbW9ORWd4eW5uU2tjWG5zS1Zhd3BYSVZ2ZGJ6ZzFoQklGNVhEMHpQMTZpS0lfWDhVazllQkJwR00wQ1lRNm5hY3pQTUxQZDd3dVJtLWVJQkw5UHJJeGE3VkpWeUZqRGZxZXdaYnZQaTRUdU9CSlNjLU5UZXl0bw?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
-      {
-        "title": "REVIEW: Electrifying Jane Eyre adaptation captivates theatre audiences in Kingston",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T17:44:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdGxQdlFPWkFDa2J5VDJiRkFTTE1qOWhSTXNNWlJxWTVDTi15SFB6cGlyZmJWeTFSQlJ0SDc0bzhRcHJYNXdvNnJFQk9MbUJKSS1rSHFBd0Z1M3pLWjZ2REhSUmt5eTcwM05HODFieUpNMmZFQmpCTjRId1FCSGxBdUl4YTRZRUcteVl3RG9xZTJyaFdTazRIRFhXWnhNSW5oTElDOFhBaV9SVjQ3V01NMkFsVW8tRlRCSFl1WTg4a2N5c3Y2U3RoS2IwckV0YW8?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
       {
         "title": "Plans submitted to turn Surbiton one-bed flat into five-person three-bed home",
         "summary": "",
@@ -742,6 +716,18 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Free pub taster sessions announced as local women's darts league expands to Kingston",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T06:34:43+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUkZ2cmhmUDVuaExCREg4Tm9ZWTlveUV4NnRzamhEcm5vcGRpb0ZZT1lkRGNwUUJYZWw0SjNEWUxIMkdId25HSDEyNlF6Ymx5RXRmWHNBWXFPb04wd2lrNGdmaFREU3VRSFBOSGYyUzNjZ0xEcGpBWnJzMGxsbmctaHlpclQwak85c1VSdmNTWnBpSkhFMUtXTXYzWmk5RVpndjVRcnFZM0JGdVZBZmNFWUYxMERiYUNrc1dfc2tNQ2ViQlJjdmtBazkwSDQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
         "homeArea": false
       },
       {
@@ -769,18 +755,6 @@
         "homeArea": false
       },
       {
-        "title": "Hampton & Richmond manager Alan Dowson leaves by mutual consent after 2-0 home defeat by Ebbsfleet United",
-        "summary": "",
-        "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T11:43:00+01:00",
-        "source": "Kent Online",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdHlVd2F0VEc4YjdKVlFpY2Zhbnd1Q3dMbWhtY0pEczd2eWttTUFmRkgzOXo1MExiRlN4NXBTbzJXbk9LQmZuX3JmT1EteTB5bUZkYWw2YjN2WS03bWdCYUw5aV9wbVlhcHRuT0xuWWhFSGpxQjJmME1tc20zX0w3ck93cTlfdlV5V3dGUW1B?oc=5",
-        "contentType": "article",
-        "localPublication": false,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Will Kingston Christmas Market return this year? Council releases update after fire",
         "summary": "",
         "meta": "Fri 9 Oct",
@@ -790,6 +764,18 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "How To Visit The Hampton Court Palace Gardens For Free",
+        "summary": "",
+        "meta": "Fri 2 Oct",
+        "publishedAt": "2026-10-02T08:00:00+01:00",
+        "source": "Londonist",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSnlnS1NxYUlzX2hjenJ0UmdaNkVzbnBSblVIeFZhX1JyanlGY3gxeEpUbEdkZXMtajd3Y0JTZ0JRUzRITnlTNDQ1Q2x0U0ctakt5Z3RKckJQY0M1eFBHZHoxVzEwODl2eHB6SzhSVWo2OVM4NDlEMkJ3RzVGYTdOdjQxTGg0MlFLUkFfTXZ3ZkQ5QlUtbnYwSnFPOXdKUU12TDE3Ug?oc=5",
+        "contentType": "article",
+        "localPublication": false,
+        "familyActivity": false,
         "homeArea": false
       },
       {
@@ -843,6 +829,51 @@
     ],
     "UK news": [
       {
+        "title": "The Prince Charles Cinema Gets a New Lease on Life as Britain Celebrates Its Independents",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T04:31:40+01:00",
+        "source": "Celluloid Junkie",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVFVzaUh0VkVKRTZOX256czQ5Q3k0VWdwQjEyX2lBMVlOaGNtYkZvUWs3MkZlc3k5R1hNNTlrMHJJSkhjVlp5RUgwQ0pCbk9uUVlSU3Y3NlRzVG0xbERrWldNcGRLcmFiM1dqd2Nma1VibU5BRGZoblpZYUszT2xJdGEzaXhsUHo4V0s0amdDSTdKbF9CZzZpYkI3TXpac1dlRkVEeHI1OVFxQ2VUNGE1dHNuOUdSNTNvV3BvTm9zUk5uRkk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Reform faces questions over candidate vetting after undercover filming",
+        "summary": "Reform UK says the party has \"improved and prioritised its vetting procedures\".",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T00:52:27+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Streeting ‘reassured’ by Hegseth that Ukraine’s access to Starlink restored",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T00:01:08+01:00",
+        "source": "North Wales Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaHJhcEl0ZU03dHZYSlRmUGR5bXBmbkd4Sm1qR08yNFVpY1diOXpMcFVaaUtoUVpuVkp2X2p1U1FuN29xWHNuTF9LbEtTSGpZUmJQSXJ4dmFJcFZBUTJGY0cyVGFWV1RYR3VjNll4S0hub0ZEbXFfeHdOUTNScGlNdEo3Q2tNQ3JoNjNmQ0FPdlVROGVWSEdGblY2TUtzaHZ6TDNBUHEtTmM3c3BSVVdOVzJRSlhrckpSN2VfU0xrRXI?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "London housing project wins top architecture award",
+        "summary": "Lion Green Road in Coulsdon was recognised for the way it responds to its surroundings.",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T21:36:32+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cq8jzgl7zz9po?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "We’re Shortlisted for 16 Great British Care Awards",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T17:52:57+01:00",
+        "source": "Community Integrated Care",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeGZyMi1xWGVfcTNtVWNTNFR3MmlTY08wQ0E1ZHh2SHRaYkdvQWJzVm93R1VjS0JzcTRDY0pJS1hMZG45SlAwRWppT29pRmFBZU9UV2gzNWZSUnlSUW9MU0hmdXo0OFNZWVdvQzhMSkc3N0pRRVdTZ3NWcUVkV3pYZTVfcXNPbjJmQ1dBMnBRVWp5SWdkdVI5bngzSEpoWUdsMk1VM1hrOWN0QmVaeTNVSnQ5dXBleUhFVXh1X21GMm9nQQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Actor and author Ciaran McMenamin’s Skintown screenplay nominated for British Independent Film Award",
         "summary": "",
         "meta": "Thu 15 Oct",
@@ -852,28 +883,10 @@
         "contentType": "article"
       },
       {
-        "title": "We’re Shortlisted for 16 Great British Care Awards",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:55:08+01:00",
-        "source": "Community Integrated Care",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeGZyMi1xWGVfcTNtVWNTNFR3MmlTY08wQ0E1ZHh2SHRaYkdvQWJzVm93R1VjS0JzcTRDY0pJS1hMZG45SlAwRWppT29pRmFBZU9UV2gzNWZSUnlSUW9MU0hmdXo0OFNZWVdvQzhMSkc3N0pRRVdTZ3NWcUVkV3pYZTVfcXNPbjJmQ1dBMnBRVWp5SWdkdVI5bngzSEpoWUdsMk1VM1hrOWN0QmVaeTNVSnQ5dXBleUhFVXh1X21GMm9nQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Welsh Charity Awards finalists reflect on issues facing communities across Wales",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:00:00+01:00",
-        "source": "Herald.Wales",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdlMwcENlVHN1R0Qwb3F0YkNRWXpGbFJFaWtKVEtOTjZERk5laHhYek9oLWlsTGd1R1NFenViR3AyZmlfd0o4bVg4R2JRaFppSGNHZnlWLWctTUxfbWE4cHZJUndYVDVYZ2liUVk3LTQ1YjM3cTBjQmFxSDVwejBHLU9KNDVCc2J2dFpCdW1seXd0cXpueExUTWRyUENGaW5CVHdoOFBJRDk5WWhBbDFfelFxeHJGRkRKSGhMMkVVWFVCRmc?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Lone sailor rescued moments before yacht sinks in Bristol Channel",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:00:00+01:00",
+        "publishedAt": "2026-10-15T16:08:39+01:00",
         "source": "Herald.Wales",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQjdXdVN3Q1VOTWg0bkludTNickZLZk4yQlYtV3NXdnpGdGVzOVEwQ1FoTlFYdTJkTXBfUTZCUjBGZXZMT2kweWxHRC0yOW52Ni14YkhVcVE2TFd6MGZEcGRkNzdJRDhnZ2xoUDIzV0xsNUhxV0FGSVIzTXJPNV84b1M0VXdqai1GYU9yNklCVDk5YXhL?oc=5",
         "contentType": "article"
@@ -882,9 +895,18 @@
         "title": "Action for Children’s Skills Plus+ services win Best Wellbeing Service award",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:00:00+01:00",
+        "publishedAt": "2026-10-15T16:08:39+01:00",
         "source": "Herald.Wales",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNG5pVml4RE9RTEtZSVgtU2NWNXBud1lQLWJaSExOZkZxNEs1T2ZYQklPUHhZZ2ZjS0hYZ3dLQ3VWNDBxdUdSZFV2cFVGdFpRbFEwN29WM3I1SnQ4TXhOcWF5c2xEa0NXcnJId3d6Y2ludjAwYnBDQ2c5VlhxU0VoLUl6YlNrSDdkNXNaQ3BydHBqWUU5d255MzFXVXViVHpZNXhCWEpvN0wyXzluU1FnZnVCdzlTVDVWVVE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Welsh Charity Awards finalists reflect on issues facing communities across Wales",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T16:08:21+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdlMwcENlVHN1R0Qwb3F0YkNRWXpGbFJFaWtKVEtOTjZERk5laHhYek9oLWlsTGd1R1NFenViR3AyZmlfd0o4bVg4R2JRaFppSGNHZnlWLWctTUxfbWE4cHZJUndYVDVYZ2liUVk3LTQ1YjM3cTBjQmFxSDVwejBHLU9KNDVCc2J2dFpCdW1seXd0cXpueExUTWRyUENGaW5CVHdoOFBJRDk5WWhBbDFfelFxeHJGRkRKSGhMMkVVWFVCRmc?oc=5",
         "contentType": "article"
       },
       {
@@ -900,7 +922,7 @@
         "title": "The Scottish Album of the Year Award announces 10 albums on Shortlist",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T14:54:40+01:00",
+        "publishedAt": "2026-10-15T14:54:36+01:00",
         "source": "Creative Scotland",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUDJwejctelVqSXo3SW0tRDhveTAxWXFmRjBGZ2xrZjNVejVhR3h0a0p1MkVLT0t6U2laSE9BMlhxRkFOV0ltWldQQURwcTQyVm96bXVqaWlYX3luWFhzN0N5THQyU0l1NUVQYkRxR0VWcHNIb2g5SGM3bE1iQ1pSclc4OWJpTWpFU2hrU3lva05BWGZrN0F4R2ExNkNpeFp2UkRPSnlhaTU1ZnRQeUdWeS1IRlJoNXVCb2kwQndXTUYzZUVaeVl3M0ZJUzJ5ZzQ3U1RWeHJDYXI4YTA?oc=5",
         "contentType": "article"
@@ -913,88 +935,61 @@
         "source": "The National Scot",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdU13OU1CeDl0TS0xSFdiQUNfUndLVHEzeUF1OFVUT3NTYjI1YzgxR2VJQ2hqRmdfVkZkWkhwTV8wVWhNRTVIcktjcjVXTktQckRFZU54eEI1OWJJaXNraEJTYXBVbjB4Ql96eG56MWxiSTR4NXAzWTNZeFlOdHNHNThLS2piNEdxaUtXZE1pRWZERVFmclYwTg?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Team England's Thomas Young surprised with Sporting Icon Award",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T13:34:48+01:00",
-        "source": "Commonwealth Games England",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWnJaVmVLaFNUamYxYzRPeGg2SW9uckVTVl85OG5IeWxMeHd3YmQxSlgxeEVvLUZ3YnBvY0RCeTAxcDhGU2VSenVQVVU5MXB2WkJwZ0xYMkZQb2lFTDBONHh2REZEOHhTZ3l1S2tWQmFWX0xTeTdHZFM5NVpDS3ZPaEI3VWtJS1BSejl1enZyYWl5SEJM?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Scottish social care leader wins national award for disability support",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T12:07:04+01:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOG9mUDJCbG1vdmIwSlB2d0VnaERHQmNJbDN0VEYyTENWX0l1OGZtUnN4LXRZM08tUDJhNEZOd3dudUVPY0dpdlFFbjZqQmIwZXVxdEMzZTZCVVZxenJfbzFwVFdTRUhYc0Y5SUdmcmgyNXc3aUsyVGx5eFZrZUp4YnoyUzZaeVlDSDBKSy1zMG9aUGJwU2JHRjBqbF95ckg5M0E?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Taylor Wimpey West Scotland awarded £5000 to three Bargeddie Community groups",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T10:14:28+01:00",
-        "source": "Yahoo News UK",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORVJnX2ZacHNDUTVYUHdJZnJJczZhb2lkTHlndDFiSlFOU3gyZVp0MkdhRGNRZDc0YThJbG1aS2JURWdhdUVoMklBdGdlZlFvZ3o0bEwyMDJNdlFCVnAwYTFXamUxeElETTRraFQwVWlvMjFxc3owdS1icFlEdmxINzdB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Person rescued after becoming stuck underneath bridge in Gwynedd",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T09:22:43+01:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbDctNndBWGxURTNETW0ybEh4OWVwam5uWnVhQk5TZVpaTlpISHFKbzg2Z0pHSkd3MzgxckdkSGlwUWRiUUxFZ05qWXFYcGZndlpKYnJ3SkdSclJUeTMtdTlEcUJOZVdKTlRHZ2pRQXZCUEFtUW9xUkFMMlNtVTZ5cTNNdW1NaGg0dmU0MnNhNDVrdw?oc=5",
-        "contentType": "article"
       }
     ],
     "AI": [
       {
+        "title": "Anthropic’s valuation could be slashed by $500bn",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T02:42:00+01:00",
+        "source": "The Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTE10VTNmQVpobElWTno2VHFmcjZ0dl9fWGV5SHBhQXFSeTR2SVVHREM2cVc0dXNZeWo0UnMtYzZ4R192Vk5ubEpkclpvUHh2SEhyQmFrT0VPYlRRTjRUbUV4eFdWWXcwaFdCUmJSQ1RCdXZCOTRLSmtqS0lQTDBYNFNQYUhLVUkzN2V5V2diQzQtZUk?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Anthropic's $2 trln dream faces deflation trap",
         "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T19:04:48+01:00",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T00:41:08+01:00",
         "source": "Breakingviews",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMC1Gc1lJeUFsdUw5ZUQzTFlGdkZITlA4OW11ekpXVVpFRDZZUjAxck0tbmxFZDRtU242ZXFXQldJOE44VXhYY0JGbWRqbXVPNFBmMmhrWC1DM0lkRlBMajNRZEhqN0I3R2hENHQ4Zk9wcUphYjhMT0VjWEw4VHUwVkhBZzQyd2pFUWlQZi14ZFZWeXl2R3dYTElEbGZlNS1zZ3hSOE5hdVdNSVBlOERkRzZtRXhGN1o1ZXItdF9R?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQVczZFEta2N3Nk5nZEdwWHQwRVd3T2hnbmNCZ1lHcnExRnoxRDAxSm51RTRkUy02UndLSDl4Z1BSdGZEUU9UWUVqNW1iS1hCNWpLdXJ4dy01NExjSE9oVFVuZ3lLZXAwc3l1bzBmZWVfZFoxTjBjdTR6V2RYZHNpLVViYXVJSW5CTXJ2dXQ2ZEJkNkZhZUdIZkZManYyUlp3ODZ3OUdfU0oyRmpv?oc=5",
         "contentType": "article"
       },
       {
-        "title": "🚨 Anthropic: The agony and the ecstasy",
+        "title": "Anthropic makes Code Review generally available, with $50,000 in credits attached",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T17:29:01+01:00",
-        "source": "Exponential View | Azeem Azhar",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xLXdJdXRQbmZuU2xROXhyb1pLX2FGUFlGRFBzaWM1eXQwbWhNZnBtbmJIQ0ljYlpiMWFXSmxGanhLcGVzaWJZOEJuTTBXU3BBaHVsZTVSdUQyWDNVVFRaWDAwTlBfRlZCWUJ0VTNUZ0tUS3JiM2pv?oc=5",
+        "publishedAt": "2026-10-15T23:45:28+01:00",
+        "source": "The Next Web",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAxYTh2YzlldTFFWDBDTnRIUEpQQXZkRkpWQWhnNVBOM0VHbl9zMzB4M1NMWW1UYVFPWVo4c0ZaSU01ZXJVbHpPMU1lb2lxVDRyVEZ3RVA0SHpSa3B0OFlEMXRRQTJXQkh0dzN1WEFHS1R5bEk?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic Selects Build Circle As A UK Partner To Help Supercharge AI Realisation For Clients",
+        "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T17:03:06+01:00",
-        "source": "TechRound",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb2p4VXRKVVNZMmNrWXF0djlIMmlkaGZCNnM1dTd5T28xSUp4YXR2VEVVU2ladkRHUWMzenpyektuWjJaYWVYOWVNNUEwc3haVnljSDhRSDFOWWx4VVN5TUgyWmFrNXhHMXVxUGVhSGQtaVh2cmtobU1LY1NqQk9JYkJiQVdweklEZGZZXzR6ZnM3bXN2VElnOU1Gay1UaUVPUzdoWmRYcHd4QQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "FTC subpoenas Anthropic and OpenAI over artificial intelligence safety concerns",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:16:00+01:00",
-        "source": "The Independent",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNa2FGR3A2SzZNaVZ4eXg4U1VLaXlKcEpxc001V2NlTktTSGNkZnpFcGN2NTRDRjBuYTBtTlBfcnoxdDY0MlpZSHc5Rk83ek1YYnhxWTJNYmx3VHlIaG5lTGp5NFA5ZUZiNWZCUDYyMDExS0haSmRSeV81THA2N0FrOFAxQ3hWMGNlczBKekNSWndLc0pCR2tIcGlB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "US FTC subpoenas OpenAI and Anthropic over consumer harms, Axios reports",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T15:50:34+01:00",
+        "publishedAt": "2026-10-15T22:00:00+01:00",
         "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjB0ci1GS09NczVkMHZGUlZQVE5PUWJuYlZUODlnZUtxWWxQVVNNcGRHVjh2U0p3ZU9iTHQ3aThVOWpnYXVZRGQxaTc0Q293bGFoeUowbnloOU1qNm1ZMlloOGl0c251c2pQRXh6cExNQXo5OXQ3ZDRpSVZZZ211alY0ZENWb0FJT3QwRzQyb1lRejMxTkFreExtLXhIUm9oUFBkRzRCZ1dzSGN6MVhNSGl3?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic taps nonprofits METR and SecureBio to help assess risks and safety practices",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T21:35:21+01:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdTIyNURFZndfMmRpN0liM2l3eE9Rb3pncXlkaGRDUExCemNqQldWUmlLcVhEWHhwYXlOVHFxSlpuLWVUXzV0eHoxcjdsVXAxVTJ0X3FFVGFscldqY0lnbVVxNlhxWWZ4QUZNUmYyc1dSWHpHSl9XdXNaMEVONm5SVXd5ODM2VFFEa2fSAY8BQVVfeXFMUGdJcmpnY21LbUlicTI5OEZXSzB2UE1SclB6TDZWRDdNd0luMEpaY1o3a3podTZLQ3hFZUVpSUpKaEtqWlNETUhZYXUyLWFqdTJhSGoyVXF3ejFCNldkMHJnYjJCbmRFLVlKeGo3OFFOQUNSUDRJRzNfaVlSb3p4NGl4eWE3TFNFR0tUNHNxa0k?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T01:34:00+01:00",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPT0RHc3czZERxSklFc0VnWGlpTDV4VUpjVDJONmd2Mm9XYlRKUE5TUWUyNG1BVFJ0c044WGtINDBuR3VnUEdXV1puNkhveWx6QXdWT2tyc2RpUm9qS2M5eFI4ZVlnM3VaRE9mdVgtZDVOS1NwdGJMVTVJWkNVWHFiaHVfVnZQLVRQaU5JcF9nVi1aT0loWUltUnRKaThnVmdqaVV5UjdVMkxoR1E?oc=5",
         "contentType": "article"
       },
       {
@@ -1004,15 +999,6 @@
         "publishedAt": "2026-10-13T17:01:58+01:00",
         "source": "Google DeepMind",
         "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-        "contentType": "article"
-      },
-      {
-        "title": "Gemini 4 Argon: Built to solve your hardest problems",
-        "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T17:01:52+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
         "contentType": "article"
       },
       {
@@ -1065,88 +1051,10 @@
         "venue": "bentalls-kingston",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15",
+        "verifiedAt": "2026-10-16",
         "saleHeadline": "Bentalls Autumn Promotions Now On",
         "saleDate": "October & November 2026",
         "discount": "Up to 30% off",
-        "isSale": true
-      },
-      {
-        "id": "next-autumn-sale-2026",
-        "title": "Next Autumn & Mid-Season Clearance Sale",
-        "location": "The Bentall Centre, Wood Street · Kingston upon Thames",
-        "summary": "Extensive seasonal clearance across children's fashion, schoolwear, autumn coats, knitwear and home collections in Kingston.",
-        "when": "Throughout October 2026 · Mon–Sat 9.30am–6pm, Sun 11am–5pm",
-        "startDate": "2026-10-08",
-        "endDate": "2026-10-31",
-        "ages": "All ages welcome",
-        "cost": "Free admission; savings up to 50% or more",
-        "tags": [
-          "Sales",
-          "Shopping",
-          "Kingston"
-        ],
-        "source": "Next UK",
-        "url": "https://www.next.co.uk/clearance",
-        "venue": "next-kingston",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08",
-        "saleHeadline": "Next Autumn Clearance Now On",
-        "saleDate": "Throughout October 2026",
-        "discount": "Up to 50% off or more",
-        "isSale": true
-      },
-      {
-        "id": "hm-autumn-sale-2026",
-        "title": "H&M Member Event & Seasonal Autumn Sale",
-        "location": "Clarence Street · Kingston upon Thames",
-        "summary": "Autumn seasonal discounts across baby, toddler, children's clothes and everyday essentials, plus H&M member bonus deals.",
-        "when": "9–19 October 2026 · Daily in-store",
-        "startDate": "2026-10-09",
-        "endDate": "2026-10-19",
-        "ages": "All ages",
-        "cost": "Free entry; promotional member discounts",
-        "tags": [
-          "Sales",
-          "Shopping",
-          "Kingston"
-        ],
-        "source": "H&M UK",
-        "url": "https://www.hm.com/",
-        "venue": "hm-kingston",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08",
-        "saleHeadline": "H&M Autumn Sale Now On",
-        "saleDate": "9–19 October 2026",
-        "discount": "Up to 50% off",
-        "isSale": true
-      },
-      {
-        "id": "zara-autumn-sale-2026",
-        "title": "Zara Mid-Season Reductions & Autumn Collection",
-        "location": "The Bentall Centre, Clarence Street · Kingston upon Thames",
-        "summary": "Mid-season price cuts across womenswear, menswear and kids' seasonal fashion at Zara's flagship Kingston store.",
-        "when": "10–28 October 2026 · Standard store opening hours",
-        "startDate": "2026-10-10",
-        "endDate": "2026-10-28",
-        "ages": "All ages",
-        "cost": "Free entry; seasonal promotional pricing",
-        "tags": [
-          "Sales",
-          "Shopping",
-          "Fashion"
-        ],
-        "source": "Zara UK",
-        "url": "https://www.zara.com/uk/sale",
-        "venue": "zara-kingston",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08",
-        "saleHeadline": "Zara Mid-Season Sale Now On",
-        "saleDate": "10–28 October 2026",
-        "discount": "Up to 40% off",
         "isSale": true
       },
       {
@@ -1170,7 +1078,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
+        "verifiedAt": "2026-10-16"
       },
       {
         "id": "chessington-howloween-2026",
@@ -1193,7 +1101,7 @@
         "venue": "chessington",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
+        "verifiedAt": "2026-10-16"
       },
       {
         "id": "kempton-steam-oct-2026",
@@ -1215,7 +1123,7 @@
         "venue": "kempton-steam",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
+        "verifiedAt": "2026-10-16"
       },
       {
         "id": "kew-halloween-trail-2026",
@@ -1260,53 +1168,7 @@
         "venue": "brooklands",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
-      },
-      {
-        "id": "hampton-halloween-2026",
-        "title": "Halloween at Hampton Court Palace",
-        "location": "Hampton Court Palace · East Molesey",
-        "summary": "Follow the autumn trail through the Wilderness, then explore the palace’s ghostly displays and storytelling. Some indoor scenes have loud noises and jump scares.",
-        "when": "24 October – 1 November 2026",
-        "startDate": "2026-10-24",
-        "endDate": "2026-11-01",
-        "ages": "Families; check the organiser’s scare guidance",
-        "cost": "Included in palace admission",
-        "tags": [
-          "Events",
-          "Seasonal",
-          "Indoors",
-          "Outdoors"
-        ],
-        "source": "Historic Royal Palaces",
-        "url": "https://www.hrp.org.uk/hampton-court-palace/whats-on/halloween-at-hampton-court-palace/",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08",
-        "kind": "event",
-        "venue": "hampton-palace"
-      },
-      {
-        "id": "kingston-halloween-trail-2026",
-        "title": "Kingston Children's Halloween Trick-or-Treat Trail",
-        "location": "Ancient Market Place & Town Centre · Kingston upon Thames",
-        "summary": "A free daytime Halloween activity trail across Kingston town centre shops with fancy dress competitions, spooky craft stations, and treats.",
-        "when": "29–31 October 2026 · 10am–4pm",
-        "startDate": "2026-10-29",
-        "endDate": "2026-10-31",
-        "ages": "Aimed at ages 3–11 with accompanying adults",
-        "cost": "Free community trail; trail sheets in Market Place",
-        "tags": [
-          "Events",
-          "Halloween",
-          "Kingston",
-          "Free"
-        ],
-        "source": "Kingston Council",
-        "url": "https://www.kingston.gov.uk/events/halloween-trail",
-        "venue": "kingston-town-centre",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08"
+        "verifiedAt": "2026-10-16"
       },
       {
         "id": "teddington-beer-2026",
@@ -1328,30 +1190,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
-      },
-      {
-        "id": "kingston-christmas-market-2026",
-        "title": "Kingston Traditional European Christmas Market",
-        "location": "Ancient Market Place & Alpine Village · Kingston upon Thames",
-        "summary": "Traditional wooden chalets serving mulled wine, bratwurst, artisan gifts, children's carousel rides, and live festive music on the pyramid stage.",
-        "when": "12 November – 24 December 2026 · Daily from 10am",
-        "startDate": "2026-11-12",
-        "endDate": "2026-12-24",
-        "ages": "All ages welcome; very family-friendly",
-        "cost": "Free entry to market area and Alpine Village",
-        "tags": [
-          "Events",
-          "Christmas",
-          "Markets",
-          "Festive"
-        ],
-        "source": "Kingston Council",
-        "url": "https://www.kingston.gov.uk/events/christmas-market",
-        "venue": "kingston-christmas-market",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08"
+        "verifiedAt": "2026-10-16"
       },
       {
         "id": "christmas-at-kew-2026",
@@ -1375,29 +1214,6 @@
         "kind": "event",
         "contentType": "activity",
         "verifiedAt": "2026-10-15"
-      },
-      {
-        "id": "hampton-court-ice-rink-2026",
-        "title": "Hampton Court Palace Open-Air Festive Ice Rink",
-        "location": "Tudor Palace Forecourt · East Molesey",
-        "summary": "Skate under the illuminated Tudor facade of Henry VIII's palace right in East Molesey. Features skate aids for young children and a heated café.",
-        "when": "20 November – 31 December 2026 · 10am–9pm daily",
-        "startDate": "2026-11-20",
-        "endDate": "2026-12-31",
-        "ages": "Ages 3+ (skate aids available for toddlers)",
-        "cost": "Adults £18–£21, Children £13–£15; booking essential",
-        "tags": [
-          "Events",
-          "Christmas",
-          "Ice-skating",
-          "East Molesey"
-        ],
-        "source": "Historic Royal Palaces",
-        "url": "https://www.hrp.org.uk/hampton-court-palace/whats-on/hampton-court-palace-ice-rink/",
-        "venue": "hampton-court-ice-rink",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-08"
       }
     ]
   },
@@ -1422,17 +1238,66 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 507.4
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 499.4
+    },
+    {
+      "title": "Panorama",
+      "summary": "Why are vulnerable people, including victims of domestic violence and those facing homelessness, not getting the supported housing they've been promised?",
+      "meta": "BBC One · Mon 19 Oct, 8pm",
+      "source": "BBC One",
+      "channel": "BBC One",
+      "releaseDate": "2026-10-19",
+      "releaseDateLabel": "Mon 19 Oct, 8pm",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
+      "artworkAlt": "Panorama programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-19",
+      "showId": 8534,
+      "episodeId": 3789901,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 428.6
+    },
+    {
+      "title": "Time",
+      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
+      "meta": "BBC iPlayer · Available since Sun 11 Oct",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-11",
+      "releaseDateLabel": "Available since Sun 11 Oct",
+      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
+      "artworkAlt": "Time programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-11",
+      "showId": 50374,
+      "episodeId": 3776044,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 404.9
     },
     {
       "title": "The Diplomat",
       "summary": "On an unplanned stopover at Windsor Castle, Kate grows wary of Hal and Grace's dynamic as she tries to contain the fallout from their covert actions.",
-      "meta": "Netflix · New today",
+      "meta": "Netflix · Available since yesterday",
       "source": "Netflix",
       "channel": "Netflix",
       "releaseDate": "2026-10-15",
-      "releaseDateLabel": "New today",
+      "releaseDateLabel": "Available since yesterday",
       "url": "https://www.netflix.com/title/81288983",
       "badge": "Thriller",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615648.jpg",
@@ -1448,17 +1313,17 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 415.0
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 403.0
     },
     {
       "title": "The Incident Room",
       "summary": "The death of 96-year-old Emma Finch, whose body was found inside a bungalow on fire in the Hampshire village of Liss. Investigators determined that fire wasn't an accident after noticing…",
-      "meta": "Channel 5 · Available since yesterday",
+      "meta": "Channel 5 · Available since Wed 14 Oct",
       "source": "Channel 5",
       "channel": "Channel 5",
       "releaseDate": "2026-10-14",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Wed 14 Oct",
       "url": "https://www.channel5.com/",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/489/1223830.jpg",
@@ -1473,90 +1338,40 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 401.1
-    },
-    {
-      "title": "Below",
-      "summary": "Calvin Penney welcomes his family home for a long-awaited reunion as an unexpected arrival makes waves throughout the coastal town of Snooks Arm.",
-      "meta": "Netflix · Available since Thu 8 Oct",
-      "source": "Netflix",
-      "channel": "Netflix",
-      "releaseDate": "2026-10-08",
-      "releaseDateLabel": "Available since Thu 8 Oct",
-      "url": "https://www.netflix.com/title/81652677",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1612548.jpg",
-      "artworkAlt": "Below programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-08",
-      "showId": 93115,
-      "episodeId": 3673506,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Thriller",
-        "Mystery",
-        "Supernatural"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 396.9
-    },
-    {
-      "title": "Britain's Countryside Killers",
-      "summary": "The story of Tina Baker, who vanished in 2002 after leaving to feed animals at her farm. Her husband was jailed for murder in 2006, but her body was never found.",
-      "meta": "TRUE CRIME · Today, 10pm",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-10-15",
-      "releaseDateLabel": "Today, 10pm",
-      "url": "https://www.tvmaze.com/episodes/3770909/britains-countryside-killers-3x04-buried-truths",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
-      "artworkAlt": "Britain's Countryside Killers programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-15",
-      "showId": 82837,
-      "episodeId": 3770909,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 376.7
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 393.1
     },
     {
       "title": "Convictions Gone Bad with Will Mellor",
       "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
-      "meta": "Crime & Investigation · Available since Mon 12 Oct",
+      "meta": "Crime & Investigation · Mon 19 Oct, 9pm",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-12",
-      "releaseDateLabel": "Available since Mon 12 Oct",
+      "releaseDate": "2026-10-19",
+      "releaseDateLabel": "Mon 19 Oct, 9pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
       "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-12",
+      "airdate": "2026-10-19",
       "showId": 94772,
-      "episodeId": 3776673,
+      "episodeId": 3776674,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 370.1
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 374.1
     },
     {
       "title": "This Much is True Crime",
       "summary": "Join Britain's leading criminologist, Professor David Wilson, and journalist and TV producer Martin Frizell as they examine the cases everyone is talking about.",
-      "meta": "TRUE CRIME · Tomorrow, 10pm",
+      "meta": "TRUE CRIME · Today, 10pm",
       "source": "TRUE CRIME",
       "channel": "TRUE CRIME",
       "releaseDate": "2026-10-16",
-      "releaseDateLabel": "Tomorrow, 10pm",
+      "releaseDateLabel": "Today, 10pm",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=this+much+is+true+crime",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603698.jpg",
@@ -1569,8 +1384,31 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 365.0
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 373.0
+    },
+    {
+      "title": "Britain's Countryside Killers",
+      "summary": "The story of Tina Baker, who vanished in 2002 after leaving to feed animals at her farm. Her husband was jailed for murder in 2006, but her body was never found.",
+      "meta": "TRUE CRIME · Available since yesterday",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-10-15",
+      "releaseDateLabel": "Available since yesterday",
+      "url": "https://www.tvmaze.com/episodes/3770909/britains-countryside-killers-3x04-buried-truths",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
+      "artworkAlt": "Britain's Countryside Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-15",
+      "showId": 82837,
+      "episodeId": 3770909,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 364.7
     },
     {
       "title": "UK Forensic Breakthroughs",
@@ -1592,8 +1430,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 353.7
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 345.7
     },
     {
       "title": "Last Night Out",
@@ -1615,8 +1453,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 295.0
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 287.0
     },
     {
       "title": "Mafia: Behind the Bloodshed",
@@ -1638,8 +1476,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 287.9
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 279.9
     },
     {
       "title": "Crime Scene Raw",
@@ -1661,31 +1499,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 252.9
-    },
-    {
-      "title": "Eye Investigations",
-      "summary": "Documentary series offering high-impact investigations and in-depth reporting from our award winning World Service team across the globe.",
-      "meta": "BBC News (Europe) · Available since Mon 12 Oct",
-      "source": "BBC News (Europe)",
-      "channel": "BBC News (Europe)",
-      "releaseDate": "2026-10-12",
-      "releaseDateLabel": "Available since Mon 12 Oct",
-      "url": "https://www.bbc.co.uk/programmes/m001v5nw",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/527/1318581.jpg",
-      "artworkAlt": "Eye Investigations programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-12",
-      "showId": 78387,
-      "episodeId": 3788746,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-15",
-      "preferenceScore": 246.8
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 244.9
     }
   ]
 }
