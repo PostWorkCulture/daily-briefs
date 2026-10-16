@@ -391,7 +391,18 @@ def world_fact_for_today() -> dict:
             item for item in catalog
             if item["id"] not in set(used_ids) and item.get("editorialStatus") != "retired"
         ]
-        selected = next((item for item in unused if item.get("editorialPriority") == "human-first"), None)
+        human_first = [item for item in unused if item.get("editorialPriority") == "human-first"]
+        # Wild, jaw-dropping facts (tribes, rituals, records, extreme places) lead the queue.
+        wild = [item for item in human_first if item.get("editorialBoost") == "wild"]
+        pool = wild or human_first
+        previous_id = used[-1].get("id") if used else None
+        previous = next((item for item in catalog if item["id"] == previous_id), None)
+        previous_category = str((previous or {}).get("category") or "").casefold()
+        # Avoid two consecutive days of the same kind of fact when another is available.
+        selected = next(
+            (item for item in pool if str(item.get("category") or "").casefold() != previous_category),
+            pool[0] if pool else None,
+        )
         if selected is None:
             raise RuntimeError("Human-first fact catalogue exhausted; refusing to publish a general fallback")
         selected_id = selected["id"]
@@ -628,7 +639,163 @@ def anthropic_first(items: list[dict]) -> list[dict]:
     anthropic = newest([x for x in items if is_anthropic_ai(x)])[:ANTHROPIC_AI_MAX]
     google = newest([x for x in items if is_google_ai(x) and google_major_announcement(x)])[:GOOGLE_AI_MAX]
     others = newest([x for x in items if not is_anthropic_ai(x) and not is_google_ai(x)])
-    return anthropic + google + others
+    return dedupe_ai_stories(anthropic + google + others)
+
+
+AI_STORY_STOPWORDS = frozenset("""
+a an the and or but of in on at to for with by from as into over under about after before amid via vs
+is are was were be been being has have had do does did will would could should may might can its it
+this that these those new says said report reports reported according source sources exclusive live update
+first more most than just now how why what who when where which here there not no up down out off
+anthropic anthropics claude openai openais chatgpt google googles deepmind gemini meta microsoft nvidia apple amazon
+deepseek qwen alibaba moonshot kimi baidu ernie zhipu minimax xai grok mistral ai artificial intelligence
+model models company companies firm startup lab labs tech technology
+""".split())
+AI_STORY_SYNONYMS = {
+    "subpoenaed": "subpoena", "subpoenas": "subpoena",
+    "valuation": "value", "valued": "value", "valuations": "value",
+    "lawsuit": "sue", "sues": "sue", "sued": "sue",
+    "launches": "launch", "launched": "launch", "releases": "release", "released": "release",
+}
+
+
+def ai_story_tokens(item: dict) -> set[str]:
+    words = re.findall(r"[a-z0-9$][a-z0-9.$]*", clean_html(item.get("title", "")).lower().replace("\u2019", "'"))
+    tokens = set()
+    for word in words:
+        word = word.strip(".").replace("'s", "")
+        word = AI_STORY_SYNONYMS.get(word, word)
+        if len(word) < 2 or word in AI_STORY_STOPWORDS:
+            continue
+        tokens.add(word)
+    return tokens
+
+
+AI_STORY_COMPANY = re.compile(
+    r"\b(anthropic|claude|openai|chatgpt|google|deepmind|gemini|meta|microsoft|nvidia|apple|amazon|"
+    r"deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|z\.ai|glm|minimax|bytedance|doubao|tencent|hunyuan|"
+    r"xai|mistral)\b", re.I)
+AI_COMPANY_ALIAS = {"claude": "anthropic", "chatgpt": "openai", "deepmind": "google", "gemini": "google",
+                    "qwen": "alibaba", "kimi": "moonshot", "ernie": "baidu", "z.ai": "zhipu", "glm": "zhipu",
+                    "doubao": "bytedance", "hunyuan": "tencent"}
+CHINESE_AI_COMPANIES = frozenset({"deepseek", "alibaba", "moonshot", "baidu", "zhipu", "minimax", "bytedance", "tencent"})
+AI_BUSINESS_TOPICS = {
+    "value": {"value", "ipo", "valuation", "valued", "valuations"},
+    "funding": {"funding", "raise", "raises", "raised", "round"},
+    "legal": {"sue", "lawsuit", "court", "judge", "settle", "settlement", "dispute", "subpoena", "probe", "investigation"},
+    "outage": {"outage", "down", "disruption"},
+    "layoffs": {"layoffs", "layoff", "cuts", "jobs"},
+    "deal": {"acquire", "acquires", "acquisition", "buy", "buys", "merger"},
+}
+
+
+def ai_story_company(item: dict) -> str:
+    match = AI_STORY_COMPANY.search(clean_html(item.get("title", "")))
+    if not match:
+        return ""
+    name = match.group(1).lower()
+    return AI_COMPANY_ALIAS.get(name, name)
+
+
+def ai_story_topics(item: dict) -> set[str]:
+    words = set(re.findall(r"[a-z]+", clean_html(item.get("title", "")).lower()))
+    words |= {AI_STORY_SYNONYMS.get(w, w) for w in words}
+    return {topic for topic, vocab in AI_BUSINESS_TOPICS.items() if words & vocab}
+
+
+def published_days_apart(left: dict, right: dict) -> float | None:
+    try:
+        a = datetime.fromisoformat(str(left.get("publishedAt")))
+        b = datetime.fromisoformat(str(right.get("publishedAt")))
+    except ValueError:
+        return None
+    return abs((a - b).total_seconds()) / 86400
+
+
+def same_ai_story(left: dict, right: dict) -> bool:
+    """Two items cover the same event when their distinctive title words overlap strongly,
+    or when they report the same business development for the same company within two days."""
+    left_url = str(left.get("url") or "").strip()
+    if left_url and left_url == str(right.get("url") or "").strip():
+        return True
+    company = ai_story_company(left)
+    if company and company == ai_story_company(right):
+        gap = published_days_apart(left, right)
+        if (gap is None or gap <= 2) and ai_story_topics(left) & ai_story_topics(right):
+            return True
+    a, b = ai_story_tokens(left), ai_story_tokens(right)
+    if not a or not b:
+        return False
+    shared = a & b
+    return len(shared) >= 2 or len(shared) / len(a | b) >= 0.5
+
+
+def dedupe_ai_stories(items: list[dict]) -> list[dict]:
+    """Keep the first (highest-priority) item for each event; drop later repeats."""
+    kept: list[dict] = []
+    for item in items:
+        if not any(same_ai_story(item, existing) for existing in kept):
+            kept.append(item)
+    return kept
+
+
+CHINESE_AI_LAB = re.compile(
+    r"\b(?:deepseek|qwen|moonshot ai|kimi k\d|kimi(?= (?:ai|chatbot|model|app))|zhipu|z\.ai|glm-\d|minimax|"
+    r"baidu(?=.{0,40}\b(?:ai|ernie|model)\b)|ernie(?: bot| \d)|alibaba(?=.{0,40}\b(?:ai|qwen|model)\b)|"
+    r"bytedance(?=.{0,40}\b(?:ai|doubao|seed|model)\b)|doubao|tencent hunyuan|hunyuan)\b",
+    re.I,
+)
+CHINESE_AI_NOISE = re.compile(r"\b(?:antonelli|r[aä]ikk[oö]nen|formula 1|f1|grand prix|stock picks?|shares? (?:rise|fall|jump|slump))\b", re.I)
+CHINESE_AI_MAX = 3
+CHINESE_AI_RETAIN_DAYS = 21
+
+
+def chinese_ai_item(item: dict) -> bool:
+    """A Chinese frontier lab must be the story's main subject, not a passing comparison."""
+    title = clean_html(item.get("title", ""))
+    if not CHINESE_AI_LAB.search(title) or CHINESE_AI_NOISE.search(title):
+        return False
+    return ai_story_company(item) in CHINESE_AI_COMPANIES
+
+
+def previous_chinese_ai() -> list[dict]:
+    """Last live-sourced Chinese-lab items, kept only while recent."""
+    try:
+        previous = json.loads((DATA / "pete.json").read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    kept = []
+    for item in (previous.get("sections") or {}).get("AI") or []:
+        if not item.get("liveChineseLab") or not chinese_ai_item(item):
+            continue
+        try:
+            published = datetime.fromisoformat(str(item.get("publishedAt")))
+        except ValueError:
+            continue
+        if NOW - published <= timedelta(days=CHINESE_AI_RETAIN_DAYS):
+            kept.append(item)
+    return kept
+
+
+def live_chinese_ai() -> list[dict]:
+    """Current DeepSeek, Qwen, Moonshot/Kimi and other Chinese frontier-lab news."""
+    fresh = google_news(
+        '(DeepSeek OR Qwen OR "Moonshot AI" OR "Kimi K2" OR "Kimi K3" OR Zhipu OR MiniMax OR "Baidu ERNIE" OR Hunyuan OR Doubao) when:10d',
+        30, 10,
+    )
+    candidates = [dict(item, liveChineseLab=True) for item in fresh if chinese_ai_item(item)]
+    candidates = sorted(candidates, key=lambda x: str(x.get("publishedAt") or ""), reverse=True)
+    candidates += previous_chinese_ai()
+    pool = dedupe_ai_stories(editorial_news(candidates))
+    # One story per lab first so DeepSeek, Qwen, Moonshot and others rotate; then fill by recency.
+    picked, labs = [], set()
+    for item in pool:
+        lab = ai_story_company(item)
+        if lab not in labs:
+            picked.append(item)
+            labs.add(lab)
+    picked += [item for item in pool if item not in picked]
+    return picked[:CHINESE_AI_MAX]
 
 
 def news_item_is_job_vacancy(item: dict) -> bool:
@@ -1880,36 +2047,8 @@ def build_profiles() -> dict[str, dict]:
         ]
         frontier_ai = anthropic_first(anthropic_fallback + frontier_ai)[:7]
 
-    chinese_ai = [
-        {
-            "title": "DeepSeek-V4.1: faster inference and native multimodal understanding",
-            "summary": "DeepSeek releases V4.1 with optimized Mixture-of-Experts architecture and long-context vision reasoning.",
-            "meta": "Mon 28 Sep",
-            "publishedAt": "2026-09-28T10:00:00+01:00",
-            "source": "DeepSeek",
-            "url": "https://api-docs.deepseek.com/news/news202609",
-            "contentType": "article",
-        },
-        {
-            "title": "Qwen-Image-3.0 and Qwen Code: autonomous task execution across enterprise tools",
-            "summary": "Alibaba Cloud unveils unified image generation and autonomous terminal coding agent models.",
-            "meta": "Wed 7 Oct",
-            "publishedAt": "2026-10-07T08:00:00+01:00",
-            "source": "Qwen",
-            "url": "https://qwenlm.github.io/blog/qwen-image-3.0/",
-            "contentType": "article",
-        },
-        {
-            "title": "Kimi K3: scaling open long-horizon agentic reasoning models",
-            "summary": "Moonshot AI details Kimi K3 architecture for complex multi-step reasoning and autonomous coding.",
-            "meta": "Fri 2 Oct",
-            "publishedAt": "2026-10-02T12:00:00+01:00",
-            "source": "Moonshot AI",
-            "url": "https://www.moonshot.cn/news/kimi-k3",
-            "contentType": "article",
-        },
-    ]
-    ai = (frontier_ai[:7] + chinese_ai)[:10]
+    chinese_ai = live_chinese_ai()
+    ai = dedupe_ai_stories(frontier_ai[:7] + chinese_ai)[:10]
     arsenal_news = first_team_arsenal_news(google_news('Arsenal FC when:3d', 8, 3))
     transfers = arsenal_transfer_updates()
     transfer_rumours = arsenal_transfer_rumours()

@@ -190,11 +190,45 @@
     const isGoogle=x=>!isAnthropic(x)&&/\b(?:google|deepmind|gemini|gemma)\b|(?:^|[/.])(?:google|deepmind)\.[a-z.]+/i.test(text(x));
     const isChinese=x=>/\b(?:deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|minimax|01\.ai)\b/i.test(text(x));
     const tier=x=>isAnthropic(x)?0:(isGoogle(x)?1:(isChinese(x)?3:2));
-    return [...(items||[])].sort((a,b)=>{
+    const sorted=[...(items||[])].sort((a,b)=>{
       const diff=tier(a)-tier(b);
       if(diff!==0)return diff;
       return (Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0);
     });
+    return dedupeAiStories(sorted);
+  }
+  const AI_STOP=new Set(`a an the and or but of in on at to for with by from as into over under about after before amid via vs is are was were be been being has have had do does did will would could should may might can its it this that these those new says said report reports reported according source sources exclusive live update first more most than just now how why what who when where which here there not no up down out off anthropic anthropics claude openai openais chatgpt google googles deepmind gemini meta microsoft nvidia apple amazon deepseek qwen alibaba moonshot kimi baidu ernie zhipu minimax xai grok mistral ai artificial intelligence model models company companies firm startup lab labs tech technology`.split(' '));
+  const AI_SYN={subpoenaed:'subpoena',subpoenas:'subpoena',valuation:'value',valued:'value',valuations:'value',lawsuit:'sue',sues:'sue',sued:'sue',launches:'launch',launched:'launch',releases:'release',released:'release'};
+  function aiStoryTokens(item){
+    const words=String(item?.title||'').toLowerCase().replace(/\u2019/g,"'").match(/[a-z0-9$][a-z0-9.$]*/g)||[];
+    const out=new Set();
+    for(let w of words){w=w.replace(/^\.+|\.+$/g,'').replace(/'s$/,'');w=AI_SYN[w]||w;if(w.length>=2&&!AI_STOP.has(w))out.add(w)}
+    return out;
+  }
+  const AI_CO=/\b(anthropic|claude|openai|chatgpt|google|deepmind|gemini|meta|microsoft|nvidia|apple|amazon|deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|z\.ai|glm|minimax|bytedance|doubao|tencent|hunyuan|xai|mistral)\b/i;
+  const AI_CO_ALIAS={claude:'anthropic',chatgpt:'openai',deepmind:'google',gemini:'google',qwen:'alibaba',kimi:'moonshot',ernie:'baidu','z.ai':'zhipu',glm:'zhipu',doubao:'bytedance',hunyuan:'tencent'};
+  const AI_TOPICS={value:['value','ipo','valuation','valued','valuations'],funding:['funding','raise','raises','raised','round'],legal:['sue','sues','sued','lawsuit','court','judge','settle','settlement','dispute','subpoena','subpoenas','subpoenaed','probe','investigation'],outage:['outage','down','disruption'],layoffs:['layoffs','layoff','cuts','jobs'],deal:['acquire','acquires','acquisition','buy','buys','merger']};
+  function aiCompany(item){const m=String(item?.title||'').match(AI_CO);if(!m)return '';const n=m[1].toLowerCase();return AI_CO_ALIAS[n]||n}
+  function aiTopics(item){const w=new Set(String(item?.title||'').toLowerCase().match(/[a-z]+/g)||[]);return Object.keys(AI_TOPICS).filter(k=>AI_TOPICS[k].some(v=>w.has(v)))}
+  function sameAiStory(a,b){
+    if(a?.url&&a.url===b?.url)return true;
+    const co=aiCompany(a);
+    if(co&&co===aiCompany(b)){
+      const ta=Date.parse(a?.publishedAt||''),tb=Date.parse(b?.publishedAt||'');
+      const near=!ta||!tb||Math.abs(ta-tb)<=2*86400000;
+      const tb2=aiTopics(b);
+      if(near&&aiTopics(a).some(t=>tb2.includes(t)))return true;
+    }
+    const x=aiStoryTokens(a),y=aiStoryTokens(b);
+    if(!x.size||!y.size)return false;
+    let shared=0;x.forEach(w=>{if(y.has(w))shared++});
+    const union=new Set([...x,...y]).size;
+    return shared>=2||shared/union>=0.5;
+  }
+  function dedupeAiStories(items){
+    const kept=[];
+    for(const item of items||[]){if(!kept.some(prev=>sameAiStory(item,prev)))kept.push(item)}
+    return kept;
   }
   function newestFirst(items){return [...(items||[])].sort((a,b)=>(Date.parse(b.publishedAt||'')||0)-(Date.parse(a.publishedAt||'')||0))}
 

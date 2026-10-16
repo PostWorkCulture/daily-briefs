@@ -11,13 +11,18 @@ def reserve_report(catalog: list[dict], history: dict) -> dict:
     remaining = len({entry['id'] for entry in catalog if entry.get('id') not in used
                      and entry.get('editorialPriority') == 'human-first'
                      and entry.get('editorialStatus') != 'retired'})
-    return {'remaining': remaining, 'needsReplenishment': remaining < 7, 'target': 21}
+    wild = len({entry['id'] for entry in catalog if entry.get('id') not in used
+                and entry.get('editorialPriority') == 'human-first'
+                and entry.get('editorialBoost') == 'wild'
+                and entry.get('editorialStatus') != 'retired'})
+    return {'remaining': remaining, 'wildRemaining': wild, 'needsReplenishment': remaining < 7, 'target': 21}
 
 
 def main() -> None:
     result = reserve_report(json.loads((ROOT/'data/fact-catalog.json').read_text(encoding='utf-8')),
                             json.loads((ROOT/'data/fact-history.json').read_text(encoding='utf-8')))
-    message = f"Verified human-first fact reserve: {result['remaining']} unused. Replenishment target: 21."
+    message = (f"Verified human-first fact reserve: {result['remaining']} unused "
+               f"({result['wildRemaining']} wild). Replenishment target: 21.")
     print(('::warning::' if result['needsReplenishment'] else '') + message)
     if os.getenv('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:

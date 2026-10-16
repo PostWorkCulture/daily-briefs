@@ -111,6 +111,54 @@ class WorldFactTests(unittest.TestCase):
             self.assertEqual(selected["id"], "remarkable-human")
             self.assertEqual(selected["editorialPriority"], "human-first")
 
+    def _select(self, catalog, used=None, day=(2026, 10, 17)):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog_path = root / "catalog.json"
+            history_path = root / "history.json"
+            catalog_path.write_text(json.dumps(catalog), encoding="utf-8")
+            history_path.write_text(json.dumps({"version": 1, "used": used or []}), encoding="utf-8")
+            original = (refresh.FACT_CATALOG, refresh.FACT_HISTORY, refresh.NOW)
+            try:
+                refresh.FACT_CATALOG = catalog_path
+                refresh.FACT_HISTORY = history_path
+                refresh.NOW = datetime(*day, tzinfo=ZoneInfo("Europe/London"))
+                return refresh.world_fact_for_today()
+            finally:
+                refresh.FACT_CATALOG, refresh.FACT_HISTORY, refresh.NOW = original
+
+    def test_wild_facts_are_chosen_before_ordinary_human_first_facts(self):
+        gentle = fact("gentle-craft", "human-first")
+        wild = fact("wild-ritual", "human-first")
+        wild["editorialBoost"] = "wild"
+        self.assertEqual(self._select([gentle, wild])["id"], "wild-ritual")
+
+    def test_consecutive_days_avoid_the_same_category_when_possible(self):
+        yesterday = fact("yesterday-record", "human-first")
+        yesterday["category"] = "World record"
+        same = fact("another-record", "human-first")
+        same["category"] = "World record"
+        same["editorialBoost"] = "wild"
+        different = fact("a-tribe", "human-first")
+        different["category"] = "Living tribe"
+        different["editorialBoost"] = "wild"
+        selected = self._select(
+            [yesterday, same, different],
+            used=[{"date": "2026-10-16", "id": "yesterday-record"}],
+        )
+        self.assertEqual(selected["id"], "a-tribe")
+
+    def test_catalogue_wild_facts_are_complete_and_sourced(self):
+        catalog = json.loads((ROOT / "data" / "fact-catalog.json").read_text(encoding="utf-8"))
+        wild = [item for item in catalog if item.get("editorialBoost") == "wild"]
+        self.assertGreaterEqual(len(wild), 14)
+        for item in wild:
+            with self.subTest(item=item["id"]):
+                self.assertEqual(item.get("editorialPriority"), "human-first")
+                self.assertTrue(item["sourceUrl"].startswith("https://"))
+                self.assertTrue(item["image"].startswith("https://commons.wikimedia.org/"))
+                self.assertIn("·", item["locationContext"])
+
     def test_new_day_fails_when_human_first_queue_is_exhausted(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
