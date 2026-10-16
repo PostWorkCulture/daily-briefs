@@ -612,7 +612,9 @@ ANTHROPIC_AI_MAX = 5
 
 
 def ai_text(item: dict) -> str:
-    return f"{item.get('title', '')} {item.get('source', '')} {item.get('summary', '')} {item.get('url', '')}"
+    # A Google News redirect URL says nothing about the story's company.
+    url = re.sub(r"^https?://news\.google\.com\S*", "", str(item.get("url", "")), flags=re.I)
+    return f"{item.get('title', '')} {item.get('source', '')} {item.get('summary', '')} {url}"
 
 
 def is_anthropic_ai(item: dict) -> bool:
@@ -636,8 +638,8 @@ def anthropic_first(items: list[dict]) -> list[dict]:
     def newest(group: list[dict]) -> list[dict]:
         return sorted(group, key=lambda x: str(x.get("publishedAt") or ""), reverse=True)
 
-    anthropic = newest([x for x in items if is_anthropic_ai(x)])[:ANTHROPIC_AI_MAX]
-    google = newest([x for x in items if is_google_ai(x) and google_major_announcement(x)])[:GOOGLE_AI_MAX]
+    anthropic = dedupe_ai_stories(newest([x for x in items if is_anthropic_ai(x)]))[:ANTHROPIC_AI_MAX]
+    google = dedupe_ai_stories(newest([x for x in items if is_google_ai(x) and google_major_announcement(x)]))[:GOOGLE_AI_MAX]
     others = newest([x for x in items if not is_anthropic_ai(x) and not is_google_ai(x)])
     return dedupe_ai_stories(anthropic + google + others)
 

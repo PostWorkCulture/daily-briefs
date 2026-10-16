@@ -51,6 +51,15 @@ class AiDedupeTests(unittest.TestCase):
         self.assertEqual(len(refresh.dedupe_ai_stories(items)), 1)
 
 
+class AiClassificationTests(unittest.TestCase):
+
+    def test_google_news_redirect_url_does_not_make_a_story_google(self) -> None:
+        story = item("Meta releases Muse Spark Open, a new open-weight AI model", url="https://news.google.com/rss/articles/abc")
+        self.assertFalse(refresh.is_google_ai(story))
+        direct = item("Gemini 4 Argon for Robotics", url="https://deepmind.google/discover/blog/x")
+        self.assertTrue(refresh.is_google_ai(direct))
+
+
 class LiveChineseAiTests(unittest.TestCase):
 
     def setUp(self) -> None:

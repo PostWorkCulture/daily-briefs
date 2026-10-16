@@ -12,7 +12,9 @@
 
   function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
   function aiCompany(item={}){
-    const value=`${item.title||''} ${item.summary||''} ${item.source||''} ${item.url||''}`;
+    // Headline and publisher decide the logo; a Google News redirect URL must not imply Google.
+    const text=`${item.title||''} ${item.summary||''} ${item.source||''}`;
+    const url=String(item.url||'').replace(/^https?:\/\/news\.google\.com\S*/i,'');
     const companies=[
       {name:'Google Gemini',match:/\b(?:gemini|google deepmind|deepmind)\b/i,src:'assets/company-logos/google-gemini.svg'},
       {name:'Anthropic',match:/\b(?:anthropic|claude)\b/i,src:'assets/company-logos/anthropic.svg'},
@@ -22,7 +24,7 @@
       {name:'Qwen',match:/\b(?:qwen|alibaba)\b/i,src:'assets/company-logos/qwen.svg'},
       {name:'Moonshot',match:/\b(?:moonshot|kimi)\b/i,src:'assets/company-logos/moonshot.svg'}
     ];
-    return companies.find(company=>company.match.test(value))||null;
+    return companies.find(company=>company.match.test(text))||companies.find(company=>company.match.test(url))||null;
   }
   function sectionIcon(section,index=0,company=null){
     if(section==='ai'&&company){
@@ -185,7 +187,7 @@
     return `<section class="tab-group${section?` tab-group-${section}`:''}" data-section-key="${esc(key)}">${heading}<div class="${listClass}">${content}</div></section>`;
   }
   function aiOrder(items){
-    const text=x=>`${x.title||''} ${x.source||''} ${x.summary||''} ${x.url||''}`;
+    const text=x=>`${x.title||''} ${x.source||''} ${x.summary||''} ${String(x.url||'').replace(/^https?:\/\/news\.google\.com\S*/i,'')}`;
     const isAnthropic=x=>/\b(?:anthropic|claude)\b|(?:^|[/.])anthropic\.com/i.test(text(x));
     const isGoogle=x=>!isAnthropic(x)&&/\b(?:google|deepmind|gemini|gemma)\b|(?:^|[/.])(?:google|deepmind)\.[a-z.]+/i.test(text(x));
     const isChinese=x=>/\b(?:deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|minimax|01\.ai)\b/i.test(text(x));
@@ -208,12 +210,12 @@
   const AI_CO=/\b(anthropic|claude|openai|chatgpt|google|deepmind|gemini|meta|microsoft|nvidia|apple|amazon|deepseek|qwen|alibaba|moonshot|kimi|baidu|ernie|zhipu|z\.ai|glm|minimax|bytedance|doubao|tencent|hunyuan|xai|mistral)\b/i;
   const AI_CO_ALIAS={claude:'anthropic',chatgpt:'openai',deepmind:'google',gemini:'google',qwen:'alibaba',kimi:'moonshot',ernie:'baidu','z.ai':'zhipu',glm:'zhipu',doubao:'bytedance',hunyuan:'tencent'};
   const AI_TOPICS={value:['value','ipo','valuation','valued','valuations'],funding:['funding','raise','raises','raised','round'],legal:['sue','sues','sued','lawsuit','court','judge','settle','settlement','dispute','subpoena','subpoenas','subpoenaed','probe','investigation'],outage:['outage','down','disruption'],layoffs:['layoffs','layoff','cuts','jobs'],deal:['acquire','acquires','acquisition','buy','buys','merger']};
-  function aiCompany(item){const m=String(item?.title||'').match(AI_CO);if(!m)return '';const n=m[1].toLowerCase();return AI_CO_ALIAS[n]||n}
+  function aiStoryCompany(item){const m=String(item?.title||'').match(AI_CO);if(!m)return '';const n=m[1].toLowerCase();return AI_CO_ALIAS[n]||n}
   function aiTopics(item){const w=new Set(String(item?.title||'').toLowerCase().match(/[a-z]+/g)||[]);return Object.keys(AI_TOPICS).filter(k=>AI_TOPICS[k].some(v=>w.has(v)))}
   function sameAiStory(a,b){
     if(a?.url&&a.url===b?.url)return true;
-    const co=aiCompany(a);
-    if(co&&co===aiCompany(b)){
+    const co=aiStoryCompany(a);
+    if(co&&co===aiStoryCompany(b)){
       const ta=Date.parse(a?.publishedAt||''),tb=Date.parse(b?.publishedAt||'');
       const near=!ta||!tb||Math.abs(ta-tb)<=2*86400000;
       const tb2=aiTopics(b);
