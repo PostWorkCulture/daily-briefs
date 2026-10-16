@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Friday, 16 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Friday, 16 October 2026 · refreshed 9:20am",
   "worldFact": {
     "id": "baarle-hertog-twenty-two-enclaves",
     "editorialPriority": "human-first",
@@ -18,10 +18,10 @@
     "localImage": "assets/scenery/world-fact.webp?v=15e09268ff04"
   },
   "weather": {
-    "temp": "15°",
-    "summary": "Heavy rain",
-    "condition": "Heavy rain",
-    "currentRainChance": 20,
+    "temp": "12°",
+    "summary": "Overcast",
+    "condition": "Overcast",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-16",
@@ -29,7 +29,7 @@
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 95,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -38,34 +38,34 @@
         "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-18",
         "high": 14,
-        "low": 9,
+        "low": 8,
         "summary": "Forecast",
         "condition": "Forecast",
-        "rainChance": 70,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-10-19",
-        "high": 16,
-        "low": 11,
+        "high": 15,
+        "low": 10,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 60,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-20",
-        "high": 18,
+        "high": 16,
         "low": 10,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -74,7 +74,7 @@
         "low": 10,
         "summary": "Forecast",
         "condition": "Forecast",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 95%",
+      "detail": "Sunny intervals · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -135,6 +135,20 @@
     }
   },
   "calendar": [
+    {
+      "title": "Window Cleaner",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-15T00:00:00+01:00",
+      "end": "2026-10-16T00:00:00+01:00",
+      "date": "2026-10-15",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "70o38db1c4rj0bb460r30b9k75gjcb9pcop3cb9k75hm6o9i6cpj0c9mcc",
+      "calendarColorSource": "calendar-default"
+    },
     {
       "title": "Kids",
       "summary": "",
@@ -192,20 +206,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
       "url": "",
@@ -218,6 +218,20 @@
       "colorId": null,
       "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
     },
     {
       "title": "Hygienist- 10am",
@@ -318,17 +332,17 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Godstone Farm - Gruffalo?",
+      "title": "Demi Playdate",
       "summary": "",
       "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
       "time": "All day",
       "allDay": true,
       "color": null,
       "colorId": null,
-      "googleEventId": "6oqj4cr1chj34bb660qjib9kcgs3gb9ocpj38bb16tj68cpn6go34dpp68",
+      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
       "calendarColorSource": "calendar-default"
     },
     {
@@ -343,6 +357,20 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "See Kate and Family",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
       "calendarColorSource": "google"
     },
     {
@@ -374,20 +402,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Choir Performance 10:30-2:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-22T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -400,6 +414,20 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 10:30-2:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-22T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -578,27 +606,27 @@
       "preferenceScore": 558.7
     },
     {
-      "title": "Aileen Wuornos: Damsel of Death",
-      "summary": "Concluding the profile of the serial killer, revealing how a body found beside a Florida highway sparked a chilling investigation into a drifter linked to a series of murders.",
-      "meta": "Crime & Investigation · Available since Sun 11 Oct",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since Sun 11 Oct",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/aileen-wuornos-damsel-of-death",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609030.jpg",
-      "artworkAlt": "Aileen Wuornos: Damsel of Death programme artwork",
+      "title": "Stacey Dooley",
+      "summary": "Stacey Dooley looks into the deaths of women who have fallen from heights, interrogating how these deaths are investigated and exploring whether domestic abuse played a part.",
+      "meta": "BBC iPlayer · Available since Tue 13 Oct",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-13",
+      "releaseDateLabel": "Available since Tue 13 Oct",
+      "url": "https://www.bbc.co.uk/programmes/b048vy8l",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
+      "artworkAlt": "Stacey Dooley programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 94771,
-      "episodeId": 3776661,
+      "airdate": "2026-10-13",
+      "showId": 4594,
+      "episodeId": 3783642,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-16",
-      "preferenceScore": 506.2
+      "preferenceScore": 499.4
     },
     {
       "title": "The Northumbria Mysteries",
@@ -639,21 +667,21 @@
         "contentType": "article"
       },
       {
-        "title": "Sweden Joins European Quantum and AI Skills Academies",
+        "title": "‘We always know we will lose players’ - How Sweden’s Damallsvenskan copes with being the most popular market for transfers to the WSL and beyond",
         "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T16:06:45+01:00",
-        "source": "The Quantum Insider",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQmZKUEY4cXR5cm5ILUdESFFkMXA2eUxYdEV4WGlvZVA3aXEwX3M3MDFEcXdiaThRanFqVjgxV3c3c0JYMXpabWtNR0lORjhab2RRRWlFajhTYnZPWVBydlRrQk1WTVhpY0p6WVJ4aXJpdDVtc1gtSXpQMUJRM2xUYTlMVlZCNTJDRTVEUm13?oc=5",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T07:00:00+01:00",
+        "source": "Goal.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYkRlZ2VsR1NiOGIxVHJtbVlIbnlmWkwzd3ZLREpDeHZuZGxxTXpXV0RUUTR4NG04RlNkdUJuRGxleEdXa3NiaGNva3RleHFEOU5VSzNhUVlST1RrSUd3T3FCelRPNWZSRndXbWdlajFKd21reWowVEQxNHQ5Q3BsOFBOTmpFTXFIYlRlODgybkQyUER5TEw3bXBOWlRpVnh5OXJJMHVTcmZDRVZJUUYwVS0tRFdMbHdxM0V1Ti1INVJ2TzQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The Church of Sweden listens in",
+        "title": "Saab, FMV and the Swedish Armed Forces launch LUUV",
         "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T17:11:10+01:00",
-        "source": "Shots",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5YanZaNkZobzc2dUxxQ005RHNwTUFsaFNEQk5CUXlxU3UtcUQxaHozaVNFUTFyOHgzSWRMQWgtSHBoLU9VbXZVa2pydTdCYnJtX0F0QjN6SHAycTRMOHQ4cUZJdjBpVWNrTHZ3?oc=5",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T09:10:20+01:00",
+        "source": "Naval News",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa2pPZ2M3b3d6cU55cFNCSTZubnc4R0kwc3BQUVVyQjByWEU2eHBrMHFKVDgyMjFvVnVONC1NVnNfZDBzTEZ3Q2N3aTZqUFp0b2w2TjM0THpySlFreXFKZFNOODB4bU5pSktWZnotaEotN092Q2JnaDVUYlF2YTNQaVlhck9sMl9PY0R4T0FtaWtaWUxUeGdrempqUQ?oc=5",
         "contentType": "article"
       },
       {
@@ -666,30 +694,30 @@
         "contentType": "article"
       },
       {
-        "title": "Russia detains Swedish citizen as Moscow eyes future prisoner swaps",
+        "title": "Sweden Joins European Quantum and AI Skills Academies",
         "summary": "",
         "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T11:25:40+01:00",
-        "source": "Euronews.com",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNWFjRVdmVWJvVVZZNmZFNDdJUTNBRlRTQzlRcm9RZjhaM2VNRnlsczktZ0RqVFB4YlprZjZrcU5IQlJScjhKZElHVnhWbGRHRGk0ekF5WWJRRGkwaWQzRlN3ZDZVVHdKb3dkLUR2RXI0c2djN3BQZGlQOG1OY1ZOSmxvZVVPT2lrZEtqRFNTcW9Ndm1nMUlsMHhIN3B4UzRPTE5rOThn?oc=5",
+        "publishedAt": "2026-10-15T16:06:45+01:00",
+        "source": "The Quantum Insider",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQmZKUEY4cXR5cm5ILUdESFFkMXA2eUxYdEV4WGlvZVA3aXEwX3M3MDFEcXdiaThRanFqVjgxV3c3c0JYMXpabWtNR0lORjhab2RRRWlFajhTYnZPWVBydlRrQk1WTVhpY0p6WVJ4aXJpdDVtc1gtSXpQMUJRM2xUYTlMVlZCNTJDRTVEUm13?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Did AI Just Erase an Entire Swedish TV Show?",
+        "title": "Linde to build 200,000-tonne CO2 capture plant in Sweden",
         "summary": "",
         "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T01:00:22+01:00",
-        "source": "CNET",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOU0lmX3NtUG9zWGhyZkcteHZ3MW4tZ2RYc2h6U1JpQ0JPSTF0STlnMm9FWUgyRUxLNmdIbGVOaFN3YVJ2YTh1TC1aSVZkRlg4T3V3NDljQkRIZUpQLUtBXzlBazh5ZVZBZ0JvbHZUQmctSUFhV3dlLTg3UzhLV1JSUl9B?oc=5",
+        "publishedAt": "2026-10-16T08:51:24+01:00",
+        "source": "gasworld",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONndoRlF6ejhEaURZNXF4bzVpZzdjNWhVQWVkcXhUWmJOUG9iLUpiZDlYS3pvaGp6VTNTZVpqbUFaanVFWElEVV95N01WV3h3R0JwRS0yYVhHbHdUWEstemwzN2RkdmxBcHZkbGNWcXZZNlpjMThORjdiTTlkdmR2VmpneG5ONkZCMXBlTzJ3UzlJa1Bpa2RBeWVLb2NjNjZ6ZUhFbmNWTV85QmVYWERnRklDMnlVVEhoMFk0OEI3WFByaUY2ZjZ2UQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Next Gen Brings 70 Young Female Judoka Together for International Camp in Malmö, Sweden",
+        "title": "Sweden pushes digital krona legislation as ECB plans 2027 euro pilot",
         "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T17:30:43+01:00",
-        "source": "European Judo Union",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMFhBT2NFSGpkUHJudnVRVnloelMyQlMzY1NUY2FVNXJmMzd2X3dKem15dUVUUVNhQUJOMkJxbW9ORWd4eW5uU2tjWG5zS1Zhd3BYSVZ2ZGJ6ZzFoQklGNVhEMHpQMTZpS0lfWDhVazllQkJwR00wQ1lRNm5hY3pQTUxQZDd3dVJtLWVJQkw5UHJJeGE3VkpWeUZqRGZxZXdaYnZQaTRUdU9CSlNjLU5UZXl0bw?oc=5",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T07:31:00+01:00",
+        "source": "Crypto News",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQb2RrYjRPcEc3OF8xeWhmbzkwNnhrUlN4YWdsMU1vd3Q0czJuclZSdk1fV1ltbTFMZlE1ejVBblVOT2FlemtvMjUtRF84Rmc3Y2xvY29Uc2VjRG1jVTZMbGE3cnd2cDBtbjNKbzI2VTlDaWIwQWUyNGdnRVpYbEpsSjlVQlhlbWVXdUtfbTU2WndzM2c?oc=5",
         "contentType": "article"
       }
     ],
@@ -719,18 +747,6 @@
         "homeArea": false
       },
       {
-        "title": "Free pub taster sessions announced as local women's darts league expands to Kingston",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T06:34:43+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUkZ2cmhmUDVuaExCREg4Tm9ZWTlveUV4NnRzamhEcm5vcGRpb0ZZT1lkRGNwUUJYZWw0SjNEWUxIMkdId25HSDEyNlF6Ymx5RXRmWHNBWXFPb04wd2lrNGdmaFREU3VRSFBOSGYyUzNjZ0xEcGpBWnJzMGxsbmctaHlpclQwak85c1VSdmNTWnBpSkhFMUtXTXYzWmk5RVpndjVRcnFZM0JGdVZBZmNFWUYxMERiYUNrc1dfc2tNQ2ViQlJjdmtBazkwSDQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Plans for 206 homes on former Esher golf course rejected",
         "summary": "",
         "meta": "Wed 14 Oct",
@@ -755,6 +771,30 @@
         "homeArea": false
       },
       {
+        "title": "Kingston’s Rose Theatre announces new stage adaptation and tour of Judith Kerr family classic",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T15:26:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObjZwOUtlMWsxNkpQMThES3o3UGgycEpxQ3hzNExqTk9NemFsZDdDeXpLbWVWRGJBYUtEVXNQemQ3eWhpWWZSYk5sMTI1dHRBbU4zN1FIbUtBbHdGTmJ6MjdBNnBPa19ycHd4SmF5TWpxenZnb2stTkhnaUNMWEx3VU9zdV9UZWVZdkEtXzQwM091ZDNuYzUxNExGdDZyUGtDLVNnS2ZYNzBkZFpsMFlpN2RDLWM3al8wRnlBZEhraklObUk0ekJGc0N1cmJGazdwQkc2and0bXY?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T17:00:00+01:00",
+        "source": "Twickenham Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQY1BnbFJnRXhEOTBwYjNhUFp2Tks5RjJaNkFOQ3RRX0xKUkNWcWVfWnZxcFFETUp0NXp1SFcyMWFTSTdHUkhPSGNpZ0dpNTdxdlVFMHpTQ1lRMUpKcDluN200dV81X3RtNThjR1ZJcW1UMVJ6cHVXVmxEZ21YVHF1LW9CM3NsbFk2Smlqd3dQYnVBbnJ1Wk45bTdJZmQ4YWVfeXZtNDJRaTNEWFVpYkRSRXFDUWs3UE03dUViSVZGS1NqRi1WdUxpeVJyalVxd05kNThqWkh3MTQ4eWpqbG9TVXhQYnZ6VGxLWjJn?oc=5",
+        "contentType": "article",
+        "localPublication": false,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
         "title": "Will Kingston Christmas Market return this year? Council releases update after fire",
         "summary": "",
         "meta": "Fri 9 Oct",
@@ -764,18 +804,6 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "How To Visit The Hampton Court Palace Gardens For Free",
-        "summary": "",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T08:00:00+01:00",
-        "source": "Londonist",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSnlnS1NxYUlzX2hjenJ0UmdaNkVzbnBSblVIeFZhX1JyanlGY3gxeEpUbEdkZXMtajd3Y0JTZ0JRUzRITnlTNDQ1Q2x0U0ctakt5Z3RKckJQY0M1eFBHZHoxVzEwODl2eHB6SzhSVWo2OVM4NDlEMkJ3RzVGYTdOdjQxTGg0MlFLUkFfTXZ3ZkQ5QlUtbnYwSnFPOXdKUU12TDE3Ug?oc=5",
-        "contentType": "article",
-        "localPublication": false,
-        "familyActivity": false,
         "homeArea": false
       },
       {
@@ -829,6 +857,42 @@
     ],
     "UK news": [
       {
+        "title": "Wales’ charity heroes celebrated at national awards ceremony in Cardiff",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T08:52:59+01:00",
+        "source": "Wales 247",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR1RyTkFfQXhiVlVCVGlaclE1bjcwYldjNUJ0YkZuN0x1ZDFVbnk4RWg2ZmpDWGlGSkc2SHJjcTNUQmlhYkd3LVRzUGZEc0lkWGhnUGgzZk5mb0xDcTlmNmw4X2dJMXJHeVRkY1NXRmhWal85dDRhdS1xZmZpVGZrYmItZkMzMzZnOUR2ZzFidGhkOF9IUTNwc0dfVGM5QQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Reform faces questions over candidate vetting after undercover filming",
+        "summary": "Reform UK says the party has \"improved and prioritised its vetting procedures\".",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T08:31:42+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Met needs to move away from criminalising sex workers, officers say after Levy failings",
+        "summary": "The force is piloting a two-officer female team in north London to engage with street sex workers, in a bid to improve trust.",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T06:05:38+01:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c2l8jpzwv9jo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Cumbrian creatives take award-winning work to Scotland’s biggest winter festival",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T05:00:00+01:00",
+        "source": "Yahoo News UK",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR0s1a3NKTTNWRzdjbWtLeTgzbHU3RVAzalJrQTZZUWdiTWszX3lqVTZwSFFSd1FPN21qbFdLQ3pDWWFCUGVtc0dKbU5xMHIwclFKQlBVM2RKNEVtZXR6akZTN09vRW02aGYtdVkwZy1VUm1qUndMNTZIbUZzTVp1Nm1kT3B4VGZfOFE?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "The Prince Charles Cinema Gets a New Lease on Life as Britain Celebrates Its Independents",
         "summary": "",
         "meta": "Fri 16 Oct",
@@ -838,21 +902,12 @@
         "contentType": "article"
       },
       {
-        "title": "Reform faces questions over candidate vetting after undercover filming",
-        "summary": "Reform UK says the party has \"improved and prioritised its vetting procedures\".",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T00:52:27+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
         "title": "Streeting ‘reassured’ by Hegseth that Ukraine’s access to Starlink restored",
         "summary": "",
         "meta": "Fri 16 Oct",
         "publishedAt": "2026-10-16T00:01:08+01:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaHJhcEl0ZU03dHZYSlRmUGR5bXBmbkd4Sm1qR08yNFVpY1diOXpMcFVaaUtoUVpuVkp2X2p1U1FuN29xWHNuTF9LbEtTSGpZUmJQSXJ4dmFJcFZBUTJGY0cyVGFWV1RYR3VjNll4S0hub0ZEbXFfeHdOUTNScGlNdEo3Q2tNQ3JoNjNmQ0FPdlVROGVWSEdGblY2TUtzaHZ6TDNBUHEtTmM3c3BSVVdOVzJRSlhrckpSN2VfU0xrRXI?oc=5",
+        "source": "North Wales Pioneer",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYm93eFAwQmlUMHNha01WSEFzU1JVNEhtM1dTLWQzSUVaejh2S21VY2FkdGp2aDZ5blQ0dnA2NzliOEZ5MUNaR2Z3cUhFd0hNV090VEctMkdrSVBxcWN0WUItUjVTU3JxSlIyTEg0Wm5nbEEtdGhoRnNXZjlKNEJwbXZsODNiOHVaaUo4YVhSdlVyOG5yXzY0ekFxajg2d2xhSGlscUZuM0ZLVG5vNVl4b29lYlkyR3hkc3ZJN3h3?oc=5",
         "contentType": "article"
       },
       {
@@ -908,43 +963,25 @@
         "source": "Herald.Wales",
         "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdlMwcENlVHN1R0Qwb3F0YkNRWXpGbFJFaWtKVEtOTjZERk5laHhYek9oLWlsTGd1R1NFenViR3AyZmlfd0o4bVg4R2JRaFppSGNHZnlWLWctTUxfbWE4cHZJUndYVDVYZ2liUVk3LTQ1YjM3cTBjQmFxSDVwejBHLU9KNDVCc2J2dFpCdW1seXd0cXpueExUTWRyUENGaW5CVHdoOFBJRDk5WWhBbDFfelFxeHJGRkRKSGhMMkVVWFVCRmc?oc=5",
         "contentType": "article"
-      },
-      {
-        "title": "Breakthrough in battle to save GP surgery with 4,000 patients",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T15:33:00+01:00",
-        "source": "Wales Online",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSU40SVE2WXJhQUUtWFBsajBqMzNUdUhhRUo4V0dfcW5TR3g0TWtQWkJ4LVgxbFJ5dkpJa1NLWEpXbHBVdy1uZUVVQ1hXNWRqdmlrZkRpYlRqQzdhUGM1NUI2UWF5LUswREpVS004b0xFX05KcHItOFNWZXJmYWtQNGNDUVQtVXdNWVFOQTFnVkRHYWVh0gGaAUFVX3lxTE1RMHFrRDFzMDZuaUpZRGZPbEhDZmx4MXlvN2hmbC0wczkwV1Z1YU5WS2xIMW9uMl9jX3NDSHE4UjZ0dk9UQlg4VmdCMWdONGo5eHJxNjQ5V1d5RTE1cUVocmc2bUthcS1sSHI2MkJDV2pkZ2dqeFg4elBlNDdEVUh6LW5iOUZzVGVYeVpqZEd3dVBkUEU5eklZa0E?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "The Scottish Album of the Year Award announces 10 albums on Shortlist",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T14:54:36+01:00",
-        "source": "Creative Scotland",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUDJwejctelVqSXo3SW0tRDhveTAxWXFmRjBGZ2xrZjNVejVhR3h0a0p1MkVLT0t6U2laSE9BMlhxRkFOV0ltWldQQURwcTQyVm96bXVqaWlYX3luWFhzN0N5THQyU0l1NUVQYkRxR0VWcHNIb2g5SGM3bE1iQ1pSclc4OWJpTWpFU2hrU3lva05BWGZrN0F4R2ExNkNpeFp2UkRPSnlhaTU1ZnRQeUdWeS1IRlJoNXVCb2kwQndXTUYzZUVaeVl3M0ZJUzJ5ZzQ3U1RWeHJDYXI4YTA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Shortlist revealed for Scottish Album of the Year Award 2026",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T14:51:25+01:00",
-        "source": "The National Scot",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdU13OU1CeDl0TS0xSFdiQUNfUndLVHEzeUF1OFVUT3NTYjI1YzgxR2VJQ2hqRmdfVkZkWkhwTV8wVWhNRTVIcktjcjVXTktQckRFZU54eEI1OWJJaXNraEJTYXBVbjB4Ql96eG56MWxiSTR4NXAzWTNZeFlOdHNHNThLS2piNEdxaUtXZE1pRWZERVFmclYwTg?oc=5",
-        "contentType": "article"
       }
     ],
     "AI": [
       {
-        "title": "Anthropic’s valuation could be slashed by $500bn",
+        "title": "Anthropic Stands Alone as Rest of IPO Market Slows to a Crawl",
         "summary": "",
         "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T02:42:00+01:00",
-        "source": "The Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTE10VTNmQVpobElWTno2VHFmcjZ0dl9fWGV5SHBhQXFSeTR2SVVHREM2cVc0dXNZeWo0UnMtYzZ4R192Vk5ubEpkclpvUHh2SEhyQmFrT0VPYlRRTjRUbUV4eFdWWXcwaFdCUmJSQ1RCdXZCOTRLSmtqS0lQTDBYNFNQYUhLVUkzN2V5V2diQzQtZUk?oc=5",
+        "publishedAt": "2026-10-16T06:11:50+01:00",
+        "source": "Insurance Journal",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB2TGZkUTJ6RlcxTTk4SFY1THRDTDdVaFRFck1rb3ZkWUZNdWhqdEVqaUhNUTREWTVwTlRCdGQzVE5wdTNQX1l0UHJPM3Z6MThSS3h2d2dYWjlvRFZxY3RpWnhEMmJNSEJ5SnZIQzF2OVBJMUx5bkxn?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic secured highest junk credit rating in June",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T05:00:18+01:00",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUm50bnlrZVJHbjF1SFlKcG5TVFlYRWtrYmJBc2FnTGNOOXZzaEtxdmxITS0yQkh5QWdqZ0h5TGdqeUU5TmFmZHZYTWhLNjlmWE5FSjdQNVZpNHV5SWVzX0ZnMkF5YU9kN3pJdG16WDFxREZFLWc0cWZ6bjc4S19KTjRsZ20?oc=5",
         "contentType": "article"
       },
       {
@@ -966,24 +1003,6 @@
         "contentType": "article"
       },
       {
-        "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T22:00:00+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic taps nonprofits METR and SecureBio to help assess risks and safety practices",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T21:35:21+01:00",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdTIyNURFZndfMmRpN0liM2l3eE9Rb3pncXlkaGRDUExCemNqQldWUmlLcVhEWHhwYXlOVHFxSlpuLWVUXzV0eHoxcjdsVXAxVTJ0X3FFVGFscldqY0lnbVVxNlhxWWZ4QUZNUmYyc1dSWHpHSl9XdXNaMEVONm5SVXd5ODM2VFFEa2fSAY8BQVVfeXFMUGdJcmpnY21LbUlicTI5OEZXSzB2UE1SclB6TDZWRDdNd0luMEpaY1o3a3podTZLQ3hFZUVpSUpKaEtqWlNETUhZYXUyLWFqdTJhSGoyVXF3ejFCNldkMHJnYjJCbmRFLVlKeGo3OFFOQUNSUDRJRzNfaVlSb3p4NGl4eWE3TFNFR0tUNHNxa0k?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
         "summary": "",
         "meta": "Fri 16 Oct",
@@ -1002,31 +1021,43 @@
         "contentType": "article"
       },
       {
-        "title": "DeepSeek-V4.1: faster inference and native multimodal understanding",
-        "summary": "DeepSeek releases V4.1 with optimized Mixture-of-Experts architecture and long-context vision reasoning.",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T10:00:00+01:00",
-        "source": "DeepSeek",
-        "url": "https://api-docs.deepseek.com/news/news202609",
+        "title": "Bringing GPT-Rosalind to academic research labs",
+        "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T20:00:00+01:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
         "contentType": "article"
       },
       {
-        "title": "Qwen-Image-3.0 and Qwen Code: autonomous task execution across enterprise tools",
-        "summary": "Alibaba Cloud unveils unified image generation and autonomous terminal coding agent models.",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T08:00:00+01:00",
-        "source": "Qwen",
-        "url": "https://qwenlm.github.io/blog/qwen-image-3.0/",
-        "contentType": "article"
+        "title": "DeepSeek suffers another major outage as company offers user refunds",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T13:55:26+01:00",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQei1iZTlCN1NrVzJOYmNjMmFjejVKU05obGxmdHkwbG1YWFNRclFyV1NacmJ3Q1o5RUVPMkRVNWsxTlJJQ2V0SEF4YTdDV05lUHgzSURSc0QwVF9LeE4wRmplUUFwSzZkYjJGUGhjalQ1SHZhWk5mTmlNcGxLZWtGLU5UcHI4NTJpWENQZThBS0xsQ3lsSENabmhKQlhEN1JBWlVwZnU1UWRVVExYWU1mU2xqUEVlbjDSAbcBQVVfeXFMUGRtSmxxc3hJSkFKeF80MkVyVGRFMG1ISlZlV0RjbUZfS05Ra1U1azZjeWFJX1UycUxvSjlqcnVnZFFicHhTODVpeXdiUDBMcnMyQ3IyXzRqaTFDUm11VFhTS2JndTVGdTJYQ3c1bHl4clJHaC16V3VHNldpZVNPWlJvUmxBTHJMU1Q5Y2F5R2tlYk93WlZiVTc3U1RsRVhjWnRaX3JxOVNRR3IwQ01WLXlPSF9BZS1Z?oc=5",
+        "contentType": "article",
+        "liveChineseLab": true
       },
       {
-        "title": "Kimi K3: scaling open long-horizon agentic reasoning models",
-        "summary": "Moonshot AI details Kimi K3 architecture for complex multi-step reasoning and autonomous coding.",
-        "meta": "Fri 2 Oct",
-        "publishedAt": "2026-10-02T12:00:00+01:00",
-        "source": "Moonshot AI",
-        "url": "https://www.moonshot.cn/news/kimi-k3",
-        "contentType": "article"
+        "title": "Reducing Qwen training time by 6x on AI Runtime",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T01:46:24+01:00",
+        "source": "Databricks",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5KQzlRRzJ1LUk1QnpJZ2pBX2xsT20zUmRVYkJNNDcyLUlRVUxjWEVldXE0cmRFTTRnbm9sbk95b1RMQzBzUW9ZdlQxN3ZvTHF1c01mdVdlaWJwWERicWhyWFZNa1B3V0dIX2F0WUdkOWo3bHNPRXhRTlRiVWJ2QQ?oc=5",
+        "contentType": "article",
+        "liveChineseLab": true
+      },
+      {
+        "title": "Bank of America was dropped from Moonshot AI's Hong Kong IPO",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T13:06:40+01:00",
+        "source": "Quartz",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKdlJGQ0FVVjRmQ2VuQTBMNDdveDZFckhSRU85b0JveXNEWE9JM0FnOFZiOFRmWENKemZCUE9DZzVLN1lsTjlMajJvdFRRaTg2Q1Z2Z01wcnlNVkMyeEhCQ3JTU3FoWlUxSG9QSGJnS1c?oc=5",
+        "contentType": "article",
+        "liveChineseLab": true
       }
     ],
     "Fun": [
@@ -1146,7 +1177,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
+        "verifiedAt": "2026-10-16"
       },
       {
         "id": "transportfest-2026",
@@ -1213,33 +1244,33 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-15"
+        "verifiedAt": "2026-10-16"
       }
     ]
   },
   "watchAlternatives": [
     {
-      "title": "Stacey Dooley",
-      "summary": "Stacey Dooley looks into the deaths of women who have fallen from heights, interrogating how these deaths are investigated and exploring whether domestic abuse played a part.",
-      "meta": "BBC iPlayer · Available since Tue 13 Oct",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Available since Tue 13 Oct",
-      "url": "https://www.bbc.co.uk/programmes/b048vy8l",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
-      "artworkAlt": "Stacey Dooley programme artwork",
+      "title": "Aileen Wuornos: Damsel of Death",
+      "summary": "Concluding the profile of the serial killer, revealing how a body found beside a Florida highway sparked a chilling investigation into a drifter linked to a series of murders.",
+      "meta": "Crime & Investigation · Available since Sun 11 Oct",
+      "source": "Crime & Investigation",
+      "channel": "Crime & Investigation",
+      "releaseDate": "2026-10-11",
+      "releaseDateLabel": "Available since Sun 11 Oct",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/aileen-wuornos-damsel-of-death",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609030.jpg",
+      "artworkAlt": "Aileen Wuornos: Damsel of Death programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-13",
-      "showId": 4594,
-      "episodeId": 3783642,
+      "airdate": "2026-10-11",
+      "showId": 94771,
+      "episodeId": 3776661,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-16",
-      "preferenceScore": 499.4
+      "preferenceScore": 506.2
     },
     {
       "title": "Panorama",
@@ -1263,6 +1294,31 @@
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-16",
       "preferenceScore": 428.6
+    },
+    {
+      "title": "Green Eyed Killers",
+      "summary": "After a man is left dying following a late-night altercation, his mother's decades-long fight for answers takes an unexpected turn.",
+      "meta": "Crime & Investigation · Mon 19 Oct, 8pm",
+      "source": "Crime & Investigation",
+      "channel": "Crime & Investigation",
+      "releaseDate": "2026-10-19",
+      "releaseDateLabel": "Mon 19 Oct, 8pm",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/green-eyed-killers",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/628/1571444.jpg",
+      "artworkAlt": "Green Eyed Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-19",
+      "showId": 54822,
+      "episodeId": 3789914,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-16",
+      "preferenceScore": 416.8
     },
     {
       "title": "Time",
@@ -1339,7 +1395,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-16",
-      "preferenceScore": 393.1
+      "preferenceScore": 393.2
     },
     {
       "title": "Convictions Gone Bad with Will Mellor",
@@ -1431,7 +1487,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-16",
-      "preferenceScore": 345.7
+      "preferenceScore": 345.6
     },
     {
       "title": "Last Night Out",
@@ -1478,29 +1534,6 @@
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-16",
       "preferenceScore": 279.9
-    },
-    {
-      "title": "Crime Scene Raw",
-      "summary": "Crime Scene Raw focuses on a different high-profile case each episode, utilizing police bodycam footage and forensic evidence.",
-      "meta": "Sky Crime · Available since Sun 11 Oct",
-      "source": "Sky Crime",
-      "channel": "Sky Crime",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since Sun 11 Oct",
-      "url": "https://www.tvmaze.com/episodes/3772887/crime-scene-raw-1x07-clifford-jones-and-joseph-celestine",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597392.jpg",
-      "artworkAlt": "Crime Scene Raw programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 93837,
-      "episodeId": 3772887,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-16",
-      "preferenceScore": 244.9
     }
   ]
 }
