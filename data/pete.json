@@ -18,18 +18,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=15e09268ff04"
   },
   "weather": {
-    "temp": "16°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "12°",
+    "summary": "Clear",
+    "condition": "Clear",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-16",
         "high": 16,
         "low": 7,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -38,25 +38,25 @@
         "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-10-18",
         "high": 14,
         "low": 8,
-        "summary": "Forecast",
-        "condition": "Forecast",
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-10-19",
-        "high": 14,
-        "low": 10,
+        "high": 15,
+        "low": 11,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 70,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
@@ -65,22 +65,22 @@
         "low": 10,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-10-21",
-        "high": 15,
-        "low": 10,
-        "summary": "Light rain",
-        "condition": "Light rain",
+        "high": 14,
+        "low": 9,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-22",
         "high": 14,
-        "low": 9,
+        "low": 10,
         "summary": "Forecast",
         "condition": "Forecast",
         "rainChance": 40,
@@ -89,7 +89,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 20%",
+      "detail": "Sunny · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
