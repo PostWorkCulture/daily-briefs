@@ -714,11 +714,25 @@ def published_days_apart(left: dict, right: dict) -> float | None:
     return abs((a - b).total_seconds()) / 86400
 
 
+AI_MODEL_NAME = re.compile(
+    r"\b(gemini|gemma|claude(?: opus| sonnet| haiku| fable)?|gpt|o\d|llama|grok|mistral|deepseek(?:-v)?|qwen|kimi(?: k)?|glm|ernie|muse spark)"
+    r"[\s-]?(\d+(?:\.\d+)?)\b",
+    re.I,
+)
+
+
+def ai_model_names(item: dict) -> set[str]:
+    title = clean_html(item.get("title", "")).lower()
+    return {f"{m.group(1).replace('-v', '').strip()} {m.group(2)}" for m in AI_MODEL_NAME.finditer(title)}
+
+
 def same_ai_story(left: dict, right: dict) -> bool:
     """Two items cover the same event when their distinctive title words overlap strongly,
     or when they report the same business development for the same company within two days."""
     left_url = str(left.get("url") or "").strip()
     if left_url and left_url == str(right.get("url") or "").strip():
+        return True
+    if ai_model_names(left) & ai_model_names(right):
         return True
     company = ai_story_company(left)
     if company and company == ai_story_company(right):

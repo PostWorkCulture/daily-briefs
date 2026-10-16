@@ -212,8 +212,12 @@
   const AI_TOPICS={value:['value','ipo','valuation','valued','valuations'],funding:['funding','raise','raises','raised','round'],legal:['sue','sues','sued','lawsuit','court','judge','settle','settlement','dispute','subpoena','subpoenas','subpoenaed','probe','investigation'],outage:['outage','down','disruption'],layoffs:['layoffs','layoff','cuts','jobs'],deal:['acquire','acquires','acquisition','buy','buys','merger']};
   function aiStoryCompany(item){const m=String(item?.title||'').match(AI_CO);if(!m)return '';const n=m[1].toLowerCase();return AI_CO_ALIAS[n]||n}
   function aiTopics(item){const w=new Set(String(item?.title||'').toLowerCase().match(/[a-z]+/g)||[]);return Object.keys(AI_TOPICS).filter(k=>AI_TOPICS[k].some(v=>w.has(v)))}
+  const AI_MODEL=/\b(gemini|gemma|claude(?: opus| sonnet| haiku| fable)?|gpt|o\d|llama|grok|mistral|deepseek(?:-v)?|qwen|kimi(?: k)?|glm|ernie|muse spark)[\s-]?(\d+(?:\.\d+)?)\b/gi;
+  function aiModelNames(item){const t=String(item?.title||'').toLowerCase();return new Set([...t.matchAll(AI_MODEL)].map(m=>`${m[1].replace('-v','').trim()} ${m[2]}`))}
   function sameAiStory(a,b){
     if(a?.url&&a.url===b?.url)return true;
+    const ma=aiModelNames(a),mb=aiModelNames(b);
+    if([...ma].some(n=>mb.has(n)))return true;
     const co=aiStoryCompany(a);
     if(co&&co===aiStoryCompany(b)){
       const ta=Date.parse(a?.publishedAt||''),tb=Date.parse(b?.publishedAt||'');

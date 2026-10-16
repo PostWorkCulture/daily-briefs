@@ -46,6 +46,21 @@ class AiDedupeTests(unittest.TestCase):
         ]
         self.assertEqual(len(refresh.dedupe_ai_stories(items)), 2)
 
+    def test_same_model_launch_appears_once(self) -> None:
+        items = [
+            item("Gemini 4 Argon: Built to solve your hardest problems"),
+            item("Gemini 4 Argon for Robotics"),
+            item("Claude Opus 5.5 release notes"),
+            item("Developers react to Claude Opus 5.5"),
+            item("Claude Sonnet 5.5: advancing performance"),
+        ]
+        titles = [x["title"] for x in refresh.dedupe_ai_stories(items)]
+        self.assertEqual(titles, [
+            "Gemini 4 Argon: Built to solve your hardest problems",
+            "Claude Opus 5.5 release notes",
+            "Claude Sonnet 5.5: advancing performance",
+        ])
+
     def test_identical_url_is_a_duplicate(self) -> None:
         items = [item("One headline", url="https://x/1"), item("Totally different words", url="https://x/1")]
         self.assertEqual(len(refresh.dedupe_ai_stories(items)), 1)
