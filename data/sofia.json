@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Saturday, 17 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Saturday, 17 October 2026 · refreshed 8:16am",
   "worldFact": {
     "id": "toraja-dead-relatives-kept-at-home",
     "editorialPriority": "human-first",
@@ -19,17 +19,17 @@
     "localImage": "assets/scenery/world-fact.webp?v=80e9c1c89eef"
   },
   "weather": {
-    "temp": "6°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "temp": "8°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-17",
         "high": 14,
         "low": 7,
-        "summary": "Sunny",
-        "condition": "Sunny",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 50,
         "source": "Met Office"
       },
@@ -37,15 +37,15 @@
         "date": "2026-10-18",
         "high": 14,
         "low": 8,
-        "summary": "Forecast",
-        "condition": "Forecast",
-        "rainChance": 70,
+        "summary": "Light rain",
+        "condition": "Light rain",
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-10-19",
-        "high": 14,
-        "low": 11,
+        "high": 15,
+        "low": 9,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 70,
@@ -53,16 +53,16 @@
       },
       {
         "date": "2026-10-20",
-        "high": 16,
-        "low": 10,
+        "high": 15,
+        "low": 9,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-10-21",
-        "high": 14,
+        "high": 13,
         "low": 7,
         "summary": "Cloudy",
         "condition": "Cloudy",
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny · peak rain chance around 50%",
+      "detail": "Sunny intervals · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -98,9 +98,41 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
+      "dateLabel": "Friday 16 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
-      "error": "England town/county could not be verified for London, St James'S Park"
+      "hot": {
+        "location": "London, St James'S Park",
+        "town": "St James's Park",
+        "county": "Greater London",
+        "country": "England",
+        "displayLocation": "St James's Park, Greater London",
+        "value": "17.1°C",
+        "photo": {
+          "src": "assets/weather-extremes/hot.webp?v=eb7dc33fbd77",
+          "page": "https://commons.wikimedia.org/wiki/File:Entrance,_St._James%27s_Park_Station_-_geograph.org.uk_-_4597978.jpg",
+          "credit": "Rossographer · CC BY-SA 2.0",
+          "alt": "Entrance, St. James's Park Station",
+          "width": 1600,
+          "height": 900
+        }
+      },
+      "cold": {
+        "location": "Kielder Castle",
+        "town": "Kielder",
+        "county": "Northumberland",
+        "country": "England",
+        "displayLocation": "Kielder, Northumberland",
+        "value": "2.8°C",
+        "photo": {
+          "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
+          "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
+          "credit": "Jim Walton · CC BY 3.0",
+          "alt": "Kielder Water in Kielder, Northumberland",
+          "width": 1600,
+          "height": 900
+        }
+      }
     }
   },
   "calendar": [
@@ -161,20 +193,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-19T00:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-19",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
       "url": "",
@@ -187,6 +205,20 @@
       "colorId": null,
       "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
     },
     {
       "title": "Hygienist- 10am",
@@ -273,6 +305,20 @@
       "calendarColorSource": "google"
     },
     {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "Demi Playdate",
       "summary": "",
       "url": "",
@@ -290,14 +336,14 @@
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
-      "start": "2026-11-01T00:00:00+00:00",
-      "end": "2026-11-02T00:00:00+00:00",
-      "date": "2026-11-01",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
       "time": "All day",
       "allDay": true,
       "color": "#51b749",
       "colorId": "10",
-      "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
     },
     {
@@ -312,20 +358,6 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
     },
     {
@@ -442,22 +474,22 @@
     }
   ],
   "lead": {
-    "title": "Sweden sweeps the winning title of the European Cybersecurity Challenge",
+    "title": "I took the first train from Finland to Sweden in 38 years – it was a coastal adventure",
     "summary": "",
-    "meta": "Fri 16 Oct",
-    "publishedAt": "2026-10-16T16:16:08+01:00",
-    "source": "ENISA",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU09NR3dIdU11SjJWQmkzaUloV2Y1d1pDQTRYTUpEWHB3SWxwNlU2UmpBMVRVWkFmV1VFVHVwaDBVbU81WjdfX1JBd3ZWWEx1SUN4SnQ4a0MxbVAycXAyNURraVRidTg3WFkyYlBXekMzZGVpdVkyY2F0WVZhbUtCa0g2bmNJWkR3MHRxM1NFTkd1djJPUGVINFBqRkwyWkpKUzAzdUdwSQ?oc=5",
+    "meta": "Sat 17 Oct",
+    "publishedAt": "2026-10-17T06:00:00+01:00",
+    "source": "The i Paper",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQXZvN2UweHJOVFdrZVktM1pKbkVWTkt1TWpDWV9EVjhUbUNvZzdoTTNKMU95NGpqMWNxZnFlSURrREJZWXVKMmlxTlNlT2pKS3hQRDVCbGR6Um1nUmJ4ZlBXMnFsSzBQZGx0bmRLRUpKSEsxLWM1RTJIYlljVEdNeFdYUGxHTXJTVUNzVW9iWERWR28?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Sweden sweeps the winning title of the European Cybersecurity Challenge",
+      "title": "I took the first train from Finland to Sweden in 38 years – it was a coastal adventure",
       "summary": "",
-      "meta": "Fri 16 Oct",
-      "publishedAt": "2026-10-16T16:16:08+01:00",
-      "source": "ENISA",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU09NR3dIdU11SjJWQmkzaUloV2Y1d1pDQTRYTUpEWHB3SWxwNlU2UmpBMVRVWkFmV1VFVHVwaDBVbU81WjdfX1JBd3ZWWEx1SUN4SnQ4a0MxbVAycXAyNURraVRidTg3WFkyYlBXekMzZGVpdVkyY2F0WVZhbUtCa0g2bmNJWkR3MHRxM1NFTkd1djJPUGVINFBqRkwyWkpKUzAzdUdwSQ?oc=5",
+      "meta": "Sat 17 Oct",
+      "publishedAt": "2026-10-17T06:00:00+01:00",
+      "source": "The i Paper",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQXZvN2UweHJOVFdrZVktM1pKbkVWTkt1TWpDWV9EVjhUbUNvZzdoTTNKMU95NGpqMWNxZnFlSURrREJZWXVKMmlxTlNlT2pKS3hQRDVCbGR6Um1nUmJ4ZlBXMnFsSzBQZGx0bmRLRUpKSEsxLWM1RTJIYlljVEdNeFdYUGxHTXJTVUNzVW9iWERWR28?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
@@ -584,34 +616,43 @@
       "preferenceScore": 498.2
     },
     {
-      "title": "The Northumbria Mysteries",
-      "summary": "When an exclusive, high-roller poker night ends with the murder of oil magnate and seemingly devoted family man Jeremy Hare, Rose and Raj find themselves completely out of their depth in…",
-      "meta": "BBC iPlayer · Fri 23 Oct, 6am",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-23",
-      "releaseDateLabel": "Fri 23 Oct, 6am",
-      "url": "https://www.bbc.co.uk/programmes/m0030tpd",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1614869.jpg",
-      "artworkAlt": "The Northumbria Mysteries programme artwork",
+      "title": "The Diplomat",
+      "summary": "On an unplanned stopover at Windsor Castle, Kate grows wary of Hal and Grace's dynamic as she tries to contain the fallout from their covert actions.",
+      "meta": "Netflix · Available since Thu 15 Oct",
+      "source": "Netflix",
+      "channel": "Netflix",
+      "releaseDate": "2026-10-15",
+      "releaseDateLabel": "Available since Thu 15 Oct",
+      "url": "https://www.netflix.com/title/81288983",
+      "badge": "Thriller",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615648.jpg",
+      "artworkAlt": "The Diplomat programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-23",
-      "showId": 91133,
-      "episodeId": 3783629,
+      "airdate": "2026-10-15",
+      "showId": 60213,
+      "episodeId": 3701737,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Crime"
+        "Thriller"
       ],
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-17",
-      "preferenceScore": 423.7
+      "preferenceScore": 395.0
     }
   ],
   "sections": {
     "Sweden": [
+      {
+        "title": "I took the first train from Finland to Sweden in 38 years – it was a coastal adventure",
+        "summary": "",
+        "meta": "Sat 17 Oct",
+        "publishedAt": "2026-10-17T06:00:00+01:00",
+        "source": "The i Paper",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQXZvN2UweHJOVFdrZVktM1pKbkVWTkt1TWpDWV9EVjhUbUNvZzdoTTNKMU95NGpqMWNxZnFlSURrREJZWXVKMmlxTlNlT2pKS3hQRDVCbGR6Um1nUmJ4ZlBXMnFsSzBQZGx0bmRLRUpKSEsxLWM1RTJIYlljVEdNeFdYUGxHTXJTVUNzVW9iWERWR28?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "Sweden sweeps the winning title of the European Cybersecurity Challenge",
         "summary": "",
@@ -649,30 +690,21 @@
         "contentType": "article"
       },
       {
-        "title": "Stefan Lord (1954–2026): A Swedish Pioneer and True Ambassador of the Game",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T12:13:20+01:00",
-        "source": "Darts World Magazine",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQk5GY0x5dUVEU0xnU2ZMMUFNNS1idHNxUkdjdC1lWFd1RTdFaXdYNjJpa0JRTDNlZ3lObXYyaTJJTlRfU2hOcWVXUUZtVE1JQXh1R1ctZE43TXhEejM4ZWhWSmhEeFpTYWNDcjJrZEZsekRYaFhfZktBdlpWcDM0bDZVQUtjc3pXMFFhNFVKbWFhTGFrOV9EWEtHVWJCeHA1N21CVmtB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Saab Rolls Out Sweden’s First S106 GlobalEye Amid Accelerated Timeline",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T22:13:05+01:00",
-        "source": "Aviation International News",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNDJIMUljS3NZS0VpRGZtUjR1X2pHcnNtcnNjV3ZWR3pqSExXdHJYUVhObko5ZXVEcFlTY3J5d1JsVnJxajlJWkhBdV9WemsxeVVjVGVOR28zbkNIdkZrWHRSaWRKaGZyQVRrSG5zX2licU1IV2FvSEhJZEZ2NlphVFhEenVoZktFOVM5QkFzb0xidW5qNy13VTFoQTJpYTFObjFXQklJS25hYTNaelF3TmpwZUJnODFteF8zSldfRQ?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Sweden: Measles outbreak declared over",
         "summary": "",
         "meta": "Fri 16 Oct",
         "publishedAt": "2026-10-16T23:21:57+01:00",
         "source": "Outbreak News Today",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9mcG0zWlFZa1FBSGFXc2k5bjJkSklhOFFNU1BUREpROUx1YzItU3dpZWdKcjNzNkhsR3k1UWtXN0l6V2dhY0F1X3VCdlNoWVU0U19zMjRFS0g4cExqakhBWXlkdG5CSnV3N05udW13ZXJJNi10MlRQM0otX0hCUQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "US extradites Russian businessman from Sweden over export scheme",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T19:35:18+01:00",
+        "source": "Global Investigations Review",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZC1SNnB2NmhWMEdpeHBxRnEzajFidWxGZ0N5RG0xRllVYWhLZlFmSVdIdGZqbmRNc196dTdqWXMwejFVNTFXUWRVam4xelRPTk9pZ3BWYkdobVBVc25PSFVhdnVkSjE3UTNUcndVb1RXNW8wWmhKaWhxUWRELXF0RGphSGxSbm1MbDc1UVp2RGxvMUVLYnU5Yy10LUtySXlZU1RVVHNWX3p0UVNsMVVGVGFNdXhRdVdBU2g2Ql9R?oc=5",
         "contentType": "article"
       }
     ],
@@ -786,6 +818,18 @@
         "homeArea": false
       },
       {
+        "title": "Every London council has been ranked - but where does Kingston sit?",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T17:15:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTHJ5Y2VuZklXeTg0VWZiVVYtNW1FcXBaejY1TFlyMU1FTldEVi1HcEYzdUdiYXBxOWFUMGNNbWpNcjg2Z2NiTVFIc3JRRGg0dlBhb3dIcHRnSjBGUDBVNEFyeFEyLTgydHA4ekxRem5nTWxScy14c2FIREJnSTZ3LWNFTFFEbXFtaElNMXZYS2NROE5TUmp0TVZCdm1ScTZxUVZvclZyZjJkSllfZk05Nmo2dlBFYTA?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
         "title": "Kingston-led project to make Thames 'drinkable' receives royal backing",
         "summary": "",
         "meta": "Tue 13 Oct",
@@ -856,21 +900,18 @@
         "localPublication": false,
         "familyActivity": false,
         "homeArea": true
-      },
-      {
-        "title": "Hurst Pool refurbishment update",
-        "summary": "",
-        "meta": "Thu 17 Sep",
-        "publishedAt": "2026-09-17T08:00:00+01:00",
-        "source": "Elmbridge Borough Council",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5xMDJVRy1zc2hvb3NJUnltUFNwQXdpZ0V0VlB6Q2RYYkptTV9BRHpJc3AwRXMxLS12YjFyQkZoSFZkVmlfTE1kUEZtekZXNVRLWHRyMkdSX0ltSS1SUTNaWWlVMTViN1JHUVQ2TGh2NFA5aDEtRW9TaVBR?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": true
       }
     ],
     "UK news": [
+      {
+        "title": "Valero backs £500 award for young West Wales artists",
+        "summary": "",
+        "meta": "Sat 17 Oct",
+        "publishedAt": "2026-10-17T05:13:22+01:00",
+        "source": "The Pembrokeshire Herald",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeF9Zc1kxS1QzRmYwdGgtYWZsRkQtTy1WelY5UUYxTlpHcXIyQTR5SGdEVWtGYXFlWUJORFBCQ1BKekIzb1FZMmpzY0k3LXliUmExRkpFQktBVWxJbzR0ODhEOEhId1l5bFRaM1RBM0lCTmdPNnVRVTg2bXIzcjJuY2ZjS1Job0U1ZEZXV2RDbmloS2MxcTNn?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "Former Ysgol Harri Tudur pupil wins award in Wales Contemporary 2026",
         "summary": "",
@@ -905,15 +946,6 @@
         "publishedAt": "2026-10-16T18:22:15+01:00",
         "source": "North Wales Chronicle",
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZHlEYU5FVjRULW5TTFhNYllCbjQ3QUtpMFdNaS1URkZacW1vbHZNWkMtX0tDOGVhUUN6cUJlZENrdVJzbzVMQ0plLXFtRFB4aDFFbjcwajdpTXo2ZE5fM2lIbF9VZml2RWRWQ3p2WS16cF9uSXpPeEx4WGxzZ3VUZTBUbFVNS2NOMmRCQTRjWjEzYWxTX1VjbXotbHhvbXhfNE5RVFFrZW9yX2sxdzZXemt0elB3RFJMZWxLVjhaNWFqMVFtSlVV?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Valero backs £500 award for young West Wales artists",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T18:01:57+01:00",
-        "source": "The Pembrokeshire Herald",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeF9Zc1kxS1QzRmYwdGgtYWZsRkQtTy1WelY5UUYxTlpHcXIyQTR5SGdEVWtGYXFlWUJORFBCQ1BKekIzb1FZMmpzY0k3LXliUmExRkpFQktBVWxJbzR0ODhEOEhId1l5bFRaM1RBM0lCTmdPNnVRVTg2bXIzcjJuY2ZjS1Job0U1ZEZXV2RDbmloS2MxcTNn?oc=5",
         "contentType": "article"
       },
       {
@@ -953,15 +985,6 @@
         "contentType": "article"
       },
       {
-        "title": "Prestigious British Agriculture Award presented to Kington woman",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T12:00:00+01:00",
-        "source": "Shropshire Star",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWEs5WWtXejh6N2cyYllzejlBM1pKUzlzZldWTzJPS0tkaHJra1lMUGFpLWpsNFVLbFZwY19IamFHdGllTjdyQzhVV2FrNWR3SzBSeG8yX1dLU055Mnl6aFJlR0E0NE1Yemt5QVR2bkZnQ3dmM3hxRkpBUi1aTWJDRi1tVGhRMi1ORjgzOExlRkpWX2lNTjlZWEUwY2ttX3FwdTQ5eGVVMjB4VDJZNHBUQUVETnNRVFZxeWhn?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "British New Homes Mortgage Senate: The economics of housebuilding have changed since Help to Buy",
         "summary": "",
         "meta": "Fri 16 Oct",
@@ -978,25 +1001,34 @@
         "source": "Herald.Wales",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcHVVYWp0VmF0b3RGbjdEYnNwZEJmcXZrREhjRllCMk84VHlVbDZ2MHo5MnFkSXBVUE45ZEhuM21vZ2lWaURyZEJCWXdQOVdJRzVsZlNGdlFuN1p4SjQzVkpqU2ExSnpvM3EwVU1PLWVMTVlwTFFNTWNfYW40OWZ1OGlKaURMYUo0Q1J5Mzl2YXM?oc=5",
         "contentType": "article"
+      },
+      {
+        "title": "TUC Cymru criticises Welsh Government over school pay award",
+        "summary": "",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T10:53:42+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRmYwd3ZOT3BHUXVJcFN3Y1dRdXZNNlRETWJPQlAxeFpHUU1yQWxFZHpHNHFhcEQ3YmdHWmhuN1V1WXRtUEJERkYtQnJPQ2NvYUpYWDEwNW8yd3pCUkg3bTBaR3ZCcy1rUF9HUTA4RmZXRW14Y2VFakU1TDNsMUlleG10VTBhTUJoWW9MVGN6cGwzTzZPeWJHeDFhb0NBWnZUMi0tNmdkU0xPaFk?oc=5",
+        "contentType": "article"
       }
     ],
     "AI": [
       {
-        "title": "Anthropic offers Blackstone double-digit yield in chip-financing deal, FT reports",
+        "title": "Anthropic Co-founder Renews Call for Robust Regulation of Frontier AI",
         "summary": "",
         "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T01:57:43+01:00",
-        "source": "Euronext Markets: Real-time Stock Market Data | live",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV0lPUEdZeTlldkczZ3g2Z2JOQk82cmdxdFJkTVU1U2VRVnc4R3N2cjF6VGhFQU5CV3FhSnRmaF91alpKYjJVMTdVWWo5c3dYamR2V3NWSTVvVGlDRkc2UHAzdGVPTFR1U1p2NGdpcnp1T3hkVDlULU1MbFhyTlVOVnFSRmZUenRCYTZqTl8xSlg3OXRZWHdFM3Q3aFhtZDJSSmhodDRmU2FvX2JkYWppWWxHWFZNUEZ4SnNMYkxn?oc=5",
+        "publishedAt": "2026-10-17T06:56:56+01:00",
+        "source": "ASHARQ AL-AWSAT English",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMkZoTXZkWjlKRjlQLW40amF3OUhSM3JsQVdrRlZFWjNMTjZiM1dGWkFreTBKTHpOSGFsMEM5T1JMaGk4UnZsVm9LZ3hublFwVGdxanBIelFoZ1lqN1Z5NkxlVzZIaXZmSDgxV1VmZzhIX3Q5UnNVQ1VIWHpaTzBVeVhxTzRqejREWUcwTWlqMnFYUmplOGVPOHVXbXlUelJOcG9rT0pXRGtQZ005?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Exclusive: Anthropic CEO calls for stronger regulation of AI - ABC News",
+        "title": "Anthropic offers Blackstone double-digit yield in chip-financing deal, FT reports",
         "summary": "",
         "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T01:17:57+01:00",
-        "source": "Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTnFDeXdUaGRRY3FzRWFMbVpRbFBrVXVhOHNDWDRMaFQ1T1kzclBENEtWa3R5UDBDQktzb3Z3N0FYUjJsejBwZUY5eURuejdvaFg4eXJrSndRLWdvTGtDcVdwOFdXeHZlVWo4eXJDc3ZGWlg0aTZwak1ySWwtS3hkSzNmdVR3MEhGXzdGRDRjV3dpMzVTOFhDX0o1Z3FBSDBqamfSAacBQVVfeXFMTzVVZEpXZk9NbHhzV241am1weGozclJlMUV6WFd1VFFQSnhoLXhibFlnVnNQaGRsUm5QNjFtT2F4ZXdQUk9BN0VCbHgweEUySVhkMjRHZDROSmRoem1FUGwzTXVVd2wxZWkycDdWZld1RW5JaFJJd0tQMkx2VlkwNG9wS3Z6blByVkFpLV9lbEhjMjNSTDdoQzROTDhPbnlGbTdlRHJIUE0?oc=5",
+        "publishedAt": "2026-10-17T01:57:00+01:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWVhYcEpDM002Y1VwaUFBYktyNFdkVG9XbXZaTU44b3k4ZzZRcmdLR294VXZkMDlYLXg1d0dJbUpoMzg3RHBoNi1qcXh1eU14UjJiSmNhTXdUUFNsakJYZFBrZ1BZVV9rdmQ3bHc5b0QycjZRUHBqcENmak5LclBVNmhWYnhTaVZtQzV4bExZamxKSEtDRllrMkNObjlFd3VoU0VIQkZaS2hpQnAzeGh3dzBqdWVHZm9sVllvQ1BEdw?oc=5",
         "contentType": "article"
       },
       {
@@ -1018,12 +1050,12 @@
         "contentType": "article"
       },
       {
-        "title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports",
+        "title": "Anthropic Pitches AI Safety Bill to Lawmakers, Politico Says",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T00:23:52+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOGgzckNkaE5BdjZxdVMta2hsdVczMHFrZ2U4aFgzY2VsLVF5VEFpd1FMQVc1V084YTZQU0IyMkdWbXZTbEtpdlhFWHR2SUI1SDdsczFmeERfNHhfOXRpR2NLTVhjRWF4YWNYaDBPWXJDSXpqLUgtSERBY1lHejU3MTl0T2pPMzlKRDlsdmFNM3kwQk1YSFlyMnpDN1FSVG0xM2xqNTZrbnNxQTVkT3drcVJSVm0zNFlYOUstZzlDYldrc1p5OWJR?oc=5",
+        "meta": "Fri 16 Oct",
+        "publishedAt": "2026-10-16T23:25:33+01:00",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcENENWdpRlloLVpNclIyQWpIM3JSV3VHZklqOWZlQ0NJYnB2TWg2ZlhPMndNbS1qM2pWM0dTTVFZQ2l1SmxTT1h3VjZJNVpXTWhZTHRnLThqYm9UeFJ4ZEp0U3JROG1sUFJrN3Z6SEFKN2tPcU5teHZ6cU9JUDh4X1laZVZJMkZNNXNSZnJlZDdOX0dFMlM5REZCSGRHR3AydkdCbUY3RU9zYTRoNzdz?oc=5",
         "contentType": "article"
       },
       {
@@ -1036,12 +1068,12 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI Poaches Another SpaceX Sales Lead Focused on AI",
+        "title": "OpenAI Confirms Its AI Model Hacked Government Website While Counting Hospital Beds",
         "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T22:36:22+01:00",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWU5hVjlwRlhleC1wU2FNX29Rd3h4RndiY3JEeDFjY0tZWU92MktjdjMydDdXckxzTmt6V1NKT3VGekhCSS1UdlVMcFVyM1BYNVBRWEtXdE1ITGljVWd4M2prRnFJREhiV1E4azhDMlhMTXpwVXdybUFFa0lPT2Y0YnlIRjlqbXI4Rkw4bm1UZUhNbVFZVTJHZ3FjbTl3clEzZEFTcGs2WWk?oc=5",
+        "meta": "Sat 17 Oct",
+        "publishedAt": "2026-10-17T06:34:30+01:00",
+        "source": "CyberSecurityNews",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8tX2JsNkJVOWtWMEhnWXRtemNmWkpqeGdwRkJJdVJia0I0djZSS1JTRDBDa3FTZXBILWlPd0J0c0VnU1BJbjdwZWRaN2JCaXdjdDMzbTg4TUdpbEFKTk5aYmxOQ2ZWQ1psZ081TGhHb9IBdEFVX3lxTE1xMm5uMFh4SGFxaGNhcEpaNjE5Tm1Wc0xkb1ZYd0hPVGN1d3RzYWJ5M2dTUVZUTzhQTWJ3czRWTzY2SzhjcE9ZVmlQZWlFTHNvTjFXajRvM1E2alN3aktNdGRHNU5EX2ZPMzhnckl1R01FLUxX?oc=5",
         "contentType": "article"
       },
       {
@@ -1192,7 +1224,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-16"
+        "verifiedAt": "2026-10-17"
       },
       {
         "id": "transportfest-2026",
@@ -1259,7 +1291,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-16"
+        "verifiedAt": "2026-10-17"
       }
     ]
   },
@@ -1336,6 +1368,32 @@
       "preferenceScore": 424.8
     },
     {
+      "title": "The Northumbria Mysteries",
+      "summary": "When an exclusive, high-roller poker night ends with the murder of oil magnate and seemingly devoted family man Jeremy Hare, Rose and Raj find themselves completely out of their depth in…",
+      "meta": "BBC iPlayer · Fri 23 Oct, 6am",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-23",
+      "releaseDateLabel": "Fri 23 Oct, 6am",
+      "url": "https://www.bbc.co.uk/programmes/m0030tpd",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/645/1614869.jpg",
+      "artworkAlt": "The Northumbria Mysteries programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-23",
+      "showId": 91133,
+      "episodeId": 3783629,
+      "contentType": "tv-pick",
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-10-17",
+      "preferenceScore": 423.7
+    },
+    {
       "title": "Time",
       "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
       "meta": "BBC iPlayer · Available since Sun 11 Oct",
@@ -1360,32 +1418,6 @@
       "interestLane": "dark-scripted",
       "generatedDate": "2026-10-17",
       "preferenceScore": 396.9
-    },
-    {
-      "title": "The Diplomat",
-      "summary": "On an unplanned stopover at Windsor Castle, Kate grows wary of Hal and Grace's dynamic as she tries to contain the fallout from their covert actions.",
-      "meta": "Netflix · Available since Thu 15 Oct",
-      "source": "Netflix",
-      "channel": "Netflix",
-      "releaseDate": "2026-10-15",
-      "releaseDateLabel": "Available since Thu 15 Oct",
-      "url": "https://www.netflix.com/title/81288983",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615648.jpg",
-      "artworkAlt": "The Diplomat programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-15",
-      "showId": 60213,
-      "episodeId": 3701737,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-17",
-      "preferenceScore": 395.0
     },
     {
       "title": "The Incident Room",
