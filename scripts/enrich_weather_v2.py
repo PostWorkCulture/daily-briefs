@@ -121,6 +121,45 @@ def core_place(location: str) -> str:
     return clean(value.split(",", 1)[0])
 
 
+def tidy_place_name(value: str) -> str:
+    """Undo title-case artefacts in Met Office names, e.g. "St James'S Park"."""
+    return re.sub(r"(\w)(['\u2019])S\b", r"\1\2s", clean(value))
+
+
+def place_parts(location: str) -> list[str]:
+    """Comma-separated parts of a Met Office location, most specific first.
+
+    The Met Office writes some stations as "City, Spot" (e.g. "London, St James's Park"),
+    so the last part names the exact site and the first names the wider town or city.
+    """
+    value = re.sub(r"\bNo\s*\d+\b", "", location, flags=re.I)
+    value = re.sub(r"\bNumber\s*\d+\b", "", value, flags=re.I)
+    parts = [tidy_place_name(part) for part in value.split(",")]
+    parts = [part for part in parts if part]
+    return list(reversed(parts))
+
+
+def exact_place(location: str) -> str:
+    parts = place_parts(location)
+    return parts[0] if parts else core_place(location)
+
+
+def squash(value: str) -> str:
+    return re.sub(r"\W+", "", (value or "").lower())
+
+
+def place_name_matches(location: str, name: str) -> bool:
+    """True when a source's place name is the Met Office location or one of its parts."""
+    actual = squash(name)
+    if not actual:
+        return False
+    parts = place_parts(location)
+    options = {squash(part) for part in parts}
+    options.add(squash(" ".join(reversed(parts))))
+    options.add(squash(" ".join(parts)))
+    return actual in options
+
+
 def met_office_heading_place(heading: str) -> tuple[str, str] | None:
     match = re.match(
         r"^(.+?)\s+\(([^()]+)\)\s+(?:last 24 hours weather|weather)\b",
@@ -149,11 +188,9 @@ def linked_met_office_place(location: str, location_url: str) -> tuple[str, str]
         place = met_office_heading_place(heading.get_text(" ", strip=True) if heading else "")
         if not place:
             return None
-        expected = re.sub(r"\W+", "", core_place(location).lower())
-        actual = re.sub(r"\W+", "", place[0].lower())
-        if expected and actual and expected != actual:
+        if not place_name_matches(location, place[0]):
             return None
-        return place
+        return tidy_place_name(place[0]), place[1]
     except Exception:
         return None
 
@@ -166,31 +203,69 @@ def england_place(location: str, location_url: str = "") -> tuple[str, str] | No
     official_place = linked_met_office_place(location, location_url)
     if official_place:
         return official_place
-    try:
-        r = requests.get(
-            NOMINATIM,
-            params={"q": f"{core_place(location)}, United Kingdom", "format": "jsonv2", "addressdetails": 1, "limit": 1},
-            headers={**UA, "Accept-Language": "en-GB,en"},
-            timeout=15,
-        )
-        r.raise_for_status()
-        hits = r.json()
+    return nominatim_england_place(location)
+
+
+def nominatim_queries(location: str) -> list[str]:
+    parts = place_parts(location)
+    queries = []
+    if len(parts) > 1:
+        queries.append(", ".join(parts))  # "St James's Park, London": most specific first
+    queries.extend(parts)
+    seen, unique = set(), []
+    for query in queries:
+        if query.lower() not in seen:
+            seen.add(query.lower())
+            unique.append(query)
+    return unique
+
+
+def nominatim_county(address: dict) -> str:
+    county = clean(address.get("county") or address.get("state_district") or "")
+    if not county and clean(address.get("city") or "").lower() == "london":
+        county = "Greater London"
+    return county
+
+
+def nominatim_england_place(location: str) -> tuple[str, str] | None:
+    """Geocode with OpenStreetMap, trying the exact site first, then each wider part.
+
+    A multi-part station such as "London, St James's Park" is labelled with the exact
+    site ("St James's Park, Greater London"), matching Heathrow, Kew and Northolt.
+    """
+    parts = place_parts(location)
+    multi_part = len(parts) > 1
+    for query in nominatim_queries(location):
+        try:
+            r = requests.get(
+                NOMINATIM,
+                params={"q": f"{query}, United Kingdom", "format": "jsonv2", "addressdetails": 1, "limit": 1},
+                headers={**UA, "Accept-Language": "en-GB,en"},
+                timeout=15,
+            )
+            r.raise_for_status()
+            hits = r.json()
+        except Exception:
+            continue
         if not hits:
-            return None
+            continue
         address = hits[0].get("address", {})
-        values = " ".join(str(x) for x in address.values()).lower()
-        if "england" not in values:
-            return None
-        county = clean(address.get("county") or address.get("state_district") or "")
-        town = clean(
-            address.get("town") or address.get("city") or address.get("village") or
-            address.get("hamlet") or address.get("locality") or address.get("suburb") or
-            core_place(location)
-        )
+        in_england = address.get("ISO3166-2-lvl4") == "GB-ENG" or "england" in " ".join(
+            str(x) for x in address.values()
+        ).lower()
+        if not in_england:
+            continue
+        county = nominatim_county(address)
+        if multi_part and query.lower() != parts[-1].lower():
+            town = parts[0]
+        else:
+            town = clean(
+                address.get("town") or address.get("city") or address.get("village") or
+                address.get("hamlet") or address.get("locality") or address.get("suburb") or
+                query
+            )
         if town and county and town.lower() != county.lower():
-            return town, county
-    except Exception:
-        return None
+            return tidy_place_name(town), county
     return None
 
 
@@ -205,7 +280,7 @@ def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict
         if key in low:
             return dict(photo)
 
-    place = core_place(location)
+    place = exact_place(location)
     if len(place) < 3:
         return None
     exact_needles = {

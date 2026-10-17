@@ -1,3 +1,11 @@
+## 17 October 2026: Better place checks for Yesterday in England
+
+- **Cause**: The 17 October edition was published without the Yesterday in England cards. The Met Office named the extreme station "London, St James'S Park". The place check only looked at the text before the comma ("London"), so the Met Office station page heading and the OpenStreetMap lookup could not confirm a town and county, and `yesterdayExtremes` carried an error. Today's commit was also pushed outside GitHub Actions, so the Morning refresh validator that normally blocks this never ran.
+- **Fix** (`scripts/enrich_weather_v2.py`): Multi-part Met Office names are now split into their parts, with the most specific first (`St James's Park`, then `London`), and title-case artefacts such as `James'S` are tidied. The linked Met Office station page is accepted when its heading matches any part. OpenStreetMap is queried with the exact site first (`St James's Park, London`), then each wider part, and results must be in England (`GB-ENG`); a London address with no county field is Greater London. The Commons photo search now targets the exact site rather than the wider city.
+- **Label (Pete's decision)**: A named site inside a city is shown as the site and its county, e.g. `St James's Park, Greater London`, matching Heathrow, Kew and Northolt. If only the wider city can be confirmed, the card shows the city and its county instead. Single-part station names behave as before.
+- **Unchanged**: Met Office remains the only source; the town/county and exact-place image rules and the refresh validator are unchanged. No layout, renderer or other section changed.
+- **Validation**: New `tests/test_weather_place_matching.py` (11 tests, mocked Met Office and OpenStreetMap responses); 149/149 Python tests pass.
+
 ## 16 October 2026: AI deduplication, live Chinese-lab slots, and a wild Around the world queue
 
 - **Approved specification change (Pete)**: Master brief updated to v6.0.
