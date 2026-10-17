@@ -134,5 +134,41 @@ class NamedSitePhotoTests(unittest.TestCase):
             self.assertIsNone(wx.exact_commons_photo("London, St James'S Park", "St James's Park", "Greater London"))
 
 
+class WikidataSitePhotoTests(unittest.TestCase):
+    def fake_get(self, url, params=None, **kwargs):
+        if url == wx.NOMINATIM:
+            return FakeResponse([{"address": ST_JAMES_ADDRESS, "extratags": {"wikidata": "Q123"}}])
+        if url.startswith("https://www.wikidata.org/"):
+            return FakeResponse({"entities": {"Q123": {"claims": {"P18": [
+                {"mainsnak": {"datavalue": {"value": "St James's Park Lake.jpg"}}}]}}}})
+        if url == wx.COMMONS_API:
+            self.assertEqual(params["titles"], "File:St James's Park Lake.jpg")
+            return FakeResponse({"query": {"pages": {"1": {"title": "File:St James's Park Lake.jpg", "imageinfo": [{
+                "mime": "image/jpeg", "width": 3000, "height": 2000,
+                "thumburl": "https://upload.wikimedia.org/thumb/St_James's_Park_Lake.jpg",
+                "extmetadata": {"Artist": {"value": "A Photographer"}, "LicenseShortName": {"value": "CC BY-SA 4.0"}},
+            }]}}}})
+        raise AssertionError(f"unexpected request {url}")
+
+    def test_named_site_uses_the_image_wikidata_records_for_it(self):
+        with mock.patch.object(wx.requests, "get", side_effect=self.fake_get):
+            photo = wx.exact_commons_photo("London, St James'S Park", "St James's Park", "Greater London")
+        self.assertEqual(photo["page"], "https://commons.wikimedia.org/wiki/File:St_James%27s_Park_Lake.jpg")
+        self.assertEqual(photo["alt"], "St James's Park, Greater London")
+        self.assertIn("CC BY-SA 4.0", photo["credit"])
+
+    def test_wikidata_site_in_another_county_is_ignored(self):
+        with mock.patch.object(wx.requests, "get", side_effect=self.fake_get):
+            self.assertEqual(wx.osm_wikidata_id("London, St James'S Park", "Kent"), "")
+
+    def test_museum_objects_are_not_place_photos(self):
+        page = {"title": "File:Mould of a token, Westminster (FindID 857094).jpg", "imageinfo": [{
+            "mime": "image/jpeg", "width": 2000, "height": 1300, "url": "https://upload.wikimedia.org/x.jpg",
+            "extmetadata": {"ImageDescription": {"value": "Token from St James's Park, Westminster"}}}]}
+        with mock.patch.object(wx, "wikidata_place_photo", return_value=None), \
+             mock.patch.object(wx.requests, "get", return_value=FakeResponse({"query": {"pages": {"1": page}}})):
+            self.assertIsNone(wx.exact_commons_photo("London, St James'S Park", "St James's Park", "Greater London"))
+
+
 if __name__ == "__main__":
     unittest.main()

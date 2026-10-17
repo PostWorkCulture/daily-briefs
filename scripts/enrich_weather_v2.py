@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 EXTREMES_URL = "https://weather.metoffice.gov.uk/observations/weather-extremes"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+WIKIDATA_ENTITY = "https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
 WEATHER_IMAGE_DIR = ROOT / "assets" / "weather-extremes"
 
@@ -122,6 +123,7 @@ def core_place(location: str) -> str:
 
 
 NAMED_SITE = re.compile(r"\b(?:park|gardens?|common|heath|green|reservoir|airport)\b", re.I)
+MUSEUM_OBJECT = re.compile(r"findid|portable antiquities|\b(?:token|coin|mould|artefact|artifact|museum number)\b", re.I)
 TRANSPORT_STOP = re.compile(r"\b(?:station|underground|tube|platform)\b", re.I)
 
 
@@ -278,6 +280,85 @@ def display_location(location: str) -> str:
     return f"{place[0]}, {place[1]}" if place else location
 
 
+def osm_wikidata_id(location: str, county: str = "") -> str:
+    """Wikidata ID OpenStreetMap links to the exact site (most specific part first, England only)."""
+    for query in nominatim_queries(location):
+        try:
+            r = requests.get(
+                NOMINATIM,
+                params={"q": f"{query}, United Kingdom", "format": "jsonv2", "addressdetails": 1,
+                        "extratags": 1, "limit": 1},
+                headers={**UA, "Accept-Language": "en-GB,en"},
+                timeout=15,
+            )
+            r.raise_for_status()
+            hits = r.json()
+        except Exception:
+            continue
+        if not isinstance(hits, list) or not hits:
+            continue
+        hit = hits[0]
+        address = hit.get("address", {})
+        if address.get("ISO3166-2-lvl4") != "GB-ENG":
+            continue
+        if county and nominatim_county(address).lower() != county.lower():
+            continue
+        qid = str((hit.get("extratags") or {}).get("wikidata") or "")
+        if re.fullmatch(r"Q\d+", qid):
+            return qid
+    return ""
+
+
+def commons_file_photo(filename: str, place: str, county: str) -> dict | None:
+    params = {
+        "action": "query",
+        "titles": "File:" + filename,
+        "prop": "imageinfo",
+        "iiprop": "url|size|mime|extmetadata",
+        "iiurlwidth": 1600,
+        "format": "json",
+        "origin": "*",
+    }
+    r = requests.get(COMMONS_API, params=params, headers=UA, timeout=20)
+    r.raise_for_status()
+    for page in ((r.json().get("query") or {}).get("pages") or {}).values():
+        info = (page.get("imageinfo") or [{}])[0]
+        if info.get("mime") not in {"image/jpeg", "image/png", "image/webp"}:
+            return None
+        if int(info.get("width") or 0) < 640 or int(info.get("height") or 0) < 360:
+            return None
+        meta = info.get("extmetadata") or {}
+        title = page.get("title", "File:" + filename)
+        artist = plain((meta.get("Artist") or {}).get("value", "")) or "Wikimedia Commons contributor"
+        licence = plain((meta.get("LicenseShortName") or {}).get("value", ""))
+        name = title.removeprefix("File:")
+        return {
+            "src": info.get("thumburl") or info.get("url"),
+            "page": "https://commons.wikimedia.org/wiki/File:" + quote(name.replace(" ", "_"), safe="()_,.-"),
+            "credit": " · ".join(x for x in (artist, licence) if x),
+            "alt": f"{place}, {county}",
+        }
+    return None
+
+
+def wikidata_place_photo(location: str, town: str = "", county: str = "") -> dict | None:
+    """The image Wikidata records for the exact site OpenStreetMap identifies (P18)."""
+    try:
+        qid = osm_wikidata_id(location, county)
+        if not qid:
+            return None
+        r = requests.get(WIKIDATA_ENTITY.format(qid=qid), headers=UA, timeout=20)
+        r.raise_for_status()
+        entity = (r.json().get("entities") or {}).get(qid) or {}
+        claims = (entity.get("claims") or {}).get("P18") or []
+        filename = str((((claims[0] if claims else {}).get("mainsnak") or {}).get("datavalue") or {}).get("value") or "")
+        if not filename:
+            return None
+        return commons_file_photo(filename, town or exact_place(location), county or "England")
+    except Exception:
+        return None
+
+
 def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict | None:
     low = location.lower()
     for key, photo in KNOWN_PHOTOS.items():
@@ -287,6 +368,10 @@ def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict
     place = exact_place(location)
     if len(place) < 3:
         return None
+    if len(place_parts(location)) > 1 or NAMED_SITE.search(place):
+        site_photo = wikidata_place_photo(location, town, county)
+        if site_photo:
+            return site_photo
     named_site = bool(NAMED_SITE.search(place))
     station_site = bool(TRANSPORT_STOP.search(place))
     exact_needles = {
@@ -334,6 +419,8 @@ def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict
                 hay = re.sub(r"\W+", "", hay_text)
                 if not any(needle in hay for needle in exact_needles):
                     continue
+                if MUSEUM_OBJECT.search(hay_text):
+                    continue  # finds, coins and catalogue objects are not views of the place
                 if named_site and not station_site and TRANSPORT_STOP.search(hay_text):
                     continue  # e.g. "St James's Park Station" is not St James's Park itself
                 landmark_bonus = 2 if re.search(
