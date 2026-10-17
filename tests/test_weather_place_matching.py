@@ -107,5 +107,32 @@ class NominatimTests(unittest.TestCase):
             self.assertIsNone(wx.england_place("London, St James'S Park"))
 
 
+class NamedSitePhotoTests(unittest.TestCase):
+    def commons_page(self, title, desc):
+        return {
+            "title": title,
+            "imageinfo": [{
+                "mime": "image/jpeg", "width": 2000, "height": 1300,
+                "url": "https://upload.wikimedia.org/x/" + title.replace(" ", "_"),
+                "extmetadata": {"ImageDescription": {"value": desc}, "Artist": {"value": "A Photographer"},
+                                "LicenseShortName": {"value": "CC BY-SA 2.0"}},
+            }],
+        }
+
+    def test_park_site_photo_skips_the_station_named_after_it(self):
+        pages = {
+            "1": self.commons_page("File:Entrance, St. James's Park Station.jpg", "Entrance, St. James's Park Station"),
+            "2": self.commons_page("File:St James's Park lake.jpg", "The lake in St James's Park, London"),
+        }
+        with mock.patch.object(wx.requests, "get", return_value=FakeResponse({"query": {"pages": pages}})):
+            photo = wx.exact_commons_photo("London, St James'S Park", "St James's Park", "Greater London")
+        self.assertIn("St_James's_Park_lake", photo["src"])
+
+    def test_only_station_photos_means_no_photo(self):
+        pages = {"1": self.commons_page("File:St James's Park tube station.jpg", "St James's Park tube station")}
+        with mock.patch.object(wx.requests, "get", return_value=FakeResponse({"query": {"pages": pages}})):
+            self.assertIsNone(wx.exact_commons_photo("London, St James'S Park", "St James's Park", "Greater London"))
+
+
 if __name__ == "__main__":
     unittest.main()

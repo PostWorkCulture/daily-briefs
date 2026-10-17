@@ -121,6 +121,10 @@ def core_place(location: str) -> str:
     return clean(value.split(",", 1)[0])
 
 
+NAMED_SITE = re.compile(r"\b(?:park|gardens?|common|heath|green|reservoir|airport)\b", re.I)
+TRANSPORT_STOP = re.compile(r"\b(?:station|underground|tube|platform)\b", re.I)
+
+
 def tidy_place_name(value: str) -> str:
     """Undo title-case artefacts in Met Office names, e.g. "St James'S Park"."""
     return re.sub(r"(\w)(['\u2019])S\b", r"\1\2s", clean(value))
@@ -283,6 +287,8 @@ def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict
     place = exact_place(location)
     if len(place) < 3:
         return None
+    named_site = bool(NAMED_SITE.search(place))
+    station_site = bool(TRANSPORT_STOP.search(place))
     exact_needles = {
         re.sub(r"\W+", "", value.lower())
         for value in (place, town)
@@ -328,6 +334,8 @@ def exact_commons_photo(location: str, town: str = "", county: str = "") -> dict
                 hay = re.sub(r"\W+", "", hay_text)
                 if not any(needle in hay for needle in exact_needles):
                     continue
+                if named_site and not station_site and TRANSPORT_STOP.search(hay_text):
+                    continue  # e.g. "St James's Park Station" is not St James's Park itself
                 landmark_bonus = 2 if re.search(
                     r"\b(?:castle|church|landmark|town centre|council|civic|market|high street|harbour|park|station|street)\b",
                     hay_text,
