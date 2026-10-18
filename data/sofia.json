@@ -19,18 +19,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=5578f44e485b"
   },
   "weather": {
-    "temp": "8°",
-    "summary": "Clear",
-    "condition": "Clear",
-    "currentRainChance": 10,
+    "temp": "14°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 40,
     "daily": [
       {
         "date": "2026-10-18",
         "high": 14,
         "low": 8,
-        "summary": "Forecast",
-        "condition": "Forecast",
-        "rainChance": 95,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
@@ -39,58 +39,58 @@
         "low": 11,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 90,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-10-20",
         "high": 14,
-        "low": 9,
+        "low": 8,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 80,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-10-21",
-        "high": 15,
-        "low": 6,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 60,
+        "high": 14,
+        "low": 7,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-10-22",
         "high": 14,
-        "low": 11,
+        "low": 10,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 60,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-10-23",
-        "high": 13,
+        "high": 12,
         "low": 7,
-        "summary": "Heavy rain",
-        "condition": "Heavy rain",
-        "rainChance": 80,
+        "summary": "Forecast",
+        "condition": "Forecast",
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-10-24",
-        "high": 13,
+        "high": 14,
         "low": 11,
-        "summary": "Light rain",
-        "condition": "Light rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 60,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Forecast · peak rain chance around 95%",
+      "detail": "Cloudy · peak rain chance around 90%",
       "source": "Met Office"
     },
     "source": "Met Office",
