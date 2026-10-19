@@ -133,14 +133,15 @@ def tidy_place_name(value: str) -> str:
 
 
 def place_parts(location: str) -> list[str]:
-    """Comma-separated parts of a Met Office location, most specific first.
+    """Comma- or colon-separated parts of a Met Office location, most specific first.
 
-    The Met Office writes some stations as "City, Spot" (e.g. "London, St James's Park"),
-    so the last part names the exact site and the first names the wider town or city.
+    The Met Office writes some stations as "City, Spot" (e.g. "London, St James's Park")
+    or "Area: Spot" (e.g. "Wight: St Catherines Point"), so the last part names the exact
+    site and the first names the wider town, city or area.
     """
     value = re.sub(r"\bNo\s*\d+\b", "", location, flags=re.I)
     value = re.sub(r"\bNumber\s*\d+\b", "", value, flags=re.I)
-    parts = [tidy_place_name(part) for part in value.split(",")]
+    parts = [tidy_place_name(part) for part in re.split(r"[,:]", value)]
     parts = [part for part in parts if part]
     return list(reversed(parts))
 

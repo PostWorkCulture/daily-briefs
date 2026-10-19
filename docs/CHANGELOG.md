@@ -1,3 +1,9 @@
+## 19 October 2026: Colon-separated Met Office station names in Yesterday in England
+
+- **Cause**: The 19 October edition was published without the Yesterday in England cards. The Met Office named an extreme station "Wight: St Catherines Point" (area, colon, site). The place check only split names on commas, so neither the linked Met Office station page heading nor the OpenStreetMap lookup could match it, and `yesterdayExtremes` carried an error. As on 17 October, today's commit was pushed outside GitHub Actions, so the Morning refresh validator that normally blocks this never ran (the Responsive UI check on that commit failed with "pete hot weather card has no local image").
+- **Fix** (`scripts/enrich_weather_v2.py` `place_parts()`): Met Office names are now split on colons as well as commas, most specific part first (`St Catherines Point`, then `Wight`), using the same matching, geocoding and photo rules as the 17 October multi-part fix. No label rule, source, layout, renderer or other section changed.
+- **Validation**: Two new tests in `tests/test_weather_place_matching.py` (colon-separated parts, and a mocked Met Office station page for the colon form); 156/156 Python tests pass. The maintenance sandbox cannot reach the Met Office, OpenStreetMap or Commons, so the live result depends on the Morning refresh re-run triggered by this push.
+
 ## 17 October 2026: Better place checks for Yesterday in England
 
 - **Cause**: The 17 October edition was published without the Yesterday in England cards. The Met Office named the extreme station "London, St James'S Park". The place check only looked at the text before the comma ("London"), so the Met Office station page heading and the OpenStreetMap lookup could not confirm a town and county, and `yesterdayExtremes` carried an error. Today's commit was also pushed outside GitHub Actions, so the Morning refresh validator that normally blocks this never ran.

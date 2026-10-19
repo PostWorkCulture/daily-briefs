@@ -42,6 +42,13 @@ class PlacePartsTests(unittest.TestCase):
         self.assertEqual(wx.place_parts("London, St James'S Park"), ["St James's Park", "London"])
         self.assertEqual(wx.exact_place("London, St James'S Park"), "St James's Park")
 
+    def test_colon_separated_station_is_most_specific_first(self):
+        self.assertEqual(wx.place_parts("Wight: St Catherines Point"), ["St Catherines Point", "Wight"])
+        self.assertEqual(wx.exact_place("Wight: St Catherines Point"), "St Catherines Point")
+        self.assertTrue(wx.place_name_matches("Wight: St Catherines Point", "St Catherine's Point"))
+        self.assertEqual(wx.nominatim_queries("Wight: St Catherines Point"),
+                         ["St Catherines Point, Wight", "St Catherines Point", "Wight"])
+
     def test_single_part_station_is_unchanged(self):
         self.assertEqual(wx.place_parts("Spadeadam No 2"), ["Spadeadam"])
         self.assertEqual(wx.exact_place("Spadeadam No 2"), wx.core_place("Spadeadam No 2"))
@@ -61,6 +68,14 @@ class MetOfficeHeadingTests(unittest.TestCase):
                 "London, St James'S Park", "https://weather.metoffice.gov.uk/observations/example"
             )
         self.assertEqual(place, ("St James's Park", "Greater London"))
+
+    def test_linked_station_page_accepts_a_colon_separated_site(self):
+        page = "<h1>St Catherine's Point (Isle of Wight) last 24 hours weather</h1>"
+        with mock.patch.object(wx.requests, "get", return_value=FakeResponse(text=page)):
+            place = wx.linked_met_office_place(
+                "Wight: St Catherines Point", "https://weather.metoffice.gov.uk/observations/example"
+            )
+        self.assertEqual(place, ("St Catherine's Point", "Isle of Wight"))
 
     def test_linked_station_page_for_another_place_is_rejected(self):
         page = "<h1>Heathrow (Greater London) last 24 hours weather</h1>"
