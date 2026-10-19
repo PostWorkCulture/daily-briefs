@@ -1,51 +1,42 @@
 {
-  "updatedLabel": "Sunday, 18 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Monday, 19 October 2026 · refreshed 5:00am",
   "worldFact": {
-    "id": "la-tomatina-largest-annual-food-fight",
+    "id": "alert-most-northerly-inhabited-place",
     "editorialPriority": "human-first",
     "editorialBoost": "wild",
-    "category": "World record festival",
-    "country": "Spain",
-    "place": "La Tomatina · Buñol",
-    "locationContext": "Buñol, Valencia · eastern Spain",
-    "source": "Guinness World Records",
-    "sourceUrl": "https://guinnessworldrecords.com/world-records/68335-largest-annual-food-fight",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Arrojando_tomates_desde_un_cami%C3%B3n_-_La_Tomatina_2010.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Arrojando_tomates_desde_un_cami%C3%B3n_-_La_Tomatina_2010.jpg",
-    "photoCredit": "flydime · CC BY-SA 2.0",
-    "fact": "Guinness lists Buñol's La Tomatina as the world's largest annual food fight. At least 40 tonnes of ripe tomatoes are hurled through the streets of this small Valencian town, and at its 2012 peak an estimated 40,000 people joined in.",
-    "date": "2026-10-18",
-    "sequence": 58,
-    "localImage": "assets/scenery/world-fact.webp?v=5578f44e485b"
+    "category": "Faraway lands population extreme",
+    "country": "Canada",
+    "place": "Canadian Forces Station Alert",
+    "locationContext": "Ellesmere Island, Nunavut · Canadian High Arctic",
+    "source": "Government of Canada",
+    "sourceUrl": "https://www.canada.ca/en/air-force/corporate/alert.html",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/US_diplomat_Laura_Lochlan_confirms_Alert_really_is_far_from_everywhere.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:US_diplomat_Laura_Lochlan_confirms_Alert_really_is_far_from_everywhere.jpg",
+    "photoCredit": "US Mission Canada · CC BY 2.0",
+    "fact": "Alert, just 817 km from the North Pole, is the most northerly permanently inhabited place on Earth. Its roughly 55 residents get no night at all from early April to early September, then no direct sunlight from mid-October to March, through winters that sit around −40°C.",
+    "date": "2026-10-19",
+    "sequence": 59,
+    "localImage": "assets/scenery/world-fact.webp?v=0bf0a1ce2ebf"
   },
   "weather": {
-    "temp": "12°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 70,
+    "temp": "9°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 10,
     "daily": [
-      {
-        "date": "2026-10-18",
-        "high": 13,
-        "low": 8,
-        "summary": "Heavy rain",
-        "condition": "Heavy rain",
-        "rainChance": 95,
-        "source": "Met Office"
-      },
       {
         "date": "2026-10-19",
         "high": 14,
-        "low": 10,
+        "low": 11,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 90,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-10-20",
         "high": 13,
-        "low": 7,
+        "low": 8,
         "summary": "Light rain",
         "condition": "Light rain",
         "rainChance": 95,
@@ -53,20 +44,20 @@
       },
       {
         "date": "2026-10-21",
-        "high": 15,
-        "low": 7,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 60,
+        "high": 13,
+        "low": 8,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-10-22",
         "high": 15,
-        "low": 10,
+        "low": 11,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 60,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
@@ -81,16 +72,25 @@
       {
         "date": "2026-10-24",
         "high": 14,
-        "low": 13,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "low": 11,
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 70,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-10-25",
+        "high": 16,
+        "low": 11,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 60,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Check hourly Met Office forecast",
-      "detail": "Heavy rain expected · rain chance around 95%",
+      "label": "Drier spells likely best",
+      "detail": "Sunny intervals · peak rain chance around 60%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -98,72 +98,12 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Saturday 17 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
-      "hot": {
-        "location": "Langdon Bay",
-        "town": "Langdon Bay",
-        "county": "Kent",
-        "country": "England",
-        "displayLocation": "Langdon Bay, Kent",
-        "value": "16.2°C",
-        "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=e8f1766a350a",
-          "page": "https://commons.wikimedia.org/wiki/File:Dover_shunting_on_Admiralty_Pier_geograph-2984724-by-Ben-Brooksbank.jpg",
-          "credit": "Ben Brooksbank · CC BY-SA 2.0",
-          "alt": "Ex-SE&CR 0-4-4T shunting on Admiralty Pier at Dover. View NE, across the Harbour to the cliffs towards Langdon Bay and South Foreland - nowadays the Eastern Docks would be much more prominent. The locomotive is Wainwright H class 0-4-4T No. 31540 (built 11/1904 as No. 540, withdrawn 2/60).",
-          "width": 1600,
-          "height": 900
-        }
-      },
-      "cold": {
-        "location": "Shap",
-        "town": "Shap",
-        "county": "Cumbria",
-        "country": "England",
-        "displayLocation": "Shap, Cumbria",
-        "value": "-1.3°C",
-        "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=8e8504d9fd4c",
-          "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(A6),_Shap_-_geograph.org.uk_-_3344660.jpg",
-          "credit": "David Dixon · CC BY-SA 2.0",
-          "alt": "Main Street (A6), Shap",
-          "width": 1600,
-          "height": 900
-        }
-      }
+      "error": "England town/county could not be verified for Wight: St Catherines Point"
     }
   },
   "calendar": [
-    {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-18T00:00:00+01:00",
-      "end": "2026-10-19T00:00:00+01:00",
-      "date": "2026-10-18",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "6cqj8eb36dh68b9pcgpm4b9kcph32b9pckq6cb9l69i66c3375h64db3cc",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "Bettys B-day Party 2pm - 4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-18T14:00:00+01:00",
-      "end": "2026-10-18T16:00:00+01:00",
-      "date": "2026-10-18",
-      "time": "2pm",
-      "allDay": false,
-      "color": "#dbadff",
-      "colorId": "3",
-      "googleEventId": "c5hm6dpk6hh3ib9h6gpjib9kccp3gb9oc9hj6bb36ti3ae9kcop38d9l6k",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
@@ -447,54 +387,35 @@
   ],
   "arsenal": {
     "lastResult": {
-      "date": "2026-10-13T20:00:00+01:00",
-      "dateLabel": "Tue 13 Oct",
-      "kickoff": "8pm",
-      "opponent": "Lille",
-      "competition": "UEFA Champions League",
-      "homeAway": "home",
-      "completed": true,
-      "arsenalScore": 3,
-      "opponentScore": 0,
-      "result": "3–0",
-      "scorers": [
-        {
-          "name": "Jurrien Timber",
-          "team": "Arsenal",
-          "minute": "64'"
-        },
-        {
-          "name": "Eberechi Eze",
-          "team": "Arsenal",
-          "minute": "67'"
-        },
-        {
-          "name": "Bukayo Saka",
-          "team": "Arsenal",
-          "minute": "71'"
-        }
-      ],
-      "scorersLabel": "Timber 64', Eze 67', Saka 71'",
-      "stadium": "Emirates Stadium",
-      "summary": "Arsenal scored three times in seven second-half minutes through Jurrien Timber, Eberechi Eze and substitute Bukayo Saka to beat Lille 3–0 in the Champions League league phase.",
-      "url": "https://www.skysports.com/football/arsenal-vs-lille/8048664293087483232",
-      "source": "Sky Sports"
-    },
-    "nextFixture": {
       "date": "2026-10-18T16:30:00+01:00",
       "dateLabel": "Sun 18 Oct",
       "kickoff": "4:30pm",
       "opponent": "Nottingham Forest",
       "competition": "Premier League",
       "homeAway": "away",
+      "completed": true,
+      "arsenalScore": 1,
+      "opponentScore": 0,
+      "result": "1–0",
+      "url": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/7945971423504407232",
+      "source": "Sky Sports",
+      "tvChannel": "TBC"
+    },
+    "nextFixture": {
+      "date": "2026-10-21T20:00:00+01:00",
+      "dateLabel": "Wed 21 Oct",
+      "kickoff": "8pm",
+      "opponent": "Bayern Munich",
+      "competition": "UEFA Champions League",
+      "homeAway": "away",
       "completed": false,
       "arsenalScore": null,
       "opponentScore": null,
       "result": "",
-      "url": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/7945971423504407232",
+      "url": "https://www.skysports.com/football/bayern-munich-vs-arsenal/7867082363375436232",
       "source": "Sky Sports",
-      "tvChannel": "Sky Sports Premier League",
-      "stadium": "City Ground",
+      "tvChannel": "TBC",
+      "stadium": "TBC",
       "previousMeeting": {
         "score": "No previous meeting found",
         "date": "",
@@ -503,52 +424,52 @@
       }
     },
     "leaguePosition": 2,
-    "points": 15,
-    "played": 6,
+    "points": 18,
+    "played": 7,
     "news": [
-      {
-        "title": "Arsenal star backed to reach 'new level' as Arteta sets goal target",
-        "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T02:31:10+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOG1xTFVyZTdwSHBqS212MDc1SjVuNm84dFpkWVQwQzdacmYwblpCTktSVFV0N2lfUkNEX0JuMFE4LXh1c0FMRDd1eDQwRHJER0JKVTFtdUthYllQMWxISnNsdU9fb1ZHTmFqYkNSOG44b1dwTkFzWTNwdlVWSkdwdXVKQzh2d2d4dE5xZXVlZTBiWU9rYWc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Four changes to face Birmingham City",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T12:04:12+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRlQ0MGVGVFVoZ0w0SlI5SjkyODJaWU1fQ2JyeXhMM0gxOG9JbFByTlJfeG1tdnBvMWtKMHU1N25ON3N5aW1xQlczN08yMlQ4RmtYcUl2ajFWTGNfSTNvQTJnUXVvcGctZXFDUWRLRWtJUlRCdkFiZHVTak9seHRlbVVlTUY3OFQ5MlBaVFNfUWNuQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal XI vs Nottingham Forest: Predicted lineup and confirmed team news",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T10:04:59+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNczI2OUdLb1EwLWJLdDVGVUs3dTV4eENlLWxiRVZ3TVFDSVJLam1jNGxEQVgtNXhIS3phc0wtLWhycm5vbTI2UzlSeTJhWHgyWGpEWjI2bUstZWRCY3pSVlREQXg2YlN1Wmk5SDZxaUhiSUpMMnF1bmFFeDBoMjZFdlVSUGlEWVdRYUFLeXdNUDdZLXF0cVVXcG5EdnQwQ2F2NUVGbFVqOE94SUFQSkNTSHFjUFY3NUR0b1NHMUJvMHVXU0NsdTVfVkNHSjJBdDk0dXIzUzVsYmFHSXFfZ0hmM3N5R0Y5MUdTS1ZSMFIzLXhyRW8?oc=5",
-        "contentType": "article"
-      },
       {
         "title": "Preview: Nottingham Forest v Arsenal",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T06:03:23+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T19:49:27+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb2VYSnBNVFU4NWF1WVBQWVdtY3dNamFLeklJdmdYUHA4MVZzY1QzY3BSY0NkenFEd1MyYWxReVZocUZ2N1Etek5FRHdwOEZJZkdzOUtzZzhWcW92OENHNlFLQ29keUg0bjhSbEFSb1Y3UFVhZ05SNWM1TFlTVFU0b0ZYcw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal XI vs Nottingham Forest: Confirmed team news, predicted lineup and injury latest for Premier League",
+        "title": "[LIVESTREAM]TV!!] Arsenal FC vs Nottingham Forest Live Free Stream Today",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T06:46:17+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T17:23:57+01:00",
+        "source": "Universidad de Córdoba (UCO)",
+        "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQRHU5VWxRX1dtei1MUTY3cGwyQ0h2RWN4SG16MEZiV0FieEZrLUpSbm90M20weXVZNlN2Z0pGdjhvN1pCS1hwRkZwSUk3TlIzSGVZOXdQak1mN1FsRjI3TjV1UWVtelE0a014V3ZKMFUzMHhaTE1tN2dQa3A3R1VaN1pfeC1FZm52THBaOW55akxMbDVrSy10Sm0yS2lDMmFvYi02ZnpicVlBMWlMTzJTTFNLTUlCV0xTNDY3aEdfSE1tZXU2bklZbW9icEJuRmViZnQ5ajVZX1h5Vng0SWxlZVNkYy1nenAxcUxaQUtjWEtPLXhUR2I0eF92TmVtSHhZeHhWYWNMU0FYNWVzYVlJQ3E2aHoyV002Yi1FMHVycWRaakh5XzAwbE12bWVIRUlmYjhlM1RoaVFpMW1YcWVpRWVOUWtyUWhSX3VWeWlsWERIS1Z6d1lIOGFROA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal ratings: Surprise star delivers but fringe player scores 3/10",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T21:51:20+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbllxNGJoa1Q4eGd5VUUzaVR1Z3UycHJjTlZ2Mm9hNGdfN0c5Wi0wX3kwUEVudjdzOGpoZGpKRWc3ajRUS3MxMXNOajBYUTRkRlphb1RKaWlWZEdoNDIxLUYtazNUbGx5dWR4aGQtd3FiaFZFWUM1U1dyV0NTVFhFVDJ4LXdSQms1V3NPMUhSMVRZTzI0MWp5TFhGbWNjek01N0ZjbFF5UFJObmF6V3RSaW11UlFfakdPNXdTUHpPeEp1MHdfcnpReTJLSTFaMjZ6NktqbmVvWlk?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZnMzb1dtVm1FNl9Ra056UURMR1M2UW5nUmpUQjlHb1MxUk1qUWxpX2lleDhELW9tVXRPRV9Gd2R0UmlrWVQyYURaVEIybUx4ajRpSTU0NWtVREg1a0NpUmtZQ1QxT0pyUXRoNXpZSlhyb0lKbUFhbnNDUFJ0V25OX1V4bHBoeU05Xy1xc05kQU5tdE00dkV5WTFoUC00SXhZcE5ZOWlpb0FlNGk0VzR6UUQ4OXQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Nottingham Forest 0-1 Arsenal | Premier League highlights",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:48:58+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTnVEMEtMeWNPSjNkb1pUQWVsbjV1aWJHVmJER2R0NnlPSzE4ZkNkTWt3YWFJbm50bDQ3YU9IUF9WMjRpV2FwdWdkeUdCX09icDVfeVJvTWFXcXd5X0EzMVZ3Mms3MjNZeFlONFdCclJHZlZjSkdjTmJQVTlRYjN3RkwzUXJtZTJTUzlRZ3RWSGZCTGVYanRmMGlzd0JvbU85OExaTEhPWkY?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "How to watch Nottingham Forest v Arsenal live on TV",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T20:01:11+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWEp2T0NSZDhfQkRwTk5tSWRoZDkzdmtScG8wc2VXZnJxT05WSjh4eUlIbEJOdUpheVp0OS1DdVFSNlpYNHo2cUtiM0x2amxCRDlzOUMyalNvMFlDTHhxZEJtdWplYzdDOXBHOVZ2SHVfYjRsX3BaNl9ERGxpRXVaMjFia3J6TlJRLTZxcHhjcEhfQUZiQjM0MA?oc=5",
         "contentType": "article"
       }
     ],
@@ -610,12 +531,12 @@
     ],
     "transferRumours": [
       {
-        "title": "Arteta on Gyökeres: “Viktor transmits is an incredible will and determination and work rate to improve, help the team”. “That's Viktor every single day, regardless of his position, whether he scores a goal or not. And that's why he's always an option to play”.",
+        "title": "🔴⚪️ Noni Madueke wins it for Arsenal! Who’s been your Man of the Match?",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T07:32:00+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:25:02+01:00",
         "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ESnZxQ0pXeHdUY0x6WUMtcV9Icktkb3FsMWZENC1rd3FxTk5RYkNORFY2d1J0Vjcydk9rdEVndEpJb2xvQVlWbHpmMzd5eDAyMHB1cXQzbEtabkcxZ1kxR1l0VUxUUQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tMWUyZHh4U2tqX2p6MmMzQVU0Mm5DN3p0MHFKZmY1TVhDMDdjR1FBZTNxU25NS3kzVmRPWnNUSXJERnE3U0VjbnQ4VWJRcnM2amtqeVplQkZMV0VYbTRpZmFHNGxGQQ?oc=5",
         "contentType": "transfer-rumour",
         "trust": "Unconfirmed",
         "speculative": true,
@@ -624,40 +545,12 @@
         "sourceUrl": "https://x.com/FabrizioRomano"
       },
       {
-        "title": "Mikel Arteta on staff job losses at Arsenal: “I was explained it’s been done with intention always to evolve, to improve”. “Some decisions have to be taken to put people in the right roles and keep investing to achieve what we want to achieve and the success t",
+        "title": "F/T: 1-0 Arsenal",
         "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T18:31:09+01:00",
-        "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4cmE0eXRLTmtCaEFXd1pKTXh4Z1VfUUY4ZnhYUzlWVnVjRHhReW12SS1UVDU5dkx5R1FHYThUR0x2enhlcDZWazNKUzJfTkFPX2s0NlQ4bHFaZDNmVEFGRG9jaXRPZw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Established reporter",
-        "sourceUrl": "https://x.com/FabrizioRomano"
-      },
-      {
-        "title": "@CalWilliamsComm @the_bonnfire Now given that that Arsenal team proved itself to be a pretty decent match for PSG over four games in last two seasons (5.8xG for, 5 xG against), what convinces you that PSG could just play their bench against Villa, Brighto",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T16:28:15+01:00",
-        "source": "James Benge",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0tWUwzUDMxY0xUMDMwU1BCdFpJQ1lXVUlzdl9oUG1Qa09qZ09oc0dKNWhWc1N5WnBodXkzWjRVMlpjOENPTnM4SjlZQVZUUDVEd2VlSDdoZ28zOHZMQktRYg?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/jamesbenge"
-      },
-      {
-        "title": "I mean, come on!! Why would you do this picture without Saliba??? Surely, surely they could have just done it on a day he was actually there? Such a shame.",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T14:12:15+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:24:02+01:00",
         "source": "Charles Watts",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TSVRFcnpWRHFNSUFiTWExel9DSmtVV29KT1BKb3VYcGpjUU8zTEJBOXl2TG1TcmZGazg4d1JNVm9wcDhlRGsxNTIyUE9jckMyVWQ1VzNUSWlOamw5YkI4SFA2RUs?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBMWEI1VHZvdHFYNExDRWE2Rm9nYy1WTUhZdEhzYTJoNXdpU3dVcUNQNXZNbUowTTFTRE5jcDlZVWp6VlV4Qk9MZHBGSWdfZDV2eHh3cjU4NUJaOWJEdzdZb1RGdms?oc=5",
         "contentType": "transfer-rumour",
         "trust": "Unconfirmed",
         "speculative": true,
@@ -666,12 +559,40 @@
         "sourceUrl": "https://x.com/charles_watts"
       },
       {
-        "title": "Michael Oliver will be in charge of Nottingham Forest vs Arsenal on Sunday. Michael Salisbury will be VAR.",
+        "title": "Arsenal lead with 10 minutes to go. Rice plays the ball out wide to Madueke who drives into the box before firing in a powerful effort which deflects past Sels off Cunha.",
         "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T11:13:22+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:12:12+01:00",
         "source": "Charles Watts",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YY2IzY0ptRkNURmJMcDBERTJRUGFPV3l5ejNyOFNMS1FIeWNFeWdZckd0cHE1eElaY1RXVVpNYXdENG5VUFFwb1pCdnBHWTl6REZOREJQYVRIbHQ2dXY1TWJBUjM?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ReGZyU24zNURZZUNWRzdKU2RFYkVsdGE0X0ticmM5N2I2M2hFNGZRRE5sR2lUeGZnbkZoUHI1aW9tZndBcU5KblBYc3NzNWJRSFZMWWxQaVotNEVSRnlBQUxIT1k?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
+      {
+        "title": "First excellent move of the match for Arsenal ends with Rice blazing over from Timber's cutback. Huge chance.",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:02:19+01:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9hN0d5dVE5TG5kVV9uXzVxei05ZnN0dkEyQnBBeUtrb1NxMVdPeUdUQnMxUnJ6ZEREYnRJTUpRX0UxYjFvcndHbDNsRURqNlFBejFzWm43Qi1IUjcwc3ZYYnl2NmE?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
+      {
+        "title": "Timber, Merino and Gyokeres coming on.",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T17:54:53+01:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4cFJySjBMUGxxU2lMNGRZZWlzY2wteWxMcXdpaGtObUFMeTNVT2JibXZGMnFFeV9Fc3ZGYUpDc295TnRyVjZDSWhHN3BFUmJtMmF2cGJLaXRnOFItTk9nSjYxc3E?oc=5",
         "contentType": "transfer-rumour",
         "trust": "Unconfirmed",
         "speculative": true,
@@ -682,42 +603,42 @@
     ]
   },
   "lead": {
-    "title": "Anthropic's Junk Rating Sparks a Bigger Bitcoin Debate",
+    "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
     "summary": "",
-    "meta": "Sun 18 Oct",
-    "publishedAt": "2026-10-18T02:11:00+01:00",
-    "source": "Yahoo Finance",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQWxhakVuTlhoTnJDLS1fdnM5V2ZIWlVZcjAxaG0xcFVMd0tKZGJSOXQ1c1VvUDZ2ek5ndFpfdks1bjBFMElXcThoUEFMOFBfajFscHZhRXdFVlg4Q0c5S3ZzYXJUeDMxUVFUN2pudzNIVko4cGRjWjFHSTNheDBwWXJWTjUtbkttazcwblpkMWg2Y3RRX05ZTWpZR1o4N3Y3cjdF?oc=5",
+    "meta": "Mon 19 Oct",
+    "publishedAt": "2026-10-19T04:38:58+01:00",
+    "source": "Al Jazeera",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUlxRm1wUHpkRHNDLTBnN1d0TlNDQjdseE5ZcldzTnllaEJ5NEk0ekdibHNZWExFdzcwUWNnOGJlbVdTMFJjMDBSbHJnbzBPR3B6d0VzbFpkT3hlbnB0LUtuQ1V0bldTamtOQVdrSGFQYTZRbjgwTF9rUDRhZkZzNkFvUTZ2ODNaTnk1VGU2N1diWnNYQ1R5blRWbmVMOUQwUzhNeDZ4Y2hxSGIxZ3fSAbMBQVVfeXFMTllaOEVZTjN2ZXZEX1F2YVZQMElmdkFrWW9WQ1ZTcGxkZ3FabTNadnNGR1dkWXZpSElyOTNNUTNxR0JibjRscXBUMC1temdNNmlDUkxpQlNDRjlrbnJJX0txNHpnWU9Sd0cxWDJhekRaX2FhVXU4X2w2NDl4bVd2YmZSRjdYaFdjem9BYWpmdHAyUFI5NG5SVHA2MGEzNGNLbHFqQVVDckJfRzJKUDJiNEN4Um8?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Anthropic's Junk Rating Sparks a Bigger Bitcoin Debate",
+      "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
       "summary": "",
-      "meta": "Sun 18 Oct",
-      "publishedAt": "2026-10-18T02:11:00+01:00",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQWxhakVuTlhoTnJDLS1fdnM5V2ZIWlVZcjAxaG0xcFVMd0tKZGJSOXQ1c1VvUDZ2ek5ndFpfdks1bjBFMElXcThoUEFMOFBfajFscHZhRXdFVlg4Q0c5S3ZzYXJUeDMxUVFUN2pudzNIVko4cGRjWjFHSTNheDBwWXJWTjUtbkttazcwblpkMWg2Y3RRX05ZTWpZR1o4N3Y3cjdF?oc=5",
+      "meta": "Mon 19 Oct",
+      "publishedAt": "2026-10-19T04:38:58+01:00",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUlxRm1wUHpkRHNDLTBnN1d0TlNDQjdseE5ZcldzTnllaEJ5NEk0ekdibHNZWExFdzcwUWNnOGJlbVdTMFJjMDBSbHJnbzBPR3B6d0VzbFpkT3hlbnB0LUtuQ1V0bldTamtOQVdrSGFQYTZRbjgwTF9rUDRhZkZzNkFvUTZ2ODNaTnk1VGU2N1diWnNYQ1R5blRWbmVMOUQwUzhNeDZ4Y2hxSGIxZ3fSAbMBQVVfeXFMTllaOEVZTjN2ZXZEX1F2YVZQMElmdkFrWW9WQ1ZTcGxkZ3FabTNadnNGR1dkWXZpSElyOTNNUTNxR0JibjRscXBUMC1temdNNmlDUkxpQlNDRjlrbnJJX0txNHpnWU9Sd0cxWDJhekRaX2FhVXU4X2w2NDl4bVd2YmZSRjdYaFdjem9BYWpmdHAyUFI5NG5SVHA2MGEzNGNLbHFqQVVDckJfRzJKUDJiNEN4Um8?oc=5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Arsenal star backed to reach 'new level' as Arteta sets goal target",
+      "title": "Preview: Nottingham Forest v Arsenal",
       "summary": "",
       "meta": "Sun 18 Oct",
-      "publishedAt": "2026-10-18T02:31:10+01:00",
-      "source": "London Evening Standard",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOG1xTFVyZTdwSHBqS212MDc1SjVuNm84dFpkWVQwQzdacmYwblpCTktSVFV0N2lfUkNEX0JuMFE4LXh1c0FMRDd1eDQwRHJER0JKVTFtdUthYllQMWxISnNsdU9fb1ZHTmFqYkNSOG44b1dwTkFzWTNwdlVWSkdwdXVKQzh2d2d4dE5xZXVlZTBiWU9rYWc?oc=5",
+      "publishedAt": "2026-10-18T19:49:27+01:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb2VYSnBNVFU4NWF1WVBQWVdtY3dNamFLeklJdmdYUHA4MVZzY1QzY3BSY0NkenFEd1MyYWxReVZocUZ2N1Etek5FRHdwOEZJZkdzOUtzZzhWcW92OENHNlFLQ29keUg0bjhSbEFSb1Y3UFVhZ05SNWM1TFlTVFU0b0ZYcw?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "Kingston Market Place expected to re-open next week following fire",
+      "title": "Kingston Crown Court delays rape sentence for actor",
       "summary": "",
-      "meta": "Fri 16 Oct",
-      "publishedAt": "2026-10-16T17:12:00+01:00",
+      "meta": "Sun 18 Oct",
+      "publishedAt": "2026-10-18T17:00:02+01:00",
       "source": "Kingston Nub News",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNkZIY0VkQml0Z3N5dTRiQ0FvSFVaUHlwS0VUbndzdVJNRlZDNE9oMEtkSlNhSi1ZNE9GOHhNT2liOWdaVGVrbkVOOXZRRU1XUUxlRWQ2RlhwRXlieTJYTEhybmVVbzdWdnoyVm82MXlSeGJiaVV4bEhDRUdpNF9qYXVTc2lER0t5bFNTZXlDMGl6eElJUV8tekJOTG9VMGhETmRPNk9TWHVhQW1yak9ENU80bHFkUQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZU5zUkFzU0JVc29qQmFHN3g1RjluOFZnZXNHdzVDbE5TYjczamN6UmZZYzNVYnAwb2JOcGFYTXljQi1VaVYzOEo0YWpHa2kxWlFGdHdWaXlGaGs0WjNtVjlmSmZpYnZ3MnotYy10bEh4UkpmX1ltTmlFMm0xRGZrNmtPYVBKQTBDbGh5OXN3bFQ0WC1aeC1wWG11eGdoVWg5YTg3dkI2S0QyVVpo?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -729,11 +650,11 @@
     {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Tomorrow, 7pm",
+      "meta": "BBC Two · Today, 7pm",
       "source": "BBC Two",
       "channel": "BBC Two",
       "releaseDate": "2026-10-19",
-      "releaseDateLabel": "Tomorrow, 7pm",
+      "releaseDateLabel": "Today, 7pm",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467592.jpg",
@@ -746,17 +667,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 626.9
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 635.6
     },
     {
       "title": "Crimewatch Live",
       "summary": "Josh McLean was shot in Bethnal Green in August 2024. Can you help solve his murder? Plus, how police caught a tram stop mugger terrorising travellers.",
-      "meta": "BBC One · Tomorrow, 10:45am",
+      "meta": "BBC One · Today, 10:45am",
       "source": "BBC One",
       "channel": "BBC One",
       "releaseDate": "2026-10-19",
-      "releaseDateLabel": "Tomorrow, 10:45am",
+      "releaseDateLabel": "Today, 10:45am",
       "url": "http://www.bbc.co.uk/programmes/b00ss27z",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/222/557126.jpg",
@@ -771,8 +692,8 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 573.9
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 581.8
     },
     {
       "title": "Hunting Gary Glitter",
@@ -796,31 +717,31 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 542.7
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 534.7
     },
     {
-      "title": "Aileen Wuornos: Damsel of Death",
-      "summary": "Concluding the profile of the serial killer, revealing how a body found beside a Florida highway sparked a chilling investigation into a drifter linked to a series of murders.",
-      "meta": "Crime & Investigation · Available since Sun 11 Oct",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since Sun 11 Oct",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/aileen-wuornos-damsel-of-death",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609030.jpg",
-      "artworkAlt": "Aileen Wuornos: Damsel of Death programme artwork",
+      "title": "Panorama",
+      "summary": "Why are vulnerable people, including victims of domestic violence and those facing homelessness, not getting the supported housing they've been promised?",
+      "meta": "BBC One · Today, 8pm",
+      "source": "BBC One",
+      "channel": "BBC One",
+      "releaseDate": "2026-10-19",
+      "releaseDateLabel": "Today, 8pm",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
+      "artworkAlt": "Panorama programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 94771,
-      "episodeId": 3776661,
+      "airdate": "2026-10-19",
+      "showId": 8534,
+      "episodeId": 3789901,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 490.2
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 452.6
     },
     {
       "title": "The Northumbria Mysteries",
@@ -845,82 +766,82 @@
         "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 431.7
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 439.8
     }
   ],
   "sections": {
     "AI": [
       {
-        "title": "Anthropic's Junk Rating Sparks a Bigger Bitcoin Debate",
+        "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
         "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T02:11:00+01:00",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T04:38:58+01:00",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUlxRm1wUHpkRHNDLTBnN1d0TlNDQjdseE5ZcldzTnllaEJ5NEk0ekdibHNZWExFdzcwUWNnOGJlbVdTMFJjMDBSbHJnbzBPR3B6d0VzbFpkT3hlbnB0LUtuQ1V0bldTamtOQVdrSGFQYTZRbjgwTF9rUDRhZkZzNkFvUTZ2ODNaTnk1VGU2N1diWnNYQ1R5blRWbmVMOUQwUzhNeDZ4Y2hxSGIxZ3fSAbMBQVVfeXFMTllaOEVZTjN2ZXZEX1F2YVZQMElmdkFrWW9WQ1ZTcGxkZ3FabTNadnNGR1dkWXZpSElyOTNNUTNxR0JibjRscXBUMC1temdNNmlDUkxpQlNDRjlrbnJJX0txNHpnWU9Sd0cxWDJhekRaX2FhVXU4X2w2NDl4bVd2YmZSRjdYaFdjem9BYWpmdHAyUFI5NG5SVHA2MGEzNGNLbHFqQVVDckJfRzJKUDJiNEN4Um8?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "OpenAI, Anthropic’s AI Lead Is ‘Very Perishable,’ IMD Professor Says: ‘You Don’t Need to Drive a Ferrari to Go to Walmart’",
+        "summary": "",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T03:30:00+01:00",
         "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQWxhakVuTlhoTnJDLS1fdnM5V2ZIWlVZcjAxaG0xcFVMd0tKZGJSOXQ1c1VvUDZ2ek5ndFpfdks1bjBFMElXcThoUEFMOFBfajFscHZhRXdFVlg4Q0c5S3ZzYXJUeDMxUVFUN2pudzNIVko4cGRjWjFHSTNheDBwWXJWTjUtbkttazcwblpkMWg2Y3RRX05ZTWpZR1o4N3Y3cjdF?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcmF6b0VCcG5IeldqU29OWXRLa2toM3UtVHlHT0xTczBvdURGUDZDRUxXSm5fdmpMTnZSNmI4WnBpM0N3YzhvaVE0SHBaVVhUNXRPbXZrUVVzNmlXWDdqM25lZXNtQl9wQzJ5OEJBV25vbWIzaUNmdnMydk5CRGRJN2JxdmRNZElLRjZiTjdGaUV6dVNibUtNOQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+        "title": "Anthropic Takes Its AI Safety Proposals to Capitol Hill",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T21:21:19+01:00",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNVRwb2hUSGYwb3BQaUZ3XzJCcEpERVhxU1RWNEUxcVFmZHg3Y2REQzBITC04N2VUU1JZajR2ZHNRLUU3bkRVeWtDcVBWQ3p0cnJLODdjOFBVQTJFT0JwdVl4Y2pvSG9CNms5VGtVbTNNODEzTGRBeEZWMUc2WF9Hc1pBRUZsa0l4ZTNmNDBpU3V6VTFFNVFHQUVVVHB5VFJnZWF3M1BxT3pqa1M5VkZCb0Q1aU5SUDVuNTJRZm5KalpmUQ?oc=5",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T02:53:03+01:00",
+        "source": "PYMNTS.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeFNrVTI0LUJlVDFHcjJHUXVUcko4bkF2QXJaeVlhWThyWFBrb1V2ZngyWFFyUkNyRDJGRTlkY0FPVzhFcEIxeTB3ZEMwM2p2VFlFM0FVRHowV29mZXplaXp5dkd1OUZ4WlE5TGZvdkNvbFdpQ2szd2MxaWpGQW1HN2pVSDFXZk5NamZuUlpCWVhLV1hObjdGVDFNR19wRmg3SUszbV91aXR4NWUzUjdjS1pDYw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Pentagon gives Anthropic ultimatum on AI technology: Sources - ABC News",
+        "title": "Anthropic Turns to Lawyers to Teach AI Agents to Negotiate",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T21:04:05+01:00",
-        "source": "Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWmk1c3RRZUVnenpEV3lQRUtudTdTV05mVXo4MWxRVW91UkJCVTB0dmo1dDRfQy13Z2hRSkJ5UXN4NlRscjhaTk5uOEhLcElBckVjd0F4Z0hkUHFYejYwWi1tUjM0Vm9DeE9JdjYxWldSbGVOWjhzcEFTNzMxUDNKNG1ic2VhM2ZDVDVsZE15M0JzNzByUTUzZU1yMEppbWvSAaQBQVVfeXFMUFp0N0lQZWF3MHlhZUlzQXl0Wnp1VWxkMnlHZnh1dUM2RENlSll1QU5MVE9keFNUbzJoczlLT1Z3Z09tdHRyT044MVNwTF90YlNXYkNlVGFsWHdNMmdjSkMxOVNpQ3ZZSTBIWU5KUk5YOXBmcElYdmVHWUhqQXlSX0RWaWdrUV82NmRDN1pYU19GckhjOERTb1FHWkJJalk3ODRDM08?oc=5",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T01:48:49+01:00",
+        "source": "PYMNTS.com",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb0V5T2tFZXNqUkJzSmtrdWxOY3NaT2N2WUhhRjhhLVgtZkJPY0s2VUV1QXZ2NGhBZ3lKZ2NTVFhJOFdQTWNVMEJULVcwUWs5VlFjRC01Ti12ek8wZ1Fjenk5SDl3ZTBKSW9tNDZ1LUladTkwVVM5akRKRU5qXzRrQUNsRFUyMjlKank3cXlJd2o0N0lsMElTUjFBMjVlTVdVZkxaQ09US1hNdGprc0pudTRIeDlDUlE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic’s AI Safety Bill Has an Alarming Threshold for Government Action",
+        "title": "Meta Says Claude AI Tool Triggered No Kings Instagram Suspension",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T20:21:24+01:00",
-        "source": "Mother Jones",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNk85UDhheTRLWlR3YUtHQ2FjUnU2dVg5Q3dIa1Y4b1p5bS1XajV1REJSMWotUUN4XzZLZGNIajBmRm45M0p5aTdBb0p3R082SHJFNVVXcFRKXzZBZGJsRURfWXhBNmRNdEJYYnJsaGVGM3ZNSXV5UE1NSkZTS0hSU2FsSS1nUVBnSGtBdGk2Sm11S0xqUkZNT3dRTDNTNVpwel9lS0pycU9jZHkxZUFRb1FCemdJdDdKUkhr?oc=5",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T00:59:54+01:00",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcTV3dGctX3h6dXhJSHd3ek12THZiQk43SEZPTnlWZENOYUlQMHRMNzg5ZW5jVTQ0TGtzMEtiQjJsUjlXOXlTV05jdzlFNmtWWUVBQXYwRk8zSHIxZHd6WGFQcHB5TVExdFBQamtSdU1hQVQ1V053dmY2ZmZCYjVMME04YWFSRzFZNHJyZHg0bFhSQ054UldlVHphamU3ZDdPaWRRTmMxZWpMWk1lM1VXTFNmMUNDUQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+        "title": "Gemini 4 Argon Scores 97.5% on ARC-AGI-3, Another AI Benchmark Falls",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T19:48:08+01:00",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUFoxYWFYWWFqQTRraXdReXZYYmo5S0ZabG04MmlMbnp5R1VoMUsyLWpIMVg0bUhnOUNqMmxZV05BWm1DRVg4QlhONW9qbUo5UktELXhFMmc4VXhKMzhPbGxuZ2l0cjhGdE1MaEtPU0hBNzdqbTZPaEFHRENkVU9hcG9ieFhDalBPSUNZSEJGRQ?oc=5",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T01:55:00+01:00",
+        "source": "BigGo Finance",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE55Vm1CRjA3bmc5MDhRRkRVcHZPNGdmaEJfMUFpX0NpdTVWTWlYcjdpcDhoNi1iU3VYNkFZenZxdm1kTjBZZFdPYktiN2V4RktHNkxRdmJJejN3eHNRTXlWYTRnX0xHdzFXcktkWmpEUTdMUnF4MGc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Gemini 4 Argon for Robotics",
+        "title": "OpenAI backs AI incident reporting rules but leaves timelines to governments",
         "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T17:01:58+01:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T04:18:22+01:00",
+        "source": "Computer Weekly",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPX2c0bUZpVTFBRDRoX1A1c0hUYnkybXYwQ1JOSWNjMVhNYjR6T0tUcS03TmhBLXpEeDFCYTYwOHpIWlowNm9aX3pid1VjcV9qMmRxbzI0LWV3aGliSDNtMUlETExqRkNuRllkMmE4VVRCaW83RFhjTno2WVM1dDhTTE9SZ2NOMnFqdWE1MXJUTWpnT24zUVdUVVE0STJlanVtUy1MUE1sSDBCTjN6djZxUWcxZjU3UjZ3STFYa3oyZw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "OpenAI Says Model Spent Third-Party Sepolia Test Funds",
+        "title": "DeepSeek Deploys What It Calls Faster Version of Its Open-Source Model",
         "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T01:30:29+01:00",
-        "source": "FindArticles",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMeHRyckFrM2M0UnFrNlc5b1NobWxZZk1tTEhRYkFxQTJfZFpQd0JVd1dNQk1VNkg4eHRsaklqTFJ2Qm9nbXpwRS1WTVNXanZ5ZTJXTFFlbjNnZkhlNW5YVzdSNHhkS192Qk5pQ1Fkdk56enVaWkFNVFFqbXBPZ9IBhgFBVV95cUxQMjFELVFtVFVVRk0xVG9OaW5wd2RPN2hEZzExaHhEc2k4MEZwdHoySEdXQVpISEFCeFk2YTBvMk1ieDZsUE5OMUsxR1R5enNDTkUzRjFsVjU1ZEVkNUpaTkJsUGJreGstRDMzOWx5VWU3eHAxT3Y5bUZOTGhQeWdlM0luRDVnQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "DeepSeek moves up the stack: V4.1-Flash update ships alongside its own Search and Fetch APIs for agents",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T15:28:59+01:00",
-        "source": "Dealroom",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTWxDekxrRjhWZGp4NUlkSnZtUXJSblNvU2d6UEJYazJSU0pldDBMZXAyUTdzVkdZb2RyLXA1dDRCRW95VmIxc2hER3RKM2R6enpReHh3Z3Vua0J6X1htdHVfTGFLSno3MGYwWEhaMHlIRVV6dXlhb0V6NG9OS1hzQ2Ewb2dBelB6WGlNZ3FPRDIta3VKVU9Qd0pJQzJjT2hsTVMtbTlEQUZpZW16dm9lMGxmSVZ5SEdDamI3djJYdGJEUk9EcUxuWHdXRlpqVmlwZlE?oc=5",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T02:43:03+01:00",
+        "source": "PYMNTS.com",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTjZ2LTRyYkJrQ3B3UkViOVpuWnlTcXcyTHFMT2JQUjNrMlpEZ2dwcTZEMnBBMUhzVURxbzgyazd4cGNTTjRsS2I0WUpmeDRIRy03cVZpdjRpTHhzMm9hejB1ZFhya1NSdGRhMlB2dnpNdFlZWVlQclJxQ2NVM3FDTnZSRzNXMXo3THZqVFJXeGxZMHVKdS1ncVNLZk1wb3Jab184OTJHRmVCRlFhbXZSM1NnUDZ5eXQyYVoybV9aelJ1TzA3d3pJ?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -947,52 +868,115 @@
     ],
     "Arsenal news": [
       {
-        "title": "Arsenal star backed to reach 'new level' as Arteta sets goal target",
-        "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T02:31:10+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOG1xTFVyZTdwSHBqS212MDc1SjVuNm84dFpkWVQwQzdacmYwblpCTktSVFV0N2lfUkNEX0JuMFE4LXh1c0FMRDd1eDQwRHJER0JKVTFtdUthYllQMWxISnNsdU9fb1ZHTmFqYkNSOG44b1dwTkFzWTNwdlVWSkdwdXVKQzh2d2d4dE5xZXVlZTBiWU9rYWc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Four changes to face Birmingham City",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T12:04:12+01:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRlQ0MGVGVFVoZ0w0SlI5SjkyODJaWU1fQ2JyeXhMM0gxOG9JbFByTlJfeG1tdnBvMWtKMHU1N25ON3N5aW1xQlczN08yMlQ4RmtYcUl2ajFWTGNfSTNvQTJnUXVvcGctZXFDUWRLRWtJUlRCdkFiZHVTak9seHRlbVVlTUY3OFQ5MlBaVFNfUWNuQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal XI vs Nottingham Forest: Predicted lineup and confirmed team news",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T10:04:59+01:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNczI2OUdLb1EwLWJLdDVGVUs3dTV4eENlLWxiRVZ3TVFDSVJLam1jNGxEQVgtNXhIS3phc0wtLWhycm5vbTI2UzlSeTJhWHgyWGpEWjI2bUstZWRCY3pSVlREQXg2YlN1Wmk5SDZxaUhiSUpMMnF1bmFFeDBoMjZFdlVSUGlEWVdRYUFLeXdNUDdZLXF0cVVXcG5EdnQwQ2F2NUVGbFVqOE94SUFQSkNTSHFjUFY3NUR0b1NHMUJvMHVXU0NsdTVfVkNHSjJBdDk0dXIzUzVsYmFHSXFfZ0hmM3N5R0Y5MUdTS1ZSMFIzLXhyRW8?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Preview: Nottingham Forest v Arsenal",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T06:03:23+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T19:49:27+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb2VYSnBNVFU4NWF1WVBQWVdtY3dNamFLeklJdmdYUHA4MVZzY1QzY3BSY0NkenFEd1MyYWxReVZocUZ2N1Etek5FRHdwOEZJZkdzOUtzZzhWcW92OENHNlFLQ29keUg0bjhSbEFSb1Y3UFVhZ05SNWM1TFlTVFU0b0ZYcw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal XI vs Nottingham Forest: Confirmed team news, predicted lineup and injury latest for Premier League",
+        "title": "[LIVESTREAM]TV!!] Arsenal FC vs Nottingham Forest Live Free Stream Today",
         "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T06:46:17+01:00",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T17:23:57+01:00",
+        "source": "Universidad de Córdoba (UCO)",
+        "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQRHU5VWxRX1dtei1MUTY3cGwyQ0h2RWN4SG16MEZiV0FieEZrLUpSbm90M20weXVZNlN2Z0pGdjhvN1pCS1hwRkZwSUk3TlIzSGVZOXdQak1mN1FsRjI3TjV1UWVtelE0a014V3ZKMFUzMHhaTE1tN2dQa3A3R1VaN1pfeC1FZm52THBaOW55akxMbDVrSy10Sm0yS2lDMmFvYi02ZnpicVlBMWlMTzJTTFNLTUlCV0xTNDY3aEdfSE1tZXU2bklZbW9icEJuRmViZnQ5ajVZX1h5Vng0SWxlZVNkYy1nenAxcUxaQUtjWEtPLXhUR2I0eF92TmVtSHhZeHhWYWNMU0FYNWVzYVlJQ3E2aHoyV002Yi1FMHVycWRaakh5XzAwbE12bWVIRUlmYjhlM1RoaVFpMW1YcWVpRWVOUWtyUWhSX3VWeWlsWERIS1Z6d1lIOGFROA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal ratings: Surprise star delivers but fringe player scores 3/10",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T21:51:20+01:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbllxNGJoa1Q4eGd5VUUzaVR1Z3UycHJjTlZ2Mm9hNGdfN0c5Wi0wX3kwUEVudjdzOGpoZGpKRWc3ajRUS3MxMXNOajBYUTRkRlphb1RKaWlWZEdoNDIxLUYtazNUbGx5dWR4aGQtd3FiaFZFWUM1U1dyV0NTVFhFVDJ4LXdSQms1V3NPMUhSMVRZTzI0MWp5TFhGbWNjek01N0ZjbFF5UFJObmF6V3RSaW11UlFfakdPNXdTUHpPeEp1MHdfcnpReTJLSTFaMjZ6NktqbmVvWlk?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZnMzb1dtVm1FNl9Ra056UURMR1M2UW5nUmpUQjlHb1MxUk1qUWxpX2lleDhELW9tVXRPRV9Gd2R0UmlrWVQyYURaVEIybUx4ajRpSTU0NWtVREg1a0NpUmtZQ1QxT0pyUXRoNXpZSlhyb0lKbUFhbnNDUFJ0V25OX1V4bHBoeU05Xy1xc05kQU5tdE00dkV5WTFoUC00SXhZcE5ZOWlpb0FlNGk0VzR6UUQ4OXQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Nottingham Forest 0-1 Arsenal | Premier League highlights",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:48:58+01:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTnVEMEtMeWNPSjNkb1pUQWVsbjV1aWJHVmJER2R0NnlPSzE4ZkNkTWt3YWFJbm50bDQ3YU9IUF9WMjRpV2FwdWdkeUdCX09icDVfeVJvTWFXcXd5X0EzMVZ3Mms3MjNZeFlONFdCclJHZlZjSkdjTmJQVTlRYjN3RkwzUXJtZTJTUzlRZ3RWSGZCTGVYanRmMGlzd0JvbU85OExaTEhPWkY?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "How to watch Nottingham Forest v Arsenal live on TV",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T20:01:11+01:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWEp2T0NSZDhfQkRwTk5tSWRoZDkzdmtScG8wc2VXZnJxT05WSjh4eUlIbEJOdUpheVp0OS1DdVFSNlpYNHo2cUtiM0x2amxCRDlzOUMyalNvMFlDTHhxZEJtdWplYzdDOXBHOVZ2SHVfYjRsX3BaNl9ERGxpRXVaMjFia3J6TlJRLTZxcHhjcEhfQUZiQjM0MA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "[STream] Nottingham Forest vs Arsenal FC. 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 18 October 2026",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T20:27:53+01:00",
+        "source": "Universidad de Córdoba (UCO)",
+        "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNazBxblVjLXNMNDhaM1BPVS1CTmNqU0FFYWdSXzNiOEJ5YW9CbktvdndWOVZpRi1fREQ4d25rdlZwMk9zdW5EcVZFYk5HUk5RdU80ZThBUS11MmNiYUk2cjJiU0xqSDJHajk2NUJZYWlhOXFBWEYtQTNPcHdLckl1VlkxN1kwREZSWmNnVzdNN1dwNVVUSXpqMEN6N2RRYnY2TWk2ODVWRWw4d0pSbFhhTWdQalItYlFSYUd6Unkyc19iOGZFeTY2VkItelktcVp4amtrY0VGSjdXWk1WVmxKb21qTUZWSmFVVjRRQmJ1U0xtMnQ4MWg2X1FvczlQRFJJRDhsdHFkY0NpTWE5SVphcnpfM0dKX3RwYmxoTTEybnhUdVhHZUdSaEk4dTI4LXJMaUxKOFRZQWFpcTM5ZzMtMXpJQTNPeHlGU0RFWHhXZDJDNjk1NERCTk1aNnZpVWJBazJTM2d1NnA0OXRLbWZ2c0ZZVURlVG91WXhuM05QN3E2Tmw3TFRkanBkU0t4OUhEb21PUzJUTzdUMl92VUVkMjdVMkQ2SnlvOHpnR1Y5aEtlTGVPSnNyUTVmRnZJSkVTZm5meTVqdF9hUzlLeTBxeC1XNjdvU2xXa1UzbmpTMVROcDNLYzNMcg?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Nottingham Forest v Arsenal ratings: Which Arsenal player failed to make the grade at the City Ground?",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T18:35:44+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA0VnAxRjZyWHV5Umt1TWMxNFJNdHJ2WW5kSzhXVE5Idl9WcXZlblgtZ25VM3JMSjJUZHZHby1ZMGkzRlpxcENMbWpRbkdvNlhjRHk2UjlyRloyZ0hUSnRjeEFtSlJvWXlDSTZZ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "(+!LIVESTREAMs/FREE+)!*Nottingham Forest vs Arsenal FC Live FREE online In 18 october 2026",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T16:38:56+01:00",
+        "source": "Universidad de Córdoba (UCO)",
+        "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPbnFWblBZQWdEbnFXZjFUS25NT3JYdjFWcVFxU0dTWmJmYlBmTjVLZXdoc1dDaFZRdDBSNmxIeE5Tb001aVVpeWxZU2dFbHZXR2x3bjRlX09UZE95RGFreW95X1JIVUZNdmh4bjRHSm00Nm5jM2JUMHItbVhoUkJ0OXpHRnA2M0ZqTDQ4Y20ybEZDRzZnQWU1N3p5NW5XVFI0NTlZWVd6aXdSSzFDbEU1WFVzQTAyWnVaNzNpVlZVcnlGbkRxZW5abGRzZEQyQTYxMldMTXY1V2xZT3pGSENrZUNlWlVOWEl6b3BWU0E0R3FHZ0dBZFM4eEx6ek9JNnMybTdiLWwyMUIzOHB3UzV3T2ZYeWhLUWl5dkVSV2Zoa0YzNVpMaHRjSWxzekFueVM5aXB2dFJ5b2VCYlhjQzgxRzZaSjg2NlNVT0V6dEdibFVPMkhNV05VSnJ6UW5FRURONmhhSnNYYw?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Kingston Crown Court delays rape sentence for actor",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T17:00:02+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZU5zUkFzU0JVc29qQmFHN3g1RjluOFZnZXNHdzVDbE5TYjczamN6UmZZYzNVYnAwb2JOcGFYTXljQi1VaVYzOEo0YWpHa2kxWlFGdHdWaXlGaGs0WjNtVjlmSmZpYnZ3MnotYy10bEh4UkpmX1ltTmlFMm0xRGZrNmtPYVBKQTBDbGh5OXN3bFQ0WC1aeC1wWG11eGdoVWg5YTg3dkI2S0QyVVpo?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Play pool and grab cheap drinks at new Teddington members club",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T17:00:02+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZkUwQTZPOURxS1JOakRfMXU4OUExcExKU3pmZlRMVjNnV0E1WmFVVGZhOGdvZU5SQzFCOGJNRXIxalgxUGN0UG5ycHM2Y0lnVkZBeW9qUWx1c1d6LU1NTXVPbEZ1MmxfT282bDJNSU1zMmNCTGJfbzhmSTVaNTdseEEzeXdSWGx0Rk5lZklOVlNCSENXQTl2Mklsc1FuTFZMQndaMzdzTVdFYmxlSGNIR2RxUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Teddington Choral Society concert: Make We Merry! A Christmas Celebration.",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T11:11:33+01:00",
+        "source": "Richmond & Twickenham Times",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRjFFRjZWOGl1UjctR2h6ai1TMWQ4ejVNbzM3MmNMYTdWWEVMdlFZVXdMVmNaYUlQSGU5azZtb3d1SW85OG9GcjduV08yczRSTTN6VDQtdU50WWp4eVFqckhEQVVSU19jUmQ1S2Z1WXdENXp4NFQ1c3ZYT2ZNYmdfNXNyRTFLNjk2b0c5bnRLX1ZFVkRTYnZfUTI3enlrbVhEX19HUWZZOVVfOXk2ZlhXUURVUVR4OER4ZHdrMVRCa1hUd1FVUnc2Qm0xeUMwVEJTOVV2N0FHZ0ZhMzcxS2tieTVqVEl0eXJSRGJOR1llWV9hWVUzQmc?oc=5",
+        "contentType": "article",
+        "localPublication": false,
+        "familyActivity": true,
+        "homeArea": false
+      },
       {
         "title": "Kingston Market Place expected to re-open next week following fire",
         "summary": "",
@@ -1000,42 +984,6 @@
         "publishedAt": "2026-10-16T17:12:00+01:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNkZIY0VkQml0Z3N5dTRiQ0FvSFVaUHlwS0VUbndzdVJNRlZDNE9oMEtkSlNhSi1ZNE9GOHhNT2liOWdaVGVrbkVOOXZRRU1XUUxlRWQ2RlhwRXlieTJYTEhybmVVbzdWdnoyVm82MXlSeGJiaVV4bEhDRUdpNF9qYXVTc2lER0t5bFNTZXlDMGl6eElJUV8tekJOTG9VMGhETmRPNk9TWHVhQW1yak9ENU80bHFkUQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Boutique luxury hotel wins approval to transform ex-student halls in Hampton Wick",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T16:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaTIxMXJhRXJMc3RrVkt0aFdqSG9DYkhYcDVFYU1rRjlkOFYzd2JuWXY3amhPVkxIOWFMWF9vSVV6LW1YVjV1akVtaXZxRjlPRlFpSlZZbll1a2tKbEVGZWJpblF6Y08wZ0lhSFczOHo2ZmpwN0xzcDB1U2s1STZSVEJUTW1mUDBwakNTVEFaX0pCekRmNFBGRHJKNWVoSV9ITldObWZBamZ2ZUJocENySUhpTXBTOE5VdzRBbGN2Q0NKQWRzcl9lbjYzT1I?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Local MP questions Prime Minister about future of Teddington playing fields",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T14:16:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdS1TalNrVENmZ2NGWkNid3FuaWpOcUt3YVlpdVJuVDVhOW1ETjNDbnFMTW0yang5UkRtbThCTWpya3lCTFozam5tTG9HRU9pV0tYZUZhYU81MDJIanRHbi1XbllCOWt1alNWUlF6aFdmWnpOeFpnMUhLandJLVFLS3NNMnhyNVMyNnZGbHNoVTVmRlpYdW5KMG9LT1hCNWVPM09XZTFHSVNIcVlGS3RzdnlfSXU0WmZVOVE3bHBFeVgtanR6?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Family-run pizza van seeks permission to keep trading outside church in Kingston",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T10:46:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcldHV2dteU53MDkzMXBJN3Q1VmFDcE1LeUlvU181R0lYVTFOWl9TaS1JQkFPT3pSSjhrOFJJMGViQ05YNUxmUVJaMkU5dndxbGdCUzlGdGpKTGd5aEw1LTY2TjNpZVRLdjVoWDd6cVRGZHVoUWhvZXJPOWZ5TGh2QmFWS0pfajdKa1hNeU81UkNTNmZOdWlPS1plcVZ4UWo2ZjVMQ3ljSGVnZXpZOFp5NFBMQk5QOU95WnlBUTd5dWphR2MyZGdLYQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -1054,6 +1002,18 @@
         "homeArea": false
       },
       {
+        "title": "Hampton Court Palace - Standard All Day Entry",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T19:06:18+01:00",
+        "source": "Richmond & Twickenham Times",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSmVZaUdoSjBGdmY4MGQ4UXBScFpHNmRreTRnY3VfZ1p1bjQybExiSlluMTB4X2ZnZmFMVmxNWGtjMmJOSDloeVFNUHo4NTFXSWFFbjZfS1RwdVY5elM2SHdqTTdjTjYzMWNFNEFMVnZoT0V5WGVUUW1paUQ2U0owajBNT3RfNFV0TjZ3RnotTHFVQnpXNk5TNVJ5cFdXbnYtUkNlN1REdldpaTljN2Y2ei1TTFFVNV9hWU5UMXdoWW8zSE5CcE9uTndRME1RQVlPLWc?oc=5",
+        "contentType": "article",
+        "localPublication": false,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
         "title": "Plans submitted to turn Surbiton one-bed flat into five-person three-bed home",
         "summary": "",
         "meta": "Thu 15 Oct",
@@ -1063,18 +1023,6 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Teddington’s new butchers available for Christmas bird orders",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T15:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3dTV0YxdzJBWEdSS3lqajhscHg1Y1RZWUhadUVFVHJhNlBPTFhSOG9Ca3J5LWVUT200U2lQQ0FWcmw4eTNacjFoNlpZUzFNN1Mwd0dtb1NwcWRwT0FiOF9jS3h4c2VGWDRjbkZIeHRqbFJUYlJoczI2bzdIYnZiaE1XZF82OXZzTm1UYkE5T01MYV9QN24zQTlSc1ZYVzg1OXhBTEhadlZFRWZhSjF1LQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
         "homeArea": false
       },
       {
@@ -1102,12 +1050,36 @@
         "homeArea": false
       },
       {
-        "title": "Kingston-led project to make Thames 'drinkable' receives royal backing",
+        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
         "summary": "",
         "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T14:56:00+01:00",
+        "publishedAt": "2026-10-13T17:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWnFvaU84SVMtWjQtOEhaUGd5NXR2cmNiblM3NlVNR0hEMXE2a201dTFQLW9aSGxzaThUbWpKMnM2OGtwR190R1NObE94YTBFM0wxV3hQeUNyTHJPdmVaY3Jsc0F3OWEwNG9Pck41dmFXY3UtN0dWSjhuamFiOWpsd3c2c21KUTFTWUNCUFlodlNZMHE5UVdTUFg1ZHM4UVNuVzFXd2F6bThyNmxNeHFqcC1iZnZLRUNSdHQtY0ViUVVYZkVTQkNmSWhXTXBVbEluNlBSOG1sTUZNUHhHTWc2QXlkWlBlWE5RZ0xR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Met appeals for information following rape in Teddington",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T13:08:00+01:00",
         "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQX2JxZ1NLYWc0bVV3U251VkltaS1TaWNUbXpNdDAzRWlZWjFhY3RzdFZBMVFVUmZPanEtM29SeDZvZ0dWMGhia2xKdHJXZjR3ZVJBQmFsd2pYd3d0eEo2ZHhVZjJwdWlaUUxyaWdiMXdDNGJlUVcwcHU0OWZOcVZlckJQaWFZaUE3VU1UM3k0YVRfa0FLbGh1TDVvandHTzY3Ny1STXdxYWZUSnF0LVFWX2xXbzNDWjRs?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQzNOTkdkTFp6ZmJBV0NvU1lGY1IxUUIycC1sYWJLeGdZWWlZQjAyRU5ta0F4bE9kNGNMUGVBcDloeGx3aVBzWS02ZF9XTWpvVmFjQldiWlVRTEUwaE5RZFFyd3RmbFRFMUp4VmxxLTJXQWhlV0pCYk9IUDl4ZExpSkhXQVJ5NHZjS1B4c1VhNndab1hnRTZGWDQ0amNqNkVHUGcxelozUzY?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Local plumbers defeat adversity to raise £10k for Teddington disability charity",
+        "summary": "",
+        "meta": "Sun 11 Oct",
+        "publishedAt": "2026-10-11T17:00:01+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMWZRZklYQndOblZkQXlHdWZ1QktncC15ZGtHWUxFdS1ESS1OLXR5U09YSnpxTzcxSk5JZzlFWjA0LUNYQld6ekp6bjZMMDdMSlZQelFDQ3QtTmFhTkNLN1poYzZPZW5YQ3ZFalh0b1hqUTRWQkE2MDhMX1NYdHZTYXY4QlhER25MMkI0cEVaQlNscWxCX1VoU29HWXBTNnloRl93WF9TMEhLNjRDYWMtLW50cGUxTkF3a0o4QUtHTFhJaDBJdXh5MkdhVQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -1126,36 +1098,12 @@
         "homeArea": false
       },
       {
-        "title": "Kingston care home raises over £1,000 for dementia charity",
+        "title": "Soaring for support - 10 brave souls zip across Twickenham for Kingston-based charity",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T12:00:00+01:00",
+        "publishedAt": "2026-10-08T15:00:00+01:00",
         "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc2t6bUR3aXctR2lpOC1VZEF3ZmJxbk44SWdJa0NQTnhfWXBybjM4RE01cmtQYk1vNDlVSUVMTXRhZmtQeFRfTEh5dVN6M3BMVm9LNGh6Rk4zbFo4TVN5TGlnbWpfNWlpU3c4ZFlXaG9TcVJFdVp6ZnBEZlB6YzJ6dGdOSnBXc0xvZGdZWFZTdWJockkxZXZXczNWbEoxSWhrcGttUEdZU0NSc3BINEJVVkc4WGU2SThsV1NJ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Cancer survivor to take part in charity fundraising brewery walk in Kingston",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T17:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWTgwUmtneWs2VFI0QUFKaDFNaFBHRTQyd2VlUDgxZkZhN1ZXQk1DSnJBeC1WbjFZZTRMVUZNTU1JODRITGlWOFIwdVNKNEpEZFhMOWMzR2p5YnlvWkZ5OWJZUkhJR3Q5bVEyMU5WZnJmdlZjajBYNWs5emVMZk1uYlpFMTdQcm1ZTUItVXNHOGhLdDlHUnl6enpGdXhQRlJnc21xOGxnZUtFNXAyRTRfUXRhMGJjaW5MT01Sbk50OEZpbWc?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "School students shine in Kingston art competition",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T14:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSDlNc1NWTjVUcnNkNzdiT0FhN1FxaVhIM3FVV0R6QndUS3NjMjVSeFpqVkNaOWtDbDdaN2JwYWhIT2FVTGJ4NHlXUUZJX2RFbWNha29ZM2pMdTZZejlMdjFkOUR1b2I2bGZHQWpCRmZ2SU9oLVZhcW5hRXpXb1IwdUxKbnFtc0FUTU42QlR5bm9LMjAybEdxN1RZcUcyNkozZm5ZbG54QV9JVmM0ZXFoM3RRclE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNS3lHMmY4QzRqRnJrU0lnSWE2ZG9LUDhFVVAzQi01U0dQUnZMU1pDLWE3d0s5TFRjXzh2SEdVUkZhaXJuRno1WWlyRjN3YnlPQldGakM5MGNoaldqVmU1LW1DWFZjTmVacnRWdDFpUGNvemtRcW1HR3ZrTDVfT0VHVGZlQlYyMkwtUDBfdGFyRy1yeXFiOWpZWGt3UmJMMFNjZ1RsUk5pYlN3WC1kcV9RYVF5eFE3WkYxRWFkaVY5SHF0aHZ5b0ZUM0IteVY?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -1188,21 +1136,102 @@
     ],
     "UK news": [
       {
-        "title": "Recovery driver sentenced after runaway car crush",
-        "summary": "CCTV footage captured the vehicle rolling down the road, dragging driver Sean Baker along.",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T12:10:35+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c9ly08pm8jz7o?at_medium=RSS&at_campaign=rss",
+        "title": "Burnham-On-Sea MP celebrates local hair and beauty businesses during British Beauty Week",
+        "summary": "",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T00:06:29+01:00",
+        "source": "Burnham-On-Sea.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdzF0MUFQTzdONG1pLXNaU1M0QjlsSkpaNXVKY05jMEE5Sko0RF9xM0JLYVJtZ1RsMFJJMG56UzZrQ1MyTDFDZl90MnU5MjJfSWotVmxjRG5WUGlQWGs1elNwb2NVUElRSFVZM3B2S2ktWHFGMjBubTBaSVhiOGVac3EtWFBIR1BpQkt0MHZyNDZZZUNQemVKM0lQNVV5OVdVX2RGR09OdzZHc0UzWG9Qd2lpamUwalVQZzNBVmRIaGN4dDg?oc=5",
         "contentType": "article"
       },
       {
-        "title": "DIY SOS to be 'rested' next year to save money, BBC says",
-        "summary": "The long-running programme will be replaced by a \"more cost-effective\" spin-off show revisiting past projects.",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T11:52:17+01:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cr15jw22v50qo?at_medium=RSS&at_campaign=rss",
+        "title": "On England's Isle Of Wight Is A Scenic Coastal Town With An Award-Winning Beach, Fresh Seafood, And Tea Houses",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T20:45:00+01:00",
+        "source": "https://www.islands.com/",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdWpPTm1PTEh0RkFtcXVWTk1rZUpWNGdfUzY5Y19BQnJQXzhKOHR6ZzROV1FHcllneld1OXBuSFlRVExpWXZ4RnlhLTE4TUtkMHptc3loRktMMllfeDNKc0VGVUxtQTRQTGVfVlNMY0hHaGpMcUJpaWVteGE4ZTc3RHVIRmg2SDd3VVNQN3BKVW91eS1VMFIxdFBvSmdlcXJla1VFR1lwZnRkRU1KNHRIZThQRWNxeEQ0V0hZeUVZSGF4Vnc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Police continue to investigate suspicious item discovered on Taff Trail in Aberfan",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T14:45:00+01:00",
+        "source": "Wales Online",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY05venpJMEdhS0xrSURvNW5XdUpWcHZDU00wZTB3c21FWTZqNVhUSE43NW5ZcUxIeHpmU25reDVXeUhUMk9JYjdEUndkUmdPTXk2dGQ1NE9jcTF3WVNSdDRyX2xycE1XOTA5WnpIVlU1QUxLbDVUcjRSU2stRnB5VTZoS1M0dTZ3bmw0Ri0zUXNMOG1ITzNOSTRDcEZ5VEXSAaQBQVVfeXFMT05IWEpCVjE5RF9VdFpqcTM1N0gzbWlDZC1WaWRIQzZTX1F0VTFJWE1mcnVuYUh2Und6Zl95a0pmaTFVdFZ0ODJtZmRpSDgwakthMjdJWEx4VWFLcW1ZcFNpUGRvRFRjNEdiWE4xQmt1TVRtNlhpUDk3NmlVMEJiajlxUkhZZGh3N1RjcHIwM2FTbFh1b0MxMjI4V2c2bDM0dVZpYk4?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Charitable donation funds 21,000 school breakfasts",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T14:06:29+01:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Od2tXVzlTWkFjZnZzaG5GZi1HeC1iXzNiTlR3REJaNmpieF9Yc2RFa0d5NkhmSkpsZ0M3UzZjTVN5UjBQS2xybkNYeXhNZVVnc0NMRXJVc1pTaGM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "From skydiving to running 21km – Asda Antrim team raise £5,000 for Northern Ireland charity",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T12:46:39+01:00",
+        "source": "Love Ballymena",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV3pWUEtySEtQelhObl9NVVpzb3pSNmpIeXhweFppOGFkazg0eGN6SzJqbUsweEJIdWlaV0FwZTI3dms1UlVNVEpYZDhwVUdiZnNmYUd4QlQyaWx3NDg4Um9UV0ozOWhUWklfQk1VM0FLS0V6Si1xdDBkUUV5M2ktUVB3eVB2M1V5SjNpMTVBQWpENVlPSzl5bWdaR2dDR0JyREkyLWl3QkFoQkxCNG5IVTdYMUM4RFc3WE9YY0FPeDJqNW9M?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "An anonymous donation of nearly 160 rare banknotes to a British Heart Foundation charity shop in Edinburg",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T12:35:00+01:00",
+        "source": "The Times of India",
+        "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQQTIwM0Etbk5hWWxCZmY3MUNSQi1qS1B6OERIdnhmQUdOMkEydEVtbThZU2YxNDBTRUxLT09YYW14UjQ0X09xMi03ZFppNWJYMDdiVE8tNnEwZEVqSlBQYms1MnRBSGl5bzgwRzBNNzVRS0YyRVJuYW13TlB4TUNMaUxYVDdjZUJoVHR1VDFMTDZuSWFJVDkyYm1hOFppcjR3Y2JibWotMktURkZmdnZFdlVDLWpRcVFBMEczNm9zcm4yMGh2OWsyYjJBU2NVNXpSOElnbTRETnptVjVYMkpvTVlFdDRSbXRSMVY1MkxsNVFZV0RWVDdwdlIzSDlsVVd5bEZMYklhVzZKa3lqVFlTUFNETlUtcnN1VU12ckppTHVGbFlmbi05Q1hycV9WRlRnXzhfeC15aHE2ZmtJZXIyckdmWnZIdFlXVFRHVzVNMVN5VnVkOWVkRGpvazZkYzR2VmRNU1pYU3FwVW9iTmRrUk56akJYSjF1MHVLaTY3RlRYNVRmaGdKTHE5VjI4SVVzNE5TRHYzaTVNT2hBSGfSAaMDQVVfeXFMUFZaQ1JyX0xyOGZtckF1ekt2NGlNTk9QZGJxTWVEdUxvc21uN0FES0Z5c1VMbGZBakMxU253X3VHVFpOMWpVYm5aOVBmOF9HTnZXbEF6enExUWRSQ2J2NkJBYTRWMXlvMmg4dFZueW1RRWZZNG1KYm43WE5MR0pFWE92X3NzV01iSDQ4bnBHRThNVzB4dEtSYmVIWjFkR3lmNGlYcFRKcXpVNlI3eGwxWlR6MjZwbEhudURVT3F0cmJiZnBkQmtERWtHS0hlWTlDOVU5eXRzLUxYaEo4SzVNVEphZXpEQVZlLTd6bURtdFRMOXpuVU5tRktlM0FubUhsRjNqeTBfZy1RZU5WeVh2dEVrakk2WWU2eVNnS2R4RU1KcUE3RklaaWJ0dGxjTjdmWVBNdjh3Y2tndGlMc0ZzdncySGdJODY1TDdCNUJaSWVTNDRBOUJrMlVjSkM3TGg1TjFiQUVUM1c1VnRJUXF5WDhWallHd2RCUUJYTWRZUkFOQWJiZVFvWmR1ejNFZC1NSHc4akJLRGY2YkVGa0YtYWZheUk?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "South Wales Metro wins UK’s top infrastructure award",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T08:44:20+01:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcHVVYWp0VmF0b3RGbjdEYnNwZEJmcXZrREhjRllCMk84VHlVbDZ2MHo5MnFkSXBVUE45ZEhuM21vZ2lWaURyZEJCWXdQOVdJRzVsZlNGdlFuN1p4SjQzVkpqU2ExSnpvM3EwVU1PLWVMTVlwTFFNTWNfYW40OWZ1OGlKaURMYUo0Q1J5Mzl2YXM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Two Pembrokeshire schools recognised with Careers Wales award",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T08:03:02+01:00",
+        "source": "Tenby Observer",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbXdnUFl6Ynk3Z3Z4SVV1VklPb2tDcTQxNHdPT0xIZzFkZ3A5dFBPWHI0aFh1OFJUbWlGeFpRQzVOUEJENjMxTmF6TlpHNnFpRVdtcUdLb0NVaGVDX0kyZFU5MWs4WHhCaVFXUlpuV3R5WDVjekI5TzVLYWFoTUFQRnhmWHJGblZFQzJ2YjBXc2xpaVVYaWJqUlJkbkExX0dUcW9R?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Two Powys schools earn recognition from Careers Wales Quality Award",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T05:00:00+01:00",
+        "source": "County Times",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHY3dU4tOEo1R19fVVVaVURYazgxaGc4dW9lWFJTLU0zRTZkcTZaaGRhNTdpelk3Z2xZNGg2VHh2WDdHUDVkSTVQakF3c3p5cmo0NGxlbktBOW9pdlhlUUxQMUNqUmY5b05KenVfZ1NlX1FVVzNlTGlyRjV0LUdNZjRXRHEwWllwc0xaUHh0d0I5Z19RcFkxVzE2TQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "New wildlife photographic book celebrates Africa’s majestic giraffes",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T02:51:07+01:00",
+        "source": "North Wales Pioneer",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQREczMWQtV29qU2lwdC1xQXB1cTNYZ3RYWVFoMU1lX3F4OGpmR1ZlNGZLUWFkck1jOHJ0OHBpTmFFTnFmd2paVk1fQmlyWVFXd0VGdkJjU2R4a2l3cEVCMExad2thZV9EVlVXMHZ3VDJ4ZmNPbzhCYjA0RmNKR2pkc0t0SXdyTGNYY1FDYWdFWGFwVTNqYktUOG1CYWFOUE9zVVpTUlh6WkpDQi1IOUZYdmhUUFNXcDVXU2pWM3c2bTdvbTRiY3c?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Oldest family business in England celebrates 511th birthday",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T00:44:00+01:00",
+        "source": "Dorset Echo",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZ0p3WXFLVEZwTERKWXp4eTNGWGd0VXZDSFE3QW5fdjVrdkxXR0tsMmU0YVpqZVdENHdOWXdZUW9rV3M2S0lpb0JjUUZZLVlueGFicjI4VmZieFl5N3Qwa092NFkzTGQtQ0UwWVNQT1NVeTFsS1dhVTJvZzRNYjlNV0U1Q1ZIaUVBVWQybnBtMENUZThKNmJ4ZA?oc=5",
         "contentType": "article"
       },
       {
@@ -1212,87 +1241,6 @@
         "publishedAt": "2026-10-17T09:21:44+01:00",
         "source": "Nation.Cymru",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ2phZ2lQd0tJWVJXZm5iWE9wMnRHS2FhNzBscXVBbzN3OXFzdDVYTDEtc2hsSU9lVG5jbXV0ZWJwZHZxczhRRXVSZXMxelFaWDk0NGFWNEFMT0w0MjhyeDVxVUpDRXNMSXBxMVRTb2FOTHNxSU9QVkI2dVNxdUI3RUdEODhxY29ramc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "British Gurkhas Nepal celebrates Dashain in three cities (photo feature)",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T09:19:31+01:00",
-        "source": "Nepalnews.com",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOc1BsbzM0RDI5aFlTMUtJNmVpYWhzdVBucU84QlFQMFZoUzNKbm04MmZMSVozcTBjdWJsU2VFd0J2UFdXNTVlajI1QXRFemdGNUk4bHliVWZ0Y08yYmpHeExaQVdKa1BQWVppZ2pZRnBBYmwxTFIwU1RWYkpqaUlib3dYbjB5NDJwblVPdFBKd3hNN0NpNHBTNjk2UjNlbVB5SXQwMWtFVU8ybURnRk1YUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "16 rescued off Mexico’s Baja coast after mayday call",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T07:32:13+01:00",
-        "source": "North Wales Pioneer",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdEhyNlg5MkxHZ3hIV2p5WXpyNGtNbnV4Zm9hTnIxRWJXNzU4aS1jbE5CU1VyajVNR05oN0kyakx2aWNmTmkwQ2pvN0pnMFpiUmlxRU1RZTl4bWJva0FwLU0xVGJBOVhzc1E5eHpPVjRMN1dPY0RLaUFLVjN5VHA4dGlGVVpEQl92VTNHdnhadGFzM1FKdGYyQ0MxWHZhQjFUOXE3ZV9ELWs?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Two Pembrokeshire schools win Careers Wales awards for workplace preparation",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T06:00:00+01:00",
-        "source": "The Western Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYTF5QXBfd2gxWXBjLXZFRUktNm9VQkYyMTdTWnJJZlczeERqbkU1aW12eFN6b2s1MHFqQUU2bFhMRjNXWS1YR25tMzlnWFdWNHg3MUUwNk9tN3dlcUlGSWNDYU9Eekx6aXZydXY4UnBUbk9VSUJtVjEyN05XTzIzejBYVS04Vm43QTRYMkZjckpCM2dMd2JYaG9xalpJdFpUTEE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Two Ceredigion schools win gold and bronze Careers Wales awards",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T06:00:00+01:00",
-        "source": "Tivyside Advertiser",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUlNkSjVaNVE4M2hlSFlGLV9iWUVVbFIxMVdHUEFhejBBY2JLblVUNWNWZHg3aTVTUE5QQnNCVlFMQjdwV0F6Sk9naTZxNnpqV3VwaDhLT1JJa3hrWXJ6enYxZF9sWUl1MnFzcW1hM09GdEdYTUR6UzBMYW1wQnVoTkxRRjBnUjllOWNEb19KanpCYnFoNzYyZnFxc28tZDE5SGo4NG5Fc2FNUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Valero backs £500 award for young West Wales artists",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T05:13:22+01:00",
-        "source": "The Pembrokeshire Herald",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeF9Zc1kxS1QzRmYwdGgtYWZsRkQtTy1WelY5UUYxTlpHcXIyQTR5SGdEVWtGYXFlWUJORFBCQ1BKekIzb1FZMmpzY0k3LXliUmExRkpFQktBVWxJbzR0ODhEOEhId1l5bFRaM1RBM0lCTmdPNnVRVTg2bXIzcjJuY2ZjS1Job0U1ZEZXV2RDbmloS2MxcTNn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Children's art club celebrates milestone with 450 sessions of inspiring young minds",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T05:00:00+01:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbW5sbFlCQUhkR2VQb0RvbVZ3b18td281WTh1ak0zbG5yemZ0YjUyV2FjS1RFZ2lHbGV3YXdTUzBMLTNjRTdlU3VFYk5YTFY5U3RkOFRIanBydnVyNDBIYXdDM0RwQzlfMGJVX2NVTjZTaVI2cTBFelhhdzdYempWNWNQYzJIZ1VmQ0toUVkycFZyZzY3WVZETTdoRmZ2SDgyQjdJWjR6ZzM?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Iris Prize announces winner for Best British Short Film Award -",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T23:00:00+01:00",
-        "source": "Diva Magazine",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOVZtSHZHdmlnZktiWEtjYWdWeVROVDBMdHhKaWVySzdwNEpQakloWHRfMzhvUHlqb1lpQV9mNTdvRzc1b2xMelFMa2NIZlpHYlBaUEkzLWMxWVc5RFVkcFpzQWlIc3VQUHJleXIwbzZQV1hkMkxVNXVyMzVqZ2l1c1JFWkMtc25rRDIxc0xCYmJXZVFwMm5sdTZlc3g1NTRT?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Iris Prize Unveils Best British Award Winners For 2026",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T22:34:31+01:00",
-        "source": "Movie Marker",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYVZpRGdVY2Y2RnN0eHpqWnhJajlrdi01Zkotclh3c2tfSmY4c3hnSXpReUFveDd5eW96eEdDbGJRLTlzbEpWVjJrVzUxOVhTclZZNnRwYVdQMlVXaGJoNHUyNG91UmxUSTJvN0RfT2RTZG1sdDdRemJvSU5uY1NZMjBnZ3NCbUFsLXNQWGR3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Princess Royal unveils restored Guards Memorial at centenary ceremony",
-        "summary": "",
-        "meta": "Fri 16 Oct",
-        "publishedAt": "2026-10-16T18:22:15+01:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZHlEYU5FVjRULW5TTFhNYllCbjQ3QUtpMFdNaS1URkZacW1vbHZNWkMtX0tDOGVhUUN6cUJlZENrdVJzbzVMQ0plLXFtRFB4aDFFbjcwajdpTXo2ZE5fM2lIbF9VZml2RWRWQ3p2WS16cF9uSXpPeEx4WGxzZ3VUZTBUbFVNS2NOMmRCQTRjWjEzYWxTX1VjbXotbHhvbXhfNE5RVFFrZW9yX2sxdzZXemt0elB3RFJMZWxLVjhaNWFqMVFtSlVV?oc=5",
         "contentType": "article"
       }
     ],
@@ -1318,7 +1266,7 @@
         "venue": "bentalls-kingston",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-18",
+        "verifiedAt": "2026-10-19",
         "saleHeadline": "Bentalls Autumn Promotions Now On",
         "saleDate": "October & November 2026",
         "discount": "Up to 30% off",
@@ -1345,29 +1293,7 @@
         "venue": "chessington",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-18"
-      },
-      {
-        "id": "kempton-steam-oct-2026",
-        "title": "Kempton Steam Museum steaming weekend",
-        "location": "Kempton Steam Museum · Hanworth",
-        "summary": "See the giant Sir William Prescott engine running on this special opening weekend. Railway rides require a separate ticket.",
-        "when": "17–18 October · 10.30am–4pm",
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-18",
-        "ages": "Supervise children; engine-climb access requires height over 1.4m",
-        "cost": "Paid admission; see booking page for ticket options",
-        "tags": [
-          "Events",
-          "Open-days",
-          "Indoors"
-        ],
-        "source": "Kempton Steam Museum",
-        "url": "https://kemptonsteam.merlintickets.co.uk/product/EVNT00018",
-        "venue": "kempton-steam",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-17"
+        "verifiedAt": "2026-10-19"
       },
       {
         "id": "kew-halloween-trail-2026",
@@ -1393,28 +1319,6 @@
         "verifiedAt": "2026-10-17"
       },
       {
-        "id": "transportfest-2026",
-        "title": "London Bus Museum TransportFest",
-        "location": "Brooklands · Weybridge",
-        "summary": "A dedicated transport festival at Brooklands, with the London Bus Museum. Check the organiser’s programme and admission details before booking.",
-        "when": "Sunday 18 October 2026",
-        "startDate": "2026-10-18",
-        "endDate": "2026-10-18",
-        "ages": "Family outing; check event visitor guidance",
-        "cost": "See organiser for event admission",
-        "tags": [
-          "Events",
-          "Festivals",
-          "Outdoors"
-        ],
-        "source": "Brooklands Museum",
-        "url": "https://www.brooklandsmuseum.com/discover/latest-news/brooklands-museums-2026-events-calendar-grand-prix-centenary/",
-        "venue": "brooklands",
-        "kind": "event",
-        "contentType": "activity",
-        "verifiedAt": "2026-10-18"
-      },
-      {
         "id": "teddington-beer-2026",
         "title": "Teddington Beer Festival",
         "location": "Landmark Arts Centre · Teddington",
@@ -1434,7 +1338,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-18"
+        "verifiedAt": "2026-10-19"
       },
       {
         "id": "christmas-at-kew-2026",
@@ -1480,7 +1384,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-18"
+        "verifiedAt": "2026-10-19"
       }
     ]
   },
@@ -1505,40 +1409,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 483.4
-    },
-    {
-      "title": "Panorama",
-      "summary": "Why are vulnerable people, including victims of domestic violence and those facing homelessness, not getting the supported housing they've been promised?",
-      "meta": "BBC One · Tomorrow, 8pm",
-      "source": "BBC One",
-      "channel": "BBC One",
-      "releaseDate": "2026-10-19",
-      "releaseDateLabel": "Tomorrow, 8pm",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
-      "artworkAlt": "Panorama programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-19",
-      "showId": 8534,
-      "episodeId": 3789901,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 444.6
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 475.4
     },
     {
       "title": "Green Eyed Killers",
       "summary": "After a man is left dying following a late-night altercation, his mother's decades-long fight for answers takes an unexpected turn.",
-      "meta": "Crime & Investigation · Tomorrow, 8pm",
+      "meta": "Crime & Investigation · Today, 8pm",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
       "releaseDate": "2026-10-19",
-      "releaseDateLabel": "Tomorrow, 8pm",
+      "releaseDateLabel": "Today, 8pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/green-eyed-killers",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/628/1571444.jpg",
@@ -1553,17 +1434,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 432.8
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 440.8
     },
     {
       "title": "Convictions Gone Bad with Will Mellor",
       "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
-      "meta": "Crime & Investigation · Tomorrow, 9pm",
+      "meta": "Crime & Investigation · Today, 9pm",
       "source": "Crime & Investigation",
       "channel": "Crime & Investigation",
       "releaseDate": "2026-10-19",
-      "releaseDateLabel": "Tomorrow, 9pm",
+      "releaseDateLabel": "Today, 9pm",
       "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
@@ -1576,8 +1457,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 390.1
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 398.1
     },
     {
       "title": "The Incident Room",
@@ -1601,34 +1482,34 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 389.2
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 397.2
     },
     {
-      "title": "Time",
-      "summary": "New chaplain Marie-Louise arrives at the young offender institution HMYOI Alderwick and finds herself immediately at odds with traditionalist and world-weary custodial manager Bailey, who…",
-      "meta": "BBC iPlayer · Available since Sun 11 Oct",
+      "title": "This City Is Ours",
+      "summary": "The tragic events of the party send shock waves through the Phelans. As dangerous secrets threaten to come to light, Michael is forced to make a difficult confession to Diana. Meanwhile,…",
+      "meta": "BBC iPlayer · Sun 25 Oct, 6am",
       "source": "BBC iPlayer",
       "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-11",
-      "releaseDateLabel": "Available since Sun 11 Oct",
-      "url": "https://www.bbc.co.uk/programmes/p09fs2qh",
-      "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612346.jpg",
-      "artworkAlt": "Time programme artwork",
+      "releaseDate": "2026-10-25",
+      "releaseDateLabel": "Sun 25 Oct, 6am",
+      "url": "https://www.bbc.co.uk/programmes/m0028mhs",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/559/1399221.jpg",
+      "artworkAlt": "This City Is Ours programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-11",
-      "showId": 50374,
-      "episodeId": 3776044,
+      "airdate": "2026-10-25",
+      "showId": 74826,
+      "episodeId": 3783880,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Thriller"
+        "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 388.9
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 389.9
     },
     {
       "title": "The Diplomat",
@@ -1653,43 +1534,17 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 387.0
-    },
-    {
-      "title": "This City Is Ours",
-      "summary": "All Michael knows is crime, until he falls in love. Now he has something to lose - but how far will he go to keep it?",
-      "meta": "BBC iPlayer · Sun 25 Oct, 6am",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-25",
-      "releaseDateLabel": "Sun 25 Oct, 6am",
-      "url": "https://www.bbc.co.uk/programmes/m0028mhs",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/559/1399221.jpg",
-      "artworkAlt": "This City Is Ours programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-25",
-      "showId": 74826,
-      "episodeId": 3783875,
-      "contentType": "tv-pick",
-      "programmeType": "Scripted",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 365.9
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 379.0
     },
     {
       "title": "UK Forensic Breakthroughs",
       "summary": "The story of Terry Edmonds, who had ambitions to become a midwife. In 2006, she boarded the train home, stepped off onto the platform, and was never seen alive again.",
-      "meta": "TRUE CRIME · Tue 20 Oct, 10pm",
+      "meta": "TRUE CRIME · Tomorrow, 10pm",
       "source": "TRUE CRIME",
       "channel": "TRUE CRIME",
       "releaseDate": "2026-10-20",
-      "releaseDateLabel": "Tue 20 Oct, 10pm",
+      "releaseDateLabel": "Tomorrow, 10pm",
       "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1616100.jpg",
@@ -1702,8 +1557,31 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 357.7
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 365.8
+    },
+    {
+      "title": "Britain's Countryside Killers",
+      "summary": "The story of Dawn Rhodes, who was murdered in Earlswood by her husband after an affair. Acquitted in 2017, he was retried and jailed for life in 2025 after the truth emerged.",
+      "meta": "TRUE CRIME · Thu 22 Oct, 10pm",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-10-22",
+      "releaseDateLabel": "Thu 22 Oct, 10pm",
+      "url": "https://www.tvmaze.com/episodes/3791783/britains-countryside-killers-3x05-a-fathers-deadly-deception",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
+      "artworkAlt": "Britain's Countryside Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-22",
+      "showId": 82837,
+      "episodeId": 3791783,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 352.7
     },
     {
       "title": "This Much is True Crime",
@@ -1725,40 +1603,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 352.7
-    },
-    {
-      "title": "Britain's Countryside Killers",
-      "summary": "The story of Tina Baker, who vanished in 2002 after leaving to feed animals at her farm. Her husband was jailed for murder in 2006, but her body was never found.",
-      "meta": "TRUE CRIME · Available since Thu 15 Oct",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-10-15",
-      "releaseDateLabel": "Available since Thu 15 Oct",
-      "url": "https://www.tvmaze.com/episodes/3770909/britains-countryside-killers-3x04-buried-truths",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
-      "artworkAlt": "Britain's Countryside Killers programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-15",
-      "showId": 82837,
-      "episodeId": 3770909,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 348.7
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 346.1
     },
     {
       "title": "Mafia: Behind the Bloodshed",
       "summary": "Filmmaker Max Serio investigates one of the world's most secretive crime syndicates. Through rare testimony, a hidden world of loyalty, silence and fear is brought into the light.",
-      "meta": "Sky History · Tue 20 Oct, 9pm",
+      "meta": "Sky History · Tomorrow, 9pm",
       "source": "Sky History",
       "channel": "Sky History",
       "releaseDate": "2026-10-20",
-      "releaseDateLabel": "Tue 20 Oct, 9pm",
+      "releaseDateLabel": "Tomorrow, 9pm",
       "url": "https://www.tvmaze.com/episodes/3777420/mafia-behind-the-bloodshed-1x03-ndrangheta",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609396.jpg",
@@ -1771,8 +1626,54 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-18",
-      "preferenceScore": 291.9
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 299.9
+    },
+    {
+      "title": "Deadly Destinations",
+      "summary": "The story of two women who were murdered during a camping honeymoon in Utah. Detectives hunted for a 'creepy camper'.",
+      "meta": "TRUE CRIME · Wed 21 Oct, 10pm",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-10-21",
+      "releaseDateLabel": "Wed 21 Oct, 10pm",
+      "url": "https://www.truecrime-tv.co.uk/shows.php?title=deadly+destinations",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609434.jpg",
+      "artworkAlt": "Deadly Destinations programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-21",
+      "showId": 94786,
+      "episodeId": 3791052,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 295.6
+    },
+    {
+      "title": "Crime Scene Raw",
+      "summary": "A North Dakota man falls fatally ill just before claiming a surprise multimillion-dollar fortune. As detectives investigate, they uncover a deadly plot fuelled by greed over money that…",
+      "meta": "Sky Crime · Available since yesterday",
+      "source": "Sky Crime",
+      "channel": "Sky Crime",
+      "releaseDate": "2026-10-18",
+      "releaseDateLabel": "Available since yesterday",
+      "url": "https://www.tvmaze.com/episodes/3791295/crime-scene-raw-1x08-steven-riley",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597392.jpg",
+      "artworkAlt": "Crime Scene Raw programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-18",
+      "showId": 93837,
+      "episodeId": 3791295,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-19",
+      "preferenceScore": 276.8
     }
   ]
 }
