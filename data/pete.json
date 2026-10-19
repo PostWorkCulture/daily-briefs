@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Monday, 19 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Monday, 19 October 2026 · refreshed 5:09am",
   "worldFact": {
     "id": "alert-most-northerly-inhabited-place",
     "editorialPriority": "human-first",
@@ -98,12 +98,72 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
+      "dateLabel": "Sunday 18 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
-      "error": "England town/county could not be verified for Wight: St Catherines Point"
+      "hot": {
+        "location": "Wight: St Catherines Point",
+        "town": "Wight",
+        "county": "Isle of Wight",
+        "country": "England",
+        "displayLocation": "Wight, Isle of Wight",
+        "value": "16.0°C",
+        "photo": {
+          "src": "assets/weather-extremes/hot.webp?v=a790198b7d6d",
+          "page": "https://commons.wikimedia.org/wiki/File:IsleOfWightFromTheISS.jpg",
+          "credit": "NASA/Chris Hadfield · Public domain",
+          "alt": "Wight, Isle of Wight",
+          "width": 1600,
+          "height": 900
+        }
+      },
+      "cold": {
+        "location": "Kielder Castle",
+        "town": "Kielder",
+        "county": "Northumberland",
+        "country": "England",
+        "displayLocation": "Kielder, Northumberland",
+        "value": "-2.5°C",
+        "photo": {
+          "src": "assets/weather-extremes/cold.webp?v=1d24ed8ba8e7",
+          "page": "https://commons.wikimedia.org/wiki/File:Kielder_water_uk_-_panoramio.jpg",
+          "credit": "Jim Walton · CC BY 3.0",
+          "alt": "Kielder Water in Kielder, Northumberland",
+          "width": 1600,
+          "height": 900
+        }
+      }
     }
   },
   "calendar": [
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-17T00:00:00+01:00",
+      "end": "2026-10-19T00:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "0nhbf0dmf9950pj4q3ktf7k1m5",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-18T00:00:00+01:00",
+      "end": "2026-10-19T00:00:00+01:00",
+      "date": "2026-10-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "6cqj8eb36dh68b9pcgpm4b9kcph32b9pckq6cb9l69i66c3375h64db3cc",
+      "calendarColorSource": "google"
+    },
     {
       "title": "Holiday Camp 9:30-4:30",
       "summary": "",
@@ -217,20 +277,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Demi Playdate",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-01T00:00:00+00:00",
-      "end": "2026-11-02T00:00:00+00:00",
-      "date": "2026-11-01",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -245,18 +291,18 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
+      "title": "Demi Playdate",
       "summary": "",
       "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
       "time": "All day",
       "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
-      "calendarColorSource": "google"
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "See Kate and Family",
@@ -270,6 +316,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
     },
     {
@@ -301,20 +361,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Choir Performance 10:30-2:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-22T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -327,6 +373,20 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 10:30-2:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-22T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -397,14 +457,23 @@
       "arsenalScore": 1,
       "opponentScore": 0,
       "result": "1–0",
-      "url": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/7945971423504407232",
-      "source": "Sky Sports",
-      "tvChannel": "TBC"
+      "scorers": [
+        {
+          "name": "Noni Madueke",
+          "team": "Arsenal",
+          "minute": "80'"
+        }
+      ],
+      "scorersLabel": "Madueke 80'",
+      "stadium": "City Ground",
+      "summary": "Noni Madueke's deflected 80th-minute strike, Arsenal's only shot on target, won the Premier League match 1–0 at Nottingham Forest.",
+      "url": "https://www.skysports.com/football/news/13598878/nottingham-forest-0-1-arsenal-noni-maduekes-late-deflected-strike-wins-it-with-gunners-only-shot-on-target",
+      "source": "Sky Sports"
     },
     "nextFixture": {
       "date": "2026-10-21T20:00:00+01:00",
       "dateLabel": "Wed 21 Oct",
-      "kickoff": "8pm",
+      "kickoff": "8:00pm",
       "opponent": "Bayern Munich",
       "competition": "UEFA Champions League",
       "homeAway": "away",
@@ -437,15 +506,6 @@
         "contentType": "article"
       },
       {
-        "title": "[LIVESTREAM]TV!!] Arsenal FC vs Nottingham Forest Live Free Stream Today",
-        "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T17:23:57+01:00",
-        "source": "Universidad de Córdoba (UCO)",
-        "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQRHU5VWxRX1dtei1MUTY3cGwyQ0h2RWN4SG16MEZiV0FieEZrLUpSbm90M20weXVZNlN2Z0pGdjhvN1pCS1hwRkZwSUk3TlIzSGVZOXdQak1mN1FsRjI3TjV1UWVtelE0a014V3ZKMFUzMHhaTE1tN2dQa3A3R1VaN1pfeC1FZm52THBaOW55akxMbDVrSy10Sm0yS2lDMmFvYi02ZnpicVlBMWlMTzJTTFNLTUlCV0xTNDY3aEdfSE1tZXU2bklZbW9icEJuRmViZnQ5ajVZX1h5Vng0SWxlZVNkYy1nenAxcUxaQUtjWEtPLXhUR2I0eF92TmVtSHhZeHhWYWNMU0FYNWVzYVlJQ3E2aHoyV002Yi1FMHVycWRaakh5XzAwbE12bWVIRUlmYjhlM1RoaVFpMW1YcWVpRWVOUWtyUWhSX3VWeWlsWERIS1Z6d1lIOGFROA?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Arsenal ratings: Surprise star delivers but fringe player scores 3/10",
         "summary": "",
         "meta": "Sun 18 Oct",
@@ -470,6 +530,15 @@
         "publishedAt": "2026-10-18T20:01:11+01:00",
         "source": "Arsenal.com",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWEp2T0NSZDhfQkRwTk5tSWRoZDkzdmtScG8wc2VXZnJxT05WSjh4eUlIbEJOdUpheVp0OS1DdVFSNlpYNHo2cUtiM0x2amxCRDlzOUMyalNvMFlDTHhxZEJtdWplYzdDOXBHOVZ2SHVfYjRsX3BaNl9ERGxpRXVaMjFia3J6TlJRLTZxcHhjcEhfQUZiQjM0MA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "[STream] Nottingham Forest vs Arsenal FC. Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 18 October 2026",
+        "summary": "",
+        "meta": "Sun 18 Oct",
+        "publishedAt": "2026-10-18T20:27:53+01:00",
+        "source": "Universidad de Córdoba (UCO)",
+        "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNazBxblVjLXNMNDhaM1BPVS1CTmNqU0FFYWdSXzNiOEJ5YW9CbktvdndWOVZpRi1fREQ4d25rdlZwMk9zdW5EcVZFYk5HUk5RdU80ZThBUS11MmNiYUk2cjJiU0xqSDJHajk2NUJZYWlhOXFBWEYtQTNPcHdLckl1VlkxN1kwREZSWmNnVzdNN1dwNVVUSXpqMEN6N2RRYnY2TWk2ODVWRWw4d0pSbFhhTWdQalItYlFSYUd6Unkyc19iOGZFeTY2VkItelktcVp4amtrY0VGSjdXWk1WVmxKb21qTUZWSmFVVjRRQmJ1U0xtMnQ4MWg2X1FvczlQRFJJRDhsdHFkY0NpTWE5SVphcnpfM0dKX3RwYmxoTTEybnhUdVhHZUdSaEk4dTI4LXJMaUxKOFRZQWFpcTM5ZzMtMXpJQTNPeHlGU0RFWHhXZDJDNjk1NERCTk1aNnZpVWJBazJTM2d1NnA0OXRLbWZ2c0ZZVURlVG91WXhuM05QN3E2Tmw3TFRkanBkU0t4OUhEb21PUzJUTzdUMl92VUVkMjdVMkQ2SnlvOHpnR1Y5aEtlTGVPSnNyUTVmRnZJSkVTZm5meTVqdF9hUzlLeTBxeC1XNjdvU2xXa1UzbmpTMVROcDNLYzNMcg?oc=5",
         "contentType": "article"
       }
     ],
@@ -531,7 +600,7 @@
     ],
     "transferRumours": [
       {
-        "title": "🔴⚪️ Noni Madueke wins it for Arsenal! Who’s been your Man of the Match?",
+        "title": "Noni Madueke wins it for Arsenal! Who’s been your Man of the Match?",
         "summary": "",
         "meta": "Sun 18 Oct",
         "publishedAt": "2026-10-18T18:25:02+01:00",
@@ -721,27 +790,27 @@
       "preferenceScore": 534.7
     },
     {
-      "title": "Panorama",
-      "summary": "Why are vulnerable people, including victims of domestic violence and those facing homelessness, not getting the supported housing they've been promised?",
-      "meta": "BBC One · Today, 8pm",
-      "source": "BBC One",
-      "channel": "BBC One",
-      "releaseDate": "2026-10-19",
-      "releaseDateLabel": "Today, 8pm",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "title": "Stacey Dooley",
+      "summary": "Stacey Dooley looks into the deaths of women who have fallen from heights, interrogating how these deaths are investigated and exploring whether domestic abuse played a part.",
+      "meta": "BBC iPlayer · Available since Tue 13 Oct",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-13",
+      "releaseDateLabel": "Available since Tue 13 Oct",
+      "url": "https://www.bbc.co.uk/programmes/b048vy8l",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
-      "artworkAlt": "Panorama programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
+      "artworkAlt": "Stacey Dooley programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-19",
-      "showId": 8534,
-      "episodeId": 3789901,
+      "airdate": "2026-10-13",
+      "showId": 4594,
+      "episodeId": 3783642,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-19",
-      "preferenceScore": 452.6
+      "preferenceScore": 475.4
     },
     {
       "title": "The Northumbria Mysteries",
@@ -877,15 +946,6 @@
         "contentType": "article"
       },
       {
-        "title": "[LIVESTREAM]TV!!] Arsenal FC vs Nottingham Forest Live Free Stream Today",
-        "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T17:23:57+01:00",
-        "source": "Universidad de Córdoba (UCO)",
-        "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQRHU5VWxRX1dtei1MUTY3cGwyQ0h2RWN4SG16MEZiV0FieEZrLUpSbm90M20weXVZNlN2Z0pGdjhvN1pCS1hwRkZwSUk3TlIzSGVZOXdQak1mN1FsRjI3TjV1UWVtelE0a014V3ZKMFUzMHhaTE1tN2dQa3A3R1VaN1pfeC1FZm52THBaOW55akxMbDVrSy10Sm0yS2lDMmFvYi02ZnpicVlBMWlMTzJTTFNLTUlCV0xTNDY3aEdfSE1tZXU2bklZbW9icEJuRmViZnQ5ajVZX1h5Vng0SWxlZVNkYy1nenAxcUxaQUtjWEtPLXhUR2I0eF92TmVtSHhZeHhWYWNMU0FYNWVzYVlJQ3E2aHoyV002Yi1FMHVycWRaakh5XzAwbE12bWVIRUlmYjhlM1RoaVFpMW1YcWVpRWVOUWtyUWhSX3VWeWlsWERIS1Z6d1lIOGFROA?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Arsenal ratings: Surprise star delivers but fringe player scores 3/10",
         "summary": "",
         "meta": "Sun 18 Oct",
@@ -913,7 +973,7 @@
         "contentType": "article"
       },
       {
-        "title": "[STream] Nottingham Forest vs Arsenal FC. 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 18 October 2026",
+        "title": "[STream] Nottingham Forest vs Arsenal FC. Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 18 October 2026",
         "summary": "",
         "meta": "Sun 18 Oct",
         "publishedAt": "2026-10-18T20:27:53+01:00",
@@ -928,15 +988,6 @@
         "publishedAt": "2026-10-18T18:35:44+01:00",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA0VnAxRjZyWHV5Umt1TWMxNFJNdHJ2WW5kSzhXVE5Idl9WcXZlblgtZ25VM3JMSjJUZHZHby1ZMGkzRlpxcENMbWpRbkdvNlhjRHk2UjlyRloyZ0hUSnRjeEFtSlJvWXlDSTZZ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "(+!LIVESTREAMs/FREE+)!*Nottingham Forest vs Arsenal FC Live FREE online In 18 october 2026",
-        "summary": "",
-        "meta": "Sun 18 Oct",
-        "publishedAt": "2026-10-18T16:38:56+01:00",
-        "source": "Universidad de Córdoba (UCO)",
-        "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPbnFWblBZQWdEbnFXZjFUS25NT3JYdjFWcVFxU0dTWmJmYlBmTjVLZXdoc1dDaFZRdDBSNmxIeE5Tb001aVVpeWxZU2dFbHZXR2x3bjRlX09UZE95RGFreW95X1JIVUZNdmh4bjRHSm00Nm5jM2JUMHItbVhoUkJ0OXpHRnA2M0ZqTDQ4Y20ybEZDRzZnQWU1N3p5NW5XVFI0NTlZWVd6aXdSSzFDbEU1WFVzQTAyWnVaNzNpVlZVcnlGbkRxZW5abGRzZEQyQTYxMldMTXY1V2xZT3pGSENrZUNlWlVOWEl6b3BWU0E0R3FHZ0dBZFM4eEx6ek9JNnMybTdiLWwyMUIzOHB3UzV3T2ZYeWhLUWl5dkVSV2Zoa0YzNVpMaHRjSWxzekFueVM5aXB2dFJ5b2VCYlhjQzgxRzZaSjg2NlNVT0V6dEdibFVPMkhNV05VSnJ6UW5FRURONmhhSnNYYw?oc=5",
         "contentType": "article"
       }
     ],
@@ -1074,18 +1125,6 @@
         "homeArea": false
       },
       {
-        "title": "Local plumbers defeat adversity to raise £10k for Teddington disability charity",
-        "summary": "",
-        "meta": "Sun 11 Oct",
-        "publishedAt": "2026-10-11T17:00:01+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMWZRZklYQndOblZkQXlHdWZ1QktncC15ZGtHWUxFdS1ESS1OLXR5U09YSnpxTzcxSk5JZzlFWjA0LUNYQld6ekp6bjZMMDdMSlZQelFDQ3QtTmFhTkNLN1poYzZPZW5YQ3ZFalh0b1hqUTRWQkE2MDhMX1NYdHZTYXY4QlhER25MMkI0cEVaQlNscWxCX1VoU29HWXBTNnloRl93WF9TMEhLNjRDYWMtLW50cGUxTkF3a0o4QUtHTFhJaDBJdXh5MkdhVQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Kingston University chosen to lead UK’s first waste and recycling robotics hub",
         "summary": "",
         "meta": "Fri 9 Oct",
@@ -1098,12 +1137,24 @@
         "homeArea": false
       },
       {
-        "title": "Soaring for support - 10 brave souls zip across Twickenham for Kingston-based charity",
+        "title": "Kingston care home raises over £1,000 for dementia charity",
         "summary": "",
         "meta": "Thu 8 Oct",
-        "publishedAt": "2026-10-08T15:00:00+01:00",
+        "publishedAt": "2026-10-08T12:00:00+01:00",
         "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNS3lHMmY4QzRqRnJrU0lnSWE2ZG9LUDhFVVAzQi01U0dQUnZMU1pDLWE3d0s5TFRjXzh2SEdVUkZhaXJuRno1WWlyRjN3YnlPQldGakM5MGNoaldqVmU1LW1DWFZjTmVacnRWdDFpUGNvemtRcW1HR3ZrTDVfT0VHVGZlQlYyMkwtUDBfdGFyRy1yeXFiOWpZWGt3UmJMMFNjZ1RsUk5pYlN3WC1kcV9RYVF5eFE3WkYxRWFkaVY5SHF0aHZ5b0ZUM0IteVY?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc2t6bUR3aXctR2lpOC1VZEF3ZmJxbk44SWdJa0NQTnhfWXBybjM4RE01cmtQYk1vNDlVSUVMTXRhZmtQeFRfTEh5dVN6M3BMVm9LNGh6Rk4zbFo4TVN5TGlnbWpfNWlpU3c4ZFlXaG9TcVJFdVp6ZnBEZlB6YzJ6dGdOSnBXc0xvZGdZWFZTdWJockkxZXZXczNWbEoxSWhrcGttUEdZU0NSc3BINEJVVkc4WGU2SThsV1NJ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Cancer survivor to take part in charity fundraising brewery walk in Kingston",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T17:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWTgwUmtneWs2VFI0QUFKaDFNaFBHRTQyd2VlUDgxZkZhN1ZXQk1DSnJBeC1WbjFZZTRMVUZNTU1JODRITGlWOFIwdVNKNEpEZFhMOWMzR2p5YnlvWkZ5OWJZUkhJR3Q5bVEyMU5WZnJmdlZjajBYNWs5emVMZk1uYlpFMTdQcm1ZTUItVXNHOGhLdDlHUnl6enpGdXhQRlJnc21xOGxnZUtFNXAyRTRfUXRhMGJjaW5MT01Sbk50OEZpbWc?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -1136,6 +1187,15 @@
     ],
     "UK news": [
       {
+        "title": "Lancashire business wins prestigious British Farming Award for innovation",
+        "summary": "",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T05:00:00+01:00",
+        "source": "Lancashire Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWTZDYld6X2RrSXdiOHZteDBUNWpPdmVsZmh5ZnFLZDJsaU5hS0gwc3UxRU1FX2JzcW5saXoxOVpHSTBMVlFpdGdpUVNKWTZYYVpqclFLVGVzLXpoTC00MmhIZnUzTURjZkRNalNESWxjMGpaVzhud1NfUG90dDZGUk9qcXRuQzhyckR2YTdoM3dMMGJzQ19jU0JiNVgyOXBVZ0FmOUJNNk9kbzgxdVZteg?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Burnham-On-Sea MP celebrates local hair and beauty businesses during British Beauty Week",
         "summary": "",
         "meta": "Mon 19 Oct",
@@ -1163,7 +1223,7 @@
         "contentType": "article"
       },
       {
-        "title": "Charitable donation funds 21,000 school breakfasts",
+        "title": "Charitable donation funds 21,000 free school breakfasts in York",
         "summary": "",
         "meta": "Sun 18 Oct",
         "publishedAt": "2026-10-18T14:06:29+01:00",
@@ -1232,15 +1292,6 @@
         "publishedAt": "2026-10-18T00:44:00+01:00",
         "source": "Dorset Echo",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZ0p3WXFLVEZwTERKWXp4eTNGWGd0VXZDSFE3QW5fdjVrdkxXR0tsMmU0YVpqZVdENHdOWXdZUW9rV3M2S0lpb0JjUUZZLVlueGFicjI4VmZieFl5N3Qwa092NFkzTGQtQ0UwWVNQT1NVeTFsS1dhVTJvZzRNYjlNV0U1Q1ZIaUVBVWQybnBtMENUZThKNmJ4ZA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Award for restoration work at Wales’ largest lowland fen",
-        "summary": "",
-        "meta": "Sat 17 Oct",
-        "publishedAt": "2026-10-17T09:21:44+01:00",
-        "source": "Nation.Cymru",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ2phZ2lQd0tJWVJXZm5iWE9wMnRHS2FhNzBscXVBbzN3OXFzdDVYTDEtc2hsSU9lVG5jbXV0ZWJwZHZxczhRRXVSZXMxelFaWDk0NGFWNEFMT0w0MjhyeDVxVUpDRXNMSXBxMVRTb2FOTHNxSU9QVkI2dVNxdUI3RUdEODhxY29ramc?oc=5",
         "contentType": "article"
       }
     ],
@@ -1316,7 +1367,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-17"
+        "verifiedAt": "2026-10-19"
       },
       {
         "id": "teddington-beer-2026",
@@ -1361,7 +1412,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-17"
+        "verifiedAt": "2026-10-19"
       },
       {
         "id": "landmark-sparkle-festive-fair-2026",
@@ -1390,27 +1441,27 @@
   },
   "watchAlternatives": [
     {
-      "title": "Stacey Dooley",
-      "summary": "Stacey Dooley looks into the deaths of women who have fallen from heights, interrogating how these deaths are investigated and exploring whether domestic abuse played a part.",
-      "meta": "BBC iPlayer · Available since Tue 13 Oct",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-13",
-      "releaseDateLabel": "Available since Tue 13 Oct",
-      "url": "https://www.bbc.co.uk/programmes/b048vy8l",
+      "title": "Panorama",
+      "summary": "Why are vulnerable people, including victims of domestic violence and those facing homelessness, not getting the supported housing they've been promised?",
+      "meta": "BBC One · Today, 8pm",
+      "source": "BBC One",
+      "channel": "BBC One",
+      "releaseDate": "2026-10-19",
+      "releaseDateLabel": "Today, 8pm",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
-      "artworkAlt": "Stacey Dooley programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
+      "artworkAlt": "Panorama programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-13",
-      "showId": 4594,
-      "episodeId": 3783642,
+      "airdate": "2026-10-19",
+      "showId": 8534,
+      "episodeId": 3789901,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-19",
-      "preferenceScore": 475.4
+      "preferenceScore": 452.6
     },
     {
       "title": "Green Eyed Killers",
