@@ -351,6 +351,32 @@ def verified_leeds_result() -> dict:
     }
 
 
+def verified_nottingham_forest_result() -> dict:
+    return {
+        "date": "2026-10-18T16:30:00+01:00",
+        "dateLabel": "Sun 18 Oct",
+        "kickoff": "4:30pm",
+        "opponent": "Nottingham Forest",
+        "competition": "Premier League",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 1,
+        "opponentScore": 0,
+        "result": "1–0",
+        "scorers": [
+            {"name": "Noni Madueke", "team": "Arsenal", "minute": "80'"},
+        ],
+        "scorersLabel": "Madueke 80'",
+        "stadium": "City Ground",
+        "summary": (
+            "Noni Madueke's deflected 80th-minute strike, Arsenal's only shot on target, "
+            "won the Premier League match 1–0 at Nottingham Forest."
+        ),
+        "url": "https://www.skysports.com/football/news/13598878/nottingham-forest-0-1-arsenal-noni-maduekes-late-deflected-strike-wins-it-with-gunners-only-shot-on-target",
+        "source": "Sky Sports",
+    }
+
+
 def verified_lille_result() -> dict:
     return {
         "date": "2026-10-13T20:00:00+01:00",
@@ -656,7 +682,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-10-13T22:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-10-18T18:30:00+01:00"):
+        fallback = verified_nottingham_forest_result()
+    elif NOW >= datetime.fromisoformat("2026-10-13T22:00:00+01:00"):
         fallback = verified_lille_result()
     elif NOW >= datetime.fromisoformat("2026-10-10T14:30:00+01:00"):
         fallback = verified_leeds_result()
