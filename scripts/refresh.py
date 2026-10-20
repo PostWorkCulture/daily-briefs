@@ -330,6 +330,17 @@ JOB_ROLE_TITLE = re.compile(
     r"(?:engineer|analyst|developer|manager|consultant|architect|officer|administrator)\b",
     re.I,
 )
+# Local publishers (e.g. Nub News) syndicate bare "<Role> - <Place>" vacancy titles such as
+# "Mobile Vehicle Technician - Esher" with no pay, IR35 or vacancy wording.
+JOB_ROLE_PLACE_TITLE = re.compile(
+    r"^(?:[A-Z][\w&/'’.]*\s+){0,4}"
+    r"(?i:technician|engineer|mechanic|electrician|plumber|assistant|administrator|"
+    r"co-?ordinator|advis[eo]r|operative|driver|cleaner|receptionist|supervisor|manager|"
+    r"apprentice|officer|executive|consultant|nurse|carer|care worker|chef|cook|teacher|"
+    r"analyst|developer|designer|specialist|associate|controller|planner|surveyor|"
+    r"bookkeeper|accountant|porter|caretaker|valeter)\s*[-–|]\s*"
+    r"[A-Z][\w'’.]*(?:\s+(?:upon|on|under|in|[A-Z][\w'’.]*)){0,3}(?:\s*\((?i:hybrid|remote|on-?site)\))?$",
+)
 JOB_URL_PATH = re.compile(r"https?://[^\s/]+/(?:[^\s?#]*/)?(?:jobs?|careers?|vacancies)(?:[/?#]|$)", re.I)
 # Search feeds also index publisher recruitment directories and round-ups.
 # Their Google News redirect hides the destination path and they may have no salary.
@@ -829,6 +840,7 @@ def news_item_is_job_vacancy(item: dict) -> bool:
         or JOB_COMPENSATION_LANGUAGE.search(title)
         or JOB_CONTRACT_RATE.search(title)
         or JOB_DIRECTORY_TITLE.search(title)
+        or JOB_ROLE_PLACE_TITLE.search(title.strip())
         or (JOB_ROLE_TITLE.search(title) and re.search(r"\b(?:inside|outside)\s+IR35\b", text, re.I))
         or JOB_URL_PATH.search(str(item.get("url", "")))
     )

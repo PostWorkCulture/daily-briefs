@@ -53,6 +53,31 @@ class SectionContentTypeTests(unittest.TestCase):
                 self.assertEqual(editorial_news([item]), [])
                 self.assertTrue(section_content_type_errors({"Local news": [item]}))
 
+    def test_bare_role_and_place_vacancy_titles_are_quarantined(self) -> None:
+        for title in (
+            "Mobile Vehicle Technician - Esher",
+            "Care Assistant - Kingston upon Thames",
+            "Receptionist – Teddington",
+            "Delivery Driver - West Molesey",
+        ):
+            with self.subTest(title=title):
+                item = {"title": title, "source": "Teddington Nub News", "contentType": "article",
+                        "url": "https://news.google.com/rss/articles/opaque-id"}
+                self.assertTrue(news_item_is_job_vacancy(item))
+                self.assertFalse(local_news_item_is_in_scope(item))
+                self.assertTrue(section_content_type_errors({"Local news": [item]}))
+
+    def test_role_words_in_editorial_headlines_remain_news(self) -> None:
+        for title in (
+            "Kingston engineer wins community award",
+            "Bus driver praised for saving passenger - Surbiton",
+            "Delicious new food stalls to join Teds Market as it celebrates two years in Teddington",
+            "Hampton chef opens new restaurant on Station Road",
+            "Police officer honoured for bravery in Kingston",
+        ):
+            with self.subTest(title=title):
+                self.assertFalse(news_item_is_job_vacancy({"title": title}))
+
     def test_publisher_job_path_is_not_an_editorial_article(self) -> None:
         self.assertEqual(editorial_news([{
             "title": "Receptionist in Kingston", "contentType": "article",
