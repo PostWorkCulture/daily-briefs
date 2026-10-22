@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 22 October 2026 · refreshed 5:00am",
+  "updatedLabel": "Thursday, 22 October 2026 · refreshed 5:14am",
   "worldFact": {
     "id": "whittier-town-in-one-building",
     "editorialPriority": "human-first",
@@ -98,12 +98,72 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
+      "dateLabel": "Wednesday 21 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
-      "error": "No verified landmark, civic, town-centre or exact-place photo found for Bridlington MRSC, East Riding of Yorkshire"
+      "hot": {
+        "location": "Bridlington Mrsc",
+        "town": "Bridlington",
+        "county": "East Riding of Yorkshire",
+        "country": "England",
+        "displayLocation": "Bridlington, East Riding of Yorkshire",
+        "value": "14.7°C",
+        "photo": {
+          "src": "assets/weather-extremes/hot.webp?v=3fe1d644b2f6",
+          "page": "https://commons.wikimedia.org/wiki/File:Road_system_to_the_northeast_of_Bridlington_town_centre_-_geograph.org.uk_-_3555739.jpg",
+          "credit": "Barbara Carr · CC BY-SA 2.0",
+          "alt": "Road system to the northeast of Bridlington town centre",
+          "width": 1600,
+          "height": 900
+        }
+      },
+      "cold": {
+        "location": "Alice Holt Lodge",
+        "town": "East Hampshire",
+        "county": "Hampshire",
+        "country": "England",
+        "displayLocation": "East Hampshire, Hampshire",
+        "value": "3.1°C",
+        "photo": {
+          "src": "assets/weather-extremes/cold.webp?v=443a0202133d",
+          "page": "https://commons.wikimedia.org/wiki/File:PP4080182.JPG",
+          "credit": "Bashereyre ( talk ) · CC BY-SA 3.0",
+          "alt": "East Hampshire District Council Offices",
+          "width": 1600,
+          "height": 900
+        }
+      }
     }
   },
   "calendar": [
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "11r85osjpfn1ua0d5e1q61c67s",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Holiday Camp 9:30-4:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-19T00:00:00+01:00",
+      "end": "2026-10-24T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s3ee326cojabb3ccp66b9k6dh3cbb165im4bb360rmcc9p6gq3eohk74",
+      "calendarColorSource": "calendar-default"
+    },
     {
       "title": "Hygienist- 10am",
       "summary": "",
@@ -122,11 +182,11 @@
       "title": "Pumkin Festival",
       "summary": "",
       "url": "",
-      "start": "2026-10-24T00:00:00+01:00",
-      "end": "2026-10-25T00:00:00+01:00",
+      "start": "2026-10-24T10:00:00+01:00",
+      "end": "2026-10-24T12:00:00+01:00",
       "date": "2026-10-24",
-      "time": "All day",
-      "allDay": true,
+      "time": "10am",
+      "allDay": false,
       "color": null,
       "colorId": null,
       "googleEventId": "69i3aeb26oq6ab9h71i3eb9k60q34b9occoj2bb46dim4or269hj2d9o70",
@@ -217,20 +277,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "See Kate and Family",
       "summary": "",
       "url": "",
@@ -242,6 +288,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
     },
     {
@@ -273,20 +333,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Kids",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-23T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": "#e1e1e1",
-      "colorId": "8",
-      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir Performance 10:30-2:30",
       "summary": "",
       "url": "",
@@ -299,6 +345,20 @@
       "colorId": null,
       "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-23T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
+      "calendarColorSource": "google"
     },
     {
       "title": "Football 10-11am",
@@ -369,14 +429,38 @@
       "arsenalScore": 2,
       "opponentScore": 2,
       "result": "2–2",
-      "url": "https://www.skysports.com/football/bayern-munich-vs-arsenal/7867082363375436232",
-      "source": "Sky Sports",
-      "tvChannel": "TBC"
+      "scorers": [
+        {
+          "name": "Eberechi Eze",
+          "team": "Arsenal",
+          "minute": "25'"
+        },
+        {
+          "name": "Declan Rice",
+          "team": "Arsenal",
+          "minute": "82'"
+        },
+        {
+          "name": "Alphonso Davies",
+          "team": "Bayern Munich",
+          "minute": "35'"
+        },
+        {
+          "name": "Harry Kane",
+          "team": "Bayern Munich",
+          "minute": "61'"
+        }
+      ],
+      "scorersLabel": "Eze 25', Rice 82' · Davies 35', Kane 61' (pen)",
+      "stadium": "Allianz Arena",
+      "summary": "Declan Rice's 82nd-minute equaliser earned Arsenal a 2–2 draw at Bayern Munich in the Champions League league phase, after Eberechi Eze's opener was cancelled out by Alphonso Davies and a Harry Kane penalty.",
+      "url": "https://www.skysports.com/football/news/13600995/bayern-munich-2-2-arsenal-declan-rice-secures-draw-for-gunners-in-champions-league-after-harry-kane-penalty",
+      "source": "Sky Sports"
     },
     "nextFixture": {
       "date": "2026-10-24T15:00:00+01:00",
       "dateLabel": "Sat 24 Oct",
-      "kickoff": "3pm",
+      "kickoff": "3:00pm",
       "opponent": "Everton",
       "competition": "Premier League",
       "homeAway": "home",
@@ -481,7 +565,7 @@
         "sourceUrl": "https://x.com/jamesbenge"
       },
       {
-        "title": "🚨 Mikel Arteta: “Bukayo Saka’s injury doesn’t look good at all”. “It’s his quad and we wait for the tests”.",
+        "title": "Mikel Arteta: “Bukayo Saka’s injury doesn’t look good at all”. “It’s his quad and we wait for the tests”.",
         "summary": "",
         "meta": "Wed 21 Oct",
         "publishedAt": "2026-10-21T22:40:18+01:00",
@@ -495,7 +579,7 @@
         "sourceUrl": "https://x.com/FabrizioRomano"
       },
       {
-        "title": "✨🇪🇺 Harry Kane, UEFA Man of the Match for Bayern vs Arsenal. His last 11 games in all competitions. ⚽️🅰️ vs Bodø/Glimt ⚽️🅰️ vs Elversberg ⚽️⚽️ vs Union Berlin ⚽️ vs Spain ⚽️ vs Czech Republic ⚽️⚽️🅰️ vs Croatia ⚽️⚽️ vs Czech Republic 🅰️🅰",
+        "title": "Harry Kane, UEFA Man of the Match for Bayern vs Arsenal. His last 11 games in all competitions. vs Bodø/Glimt vs Elversberg vs Union Berlin vs Spain vs Czech Republic vs Croatia vs Czech Republic",
         "summary": "",
         "meta": "Wed 21 Oct",
         "publishedAt": "2026-10-21T22:32:31+01:00",
@@ -756,21 +840,21 @@
         "contentType": "article"
       },
       {
+        "title": "AI model detects signs of faulty DNA repair in ovarian cancer using tissue images",
+        "summary": "",
+        "meta": "Wed 21 Oct",
+        "publishedAt": "2026-10-21T22:00:19+01:00",
+        "source": "Medical Xpress",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1uWGhCNElrbkNyTGVfVFFjelBhRElkRkhtd1k0a09oT25HamVybVMtMzNON0kzOTdoRXpfR19xaDlmUG5nVHktQVJNRGFlM3N6TEtSQ2x3ckFVX3YzMzNGNHJzMHdCRDVWajRvUmZycW1vNEF1UUs4ZUljNHk?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Broad access through consistent standards",
         "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
         "meta": "Wed 21 Oct",
         "publishedAt": "2026-10-21T22:00:00+01:00",
         "source": "OpenAI",
         "url": "https://openai.com/index/broad-access-through-consistent-standards",
-        "contentType": "article"
-      },
-      {
-        "title": "OpenAI says its AI agents disabled their own monitoring - ABC News",
-        "summary": "",
-        "meta": "Wed 21 Oct",
-        "publishedAt": "2026-10-21T19:39:35+01:00",
-        "source": "Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOM2Z1WmV6RXdLMWhzZ2U4ZnozN20tS25KVE1CT29UcGVJZFhXSWt2eUhGV3JuTXJuU2JnSHhiS0hkbEVqTFRpYUlHRm81WW9MOW1DZGt5WGZOek1Pak8zQnhOUllYd2dOWmgwMm9xckNpWVN0bmItOEl1bVNTVjFUbUpsOWZYem5nNzhsV9IBkgFBVV95cUxNZEw4eklJLUZfOC1VeGNmbVItT2JGWks5VnVRcGd2c2tBZUdsNzcyMDJZTy1MOWlCRTFJWmdiR2FnMkdoeXRQbWphb1NsVnZEUDhBUm9yUXdZTTRidHdNS0xHQ050c3p1SmJwbklrX3I1aHEwWVB0ZnlSdnEwZTlFeDQ5X3daZkpHVVdLQmFNZFFidw?oc=5",
         "contentType": "article"
       },
       {
@@ -784,12 +868,12 @@
         "liveChineseLab": true
       },
       {
-        "title": "China's MiniMax launches updated AI model M3.1 Flash, claims major improvements",
+        "title": "MiniMax launches M3.1 Flash model, says it cuts AI agent costs by 70%",
         "summary": "",
         "meta": "Mon 19 Oct",
-        "publishedAt": "2026-10-19T13:25:44+01:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQU21KdExTcjNUellVV1E5dWlpbXZMR0dxb0NUdXNrN2pma29TRm5PcFBOMEZhS0hSOUVMNmdMZlNsUE9uTGxOYjFnTjIzVzZESmcxbnBYMHVMZjdNS1RvVkU3eHhZYUdlMmNORXdlR2l4ejVwQVVvdjVjTzZGQThwUmhZZ1JHSGNyUGlITjVabGdsTE9heHlnbjdvODlXSHk0Rk0yOEpxbW01dEg1THR3eFY2Sl8xRkUyVEFReC00SWFvVmx4NE5sejRSRQ?oc=5",
+        "publishedAt": "2026-10-19T23:25:00+01:00",
+        "source": "SiliconANGLE",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTFzLTVJTXFMdGsxc3NOTWtLTVhkOFcxX1BjcVFrOGVTUnhUMmFhWWNmaVhQVjFnNEt2cXJWVWZSQmhvQXlxeVNTM2d1aFI4RHIxVjFnMkhoX2Q5SHp6d0xCS1FwZ2FBeEhrWWdZWE5ST0RCeFg4VW5PTDFqczNvbjYwd2dOb0tOSTc1RkJ0WXBaeHoxdnhCWXEzOUNtTERfV1AyRGNiVQ?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -883,6 +967,18 @@
         "homeArea": false
       },
       {
+        "title": "Kingston-based, AI-assisted band releases Halloween single",
+        "summary": "",
+        "meta": "Wed 21 Oct",
+        "publishedAt": "2026-10-21T13:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU1djSVZSLUV1TkNfZVhVcVhyYjF1Qi1wWFhXTlpIc2todjN0WWRNcWVWUzd1OTRVNGR1NzdmMngzSk1YOXBEcUdtZzFrT3QxcnN3bGVtVDlpMXU1dkNSVTcyeXZJVUdKcWM5SXg1YnhyeHFxTzMwWm1uUWJjSEFDTlhEaVVBVkgxcmV3cFFBWlBGMFQ3ejlUcVh5d3Q4cEs3Y1JmV0sxU1dzdw?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
         "title": "Ancient Market stalls reopen after Kingston fire as Christmas events return",
         "summary": "",
         "meta": "Wed 21 Oct",
@@ -895,34 +991,10 @@
         "homeArea": false
       },
       {
-        "title": "Hampton Court Palace Festival Returns in June 2027",
-        "summary": "",
-        "meta": "Wed 21 Oct",
-        "publishedAt": "2026-10-21T12:19:35+01:00",
-        "source": "TotalNtertainment",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdE1RTkR2TlhUUWlCXzFxVXNiSHZXeU44NzVfLWdrUVo3Zjh3Rll0VXRmODBsV1h3bFczRUpQRnhuQXIzSzYyRjZLVElHQVFzUGRTbjNJQVhjYmd0ZUJROFFIcmhlZVItZ0RnNzZVMUNpVUh1Q1RWa2doemNSbXJ3QWxXZHdxcU5vMGdmbFFnbUlJRUJhbEZuWlN2OA?oc=5",
-        "contentType": "article",
-        "localPublication": false,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Teddington riverside venue kicks off festive season with live performance from 'Britain's Got Talent' finalist",
-        "summary": "",
-        "meta": "Wed 21 Oct",
-        "publishedAt": "2026-10-21T10:28:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOMUFqRTFVR1ViS2dpUHZuWmdHNXF6NnVSb3RSZ19rSXBGUGMtTGJXbmFIMVZqRnlZZGJnU3JVLVV3M0kxM09HM3dwVmJFOUdfVkd3RkN2YVF0cmluQmdkaU1QR1c0MEF4SGE1WFBRWHdGaWN4UEMzUnlTRHhORWZGRkJkR0lBTEFLOHlXd0syYU42MVhnM2U3ZTVhc3BOaUJZTDhjSFl1Y0tJSUc5N01MdHVXQWliTUlCOF95aDNNa0c0NXlKejZERloxcEU1eTJpN1BudXhpWnN2dnUzd1JkMGNJYXZXa1VWZjZVMThvSlZKRkNuWGtYSA?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Live traffic & travel news for Surbiton",
         "summary": "",
-        "meta": "Tue 20 Oct",
-        "publishedAt": "2026-10-20T13:12:40+01:00",
+        "meta": "Wed 21 Oct",
+        "publishedAt": "2026-10-21T03:46:54+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41Y3N4a0RzaEY3R0pIak95X2dKTWlmVmVPbzgyS1FSREJUUGt5QmNaVGZLcmRCVUJQdEN1S3BQU0poWFU3R24xaU4zclhfWFphcS1EQWF4X1JrRjBkQTcwZFAyTQ?oc=5",
         "contentType": "article",
@@ -940,6 +1012,18 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Santa reads childrens own Christmas letters back to them through new Hampton service",
+        "summary": "",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T10:30:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmlYUzhpYW9HbmxpZ2tNNEF1QlVkN1ZwYnFSV0lPWm1mMVZFTFNMYTZCbk1oUnd4T3VSSjVyTVJpYjU5bW5FUlc1X0x3clJEUUlRZ1hzQktjSFYyU2pYMk9iak82ZHVSMmNUSW5md012b2ZIaDdyVm9lcnJ5SEtSY250bkNzUkp2OTZmRDE5WnVfdldNMktoQ3RrNDVGaGo5QUxoQW5vdDVUdG92Nkk0VWxLeWpTdUE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
         "homeArea": false
       },
       {
@@ -1065,6 +1149,15 @@
     ],
     "UK news": [
       {
+        "title": "Action for Children manager in North Wales shortlisted for national award",
+        "summary": "",
+        "meta": "Thu 22 Oct",
+        "publishedAt": "2026-10-22T05:00:00+01:00",
+        "source": "Wrexham and Flintshire News, Sport, Events | The Leader",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQamppenhZak5tdm82WlVXM1lkaHZnenZiRWFYa0o4bmxKMzNxTGJpTFpVTEpNUEdYMnVINHZ3NVItSjY3bUJuVGxZejVTMUtwOHFFQkY2dmxTOVlZbUwxak9oOFZnYW5vVXdfLVdjZ0ZDaVVHOUgtZGlfWHp1aGdNWVFRM0M2Z2FHZmRjNHNn?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "The Killie Community named finalist at Scotland’s Health Awards",
         "summary": "",
         "meta": "Wed 21 Oct",
@@ -1116,15 +1209,6 @@
         "publishedAt": "2026-10-21T14:27:00+01:00",
         "source": "Belfast News Letter",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYWNQbENzaWpub09ZOUdhODJHcUk2ci01UExYR3ZrNWNOazA4dDdadTRBaGRwaG83NjNhVHJBbW0ya1NQaENhMzFTTlZ6QWo2RmVpZkI5NmJMbHBQMWN5ZVdaeDc2bzk1YjAzWk5JeE5LV0tKc001c1owYkUxMjE5M0JUVXJld3pqWFg1cTh1QmZRRy1OSFdxR2NzdmZYXzVjVjdsNkM3MUI1eTdBM2NJRU1Sa2lfdTg?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "The Compleat Food Group unveils senior hires to support growth and innovation",
-        "summary": "",
-        "meta": "Wed 21 Oct",
-        "publishedAt": "2026-10-21T14:17:05+01:00",
-        "source": "British Baker",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTmJGVGxnOGUzLWRQSGMya1RJX3hveDB6SmkzZXgwbUxSY0JNeThsb1Iwb0xmblg3bmJ0T0tXaHNhOG1vUE16eW1mWTl5UWh6TFVvYVd5YXl4eU8zaTBOam1hT2JGN1RsWFlSYnFVMkE4eW5tTncyQWJDQ2V5UTYwZnZhUUdmVWpWN3JEczE5RVhoZjBkZmZXX3hQRnJIM3RfbzB3WmdwVlIxREE3NGczOWJWOUJPZlhqeHZ6R1ZKbml1UQ?oc=5",
         "contentType": "article"
       },
       {
@@ -1245,7 +1329,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-20"
+        "verifiedAt": "2026-10-22"
       },
       {
         "id": "teddington-beer-2026",
@@ -1290,7 +1374,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-20"
+        "verifiedAt": "2026-10-22"
       },
       {
         "id": "landmark-sparkle-festive-fair-2026",
