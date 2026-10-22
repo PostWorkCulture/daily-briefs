@@ -19,17 +19,17 @@
     "localImage": "assets/scenery/world-fact.webp?v=c788b87291b1"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Light showers",
-    "condition": "Light showers",
-    "currentRainChance": 80,
+    "temp": "14°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-22",
         "high": 14,
         "low": 11,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 95,
         "source": "Met Office"
       },
@@ -54,7 +54,7 @@
       {
         "date": "2026-10-25",
         "high": 13,
-        "low": 9,
+        "low": 8,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 40,
@@ -63,19 +63,19 @@
       {
         "date": "2026-10-26",
         "high": 18,
-        "low": 12,
+        "low": 11,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 90,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-10-27",
-        "high": 14,
+        "high": 13,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Sunny intervals · peak rain chance around 95%",
+      "detail": "Overcast · peak rain chance around 95%",
       "source": "Met Office"
     },
     "source": "Met Office",
