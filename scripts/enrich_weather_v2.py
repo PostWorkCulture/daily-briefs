@@ -127,9 +127,16 @@ MUSEUM_OBJECT = re.compile(r"findid|portable antiquities|\b(?:token|coin|mould|a
 TRANSPORT_STOP = re.compile(r"\b(?:station|underground|tube|platform)\b", re.I)
 
 
+# Met Office station-type designators that are not part of the place name,
+# e.g. "Bridlington MRSC" (HM Coastguard Maritime Rescue Sub-Centre) is in Bridlington.
+STATION_DESIGNATOR = re.compile(r"\s+MRSC\.?$", re.I)
+
+
 def tidy_place_name(value: str) -> str:
-    """Undo title-case artefacts in Met Office names, e.g. "St James'S Park"."""
-    return re.sub(r"(\w)(['\u2019])S\b", r"\1\2s", clean(value))
+    """Undo title-case artefacts in Met Office names, e.g. "St James'S Park", and drop
+    station-type designators such as "MRSC" so the place itself is matched and labelled."""
+    value = re.sub(r"(\w)(['\u2019])S\b", r"\1\2s", clean(value))
+    return clean(STATION_DESIGNATOR.sub("", value))
 
 
 def place_parts(location: str) -> list[str]:
@@ -157,7 +164,7 @@ def squash(value: str) -> str:
 
 def place_name_matches(location: str, name: str) -> bool:
     """True when a source's place name is the Met Office location or one of its parts."""
-    actual = squash(name)
+    actual = squash(tidy_place_name(name))
     if not actual:
         return False
     parts = place_parts(location)

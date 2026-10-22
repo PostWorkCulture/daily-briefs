@@ -60,7 +60,22 @@ class PlacePartsTests(unittest.TestCase):
         self.assertFalse(wx.place_name_matches("London, St James'S Park", "Heathrow"))
 
 
+    def test_station_designator_is_not_part_of_the_place(self):
+        self.assertEqual(wx.place_parts("Bridlington MRSC"), ["Bridlington"])
+        self.assertEqual(wx.exact_place("Bridlington Mrsc"), "Bridlington")
+        self.assertTrue(wx.place_name_matches("Bridlington MRSC", "Bridlington Mrsc"))
+        self.assertEqual(wx.tidy_place_name("Mrscombe"), "Mrscombe")
+
+
 class MetOfficeHeadingTests(unittest.TestCase):
+    def test_linked_station_page_drops_the_station_designator(self):
+        page = "<h1>Bridlington Mrsc (East Riding of Yorkshire) last 24 hours weather</h1>"
+        with mock.patch.object(wx.requests, "get", return_value=FakeResponse(text=page)):
+            place = wx.linked_met_office_place(
+                "Bridlington MRSC", "https://weather.metoffice.gov.uk/observations/example"
+            )
+        self.assertEqual(place, ("Bridlington", "East Riding of Yorkshire"))
+
     def test_linked_station_page_accepts_the_exact_site(self):
         page = "<h1>St James's Park (Greater London) last 24 hours weather</h1>"
         with mock.patch.object(wx.requests, "get", return_value=FakeResponse(text=page)):
