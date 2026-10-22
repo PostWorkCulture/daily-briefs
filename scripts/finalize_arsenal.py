@@ -377,6 +377,36 @@ def verified_nottingham_forest_result() -> dict:
     }
 
 
+def verified_bayern_munich_result() -> dict:
+    return {
+        "date": "2026-10-21T20:00:00+01:00",
+        "dateLabel": "Wed 21 Oct",
+        "kickoff": "8pm",
+        "opponent": "Bayern Munich",
+        "competition": "UEFA Champions League",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 2,
+        "opponentScore": 2,
+        "result": "2–2",
+        "scorers": [
+            {"name": "Eberechi Eze", "team": "Arsenal", "minute": "25'"},
+            {"name": "Declan Rice", "team": "Arsenal", "minute": "82'"},
+            {"name": "Alphonso Davies", "team": "Bayern Munich", "minute": "35'"},
+            {"name": "Harry Kane", "team": "Bayern Munich", "minute": "61'"},
+        ],
+        "scorersLabel": "Eze 25', Rice 82' · Davies 35', Kane 61' (pen)",
+        "stadium": "Allianz Arena",
+        "summary": (
+            "Declan Rice's 82nd-minute equaliser earned Arsenal a 2–2 draw at Bayern Munich "
+            "in the Champions League league phase, after Eberechi Eze's opener was cancelled "
+            "out by Alphonso Davies and a Harry Kane penalty."
+        ),
+        "url": "https://www.skysports.com/football/news/13600995/bayern-munich-2-2-arsenal-declan-rice-secures-draw-for-gunners-in-champions-league-after-harry-kane-penalty",
+        "source": "Sky Sports",
+    }
+
+
 def verified_lille_result() -> dict:
     return {
         "date": "2026-10-13T20:00:00+01:00",
@@ -682,7 +712,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-10-18T18:30:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-10-21T22:00:00+01:00"):
+        fallback = verified_bayern_munich_result()
+    elif NOW >= datetime.fromisoformat("2026-10-18T18:30:00+01:00"):
         fallback = verified_nottingham_forest_result()
     elif NOW >= datetime.fromisoformat("2026-10-13T22:00:00+01:00"):
         fallback = verified_lille_result()
