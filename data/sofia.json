@@ -19,18 +19,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=bec254419c4d"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "temp": "14°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-10-25",
-        "high": 13,
+        "high": 14,
         "low": 8,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -48,7 +48,7 @@
         "low": 9,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 90,
+        "rainChance": 95,
         "source": "Met Office"
       },
       {
@@ -57,13 +57,13 @@
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-29",
-        "high": 14,
-        "low": 9,
+        "high": 15,
+        "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 10,
@@ -73,14 +73,14 @@
         "date": "2026-10-30",
         "high": 15,
         "low": 9,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-10-31",
-        "high": 13,
+        "high": 12,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 10%",
+      "detail": "Sunny · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
