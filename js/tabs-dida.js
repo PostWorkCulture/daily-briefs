@@ -63,8 +63,8 @@
         for(const word of sig){
           if(prevSig.has(word)){
             sharedCount++;
-            if(word === 'fire' && prevSig.has('market')) hasMarketFire = true;
-            if(word === 'market' && prevSig.has('fire')) hasMarketFire = true;
+            // Only a second story about the same market fire is a repeat; other fires are separate incidents.
+            if((word === 'fire' || word === 'market') && sig.has('market') && sig.has('fire') && prevSig.has('market') && prevSig.has('fire')) hasMarketFire = true;
             if(word === 'pub' && (prevSig.has('outdoor') || prevSig.has('objections'))) hasPubOutdoor = true;
           }
         }

@@ -5,6 +5,7 @@
 - **Applied everywhere articles enter the brief**: `editorial_news()` (AI, Chinese-lab slots, Arsenal Club news, Sweden, UK), Local News scope, Transfer watch scope, a final gate in `build_profiles()`, `finalize_arsenal.py` (Arsenal news, transfers, Home Arsenal card) and new Around the world selections (facts with paywalled source links are skipped; none of the unused facts were affected).
 - **Browser safety net** (`js/app.js` `stripPaywalled()`): Mirrors the publisher/domain list and strips paywalled items from every section, Arsenal lists and Home cards as data loads, substituting the next readable story for a removed Home card.
 - **Conflict resolved by Pete's instruction**: The Athletic/The New York Times leave the Transfer watch trusted list (both are paywalled); Reporter watch X posts are unaffected.
+- **Local News fix found by today's data**: The browser duplicate rule hid any fire story whenever a Kingston market-fire story was listed, so the separate Surbiton house blaze vanished and the responsive check failed. Now only a second story about the same market fire counts as a repeat.
 - **Related quality fix**: Encyclopedia/dictionary pages (Britannica, Wikipedia, Investopedia) are excluded from editorial sections; today's AI list contained a Britannica entry.
 - **Validation**: New `tests/test_paywall.py`; 167/167 Python tests and 5/5 Node tests pass (`loadProfile()` calls the browser gate only when it is defined, so the isolated Inbox/loader test still runs); `scripts/responsive_ui_check.py` passes on mobile, desktop and widescreen.
 
