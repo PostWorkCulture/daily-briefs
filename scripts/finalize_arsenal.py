@@ -436,6 +436,34 @@ def verified_lille_result() -> dict:
     }
 
 
+def verified_fleetwood_town_result() -> dict:
+    return {
+        "date": "2026-10-27T20:00:00+00:00",
+        "dateLabel": "Tue 27 Oct",
+        "kickoff": "8pm",
+        "opponent": "Fleetwood Town",
+        "competition": "Carabao Cup",
+        "homeAway": "away",
+        "completed": True,
+        "arsenalScore": 1,
+        "opponentScore": 1,
+        "result": "1–1 (lost 3–5 pens)",
+        "scorers": [
+            {"name": "Viktor Gyokeres", "team": "Arsenal", "minute": "50'"},
+            {"name": "Aaron Loupalo-Bi", "team": "Fleetwood Town", "minute": "21'"},
+        ],
+        "scorersLabel": "Gyokeres 50' · Loupalo-Bi 21'",
+        "stadium": "Highbury Stadium",
+        "summary": (
+            "League Two Fleetwood Town knocked Arsenal out of the Carabao Cup fourth round "
+            "5–3 on penalties after Viktor Gyokeres' 50th-minute equaliser cancelled out "
+            "Aaron Loupalo-Bi's opener at Highbury Stadium."
+        ),
+        "url": "https://www.skysports.com/football/news/13604003/fleetwood-1-1-arsenal-5-3-pens-premier-league-champions-dumped-out-of-carabao-cup-by-league-two-side",
+        "source": "Sky Sports",
+    }
+
+
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -712,7 +740,9 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
 
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
-    if NOW >= datetime.fromisoformat("2026-10-21T22:00:00+01:00"):
+    if NOW >= datetime.fromisoformat("2026-10-27T22:00:00+00:00"):
+        fallback = verified_fleetwood_town_result()
+    elif NOW >= datetime.fromisoformat("2026-10-21T22:00:00+01:00"):
         fallback = verified_bayern_munich_result()
     elif NOW >= datetime.fromisoformat("2026-10-18T18:30:00+01:00"):
         fallback = verified_nottingham_forest_result()

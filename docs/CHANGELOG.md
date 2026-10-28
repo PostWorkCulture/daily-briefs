@@ -1,3 +1,9 @@
+## 28 October 2026: Verified Fleetwood Town 1–1 Arsenal (5–3 pens) result
+
+- **Cause**: The 28 October edition was pushed outside GitHub Actions at 04:01, so the Morning refresh validator never ran. It published Arsenal's Carabao Cup fourth-round tie at Fleetwood Town (Tue 27 Oct) as a bare `1–1` with no scorers, stadium or summary, because no hand-verified record existed. The Responsive UI check on that commit (run 40629997568) failed with "Arsenal last result lacks score, kickoff or stadium".
+- **Fix** (`scripts/finalize_arsenal.py`): Added `verified_fleetwood_town_result()` from the Sky Sports match report and live page (Loupalo-Bi 21'; Gyokeres 50'; Fleetwood won 5–3 on penalties; Highbury Stadium; 8pm kick-off; Carabao Cup), at the top of the `apply_last_result_fallback()` chain from 22:00 on 27 October. Result shown as `1–1 (lost 3–5 pens)`, following the existing Como shoot-out format. No other Arsenal rule, section or layout changed.
+- **Validation**: 160/160 Python tests pass; a dry run of `apply_last_result_fallback()` on today's data selects the verified record. The Morning refresh triggered by this push republishes both briefs.
+
 ## 22 October 2026: Met Office "MRSC" station designator dropped from Yesterday in England places
 
 - **Cause**: The 22 October edition (pushed outside GitHub Actions at 05:01, so the Morning refresh validator never ran) was published without the Yesterday in England cards. The Met Office named the hottest England station "Bridlington MRSC" (the HM Coastguard Maritime Rescue Sub-Centre station in Bridlington). The place check kept "MRSC" as part of the town, so the Commons photo searches looked for the literal phrase "Bridlington MRSC" and found no exact-place photo; `yesterdayExtremes` carried "No verified landmark, civic, town-centre or exact-place photo found for Bridlington MRSC, East Riding of Yorkshire". The Responsive UI check on that commit failed with "pete hot weather card has no local image".
