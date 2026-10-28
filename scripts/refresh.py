@@ -24,6 +24,10 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
+try:
+    from scripts.paywall import is_paywalled, paywalled_url, without_paywalled
+except ModuleNotFoundError:
+    from paywall import is_paywalled, paywalled_url, without_paywalled
 from icalendar import Calendar
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -402,6 +406,8 @@ def world_fact_for_today() -> dict:
             item for item in catalog
             if item["id"] not in set(used_ids) and item.get("editorialStatus") != "retired"
         ]
+        # A fact's source link must be readable without a subscription.
+        unused = [item for item in unused if not paywalled_url(item.get("sourceUrl"))]
         human_first = [item for item in unused if item.get("editorialPriority") == "human-first"]
         # Wild, jaw-dropping facts (tribes, rituals, records, extreme places) lead the queue.
         wild = [item for item in human_first if item.get("editorialBoost") == "wild"]
@@ -846,10 +852,25 @@ def news_item_is_job_vacancy(item: dict) -> bool:
     )
 
 
+REFERENCE_SOURCES = frozenset({"britannica", "encyclopaedia britannica", "encyclopedia britannica", "wikipedia", "investopedia", "dictionary.com", "merriam-webster"})
+
+
+def reference_page(item: dict) -> bool:
+    """Encyclopedia and dictionary entries are not news articles."""
+    source = re.sub(r"\s+", " ", str(item.get("source") or "")).strip().casefold()
+    url = str(item.get("url") or "")
+    return source in REFERENCE_SOURCES or bool(re.search(r"https?://(?:[a-z]+\.)?(?:britannica\.com|wikipedia\.org|investopedia\.com)/", url, re.I))
+
+
 def editorial_news_item_is_in_scope(item: dict) -> bool:
     """Allow only article-shaped, non-vacancy items into editorial destinations."""
     content_type = str(item.get("contentType") or "article").casefold()
-    return content_type == "article" and not news_item_is_job_vacancy(item)
+    return (
+        content_type == "article"
+        and not news_item_is_job_vacancy(item)
+        and not is_paywalled(item)
+        and not reference_page(item)
+    )
 
 
 def editorial_news(items: list[dict], limit: int | None = None) -> list[dict]:
@@ -917,6 +938,8 @@ def local_news_item_hub(item: dict) -> str:
 
 def local_news_item_is_in_scope(item: dict) -> bool:
     """Require approved local evidence and reject routine sports coverage."""
+    if is_paywalled(item):
+        return False
     title = clean_html(str(item.get("title") or ""))
     if is_topic_page_only(title):
         return False
@@ -1270,6 +1293,8 @@ def scope_transfer_updates(candidates: list[dict]) -> list[dict]:
     """
     updates = []
     for item in candidates:
+        if is_paywalled(item):
+            continue
         source = clean_html(item.get("source", ""))
         source_key = source.lower()
         trust = next((
@@ -2093,6 +2118,12 @@ def build_profiles() -> dict[str, dict]:
     fun = refresh_activities(NOW.date())
     sweden = editorial_news(google_news('(Sweden OR Swedish) news when:4d', 7, 4), 7)
     family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
+
+    # Final paywall gate: nothing behind a subscription reaches either brief.
+    ai, arsenal_news, local, uk, sweden = (without_paywalled(x) for x in (ai, arsenal_news, local, uk, sweden))
+    for key in ("news", "transfers", "transferRumours"):
+        if isinstance(arsenal.get(key), list):
+            arsenal[key] = without_paywalled(arsenal[key])
 
     stamp = safe_strftime(NOW, "%A, %-d %B %Y · refreshed %-I:%M%p").replace("AM", "am").replace("PM", "pm")
     pete_sections = {"AI": ai, "Arsenal news": arsenal_news, "Local news": local, "UK news": uk, "Fun": fun}

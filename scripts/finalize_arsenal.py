@@ -35,6 +35,11 @@ def strip_emojis(text: str) -> str:
     cleaned = EMOJI_PATTERN.sub("", str(text))
     return re.sub(r"\s{2,}", " ", cleaned).strip()
 
+try:
+    from scripts.paywall import is_paywalled
+except ModuleNotFoundError:
+    from paywall import is_paywalled
+
 TRUSTED_RESULT_SOURCES = {
     "arsenal.com": 0,
     "bbc": 1,
@@ -895,7 +900,7 @@ def main() -> None:
     sections = payload.setdefault("sections", {})
     arsenal_news = [
         x for x in sections.get("Arsenal news", [])
-        if not betting_item(x) and not non_mens_item(x) and not spam_stream_item(x)
+        if not betting_item(x) and not non_mens_item(x) and not spam_stream_item(x) and not is_paywalled(x)
     ]
     sections["Arsenal news"] = arsenal_news
 
@@ -904,7 +909,7 @@ def main() -> None:
     for item in payload.get("interests", []):
         if (
             str(item.get("section", "")).lower() == "arsenal"
-            and (betting_item(item) or non_mens_item(item) or spam_stream_item(item))
+            and (betting_item(item) or non_mens_item(item) or spam_stream_item(item) or is_paywalled(item))
         ):
             if arsenal_news and not replaced_arsenal_interest:
                 replacement = dict(arsenal_news[0])
@@ -925,7 +930,7 @@ def main() -> None:
     arsenal["news"] = arsenal_news[:5]
     transfers = [
         x for x in arsenal.get("transfers", [])
-        if not betting_item(x) and x.get("contentType") == "transfer-update" and x.get("trust")
+        if not betting_item(x) and not is_paywalled(x) and x.get("contentType") == "transfer-update" and x.get("trust")
     ]
     arsenal["transfers"] = dedupe_transfer_updates(transfers)[:6]
     arsenal["transferRumours"] = sorted([

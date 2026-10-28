@@ -1,3 +1,13 @@
+## 28 October 2026: No paywalled articles anywhere in the brief
+
+- **Approved specification change (Pete)**: Master brief updated to v6.1. Trigger: today's AI lead was a Financial Times story ("Anthropic’s seven founders tighten grip ahead of blockbuster IPO") that is subscriber-only.
+- **New `scripts/paywall.py`**: Rejects subscription-paywalled publishers by Google News/RSS source name, destination domain (subdomains included), paywalled sections of free sites (Reuters Breakingviews, NYT Athletic, National Geographic magazine/premium), "(subscription required)"-style markers and publisher names appended to headlines.
+- **Applied everywhere articles enter the brief**: `editorial_news()` (AI, Chinese-lab slots, Arsenal Club news, Sweden, UK), Local News scope, Transfer watch scope, a final gate in `build_profiles()`, `finalize_arsenal.py` (Arsenal news, transfers, Home Arsenal card) and new Around the world selections (facts with paywalled source links are skipped; none of the unused facts were affected).
+- **Browser safety net** (`js/app.js` `stripPaywalled()`): Mirrors the publisher/domain list and strips paywalled items from every section, Arsenal lists and Home cards as data loads, substituting the next readable story for a removed Home card.
+- **Conflict resolved by Pete's instruction**: The Athletic/The New York Times leave the Transfer watch trusted list (both are paywalled); Reporter watch X posts are unaffected.
+- **Related quality fix**: Encyclopedia/dictionary pages (Britannica, Wikipedia, Investopedia) are excluded from editorial sections; today's AI list contained a Britannica entry.
+- **Validation**: New `tests/test_paywall.py`; 167/167 Python tests pass.
+
 ## 28 October 2026: Verified Fleetwood Town 1–1 Arsenal (5–3 pens) result
 
 - **Cause**: The 28 October edition was pushed outside GitHub Actions at 04:01, so the Morning refresh validator never ran. It published Arsenal's Carabao Cup fourth-round tie at Fleetwood Town (Tue 27 Oct) as a bare `1–1` with no scorers, stadium or summary, because no hand-verified record existed. The Responsive UI check on that commit (run 40629997568) failed with "Arsenal last result lacks score, kickoff or stadium".
