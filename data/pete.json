@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Wednesday, 28 October 2026 · refreshed 5:11am",
+  "updatedLabel": "Wednesday, 28 October 2026 · refreshed 5:15pm",
   "worldFact": {
     "id": "santa-cruz-del-islote-crowded-island",
     "editorialPriority": "human-first",
@@ -19,18 +19,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=588b536d93a6"
   },
   "weather": {
-    "temp": "16°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
-    "currentRainChance": 4,
+    "temp": "14°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 30,
     "daily": [
       {
         "date": "2026-10-28",
-        "high": 16,
-        "low": 9,
+        "high": 15,
+        "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -39,7 +39,7 @@
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -54,7 +54,7 @@
       {
         "date": "2026-10-31",
         "high": 15,
-        "low": 8,
+        "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -62,17 +62,17 @@
       },
       {
         "date": "2026-11-01",
-        "high": 12,
+        "high": 13,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-11-02",
         "high": 13,
-        "low": 9,
+        "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 20,
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Sunny intervals · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -193,20 +193,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-01T00:00:00+00:00",
-      "end": "2026-11-02T00:00:00+00:00",
-      "date": "2026-11-01",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Demi Playdate",
       "summary": "",
       "url": "",
@@ -219,6 +205,20 @@
       "colorId": null,
       "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
+      "calendarColorSource": "google"
     },
     {
       "title": "See Kate and Family",
@@ -427,37 +427,37 @@
         "contentType": "article"
       },
       {
+        "title": "Fleetwood vs Arsenal: The League Two side take a shock lead against the Premier League champions",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T09:28:27+00:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZ0hRUE8wOHVvaUo5WXRyLVhEOXpFUGhOVEpjeW5XVEdLU0NkaktmWVhpT081eXNJMldJbHZFU1dPVzh5bVh5ODBkcGJZaVRsa3BxYk80b0NEekkwWDBNVWpRZ0dub2VUdV9HLXRmVFU5RzNBX21Dbmp2czl4MElMNFpodXZjWVJuSGNVSl8yQUNKNFZXT0JYZjJva0taVHdJaHFUWTNVdXpBQVFFMFFPVzZkcF8waVEyUzFTSnNHclJJRW4zbEdEVnE3RG5QLXgzYkpHWlNjWTBPRUZkbUE?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Extended Highlights: Town (5) 1-1 (3) Arsenal",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T02:19:11+00:00",
+        "publishedAt": "2026-10-28T02:54:04+00:00",
         "source": "Fleetwood Town Football Club",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBWd0gwMWVKZlp3UVE0bkhDaVJpU3ZfM0J4dWVsUVd1alh1QjBFTGhjRGtFMjJCRFlsaGlEVFBYcUxHUFF6TG5ONjZRMEdvTlBCUjkyUmF3OGduSVU0c2Y5S2d6VjB4emdRTTlNT2VnaGZLTVp5cmplT3ppN1NJdw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Fleetwood 1-1 Arsenal (5-3 pens) | Carabao Cup highlights",
+        "title": "Fleetwood vs Arsenal and Bradford vs Peterborough LIVE! Carabao Cup score updates, news, line-ups and how to watch or stream",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T22:26:19+00:00",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T11:36:05+00:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSTVqN3FtVU4yQVU0dmNmVmZqbFU5VFRJUnR4SkJLNDZVWko5VEk5ekU4cUxwZGpfSEUxOXZ3MUZ1S29HeDVXM1Zmc0hOR3M1YnNTaHpfeU8tbktldnVIQlRZbTBhUkxFTE05YWJ1b191cHZObGVqWGRseWVvOHJWeDBlUS13NTdqZTdkdjFqN0tpcktGNHBQY1hBUzBmaFhETHhyTEdR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Dowman starts as two make debuts",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T19:05:42+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPenQxZ2pfN3FsSDR1dmtNM1N6V2F2b1phem9RR29QWm9ZNVg4b3ZGYnhURTAyOE9PUm5Tb082MEtLQW9aOUd5VXdMay1yRHIxOGlScU45eEdoNEpXT3doYnUtU0RKcDY1RmZRUnUyN29mMWZEWTZsUTBNZHdYbkF5aHdMN0ZKVjJna0duaQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQNkVhOFBaS21PNTFWdWw5dkJzV2tlZS1DQVp4M2o3MWl4U1ZLSkpUU3dBb3pNZXBJSVRJbDg4SGN2RkFVYjMwcmxXM3hyNDlJdnhEeUxhMjRfLTFHemVHeTAzNmsxS016VjVNLTNpNmpCcnZzWjl6SUFJZ1Bycy1IQmtlNi0wdVltYjJwQWgydW83aHFfVnRIdkZXV01OaEVfbkMyOGluUEhzdUlldVNuamVDekl3bjBlSm8tZG1ycl9HUy01cFZHVjA1SjV0V2JHZE1VbVdqZDVwRlpSemJfNzB3dUhSdUZ6VG5jNG1zOVphU2Z2ZUJybzdEamNJTWFzZDZCRXJn?oc=5",
         "contentType": "article"
       },
       {
         "title": "Arsenal player ratings: Striker handed 1/10 for 'horror show'",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T03:40:36+00:00",
+        "publishedAt": "2026-10-28T09:45:10+00:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hiUVJublQzNmJtUV96NTg4WVVsZkticnJPR1g1Q1RqVkNoNkZ5SF9mU3JaRTRtellXWkVPQTdMVlY2ZTkyc3B3QktScVd4SGF5Y2p1YTZjQW9QN19HRzlqYUxmR1FVZGpfVXpYRlh2WE1uRUtEeVlmVTFfdkRvMm9qT2VmelRwYTFYSVFzOFFWZmtkWmFkNFdMS1ZTVzFoSzczLTQzRTd6UQ?oc=5",
         "contentType": "article"
@@ -516,6 +516,20 @@
         "sourceUrl": "https://x.com/charles_watts"
       },
       {
+        "title": "Wouldn't want to take anything away from Fleetwood, so excellent in their second half rearguard. However I can't think of many Arsenal players who could complain if they were dropped for the next dozen games after their performance tonight.",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T22:13:25+00:00",
+        "source": "James Benge",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vQlhOMmJNNS1fSVNzNkJEUU5uaGs4ekV4UWg3NDZCWHpVenZVTlNGaFpLdWdFN0c3bzhWbHl3T0RwRGg0VURjekVDV3hYc1RsRmtZS3ZDcmFWVHNSU18yaA?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/jamesbenge"
+      },
+      {
         "title": "BREAKING: Arsenal have been eliminated from the Carabao Cup by League Two side Fleetwood Town. Fleetwood Town currently sit 18th in League Two.",
         "summary": "",
         "meta": "Tue 27 Oct",
@@ -528,40 +542,26 @@
         "sourceType": "X",
         "confidence": "Established reporter",
         "sourceUrl": "https://x.com/FabrizioRomano"
-      },
-      {
-        "title": "OFFICIAL: Bukayo Saka wins Socrates Award for Fair Play at Ballon d’Or 2026.",
-        "summary": "",
-        "meta": "Mon 26 Oct",
-        "publishedAt": "2026-10-26T21:45:56+00:00",
-        "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VX0VvelpBNzI1cjJMN055TjMzRktwT3BTbUZEa1hRbVpuc01jVGF2aXpXU25qcHRSOWNhdEtJN1RjMEc3RDN6WkFVaWZ5c3htS1YxbE1FX1BneWNhOWNYNVNYU1Rkdw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Established reporter",
-        "sourceUrl": "https://x.com/FabrizioRomano"
       }
     ]
   },
   "lead": {
-    "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+    "title": "Anthropic unveils additional Claude tools for lawyers",
     "summary": "",
     "meta": "Wed 28 Oct",
-    "publishedAt": "2026-10-28T05:00:25+00:00",
-    "source": "Financial Times",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
+    "publishedAt": "2026-10-28T16:43:56+00:00",
+    "source": "Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbFBaWDBVa3BKM0dEcGpjZldpYXlJb1pZdDYtMFFOaDJpMEtjWkVyaGMtVHhGd0pwZDRLLUJhNnlveHJwZHNsckY1STlMZXBuc1Z4SUpiSEJVTFlWR0I5d1o3X3ZabkRNMkE0TDRTaVNiVnRzS0o4S1JTcllTVUVPZ1JXOFI1bFV2dm1JaE00YzluSGZwY2V4NDk1aVB3c1RTX2pFZUk5SzQ?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+      "title": "Anthropic unveils additional Claude tools for lawyers",
       "summary": "",
       "meta": "Wed 28 Oct",
-      "publishedAt": "2026-10-28T05:00:25+00:00",
-      "source": "Financial Times",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
+      "publishedAt": "2026-10-28T16:43:56+00:00",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbFBaWDBVa3BKM0dEcGpjZldpYXlJb1pZdDYtMFFOaDJpMEtjWkVyaGMtVHhGd0pwZDRLLUJhNnlveHJwZHNsckY1STlMZXBuc1Z4SUpiSEJVTFlWR0I5d1o3X3ZabkRNMkE0TDRTaVNiVnRzS0o4S1JTcllTVUVPZ1JXOFI1bFV2dm1JaE00YzluSGZwY2V4NDk1aVB3c1RTX2pFZUk5SzQ?oc=5",
       "contentType": "article",
       "section": "AI"
     },
@@ -576,12 +576,12 @@
       "section": "Arsenal"
     },
     {
-      "title": "Walton & Hersham",
+      "title": "Whites extend unbeaten run after a professional away performance in Walton-on-Thames",
       "summary": "",
-      "meta": "Tue 27 Oct",
-      "publishedAt": "2026-10-27T05:20:37+00:00",
-      "source": "Footy Headlines",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02TlhNeTZrTmFrekVsa0tPOFR6WEJ5QmM2ODBWS0dIbUE5VUd4elU4QVlNV1RvalhsY21FOEswODd1bG5PQXpGN0ZhbGQxT3lfbjlSWHhaMXR2Y2J2Z29DZGt0OGlpeUx5MnF3M3J3?oc=5",
+      "meta": "Wed 28 Oct",
+      "publishedAt": "2026-10-28T16:51:38+00:00",
+      "source": "Salisbury Journal",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV0NGeHRwbVdaXzRSVW9waE9FNnhWaVhYTVA0Wl83Sm5BQXFzQ2RqV1ZNczV5OUprVEpFUkhWOFZkenl0RzJuOFREZ3hiQ3FmUGIxWlFnVHlRQ0tQQm1QRDUwUHhvbXdNNms1MTRrbmhVdWxYQVFGU2w4NjIwaUpZV0ZQRjBhM2E0QjZZWkVpRlhJbUNUbktOeWQ2VnVyTUk1VEE?oc=5",
       "contentType": "article",
       "localPublication": false,
       "familyActivity": false,
@@ -636,7 +636,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-28",
-      "preferenceScore": 616.2
+      "preferenceScore": 616.1
     },
     {
       "title": "Green Eyed Killers",
@@ -718,48 +718,39 @@
   "sections": {
     "AI": [
       {
-        "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+        "title": "Anthropic unveils additional Claude tools for lawyers",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T05:00:25+00:00",
-        "source": "Financial Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
+        "publishedAt": "2026-10-28T16:43:56+00:00",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbFBaWDBVa3BKM0dEcGpjZldpYXlJb1pZdDYtMFFOaDJpMEtjWkVyaGMtVHhGd0pwZDRLLUJhNnlveHJwZHNsckY1STlMZXBuc1Z4SUpiSEJVTFlWR0I5d1o3X3ZabkRNMkE0TDRTaVNiVnRzS0o4S1JTcllTVUVPZ1JXOFI1bFV2dm1JaE00YzluSGZwY2V4NDk1aVB3c1RTX2pFZUk5SzQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic | History, Controversies, & Claude AI",
+        "title": "As Anthropic gets set for a stock market listing, what risks is AI creating?",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T02:51:19+00:00",
-        "source": "Britannica",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5",
+        "publishedAt": "2026-10-28T15:57:01+00:00",
+        "source": "www.thenationalnews.com",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbjBUT2pHNFYxWEtaZ3VGU01xS3oxV05NODg0X01UM3B0WHpvQ3BPYVZnNUhqWXVYZUFuQVR6NExVWU5ZbmRXcU5YcmItVXU5djdiaDR3V0FIS3dCazdWZTQzUFAxSDAycW1tUm5JZ0ViSlhXV1FSOVVreF9PSEZ6U1diX0ZMZWRURGlFQ0VtTTVQSnJLaG96ZnFFbkZRUkZEalBBRG9pVXFWQXAwVnJVUlAzTTZzUWhQUjczc1R0a1dqUXF3TFRNT2phaXBSU0tWbXc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic's latest biotech buy is a one-man stealth startup run by a pseudonymous Twitter poster",
+        "title": "Anthropic Increases Legal Vertical Push With ‘Artifacts’",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T22:31:00+00:00",
-        "source": "Endpoints News",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObHpwcmFPOUt4SGt2Q3VCTHJoT0FWdGp5eWJsZHFsQjdUczVLWFNQYXdFTDNkYVBOeFNuWjlvRUxWRHVKUzNlNEZSNVg2aU4yY2RucnNrQkNwYkdPOTRUak4tWnFIRnBSUGpnbWFFb1Z5SU9NVzVnLWNQblJUM0tkYzlIMHhxLV9XU3I4WnJPdmNEcWQ2alA2eTdn?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T15:17:39+00:00",
+        "source": "Artificial Lawyer",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWnpERjQ4ZVR5WVVMZzRtdGJfMmFMWVRsUkhicmJrNnhWM21yZ1ZKQzBoTTlyTXBfbi1ZR2d5MVo4eVNxbThMU3J1SGcxaGNjd2FrQ09tNnFGS2xfUWFHV0JjRFBwZ0poU3JwUHN1VzAxU01BMUNjejZWZ2daRXpEa2RrcmNwN2FSLV9qVDFIUDEwUktHMHlOc0t3MjNPdUpV?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Chart: Anthropic's cash pile towers over nearly every U.S. company",
+        "title": "Gemini 4 Carbon: Our next frontier model",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T21:12:55+00:00",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwRlJ6YmptbDNmWFNOakJqd242MXFXWHlMZWlvNWlKRHRQTWRoSEdrUFdldVhUejVRcmRVMVlUYkdINEY0NU1UV2hyTGlPVnhIT0tpbHJzRjROODU1d3hyR05pZS1udmY5QkNoVWdzRXJ6Zkh5MHfSAXtBVV95cUxPcm9OSHFiTElodzF4SUFVQllqOXBraHVXS1E1NWNfMkVNWjJwcW8yLUd5MVhmaTEzUHV3a3A3anZsNXVHMmlsUUNJd2tnN04yYW1MOG1fdkR2anlxMVFqUVF0a0hMWEdidkFsMGhwd1VXMXlMd1ZaNGVTNDA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Early progress on accelerating drug development with Claude",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T20:20:53+00:00",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T17:00:58+00:00",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
         "contentType": "article"
       },
       {
@@ -772,13 +763,32 @@
         "contentType": "article"
       },
       {
-        "title": "NxtGen Named an OpenAI Select Partner within the OpenAI Partner Network",
+        "title": "Nvidia Faces Fresh Challenge as OpenAI Expands AI Bets",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T02:30:00+00:00",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ2tKX1hCakVXN2JEOV9ueF9tRVliTHhOenhjU1FibXFaX1J2SjdjZm9SV25SUUVVVjZPVnFFNmVISkQtMzZENVd3ZlZpRTlyWjBGaGVEZTllRHlXekdEVkdyd3FId3BJbnpUYVlVelNOaDh4SHRDVk1hYUlra1RldnRfNmVaNjFBZjZST3VETGdIR0piWDlZME1jQVJLcDg?oc=5",
+        "publishedAt": "2026-10-28T15:43:45+00:00",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTXVEUU43RGJzNGZsZDV6NkFQbzZWZ3ZEa21KZVFnRk1fTXk3aW9CcUhxcmxGRkN4bDhoREkyTndZR05QOXF6LVpyOGR2SndleHAyQ0tjNGFQLVBYWTZpNG1ldHprN1B0eTNTR1JPRTRfNVRnMksyZkVzb3JGSTFIUFZIcFJpVkxBMjlUR0twc3VUSk9lUmRqLWJfakI5dGRGQ1k4T1ZrellJd1k2b0NaVWdyNkU?oc=5",
         "contentType": "article"
+      },
+      {
+        "title": "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T15:14:03+00:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS0JoelZlbzZ1cUdhbVZyVGFIS0p6VUdoSW9Va3YxSm9NaU5zQUVKU2VoTVl6YUhxVDNVSzRRQzhJMmRyTWNyekpMdmxDYmRYQ3RtT2d0R295eFljUVVYTlQ2b3FzNzB5c3pGelNaYUctVDZWZGpWUmYyQ2ptX0lTMlpiQXBweGtLb0lEYmdtaGR6djVtYTgxVFhVLVg4NXlaano1aVlRVmlJX1RGTmc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Alibaba's Qwen AI model tried to upload data to Beijing server, Cohere says",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T04:04:32+00:00",
+        "source": "Computing UK",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSDlITndKZjJTMXpRZTk3M3hUX1VYTDd3UTlDMFA5VEtvWGw0Z29FaFpscWNWZ1JWU01zdDlXa1ZOLTFaMExvS2syOFlrM1lOdHQ3UEoxc3BuTjI5WFlsLXBLcEl6MXcxMU8zUHN6WXNuM3ZnTXlOaS1Uczl6cjBqX1RvSE5RdXUyTHdubTVLUnpKOEg3S3kyclJVSDJCb0R6Rjd3Zk1HQm5Cd0RDTDVVamUwa19tZw?oc=5",
+        "contentType": "article",
+        "liveChineseLab": true
       },
       {
         "title": "DeepSeek AI model shows safety gaps in independent tests",
@@ -787,16 +797,6 @@
         "publishedAt": "2026-10-27T10:51:37+00:00",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ2VtNkRpTEd1M2w3YzYwUE9XV1BYblFJODQxWnhPVngzX2NHNkZjZV9fcTZwVWZpeWVYa3hmQ1hnbjR1M2p6b0FId28xR0xFaF9oLUQ5RU1fd0NXVDV1UTJPeERPZTU0UHkxbEtDNkRSdEFDVk9wazVKZjhsT1dNTTVNYTJOb19nVEdscGltelV1d1pRMjRLeXBvQUpVaHg3N0ow?oc=5",
-        "contentType": "article",
-        "liveChineseLab": true
-      },
-      {
-        "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T01:12:21+00:00",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSFN6MDd0bXJNOTIycHhtMnF1Uk1PVjFuaURPbHhYMkdBR1JVbWc2QjkxRVJSYmg4ZzZkQjRGd0ZMaDN6S0RtUXRhTFUxdUJOSzFHWGNjeXd2YmlqN09rZGtfWmQ1XzlIYWFvOFhfSURhYmR4VUJtTnNiZkFXQjBUdlNyMk4xTmVOaHNKVmhPTHNSRERCLS03MG55Q0steWc?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -822,68 +822,68 @@
         "contentType": "article"
       },
       {
+        "title": "Fleetwood vs Arsenal: The League Two side take a shock lead against the Premier League champions",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T09:28:27+00:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZ0hRUE8wOHVvaUo5WXRyLVhEOXpFUGhOVEpjeW5XVEdLU0NkaktmWVhpT081eXNJMldJbHZFU1dPVzh5bVh5ODBkcGJZaVRsa3BxYk80b0NEekkwWDBNVWpRZ0dub2VUdV9HLXRmVFU5RzNBX21Dbmp2czl4MElMNFpodXZjWVJuSGNVSl8yQUNKNFZXT0JYZjJva0taVHdJaHFUWTNVdXpBQVFFMFFPVzZkcF8waVEyUzFTSnNHclJJRW4zbEdEVnE3RG5QLXgzYkpHWlNjWTBPRUZkbUE?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Extended Highlights: Town (5) 1-1 (3) Arsenal",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T02:19:11+00:00",
+        "publishedAt": "2026-10-28T02:54:04+00:00",
         "source": "Fleetwood Town Football Club",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBWd0gwMWVKZlp3UVE0bkhDaVJpU3ZfM0J4dWVsUVd1alh1QjBFTGhjRGtFMjJCRFlsaGlEVFBYcUxHUFF6TG5ONjZRMEdvTlBCUjkyUmF3OGduSVU0c2Y5S2d6VjB4emdRTTlNT2VnaGZLTVp5cmplT3ppN1NJdw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Fleetwood 1-1 Arsenal (5-3 pens) | Carabao Cup highlights",
+        "title": "Fleetwood vs Arsenal and Bradford vs Peterborough LIVE! Carabao Cup score updates, news, line-ups and how to watch or stream",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T22:26:19+00:00",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T11:36:05+00:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSTVqN3FtVU4yQVU0dmNmVmZqbFU5VFRJUnR4SkJLNDZVWko5VEk5ekU4cUxwZGpfSEUxOXZ3MUZ1S29HeDVXM1Zmc0hOR3M1YnNTaHpfeU8tbktldnVIQlRZbTBhUkxFTE05YWJ1b191cHZObGVqWGRseWVvOHJWeDBlUS13NTdqZTdkdjFqN0tpcktGNHBQY1hBUzBmaFhETHhyTEdR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Dowman starts as two make debuts",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T19:05:42+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPenQxZ2pfN3FsSDR1dmtNM1N6V2F2b1phem9RR29QWm9ZNVg4b3ZGYnhURTAyOE9PUm5Tb082MEtLQW9aOUd5VXdMay1yRHIxOGlScU45eEdoNEpXT3doYnUtU0RKcDY1RmZRUnUyN29mMWZEWTZsUTBNZHdYbkF5aHdMN0ZKVjJna0duaQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQNkVhOFBaS21PNTFWdWw5dkJzV2tlZS1DQVp4M2o3MWl4U1ZLSkpUU3dBb3pNZXBJSVRJbDg4SGN2RkFVYjMwcmxXM3hyNDlJdnhEeUxhMjRfLTFHemVHeTAzNmsxS016VjVNLTNpNmpCcnZzWjl6SUFJZ1Bycy1IQmtlNi0wdVltYjJwQWgydW83aHFfVnRIdkZXV01OaEVfbkMyOGluUEhzdUlldVNuamVDekl3bjBlSm8tZG1ycl9HUy01cFZHVjA1SjV0V2JHZE1VbVdqZDVwRlpSemJfNzB3dUhSdUZ6VG5jNG1zOVphU2Z2ZUJybzdEamNJTWFzZDZCRXJn?oc=5",
         "contentType": "article"
       },
       {
         "title": "Arsenal player ratings: Striker handed 1/10 for 'horror show'",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T03:40:36+00:00",
+        "publishedAt": "2026-10-28T09:45:10+00:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hiUVJublQzNmJtUV96NTg4WVVsZkticnJPR1g1Q1RqVkNoNkZ5SF9mU3JaRTRtellXWkVPQTdMVlY2ZTkyc3B3QktScVd4SGF5Y2p1YTZjQW9QN19HRzlqYUxmR1FVZGpfVXpYRlh2WE1uRUtEeVlmVTFfdkRvMm9qT2VmelRwYTFYSVFzOFFWZmtkWmFkNFdMS1ZTVzFoSzczLTQzRTd6UQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arteta: \"We need to take this on the chin\"",
+        "title": "Match Replay: Town (5) 1-1 (3) Arsenal",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:37:31+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNTJvbTdDdUt2VWdzNjlVTjBEblRVbWtQdjVjMVM0cnNzeXdqUndRNHY5eV96X2dtMFNjN2pLWk9rU2Y4WkFjeklTdURRbERicjduUnVQWVdUYnVESDFfbXVLMWxRaW56ZWlHOFVMQk1RVllEOURmcWVGTE82QzVyU19sMHBPaUtT?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T04:29:04+00:00",
+        "source": "Fleetwood Town Football Club",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ta1JoUW92TVdKczlTaTRhNXhDUHRoS3RNTTN1Q3BRX1gwRF85WVR6SmY5bXZTRnlJNDlTVGJiV1RwMTZ5TjBiUmlfNFRXNDVjWk5qdldKS3l5Ui12Z1ZNQzJzRXJTOURJVU9Za2tTdUZLTDNq?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal suffer embarrassing Carabao Cup exit to Fleetwood on penalties",
+        "title": "Read Renée's Benfica programme notes",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:28:32+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ0xHSFRpN0xHdEhJUFBiU2p4SE9Qd21KRzBLbHc5clY0a3RJYW5wNnpSeWZSRU1PeGs3RFJMVWViel9Na1RjdVJOWWFkUTFadVRmS3YtakQ0emE0NTM1cFF0WjYyd1dXOGFZdllmZFBsSFdGbk4wZWZNNTNueFZoemV5cHQ4YTJUVlBEWTVXcWpSbVZjWTlKcGFjVk1PQkdHaHJtZnpB?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T10:59:07+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZmpWdWFoX3d3Y1c0ZE5uZkI1YVZ6RGpaM1Y1QXF1RktBbklPMWkxZFRrX0RpQkd6OElBeXVwZTBXOVdhYk9tNXVET2JsY3U1cVgySGtZYkF4MnpmREdCT0pkM0RhZjBBZTgzMU9hRmVfQXZGLVlCcnE4cGd2amQwX25QQQ?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
       {
-        "title": "Walton & Hersham",
+        "title": "Whites extend unbeaten run after a professional away performance in Walton-on-Thames",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T05:20:37+00:00",
-        "source": "Footy Headlines",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02TlhNeTZrTmFrekVsa0tPOFR6WEJ5QmM2ODBWS0dIbUE5VUd4elU4QVlNV1RvalhsY21FOEswODd1bG5PQXpGN0ZhbGQxT3lfbjlSWHhaMXR2Y2J2Z29DZGt0OGlpeUx5MnF3M3J3?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T16:51:38+00:00",
+        "source": "Salisbury Journal",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV0NGeHRwbVdaXzRSVW9waE9FNnhWaVhYTVA0Wl83Sm5BQXFzQ2RqV1ZNczV5OUprVEpFUkhWOFZkenl0RzJuOFREZ3hiQ3FmUGIxWlFnVHlRQ0tQQm1QRDUwUHhvbXdNNms1MTRrbmhVdWxYQVFGU2w4NjIwaUpZV0ZQRjBhM2E0QjZZWkVpRlhJbUNUbktOeWQ2VnVyTUk1VEE?oc=5",
         "contentType": "article",
         "localPublication": false,
         "familyActivity": false,
@@ -938,18 +938,6 @@
         "homeArea": false
       },
       {
-        "title": "Signature at Surbiton opens its doors",
-        "summary": "",
-        "meta": "Tue 20 Oct",
-        "publishedAt": "2026-10-20T10:00:00+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQTQzQ1VYUmJMaElqbkxxSFVlT3JRVUNjaFEtaDlfdldUSll3bEhqM2Y0NkhwS0NTYjlDZDRjOEVTTlpqWk5ObXRKek01dW4tV0tjMHJwSTdvUlRvMlVUR0tSdGZwQUM2VkZRMW8wb3hPcE9QTUQ4cV9YNkg5SlVQNQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Santa reads childrens own Christmas letters back to them through new Hampton service",
         "summary": "",
         "meta": "Mon 19 Oct",
@@ -974,56 +962,203 @@
         "homeArea": false
       },
       {
-        "title": "Water supply stable overnight as East Molesey main repairs go on",
+        "title": "Water supply woes in Molesey lead to calls for Thames Water nationalisation",
         "summary": "",
-        "meta": "Wed 30 Sep",
-        "publishedAt": "2026-09-30T08:00:00+01:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NSm1ETkZucVp5TUVLdnY1a1JRUzQ0Y1pqWnBGanRjdWxJLTR4Zy1ZYXd5QUQxVWU2NXkwODJNbWRBTmU4SW16d3dOYjZqbWdnNFpsOF9GRlJrY3M?oc=5",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Rayo",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb1VKSTd0Q190VEYtU2ZmcGxLeHRZeHRvQlY4NlhEaVBFaXUyMlFfaWZNZnNCOFNPNUpUbVJwb0VEUjFZZEVHVDNiYTFhSHIyNDdZcGlrNFpnVmZ0ZGp0alVOOS1qQzJiYjRVQnNkRHlaTERRdk96bDBvYjZjT1JBdUJEenlQd3dMeldZaEVVVklsVE5ua0d3UU94UnlMUTJhcURQbVpHX2lBb2k2NlpFR2F2VnE5SjZYRnF6WU9vVV9LM2c?oc=5",
         "contentType": "article",
         "localPublication": false,
         "familyActivity": false,
         "homeArea": true
       },
       {
-        "title": "Thames Water outage confirmed in London as Richmond, Sutton, and Kingston all hit",
+        "title": "Roof destroyed as 40 firefighters tackle house blaze in Surbiton",
         "summary": "",
-        "meta": "Mon 28 Sep",
-        "publishedAt": "2026-09-28T08:00:00+01:00",
-        "source": "LBC",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZGZqdmsyVTZvVWVzUXlaSzVQajhieHlBeGtsLVpoZlBWNjIyc3VkNHpfYjQzUXZFWmZMQWNvU21sVU8wM3MxSHFOUlJUQXRNVC1RbDJrWGhtXzRGSDVZckhGZmdUUzBPS3puRC1mVXROU042a3FNV3RScWl3SF9xVlFET2ZlQQ?oc=5",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSEJLR2dQb2NaNVBHYW1rdFRqcVhlSWc3OEZQekdUd1c3eS1MS1gwNlN2OW9jODJQVFNUTWxaSE9LMFNPLWs3RUJxUTRzWElxSGtVdDFZdm03a1F2dWl6cU5lY0ZCa3FzejROV3g0R0tzSmxTci1SbzEwN2R0Xy03Q0lCVzhCbWNIc0NmVy1JanN4WllmTWk5M3hFUTRMcnBGd1pXd0pPdTBXYkZqcmFvVjNWOA?oc=5",
         "contentType": "article",
-        "localPublication": false,
+        "localPublication": true,
         "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Surbiton school named best prep school in prestigious Tatler Schools Awards 2027",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTUgtQkIxSzJ5MmxsY05leDJGcEl1MHJaRXFRWHQ5R3VVR3ZKMngzWTRFSi1WVE1TRTlnRkZPbE82anZkdEs2TmtPZjl1bllLUmhxMTgxMllmTUViVURHaVd3aFFaMXFaUzAtTVhERG5PbXZ6T0ZlSjhlOUNNYnNUXzRCTjdWNzdqcTVLWHhnSDYyb1FMRjM1R3R3WEo4X0ROcDVrNTl1U2hwODdsSS1Kdkx4M0NyY1F0SFFNVVBqVkJXMHgtaUdIMQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Kingston homeowners urged to check their roofs before winter weather arrives",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPRVc2dEotcFhjbVVBNkRhVF9jTXhLME9qbkJhWHZ1ekFidERPTVFTcXJRV0VtUDVoMHdLMTVsODNNX2JweFhzVHp1WWNsUC1senF0cTZOMTZsejVFbnZrOEpPZmZCa096NjRMVFRrNmxQckszakROXzFvVmpBXzlMcVlRanR5Y0pSbHBOTEFFNzVMTTF5eGJCREhYVUN5dUR0RXlES0JhTEdPYmlSVmVQNzZVcU5pMnZnZjlmcjBCRDhtbGs4MmdCLVN1aDdRQWN6WXYyeU1obXhRZ3o4dHc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T17:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWnFvaU84SVMtWjQtOEhaUGd5NXR2cmNiblM3NlVNR0hEMXE2a201dTFQLW9aSGxzaThUbWpKMnM2OGtwR190R1NObE94YTBFM0wxV3hQeUNyTHJPdmVaY3Jsc0F3OWEwNG9Pck41dmFXY3UtN0dWSjhuamFiOWpsd3c2c21KUTFTWUNCUFlodlNZMHE5UVdTUFg1ZHM4UVNuVzFXd2F6bThyNmxNeHFqcC1iZnZLRUNSdHQtY0ViUVVYZkVTQkNmSWhXTXBVbEluNlBSOG1sTUZNUHhHTWc2QXlkWlBlWE5RZ0xR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Teddington Theatre Club to stage production of ‘Robin Hood’ next month",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T14:36:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSXhQQmxFb1VQemcyY0dHOVI3NlV6RlF4Y0UzeU5RblFBY0w2UTVNRDdpRXp1d3czX2FoSDdOaUZGcFlwT2didEtGblVBZzA0OGFLMXk4b05nMWJkdFR3TVZQNXgtVnpNbTBWX21HZXd2ZWNSdWlNUExMa2hLc2dhYzY3NkRGd1NzS1l0dDFaYkxuamtuN3dJV3N6RUplc09oSkVqOWt2a2RwRFRZTmFJS25UbEJzR21KTDdr?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Little dancers debut at Surbiton Festival",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T15:03:28+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWEROV2FjTVVuMkVmamV5NU41VzhBMndySkFMdExZMWV2anFmSDM1Yk0ydzY5S2lvM3pZYTJxdkpoNEtSbllyWWdYcnVCNU1Ca29JQ3F0b040d0RjYWZiZHdmdnVOMHZYYk5HQnU0N3o2RkFpRE5oeVh5c2FBam9SMl9YQkhzMGNzeUkwcml5UmhEMy1UMDdkOGFWbVhFajg?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Surbiton high street businesses wanted for Christmas event",
+        "summary": "",
+        "meta": "Tue 29 Sep",
+        "publishedAt": "2026-09-29T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN2tCNmlQcjdZSkpVZ1FrYkFCdEFaSXF3MzM1X3l2ZVZPckxlU24tamJNMHZJd3RkY2E3bDhBUUVWTVdMXzNUMnpLcldObkNER1ZGZjE0czRYalBZTkEyVjQ1cjN4a2xuaWtFaFdfVm5qbWxlckRHNkR4SGd2a0I4b092YWx2d1cwTGR1d01nVmNpQjAySFNYUVQ5c01lLXFNaGdnZGpZNjk1UVU?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
         "homeArea": false
       }
     ],
     "UK news": [
       {
-        "title": "New Horizon Crescent International School Named Finalist in British Council Leadership in teaching Award Category",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T18:26:50+00:00",
-        "source": "The Bangladesh Today",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83Q3loTnh1Z1JXbzduek0wcF91TFluRDJXa2ROV2dWVUNzQUhHSzlocEtxbDI5dUN5ZUxKQkZveXVQUjVHS1gxWmRuV1NpTFJTa3VlVFhwUlFZQ1pJNG52ZnBuQ3VXQW1nOEE?oc=5",
+        "title": "'Dissident republicans may be responsible' for hotel explosive device - PSNI",
+        "summary": "The package was discovered at about 15:20 GMT on Tuesday at Ebrington Square in the Waterside.",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T15:19:24+00:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/c6lykg0nkll0o?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
-        "title": "Book celebrates Asians in Britain’s history of fighting",
+        "title": "The award winning 'perfect' chippy in Scotland's 2026 Town of the Year",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T18:26:30+00:00",
-        "source": "Socialist Worker",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQY2VMbC1ZQTQ2WThmbkZGNkNKbWZyU3JwYjJnRTlCNGFKeV9LU3k5aFVFS0RJVXNiWnZ2Q1hvMEZzZEF4S0lOVV81U0RVYWk2UW9xbkpuc1czYklZM2h2b1pIbzN1ZUdtRVRjUzQwd0prRzd3X1ZxS3prUnRJbnFuS2xmNWpsUHZvUnZ1YXY3UTJHbjI5NUtQTzhQMUxMVHZTSnZDN25DNy0?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T14:34:00+00:00",
+        "source": "Daily Record",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUzlzdnI4RmxwWGl6UkZac3BvMHVIUVkzWGpBSnB6em11UXE5N0FhODhleEs5WkpoaU11ekRuczlQUm80UkY0WFBUdnBGWXV3UFJZbk1PX0ZPbUN2T1p3UTZsRGYxblF1N09BNHg5N1N0WDJuT0Q1c3RmTDJhYUZobjRyN202SEVpMlFsTEdzVWxWclF60gGaAUFVX3lxTE92cDB4QnpmT1RIQ0s1SFVuWDVjN1pEd0l0WTNkUExOUDJUamhQRUE0Z0IxX0t5UmlQdk84dy1GOUNONnpNSi1kYlhvekFqQ0lON1BkSEl4ZW1LX3lwMERlUlNKWWt1cUJ2cE0tODNhWDFQVG9Ha2ZwemMxTjhDWk9OTFpneXFaaDNrVzFGaDlUQ2UtdzZfcG9YMmc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Helping Hands Community Project awarded £3,000 to expand access to counselling",
+        "title": "Burnham insists 'no confusion at all' over his Brexit position",
+        "summary": "The prime minister said it was his \"responsibility\" to improve the Brexit deal at a summit in Brussels next month.",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T14:29:29+00:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cqlyejngjenxo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "Innovation lags improving supplier relations, says British Water performance survey",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T16:30:00+00:00",
-        "source": "WarwickshireWorld",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMmpDQjUtTlVkZ3VveWYyNzdBbWdRVDlMVjFmUU82SnRCS3FUUUcydEc0RFZBdlNILTQ0WU5MaV80a1NNSWNlazJrOXlzTGxxSktPeUN3WVpfdEhlX2stckJmeXE2M29uNUs5NmpPcC1HX1U5TEVSRzdCZlZBRjh6VktwZk5oMnRyREFuNGRxeTZzUzRyWXhRZXBnMjRVOGNIUnBkMWxjV29FXzNXSjhEbGMyVHhJMGdaR1diZXlqX2czc0N0ZFBmSTdTVQ?oc=5",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T14:22:54+00:00",
+        "source": "Envirotec Magazine",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR3BieUlPdzBVSVMzbm1oeXJvamM3QXdjMlEwZndBNEREa2FLX3hYVHlTQWlvM05GTjhQRWY3dldBaDctM2ktQjQtWng4NzJDNjM5OW9OUGtYWDVLM25HZEJPcmlsYUlscTlKSWV4dEt6cURRcjVCYVZ4bzloUnRwcUplUlR2cUJkQXNWNWgzM0JyT3MwYldYUnB2OWVQRVBKdmtKd3RKTzRCaXk3NElPYTExWlY5dlRENzdId1JkSXhsUQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Scotland’s renewable energy industry supports 49,200 jobs",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T10:23:40+00:00",
+        "source": "Scottish Construction Now",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU2hLUVVCcno4WEhJYVphWWRRSmVJT0ZxNHI4dlJMZ3NobjNMZmU3NTRxc1JlNlVDT0poRkUzSGlPUzRGeTRXcldzTk5OMEJaaUx6VUI2Rk0wRG5BTDAzVGtCUmd1b01tSUxxWHVnRDRNOVNWc0tmMkhteG9yd2gxOEdSWVY0Qk9BSk9iZS1rUHNnZU9DRG9HMjdTa0ZIT09HWFY2bVV6TQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Tanzania celebrates first natural gas discovery in more than 10 years",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T10:18:40+00:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41TV9XNXFJRm5LZzhMS3MyS05iMS1qRERUaXFoaU4tNXA0QzU0NEJORWVjTTFmQnlWa0ZpazhvT2hRTHg1TDlrOWhRZUZwd0lkTDZfaFo3azM4a0k?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Wrexham celebrates Gold and category win at Britain in Bloom 2026",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T09:30:04+00:00",
+        "source": "news.wrexham.gov.uk",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeVB3X0FGVWRnaTNLNkNUaWVyQW1odVJqeFpsNHJnVWZuNjBlWVB1YWg4TlNvdE0zU2RBb3FJaFYwcXlKanp1VzZBWXlRTkp3WUh5aGRjOUhWb0g3bmtSMHhIU3k5RzEzaExyM1E0cW1qU3pvMExFN0hrTlZSakJod2Q0MkMtbWJFZnN3MGpvbTlHWFI2WXlZZjVR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Superyacht Products Company Sails to International Trade Award",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T08:06:18+00:00",
+        "source": "Business News Wales",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYnBteTNxSXNtYXRkSVBxUmRlUy1HZU1janViRElYOFJNM1BWMEs0YU96QVdUMXduTU52THNkVlBCM080S3J0Wng4V2FLdEY2LUoyakdJTjJSVmp0dDVtZVVYU2x2Vm4tcmxIUHBab0ZXWlJhZllTQXV1UTVRRkUwOTVqVFNIWFM0dnhHeGpZcjEzVlpZQi1GMQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "The Economic Impact of Scotland’s Renewable Energy Sector – 2026 Update",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T04:22:39+00:00",
+        "source": "Fraser of Allander Institute",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcmRUNHNrNTBRNjhtTmJmc0h5WjBHOUZ1NUhEOFhsVS1ZeHNYUUZPY0thMFByYWlOVmdETFBNNV9kWEI3MVVkbW5CQld6N21kUnQta2cxbjYwSm84ejRVWm9pVHRWcU90N3A3MGhpaUJqZUE0NGxmT0EyZzhjc2Vlc1lWR2pDQXJmdlB5XzM1S3lMN3lyRXVPaVZEMmpobUhQVGNXWWQ5bnlBbExsc3RJSQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Nearly 50,000 jobs supported by Scotland’s renewable energy industry",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T00:10:17+00:00",
+        "source": "Fraser of Allander Institute",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNUJBOGhGTWJZYzc3dlQ3OUoxREpHekMySXpacGV5bWVLTVJNRmJxQjV1Z2VxYXVoTmRSaDlHcjhoS0hEcDdMRGpWSndDZVBUVHBCZTh5eHBGWFVuUmZFQzJudW40amU4bkg1ZGRueUpEY1poMlZpTXdUVmtMNW5FM2M3aDFFR1FFNC1pMEJ1aWZRbGNGSzVuZnQ1MmU?oc=5",
         "contentType": "article"
       },
       {
@@ -1042,69 +1177,6 @@
         "publishedAt": "2026-10-27T12:21:15+00:00",
         "source": "France 24",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1QxZF9zMjhreW9PWVhLRWRJdThPak1MZVZUMjNqYXVXR2N0VFZSdXVIWnFQNjI2YmF6WU9hdzJfbmNYVzFvRERQZEZIOHVXTzRLRnVKZFNBT2hBNDRBYVphYVdpaVoyZG4xTEg2aUNFUC1WSlgxc0g5RGFlM2FBZHozMVhqbXdqcllHQ3BtZWxhSVU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Schools recognised at Careers Wales Quality Award ceremony",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T11:30:00+00:00",
-        "source": "Wrexham and Flintshire News, Sport, Events | The Leader",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZ1BkLTZ0dzlZQVQ1Z3VOUkNBYXNEbGdFYXFLMmUyQXFLbnA3dUk0MnZDUDRmNWVTbXNoVF9VNm0tZkxFbEY4bzRBMTEyMEFMY3JvWUJxUXV6blp3blVkSy03djFfQUxkRG1FVDJTUXB6ZWpSd2gyOHQ3X0laSjhoVnQxV1VPbXJEZFdvUTdnWk13a2NqbHc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Stori Brymbo shortlisted for New Tourism Business of the Year award",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T10:22:27+00:00",
-        "source": "Wrexham and Flintshire News, Sport, Events | The Leader",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY25kRnF2R0VqNkdMNFhBVTA2b0Q2bGVZOXhHOUhiakVKLVdQRGxYZ0FlYXFLcHRvWDhmZjhNWkZCRnYyYi1FUTlqLWRkVjhvb1ZhT05YRFpPdEcxWGRZMWF3Tlp0QXIxQnl0MzA2Z0ZjaUE4cng3cXBBMGppX296MjlXU1pRWllxSm1QRjI4eDlrcXBYaS1hQzRR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "England forward Kane crowned Ballon d'Or winner, Putellas wins women's award",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T08:35:48+00:00",
-        "source": "The Citizen",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNThSMkJNWGkyU3BSZEQ2QjVHZGt5bHFrNjVXM2lUaUxfX0RGQWVfLXBwaUwyaGxaZzByMGJyRTBGbnk3V3VMMXVGZjRnc0JPbkpWZnJFQ1JQY0xVZ0w4cEUyMkY1cmdFNzRvbTdkVXhESGtmeFpzRTVUSnhyQXlHbFRiRTdQQ2E3NUhOUXY1Nk9kcEE0alpJZktlYi1KZDdPYlQ1UmZ1Q0U2UVh3SDVQZWZDZmRfR0pobDhnUmtxVTdnUE5aeE1zSjN5VDk2WG5tQXIw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Ballon d'Or 2026: 'He's one of them' - What Mbappé said about Harry Kane after England star won award",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T08:05:37+00:00",
-        "source": "Daily Post Nigeria",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMGZqWTJ1V3luc2U3YlpUN1VVTVZOYW9HSXRBbFU2NmVlZG9vMHhpb2xucGN3YjJ1eHNCVUxkbnRjTFRUX3BxRHYzRTc4U0ZGUURHOFZfdjV0UEhTWWkzSjFiX2FLMXNiWU1VcFIwaEpNRkg2MmhCYUNTYlNkd0hobEd4U09DdkIzUm5DdVVFdnFtOG91WkVCaGl4S1dSeTgta3M4YllQalE4X1pwOTdDcTc3MF9iOEctaTk4eXhJdmRhNzdmWEE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Vent-Axia Celebrates 90 Years of British Innovation",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T08:00:41+00:00",
-        "source": "Installer Online",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd3FMYTZFUDVMeVI2cW1MUXc4NEl4R3VhdVFja1dsRFNiZkt5WUpuZHE5U3Nidm9hSms1T3pOYkh3dWx6TkRQOVQ2d0RiajRkaXh6eFZ2aDBTWDc3RGFvMkEyRC05eTI3RWdrTlQwV3ZDSnJOYlpIdVZOWDVCMlR1T0licXhxclV1TW5zaGtxRGNvbE50NkE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Harry Kane parties with wife Katie in nightclub as England captain celebrates historic Ballon d'Or win",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T07:45:31+00:00",
-        "source": "GB News",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBISjFmSUw5VUhtYVRiaElXbWFTcFdsUXVBclUwN1FsZDJFMy1jbjA2R1RVSEtLc002UzNMMnRKdzF6NFNhNm91OWFLT3RkcTZNSlpjOWx4ZlhCNFl0Qkszd09tWnRkUFlhSElJQUFoLWszNkJSRjROT1ZCQjA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "'I love to escape into a fantasyland of fairies': Fans rejoice as latest Sarah J Maas book hits shelves",
-        "summary": "About 40 fans of A Court of Thorns and Roses series celebrated at a \"lock-in\" event in Carrickfergus.",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T06:21:38+00:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/crly0z4gpddwo?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       }
     ],
@@ -1521,7 +1593,7 @@
     },
     {
       "title": "Sacrifice",
-      "summary": "Sacrifice follows Daniella Hernandez, a highly sought-after entertainment lawyer, as she navigates the nefarious lives of her rich and famous clients.",
+      "summary": "A month after Miguel's death, Daniella's struggle with opioids deepens and her money woes get worse as pressure mounts from the claimants.",
       "meta": "Paramount+ · New today",
       "source": "Paramount+",
       "channel": "Paramount+",
@@ -1529,7 +1601,7 @@
       "releaseDateLabel": "New today",
       "url": "https://www.paramountplus.com/shows/sacrifice/",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/384/962320.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/648/1620859.jpg",
       "artworkAlt": "Sacrifice programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-10-28",
