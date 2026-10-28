@@ -21,7 +21,7 @@ PAYWALLED_PUBLISHERS = frozenset({
     "the information",
     "the athletic", "the new york times", "new york times", "nytimes", "nytimes.com",
     "the washington post", "washington post",
-    "breakingviews", "reuters breakingviews",
+    "breakingviews", "reuters breakingviews", "reuters", "reuters.com",
     "business insider", "insider", "fortune", "harvard business review", "hbr",
     "the atlantic", "the new yorker", "wired", "wired uk",
     "nikkei asia", "nikkei", "south china morning post", "scmp",
@@ -36,7 +36,7 @@ PAYWALLED_PUBLISHERS = frozenset({
 
 # Registrable domains whose articles are paywalled. Subdomains match too.
 PAYWALLED_DOMAINS = (
-    "ft.com", "sifted.eu", "thetimes.com", "thetimes.co.uk", "telegraph.co.uk",
+    "ft.com", "sifted.eu", "reuters.com", "thetimes.com", "thetimes.co.uk", "telegraph.co.uk",
     "wsj.com", "barrons.com", "marketwatch.com", "bloomberg.com", "economist.com",
     "theinformation.com", "theathletic.com", "nytimes.com", "washingtonpost.com",
     "businessinsider.com", "insider.com", "fortune.com", "hbr.org", "theatlantic.com",

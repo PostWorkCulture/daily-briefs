@@ -1177,7 +1177,6 @@ TRUSTED_ARSENAL_TRANSFER_SOURCES = {
     "sky sports": "Trusted report",
     "the athletic": "Tier-one report",
     "the guardian": "Trusted report",
-    "reuters": "Trusted report",
     "espn": "Trusted report",
     "the new york times": "Tier-one report",
 }

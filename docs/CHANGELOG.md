@@ -1,3 +1,8 @@
+## 28 October 2026 (evening): Reuters added to the paywall list
+
+- Pete reports Reuters articles now ask readers to pay, so Reuters (source name and every `reuters.com` page) joins `scripts/paywall.py` and the mirrored list in `js/app.js`, and leaves the Transfer watch trusted list. Syndicated copies on free sites (e.g. Yahoo Finance) remain eligible. Master brief updated.
+- Validation: tests updated; Python, Node and responsive checks pass.
+
 ## 28 October 2026: No paywalled articles anywhere in the brief
 
 - **Approved specification change (Pete)**: Master brief updated to v6.1. Trigger: today's AI lead was a Financial Times story ("Anthropic’s seven founders tighten grip ahead of blockbuster IPO") that is subscriber-only.

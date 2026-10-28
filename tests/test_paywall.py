@@ -20,12 +20,12 @@ class PaywallTests(unittest.TestCase):
     def test_paywalled_publishers_are_rejected_by_name(self) -> None:
         for source in ("Financial Times", "The Telegraph", "The Times", "Bloomberg", "The Wall Street Journal",
                        "The Economist", "The Information", "The Athletic", "Breakingviews", "Barron’s",
-                       "South China Morning Post", "Business Insider", "Dagens Nyheter"):
+                       "South China Morning Post", "Business Insider", "Dagens Nyheter", "Reuters"):
             with self.subTest(source=source):
                 self.assertTrue(is_paywalled(item("Anthropic news", source)))
 
     def test_free_publishers_are_kept(self) -> None:
-        for source in ("BBC", "Reuters", "CNBC", "TechCrunch", "Sky Sports", "Arsenal.com", "Surrey Comet",
+        for source in ("BBC", "CNBC", "TechCrunch", "Sky Sports", "Arsenal.com", "Surrey Comet",
                        "Teddington Nub News", "The Guardian", "London Evening Standard", "Anthropic"):
             with self.subTest(source=source):
                 self.assertFalse(is_paywalled(item("Story", source)))
@@ -35,7 +35,8 @@ class PaywallTests(unittest.TestCase):
         self.assertTrue(is_paywalled(item("x", "Unknown", "https://markets.ft.com/data")))
         self.assertTrue(is_paywalled(item("x", "Reuters", "https://www.reuters.com/breakingviews/abc")))
         self.assertTrue(is_paywalled(item("x", "NYT", "https://www.nytimes.com/athletic/123")))
-        self.assertFalse(is_paywalled(item("x", "Reuters", "https://www.reuters.com/technology/abc")))
+        self.assertTrue(is_paywalled(item("x", "Unknown", "https://www.reuters.com/technology/abc")))
+        self.assertFalse(is_paywalled(item("x", "Yahoo Finance", "https://finance.yahoo.com/news/abc")))
         self.assertFalse(is_paywalled(item("x", "Unknown", "https://www.notft.com/abc")))
 
     def test_title_suffix_and_markers(self) -> None:
