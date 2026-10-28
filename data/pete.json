@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Wednesday, 28 October 2026 · refreshed 4:00am",
+  "updatedLabel": "Wednesday, 28 October 2026 · refreshed 5:11am",
   "worldFact": {
     "id": "santa-cruz-del-islote-crowded-island",
     "editorialPriority": "human-first",
@@ -53,8 +53,8 @@
       },
       {
         "date": "2026-10-31",
-        "high": 14,
-        "low": 8,
+        "high": 15,
+        "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -140,6 +140,20 @@
       "title": "FULL DAYS",
       "summary": "",
       "url": "",
+      "start": "2026-10-26T00:00:00+00:00",
+      "end": "2026-10-28T00:00:00+00:00",
+      "date": "2026-10-26",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7ae7bf",
+      "colorId": "2",
+      "googleEventId": "0gcql5k85bk08jqiqnr9aenjqo",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "FULL DAYS",
+      "summary": "",
+      "url": "",
       "start": "2026-10-28T00:00:00+00:00",
       "end": "2026-10-30T00:00:00+00:00",
       "date": "2026-10-28",
@@ -179,20 +193,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Demi Playdate",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-01T00:00:00+00:00",
-      "end": "2026-11-02T00:00:00+00:00",
-      "date": "2026-11-01",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -205,6 +205,20 @@
       "colorId": "10",
       "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Demi Playdate",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "See Kate and Family",
@@ -353,15 +367,29 @@
       "dateLabel": "Tue 27 Oct",
       "kickoff": "8pm",
       "opponent": "Fleetwood Town",
-      "competition": "EFL Cup",
+      "competition": "Carabao Cup",
       "homeAway": "away",
       "completed": true,
       "arsenalScore": 1,
       "opponentScore": 1,
-      "result": "1–1",
-      "url": "https://www.skysports.com/football/fleetwood-town-vs-arsenal/5392900173048033232",
-      "source": "Sky Sports",
-      "tvChannel": "TBC"
+      "result": "1–1 (lost 3–5 pens)",
+      "scorers": [
+        {
+          "name": "Viktor Gyokeres",
+          "team": "Arsenal",
+          "minute": "50'"
+        },
+        {
+          "name": "Aaron Loupalo-Bi",
+          "team": "Fleetwood Town",
+          "minute": "21'"
+        }
+      ],
+      "scorersLabel": "Gyokeres 50' · Loupalo-Bi 21'",
+      "stadium": "Highbury Stadium",
+      "summary": "League Two Fleetwood Town knocked Arsenal out of the Carabao Cup fourth round 5–3 on penalties after Viktor Gyokeres' 50th-minute equaliser cancelled out Aaron Loupalo-Bi's opener at Highbury Stadium.",
+      "url": "https://www.skysports.com/football/news/13604003/fleetwood-1-1-arsenal-5-3-pens-premier-league-champions-dumped-out-of-carabao-cup-by-league-two-side",
+      "source": "Sky Sports"
     },
     "nextFixture": {
       "date": "2026-11-01T16:30:00+00:00",
@@ -417,19 +445,19 @@
         "contentType": "article"
       },
       {
-        "title": "Arteta: \"We need to take this on the chin\"",
+        "title": "Team news: Dowman starts as two make debuts",
         "summary": "",
         "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:37:31+00:00",
+        "publishedAt": "2026-10-27T19:05:42+00:00",
         "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNTJvbTdDdUt2VWdzNjlVTjBEblRVbWtQdjVjMVM0cnNzeXdqUndRNHY5eV96X2dtMFNjN2pLWk9rU2Y4WkFjeklTdURRbERicjduUnVQWVdUYnVESDFfbXVLMWxRaW56ZWlHOFVMQk1RVllEOURmcWVGTE82QzVyU19sMHBPaUtT?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPenQxZ2pfN3FsSDR1dmtNM1N6V2F2b1phem9RR29QWm9ZNVg4b3ZGYnhURTAyOE9PUm5Tb082MEtLQW9aOUd5VXdMay1yRHIxOGlScU45eEdoNEpXT3doYnUtU0RKcDY1RmZRUnUyN29mMWZEWTZsUTBNZHdYbkF5aHdMN0ZKVjJna0duaQ?oc=5",
         "contentType": "article"
       },
       {
         "title": "Arsenal player ratings: Striker handed 1/10 for 'horror show'",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:38:53+00:00",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T03:40:36+00:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hiUVJublQzNmJtUV96NTg4WVVsZkticnJPR1g1Q1RqVkNoNkZ5SF9mU3JaRTRtellXWkVPQTdMVlY2ZTkyc3B3QktScVd4SGF5Y2p1YTZjQW9QN19HRzlqYUxmR1FVZGpfVXpYRlh2WE1uRUtEeVlmVTFfdkRvMm9qT2VmelRwYTFYSVFzOFFWZmtkWmFkNFdMS1ZTVzFoSzczLTQzRTd6UQ?oc=5",
         "contentType": "article"
@@ -446,7 +474,7 @@
     "transfers": [],
     "transferRumours": [
       {
-        "title": "🚨 Mikel Arteta: “Max Dowman’s red card? I prefer to watch it back properly, and then I can assess the situation”. “We learn from everything, yeah…”.",
+        "title": "Mikel Arteta: “Max Dowman’s red card? I prefer to watch it back properly, and then I can assess the situation”. “We learn from everything, yeah…”.",
         "summary": "",
         "meta": "Tue 27 Oct",
         "publishedAt": "2026-10-27T23:26:18+00:00",
@@ -460,7 +488,7 @@
         "sourceUrl": "https://x.com/FabrizioRomano"
       },
       {
-        "title": "🚨 Mikel Arteta: “Congrats to Fleetwood, it’s a sad day for us. But I cannot fault at all the attitude of the players. I haven’t seen anybody not doing what is required at this level”. “But we insisted so much, we had so much of the ball, so many chances, so many shot",
+        "title": "Mikel Arteta: “Congrats to Fleetwood, it’s a sad day for us. But I cannot fault at all the attitude of the players. I haven’t seen anybody not doing what is required at this level”. “But we insisted so much, we had so much of the ball, so many chances, so many shot",
         "summary": "",
         "meta": "Tue 27 Oct",
         "publishedAt": "2026-10-27T23:25:11+00:00",
@@ -488,7 +516,7 @@
         "sourceUrl": "https://x.com/charles_watts"
       },
       {
-        "title": "🚨 BREAKING: Arsenal have been eliminated from the Carabao Cup by League Two side Fleetwood Town. Fleetwood Town currently sit 18th in League Two.",
+        "title": "BREAKING: Arsenal have been eliminated from the Carabao Cup by League Two side Fleetwood Town. Fleetwood Town currently sit 18th in League Two.",
         "summary": "",
         "meta": "Tue 27 Oct",
         "publishedAt": "2026-10-27T22:09:21+00:00",
@@ -502,7 +530,7 @@
         "sourceUrl": "https://x.com/FabrizioRomano"
       },
       {
-        "title": "🏆✨ OFFICIAL: Bukayo Saka wins Socrates Award for Fair Play at Ballon d’Or 2026. 👏🏿",
+        "title": "OFFICIAL: Bukayo Saka wins Socrates Award for Fair Play at Ballon d’Or 2026.",
         "summary": "",
         "meta": "Mon 26 Oct",
         "publishedAt": "2026-10-26T21:45:56+00:00",
@@ -518,22 +546,22 @@
     ]
   },
   "lead": {
-    "title": "Anthropic | History, Controversies, & Claude AI",
+    "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
     "summary": "",
     "meta": "Wed 28 Oct",
-    "publishedAt": "2026-10-28T01:51:52+00:00",
-    "source": "Britannica",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5",
+    "publishedAt": "2026-10-28T05:00:25+00:00",
+    "source": "Financial Times",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Anthropic | History, Controversies, & Claude AI",
+      "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
       "summary": "",
       "meta": "Wed 28 Oct",
-      "publishedAt": "2026-10-28T01:51:52+00:00",
-      "source": "Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5",
+      "publishedAt": "2026-10-28T05:00:25+00:00",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
       "contentType": "article",
       "section": "AI"
     },
@@ -690,30 +718,21 @@
   "sections": {
     "AI": [
       {
+        "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T05:00:25+00:00",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Anthropic | History, Controversies, & Claude AI",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T01:51:52+00:00",
+        "publishedAt": "2026-10-28T02:51:19+00:00",
         "source": "Britannica",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41Q1h2QkF0SGRpMFZSMVN5al9RNkhQLTR4MDc0cHJNbndmdndTbHE5cGswRFk4SS1JbVhmXzdWNm5KRDlJa3FiUkt6T01MZUNiTjhON2R6cFJtQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T01:16:46+00:00",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T01:15:28+00:00",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0hza3dNdjUwV2kxTjduRGwzRjluVTU0TXJiRWY2WElramdvXzR1MGJtazJ5RXNvcXFrQ3JEVklNdnpCb2E1bUQ5cmRhNmxmM0tpS2hfZHZrZWRQaGtqSWNmZElVMXBvVWU2MUZ4b3hxdEI5U2JwNzFEVGFWMWcyV0xKNnlMSUpVTU5HM2dINHhUeTRFd2hXS2JtRGh0UWpNaWRZRzNDV2RxUlgxS0dJSEIydnk4eFE?oc=5",
         "contentType": "article"
       },
       {
@@ -732,6 +751,15 @@
         "publishedAt": "2026-10-27T21:12:55+00:00",
         "source": "CNBC",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwRlJ6YmptbDNmWFNOakJqd242MXFXWHlMZWlvNWlKRHRQTWRoSEdrUFdldVhUejVRcmRVMVlUYkdINEY0NU1UV2hyTGlPVnhIT0tpbHJzRjROODU1d3hyR05pZS1udmY5QkNoVWdzRXJ6Zkh5MHfSAXtBVV95cUxPcm9OSHFiTElodzF4SUFVQllqOXBraHVXS1E1NWNfMkVNWjJwcW8yLUd5MVhmaTEzUHV3a3A3anZsNXVHMmlsUUNJd2tnN04yYW1MOG1fdkR2anlxMVFqUVF0a0hMWEdidkFsMGhwd1VXMXlMd1ZaNGVTNDA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Early progress on accelerating drug development with Claude",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T20:20:53+00:00",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5",
         "contentType": "article"
       },
       {
@@ -812,6 +840,24 @@
         "contentType": "article"
       },
       {
+        "title": "Team news: Dowman starts as two make debuts",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T19:05:42+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPenQxZ2pfN3FsSDR1dmtNM1N6V2F2b1phem9RR29QWm9ZNVg4b3ZGYnhURTAyOE9PUm5Tb082MEtLQW9aOUd5VXdMay1yRHIxOGlScU45eEdoNEpXT3doYnUtU0RKcDY1RmZRUnUyN29mMWZEWTZsUTBNZHdYbkF5aHdMN0ZKVjJna0duaQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal player ratings: Striker handed 1/10 for 'horror show'",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T03:40:36+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hiUVJublQzNmJtUV96NTg4WVVsZkticnJPR1g1Q1RqVkNoNkZ5SF9mU3JaRTRtellXWkVPQTdMVlY2ZTkyc3B3QktScVd4SGF5Y2p1YTZjQW9QN19HRzlqYUxmR1FVZGpfVXpYRlh2WE1uRUtEeVlmVTFfdkRvMm9qT2VmelRwYTFYSVFzOFFWZmtkWmFkNFdMS1ZTVzFoSzczLTQzRTd6UQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arteta: \"We need to take this on the chin\"",
         "summary": "",
         "meta": "Tue 27 Oct",
@@ -821,30 +867,12 @@
         "contentType": "article"
       },
       {
-        "title": "Arsenal player ratings: Striker handed 1/10 for 'horror show'",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:38:53+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV2hiUVJublQzNmJtUV96NTg4WVVsZkticnJPR1g1Q1RqVkNoNkZ5SF9mU3JaRTRtellXWkVPQTdMVlY2ZTkyc3B3QktScVd4SGF5Y2p1YTZjQW9QN19HRzlqYUxmR1FVZGpfVXpYRlh2WE1uRUtEeVlmVTFfdkRvMm9qT2VmelRwYTFYSVFzOFFWZmtkWmFkNFdMS1ZTVzFoSzczLTQzRTd6UQ?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Arsenal suffer embarrassing Carabao Cup exit to Fleetwood on penalties",
         "summary": "",
         "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:26:47+00:00",
+        "publishedAt": "2026-10-27T23:28:32+00:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ0xHSFRpN0xHdEhJUFBiU2p4SE9Qd21KRzBLbHc5clY0a3RJYW5wNnpSeWZSRU1PeGs3RFJMVWViel9Na1RjdVJOWWFkUTFadVRmS3YtakQ0emE0NTM1cFF0WjYyd1dXOGFZdllmZFBsSFdGbk4wZWZNNTNueFZoemV5cHQ4YTJUVlBEWTVXcWpSbVZjWTlKcGFjVk1PQkdHaHJtZnpB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Dowman starts as two make debuts",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T19:05:42+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPenQxZ2pfN3FsSDR1dmtNM1N6V2F2b1phem9RR29QWm9ZNVg4b3ZGYnhURTAyOE9PUm5Tb082MEtLQW9aOUd5VXdMay1yRHIxOGlScU45eEdoNEpXT3doYnUtU0RKcDY1RmZRUnUyN29mMWZEWTZsUTBNZHdYbkF5aHdMN0ZKVjJna0duaQ?oc=5",
         "contentType": "article"
       }
     ],
@@ -972,6 +1000,15 @@
     ],
     "UK news": [
       {
+        "title": "New Horizon Crescent International School Named Finalist in British Council Leadership in teaching Award Category",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T18:26:50+00:00",
+        "source": "The Bangladesh Today",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83Q3loTnh1Z1JXbzduek0wcF91TFluRDJXa2ROV2dWVUNzQUhHSzlocEtxbDI5dUN5ZUxKQkZveXVQUjVHS1gxWmRuV1NpTFJTa3VlVFhwUlFZQ1pJNG52ZnBuQ3VXQW1nOEE?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Book celebrates Asians in Britain’s history of fighting",
         "summary": "",
         "meta": "Tue 27 Oct",
@@ -1026,6 +1063,24 @@
         "contentType": "article"
       },
       {
+        "title": "England forward Kane crowned Ballon d'Or winner, Putellas wins women's award",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T08:35:48+00:00",
+        "source": "The Citizen",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNThSMkJNWGkyU3BSZEQ2QjVHZGt5bHFrNjVXM2lUaUxfX0RGQWVfLXBwaUwyaGxaZzByMGJyRTBGbnk3V3VMMXVGZjRnc0JPbkpWZnJFQ1JQY0xVZ0w4cEUyMkY1cmdFNzRvbTdkVXhESGtmeFpzRTVUSnhyQXlHbFRiRTdQQ2E3NUhOUXY1Nk9kcEE0alpJZktlYi1KZDdPYlQ1UmZ1Q0U2UVh3SDVQZWZDZmRfR0pobDhnUmtxVTdnUE5aeE1zSjN5VDk2WG5tQXIw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Ballon d'Or 2026: 'He's one of them' - What Mbappé said about Harry Kane after England star won award",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T08:05:37+00:00",
+        "source": "Daily Post Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMGZqWTJ1V3luc2U3YlpUN1VVTVZOYW9HSXRBbFU2NmVlZG9vMHhpb2xucGN3YjJ1eHNCVUxkbnRjTFRUX3BxRHYzRTc4U0ZGUURHOFZfdjV0UEhTWWkzSjFiX2FLMXNiWU1VcFIwaEpNRkg2MmhCYUNTYlNkd0hobEd4U09DdkIzUm5DdVVFdnFtOG91WkVCaGl4S1dSeTgta3M4YllQalE4X1pwOTdDcTc3MF9iOEctaTk4eXhJdmRhNzdmWEE?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Vent-Axia Celebrates 90 Years of British Innovation",
         "summary": "",
         "meta": "Tue 27 Oct",
@@ -1035,48 +1090,21 @@
         "contentType": "article"
       },
       {
+        "title": "Harry Kane parties with wife Katie in nightclub as England captain celebrates historic Ballon d'Or win",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T07:45:31+00:00",
+        "source": "GB News",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBISjFmSUw5VUhtYVRiaElXbWFTcFdsUXVBclUwN1FsZDJFMy1jbjA2R1RVSEtLc002UzNMMnRKdzF6NFNhNm91OWFLT3RkcTZNSlpjOWx4ZlhCNFl0Qkszd09tWnRkUFlhSElJQUFoLWszNkJSRjROT1ZCQjA?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "'I love to escape into a fantasyland of fairies': Fans rejoice as latest Sarah J Maas book hits shelves",
         "summary": "About 40 fans of A Court of Thorns and Roses series celebrated at a \"lock-in\" event in Carrickfergus.",
         "meta": "Tue 27 Oct",
         "publishedAt": "2026-10-27T06:21:38+00:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/crly0z4gpddwo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
-        "title": "England forward Kane crowned Ballon d’Or winner, Putellas wins women’s award",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T02:56:21+00:00",
-        "source": "The Kathmandu Post",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVTJjZEg2bEdJcU05YV9pdWJteHdleTNZbE16YUQ4Mk9kYmllOUkxNC1YendMajFOLUctZjRMaU4wU1p4dVM1UFB4RS1pby1CbWRjU1FHWjJsdW1reGh4WnhybUdBZjdPcDRqSE1jeXlGTnVzZUpJUU5fV2M5ZWltakpDMDVLeV8xNG5rMU54OXB3QThLcHlzWjFYOXdIbE5pSWdXaXNGa1NJbGs4TDhKV3pXek00WWtRM2FZUldB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Kane wins Ballon d'Or as he becomes first England star to bag award in 25 years",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T00:09:41+00:00",
-        "source": "The Sun",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tWWU4TkRibVB3VmhnY1RhTjVnanpJcU1EbHlpbWw2T2o3SW8xNGJVVHQ5bWJsRUEyOVVLMmJQZ29CT1VrMkg1S2hCb0dVTzBrYW9nc2FNQ0xXM2xiRW9RTGdKNEdhVzVuQURUY29GdUV3b1pXVGc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Has Harry Kane won Ballon d'Or? England captain's history with soccer award",
-        "summary": "",
-        "meta": "Mon 26 Oct",
-        "publishedAt": "2026-10-26T23:59:00+00:00",
-        "source": "USA Today",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbGtfQkRkbnFFb2p6cGFlODZ2bDhVTWpIT1doS3dQMWRZVkxvVGlZT3pKSllnYnJGS0E2NWp0ZUdhcEZxMTV3U0Zubkt3QzNOUVJxN2NuRkI3Q253ZHdSMkpIMGV0OEkyN3pINnNsX2dPZnVmUVFNcG9vY3BySkFiUUw3S014RGRiR2dYOGs3OVFGaWhaaG9qdDQxRmt5dy1aeUNEYUxpT01nQ3hNUkpN?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "England’s Harry Kane wins Ballon d’Or, Alexia Putellas takes women’s award",
-        "summary": "",
-        "meta": "Mon 26 Oct",
-        "publishedAt": "2026-10-26T23:34:24+00:00",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVnoxNzJXbVljNmZZSXM3d0dvT2E0MXZmR3g2LV9tX1dvZkh6Qk8yQUEydkVXQ1Z2QlQ3REx5ajlWM2h1X2FTY1QyWmhoalV4VVNGQ2JIMkJldjZ2SHdMVm8wQjN1VUpNVEhCNjN4MTY5SEdITktMTXp2VGdhay1iT3ZwdFhfYU5HNkZ3OUFQZzFRWkxNampTSVB3enE2TWRPNVBSNWZJd21GVXJ3aU1DYkp4WEPSAboBQVVfeXFMTzkzZWR0a0VYMDNuUGdhU1BoRXc4dG9ucjZaYk91aDNoNFZEbjdUVkZNM0FqMVpPRFU1LUpHeURiREVPU0NTQ0p4cXhIV09BeW9Ub2hIdGJ3UVBmUnA2eFFJZk9xOXZOUExFcUVoSU50S1p2Vy00RW5JNWl0TU9yTUJJd25VMG16UkNFemxkRElHUUdQcVVxbmlkdW9HUFRJZGNuZXR2R0hXejRpRXVKQzhpTnRoXzdvbkNB?oc=5",
         "contentType": "article"
       }
     ],
@@ -1152,7 +1180,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-22"
+        "verifiedAt": "2026-10-28"
       },
       {
         "id": "teddington-beer-2026",
@@ -1197,7 +1225,7 @@
         "venue": "kew-gardens",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-22"
+        "verifiedAt": "2026-10-28"
       },
       {
         "id": "landmark-sparkle-festive-fair-2026",
