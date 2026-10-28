@@ -6,7 +6,7 @@
 - **Browser safety net** (`js/app.js` `stripPaywalled()`): Mirrors the publisher/domain list and strips paywalled items from every section, Arsenal lists and Home cards as data loads, substituting the next readable story for a removed Home card.
 - **Conflict resolved by Pete's instruction**: The Athletic/The New York Times leave the Transfer watch trusted list (both are paywalled); Reporter watch X posts are unaffected.
 - **Related quality fix**: Encyclopedia/dictionary pages (Britannica, Wikipedia, Investopedia) are excluded from editorial sections; today's AI list contained a Britannica entry.
-- **Validation**: New `tests/test_paywall.py`; 167/167 Python tests pass.
+- **Validation**: New `tests/test_paywall.py`; 167/167 Python tests and 5/5 Node tests pass (`loadProfile()` calls the browser gate only when it is defined, so the isolated Inbox/loader test still runs); `scripts/responsive_ui_check.py` passes on mobile, desktop and widescreen.
 
 ## 28 October 2026: Verified Fleetwood Town 1–1 Arsenal (5–3 pens) result
 
