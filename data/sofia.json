@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Wednesday, 28 October 2026 · refreshed 5:15pm",
+  "updatedLabel": "Wednesday, 28 October 2026 · refreshed 7:01pm",
   "worldFact": {
     "id": "santa-cruz-del-islote-crowded-island",
     "editorialPriority": "human-first",
@@ -19,10 +19,10 @@
     "localImage": "assets/scenery/world-fact.webp?v=588b536d93a6"
   },
   "weather": {
-    "temp": "14°",
+    "temp": "13°",
     "summary": "Cloudy",
     "condition": "Cloudy",
-    "currentRainChance": 30,
+    "currentRainChance": 20,
     "daily": [
       {
         "date": "2026-10-28",
@@ -30,7 +30,7 @@
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -64,8 +64,8 @@
         "date": "2026-11-01",
         "high": 13,
         "low": 8,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 30,
         "source": "Met Office"
       },
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 30%",
+      "detail": "Sunny intervals · rain chance around 20%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -109,10 +109,10 @@
         "displayLocation": "Heathrow, Greater London",
         "value": "17.1°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=3c5073c33c58",
-          "page": "https://commons.wikimedia.org/wiki/File:Terminal_5_car_park,_Heathrow_-_geograph.org.uk_-_5645514.jpg",
-          "credit": "Derek Harper · CC BY-SA 2.0",
-          "alt": "Terminal 5 car park, Heathrow",
+          "src": "assets/weather-extremes/hot.webp?v=25e202c5a99c",
+          "page": "https://commons.wikimedia.org/wiki/File:UTC_Heathrow,_Potter_Street_-_geograph.org.uk_-_7746272.jpg",
+          "credit": "Bryn Holmes · CC BY-SA 2.0",
+          "alt": "UTC Heathrow, Potter Street",
           "width": 1600,
           "height": 900
         }
@@ -221,20 +221,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "See Kate and Family",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -246,6 +232,20 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "See Kate and Family",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
       "calendarColorSource": "google"
     },
     {
@@ -277,20 +277,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Choir Performance 10:30-2:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-22T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -303,6 +289,20 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 10:30-2:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-22T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -362,22 +362,22 @@
     }
   ],
   "lead": {
-    "title": "EnviTec Biogas on track for autumn cold commissioning at Swedish biomethane plant",
+    "title": "Djurgården @ Göteborg | Gamla Ullevi in Gothenburg, Sweden",
     "summary": "",
     "meta": "Wed 28 Oct",
-    "publishedAt": "2026-10-28T11:22:04+00:00",
-    "source": "Bioenergy Insight Magazine",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGNjTlktb3FPM3FlaUhTMHVLdHNMVDIwMnVLcVU4Qi16MUFKc0pkQ3JDeXhHUjZsUWJzR3dNQTJrOHJNRXVqV2hJXzZzWngtMlBGUTYtWnU5YVZscGpKNGhBT25OdnB1N2VNYmVoMnFSNzFGSjg3ZXlKcjhxbmdiYTEyRzFIa05XQU9BbEs3RGViU1JGYUxFcTZyelItNFVqNVFPeWVRZ2VQb3owSzFIcjNhRFFCOENqVHc?oc=5",
+    "publishedAt": "2026-10-28T17:57:41+00:00",
+    "source": "Vantage Data Centers",
+    "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSV9Jam5JTkZBTG5Ubl9pZy02MDlENjZqTHhFR3czQkVza0N5Nl9EYkgtbzdhczVPb05YVlhkYng4MzZMcTdPcHVsY2UxME80MEpWa1g1VS1ZczRUNlc2ZE1HV0l2b3hXWG9kcEM0T2FkXzRMZGJsZDBSM3ExU3ZzLVAxaHdMV2dFT25RblFaY2VKWkk1WHduMkhwSFpEeGU5TEd5OERQN3I0MmVoUU1JLUljcmVqRG8yMTZ6RGNLVU5ySVhfQVNnOHEzLUh5ZlhoZTlPY20wSjd2cVpWeXktMHpIWEZyN0IxX0JXS1V4aEtubG1hUWF2Rm5WekpIZDVrMUVQNDA5MVBHeDJScURLcmhxY3ZNR0xEdDlNOUkteU9yM01oX2RXd09nMnF0UVNUS2h2YUJlTHJXWkhqeVMzOVNuUjdUSkpIUTBzdE9LR19CUQ?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "EnviTec Biogas on track for autumn cold commissioning at Swedish biomethane plant",
+      "title": "Djurgården @ Göteborg | Gamla Ullevi in Gothenburg, Sweden",
       "summary": "",
       "meta": "Wed 28 Oct",
-      "publishedAt": "2026-10-28T11:22:04+00:00",
-      "source": "Bioenergy Insight Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGNjTlktb3FPM3FlaUhTMHVLdHNMVDIwMnVLcVU4Qi16MUFKc0pkQ3JDeXhHUjZsUWJzR3dNQTJrOHJNRXVqV2hJXzZzWngtMlBGUTYtWnU5YVZscGpKNGhBT25OdnB1N2VNYmVoMnFSNzFGSjg3ZXlKcjhxbmdiYTEyRzFIa05XQU9BbEs3RGViU1JGYUxFcTZyelItNFVqNVFPeWVRZ2VQb3owSzFIcjNhRFFCOENqVHc?oc=5",
+      "publishedAt": "2026-10-28T17:57:41+00:00",
+      "source": "Vantage Data Centers",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSV9Jam5JTkZBTG5Ubl9pZy02MDlENjZqTHhFR3czQkVza0N5Nl9EYkgtbzdhczVPb05YVlhkYng4MzZMcTdPcHVsY2UxME80MEpWa1g1VS1ZczRUNlc2ZE1HV0l2b3hXWG9kcEM0T2FkXzRMZGJsZDBSM3ExU3ZzLVAxaHdMV2dFT25RblFaY2VKWkk1WHduMkhwSFpEeGU5TEd5OERQN3I0MmVoUU1JLUljcmVqRG8yMTZ6RGNLVU5ySVhfQVNnOHEzLUh5ZlhoZTlPY20wSjd2cVpWeXktMHpIWEZyN0IxX0JXS1V4aEtubG1hUWF2Rm5WekpIZDVrMUVQNDA5MVBHeDJScURLcmhxY3ZNR0xEdDlNOUkteU9yM01oX2RXd09nMnF0UVNUS2h2YUJlTHJXWkhqeVMzOVNuUjdUSkpIUTBzdE9LR19CUQ?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
@@ -399,7 +399,7 @@
       "summary": "",
       "meta": "Tue 27 Oct",
       "publishedAt": "2026-10-27T19:12:14+00:00",
-      "source": "wheretowatch.tv",
+      "source": "theversion.co.uk",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE91TmI1TFpRLTJBR25YcWpFLUpZOC1KSS05aEp4ejF1WW9EUi1BbWM1UWtQM0RINS12eDFYSHJjaGhJU1JPX3V2cmhyQm1NRmZjWTROb3dyWGQ1Zll1MS1kUFVMUTN2anh1UzBVQnlqZFpsdVc0RlE?oc=5",
       "contentType": "article",
       "preferenceScore": 150,
@@ -535,6 +535,15 @@
   "sections": {
     "Sweden": [
       {
+        "title": "Djurgården @ Göteborg | Gamla Ullevi in Gothenburg, Sweden",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T17:57:41+00:00",
+        "source": "Vantage Data Centers",
+        "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSV9Jam5JTkZBTG5Ubl9pZy02MDlENjZqTHhFR3czQkVza0N5Nl9EYkgtbzdhczVPb05YVlhkYng4MzZMcTdPcHVsY2UxME80MEpWa1g1VS1ZczRUNlc2ZE1HV0l2b3hXWG9kcEM0T2FkXzRMZGJsZDBSM3ExU3ZzLVAxaHdMV2dFT25RblFaY2VKWkk1WHduMkhwSFpEeGU5TEd5OERQN3I0MmVoUU1JLUljcmVqRG8yMTZ6RGNLVU5ySVhfQVNnOHEzLUh5ZlhoZTlPY20wSjd2cVpWeXktMHpIWEZyN0IxX0JXS1V4aEtubG1hUWF2Rm5WekpIZDVrMUVQNDA5MVBHeDJScURLcmhxY3ZNR0xEdDlNOUkteU9yM01oX2RXd09nMnF0UVNUS2h2YUJlTHJXWkhqeVMzOVNuUjdUSkpIUTBzdE9LR19CUQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "EnviTec Biogas on track for autumn cold commissioning at Swedish biomethane plant",
         "summary": "",
         "meta": "Wed 28 Oct",
@@ -553,6 +562,15 @@
         "contentType": "article"
       },
       {
+        "title": "IUCN and Sweden launch major new partnership to advance Nature-based Solutions for biodiversity and resilient communities",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T14:02:03+00:00",
+        "source": "International Union for Conservation of Nature",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObW1fcHdldW1ncWw3SEpjdHgyM1pjdmpqSFZWWXl6anRIdDdBTFZxbVZHbU9NcUZHMERUUkRBZVNnTkJ0SjJOd3lVYzlCMC0yTTBMcHJrc2JfMmFlNmpMTXZKVk5ZYXVjdmdVeE5BcTlkMXZRVFBCR3Vub0tKbDdnQ3VjblphWWs1MGFucmczNjVLRDlIM2pMT1BzUENLY0JQN09xenA0QQ?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "European spot power hits multi-year highs from Spain to Sweden",
         "summary": "",
         "meta": "Wed 28 Oct",
@@ -562,39 +580,21 @@
         "contentType": "article"
       },
       {
+        "title": "Saab details specifications of LUUV demonstrator for Sweden",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T17:45:01+00:00",
+        "source": "Janes",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcFBLc0sxdGhVYjZ1clBHbWpRcl91R0lVVmlBM0ZYaVRndURDZ3ZEYWpaeEFIdVo2UklOcW9tOEVqdUE4TWgzN2dBWDBhN2UzazcyMkVrSnFocUFPRGNpV0pSWEFnOWlXMmdseVZQbnNheF9yVFhfS195a0xnTFVpTXFCZ0ZIcTR6d0RSakpDMXdvZVNwQlIxRC1JNExycmt0VnZhdkJnM0p6TjBCWHZOOW1mZlJMeFN2RkpQV1BrMDZiRnJseEN3?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Sweden shares higher at close of trade; OMX Stockholm 30 up 0.33%",
         "summary": "",
         "meta": "Wed 28 Oct",
         "publishedAt": "2026-10-28T17:00:00+00:00",
         "source": "Investing.com UK",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOY2pzQTVwRUZvaE1fdkxPRk5xVTZKS2xXNUtmcXllT3pFa0w3Rk5ud3RFSnVINnZfZDQ4NHBEVjB2NmlxS01wVVVpOXU0aVFxNXlUMGMxSnpoVXdwOERRb1NqT1ZXbTBoeFZBNE43VTF6aWlHeThvdGgxWTZTczBxVzhtMkVFZUV1WHB0T2RDVG9FbjhqeTFxY0padEt5Tm9tNGNSblNTTE9CWmh5b2Rkbll3R0xvZmFveUE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Swedish gambling trade body calls for overhaul of enforcement approach",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T12:09:35+00:00",
-        "source": "SBC News",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1BM1J6M0RTZU9IMjMwdzVjMzRnYlJUNHdISVdkeS1lUlZxWExxRjk5REhKb3Rrc3dsUnJLOEpFZWlNT0NheWVlQnVjcGpISnZBRlcwZEs0ZlU4X1FFZ1pPVzJqTHRJWU9IelZ4VHNGRW5lRVhZbi1yd1lR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Kasper Kleihs Makes Chocolate History for Sweden at World Chocolate Masters 2026",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T14:03:28+00:00",
-        "source": "Falstaff",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnNNaVR3UThsUFZ4Smo0djNvT2VSWGw2YzdfVDJTTFhLQTZHZ2xIbWN5cDBKTVJBZDZmN2RmWnZ5c3FVVHNTSWVObm54ME8tdjZVT3NERmJ4YU1XV1hLdENPX2hCWmY3YW9Rd2kzTWZYZExWbk9OUHRGODI2R1VBa0pUOXo4MVZPRUJUanhVYXp6UnJ2ZGtLdDduX3BKNGdpUjRiRnByZHRJeXh2TzBxa05ITDhPUXFEUkE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Villoid enters Sweden with ex-Desenio chief Fredrik Palm backing push",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T09:58:11+00:00",
-        "source": "Dealroom",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQS1BWUWlXdjJjOEIyX09NbmY4ci1kYWFabDk1NV96OGN5UUJ6cUFBMHdwVHdYZGhUekVMY3pCWlBVSVNSellfV1J2VnI5Umg1VVhrZ3o2STJHMmdUNEFVdUdGRjg4UE5aaU9sWkcwajBXVG9hek1PaXU0eERjemNBMDI4cF9MUDVEWUNMOTdYbE9qYUtiQ254WW82R1NmYTZwUkUxV0ln?oc=5",
         "contentType": "article"
       }
     ],
@@ -609,6 +609,18 @@
         "contentType": "article",
         "localPublication": false,
         "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Hampton Court dazzles as host of sold out running festival",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T13:47:20+00:00",
+        "source": "South West Londoner",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPblgycm90aVRwWjRMXzBwNURuanFSVTJXMFFqRmlpcnNzOUVVbDlHQVNER19FMFpwVWRRSWNJcGRPNC1GeWdhMnJhSEMyUHQ5T0pDZG1KbGNlR0I1YURkX0RnU1BseGxXZWVuSl9NcXVTM3oxVkF3LWdXY0hqdWJqTjRIVVA4SFNuTmVYS1ZLa0ZFaE1CZC1uTUN2T2tsb0wxWFBV?oc=5",
+        "contentType": "article",
+        "localPublication": false,
+        "familyActivity": true,
         "homeArea": false
       },
       {
@@ -636,18 +648,6 @@
         "homeArea": false
       },
       {
-        "title": "Kingston-based, AI-assisted band releases Halloween single",
-        "summary": "",
-        "meta": "Wed 21 Oct",
-        "publishedAt": "2026-10-21T13:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU1djSVZSLUV1TkNfZVhVcVhyYjF1Qi1wWFhXTlpIc2todjN0WWRNcWVWUzd1OTRVNGR1NzdmMngzSk1YOXBEcUdtZzFrT3QxcnN3bGVtVDlpMXU1dkNSVTcyeXZJVUdKcWM5SXg1YnhyeHFxTzMwWm1uUWJjSEFDTlhEaVVBVkgxcmV3cFFBWlBGMFQ3ejlUcVh5d3Q4cEs3Y1JmV0sxU1dzdw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
         "title": "Ancient Market stalls reopen after Kingston fire as Christmas events return",
         "summary": "",
         "meta": "Wed 21 Oct",
@@ -660,15 +660,27 @@
         "homeArea": false
       },
       {
-        "title": "Santa reads childrens own Christmas letters back to them through new Hampton service",
+        "title": "Classic Halloween movies to be screened at special cinema event in Kingston",
         "summary": "",
-        "meta": "Mon 19 Oct",
-        "publishedAt": "2026-10-19T10:30:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmlYUzhpYW9HbmxpZ2tNNEF1QlVkN1ZwYnFSV0lPWm1mMVZFTFNMYTZCbk1oUnd4T3VSSjVyTVJpYjU5bW5FUlc1X0x3clJEUUlRZ1hzQktjSFYyU2pYMk9iak82ZHVSMmNUSW5md012b2ZIaDdyVm9lcnJ5SEtSY250bkNzUkp2OTZmRDE5WnVfdldNMktoQ3RrNDVGaGo5QUxoQW5vdDVUdG92Nkk0VWxLeWpTdUE?oc=5",
+        "meta": "Tue 20 Oct",
+        "publishedAt": "2026-10-20T17:14:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVm1SNnJuNEpMOUUxOE1ENkF1eVFSc09PdUFkZTBlNzVJcEk2LWVIUU9rM0p2Y1d0OEJwNzVwU1N3ak1ZUklVdkpHNVdscGRqVHVWOThyczRPM2FMT1dtUkZKbmVVNmwxZ3RwSkZJTVFhR2M3d1dDZnk5Vkp6eG0xSkRMMzczckxTbFhWakh5SzB2RUdQVGlxWHlxSEFvNWoyeEZSblFwVG5mRkdKY093bzdrUEV4b3RDSVNJRktrS2h1UQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Signature at Surbiton opens its doors",
+        "summary": "",
+        "meta": "Tue 20 Oct",
+        "publishedAt": "2026-10-20T08:00:00+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQTQzQ1VYUmJMaElqbkxxSFVlT3JRVUNjaFEtaDlfdldUSll3bEhqM2Y0NkhwS0NTYjlDZDRjOEVTTlpqWk5ObXRKek01dW4tV0tjMHJwSTdvUlRvMlVUR0tSdGZwQUM2VkZRMW8wb3hPcE9QTUQ4cV9YNkg5SlVQNQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
         "homeArea": false
       },
       {
@@ -696,108 +708,33 @@
         "homeArea": true
       },
       {
-        "title": "Roof destroyed as 40 firefighters tackle house blaze in Surbiton",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T08:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSEJLR2dQb2NaNVBHYW1rdFRqcVhlSWc3OEZQekdUd1c3eS1MS1gwNlN2OW9jODJQVFNUTWxaSE9LMFNPLWs3RUJxUTRzWElxSGtVdDFZdm03a1F2dWl6cU5lY0ZCa3FzejROV3g0R0tzSmxTci1SbzEwN2R0Xy03Q0lCVzhCbWNIc0NmVy1JanN4WllmTWk5M3hFUTRMcnBGd1pXd0pPdTBXYkZqcmFvVjNWOA?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Surbiton school named best prep school in prestigious Tatler Schools Awards 2027",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T08:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTUgtQkIxSzJ5MmxsY05leDJGcEl1MHJaRXFRWHQ5R3VVR3ZKMngzWTRFSi1WVE1TRTlnRkZPbE82anZkdEs2TmtPZjl1bllLUmhxMTgxMllmTUViVURHaVd3aFFaMXFaUzAtTVhERG5PbXZ6T0ZlSjhlOUNNYnNUXzRCTjdWNzdqcTVLWHhnSDYyb1FMRjM1R3R3WEo4X0ROcDVrNTl1U2hwODdsSS1Kdkx4M0NyY1F0SFFNVVBqVkJXMHgtaUdIMQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Kingston homeowners urged to check their roofs before winter weather arrives",
-        "summary": "",
-        "meta": "Wed 14 Oct",
-        "publishedAt": "2026-10-14T08:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPRVc2dEotcFhjbVVBNkRhVF9jTXhLME9qbkJhWHZ1ekFidERPTVFTcXJRV0VtUDVoMHdLMTVsODNNX2JweFhzVHp1WWNsUC1senF0cTZOMTZsejVFbnZrOEpPZmZCa096NjRMVFRrNmxQckszakROXzFvVmpBXzlMcVlRanR5Y0pSbHBOTEFFNzVMTTF5eGJCREhYVUN5dUR0RXlES0JhTEdPYmlSVmVQNzZVcU5pMnZnZjlmcjBCRDhtbGs4MmdCLVN1aDdRQWN6WXYyeU1obXhRZ3o4dHc?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
-        "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T17:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWnFvaU84SVMtWjQtOEhaUGd5NXR2cmNiblM3NlVNR0hEMXE2a201dTFQLW9aSGxzaThUbWpKMnM2OGtwR190R1NObE94YTBFM0wxV3hQeUNyTHJPdmVaY3Jsc0F3OWEwNG9Pck41dmFXY3UtN0dWSjhuamFiOWpsd3c2c21KUTFTWUNCUFlodlNZMHE5UVdTUFg1ZHM4UVNuVzFXd2F6bThyNmxNeHFqcC1iZnZLRUNSdHQtY0ViUVVYZkVTQkNmSWhXTXBVbEluNlBSOG1sTUZNUHhHTWc2QXlkWlBlWE5RZ0xR?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Teddington Theatre Club to stage production of ‘Robin Hood’ next month",
-        "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T14:36:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSXhQQmxFb1VQemcyY0dHOVI3NlV6RlF4Y0UzeU5RblFBY0w2UTVNRDdpRXp1d3czX2FoSDdOaUZGcFlwT2didEtGblVBZzA0OGFLMXk4b05nMWJkdFR3TVZQNXgtVnpNbTBWX21HZXd2ZWNSdWlNUExMa2hLc2dhYzY3NkRGd1NzS1l0dDFaYkxuamtuN3dJV3N6RUplc09oSkVqOWt2a2RwRFRZTmFJS25UbEJzR21KTDdr?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
-        "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T08:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Little dancers debut at Surbiton Festival",
-        "summary": "",
-        "meta": "Wed 7 Oct",
-        "publishedAt": "2026-10-07T15:03:28+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWEROV2FjTVVuMkVmamV5NU41VzhBMndySkFMdExZMWV2anFmSDM1Yk0ydzY5S2lvM3pZYTJxdkpoNEtSbllyWWdYcnVCNU1Ca29JQ3F0b040d0RjYWZiZHdmdnVOMHZYYk5HQnU0N3o2RkFpRE5oeVh5c2FBam9SMl9YQkhzMGNzeUkwcml5UmhEMy1UMDdkOGFWbVhFajg?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Surbiton high street businesses wanted for Christmas event",
+        "title": "Burst Molesey main disrupts water supplies across Surrey and South London",
         "summary": "",
         "meta": "Tue 29 Sep",
         "publishedAt": "2026-09-29T08:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN2tCNmlQcjdZSkpVZ1FrYkFCdEFaSXF3MzM1X3l2ZVZPckxlU24tamJNMHZJd3RkY2E3bDhBUUVWTVdMXzNUMnpLcldObkNER1ZGZjE0czRYalBZTkEyVjQ1cjN4a2xuaWtFaFdfVm5qbWxlckRHNkR4SGd2a0I4b092YWx2d1cwTGR1d01nVmNpQjAySFNYUVQ5c01lLXFNaGdnZGpZNjk1UVU?oc=5",
+        "source": "London Daily News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS01lUWkwTDUyNnJRMEFCMnl5ZG1NbmZma2dKSUR3eldEWFY2bEE3TzY5c21ZanFRLXdGMVdpMEpET0dWY21pWUlQdVEyU1ZPQmRLUE5leEJ1MFVVNk1FaGZqdVlNOFQ2T0xZQl9uZkxFM0NpbmlfUmFZZ0hOSjdLRnBMWlJGS2VIQXRLZUFpeTZTRERjb2F1aUJoMzNjM19jM3lhR1d3?oc=5",
         "contentType": "article",
         "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
+        "familyActivity": false,
+        "homeArea": true
       }
     ],
     "UK news": [
       {
-        "title": "'Dissident republicans may be responsible' for hotel explosive device - PSNI",
+        "title": "Holyrood reception celebrates universities as Universal Partners",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T17:39:27+00:00",
+        "source": "Universities Scotland",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObXBmT1FOU3R4QldScHZ5T003anVkR3p2dHV4NERpQ3BOZnREdWVHX0ViT0JCWVFoY1dEaTRMMUpoZmdnb3VORWZ0QUl6SFRycHF3bVRIVTBJczFDTmtoSWtneXE3TGdGdTNBYWFhMUFqWHVsMU1HMDBoU0VCdDM5T0c0anNKN3ZQaHVRUHljeDlVTGVNVHgwa1hXTUVZNzUzb2JJR1cwSEI?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "'Dissident republicans may be responsible' for hotel explosive device",
         "summary": "The package was discovered at about 15:20 GMT on Tuesday at Ebrington Square in the Waterside.",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T15:19:24+00:00",
+        "publishedAt": "2026-10-28T17:38:39+00:00",
         "source": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/c6lykg0nkll0o?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
@@ -812,30 +749,12 @@
         "contentType": "article"
       },
       {
-        "title": "Burnham insists 'no confusion at all' over his Brexit position",
-        "summary": "The prime minister said it was his \"responsibility\" to improve the Brexit deal at a summit in Brussels next month.",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T14:29:29+00:00",
-        "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/cqlyejngjenxo?at_medium=RSS&at_campaign=rss",
-        "contentType": "article"
-      },
-      {
         "title": "Innovation lags improving supplier relations, says British Water performance survey",
         "summary": "",
         "meta": "Wed 28 Oct",
         "publishedAt": "2026-10-28T14:22:54+00:00",
         "source": "Envirotec Magazine",
         "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR3BieUlPdzBVSVMzbm1oeXJvamM3QXdjMlEwZndBNEREa2FLX3hYVHlTQWlvM05GTjhQRWY3dldBaDctM2ktQjQtWng4NzJDNjM5OW9OUGtYWDVLM25HZEJPcmlsYUlscTlKSWV4dEt6cURRcjVCYVZ4bzloUnRwcUplUlR2cUJkQXNWNWgzM0JyT3MwYldYUnB2OWVQRVBKdmtKd3RKTzRCaXk3NElPYTExWlY5dlRENzdId1JkSXhsUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Scotland’s renewable energy industry supports 49,200 jobs",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T10:23:40+00:00",
-        "source": "Scottish Construction Now",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU2hLUVVCcno4WEhJYVphWWRRSmVJT0ZxNHI4dlJMZ3NobjNMZmU3NTRxc1JlNlVDT0poRkUzSGlPUzRGeTRXcldzTk5OMEJaaUx6VUI2Rk0wRG5BTDAzVGtCUmd1b01tSUxxWHVnRDRNOVNWc0tmMkhteG9yd2gxOEdSWVY0Qk9BSk9iZS1rUHNnZU9DRG9HMjdTa0ZIT09HWFY2bVV6TQ?oc=5",
         "contentType": "article"
       },
       {
@@ -854,6 +773,15 @@
         "publishedAt": "2026-10-28T09:30:04+00:00",
         "source": "news.wrexham.gov.uk",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeVB3X0FGVWRnaTNLNkNUaWVyQW1odVJqeFpsNHJnVWZuNjBlWVB1YWg4TlNvdE0zU2RBb3FJaFYwcXlKanp1VzZBWXlRTkp3WUh5aGRjOUhWb0g3bmtSMHhIU3k5RzEzaExyM1E0cW1qU3pvMExFN0hrTlZSakJod2Q0MkMtbWJFZnN3MGpvbTlHWFI2WXlZZjVR?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Scotland’s renewable energy industry supports 49,200 jobs",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T08:29:47+00:00",
+        "source": "Windtech International",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSEt4VU5qT0dwbkJZcE9fYW1paWdfcGpaNUtpTTlSV1h4emtKSkNmTEJ0RlZIci1ieC0xTDVaUmdjR1dfT2VLNUlDU1IyV3BydzNnWVhiWkI3Q3FuU1RQQkdySEJOc0xHTnBlb1I2ZTdKZFVLVWJJNTJUbGlnRHpZd05PaFFaSk1QYzd2cUktMnJrVUZiMlZxNkI4VEI5UzhSSjFwQmUxOG1KRnpOUVE?oc=5",
         "contentType": "article"
       },
       {
@@ -904,12 +832,12 @@
     ],
     "AI": [
       {
-        "title": "Anthropic unveils additional Claude tools for lawyers",
+        "title": "TheAnthropic IPO Arrives: My (but not) the Anthropic Valuation!",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T16:43:56+00:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbFBaWDBVa3BKM0dEcGpjZldpYXlJb1pZdDYtMFFOaDJpMEtjWkVyaGMtVHhGd0pwZDRLLUJhNnlveHJwZHNsckY1STlMZXBuc1Z4SUpiSEJVTFlWR0I5d1o3X3ZabkRNMkE0TDRTaVNiVnRzS0o4S1JTcllTVUVPZ1JXOFI1bFV2dm1JaE00YzluSGZwY2V4NDk1aVB3c1RTX2pFZUk5SzQ?oc=5",
+        "publishedAt": "2026-10-28T18:19:59+00:00",
+        "source": "Aswath Damodaran | Substack",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwN2NNTWhtN2tqTEVZbGpvbngtc1BoS3hJNEJidWtMbERSVDNOVnFKQmpVUDlyS01odkZlVVowY3pKdm8zbTl3NGJ2WmVCTXFiODFfZWJBZ2hweThiUTQxWkFDdmhZN2N6dVBZTzdOT1NHYVpFVDVyM0RpNlQwVGc?oc=5",
         "contentType": "article"
       },
       {
@@ -922,21 +850,12 @@
         "contentType": "article"
       },
       {
-        "title": "Anthropic Increases Legal Vertical Push With ‘Artifacts’",
+        "title": "US tech giant Google unveils Gemini 4 Carbon AI model",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T15:17:39+00:00",
-        "source": "Artificial Lawyer",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWnpERjQ4ZVR5WVVMZzRtdGJfMmFMWVRsUkhicmJrNnhWM21yZ1ZKQzBoTTlyTXBfbi1ZR2d5MVo4eVNxbThMU3J1SGcxaGNjd2FrQ09tNnFGS2xfUWFHV0JjRFBwZ0poU3JwUHN1VzAxU01BMUNjejZWZ2daRXpEa2RrcmNwN2FSLV9qVDFIUDEwUktHMHlOc0t3MjNPdUpV?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Gemini 4 Carbon: Our next frontier model",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T17:00:58+00:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "publishedAt": "2026-10-28T18:30:56+00:00",
+        "source": "Anadolu Ajansı",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSi1KWGZoWjFtZUwxWFl3cFJsSzNVRXhNY1MxaUdqQWU3QW8xTXE0SHF5YVJqaGliR29pZlEyaFpOQklzcTZzdFNJOFdJOVMzekZwdXY2bEhCaUlJYWRQWk03YUxyS3BaOXdTMDdHaTQ1dXU1RkVMOV9vamtXVXEzNmxPdEl1YnhDR2lNa1VMbUlrbjhGRWRn?oc=5",
         "contentType": "article"
       },
       {
@@ -949,21 +868,30 @@
         "contentType": "article"
       },
       {
-        "title": "Nvidia Faces Fresh Challenge as OpenAI Expands AI Bets",
+        "title": "OpenAI releases AI claims in maths, computer science",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T15:43:45+00:00",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTXVEUU43RGJzNGZsZDV6NkFQbzZWZ3ZEa21KZVFnRk1fTXk3aW9CcUhxcmxGRkN4bDhoREkyTndZR05QOXF6LVpyOGR2SndleHAyQ0tjNGFQLVBYWTZpNG1ldHprN1B0eTNTR1JPRTRfNVRnMksyZkVzb3JGSTFIUFZIcFJpVkxBMjlUR0twc3VUSk9lUmRqLWJfakI5dGRGQ1k4T1ZrellJd1k2b0NaVWdyNkU?oc=5",
+        "publishedAt": "2026-10-28T15:45:00+00:00",
+        "source": "IT Brief UK",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdE03NEF3Ull6TWFaNGRBc0xucy0wOXU5UzM4WGc2aHdkRExLY3VaWVduaFZBNmdnaDJRMkxRTE13Nnk1aDZXM1B4b2tpaUg0T2N2ZmxJMzh5XzNjdlhiSTNuaHlPRzItZmJKWjhjUnk0TUNHYzFKUWpQdWhyZU5IbEFjNENnZw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
+        "title": "OpenAI sued over allegedly dangerous ChatGPT medication advice",
         "summary": "",
         "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T15:14:03+00:00",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS0JoelZlbzZ1cUdhbVZyVGFIS0p6VUdoSW9Va3YxSm9NaU5zQUVKU2VoTVl6YUhxVDNVSzRRQzhJMmRyTWNyekpMdmxDYmRYQ3RtT2d0R295eFljUVVYTlQ2b3FzNzB5c3pGelNaYUctVDZWZGpWUmYyQ2ptX0lTMlpiQXBweGtLb0lEYmdtaGR6djVtYTgxVFhVLVg4NXlaano1aVlRVmlJX1RGTmc?oc=5",
+        "publishedAt": "2026-10-28T14:40:00+00:00",
+        "source": "MobiHealthNews",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVRhTU5DN0hrSXdSVEsyRmhTZE9mTmxmZTFMaWg3WGRranlyRXZIeVhWaXZySm51UVV6LU1kMzhDZGZUNHNBX1lkbldWcllNS1dTLXpmZFJUNkhQa1c3VTlDRUV5Q2hQUEh2MWIwTF9Ld25mSGtwakpGQzEtcGhaMUhfQXJodExFRDdtUmJGLVE0emtZWUROc1h2SFViaEU?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "OpenAI launching election war room to track interference efforts",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T14:00:00+00:00",
+        "source": "Politico",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVVZfeUFPaHlSb3RSN0Q5VGtFcmhNODBoOEhLMmVZcFU2S2QxbzJVcHVPV21LX3FLYzRsQ3RtNjdyak1GekpldmhLUTBnYmlJNTJHMVZIM2h4VEoyZWN5aDlhcDZFSmhZVkZZT3pQSktEeGFRQ0Y1YzhFNWQ2OTdCc0dXWWFrLXJyelRpOGNSb3M?oc=5",
         "contentType": "article"
       },
       {
@@ -977,22 +905,22 @@
         "liveChineseLab": true
       },
       {
-        "title": "DeepSeek AI model shows safety gaps in independent tests",
+        "title": "Moonshot AI launches new Kimi model with reduced hacking capabilities",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T10:51:37+00:00",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ2VtNkRpTEd1M2w3YzYwUE9XV1BYblFJODQxWnhPVngzX2NHNkZjZV9fcTZwVWZpeWVYa3hmQ1hnbjR1M2p6b0FId28xR0xFaF9oLUQ5RU1fd0NXVDV1UTJPeERPZTU0UHkxbEtDNkRSdEFDVk9wazVKZjhsT1dNTTVNYTJOb19nVEdscGltelV1d1pRMjRLeXBvQUpVaHg3N0ow?oc=5",
+        "meta": "Mon 26 Oct",
+        "publishedAt": "2026-10-26T14:07:56+00:00",
+        "source": "National Technology News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNenRPckdaRE95dVczUFA4QjVUZVR3SEtJeEN5UjlMSkRtenFTR20ydEpaVXIzclJBZGZkSjk5UGw3LUM5N0tseExjSkw1enE4R0wwWlBhRTVUbHFja2FCOXBSZEtsY1djLWR2VVJHNXkwMjJyb0ExSHpRN25GUjkyOUJYVmVkVnNmeHNSaS1NQlNueXNrRjVVS0NUcV9Ld0tSb3pteU1SMzc0QQ?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
       {
-        "title": "Moonshot AI launches upgraded Kimi model",
+        "title": "DeepSeek, Huawei Narrow AI Performance Gap With Nvidia",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T00:43:44+00:00",
-        "source": "China Daily",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9rUnF3WWotOThlcWhUeUZlV2FTdVBwUGhWblVfS0hzcDhxM0JXXzU2YmdUVS1mYnZ6dWVqNk41cWVadmdmMDFaZWs0ZFc0WGlLaThzSVpRT0JNU2NvZEU1WkFqU2drWTF2OXRvbEdNV0FhdWlrVU9jMnhHOVJDdw?oc=5",
+        "meta": "Mon 26 Oct",
+        "publishedAt": "2026-10-26T08:00:22+00:00",
+        "source": "Silicon UK",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rOUh2SkVQQ0pDT280YktEQWktMVVnY05SdnhCek9iQzAxQXdjN2cyeFcxNlUzTDZMTXRJNVNQdVFaZlJsalZqckNMQzlmSThxQjAxc2tKQW9XQWNnVnRCd01qZHBlYy1DQ18zVw?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       }
