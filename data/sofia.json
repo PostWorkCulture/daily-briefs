@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Thursday, 29 October 2026 · refreshed 4:00am",
+  "updatedLabel": "Thursday, 29 October 2026 · refreshed 10:08pm",
   "worldFact": {
     "id": "batu-caves-thaipusam-272-steps",
     "editorialPriority": "human-first",
@@ -16,10 +16,10 @@
     "fact": "Every Thaipusam, hundreds of thousands of Hindu pilgrims climb the 272 steps to Malaysia's Batu Caves, past a 42.7-metre golden statue of Lord Murugan, to reach a temple inside a vast limestone cave that the outside world barely knew of until 1878.",
     "date": "2026-10-29",
     "sequence": 69,
-    "localImage": "assets/scenery/world-fact.webp?v=60b7e88dffa0"
+    "localImage": "assets/scenery/world-fact.webp?v=14c04eb2a1a0"
   },
   "weather": {
-    "temp": "11°",
+    "temp": "10°",
     "summary": "Clear",
     "condition": "Clear",
     "currentRainChance": 4,
@@ -36,7 +36,7 @@
       {
         "date": "2026-10-30",
         "high": 16,
-        "low": 6,
+        "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -54,7 +54,7 @@
       {
         "date": "2026-11-01",
         "high": 13,
-        "low": 8,
+        "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 30,
@@ -62,7 +62,7 @@
       },
       {
         "date": "2026-11-02",
-        "high": 12,
+        "high": 13,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -72,9 +72,9 @@
       {
         "date": "2026-11-03",
         "high": 13,
-        "low": 9,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "low": 8,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 30,
         "source": "Met Office"
       },
@@ -137,6 +137,20 @@
   },
   "calendar": [
     {
+      "title": "FULL DAYS",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-28T00:00:00+00:00",
+      "end": "2026-10-30T00:00:00+00:00",
+      "date": "2026-10-28",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7ae7bf",
+      "colorId": "2",
+      "googleEventId": "2elitthajhtcmrjot2dcfgn5nf",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -165,20 +179,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Demi Playdate",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-01T00:00:00+00:00",
-      "end": "2026-11-02T00:00:00+00:00",
-      "date": "2026-11-01",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -193,18 +193,18 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Football 10-11am",
+      "title": "Demi Playdate",
       "summary": "",
       "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
       "time": "All day",
       "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
-      "calendarColorSource": "google"
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "See Kate and Family",
@@ -218,6 +218,20 @@
       "color": "#ff887c",
       "colorId": "4",
       "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
       "calendarColorSource": "google"
     },
     {
@@ -249,20 +263,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Kids",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-23T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": "#e1e1e1",
-      "colorId": "8",
-      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
-      "calendarColorSource": "google"
-    },
-    {
       "title": "Choir Performance 10:30-2:30",
       "summary": "",
       "url": "",
@@ -275,6 +275,20 @@
       "colorId": null,
       "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
       "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-23T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
+      "calendarColorSource": "google"
     },
     {
       "title": "Football 10-11am",
@@ -334,32 +348,32 @@
     }
   ],
   "lead": {
-    "title": "Djurgården @ Göteborg | Gamla Ullevi in Gothenburg, Sweden",
+    "title": "My grandfather, the Swedish Stalinist",
     "summary": "",
-    "meta": "Wed 28 Oct",
-    "publishedAt": "2026-10-28T17:57:41+00:00",
-    "source": "Vantage Data Centers",
-    "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSV9Jam5JTkZBTG5Ubl9pZy02MDlENjZqTHhFR3czQkVza0N5Nl9EYkgtbzdhczVPb05YVlhkYng4MzZMcTdPcHVsY2UxME80MEpWa1g1VS1ZczRUNlc2ZE1HV0l2b3hXWG9kcEM0T2FkXzRMZGJsZDBSM3ExU3ZzLVAxaHdMV2dFT25RblFaY2VKWkk1WHduMkhwSFpEeGU5TEd5OERQN3I0MmVoUU1JLUljcmVqRG8yMTZ6RGNLVU5ySVhfQVNnOHEzLUh5ZlhoZTlPY20wSjd2cVpWeXktMHpIWEZyN0IxX0JXS1V4aEtubG1hUWF2Rm5WekpIZDVrMUVQNDA5MVBHeDJScURLcmhxY3ZNR0xEdDlNOUkteU9yM01oX2RXd09nMnF0UVNUS2h2YUJlTHJXWkhqeVMzOVNuUjdUSkpIUTBzdE9LR19CUQ?oc=5",
+    "meta": "Thu 29 Oct",
+    "publishedAt": "2026-10-29T14:18:18+00:00",
+    "source": "Engelsberg Ideas",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoeUV5azlLVG1fU1RhMExSTmdhMUZhSkMxQ194Tjd3YkdVRGIxc1A0cm16czlfSkV2aFRNR2JaV0pqc1plUzBocDRZQjNZVmJvR0VyQjJmVmoxZzBzcjc3dDRCa0U0SVFCb2NBOU80TmVnSU5FOV9sTlB5Z3gxUlU?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Djurgården @ Göteborg | Gamla Ullevi in Gothenburg, Sweden",
+      "title": "My grandfather, the Swedish Stalinist",
       "summary": "",
-      "meta": "Wed 28 Oct",
-      "publishedAt": "2026-10-28T17:57:41+00:00",
-      "source": "Vantage Data Centers",
-      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSV9Jam5JTkZBTG5Ubl9pZy02MDlENjZqTHhFR3czQkVza0N5Nl9EYkgtbzdhczVPb05YVlhkYng4MzZMcTdPcHVsY2UxME80MEpWa1g1VS1ZczRUNlc2ZE1HV0l2b3hXWG9kcEM0T2FkXzRMZGJsZDBSM3ExU3ZzLVAxaHdMV2dFT25RblFaY2VKWkk1WHduMkhwSFpEeGU5TEd5OERQN3I0MmVoUU1JLUljcmVqRG8yMTZ6RGNLVU5ySVhfQVNnOHEzLUh5ZlhoZTlPY20wSjd2cVpWeXktMHpIWEZyN0IxX0JXS1V4aEtubG1hUWF2Rm5WekpIZDVrMUVQNDA5MVBHeDJScURLcmhxY3ZNR0xEdDlNOUkteU9yM01oX2RXd09nMnF0UVNUS2h2YUJlTHJXWkhqeVMzOVNuUjdUSkpIUTBzdE9LR19CUQ?oc=5",
+      "meta": "Thu 29 Oct",
+      "publishedAt": "2026-10-29T14:18:18+00:00",
+      "source": "Engelsberg Ideas",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoeUV5azlLVG1fU1RhMExSTmdhMUZhSkMxQ194Tjd3YkdVRGIxc1A0cm16czlfSkV2aFRNR2JaV0pqc1plUzBocDRZQjNZVmJvR0VyQjJmVmoxZzBzcjc3dDRCa0U0SVFCb2NBOU80TmVnSU5FOV9sTlB5Z3gxUlU?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Whites extend unbeaten run after a professional away performance in Walton-on-Thames",
+      "title": "Jimmy Ball | Walton & Hersham (A) | Press Call",
       "summary": "",
-      "meta": "Wed 28 Oct",
-      "publishedAt": "2026-10-28T16:51:38+00:00",
-      "source": "Salisbury Journal",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV0NGeHRwbVdaXzRSVW9waE9FNnhWaVhYTVA0Wl83Sm5BQXFzQ2RqV1ZNczV5OUprVEpFUkhWOFZkenl0RzJuOFREZ3hiQ3FmUGIxWlFnVHlRQ0tQQm1QRDUwUHhvbXdNNms1MTRrbmhVdWxYQVFGU2w4NjIwaUpZV0ZQRjBhM2E0QjZZWkVpRlhJbUNUbktOeWQ2VnVyTUk1VEE?oc=5",
+      "meta": "Thu 29 Oct",
+      "publishedAt": "2026-10-29T16:03:30+00:00",
+      "source": "Torquay United",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBIcXFseXRZZTB2MWdpSmp5WnhDTnpuS2RSSGhSNzZQT2dVYkxzRlR6ejdDYXJZS0ZDZ1NaYi02dGtWbG9fb3EwSjgyc01VbnNxcERCNmJ2eE92LVpFSTlzWnU5Ym1KVUJlbHRCeFFpdk5nUGs?oc=5",
       "contentType": "article",
       "localPublication": false,
       "familyActivity": false,
@@ -371,7 +385,7 @@
       "summary": "",
       "meta": "Tue 27 Oct",
       "publishedAt": "2026-10-27T19:12:14+00:00",
-      "source": "theversion.co.uk",
+      "source": "wheretowatch.tv",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE91TmI1TFpRLTJBR25YcWpFLUpZOC1KSS05aEp4ejF1WW9EUi1BbWM1UWtQM0RINS12eDFYSHJjaGhJU1JPX3V2cmhyQm1NRmZjWTROb3dyWGQ1Zll1MS1kUFVMUTN2anh1UzBVQnlqZFpsdVc0RlE?oc=5",
       "contentType": "article",
       "preferenceScore": 150,
@@ -405,6 +419,31 @@
       "preferenceScore": 696.2
     },
     {
+      "title": "Murder in Belfast: Sisters Seeking Justice",
+      "summary": "Witnesses are in short supply, in spite of the attack beginning in a crowded bar. As public pressure to uncover the killers increases, the IRA tells Robert's family it has conducted its…",
+      "meta": "BBC iPlayer · Available since Sun 25 Oct",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-25",
+      "releaseDateLabel": "Available since Sun 25 Oct",
+      "url": "https://www.bbc.co.uk/programmes/m0033h52",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/648/1621294.jpg",
+      "artworkAlt": "Murder in Belfast: Sisters Seeking Justice programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-25",
+      "showId": 95220,
+      "episodeId": 3798450,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-29",
+      "preferenceScore": 604.0
+    },
+    {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
       "meta": "BBC Two · Available since Mon 26 Oct",
@@ -425,30 +464,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-29",
-      "preferenceScore": 608.1
-    },
-    {
-      "title": "Stacey Dooley",
-      "summary": "Stacey Dooley explores the death of 19-year-old soldier Jaysley Beck as her family fights for justice, asking whether the army does enough to protect young women.",
-      "meta": "BBC iPlayer · Available since Tue 27 Oct",
-      "source": "BBC iPlayer",
-      "channel": "BBC iPlayer",
-      "releaseDate": "2026-10-27",
-      "releaseDateLabel": "Available since Tue 27 Oct",
-      "url": "https://www.bbc.co.uk/programmes/b048vy8l",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
-      "artworkAlt": "Stacey Dooley programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-27",
-      "showId": 4594,
-      "episodeId": 3798316,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-29",
-      "preferenceScore": 433.7
+      "preferenceScore": 608.0
     },
     {
       "title": "Britain's Countryside Killers",
@@ -471,7 +487,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-29",
-      "preferenceScore": 418.7
+      "preferenceScore": 418.6
     },
     {
       "title": "Black Doves",
@@ -504,80 +520,107 @@
   "sections": {
     "Sweden": [
       {
-        "title": "Djurgården @ Göteborg | Gamla Ullevi in Gothenburg, Sweden",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T17:57:41+00:00",
-        "source": "Vantage Data Centers",
-        "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSV9Jam5JTkZBTG5Ubl9pZy02MDlENjZqTHhFR3czQkVza0N5Nl9EYkgtbzdhczVPb05YVlhkYng4MzZMcTdPcHVsY2UxME80MEpWa1g1VS1ZczRUNlc2ZE1HV0l2b3hXWG9kcEM0T2FkXzRMZGJsZDBSM3ExU3ZzLVAxaHdMV2dFT25RblFaY2VKWkk1WHduMkhwSFpEeGU5TEd5OERQN3I0MmVoUU1JLUljcmVqRG8yMTZ6RGNLVU5ySVhfQVNnOHEzLUh5ZlhoZTlPY20wSjd2cVpWeXktMHpIWEZyN0IxX0JXS1V4aEtubG1hUWF2Rm5WekpIZDVrMUVQNDA5MVBHeDJScURLcmhxY3ZNR0xEdDlNOUkteU9yM01oX2RXd09nMnF0UVNUS2h2YUJlTHJXWkhqeVMzOVNuUjdUSkpIUTBzdE9LR19CUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Studsvik announces partnership to deploy four BWRX-300s in Sweden",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T21:49:34+00:00",
-        "source": "American Nuclear Society",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeVEtempDRW5Fc2ltam9PTkRiZlFLVGJVVzNUNWgtWmRUcklXYkRTd0VpNHItaE10VWFFSENvb1VCMm9IaGtMQUhCR2NtakZJWmhianF1NU14OHJ3N3pwYk9meVo2VjY3MVFIdVZwYnlOZFQ5c2RnR044anQ4b2dHaFpmRDFMVUstTVVZVFNBMHJGSHZiZEprSDRNRGh3UVJCcENYUXB3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "IUCN and Sweden launch major new partnership to advance Nature-based Solutions for biodiversity and resilient communities",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T14:02:03+00:00",
-        "source": "International Union for Conservation of Nature",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObW1fcHdldW1ncWw3SEpjdHgyM1pjdmpqSFZWWXl6anRIdDdBTFZxbVZHbU9NcUZHMERUUkRBZVNnTkJ0SjJOd3lVYzlCMC0yTTBMcHJrc2JfMmFlNmpMTXZKVk5ZYXVjdmdVeE5BcTlkMXZRVFBCR3Vub0tKbDdnQ3VjblphWWs1MGFucmczNjVLRDlIM2pMT1BzUENLY0JQN09xenA0QQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Swedish owner Veritas Tankers taps Chinese builder for up to six stainless steel chemical tankers",
+        "title": "My grandfather, the Swedish Stalinist",
         "summary": "",
         "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T00:00:00+00:00",
-        "source": "Riviera Maritime Media",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZ2hob3FRcF83WE93cEZmRGpSckpUbFgxcUh5cVpELUVOTnZNaTRwZXFuNVlxS1BueG1za2l4Y0M0bnp3Mkc2eDVwVWJuaFdFeHpOSUQwYmlEZ0t1X212Tl9IeTNvM0dQU1Fjc1JGaW0zcjFBWjZmelZJcjNKRFpyaHE4RWZzOWRFeXRVQ1poTHI3WDF4NFVrX2hZeGdQUEROMU4xUUJONFpzcXRUYlV0Y2ZsTEtvRUVZaFB6NXhfalhSTnd4MzZLT3ZjTHctZGFLZTNrYmdkaTlVYXk4d2Nj?oc=5",
+        "publishedAt": "2026-10-29T14:18:18+00:00",
+        "source": "Engelsberg Ideas",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoeUV5azlLVG1fU1RhMExSTmdhMUZhSkMxQ194Tjd3YkdVRGIxc1A0cm16czlfSkV2aFRNR2JaV0pqc1plUzBocDRZQjNZVmJvR0VyQjJmVmoxZzBzcjc3dDRCa0U0SVFCb2NBOU80TmVnSU5FOV9sTlB5Z3gxUlU?oc=5",
         "contentType": "article"
       },
       {
-        "title": "IFK Göteborg vs Djurgården: Swedish Allsvenskan stats & head-to-head",
+        "title": "Sweden: Streaming bundles cut churn despite lower satisfaction",
         "summary": "",
         "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T00:42:42+00:00",
+        "publishedAt": "2026-10-29T09:50:31+00:00",
+        "source": "Broadband TV News",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc293bWNPWEhHTHVINnBUVElVdkY1UUVYT1RCQzhad1NVOHZoNkJWcnhaZXRwNjd4Y3hvMEI5OVU5cjIzR3N2aW5XRGlVVEl1WngyMTFzLXZ4alAzUVRDV09qMXE4UXJGWVNFWHhDVkd3VDEtY1MwM21nc05VV1EtVDFiSkxnUnB5S0VHVWtKLThjcG1FbjRkenN5SHIzQ3RUeFQydHZDOVA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Vattenfall sees cross-border wind gains stalled by Swedish policy gap",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T15:20:00+00:00",
+        "source": "EnergyWatch",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KTXpiRWw4TkExSUItd09Vek1rQlhWT1hSWXNORUxIMGlVVk9mVXp3QmlnY0JYYTFmMGlrbGFoWmlZZnNnSkdmd2hGTGxGdlNidG84NmRSMm5rTTFrcWpteDdLU3NydjVwa1Vr?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "McDonald’s Sweden Haunts Former Restaurant Locations This Halloween — LBB - LBB",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T12:56:55+00:00",
+        "source": "Little Black Book",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR3IzZG9FSFBJbFRvSzJIc1NwNWh2WTZZakJZa2UwdndJSTctdERRenRPR21ERmVFY2ZPSEM4NVNmZjhNY0I4WUxrRHVlc3hrOThGZzk0a0tBRUIzZ2xRUkx5UEpsTi1UZXc2YnpjRjZzd3YtbVE3aVdkNVpYSUZqOUk1RGdZNmJxXzBTSjVna0kxdUZVNExUSDJ3?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Örgryte vs Mjällby: Swedish Allsvenskan stats & head-to-head",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T21:55:16+00:00",
         "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxTlhFQlZkdXRsTVZkTmpxcFVwWEhKbzZOem5PV2RTeUU1Nl9sNnV2OUtFTGpuOW1fY1RBTXVNRW9NaEZEVkFTZ2dwMGMxSlJMNnp4bjQ2OW1xSkJwV0VkOTl1dw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oQnJsbmxjczgyVzFXU0NaRWVkWW83X3VwcUVxZHF1cmc5UWN3RFIzWl8tdnpOVE1fYk9NMDQyaTdwTFFpT2o2VmtaZ1M4X01XN09zWldlTWs2M0pSRWZiMFNBWQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "EnviTec Biogas on track for autumn cold commissioning at Swedish biomethane plant",
+        "title": "Sweden shares higher at close of trade; OMX Stockholm 30 up 0.41%",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T11:22:04+00:00",
-        "source": "Bioenergy Insight Magazine",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGNjTlktb3FPM3FlaUhTMHVLdHNMVDIwMnVLcVU4Qi16MUFKc0pkQ3JDeXhHUjZsUWJzR3dNQTJrOHJNRXVqV2hJXzZzWngtMlBGUTYtWnU5YVZscGpKNGhBT25OdnB1N2VNYmVoMnFSNzFGSjg3ZXlKcjhxbmdiYTEyRzFIa05XQU9BbEs3RGViU1JGYUxFcTZyelItNFVqNVFPeWVRZ2VQb3owSzFIcjNhRFFCOENqVHc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Romania's Monsson unveils 60-MWh battery in Sweden",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T09:04:18+00:00",
-        "source": "Renewables Now",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT3NkQ3RLYXo4YlNHSFZKdEhTMUNiUXpvb3lsMmNQWGxHVGtZTUMxekJmeUNYSkxQaHpsS1dKcmZxeGJZdDRyaXdjQ3FrZGdkZW1DNnpkd1ZqZmozVlkzV0FKNV80YXBLREVrOElOZmFTQ3JlNFZCQWt4WXI0cVlST1RScWZzQUZYal8teElTRFl6ZVE?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T17:00:00+00:00",
+        "source": "Investing.com UK",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORTQ0eDNKYzhqb09PWlVUT0R2R3gwM2Y3MFRsd2Z0cFkwWGt6azJENmFsZ1daMV9zMnoyZm13bDJNNmJrMjBaVERqdzNzQnB6NllnSURGbExMSDlEMW1sMGpHVFl4aEhQbTRaWlVqRW9qcUpyRmg1ZjFDaDRxOFZMY0NJQU94OVNhLTFpZlFiYjVodGxTb1hzZjZfS2VYS1Bwdzg5QzV4RlNjUnpndHA1Qm5fWTF2YTFQVlE?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
       {
-        "title": "Whites extend unbeaten run after a professional away performance in Walton-on-Thames",
+        "title": "Jimmy Ball | Walton & Hersham (A) | Press Call",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T16:51:38+00:00",
-        "source": "Salisbury Journal",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV0NGeHRwbVdaXzRSVW9waE9FNnhWaVhYTVA0Wl83Sm5BQXFzQ2RqV1ZNczV5OUprVEpFUkhWOFZkenl0RzJuOFREZ3hiQ3FmUGIxWlFnVHlRQ0tQQm1QRDUwUHhvbXdNNms1MTRrbmhVdWxYQVFGU2w4NjIwaUpZV0ZQRjBhM2E0QjZZWkVpRlhJbUNUbktOeWQ2VnVyTUk1VEE?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T16:03:30+00:00",
+        "source": "Torquay United",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBIcXFseXRZZTB2MWdpSmp5WnhDTnpuS2RSSGhSNzZQT2dVYkxzRlR6ejdDYXJZS0ZDZ1NaYi02dGtWbG9fb3EwSjgyc01VbnNxcERCNmJ2eE92LVpFSTlzWnU5Ym1KVUJlbHRCeFFpdk5nUGs?oc=5",
         "contentType": "article",
         "localPublication": false,
         "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Kingston Market roadworks will complete shortly restoring full access for cyclists and pedestrians",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T00:12:34+00:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTTVPWkc3aFNjdjhacTN4SlpaanY3bTRWN3dWTkxyTDdxTEgzT1ZONnc4U25jNUpVUUQ3Q1lZOGpXTVlDNDNpVTBTbDA5OTVRNUw5THZ5RzBLOGFEdWV1TkxxWm8xa1FJYXo2Y2ZZTnl2NUFRS2gyaEkyRS1GRHBhNFZRUTVJMmN5WGhwNGVNZDluYjdfZXFPT3paLVVIdjktbDZtRzVESlFLTU9pWUVpVEMwYXZuRk1abHZfY19fblc5cnVmVHVCSy1iY2tnTERvX1FEOV9sckVKc1NpM0JnYw?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Frustrated resident collects bags of rubbish following anti-social behaviour in Bushy Park",
+        "summary": "",
+        "meta": "Wed 28 Oct",
+        "publishedAt": "2026-10-28T17:40:20+00:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNU2IyVUdLaXc4MTlmdzVnUzRoRVNHanBaTzlDUUF0TlpfUHhYY05ZXzZ4TnFhTmpMZzM4Q0VvSE9lRHNhTzJhTHJFYWZQR2NDdXFYUlo5Vl9iamxyTEktaXgzcVVUX3Roa0wxdE8yRjhOMldjbW1GZkJwd19KRXRDaEQxNW9ra2RmMDZXdVNXUTM3N2RCNVd6Q3QzcXEtNnpoQUF3MTRnd1U4Q0kxa0hXajZqb0FqNk5WWUZweklwZU8xcmxscFVpMFpkNHZxS1V1eGxKcXBtR2Y?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Hampton Court dazzles as host of sold out running festival",
+        "summary": "",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T13:47:20+00:00",
+        "source": "South West Londoner",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPblgycm90aVRwWjRMXzBwNURuanFSVTJXMFFqRmlpcnNzOUVVbDlHQVNER19FMFpwVWRRSWNJcGRPNC1GeWdhMnJhSEMyUHQ5T0pDZG1KbGNlR0I1YURkX0RnU1BseGxXZWVuSl9NcXVTM3oxVkF3LWdXY0hqdWJqTjRIVVA4SFNuTmVYS1ZLa0ZFaE1CZC1uTUN2T2tsb0wxWFBV?oc=5",
+        "contentType": "article",
+        "localPublication": false,
+        "familyActivity": true,
         "homeArea": false
       },
       {
@@ -605,60 +648,12 @@
         "homeArea": false
       },
       {
-        "title": "Kingston-based, AI-assisted band releases Halloween single",
-        "summary": "",
-        "meta": "Wed 21 Oct",
-        "publishedAt": "2026-10-21T13:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU1djSVZSLUV1TkNfZVhVcVhyYjF1Qi1wWFhXTlpIc2todjN0WWRNcWVWUzd1OTRVNGR1NzdmMngzSk1YOXBEcUdtZzFrT3QxcnN3bGVtVDlpMXU1dkNSVTcyeXZJVUdKcWM5SXg1YnhyeHFxTzMwWm1uUWJjSEFDTlhEaVVBVkgxcmV3cFFBWlBGMFQ3ejlUcVh5d3Q4cEs3Y1JmV0sxU1dzdw?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
         "title": "Ancient Market stalls reopen after Kingston fire as Christmas events return",
         "summary": "",
         "meta": "Wed 21 Oct",
         "publishedAt": "2026-10-21T12:55:15+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeFNUV25WNDBxOU5FZ0ZFRDNfcnR6bnlXdDg0b3hzMlltZGxjbmdDVllabXVoNDUwUzZlVHRMLVZlNllXazVaejZuZWpsbjRidGYtNTZveS00Mk12V2NpYW9Eb1BtRVJ2aUgxLWRRSUdEZGJRWTNsSkx6Z3NueV9va0RXM3hyUGVuNWpYSm5zNGxOOWFjbkE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Signature at Surbiton opens its doors",
-        "summary": "",
-        "meta": "Tue 20 Oct",
-        "publishedAt": "2026-10-20T08:00:00+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQTQzQ1VYUmJMaElqbkxxSFVlT3JRVUNjaFEtaDlfdldUSll3bEhqM2Y0NkhwS0NTYjlDZDRjOEVTTlpqWk5ObXRKek01dW4tV0tjMHJwSTdvUlRvMlVUR0tSdGZwQUM2VkZRMW8wb3hPcE9QTUQ4cV9YNkg5SlVQNQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Santa reads childrens own Christmas letters back to them through new Hampton service",
-        "summary": "",
-        "meta": "Mon 19 Oct",
-        "publishedAt": "2026-10-19T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmlYUzhpYW9HbmxpZ2tNNEF1QlVkN1ZwYnFSV0lPWm1mMVZFTFNMYTZCbk1oUnd4T3VSSjVyTVJpYjU5bW5FUlc1X0x3clJEUUlRZ1hzQktjSFYyU2pYMk9iak82ZHVSMmNUSW5md012b2ZIaDdyVm9lcnJ5SEtSY250bkNzUkp2OTZmRDE5WnVfdldNMktoQ3RrNDVGaGo5QUxoQW5vdDVUdG92Nkk0VWxLeWpTdUE?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Teddington’s new butchers available for Christmas bird orders",
-        "summary": "",
-        "meta": "Thu 15 Oct",
-        "publishedAt": "2026-10-15T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3dTV0YxdzJBWEdSS3lqajhscHg1Y1RZWUhadUVFVHJhNlBPTFhSOG9Ca3J5LWVUT200U2lQQ0FWcmw4eTNacjFoNlpZUzFNN1Mwd0dtb1NwcWRwT0FiOF9jS3h4c2VGWDRjbkZIeHRqbFJUYlJoczI2bzdIYnZiaE1XZF82OXZzTm1UYkE5T01MYV9QN24zQTlSc1ZYVzg1OXhBTEhadlZFRWZhSjF1LQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
@@ -677,181 +672,256 @@
         "homeArea": true
       },
       {
-        "title": "Burst Molesey main disrupts water supplies across Surrey and South London",
+        "title": "Roof destroyed as 40 firefighters tackle house blaze in Surbiton",
         "summary": "",
-        "meta": "Tue 29 Sep",
-        "publishedAt": "2026-09-29T08:00:00+01:00",
-        "source": "London Daily News",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS01lUWkwTDUyNnJRMEFCMnl5ZG1NbmZma2dKSUR3eldEWFY2bEE3TzY5c21ZanFRLXdGMVdpMEpET0dWY21pWUlQdVEyU1ZPQmRLUE5leEJ1MFVVNk1FaGZqdVlNOFQ2T0xZQl9uZkxFM0NpbmlfUmFZZ0hOSjdLRnBMWlJGS2VIQXRLZUFpeTZTRERjb2F1aUJoMzNjM19jM3lhR1d3?oc=5",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSEJLR2dQb2NaNVBHYW1rdFRqcVhlSWc3OEZQekdUd1c3eS1MS1gwNlN2OW9jODJQVFNUTWxaSE9LMFNPLWs3RUJxUTRzWElxSGtVdDFZdm03a1F2dWl6cU5lY0ZCa3FzejROV3g0R0tzSmxTci1SbzEwN2R0Xy03Q0lCVzhCbWNIc0NmVy1JanN4WllmTWk5M3hFUTRMcnBGd1pXd0pPdTBXYkZqcmFvVjNWOA?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
-        "homeArea": true
+        "homeArea": false
+      },
+      {
+        "title": "Surbiton school named best prep school in prestigious Tatler Schools Awards 2027",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTUgtQkIxSzJ5MmxsY05leDJGcEl1MHJaRXFRWHQ5R3VVR3ZKMngzWTRFSi1WVE1TRTlnRkZPbE82anZkdEs2TmtPZjl1bllLUmhxMTgxMllmTUViVURHaVd3aFFaMXFaUzAtTVhERG5PbXZ6T0ZlSjhlOUNNYnNUXzRCTjdWNzdqcTVLWHhnSDYyb1FMRjM1R3R3WEo4X0ROcDVrNTl1U2hwODdsSS1Kdkx4M0NyY1F0SFFNVVBqVkJXMHgtaUdIMQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Kingston homeowners urged to check their roofs before winter weather arrives",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPRVc2dEotcFhjbVVBNkRhVF9jTXhLME9qbkJhWHZ1ekFidERPTVFTcXJRV0VtUDVoMHdLMTVsODNNX2JweFhzVHp1WWNsUC1senF0cTZOMTZsejVFbnZrOEpPZmZCa096NjRMVFRrNmxQckszakROXzFvVmpBXzlMcVlRanR5Y0pSbHBOTEFFNzVMTTF5eGJCREhYVUN5dUR0RXlES0JhTEdPYmlSVmVQNzZVcU5pMnZnZjlmcjBCRDhtbGs4MmdCLVN1aDdRQWN6WXYyeU1obXhRZ3o4dHc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Community efforts to buy Teddington playing fields put on hold over legal hurdles",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSzJXbk8yYmN3M3ByQWdRank3ZXFBdTNFTF9BZDJXRDBKdU5GQ1BCZUtnZDZLWEgxcVJ2d2kzalFNRzdnb3VyMGh2VTJReVJGUHY3SEJLV1QteFBZcGd5aXNCWnFxbldTMDR6VjFsUzFZc3ZRWGlxWXZ3dFJhTTh5M0hmcTRjalN6NnJJamMtTW04NTBNWTUyekI1V3BXTE1kU2E5SVZRTE9vbG9wWTZTdGVNc2JjT1Y4WHFzMENEdmh2SzFSVlRKNUFELUs?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Esher storm back with second-half blitz to make it five wins on the bounce",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T08:00:00+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQazZ2NmVjaHUxeVVvNU0tS3V2aUJpMWFhNVZhWFBpenhPQ21rVkoyS2w1b01OdWhfek5LTG1GQXpoXzdJckhIN2ZiWHkySGV4dnlibnZhdUFiLWc1MGdFckR5d2NkaXBvbUZMa3VudGhaN2xoaU5YbkRMSDkyYjdPRTgyemw1MVI3Y3VaVk1vZk1faDcwUlMyZTJOTzNJUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Met appeals for information following rape in Teddington",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQzNOTkdkTFp6ZmJBV0NvU1lGY1IxUUIycC1sYWJLeGdZWWlZQjAyRU5ta0F4bE9kNGNMUGVBcDloeGx3aVBzWS02ZF9XTWpvVmFjQldiWlVRTEUwaE5RZFFyd3RmbFRFMUp4VmxxLTJXQWhlV0pCYk9IUDl4ZExpSkhXQVJ5NHZjS1B4c1VhNndab1hnRTZGWDQ0amNqNkVHUGcxelozUzY?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Teddington families invited to give outgrown children's belongings new life before Christmas",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTWE1WXdGbTRHVU5HZ0F0cExSbUt3THhyeUd2aDJERkd1RlQ5Yk5scU5wSUtjdEZ3TFBQNTNQODdybFpQalhoOWxGd0tNTzlNM3NodDB0QTl3VE5Ka0FHQzBKX1puNk9JTURpTFNsbklmQ0xRZEgxcDFGVWkzTUV2LWJTODZpVzhRYjNhTlg1OTRoU0Y0TFZhUnlnaWhMbGJBcTVPdXNIR0J5dUttV3lrMXBadnpCR0dvaW5mQTBBRjQyVno2VVVNZW8yck1ud2J0WnNKeC1PMHlVaTE0?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Little dancers debut at Surbiton Festival",
+        "summary": "",
+        "meta": "Wed 7 Oct",
+        "publishedAt": "2026-10-07T15:03:28+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWEROV2FjTVVuMkVmamV5NU41VzhBMndySkFMdExZMWV2anFmSDM1Yk0ydzY5S2lvM3pZYTJxdkpoNEtSbllyWWdYcnVCNU1Ca29JQ3F0b040d0RjYWZiZHdmdnVOMHZYYk5HQnU0N3o2RkFpRE5oeVh5c2FBam9SMl9YQkhzMGNzeUkwcml5UmhEMy1UMDdkOGFWbVhFajg?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
       }
     ],
     "UK news": [
       {
-        "title": "Action for Children manager in North Wales shortlisted for national award",
+        "title": "Scottish Premiership award winner backed for Pocognoli call after 'confident' move at new club",
         "summary": "",
         "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T01:41:15+00:00",
-        "source": "Herald.Wales",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNczZuX1ozMFB0TDRBaVBNM2RZa1ZFQWFlVUZRem9SUFczZEtxQzFSOEtTVXRmS1JJUDBLUWo5aDQ4dVgtZjlBaGozbjA3dUVTellSZDBmV0x0OUxpR2pOdG9DRl9pRmcxSEplODlqNVdxcXJtSDBUR09Va2c0Wm5KS1pTTEdwOWNhd1FsRkI5eGdIb2R2NlBOZTdGekZZY1libTZ1N2Uzc09LV1E?oc=5",
+        "publishedAt": "2026-10-29T21:00:00+00:00",
+        "source": "The Scotsman",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNQUVfbXN2bWJINzgxZ2hPZ3UtMEFpTGFoNUZLWUhvalVBZllPc1ExMEZXQXhUU1BnSkktYmJ1RFZRZ253cWEwVEVBUUYzUkFnblV4TzFON1cydmlqSnpXZmFTclMyQVUyVEJJa0NSRnhsVEJLck1hb2RNLW5Dc1lGNXFXODRKTHpfT0h3djdWQ0hBWEY3TlBWWUJYSmJMbk5yM2kwelNlMWhZc2k1WmZPZXlkSExhUEVCN1NTQnpCaE53RmZleW1LcEZlWDAtZDJYVFk4dUxwZHJ2b20zb3kwemFrYnJHSkdyMWc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Holyrood reception celebrates universities as Universal Partners",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T17:39:27+00:00",
-        "source": "Universities Scotland",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObXBmT1FOU3R4QldScHZ5T003anVkR3p2dHV4NERpQ3BOZnREdWVHX0ViT0JCWVFoY1dEaTRMMUpoZmdnb3VORWZ0QUl6SFRycHF3bVRIVTBJczFDTmtoSWtneXE3TGdGdTNBYWFhMUFqWHVsMU1HMDBoU0VCdDM5T0c0anNKN3ZQaHVRUHljeDlVTGVNVHgwa1hXTUVZNzUzb2JJR1cwSEI?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "'Dissident republicans may be responsible' for hotel explosive device",
-        "summary": "The package was discovered at about 15:20 GMT on Tuesday at Ebrington Square in the Waterside.",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T17:38:39+00:00",
+        "title": "CCTV shows frying pan used to stop train attacker",
+        "summary": "A train crew member shows \"sheer courage and bravery in seeking to save lives\", a court hears.",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T20:02:27+00:00",
         "source": "BBC News",
-        "url": "https://www.bbc.co.uk/news/articles/c6lykg0nkll0o?at_medium=RSS&at_campaign=rss",
+        "url": "https://www.bbc.co.uk/news/articles/ckdd8qpdeym4o?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
-        "title": "My Choice Healthcare celebrates trio of successes at social care awards",
+        "title": "Original BTC’s new portable lamp celebrates British ceramic craft",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T16:27:56+00:00",
-        "source": "News from Wales",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaklzWEpMVFQ0YUlvM3pPWXI4S3F2enZUcS04RWVERThuRWN5ekJidjRzZjhZOEZVWVY3aTIwbC0wVmozTVJaanlkVFN1MExMZXNsRG0xS3RfTTA2Qk5oUUl4NWJheUVDQkhMMUtXRHZzVVVlVUtYdjdXWFg2dmRnMDVsZENBOTh6WHFGdHlnOTV1eXhPTjJBaDhWWWtuYk9xMmc?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T19:26:26+00:00",
+        "source": "ICON Magazine",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTGZ2LVpWTktzeUR6Q19KeGp2bkkxSEQta3BxMjBwbFZNeWYzMDdRczZiRUpNdGx4aTV0WkFjTlZCckl1cWNESDlFSUNEdi1yeXYzdDhGeG1nNnlZaEdlM1VYN2tJWm9LWGozc05VM2g4c3VnOGxuY1hGSnhhQXFQVTdENC03dkZUTXMwTE94YVVtUUVsTUdKWDdqYw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Drone team celebrates five-year anniversary",
+        "title": "Mid and West Wales Fire Service Celebrates Heroes in Headsets",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T16:24:00+00:00",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T18:40:41+00:00",
+        "source": "Carmarthenshire News Online",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRlVNU0tyUHFXYW95cE9FTDMxcFg4MXU2aDUzTDVpLUpqN2d6Y2pXSE9iSGZicUxFS2lIRkhwLWg2djFqZ1YwZ2pxY3dBdU8wbjhHRW5OVVppYnVROHdZdU9DWDhLdFpsU0tpbEM5YkRKUktTWC1Bb3FPSERWSmlHb043MkRXZXZIcE9YZW5oSFZ2X1dJdTcxQTJJNk5lTURqWjFxYWkzcFRza1pRUDluOUdyMEVZZERu?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Thanking our volunteer BikeSafe Observers",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T12:13:00+00:00",
         "source": "North Wales Police",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmlEd2JKX2gyWVFydWM3NjBjcUlvOFAwY2ZaRG5QVml4RWUySXJxemsycDY3YWpQd2dJYzdBYjF0Zy1aOW1Gd2xUcS1Vb2dscjM0a0VkU1lTZ0swYXJVUmhPY3JpNE9QQmp2dTlmSnA3b0xrekJIR1B2cThPNXB3TnpsQVRGaTIwVk5WcmRmMnR4SnFQWGQzLU56aXExS2VjUk96TkJBZEFEbVFCQ1dDR083czI1OWlK?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaS1NaTFSUjlKTGR1ckZlV1BHZm9kNnJNOHhOSkRzOXp1VXlQbUtRZ0FHREVOd0VvR2NHd21ITTd0cl9FN1YzT1ZyVENBMjBJdV9tcjdQQlVDbWJIQmJCVTE1UEtDcWhBc0JJckxwSUpWMi1tQzBBZ293dTdpMnM0d0NyeGh3SW55V1BfQV8yS1d6R3NVb1l0OFpCWHNOdUVueHdyQzdpbXJ1SjItSU5wZGVTNXE0Zw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Scotland’s renewable energy industry supports 49,200 jobs",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T10:23:40+00:00",
-        "source": "Scottish Construction Now",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU2hLUVVCcno4WEhJYVphWWRRSmVJT0ZxNHI4dlJMZ3NobjNMZmU3NTRxc1JlNlVDT0poRkUzSGlPUzRGeTRXcldzTk5OMEJaaUx6VUI2Rk0wRG5BTDAzVGtCUmd1b01tSUxxWHVnRDRNOVNWc0tmMkhteG9yd2gxOEdSWVY0Qk9BSk9iZS1rUHNnZU9DRG9HMjdTa0ZIT09HWFY2bVV6TQ?oc=5",
+        "title": "Serious pollution by water industry remains high despite £5bn investment",
+        "summary": "All but one of England's water companies were rated as \"poor\" or \"requiring improvement\" for environmental targets.",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T12:08:01+00:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cw5ynxepy4gno?at_medium=RSS&at_campaign=rss",
         "contentType": "article"
       },
       {
-        "title": "Wrexham celebrates Gold and category win at Britain in Bloom 2026",
+        "title": "East Cambridgeshire schoolboys volunteer for Royal British Legion Poppy Appeal",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T09:30:04+00:00",
-        "source": "news.wrexham.gov.uk",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeVB3X0FGVWRnaTNLNkNUaWVyQW1odVJqeFpsNHJnVWZuNjBlWVB1YWg4TlNvdE0zU2RBb3FJaFYwcXlKanp1VzZBWXlRTkp3WUh5aGRjOUhWb0g3bmtSMHhIU3k5RzEzaExyM1E0cW1qU3pvMExFN0hrTlZSakJod2Q0MkMtbWJFZnN3MGpvbTlHWFI2WXlZZjVR?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T10:49:00+00:00",
+        "source": "Ely Standard",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdXhzMEdfYmlVeTB4RUxQaVBlS0MwY29ZWXpzWkNWcnlFVU1wZE1LYm9uUDJKTEZNeGJNX1lrVC1LUnVGWU01b3lLeGRZNjd6VExrWkhMUVJFNlpTVlY2V1FTMmRhQkgtV2ZyYlF4cEE2Y3k5MW0xWWxrODZlNEcyOWluSDk2ZU0tUVJvMkZvNUlkMnlzeWJpZlNONUlNbnpRNkk4?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Superyacht Products Company Sails to International Trade Award",
+        "title": "Scotland’s R100 gigabit broadband scheme shortlisted for European award",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T08:06:18+00:00",
-        "source": "Business News Wales",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYnBteTNxSXNtYXRkSVBxUmRlUy1HZU1janViRElYOFJNM1BWMEs0YU96QVdUMXduTU52THNkVlBCM080S3J0Wng4V2FLdEY2LUoyakdJTjJSVmp0dDVtZVVYU2x2Vm4tcmxIUHBab0ZXWlJhZllTQXV1UTVRRkUwOTVqVFNIWFM0dnhHeGpZcjEzVlpZQi1GMQ?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T10:17:00+00:00",
+        "source": "ISPreview UK",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMHVDME9WMnN1b1Q4Nl9NQXBCNVhFM0d0SFc0V3ZTdWFsSEt0bzVxclZzaUZQcWF1NkdZbndkWHA0bUdsa2ZYa1F3WjZMa0FnUThicGFNamxkYmZZY0ljaGViRFVJcHlSZjdfbEUwVDFMN1NHT21tU0V6WFZqd2hJNVNPVTdXT1ZUMWk0ZDd4MGVlS0NkLXhZcjRQUE93anZoNWlDOFRDMGk3dE55RllVQzlOYmxHMHlLR2hCS3Vn?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The Economic Impact of Scotland’s Renewable Energy Sector – 2026 Update",
+        "title": "John Carpenter to receive ACE Golden Eddie Filmmaker of the Year Award",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T04:22:39+00:00",
-        "source": "Fraser of Allander Institute",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcmRUNHNrNTBRNjhtTmJmc0h5WjBHOUZ1NUhEOFhsVS1ZeHNYUUZPY0thMFByYWlOVmdETFBNNV9kWEI3MVVkbW5CQld6N21kUnQta2cxbjYwSm84ejRVWm9pVHRWcU90N3A3MGhpaUJqZUE0NGxmT0EyZzhjc2Vlc1lWR2pDQXJmdlB5XzM1S3lMN3lyRXVPaVZEMmpobUhQVGNXWWQ5bnlBbExsc3RJSQ?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T09:34:45+00:00",
+        "source": "British Cinematographer",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY2pOOV9qRGNSZXNzZmlaTTFUZlpWQlY2ZWM4RUVGb2dDV3Yxd1ZId3ZNMWdVazdqajIzNUw4WVFZeWRNeWxzNXpHVTNGb1YxU2tRRm16ZTdiNG80bjNybUpld01kRVpBY3lZTVdGakZIMlBxdkZLN2E3ZHdDN0Iwc19jR19JLXdBU253NTZLcHVyT0c5Y3FIVklSR0lXZw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Nearly 50,000 jobs supported by Scotland’s renewable energy industry",
+        "title": "Nominations Open for Health Rights Defender Award (United Kingdom) - fundsforNGOs",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T00:10:17+00:00",
-        "source": "Fraser of Allander Institute",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNUJBOGhGTWJZYzc3dlQ3OUoxREpHekMySXpacGV5bWVLTVJNRmJxQjV1Z2VxYXVoTmRSaDlHcjhoS0hEcDdMRGpWSndDZVBUVHBCZTh5eHBGWFVuUmZFQzJudW40amU4bkg1ZGRueUpEY1poMlZpTXdUVmtMNW5FM2M3aDFFR1FFNC1pMEJ1aWZRbGNGSzVuZnQ1MmU?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T08:08:48+00:00",
+        "source": "Grants and Resources for Sustainability",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObGItM3RlelFXam5ucXNGbmlxbFRfQVA3VzV2TVE0QkVVYVlGR2VLZExyUGxEU3RNMkZuNXlqNVItOV80V0VsSmlNYks3TkNZV0JSWGUwWWhLa1J0YWVxbXU5MWUxR1JmRU1meXM4UExwYnFrSFFHZHhoa1YzVFRsdEF4dTJsSXFSeG1CN19iUy0xaGFEcDJEYmU5LXdLQ1V1NHFxdkM3TmVfTTE0Nm5tNGM0VGhLaXNNVFVGWWhUSdIBxAFBVV95cUxNNFdqbXJtejBOZThFWE9yWXZCTmFxRVNTTjJJd1NaWl90WFlpZE1nZTBBVTdlSDZSY3R6VDN6cU9KUVV3ZkZieFVqZTQ5a201andRQWs5N3VVNmd1ZkJCVmZ6UWtvc1ZBcXNNNUYtejJJd3c0UXVkbEU4V3lKVmJSSWhHUndrMlk0TC15ek5KME9SS1JnWVJTVmNGRWpoUDZlU25XZlhwNncycjVqYXlhTTQ1LXNjQjJCRWtFNEpVbGNJQTFB?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Calls to restore free school meals for thousands after trial found children were less hungry",
+        "title": "Jones Bros celebrates £240m milestone as turnover jumps 53%",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T14:30:00+00:00",
-        "source": "Deadline News",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQWRMT1dLazdTMjJZM2dNLS1iUWREMzV2Vkd1eDU0Q0Q5Z3JKZjBHYU1lZ19UTDgyZFZKanRweGFZT0dnUjhUendlZUl1M3d3SjNWVU9Pc2kzajktUWxnV2p4SnpNNHNFZkFNUU5UZWJoYWs4VHFTX2ZlcTU2ZUs0YlQzTzZlZFNDS3NIMHpZSGY2OXdiV3I3UEhhank4Z0M1OF9YT2h4SGcxbjTSAasBQVVfeXFMT0FkTE9XS2s3UzIyWTNnTS0tYlFkRDM1dlZHdXg1NENEOWdySmYwR2FNZWdfVEw4MmRWSmp0cHhhWU9HZ1I4VHp3ZWVJdTN3d0ozVlVPT3NpM2o5LVFsZ1dqeEp6TTRzRWZBTVFOVGViaGFrOFRxU19mZXE1NmVLNGJUM082ZWRTQ0tzSDB6WUhmNjl3YldyN1BIYWp5OGdDNThfWE9oeEhnMW40?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T06:57:11+00:00",
+        "source": "Wales 247",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdWt5amdWd0Z5OG4xeWZGY3lyekdoc3B2dDhTN09FNXM1NzdsVVo5eVRjc3cxR2dpaE5Lem1yc3pzWG1Za0FjTzRvVjBrZ0oyX1lTNzZuT252U05jVWJEY2l6UzAtSUdvczNEa3UyeWFOSWtkS3cybXVhNUNyZll5RDVRUUlWY0hEa1ZYVg?oc=5",
         "contentType": "article"
       },
       {
-        "title": "England's Kane wins Ballon d'Or, Putellas claims women's award",
+        "title": "Yohji Yamamoto to Receive Outstanding Achievement Award at the Fashion Awards 2026",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T12:21:15+00:00",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1QxZF9zMjhreW9PWVhLRWRJdThPak1MZVZUMjNqYXVXR2N0VFZSdXVIWnFQNjI2YmF6WU9hdzJfbmNYVzFvRERQZEZIOHVXTzRLRnVKZFNBT2hBNDRBYVphYVdpaVoyZG4xTEg2aUNFUC1WSlgxc0g5RGFlM2FBZHozMVhqbXdqcllHQ3BtZWxhSVU?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T03:33:06+00:00",
+        "source": "Hypebeast",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTzBXSnloQXhLRkhmbkJ5UUN1M3JqWlFSS0s5OVdXMEFFYVhMSHgzRW11SjZKN2E2RXdqV2lKdFdnZlcyVGxDRzZSQXI4MHFfZzdlaG1SdmhBN2hLbVhXZ29pMkVXRUFjazY2RFFEV1YyUmNzMlBJZ0R3SnJybnNzWVZ3cmFRN3lPdEhYcWd0Ymt1cWljTjNwY1EtZWYxbktPdXp5ZGdKb3VYQUYwb3p4SHQyekQ4WHR5VmFyUkxwaHFVQ2hYUkZEVjZiOWY?oc=5",
         "contentType": "article"
       }
     ],
     "AI": [
       {
-        "title": "I tested the 3 Claude Code alternatives the internet keeps talking about, and only one let me down",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T23:00:21+00:00",
-        "source": "XDA",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdVZVbzFtbDFxZnF1V0VYS2ptbFhIb3pyNThETi03Mk5xMUhmMUs5TTVWUXBRSUlGUWtXcDM3RVRwVmlLRDV4ZklfMjF6Y2hGbmVrMEhKREdaRmh3VE5vZ1VBQ2IyZ1FDbjl4SXNGSFAzcW5CdXRtcG04V05yNGNEb2g0a0hKMkdEVE9mdkZzVjNub1BEWXFERDhteDlkUlN5c3Fpai1jeTl4a0ZkV05tZVl4U2RqbVZiUW8zSWtSSm5fd0k2N2t4aQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "What Robinhood's CFO found interesting about Anthropic's IPO prospectus",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T22:39:10+00:00",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYTFUYlczNE9XenRKMzF5bXotSFhzQmVveURNenRkcThsTGQ1eENhZWRPUllNUEJneldxclh3NTdIZUtjdGxpeUxhQ2FlbFZqRDNLWlZWTDhwLUFWZUNkSjhGLTQxSE9SOXJXcXB4MlYyZGlwT0N5amo0M19jdWRmVWV6UE1ZZnFuM3EtS3ROV3I1ZkxLaXdwd3pEbEJKXzNzWS1RUnJWVE1HOXdHbTdSdVc0OFd3NEt1YWdBLXlaQ0NoOUI3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "AI for Science expands to foundations and research institutions",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T20:14:19+00:00",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTE8xTmRrRUZtQndpOVdCTUFQQ2ZXSjl5Tk4zeXB0RzhSVzRYaUt3S091Y3FmRnVvT1c0UXhIVW0xZF83R2c1VUwtNjhNUkcxYWI0MFRXWXcxT2ZLdkF6bUd5V0JpTWJla3BzOWNORmdFN0ZTUkplbmZRcjRNdm5GSUVDUXp5QWwxNkRoN3JCVXo?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic acquires first in-house drug programme from 'pipeline-in-a-person' company",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T19:51:39+00:00",
-        "source": "FirstWord Pharma",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9IUTN2SUpwR1dNakx2R2xneVJjeFZoUnJ4Q29CV1E4X2hWZEVnZllYcm5WYWNLdVBPNThqal9ySW1uYkZLcU1RTWFzZ2E2N21uOEw4?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic just launched tools to show companies what their AI spending is buying",
-        "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T19:19:58+00:00",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORDlBbXhmcEdpSXhaQ1YyY0llV1JaU29fZzFvZ2xBdDZzdlEyVWhuR3k4QWpSQ196MXI1SUVVVlBzMER5ZUZHOUF6bVJYZVg5cXh1TTlOdWJWc2I4N0laSmpRNGg1Um1qQ05obkVPRDJiUm9lQks1WFdQdUp1SldtVV9PMnVicVRJcTlUMWQzZDFjbXZqS2lVU3hNeVBCb2FKdXV5YWNjZGdpUmY2TWs0ckxXdHgzZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Google announces Gemini 4 Carbon, its new frontier AI model",
+        "title": "I stopped giving ChatGPT, Claude, and Gemini detailed prompts for a week, and one struggled more than I expected",
         "summary": "",
         "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T02:49:36+00:00",
-        "source": "Mashable",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5KY0huTm8xc1V3aXd3ekl4NHdfX05NMGd1SmdERWxNdnllUWhDUVozVGNsVDFzekk3SklmMEdzdUV1SThYUERLRjFWRmRSZHJJMVBtME95QUEzcXlpOFBxQXFKdWRheTVjQjBNZXpqUUlybzdJR2NOZDVR?oc=5",
+        "publishedAt": "2026-10-29T21:30:22+00:00",
+        "source": "XDA",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWldzeWJJNnA0ZEtTR0RRN0hCNUV2RHFZR2lxSHJQRV90TGktLXN3aXVXRTZfOGMyTm8zVzI0NnFvMWo1RElhYmpWVTJZTFZTSkI2QkdJaHdKZjcyd0U2dVRuR3RiZFVaUkEwUlpaV2tnZks3SVl0Q3JrSnl6VXV0cGUxeVpxVzFsVUdWYU5udXFZVnJYdHU0Z3V6Uk5IWE1qbUh6TGJHSzdOZnFMVzhhZ3pibDNMTXUxOWJGeXVOWQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic takes to stormy waters with US$100bn sink-or-swim IPO",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T20:31:49+00:00",
+        "source": "International Financing Review",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMERveXctUWhPeWxxOVNHcVJPNHN0cG8wcFZ3bTI5V1BRMmlXRTJhcUVJeVV0QW41NndCX2lPVlpydHVFcnRIM0Qyd2hYSThqRTVFcWJtWDc5QXVBd0YyQWxubUM0czVuV2Fia21qaDh1YmVIZXNidTFRdGk4b1JUQVdyS3NQOVV4OXNBeFFURDRWUGpxd0FFZ3NlMTZCc0NDeXc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic is SpaceX’s biggest customer, bringing in a third of revenue",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T20:11:05+00:00",
+        "source": "The Next Web",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5pMkdmT19JN3lOTUlVVERsTGdNWUc1N1RWM1dwSjZlSEFRaDhNUGFpRExzRzYtVkpqaGdfMDV4eEhPWnFuR3Y2TVVRbWVTVXlaLW96TTQ5VkR2TDh6Q1NhNG12T0gzMUJoU0lyM2hSM25zdWxmdjNtbWwyS3Y?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic’s financials are surprisingly strong",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T19:10:41+00:00",
+        "source": "Understanding AI | Timothy B. Lee",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFByaHZWbjdzYUFQeU9KTkpiaFdCV1lOdUN2Z2ZZaUFfNDRpVHU0MW5uWlNNdk1XeGhlcUhNMEVTLWg2T1hCazNaQkhrUFNOZldWQmM2cDRCOThiai0yNFEwSFdXZzA1dnZKeWF3cmxrVW1XbVRLUGtQeW5HNFg?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Gemini 4 Carbon: Google Conquers the Intelligence Frontier",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T11:30:26+00:00",
+        "source": "AI Magazine",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMUE5Q3ZZelRYTG1fNHlVb090UElFVVYtTVhmb1E0LU1iV2JmY0V0VjV5VFA0bXZKMGN2R1JSVV9YVWhnZzhwSHI5RTk2WlQ4ZmI0U3BMMjB3SFRGWGJ6Q3piNjUteldOWmpDbXlkRXkzZThHejJabWlGVXVzVWNJelJleGVRNWRxTlN4S3dn?oc=5",
         "contentType": "article"
       },
       {
@@ -864,12 +934,21 @@
         "contentType": "article"
       },
       {
-        "title": "DeepSeek, Moonshot used OpenAI's GPT-6 Astra to train latest models, The Information reports",
+        "title": "OpenAI rewrites its AI rulebook around five core values",
         "summary": "",
         "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T02:27:34+00:00",
-        "source": "Euronext Markets: Real-time Stock Market Data | live",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbW51bGM0aWtjWEkzdWdtN3paOC1FT2FNQUNwcmMxUVJ0V1M3cnJVLUJMUmJRMlpKazlIWkZFUmdLUHl1X1dfbXY4VVl0RVhJRTV2UURlNmhDRlp0VzFtdkFad1BaVjRsejlsZTNfSFJZQUFnYVZXSDhVVllXY0hUNWxfVDhoSkxfb0hRWGV0bFVuOUdLYVROck9rLWltRDJlOFdUWnAzNE9JMTV0MmJjd1JMR0dsRnZpTlpNeVp0Y1MxNVll?oc=5",
+        "publishedAt": "2026-10-29T18:21:04+00:00",
+        "source": "The Next Web",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoVXY0WE1zNFJZM1BDN29USHEtUUNBLUJHN2VjSmtuUVpXTklfZmprNzNHWkk1akI2eTRyQTRJQnZ5YVR2QnNXeFNYckxvYjZWb3JLbU9iNXFuVXNiVmlLaEtsSFIxRDB6OXZyQU5VdmxZUQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "DeepSeek and Moonshot AI are reportedly using GPT-6 Astra for training",
+        "summary": "",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T07:59:33+00:00",
+        "source": "Techzine Global",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVGdlcnFTYUlESWtFQ2VuTXpNUk5uZDNBTURiMFJVZlhWRUJ4VkdfX2lHZGRXMmY1a2dCdzBHQW00bFZsaFhraDNOTlpybWxTZkU2bkJzRmdERWlnWTh1ZE5icjNQTzNIVGV4SGlYUHA0NThma0tkOGFhSFVUd0lldjZzUUlxaUdQOWhGS0hLYjlpUXppSWhIdE1LUHlDTkRLX1VCajdscDdHWW4yb1lkWmRaSi1OYzU5?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -1090,6 +1169,29 @@
       "preferenceScore": 441.0
     },
     {
+      "title": "Stacey Dooley",
+      "summary": "Stacey Dooley explores the death of 19-year-old soldier Jaysley Beck as her family fights for justice, asking whether the army does enough to protect young women.",
+      "meta": "BBC iPlayer · Available since Tue 27 Oct",
+      "source": "BBC iPlayer",
+      "channel": "BBC iPlayer",
+      "releaseDate": "2026-10-27",
+      "releaseDateLabel": "Available since Tue 27 Oct",
+      "url": "https://www.bbc.co.uk/programmes/b048vy8l",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/237/593120.jpg",
+      "artworkAlt": "Stacey Dooley programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-27",
+      "showId": 4594,
+      "episodeId": 3798316,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-10-29",
+      "preferenceScore": 437.1
+    },
+    {
       "title": "The Northumbria Mysteries",
       "summary": "When an exclusive, high-roller poker night ends with the murder of oil magnate and seemingly devoted family man Jeremy Hare, Rose and Raj find themselves completely out of their depth in…",
       "meta": "BBC iPlayer · Available since Fri 23 Oct",
@@ -1187,7 +1289,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-29",
-      "preferenceScore": 377.6
+      "preferenceScore": 377.3
     },
     {
       "title": "Convictions Gone Bad with Will Mellor",
@@ -1210,7 +1312,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-29",
-      "preferenceScore": 370.2
+      "preferenceScore": 370.3
     },
     {
       "title": "Dexter: Resurrection",
@@ -1307,29 +1409,6 @@
       "interestLane": "dark-documentary",
       "generatedDate": "2026-10-29",
       "preferenceScore": 264.7
-    },
-    {
-      "title": "Deadly Destinations",
-      "summary": "The story of Oklahoma retirees Gary and Linda Haas, who were murdered in New Mexico. A fingerprint pointed detectives towards a jailbreak and four desperate fugitives.",
-      "meta": "TRUE CRIME · Wed 4 Nov, 10pm",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-11-04",
-      "releaseDateLabel": "Wed 4 Nov, 10pm",
-      "url": "https://www.truecrime-tv.co.uk/shows.php?title=deadly+destinations",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609434.jpg",
-      "artworkAlt": "Deadly Destinations programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-11-04",
-      "showId": 94786,
-      "episodeId": 3791054,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-29",
-      "preferenceScore": 263.5
     }
   ]
 }
