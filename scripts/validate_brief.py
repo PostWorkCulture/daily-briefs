@@ -1,0 +1,195 @@
+"""Protected-rule validator for a refreshed brief.
+
+Shared by the GitHub Actions Morning refresh and the local Windows runner
+(scripts/daily_refresh_runner.ps1) so no edition is published without
+passing the same checks. Run from anywhere: python scripts/validate_brief.py
+"""
+import os
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+os.chdir(ROOT)
+sys.path.insert(0, str(ROOT))
+
+import json
+from datetime import date, datetime, timedelta
+from pathlib import Path
+from scripts.refresh import local_news_item_is_in_scope, positive_uk_news_item_is_in_scope, section_content_type_errors
+from zoneinfo import ZoneInfo
+today_date=datetime.now(ZoneInfo('Europe/London')).date()
+today=today_date.isoformat()
+for profile in ('pete','sofia'):
+    p=Path('data')/f'{profile}.json'
+    data=json.loads(p.read_text())
+    assert data.get('weather',{}).get('source')=='Met Office', f'{profile}: weather source changed'
+    ext=data.get('weather',{}).get('yesterdayExtremes',{})
+    assert ext.get('source')=='Met Office', f'{profile}: extremes source changed'
+    assert not ext.get('error'), f"{profile}: England extremes unavailable: {ext.get('error')}"
+    for kind in ('hot','cold'):
+        place=ext.get(kind) or {}
+        assert place.get('country')=='England', f'{profile}: {kind} extreme is not in England'
+        assert str(place.get('town') or '').strip(), f'{profile}: {kind} extreme missing town'
+        assert str(place.get('county') or '').strip(), f'{profile}: {kind} extreme missing county'
+        expected=f"{place['town']}, {place['county']}"
+        assert place.get('displayLocation')==expected, f'{profile}: {kind} extreme does not show town and county'
+        photo=place.get('photo') or {}
+        photo_src=str(photo.get('src') or '')
+        assert photo_src.startswith(f'assets/weather-extremes/{kind}.webp?v='), f'{profile}: {kind} extreme has no local place image'
+        photo_path=Path(photo_src.split('?',1)[0])
+        assert photo_path.exists() and photo_path.stat().st_size>20_000, f'{profile}: {kind} local place image is missing or empty'
+        assert str(photo.get('page') or '').startswith('https://commons.wikimedia.org/wiki/File:'), f'{profile}: {kind} image has no source page'
+        assert str(photo.get('credit') or '').strip(), f'{profile}: {kind} image has no credit'
+    picks=data.get('watch') or []
+    assert len(picks)==5, f'{profile}: expected exactly 5 TV Picks'
+    assert all((x.get('title') or '').strip() for x in picks), f'{profile}: unnamed TV Pick'
+    assert len({x.get('title','').casefold() for x in picks})==len(picks), f'{profile}: duplicate TV Pick'
+    allowed_tv_lanes={'dark-documentary','dark-scripted','sci-fi','apple-premiere','major-sport'}
+    assert all(x.get('interestLane') in allowed_tv_lanes for x in picks), f'{profile}: TV Picks contain off-profile filler'
+    assert sum(x.get('interestLane')=='dark-documentary' for x in picks)>=3, f'{profile}: TV Picks are not documentary-led'
+    for pick in picks:
+        assert pick.get('contentType')=='tv-pick', f'{profile}: non-programme TV Pick'
+        assert pick.get('generatedDate')==today, f'{profile}: stale TV Picks'
+        airdate=date.fromisoformat(str(pick.get('airdate') or ''))
+        assert today_date-timedelta(days=7)<=airdate<=today_date+timedelta(days=7), f'{profile}: TV Pick is outside the previous/next-week window'
+        assert str(pick.get('artwork') or '').startswith('https://static.tvmaze.com/uploads/images/original_untouched/'), f'{profile}: TV Pick has no exact programme artwork'
+        assert str(pick.get('url') or '').startswith(('https://','http://')), f'{profile}: TV Pick has no destination link'
+        assert str(pick.get('programmeType') or '').casefold() != 'reality', f'{profile}: reality TV appeared in TV Picks'
+        assert not any(str(genre).casefold() == 'reality' for genre in pick.get('genres') or []), f'{profile}: reality genre appeared in TV Picks'
+        assert 'gary barlow' not in str(pick.get('title') or '').casefold(), f'{profile}: Gary Barlow appeared in TV Picks'
+        sports=__import__('re').compile(r'\b(?:sports?|football|soccer|premier league|champions league|fa cup|carabao cup|rugby|cricket|tennis|golf|boxing|formula\s*(?:one|1)|f1|motorsport|grand prix|athletics?|olympics?|basketball|nfl|super bowl|baseball|nhl|ice hockey|cycling|darts|snooker|horse racing|wrestling|wwe|ufc)\b',__import__('re').I)
+        allowed_sport=__import__('re').compile(r'\b(?:world cup|uefa euro(?:s|\s*20\d{2})?|uefa european championship|wimbledon)\b',__import__('re').I)
+        pick_text=' '.join(str(pick.get(key) or '') for key in ('title','summary','badge'))
+        assert not sports.search(pick_text) or allowed_sport.search(pick_text), f'{profile}: routine sport appeared in TV Picks: {pick.get("title")}'
+    sections=data.get('sections') or {}
+    content_errors=section_content_type_errors(sections)
+    assert not content_errors, f"{profile}: section content bleed: {'; '.join(content_errors)}"
+    local_items=sections.get('Local news') or []
+    assert len(local_items)>=10, f'{profile}: fewer than 10 Local News items'
+    assert all(local_news_item_is_in_scope(item) for item in local_items), f'{profile}: Local News contains a story outside the approved KT8 area'
+    local_dates=[str(item.get('publishedAt') or '') for item in local_items]
+    assert local_dates==sorted(local_dates,reverse=True), f'{profile}: Local News is not newest first'
+    uk_items=sections.get('UK news') or []
+    assert len(uk_items)>=10, f'{profile}: fewer than 10 UK News items'
+    assert all(positive_uk_news_item_is_in_scope(item) for item in uk_items), f'{profile}: UK News contains a non-positive story'
+
+tv_history=json.loads(Path('data/tv-picks-history.json').read_text()).get('days') or []
+assert tv_history and tv_history[-1].get('date')==today, 'TV Picks history was not updated today'
+current_tv=json.loads((Path('data')/'pete.json').read_text()).get('watch') or []
+assert tv_history[-1].get('titles')==[item['title'] for item in current_tv], 'TV Picks history does not match the published list'
+
+catalog=json.loads(Path('data/fact-catalog.json').read_text())
+history=json.loads(Path('data/fact-history.json').read_text()).get('used') or []
+fact_ids=[str(item.get('id') or '') for item in catalog]
+fact_texts=[__import__('re').sub(r'\W+','',str(item.get('fact') or '').lower()) for item in catalog]
+assert catalog and len(fact_ids)==len(set(fact_ids)), 'Fact catalogue has duplicate IDs'
+assert len(fact_texts)==len(set(fact_texts)), 'Fact catalogue repeats fact text'
+for item in catalog:
+    context=str(item.get('locationContext') or '').strip()
+    assert context and '·' in context, f"Fact lacks country/region context: {item.get('id')}"
+human_first=[item for item in catalog if item.get('editorialPriority')=='human-first']
+assert len(human_first)>=8, 'Fact catalogue needs at least eight human-first facts'
+human_categories=' '.join(str(item.get('category') or '').lower() for item in human_first)
+for required_category in ('people','population','tradition','music','record'):
+    assert required_category in human_categories, f'Fact catalogue lacks a human-first {required_category} category'
+used_ids=[str(item.get('id') or '') for item in history]
+used_dates=[str(item.get('date') or '') for item in history]
+assert len(used_ids)==len(set(used_ids)), 'Fact history repeats a fact ID'
+assert len(used_dates)==len(set(used_dates)), 'Fact history has two facts on one date'
+assert set(used_ids)<=set(fact_ids), 'Fact history contains an unknown fact ID'
+assert history, 'Fact history is empty'
+for profile in ('pete','sofia'):
+    profile_data=json.loads((Path('data')/f'{profile}.json').read_text())
+    fact=profile_data.get('worldFact') or {}
+    assert fact.get('id')==history[-1].get('id'), f'{profile}: current fact does not match history'
+    assert fact.get('date')==history[-1].get('date'), f'{profile}: current fact date does not match history'
+    assert str(fact.get('sourceUrl') or '').startswith('https://'), f'{profile}: fact has no verified source'
+    assert str(fact.get('image') or '').startswith('https://'), f'{profile}: fact has no matched image'
+    assert str(fact.get('locationContext') or '').strip(), f'{profile}: fact has no country/region context'
+    catalog_fact=next(item for item in catalog if item.get('id')==fact.get('id'))
+    assert catalog_fact.get('editorialStatus')!='retired', f'{profile}: retired fact was published'
+
+pete=json.loads((Path('data')/'pete.json').read_text())
+sofia=json.loads((Path('data')/'sofia.json').read_text())
+non_mens_arsenal=__import__('re').compile(r'\b(?:u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|youth|women(?:[\'’]?s)?|girls?)\b', __import__('re').I)
+arsenal_items=((pete.get('sections') or {}).get('Arsenal news') or []) + ((pete.get('arsenal') or {}).get('news') or [])
+assert not any(non_mens_arsenal.search(' '.join(str(item.get(key,'')) for key in ('title','summary','source'))) for item in arsenal_items), 'Arsenal first-team news contains academy, youth, women or girls content'
+from scripts.fun_activities import eligible
+for profile,data in (('Pete',pete),('Sofia',sofia)):
+    assert 'Career' not in data.get('sections',{}), f'{profile}: removed Career section returned'
+    for item in (data.get('sections') or {}).get('Fun') or []:
+        assert eligible(item,today_date), f'{profile}: invalid or expired family activity'
+
+last_result=(pete.get('arsenal') or {}).get('lastResult') or {}
+for key in ('result','scorersLabel','competition','summary','kickoff','stadium'):
+    assert str(last_result.get(key) or '').strip(), f'Arsenal last result missing {key}'
+assert isinstance(last_result.get('scorers'),list), 'Arsenal last result missing structured scorers'
+fixture=(pete.get('arsenal') or {}).get('nextFixture')
+position=(pete.get('arsenal') or {}).get('leaguePosition')
+assert isinstance(position,int) and 1<=position<=20, 'Arsenal current Premier League position is unavailable'
+assert fixture, 'Arsenal next fixture is unavailable'
+required=('opponent','stadium','kickoff','competition','tvChannel')
+for key in required:
+    assert str(fixture.get(key) or '').strip(), f'Arsenal next fixture missing {key}'
+fixture_dt=datetime.fromisoformat(str(fixture.get('date') or ''))
+assert fixture_dt>=datetime.now(ZoneInfo('Europe/London'))-timedelta(hours=3), 'Arsenal next fixture is already stale'
+fixture_sources=str(fixture.get('source') or '').casefold()
+assert 'sky sports' in fixture_sources or 'bbc sport' in fixture_sources, 'Arsenal next fixture lacks Sky Sports or BBC Sport verification'
+previous=fixture.get('previousMeeting') or {}
+assert str(previous.get('score') or '').strip(), 'Arsenal next fixture missing previous-meeting score'
+
+trusted_sources={'arsenal.com','bbc sport','sky sports','the athletic','the guardian','reuters','espn','the new york times'}
+transfers=(pete.get('arsenal') or {}).get('transfers') or []
+transfer_dates=[]
+for item in transfers:
+    source=str(item.get('source') or '').lower()
+    title=str(item.get('title') or '')
+    assert item.get('contentType')=='transfer-update', 'Arsenal transfer section contains non-transfer content'
+    assert item.get('trust') in {'Official','Tier-one report','Trusted report'}, 'Arsenal transfer item has no approved trust label'
+    assert any(name in source for name in trusted_sources), f'Arsenal transfer source is not approved: {source}'
+    assert not __import__('re').search(r'\b(?:rumou?rs?|gossip|paper talk|odds|betting|vacanc(?:y|ies)|jobs?|careers?|creative|marketing|partnerships?|commercial|u[-\s]?(?:18|19|21|23)s?|under[-\s]?(?:18|19|21|23)s?|academy|youth|women(?:[\'’]?s)?|girls?)\b', title, __import__('re').I), f'Arsenal trusted transfer item is outside men\'s first-team scope: {title}'
+    assert str(item.get('publishedAt') or '').strip(), f'Arsenal transfer item has no machine-sortable date: {title}'
+    transfer_dates.append(item['publishedAt'])
+assert transfer_dates==sorted(transfer_dates,reverse=True), 'Arsenal trusted transfers are not newest first'
+
+x_reporters={'David Ornstein','Fabrizio Romano','Charles Watts','James Benge'}
+x_profiles={
+    'David Ornstein':'https://x.com/David_Ornstein',
+    'Fabrizio Romano':'https://x.com/FabrizioRomano',
+    'Charles Watts':'https://x.com/charles_watts',
+    'James Benge':'https://x.com/jamesbenge',
+}
+rumours=(pete.get('arsenal') or {}).get('transferRumours') or []
+rumour_dates=[]
+for item in rumours:
+    title=str(item.get('title') or '')
+    source=str(item.get('source') or '')
+    assert item.get('contentType')=='transfer-rumour', 'Reporter watch contains non-rumour content'
+    assert item.get('trust')=='Unconfirmed' and item.get('speculative') is True, 'Reporter watch item is not clearly marked unconfirmed'
+    assert item.get('sourceType')=='X', 'Reporter watch item is not from the X allowlist'
+    assert source in x_reporters and item.get('sourceUrl')==x_profiles[source], f'Unapproved X reporter: {source}'
+    assert not __import__('re').search(r'\b(?:odds|betting|gambling|women|women\'s|u21|u18|academy|youth|girls)\b', title, __import__('re').I), f'Ineligible Reporter watch item: {title}'
+    assert str(item.get('publishedAt') or '').strip(), f'Reporter watch item has no machine-sortable date: {title}'
+    rumour_dates.append(item['publishedAt'])
+assert rumour_dates==sorted(rumour_dates,reverse=True), 'Reporter watch is not newest first'
+
+rules=json.loads(Path('data/story-images.json').read_text())
+seen={}
+all_articles=set()
+for data in (pete,sofia):
+    sections=data.get('sections') or {}
+    for section in ('Local news','UK news','Sweden','AI','Career','Arsenal news'):
+        all_articles.update(str(item.get('url') or '').strip() for item in sections.get(section) or [])
+    arsenal=data.get('arsenal') or {}
+    all_articles.update(str(item.get('url') or '').strip() for item in arsenal.get('news') or [])
+for article,rule in rules.items():
+    src=rule.get('src') if isinstance(rule,dict) else None
+    assert src, f'missing image src for {article}'
+    assert article in all_articles, f'image rule is not tied to a current article: {article}'
+    assert rule.get('provenance')=='publisher', f'non-publisher image rule: {article}'
+    assert str(rule.get('matchedPageTitle') or '').strip(), f'image rule missing matched publisher title: {article}'
+    assert not any(host in src.lower() for host in ('upload.wikimedia.org','unsplash.com','pexels.com')), f'generic image host used: {article}'
+    key=src.split('#',1)[0]
+    assert key not in seen, f'duplicate story image: {article} and {seen.get(key)}'
+    seen[key]=article
+print(f'Validated {len(rules)} exact publisher image rules, strict section content types, a permanent no-repeat fact history, 10+ Local/UK stories, trusted Arsenal transfers, England-only weather extremes, newest-first UK public-sector AI jobs, dynamic two-week exact-artwork TV Picks and full Arsenal fixture details')
