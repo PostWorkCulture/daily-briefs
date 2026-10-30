@@ -1,3 +1,10 @@
+## 30 October 2026: Reinstaller for the local Windows morning task
+
+- **Cause**: No edition was published by 05:00 on 30 October. GitHub's scheduled Morning refresh did not start between 04:00 and 06:30 UTC, and the local `DailyBriefMorningRefresh` task wrote nothing to `daily-refresh.log`, so it never launched (most likely the laptop was asleep or on battery). The edition was published by a manual `workflow_dispatch` run at 08:28 UTC.
+- **Fix (Pete chose to rely on the local runner)**: New `scripts/install_daily_task.ps1` re-registers `DailyBriefMorningRefresh` at 04:55 Windows local time (follows GMT/BST), with wake-to-run, start-when-available after a missed run, allowed on battery, network required, three 15-minute restarts and a two-hour limit, and enables wake timers on mains and battery. The runner itself is unchanged and still waits for 05:00 London and skips once both profiles are current.
+- **Unchanged**: Runner, refresh scripts, validator, GitHub workflows, sections, layout and data.
+- **Validation**: Not executed from the maintenance sandbox (no Windows shell); Pete runs it once from an elevated PowerShell and the script prints the next run time.
+
 ## 29 October 2026: Local Windows runner gated to 05:00 London and to the protected-rule validator
 
 - **Cause**: Every Morning refresh commit since at least 20 October was pushed by the local Windows Task Scheduler job (`scripts/daily_refresh_runner.ps1`, author PostWorkCulture), not GitHub Actions. The task fires at a fixed UTC time, so after the clocks went back on 25 October it ran at 04:00 GMT and editions showed "refreshed 4:00am". Because the local run published first, the GitHub 05:00 run always found today's edition already published and its protected-rule validator never ran. The runner also never checked exit codes (PowerShell `$ErrorActionPreference = "Stop"` does not apply to native commands), so a failing `finalize_arsenal.py` or test suite still committed and pushed. This is how the incomplete 19, 20, 22 and 28 October editions were published.
