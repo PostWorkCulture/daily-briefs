@@ -19,15 +19,15 @@
     "localImage": "assets/scenery/world-fact.webp?v=a59b2f17e21b"
   },
   "weather": {
-    "temp": "9°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "15°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-10-31",
         "high": 15,
-        "low": 7,
+        "low": 8,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -53,7 +53,7 @@
       },
       {
         "date": "2026-11-03",
-        "high": 12,
+        "high": 13,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -62,7 +62,7 @@
       },
       {
         "date": "2026-11-04",
-        "high": 12,
+        "high": 11,
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -71,20 +71,20 @@
       },
       {
         "date": "2026-11-05",
-        "high": 10,
+        "high": 11,
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-06",
-        "high": 11,
-        "low": 7,
+        "high": 10,
+        "low": 8,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       }
     ],
