@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -20,6 +21,20 @@ from dateutil import parser as dateparser
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+DIAG: dict = {}
+
+
+def published_arsenal(profile: str = "pete") -> dict:
+    """Arsenal block of the last committed edition (refresh.py rebuilds the working copy)."""
+    try:
+        raw = subprocess.run(
+            ["git", "show", f"HEAD:data/{profile}.json"],
+            cwd=ROOT, capture_output=True, check=True, timeout=30,
+        ).stdout
+        return (json.loads(raw.decode("utf-8")) or {}).get("arsenal") or {}
+    except Exception:
+        return {}
+
 TZ = ZoneInfo("Europe/London")
 NOW = datetime.now(TZ)
 UA = {"User-Agent": "Mozilla/5.0 DailyBriefs/3.2"}
@@ -260,6 +275,7 @@ def enrich_completed_result(item: dict) -> dict:
             comp = dict(competitions[0])
             if not any(d.get("scoringPlay") for d in comp.get("details") or []):
                 comp["details"] = espn_key_event_goals(summary.get("keyEvents") or [])
+            DIAG["espnGoals"] = len(comp.get("details") or [])
             if not (comp.get("venue") or {}).get("fullName"):
                 venue = (summary.get("gameInfo") or {}).get("venue") or {}
                 if venue.get("fullName"):
@@ -769,6 +785,8 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             and last_day
             and dateparser.parse(item["date"]).date() == last_day
         ]
+        DIAG["espnMatched"] = bool(same_espn)
+        DIAG["espnCompleted"] = sorted({f"{i.get('dateLabel')} {i.get('opponent')}" for i in espn_fixtures if i.get("completed")})[-3:]
         if same_espn:
             details = enrich_completed_result(max(same_espn, key=lambda item: item["date"]))
             last_result = dict(last_result)
@@ -842,6 +860,13 @@ def main() -> None:
     path = DATA / "pete.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
     existing_arsenal = payload.get("arsenal") or {}
+    # Prefer the last published edition for previously verified details
+    # (stadium, scorers, upcoming fixture); refresh.py has just rebuilt this block.
+    published = published_arsenal()
+    for key in ("lastResult", "nextFixture"):
+        if published.get(key):
+            existing_arsenal = dict(existing_arsenal)
+            existing_arsenal[key] = published[key]
     news = (payload.get("sections") or {}).get("Arsenal news", [])
     transfers = (payload.get("arsenal") or {}).get("transfers", [])
     transfer_rumours = (payload.get("arsenal") or {}).get("transferRumours", [])
@@ -856,7 +881,7 @@ def main() -> None:
         path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     last = enriched.get("lastResult") or {}
     print("::notice title=Arsenal lastResult::" + json.dumps(
-        {key: last.get(key) for key in ("dateLabel", "opponent", "result", "stadium", "scorersLabel", "summary", "source")},
+        {**{key: last.get(key) for key in ("dateLabel", "opponent", "result", "stadium", "scorersLabel", "summary", "source")}, **DIAG},
         ensure_ascii=False,
     ))
     print("Arsenal enrichment complete" + (" (dry-run)" if dry_run else ""))
