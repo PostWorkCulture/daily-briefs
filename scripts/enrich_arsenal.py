@@ -906,17 +906,6 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             for key in ("stadium", "scorers", "scorersLabel", "summary"):
                 if details.get(key):
                     last_result[key] = details[key]
-        # BBC Sport's results state lists every goal; ESPN often returns nothing.
-        if not last_result.get("scorers") and not str(last_result.get("scorersLabel") or "").strip():
-            bbc = bbc_scorers_for(last_result, bbc_results())
-            DIAG["bbcScorers"] = bool(bbc)
-            if bbc:
-                last_result = dict(last_result)
-                rows = bbc["scorers"]
-                last_result["scorers"] = rows
-                last_result["scorersLabel"] = scorers_label(
-                    rows, "Arsenal", str(last_result.get("opponent") or ""), len(rows)
-                )
         # The previous edition's nextFixture is this same match once it is played:
         # reuse its verified stadium when the result feeds omit it.
         prior_next = existing_arsenal.get("nextFixture") or {}
@@ -948,6 +937,17 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
                 for key in ("stadium", "scorers", "scorersLabel", "summary"):
                     if not last_result.get(key) and existing_last.get(key):
                         last_result[key] = existing_last[key]
+        # BBC Sport's results state lists every goal; ESPN often returns nothing.
+        if not last_result.get("scorers") and not str(last_result.get("scorersLabel") or "").strip():
+            bbc = bbc_scorers_for(last_result, bbc_results())
+            DIAG["bbcScorers"] = bool(bbc)
+            if bbc:
+                last_result = dict(last_result)
+                rows = bbc["scorers"]
+                last_result["scorers"] = rows
+                last_result["scorersLabel"] = scorers_label(
+                    rows, "Arsenal", str(last_result.get("opponent") or ""), len(rows)
+                )
         last_result = strip_internal(last_result)
     next_fixture = strip_internal(next_fixture)
 
