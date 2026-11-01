@@ -1,3 +1,9 @@
+## 1 November 2026: Liverpool previous meeting
+
+- **Cause**: The 1 November edition showed "No previous meeting found" for the upcoming Liverpool v Arsenal fixture (Sun 1 Nov, Anfield).
+- **Fix (`scripts/enrich_next_fixture.py`)**: Added `liverpool` to `HISTORICAL_MEETINGS`: Arsenal 0–0 Liverpool, 8 Jan 2026, Premier League, from the PremierLeague.com match report. No other rule, section or layout changed.
+- **Validation**: Module imports and the new entry resolves; Python tests run below.
+
 ## 30 October 2026: Reinstaller for the local Windows morning task
 
 - **Cause**: No edition was published by 05:00 on 30 October. GitHub's scheduled Morning refresh did not start between 04:00 and 06:30 UTC, and the local `DailyBriefMorningRefresh` task wrote nothing to `daily-refresh.log`, so it never launched (most likely the laptop was asleep or on battery). The edition was published by a manual `workflow_dispatch` run at 08:28 UTC.

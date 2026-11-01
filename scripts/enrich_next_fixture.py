@@ -64,6 +64,13 @@ STADIUMS = {
 
 # Historical fallbacks are only used when recent ESPN schedules do not contain a meeting.
 HISTORICAL_MEETINGS = {
+    "liverpool": {
+        "score": "Arsenal 0–0 Liverpool",
+        "date": "8 Jan 2026",
+        "competition": "Premier League",
+        "source": "PremierLeague.com",
+        "url": "https://www.premierleague.com/en/news/4524015/arsenal-0-0-liverpool-match-report-8-january-2026",
+    },
     "napoli": {
         "score": "Napoli 0–1 Arsenal",
         "date": "18 Apr 2019",
