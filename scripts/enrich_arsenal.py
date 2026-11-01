@@ -855,7 +855,7 @@ def main() -> None:
     if not dry_run:
         path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     last = enriched.get("lastResult") or {}
-    print("Arsenal lastResult: " + json.dumps(
+    print("::notice title=Arsenal lastResult::" + json.dumps(
         {key: last.get(key) for key in ("dateLabel", "opponent", "result", "stadium", "scorersLabel", "summary", "source")},
         ensure_ascii=False,
     ))
