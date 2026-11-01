@@ -1,38 +1,29 @@
 {
-  "updatedLabel": "Saturday, 31 October 2026 · refreshed 7:14am",
+  "updatedLabel": "Sunday, 1 November 2026 · refreshed 5:01am",
   "worldFact": {
-    "id": "mir-mine-deepest-diamond-pit",
+    "id": "dead-sea-lowest-point-on-earth",
     "editorialPriority": "human-first",
-    "category": "Crazy planet",
-    "country": "Russia",
-    "place": "Mir mine · Mirny",
-    "locationContext": "Yakutia · Eastern Siberia, Russia",
-    "source": "Smithsonian Magazine",
-    "sourceUrl": "https://www.smithsonianmag.com/travel/the-deepest-holes-in-the-world-180956891/",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mirny_in_Yakutia.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Mirny_in_Yakutia.jpg",
-    "photoCredit": "Staselnik · CC BY-SA 3.0",
-    "fact": "The open-pit Mir diamond mine in Siberia plunges 525 metres (1,722 feet) deep and spans 1,200 metres across. The immense artificial crater creates downward atmospheric vortexes so violent that the Russian aviation authority strictly banned helicopters from flying over its airspace.",
+    "category": "World record",
+    "country": "Israel / Jordan",
+    "place": "Dead Sea shoreline",
+    "locationContext": "Jordan Rift Valley · Middle East",
+    "source": "Guinness World Records",
+    "sourceUrl": "https://www.guinnessworldrecords.com/world-records/lowest-point-on-land",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ein_Bokek._Dead_Sea._Israel._08.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ein_Bokek._Dead_Sea._Israel._08.jpg",
+    "photoCredit": "Amos Meron · CC BY-SA 3.0",
+    "fact": "At 430 metres (1,411 feet) below global sea level, the shores of the Dead Sea mark the lowest land point on Earth. The extreme barometric pressure creates roughly 8% higher oxygen concentration than sea-level air and natural protection against solar UVB rays.",
     "editorialBoost": "wild",
-    "date": "2026-10-31",
-    "sequence": 71,
-    "localImage": "assets/scenery/world-fact.webp?v=a59b2f17e21b"
+    "date": "2026-11-01",
+    "sequence": 72,
+    "localImage": "assets/scenery/world-fact.webp?v=3189fa652eb7"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Clear",
-    "condition": "Clear",
+    "temp": "9°",
+    "summary": "Mist",
+    "condition": "Mist",
     "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-10-31",
-        "high": 11,
-        "low": 7,
-        "summary": "Sunny",
-        "condition": "Sunny",
-        "rainChance": 4,
-        "source": "Met Office"
-      },
       {
         "date": "2026-11-01",
         "high": 12,
@@ -44,7 +35,7 @@
       },
       {
         "date": "2026-11-02",
-        "high": 12,
+        "high": 13,
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -57,7 +48,7 @@
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -80,17 +71,26 @@
       },
       {
         "date": "2026-11-06",
+        "high": 11,
+        "low": 7,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 10,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-11-07",
         "high": 10,
         "low": 7,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Sunny · rain chance around 4%",
+      "label": "Drier spells likely best",
+      "detail": "Overcast · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -98,37 +98,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Friday 30 October 2026",
+      "dateLabel": "Saturday 31 October 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Bude",
-        "town": "Bude",
-        "county": "Cornwall",
+        "location": "Wiggonholt",
+        "town": "Wiggonholt",
+        "county": "West Sussex",
         "country": "England",
-        "displayLocation": "Bude, Cornwall",
-        "value": "17.5°C",
+        "displayLocation": "Wiggonholt, West Sussex",
+        "value": "16.8°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=3e2cf7f685bc",
-          "page": "https://commons.wikimedia.org/wiki/File:The_Storm_Tower.jpg",
-          "credit": "CatchTheBus · CC0",
-          "alt": "The Storm Tower is a historical landmark in Bude, Cornwall. It was built around 1835 and is modelled on the Tower of the Winds in Athens. It has been moved twice due to coastal erosion.",
+          "src": "assets/weather-extremes/hot.webp?v=d21c384d1cbf",
+          "page": "https://commons.wikimedia.org/wiki/File:Pulborough_Brooks.JPG",
+          "credit": "Charlesdrakew · public domain",
+          "alt": "Pulborough Brooks nature reserve in Wiggonholt, West Sussex",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "East Malling",
-        "town": "East Malling",
-        "county": "Kent",
+        "location": "Bainbridge",
+        "town": "Bainbridge",
+        "county": "North Yorkshire",
         "country": "England",
-        "displayLocation": "East Malling, Kent",
-        "value": "2.8°C",
+        "displayLocation": "Bainbridge, North Yorkshire",
+        "value": "0.1°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=fb6330d522b8",
-          "page": "https://commons.wikimedia.org/wiki/File:Level_Crossing_on_East_Malling_footpath_-_geograph.org.uk_-_1144112.jpg",
-          "credit": "David Anstiss · CC BY-SA 2.0",
-          "alt": "Level Crossing on East Malling footpath Path leads from The Rocks Road to Church Walk, across railway. Railway heads left to East Malling from Barming.",
+          "src": "assets/weather-extremes/cold.webp?v=5acb1f9a48a8",
+          "page": "https://commons.wikimedia.org/wiki/File:Crossing_Bainbridge_Pasture_-_geograph.org.uk_-_283250.jpg",
+          "credit": "Roger Gilbertson · CC BY-SA 2.0",
+          "alt": "Crossing Bainbridge Pasture On the Roman Road below Green Scar Mire.",
           "width": 1600,
           "height": 900
         }
@@ -136,34 +136,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Kids",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-30T00:00:00+00:00",
-      "end": "2026-11-01T00:00:00+00:00",
-      "date": "2026-10-30",
-      "time": "All day",
-      "allDay": true,
-      "color": "#e1e1e1",
-      "colorId": "8",
-      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "HALLOWEEN",
-      "summary": "",
-      "url": "",
-      "start": "2026-10-31T00:00:00+00:00",
-      "end": "2026-11-01T00:00:00+00:00",
-      "date": "2026-10-31",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "5dn6ean90tsbt0tcuc2am7sp5j",
-      "calendarColorSource": "google"
-    },
     {
       "title": "Demi Playdate",
       "summary": "",
@@ -390,48 +362,48 @@
     "played": 8,
     "news": [
       {
-        "title": "Arteta's update on Saka, Madueke and Tzolis",
+        "title": "Arsenal team news hint as injured star set to return against Liverpool",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T14:44:00+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRGRtMlVYOXlvTlJraUZKeDZ2QmtuV3VaN2phNVJwdG51V25maXlkNHVGY1VPMTFUUHc4QnhRdEViT0VfeDlSUG8xWENrSnN5TmQtc1o3anJBYXFIYk5VT2haTm91ZmJBRE02S1VrX09lN3dScWZlWkRJSEJKVUhXdHpPekxFbGNrVnNJ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal XI vs Liverpool: Confirmed team news and predicted lineup",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T23:34:07+00:00",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T21:54:29+00:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZzZZampZNXBHWVV4aW9rRUxBcGRTU3ItdUNZdjJvRnktUVkxRWZZMWtETlhwZ2JNV2J3RTdSNGFMTTBpMmNaTHBqOHlWOWpNMUFyMmR6YTJlMlo2dlZXUVpYMldQRUR0SlVhcDRLR2VsMTNIdUd2ajQ2bnN1Q0dIb3BHS3l6M0tNRE5HN1Q3MENsNlV4Tll2UDlLLXhnMmo2TEN6dEs4dHduZzJvek85V1pzemRBMW05d1EzZGN4U0dWdENaamN0NEJPbjNSaVJpelltWk0yN0dQYzRwX1NPWHVweDFjdndi?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Training photos: Liverpool prepare for Premier League showdown with Arsenal",
+        "title": "'If Liverpool want a title race, they have to beat Arsenal'",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T19:57:51+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV25ac0dvQ0lIcFJyaG80Yk0yaElyUHQxV2R4ajdoYVIzUHN2OTY2VDlyMW9kazdDSERvQTZLRlZtVVJIanBhV2premw1NkVkM1ZtanNmcUpLSU5YME5GZHV2RFRHSmN1QlZ1enM5NEQ0YzZOUzVtZUcyLWIzVzlhNTBHejhsaXRWLWFkY1h0YmtabnZsejN4V0NBQWd6djlfWi1SdVAzVWROVFU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Liverpool vs Arsenal: The last time Arsenal won in the Premier League at Anfield",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T13:38:43+00:00",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T02:31:25+00:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaUtTcmZ4SkVBNmNpYXMzZi14WGJROGRyOTloVzl6Ylo0RUR2T2RzSWxiM21SRERCZTVldnR3ZHNsMjlldS1yWWVNQW1vUldBZWYtaUpPSEtYcENwSnVubF9zaFktMDdXYUpXTzQ3SnhFdGtLN3R0OVlzUWIyNHFRUXlOZkp6YW90eHBlSjFKMEhXWUI0c0pUNEJCQlNoTjNYWDNJeWZuZ21sZ3E2WVpCWnVuR29RR1NNZzJRSEM1aEZGQVp1M2JndA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcTlWTFd5ODdRXzYwUnQyOTVMMks5M1hmRHpkSjZJVHNoN3VJbUZaSF9hcDU4OEZUTHJueExCNy1JbHczMW9aSkR1aGYxdlM5U1dXYmhBc090elM5WERqWWk1WmxaY1JZRDBCT3Qxdzl0SXI5Vi0yRy1oQTNTcVRkNVZrdnhaOERKMFI3RTRHZFpoZ2FOZG1ORHY2Q3BkUHhBd3A0WkhHVUVwN0NDNUVob1ZIVkh1ZUpLdzVCTC02V1RqanEtbTZxMDc4VlZJSG0xMEJLOFNLNTQ2TzNGQWt3dEUzTWp6UmtNd0F0aTVDMmNkWkxCUF9LTWV6MTVJQQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "How to watch Liverpool v Arsenal live on TV",
+        "title": "Liverpool v Arsenal: Team news",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T10:35:28+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOckJPaFEwOUlGcUJjNlZ2Q1JqZ2ZiTmVBTmFHWXF6VmdtcUY1bmkydTJVYTJ0dzI5QURSOGNzUW9VMllsMHU2X0pWTDB4aDFWNnFZQmhWNGdBSldqdHhnRnNhR1hlVEdUMTJjcUJtRTBNUEpnN0hUT3YzQkV1OFNVNFBWbjE5akdMTzdleFpB?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T09:20:36+00:00",
+        "source": "Liverpool FC",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "14 players could miss Liverpool vs Arsenal after Andoni Iraola injury update",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T04:00:00+00:00",
+        "source": "Liverpool Echo",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFp4dU90Z3FjREpuRmJ6MWdSUG45N2ItZV82bE5tRnR5bXRpSXJRckRJSEZwMlY2TXZsR19mYngwWGl3bmJCYVE2a3lNTE5jQWlHU05scG56MWFQTEgwWENPMWxiTG5VaDQ1czZKMHVJMmVzc1RHaVJkTVJJQmZyWkhMVENha3V1a0NnVWhHRHY3Zl90UlVyVUZGdm5wRmdHbE9LVlZ6WHNjUdIBrwFBVV95cUxORXYtWGZ6MmdNb2NyTFZ2NUU1dUxkT0lPcVZLU2pDOTF1V1pLdENYa0M2eGprYmduQ1k4X3JQMGtDdXFRdjlOQXE5Ukh3VUhKWnA0UFY5OHFWcUtVeDk3V1BwVEhVSl9QcjFVVktPdzc5NENKeHlJSFgtbDM1Z2cwX0w4ak1mRjMxVEx0TElpdUh0b0p1UUtVWUFBYmV6NmU4VW9zYnpNRUhnbUVUQWpB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool Predicted Lineup vs Arsenal: Isak Leads, Szoboszlai a Doubt",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T01:42:08+00:00",
+        "source": "The False 9",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Bcm43WU1mMjdDb3YyTjdFZGJZdEVQbmhnWVM2YnpJZDNIcXEyMWJTWGxfMzNBbEwtUXBIVlBJbHd2MFJUU3U5UEVpRC03TkdpUzhKRHdLRXNWM2tnZERtcFFhZ2duNERhT2FHVnhmdlZUVlBFcVgwUDZsRzhHcnM?oc=5",
         "contentType": "article"
       }
     ],
@@ -445,6 +417,20 @@
     "scope": "Arsenal men's first team · all competitions",
     "transfers": [],
     "transferRumours": [
+      {
+        "title": "Tzolis, Merino, Calafiori, Rice all involved in training today. Gyokeres' hair has grown back amazingly quickly from the clearly not AI picture that was doing the rounds yesterday",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T17:30:23+00:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE93WUhOZUNzUDhnZm45anVURFZ2TFRqRURYc04yUl90eW96M0I4T2luZlVicC02TG1EX0xRMTd1Wlg1R2IzZWhhQml6cVdSMGNieTF0Xy1GSkktMzBCdXlOVzUwUlI?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
       {
         "title": "Arsenal news update - Calafiori, Rice and Tzolis trained today - Madueke not ruled out, will depend on Saturday's session - Arteta \"very disappointed\" Dowman appeal was turned down, says Arsenal lucky he avoided a broken foot and warns it will keep happe",
         "summary": "",
@@ -500,62 +486,48 @@
         "sourceType": "X",
         "confidence": "Established reporter",
         "sourceUrl": "https://x.com/FabrizioRomano"
-      },
-      {
-        "title": "Mikel Arteta: “Congrats to Fleetwood, it’s a sad day for us. But I cannot fault at all the attitude of the players. I haven’t seen anybody not doing what is required at this level”. “But we insisted so much, we had so much of the ball, so many chances, so many shot",
-        "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T23:25:11+00:00",
-        "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBFUVZMOXFEeldpa05GdlFKRXM4NHBiM0tMZ05lNkU2bURxWlg1UG5fcDVhU1VSb0RoeWk3Mlc5S0Jxbm5XUmszRnNpRFBrbnRlWGpsNEk4b05nbHhHXzBrQjJrTS0wUQ?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Established reporter",
-        "sourceUrl": "https://x.com/FabrizioRomano"
       }
     ]
   },
   "lead": {
-    "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+    "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
     "summary": "",
-    "meta": "Sat 31 Oct",
-    "publishedAt": "2026-10-31T01:02:57+00:00",
-    "source": "Microsoft",
-    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVTNFbkFXZkZqc0wyZ2ZkWjdya3FsQWFxZmY3bndubkNxN0JVbFZVRmtyN1pQOHdLU2JEY0QzcXNLN0lzT2dUaTdmQjlFVnJLU0JiOUJobVMxUUdlWjZCNGRhVVpZem43XzdESUVsZkZJcDdWMmlkYzZBaDhtbEkwYVVQVDBib1MybE11QlY0Y0xsaXBDeFduR3o4R0EzX2VYaUZyMHhVUV9GN3FjeVV1bEZhZ08xZlpOaTd1NVBLWm9RbW1sTzdVb2x1aHgteUln?oc=5",
+    "meta": "Sun 1 Nov",
+    "publishedAt": "2026-11-01T03:20:00+00:00",
+    "source": "Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdVp6WjlyUmRuaVlKN1ZiMHExdWZGdl9HWTBPZThuTTJUdlJyOUNVblRxTWR0QjhYQ1FteWtDNFNhWGFHVVk4UmNQd3pNZGlYOWx4TFNYaGViT3E5dHFqUjFXYW1MQ2Y4a1NGb1ZoMEl0WDJTdm1LRW5WSUpoXzN2MWhXb1p4NHQ0N3BiWm9pNDdLTjE3cXZjUnkybWxhaWFyMl9J?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+      "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
       "summary": "",
-      "meta": "Sat 31 Oct",
-      "publishedAt": "2026-10-31T01:02:57+00:00",
-      "source": "Microsoft",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVTNFbkFXZkZqc0wyZ2ZkWjdya3FsQWFxZmY3bndubkNxN0JVbFZVRmtyN1pQOHdLU2JEY0QzcXNLN0lzT2dUaTdmQjlFVnJLU0JiOUJobVMxUUdlWjZCNGRhVVpZem43XzdESUVsZkZJcDdWMmlkYzZBaDhtbEkwYVVQVDBib1MybE11QlY0Y0xsaXBDeFduR3o4R0EzX2VYaUZyMHhVUV9GN3FjeVV1bEZhZ08xZlpOaTd1NVBLWm9RbW1sTzdVb2x1aHgteUln?oc=5",
+      "meta": "Sun 1 Nov",
+      "publishedAt": "2026-11-01T03:20:00+00:00",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdVp6WjlyUmRuaVlKN1ZiMHExdWZGdl9HWTBPZThuTTJUdlJyOUNVblRxTWR0QjhYQ1FteWtDNFNhWGFHVVk4UmNQd3pNZGlYOWx4TFNYaGViT3E5dHFqUjFXYW1MQ2Y4a1NGb1ZoMEl0WDJTdm1LRW5WSUpoXzN2MWhXb1p4NHQ0N3BiWm9pNDdLTjE3cXZjUnkybWxhaWFyMl9J?oc=5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Arteta's update on Saka, Madueke and Tzolis",
+      "title": "Arsenal team news hint as injured star set to return against Liverpool",
       "summary": "",
-      "meta": "Fri 30 Oct",
-      "publishedAt": "2026-10-30T14:44:00+00:00",
-      "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRGRtMlVYOXlvTlJraUZKeDZ2QmtuV3VaN2phNVJwdG51V25maXlkNHVGY1VPMTFUUHc4QnhRdEViT0VfeDlSUG8xWENrSnN5TmQtc1o3anJBYXFIYk5VT2haTm91ZmJBRE02S1VrX09lN3dScWZlWkRJSEJKVUhXdHpPekxFbGNrVnNJ?oc=5",
+      "meta": "Sat 31 Oct",
+      "publishedAt": "2026-10-31T21:54:29+00:00",
+      "source": "London Evening Standard",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "Planning bids cover Kingston shop signs, a wellness retreat and station upgrades",
+      "title": "Jimmy Ball | Walton & Hersham (A) | Post-Match",
       "summary": "",
-      "meta": "Fri 30 Oct",
-      "publishedAt": "2026-10-30T15:34:36+00:00",
-      "source": "Surrey Comet",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV0l3cV9pUUhrX2MxUG5lNUhIVExGLWdOUnJ4MHVacDhRUWVjQ3pEN0dqYjdjYzdtbFljeHZKWDBzSzRHQmVXZnRPNG1Pdm9tQkRTaklGR3FsUjV2S2lTSXdTZE05RERmMlVMZjI2cW1QLWRzQlowUmNiX01fYWJTWmhTcUpQbjRReVUtYWVqdTFUUEZkeGpUM1E0UFBuZDlt?oc=5",
+      "meta": "Sat 31 Oct",
+      "publishedAt": "2026-10-31T19:10:41+00:00",
+      "source": "Torquay United",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yOEdMM2pCREhtVG1vVjY3YnpTTVNFcHJYX0ZxNVhIaUszRGNMdG1WVy1haV9tWnY3akpNVi1ycHpZc0x2UGpGOFZmYm55LTZ0VEJwZ0hBNzFfNnBOMjBrWVN6VGptVDJUNmFQNGFuZFRlenM?oc=5",
       "contentType": "article",
-      "localPublication": true,
+      "localPublication": false,
       "familyActivity": false,
       "homeArea": false,
       "section": "Local"
@@ -584,17 +556,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 680.2
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 672.2
     },
     {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Mon 2 Nov, 7pm",
+      "meta": "BBC Two · Tomorrow, 7pm",
       "source": "BBC Two",
       "channel": "BBC Two",
       "releaseDate": "2026-11-02",
-      "releaseDateLabel": "Mon 2 Nov, 7pm",
+      "releaseDateLabel": "Tomorrow, 7pm",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467592.jpg",
@@ -607,8 +579,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 620.2
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 628.3
     },
     {
       "title": "Murder in Belfast: Sisters Seeking Justice",
@@ -632,33 +604,31 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 593.6
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 585.6
     },
     {
-      "title": "Green Eyed Killers",
-      "summary": "When a man is found shot dead in West Virginia, detectives piece together surveillance footage that exposes a calculated killing and leads to justice.",
-      "meta": "Crime & Investigation · Available since yesterday",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-10-30",
-      "releaseDateLabel": "Available since yesterday",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/green-eyed-killers",
+      "title": "UK Forensic Breakthroughs",
+      "summary": "The story of a fatal stabbing outside a Gloucester nightclub, which lead detectives into gang culture, where forensic linguistics deciphered coded conversations.",
+      "meta": "TRUE CRIME · Tue 3 Nov, 10pm",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-11-03",
+      "releaseDateLabel": "Tue 3 Nov, 10pm",
+      "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/628/1571444.jpg",
-      "artworkAlt": "Green Eyed Killers programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1616100.jpg",
+      "artworkAlt": "UK Forensic Breakthroughs programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-30",
-      "showId": 54822,
-      "episodeId": 3793863,
+      "airdate": "2026-11-03",
+      "showId": 94755,
+      "episodeId": 3790228,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
-      "genres": [
-        "Crime"
-      ],
+      "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 429.0
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 397.0
     },
     {
       "title": "Black Doves",
@@ -684,46 +654,46 @@
         "Espionage"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 375.0
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 383.0
     }
   ],
   "sections": {
     "AI": [
       {
-        "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+        "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T03:20:00+00:00",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdVp6WjlyUmRuaVlKN1ZiMHExdWZGdl9HWTBPZThuTTJUdlJyOUNVblRxTWR0QjhYQ1FteWtDNFNhWGFHVVk4UmNQd3pNZGlYOWx4TFNYaGViT3E5dHFqUjFXYW1MQ2Y4a1NGb1ZoMEl0WDJTdm1LRW5WSUpoXzN2MWhXb1p4NHQ0N3BiWm9pNDdLTjE3cXZjUnkybWxhaWFyMl9J?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "I stopped juggling Claude Code, Codex, and other coding agents after finding this open-source app",
         "summary": "",
         "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T01:02:57+00:00",
-        "source": "Microsoft",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVTNFbkFXZkZqc0wyZ2ZkWjdya3FsQWFxZmY3bndubkNxN0JVbFZVRmtyN1pQOHdLU2JEY0QzcXNLN0lzT2dUaTdmQjlFVnJLU0JiOUJobVMxUUdlWjZCNGRhVVpZem43XzdESUVsZkZJcDdWMmlkYzZBaDhtbEkwYVVQVDBib1MybE11QlY0Y0xsaXBDeFduR3o4R0EzX2VYaUZyMHhVUV9GN3FjeVV1bEZhZ08xZlpOaTd1NVBLWm9RbW1sTzdVb2x1aHgteUln?oc=5",
+        "publishedAt": "2026-10-31T23:31:52+00:00",
+        "source": "XDA",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVHNzYXNRUmpvVl9JdzN3YkRJZm9ldWNfOHRTTlByclFKNHpOMEhGcXNkWjNwZjBoZ1RSV2RtR3ZoZGprV2FzRW90WjNkMEZvaEltV3c5SE1lTnpESm04NFhfQk5NY1hQT3hrekhMMXFBT3l3SDRfNnlNX0xjTFJVZWV5ZmRhenI0SjRvSVZHR1FLdjZLUVY4THplRURvZzJFeTY4VlBoU2JxMjZ2UV81RzJUdDJyb0k?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Automated Subtle Emergent Misalignment Research",
+        "title": "Anthropic Quietly Patches Claude to Stop It Cloning Other People's Video Games",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T23:34:28+00:00",
-        "source": "Anthropic Alignment Science blog",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XNUJtenZlYUlZcldQVVBmY2x5YmJORkxTWm92NTVobk5jOTMzbmRkY0w1WGVuVEtMN292M0NISWJYMDEycEtxM05heHVsbGYtc1lJRkhHWUI0X3FxWUxVcFJCSVVGS1Rt?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T22:05:00+00:00",
+        "source": "BigGo Finance",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qbnNLb0wyNVJaRzBFQUpBVkwtd05JZmFSVEVHWXZncF9jSHh3R20tTmVieHN4ZnQwQllSam9FYm96eVJzaDk1c0RYZ1M1SHQ1WFJPMmxGQzdTUHRvcVo1MHFCMlYtWXRvS2Voa01tSXViRktQRnc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic orders AI tool Claude to stop remaking video games",
+        "title": "Anthropic's watermark rollout leaves a loophole on two older Claude models",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T22:21:36+00:00",
-        "source": "Game Developer",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbkRTbnBaVVk2ZEkzamZJZXpfMWlpWDJuRXJLa3RnUEI2SGJvYVJrd3dhUWhsRUh0Qi1NS0x1ZnJDTUNsY0FpUkVOaGpraTRzXy1ZV2g1bFhMemdEeWUwZzI1QkxRNExMSmxKUzYyeEEtUzJqTG1nS1NrcGRrWTRuMHhrcHJQQ1B6OFlwbXVjVXoxQjYzUTdJb0NCRFF4Q0lfUmRrd2ZMSXdtS25YR25HVjN2OU52SEp3Sncw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T21:52:03+00:00",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVXpfTXdqVDgtSDYzSkp0TmVFdW5yZ0lyRXdfNk9tdHY3d05BQzdvZ1ZLRXEyQ2FuWkdCRF9SRnBhNTFMRG5fN0VKT0tVUVNXZm92clZwOEh0Z2NPYlhRQWhxT1FZTWhkTmM1a2dOdFpvaU00UmY4S1lNWEEycnpZNjlzdWtubWpLWmEwQS1rRHNFWTBXRzdtWVNjQWlqaU1CazVYM01VcktOdDdJcFJkazdjSUVkVV9fUDJhaFIzVEFNV292QlJz?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T19:24:37+00:00",
+        "source": "The Decoder",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObWRRVDc2NW4xb3Vod21YR3hORTRGNjlONHFUc3ozSWx0SGZ2ZnpGd1NoUnRXSFlXcUoxOUZEcXJHVkhQVHc1ei01VHpaMWJXZUJZVEFjTXpoVm5oMnlaOW9KZ3BPQXBBMzVRaEVva3p3eFMteHFjdnltQmozZnZqNXFDTVVRME9ONXZ5YXdCRDV5U2FiTzFmRmtKa2c3ams?oc=5",
         "contentType": "article"
       },
       {
@@ -745,12 +715,12 @@
         "contentType": "article"
       },
       {
-        "title": "Samsung, OpenAI chief discuss AI’s impact on future business strategies",
+        "title": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
         "summary": "",
         "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T06:39:16+00:00",
-        "source": "Korea JoongAng Daily",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMU1Zc0tvS1RkVEVoQjFENHJPbWtJS1c4UVJjVVQxdUMtYlpGb2kzVEVPTDlQN25fUldhVGVqM2JJTDI2M1l5d3JtZU96ZUo3TmZhSEpRcnByZ05PaFNqQ2V1RFlfS240dF9kcE13SEhMY3NLTWsxTnlLcmRmUlR3czFjWUJSSlJja1Nvc3RHT0VhOXczY0Fud2UzX3VObWVEd2xqUk9DdVpJVjBHNXJwV2kxeHBBX3VfV1pzRUpsZw?oc=5",
+        "publishedAt": "2026-10-31T19:56:23+00:00",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb2hwU1RZMjNaMVpkcW13aDRGb3M0UGlMb21CRTI4dDU5STc4eEJkZHNMc2VPQjVnYm80MEEzWm80RDFZdElReXNmbG1sS0xBYjNnNWNOZVJsSUhySmhIUTJfV0tEZjJncTFLSHJFbDVqU2FrdmlSVW1hNzdxZG8tbktn0gGHAUFVX3lxTFBEd2ZuVFNJR09vWjBBWUtDMF80c1luQkFnVWRkN2RWMG1DWmZJd3Z4clZwcjNIeEcwaExPcjc5MWt2MkZ1SW9KUHdZODhtV3NGanVTSVkzdFl0aTQtUmxZa1V6dHpDUkxacTNhTk1PWXFDbnVIR3NraVRJODh3MjFGdUhBNl9rTQ?oc=5",
         "contentType": "article"
       },
       {
@@ -764,12 +734,12 @@
         "liveChineseLab": true
       },
       {
-        "title": "Alibaba's Qwen AI model tried to upload data to Beijing server, Cohere says",
+        "title": "Cohere’s Qwen Story: Looks More Like Model Jaggedness",
         "summary": "",
-        "meta": "Wed 28 Oct",
-        "publishedAt": "2026-10-28T04:04:32+00:00",
-        "source": "Computing UK",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSDlITndKZjJTMXpRZTk3M3hUX1VYTDd3UTlDMFA5VEtvWGw0Z29FaFpscWNWZ1JWU01zdDlXa1ZOLTFaMExvS2syOFlrM1lOdHQ3UEoxc3BuTjI5WFlsLXBLcEl6MXcxMU8zUHN6WXNuM3ZnTXlOaS1Uczl6cjBqX1RvSE5RdXUyTHdubTVLUnpKOEg3S3kyclJVSDJCb0R6Rjd3Zk1HQm5Cd0RDTDVVamUwa19tZw?oc=5",
+        "meta": "Thu 29 Oct",
+        "publishedAt": "2026-10-29T07:00:00+00:00",
+        "source": "Check Point Research",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObGJrU3hCNjlSekxQNGp3dlkxbGs5bEg3NmdCdTZJZmRCeW5iRVpaTjF4QzY3bDBERjViWmxIYXZDQ0FQdGZneFphRk9TZExnanlyR2JZMERMTmFqNUV2VTZnNzlyY1FzNlJmSjd3R2s0bzVxYlRJeUZxYy11NVByX0N3Mi01OFpzd0JLLXRIRjhwbE0?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -786,100 +756,91 @@
     ],
     "Arsenal news": [
       {
-        "title": "Arteta's update on Saka, Madueke and Tzolis",
+        "title": "Arsenal team news hint as injured star set to return against Liverpool",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T14:44:00+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRGRtMlVYOXlvTlJraUZKeDZ2QmtuV3VaN2phNVJwdG51V25maXlkNHVGY1VPMTFUUHc4QnhRdEViT0VfeDlSUG8xWENrSnN5TmQtc1o3anJBYXFIYk5VT2haTm91ZmJBRE02S1VrX09lN3dScWZlWkRJSEJKVUhXdHpPekxFbGNrVnNJ?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T21:54:29+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal XI vs Liverpool: Confirmed team news and predicted lineup",
+        "title": "'If Liverpool want a title race, they have to beat Arsenal'",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T23:34:07+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZzZZampZNXBHWVV4aW9rRUxBcGRTU3ItdUNZdjJvRnktUVkxRWZZMWtETlhwZ2JNV2J3RTdSNGFMTTBpMmNaTHBqOHlWOWpNMUFyMmR6YTJlMlo2dlZXUVpYMldQRUR0SlVhcDRLR2VsMTNIdUd2ajQ2bnN1Q0dIb3BHS3l6M0tNRE5HN1Q3MENsNlV4Tll2UDlLLXhnMmo2TEN6dEs4dHduZzJvek85V1pzemRBMW05d1EzZGN4U0dWdENaamN0NEJPbjNSaVJpelltWk0yN0dQYzRwX1NPWHVweDFjdndi?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T02:31:25+00:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcTlWTFd5ODdRXzYwUnQyOTVMMks5M1hmRHpkSjZJVHNoN3VJbUZaSF9hcDU4OEZUTHJueExCNy1JbHczMW9aSkR1aGYxdlM5U1dXYmhBc090elM5WERqWWk1WmxaY1JZRDBCT3Qxdzl0SXI5Vi0yRy1oQTNTcVRkNVZrdnhaOERKMFI3RTRHZFpoZ2FOZG1ORHY2Q3BkUHhBd3A0WkhHVUVwN0NDNUVob1ZIVkh1ZUpLdzVCTC02V1RqanEtbTZxMDc4VlZJSG0xMEJLOFNLNTQ2TzNGQWt3dEUzTWp6UmtNd0F0aTVDMmNkWkxCUF9LTWV6MTVJQQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool v Arsenal: Team news",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T09:20:36+00:00",
+        "source": "Liverpool FC",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "14 players could miss Liverpool vs Arsenal after Andoni Iraola injury update",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T04:00:00+00:00",
+        "source": "Liverpool Echo",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFp4dU90Z3FjREpuRmJ6MWdSUG45N2ItZV82bE5tRnR5bXRpSXJRckRJSEZwMlY2TXZsR19mYngwWGl3bmJCYVE2a3lNTE5jQWlHU05scG56MWFQTEgwWENPMWxiTG5VaDQ1czZKMHVJMmVzc1RHaVJkTVJJQmZyWkhMVENha3V1a0NnVWhHRHY3Zl90UlVyVUZGdm5wRmdHbE9LVlZ6WHNjUdIBrwFBVV95cUxORXYtWGZ6MmdNb2NyTFZ2NUU1dUxkT0lPcVZLU2pDOTF1V1pLdENYa0M2eGprYmduQ1k4X3JQMGtDdXFRdjlOQXE5Ukh3VUhKWnA0UFY5OHFWcUtVeDk3V1BwVEhVSl9QcjFVVktPdzc5NENKeHlJSFgtbDM1Z2cwX0w4ak1mRjMxVEx0TElpdUh0b0p1UUtVWUFBYmV6NmU4VW9zYnpNRUhnbUVUQWpB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool Predicted Lineup vs Arsenal: Isak Leads, Szoboszlai a Doubt",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T01:42:08+00:00",
+        "source": "The False 9",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Bcm43WU1mMjdDb3YyTjdFZGJZdEVQbmhnWVM2YnpJZDNIcXEyMWJTWGxfMzNBbEwtUXBIVlBJbHd2MFJUU3U5UEVpRC03TkdpUzhKRHdLRXNWM2tnZERtcFFhZ2duNERhT2FHVnhmdlZUVlBFcVgwUDZsRzhHcnM?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal away days: The stories behind the supporters",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T19:12:19+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbTh6SnczcGxQZkxIUVRfQUcyWWl3RzdUX3NaTXNZYWkwN29ZRFI4Um1QTEpPazctZXoycjc0Z0ZvSEZhYkIzRGJmbHNEREg0WGxUaTJNY2lwb19peVJFczZZQktqS2JISV9fSGRSczRqeEhBMkE4SW1kbElVQnZwd3Q5SFJKcG1XRnlWeW1ZUGF4blBUSnpaSw?oc=5",
         "contentType": "article"
       },
       {
         "title": "Training photos: Liverpool prepare for Premier League showdown with Arsenal",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T19:57:51+00:00",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T10:21:05+00:00",
         "source": "Liverpool FC",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV25ac0dvQ0lIcFJyaG80Yk0yaElyUHQxV2R4ajdoYVIzUHN2OTY2VDlyMW9kazdDSERvQTZLRlZtVVJIanBhV2premw1NkVkM1ZtanNmcUpLSU5YME5GZHV2RFRHSmN1QlZ1enM5NEQ0YzZOUzVtZUcyLWIzVzlhNTBHejhsaXRWLWFkY1h0YmtabnZsejN4V0NBQWd6djlfWi1SdVAzVWROVFU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Liverpool vs Arsenal: The last time Arsenal won in the Premier League at Anfield",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T13:38:43+00:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaUtTcmZ4SkVBNmNpYXMzZi14WGJROGRyOTloVzl6Ylo0RUR2T2RzSWxiM21SRERCZTVldnR3ZHNsMjlldS1yWWVNQW1vUldBZWYtaUpPSEtYcENwSnVubF9zaFktMDdXYUpXTzQ3SnhFdGtLN3R0OVlzUWIyNHFRUXlOZkp6YW90eHBlSjFKMEhXWUI0c0pUNEJCQlNoTjNYWDNJeWZuZ21sZ3E2WVpCWnVuR29RR1NNZzJRSEM1aEZGQVp1M2JndA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "How to watch Liverpool v Arsenal live on TV",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T10:35:28+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOckJPaFEwOUlGcUJjNlZ2Q1JqZ2ZiTmVBTmFHWXF6VmdtcUY1bmkydTJVYTJ0dzI5QURSOGNzUW9VMllsMHU2X0pWTDB4aDFWNnFZQmhWNGdBSldqdHhnRnNhR1hlVEdUMTJjcUJtRTBNUEpnN0hUT3YzQkV1OFNVNFBWbjE5akdMTzdleFpB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arteta reveals triple Arsenal boost for Liverpool as FOUR could return",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T21:11:06+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNei1mOGNBV2s5LVdfNWQ0MUY4cFR6QnB3UjNyWk1lMUxFRjJ4WTJab1dyNzlsdnVQOTUxTGVzbl81bWtYcVdtSFAyaktnRU14eTg2a0p6UWlNUzZFemNHY3RILUw2YVBOejhVeUJ4OUp5WTl5WGI0ZWxHeHRjcFRqZVBrWm80TjFvdXdYUFFLeUNxSFREV2dtaUlfdmlWYkxSTzBvY29nTHE4dw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Press conference | Every word: Andoni Iraola on injuries, Arsenal analysis, reaching 'another level' and more",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T20:38:06+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNm1VQzlLVnNmWlgxUTUyZzFoUnJJOGNMWV9EWnpoOXl1TlVULUwxdFRKS0F5SmNaSFJKOVhtRTZNV1hCX25NMWZNMXBMUXdMTjA2ZVpQNXN2T1YxS3ZOUHgycXo5LVV5NVJBamlaVUNDOTY3YXFPb0RQaktyODFjWlRYSFA4SUdabXZOMFhKTTZGNjI0elc0b1Rha09tdG9vakg0S1FuYmpiX25nZWVB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Every word from Mikel Arteta's pre-Liverpool presser",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T14:51:54+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRWo5WlRUNEUwVmVkc1hON2ZoUHlEcm9WM2dfM0oxQURjNDVGNVZySHBmNXpBNTY3M0pnVmhad2s4c0NDSjBRb3BPS0lxWGdLNUpjTUNacm1UMTVBNVJmTlZ5RkZDZGsySGo2Sm8xeTlJRjVoeEx6X2d3a2M0VHhtblo4VXlXa2cxcEZXTmhndWFGeU82U3JWMg?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
       {
-        "title": "Planning bids cover Kingston shop signs, a wellness retreat and station upgrades",
+        "title": "Jimmy Ball | Walton & Hersham (A) | Post-Match",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T15:34:36+00:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV0l3cV9pUUhrX2MxUG5lNUhIVExGLWdOUnJ4MHVacDhRUWVjQ3pEN0dqYjdjYzdtbFljeHZKWDBzSzRHQmVXZnRPNG1Pdm9tQkRTaklGR3FsUjV2S2lTSXdTZE05RERmMlVMZjI2cW1QLWRzQlowUmNiX01fYWJTWmhTcUpQbjRReVUtYWVqdTFUUEZkeGpUM1E0UFBuZDlt?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T19:10:41+00:00",
+        "source": "Torquay United",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yOEdMM2pCREhtVG1vVjY3YnpTTVNFcHJYX0ZxNVhIaUszRGNMdG1WVy1haV9tWnY3akpNVi1ycHpZc0x2UGpGOFZmYm55LTZ0VEJwZ0hBNzFfNnBOMjBrWVN6VGptVDJUNmFQNGFuZFRlenM?oc=5",
         "contentType": "article",
-        "localPublication": true,
+        "localPublication": false,
         "familyActivity": false,
         "homeArea": false
       },
       {
-        "title": "“It’s time for us to give you something back to cheer about” – Worthington on Walton & Hersham",
+        "title": "Local Events in Kingston",
         "summary": "",
         "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T15:23:41+00:00",
-        "source": "Torquay United",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNGRtMFMxOU5UblpkM2g2MUQ3Wi1yVV80VVV5WGxGZlVBdmhfUWtONHJ6ejdYOVhWYTNEeVp4eHVzbGlKdzdZUnNIVF9PZzZXWFl1MDllbEM1VjM3Vnc0aF9mSXg5aDRPNGVtTW9TUzVRMzB0SExyQWtKbkxzU3hoVkVZZ1FBSjBpN3ZxT0dOb05ITlJpZ2RrcGxqS1VzVUtobmxCZW1FTXcxNjJmOC1BUERLVTY?oc=5",
+        "publishedAt": "2026-10-30T18:11:15+00:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxPbVgyeElqWFFDU0lCb2J6M3ViR01vQVNoZnVhdDNCV1BvN3RnbVM5UGJVZERXUEZxc3gwb0lKR0pxQmtKT3BIZkRCaFFFMVZUVUZnd0pacnVpRmR6WHdMU3RjVEV5azh4NnhIS0dqSk5mX2ttMVlOWmFOUjRZRm41ZHV3ZVlvTEFaNldLcHZTVHppMHBfcF8yVGJiYUY0bU01bXIxQjl4UlhfQS11c09zVVdlWjZkMGtYaWVzb0d4T2cxODUwNk5CQXY1bENKelhMQlM5ZnpUZVBUeVVMaUMzVHZieEdpbUFpVmQxQnRMN3ZfRGlhSExJTFpidjg3WWFxbk53RENtU3NfVllWVFRvSEtuMGk3TENiR3dJOGRCMVRDS2liX2ZLcWJvbThXZWhFcHJxdVlLYnU4TkhkT0pxZ3FEMENaMzhRdkZlRFpHdnZPT3lWaU9UM2t0VVVJQUZJR280b05zNWZBTktuN0NyOHZhc1BNbWZnTktPY2IySEN0ajg?oc=5",
         "contentType": "article",
-        "localPublication": false,
+        "localPublication": true,
         "familyActivity": false,
         "homeArea": false
       },
@@ -908,18 +869,6 @@
         "homeArea": false
       },
       {
-        "title": "What Teddington residents should check before buying a local will writing service",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T09:59:08+00:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNGdwWU5faFA4bG9xLWN1RWo5MUJWSjlHOVFQODdjRHRvQUhiT3NNVVlyeVJrYlBtajFqS001QmRYQnlicm0yendtWWxEalFLdEZoYVBGeEY3cmVtS1FRRHN2Y2VCeTAwRFdBU0VLUkZac1N0aWJ0MzZhOFJpUmxLSTZJY2xrbi1LVHVtLTJ2ZjVGTktSV25lZWd1QlNSUmNwZFF1Z29IY2RLMTc0aWxjRUFYQ3JtVlgzdkdPOUFmTEVNdEl4YnFMMXZ2VmxNd1Mta3ZKSlpiM0tYN1Bn?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Hampton Court dazzles as host of sold out running festival",
         "summary": "",
         "meta": "Tue 27 Oct",
@@ -938,6 +887,18 @@
         "publishedAt": "2026-10-21T12:55:15+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeFNUV25WNDBxOU5FZ0ZFRDNfcnR6bnlXdDg0b3hzMlltZGxjbmdDVllabXVoNDUwUzZlVHRMLVZlNllXazVaejZuZWpsbjRidGYtNTZveS00Mk12V2NpYW9Eb1BtRVJ2aUgxLWRRSUdEZGJRWTNsSkx6Z3NueV9va0RXM3hyUGVuNWpYSm5zNGxOOWFjbkE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Teddington’s new butchers available for Christmas bird orders",
+        "summary": "",
+        "meta": "Thu 15 Oct",
+        "publishedAt": "2026-10-15T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3dTV0YxdzJBWEdSS3lqajhscHg1Y1RZWUhadUVFVHJhNlBPTFhSOG9Ca3J5LWVUT200U2lQQ0FWcmw4eTNacjFoNlpZUzFNN1Mwd0dtb1NwcWRwT0FiOF9jS3h4c2VGWDRjbkZIeHRqbFJUYlJoczI2bzdIYnZiaE1XZF82OXZzTm1UYkE5T01MYV9QN24zQTlSc1ZYVzg1OXhBTEhadlZFRWZhSjF1LQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
@@ -1004,24 +965,24 @@
         "homeArea": false
       },
       {
+        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
+        "summary": "",
+        "meta": "Tue 13 Oct",
+        "publishedAt": "2026-10-13T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWnFvaU84SVMtWjQtOEhaUGd5NXR2cmNiblM3NlVNR0hEMXE2a201dTFQLW9aSGxzaThUbWpKMnM2OGtwR190R1NObE94YTBFM0wxV3hQeUNyTHJPdmVaY3Jsc0F3OWEwNG9Pck41dmFXY3UtN0dWSjhuamFiOWpsd3c2c21KUTFTWUNCUFlodlNZMHE5UVdTUFg1ZHM4UVNuVzFXd2F6bThyNmxNeHFqcC1iZnZLRUNSdHQtY0ViUVVYZkVTQkNmSWhXTXBVbEluNlBSOG1sTUZNUHhHTWc2QXlkWlBlWE5RZ0xR?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
         "title": "Community efforts to buy Teddington playing fields put on hold over legal hurdles",
         "summary": "",
         "meta": "Mon 12 Oct",
         "publishedAt": "2026-10-12T08:00:00+01:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSzJXbk8yYmN3M3ByQWdRank3ZXFBdTNFTF9BZDJXRDBKdU5GQ1BCZUtnZDZLWEgxcVJ2d2kzalFNRzdnb3VyMGh2VTJReVJGUHY3SEJLV1QteFBZcGd5aXNCWnFxbldTMDR6VjFsUzFZc3ZRWGlxWXZ3dFJhTTh5M0hmcTRjalN6NnJJamMtTW04NTBNWTUyekI1V3BXTE1kU2E5SVZRTE9vbG9wWTZTdGVNc2JjT1Y4WHFzMENEdmh2SzFSVlRKNUFELUs?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Esher storm back with second-half blitz to make it five wins on the bounce",
-        "summary": "",
-        "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T08:00:00+01:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQazZ2NmVjaHUxeVVvNU0tS3V2aUJpMWFhNVZhWFBpenhPQ21rVkoyS2w1b01OdWhfek5LTG1GQXpoXzdJckhIN2ZiWHkySGV4dnlibnZhdUFiLWc1MGdFckR5d2NkaXBvbUZMa3VudGhaN2xoaU5YbkRMSDkyYjdPRTgyemw1MVI3Y3VaVk1vZk1faDcwUlMyZTJOTzNJUQ?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -1054,6 +1015,33 @@
     ],
     "UK news": [
       {
+        "title": "The Award-Winning British Actor Who Almost Played Freddy Krueger",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T01:00:00+00:00",
+        "source": "Mental Floss",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV1h5QWs2bWxCbnVvRkprN1JyVlRuaVZKVDJLRUtWa19YQS1XRDhiaXVHdEY5QkE0UU1XWmtGLVJpU3RNZkZ3YmdwVmFHM25RQUdEOEx4RlhXUGRJVm9RNUcwcmRueXdtNnZ4RzZVcTFOTXEyamYxa0pzUU5CRjU4MEhHRk5URGRMVWFYemJKSGs1LTYtXzlxakxQcmdPQl8tN2N2MjlWZXFwQQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Richmond schoolgirl to receive British Citizen Youth Award after raising thousands to bring books, gifts and food to children in hospital",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T17:05:02+00:00",
+        "source": "London Post",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQMUdmeDU3S1BjY19TeDctV29XRTJWeEw0NjdoLTQ1VGI5RjVxLUtXWGNzSHRUeXkzaGl6RnZlTFBZNEJEM2ktZnZkcW5SRy13YXdVdEFkSHh2akEwdEVuUmVWZ1J3YlJWY3FvQURTRUxpOWxKUjBLazVHTnduc3djSFdrMl9TVkxLcmNvaDNXaXVCVEQ2MVZzRFpja00weWdzQTcwUFh1a3pzYk4wSFhwemdJZTVVSm0zWml0bEZPLXlBMFJIVkJIa2d0WlVEcW1XNkxORGt0RkduYWlmeEpoMjYyTXNGRXBDdDVTSHE3SUVmOVFHdnc?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Haverfordwest community initiative supports 147 people as mayor celebrates Welsh award",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T16:41:35+00:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVDBmMlkxaV9kaUNhUFlBUW5YaWtZclltRUt0X2k0QTZMRWZvZ1puUndOdGpvTy1EZVVvV29NY0dkSXBRTmhlWTZGQUpSX3BPUFlSejlULXRmZ3d4cGtTanRIUWtvNHNCcERVdEpKSlhUYzJfQWpwRGtoUWc3aS1GS2QyUVZfM0dYempUU3oxQjU2U2VlU0F0MWd2ZEhaaVdtb0xZNERWMnBvWFItc3ZseVJtRG8?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Care sector leader at Pendine Park honoured with national award",
         "summary": "",
         "meta": "Sat 31 Oct",
@@ -1081,12 +1069,12 @@
         "contentType": "article"
       },
       {
-        "title": "Laura Stunell named September's Vitality Volunteer of the Month",
+        "title": "Work of Welshpool Community Haven rewarded at Powys Business Awards",
         "summary": "",
         "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T18:02:33+00:00",
-        "source": "England Netball",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT1hZQlBJNENsa1JxbmRiMGZjMmx6M0o4OG81TUIwUkoyaDg0dThHemtRSHJIdDBENmhXc0J0NTZrcGdJRUtobkJPQllPY2VFRUxZTDdkNVlPT3ZmU3VDaWIxYVc4QnBHQzN5ZGg4Y3pITWdVMjdBdWdZR25EN3hMUWlQa1JFeWJSazFrUWJxUFdjdi1OZWxYMExfNjdFRllONUg0?oc=5",
+        "publishedAt": "2026-10-30T15:24:04+00:00",
+        "source": "Herald.Wales",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMXM2RTNZLTFYaHZ0N045Tm04VXBJc0JtX1g5b1ppa3pjekVOdlh5bXhjaFpqMFI4VTNTM21aSkhWTlNYcDRGRG5GenBVcE1lV3RJbnVfaTdfREZTWWpxRzRSUElBdkllaVBaYUktbHVFZk1QMVBWQjk2UzNqa1VIX0tSNU16Ulg3eEE2dXhqcEgtdk9MUXR3c2kxbDh6bnRNdHdQNzF3dVU?oc=5",
         "contentType": "article"
       },
       {
@@ -1096,15 +1084,6 @@
         "publishedAt": "2026-10-30T15:08:28+00:00",
         "source": "The Herald",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeWVwcUxNYjc5bWYxQmdZQ2VHYkpmd1p0anEwcDhuTVpLUHZBSWU0VVhCNU1hdzZ5X05wb0JnUGpGYVM1OW9rX3BMSHFRY2wxa1RGczdTTDliMmVLV3g1SndKay1DTEsycVF6dTJwZjNsRGJ5N2w0eEZYYVItT3U3UTY2VHlBcE9QS3g1Z3RiMjd0YU05Z3gxLWdjeHNBMnpELVlJ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Seven Student Ambassadors volunteer at BUCS Sixes",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T15:00:47+00:00",
-        "source": "England Lacrosse",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSGNBWkVybUR6eXZlYkpRZmV1c1c3eGY0MFBZVVlkNlBMSU0tUDA2MmFVcHM4ZlViS29qeEFnZXRPWFd5Rm9DeUtiTnJsOWJiemVyYUlhaVc1ZkFkU0dGU0ZjZFh2Yk9QcThvTUhWbUNaXzRJTHA2MW5zM2FWdFJHMlg2b0VMTkxiMXZ2NUtSVzZ1Zw?oc=5",
         "contentType": "article"
       },
       {
@@ -1126,30 +1105,12 @@
         "contentType": "article"
       },
       {
-        "title": "UK chancellor sets out £600m AI investment plan to boost British innovation and security",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T11:26:04+00:00",
-        "source": "Open Access Government",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUE12aVJxV20xYy1yc2xIbndra052TFFzSUJCQlJ4QjVYMXQ2dXo5VGNETUU1M3hScUh0XzMxUHl1N3JzakZJSUl1MWROYV8xc0xlaFNOTUVybU5hY2d3anFiRU5ZSktIdXJoOFJ4Zkd3bWdTRldaMXA2QklZYzFqN1pqaTZmLW9iLS04eVU0QWhXbWVVeF9fSVE4bHp5cUlSQ0FfLW9zRmxlRm5mX0dFX05sYTNJelJnLVJFT1QyOUk1WGZxcEpmNUtINkM?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "British historian to receive Latvian state award / Article",
         "summary": "",
         "meta": "Fri 30 Oct",
         "publishedAt": "2026-10-30T10:28:10+00:00",
         "source": "LSM",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzd1eEh3NUtsVEM5ZGFnMlVONXZOa09md3dmTUluVVdleTVmSnhvNzFqZHRCcE5CdHMxVGpwdGVMMmo1QWI1d2NrMlRpY0hKZVdmbk1Lc3VlZGlPNHNqZDRSWkowNk5KaXp4dHU0ZjZZU3NMcHVKOVVUYzVyZFNnSEFtTEdZUFZtQTR0V3ZXT2o0QUgxTTZjcXJWTjdteC11SWVxSVhHMXY4VmVCMTVTZmZqNFk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "‘We could not have achieved this without you’ - Cope Ltd delighted after winning social enterprise award",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T10:28:00+00:00",
-        "source": "Shetland Times",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaThvOGticDNBOU51Y0Mya0VxbnVGRDNFaDNHMlR5enczc1pGQzBzb1pOWlRndXlCTmRodm5VNXZVekJNck8yeV9xV0dvaERxa1hTWkhLeGhkNmFDY1ExcGxqOHRCbW81SlU3QS1SdUtMQVVsR0VhaVdjNTdmX1lFaXBDNHpQZjJaR3A3aC1uaEpDNEdKMV9TdFJJdjlvSVVsUmE4?oc=5",
         "contentType": "article"
       },
       {
@@ -1184,7 +1145,7 @@
         "venue": "bentalls-kingston",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-31",
+        "verifiedAt": "2026-11-01",
         "saleHeadline": "Bentalls Autumn Promotions Now On",
         "saleDate": "October & November 2026",
         "discount": "Up to 30% off",
@@ -1211,7 +1172,7 @@
         "venue": "chessington",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-31"
+        "verifiedAt": "2026-11-01"
       },
       {
         "id": "kew-halloween-trail-2026",
@@ -1256,7 +1217,7 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-31"
+        "verifiedAt": "2026-11-01"
       },
       {
         "id": "christmas-at-kew-2026",
@@ -1302,11 +1263,36 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-10-31"
+        "verifiedAt": "2026-11-01"
       }
     ]
   },
   "watchAlternatives": [
+    {
+      "title": "Green Eyed Killers",
+      "summary": "When a man is found shot dead in West Virginia, detectives piece together surveillance footage that exposes a calculated killing and leads to justice.",
+      "meta": "Crime & Investigation · Available since Fri 30 Oct",
+      "source": "Crime & Investigation",
+      "channel": "Crime & Investigation",
+      "releaseDate": "2026-10-30",
+      "releaseDateLabel": "Available since Fri 30 Oct",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/green-eyed-killers",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/628/1571444.jpg",
+      "artworkAlt": "Green Eyed Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-10-30",
+      "showId": 54822,
+      "episodeId": 3793863,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [
+        "Crime"
+      ],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 421.0
+    },
     {
       "title": "Stacey Dooley",
       "summary": "Stacey Dooley explores the death of 19-year-old soldier Jaysley Beck as her family fights for justice, asking whether the army does enough to protect young women.",
@@ -1327,8 +1313,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 421.2
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 413.3
     },
     {
       "title": "Britain's Countryside Killers",
@@ -1350,31 +1336,31 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 398.7
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 390.7
     },
     {
-      "title": "UK Forensic Breakthroughs",
-      "summary": "The story of a fatal stabbing outside a Gloucester nightclub, which lead detectives into gang culture, where forensic linguistics deciphered coded conversations.",
-      "meta": "TRUE CRIME · Tue 3 Nov, 10pm",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-11-03",
-      "releaseDateLabel": "Tue 3 Nov, 10pm",
-      "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
+      "title": "Convictions Gone Bad with Will Mellor",
+      "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
+      "meta": "Crime & Investigation · Tomorrow, 9pm",
+      "source": "Crime & Investigation",
+      "channel": "Crime & Investigation",
+      "releaseDate": "2026-11-02",
+      "releaseDateLabel": "Tomorrow, 9pm",
+      "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
       "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1616100.jpg",
-      "artworkAlt": "UK Forensic Breakthroughs programme artwork",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
+      "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-11-03",
-      "showId": 94755,
-      "episodeId": 3790228,
+      "airdate": "2026-11-02",
+      "showId": 94772,
+      "episodeId": 3776676,
       "contentType": "tv-pick",
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 389.0
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 390.3
     },
     {
       "title": "This City Is Ours",
@@ -1399,8 +1385,8 @@
         "Crime"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 385.9
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 377.9
     },
     {
       "title": "The Incident Room",
@@ -1424,40 +1410,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 385.2
-    },
-    {
-      "title": "Convictions Gone Bad with Will Mellor",
-      "summary": "Notorious miscarriages of justice and the evidence that helped overturn wrongful convictions.",
-      "meta": "Crime & Investigation · Mon 2 Nov, 9pm",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-11-02",
-      "releaseDateLabel": "Mon 2 Nov, 9pm",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/convictions-gone-bad-will-mellor",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609035.jpg",
-      "artworkAlt": "Convictions Gone Bad with Will Mellor programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-11-02",
-      "showId": 94772,
-      "episodeId": 3776676,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 382.3
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 377.2
     },
     {
       "title": "Dexter: Resurrection",
       "summary": "Dexter struggles to find purpose beyond the hunt as Harrison begins his NYPD career. A brazen new murderer puts the city on edge.",
-      "meta": "Paramount+ · Available since yesterday",
+      "meta": "Paramount+ · Available since Fri 30 Oct",
       "source": "Paramount+",
       "channel": "Paramount+",
       "releaseDate": "2026-10-30",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Fri 30 Oct",
       "url": "https://www.paramountplus.com/shows/dexter-resurrection/",
       "badge": "Crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/648/1621757.jpg",
@@ -1474,17 +1437,17 @@
         "Mystery"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 318.0
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 310.0
     },
     {
       "title": "Crime Scene Raw",
       "summary": "Crime Scene Raw focuses on a different high-profile case each episode, utilizing police bodycam footage and forensic evidence.",
-      "meta": "Sky Crime · Tomorrow, 8pm",
+      "meta": "Sky Crime · Today, 8pm",
       "source": "Sky Crime",
       "channel": "Sky Crime",
       "releaseDate": "2026-11-01",
-      "releaseDateLabel": "Tomorrow, 8pm",
+      "releaseDateLabel": "Today, 8pm",
       "url": "https://www.tvmaze.com/episodes/3793711/crime-scene-raw-1x10-tyrone-hassel",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/638/1597392.jpg",
@@ -1497,8 +1460,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 280.7
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 288.7
     },
     {
       "title": "Deadly Destinations",
@@ -1520,31 +1483,8 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 279.5
-    },
-    {
-      "title": "Mafia: Behind the Bloodshed",
-      "summary": "In Manhattan's Chinatown, Max Serio explores the secretive world of Chinese gangs, revealing how loyalty, belonging and fear fuel a dangerous criminal underworld.",
-      "meta": "Sky History · Available since Tue 27 Oct",
-      "source": "Sky History",
-      "channel": "Sky History",
-      "releaseDate": "2026-10-27",
-      "releaseDateLabel": "Available since Tue 27 Oct",
-      "url": "https://www.tvmaze.com/episodes/3777421/mafia-behind-the-bloodshed-1x04-triads",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609396.jpg",
-      "artworkAlt": "Mafia: Behind the Bloodshed programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-10-27",
-      "showId": 94785,
-      "episodeId": 3777421,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 271.9
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 287.5
     },
     {
       "title": "The Madame Blanc Mysteries",
@@ -1570,34 +1510,58 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 256.9
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 264.9
     },
     {
-      "title": "MobLand",
-      "summary": "The Harrigans lock down the Cotswolds and roll back into London to shake the tree – buying loyalty with cash, threats, and broken fingers. Maeve tightens the screws within the family,…",
-      "meta": "Paramount+ · Available since yesterday",
-      "source": "Paramount+",
-      "channel": "Paramount+",
-      "releaseDate": "2026-10-30",
-      "releaseDateLabel": "Available since yesterday",
-      "url": "https://www.paramountplus.com/shows/mobland/",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/648/1621711.jpg",
-      "artworkAlt": "MobLand programme artwork",
+      "title": "Mafia: Behind the Bloodshed",
+      "summary": "In Manhattan's Chinatown, Max Serio explores the secretive world of Chinese gangs, revealing how loyalty, belonging and fear fuel a dangerous criminal underworld.",
+      "meta": "Sky History · Available since Tue 27 Oct",
+      "source": "Sky History",
+      "channel": "Sky History",
+      "releaseDate": "2026-10-27",
+      "releaseDateLabel": "Available since Tue 27 Oct",
+      "url": "https://www.tvmaze.com/episodes/3777421/mafia-behind-the-bloodshed-1x04-triads",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609396.jpg",
+      "artworkAlt": "Mafia: Behind the Bloodshed programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-10-30",
-      "showId": 75026,
-      "episodeId": 3708487,
+      "airdate": "2026-10-27",
+      "showId": 94785,
+      "episodeId": 3777421,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 263.9
+    },
+    {
+      "title": "VisionQuest",
+      "summary": "Vision, rebooted and having escaped from those who sought to weaponize him, has been in hiding. Searching for new meaning, he consults the AI personas embedded in his programming,…",
+      "meta": "Disney+ · New tue 3 nov",
+      "source": "Disney+",
+      "channel": "Disney+",
+      "releaseDate": "2026-11-03",
+      "releaseDateLabel": "New tue 3 nov",
+      "url": "https://www.disneyplus.com/browse/entity-8744ec55-8d14-4631-99b4-c889a2d6013f",
+      "badge": "Sci-fi",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/636/1590753.jpg",
+      "artworkAlt": "VisionQuest programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-11-03",
+      "showId": 64950,
+      "episodeId": 3616310,
       "contentType": "tv-pick",
       "programmeType": "Scripted",
       "genres": [
         "Drama",
-        "Crime"
+        "Action",
+        "Science-Fiction"
       ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-10-31",
-      "preferenceScore": 170.0
+      "interestLane": "sci-fi",
+      "generatedDate": "2026-11-01",
+      "preferenceScore": 168.0
     }
   ]
 }
