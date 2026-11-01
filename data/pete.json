@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 1 November 2026 · refreshed 5:01am",
+  "updatedLabel": "Sunday, 1 November 2026 · refreshed 10:43am",
   "worldFact": {
     "id": "dead-sea-lowest-point-on-earth",
     "editorialPriority": "human-first",
@@ -19,9 +19,9 @@
     "localImage": "assets/scenery/world-fact.webp?v=3189fa652eb7"
   },
   "weather": {
-    "temp": "9°",
-    "summary": "Mist",
-    "condition": "Mist",
+    "temp": "10°",
+    "summary": "Overcast",
+    "condition": "Overcast",
     "currentRainChance": 4,
     "daily": [
       {
@@ -30,7 +30,7 @@
         "low": 8,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -44,7 +44,7 @@
       },
       {
         "date": "2026-11-03",
-        "high": 13,
+        "high": 12,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -53,11 +53,11 @@
       },
       {
         "date": "2026-11-04",
-        "high": 12,
+        "high": 11,
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 20,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
@@ -66,7 +66,7 @@
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 40%",
+      "detail": "Overcast · peak rain chance around 50%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -137,6 +137,34 @@
   },
   "calendar": [
     {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-30T00:00:00+00:00",
+      "end": "2026-11-01T00:00:00+00:00",
+      "date": "2026-10-30",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "HALLOWEEN",
+      "summary": "",
+      "url": "",
+      "start": "2026-10-31T00:00:00+00:00",
+      "end": "2026-11-01T00:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "5dn6ean90tsbt0tcuc2am7sp5j",
+      "calendarColorSource": "google"
+    },
+    {
       "title": "Demi Playdate",
       "summary": "",
       "url": "",
@@ -162,20 +190,6 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "See Kate and Family",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-08T00:00:00+00:00",
-      "end": "2026-11-09T00:00:00+00:00",
-      "date": "2026-11-08",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
       "calendarColorSource": "google"
     },
     {
@@ -303,6 +317,146 @@
       "colorId": "10",
       "googleEventId": "c9h34e3560o6cbb5c5gj2b9kc9i38b9ocgrj4b9g6gs64c9jcpijed9hco",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 12-3pm",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-05T00:00:00+00:00",
+      "end": "2026-12-06T00:00:00+00:00",
+      "date": "2026-12-05",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6spj2db16opmab9lc8p36b9kc5gm4b9p68rjabb5cgsjieb361hjie9j74",
+      "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-06T00:00:00+00:00",
+      "end": "2026-12-07T00:00:00+00:00",
+      "date": "2026-12-06",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "6os6cc9lcdij6b9gc4qj0b9k6lh34b9p6sojeb9j6go3cp1i6or66d1k6c",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "See Kate and Family",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-06T00:00:00+00:00",
+      "end": "2026-12-07T00:00:00+00:00",
+      "date": "2026-12-06",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-13T00:00:00+00:00",
+      "end": "2026-12-14T00:00:00+00:00",
+      "date": "2026-12-13",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "6li62dhgcgsjebb2ckp38b9k61hj8bb26gom6b9g60p64cr670o38cb4co",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "FULL DAYS",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-21T00:00:00+00:00",
+      "end": "2027-01-01T00:00:00+00:00",
+      "date": "2026-12-21",
+      "time": "All day",
+      "allDay": true,
+      "color": "#7ae7bf",
+      "colorId": "2",
+      "googleEventId": "3v3g7b8i8ak713e7kb0udbupru",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "HALF TERM",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-21T00:00:00+00:00",
+      "end": "2027-01-01T00:00:00+00:00",
+      "date": "2026-12-21",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ffb878",
+      "colorId": "6",
+      "googleEventId": "6o0e4m1jmitqlmslvre7r3rbf6",
+      "calendarColorSource": "google"
+    },
+    {
+      "title": "Santa's Grotto?",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-24T00:00:00+00:00",
+      "end": "2026-12-25T00:00:00+00:00",
+      "date": "2026-12-24",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "60qmccpp6th6ab9p6dj62b9k6tgjcbb268qm6bb370rj8cr2ccp3eo9n6c",
+      "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "XMAS",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-25T00:00:00+00:00",
+      "end": "2026-12-26T00:00:00+00:00",
+      "date": "2026-12-25",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "2gqnmadok0vgfk3e5nca6jd6jg",
+      "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "Boxing Day",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-26T00:00:00+00:00",
+      "end": "2026-12-27T00:00:00+00:00",
+      "date": "2026-12-26",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "0n4b2map887fvpaajn9bk3j8fu",
+      "calendarColorSource": "calendar-default"
+    },
+    {
+      "title": "NEW YEAR",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-31T00:00:00+00:00",
+      "end": "2027-01-01T00:00:00+00:00",
+      "date": "2026-12-31",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "027m075vg1ehsts1ke842hbjgs",
+      "calendarColorSource": "calendar-default"
     }
   ],
   "arsenal": {
@@ -351,10 +505,11 @@
       "tvChannel": "Sky Sports Premier League",
       "stadium": "Anfield",
       "previousMeeting": {
-        "score": "No previous meeting found",
-        "date": "",
-        "competition": "",
-        "source": ""
+        "score": "Arsenal 0–0 Liverpool",
+        "date": "8 Jan 2026",
+        "competition": "Premier League",
+        "source": "PremierLeague.com",
+        "url": "https://www.premierleague.com/en/news/4524015/arsenal-0-0-liverpool-match-report-8-january-2026"
       }
     },
     "leaguePosition": 2,
@@ -362,48 +517,48 @@
     "played": 8,
     "news": [
       {
-        "title": "Arsenal team news hint as injured star set to return against Liverpool",
+        "title": "Liverpool v Arsenal: Team news",
         "summary": "",
         "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T21:54:29+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
+        "publishedAt": "2026-10-31T19:04:22+00:00",
+        "source": "Liverpool FC",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool line-ups vs Arsenal as Trey Nyoni and Milos Kerkez decisions made",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T08:57:00+00:00",
+        "source": "Liverpool Echo",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTHZKaWVObGg3QWR1ZXpjRHY4b0F5dWNWUXJGR3R6N29rc0dGVFB1SEg2Q0VnRGJNVFpnVGQwenZXRUVoR1ljZ2tkUjh4OUxabUxvZXpvbFp4NmdBWlJQNHBIbm81MkpScGVTczZZOVFuX3p3S25vMy10WUtMdE1oTU0wWTM3eXRfSFZKRmVEOUh5MDNBdWhHcWdURklMWUFp0gGmAUFVX3lxTE9ncHZ1bHVJRUdMZldOaFJtNWRXWjdBRUhmOUprbE9kaWtmQTdhTGd3T09UVXprVEFNR1NxWXh6RGtWQk5MZVhNbWJNOEF0ZnlCZE0wS0xBSnd4eGN3U0VTcWZJOGVSNGd5QTVNS25aZUl6UzVvOWZzZXhlVDdlSGRXemZfUGJsVHU5R29vcGFhdDNQT2UyU2FBWnFvM1JwTzlVODU4cGc?oc=5",
         "contentType": "article"
       },
       {
         "title": "'If Liverpool want a title race, they have to beat Arsenal'",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T02:31:25+00:00",
+        "publishedAt": "2026-11-01T10:11:33+00:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcTlWTFd5ODdRXzYwUnQyOTVMMks5M1hmRHpkSjZJVHNoN3VJbUZaSF9hcDU4OEZUTHJueExCNy1JbHczMW9aSkR1aGYxdlM5U1dXYmhBc090elM5WERqWWk1WmxaY1JZRDBCT3Qxdzl0SXI5Vi0yRy1oQTNTcVRkNVZrdnhaOERKMFI3RTRHZFpoZ2FOZG1ORHY2Q3BkUHhBd3A0WkhHVUVwN0NDNUVob1ZIVkh1ZUpLdzVCTC02V1RqanEtbTZxMDc4VlZJSG0xMEJLOFNLNTQ2TzNGQWt3dEUzTWp6UmtNd0F0aTVDMmNkWkxCUF9LTWV6MTVJQQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Liverpool v Arsenal: Team news",
+        "title": "Liverpool FC team news vs. Arsenal – Injuries, suspensions & available squad",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T09:20:36+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T07:15:15+00:00",
+        "source": "This Is Anfield",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOb3JHbkxyVURtZE1lQl8wWFpmRFNyVzViMTBHN0FkR0JZSlV1X3BjN2V3OFpCMno1dEQ3bzMtQ1hEczlDSDkyVTQ0THlpZ1ZGemNGMHhybEVSaTExT1NsOENOT3p0dmdaMk1MSVFjVkl3VmJUNFdIdTN3QU5qeUZtRXE0eUpkS3M2aDBZNDBmRE43T0hId3RoUGtSMFVMM2luVWZlaFFoczhteTdlRFE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "14 players could miss Liverpool vs Arsenal after Andoni Iraola injury update",
+        "title": "Arsenal team news hint as injured star set to return against Liverpool",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T04:00:00+00:00",
-        "source": "Liverpool Echo",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFp4dU90Z3FjREpuRmJ6MWdSUG45N2ItZV82bE5tRnR5bXRpSXJRckRJSEZwMlY2TXZsR19mYngwWGl3bmJCYVE2a3lNTE5jQWlHU05scG56MWFQTEgwWENPMWxiTG5VaDQ1czZKMHVJMmVzc1RHaVJkTVJJQmZyWkhMVENha3V1a0NnVWhHRHY3Zl90UlVyVUZGdm5wRmdHbE9LVlZ6WHNjUdIBrwFBVV95cUxORXYtWGZ6MmdNb2NyTFZ2NUU1dUxkT0lPcVZLU2pDOTF1V1pLdENYa0M2eGprYmduQ1k4X3JQMGtDdXFRdjlOQXE5Ukh3VUhKWnA0UFY5OHFWcUtVeDk3V1BwVEhVSl9QcjFVVktPdzc5NENKeHlJSFgtbDM1Z2cwX0w4ak1mRjMxVEx0TElpdUh0b0p1UUtVWUFBYmV6NmU4VW9zYnpNRUhnbUVUQWpB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Liverpool Predicted Lineup vs Arsenal: Isak Leads, Szoboszlai a Doubt",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T01:42:08+00:00",
-        "source": "The False 9",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Bcm43WU1mMjdDb3YyTjdFZGJZdEVQbmhnWVM2YnpJZDNIcXEyMWJTWGxfMzNBbEwtUXBIVlBJbHd2MFJUU3U5UEVpRC03TkdpUzhKRHdLRXNWM2tnZERtcFFhZ2duNERhT2FHVnhmdlZUVlBFcVgwUDZsRzhHcnM?oc=5",
+        "publishedAt": "2026-11-01T01:15:33+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
         "contentType": "article"
       }
     ],
@@ -490,32 +645,32 @@
     ]
   },
   "lead": {
-    "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
+    "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
     "summary": "",
     "meta": "Sun 1 Nov",
-    "publishedAt": "2026-11-01T03:20:00+00:00",
-    "source": "Yahoo Finance",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdVp6WjlyUmRuaVlKN1ZiMHExdWZGdl9HWTBPZThuTTJUdlJyOUNVblRxTWR0QjhYQ1FteWtDNFNhWGFHVVk4UmNQd3pNZGlYOWx4TFNYaGViT3E5dHFqUjFXYW1MQ2Y4a1NGb1ZoMEl0WDJTdm1LRW5WSUpoXzN2MWhXb1p4NHQ0N3BiWm9pNDdLTjE3cXZjUnkybWxhaWFyMl9J?oc=5",
+    "publishedAt": "2026-11-01T08:54:35+00:00",
+    "source": "Mashable",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0V2cUVWOVl0eFNNN0tEVjluRlliOHR0MkVQbXdWaERXUzhTSFZfend2OTVmZldaT3k0b3pINTlacGEtdmNXV243bnZUbXFqVW1sZ3ZnT2t2REdyaENNOEJuS3ZlV3VwbGhxZEZnYTJKa2NlOHRTd1RubTZuVlA2bElhQ24yS2VvLWV6MlBMU0RnOU9nSGRjaXhQNG9DVmly?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
+      "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
       "summary": "",
       "meta": "Sun 1 Nov",
-      "publishedAt": "2026-11-01T03:20:00+00:00",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdVp6WjlyUmRuaVlKN1ZiMHExdWZGdl9HWTBPZThuTTJUdlJyOUNVblRxTWR0QjhYQ1FteWtDNFNhWGFHVVk4UmNQd3pNZGlYOWx4TFNYaGViT3E5dHFqUjFXYW1MQ2Y4a1NGb1ZoMEl0WDJTdm1LRW5WSUpoXzN2MWhXb1p4NHQ0N3BiWm9pNDdLTjE3cXZjUnkybWxhaWFyMl9J?oc=5",
+      "publishedAt": "2026-11-01T08:54:35+00:00",
+      "source": "Mashable",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0V2cUVWOVl0eFNNN0tEVjluRlliOHR0MkVQbXdWaERXUzhTSFZfend2OTVmZldaT3k0b3pINTlacGEtdmNXV243bnZUbXFqVW1sZ3ZnT2t2REdyaENNOEJuS3ZlV3VwbGhxZEZnYTJKa2NlOHRTd1RubTZuVlA2bElhQ24yS2VvLWV6MlBMU0RnOU9nSGRjaXhQNG9DVmly?oc=5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Arsenal team news hint as injured star set to return against Liverpool",
+      "title": "Liverpool v Arsenal: Team news",
       "summary": "",
       "meta": "Sat 31 Oct",
-      "publishedAt": "2026-10-31T21:54:29+00:00",
-      "source": "London Evening Standard",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
+      "publishedAt": "2026-10-31T19:04:22+00:00",
+      "source": "Liverpool FC",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
@@ -580,7 +735,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-01",
-      "preferenceScore": 628.3
+      "preferenceScore": 628.1
     },
     {
       "title": "Murder in Belfast: Sisters Seeking Justice",
@@ -605,7 +760,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-01",
-      "preferenceScore": 585.6
+      "preferenceScore": 585.9
     },
     {
       "title": "UK Forensic Breakthroughs",
@@ -628,7 +783,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-01",
-      "preferenceScore": 397.0
+      "preferenceScore": 398.7
     },
     {
       "title": "Black Doves",
@@ -661,6 +816,15 @@
   "sections": {
     "AI": [
       {
+        "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T08:54:35+00:00",
+        "source": "Mashable",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0V2cUVWOVl0eFNNN0tEVjluRlliOHR0MkVQbXdWaERXUzhTSFZfend2OTVmZldaT3k0b3pINTlacGEtdmNXV243bnZUbXFqVW1sZ3ZnT2t2REdyaENNOEJuS3ZlV3VwbGhxZEZnYTJKa2NlOHRTd1RubTZuVlA2bElhQ24yS2VvLWV6MlBMU0RnOU9nSGRjaXhQNG9DVmly?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
         "summary": "",
         "meta": "Sun 1 Nov",
@@ -670,30 +834,12 @@
         "contentType": "article"
       },
       {
-        "title": "I stopped juggling Claude Code, Codex, and other coding agents after finding this open-source app",
+        "title": "What you Need to Know AboutClaude's Maker, Anthropic IPO",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T23:31:52+00:00",
-        "source": "XDA",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVHNzYXNRUmpvVl9JdzN3YkRJZm9ldWNfOHRTTlByclFKNHpOMEhGcXNkWjNwZjBoZ1RSV2RtR3ZoZGprV2FzRW90WjNkMEZvaEltV3c5SE1lTnpESm04NFhfQk5NY1hQT3hrekhMMXFBT3l3SDRfNnlNX0xjTFJVZWV5ZmRhenI0SjRvSVZHR1FLdjZLUVY4THplRURvZzJFeTY4VlBoU2JxMjZ2UV81RzJUdDJyb0k?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic Quietly Patches Claude to Stop It Cloning Other People's Video Games",
-        "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T22:05:00+00:00",
-        "source": "BigGo Finance",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qbnNLb0wyNVJaRzBFQUpBVkwtd05JZmFSVEVHWXZncF9jSHh3R20tTmVieHN4ZnQwQllSam9FYm96eVJzaDk1c0RYZ1M1SHQ1WFJPMmxGQzdTUHRvcVo1MHFCMlYtWXRvS2Voa01tSXViRktQRnc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic's watermark rollout leaves a loophole on two older Claude models",
-        "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T19:24:37+00:00",
-        "source": "The Decoder",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObWRRVDc2NW4xb3Vod21YR3hORTRGNjlONHFUc3ozSWx0SGZ2ZnpGd1NoUnRXSFlXcUoxOUZEcXJHVkhQVHc1ei01VHpaMWJXZUJZVEFjTXpoVm5oMnlaOW9KZ3BPQXBBMzVRaEVva3p3eFMteHFjdnltQmozZnZqNXFDTVVRME9ONXZ5YXdCRDV5U2FiTzFmRmtKa2c3ams?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T01:15:01+00:00",
+        "source": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa28tTl93WVB4VlNSanNWbTJpaFFyVzFqV1poNkFtRkc2cG93ZDVmaTZkdDhNSTcxdzNTZml3NW9NLXNuc3ViZlZPTkZTc0tGZmFCRGkwOXpYb0g0aG1zVzRuRVJFYTFDWmROQm5LSmlfd0Zrd19kblFBczMySkJ3RFNNekRicWlDcXNZc1NvcVZvOFZ1Tk93clhBYVF4dw?oc=5",
         "contentType": "article"
       },
       {
@@ -724,22 +870,31 @@
         "contentType": "article"
       },
       {
-        "title": "Chinese hackers used DeepSeek and other AI tools in sweeping global cyberattacks, report finds",
+        "title": "The future of the firm",
         "summary": "",
-        "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T22:00:40+00:00",
-        "source": "NBC News",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2tBajRGcFVPX2VqQ282N2Z5bWNzZXlvaFlkNkw1djJST1FyNDNhWDAyVHRacU5WckRKaDNSTWJZNVRKZ3pSWi1NR0JUeGM0RlRCTlRncS1uME1lUDNOVExMdE51ODN1TEpLLUFFdUcxN19CRnNwOW9JVnpHQW9EZ0tFb2wtMkMzZTlJTEVpTF8tVUxGZENlUzdfUlk0UDdpYkRxQkh6d1RHRVZ5QUVHSlJsanRNQVZKNlNZ?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T18:14:38+00:00",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjWGg5TktPMGtkSmtIVjRPM3c5ek1TcUtpOTBYaGFLYzBoZ1pLQkNLRDQzSHhuRkZkcFUycHFlV04yRlREeHdFX1pJVEhfVW5OUGIxUG5fUGlJR3Yw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Alibaba partners with Apple to integrate Qwen AI model into Apple Intelligence for Chinese market",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T17:38:16+00:00",
+        "source": "Anadolu Ajansı",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOYWxtSWxQWFFKLVc1dUZCdGtGOElTdFlWeTJZV0FWZ0MzbXBzbkpNSzNmclhleVlWblpHeElhSHhNMDZtcHlKWjBZTVFEQk9MRDJlcWZDWFZQYzlUZDdGcVBDTVk0RndNdC1iVG9taW9vY0FCdTF6WWVzSjdhQVp1Yk1jUkQ4QU9jZjdCTlRCZmZmZTBranBrSzh0cDcydmVWVmpYQ21SOXFyYUkyTUZFU0VVZzdXUnY0S2Q0bzE5ZU1XcGRxVUh2bDdyNHM2RGV3MUlJUVVBS3g1S28?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
       {
-        "title": "Cohere’s Qwen Story: Looks More Like Model Jaggedness",
+        "title": "Perplexity's new Deep Research tool is powered by DeepSeek R1",
         "summary": "",
-        "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T07:00:00+00:00",
-        "source": "Check Point Research",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObGJrU3hCNjlSekxQNGp3dlkxbGs5bEg3NmdCdTZJZmRCeW5iRVpaTjF4QzY3bDBERjViWmxIYXZDQ0FQdGZneFphRk9TZExnanlyR2JZMERMTmFqNUV2VTZnNzlyY1FzNlJmSjd3R2s0bzVxYlRJeUZxYy11NVByX0N3Mi01OFpzd0JLLXRIRjhwbE0?oc=5",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T14:28:41+00:00",
+        "source": "Mashable",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMWtmb2gwa1JfVEgtQjFkU2t0VFFSWlhSRV8xZDJEenlUSFJMM0swZzBMamlzVzE2cmxsSEl5XzhUMnZVbnF3WlZoWkNNMVVFTFZNekc1QmIybHBLSVl0MVl5UDdBdHkzNGJhQjZXcDlITHJzZWotRWtnTy1hRGk2MVBUYVZzSW9iN2llMmpR?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -756,66 +911,66 @@
     ],
     "Arsenal news": [
       {
-        "title": "Arsenal team news hint as injured star set to return against Liverpool",
+        "title": "Liverpool v Arsenal: Team news",
         "summary": "",
         "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T21:54:29+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
+        "publishedAt": "2026-10-31T19:04:22+00:00",
+        "source": "Liverpool FC",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool line-ups vs Arsenal as Trey Nyoni and Milos Kerkez decisions made",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T08:57:00+00:00",
+        "source": "Liverpool Echo",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTHZKaWVObGg3QWR1ZXpjRHY4b0F5dWNWUXJGR3R6N29rc0dGVFB1SEg2Q0VnRGJNVFpnVGQwenZXRUVoR1ljZ2tkUjh4OUxabUxvZXpvbFp4NmdBWlJQNHBIbm81MkpScGVTczZZOVFuX3p3S25vMy10WUtMdE1oTU0wWTM3eXRfSFZKRmVEOUh5MDNBdWhHcWdURklMWUFp0gGmAUFVX3lxTE9ncHZ1bHVJRUdMZldOaFJtNWRXWjdBRUhmOUprbE9kaWtmQTdhTGd3T09UVXprVEFNR1NxWXh6RGtWQk5MZVhNbWJNOEF0ZnlCZE0wS0xBSnd4eGN3U0VTcWZJOGVSNGd5QTVNS25aZUl6UzVvOWZzZXhlVDdlSGRXemZfUGJsVHU5R29vcGFhdDNQT2UyU2FBWnFvM1JwTzlVODU4cGc?oc=5",
         "contentType": "article"
       },
       {
         "title": "'If Liverpool want a title race, they have to beat Arsenal'",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T02:31:25+00:00",
+        "publishedAt": "2026-11-01T10:11:33+00:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcTlWTFd5ODdRXzYwUnQyOTVMMks5M1hmRHpkSjZJVHNoN3VJbUZaSF9hcDU4OEZUTHJueExCNy1JbHczMW9aSkR1aGYxdlM5U1dXYmhBc090elM5WERqWWk1WmxaY1JZRDBCT3Qxdzl0SXI5Vi0yRy1oQTNTcVRkNVZrdnhaOERKMFI3RTRHZFpoZ2FOZG1ORHY2Q3BkUHhBd3A0WkhHVUVwN0NDNUVob1ZIVkh1ZUpLdzVCTC02V1RqanEtbTZxMDc4VlZJSG0xMEJLOFNLNTQ2TzNGQWt3dEUzTWp6UmtNd0F0aTVDMmNkWkxCUF9LTWV6MTVJQQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Liverpool v Arsenal: Team news",
-        "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T09:20:36+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "14 players could miss Liverpool vs Arsenal after Andoni Iraola injury update",
+        "title": "Liverpool FC team news vs. Arsenal – Injuries, suspensions & available squad",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T04:00:00+00:00",
-        "source": "Liverpool Echo",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFp4dU90Z3FjREpuRmJ6MWdSUG45N2ItZV82bE5tRnR5bXRpSXJRckRJSEZwMlY2TXZsR19mYngwWGl3bmJCYVE2a3lNTE5jQWlHU05scG56MWFQTEgwWENPMWxiTG5VaDQ1czZKMHVJMmVzc1RHaVJkTVJJQmZyWkhMVENha3V1a0NnVWhHRHY3Zl90UlVyVUZGdm5wRmdHbE9LVlZ6WHNjUdIBrwFBVV95cUxORXYtWGZ6MmdNb2NyTFZ2NUU1dUxkT0lPcVZLU2pDOTF1V1pLdENYa0M2eGprYmduQ1k4X3JQMGtDdXFRdjlOQXE5Ukh3VUhKWnA0UFY5OHFWcUtVeDk3V1BwVEhVSl9QcjFVVktPdzc5NENKeHlJSFgtbDM1Z2cwX0w4ak1mRjMxVEx0TElpdUh0b0p1UUtVWUFBYmV6NmU4VW9zYnpNRUhnbUVUQWpB?oc=5",
+        "publishedAt": "2026-11-01T07:15:15+00:00",
+        "source": "This Is Anfield",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOb3JHbkxyVURtZE1lQl8wWFpmRFNyVzViMTBHN0FkR0JZSlV1X3BjN2V3OFpCMno1dEQ3bzMtQ1hEczlDSDkyVTQ0THlpZ1ZGemNGMHhybEVSaTExT1NsOENOT3p0dmdaMk1MSVFjVkl3VmJUNFdIdTN3QU5qeUZtRXE0eUpkS3M2aDBZNDBmRE43T0hId3RoUGtSMFVMM2luVWZlaFFoczhteTdlRFE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Liverpool Predicted Lineup vs Arsenal: Isak Leads, Szoboszlai a Doubt",
+        "title": "Arsenal team news hint as injured star set to return against Liverpool",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T01:42:08+00:00",
-        "source": "The False 9",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Bcm43WU1mMjdDb3YyTjdFZGJZdEVQbmhnWVM2YnpJZDNIcXEyMWJTWGxfMzNBbEwtUXBIVlBJbHd2MFJUU3U5UEVpRC03TkdpUzhKRHdLRXNWM2tnZERtcFFhZ2duNERhT2FHVnhmdlZUVlBFcVgwUDZsRzhHcnM?oc=5",
+        "publishedAt": "2026-11-01T01:15:33+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZUZ6Z3UwTEl0YUVaa2tiOUVUemhpUWdmcV80ZGZHU1Z4UmxGSEtMRkpXMGpzeVdlakxDaGJIcmpFbEdfWnoyMmxHTXctTUo2LWJ4Rlc3UEh3bkFVRkdzc1RhOEppWHplNVBfdHRsME5aN0xtOEhhWXBSclRBWnZlMUxwM1NURkV2LWx1QTFfWkg0WTladHVmeS01X0kxUWlUNzY1d2lSVmw2dkE?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Arsenal away days: The stories behind the supporters",
+        "title": "Premier League: build-up to Liverpool v Arsenal - radio & live text",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T19:12:19+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbTh6SnczcGxQZkxIUVRfQUcyWWl3RzdUX3NaTXNZYWkwN29ZRFI4Um1QTEpPazctZXoycjc0Z0ZvSEZhYkIzRGJmbHNEREg0WGxUaTJNY2lwb19peVJFczZZQktqS2JISV9fSGRSczRqeEhBMkE4SW1kbElVQnZwd3Q5SFJKcG1XRnlWeW1ZUGF4blBUSnpaSw?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T01:25:00+00:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sSUZyZGpjTWluV2d5QmV6TEJUTThPUGw3elROMllxNmdwSU1CMkliNUdJeGMyZXFhWUY0ZGRHcllXV19lZGV5SFJCQzlXZzJpNmtOcDNkYTNjYmNwMWtvTWhNUnRIdw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Training photos: Liverpool prepare for Premier League showdown with Arsenal",
+        "title": "Liverpool vs Arsenal: How to watch, TV channel, live stream, NOW TV, team news and score prediction",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T10:21:05+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV25ac0dvQ0lIcFJyaG80Yk0yaElyUHQxV2R4ajdoYVIzUHN2OTY2VDlyMW9kazdDSERvQTZLRlZtVVJIanBhV2premw1NkVkM1ZtanNmcUpLSU5YME5GZHV2RFRHSmN1QlZ1enM5NEQ0YzZOUzVtZUcyLWIzVzlhNTBHejhsaXRWLWFkY1h0YmtabnZsejN4V0NBQWd6djlfWi1SdVAzVWROVFU?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T07:40:49+00:00",
+        "source": "Sky Sports",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVklGekdyaUxNNURYLVVzbEMwYTRDRmVaeHJXUHpoX2NLcW1ZVU5LVUx3MFJwT2hsYUJmNEEzaUVFMWpCT0I3dzlIQ3VYTDVlbHdFQWgyN253QkxPdS0weTNza2lYbnYwYS1Pa0huTTRlcEoyMzRzYXl6aGZwX0NjYy1fUkVMMm5ZOHNqTEdLY0J2TXpJaWYwdzVhSFFFU1NIWUsza1pjdkdXTi1yak1NQzlibnZydG85aWUtOWEyMGJjaU5HMnEtN0Z0bHJfTlFUSHVPWGZwSmVfTkU?oc=5",
         "contentType": "article"
       }
     ],
@@ -989,15 +1144,15 @@
         "homeArea": false
       },
       {
-        "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
+        "title": "Met appeals for information following rape in Teddington",
         "summary": "",
-        "meta": "Fri 9 Oct",
-        "publishedAt": "2026-10-09T08:00:00+01:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRXVVYW9CNWh4QmpSVG5Ebm9YQ05hXzAtTm9lbHdMV3M5LVphaTFFcVdmYmhFU2NucWNEVV9TUzlNSnlSelR6WTF6RGM1UEY1NHktQzYxQnYtRkotWjJvVndINW1IbS1yVEFSOV9MTVZ4bktMNmYzTlZZcVJuUktqSklHQlBHcy16MGNfX3RtTXZCVlAwQVBDM0lsOFJzUTJhLWxmelNtMkk2TzQ?oc=5",
         "contentType": "article",
         "localPublication": true,
-        "familyActivity": true,
+        "familyActivity": false,
         "homeArea": false
       },
       {
@@ -1014,6 +1169,33 @@
       }
     ],
     "UK news": [
+      {
+        "title": "New Helensburgh charity shop calls for volunteers ahead of opening next month",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T08:00:00+00:00",
+        "source": "Helensburgh Advertiser",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVE1NN2JKRjVfeWRNOWN3RGdndC1UZldwTThtXzhJS1gzVFdmUjZPem9RTGRhb0M5T2tnMDJsT0NNdVZYUWE1VXcwZ1NkNEZuRlRHbnNGazZiMkJkV3cwZDctWFI5WUp3MWR5d0dMMXBFNDVaQ2Z1Q2Rwa2FLVG9YSEotQlF3QUFZdTRNQnhROWdIWldNV1RkcTUwcjRwR3dONHA4a0lEZw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Carmarthenshire family business wins 2026 Nextdoor Fave Award",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T06:00:00+00:00",
+        "source": "southwalesguardian.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNm9rVmJmVVRfMldLbmR4OFNJb1hQOW5WRUVQSEFyX2daek5abGpjTm0tZURTM3h3SVgwN3BiaEVaQkNMR0pON3M3SXpaUkZaVlljM0lQblZRNjdrMVJVU1ZFUmpkZVNWMzZ6OV8yblFIcWs1TS1JRGFvZEJTX1U2TWIxOVg5REs5dFY5TjF5T1JKem03SjVXZnZaQkFRaTdLdnFybQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "One of Wales’ best market towns has hiking trails, independent shops and an award-winning pub",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T05:45:00+00:00",
+        "source": "Wales Online",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQjNKT3ZkallTVnZOeEpwXzdYUFNLcUp1MDVCS3VkMTdTZ05qOHRuZGlpWmwwRWtWR0JldUZhTjhzbDkyYnpOLVdQRE1mZUpUWWdJZnJLZDhzcm4zSWxsMWh5M0hXVnA1UHpaQVl3cUxxMGIxalY1NEhWNURTZFZBUjhYYW5rYjF2V1E?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "The Award-Winning British Actor Who Almost Played Freddy Krueger",
         "summary": "",
@@ -1093,33 +1275,6 @@
         "publishedAt": "2026-10-30T14:36:53+00:00",
         "source": "Blake Morgan",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSmxlVHEtdlhkME5rMkEyNS1GdkZPNE4zaTMzQUtsUUhiOWpRVmFhYk5FY0JweTlEajhINGM3UHluZXhqLXExU0QtWG9TOFB5TmpBLWM3ZF9LMTFxRS04SzliTDN1YktIOEpXQ2xpLVdIaUJ1TXZ1S1o2WmRNWkh3amg5RmJ1Y1dFVWpvTVF2c0I4N3EzYWkwWU1qMkg3SzJyekRuNXZ3bERYNDlLOFNsc2s3Y2haVE9sa2E0aERMdk8tbVZaSE1BZFF2eWtsZGlleTRrTzVqNXJYck0?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Dundee Parkinson’s researcher wins major international award for patient-focused work",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T14:21:28+00:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcG9NQ0V2djNNTUtVX2JncXgwZ3hLTnBwdVVrOE91OVVwSXR6X3kzMlc5YlphTjdYM0xhTWZBMk81bk5sbG9oUHRuTHpuWDhFcnF4ZEZqa2ZBOE9ITFFlMjlIQ0s2c3ZDY0xUUDFvX0VWbi1PdFdwRDA3VG4wczBGWXhzRURrUlZFaXJ3d09CZ3ZJdWRiajk4YUlkVEt5OWdickFsSi1HcHA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "British historian to receive Latvian state award / Article",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T10:28:10+00:00",
-        "source": "LSM",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzd1eEh3NUtsVEM5ZGFnMlVONXZOa09md3dmTUluVVdleTVmSnhvNzFqZHRCcE5CdHMxVGpwdGVMMmo1QWI1d2NrMlRpY0hKZVdmbk1Lc3VlZGlPNHNqZDRSWkowNk5KaXp4dHU0ZjZZU3NMcHVKOVVUYzVyZFNnSEFtTEdZUFZtQTR0V3ZXT2o0QUgxTTZjcXJWTjdteC11SWVxSVhHMXY4VmVCMTVTZmZqNFk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Ancient Welsh manuscripts reunited for first time in nearly 1,000 years",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T07:24:16+00:00",
-        "source": "Wales 247",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeWpuRHFieEdyU2RGX24tS2hUb0NUaWpSSUNpbWZhTlBWVndueUgyOTRIY3ZCZ0VEcGRHTFB3bXJqR2Z6cGphODZaS1NyVVVEaVp2dVBrVEZ5UXduSHprOTJkYnV1SlpYUVhab3FWdVozTFlobTl5YUQxYTJvc1BUMmZzeGIxMkxWeGgtSXptUF9oVjluaFBPUzAwOFZ3UQ?oc=5",
         "contentType": "article"
       }
     ],
@@ -1534,7 +1689,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-01",
-      "preferenceScore": 263.9
+      "preferenceScore": 263.6
     },
     {
       "title": "VisionQuest",
