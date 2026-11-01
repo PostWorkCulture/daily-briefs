@@ -19,7 +19,7 @@
     "localImage": "assets/scenery/world-fact.webp?v=3189fa652eb7"
   },
   "weather": {
-    "temp": "10°",
+    "temp": "12°",
     "summary": "Overcast",
     "condition": "Overcast",
     "currentRainChance": 4,
@@ -30,7 +30,7 @@
         "low": 8,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -48,7 +48,7 @@
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
@@ -57,7 +57,7 @@
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
@@ -66,15 +66,15 @@
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-11-06",
         "high": 11,
         "low": 7,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 10,
         "source": "Met Office"
       },
@@ -90,7 +90,7 @@
     ],
     "bestOutdoor": {
       "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 50%",
+      "detail": "Overcast · peak rain chance around 40%",
       "source": "Met Office"
     },
     "source": "Met Office",
