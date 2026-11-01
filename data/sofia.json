@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 1 November 2026 · refreshed 10:43am",
+  "updatedLabel": "Sunday, 1 November 2026 · refreshed 3:30pm",
   "worldFact": {
     "id": "dead-sea-lowest-point-on-earth",
     "editorialPriority": "human-first",
@@ -27,24 +27,24 @@
       {
         "date": "2026-11-01",
         "high": 12,
-        "low": 8,
+        "low": 9,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 40,
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-11-02",
         "high": 13,
-        "low": 7,
+        "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-11-03",
-        "high": 12,
+        "high": 13,
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -53,7 +53,7 @@
       },
       {
         "date": "2026-11-04",
-        "high": 11,
+        "high": 12,
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -63,7 +63,7 @@
       {
         "date": "2026-11-05",
         "high": 11,
-        "low": 7,
+        "low": 6,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 4,
@@ -71,26 +71,26 @@
       },
       {
         "date": "2026-11-06",
-        "high": 11,
-        "low": 7,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "high": 10,
+        "low": 6,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-07",
-        "high": 10,
-        "low": 7,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 10,
+        "high": 11,
+        "low": 6,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Overcast · peak rain chance around 40%",
+      "label": "Good outdoor day",
+      "detail": "Overcast · rain chance around 30%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -165,20 +165,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Demi Playdate",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-01T00:00:00+00:00",
-      "end": "2026-11-02T00:00:00+00:00",
-      "date": "2026-11-01",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -191,6 +177,20 @@
       "colorId": "10",
       "googleEventId": "6spjedr36oqjcbb3clj68b9k6op34b9p75hj2b9k6kpjaor46gs62d1occ",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Demi Playdate",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-01T00:00:00+00:00",
+      "end": "2026-11-02T00:00:00+00:00",
+      "date": "2026-11-01",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s6cc1l6ti6cbb36hh3ab9kc5hj0bb26op36bb46lh3ac9lc8oj6cpn74",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -235,20 +235,6 @@
       "calendarColorSource": "google"
     },
     {
-      "title": "Choir Performance 10:30-2:30",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-21T00:00:00+00:00",
-      "end": "2026-11-22T00:00:00+00:00",
-      "date": "2026-11-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
-    },
-    {
       "title": "Kids",
       "summary": "",
       "url": "",
@@ -261,6 +247,20 @@
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
       "calendarColorSource": "google"
+    },
+    {
+      "title": "Choir Performance 10:30-2:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-21T00:00:00+00:00",
+      "end": "2026-11-22T00:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
+      "calendarColorSource": "calendar-default"
     },
     {
       "title": "Football 10-11am",
@@ -463,7 +463,7 @@
     "title": "Alexander Isak: Why keeping Sweden striker fit and firing is key to Andoni Iraola's Liverpool revival",
     "summary": "",
     "meta": "Sun 1 Nov",
-    "publishedAt": "2026-11-01T10:13:17+00:00",
+    "publishedAt": "2026-11-01T14:50:34+00:00",
     "source": "Sky Sports",
     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeEpsbFJjc2lYdzhtdmZ3TWlpZlBBUkZoZUNuU1hmQVJxN3NtMXdfYktIbTBqbzNScXo4ckpGMUdVekp3MV80YWhYVll5ZHFaX2M2ZzNkTGlRajl4SGE0WkFwMWNxSEhJY2ZCVUF0VUFaTWJpdHNjN2lCSU1MQU1fbFRZcHN1QWdPcGgtVjhIZE1ETzU3WUJZRGN6Yzh4Q2xOc09GVHdBRUdNd3kzUnVvYkhSejk5YUlVYWUwWFpIRVUxYmJSNXR5eTloMmhRNDZ3YWR0TS1XSlprYkFhUk1qQUVn?oc=5",
     "contentType": "article"
@@ -473,7 +473,7 @@
       "title": "Alexander Isak: Why keeping Sweden striker fit and firing is key to Andoni Iraola's Liverpool revival",
       "summary": "",
       "meta": "Sun 1 Nov",
-      "publishedAt": "2026-11-01T10:13:17+00:00",
+      "publishedAt": "2026-11-01T14:50:34+00:00",
       "source": "Sky Sports",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeEpsbFJjc2lYdzhtdmZ3TWlpZlBBUkZoZUNuU1hmQVJxN3NtMXdfYktIbTBqbzNScXo4ckpGMUdVekp3MV80YWhYVll5ZHFaX2M2ZzNkTGlRajl4SGE0WkFwMWNxSEhJY2ZCVUF0VUFaTWJpdHNjN2lCSU1MQU1fbFRZcHN1QWdPcGgtVjhIZE1ETzU3WUJZRGN6Yzh4Q2xOc09GVHdBRUdNd3kzUnVvYkhSejk5YUlVYWUwWFpIRVUxYmJSNXR5eTloMmhRNDZ3YWR0TS1XSlprYkFhUk1qQUVn?oc=5",
       "contentType": "article",
@@ -635,7 +635,7 @@
         "title": "Alexander Isak: Why keeping Sweden striker fit and firing is key to Andoni Iraola's Liverpool revival",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T10:13:17+00:00",
+        "publishedAt": "2026-11-01T14:50:34+00:00",
         "source": "Sky Sports",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeEpsbFJjc2lYdzhtdmZ3TWlpZlBBUkZoZUNuU1hmQVJxN3NtMXdfYktIbTBqbzNScXo4ckpGMUdVekp3MV80YWhYVll5ZHFaX2M2ZzNkTGlRajl4SGE0WkFwMWNxSEhJY2ZCVUF0VUFaTWJpdHNjN2lCSU1MQU1fbFRZcHN1QWdPcGgtVjhIZE1ETzU3WUJZRGN6Yzh4Q2xOc09GVHdBRUdNd3kzUnVvYkhSejk5YUlVYWUwWFpIRVUxYmJSNXR5eTloMmhRNDZ3YWR0TS1XSlprYkFhUk1qQUVn?oc=5",
         "contentType": "article"
@@ -659,12 +659,30 @@
         "contentType": "article"
       },
       {
-        "title": "Pre-season: Our game-by-game guide",
+        "title": "DOUGLAS MAKES SWEDISH RETURN",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T18:21:51+00:00",
-        "source": "Manchester United",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeUFJWFpGSWJmaVVDUWh2cjRRR0h3ejJNdDZxQTd0ZEVEc1NoZ19lelRDQWVtYnhxWDBRVXlLclZ5QlUtMnZYWk54THJnS19jREhhcjM3YUZEVmdHczdvUHRwTy1GQXpIWlR2YUdiTUxqREFrVldZUmROSEcxSVZkaEtQd3JzUQ?oc=5",
+        "meta": "Fri 30 Oct",
+        "publishedAt": "2026-10-30T16:28:50+00:00",
+        "source": "FIM Speedway GP",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyTE1tLTR6RTg5TzF4Y0JlR2U3NzdYODRocDhpMVZ1SWU0elVHbDlpMzVVdUViUXZiTktraFJxUVljc003MW9DRUNMMkZkckJmRTVKV2hXalRzeWh5aC1GTEtCWjRkbC1C?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sweden urges EU to restrict entry of Russian skiers for 2027 World Championships",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T14:34:00+00:00",
+        "source": "Українська правда",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xQVJMenVPUXpiS2ZCcWZ4WEFrSGJZcWxIWTFJVVhlR2dzWnhuVm9nSWRONXUzTHF4eUIzd3V3R196NWxCcUNoN29YNW02aEpHdEhkQTlUaXZqSWxwWG41RUYtdkLSAXBBVV95cUxOUXpObC1OcnplcGZLMUt2eUlicWlvenBFb0RwaWlSTnhkVTdhWENmQ0RBUG1tc1VDXzdGanBoVTZFVmJzOGlmd2t0MGt5aF9CcS1QSUZ1Y2xUUUtkcmFRanNUUlZwUHdlNUswV2tfQ1Ff?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "France's Brexit approach contrasts sharply with Swedish expulsions",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T05:00:00+00:00",
+        "source": "The Connexion",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUFlHVzhia2J0T19UTE1CYmQzeDFKZFZzMUh4SnpzU3pYdl9xMjdDSTRlck9HNURBU2RDVUVPWU5KdVA3NTRrUUYzSlYybkFjakFCNG84Q2FpdlpXWW9wV29BU3YtSFpHcE5hTVVwcUF0UFVhcGlUbnRVSEM0eWpqVXFrdW00anZaaUNtNGdZbWhPMGNSMk5zME0yUzRUTnRLUmlObHpBN3pndlktNmxoUjNNdk5Hel93a0lMX2FFVkc?oc=5",
         "contentType": "article"
       },
       {
@@ -674,24 +692,6 @@
         "publishedAt": "2026-10-31T17:01:42+00:00",
         "source": "World Curling",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE51S3VmVi1BcFZBczRNa1lwNE5VZzN0anZYY1F5LWZBNDdDUGhWbzlzTThyYnJ1VUdNcUNLME1kYUpBVWhZS1lWNmVkTkh6NFd6MGVnTVoyOGFfNDlRUlM4TjlWWHA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Highlights: Scotland beat Sweden to reach European Curling Championships final",
-        "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T21:59:00+00:00",
-        "source": "TNT Sports",
-        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNbm5DSk9wYVA5SURpOHdfOEJhbmtUQ3B3Y2pPQlFEb242QXA5dnR6UkQtQXEtc0NDRU5wWWVua2stOUlRaUpfN1dtd1RtUnFsU1EzQWNDd0JndmtRSGVBVHZMTVhycS1PZnRFSWtQSHc4bnFzeWJka2lIZkVIMmFjNWFlU3Q5a0R4VXZ0a0puZk9iVXhjTHV4N25Nc3JFMy10X1ZWQkNaMDB2YW4xbWhFZTR3RjZKWG1EaGJzUFd5TTViV3JLZ1NwemI3eU1jZkpVeENxZ3gyUFE3QnUxa2hFZFgyTE5QZHFOMWxzMWNWZXhkRjdjdmdRZDYzLVE0UVk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Former newspaper executive jailed for 14 months after threatening woman in Swedish nightclub",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T05:30:00+00:00",
-        "source": "Irish Independent",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMnAzSWhoTGt0RlV4UnlpV1RnODQtNTR4dWJoNUFtTGd3MzIzUkQzZVMwLVF5MGI5V1JYUGRhdmQ0MjdsT3dud01xSzFjeTNRMF9QMWFLRWE3WDVTRjNlQkh5cmZuOFdld1AwbGZCa1NsYVYtVDFJQXBvSHE3MkhmNHUxZkw2ZjJHU2RHdHQ5Y2VMb0hhQW9kU0lHUVktU2h5Z3hvVkVMZ1U0VlFUOTdiT2JDdnFYREVEU3NDZC1aelM1NjhvSHF0N3lscTVKQlJ2aUtqMVBLY3ZiNXFDN3ZaTA?oc=5",
         "contentType": "article"
       }
     ],
@@ -705,18 +705,6 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yOEdMM2pCREhtVG1vVjY3YnpTTVNFcHJYX0ZxNVhIaUszRGNMdG1WVy1haV9tWnY3akpNVi1ycHpZc0x2UGpGOFZmYm55LTZ0VEJwZ0hBNzFfNnBOMjBrWVN6VGptVDJUNmFQNGFuZFRlenM?oc=5",
         "contentType": "article",
         "localPublication": false,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Local Events in Kingston",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T18:11:15+00:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxPbVgyeElqWFFDU0lCb2J6M3ViR01vQVNoZnVhdDNCV1BvN3RnbVM5UGJVZERXUEZxc3gwb0lKR0pxQmtKT3BIZkRCaFFFMVZUVUZnd0pacnVpRmR6WHdMU3RjVEV5azh4NnhIS0dqSk5mX2ttMVlOWmFOUjRZRm41ZHV3ZVlvTEFaNldLcHZTVHppMHBfcF8yVGJiYUY0bU01bXIxQjl4UlhfQS11c09zVVdlWjZkMGtYaWVzb0d4T2cxODUwNk5CQXY1bENKelhMQlM5ZnpUZVBUeVVMaUMzVHZieEdpbUFpVmQxQnRMN3ZfRGlhSExJTFpidjg3WWFxbk53RENtU3NfVllWVFRvSEtuMGk3TENiR3dJOGRCMVRDS2liX2ZLcWJvbThXZWhFcHJxdVlLYnU4TkhkT0pxZ3FEMENaMzhRdkZlRFpHdnZPT3lWaU9UM2t0VVVJQUZJR280b05zNWZBTktuN0NyOHZhc1BNbWZnTktPY2IySEN0ajg?oc=5",
-        "contentType": "article",
-        "localPublication": true,
         "familyActivity": false,
         "homeArea": false
       },
@@ -745,14 +733,14 @@
         "homeArea": false
       },
       {
-        "title": "Hampton Court dazzles as host of sold out running festival",
+        "title": "Kingston-based, AI-assisted band releases Halloween single",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T13:47:20+00:00",
-        "source": "South West Londoner",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPblgycm90aVRwWjRMXzBwNURuanFSVTJXMFFqRmlpcnNzOUVVbDlHQVNER19FMFpwVWRRSWNJcGRPNC1GeWdhMnJhSEMyUHQ5T0pDZG1KbGNlR0I1YURkX0RnU1BseGxXZWVuSl9NcXVTM3oxVkF3LWdXY0hqdWJqTjRIVVA4SFNuTmVYS1ZLa0ZFaE1CZC1uTUN2T2tsb0wxWFBV?oc=5",
+        "meta": "Wed 21 Oct",
+        "publishedAt": "2026-10-21T13:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU1djSVZSLUV1TkNfZVhVcVhyYjF1Qi1wWFhXTlpIc2todjN0WWRNcWVWUzd1OTRVNGR1NzdmMngzSk1YOXBEcUdtZzFrT3QxcnN3bGVtVDlpMXU1dkNSVTcyeXZJVUdKcWM5SXg1YnhyeHFxTzMwWm1uUWJjSEFDTlhEaVVBVkgxcmV3cFFBWlBGMFQ3ejlUcVh5d3Q4cEs3Y1JmV0sxU1dzdw?oc=5",
         "contentType": "article",
-        "localPublication": false,
+        "localPublication": true,
         "familyActivity": true,
         "homeArea": false
       },
@@ -763,6 +751,18 @@
         "publishedAt": "2026-10-21T12:55:15+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeFNUV25WNDBxOU5FZ0ZFRDNfcnR6bnlXdDg0b3hzMlltZGxjbmdDVllabXVoNDUwUzZlVHRMLVZlNllXazVaejZuZWpsbjRidGYtNTZveS00Mk12V2NpYW9Eb1BtRVJ2aUgxLWRRSUdEZGJRWTNsSkx6Z3NueV9va0RXM3hyUGVuNWpYSm5zNGxOOWFjbkE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Santa reads childrens own Christmas letters back to them through new Hampton service",
+        "summary": "",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmlYUzhpYW9HbmxpZ2tNNEF1QlVkN1ZwYnFSV0lPWm1mMVZFTFNMYTZCbk1oUnd4T3VSSjVyTVJpYjU5bW5FUlc1X0x3clJEUUlRZ1hzQktjSFYyU2pYMk9iak82ZHVSMmNUSW5md012b2ZIaDdyVm9lcnJ5SEtSY250bkNzUkp2OTZmRDE5WnVfdldNMktoQ3RrNDVGaGo5QUxoQW5vdDVUdG92Nkk0VWxLeWpTdUE?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
@@ -829,6 +829,18 @@
         "homeArea": false
       },
       {
+        "title": "Housing regulator exposes 'serious' housing failings at Kingston Council after missing home checks",
+        "summary": "",
+        "meta": "Wed 14 Oct",
+        "publishedAt": "2026-10-14T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcUhtTnBOUGFETVBzU1pENVRrMkltZzBsa09EeGY4RTc5VXBPX3hUN2hBZk8tR0VNR0xRQ1dHUUVnNThsYndJbW9Cc1c2WlJwdTJyYXY0UzRzVXRsWDBDNG53Y241Z05jc2U0MGlTaW1kcUh2T1N3cml3a0JsVklXTWZTZjliMU4xeTdHOE41NndELV9Fc09CakI1OXNfS3BJWGxTekh3QnF5VlR5ZFBrSG83STZES0t6VjM5VHdCV2pKUFh5cFZnMTVQMUxjdkhBX0R1Z0Y0ZUVxNmwzNnc?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
         "title": "Kingston homeowners urged to check their roofs before winter weather arrives",
         "summary": "",
         "meta": "Wed 14 Oct",
@@ -853,27 +865,15 @@
         "homeArea": false
       },
       {
-        "title": "Community efforts to buy Teddington playing fields put on hold over legal hurdles",
+        "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
         "summary": "",
-        "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSzJXbk8yYmN3M3ByQWdRank3ZXFBdTNFTF9BZDJXRDBKdU5GQ1BCZUtnZDZLWEgxcVJ2d2kzalFNRzdnb3VyMGh2VTJReVJGUHY3SEJLV1QteFBZcGd5aXNCWnFxbldTMDR6VjFsUzFZc3ZRWGlxWXZ3dFJhTTh5M0hmcTRjalN6NnJJamMtTW04NTBNWTUyekI1V3BXTE1kU2E5SVZRTE9vbG9wWTZTdGVNc2JjT1Y4WHFzMENEdmh2SzFSVlRKNUFELUs?oc=5",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
         "contentType": "article",
         "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Met appeals for information following rape in Teddington",
-        "summary": "",
-        "meta": "Mon 12 Oct",
-        "publishedAt": "2026-10-12T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRXVVYW9CNWh4QmpSVG5Ebm9YQ05hXzAtTm9lbHdMV3M5LVphaTFFcVdmYmhFU2NucWNEVV9TUzlNSnlSelR6WTF6RGM1UEY1NHktQzYxQnYtRkotWjJvVndINW1IbS1yVEFSOV9MTVZ4bktMNmYzTlZZcVJuUktqSklHQlBHcy16MGNfX3RtTXZCVlAwQVBDM0lsOFJzUTJhLWxmelNtMkk2TzQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
+        "familyActivity": true,
         "homeArea": false
       },
       {
@@ -945,12 +945,21 @@
         "contentType": "article"
       },
       {
+        "title": "Science breakthrough: Beavers return to Scotland's Loch Ness for first time in 500 years",
+        "summary": "",
+        "meta": "Sat 31 Oct",
+        "publishedAt": "2026-10-31T10:42:13+00:00",
+        "source": "GB News",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE96MmhTRURuYUNvLTEzcmpHMTlOcWt5ZGNCeEQ1QmVhUms4WjlsQkRvYXRGY0JPR0JvRno2VExvODZ3S3pUZFMyUlFGZTJQdl9QaVE1c2hiS09kOFYzWEpTeVFuUGpiUy1sMERkUEh1bUp5S28?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Care sector leader at Pendine Park honoured with national award",
         "summary": "",
         "meta": "Sat 31 Oct",
         "publishedAt": "2026-10-31T05:00:00+00:00",
-        "source": "North Wales Pioneer",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVVBzYk9PUEkzaVhjSWY1Y3AyNjNoajdGZkoxblZUYkNDeGQ0ZzVOVTdna1JlcC15VGgxdmEwMlVTMUVETzlsaElYcUNNM1Fla3FKcW4tbHdrcURsZG9kbHpPWk9Tam9iZkI0T3JCOVEyLVFEcWxva3R0cnk3bE9BdFhFeVE0ZFNhMlhvUHp3b3l5eXU0OVRGSkVtZDJSUQ?oc=5",
+        "source": "North Wales Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMUxkSHhPbncyWUV3eXQ2UlpqRi1IdTAzU3lVeTZRMXkzdnI0TXpTbWo4VVZjVkw2UWxWNzNRMTQ3UUlKOWJGaGMtclBaQ0xBUmJOdm5na3diOXJUOFFFalNZUGRHb3d1WDhuaG9CVUJieS1mcjVCUzZzTWp6b1p5b183cXZWdGVSQ3ZjVFZUUG1sSENOZ0QxRS15V1FnNC1l?oc=5",
         "contentType": "article"
       },
       {
@@ -972,24 +981,6 @@
         "contentType": "article"
       },
       {
-        "title": "Work of Welshpool Community Haven rewarded at Powys Business Awards",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T15:24:04+00:00",
-        "source": "Herald.Wales",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMXM2RTNZLTFYaHZ0N045Tm04VXBJc0JtX1g5b1ppa3pjekVOdlh5bXhjaFpqMFI4VTNTM21aSkhWTlNYcDRGRG5GenBVcE1lV3RJbnVfaTdfREZTWWpxRzRSUElBdkllaVBaYUktbHVFZk1QMVBWQjk2UzNqa1VIX0tSNU16Ulg3eEE2dXhqcEgtdk9MUXR3c2kxbDh6bnRNdHdQNzF3dVU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Scottish jewellery firm celebrates double win at national business awards",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T15:08:28+00:00",
-        "source": "The Herald",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeWVwcUxNYjc5bWYxQmdZQ2VHYkpmd1p0anEwcDhuTVpLUHZBSWU0VVhCNU1hdzZ5X05wb0JnUGpGYVM1OW9rX3BMSHFRY2wxa1RGczdTTDliMmVLV3g1SndKay1DTEsycVF6dTJwZjNsRGJ5N2w0eEZYYVItT3U3UTY2VHlBcE9QS3g1Z3RiMjd0YU05Z3gxLWdjeHNBMnpELVlJ?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Blake Morgan’s team in Wales Celebrates 11 practice areas ranked in the Chambers and Partners 2027 UK Guide",
         "summary": "",
         "meta": "Fri 30 Oct",
@@ -997,34 +988,43 @@
         "source": "Blake Morgan",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSmxlVHEtdlhkME5rMkEyNS1GdkZPNE4zaTMzQUtsUUhiOWpRVmFhYk5FY0JweTlEajhINGM3UHluZXhqLXExU0QtWG9TOFB5TmpBLWM3ZF9LMTFxRS04SzliTDN1YktIOEpXQ2xpLVdIaUJ1TXZ1S1o2WmRNWkh3amg5RmJ1Y1dFVWpvTVF2c0I4N3EzYWkwWU1qMkg3SzJyekRuNXZ3bERYNDlLOFNsc2s3Y2haVE9sa2E0aERMdk8tbVZaSE1BZFF2eWtsZGlleTRrTzVqNXJYck0?oc=5",
         "contentType": "article"
+      },
+      {
+        "title": "UK chancellor sets out £600m AI investment plan to boost British innovation and security",
+        "summary": "",
+        "meta": "Fri 30 Oct",
+        "publishedAt": "2026-10-30T11:26:04+00:00",
+        "source": "Open Access Government",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUE12aVJxV20xYy1yc2xIbndra052TFFzSUJCQlJ4QjVYMXQ2dXo5VGNETUU1M3hScUh0XzMxUHl1N3JzakZJSUl1MWROYV8xc0xlaFNOTUVybU5hY2d3anFiRU5ZSktIdXJoOFJ4Zkd3bWdTRldaMXA2QklZYzFqN1pqaTZmLW9iLS04eVU0QWhXbWVVeF9fSVE4bHp5cUlSQ0FfLW9zRmxlRm5mX0dFX05sYTNJelJnLVJFT1QyOUk1WGZxcEpmNUtINkM?oc=5",
+        "contentType": "article"
       }
     ],
     "AI": [
       {
-        "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+        "title": "Anthropic restricts Claude's use for reverse-engineering games, including through REA tool",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T08:54:35+00:00",
-        "source": "Mashable",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0V2cUVWOVl0eFNNN0tEVjluRlliOHR0MkVQbXdWaERXUzhTSFZfend2OTVmZldaT3k0b3pINTlacGEtdmNXV243bnZUbXFqVW1sZ3ZnT2t2REdyaENNOEJuS3ZlV3VwbGhxZEZnYTJKa2NlOHRTd1RubTZuVlA2bElhQ24yS2VvLWV6MlBMU0RnOU9nSGRjaXhQNG9DVmly?oc=5",
+        "publishedAt": "2026-11-01T15:05:50+00:00",
+        "source": "Firstpost",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXBhOXIzTkpXLXkxRWVPdVNVMTNYWUN1aDgyWkhzajJnLXdUUGRlQ3pQZ2ZNZS1YOWpJUzVrclZJRzY0RGhIR01ZYW9ycm9CUkxDTTNUODFfZlZoUVVHSnNmV1lBZnZjcTVJRjFiVTg0LVh3dmlHWjd6OEJfWFBkZWtNNEhRWmxWcENoajUxaEhITlA0NGhvNDZSVWNZV1RVVzBDOWJ4S0pUcFJJUGYtR0o1YVpWOW5LbFU5WFVROVdoVHRZbVVEa1JQejZhQQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Before Buying Anthropic Stock, Here's What History Says About Investing in IPOs",
+        "title": "Claude Code now refuses to help build copies of existing games",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T03:20:00+00:00",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdVp6WjlyUmRuaVlKN1ZiMHExdWZGdl9HWTBPZThuTTJUdlJyOUNVblRxTWR0QjhYQ1FteWtDNFNhWGFHVVk4UmNQd3pNZGlYOWx4TFNYaGViT3E5dHFqUjFXYW1MQ2Y4a1NGb1ZoMEl0WDJTdm1LRW5WSUpoXzN2MWhXb1p4NHQ0N3BiWm9pNDdLTjE3cXZjUnkybWxhaWFyMl9J?oc=5",
+        "publishedAt": "2026-11-01T13:46:26+00:00",
+        "source": "The Next Web",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMEhsZVJ0aVZHYnJBVjVmWG9oZXZ4bzdncmZtT3p1S19HQ0FrVmRpdDVoM25zSkxQaEhuS2tZemt1SnFyQ2lBQ0JGZzBaSzVpb2ZoSnJ4cjR3TVBjaHJfRmo4SnMteTJfbjdWZ2lCSzNYOFZ5anJDMGZaNFhPUjZqNQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "What you Need to Know AboutClaude's Maker, Anthropic IPO",
+        "title": "“Looks harmless”: Claude agents got past a safety check in an Anthropic test",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T01:15:01+00:00",
-        "source": "TradingKey",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa28tTl93WVB4VlNSanNWbTJpaFFyVzFqV1poNkFtRkc2cG93ZDVmaTZkdDhNSTcxdzNTZml3NW9NLXNuc3ViZlZPTkZTc0tGZmFCRGkwOXpYb0g0aG1zVzRuRVJFYTFDWmROQm5LSmlfd0Zrd19kblFBczMySkJ3RFNNekRicWlDcXNZc1NvcVZvOFZ1Tk93clhBYVF4dw?oc=5",
+        "publishedAt": "2026-11-01T11:24:48+00:00",
+        "source": "MIXED News",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcFFMM3NyODJrcHJTMk9NdWxUSHp2Y3hqRGlsUkVXd0ctajBvdW1BdERCME1TVW5XOHJPbkY1cWZpd2g1bVFoN3gzdi1wOXRhcWFydHd2NG5ZdzBkN3B6UnpRSURPZXpEdW5BNE0zMkxxRUd5WVZZNHpEMWN6bHpfWjliMkFpalJxOWlLZUJJWXNSY1k1?oc=5",
         "contentType": "article"
       },
       {
@@ -1046,21 +1046,21 @@
         "contentType": "article"
       },
       {
-        "title": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
+        "title": "How to Run an AI Model Locally—And Why You Might Want To",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T19:56:23+00:00",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb2hwU1RZMjNaMVpkcW13aDRGb3M0UGlMb21CRTI4dDU5STc4eEJkZHNMc2VPQjVnYm80MEEzWm80RDFZdElReXNmbG1sS0xBYjNnNWNOZVJsSUhySmhIUTJfV0tEZjJncTFLSHJFbDVqU2FrdmlSVW1hNzdxZG8tbktn0gGHAUFVX3lxTFBEd2ZuVFNJR09vWjBBWUtDMF80c1luQkFnVWRkN2RWMG1DWmZJd3Z4clZwcjNIeEcwaExPcjc5MWt2MkZ1SW9KUHdZODhtV3NGanVTSVkzdFl0aTQtUmxZa1V6dHpDUkxacTNhTk1PWXFDbnVIR3NraVRJODh3MjFGdUhBNl9rTQ?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T14:01:02+00:00",
+        "source": "Decrypt",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vSTJjNlZQWmNBamhDb2NPUmFvNy1NU1c0bEhuUzhTRXk0NG5mVG5iWlh5UVNwWEJYdEhjU0Z6a3llaWdPZlctYy05ZTlDWW9PUUdyb19OTFBGYnl2c3B0ckFOZmZzMXdtbFVzUEFKNjlmVzV0UnpIWmd6eEs?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The future of the firm",
+        "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T18:14:38+00:00",
-        "source": "OpenAI",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjWGg5TktPMGtkSmtIVjRPM3c5ek1TcUtpOTBYaGFLYzBoZ1pLQkNLRDQzSHhuRkZkcFUycHFlV04yRlREeHdFX1pJVEhfVW5OUGIxUG5fUGlJR3Yw?oc=5",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T13:53:11+00:00",
+        "source": "BleepingComputer",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSXExbHBwa1M5MzlJWkdoaGpmREZGTTdZVEc4Tl9vUkl0VGxxeUxCMDYycG9FcnkxMGlNVk5OQWlPVkhJT2RpTTFLYmdYV2ZmRFJaT2lzNWQzei1vSGVlYUtWc2R4MWZTX2xQWlJ4Q2NKLUpKZ1JkaXFwdmNtUDB2b0ZHdV9VN011c28yYVRiQ2YwMVdEeUE4ZkVNcmRHSHIxS0NSSEQzUXRmMHJHV3ROV3B6eVU2UHlhdzNvV3lsdEJmeFpnMmdNMjBCZldveEFQUGIzRVZ30gHbAUFVX3lxTE1BSmZjY2RQUHpjRHRweC1DZUdIUC15Q2I0MDhWRlJILUdXWmlLMy1aaWpnSnJlZjdJQzY5bk9rU3RndHdrZ0FfSXVyUThrWDBsUFhBZHZJQUNQQXpIWUF3Rjl1R3ZPX3RTNWY0NXBBTTJUb0ZldHRuX1ZlX2RWNXN5QkpJRldiWmxUZDZMaEo4WWVsSllydVdUVmpVM3BQTzU1bzM3aGRRUE1JaWZjdnFiSnlVUldGLXBoVEhTbUdDbzFfOUI0R1lOWjQwZ1IyTzJLeEhRc3JuZ2FRNA?oc=5",
         "contentType": "article"
       },
       {
@@ -1074,12 +1074,12 @@
         "liveChineseLab": true
       },
       {
-        "title": "Perplexity's new Deep Research tool is powered by DeepSeek R1",
+        "title": "What is AI distillation? DeepSeek and Moonshot reportedly used OpenAI’s model to train AI",
         "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T14:28:41+00:00",
-        "source": "Mashable",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMWtmb2gwa1JfVEgtQjFkU2t0VFFSWlhSRV8xZDJEenlUSFJMM0swZzBMamlzVzE2cmxsSEl5XzhUMnZVbnF3WlZoWkNNMVVFTFZNekc1QmIybHBLSVl0MVl5UDdBdHkzNGJhQjZXcDlITHJzZWotRWtnTy1hRGk2MVBUYVZzSW9iN2llMmpR?oc=5",
+        "meta": "Fri 30 Oct",
+        "publishedAt": "2026-10-30T13:44:41+00:00",
+        "source": "WION",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQc2djQlJkOVE4NVFZdHdBMGYtOUNlakxwaXg4TVRjb0NZRlJXRmJUWEI3ckc3eE5sRHJVT1kwZS1waTZiNE5HX0t3YkV0QXhoRTh6d256TDVEdjRnRUxKdHlSc1dRc3hIVWtkcjN1bmtlc3BJd3QzTVdBZG1RYjBBeHFmVG9sbThjb0pwcGVFWVZmZVFUQ2hwUjNaZHc0dnRlY0JscmdhSDg4Y3JNN0lTcTZfQU5aWFBBd2lBZWVmYjFINlFwcjg0ZUVScko5UXpMdUtv0gHYAUFVX3lxTE9lbFd3d0pLS2ZUazh5Ui1YZHBwZ29sVjdzeDV2X1VkLXFUX0pNZGN1Wm1fUUt1UmlqblpOM0k0cUJDQ0NOLXEzV0NoZnpEWS1OcVJKaGExMFBtTVNRSHN1MlctOS1sQTlfa2xjSGdVaVBsWUVHNUtCbmRPVjYySTdYajNKZ3VNWTI2MGc5LUU5clFNOHlNVTZzZ0FIdzh6Zk5SenFvbW1oemRyWDN0blBPV2ktLXQyY244MmVyTUJLR245alA1Yl9YVHNOSF93dVRKQ2Vjcm5Jdg?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
