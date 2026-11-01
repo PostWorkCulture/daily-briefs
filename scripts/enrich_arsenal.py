@@ -558,6 +558,119 @@ def parse_bbc_state_matches(html: str, final_url: str) -> list[dict]:
     return out
 
 
+def bbc_initial_data(html: str) -> dict:
+    soup = BeautifulSoup(html, "html.parser")
+    script = next(
+        (node.string for node in soup.find_all("script")
+         if node.string and "window.__INITIAL_DATA__=" in node.string),
+        "",
+    )
+    match = re.search(r'window\.__INITIAL_DATA__=(".*");?$', script, re.S)
+    if not match:
+        return {}
+    try:
+        return json.loads(json.loads(match.group(1)))
+    except (TypeError, json.JSONDecodeError):
+        return {}
+
+
+def parse_bbc_results(html: str, final_url: str) -> list[dict]:
+    """Completed Arsenal matches with goal scorers from BBC Sport's embedded results state."""
+    out: list[dict] = []
+    for block in (bbc_initial_data(html).get("data") or {}).values():
+        if not isinstance(block, dict) or block.get("name") != "sport-data-scores-fixtures":
+            continue
+        for group in ((block.get("data") or {}).get("eventGroups") or []):
+            for secondary in group.get("secondaryGroups") or []:
+                for event in secondary.get("events") or []:
+                    if str(event.get("status") or "").casefold() not in {"postevent", "post-event"}:
+                        continue
+                    home, away = event.get("home") or {}, event.get("away") or {}
+                    home_name = str(home.get("fullName") or "").strip()
+                    away_name = str(away.get("fullName") or "").strip()
+                    arsenal_home = home_name.casefold() == "arsenal"
+                    if not arsenal_home and away_name.casefold() != "arsenal":
+                        continue
+                    try:
+                        dt = dateparser.parse(
+                            str(event.get("startDateTime") or (event.get("date") or {}).get("iso") or "")
+                        ).astimezone(TZ)
+                        home_score, away_score = int(home.get("score")), int(away.get("score"))
+                    except Exception:
+                        continue
+                    rows: list[dict] = []
+                    for side, side_name in ((home, home_name), (away, away_name)):
+                        for player in side.get("actions") or []:
+                            if str(player.get("actionType") or "").casefold() != "goal":
+                                continue
+                            name = str(player.get("playerName") or "").strip()
+                            for action in player.get("actions") or []:
+                                kind = str(action.get("type") or (action.get("typeLabel") or {}).get("value") or "").casefold()
+                                if "shootout" in kind or "shoot-out" in kind:
+                                    continue
+                                minute = str((action.get("timeLabel") or {}).get("value") or "").strip()
+                                rows.append({
+                                    "name": name, "team": side_name, "minute": minute,
+                                    "penalty": "pen" in kind, "ownGoal": "own" in kind,
+                                })
+                    tournament = event.get("tournament") or {}
+                    journey = str(event.get("onwardJourneyLink") or "").strip()
+                    a_score = home_score if arsenal_home else away_score
+                    o_score = away_score if arsenal_home else home_score
+                    out.append({
+                        "date": dt.isoformat(),
+                        "opponent": away_name if arsenal_home else home_name,
+                        "competition": str(tournament.get("disambiguatedName") or tournament.get("name") or "").strip(),
+                        "homeAway": "home" if arsenal_home else "away",
+                        "arsenalScore": a_score, "opponentScore": o_score,
+                        "scorers": rows,
+                        "url": urljoin(final_url, journey) if journey else final_url,
+                    })
+    return out
+
+
+def bbc_results() -> list[dict]:
+    """BBC results for this month and last (a match early in the month may sit in either)."""
+    first = NOW.replace(day=1)
+    previous = (first - timedelta(days=1)).replace(day=1)
+    out: list[dict] = []
+    for month in (first, previous):
+        url = f"{BBC_FIXTURES_URL}/{month.year}-{month.month:02d}"
+        try:
+            r = requests.get(url, headers=UA, timeout=25)
+            r.raise_for_status()
+            out.extend(parse_bbc_results(r.content.decode("utf-8", "replace"), r.url))
+        except Exception:
+            continue
+    return out
+
+
+def same_club(a: str, b: str) -> bool:
+    def norm(value: str) -> str:
+        value = re.sub(r"\b(fc|afc)\b", "", str(value or "").casefold())
+        return re.sub(r"[^a-z0-9]+", "", value.replace("&", "and"))
+    na, nb = norm(a), norm(b)
+    return bool(na and nb) and (na == nb or na.startswith(nb) or nb.startswith(na))
+
+
+def bbc_scorers_for(result: dict, candidates: list[dict]) -> dict | None:
+    """BBC scorer rows for the same match, only if they add up to the published score."""
+    try:
+        day = dateparser.parse(result["date"]).astimezone(TZ).date()
+        a_score, o_score = int(float(result.get("arsenalScore"))), int(float(result.get("opponentScore")))
+    except Exception:
+        return None
+    for item in candidates:
+        if (
+            dateparser.parse(item["date"]).date() == day
+            and same_club(item.get("opponent", ""), result.get("opponent", ""))
+            and item.get("arsenalScore") == a_score and item.get("opponentScore") == o_score
+            and len(item.get("scorers") or []) == a_score + o_score
+        ):
+            return item
+    return None
+
+
 def all_bbc_matches() -> list[dict]:
     """Fetch BBC's current-day and forward month views across a month boundary."""
     first = NOW.replace(day=1)
@@ -793,6 +906,17 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             for key in ("stadium", "scorers", "scorersLabel", "summary"):
                 if details.get(key):
                     last_result[key] = details[key]
+        # BBC Sport's results state lists every goal; ESPN often returns nothing.
+        if not last_result.get("scorers") and not str(last_result.get("scorersLabel") or "").strip():
+            bbc = bbc_scorers_for(last_result, bbc_results())
+            DIAG["bbcScorers"] = bool(bbc)
+            if bbc:
+                last_result = dict(last_result)
+                rows = bbc["scorers"]
+                last_result["scorers"] = rows
+                last_result["scorersLabel"] = scorers_label(
+                    rows, "Arsenal", str(last_result.get("opponent") or ""), len(rows)
+                )
         # The previous edition's nextFixture is this same match once it is played:
         # reuse its verified stadium when the result feeds omit it.
         prior_next = existing_arsenal.get("nextFixture") or {}

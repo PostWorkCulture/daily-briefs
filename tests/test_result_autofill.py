@@ -107,6 +107,7 @@ class EspnSummaryTests(unittest.TestCase):
         with patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 1, 20, 10)), \
              patch.object(enrich_arsenal, "all_sky_matches", return_value=[sky_completed]), \
              patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]), \
+             patch.object(enrich_arsenal, "bbc_results", return_value=[]), \
              patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=None), \
              patch.object(enrich_arsenal, "NOW", enrich_arsenal.NOW.replace(year=2026, month=11, day=2, hour=5, minute=0)):
             result = enrich_arsenal.snapshot([], existing_arsenal=existing)
@@ -144,6 +145,71 @@ class FactualSummaryTests(unittest.TestCase):
     def test_no_summary_without_stadium_or_complete_scorers(self) -> None:
         self.assertNotIn("summary", finalize_arsenal.with_factual_summary(dict(self.BASE, stadium="")))
         self.assertNotIn("summary", finalize_arsenal.with_factual_summary(dict(self.BASE, scorers=self.BASE["scorers"][:1])))
+
+
+def bbc_page(events: list[dict]) -> str:
+    import json as _json
+    state = {"data": {"x": {"name": "sport-data-scores-fixtures", "data": {"eventGroups": [
+        {"secondaryGroups": [{"events": events}]}]}}}}
+    return "<script>window.__INITIAL_DATA__=" + _json.dumps(_json.dumps(state)) + ";</script>"
+
+
+def bbc_goal(name: str, minute: str, kind: str = "Goal") -> dict:
+    return {"playerName": name, "actionType": "goal",
+            "actions": [{"type": kind, "typeLabel": {"value": kind}, "timeLabel": {"value": minute}}]}
+
+
+BBC_EVENT = {
+    "status": "PostEvent",
+    "startDateTime": "2026-11-01T16:30:00+00:00",
+    "tournament": {"name": "Premier League"},
+    "onwardJourneyLink": "/sport/football/live/abc",
+    "home": {"fullName": "Liverpool", "score": "1", "actions": [bbc_goal("M. Salah", "40'", "Penalty")]},
+    "away": {"fullName": "Arsenal", "score": "2", "actions": [
+        {"playerName": "B. Saka", "actionType": "goal", "actions": [
+            {"type": "Goal", "timeLabel": {"value": "12'"}}, {"type": "Goal", "timeLabel": {"value": "77'"}}]},
+        {"playerName": "D. Rice", "actionType": "card", "actions": [{"type": "Yellow Card"}]},
+    ]},
+}
+
+
+class BbcResultTests(unittest.TestCase):
+    def test_completed_bbc_event_yields_scorers(self) -> None:
+        rows = enrich_arsenal.parse_bbc_results(bbc_page([BBC_EVENT, dict(BBC_EVENT, status="PreEvent")]), "https://www.bbc.co.uk/sport")
+        self.assertEqual(len(rows), 1)
+        item = rows[0]
+        self.assertEqual((item["opponent"], item["homeAway"], item["arsenalScore"], item["opponentScore"]), ("Liverpool", "away", 2, 1))
+        self.assertEqual([(r["name"], r["minute"]) for r in item["scorers"]], [("M. Salah", "40'"), ("B. Saka", "12'"), ("B. Saka", "77'")])
+        self.assertTrue(item["scorers"][0]["penalty"])
+
+    def test_bbc_scorers_must_match_date_opponent_and_score(self) -> None:
+        bbc = enrich_arsenal.parse_bbc_results(bbc_page([BBC_EVENT]), "https://www.bbc.co.uk/sport")
+        result = {"date": "2026-11-01T16:30:00+00:00", "opponent": "Liverpool FC", "arsenalScore": 2, "opponentScore": 1}
+        self.assertIsNotNone(enrich_arsenal.bbc_scorers_for(result, bbc))
+        self.assertIsNone(enrich_arsenal.bbc_scorers_for(dict(result, arsenalScore=3), bbc))
+        self.assertIsNone(enrich_arsenal.bbc_scorers_for(dict(result, opponent="Chelsea"), bbc))
+        self.assertIsNone(enrich_arsenal.bbc_scorers_for(dict(result, date="2026-11-02T16:30:00+00:00"), bbc))
+
+    def test_snapshot_fills_scorers_from_bbc_and_stadium_from_prior_fixture(self) -> None:
+        sky_completed = {
+            "date": "2026-11-01T16:30:00+00:00", "dateLabel": "Sun 1 Nov", "kickoff": "4:30pm",
+            "opponent": "Liverpool", "competition": "Premier League", "homeAway": "away",
+            "completed": True, "arsenalScore": 2, "opponentScore": 1, "result": "2–1",
+            "source": "Sky Sports", "url": "https://www.skysports.com/football/liverpool-vs-arsenal/1",
+        }
+        existing = {"nextFixture": {"date": "2026-11-01T16:30:00+00:00", "opponent": "Liverpool", "stadium": "Anfield"}}
+        bbc = enrich_arsenal.parse_bbc_results(bbc_page([BBC_EVENT]), "https://www.bbc.co.uk/sport")
+        with patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 1, 20, 10)), \
+             patch.object(enrich_arsenal, "all_sky_matches", return_value=[sky_completed]), \
+             patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]), \
+             patch.object(enrich_arsenal, "bbc_results", return_value=bbc), \
+             patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=None), \
+             patch.object(enrich_arsenal, "NOW", enrich_arsenal.NOW.replace(year=2026, month=11, day=2, hour=5, minute=0)):
+            last = enrich_arsenal.snapshot([], existing_arsenal=existing)["lastResult"]
+        self.assertEqual(last["stadium"], "Anfield")
+        self.assertEqual(len(last["scorers"]), 3)
+        final = finalize_arsenal.with_factual_summary(last)
+        self.assertEqual(final["summary"], "B. Saka scored as Arsenal beat Liverpool 2–1 at Anfield in the Premier League.")
 
 
 if __name__ == "__main__":
