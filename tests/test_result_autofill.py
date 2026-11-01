@@ -212,5 +212,32 @@ class BbcResultTests(unittest.TestCase):
         self.assertEqual(final["summary"], "B. Saka scored as Arsenal beat Liverpool 2–1 at Anfield in the Premier League.")
 
 
+class NextFixtureAfterResultTests(unittest.TestCase):
+    def test_played_match_is_not_kept_as_next_fixture(self) -> None:
+        sky_completed = {
+            "date": "2026-11-01T16:30:00+00:00", "dateLabel": "Sun 1 Nov", "kickoff": "4:30pm",
+            "opponent": "Liverpool", "competition": "Premier League", "homeAway": "away",
+            "completed": True, "arsenalScore": 1, "opponentScore": 0, "result": "1–0",
+            "source": "Sky Sports", "url": "https://www.skysports.com/football/liverpool-vs-arsenal/1",
+            "scorers": [{"name": "K. Havertz", "team": "Arsenal", "minute": "16'"}], "scorersLabel": "K. Havertz 16'",
+        }
+        upcoming = {
+            "date": "2026-11-04T20:00:00+00:00", "dateLabel": "Wed 4 Nov", "kickoff": "8pm",
+            "opponent": "Inter Milan", "competition": "UEFA Champions League", "homeAway": "home",
+            "completed": False, "source": "Sky Sports", "url": "https://www.skysports.com/x",
+        }
+        existing = {"nextFixture": {"date": "2026-11-01T16:30:00+00:00", "opponent": "Liverpool",
+                                    "completed": False, "stadium": "Anfield"}}
+        with patch.object(enrich_arsenal, "espn_snapshot", return_value=([], 1, 20, 10)), \
+             patch.object(enrich_arsenal, "all_sky_matches", return_value=[sky_completed, upcoming]), \
+             patch.object(enrich_arsenal, "all_bbc_matches", return_value=[]), \
+             patch.object(enrich_arsenal, "bbc_results", return_value=[]), \
+             patch.object(enrich_arsenal, "official_pl_next_fixture", return_value=None), \
+             patch.object(enrich_arsenal, "NOW", enrich_arsenal.NOW.replace(year=2026, month=11, day=1, hour=18, minute=50)):
+            result = enrich_arsenal.snapshot([], existing_arsenal=existing)
+        self.assertEqual(result["lastResult"]["opponent"], "Liverpool")
+        self.assertEqual(result["nextFixture"]["opponent"], "Inter Milan")
+
+
 if __name__ == "__main__":
     unittest.main()
