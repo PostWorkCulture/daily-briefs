@@ -218,6 +218,33 @@ def strip_internal(item: dict | None) -> dict | None:
     return {key: value for key, value in item.items() if not key.startswith("_")}
 
 
+def espn_key_event_goals(key_events: list[dict]) -> list[dict]:
+    """Convert ESPN summary keyEvents into scoring-play details (shoot-outs excluded)."""
+    out = []
+    for event in key_events:
+        if not event.get("scoringPlay"):
+            continue
+        kind = " ".join(
+            str((event.get("type") or {}).get(key) or "") for key in ("text", "type")
+        ).casefold()
+        period = (event.get("period") or {}).get("number") or 0
+        if "shootout" in kind or "shoot-out" in kind or (isinstance(period, int) and period >= 5):
+            continue
+        detail = dict(event)
+        detail["penaltyKick"] = bool(event.get("penaltyKick")) or "penalty" in kind
+        detail["ownGoal"] = bool(event.get("ownGoal")) or "own" in kind
+        out.append(detail)
+    return out
+
+
+def scorers_match_score(item: dict) -> bool:
+    try:
+        total = int(float(item.get("arsenalScore"))) + int(float(item.get("opponentScore")))
+    except (TypeError, ValueError):
+        return False
+    return len(item.get("scorers") or []) == total
+
+
 def enrich_completed_result(item: dict) -> dict:
     enriched = dict(item)
     event_id = str(enriched.get("_eventId") or "")
@@ -228,17 +255,30 @@ def enrich_completed_result(item: dict) -> dict:
         )
         competitions = (summary.get("header") or {}).get("competitions") or []
         if competitions:
+            # The summary header rarely carries scoring plays or the venue; ESPN
+            # puts them in keyEvents and gameInfo. Merge them into the header copy.
+            comp = dict(competitions[0])
+            if not any(d.get("scoringPlay") for d in comp.get("details") or []):
+                comp["details"] = espn_key_event_goals(summary.get("keyEvents") or [])
+            if not (comp.get("venue") or {}).get("fullName"):
+                venue = (summary.get("gameInfo") or {}).get("venue") or {}
+                if venue.get("fullName"):
+                    comp["venue"] = {"fullName": venue["fullName"]}
             parsed = parse_fixture(
                 {
                     "id": event_id,
                     "date": enriched.get("date"),
                     "status": {"type": {"completed": True}},
-                    "competitions": competitions,
+                    "competitions": [comp] + list(competitions[1:]),
                 },
                 str(enriched.get("competition") or "Football"),
                 code,
             )
             if parsed:
+                if not scorers_match_score(parsed):
+                    # Never publish a scorer list that does not add up to the score.
+                    for key in ("scorers", "scorersLabel", "summary"):
+                        parsed.pop(key, None)
                 for key in ("stadium", "scorers", "scorersLabel", "summary"):
                     if parsed.get(key):
                         enriched[key] = parsed[key]
@@ -735,6 +775,22 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             for key in ("stadium", "scorers", "scorersLabel", "summary"):
                 if details.get(key):
                     last_result[key] = details[key]
+        # The previous edition's nextFixture is this same match once it is played:
+        # reuse its verified stadium when the result feeds omit it.
+        prior_next = existing_arsenal.get("nextFixture") or {}
+        try:
+            prior_next_day = dateparser.parse(prior_next.get("date", "")).date()
+        except Exception:
+            prior_next_day = None
+        if (
+            prior_next_day
+            and last_day == prior_next_day
+            and str(prior_next.get("opponent", "")).casefold() == str(last_result.get("opponent", "")).casefold()
+            and not last_result.get("stadium")
+            and prior_next.get("stadium")
+        ):
+            last_result = dict(last_result)
+            last_result["stadium"] = prior_next["stadium"]
         existing_last = existing_arsenal.get("lastResult") or {}
         if existing_last:
             try:
@@ -798,6 +854,11 @@ def main() -> None:
     payload["arsenal"] = enriched
     if not dry_run:
         path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    last = enriched.get("lastResult") or {}
+    print("Arsenal lastResult: " + json.dumps(
+        {key: last.get(key) for key in ("dateLabel", "opponent", "result", "stadium", "scorersLabel", "summary", "source")},
+        ensure_ascii=False,
+    ))
     print("Arsenal enrichment complete" + (" (dry-run)" if dry_run else ""))
 
 

@@ -743,6 +743,55 @@ def news_supports_result(candidate: dict, payload: dict) -> bool:
     return False
 
 
+def with_factual_summary(result: dict) -> dict:
+    """Compose a one-line summary from already-verified result fields only.
+
+    Used when the feeds give score, scorers, competition and stadium but no
+    summary sentence. Nothing is added that is not in those fields.
+    """
+    try:
+        goalless = int(float(result.get("arsenalScore"))) + int(float(result.get("opponentScore"))) == 0
+    except (TypeError, ValueError):
+        goalless = False
+    if goalless and not str(result.get("scorersLabel") or "").strip():
+        result = dict(result, scorers=[], scorersLabel="No scorers")
+    if str(result.get("summary") or "").strip():
+        return result
+    opponent = str(result.get("opponent") or "").strip()
+    stadium = str(result.get("stadium") or "").strip()
+    competition = str(result.get("competition") or "").strip()
+    score_text = str(result.get("result") or "").strip()
+    scorers = result.get("scorers")
+    try:
+        a_score = int(float(result.get("arsenalScore")))
+        o_score = int(float(result.get("opponentScore")))
+    except (TypeError, ValueError):
+        return result
+    if not (opponent and stadium and competition and score_text and isinstance(scorers, list)):
+        return result
+    if len(scorers) != a_score + o_score:
+        return result
+    if a_score > o_score:
+        outcome = f"beat {opponent} {score_text}"
+    elif a_score < o_score:
+        outcome = f"lost {score_text} to {opponent}"
+    else:
+        outcome = f"drew {score_text} with {opponent}"
+    arsenal_names = [
+        str(row.get("name") or "").strip() for row in scorers
+        if str(row.get("team") or "").casefold() == "arsenal" and not row.get("ownGoal")
+    ]
+    arsenal_names = list(dict.fromkeys(name for name in arsenal_names if name))
+    lead = ""
+    if arsenal_names:
+        names = arsenal_names[0] if len(arsenal_names) == 1 else ", ".join(arsenal_names[:-1]) + " and " + arsenal_names[-1]
+        lead = f"{names} scored as "
+    sentence = f"{lead}Arsenal {outcome} at {stadium} in the {competition}."
+    updated = dict(result)
+    updated["summary"] = sentence[0].upper() + sentence[1:]
+    return updated
+
+
 def apply_last_result_fallback(payload: dict) -> None:
     arsenal = payload.setdefault("arsenal", {})
     if NOW >= datetime.fromisoformat("2026-10-27T22:00:00+00:00"):
@@ -809,6 +858,7 @@ def apply_last_result_fallback(payload: dict) -> None:
         newest.setdefault("image", fallback.get("image"))
         newest.setdefault("imageAlt", fallback.get("imageAlt"))
 
+    newest = with_factual_summary(newest)
     arsenal["lastResult"] = newest
     required = ("result", "scorersLabel", "competition", "summary", "kickoff", "stadium")
     missing = [key for key in required if not str(newest.get(key) or "").strip()]

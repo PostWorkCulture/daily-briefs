@@ -1,3 +1,10 @@
+## 1 November 2026: Arsenal latest result completes itself
+
+- **Cause**: Every new Arsenal result (Lille, Nottingham Forest, Bayern Munich, Fleetwood Town) stopped the Morning refresh in `scripts/finalize_arsenal.py` until a hand-written `verified_<opponent>_result()` was added. Three gaps: (1) `enrich_completed_result()` read scorers and venue from the ESPN summary header, which normally carries neither (ESPN puts them in `keyEvents` and `gameInfo`); (2) the stadium already published on the previous day's next-fixture card was not reused; (3) no summary was produced when Sky supplied the result.
+- **Fix**: `scripts/enrich_arsenal.py` now reads scoring plays from ESPN `keyEvents` (penalties and own goals flagged, shoot-out kicks excluded) and the venue from `gameInfo`, and drops the scorer list unless it adds up exactly to the score. When the result feeds omit the stadium, it reuses the stadium from the previous edition's `nextFixture` for the same opponent and date. `scripts/finalize_arsenal.py` `with_factual_summary()` composes a one-line summary only from verified fields (scorers, score, opponent, stadium, competition), and records a 0–0 as "No scorers".
+- **Unchanged rule**: If scorers, stadium, competition, kickoff or summary still cannot be verified, publication still fails as the master brief requires; a hand-verified record can still be added as before. The enrichment log now prints the lastResult fields for diagnosis.
+- **Validation**: New `tests/test_result_autofill.py` (8 tests: ESPN keyEvents/gameInfo, penalty flag, shoot-out exclusion, mismatched scorer count rejected, stadium carried from nextFixture, summary wording, 0–0, no summary without complete inputs). Arsenal test modules pass; the live ESPN response is checked by a Morning refresh run after the Liverpool match.
+
 ## 1 November 2026: Liverpool previous meeting
 
 - **Cause**: The 1 November edition showed "No previous meeting found" for the upcoming Liverpool v Arsenal fixture (Sun 1 Nov, Anfield).
