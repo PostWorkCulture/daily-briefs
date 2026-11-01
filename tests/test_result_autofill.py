@@ -237,6 +237,9 @@ class NextFixtureAfterResultTests(unittest.TestCase):
             result = enrich_arsenal.snapshot([], existing_arsenal=existing)
         self.assertEqual(result["lastResult"]["opponent"], "Liverpool")
         self.assertEqual(result["nextFixture"]["opponent"], "Inter Milan")
+        import json as _json
+        _json.dumps(result)  # the snapshot must stay serialisable
+        self.assertEqual(result["played"], 10)
 
 
 if __name__ == "__main__":

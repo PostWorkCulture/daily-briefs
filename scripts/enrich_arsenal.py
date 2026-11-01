@@ -883,7 +883,7 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
 
     # A match that already has a completed result is not the next fixture, even
     # inside the three-hour in-progress window.
-    def played(item: dict) -> bool:
+    def already_played(item: dict) -> bool:
         try:
             day = dateparser.parse(item["date"]).date()
         except Exception:
@@ -894,7 +894,7 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             for done in past
         )
 
-    future = [x for x in future if not played(x)]
+    future = [x for x in future if not already_played(x)]
     last_result = past[-1] if past else None
     next_fixture = future[0] if future else None
 
