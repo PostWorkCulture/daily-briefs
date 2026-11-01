@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Sunday, 1 November 2026 · refreshed 3:43pm",
+  "updatedLabel": "Sunday, 1 November 2026 · refreshed 6:51pm",
   "worldFact": {
     "id": "dead-sea-lowest-point-on-earth",
     "editorialPriority": "human-first",
@@ -19,15 +19,15 @@
     "localImage": "assets/scenery/world-fact.webp?v=3189fa652eb7"
   },
   "weather": {
-    "temp": "12°",
+    "temp": "10°",
     "summary": "Overcast",
     "condition": "Overcast",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-01",
-        "high": 12,
-        "low": 9,
+        "high": 11,
+        "low": 8,
         "summary": "Overcast",
         "condition": "Overcast",
         "rainChance": 30,
@@ -35,8 +35,8 @@
       },
       {
         "date": "2026-11-02",
-        "high": 13,
-        "low": 8,
+        "high": 12,
+        "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 50,
@@ -53,11 +53,11 @@
       },
       {
         "date": "2026-11-04",
-        "high": 12,
+        "high": 11,
         "low": 7,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 40,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
@@ -66,16 +66,16 @@
         "low": 6,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 4,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-06",
         "high": 10,
         "low": 6,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 10,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
@@ -125,10 +125,10 @@
         "displayLocation": "Bainbridge, North Yorkshire",
         "value": "0.1°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=f9c19ef30a88",
-          "page": "https://commons.wikimedia.org/wiki/File:Bainbridge_Church_of_England_Primary_and_Nursery_School.jpg",
-          "credit": "Victuallers · CC BY-SA 4.0",
-          "alt": "Bainbridge Church of England Primary and Nursery School (school in North Yorkshire, UK)",
+          "src": "assets/weather-extremes/cold.webp?v=5acb1f9a48a8",
+          "page": "https://commons.wikimedia.org/wiki/File:Crossing_Bainbridge_Pasture_-_geograph.org.uk_-_283250.jpg",
+          "credit": "Roger Gilbertson · CC BY-SA 2.0",
+          "alt": "Crossing Bainbridge Pasture On the Roman Road below Green Scar Mire.",
           "width": 1600,
           "height": 900
         }
@@ -461,33 +461,31 @@
   ],
   "arsenal": {
     "lastResult": {
-      "date": "2026-10-27T20:00:00+00:00",
-      "dateLabel": "Tue 27 Oct",
-      "kickoff": "8pm",
-      "opponent": "Fleetwood Town",
-      "competition": "Carabao Cup",
+      "date": "2026-11-01T16:30:00+00:00",
+      "dateLabel": "Sun 1 Nov",
+      "kickoff": "4:30pm",
+      "opponent": "Liverpool",
+      "competition": "Premier League",
       "homeAway": "away",
       "completed": true,
       "arsenalScore": 1,
-      "opponentScore": 1,
-      "result": "1–1 (lost 3–5 pens)",
+      "opponentScore": 0,
+      "result": "1–0",
+      "url": "https://www.skysports.com/football/liverpool-vs-arsenal/8206828602449165232",
+      "source": "Sky Sports",
+      "tvChannel": "Sky Sports Premier League",
+      "stadium": "Anfield",
       "scorers": [
         {
-          "name": "Viktor Gyokeres",
+          "name": "K. Havertz",
           "team": "Arsenal",
-          "minute": "50'"
-        },
-        {
-          "name": "Aaron Loupalo-Bi",
-          "team": "Fleetwood Town",
-          "minute": "21'"
+          "minute": "16'",
+          "penalty": false,
+          "ownGoal": false
         }
       ],
-      "scorersLabel": "Gyokeres 50' · Loupalo-Bi 21'",
-      "stadium": "Highbury Stadium",
-      "summary": "League Two Fleetwood Town knocked Arsenal out of the Carabao Cup fourth round 5–3 on penalties after Viktor Gyokeres' 50th-minute equaliser cancelled out Aaron Loupalo-Bi's opener at Highbury Stadium.",
-      "url": "https://www.skysports.com/football/news/13604003/fleetwood-1-1-arsenal-5-3-pens-premier-league-champions-dumped-out-of-carabao-cup-by-league-two-side",
-      "source": "Sky Sports"
+      "scorersLabel": "K. Havertz 16'",
+      "summary": "K. Havertz scored as Arsenal beat Liverpool 1–0 at Anfield in the Premier League."
     },
     "nextFixture": {
       "date": "2026-11-01T16:30:00+00:00",
@@ -501,7 +499,7 @@
       "opponentScore": null,
       "result": "",
       "url": "https://www.skysports.com/football/liverpool-vs-arsenal/8206828602449165232",
-      "source": "Sky Sports / BBC Sport",
+      "source": "Sky Sports",
       "tvChannel": "Sky Sports Premier League",
       "stadium": "Anfield",
       "previousMeeting": {
@@ -512,19 +510,10 @@
         "url": "https://www.premierleague.com/en/news/4524015/arsenal-0-0-liverpool-match-report-8-january-2026"
       }
     },
-    "leaguePosition": 2,
-    "points": 21,
-    "played": 8,
+    "leaguePosition": 1,
+    "points": 24,
+    "played": 9,
     "news": [
-      {
-        "title": "Team news: Confirmed Liverpool line-up v Arsenal",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T15:17:08+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRHM4cV93Uk5XMGlCOXp2ZUlPN0NDSllZZjBJMDc5SVMxaHJJc3BvekstNVFSZURoNjJyUndnSUN4MlJhM1R0ZTJlczhOMFlfSHJiYkczUXFwTDk3aG1kWEp6SDY2d0tQQkRBVlUzSTRzaUNrZ0pJeUhjTm1LX0VSSEF5ZzJIRlE?oc=5",
-        "contentType": "article"
-      },
       {
         "title": "Team news: Tzolis returns to action at Anfield",
         "summary": "",
@@ -535,30 +524,39 @@
         "contentType": "article"
       },
       {
-        "title": "'If Liverpool want a title race, they have to beat Arsenal'",
+        "title": "Team news: Confirmed Liverpool line-up v Arsenal",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T14:41:33+00:00",
+        "publishedAt": "2026-11-01T15:17:59+00:00",
+        "source": "Liverpool FC",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRHM4cV93Uk5XMGlCOXp2ZUlPN0NDSllZZjBJMDc5SVMxaHJJc3BvekstNVFSZURoNjJyUndnSUN4MlJhM1R0ZTJlczhOMFlfSHJiYkczUXFwTDk3aG1kWEp6SDY2d0tQQkRBVlUzSTRzaUNrZ0pJeUhjTm1LX0VSSEF5ZzJIRlE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "How Arsenal could line up at Liverpool to solve major Arteta problem",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T16:43:13+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU1BhMjZScElTZXh5dFNJMmdyQ0hlRW0zWWR6alRDUDM1ZG5zY0N6SVFTR1RVYVRJaHRHMVNQVHNyaEloc2hIbVhPbmdJWHFRVi1TNkRXbXNrRWdVb2dKaWZ4ZldHNEppU3djQ3J0ZjBFel9KV3dINV80WjREQ29IT1JfVW9iY01OaXJwMjF1MUxfWjUwMTgwd1BB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool vs Arsenal LIVE! Premier League match updates, news, score, stream and highlights",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T18:50:39+00:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcTlWTFd5ODdRXzYwUnQyOTVMMks5M1hmRHpkSjZJVHNoN3VJbUZaSF9hcDU4OEZUTHJueExCNy1JbHczMW9aSkR1aGYxdlM5U1dXYmhBc090elM5WERqWWk1WmxaY1JZRDBCT3Qxdzl0SXI5Vi0yRy1oQTNTcVRkNVZrdnhaOERKMFI3RTRHZFpoZ2FOZG1ORHY2Q3BkUHhBd3A0WkhHVUVwN0NDNUVob1ZIVkh1ZUpLdzVCTC02V1RqanEtbTZxMDc4VlZJSG0xMEJLOFNLNTQ2TzNGQWt3dEUzTWp6UmtNd0F0aTVDMmNkWkxCUF9LTWV6MTVJQQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbzM4VWNfNkhsRTVoQjlweS1jbzlmWVloVTBxY0hUdjFlcjltVFlVQ0RLUG5Ra2Q0VFluZVo5MUU0Yy1TMmJSMXJQRHNlZTVkUllKUDd5ZU5aV01xSXJqZEVpdjlGcERyVFA1elBZVHdhaXVES0dWT05yYkhzU25WLTVDX3VNWFZUYm5jZG05S1hudmY2TVloSHNNNVVOSTU1LVRBSUVFZi1EcVlfTzk2U2NiNkV0Q1Z2d24zRUk3UlJfRDB2S1Vkb0RJUDMxZE1USm5IVG5zZEc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Confirmed Liverpool XI vs. Arsenal: Nyoni’s first league start, Szoboszlai in squad",
+        "title": "Arsenal XI vs Liverpool: Starting lineup and confirmed team news",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T15:19:00+00:00",
-        "source": "This Is Anfield",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVnZxNHNpR0I2S21HSzJheXJkUjllazhlNmxNTUlyU0l6eUNJQ3pFeWNYVC1yRGtLQmR2UHF5QVp4NlBJbFJMcUJ4TTVJT19uZGpZSUw4N0FlZHJnLUtaNTBkQ1ZkSG5hUnRRR21kcU1ZckIyY0lvRm52R3dpTHNlSDA1UjcxV3B6OFIxRXJ6UXJkblhneGY5T2pUSUhtY2s?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Renée makes one change against Villa",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T11:08:28+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMm5DcE9TdUhKNmdXZGdOY3FVZExfZTM1Y2xQaTkxRnZDWlo3UVlLaDFjWHhDSkhoRU1tZjJZenQ0Mk80ZHo3ME5QR3ZsdHhEMExwRXA1Q295Xy0xTF9DSTl2RUZyQXVTNGZ0cTRBTG1TcG1YdDFoazE4QmxqSFFXRVJGc1Bwd3RpTnBTNGViWTExQQ?oc=5",
+        "publishedAt": "2026-11-01T15:12:23+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUHM1Z3d6Mjgwd0p5aXAtNENTVXhiekVGX0ppZ0NlbkE3VWRrR0dIazJjOXAtZ1lDQnEtT1lLOENnTE9wSmFXSGdBZ3JpZ19TNzlPQjFkV0t5QzF4V1hVaWNlMVRFeElYOURpR0YycGxvbDNZdk5Odi1IaklhZHlZRGV6a1lwOF9IS1p0MW9SMFNGcFN1WHM2QzQyVVdKZ1Z2dk9oUGdRTzhxSXQ0dFhmQXNWY0Q0QjRMZWY0ZTZIVVhFbEF2amFLOEZLclZ3eVFKZFVEVWFPZzJCMDZqbS1Eak1rRHdNZnl5a0haS1BWWQ?oc=5",
         "contentType": "article"
       }
     ],
@@ -573,6 +571,62 @@
     "transfers": [],
     "transferRumours": [
       {
+        "title": "Arsenal with a huge away win at Anfield thanks to Kai Havertz’s goal! Who’s been your MOTM?",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T18:26:23+00:00",
+        "source": "Fabrizio Romano",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9tN3A0NDhoT09sNDc3QTJvZm0xY1ctaUdIaWI0b2VhSTVoRGkyQWlqTl9SVVJETEFxWEZrRUNmdXg0X3hxS2VCb3BURVFpQ0JiYWl1bWU4ZDhMMElMbVFTM2Z0WXo2Zw?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Established reporter",
+        "sourceUrl": "https://x.com/FabrizioRomano"
+      },
+      {
+        "title": "Arsenal keep making the case that if any team can hold onto a one goal lead it’s them. It’s just that sometimes they seem a little too eager to prove that they can.",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T17:23:14+00:00",
+        "source": "James Benge",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JZFBaMzhjb20wSzkzUi1CYkRycDVMbUdLOV85Q09oRnFISDNpeDBGaDRYNm5mSmdqSF9JelI1Z1k4enJ2VnZFN3lIbnR4VmFITnVzUk0xdEh6Z3VXeUFESQ?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/jamesbenge"
+      },
+      {
+        "title": "Breathless stuff from Liverpool since Havertz's goal. Arsenal just about holding on amid wave after wave of attacks. Raya has not really had to make a save, however, although Mac Allister should have at least forced him into one with his header. 1-0 Arsenal at",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T17:21:14+00:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9oUDBueHhCZENvS2duRHZvOWRvYUVBeE12cmVjbmxQc2hVejZqOFVIS0JBaGYyMjhydGVWcGM1bFhNYVp5eFNZZnlPTHd0Z0ZGbUdmTWV0VWJMcFdMMkpVbDg1Vk8?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
+      {
+        "title": "Brilliant ball from Rice. Great start from Arsenal, deservedly rewarded.",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T16:47:18+00:00",
+        "source": "Charles Watts",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yeThkWUJYMHRrcUN3NEhGOTZJUURXNXo5T3d3ekVxTy1ieFhhLUpVdG0xTm5sQWlINHYwODhaUjZ0U21iaUVucFRqT3VjaldBc2p4aGc3QlgtTWc4VXFtZVdsTnM?oc=5",
+        "contentType": "transfer-rumour",
+        "trust": "Unconfirmed",
+        "speculative": true,
+        "sourceType": "X",
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/charles_watts"
+      },
+      {
         "title": "Tzolis straight back into the XI. Timber gets the nod at right-back. Bruno and Rice in midfield.",
         "summary": "",
         "meta": "Sun 1 Nov",
@@ -585,92 +639,36 @@
         "sourceType": "X",
         "confidence": "Arsenal specialist",
         "sourceUrl": "https://x.com/charles_watts"
-      },
-      {
-        "title": "Tzolis, Merino, Calafiori, Rice all involved in training today. Gyokeres' hair has grown back amazingly quickly from the clearly not AI picture that was doing the rounds yesterday",
-        "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T17:30:23+00:00",
-        "source": "Charles Watts",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE93WUhOZUNzUDhnZm45anVURFZ2TFRqRURYc04yUl90eW96M0I4T2luZlVicC02TG1EX0xRMTd1Wlg1R2IzZWhhQml6cVdSMGNieTF0Xy1GSkktMzBCdXlOVzUwUlI?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/charles_watts"
-      },
-      {
-        "title": "Arsenal news update - Calafiori, Rice and Tzolis trained today - Madueke not ruled out, will depend on Saturday's session - Arteta \"very disappointed\" Dowman appeal was turned down, says Arsenal lucky he avoided a broken foot and warns it will keep happe",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T13:47:35+00:00",
-        "source": "James Benge",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lR19BME9KRkxQNDZuWXhsN1lFOF9SRUF3OHJGcnM0Vnp0NDR1cFBKYnhxdG9DTERkd3dLRW41U3Y3SmlZZXJYeWRQMzRCOUlYRHhrVFdibTZ4bW9tWUg2Uw?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/jamesbenge"
-      },
-      {
-        "title": "Arsenal's appeal against Max Dowman's red card against Fleetwood Town has been dismissed. Arsenal argued that the red card was a case of both wrongful dismissal and excessive punishment. Dowman will be suspended for the next three games.",
-        "summary": "",
-        "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T17:01:28+00:00",
-        "source": "James Benge",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05MzMtc1VxeDN5LTRXTkdMRlhMUmNVckZ2VWU1aEZUVVBrQnpVcDBtejZWYWtOdE9fZVRESUxLbFJJOF9rWTJqNy0xdnRrR0pRYUcxdDNrSU5sYmpNeHZxcA?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/jamesbenge"
-      },
-      {
-        "title": "Fleetwood's Adam Murphy talking to Off The Ball: “They were very classy in the tunnel afterwards. There was a good few of us waiting outside their changing room just to see if they’d throw us their jersey. “Odegaard came out, and there was a few of us waiting,",
-        "summary": "",
-        "meta": "Thu 29 Oct",
-        "publishedAt": "2026-10-29T14:38:34+00:00",
-        "source": "Charles Watts",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Hb3c5QWlrdVJWX1ZncU1xaWFtUE4wTlRZTnl2TU1NdFFMTm44UHh4Sk56enJSaHZIVVVVWUg3NEZfa3JZTE8wcmdkM21KUktyWExpejYtZlR6NTZQaEZlcnppS04?oc=5",
-        "contentType": "transfer-rumour",
-        "trust": "Unconfirmed",
-        "speculative": true,
-        "sourceType": "X",
-        "confidence": "Arsenal specialist",
-        "sourceUrl": "https://x.com/charles_watts"
       }
     ]
   },
   "lead": {
-    "title": "Anthropic restricts Claude's use for reverse-engineering games, including through REA tool",
+    "title": "Anthropic is stopping Claude from copying existing video games: Here’s why",
     "summary": "",
     "meta": "Sun 1 Nov",
-    "publishedAt": "2026-11-01T15:05:50+00:00",
-    "source": "Firstpost",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXBhOXIzTkpXLXkxRWVPdVNVMTNYWUN1aDgyWkhzajJnLXdUUGRlQ3pQZ2ZNZS1YOWpJUzVrclZJRzY0RGhIR01ZYW9ycm9CUkxDTTNUODFfZlZoUVVHSnNmV1lBZnZjcTVJRjFiVTg0LVh3dmlHWjd6OEJfWFBkZWtNNEhRWmxWcENoajUxaEhITlA0NGhvNDZSVWNZV1RVVzBDOWJ4S0pUcFJJUGYtR0o1YVpWOW5LbFU5WFVROVdoVHRZbVVEa1JQejZhQdIB0wFBVV95cUxQallwMTdfXzFjdzN5RTM3enQxRHpBMGlEN0J6c2tYZWRyckxibWhzVHFqaWhEaXlMNlB5ZndULVRmaTI3bDU0Q0ZsYkdkRndlVlVCZFJOLUJGR1Jha0dFWDhTS3d3YkEzRHJKbDJrMktNVTI0NHYwdnZYZDAwQkNhNXlEaFFLcjB6OENWQnZKYTY0cEc1OFprRzEwV1FsMlhUTlF6X1M4TTVwMEFoLTZhUW4xbTYwU2F5RU9pZDBPOU0tRXpkRHR1akEzWkFfU29JdkJR?oc=5",
+    "publishedAt": "2026-11-01T17:42:20+00:00",
+    "source": "The News International",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMDdyZXBQUmQ5S1FCZGM4dDVwOW9saFM4dHZRYWFmLWh2WVEzSmdPVmRMM1VQU0hFaUtzMGt6NVBRNDM1VXJLVGRWY1BXOVptVHJXaUo0UV84R0RyRUJ5eUt4N1lsT2F1cXNGV0dUbzVTYU41UXFBY3puYS1vYWZ5RFR5d3d0eU94SkxCOUxmeUFwckNHZFN2T3JxWmRrMExMWHM4WU1jdUNhNWVuNmxSdUhJcE3SAbABQVVfeXFMTy1LZlFXMFZRQ3F6eF9vSnNEZFJ0RWY1X3k5SllGRGJMZld6SzVYMVZ6UlZmN2dDWmFkZEpyUlloNkxBZ2dyMHF0Vkx2dlRwdUZILUxVR0RUeVpPZW8wRFUzZWs4UVU2dXEwU2FYcjREeDVCZ05DMnQ1ekhTVy00Ym9YTzUxdTduMURuM3plV09tbDhLc203dTRIX3BzY0FKc1pJZ0FhejhGYmcyUHBpcDQ?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Anthropic restricts Claude's use for reverse-engineering games, including through REA tool",
+      "title": "Anthropic is stopping Claude from copying existing video games: Here’s why",
       "summary": "",
       "meta": "Sun 1 Nov",
-      "publishedAt": "2026-11-01T15:05:50+00:00",
-      "source": "Firstpost",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXBhOXIzTkpXLXkxRWVPdVNVMTNYWUN1aDgyWkhzajJnLXdUUGRlQ3pQZ2ZNZS1YOWpJUzVrclZJRzY0RGhIR01ZYW9ycm9CUkxDTTNUODFfZlZoUVVHSnNmV1lBZnZjcTVJRjFiVTg0LVh3dmlHWjd6OEJfWFBkZWtNNEhRWmxWcENoajUxaEhITlA0NGhvNDZSVWNZV1RVVzBDOWJ4S0pUcFJJUGYtR0o1YVpWOW5LbFU5WFVROVdoVHRZbVVEa1JQejZhQdIB0wFBVV95cUxQallwMTdfXzFjdzN5RTM3enQxRHpBMGlEN0J6c2tYZWRyckxibWhzVHFqaWhEaXlMNlB5ZndULVRmaTI3bDU0Q0ZsYkdkRndlVlVCZFJOLUJGR1Jha0dFWDhTS3d3YkEzRHJKbDJrMktNVTI0NHYwdnZYZDAwQkNhNXlEaFFLcjB6OENWQnZKYTY0cEc1OFprRzEwV1FsMlhUTlF6X1M4TTVwMEFoLTZhUW4xbTYwU2F5RU9pZDBPOU0tRXpkRHR1akEzWkFfU29JdkJR?oc=5",
+      "publishedAt": "2026-11-01T17:42:20+00:00",
+      "source": "The News International",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMDdyZXBQUmQ5S1FCZGM4dDVwOW9saFM4dHZRYWFmLWh2WVEzSmdPVmRMM1VQU0hFaUtzMGt6NVBRNDM1VXJLVGRWY1BXOVptVHJXaUo0UV84R0RyRUJ5eUt4N1lsT2F1cXNGV0dUbzVTYU41UXFBY3puYS1vYWZ5RFR5d3d0eU94SkxCOUxmeUFwckNHZFN2T3JxWmRrMExMWHM4WU1jdUNhNWVuNmxSdUhJcE3SAbABQVVfeXFMTy1LZlFXMFZRQ3F6eF9vSnNEZFJ0RWY1X3k5SllGRGJMZld6SzVYMVZ6UlZmN2dDWmFkZEpyUlloNkxBZ2dyMHF0Vkx2dlRwdUZILUxVR0RUeVpPZW8wRFUzZWs4UVU2dXEwU2FYcjREeDVCZ05DMnQ1ekhTVy00Ym9YTzUxdTduMURuM3plV09tbDhLc203dTRIX3BzY0FKc1pJZ0FhejhGYmcyUHBpcDQ?oc=5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Team news: Confirmed Liverpool line-up v Arsenal",
+      "title": "Team news: Tzolis returns to action at Anfield",
       "summary": "",
       "meta": "Sun 1 Nov",
-      "publishedAt": "2026-11-01T15:17:08+00:00",
-      "source": "Liverpool FC",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRHM4cV93Uk5XMGlCOXp2ZUlPN0NDSllZZjBJMDc5SVMxaHJJc3BvekstNVFSZURoNjJyUndnSUN4MlJhM1R0ZTJlczhOMFlfSHJiYkczUXFwTDk3aG1kWEp6SDY2d0tQQkRBVlUzSTRzaUNrZ0pJeUhjTm1LX0VSSEF5ZzJIRlE?oc=5",
+      "publishedAt": "2026-11-01T15:31:37+00:00",
+      "source": "Arsenal.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNU2N3bTZWeGZyODVnMHVVZVpXUjVjakZBYWV0ZGtLdTBPdHA5ZjJzTmYta0tOSC0yT1gtdEhXeUR1SHptcjFjaHY1NG1MWGV2MVhhNy1kcGpVREk4bzBOTXA2dWp3OTFLRVJiN3RPMjVTbXpMWVJaOV9lRDdxVXhKS0JhcnBYeWxibHV2QVRKUUY?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
@@ -816,30 +814,48 @@
   "sections": {
     "AI": [
       {
+        "title": "Anthropic is stopping Claude from copying existing video games: Here’s why",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T17:42:20+00:00",
+        "source": "The News International",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMDdyZXBQUmQ5S1FCZGM4dDVwOW9saFM4dHZRYWFmLWh2WVEzSmdPVmRMM1VQU0hFaUtzMGt6NVBRNDM1VXJLVGRWY1BXOVptVHJXaUo0UV84R0RyRUJ5eUt4N1lsT2F1cXNGV0dUbzVTYU41UXFBY3puYS1vYWZ5RFR5d3d0eU94SkxCOUxmeUFwckNHZFN2T3JxWmRrMExMWHM4WU1jdUNhNWVuNmxSdUhJcE3SAbABQVVfeXFMTy1LZlFXMFZRQ3F6eF9vSnNEZFJ0RWY1X3k5SllGRGJMZld6SzVYMVZ6UlZmN2dDWmFkZEpyUlloNkxBZ2dyMHF0Vkx2dlRwdUZILUxVR0RUeVpPZW8wRFUzZWs4UVU2dXEwU2FYcjREeDVCZ05DMnQ1ekhTVy00Ym9YTzUxdTduMURuM3plV09tbDhLc203dTRIX3BzY0FKc1pJZ0FhejhGYmcyUHBpcDQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "“Steer it away”: Anthropic tells Claude Code not to recreate someone else’s game",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T17:39:48+00:00",
+        "source": "MIXED News",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBmZExLZnExQlcwYVMzOF9xaUstUl9rZ1Z3eG5FeXVZWVRtVlhkWkJaWHFyaml6U3JrVjZOdEZOU3JUb0UyUUhpdmdyVWFFdEFlOU9lN2VuRndxVWpnQTRYUEk1NTVzVlVTbjRRSFM3bU9vazA3SDQ5Wm9Jbw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic says you can’t be mean to Claude. It’s not about feelings",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T17:00:16+00:00",
+        "source": "CNN",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ3VsTms5bl9pNVdFb2hkNEJrb01qQm13VVQxakkwSXNZS2dtTFllRzBNbmhIM2pfSl9GWjZaTUM1NFhIcHZSNWhYeldPZzJFRV8wbDVlUTc0azhDSElpMHpSbGVXT094a2tPcnVpMVcweElUcmxzaUNhLXhkajhJWTlqcw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Anthropic expands text watermarking to older Claude versions beginning November 3",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T16:59:47+00:00",
+        "source": "Mashable",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUEM4THdHaktsdExGbnVyMWxVLWhuRmx4S3hYSEMwWFIxcjIydjA2TVl6bkZidU10QmYyWEZWYkNsM0NXdTBHc2pIY0tXU1ZiMTdYbDZvYVNUUDduTDB2eU1DRU0yVERyS3ppRFpHWjZ5OUFxdXU5ZTRCbk5hSG9UNkgxQTJmX1BKWlJkOXAtNA?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Anthropic restricts Claude's use for reverse-engineering games, including through REA tool",
         "summary": "",
         "meta": "Sun 1 Nov",
         "publishedAt": "2026-11-01T15:05:50+00:00",
         "source": "Firstpost",
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXBhOXIzTkpXLXkxRWVPdVNVMTNYWUN1aDgyWkhzajJnLXdUUGRlQ3pQZ2ZNZS1YOWpJUzVrclZJRzY0RGhIR01ZYW9ycm9CUkxDTTNUODFfZlZoUVVHSnNmV1lBZnZjcTVJRjFiVTg0LVh3dmlHWjd6OEJfWFBkZWtNNEhRWmxWcENoajUxaEhITlA0NGhvNDZSVWNZV1RVVzBDOWJ4S0pUcFJJUGYtR0o1YVpWOW5LbFU5WFVROVdoVHRZbVVEa1JQejZhQdIB0wFBVV95cUxQallwMTdfXzFjdzN5RTM3enQxRHpBMGlEN0J6c2tYZWRyckxibWhzVHFqaWhEaXlMNlB5ZndULVRmaTI3bDU0Q0ZsYkdkRndlVlVCZFJOLUJGR1Jha0dFWDhTS3d3YkEzRHJKbDJrMktNVTI0NHYwdnZYZDAwQkNhNXlEaFFLcjB6OENWQnZKYTY0cEc1OFprRzEwV1FsMlhUTlF6X1M4TTVwMEFoLTZhUW4xbTYwU2F5RU9pZDBPOU0tRXpkRHR1akEzWkFfU29JdkJR?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic Says It's Building Its Own Data Centers. Bloom Energy Sells Exactly the Onsite Power That Requires.",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T14:23:00+00:00",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPV0tHWnNPT043N2I5cTBxZ05LNEpDWWtQd0kta08wMU9tZFd2UzU3bE9HNlBmWVhyd1U4VlRrTTUyY3k5aHNfSEtVM3dWQWE3ZElVU1VMVEhONmlCOFFaNGJGV25idHVSbGFsZ1laN0NPMXFtcmc1YzE3YXlXazZ0RVF0VWFoRjE5VWlSeHpEdU5ZSm1ZTkdfTEk4TFc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Claude Code now refuses to help build copies of existing games",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T13:46:26+00:00",
-        "source": "The Next Web",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMEhsZVJ0aVZHYnJBVjVmWG9oZXZ4bzdncmZtT3p1S19HQ0FrVmRpdDVoM25zSkxQaEhuS2tZemt1SnFyQ2lBQ0JGZzBaSzVpb2ZoSnJ4cjR3TVBjaHJfRmo4SnMteTJfbjdWZ2lCSzNYOFZ5anJDMGZaNFhPUjZqNQ?oc=5",
         "contentType": "article"
       },
       {
@@ -861,30 +877,12 @@
         "contentType": "article"
       },
       {
-        "title": "How to Run an AI Model Locally—And Why You Might Want To",
+        "title": "Alibaba’s Qwen AI to power Apple Intelligence features in China",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T14:01:02+00:00",
-        "source": "Decrypt",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vSTJjNlZQWmNBamhDb2NPUmFvNy1NU1c0bEhuUzhTRXk0NG5mVG5iWlh5UVNwWEJYdEhjU0Z6a3llaWdPZlctYy05ZTlDWW9PUUdyb19OTFBGYnl2c3B0ckFOZmZzMXdtbFVzUEFKNjlmVzV0UnpIWmd6eEs?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T13:53:11+00:00",
-        "source": "BleepingComputer",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSXExbHBwa1M5MzlJWkdoaGpmREZGTTdZVEc4Tl9vUkl0VGxxeUxCMDYycG9FcnkxMGlNVk5OQWlPVkhJT2RpTTFLYmdYV2ZmRFJaT2lzNWQzei1vSGVlYUtWc2R4MWZTX2xQWlJ4Q2NKLUpKZ1JkaXFwdmNtUDB2b0ZHdV9VN011c28yYVRiQ2YwMVdEeUE4ZkVNcmRHSHIxS0NSSEQzUXRmMHJHV3ROV3B6eVU2UHlhdzNvV3lsdEJmeFpnMmdNMjBCZldveEFQUGIzRVZ30gHbAUFVX3lxTE1BSmZjY2RQUHpjRHRweC1DZUdIUC15Q2I0MDhWRlJILUdXWmlLMy1aaWpnSnJlZjdJQzY5bk9rU3RndHdrZ0FfSXVyUThrWDBsUFhBZHZJQUNQQXpIWUF3Rjl1R3ZPX3RTNWY0NXBBTTJUb0ZldHRuX1ZlX2RWNXN5QkpJRldiWmxUZDZMaEo4WWVsSllydVdUVmpVM3BQTzU1bzM3aGRRUE1JaWZjdnFiSnlVUldGLXBoVEhTbUdDbzFfOUI0R1lOWjQwZ1IyTzJLeEhRc3JuZ2FRNA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Alibaba partners with Apple to integrate Qwen AI model into Apple Intelligence for Chinese market",
-        "summary": "",
-        "meta": "Sat 31 Oct",
-        "publishedAt": "2026-10-31T17:38:16+00:00",
-        "source": "Anadolu Ajansı",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOYWxtSWxQWFFKLVc1dUZCdGtGOElTdFlWeTJZV0FWZ0MzbXBzbkpNSzNmclhleVlWblpHeElhSHhNMDZtcHlKWjBZTVFEQk9MRDJlcWZDWFZQYzlUZDdGcVBDTVk0RndNdC1iVG9taW9vY0FCdTF6WWVzSjdhQVp1Yk1jUkQ4QU9jZjdCTlRCZmZmZTBranBrSzh0cDcydmVWVmpYQ21SOXFyYUkyTUZFU0VVZzdXUnY0S2Q0bzE5ZU1XcGRxVUh2bDdyNHM2RGV3MUlJUVVBS3g1S28?oc=5",
+        "publishedAt": "2026-11-01T08:19:18+00:00",
+        "source": "Türkiye Today",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTEFtb2NlWFgyM0RlRnpwODA2X05BYnhYOURaQ2xiOHg1YnlraFBoeDBVMFFfR0xLU25CRUN4YUFHV0RnYXVwNWFqalNZWnAtakFBX3hBZmtNcW4zNHVGdWQ5eFhhUWc2LWxqYW9EMEhveGpCUG52YUFtUURMenFMRFVYVWhFRzBLOThvNm5xdkxXbV9PcTBKV2NqYkdRajA1MmFjamxNZ0FGcWtT?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -899,26 +897,17 @@
         "liveChineseLab": true
       },
       {
-        "title": "Doubao Work Opens Kimi, GLM and DeepSeek Models to Team and Enterprise Customers",
+        "title": "Moonshot AI launches upgraded Kimi model",
         "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T02:06:48+00:00",
-        "source": "Pandaily",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaS1OY3JJMjBaS1JyLTFMYkZRVE5xT2NlT1NhWEE4X05fRENxdHlNY2VwemFPQUFYaldwcnNsSm5UbVRueVRscHV4OHJURjRWdHYyWlMtb0hiMHFyQkpXRDg4aFhxS2dzZGFQUlRHSjhvVTl1dTNNQjNET1NEMnJqbExtZ2pGcFRFSExBWGhmd3R5RW5LWllEZXFhRHFlb1pTNkkyRjJ6bw?oc=5",
+        "meta": "Tue 27 Oct",
+        "publishedAt": "2026-10-27T00:43:44+00:00",
+        "source": "China Daily",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9rUnF3WWotOThlcWhUeUZlV2FTdVBwUGhWblVfS0hzcDhxM0JXXzU2YmdUVS1mYnZ6dWVqNk41cWVadmdmMDFaZWs0ZFc0WGlLaThzSVpRT0JNU2NvZEU1WkFqU2drWTF2OXRvbEdNV0FhdWlrVU9jMnhHOVJDdw?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       }
     ],
     "Arsenal news": [
-      {
-        "title": "Team news: Confirmed Liverpool line-up v Arsenal",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T15:17:08+00:00",
-        "source": "Liverpool FC",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRHM4cV93Uk5XMGlCOXp2ZUlPN0NDSllZZjBJMDc5SVMxaHJJc3BvekstNVFSZURoNjJyUndnSUN4MlJhM1R0ZTJlczhOMFlfSHJiYkczUXFwTDk3aG1kWEp6SDY2d0tQQkRBVlUzSTRzaUNrZ0pJeUhjTm1LX0VSSEF5ZzJIRlE?oc=5",
-        "contentType": "article"
-      },
       {
         "title": "Team news: Tzolis returns to action at Anfield",
         "summary": "",
@@ -929,30 +918,30 @@
         "contentType": "article"
       },
       {
-        "title": "'If Liverpool want a title race, they have to beat Arsenal'",
+        "title": "Team news: Confirmed Liverpool line-up v Arsenal",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T14:41:33+00:00",
+        "publishedAt": "2026-11-01T15:17:59+00:00",
+        "source": "Liverpool FC",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRHM4cV93Uk5XMGlCOXp2ZUlPN0NDSllZZjBJMDc5SVMxaHJJc3BvekstNVFSZURoNjJyUndnSUN4MlJhM1R0ZTJlczhOMFlfSHJiYkczUXFwTDk3aG1kWEp6SDY2d0tQQkRBVlUzSTRzaUNrZ0pJeUhjTm1LX0VSSEF5ZzJIRlE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "How Arsenal could line up at Liverpool to solve major Arteta problem",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T16:43:13+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU1BhMjZScElTZXh5dFNJMmdyQ0hlRW0zWWR6alRDUDM1ZG5zY0N6SVFTR1RVYVRJaHRHMVNQVHNyaEloc2hIbVhPbmdJWHFRVi1TNkRXbXNrRWdVb2dKaWZ4ZldHNEppU3djQ3J0ZjBFel9KV3dINV80WjREQ29IT1JfVW9iY01OaXJwMjF1MUxfWjUwMTgwd1BB?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Liverpool vs Arsenal LIVE! Premier League match updates, news, score, stream and highlights",
+        "summary": "",
+        "meta": "Sun 1 Nov",
+        "publishedAt": "2026-11-01T18:50:39+00:00",
         "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcTlWTFd5ODdRXzYwUnQyOTVMMks5M1hmRHpkSjZJVHNoN3VJbUZaSF9hcDU4OEZUTHJueExCNy1JbHczMW9aSkR1aGYxdlM5U1dXYmhBc090elM5WERqWWk1WmxaY1JZRDBCT3Qxdzl0SXI5Vi0yRy1oQTNTcVRkNVZrdnhaOERKMFI3RTRHZFpoZ2FOZG1ORHY2Q3BkUHhBd3A0WkhHVUVwN0NDNUVob1ZIVkh1ZUpLdzVCTC02V1RqanEtbTZxMDc4VlZJSG0xMEJLOFNLNTQ2TzNGQWt3dEUzTWp6UmtNd0F0aTVDMmNkWkxCUF9LTWV6MTVJQQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Confirmed Liverpool XI vs. Arsenal: Nyoni’s first league start, Szoboszlai in squad",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T15:19:00+00:00",
-        "source": "This Is Anfield",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVnZxNHNpR0I2S21HSzJheXJkUjllazhlNmxNTUlyU0l6eUNJQ3pFeWNYVC1yRGtLQmR2UHF5QVp4NlBJbFJMcUJ4TTVJT19uZGpZSUw4N0FlZHJnLUtaNTBkQ1ZkSG5hUnRRR21kcU1ZckIyY0lvRm52R3dpTHNlSDA1UjcxV3B6OFIxRXJ6UXJkblhneGY5T2pUSUhtY2s?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Team news: Renée makes one change against Villa",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T11:08:28+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMm5DcE9TdUhKNmdXZGdOY3FVZExfZTM1Y2xQaTkxRnZDWlo3UVlLaDFjWHhDSkhoRU1tZjJZenQ0Mk80ZHo3ME5QR3ZsdHhEMExwRXA1Q295Xy0xTF9DSTl2RUZyQXVTNGZ0cTRBTG1TcG1YdDFoazE4QmxqSFFXRVJGc1Bwd3RpTnBTNGViWTExQQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbzM4VWNfNkhsRTVoQjlweS1jbzlmWVloVTBxY0hUdjFlcjltVFlVQ0RLUG5Ra2Q0VFluZVo5MUU0Yy1TMmJSMXJQRHNlZTVkUllKUDd5ZU5aV01xSXJqZEVpdjlGcERyVFA1elBZVHdhaXVES0dWT05yYkhzU25WLTVDX3VNWFZUYm5jZG05S1hudmY2TVloSHNNNVVOSTU1LVRBSUVFZi1EcVlfTzk2U2NiNkV0Q1Z2d24zRUk3UlJfRDB2S1Vkb0RJUDMxZE1USm5IVG5zZEc?oc=5",
         "contentType": "article"
       },
       {
@@ -965,21 +954,21 @@
         "contentType": "article"
       },
       {
-        "title": "Liverpool vs Arsenal LIVE! Premier League match updates, news, score, stream and highlights",
+        "title": "Alessia: “We should have been more ruthless”",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T15:22:30+00:00",
-        "source": "Sky Sports",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbzM4VWNfNkhsRTVoQjlweS1jbzlmWVloVTBxY0hUdjFlcjltVFlVQ0RLUG5Ra2Q0VFluZVo5MUU0Yy1TMmJSMXJQRHNlZTVkUllKUDd5ZU5aV01xSXJqZEVpdjlGcERyVFA1elBZVHdhaXVES0dWT05yYkhzU25WLTVDX3VNWFZUYm5jZG05S1hudmY2TVloSHNNNVVOSTU1LVRBSUVFZi1EcVlfTzk2U2NiNkV0Q1Z2d24zRUk3UlJfRDB2S1Vkb0RJUDMxZE1USm5IVG5zZEc?oc=5",
+        "publishedAt": "2026-11-01T15:01:31+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZG90TUdUXzltd2owTW9VejNVTXBBb3VSd05EMnlLRHUwbWYzNmE0TkRtYUNIREZTMVN4ekhLandSb3Q2UEE4VjZfQzcya01QaDBhUmF1LUVQNEU1bTFMYlNzVlBvcmdZUlNhSEk2N0Y4TEFwT3lXeWVmWmI1NWY4c0l2SkJwSjBjaThj?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Liverpool XI vs Arsenal: Predicted lineup and confirmed team news",
+        "title": "Renée disappointed with our start against Villa",
         "summary": "",
         "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T14:57:07+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQOGd1V3NQRnVrbHB4bXl4WXBmZEo1RG1ydDItRUxyeVVSdXNlSE5heFVFRS02Y2RqeE9qQ2dhaHQwLVNIMzNtS0w4OUxuVVJUTzRicUZKZHZIY3JfWGcxOTFZREhxaHdJZ1hyUlBmTng1RXZHNDlYckp6SnFTVVFOSjAxTWJPeXRUeEY3Zm1fXzh0TzNYZTViLWx5S0FjSWNtdDRIS1BtbWpOejJTLWMzTDBKSWNMTEU0Y2Z1c1dqNlM1bjFaY1o5c3pYTXBmTWt6ZGdfNzBSN3M0dDlPVnFYQk5EZVBvRXNq?oc=5",
+        "publishedAt": "2026-11-01T15:01:31+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaXBMd0RCQlZjTU1Xc1RDajlHZ2tlaENxdmlMNUZ3SUxrUHVzRzQ1TjBQWjhJclg5ak9IQ1VDb1hJZDVtMkFMcmg3eHNYMTJlbUc5U0piZGdfSjhfMDU2OU1yX1F1SEg3emd0ZmtGSjJGc29GUUw1bVZINW1jVTUwLVhucHZSZDlnRXJvX1JRY3duOUU?oc=5",
         "contentType": "article"
       }
     ],
@@ -993,18 +982,6 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yOEdMM2pCREhtVG1vVjY3YnpTTVNFcHJYX0ZxNVhIaUszRGNMdG1WVy1haV9tWnY3akpNVi1ycHpZc0x2UGpGOFZmYm55LTZ0VEJwZ0hBNzFfNnBOMjBrWVN6VGptVDJUNmFQNGFuZFRlenM?oc=5",
         "contentType": "article",
         "localPublication": false,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Local Events in Kingston",
-        "summary": "",
-        "meta": "Fri 30 Oct",
-        "publishedAt": "2026-10-30T18:11:15+00:00",
-        "source": "Surrey Comet",
-        "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxPbVgyeElqWFFDU0lCb2J6M3ViR01vQVNoZnVhdDNCV1BvN3RnbVM5UGJVZERXUEZxc3gwb0lKR0pxQmtKT3BIZkRCaFFFMVZUVUZnd0pacnVpRmR6WHdMU3RjVEV5azh4NnhIS0dqSk5mX2ttMVlOWmFOUjRZRm41ZHV3ZVlvTEFaNldLcHZTVHppMHBfcF8yVGJiYUY0bU01bXIxQjl4UlhfQS11c09zVVdlWjZkMGtYaWVzb0d4T2cxODUwNk5CQXY1bENKelhMQlM5ZnpUZVBUeVVMaUMzVHZieEdpbUFpVmQxQnRMN3ZfRGlhSExJTFpidjg3WWFxbk53RENtU3NfVllWVFRvSEtuMGk3TENiR3dJOGRCMVRDS2liX2ZLcWJvbThXZWhFcHJxdVlLYnU4TkhkT0pxZ3FEMENaMzhRdkZlRFpHdnZPT3lWaU9UM2t0VVVJQUZJR280b05zNWZBTktuN0NyOHZhc1BNbWZnTktPY2IySEN0ajg?oc=5",
-        "contentType": "article",
-        "localPublication": true,
         "familyActivity": false,
         "homeArea": false
       },
@@ -1033,14 +1010,14 @@
         "homeArea": false
       },
       {
-        "title": "Hampton Court dazzles as host of sold out running festival",
+        "title": "Kingston-based, AI-assisted band releases Halloween single",
         "summary": "",
-        "meta": "Tue 27 Oct",
-        "publishedAt": "2026-10-27T13:47:20+00:00",
-        "source": "South West Londoner",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPblgycm90aVRwWjRMXzBwNURuanFSVTJXMFFqRmlpcnNzOUVVbDlHQVNER19FMFpwVWRRSWNJcGRPNC1GeWdhMnJhSEMyUHQ5T0pDZG1KbGNlR0I1YURkX0RnU1BseGxXZWVuSl9NcXVTM3oxVkF3LWdXY0hqdWJqTjRIVVA4SFNuTmVYS1ZLa0ZFaE1CZC1uTUN2T2tsb0wxWFBV?oc=5",
+        "meta": "Wed 21 Oct",
+        "publishedAt": "2026-10-21T13:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU1djSVZSLUV1TkNfZVhVcVhyYjF1Qi1wWFhXTlpIc2todjN0WWRNcWVWUzd1OTRVNGR1NzdmMngzSk1YOXBEcUdtZzFrT3QxcnN3bGVtVDlpMXU1dkNSVTcyeXZJVUdKcWM5SXg1YnhyeHFxTzMwWm1uUWJjSEFDTlhEaVVBVkgxcmV3cFFBWlBGMFQ3ejlUcVh5d3Q4cEs3Y1JmV0sxU1dzdw?oc=5",
         "contentType": "article",
-        "localPublication": false,
+        "localPublication": true,
         "familyActivity": true,
         "homeArea": false
       },
@@ -1051,6 +1028,18 @@
         "publishedAt": "2026-10-21T12:55:15+01:00",
         "source": "Surrey Comet",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeFNUV25WNDBxOU5FZ0ZFRDNfcnR6bnlXdDg0b3hzMlltZGxjbmdDVllabXVoNDUwUzZlVHRMLVZlNllXazVaejZuZWpsbjRidGYtNTZveS00Mk12V2NpYW9Eb1BtRVJ2aUgxLWRRSUdEZGJRWTNsSkx6Z3NueV9va0RXM3hyUGVuNWpYSm5zNGxOOWFjbkE?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
+        "homeArea": false
+      },
+      {
+        "title": "Santa reads childrens own Christmas letters back to them through new Hampton service",
+        "summary": "",
+        "meta": "Mon 19 Oct",
+        "publishedAt": "2026-10-19T08:00:00+01:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmlYUzhpYW9HbmxpZ2tNNEF1QlVkN1ZwYnFSV0lPWm1mMVZFTFNMYTZCbk1oUnd4T3VSSjVyTVJpYjU5bW5FUlc1X0x3clJEUUlRZ1hzQktjSFYyU2pYMk9iak82ZHVSMmNUSW5md012b2ZIaDdyVm9lcnJ5SEtSY250bkNzUkp2OTZmRDE5WnVfdldNMktoQ3RrNDVGaGo5QUxoQW5vdDVUdG92Nkk0VWxLeWpTdUE?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": true,
@@ -1129,30 +1118,6 @@
         "homeArea": false
       },
       {
-        "title": "Award-winning fireworks show to return to The Lensbury in Teddington with exciting festival theme",
-        "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWnFvaU84SVMtWjQtOEhaUGd5NXR2cmNiblM3NlVNR0hEMXE2a201dTFQLW9aSGxzaThUbWpKMnM2OGtwR190R1NObE94YTBFM0wxV3hQeUNyTHJPdmVaY3Jsc0F3OWEwNG9Pck41dmFXY3UtN0dWSjhuamFiOWpsd3c2c21KUTFTWUNCUFlodlNZMHE5UVdTUFg1ZHM4UVNuVzFXd2F6bThyNmxNeHFqcC1iZnZLRUNSdHQtY0ViUVVYZkVTQkNmSWhXTXBVbEluNlBSOG1sTUZNUHhHTWc2QXlkWlBlWE5RZ0xR?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": true,
-        "homeArea": false
-      },
-      {
-        "title": "Teddington roads facing disruption this week - check whether your journey is affected",
-        "summary": "",
-        "meta": "Tue 13 Oct",
-        "publishedAt": "2026-10-13T08:00:00+01:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYmk4NGN5c0xnVlVOUThrWng1QnNXeEg2UmotMlJ6X0VCMVIyTmhFRTA1Z1REMWFjWHh5cWxJcGc2cE5RVE51aFVLVVYyYm12T19mVmxfbFRPNEZRdTdLekIyR0FpLS02OWZaNGdyRW9uZmVGWUFTbHhzSDZKbjhOMWNEM3dOYzFPS0NBajBFZWJRRUtxbm5jYVdob3ZJT3gzSkw5RERyRVFMOEZ2dUF6aWlhYTNZUE1PU1U3UWVBMG11aUx3MUx3NmJBYVctQ3M?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Community efforts to buy Teddington playing fields put on hold over legal hurdles",
         "summary": "",
         "meta": "Mon 12 Oct",
@@ -1162,6 +1127,30 @@
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Esher storm back with second-half blitz to make it five wins on the bounce",
+        "summary": "",
+        "meta": "Mon 12 Oct",
+        "publishedAt": "2026-10-12T08:00:00+01:00",
+        "source": "Surrey Comet",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQazZ2NmVjaHUxeVVvNU0tS3V2aUJpMWFhNVZhWFBpenhPQ21rVkoyS2w1b01OdWhfek5LTG1GQXpoXzdJckhIN2ZiWHkySGV4dnlibnZhdUFiLWc1MGdFckR5d2NkaXBvbUZMa3VudGhaN2xoaU5YbkRMSDkyYjdPRTgyemw1MVI3Y3VaVk1vZk1faDcwUlMyZTJOTzNJUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
+        "title": "Kingston families invited to give outgrown children's belongings another life before Christmas",
+        "summary": "",
+        "meta": "Fri 9 Oct",
+        "publishedAt": "2026-10-09T08:00:00+01:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTVZnbU00dngxRDY0UE15UEF0U3l2akdYdjVGRWRVV285eVRnbXFfa3c2OU9ncVl6M3NGNTVBdUlybTg2cUV5RkpQSWIxbE4zalBxM1RiTEhxVWZGNDVsUFV1UVBmQUJqbHhnbkhBV1dIeGZTMmxnT2wzYzdLQlpwdjM4c1dVUFEyT0RHVWdyMXBiTzlEOGZQRHpnd2dDenJxNi1ldm5vZWdGOXBnNlU3cGFFREh5VkNoQlFHSEdUMXRDZ0dGbjNzZHVPeXVGNXc1SjNxOE9pVUhnUQ?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": true,
         "homeArea": false
       },
       {
