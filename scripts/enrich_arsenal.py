@@ -932,7 +932,7 @@ def snapshot(existing_news: list[dict], existing_arsenal: dict | None = None) ->
             and last_day == prior_next_day
             and str(prior_next.get("opponent", "")).casefold() == str(last_result.get("opponent", "")).casefold()
             and not last_result.get("stadium")
-            and prior_next.get("stadium")
+            and str(prior_next.get("stadium") or "").strip().upper() not in {"", "TBC"}
         ):
             last_result = dict(last_result)
             last_result["stadium"] = prior_next["stadium"]

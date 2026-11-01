@@ -759,6 +759,8 @@ def with_factual_summary(result: dict) -> dict:
         return result
     opponent = str(result.get("opponent") or "").strip()
     stadium = str(result.get("stadium") or "").strip()
+    if stadium.upper() == "TBC":
+        stadium = ""
     competition = str(result.get("competition") or "").strip()
     score_text = str(result.get("result") or "").strip()
     scorers = result.get("scorers")

@@ -57,6 +57,8 @@ STADIUMS = {
     "newcastle": "St James' Park",
     "newcastle united": "St James' Park",
     "nottingham forest": "City Ground",
+    "slavia prague": "Fortuna Arena",
+    "slavia praha": "Fortuna Arena",
     "sunderland": "Stadium of Light",
     "tottenham": "Tottenham Hotspur Stadium",
     "tottenham hotspur": "Tottenham Hotspur Stadium",
@@ -64,6 +66,13 @@ STADIUMS = {
 
 # Historical fallbacks are only used when recent ESPN schedules do not contain a meeting.
 HISTORICAL_MEETINGS = {
+    "slavia prague": {
+        "score": "Slavia Prague 0–3 Arsenal",
+        "date": "4 Nov 2025",
+        "competition": "UEFA Champions League",
+        "source": "ESPN",
+        "url": "https://www.espn.com/soccer/match/_/gameId/757707",
+    },
     "liverpool": {
         "score": "Arsenal 0–0 Liverpool",
         "date": "8 Jan 2026",

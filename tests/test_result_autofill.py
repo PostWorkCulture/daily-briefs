@@ -143,6 +143,7 @@ class FactualSummaryTests(unittest.TestCase):
         self.assertEqual(finalize_arsenal.with_factual_summary(item)["summary"], "Report summary.")
 
     def test_no_summary_without_stadium_or_complete_scorers(self) -> None:
+        self.assertNotIn("summary", finalize_arsenal.with_factual_summary(dict(self.BASE, stadium="TBC")))
         self.assertNotIn("summary", finalize_arsenal.with_factual_summary(dict(self.BASE, stadium="")))
         self.assertNotIn("summary", finalize_arsenal.with_factual_summary(dict(self.BASE, scorers=self.BASE["scorers"][:1])))
 
