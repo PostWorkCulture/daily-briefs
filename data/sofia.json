@@ -19,7 +19,7 @@
     "localImage": "assets/scenery/world-fact.webp?v=48e0485034a1"
   },
   "weather": {
-    "temp": "9°",
+    "temp": "10°",
     "summary": "Overcast",
     "condition": "Overcast",
     "currentRainChance": 4,
@@ -28,33 +28,33 @@
         "date": "2026-11-04",
         "high": 11,
         "low": 8,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 30,
+        "summary": "Light rain",
+        "condition": "Light rain",
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-11-05",
         "high": 11,
         "low": 8,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-11-06",
         "high": 11,
-        "low": 7,
+        "low": 8,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-11-07",
         "high": 11,
-        "low": 7,
+        "low": 6,
         "summary": "Cloudy",
         "condition": "Cloudy",
         "rainChance": 40,
@@ -72,25 +72,25 @@
       {
         "date": "2026-11-09",
         "high": 10,
-        "low": 8,
+        "low": 9,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 30,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-11-10",
-        "high": 11,
-        "low": 8,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 30,
+        "high": 12,
+        "low": 10,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 50,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Good outdoor day",
-      "detail": "Overcast · rain chance around 30%",
+      "label": "Check hourly Met Office forecast",
+      "detail": "Light rain expected · rain chance around 80%",
       "source": "Met Office"
     },
     "source": "Met Office",
