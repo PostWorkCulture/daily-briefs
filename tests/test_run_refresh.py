@@ -71,11 +71,19 @@ class CarryForwardTests(unittest.TestCase):
         self.tmp = Path(tempfile.mkdtemp())
         self.previous = previous_edition(self.tmp)
         self.status = run_refresh.Status("2026-11-05")
-        self.data_patch = patch.object(run_refresh, "DATA", self.tmp)
-        self.data_patch.start()
+        self.patches = [
+            patch.object(run_refresh, "DATA", self.tmp),
+            # Keep ::warning annotations out of the CI test step.
+            patch.object(run_refresh, "warning", lambda *a, **k: None),
+            patch.object(run_refresh, "notice", lambda *a, **k: None),
+            patch.object(run_refresh, "log", lambda *a, **k: None),
+        ]
+        for item in self.patches:
+            item.start()
 
     def tearDown(self) -> None:
-        self.data_patch.stop()
+        for item in self.patches:
+            item.stop()
 
     def fresh_profiles(self) -> dict:
         return {
@@ -184,10 +192,15 @@ class CarryForwardTests(unittest.TestCase):
 class ResilientSectionTests(unittest.TestCase):
     def setUp(self) -> None:
         refresh.CARRIED_SECTIONS.clear()
+        self.quiet = patch.object(refresh, "warn", lambda *a, **k: None)
+        self.quiet.start()
         self.previous = [
             {"title": f"Kept {i}", "url": f"https://example.com/{i}", "publishedAt": f"2026-11-0{1 + i % 4}T08:00:00+00:00", "contentType": "article"}
             for i in range(12)
         ]
+
+    def tearDown(self) -> None:
+        self.quiet.stop()
 
     def test_dead_feed_is_topped_up_from_previous_edition(self) -> None:
         def build():

@@ -6,6 +6,7 @@
 - **Filing**: editable PNG masters moved to `assets/icons/masters/` (the balloon generator updated), one-off tools to `scripts/tools/`, the Google Apps Script calendar sync to `scripts/integrations/`; `local-notes/` is git-ignored for private notes kept beside the clone (the 29 October handoff pack, which contains saved memory, moved there).
 - **Docs**: README rewritten to describe the current layout, pipeline and runners; stale Career sentence in `AGENTS.md` and `docs/PROJECT-INSTRUCTIONS.md` corrected.
 - **Unchanged**: every section, route, control, style, data source and the three Dida illustrations not yet used (documented in `assets/dida/README.md`).
+- **Follow-up (same day)**: the first Morning refresh after this change failed at `git pull --rebase` because the pruned images were unstaged deletions; both runners now stage with `git add -A -- data/*.json assets/weather-extremes assets/scenery assets/news-images`. Test runs no longer emit `::warning` annotations (they patch the warning helpers), so the Actions summary only shows real carry-forwards.
 - **Validation**: 189 Python tests and 5 Node tests pass; `scripts/responsive_ui_check.py` passes on mobile, desktop and widescreen; a headless pass over every view on both profiles shows no page errors and no missing local resources.
 
 ## 5 November 2026: One failing component no longer stops the Morning refresh

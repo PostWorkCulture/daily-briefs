@@ -1532,6 +1532,11 @@ SECTION_SCOPE_CHECKS = {
 CARRIED_SECTIONS: dict[str, str] = {}
 
 
+def warn(title: str, message: str) -> None:
+    """GitHub Actions warning annotation (plain text elsewhere); tests silence it."""
+    print(f"::warning title={title}::{message}", file=sys.stderr)
+
+
 def previous_section(section: str) -> list[dict]:
     """Items of one section as last published (the data file before this run rewrites it)."""
     for profile in ("pete", "sofia"):
@@ -1558,7 +1563,7 @@ def resilient_section(section: str, build, minimum: int | None = None) -> list[d
         fresh = list(build() or [])
     except Exception as exc:  # a dead feed must not stop publication
         failure = f"{type(exc).__name__}: {exc}"
-        print(f"::warning title={section} source failed::{failure}", file=sys.stderr)
+        warn(f"{section} source failed", failure)
     if len(fresh) >= minimum:
         return fresh
     scope = SECTION_SCOPE_CHECKS.get(section, lambda item: True)
@@ -1586,7 +1591,7 @@ def resilient_section(section: str, build, minimum: int | None = None) -> list[d
         f"{len(fresh)} fresh item(s), {len(carried)} carried from the previous edition"
         + (f"; live source failed: {failure}" if failure else "")
     )
-    print(f"::warning title={section} topped up::{CARRIED_SECTIONS[section]}", file=sys.stderr)
+    warn(f"{section} topped up", CARRIED_SECTIONS[section])
     return merged
 
 
@@ -1610,7 +1615,7 @@ def build_profiles() -> dict[str, dict]:
         7,
       )
     except Exception as exc:
-        print(f"::warning title=AI feeds failed::{type(exc).__name__}: {exc}", file=sys.stderr)
+        warn("AI feeds failed", f"{type(exc).__name__}: {exc}")
         frontier_ai = []
     if not any(re.search(r"anthropic|claude", item.get("title", "") + item.get("source", ""), re.I) for item in frontier_ai):
         anthropic_fallback = [

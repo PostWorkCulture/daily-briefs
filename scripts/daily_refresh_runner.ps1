@@ -99,7 +99,8 @@ Try {
     }
 
     # 7. Commit and push only the refreshed data.
-    Invoke-Step "git add" { git add data/*.json assets/weather-extremes/*.webp assets/scenery/*.webp assets/news-images/*.webp }
+    # -A stages the removal of pruned news images as well as new files.
+    Invoke-Step "git add" { git add -A -- data/*.json assets/weather-extremes assets/scenery assets/news-images }
     git diff --cached --quiet
     If ($LASTEXITCODE -eq 0) {
         Log-Message "No data changes to commit."
