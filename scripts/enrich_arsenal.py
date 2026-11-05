@@ -634,15 +634,24 @@ def bbc_results() -> list[dict]:
     first = NOW.replace(day=1)
     previous = (first - timedelta(days=1)).replace(day=1)
     out: list[dict] = []
-    for month in (first, previous):
-        url = f"{BBC_FIXTURES_URL}/{month.year}-{month.month:02d}"
+    # The current month's page lists only upcoming fixtures by default once
+    # one remains; finished matches need the results filter.
+    urls = [
+        f"{BBC_FIXTURES_URL}/{month.year}-{month.month:02d}{suffix}"
+        for month in (first, previous)
+        for suffix in ("?filter=results", "")
+    ]
+    for url in urls:
         try:
             r = requests.get(url, headers=UA, timeout=25)
             r.raise_for_status()
             out.extend(parse_bbc_results(r.content.decode("utf-8", "replace"), r.url))
         except Exception:
             continue
-    return out
+    unique: dict[tuple, dict] = {}
+    for item in out:
+        unique.setdefault((item["date"], item["opponent"]), item)
+    return list(unique.values())
 
 
 def same_club(a: str, b: str) -> bool:

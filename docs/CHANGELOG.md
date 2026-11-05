@@ -1,3 +1,9 @@
+## 5 November 2026: BBC results filter for the Arsenal latest result
+
+- **Cause**: The 05:00 run on 5 November stopped in `scripts/finalize_arsenal.py` ("Arsenal lastResult is incomplete ... scorersLabel, summary, scorers") for Slavia Prague 1–2 Arsenal. BBC Sport's current-month Arsenal page now lists only upcoming fixtures by default while one remains, so `bbc_results()` found no finished November matches (Sunday's Liverpool result had parsed before the page switched). The page with `?filter=results` lists Slavia Prague and Liverpool with their goals.
+- **Fix (`scripts/enrich_arsenal.py`)**: `bbc_results()` requests `?filter=results` for this month and last, keeps the unfiltered page as a fallback, and merges duplicates. Matching, the score check and the fail-closed rule are unchanged.
+- **Validation**: New fetch test in `tests/test_result_autofill.py`; full suite passes. Checked live on GitHub Actions before pushing.
+
 ## 1 November 2026: Arsenal latest result completes itself
 
 - **Cause**: Every new Arsenal result (Lille, Nottingham Forest, Bayern Munich, Fleetwood Town) stopped the Morning refresh in `scripts/finalize_arsenal.py` until a hand-written `verified_<opponent>_result()` was added. Three gaps: (1) `enrich_completed_result()` read scorers and venue from the ESPN summary header, which normally carries neither (ESPN puts them in `keyEvents` and `gameInfo`); (2) the stadium already published on the previous day's next-fixture card was not reused; (3) no summary was produced when Sky supplied the result.

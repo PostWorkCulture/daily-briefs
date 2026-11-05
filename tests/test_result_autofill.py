@@ -243,5 +243,29 @@ class NextFixtureAfterResultTests(unittest.TestCase):
         self.assertEqual(result["played"], 10)
 
 
+class BbcResultsFetchTests(unittest.TestCase):
+    def test_results_filter_is_requested_and_duplicates_merged(self) -> None:
+        requested = []
+        page = bbc_page([BBC_EVENT]).encode()
+
+        class Response:
+            content = page
+            url = "https://www.bbc.co.uk/sport/x"
+
+            def raise_for_status(self) -> None:
+                pass
+
+        def fake_get(url, **kwargs):
+            requested.append(url)
+            return Response()
+
+        with patch.object(enrich_arsenal.requests, "get", side_effect=fake_get), \
+             patch.object(enrich_arsenal, "NOW", enrich_arsenal.NOW.replace(year=2026, month=11, day=5, hour=5, minute=0)):
+            rows = enrich_arsenal.bbc_results()
+        self.assertIn(enrich_arsenal.BBC_FIXTURES_URL + "/2026-11?filter=results", requested)
+        self.assertIn(enrich_arsenal.BBC_FIXTURES_URL + "/2026-10?filter=results", requested)
+        self.assertEqual(len(rows), 1)
+
+
 if __name__ == "__main__":
     unittest.main()
