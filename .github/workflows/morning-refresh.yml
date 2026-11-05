@@ -30,7 +30,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -65,14 +65,10 @@ jobs:
         env:
           GOOGLE_CALENDAR_ICS_URL: ${{ secrets.GOOGLE_CALENDAR_ICS_URL }}
           GOOGLE_CALENDAR_COLORS_URL: ${{ secrets.GOOGLE_CALENDAR_COLORS_URL }}
-        run: |
-          python scripts/refresh.py
-          python scripts/enrich_weather_v2.py
-          python scripts/enrich_arsenal.py
-          python scripts/finalize_arsenal.py
-          python scripts/enrich_next_fixture.py
-          python scripts/enrich_tv_picks.py
-          python scripts/refresh_story_images.py
+        # Resilient orchestrator: a failing component is carried forward from
+        # the last published edition (recorded in data/refresh-status.json)
+        # instead of stopping publication.
+        run: python scripts/run_refresh.py
 
       - name: Validate protected brief rules
         if: steps.refresh-gate.outputs.should_run == 'true'

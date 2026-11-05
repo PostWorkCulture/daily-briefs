@@ -1,6 +1,6 @@
 # MASTER BRIEF - CURRENT
 
-Version 6.1, 28 October 2026. Owner: Pete.
+Version 6.2, 5 November 2026. Owner: Pete.
 Repo: PostWorkCulture/daily-briefs
 Live: https://postworkculture.github.io/daily-briefs/
 
@@ -81,6 +81,8 @@ Do not remove, duplicate, or silently reorder them. Calendar stays above Arsenal
 - Keep an Open full inbox link available within the private Inbox view. Only load the email frame when Inbox is selected. Removing Pete's profile must remove any email frame.
 
 ## Protected requirements
+
+- **5 November 2026 (Pete): one failing component never stops publication.** Every component listed below (Arsenal latest result, next fixture and league position; TV Picks; Met Office weather and extremes; each news, Sweden, AI and Arsenal Club news feed; story images) is refreshed independently by `scripts/run_refresh.py`. If a component's sources fail or its output cannot be verified, that component alone is carried forward from the last published edition, after first trying its alternative sources (BBC Sport/ESPN/Sky for results, the lightweight Met Office forecast when the extremes page fails, the previous edition's in-scope stories when a feed returns too few), and the rest of the brief publishes fresh. Carried components keep all content and safety rules (paywall, scope, content type, men's first team, no betting) and waive only their same-day freshness rule. Every carry-forward is recorded in `refreshStatus` in both profile files and in `data/refresh-status.json`, and surfaced as workflow warnings. Never invent data to fill a gap. The only remaining hard publication failures are the Around-the-world no-repeat fact rule and a missing or unreadable previous edition. Older "fail the refresh" wording below is read in this light: fail the component, carry it forward, publish the rest.
 
 **Weather**
 - Met Office only for home area, currently KT8 2LE.

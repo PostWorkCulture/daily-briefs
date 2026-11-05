@@ -1,7 +1,8 @@
 # Daily Briefs - Automated Morning Refresh Runner
 # Runs locally via Windows Task Scheduler. Publishes only at or after 05:00
 # Europe/London and only after the same tests and protected-rule validator
-# used by the GitHub Actions Morning refresh have passed.
+# used by the GitHub Actions Morning refresh have passed. A single failing
+# component is carried forward from the last edition rather than blocking.
 
 $ErrorActionPreference = "Stop"
 $RepoRoot = Split-Path -Parent $PSScriptRoot
@@ -78,16 +79,24 @@ Try {
     Log-Message "Running regression suite..."
     Invoke-Step "Regression tests" { & $Py -m unittest discover -s tests -p "test_*.py" }
 
-    # 5. Refresh pipeline. Any failing step stops publication.
-    Log-Message "Executing refresh scripts..."
-    ForEach ($s in @("refresh.py", "enrich_weather_v2.py", "enrich_arsenal.py", "finalize_arsenal.py",
-                     "enrich_next_fixture.py", "enrich_tv_picks.py", "refresh_story_images.py")) {
-        Invoke-Step $s { & $Py "scripts/$s" }
-    }
+    # 5. Refresh pipeline via the resilient orchestrator: a failing component
+    #    (Arsenal result, TV Picks, weather, one news feed...) is carried
+    #    forward from the last published edition and recorded in
+    #    data/refresh-status.json instead of stopping publication. Only an
+    #    unrepairable protected-rule failure exits non-zero.
+    Log-Message "Executing refresh pipeline (scripts/run_refresh.py)..."
+    Invoke-Step "run_refresh.py" { & $Py scripts/run_refresh.py }
 
-    # 6. Protected-rule validator shared with GitHub Actions.
+    # 6. Protected-rule validator shared with GitHub Actions (run_refresh.py has
+    #    already passed it; this is the final gate before commit).
     Log-Message "Validating protected brief rules..."
     Invoke-Step "Protected-rule validation" { & $Py scripts/validate_brief.py }
+    If (Test-Path "data/refresh-status.json") {
+        $Status = Get-Content -Raw -Encoding UTF8 "data/refresh-status.json" | ConvertFrom-Json
+        If ($Status.degraded) {
+            Log-Message "Published with carried-forward components: $(($Status.carriedForward | ConvertTo-Json -Compress))"
+        }
+    }
 
     # 7. Commit and push only the refreshed data.
     Invoke-Step "git add" { git add data/*.json assets/weather-extremes/*.webp assets/scenery/*.webp assets/news-images/*.webp }

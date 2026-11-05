@@ -2058,11 +2058,79 @@ def arsenal_snapshot(news: list[dict], transfers: list[dict], transfer_rumours: 
     }
 
 
+
+SECTION_MINIMUMS = {"Local news": 10, "UK news": 10, "AI": 3, "Arsenal news": 3, "Sweden": 3}
+SECTION_SCOPE_CHECKS = {
+    "Local news": lambda item: local_news_item_is_in_scope(item),
+    "UK news": lambda item: positive_uk_news_item_is_in_scope(item),
+}
+CARRIED_SECTIONS: dict[str, str] = {}
+
+
+def previous_section(section: str) -> list[dict]:
+    """Items of one section as last published (the data file before this run rewrites it)."""
+    for profile in ("pete", "sofia"):
+        try:
+            data = json.loads((DATA / f"{profile}.json").read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        items = (data.get("sections") or {}).get(section)
+        if items:
+            return [dict(item) for item in items]
+    return []
+
+
+def resilient_section(section: str, build, minimum: int | None = None) -> list[dict]:
+    """Build a section from its live sources; if that raises or comes back short,
+    top it up from the last published edition so one dead feed cannot stop the
+    brief. Carried items are re-checked against the same scope, paywall and
+    content-type rules as fresh ones, and the top-up is recorded in
+    CARRIED_SECTIONS so refreshStatus can show it."""
+    minimum = SECTION_MINIMUMS.get(section, 1) if minimum is None else minimum
+    fresh: list[dict] = []
+    failure = ""
+    try:
+        fresh = list(build() or [])
+    except Exception as exc:  # a dead feed must not stop publication
+        failure = f"{type(exc).__name__}: {exc}"
+        print(f"::warning title={section} source failed::{failure}", file=sys.stderr)
+    if len(fresh) >= minimum:
+        return fresh
+    scope = SECTION_SCOPE_CHECKS.get(section, lambda item: True)
+    seen = {re.sub(r"\W+", "", str(item.get("title") or "").lower())[:120] for item in fresh}
+    seen |= {str(item.get("url") or "") for item in fresh}
+    carried = []
+    for item in previous_section(section):
+        key = re.sub(r"\W+", "", str(item.get("title") or "").lower())[:120]
+        if key in seen or str(item.get("url") or "") in seen:
+            continue
+        if item.get("contentType") != SECTION_CONTENT_TYPES.get(section, item.get("contentType")):
+            continue
+        if is_paywalled(item) or not scope(item):
+            continue
+        seen.add(key)
+        carried.append(item)
+    if not carried:
+        return fresh
+    merged = fresh + carried
+    if section == "Local news":
+        merged = sorted(merged, key=lambda item: str(item.get("publishedAt") or ""), reverse=True)
+    elif section != "Fun":
+        merged = newest_first(merged)
+    CARRIED_SECTIONS[section] = (
+        f"{len(fresh)} fresh item(s), {len(carried)} carried from the previous edition"
+        + (f"; live source failed: {failure}" if failure else "")
+    )
+    print(f"::warning title={section} topped up::{CARRIED_SECTIONS[section]}", file=sys.stderr)
+    return merged
+
+
 def build_profiles() -> dict[str, dict]:
     previous_position = previous_arsenal_position()
     wx = weather(); cal = calendar_events(); world_fact = world_fact_for_today()
     cache_world_fact_image(world_fact)
-    frontier_ai = editorial_news(
+    try:
+      frontier_ai = editorial_news(
         anthropic_first(
             merge_news(
                 google_news('site:anthropic.com when:21d', 12, 21),
@@ -2075,7 +2143,10 @@ def build_profiles() -> dict[str, dict]:
             )
         ),
         7,
-    )
+      )
+    except Exception as exc:
+        print(f"::warning title=AI feeds failed::{type(exc).__name__}: {exc}", file=sys.stderr)
+        frontier_ai = []
     if not any(re.search(r"anthropic|claude", item.get("title", "") + item.get("source", ""), re.I) for item in frontier_ai):
         anthropic_fallback = [
             {
@@ -2099,24 +2170,37 @@ def build_profiles() -> dict[str, dict]:
         ]
         frontier_ai = anthropic_first(anthropic_fallback + frontier_ai)[:7]
 
-    chinese_ai = live_chinese_ai()
-    ai = dedupe_ai_stories(frontier_ai[:7] + chinese_ai)[:10]
-    arsenal_news = first_team_arsenal_news(google_news('Arsenal FC when:3d', 8, 3))
-    transfers = arsenal_transfer_updates()
-    transfer_rumours = arsenal_transfer_rumours()
+    def frontier_and_chinese_ai() -> list[dict]:
+        try:
+            chinese_ai = live_chinese_ai()
+        except Exception:
+            chinese_ai = previous_chinese_ai()
+        return dedupe_ai_stories(frontier_ai[:7] + chinese_ai)[:10]
+    ai = resilient_section("AI", frontier_and_chinese_ai)
+    arsenal_news = resilient_section("Arsenal news", lambda: first_team_arsenal_news(google_news('Arsenal FC when:3d', 8, 3)))
+    try:
+        transfers = arsenal_transfer_updates()
+    except Exception:
+        transfers = []
+    try:
+        transfer_rumours = arsenal_transfer_rumours()
+    except Exception:
+        transfer_rumours = []
     arsenal = arsenal_snapshot(arsenal_news, transfers, transfer_rumours)
     if arsenal.get("leaguePosition") is None and previous_position is not None:
         arsenal["leaguePosition"] = previous_position
-    local = local_news()
-    uk = uk_news()
-    tonight = tonight_recommendations()
+    local = resilient_section("Local news", local_news)
+    uk = resilient_section("UK news", uk_news)
+    try:
+        tonight = tonight_recommendations()
+    except Exception:
+        tonight = []
     try:
         from scripts.fun_activities import refresh_activities
     except ModuleNotFoundError:
         from fun_activities import refresh_activities
-    fun = refresh_activities(NOW.date())
-    sweden = editorial_news(google_news('(Sweden OR Swedish) news when:4d', 7, 4), 7)
-    family = google_news('(Surrey family events OR Kingston family events OR Elmbridge family events OR Hampton Court events) when:14d', 8, 14)
+    fun = resilient_section("Fun", lambda: refresh_activities(NOW.date()), minimum=0)
+    sweden = resilient_section("Sweden", lambda: editorial_news(google_news('(Sweden OR Swedish) news when:4d', 7, 4), 7))
 
     # Final paywall gate: nothing behind a subscription reaches either brief.
     ai, arsenal_news, local, uk, sweden = (without_paywalled(x) for x in (ai, arsenal_news, local, uk, sweden))
@@ -2132,9 +2216,10 @@ def build_profiles() -> dict[str, dict]:
         if errors:
             raise RuntimeError(f"{profile} section content contract failed: {'; '.join(errors)}")
     def first(items, fallback): return items[0] if items else {"title": fallback, "summary": "", "meta": "", "source": "", "url": ""}
+    refresh_status = {"date": NOW.date().isoformat(), "carriedSections": dict(CARRIED_SECTIONS)} if CARRIED_SECTIONS else None
     return {
-        "pete": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
-        "sofia": {"updatedLabel": stamp, "worldFact": world_fact, "weather": wx, "calendar": cal, "lead": first(sweden or local or tonight, "Your morning brief is ready."), "interests": [dict(first(sweden, "Sweden"), section="Sweden"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": sofia_sections},
+        "pete": {"updatedLabel": stamp, **({"refreshStatus": refresh_status} if refresh_status else {}), "worldFact": world_fact, "weather": wx, "calendar": cal, "arsenal": arsenal, "lead": first(ai or arsenal_news or local, "Your morning brief is ready."), "interests": [dict(first(ai, "AI updates"), section="AI"), dict(first(arsenal_news, "Arsenal"), section="Arsenal"), dict(first(local, "Local"), section="Local")], "watch": tonight, "sections": pete_sections},
+        "sofia": {"updatedLabel": stamp, **({"refreshStatus": refresh_status} if refresh_status else {}), "worldFact": world_fact, "weather": wx, "calendar": cal, "lead": first(sweden or local or tonight, "Your morning brief is ready."), "interests": [dict(first(sweden, "Sweden"), section="Sweden"), dict(first(local, "Local"), section="Local"), dict(first(tonight, "Tonight"), section="Watch")], "watch": tonight, "sections": sofia_sections},
     }
 
 

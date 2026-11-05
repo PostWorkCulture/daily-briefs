@@ -19,6 +19,13 @@ from scripts.refresh import local_news_item_is_in_scope, positive_uk_news_item_i
 from zoneinfo import ZoneInfo
 today_date=datetime.now(ZoneInfo('Europe/London')).date()
 today=today_date.isoformat()
+# Components scripts/run_refresh.py carried forward from the last published
+# edition because today's source failed. Only their same-day freshness rules
+# are waived; every content and safety rule below still applies to them.
+_status=json.loads((Path('data')/'pete.json').read_text(encoding='utf-8')).get('refreshStatus') or {}
+carried=set((_status.get('carriedForward') or {}).keys()) if _status.get('date')==today else set()
+if carried:
+    print('Carried-forward components (freshness rules waived): '+', '.join(sorted(carried)))
 for profile in ('pete','sofia'):
     p=Path('data')/f'{profile}.json'
     data=json.loads(p.read_text())
@@ -49,9 +56,11 @@ for profile in ('pete','sofia'):
     assert sum(x.get('interestLane')=='dark-documentary' for x in picks)>=3, f'{profile}: TV Picks are not documentary-led'
     for pick in picks:
         assert pick.get('contentType')=='tv-pick', f'{profile}: non-programme TV Pick'
-        assert pick.get('generatedDate')==today, f'{profile}: stale TV Picks'
+        if 'watch' not in carried:
+            assert pick.get('generatedDate')==today, f'{profile}: stale TV Picks'
         airdate=date.fromisoformat(str(pick.get('airdate') or ''))
-        assert today_date-timedelta(days=7)<=airdate<=today_date+timedelta(days=7), f'{profile}: TV Pick is outside the previous/next-week window'
+        window_back=8 if 'watch' in carried else 7  # a carried list is one day older
+        assert today_date-timedelta(days=window_back)<=airdate<=today_date+timedelta(days=7), f'{profile}: TV Pick is outside the previous/next-week window'
         assert str(pick.get('artwork') or '').startswith('https://static.tvmaze.com/uploads/images/original_untouched/'), f'{profile}: TV Pick has no exact programme artwork'
         assert str(pick.get('url') or '').startswith(('https://','http://')), f'{profile}: TV Pick has no destination link'
         assert str(pick.get('programmeType') or '').casefold() != 'reality', f'{profile}: reality TV appeared in TV Picks'
@@ -74,7 +83,7 @@ for profile in ('pete','sofia'):
     assert all(positive_uk_news_item_is_in_scope(item) for item in uk_items), f'{profile}: UK News contains a non-positive story'
 
 tv_history=json.loads(Path('data/tv-picks-history.json').read_text()).get('days') or []
-assert tv_history and tv_history[-1].get('date')==today, 'TV Picks history was not updated today'
+assert tv_history and ('watch' in carried or tv_history[-1].get('date')==today), 'TV Picks history was not updated today'
 current_tv=json.loads((Path('data')/'pete.json').read_text()).get('watch') or []
 assert tv_history[-1].get('titles')==[item['title'] for item in current_tv], 'TV Picks history does not match the published list'
 
@@ -132,7 +141,8 @@ required=('opponent','stadium','kickoff','competition','tvChannel')
 for key in required:
     assert str(fixture.get(key) or '').strip(), f'Arsenal next fixture missing {key}'
 fixture_dt=datetime.fromisoformat(str(fixture.get('date') or ''))
-assert fixture_dt>=datetime.now(ZoneInfo('Europe/London'))-timedelta(hours=3), 'Arsenal next fixture is already stale'
+if 'arsenal.nextFixture' not in carried:
+    assert fixture_dt>=datetime.now(ZoneInfo('Europe/London'))-timedelta(hours=3), 'Arsenal next fixture is already stale'
 fixture_sources=str(fixture.get('source') or '').casefold()
 assert 'sky sports' in fixture_sources or 'bbc sport' in fixture_sources, 'Arsenal next fixture lacks Sky Sports or BBC Sport verification'
 previous=fixture.get('previousMeeting') or {}

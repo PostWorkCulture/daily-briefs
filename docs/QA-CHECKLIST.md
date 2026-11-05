@@ -26,6 +26,11 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] `prefers-reduced-motion` disables scripted smooth scrolling, navigation animation, and visible transition duration; keyboard focus retains a real outline.
 - [ ] The greeting and every title on the black canvas use warm-white `#F4F7F2`, the date uses `#7CF46A`, and all meet at least 4.5:1 contrast.
 
+## Resilience
+
+- [ ] `data/refresh-status.json` and `refreshStatus` in both profiles list every carried-forward component, topped-up section and failed step for today; nothing carried is older than the previous edition.
+- [ ] A single failing component (Arsenal, TV Picks, weather, one news feed) does not stop publication; only the fact no-repeat rule or an unreadable previous edition may.
+
 ## Weather
 
 - [ ] Met Office and KT8 2LE.
@@ -35,7 +40,7 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Cloud conditions remain distinguishable.
 - [ ] No invented fallback data.
 - [ ] Hottest and coldest cards each show a locally cached 1,600 × 900 exact-place image with a real source and credit.
-- [ ] If no exact-place image can be verified and cached, the morning refresh fails instead of publishing a blank weather card.
+- [ ] If no exact-place image can be verified and cached, the weather block is carried forward from the last edition (recorded in `refreshStatus`) instead of publishing a blank weather card.
 
 ## Calendar
 
@@ -70,14 +75,14 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] TV Picks history matches the displayed list; recent titles are avoided when enough fresh programmes exist.
 - [ ] TV Picks contain no routine sport; only World Cup, UEFA Euros or Wimbledon sport is permitted.
 - [ ] Every TV Pick passes a hard interest gate: dark/investigative documentary, dark crime/thriller/mystery, `Silo`/science fiction, a new Apple TV+ premiere, or an allowed major-sport programme.
-- [ ] The selection contains at least three qualifying documentaries, fails instead of publishing a weaker mix, and contains no more than four documentaries when another eligible category is available.
+- [ ] The selection contains at least three qualifying documentaries, carries forward the previous day's picks instead of publishing a weaker mix, and contains no more than four documentaries when another eligible category is available.
 - [ ] TV Picks contain no reality programme or Gary Barlow, and no nature, travel, gardening, medical, food, light crime-comedy, routine enforcement, lifestyle, or generic documentary filler.
 - [ ] Recent-title avoidance is a soft freshness preference and never displaces a stronger on-profile programme.
 - [ ] BBC iPlayer, Channel 4 and Netflix receive first platform preference when equally strong current picks are available.
 - [ ] Local News is rendered newest to oldest after merging every configured local search.
 - [ ] Every Local News story has headline or summary evidence for the approved KT8 cluster; broad Surrey, Elmbridge, or London references and foreign/unrelated namesakes are rejected. The refresh may extend from 14 to 30 days for depth but does not widen the geography.
 - [ ] Local News targets 16 stories, prioritises named local publications and family or child activities, and excludes routine sports results unless the item covers an opening, major change, or major event.
-- [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; the refresh fails instead of using a negative fallback.
+- [ ] Every UK News story has explicit positive-outcome evidence and contains no conflict, crime, death, disaster, scandal, crisis, fear-led, adversarial, or otherwise distressing subject; a short feed is topped up from the previous edition's positive stories, never a negative fallback.
 - [ ] Dida has one page-level title followed by exactly three graphite age-six zones with bright green titles and outlines.
 - [ ] Birthday months use a full-width single card, two balanced half-width cards, or three equal cards on one Chromebook row.
 - [ ] All offered sources and destinations are real and clickable.
@@ -94,8 +99,8 @@ After every material change, report: Missing; Unexpectedly changed; Newly added;
 - [ ] Latest completed and nearest upcoming fixture are correct.
 - [ ] Sky's embedded match data yields the current nearest men's first-team fixture even when its visible localisation wording changes; Arsenal Women is excluded.
 - [ ] BBC Sport's embedded current-day and forward-month data independently covers the nearest men's first-team fixture; a later league-only fallback cannot displace a nearer cup or European match.
-- [ ] Publication fails when the next fixture is missing, already stale, or lacks Sky Sports/BBC Sport verification after the last verified fixture expires.
-- [ ] Latest completed match visibly includes score, scorers, competition, quick factual summary, kickoff time and stadium; publication fails if any field is unavailable.
+- [ ] When the next fixture is missing, stale or unverified, the last verified still-current card is carried forward and recorded in `refreshStatus`; the rest of the brief still publishes.
+- [ ] Latest completed match visibly includes score, scorers, competition, quick factual summary, kickoff time and stadium; if any field cannot be verified the previous verified result is carried forward (recorded in `refreshStatus`) rather than an incomplete one published or the edition blocked.
 - [ ] Required upcoming fixture details and real links remain.
 - [ ] No invented scores or fixtures.
 
