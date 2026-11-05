@@ -233,3 +233,15 @@ class ResilientSectionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class StoryImagePruneTests(unittest.TestCase):
+    def test_orphaned_cached_images_are_removed(self) -> None:
+        story_images = load_script("refresh_story_images")
+        tmp = Path(tempfile.mkdtemp())
+        for name in ("keep.webp", "orphan.webp", "orphan-2.webp"):
+            (tmp / name).write_bytes(b"x")
+        rules = {"https://example.com/a": {"src": "assets/news-images/keep.webp?v=abc", "provenance": "publisher"}}
+        removed = story_images.prune_orphaned_images(rules, tmp)
+        self.assertEqual(removed, 2)
+        self.assertEqual([p.name for p in tmp.iterdir()], ["keep.webp"])

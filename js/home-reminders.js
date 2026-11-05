@@ -106,27 +106,6 @@
     return n + (s[(v - 20) % 10] || s[v] || s[0]);
   }
 
-  function birthdayRowText(item) {
-    const d = item.nextDate;
-    const dayOrdinal = ordinal(d.getDate());
-    const monthName = d.toLocaleDateString('en-GB', { month: 'long' });
-    const weekday = d.toLocaleDateString('en-GB', { weekday: 'long' });
-    const datePart = `${dayOrdinal} ${monthName} - ${weekday}`;
-
-    let milestone = '';
-    if (item.year) {
-      const age = d.getFullYear() - Number(item.year);
-      if (Number.isFinite(age) && age >= 0) {
-        if (item.type === 'anniversary') {
-          milestone = ` - ${age} YEARS!`;
-        } else {
-          milestone = ` - TURNS ${age}!`;
-        }
-      }
-    }
-    return `${item.name} - ${datePart}${milestone}`;
-  }
-
   const GIRLY_PALETTES = [
     ['#ff4f93','#ff85b6','#ffc2dc'],
     ['#d63384','#ff66c4','#fce4ec'],
@@ -282,7 +261,6 @@
     const balloon = renderBalloonSvg(p, item.name, false);
     return `<article class="birthday-card hq-colour" data-person-name="${esc(item.name)}" tabindex="0"><div class="birthday-avatar hq-balloon-avatar" data-hq-name="${esc(item.name)}">${balloon}</div><div class="birthday-copy"><strong class="birthday-name">${esc(item.name)}</strong><span class="birthday-date">${esc(datePart)}</span>${milestone ? `<span class="birthday-milestone">${esc(milestone)}</span>` : ''}</div></article>`;
   }
-
 
   function renderBirthdayTab() {
     const list = document.getElementById('birthdayList');

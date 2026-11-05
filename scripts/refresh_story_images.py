@@ -7,7 +7,7 @@ import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlsplit, urlunsplit
+from urllib.parse import quote, urljoin, urlsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -93,19 +93,6 @@ def decode_google_news_url(url: str) -> str | None:
     except Exception:
         return None
     return None
-
-
-def norm_url(url: str) -> str:
-    try:
-        parsed = urlsplit(html.unescape(url or "").strip())
-        ignored = {"w", "width", "h", "height", "q", "quality", "fit", "crop", "auto", "format", "fm", "dpr", "v", "ver", "version"}
-        pairs = [
-            (key, value) for key, value in parse_qsl(parsed.query, keep_blank_values=True)
-            if key.lower() not in ignored and not key.lower().startswith("utm_")
-        ]
-        return urlunsplit((parsed.netloc.lower(), "", parsed.path.rstrip("/"), urlencode(sorted(pairs)), ""))
-    except Exception:
-        return re.sub(r"[?#].*$", "", str(url or "")).rstrip("/").lower()
 
 
 def title_tokens(value: str) -> set[str]:
@@ -355,7 +342,27 @@ def main() -> None:
     }
 
     OUT.write_text(json.dumps(valid_result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(valid_result)} exact publisher image rules to {OUT}; unmatched articles remain text-only")
+    removed = prune_orphaned_images(valid_result)
+    print(
+        f"Wrote {len(valid_result)} exact publisher image rules to {OUT}; unmatched articles remain text-only"
+        + (f"; removed {removed} orphaned cached images" if removed else "")
+    )
+
+
+def prune_orphaned_images(rules: dict, image_dir: Path = NEWS_IMAGE_DIR) -> int:
+    """Delete cached news images no current rule points at, so the repository
+    only carries the pictures the live edition uses."""
+    referenced = {
+        Path(str(rule.get("src") or "").split("?", 1)[0]).name
+        for rule in rules.values()
+        if isinstance(rule, dict)
+    }
+    removed = 0
+    for path in image_dir.glob("*.webp"):
+        if path.name not in referenced:
+            path.unlink()
+            removed += 1
+    return removed
 
 
 if __name__ == "__main__":

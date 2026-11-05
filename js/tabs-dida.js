@@ -290,9 +290,7 @@
     christmas:['Christmas missions','Tiny traditions worth repeating',['Paper-chain countdown in number order','North Pole toy-delivery obstacle course','Invent a silly Christmas story','Do one kindness mission','Wrap an empty box together for folding and tape practice']]
   };
   function currentSeason(){const m=new Date().getMonth()+1;if(m===12||m<=2)return seasons.winter;if(m<=5)return seasons.spring;if(m<=8)return seasons.summer;return seasons.autumn}
-  function seasonalBlocks(){const m=new Date().getMonth()+1,out=[currentSeason()];if(m>=8&&m<=11)out.push(seasons.birthday);if(m>=10||m===12)out.push(seasons.christmas);return out}
   function fold(n,icon,title,strap,body){return `<details class="dida-fold"><summary><span class="dida-fold-icon">${didaIcon(icon)}</span><div><h4>${esc(title)}</h4><p>${esc(strap)}</p></div><span class="dida-num">${n}</span><b class="dida-plus" aria-hidden="true">+</b></summary><div class="dida-fold-body">${body}</div></details>`}
-  function zoneHead(title){return `<header class="dida-zone-head"><h3>${esc(title)}</h3></header>`}
   function didaReferenceParts(){
     const day=Math.floor(Date.now()/86400000),learn=teach[day%teach.length],play=games[(day+2)%games.length],season=currentSeason(),quick=[['book','LEARN',learn[0],learn[1]],['play','PLAY',play[0],play[1]],['leaf','OUTSIDE / MAKE',season[0],season[2][day%season[2].length]]];
     const seasonal=Object.values(seasons).map(s=>`<section class="dida-season"><div class="dida-season-title"><span>${didaIcon('sun')}</span><div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div></div><div class="dida-season-list">${s[2].map((x,i)=>`<div class="dida-season-item"><span>${didaIcon(['pencil','search','sprout','move','sparkle'][i%5])}</span>${esc(x)}</div>`).join('')}</div></section>`).join('');

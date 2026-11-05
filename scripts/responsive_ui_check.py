@@ -1297,9 +1297,7 @@ def check_viewport(browser, name: str) -> None:
                     f"{profile} News hover does not match the visible Calendar glow or moves: "
                     f"shadow={news_shadow}, transform={news_transform}"
                 )
-            try:
-                local_index = news_titles.index("Local News")
-            except ValueError:
+            if "Local News" not in news_titles:
                 failures.append(f"{profile} News is missing Local News: {news_titles}")
             if "UK News" in news_titles:
                 failures.append(f"{profile} UK News must be removed completely: {news_titles}")

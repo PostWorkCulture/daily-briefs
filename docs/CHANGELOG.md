@@ -1,3 +1,13 @@
+## 5 November 2026: Full review and tidy-up (Pete's request)
+
+- **Dead code removed**: the Career/LinkedIn job pipeline in `scripts/refresh.py` (18 functions and 16 regex constants, ~520 lines, unreachable since Career was removed on 24 September) with its test module `tests/test_career_scope.py` and `data/career-verified.json`; unused helpers `display_location()` (`enrich_weather_v2.py`), `norm_url()` (`refresh_story_images.py`); unused imports; seven never-called browser functions (`watchBadge`, `mondayEnd` in `app.js`; `birthdayRowText` in `home-reminders.js`; `svgKey` in `hq-birthday-balloons.js`; `seasonalBlocks`, `zoneHead` in `tabs-dida.js`). `news_item_is_job_vacancy()` and the job-board rejection rules stay because News still uses them.
+- **Orphaned cached news images**: 953 unreferenced files (79 MB) under `assets/news-images/` deleted; `refresh_story_images.py` now prunes images no current rule points at after every run (`prune_orphaned_images()`, tested), so the repository stops growing by ~2 MB a day.
+- **Unreferenced brand files removed**: three superseded manifests (`daily-brief-open-horizon-v1/v2`, `daily-brief-v2`), the root `favicon-32.png`, and 25 old Open Horizon/v2 icon variants. `site.webmanifest` stays as the origin-level fallback the responsive check requires; `favicon.ico` and `apple-touch-icon.png` stay at the root for browsers that request them by convention.
+- **Filing**: editable PNG masters moved to `assets/icons/masters/` (the balloon generator updated), one-off tools to `scripts/tools/`, the Google Apps Script calendar sync to `scripts/integrations/`; `local-notes/` is git-ignored for private notes kept beside the clone (the 29 October handoff pack, which contains saved memory, moved there).
+- **Docs**: README rewritten to describe the current layout, pipeline and runners; stale Career sentence in `AGENTS.md` and `docs/PROJECT-INSTRUCTIONS.md` corrected.
+- **Unchanged**: every section, route, control, style, data source and the three Dida illustrations not yet used (documented in `assets/dida/README.md`).
+- **Validation**: 189 Python tests and 5 Node tests pass; `scripts/responsive_ui_check.py` passes on mobile, desktop and widescreen; a headless pass over every view on both profiles shows no page errors and no missing local resources.
+
 ## 5 November 2026: One failing component no longer stops the Morning refresh
 
 - **Approved specification change (Pete)**: Master brief updated to v6.2. Trigger: every failure since October (Fleetwood, Lille, Bayern, Liverpool, Slavia Prague results; the BBC page switching to upcoming-only; TVMaze or Met Office outages) stopped the whole edition, so a broken Arsenal result left both briefs stale.

@@ -283,11 +283,6 @@ def nominatim_england_place(location: str) -> tuple[str, str] | None:
     return None
 
 
-def display_location(location: str) -> str:
-    place = england_place(location)
-    return f"{place[0]}, {place[1]}" if place else location
-
-
 def osm_wikidata_id(location: str, county: str = "") -> str:
     """Wikidata ID OpenStreetMap links to the exact site (most specific part first, England only)."""
     for query in nominatim_queries(location):

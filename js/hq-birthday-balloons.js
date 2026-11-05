@@ -58,10 +58,6 @@
     return pool[hashName(name) % pool.length];
   }
 
-  function svgKey(name='', compact=false) {
-    return `${compact?'c':'f'}${hashName(name).toString(36)}`;
-  }
-
   function balloonSrcFor(name='') {
     const isGirlUser = isGirl(name);
     const variant = (hashName(name) % 3) + 1;

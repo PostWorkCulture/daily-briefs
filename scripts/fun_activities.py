@@ -1,5 +1,5 @@
 """Daily source checks for curated local family activities; failures are item-local."""
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import json
