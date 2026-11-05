@@ -19,33 +19,33 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "9°",
-    "summary": "Overcast",
-    "condition": "Overcast",
+    "temp": "10°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-05",
-        "high": 11,
-        "low": 8,
-        "summary": "Overcast",
-        "condition": "Overcast",
+        "high": 10,
+        "low": 7,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
         "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-06",
         "high": 11,
-        "low": 8,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 70,
+        "low": 7,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-11-07",
         "high": 11,
-        "low": 5,
+        "low": 6,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 20,
@@ -54,43 +54,43 @@
       {
         "date": "2026-11-08",
         "high": 10,
-        "low": 7,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 20,
+        "low": 6,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-09",
-        "high": 10,
-        "low": 9,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 40,
-        "source": "Met Office"
-      },
-      {
-        "date": "2026-11-10",
-        "high": 13,
-        "low": 10,
-        "summary": "Overcast",
-        "condition": "Overcast",
+        "high": 11,
+        "low": 8,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 50,
         "source": "Met Office"
       },
       {
-        "date": "2026-11-11",
+        "date": "2026-11-10",
         "high": 12,
+        "low": 11,
+        "summary": "Drizzle",
+        "condition": "Drizzle",
+        "rainChance": 60,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-11-11",
+        "high": 13,
         "low": 9,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 40,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 50,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Overcast · rain chance around 10%",
+      "detail": "Cloudy · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
