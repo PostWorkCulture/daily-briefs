@@ -19,23 +19,23 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "8°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 60,
+    "temp": "11°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-06",
         "high": 11,
-        "low": 6,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 90,
+        "low": 7,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-07",
-        "high": 10,
+        "high": 11,
         "low": 5,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
@@ -44,11 +44,11 @@
       },
       {
         "date": "2026-11-08",
-        "high": 11,
-        "low": 5,
+        "high": 10,
+        "low": 6,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -57,13 +57,13 @@
         "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 40,
         "source": "Met Office"
       },
       {
         "date": "2026-11-10",
-        "high": 11,
-        "low": 9,
+        "high": 13,
+        "low": 10,
         "summary": "Overcast",
         "condition": "Overcast",
         "rainChance": 50,
@@ -71,26 +71,26 @@
       },
       {
         "date": "2026-11-11",
-        "high": 12,
-        "low": 9,
+        "high": 13,
+        "low": 10,
         "summary": "Overcast",
         "condition": "Overcast",
-        "rainChance": 50,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-11-12",
         "high": 11,
-        "low": 8,
+        "low": 7,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Drier spells likely best",
-      "detail": "Cloudy · peak rain chance around 90%",
+      "label": "Good outdoor day",
+      "detail": "Sunny intervals · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
