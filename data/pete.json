@@ -19,15 +19,15 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "6°",
-    "summary": "Mist",
-    "condition": "Mist",
-    "currentRainChance": 10,
+    "temp": "10°",
+    "summary": "Sunny intervals",
+    "condition": "Sunny intervals",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-07",
         "high": 11,
-        "low": 5,
+        "low": 4,
         "summary": "Mist",
         "condition": "Mist",
         "rainChance": 10,
@@ -37,8 +37,8 @@
         "date": "2026-11-08",
         "high": 11,
         "low": 4,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Mist",
+        "condition": "Mist",
         "rainChance": 10,
         "source": "Met Office"
       },
@@ -48,40 +48,40 @@
         "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-11-10",
         "high": 11,
-        "low": 9,
-        "summary": "Overcast",
-        "condition": "Overcast",
+        "low": 10,
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-11-11",
-        "high": 12,
+        "high": 14,
         "low": 9,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 60,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-11-12",
-        "high": 11,
-        "low": 8,
+        "high": 10,
+        "low": 7,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 60,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-11-13",
         "high": 10,
-        "low": 4,
+        "low": 6,
         "summary": "Cloudy",
         "condition": "Cloudy",
         "rainChance": 20,
