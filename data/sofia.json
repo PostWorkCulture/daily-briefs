@@ -19,14 +19,14 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "6°",
+    "summary": "Mist",
+    "condition": "Mist",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-07",
-        "high": 11,
+        "high": 7,
         "low": 4,
         "summary": "Mist",
         "condition": "Mist",
@@ -35,8 +35,8 @@
       },
       {
         "date": "2026-11-08",
-        "high": 11,
-        "low": 4,
+        "high": 10,
+        "low": 3,
         "summary": "Mist",
         "condition": "Mist",
         "rainChance": 10,
@@ -48,42 +48,42 @@
         "low": 7,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 20,
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-10",
         "high": 11,
         "low": 10,
-        "summary": "Light rain",
-        "condition": "Light rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-11-11",
-        "high": 14,
+        "high": 13,
         "low": 9,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 80,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-11-12",
         "high": 10,
-        "low": 7,
+        "low": 6,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 80,
+        "rainChance": 70,
         "source": "Met Office"
       },
       {
         "date": "2026-11-13",
-        "high": 10,
-        "low": 6,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "high": 9,
+        "low": 4,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 20,
         "source": "Met Office"
       }
