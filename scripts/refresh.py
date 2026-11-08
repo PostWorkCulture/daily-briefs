@@ -5,7 +5,7 @@ import os
 import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote_plus
 from zoneinfo import ZoneInfo
@@ -1329,30 +1329,173 @@ def base_google_uid(uid: str) -> str:
     return re.sub(r"_R?\d+.*$", "", uid)
 
 
-def existing_calendar_events() -> list[dict]:
+def existing_calendar_events(feed: str | None = None) -> list[dict]:
+    """Last published calendar (today onward). With ``feed``, only that feed's events."""
     try:
         path = DATA / "pete.json"
         if path.is_file():
             data = json.loads(path.read_text(encoding="utf-8"))
             items = data.get("calendar") or []
+            if feed is not None:
+                items = [e for e in items if e.get("feed") == feed]
             today_str = NOW.strftime("%Y-%m-%d")
             future_or_current = [e for e in items if str(e.get("date") or "") >= today_str]
-            return future_or_current or items
+            return future_or_current or ([] if feed is not None else items)
     except Exception:
         pass
     return []
 
 
-def calendar_events() -> list[dict]:
-    fallback = existing_calendar_events()
-    url = os.getenv("GOOGLE_CALENDAR_ICS_URL", "").strip()
-    if not url:
-        return fallback
+def load_local_env(path: Path | None = None) -> None:
+    """Read KEY=VALUE lines from the untracked .env.local beside the clone so the
+    local Windows runner gets the same private settings (secret calendar
+    addresses) that GitHub Actions gets from repository secrets. Values already
+    in the environment win."""
+    path = path or (ROOT / ".env.local")
     try:
-        r = requests.get(url, headers=UA, timeout=30)
-        r.raise_for_status()
-        cal = Calendar.from_ical(r.content)
+        lines = path.read_text(encoding="utf-8-sig").splitlines()
     except Exception:
+        return
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key, value = key.strip(), value.strip().strip('"').strip("'")
+        if key and value and not os.environ.get(key):
+            os.environ[key] = value
+
+
+load_local_env()
+
+
+def calendar_feed_urls() -> list[str]:
+    """Every secret iCal address to read: GOOGLE_CALENDAR_ICS_URL may hold several
+    (one per calendar, separated by spaces, commas or new lines), and
+    GOOGLE_CALENDAR_ICS_URL_2, _3 ... add more."""
+    raw = [os.getenv("GOOGLE_CALENDAR_ICS_URL", "")]
+    raw += [v for k, v in sorted(os.environ.items()) if re.fullmatch(r"GOOGLE_CALENDAR_ICS_URL_\d+", k)]
+    urls: list[str] = []
+    for chunk in raw:
+        for url in re.split(r"[\s,;]+", chunk or ""):
+            if url.startswith("http") and url not in urls:
+                urls.append(url)
+    return urls
+
+
+def calendar_feed_id(url: str) -> str:
+    return hashlib.sha1(url.encode("utf-8")).hexdigest()[:8]
+
+
+def _as_local(value, all_day: bool) -> datetime:
+    if not isinstance(value, datetime):
+        return datetime.combine(value, datetime.min.time(), TZ)
+    if value.tzinfo is None:
+        return value.replace(tzinfo=TZ)
+    return value.astimezone(TZ)
+
+
+def _occurrence_key(uid: str, value) -> tuple[str, str]:
+    if not isinstance(value, datetime):
+        return uid, value.isoformat()
+    if value.tzinfo is None:
+        value = value.replace(tzinfo=TZ)
+    return uid, value.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%S")
+
+
+def expand_calendar(cal, window_start: datetime, window_end: datetime):
+    """Yield (component, start, end, all_day) for every occurrence in the window.
+
+    Google's iCal feed stores a weekly event once, with an RRULE, so reading raw
+    VEVENTs shows only the first week (usually months ago) and drops the series.
+    This expands RRULE/RDATE, skips EXDATEs and cancelled instances, and swaps in
+    edited single instances (RECURRENCE-ID overrides)."""
+    from dateutil.rrule import rruleset, rrulestr
+
+    masters, overrides, singles = [], {}, []
+    for component in cal.walk("VEVENT"):
+        uid = str(component.get("uid", ""))
+        if component.get("recurrence-id") is not None:
+            overrides[_occurrence_key(uid, component.decoded("recurrence-id"))] = component
+        elif component.get("rrule") is not None or component.get("rdate") is not None:
+            masters.append(component)
+        else:
+            singles.append(component)
+
+    def span(component, start):
+        all_day = not isinstance(start, datetime)
+        if component.get("dtend") is not None:
+            duration = component.decoded("dtend") - component.decoded("dtstart")
+        elif component.get("duration") is not None:
+            duration = component.decoded("duration")
+        else:
+            duration = timedelta(days=1) if all_day else timedelta(0)
+        return _as_local(start, all_day), _as_local(start + duration, all_day), all_day
+
+    def emit(component, start):
+        if str(component.get("status", "")).upper() == "CANCELLED":
+            return None
+        begin, finish, all_day = span(component, start)
+        if finish < window_start or begin > window_end:
+            return None
+        return component, begin, finish, all_day
+
+    for component in singles + list(overrides.values()):
+        hit = emit(component, component.decoded("dtstart"))
+        if hit:
+            yield hit
+
+    for master in masters:
+        uid = str(master.get("uid", ""))
+        dtstart = master.decoded("dtstart")
+        all_day = not isinstance(dtstart, datetime)
+        # Expand on naive wall-clock times in the event's own zone so weekly
+        # events stay at the same local time across the clock change.
+        tz = None if all_day else (dtstart.tzinfo or TZ)
+        naive_start = datetime.combine(dtstart, datetime.min.time()) if all_day else dtstart.replace(tzinfo=None)
+        rules = rruleset()
+        try:
+            rrules = master.get("rrule")
+            for rrule in rrules if isinstance(rrules, list) else ([rrules] if rrules is not None else []):
+                rules.rrule(rrulestr(rrule.to_ical().decode(), dtstart=naive_start, ignoretz=True))
+            for prop in ("rdate", "exdate"):
+                values = master.get(prop)
+                if values is None:
+                    continue
+                for group in values if isinstance(values, list) else [values]:
+                    for item in group.dts:
+                        value = item.dt
+                        if isinstance(value, datetime):
+                            value = value.astimezone(tz).replace(tzinfo=None) if value.tzinfo and tz else value.replace(tzinfo=None)
+                        else:
+                            value = datetime.combine(value, datetime.min.time())
+                        (rules.rdate if prop == "rdate" else rules.exdate)(value)
+        except Exception as exc:
+            warn("Calendar recurrence skipped", f"{clean_html(str(master.get('summary', '')))}: {exc}")
+            hit = emit(master, dtstart)
+            if hit:
+                yield hit
+            continue
+        # Look back far enough to catch a multi-day occurrence already under way.
+        lookback = timedelta(days=62)
+        lo = (window_start - lookback).replace(tzinfo=None)
+        hi = window_end.replace(tzinfo=None)
+        for occurrence in rules.between(lo, hi, inc=True):
+            start = occurrence.date() if all_day else occurrence.replace(tzinfo=tz)
+            if _occurrence_key(uid, start) in overrides:
+                continue  # the edited instance was yielded above
+            hit = emit(master, start)
+            if hit:
+                yield hit
+
+
+def calendar_events() -> list[dict]:
+    urls = calendar_feed_urls()
+    if not urls:
+        fallback = existing_calendar_events()
+        if fallback:
+            CARRIED_SECTIONS["Calendar"] = "no GOOGLE_CALENDAR_ICS_URL set; previous calendar kept"
+            warn("Calendar not refreshed", CARRIED_SECTIONS["Calendar"])
         return fallback
     colours = calendar_colour_data()
     palette = colours.get("eventPalette", {})
@@ -1362,75 +1505,90 @@ def calendar_events() -> list[dict]:
     next_month = (start_window.replace(day=28) + timedelta(days=4)).replace(day=1)
     following = (next_month.replace(day=28) + timedelta(days=4)).replace(day=1)
     end_window = following - timedelta(seconds=1)
-    events = []
-    for component in cal.walk("VEVENT"):
-        start = component.decoded("dtstart")
-        end = component.decoded("dtend") if component.get("dtend") else start
-        all_day = not isinstance(start, datetime)
-        if all_day:
-            start = datetime.combine(start, datetime.min.time(), TZ)
-        elif start.tzinfo is None:
-            start = start.replace(tzinfo=TZ)
-        else:
-            start = start.astimezone(TZ)
-        if not isinstance(end, datetime):
-            end = datetime.combine(end, datetime.min.time(), TZ)
-        elif end.tzinfo is None:
-            end = end.replace(tzinfo=TZ)
-        else:
-            end = end.astimezone(TZ)
-        if end < start_window or start > end_window:
+    events: list[dict] = []
+    failed: list[str] = []
+    carried: list[dict] = []
+    for url in urls:
+        feed = calendar_feed_id(url)
+        try:
+            r = requests.get(url, headers=UA, timeout=30)
+            r.raise_for_status()
+            cal = Calendar.from_ical(r.content)
+            occurrences = list(expand_calendar(cal, start_window, end_window))
+        except Exception as exc:
+            failed.append(f"feed {feed}: {type(exc).__name__}")
+            carried += existing_calendar_events(feed)
             continue
-        title = clean_html(str(component.get("summary", "Calendar event"))) or "Calendar event"
-        event_id = normalize_google_uid(component)
-        base_id = base_google_uid(event_id)
+        for component, start, end, all_day in occurrences:
+            title = clean_html(str(component.get("summary", "Calendar event"))) or "Calendar event"
+            event_id = normalize_google_uid(component)
+            base_id = base_google_uid(event_id)
 
-        ics_color = str(component.get("COLOR") or component.get("X-APPLE-CALENDAR-COLOR") or "").strip()
-        color_id = None
-        colour = None
+            ics_color = str(component.get("COLOR") or component.get("X-APPLE-CALENDAR-COLOR") or "").strip()
+            color_id = None
+            colour = None
 
-        if event_id in event_colours and event_colours[event_id] is not None:
-            color_id = str(event_colours[event_id])
-            colour = palette.get(color_id)
-        elif base_id in event_colours and event_colours[base_id] is not None:
-            color_id = str(event_colours[base_id])
-            colour = palette.get(color_id)
-        elif ics_color:
-            if ics_color in palette:
-                color_id = ics_color
-                colour = palette[ics_color]
-            elif ics_color.startswith("#"):
-                colour = ics_color
-                for k, v in palette.items():
-                    if v.lower() == ics_color.lower():
-                        color_id = k
+            if event_id in event_colours and event_colours[event_id] is not None:
+                color_id = str(event_colours[event_id])
+                colour = palette.get(color_id)
+            elif base_id in event_colours and event_colours[base_id] is not None:
+                color_id = str(event_colours[base_id])
+                colour = palette.get(color_id)
+            elif ics_color:
+                if ics_color in palette:
+                    color_id = ics_color
+                    colour = palette[ics_color]
+                elif ics_color.startswith("#"):
+                    colour = ics_color
+                    for k, v in palette.items():
+                        if v.lower() == ics_color.lower():
+                            color_id = k
+                            break
+
+            if not colour and keywords:
+                title_lower = title.lower()
+                for kw, cid in keywords.items():
+                    if kw in title_lower:
+                        color_id = str(cid)
+                        colour = palette.get(color_id)
                         break
 
-        if not colour and keywords:
-            title_lower = title.lower()
-            for kw, cid in keywords.items():
-                if kw in title_lower:
-                    color_id = str(cid)
-                    colour = palette.get(color_id)
-                    break
-
-        time_label = "All day" if all_day else safe_strftime(start, "%-I:%M%p").lower().replace(":00", "")
-        events.append({
-            "title": title,
-            "summary": "",
-            "url": "",
-            "start": start.isoformat(),
-            "end": end.isoformat(),
-            "date": start.date().isoformat(),
-            "time": time_label,
-            "allDay": all_day,
-            "color": colour,
-            "colorId": color_id,
-            "googleEventId": event_id,
-            "calendarColorSource": "google" if colour else "calendar-default",
-        })
-    events.sort(key=lambda x: x["start"])
-    return events
+            time_label = "All day" if all_day else safe_strftime(start, "%-I:%M%p").lower().replace(":00", "")
+            events.append({
+                "title": title,
+                "summary": "",
+                "url": "",
+                "start": start.isoformat(),
+                "end": end.isoformat(),
+                "date": start.date().isoformat(),
+                "time": time_label,
+                "allDay": all_day,
+                "color": colour,
+                "colorId": color_id,
+                "googleEventId": event_id,
+                "calendarColorSource": "google" if colour else "calendar-default",
+                "feed": feed,
+            })
+    if failed and not events and not carried:
+        fallback = existing_calendar_events()
+        if fallback:
+            CARRIED_SECTIONS["Calendar"] = "calendar feed unreachable (" + "; ".join(failed) + "); previous calendar kept"
+            warn("Calendar not refreshed", CARRIED_SECTIONS["Calendar"])
+        return fallback
+    if failed:
+        CARRIED_SECTIONS["Calendar"] = (
+            "; ".join(failed) + f" unreachable; {len(carried)} event(s) from that calendar carried from the previous edition"
+        )
+        warn("Calendar partly refreshed", CARRIED_SECTIONS["Calendar"])
+    seen: set[tuple[str, str]] = set()
+    merged = []
+    for event in sorted(events + carried, key=lambda x: x["start"]):
+        key = (re.sub(r"\W+", "", event["title"].lower()), event["start"])
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(event)
+    return merged
 
 
 def tonight_recommendations() -> list[dict]:

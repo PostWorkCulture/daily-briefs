@@ -6,3 +6,6 @@ artifacts/
 
 # Pete's private notes kept beside the clone; never published
 local-notes/
+
+# Private settings for the local runner (secret calendar addresses); never published
+.env.local
