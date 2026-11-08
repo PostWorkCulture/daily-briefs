@@ -19,15 +19,15 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Sunny intervals",
-    "condition": "Sunny intervals",
+    "temp": "5°",
+    "summary": "Mist",
+    "condition": "Mist",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-08",
-        "high": 10,
-        "low": 4,
+        "high": 6,
+        "low": 3,
         "summary": "Mist",
         "condition": "Mist",
         "rainChance": 4,
@@ -36,7 +36,7 @@
       {
         "date": "2026-11-09",
         "high": 10,
-        "low": 6,
+        "low": 5,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 10,
@@ -46,8 +46,8 @@
         "date": "2026-11-10",
         "high": 10,
         "low": 8,
-        "summary": "Light rain",
-        "condition": "Light rain",
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 70,
         "source": "Met Office"
       },
@@ -63,25 +63,25 @@
       {
         "date": "2026-11-12",
         "high": 10,
-        "low": 6,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 30,
+        "low": 5,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-11-13",
         "high": 9,
         "low": 4,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
-        "rainChance": 20,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
         "date": "2026-11-14",
-        "high": 10,
-        "low": 5,
+        "high": 9,
+        "low": 4,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 10,
