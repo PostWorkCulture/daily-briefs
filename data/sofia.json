@@ -1,5 +1,5 @@
 {
-  "updatedLabel": "Monday, 9 November 2026 · refreshed 5:01am",
+  "updatedLabel": "Monday, 9 November 2026 · refreshed 2:44pm",
   "worldFact": {
     "id": "peru-qeswachaka-rope-bridge-renewal",
     "editorialPriority": "human-first",
@@ -19,17 +19,17 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "4°",
-    "summary": "Fog",
-    "condition": "Fog",
+    "temp": "10°",
+    "summary": "Sunny",
+    "condition": "Sunny",
     "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-09",
         "high": 10,
-        "low": 5,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "low": 4,
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
@@ -39,58 +39,58 @@
         "low": 8,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 80,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-11-11",
         "high": 10,
-        "low": 7,
+        "low": 6,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 80,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-11-12",
-        "high": 10,
-        "low": 3,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "high": 9,
+        "low": 1,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 20,
         "source": "Met Office"
       },
       {
         "date": "2026-11-13",
-        "high": 9,
-        "low": 2,
+        "high": 7,
+        "low": 0,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-11-14",
-        "high": 9,
+        "high": 8,
         "low": 4,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "summary": "Sunny",
+        "condition": "Sunny",
         "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-11-15",
         "high": 10,
-        "low": 8,
-        "summary": "Cloudy",
-        "condition": "Cloudy",
+        "low": 9,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
         "rainChance": 40,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Sunny intervals · rain chance around 4%",
+      "detail": "Sunny · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
@@ -137,6 +137,21 @@
   },
   "calendar": [
     {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-08T00:00:00+00:00",
+      "end": "2026-11-09T00:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "ccr36e9ocgq3ibb56ph30b9k75hjgbb26or62bb1copj0oho65hm6c316c",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
       "title": "Let it glow disco 3-4pm",
       "summary": "",
       "url": "",
@@ -148,7 +163,68 @@
       "color": null,
       "colorId": null,
       "googleEventId": "cgo66e32c8o32b9n6oqj8b9kcdijgbb165h3gb9gcli38e1l6tgj2c9j6o",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Playball - PU 3.45PM (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-10T00:00:00+00:00",
+      "end": "2026-11-11T00:00:00+00:00",
+      "date": "2026-11-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "07p6b7rk3kikg3q6492ks4bkua",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Crafts - PU 4.15PM (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-11T00:00:00+00:00",
+      "end": "2026-11-12T00:00:00+00:00",
+      "date": "2026-11-11",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6srgpj2kr4spr4m95rlnc0hfaf",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-12T00:00:00+00:00",
+      "end": "2026-11-13T00:00:00+00:00",
+      "date": "2026-11-12",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-14T00:00:00+00:00",
+      "end": "2026-11-16T00:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Football 10-11am",
@@ -162,7 +238,83 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "6grm6phh68o64bb4c5hjgb9k75j34b9o65im2bb271i38c1i60pjgob664",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Footy - PU 4.15pm (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-16T00:00:00+00:00",
+      "end": "2026-11-17T00:00:00+00:00",
+      "date": "2026-11-16",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "1nnb47dr2n0np88mfiugnjidfp_R20261012",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Playball - PU 3.45PM (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-17T00:00:00+00:00",
+      "end": "2026-11-18T00:00:00+00:00",
+      "date": "2026-11-17",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "07p6b7rk3kikg3q6492ks4bkua",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Crafts - PU 4.15PM (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-18T00:00:00+00:00",
+      "end": "2026-11-19T00:00:00+00:00",
+      "date": "2026-11-18",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6srgpj2kr4spr4m95rlnc0hfaf",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-19T00:00:00+00:00",
+      "end": "2026-11-20T00:00:00+00:00",
+      "date": "2026-11-19",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Parents Evening",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-19T16:10:00+00:00",
+      "end": "2026-11-19T16:30:00+00:00",
+      "date": "2026-11-19",
+      "time": "4:10pm",
+      "allDay": false,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6op32cb2cdj66b9gc5hm2b9kcphm2b9oclh66b9g6hi3eob671h68e9h60",
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "Choir Performance 10:30-2:30",
@@ -176,7 +328,8 @@
       "color": null,
       "colorId": null,
       "googleEventId": "c8s36cr670pj6bb675gjgb9kcgp68b9ocdh34bb66krj4cj269h62e9p64",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "Kids",
@@ -190,7 +343,8 @@
       "color": "#e1e1e1",
       "colorId": "8",
       "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Football 10-11am",
@@ -204,7 +358,53 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "71i3acr1chijgb9i74p3ib9kcdj66b9o60om6bb3c8rjaphj70pmccr6co",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Footy - PU 4.15pm (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-23T00:00:00+00:00",
+      "end": "2026-11-24T00:00:00+00:00",
+      "date": "2026-11-23",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "1nnb47dr2n0np88mfiugnjidfp_R20261012",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Playball - PU 3.45PM (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-24T00:00:00+00:00",
+      "end": "2026-11-25T00:00:00+00:00",
+      "date": "2026-11-24",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "07p6b7rk3kikg3q6492ks4bkua",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Crafts - PU 4.15PM (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-25T00:00:00+00:00",
+      "end": "2026-11-26T00:00:00+00:00",
+      "date": "2026-11-25",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6srgpj2kr4spr4m95rlnc0hfaf",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Patrik Visiting",
@@ -218,7 +418,23 @@
       "color": null,
       "colorId": null,
       "googleEventId": "75j3ac9p6dj3cbb5c9gj4b9k68sjib9o70p3ab9j69hj6e9m60rmac36cc",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-26T00:00:00+00:00",
+      "end": "2026-11-27T00:00:00+00:00",
+      "date": "2026-11-26",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Adina's B-day party 10-2pm (11-1pm)",
@@ -232,7 +448,8 @@
       "color": "#dbadff",
       "colorId": "3",
       "googleEventId": "71gj2ohpc4r38b9j70r66b9k60q30b9p6pi3gb9h6cp66phnchj66cb174",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Football 10-11am",
@@ -246,7 +463,83 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "c9h34e3560o6cbb5c5gj2b9kc9i38b9ocgrj4b9g6gs64c9jcpijed9hco",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Taylor come?",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-29T00:00:00+00:00",
+      "end": "2026-11-30T00:00:00+00:00",
+      "date": "2026-11-29",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6ph36dj165h62b9m60q3ib9k6hhj4bb2c9h3cb9g71hm2c1o64rmcphicc",
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Footy - PU 4.15pm (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-30T00:00:00+00:00",
+      "end": "2026-12-01T00:00:00+00:00",
+      "date": "2026-11-30",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "1nnb47dr2n0np88mfiugnjidfp_R20261012",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Playball - PU 3.45PM (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-01T00:00:00+00:00",
+      "end": "2026-12-02T00:00:00+00:00",
+      "date": "2026-12-01",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "07p6b7rk3kikg3q6492ks4bkua",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Crafts - PU 4.15PM (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-02T00:00:00+00:00",
+      "end": "2026-12-03T00:00:00+00:00",
+      "date": "2026-12-02",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6srgpj2kr4spr4m95rlnc0hfaf",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-03T00:00:00+00:00",
+      "end": "2026-12-04T00:00:00+00:00",
+      "date": "2026-12-03",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Choir Performance 12-3pm",
@@ -260,21 +553,8 @@
       "color": null,
       "colorId": null,
       "googleEventId": "6spj2db16opmab9lc8p36b9kc5gm4b9p68rjabb5cgsjieb361hjie9j74",
-      "calendarColorSource": "calendar-default"
-    },
-    {
-      "title": "See Kate and Family",
-      "summary": "",
-      "url": "",
-      "start": "2026-12-06T00:00:00+00:00",
-      "end": "2026-12-07T00:00:00+00:00",
-      "date": "2026-12-06",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
-      "calendarColorSource": "google"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "Football 10-11am",
@@ -288,7 +568,113 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "6os6cc9lcdij6b9gc4qj0b9k6lh34b9p6sojeb9j6go3cp1i6or66d1k6c",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "See Kate and Family",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-06T00:00:00+00:00",
+      "end": "2026-12-07T00:00:00+00:00",
+      "date": "2026-12-06",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Footy - PU 4.15pm (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-07T00:00:00+00:00",
+      "end": "2026-12-08T00:00:00+00:00",
+      "date": "2026-12-07",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "1nnb47dr2n0np88mfiugnjidfp_R20261012",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Christmas Show 9:30",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-08T00:00:00+00:00",
+      "end": "2026-12-09T00:00:00+00:00",
+      "date": "2026-12-08",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "65hmcopgcpj6ab9l6spjgb9k60r68b9p75i30b9oc5j68db66spm4d9jck",
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Playball - PU 3.45PM (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-08T00:00:00+00:00",
+      "end": "2026-12-09T00:00:00+00:00",
+      "date": "2026-12-08",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "07p6b7rk3kikg3q6492ks4bkua",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Crafts - PU 4.15PM (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-09T00:00:00+00:00",
+      "end": "2026-12-10T00:00:00+00:00",
+      "date": "2026-12-09",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6srgpj2kr4spr4m95rlnc0hfaf",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Choir - PU 4pm (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-10T00:00:00+00:00",
+      "end": "2026-12-11T00:00:00+00:00",
+      "date": "2026-12-10",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "3run6j31214s7kppppc402okok",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Kids",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-12T00:00:00+00:00",
+      "end": "2026-12-14T00:00:00+00:00",
+      "date": "2026-12-12",
+      "time": "All day",
+      "allDay": true,
+      "color": "#e1e1e1",
+      "colorId": "8",
+      "googleEventId": "5vafgrp9vlhpssm07fb6kepm93",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
       "title": "Football 10-11am",
@@ -302,7 +688,53 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "6li62dhgcgsjebb2ckp38b9k61hj8bb26gom6b9g60p64cr670o38cb4co",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Footy - PU 4.15pm (main playground)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-14T00:00:00+00:00",
+      "end": "2026-12-15T00:00:00+00:00",
+      "date": "2026-12-14",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "1nnb47dr2n0np88mfiugnjidfp_R20261012",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Crafts - PU 4.15PM (reception)",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-16T00:00:00+00:00",
+      "end": "2026-12-17T00:00:00+00:00",
+      "date": "2026-12-16",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "6srgpj2kr4spr4m95rlnc0hfaf",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "XMAS BREAK",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-21T00:00:00+00:00",
+      "end": "2027-01-01T00:00:00+00:00",
+      "date": "2026-12-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6o0e4m1jmitqlmslvre7r3rbf6",
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "FULL DAYS",
@@ -316,24 +748,11 @@
       "color": "#7ae7bf",
       "colorId": "2",
       "googleEventId": "3v3g7b8i8ak713e7kb0udbupru",
-      "calendarColorSource": "google"
+      "calendarColorSource": "google",
+      "feed": "4886e929"
     },
     {
-      "title": "HALF TERM",
-      "summary": "",
-      "url": "",
-      "start": "2026-12-21T00:00:00+00:00",
-      "end": "2027-01-01T00:00:00+00:00",
-      "date": "2026-12-21",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ffb878",
-      "colorId": "6",
-      "googleEventId": "6o0e4m1jmitqlmslvre7r3rbf6",
-      "calendarColorSource": "google"
-    },
-    {
-      "title": "Santa's Grotto?",
+      "title": "Santa's Grotto - 2pm",
       "summary": "",
       "url": "",
       "start": "2026-12-24T00:00:00+00:00",
@@ -344,7 +763,23 @@
       "color": null,
       "colorId": null,
       "googleEventId": "60qmccpp6th6ab9p6dj62b9k6tgjcbb268qm6bb370rj8cr2ccp3eo9n6c",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
+    },
+    {
+      "title": "FULL DAY",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-24T00:00:00+00:00",
+      "end": "2026-12-25T00:00:00+00:00",
+      "date": "2026-12-24",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "ckojipb1cos68b9l6kpm8b9k65i36bb26som6b9o6ph3idj2cco32cr564",
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "XMAS",
@@ -358,7 +793,8 @@
       "color": null,
       "colorId": null,
       "googleEventId": "2gqnmadok0vgfk3e5nca6jd6jg",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "Boxing Day",
@@ -372,7 +808,8 @@
       "color": null,
       "colorId": null,
       "googleEventId": "0n4b2map887fvpaajn9bk3j8fu",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     },
     {
       "title": "NEW YEAR",
@@ -386,36 +823,37 @@
       "color": null,
       "colorId": null,
       "googleEventId": "027m075vg1ehsts1ke842hbjgs",
-      "calendarColorSource": "calendar-default"
+      "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
     }
   ],
   "lead": {
-    "title": "Kalmar vs Sirius: Swedish Allsvenskan stats & head-to-head",
+    "title": "Swedish government unanimously approves constitutional ban on Holocaust denial",
     "summary": "",
-    "meta": "Sun 8 Nov",
-    "publishedAt": "2026-11-08T19:18:18+00:00",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KR3NLMnZlRG50QVVrcThaNEYwaHBwWnBKb3EwLWhkbXkyM0xJbUozRFB3bXQ5cFlMVzFwR3hPLS1zbFhKNFN5ZUNGRXp6Nm9BM1pJMjI0Nzc0am9EOHpzOTRESQ?oc=5",
+    "meta": "Mon 9 Nov",
+    "publishedAt": "2026-11-09T08:40:20+00:00",
+    "source": "Jewish News",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVEdYT2FvczFxUm4tcWgyQm5sZlYydlBGUnJBeGUwUTJNU3dFXzhFY01PZWs4VmdlZlRhSzkxQ0FJZy1tNlRQTU9XMGpYdUhxTTJsb3FCTVBZbkNVODBnc1Z4czRfUzI2V3NxQTlIVW15R3VwOEdkSjhQMlgwc0YyOHkyWk9PNzlrTVZIeUtDWmtRaEtKVjBCdXRDdzhMazFoMkU2eHJmclFELWpM0gGyAUFVX3lxTE9reWZxMWJaZWZhMHhNeTJIbWhINFdtUEMzWFhXaFgtbUpnT0FweENqY05tYnlzRDVpZFNpN00yNE5GeXBxMEJmYklOdVRyVEhYcVNRUWdqbktEWHpFY3RWU25kN1ViUV9CYU80dklLRVhoLXhmaDZvclctSHV0T2EweUVWR19iWTNiQUxsOXpZNkI1MkszTl9yQW1zbk8wLUFiNE83SEhoSy1wdHR3VzNkR1E?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Kalmar vs Sirius: Swedish Allsvenskan stats & head-to-head",
+      "title": "Swedish government unanimously approves constitutional ban on Holocaust denial",
       "summary": "",
-      "meta": "Sun 8 Nov",
-      "publishedAt": "2026-11-08T19:18:18+00:00",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KR3NLMnZlRG50QVVrcThaNEYwaHBwWnBKb3EwLWhkbXkyM0xJbUozRFB3bXQ5cFlMVzFwR3hPLS1zbFhKNFN5ZUNGRXp6Nm9BM1pJMjI0Nzc0am9EOHpzOTRESQ?oc=5",
+      "meta": "Mon 9 Nov",
+      "publishedAt": "2026-11-09T08:40:20+00:00",
+      "source": "Jewish News",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVEdYT2FvczFxUm4tcWgyQm5sZlYydlBGUnJBeGUwUTJNU3dFXzhFY01PZWs4VmdlZlRhSzkxQ0FJZy1tNlRQTU9XMGpYdUhxTTJsb3FCTVBZbkNVODBnc1Z4czRfUzI2V3NxQTlIVW15R3VwOEdkSjhQMlgwc0YyOHkyWk9PNzlrTVZIeUtDWmtRaEtKVjBCdXRDdzhMazFoMkU2eHJmclFELWpM0gGyAUFVX3lxTE9reWZxMWJaZWZhMHhNeTJIbWhINFdtUEMzWFhXaFgtbUpnT0FweENqY05tYnlzRDVpZFNpN00yNE5GeXBxMEJmYklOdVRyVEhYcVNRUWdqbktEWHpFY3RWU25kN1ViUV9CYU80dklLRVhoLXhmaDZvclctSHV0T2EweUVWR19iWTNiQUxsOXpZNkI1MkszTl9yQW1zbk8wLUFiNE83SEhoSy1wdHR3VzNkR1E?oc=5",
       "contentType": "article",
       "section": "Sweden"
     },
     {
-      "title": "Changes proposed for Kingston’s new leisure centre",
+      "title": "Kingston comes together to honour fallen heroes during moving Remembrance service",
       "summary": "",
-      "meta": "Fri 6 Nov",
-      "publishedAt": "2026-11-06T14:13:28+00:00",
-      "source": "Surrey Comet",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY194Y0hNRTZXWXRteW5pcGc1YXNwNFdDVTJUWjRVZEVfVnY1TXQtOXMta2Z3aW1XM2dIc2dxVm5CNk5jWnF0Mlh5eUsyeVBpMGhmcXdQSTNMSlczN05NWnhhSDJKY3lSa1ROZ2pzNnRxYmNUTEJ4QTM5RDBYYy1tZVBmOTJQS0lNM29TcVBJRkppTk1DaGVzOA?oc=5",
+      "meta": "Mon 9 Nov",
+      "publishedAt": "2026-11-09T10:57:36+00:00",
+      "source": "Kingston Nub News",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPR0k3X1RUM19jZmNaNEROaTFtRndmVU1LX2l2cUlLM3F3Z0ZMV3p5U0hCb1BFNzVTNnU0UllmV0gzaWo0NHhJMm9lX0dxMnZYeEVLUUFPQXJaV0NnNWthUkNjRURuQWcxTXFGNHlQcS1EVUFOM3BjNWd5T1pUelUxUTdWbW5ZaU9yRUJkS2RNVWIxc2lGSjdfcmxNeGpfckpxSEFBU0luVXRUbnV3Z2cwd0lOUTR0bTR4UWRNYlVJN2xNSVZnQUt4bFVQdFBESlY3Y1hLXw?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -458,7 +896,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 649.7
+      "preferenceScore": 649.9
     },
     {
       "title": "Global Eye",
@@ -481,7 +919,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 634.2
+      "preferenceScore": 635.6
     },
     {
       "title": "Scam Interceptors",
@@ -506,7 +944,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 543.0
+      "preferenceScore": 543.9
     },
     {
       "title": "Hunting Alice Bell",
@@ -557,58 +995,79 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 560.4
+      "preferenceScore": 560.5
     }
   ],
   "sections": {
     "Sweden": [
       {
-        "title": "Kalmar vs Sirius: Swedish Allsvenskan stats & head-to-head",
+        "title": "Swedish government unanimously approves constitutional ban on Holocaust denial",
         "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T19:18:18+00:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KR3NLMnZlRG50QVVrcThaNEYwaHBwWnBKb3EwLWhkbXkyM0xJbUozRFB3bXQ5cFlMVzFwR3hPLS1zbFhKNFN5ZUNGRXp6Nm9BM1pJMjI0Nzc0am9EOHpzOTRESQ?oc=5",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T08:40:20+00:00",
+        "source": "Jewish News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVEdYT2FvczFxUm4tcWgyQm5sZlYydlBGUnJBeGUwUTJNU3dFXzhFY01PZWs4VmdlZlRhSzkxQ0FJZy1tNlRQTU9XMGpYdUhxTTJsb3FCTVBZbkNVODBnc1Z4czRfUzI2V3NxQTlIVW15R3VwOEdkSjhQMlgwc0YyOHkyWk9PNzlrTVZIeUtDWmtRaEtKVjBCdXRDdzhMazFoMkU2eHJmclFELWpM0gGyAUFVX3lxTE9reWZxMWJaZWZhMHhNeTJIbWhINFdtUEMzWFhXaFgtbUpnT0FweENqY05tYnlzRDVpZFNpN00yNE5GeXBxMEJmYklOdVRyVEhYcVNRUWdqbktEWHpFY3RWU25kN1ViUV9CYU80dklLRVhoLXhmaDZvclctSHV0T2EweUVWR19iWTNiQUxsOXpZNkI1MkszTl9yQW1zbk8wLUFiNE83SEhoSy1wdHR3VzNkR1E?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Swedish automaker Polestar plans Dutch restructuring to improve financial flexibility",
+        "title": "Trophy Report | Malta create history, Sweden and Czechia also claim wins",
         "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T17:05:00+00:00",
-        "source": "NL Times",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdG9WR0U4dE9yRmZqcUZhTVFKRy1zSGdfalUxZVdPUno3MGd0NTZKR0JWSDFEczJ2cFhHVkJ6TWk4T3prWXdpREc3RE5qdzk1Z3p2UzJsRWFNaXE1NWFWREhOS3lSTUFjTVRBdzh0MHhhbWdQdS0zb1R1Mk51MTA2TjBMWkxhMmlWd2N6dkJNS2tnLV8wNG9yWG9DZ21FczRyd1lvZGlTRHA0N3BpYmI4d1FB?oc=5",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T13:54:39+00:00",
+        "source": "Rugby Europe",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeU05S09NbWlYRUl5N1hERV8zRmdpYUNqNVNJOGs1RnpWSE85SGNxUHpWcmZPRkpMTTJ2dzRRZGxNTjBmelNtNS12ZnM4TVpXN0lEUWNIV0oyUEhMNnVuRllkdllRdzhYQTB1WjgwZE13MDA1RndEUUtoZWZIN1RJTVdxTzhVazVOT0p4ME1hSkI2NW5zNmRCS1BQZGNiWS02VjhFbw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Out of Stockholm, Van Assche Forced to Travel to Sweden to Avoid an ATP Fine",
+        "title": "RS Sailing secures backing from Swedish investor and UK hull supplier",
         "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T20:36:58+00:00",
-        "source": "TennisTemple",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPemN0YXZiZElaaExDMXc2TVVWOVlLbm14SlBXSWx6amZjOTlTMmZveDhGTkJhRllmekdDdVJMR1ZlYXhWYWQySnRnWW1WUDBCQ2RCckNtSjhKU3kycmVMRTR4dkw0dld5Yi1rZDVxZm1pVmZzV0tXa1NjajJCT2UyVi1LdjZyc0dhNGxuR0x3?oc=5",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T11:29:10+00:00",
+        "source": "Marine Industry News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbVI4UnZRTS1mUk1mejlVYXMwOTc3c0ZMNmZiWnBOQzY3NUJHTEZWQk5Ya0R2amYwSV9aekF0UUJNU0RPdU1WX21DTUN5cFotT09SRE1WVkVNaFpBdmZXeGRiS0Riem0yWTAxNFRpeTMtN0ZPd1hOSjJsLUtFcUZOSkJCSXVGOGhvYS1xX3AtV2g2cHdjM052bGhMVVd3aWtqcUVxWTlB?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Nominees for the 2026 Swedish Riders Gala Awards Announced",
+        "title": "Swedish grocery retailers come together on food climate data as FoodFacts footprints 120,000+ products",
         "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T13:06:48+00:00",
-        "source": "| Eurodressage",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNS1BfMGZnRmdNWlNSQTNVM3U4czFVd0tDR0pnaGRGNmhBM0NmckZZbmxmU0pJVkdmUXVOM1ZfcU9adXVlQzdCMDZtX2tnWkNPNFhlREhHRndIdm5oMTNXUVJWYXN3UktzbDdCQnlibHVxX1pNMUtzTG9wVDVFUDN0dC00dWpZSUZkVjBEVUhMQ1o4Wkdj?oc=5",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T06:19:51+00:00",
+        "source": "Retail Technology Innovation Hub",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQakR6TjlSVlJPNGc3WWhuNmc1Nk1FTlFTenRyNEljV0tPLTBsTzYweUZweTA2OVgxejl1elFMS1ZvbXhibU9TcDFnZ0hPTmlJSzdQSkJtRjFCel9aLTM4REt6N3hQYTlFekFNMVpYaUlFb1otZXR0cUp2Vm16TTNUQk9RQVh6dGMyZUctb1BjenJFUkVhblktQVNyZnNLNHVKd3k2UjBxNzZpX21QYkZMcEVaOHVOUUJ0WkVHX29sa1g1eDNLaGY4WjRhenF2VXJQZmhscEdpM2N2NUtVVUtTX0FTQkhPUQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Sweden, France and Cyprus sign joint Akeron MP procurement agreement",
+        "title": "Amazon appoints new country managers in Belgium, the Netherlands and Sweden",
         "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T15:27:22+00:00",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T12:11:15+00:00",
+        "source": "RetailDetail EU",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdjVMRHY1RDgya3JlUThmMllDaVMyZ2ZRdkNLX2E0MFlJaWhMUkZnaUZxVWh2ZFkxS3FUbTR2a1psZ0QtcWx1TDVON1NrbjJiVm9ZbWdpSUU0aXhLX3hVdVJFUXl6bUpDRFY4ZjB2ZGlnbTlHdnhRSnVvUzdEVlIwd1ZaYUZPSUx1bFE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "FOI says that Finland’s mine reintroduction creates legal hurdles for Swedish forces",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T11:43:07+00:00",
         "source": "Nordic Defence Sector",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNmtuTkhqMWxiWHdqeGtrTjUzbXBoa1RSdHRLZjNfc1pweTFEUXJUcHV0NEhfOHVFb0pJMUlTdVVPd3ZtbTBtZV9neFUxMzJRVUxRdGNXMk56cG5aWWRpVVJQR2cwUDkxelQ3Wnk3dlNhQzZkZjZrRHAxb0xKMjdMNV9aSnVxN19Mbm9lVDhsaWc0UXN1aGdnb2paUEJXMGJtNGxBUm9uRzFPWjJXVnNv?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUW0yVlQzZG5tZThDT0o3dV9wWG9GUy05bmd0R3dqeHN0OVh2SmVmNUtUWWptSjdVTEotTHdRMkdpeTlBckthQm4xYjAxT3hiUjBmcUNMNWE4dlJkYWc5YV9odEdzeWVMMmdDYmpzYWhOdzhXUXJmekVCQVNweV9SZ24zZ1pFNE4xZ2FlR1RKXzVQSUJNVnNJR19zOGd2dTRNSEYzSUF2U3BlcnhuOW9iVDhMd1ZJNzg?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
+      {
+        "title": "Kingston comes together to honour fallen heroes during moving Remembrance service",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T10:57:36+00:00",
+        "source": "Kingston Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPR0k3X1RUM19jZmNaNEROaTFtRndmVU1LX2l2cUlLM3F3Z0ZMV3p5U0hCb1BFNzVTNnU0UllmV0gzaWo0NHhJMm9lX0dxMnZYeEVLUUFPQXJaV0NnNWthUkNjRURuQWcxTXFGNHlQcS1EVUFOM3BjNWd5T1pUelUxUTdWbW5ZaU9yRUJkS2RNVWIxc2lGSjdfcmxNeGpfckpxSEFBU0luVXRUbnV3Z2cwd0lOUTR0bTR4UWRNYlVJN2xNSVZnQUt4bFVQdFBESlY3Y1hLXw?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
       {
         "title": "Changes proposed for Kingston’s new leisure centre",
         "summary": "",
@@ -622,12 +1081,12 @@
         "homeArea": false
       },
       {
-        "title": "Derelict Kingston site could see 92 flats built without affordable housing",
+        "title": "Teddington duo say local pub is 'well on track' to reopen this month",
         "summary": "",
         "meta": "Fri 6 Nov",
-        "publishedAt": "2026-11-06T13:44:42+00:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYkpXTzJoRFNYZmZnWUQ5bFVwNExJNVJMRkpHakdvWVMwZ1NHYWNsN2FHbEtpNkNBX1J4cHBhYWk1TkZub2t5Z2VBTFE4UlpLV1hYT0E1dHpFN0gwZHZOUzNHRFV4RkZMb1l6YzN5ck5LUEViZXNzRjBiY29wc3VheUVrTHN0dmtXTEdGeC1uN2pnSDZWUXJZdGhHdEZRWGVjWDBXeU0xTG5JN1l5SGtFS1MzWFJqQ0Y3cXFvMGhpMzQ?oc=5",
+        "publishedAt": "2026-11-06T08:00:00+00:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX1RVWUZLdGVXMWNMU042YnpXMU16NWkxX0VZcHlwMlZ6Ry1Fa0s3V3BOT2VfNklvRy00LXR1WDRKZkJ2X1BtaW03bHdCX1h0RHZTQlVKN0drUzhtWVVqczJqN05jN3BQOWR2dGNXR2hidUF3RnNEQ2hiWFVwUldhYXdhbnY5ZjQ0R3haaEs2M0lWbmRKLUhxR21VY0JhcTZyWkdVdmZZVkx5TVNEeUttTWxoNHFCdEZD?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -640,18 +1099,6 @@
         "publishedAt": "2026-11-05T16:39:00+00:00",
         "source": "Surrey Live",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFNIOFlDdXE2WjNtSG40dUUtLUIzRXc5akZLVGh0OFVFVmUzbVFpY0FiS3QwclhJWmpmczNKOFVCdWlVdkNvaDZUTldrbDdxSFFxMWgyeUcwMVRRalBST1hBdEViektXZWlHSDJ4Zi1KU1VvVnJOSWlONXJKUldPNDA0OFQtNnRwTzRR0gGQAUFVX3lxTE5kZy14bDJFWFNFS1h5T3Y1QU5Qd3UzWWVpRmJLanRVNG9PTzFyMXNkUlJiMUFyLTdfQnVXOFA0dFB1VFQ0cjVRUTdxU1lzZHl4aElCY3pZS3dpWlIwOWhRMmZVVGhncGxET2JhRVNLUzM2X3hzU3dtSy1ZNGkxMjN0a3I5MVRZa0NSTFVwQzlRWA?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
-        "title": "Teddington residents urged to review key pension plans ahead of milestone birthday",
-        "summary": "",
-        "meta": "Wed 4 Nov",
-        "publishedAt": "2026-11-04T10:00:58+00:00",
-        "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWUEzOFBGU2dmTmtuU290TkwwMWx1WHdOdDVZZElLcVBrNU0wUC04czlPTWNqQlhJeFdFdUpKV1RjaVZNUS1hc3A3ZTR4b1ZNZW0tMWw0d2VYdnBtMEdkVDlaWkJodWFTaElvWFhxWjl1RDVRWWdZczVPa2VKbUtvQTRqek5xMi1GeUNFRTdsVXlkZ1E4Uzc4c3hlTjFGN0kzaDJiSU9xUElWbXRIaVBUV0dMUjVWb0dqVmFwSW44NFF5anJPSXZjYWYwWWltQXpYRkE?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -718,18 +1165,6 @@
         "homeArea": false
       },
       {
-        "title": "Surbiton pub ‘well on track’ to reopen this month following £332k makeover",
-        "summary": "",
-        "meta": "Sun 1 Nov",
-        "publishedAt": "2026-11-01T17:04:13+00:00",
-        "source": "Kingston Nub News",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZnZlTUpkWU5LSlBPRWp5eklRcHRIX2xHNHNjR18zR2tsTjdRMjMwS2NJdjZRQnhZWU9SamlJNkVKMGpGUnBxQVhNbUtJRjl1OHZ0MGdDZHkzTWxncklpYUtHOEJVOWhVd3hRMjktaWNLSUttM0U3Z0pOaHMwNlhnOHFDckRvMU5OSWxWX2RPOW5uenRfdXBnRHhtVFJHWDdfeDVVZl9RUFJ5OTNMc0NFd2J5ZzJhU2ZVdkZ3UTQ4UQ?oc=5",
-        "contentType": "article",
-        "localPublication": true,
-        "familyActivity": false,
-        "homeArea": false
-      },
-      {
         "title": "Jimmy Ball | Walton & Hersham (A) | Post-Match",
         "summary": "",
         "meta": "Sat 31 Oct",
@@ -778,6 +1213,18 @@
         "homeArea": false
       },
       {
+        "title": "What Teddington residents should check before buying a local will writing service",
+        "summary": "",
+        "meta": "Fri 30 Oct",
+        "publishedAt": "2026-10-30T07:00:00+00:00",
+        "source": "Teddington Nub News",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNGdwWU5faFA4bG9xLWN1RWo5MUJWSjlHOVFQODdjRHRvQUhiT3NNVVlyeVJrYlBtajFqS001QmRYQnlicm0yendtWWxEalFLdEZoYVBGeEY3cmVtS1FRRHN2Y2VCeTAwRFdBU0VLUkZac1N0aWJ0MzZhOFJpUmxLSTZJY2xrbi1LVHVtLTJ2ZjVGTktSV25lZWd1QlNSUmNwZFF1Z29IY2RLMTc0aWxjRUFYQ3JtVlgzdkdPOUFmTEVNdEl4YnFMMXZ2VmxNd1Mta3ZKSlpiM0tYN1Bn?oc=5",
+        "contentType": "article",
+        "localPublication": true,
+        "familyActivity": false,
+        "homeArea": false
+      },
+      {
         "title": "How Kingston Vale neighbours are coming together to tackle isolation with free community activities",
         "summary": "",
         "meta": "Wed 28 Oct",
@@ -803,6 +1250,78 @@
       }
     ],
     "UK news": [
+      {
+        "title": "Former Britain PM Rishi Sunak celebrates Diwali, shares pic holding diya | | Inshorts",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T13:32:08+00:00",
+        "source": "Inshorts",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZU9pLU1WN2JlRFZJaWYwZjZlRkNyOTJadzhPV3NpVVUyTW9UNWVtd19GNUJiQnFQX0J0cVRXZHFUWTVEVllfTGYwdUdSZV8ycjJVV3JOMFpGdmNOSW9hdHMxZ3liQjVuRmNteHFZWFBzVUt5S2tUQzRmeUNlSXJDOHlUWm4tS2NXc1RFZWZkWjRCU1FKNmtKQXRjZDVpZU5kaGcyZ09KWThGTWRCYjhvR0dFMDhzUdIBuwFBVV95cUxPMUZ4RUpOVWVHR1hPMlFrWXJTWE5NdU5XNTkyVTdBYUJlWjZSemk5eUpfNFRZOHQ3d2xhazlVWld0TGtOd0p0T2dBSHVVZ21OV2FYcXVTdm5meHVuemJVTXQ4TkxTeTBKLW5jRE5vMnFINzhxaGtnbkFDeWwxeEVFLWRUU3RmR0VNM2E0Yld0NU9NVUpMSFlwVVdvWnd1LXhKSE9KbTNsRFZXVW5ldmVMUWRES3cwc2dpd2R3?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Scotland international celebrates shock call-up with rare assist but is left to rue 52 second error",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T11:38:00+00:00",
+        "source": "The Scotsman",
+        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPT3ZnbFpOWTE0V3hsenhCSXZYNld6ejBiblVORWVyQUVDQUZYZXd0YkdDVU5USU4tZGxhNS0yUHBUNklzRUZZQ0hwT0p5M2RqUVFyUWN0N2RrcW1RY3ZUOXc5dGduUVR4cEVGNEcwNFFYaWVIQkI2cGJEWkZqczZFRmQ1T1hyQ3YwblZVQV91bzliYlFUV0szSWJndFRmbFpNNGY1NEJmaXZpd0ZvQkZTbW9hVS1hUy0wdzJmUFY0QUJQUlVxRDdyZWgzd3dKZEJhSlFvREVPTTFaellfRzFSR0dOUG1jRDRvX3J0bGNEUnduLXJFOUUyU0g0Y2tJQzdydXRwQTZZRQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Scotland’s Housing Network gathering celebrates passion, knowledge and partnerships",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T10:43:40+00:00",
+        "source": "Scottish Housing News",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZUNoaTd4UENnTTN4ZWZoVmxsb080emNWMkpLNDJUUC02UTNZMWllWTE2SlJnaURwN0stX2lGYVRBWEJJVlhpMUVnZWpKS2gwdXJJX3MzcGV3ZHY1NDYwU21HaXI0b1VIVWpjOUVsVVh1aHJPVTNYZ1VISVBSQVVuQWgxRFpSbURFM1NOMGUzMXNyeHluOU9ETXVPZ1BTQ2RvVVpSVUxuVllmVDIzekp1Rm1mekE4TFA1cXBVYVVVRXhWd21J?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "PGA in Scotland Lifetime Achievement Award was one of greatest days of my life - Martin Dempster",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T10:40:00+00:00",
+        "source": "The Scotsman",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZm1NR1VXdHdEUkJXYjIwbkEwWmJEYmFJXzBWTDROdmp5TDlUWnVWVU90UkRWcXIxdGdzNkUxRnVRaWhBYUNuM2QyTk53LUhmZzh2YjgxaWtYN01SWWZFWkNTUTVKYmdyNjFrVTVpQ2dMUHlHWDZvX25KTVZ4dUF4Tm9FeVNWbjNsZkxHWFAyMjZLTDhsaDdMbWdBYXlOZjBDUWNGbXVVWGRKejNxSVpNWThLcTRwc280b2trdzJEM2xRYXlILWpocXpWdWQ3Zw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Grammy Award-winning R&B singer announces return to Wales",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T08:23:50+00:00",
+        "source": "Nation.Cymru",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUkxBQm1WTXB6OFhYbkRJT29IRWJveDZaMEg1eVIxc0VCYnM3VjV4ZFRNZi1sQk1Jakc3YWFsTmlOVTJ6OVdVR0VxaUh3UW5RenEweUg0cEJMbnJIMVZCY0w1Y3pjZGwzVk9Qb1UxV3VjU0VRQzBEamJ6N2VrNmd4UUQ3SFdWejY1RHZaOXRoOA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Sports Personality of the Year returns - with five awards decided by public",
+        "summary": "BBC Sports Personality of the Year will be held on 13 December - and audiences will have more influence than ever over the awards.",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T07:30:05+00:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/sport/articles/cqj9kd00y0wko?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "You could be an award-winning conveyancing firm",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T05:10:49+00:00",
+        "source": "Today's Conveyancer",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPaWc4cklMSW05Mi1zSlRRV3FjMFlJakNpcjdyLUlWNnI2LWFXRXMtU01jeHZhbnN2dndrQWNGMzl4STM4TzdXdHc0b0VPc1l6aER2UWRWVmM3ekdzbWY1cEV0YkhzMkt0Uldfd0VOTUtJZw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Wards of Hythe celebrates gold win at the British Property Awards 2026–2027",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T05:00:00+00:00",
+        "source": "Kent Online",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSjJCSTFrZ0pJSzB5dDNRSzNjOW5BbnBGOHEzQzVqTThmS0l4bEV2TkpJTWNINTVNT2xzQW5SOWFrbmU1NmlsVHo4WnI0dHk4WWVFaU5ybEowWi0yaEQ3SUR3M2RwZi1zZVRLSDJ5a0p3XzMyM0kxRGFJdDdXb3RSWnFwX0NybDdaWUFuc3FrVWtiOEQteXplWHBHSmNKcWVJM0dONk5YRmk3WS1tYlE?oc=5",
+        "contentType": "article"
+      },
       {
         "title": "A glimmer of good news for Britain's sleepy dormouse",
         "summary": "New figures suggest hazel dormice may be recovering after decades of decline, with warmer summers boosting survival.",
@@ -835,127 +1354,46 @@
         "summary": "",
         "meta": "Sun 8 Nov",
         "publishedAt": "2026-11-08T22:02:10+00:00",
-        "source": "North Wales Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdkxvbE40d3Y3QXRUUW11X2M0LXdCOEREcF9uVGpXS1JyX3g1b2c1OUEzUmNFNGJVN0p6ekFRYXpld0VXR1duVllWN2xLWEF5YkwtVUg5RFQ4NFFTVU1ic05qSDFpeTEtNWpBX2xLYjVnYmNSeUtfdmlXV05QZmgwN3Y4TzlhWFpuYXlLdWY4b2tqTXZhMDN3RUc4V3F3TXZNZk1kcENWX251dWlndDZybE0xSTl6SWF2V2ZyeDg1eEgyVU5TVWFYVjJXOA?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Borras Park opens community book library with £1,000 business backing",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T19:50:34+00:00",
-        "source": "Herald.Wales",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeDNFbFJDVnMya1BjRVp5Rkw5RVBFc2lEbWZvR3RWRFQxLXo5MmJrQnVQOUhBejF5UW9UbVVMNUJpYkowRnZ0TU5qazlMem5wSHN3VkVvd1hoMXVSeGVCZGt6dldDZGVSUWlMZVhTWHJDNDBSdkliRDEzdk4ydWNQSk9rRTNQZHN0U1lLazlmZUpOUTNFTG1uU1hB?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "12-year-old Camberwell conservationist receives British Citizen Youth Award",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T17:57:13+00:00",
-        "source": "London TV",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOHVTUlB2OWxjV1N5bXk3bU9PQmdPbnlib3VGRXpMUTliaU5MSlViMURrRUQyN0l3aEgtd3lwc3hDXzl3ZENQeWhsQlp2OWx2MTFEMVFleDB5V1k4dHNsNDhCYTktaDJ4dnNSRUZ5MTh1RTBscjc5a3FBMlRxUTdfMHdBdS1PYmhOTUUzN1FRYlZwY3NzS0lvTGhpV185Q1hpYnc?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Peebles Brownies complete 100 laps to raise £830 for Scotland's Charity Air Ambulance",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T15:07:13+00:00",
-        "source": "Border Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRjRIZTg3QUhoWjd2TzFVdmVrWTZhWC0zOVNtaEl4Y0czNjNhamJlT1NUekdtbU82UkdxdWhOcTZCeFdRX1FKZk00dXVEOTh1Z2doUXRYWUFVSmtCRTF0QlljbzYwZWRtNkxfLXhia3hmQ0JnNThURlRFTHVHVEVqSnNBSnJiTHdORy03TWVjZEhKUU9wWlNtVXBUYThOekU?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Leith Theatre – a Shining Star at the British Theatres Award",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T15:00:00+00:00",
-        "source": "The Edinburgh Reporter",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBHbEx5V0xFdzRCQl9QcEpjM3pLVk41YjVXZTVtLXZSZU8wZWxvS2stNEJGWVBOSm13N3NFQV9Nb3FNTGVGWGx4X3ZsM0tRQkJvRWVSaTRFUQ?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Gwent Record Office archivist handed Lifetime Achievement Award",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T13:17:00+00:00",
-        "source": "South Wales Argus",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLVowZ3oyUFJRZTZRZHRYX1JYYzk1b210My0xYTBnQ2xCWS1RLXc2VU5iVC15QXNteFB0NXY4TW1WMFpGbTZQQXJJVG02NGtHeHlRT3QwZXJLWXUwVmpXMnJkVmhIRUgxd19iQ19VZzRWaERWLVIwSU5KZ3poT3BtMkR6dTZLYThxd3lZSnNhczhIZGp1QW9QbWtybmxVRWJoUDJGeGlYZDZDWUJoRW9ILWt3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "British Empire Award for dedicated Guernsey parish volunteer",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T12:24:53+00:00",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE01bWotUkhyVWc2MGtDYXRsczNrRjFSVnVCMTBBUUZfS3c2UXNNb0ZiaUJLUUplOXdYTU44Nzgtckg4MTlwQnVyR2FXQzhOMlBLR0JidFgzMnIyYjZEOVE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "New Scotland a microcosm of fervent clean energy opposition in New York",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T11:09:01+00:00",
-        "source": "Times Union",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYkxMT0huNjNDejJsRWdBbU9tbHVHS1djbzEzRVFSZ2FRUkN6U1JjYkhxU21nSGlNWGJ1RHJ3N05YdjFlUGJ5ak9MQ19KS2ltREFyVlVzbElBYWYyYUlnaFFXMmtKRjB2Y0ROOEVKN1FZQ056YTdST3dKSVdmZm1nZjE5bkRxMG90STl3cnBwRjF3bVRCdHF3SlN3TjVXWDdk?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Borders social enterprise wins Scotland’s Training Provider of the Year award",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T11:04:23+00:00",
-        "source": "Border Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOd2JaSUlubFRqQUFjcUxPOGltRkdaYWtDZGJsZVVkeGI2TXlicVdwVHlHU0Jqd3pKcmRkX1FJVWlURVFaV19Pc2d5V1Raa1h4NGJGaGxJZ3phdjZqMlJMN0RXWGZpbUtPUnBHMlFvVXVSczhXcW5kMk1jYkxKSEdyeUZmc3B6OFB6WlpqalZnM1lKX1JRTHNlMER5b1JzTDhTckMzMVpR?oc=5",
+        "source": "North Wales Pioneer",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaGJKM0dBdld3TmJaaFBVbFRxdkJWQVRTSGtGZ09hQzh2VktkMUJsdDVOZ2NCekdLaUwwdDRob0VzTUxzS1h1emNjZWFwVWQ2WGtkZFQzM2t2SmNlYkpsNXRxX05UOEVpdGk3dmZKYzBkdWZJOFhSTjBzR0gtVmp2TW5wTGNrZHhlcWFJY0VITlhXWnlEbkJBSTFNdmhTSUdhQXU4cDR5dWpfUjFMVW54SXpuRU93NGp6a2pFclRIbVFqTW9WbE03SQ?oc=5",
         "contentType": "article"
       }
     ],
     "AI": [
       {
-        "title": "Cisco Finds Malware Using Claude AI to Profile Victims and Rank Stolen Accounts",
+        "title": "Anthropic launches personal finance feature for Claude",
         "summary": "",
         "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T04:12:10+00:00",
-        "source": "The SOFX Report",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTzFUUGh0Q05FQWJ6NXlqTmJnLTBZaDd5NHBCWm90eVVyNEt2RWZRTlU0WFJMbUVPVFhCc0xvZW5ic29Ncm4zeXJHMG94S2g3eVVCc3BhOTRxUzRsLUkxNjMwMjBid0dXbnVBNW1VWnpIb3JvZnZnNWZpWmZkMmtrOFFfU0tzNF9MbXZVSy1FYkJxbEdyLWowRjNRYVM0MnlyQkVN?oc=5",
+        "publishedAt": "2026-11-09T14:34:45+00:00",
+        "source": "National Technology News",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZnliYnF5anhVNl8zR2c1NXZaX25yQWZnSWNoMlJfUHBqeDdsQjVmZDQ1MWM4RmtjalFSckdCbHZCc1l1RU9ReXE1T1NCUEpqUlc0ZXliaW5pYlpKVGhLclViNnZnSDItcDI1Unl3Q1dvaW1jenFIaGxYdXpmX2FiTjB3Z19aSzBoa3BXWEhGZHVuRHlmOHc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Anthropic Secures 1.7GW of Gas Generators Worth approximately $3.4 Billion Directly, Intensifying AI Power Race",
+        "title": "SoftwareOne expands AI push with Anthropic Select partner status",
         "summary": "",
         "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T03:35:00+00:00",
-        "source": "BigGo Finance",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBHSFJXR2pXOFBHMXkyd0dtNVZLRzNlQUlQRmRScjljcEkzUXQ0SF84MlEwN1ZtUXNLODFhMjhsTmh2ZlJfc1UxUWRhWFgyNVRrUUt3eGVDS21CQkZhcXF4dzBGREJmYWlIVXg4RVR5ZFJGc0tXRFE?oc=5",
+        "publishedAt": "2026-11-09T14:11:44+00:00",
+        "source": "CRN UK",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQkdkOFNqX0tCNVRMTTVqemZROUQza1Fqd0dOMGhtMWtxUV9FZzBZUlV4aFNKQVc5cWhPeVBuVXo4UExXaGJuVmQtREJoWi1OTXFwWnBwR3dfZUhodUNELTFhZ3hFMDhVR2FabEh6ek11Z3BGdVV1RXpuQnJGRC1pWQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "AI may be helping Anthropic make two years of progress in one, METR estimates",
+        "title": "Anthropic signs $3.4bn gas generator deal to support 1.7GW of data center power",
         "summary": "",
         "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T01:17:32+00:00",
-        "source": "EdTech Innovation Hub",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPX2FXeVhEMFl0OG1rNndDNkJpU1ozMnZOVmlzYnBPWGR6cG5OZ3JrR2ljdmpSTE5XRElrTnAwZFhJNF95NmJEdUdTY0FkaG9IMExNTDlBRGo3MlJpdENTN29Qb2NxUmhuTmFVTFJ2R29jSUJqbm8tV3JnTkFUNkg5aVEwbEphdUM1VGxMckdMa0NrSllGTnZVa0M4dnlmRk9KcEVraGE5d2d5OEp2QVJXQjBjQUxNbEd0?oc=5",
+        "publishedAt": "2026-11-09T13:33:44+00:00",
+        "source": "Data Center Dynamics",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNekVlS01IOEp5Ynp4T1EyTnVOTjV5ejU1azNkSmlnNGsxakJRWEFXOHhhU19fWmZlSWlZMEhCajBLS185ZG9yaVJ1d2NOMWV3OVpnVjRUeGY5ZkZ0TklNcF9NNXRra0NDZEotV19jajhPQ3BMNXdpaW15MVdVN2x4TlR2amtSZy1kb1BraHFwNXU1Mk5wUjZrcHRkcU8yRlZ4WnQ3Q3pYelFiTkRPWmlrYU1sMl8yZk1IRy1ycQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "The race for Anthropic employees’ new wealth: ‘They’re not buying Lamborghinis’",
+        "title": "The Week Ahead in AI: OpenAI Hires Hactron for Probe, Anthropic Details Claude 'Dreaming', Post-Election US AI Safety, Plus Upcoming Earnings & Events",
         "summary": "",
         "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T00:06:58+00:00",
-        "source": "Financial News London",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTmxtbXpIanU5dDFzNGRMMDFLSGZEQmFHU1FGLWM4d0dUeXdLN1h4a043cnY4cnNNWlkzazg3a1dmX0FBQ1VLMDZHek52b0FYR3lJOHdjMDJ0SXh1a19EZXNLYV9FMG1zLTR6blNPenF0aEVteTJTX3kzcFB2bWFtV0NmYktBVkFIcERnZUhJNVdFN2UxSlhNMG1pZkZVdkxKcVUzMzNrN1VQREl2NWNMUlhkVGsxVF9W?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic's IPO dilemma after the AI sell-off: 'Damned if you do, damned if you don't'",
-        "summary": "",
-        "meta": "Sun 8 Nov",
-        "publishedAt": "2026-11-08T23:12:28+00:00",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaVlpNjBPSk5CcWpIVmc4RnVtUmsxT00wUFVZTXNrYzJqU2w1VGFoUUlUVS02TXVDODhpanJQSUlrNEUzLUo5c0czMXRaYVdSUzdubzBSTG5lVnVEUUE4bW9HSmVHZGV0ZVhYazJsOWw1WDdLMzYxRU1BaEVfbWpWTWtkTDZhakdWd1l5aU1DZk1abDJKY1JRM1VHQnU2Snl5X2xCMHQwaXJ5bWJxYzZPMFFybnlXOWhGSlByeGFDRXZGY291RzJkeW01dHN2a3Fsd0Jn?oc=5",
+        "publishedAt": "2026-11-09T13:25:02+00:00",
+        "source": "AI Insider",
+        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPUFVBR0Jmd0JaTWd5cXFTczBnWV9mREJrd245d0I0QV9JdnhFUl9DZmhUNTZJRmdCUkNtM2d4MFB4OUlCZlY4M2ZyVGxZLUJ1d09ld1R0N0JjUDRYa0FOMmNLZnhvZ2JEdTNmYWhUV29LS21EOTVkNldHVmhja2t2bmVpT196YjdMU19SUGhRU1ZlTTA1RF9uQ182OVFMY2VBUEV6WEVhUks0WE9Oc2dXMHJZdTI0OU14QkZ4bS14c2kxYk93SjZYOVhNWmZyY01HVWJmcElFT3FtbDR3LXR3MXA3MTViTTI2U0RyZTVGZnh3WjB6cEczSTFWclFQSWNwbzdyUkhuNVFuYWcw?oc=5",
         "contentType": "article"
       },
       {
@@ -968,21 +1406,30 @@
         "contentType": "article"
       },
       {
-        "title": "Under fire over AI, effective altruism wants to tell its own story",
+        "title": "What Hardware Does Your PC Need To Run A Local AI Model?",
         "summary": "",
         "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T02:11:53+00:00",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYmRvc3BlblljSktfWnVQR3dkaHZxWHh3cGZYN3JMRjFsQWs5eUxFOHptUzZqRENlajBJWEFVTEQzYVdCZk0tei1oMFdoWnV6WEtHeU9WN0REOHZvRGcwdWUxVWNRWEFhV0EwWkVHSmFVdVdVRkFOdmtqZmFUcG5UaG1jODdsazU1dnY2QTg1R3k0YXZjREp5OFM3VU1Kd1hZOUJoUWFZUGxMbFlaeFA2dDJB?oc=5",
+        "publishedAt": "2026-11-09T13:45:00+00:00",
+        "source": "Engadget",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9SaXR6cV9tMHFPOVlmM0lxNkxuUlBCcmFjemFsVEY4M3hUM3ZMTE5lRGVzRk43VVoxZVAyVzJ1bk9YcFZnSU00dVltR01GZUhDUGdsUFVaQlR2dHJSbzNOV3hBUTlac0E2UHY2U20tR25IVEFpcHZ0SXQ3Yw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Who Owns DeepSeek, The Chinese AI Company?",
+        "title": "OpenAI announces partnership with JPMorgan as it works to grow enterprise revenue",
         "summary": "",
-        "meta": "Sat 7 Nov",
-        "publishedAt": "2026-11-07T12:47:00+00:00",
-        "source": "BGR",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ia290ZXNtM2dLektvdUJXRHp6dVJjeEdZTFY3OHRENnJKblk1N2hKcVRxMV9qYl81aFZ6Yk1yUk11V3ZqUGpKVDZmQjlTMklISEpRdjVZM1dQX043UkE?oc=5",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T11:15:11+00:00",
+        "source": "FStech",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMTdrWU1ON1BKaURiUlpNNmxyWHFvc0hlTHFHb2pQVU04LU9YWlU2WE94SXUxOVVwMWJxT0hIOFMwdGlJVWtpQy16UUloUHJia184VWlaSzF6UEZBSDRrNFBkRjBhX040R2t5T3pLY1dGRlNaY2NHMzh5TVBOdFdBUW5IRUN6R3lyS1ZfTVFZUjFKZHp4ckpXUGFJVXJQY3EteXNJNVUybEN4MkdrLUZ2Tl81RUE?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "DeepSeek's open-source Harness agent hits 1.54M daily users in under three months, with an official plugin marketplace planned",
+        "summary": "",
+        "meta": "Mon 9 Nov",
+        "publishedAt": "2026-11-09T05:10:05+00:00",
+        "source": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUTEtcEF6VDk0ajZWRmwyWVRkWkRoTkpZeDFmZVQzVEdvZ3dCT2pSYzRSaGJuYWhrME9zSDNxNzA1SlJzVTRjbUwtY2UyTmJWWFhKNnJnSWJQRlRoRGJ5ZnpSMExuS0ZZWWxHbHU0NmRFaC04ZFNlWFQ0ZWhBeUlGcktiUTdvNXpDQ0JTVkVVUkFqblZmYXY3c1U5T0twSXRiTGdvbG5hRmVqNVpraFNqX2RBTDYtcm1iZmIzeHhZMXhETkdRNGlZWjVYV1Z4dE5LT0h2MUxKeGlfcFNTM2RTUWJnWFQtVl9rbGpjdWFvVTQ?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       },
@@ -1000,9 +1447,9 @@
         "title": "China’s Moonshot AI seeks Nvidia Blackwell access in Europe, CNBC reports",
         "summary": "",
         "meta": "Thu 5 Nov",
-        "publishedAt": "2026-11-05T15:52:11+00:00",
-        "source": "Yahoo Finance UK",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNc1U5cG1DRjdOTFJsQmw2TGUtVTY4aHpsWHNGeFZtVXpFcm1VYjFFV0JWazlRVUo1TXRRaFV0VmFQSWxVdXk5ZW9Hekt4SXVUbFhNU0hmeXkzaXZHVENzNF9nZjZqa0YtSmx2VzF2V0ZwX0czYWpvQjljZGx3R2VRdnFSQmhzQQ?oc=5",
+        "publishedAt": "2026-11-05T15:51:40+00:00",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcERRU0dWMkpSUzZrSHBTZEpVMHd0RjdNaHNNX21sRE5ubnFzb21pckhaN0FTU3B6c0wwQVd2dFU2Nm4tb2dBVXExTTM3eV9mSWRIVGNGalhWcG10SXpOZDhuVk9GcFpJQ1dWQlJGRVpzZVdjb3FfWnJCM09IMUJ3WkZCdG1tOXlDa3l5X01zOFlKZHNUY2tNS3JR?oc=5",
         "contentType": "article",
         "liveChineseLab": true
       }
@@ -1084,7 +1531,7 @@
       ],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 544.3
+      "preferenceScore": 544.2
     },
     {
       "title": "Return to Paradise",
@@ -1134,7 +1581,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 490.8
+      "preferenceScore": 490.9
     },
     {
       "title": "Green Eyed Killers",
@@ -1182,7 +1629,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 452.7
+      "preferenceScore": 452.6
     },
     {
       "title": "Shetland",
@@ -1334,7 +1781,7 @@
       "genres": [],
       "interestLane": "dark-documentary",
       "generatedDate": "2026-11-09",
-      "preferenceScore": 371.2
+      "preferenceScore": 371.3
     },
     {
       "title": "The Incident Room",
