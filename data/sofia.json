@@ -28,17 +28,17 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "6°",
-    "summary": "Mist",
-    "condition": "Mist",
-    "currentRainChance": 4,
+    "temp": "10°",
+    "summary": "Light rain",
+    "condition": "Light rain",
+    "currentRainChance": 60,
     "daily": [
       {
         "date": "2026-11-10",
         "high": 10,
         "low": 8,
-        "summary": "Light rain",
-        "condition": "Light rain",
+        "summary": "Heavy rain",
+        "condition": "Heavy rain",
         "rainChance": 95,
         "source": "Met Office"
       },
@@ -54,16 +54,16 @@
       {
         "date": "2026-11-12",
         "high": 9,
-        "low": 1,
+        "low": 0,
         "summary": "Sunny",
         "condition": "Sunny",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-11-13",
         "high": 6,
-        "low": 0,
+        "low": -1,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -72,18 +72,18 @@
       {
         "date": "2026-11-14",
         "high": 7,
-        "low": 4,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 10,
+        "low": 3,
+        "summary": "Sunny",
+        "condition": "Sunny",
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
         "date": "2026-11-15",
-        "high": 12,
-        "low": 11,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "high": 10,
+        "low": 9,
+        "summary": "Overcast",
+        "condition": "Overcast",
         "rainChance": 40,
         "source": "Met Office"
       },
@@ -99,7 +99,7 @@
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Light rain expected · rain chance around 95%",
+      "detail": "Heavy rain expected · rain chance around 95%",
       "source": "Met Office"
     },
     "source": "Met Office",
