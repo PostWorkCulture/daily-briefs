@@ -28,8 +28,8 @@
         "date": "2026-11-10",
         "high": 10,
         "low": 8,
-        "summary": "Heavy rain",
-        "condition": "Heavy rain",
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 95,
         "source": "Met Office"
       },
@@ -37,8 +37,8 @@
         "date": "2026-11-11",
         "high": 10,
         "low": 5,
-        "summary": "Heavy rain",
-        "condition": "Heavy rain",
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 95,
         "source": "Met Office"
       },
@@ -71,26 +71,26 @@
       },
       {
         "date": "2026-11-15",
-        "high": 10,
-        "low": 9,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 40,
+        "high": 9,
+        "low": 7,
+        "summary": "Sunny intervals",
+        "condition": "Sunny intervals",
+        "rainChance": 30,
         "source": "Met Office"
       },
       {
         "date": "2026-11-16",
         "high": 15,
-        "low": 9,
+        "low": 10,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 60,
+        "rainChance": 70,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Check hourly Met Office forecast",
-      "detail": "Heavy rain expected · rain chance around 95%",
+      "detail": "Light rain expected · rain chance around 95%",
       "source": "Met Office"
     },
     "source": "Met Office",
