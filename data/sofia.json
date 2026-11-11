@@ -19,18 +19,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "9°",
-    "summary": "Light rain",
-    "condition": "Light rain",
-    "currentRainChance": 4,
+    "temp": "10°",
+    "summary": "Overcast",
+    "condition": "Overcast",
+    "currentRainChance": 10,
     "daily": [
       {
         "date": "2026-11-11",
         "high": 10,
-        "low": 5,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 95,
+        "low": 4,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 10,
         "source": "Met Office"
       },
       {
@@ -62,11 +62,11 @@
       },
       {
         "date": "2026-11-15",
-        "high": 10,
-        "low": 8,
+        "high": 9,
+        "low": 6,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 50,
+        "rainChance": 60,
         "source": "Met Office"
       },
       {
@@ -81,16 +81,16 @@
       {
         "date": "2026-11-17",
         "high": 11,
-        "low": 7,
-        "summary": "Forecast",
-        "condition": "Forecast",
+        "low": 6,
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 60,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
-      "label": "Check hourly Met Office forecast",
-      "detail": "Light rain expected · rain chance around 95%",
+      "label": "Good outdoor day",
+      "detail": "Cloudy · rain chance around 10%",
       "source": "Met Office"
     },
     "source": "Met Office",
