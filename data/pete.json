@@ -19,18 +19,18 @@
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
-    "temp": "10°",
-    "summary": "Overcast",
-    "condition": "Overcast",
-    "currentRainChance": 10,
+    "temp": "8°",
+    "summary": "Cloudy",
+    "condition": "Cloudy",
+    "currentRainChance": 4,
     "daily": [
       {
         "date": "2026-11-11",
-        "high": 10,
-        "low": 4,
+        "high": 9,
+        "low": 5,
         "summary": "Cloudy",
         "condition": "Cloudy",
-        "rainChance": 10,
+        "rainChance": 4,
         "source": "Met Office"
       },
       {
@@ -53,7 +53,7 @@
       },
       {
         "date": "2026-11-14",
-        "high": 7,
+        "high": 8,
         "low": 2,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -62,35 +62,35 @@
       },
       {
         "date": "2026-11-15",
-        "high": 9,
-        "low": 6,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
+        "high": 10,
+        "low": 5,
+        "summary": "Light rain",
+        "condition": "Light rain",
         "rainChance": 60,
         "source": "Met Office"
       },
       {
         "date": "2026-11-16",
-        "high": 14,
-        "low": 9,
-        "summary": "Overcast",
-        "condition": "Overcast",
-        "rainChance": 60,
+        "high": 10,
+        "low": 7,
+        "summary": "Cloudy",
+        "condition": "Cloudy",
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-11-17",
-        "high": 11,
-        "low": 6,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 60,
+        "high": 10,
+        "low": 5,
+        "summary": "Heavy rain",
+        "condition": "Heavy rain",
+        "rainChance": 70,
         "source": "Met Office"
       }
     ],
     "bestOutdoor": {
       "label": "Good outdoor day",
-      "detail": "Cloudy · rain chance around 10%",
+      "detail": "Cloudy · rain chance around 4%",
       "source": "Met Office"
     },
     "source": "Met Office",
