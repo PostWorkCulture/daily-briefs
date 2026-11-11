@@ -1,21 +1,21 @@
 {
-  "updatedLabel": "Tuesday, 10 November 2026 · refreshed 7:38pm",
+  "updatedLabel": "Wednesday, 11 November 2026 · refreshed 5:01am",
   "worldFact": {
-    "id": "peru-qoylluriti-glacier-pilgrimage",
+    "id": "india-kumbh-mela-sacred-gathering",
     "editorialPriority": "human-first",
-    "category": "Living sacred ritual",
-    "country": "Peru",
-    "place": "Pilgrimage of the Lord of Qoyllurit'i",
+    "category": "Sacred gathering record",
+    "country": "India",
+    "place": "Kumbh Mela pilgrimage",
     "source": "UNESCO Intangible Cultural Heritage",
-    "sourceUrl": "https://ich.unesco.org/en/RL/pilgrimage-to-the-sanctuary-of-the-lord-of-qoyllurit-i-00567",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Qoyllurit_i_pilgrimage_Sinakara.jpg?width=2400",
-    "imagePage": "https://commons.wikimedia.org/wiki/File:Qoyllurit_i_pilgrimage_Sinakara.jpg",
-    "photoCredit": "A. Davey · CC BY 2.0",
-    "fact": "Up to ninety thousand pilgrims trek to an isolated glacier valley at 4,700 metres elevation, where masked Ukuku dancers stand vigil at sub-zero temperatures beneath snow-covered peaks.",
-    "locationContext": "Sinakara Valley, Cusco · southern Peruvian Andes",
+    "sourceUrl": "https://ich.unesco.org/en/RL/kumbh-mela-01258",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kumbh_Mela_Haridwar_gathering.jpg?width=2400",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kumbh_Mela_Haridwar_gathering.jpg",
+    "photoCredit": "Michael Foley · CC BY 2.0",
+    "fact": "The Kumbh Mela brings tens of millions of pilgrims to bathe at the sacred confluence of the Ganges and Yamuna rivers, making it the largest peaceful gathering of humanity recorded on Earth.",
+    "locationContext": "Prayagraj and Haridwar · northern India",
     "editorialBoost": "wild",
-    "date": "2026-11-10",
-    "sequence": 81,
+    "date": "2026-11-11",
+    "sequence": 82,
     "localImage": "assets/scenery/world-fact.webp?v=c993790bfb87"
   },
   "weather": {
@@ -24,15 +24,6 @@
     "condition": "Light rain",
     "currentRainChance": 4,
     "daily": [
-      {
-        "date": "2026-11-10",
-        "high": 10,
-        "low": 8,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 95,
-        "source": "Met Office"
-      },
       {
         "date": "2026-11-11",
         "high": 10,
@@ -63,7 +54,7 @@
       {
         "date": "2026-11-14",
         "high": 7,
-        "low": 3,
+        "low": 2,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -71,20 +62,29 @@
       },
       {
         "date": "2026-11-15",
-        "high": 9,
-        "low": 7,
+        "high": 10,
+        "low": 8,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 30,
+        "rainChance": 50,
         "source": "Met Office"
       },
       {
         "date": "2026-11-16",
-        "high": 15,
-        "low": 10,
-        "summary": "Light rain",
-        "condition": "Light rain",
-        "rainChance": 70,
+        "high": 14,
+        "low": 9,
+        "summary": "Overcast",
+        "condition": "Overcast",
+        "rainChance": 60,
+        "source": "Met Office"
+      },
+      {
+        "date": "2026-11-17",
+        "high": 11,
+        "low": 7,
+        "summary": "Forecast",
+        "condition": "Forecast",
+        "rainChance": 60,
         "source": "Met Office"
       }
     ],
@@ -98,37 +98,37 @@
     "location": "West Molesey, KT8 2LE",
     "forecastPoint": "Hampton W Wks",
     "yesterdayExtremes": {
-      "dateLabel": "Monday 9 November 2026",
+      "dateLabel": "Tuesday 10 November 2026",
       "source": "Met Office",
       "sourceUrl": "https://weather.metoffice.gov.uk/observations/weather-extremes",
       "hot": {
-        "location": "Scilly: St Marys Airport",
-        "town": "Scilly",
-        "county": "Isles of Scilly",
+        "location": "Camborne",
+        "town": "Camborne",
+        "county": "Cornwall",
         "country": "England",
-        "displayLocation": "Scilly, Isles of Scilly",
+        "displayLocation": "Camborne, Cornwall",
         "value": "14.0°C",
         "photo": {
-          "src": "assets/weather-extremes/hot.webp?v=ae5ed4e1c63b",
-          "page": "https://commons.wikimedia.org/wiki/File:Isles_of_Scilly_NASA.jpg",
-          "credit": "ISS Crew Earth Observations experiment and the Image Science & Analysis Laboratory, Johnson Space Center · Public domain",
-          "alt": "Scilly, Isles of Scilly",
+          "src": "assets/weather-extremes/hot.webp?v=77878bdbe633",
+          "page": "https://commons.wikimedia.org/wiki/File:Trelowarren_Street,_Camborne,_July_2024.jpg",
+          "credit": "Mutney · CC BY 4.0",
+          "alt": "Trelowarren Street, Camborne, July 2024",
           "width": 1600,
           "height": 900
         }
       },
       "cold": {
-        "location": "Cardington",
-        "town": "Cardington",
-        "county": "Bedford",
+        "location": "Shap",
+        "town": "Shap",
+        "county": "Cumbria",
         "country": "England",
-        "displayLocation": "Cardington, Bedford",
-        "value": "-1.2°C",
+        "displayLocation": "Shap, Cumbria",
+        "value": "-4.3°C",
         "photo": {
-          "src": "assets/weather-extremes/cold.webp?v=c620cbec5636",
-          "page": "https://commons.wikimedia.org/wiki/File:Cottage_Farm_Nurseries_Cople_Road,_Cardington_-_geograph.org.uk_-_5617105.jpg",
-          "credit": "PAUL FARMER · CC BY-SA 2.0",
-          "alt": "Cottage Farm Nurseries Cople Road, Cardington",
+          "src": "assets/weather-extremes/cold.webp?v=8e8504d9fd4c",
+          "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(A6),_Shap_-_geograph.org.uk_-_3344660.jpg",
+          "credit": "David Dixon · CC BY-SA 2.0",
+          "alt": "Main Street (A6), Shap",
           "width": 1600,
           "height": 900
         }
@@ -136,21 +136,6 @@
     }
   },
   "calendar": [
-    {
-      "title": "Let it glow disco 3-4pm",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-09T00:00:00+00:00",
-      "end": "2026-11-10T00:00:00+00:00",
-      "date": "2026-11-09",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "cgo66e32c8o32b9n6oqj8b9kcdijgbb165h3gb9gcli38e1l6tgj2c9j6o",
-      "calendarColorSource": "calendar-default",
-      "feed": "4886e929"
-    },
     {
       "title": "Playball - PU 3.45PM (main playground)",
       "summary": "",
@@ -437,21 +422,6 @@
       "feed": "4886e929"
     },
     {
-      "title": "Football 10-11am",
-      "summary": "",
-      "url": "",
-      "start": "2026-11-29T00:00:00+00:00",
-      "end": "2026-11-30T00:00:00+00:00",
-      "date": "2026-11-29",
-      "time": "All day",
-      "allDay": true,
-      "color": "#51b749",
-      "colorId": "10",
-      "googleEventId": "c9h34e3560o6cbb5c5gj2b9kc9i38b9ocgrj4b9g6gs64c9jcpijed9hco",
-      "calendarColorSource": "google",
-      "feed": "4886e929"
-    },
-    {
       "title": "Taylor come?",
       "summary": "",
       "url": "",
@@ -464,6 +434,21 @@
       "colorId": null,
       "googleEventId": "6ph36dj165h62b9m60q3ib9k6hhj4bb2c9h3cb9g71hm2c1o64rmcphicc",
       "calendarColorSource": "calendar-default",
+      "feed": "4886e929"
+    },
+    {
+      "title": "Football 10-11am",
+      "summary": "",
+      "url": "",
+      "start": "2026-11-29T00:00:00+00:00",
+      "end": "2026-11-30T00:00:00+00:00",
+      "date": "2026-11-29",
+      "time": "All day",
+      "allDay": true,
+      "color": "#51b749",
+      "colorId": "10",
+      "googleEventId": "c9h34e3560o6cbb5c5gj2b9kc9i38b9ocgrj4b9g6gs64c9jcpijed9hco",
+      "calendarColorSource": "google",
       "feed": "4886e929"
     },
     {
@@ -542,21 +527,6 @@
       "feed": "4886e929"
     },
     {
-      "title": "See Kate and Family",
-      "summary": "",
-      "url": "",
-      "start": "2026-12-06T00:00:00+00:00",
-      "end": "2026-12-07T00:00:00+00:00",
-      "date": "2026-12-06",
-      "time": "All day",
-      "allDay": true,
-      "color": "#ff887c",
-      "colorId": "4",
-      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
-      "calendarColorSource": "google",
-      "feed": "4886e929"
-    },
-    {
       "title": "Football 10-11am",
       "summary": "",
       "url": "",
@@ -568,6 +538,21 @@
       "color": "#51b749",
       "colorId": "10",
       "googleEventId": "6os6cc9lcdij6b9gc4qj0b9k6lh34b9p6sojeb9j6go3cp1i6or66d1k6c",
+      "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "See Kate and Family",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-06T00:00:00+00:00",
+      "end": "2026-12-07T00:00:00+00:00",
+      "date": "2026-12-06",
+      "time": "All day",
+      "allDay": true,
+      "color": "#ff887c",
+      "colorId": "4",
+      "googleEventId": "chgj4dr468sjabb56go38b9k60o38b9o6lijib9jc9j3gc326cpj8dr6ck",
       "calendarColorSource": "google",
       "feed": "4886e929"
     },
@@ -707,21 +692,6 @@
       "feed": "4886e929"
     },
     {
-      "title": "XMAS BREAK",
-      "summary": "",
-      "url": "",
-      "start": "2026-12-21T00:00:00+00:00",
-      "end": "2027-01-01T00:00:00+00:00",
-      "date": "2026-12-21",
-      "time": "All day",
-      "allDay": true,
-      "color": null,
-      "colorId": null,
-      "googleEventId": "6o0e4m1jmitqlmslvre7r3rbf6",
-      "calendarColorSource": "calendar-default",
-      "feed": "4886e929"
-    },
-    {
       "title": "FULL DAYS",
       "summary": "",
       "url": "",
@@ -734,6 +704,21 @@
       "colorId": "2",
       "googleEventId": "3v3g7b8i8ak713e7kb0udbupru",
       "calendarColorSource": "google",
+      "feed": "4886e929"
+    },
+    {
+      "title": "XMAS BREAK",
+      "summary": "",
+      "url": "",
+      "start": "2026-12-21T00:00:00+00:00",
+      "end": "2027-01-01T00:00:00+00:00",
+      "date": "2026-12-21",
+      "time": "All day",
+      "allDay": true,
+      "color": null,
+      "colorId": null,
+      "googleEventId": "6o0e4m1jmitqlmslvre7r3rbf6",
+      "calendarColorSource": "calendar-default",
       "feed": "4886e929"
     },
     {
@@ -867,24 +852,6 @@
     "played": 10,
     "news": [
       {
-        "title": "Khari Ranson joins Billericay on short-term loan",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T18:54:09+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVzJ2aWp2YkZxeERRdm5Ec2RlM0FTMmNHQ0NpRWR3Sy0xdEVsdWlSM3pXNGZNWVlQakJDeGlnZzVUZEZxMERERVVwV3lwT3g1bm85aUtVby1GTGxJMXRJRWxvN2EzTXZwNnVoWnBSQ2NYMlN2T2RrUU9ERnNDUDMwbnhZY2pLVjFDT0JmZUhVUmNoYXZC?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal boost after shock Madueke snub as new training plan revealed",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T09:58:43+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXVJQXhoSEt5cWtlYjRrZGZlc3BwRTRXTE5SLVgyMi1JOUdIRDNKUWo5dDlRajlMRENqNk1GTDgzdFpNdlN1bkxIU2FOT0c4dC03RTlGRnU1ME84eG1GM0hxOHM3LWFkZ2RfTS0zX3hDV3UtRVRlM3ZXc2gyRTRPS3Z4WVlzWlZwRmF4aEV3bElXZWFubzcw?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Arsenal eye four targets to boost attack including highly rated Bournemouth star",
         "summary": "",
         "meta": "Tue 10 Nov",
@@ -894,21 +861,39 @@
         "contentType": "article"
       },
       {
+        "title": "Khari Ranson joins Billericay on short-term loan",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T18:54:09+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVzJ2aWp2YkZxeERRdm5Ec2RlM0FTMmNHQ0NpRWR3Sy0xdEVsdWlSM3pXNGZNWVlQakJDeGlnZzVUZEZxMERERVVwV3lwT3g1bm85aUtVby1GTGxJMXRJRWxvN2EzTXZwNnVoWnBSQ2NYMlN2T2RrUU9ERnNDUDMwbnhZY2pLVjFDT0JmZUhVUmNoYXZC?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arsenal hit with new injury blow as manager confirms squad withdrawal",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T10:33:07+00:00",
+        "publishedAt": "2026-11-10T13:37:11+00:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNREpSd3Fja1pvVlBwY0FRWDFsZVZHR19VVXpaUWRDSTNLaHpoSHA5VVRhVjhRa1VpX3lwNmlGaWhZTzgyd1NUVldzaGZFcGZSRERxcXE1NjVLR3NTaEtJbWtXUEE3RFdJX3ZJQUI4cDQyWTNWbm9IMjJqQTdOQnE1YmU1cUhqd2lVOXlOTTlFOElZUQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Chelsea one of three clubs keen on Arsenal star Martin Zubimendi for January transfer",
+        "title": "Which stars are on November international duty?",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T09:26:00+00:00",
-        "source": "The Independent",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWHpHWjRFWFNUN2MtS0FIVHV2Zms4OTR2N0xhVEpRR0xBamM1R1ZDcGd4QjJ2REU2cmhVTmdEY0dyUVNIdnBydVdSQTdDTzdxSHNvY2tGNGg2VTlubU5yVlVzb3BuNzI4ZmxNcF8wUU03S29ET1RGV1FOYUZ1Tk5Uay0yOGNvMEdWTDlVZDgtLVRIdXF2eTF0VmVlemkzcng1NUZSNjNOUk9mT1FrYUI0NU4zSEZmYTloT0ZDanRB?oc=5",
+        "publishedAt": "2026-11-10T13:04:55+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSWlfOG13TUttc3VoSm0wLUFYSE1LOTh2d2tIWUdMVGMtTXp3NmFHc3RMV0pHaW5JZjkySXNmTGROckdLZk42LTJadnBMOC1hZGxEV2kwaHdlYjR6RXo5V09KaG9oeGc3TFpxY0dEQU1KR0ZnTmljTjZyLXMwTGtCbTlJejZZNUVxaFREc1ZFaTY1Zw?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Arsenal star reveals how Arteta is 'different to any other manager'",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T23:42:07+00:00",
+        "source": "London Evening Standard",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNb2Z5TTlseXRGN2JtTXZFaXhTdktodXpQMFdvcERNejE4UVY1Y2F2empCNWxyTjlSOGZhcFdzOW9hQWtfaWd1OEZtUUNzSXRvNWt0cDVCZW9MSjk2ZVl0LVpjai1sV3F1azFEdU1aQlotODJmb1JDYTJhS1BVejY2cEp2MTloUms?oc=5",
         "contentType": "article"
       }
     ],
@@ -979,58 +964,58 @@
         "sourceUrl": "https://x.com/FabrizioRomano"
       },
       {
-        "title": "Martin Ødegaard delivers again as Arsenal beat Hull City! Who’s your Man of the Match?",
+        "title": "Arteta: \"Sometimes my feeling is we're trying to score a perfect goal. Against these low blocks you need to be a lot more chaotic than that.\"",
         "summary": "",
         "meta": "Sat 7 Nov",
-        "publishedAt": "2026-11-07T16:55:05+00:00",
-        "source": "Fabrizio Romano",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YUURDckYwdEViVDdZZ0JMeFJSMDYyLWhFcGxjQ09JT3NsYWY5dzZRYmhPRFpfX2hiNzFnMXlPRXhvMWVjWWk3amtzSlo2UEprYk5RS1Y2WllDY2JNUmMyMG1OYVU3QQ?oc=5",
+        "publishedAt": "2026-11-07T17:40:55+00:00",
+        "source": "James Benge",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhZDdINUl2bVlwUko3b01XUm1sYUhyYkZEVVJydzhBdF84NTBlaXpDSzRZNkJNdzhKOGhtajEzWW1LZ2xzMEJjTXM1S0RRdFd3OEVjck5McDNwVnE0WFVubw?oc=5",
         "contentType": "transfer-rumour",
         "trust": "Unconfirmed",
         "speculative": true,
         "sourceType": "X",
-        "confidence": "Established reporter",
-        "sourceUrl": "https://x.com/FabrizioRomano"
+        "confidence": "Arsenal specialist",
+        "sourceUrl": "https://x.com/jamesbenge"
       }
     ]
   },
   "lead": {
-    "title": "Anthropic targets valuation of up to $1.4tn in stock market flotation",
+    "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
     "summary": "",
     "meta": "Tue 10 Nov",
-    "publishedAt": "2026-11-10T19:02:00+00:00",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWZNcUt6ZldxUnNyTXZySGZacWZueTYtS0JOUVZ2S3JUWENYcThEMm9CSnVXX25QTGJYZGc3UVhKNXloQ0pPdUJpbkxZQ3Q1NEdSMzJEWjB5M3UwVDJ5UjhxdllTMEhjQm41UDg1QndqbE5KWkNBZ3RoMlhHSjM5SDkyN2tmQjZjcEpyNGMxVjF1MV9vRmpJb3d4X1NibmRYd3V5TUNxMGtacGJjXzNqRURn?oc=5",
+    "publishedAt": "2026-11-10T17:56:12+00:00",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HNWFGZG1teU8xOWttMlMzb1gtbVhmNW94MlFvanZrY3JCbVVkcExpX3VrTGFLOVgwaGhON21KMUN5SGI1R2hmM2pMMkJXQlFDaUU0TnV6TWVqNWM?oc=5",
     "contentType": "article"
   },
   "interests": [
     {
-      "title": "Anthropic targets valuation of up to $1.4tn in stock market flotation",
+      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
       "summary": "",
       "meta": "Tue 10 Nov",
-      "publishedAt": "2026-11-10T19:02:00+00:00",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWZNcUt6ZldxUnNyTXZySGZacWZueTYtS0JOUVZ2S3JUWENYcThEMm9CSnVXX25QTGJYZGc3UVhKNXloQ0pPdUJpbkxZQ3Q1NEdSMzJEWjB5M3UwVDJ5UjhxdllTMEhjQm41UDg1QndqbE5KWkNBZ3RoMlhHSjM5SDkyN2tmQjZjcEpyNGMxVjF1MV9vRmpJb3d4X1NibmRYd3V5TUNxMGtacGJjXzNqRURn?oc=5",
+      "publishedAt": "2026-11-10T17:56:12+00:00",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HNWFGZG1teU8xOWttMlMzb1gtbVhmNW94MlFvanZrY3JCbVVkcExpX3VrTGFLOVgwaGhON21KMUN5SGI1R2hmM2pMMkJXQlFDaUU0TnV6TWVqNWM?oc=5",
       "contentType": "article",
       "section": "AI"
     },
     {
-      "title": "Khari Ranson joins Billericay on short-term loan",
+      "title": "Arsenal eye four targets to boost attack including highly rated Bournemouth star",
       "summary": "",
       "meta": "Tue 10 Nov",
-      "publishedAt": "2026-11-10T18:54:09+00:00",
-      "source": "Arsenal.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVzJ2aWp2YkZxeERRdm5Ec2RlM0FTMmNHQ0NpRWR3Sy0xdEVsdWlSM3pXNGZNWVlQakJDeGlnZzVUZEZxMERERVVwV3lwT3g1bm85aUtVby1GTGxJMXRJRWxvN2EzTXZwNnVoWnBSQ2NYMlN2T2RrUU9ERnNDUDMwbnhZY2pLVjFDT0JmZUhVUmNoYXZC?oc=5",
+      "publishedAt": "2026-11-10T09:59:00+00:00",
+      "source": "The Independent",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUEM0dnNVUnNoVW9RcEhhQWYtMzhwa1MxWWVJSV90VXkwS2J4VDhQaTUwYm1NRjZqdnYzdEJTaWdpRmRIZDFzYjJnQUlPOTVralBpUkFEVjNXRmJLblpoVk5CWUh0OEpDN0I1R0FsWnRpaWxFRGhyc1VQcDNieFRUWDlBb213RE55R28zc0ZmYjd5MGlBQ3A5dEYtME9EVGhybFg5UWVCUGVtcEFpa1E?oc=5",
       "contentType": "article",
       "section": "Arsenal"
     },
     {
-      "title": "How live-in care can help Teddington residents stay independent at home",
+      "title": "Teddington RNLI thanks community after various events raise thousands for life-saving rescues",
       "summary": "",
       "meta": "Tue 10 Nov",
-      "publishedAt": "2026-11-10T17:04:12+00:00",
+      "publishedAt": "2026-11-10T23:16:15+00:00",
       "source": "Teddington Nub News",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWWViZDJCa1BDNGRKRTcxOHpPV01NVXg4WGUwYnRUWmJwZFhrM3FpNXMxMlJyZUVMUExXRW40R21iQ3VtRkFnMWJ5WXVzQk13OEd0bzNQRGw2WXRDcUlWSURIdHpyWXd6c01IZlZKYWZOVTNlbkhiQV8xdV9Pam9qX19RV29nTndHX0lReVFOdGJjdjBzUzZNUk1VTlpyUXB1eFBuVmhIREpVTUE3Qk82X01tdUhmdlR2N2VjeW12MGU1bEdnMUNGQg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQR3VrOERORG9OS3ZSTlVuR0ctNkxWMzhJTXJabXRfczk1bTBaVE13cXdnZTFQTFNPY1R4TEtxTF93OUR0Xzlod2xBbWZvYjlRVkZOSHdENW1uUU1hWlRldTRBSXJJZ2ZVZzV4U3JRQ3pURkw3UDFhYzlUQXVNZ3NiQUx4a2NZWUQ5TnBTYmZIaHpuWllBLWpmcnNzZ05HTGV6Yk1KamtpSUtyRklRWXZqckJDT2Y2Y0lMZjByMGw4VzJPM3dNeEExZWtpSzlUb3phcjJSdXBUU0hseW9k?oc=5",
       "contentType": "article",
       "localPublication": true,
       "familyActivity": false,
@@ -1061,17 +1046,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 642.3
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 634.3
     },
     {
       "title": "Global Eye",
       "summary": "Award-winning investigations - revealing secrets, rooting out injustice, and exposing crime, corruption, and abuse. The biggest stories from BBC correspondents all over the world.",
-      "meta": "BBC Two · Available since yesterday",
+      "meta": "BBC Two · Available since Mon 9 Nov",
       "source": "BBC Two",
       "channel": "BBC Two",
       "releaseDate": "2026-11-09",
-      "releaseDateLabel": "Available since yesterday",
+      "releaseDateLabel": "Available since Mon 9 Nov",
       "url": "https://www.bbc.co.uk/programmes/m002j92n",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/587/1467592.jpg",
@@ -1084,20 +1069,20 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 624.0
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 616.0
     },
     {
       "title": "Peelers: The PSNI for Real",
       "summary": "Dave and Owen bust a city centre drug dealer carrying cash and cocaine. The vehicle crime team chase a careless driver, and officers separating a street brawl face a torrent of abuse.",
-      "meta": "BBC iPlayer · Tomorrow, 6am",
+      "meta": "BBC iPlayer · Today, 6am",
       "source": "BBC iPlayer",
       "channel": "BBC iPlayer",
       "releaseDate": "2026-11-11",
-      "releaseDateLabel": "Tomorrow, 6am",
+      "releaseDateLabel": "Today, 6am",
       "url": "https://www.bbc.co.uk/programmes/m002vrm9",
       "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/623/1558150.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/650/1626962.jpg",
       "artworkAlt": "Peelers: The PSNI for Real programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-11-11",
@@ -1109,17 +1094,17 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 568.5
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 576.5
     },
     {
       "title": "Hunting Alice Bell",
       "summary": "Fran Da Silva's ordinary life is torn apart when online whispers position her as a serial killer's accomplice. As she struggles to understand why she has become a target, Fran learns there…",
-      "meta": "Channel 4 · Tomorrow, 10pm",
+      "meta": "Channel 4 · Today, 10pm",
       "source": "Channel 4",
       "channel": "Channel 4",
       "releaseDate": "2026-11-11",
-      "releaseDateLabel": "Tomorrow, 10pm",
+      "releaseDateLabel": "Today, 10pm",
       "url": "https://www.channel4.com/programmes/hunting-alice-bell",
       "badge": "Crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/649/1624410.jpg",
@@ -1135,55 +1120,44 @@
         "Thriller"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 596.7
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 604.7
     },
     {
-      "title": "Return to Paradise",
-      "summary": "Lights, camera, murder. The anniversary screening of Dolphin Cove cult horror film Blood Wave goes off with a literal bang when one of its key creatives is killed during the iconic gunshot…",
-      "meta": "BBC iPlayer · Available since Fri 6 Nov",
+      "title": "Scam Interceptors",
+      "summary": "A difficult day in the hub as the team fight scams on three fronts, utilising every tool at their disposal to stop the scammers in their tracks.",
+      "meta": "BBC iPlayer · Mon 16 Nov, 6am",
       "source": "BBC iPlayer",
       "channel": "BBC iPlayer",
-      "releaseDate": "2026-11-06",
-      "releaseDateLabel": "Available since Fri 6 Nov",
-      "url": "https://www.bbc.co.uk/programmes/m0023h9b",
-      "badge": "Crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/649/1624209.jpg",
-      "artworkAlt": "Return to Paradise programme artwork",
+      "releaseDate": "2026-11-16",
+      "releaseDateLabel": "Mon 16 Nov, 6am",
+      "url": "https://www.bbc.co.uk/programmes/m00164f1",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/402/1007155.jpg",
+      "artworkAlt": "Scam Interceptors programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-11-06",
-      "showId": 72575,
-      "episodeId": 3803982,
+      "airdate": "2026-11-16",
+      "showId": 60960,
+      "episodeId": 3804603,
       "contentType": "tv-pick",
-      "programmeType": "Scripted",
+      "programmeType": "Documentary",
       "genres": [
-        "Drama",
-        "Crime",
-        "Mystery"
+        "Crime"
       ],
-      "interestLane": "dark-scripted",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 521.9
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 560.4
     }
   ],
   "sections": {
     "AI": [
       {
-        "title": "Anthropic targets valuation of up to $1.4tn in stock market flotation",
+        "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T19:02:00+00:00",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWZNcUt6ZldxUnNyTXZySGZacWZueTYtS0JOUVZ2S3JUWENYcThEMm9CSnVXX25QTGJYZGc3UVhKNXloQ0pPdUJpbkxZQ3Q1NEdSMzJEWjB5M3UwVDJ5UjhxdllTMEhjQm41UDg1QndqbE5KWkNBZ3RoMlhHSjM5SDkyN2tmQjZjcEpyNGMxVjF1MV9vRmpJb3d4X1NibmRYd3V5TUNxMGtacGJjXzNqRURn?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Anthropic announces Claude Fable 5.2 and Mythos 5.2. They'e already solved black hole physics problems.",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T18:22:58+00:00",
-        "source": "Mashable",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWGw3UFZ0ZUxYWk1VSm9nMXJUNkVIamQxQ1VsVlMtOElpV3ozckEwRWRlVkdrZUdDSkZwV1ZpODQtV1RYR2MxM0Z1UUo1LW9fSXBtZ3RJZ1RkT2hJRnJMQU5KRVZiQ3ZVSFBvM09sNG4taThSb3VKcjdiaEtGTWRDXw?oc=5",
+        "publishedAt": "2026-11-10T17:56:12+00:00",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HNWFGZG1teU8xOWttMlMzb1gtbVhmNW94MlFvanZrY3JCbVVkcExpX3VrTGFLOVgwaGhON21KMUN5SGI1R2hmM2pMMkJXQlFDaUU0TnV6TWVqNWM?oc=5",
         "contentType": "article"
       },
       {
@@ -1196,39 +1170,48 @@
         "contentType": "article"
       },
       {
-        "title": "Anthropic has its own AI-powered office suite now",
+        "title": "Class A Common Stock 825,000,000 Shares Anthropic, PBC",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T17:30:00+00:00",
-        "source": "The Verge",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcjc0QUZNb0FYTVFPN2d1Vld4eTZPWk52NHNKN1Jiblc5MW9ZNkV2Tm0xWU8zR0VtazQ1NV9LQlk2QnJPelVvaXp2QWJDVUxicmowX2Z5TWVhdjE0RlhnanNaSm9ITndEMFpJUjlCUXpVdHljRFY4N2VuRm44cmwxRU1aMnNrTElDeVN3ZGR4YXVBeWNWX29sSzFfYjRlVDNrTEFaU1llSkljU0VQRnc?oc=5",
+        "publishedAt": "2026-11-10T15:22:33+00:00",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zTjI0cnBrNGZXT2ZpNmpnakRlbjQzUFNKaHh0ZjJsMWRtd211WC1QMVZLRTNoVEp5Rk9MSGdVU1FsUHQ4elNjTFNJc2k3VWhSeUl5OV9WNHRkTkxhd2FnQnh4OA?oc=5",
         "contentType": "article"
       },
       {
-        "title": "What we know about Anthropic's new Claude AI models",
+        "title": "Gemini 4 Carbon in GitHub Copilot",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T17:12:00+00:00",
-        "source": "The Independent",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVXVMMXp4aGdVSVVPLXRWTUJiczhFbndsTXJLOS04cUNVdy1JNV9tQlo0aXo4bjgyaHpUMHBfdDg5QkR4YUZCeFZYbV91c3NvTHhsbWxyalVmMjZTMl92WkVONnIzYTRKaEtnVjhzT3p1dWlueHpfd29WcG14dk44VUxsRTJscEc0eFhKVXRRdnhjbVNwdGZFVWlLZko2Zw?oc=5",
+        "publishedAt": "2026-11-10T19:26:51+00:00",
+        "source": "The GitHub Blog",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVzk1bkR5U3l3enJYS2Qza01vd1E2Sy1fUjhtZWJnR0tVMjdwMnhlcDllalZLdF9QaldXdXZrMkFkMzA5aFJTVGd2UExlWTgyRWhrN1Vad1VpcUg2SzJPRlgycDZmczRCVWxYb0gtaF9LbEtjYkRxTThPbFlIU0dLNQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Gemini 4 Carbon is now available",
+        "title": "Introducing Gemini for healthcare",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T16:03:47+00:00",
-        "source": "Google DeepMind",
-        "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+        "publishedAt": "2026-11-10T13:24:03+00:00",
+        "source": "Google Cloud",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUjhqRF9QRmhSOGk3dGZjNFY1TFJZdGVfejQtRVVBUVFIS2RZQ0JZWVI1Z3ZzekdfYkYxVFNkWWN2VFgxSlRuc2dVcV9hQ3BjVDlheGQwUG94UzkzbkNtU2syZ3pBYWstRENIWFRVT0F1RUd0LWNlOThtSnFYb0c0RG9TdEpRdmc?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Google Cloud Launches Gemini For Healthcare, Unveiling New Agentic Layer & Capabilities",
+        "title": "Gilbert + Tobin rethinks the business of law with AI",
+        "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+        "meta": "Thu 12 Nov",
+        "publishedAt": "2026-11-12T00:00:00+00:00",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+        "contentType": "article"
+      },
+      {
+        "title": "OpenAI Gives Businesses New Tools to Reach ChatGPT Users",
         "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T14:00:00+00:00",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdC1EeW9OSDM4QmxtMWFQSlJsN3dORFpDSUl1eEtpM213SXd4ZmVfZGtBWjZGZkx2UF9vZFNRQ2ZFMWxvLVpzR2F2TWpmZEZiTTY5c2NWcXFUVG5oMG51SlZoSFNRRmNBYmQzSkNOT0IyR1NTX21iWWl1NWE3U3lNQ3lmcmN1dVBKN0NKSko0R0RVRDhzQjA3czVtaUw5aTZLUFV2Y21EY2RfU0RmY3pLQ2ZIQ21aeGJ0UDJDaHlrZnJEZDNla0ZUNVliYjU5eWs?oc=5",
+        "meta": "Wed 11 Nov",
+        "publishedAt": "2026-11-11T01:12:05+00:00",
+        "source": "PYMNTS.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTk1wdTg2VFZNSk9WeFh2RzNNMHRfenpFazdNTHNLQ0pLWnVQbFh3MUFzdGlzaTZ4aWxLcVBEVExydHRYZVZJaHdOb3lmREltSDNkYmdsaXhBRjVmUnVhSzNuNENkN3RaU25fVUMtUEVWODNzVzJaOG0xcUIwLWdLWTYySjBkOW4xd3ZhZWM1SXRpWmJFQ0tULUZtbUlobXNjTlJYM2dmSVh0YjdvUVNFWnlkYS0?oc=5",
         "contentType": "article"
       },
       {
@@ -1264,24 +1247,6 @@
     ],
     "Arsenal news": [
       {
-        "title": "Khari Ranson joins Billericay on short-term loan",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T18:54:09+00:00",
-        "source": "Arsenal.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVzJ2aWp2YkZxeERRdm5Ec2RlM0FTMmNHQ0NpRWR3Sy0xdEVsdWlSM3pXNGZNWVlQakJDeGlnZzVUZEZxMERERVVwV3lwT3g1bm85aUtVby1GTGxJMXRJRWxvN2EzTXZwNnVoWnBSQ2NYMlN2T2RrUU9ERnNDUDMwbnhZY2pLVjFDT0JmZUhVUmNoYXZC?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Arsenal boost after shock Madueke snub as new training plan revealed",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T09:58:43+00:00",
-        "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXVJQXhoSEt5cWtlYjRrZGZlc3BwRTRXTE5SLVgyMi1JOUdIRDNKUWo5dDlRajlMRENqNk1GTDgzdFpNdlN1bkxIU2FOT0c4dC03RTlGRnU1ME84eG1GM0hxOHM3LWFkZ2RfTS0zX3hDV3UtRVRlM3ZXc2gyRTRPS3Z4WVlzWlZwRmF4aEV3bElXZWFubzcw?oc=5",
-        "contentType": "article"
-      },
-      {
         "title": "Arsenal eye four targets to boost attack including highly rated Bournemouth star",
         "summary": "",
         "meta": "Tue 10 Nov",
@@ -1291,41 +1256,68 @@
         "contentType": "article"
       },
       {
+        "title": "Khari Ranson joins Billericay on short-term loan",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T18:54:09+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVzJ2aWp2YkZxeERRdm5Ec2RlM0FTMmNHQ0NpRWR3Sy0xdEVsdWlSM3pXNGZNWVlQakJDeGlnZzVUZEZxMERERVVwV3lwT3g1bm85aUtVby1GTGxJMXRJRWxvN2EzTXZwNnVoWnBSQ2NYMlN2T2RrUU9ERnNDUDMwbnhZY2pLVjFDT0JmZUhVUmNoYXZC?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Arsenal hit with new injury blow as manager confirms squad withdrawal",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T10:33:07+00:00",
+        "publishedAt": "2026-11-10T13:37:11+00:00",
         "source": "London Evening Standard",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNREpSd3Fja1pvVlBwY0FRWDFsZVZHR19VVXpaUWRDSTNLaHpoSHA5VVRhVjhRa1VpX3lwNmlGaWhZTzgyd1NUVldzaGZFcGZSRERxcXE1NjVLR3NTaEtJbWtXUEE3RFdJX3ZJQUI4cDQyWTNWbm9IMjJqQTdOQnE1YmU1cUhqd2lVOXlOTTlFOElZUQ?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Chelsea one of three clubs keen on Arsenal star Martin Zubimendi for January transfer",
+        "title": "Which stars are on November international duty?",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T09:26:00+00:00",
-        "source": "The Independent",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWHpHWjRFWFNUN2MtS0FIVHV2Zms4OTR2N0xhVEpRR0xBamM1R1ZDcGd4QjJ2REU2cmhVTmdEY0dyUVNIdnBydVdSQTdDTzdxSHNvY2tGNGg2VTlubU5yVlVzb3BuNzI4ZmxNcF8wUU03S29ET1RGV1FOYUZ1Tk5Uay0yOGNvMEdWTDlVZDgtLVRIdXF2eTF0VmVlemkzcng1NUZSNjNOUk9mT1FrYUI0NU4zSEZmYTloT0ZDanRB?oc=5",
+        "publishedAt": "2026-11-10T13:04:55+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSWlfOG13TUttc3VoSm0wLUFYSE1LOTh2d2tIWUdMVGMtTXp3NmFHc3RMV0pHaW5JZjkySXNmTGROckdLZk42LTJadnBMOC1hZGxEV2kwaHdlYjR6RXo5V09KaG9oeGc3TFpxY0dEQU1KR0ZnTmljTjZyLXMwTGtCbTlJejZZNUVxaFREc1ZFaTY1Zw?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Sky Sports pundit makes Arsenal Premier League title prediction after Man City lose",
+        "title": "Arsenal star reveals how Arteta is 'different to any other manager'",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T11:39:51+00:00",
+        "publishedAt": "2026-11-10T23:42:07+00:00",
         "source": "London Evening Standard",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUW9pYV9SbVRFNkpTZFIxTkNPQWpDUFFzd3lGNjh4TnJ5VHdyQ2ZTTHk4VmVIdk9DaHpYMS1fUWtPTERXTVZFdXZENlZUVUljVlpZaHNycmstT0hWN1ZMSXpZdHhpRWlqY2liVWt4TVRoRkFLbHBqOXhYYUlxaVhudWtlVFVSZ1hLaVFhY3lhQzhwWV91UlFqYmxyYTA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNb2Z5TTlseXRGN2JtTXZFaXhTdktodXpQMFdvcERNejE4UVY1Y2F2empCNWxyTjlSOGZhcFdzOW9hQWtfaWd1OEZtUUNzSXRvNWt0cDVCZW9MSjk2ZVl0LVpjai1sV3F1azFEdU1aQlotODJmb1JDYTJhS1BVejY2cEp2MTloUms?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Every word of Renée’s pre-Barcelona press conference",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T19:38:12+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdkJQcFpTbmMwNnpiYjJ3Rjc3Z20yTTlobDdDRm9vUHR1R2hvZnhraTRsYzBJXzdnbUY0RHFmRVRMSmM4d3RSRVdfU2tpWDUzWlJCOXZBeTJsbHNWaVR4c3g4d0NJQ0xrQ1ZLUmthQ2hWRS10RHVzVWI1S3VrdWlZUm5NZ2hzS2hybUVjWGZONjZKbGJmdmFMMg?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Renée: “It should be a really nice atmosphere”",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T19:48:13+00:00",
+        "source": "Arsenal.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd29SZi1nYlQ4RHJLWktnUnItWFVrMmtuMndzZ3h2ekpPUi1BQWI2VjVtbEVqYjA1MlJVRzJmaU1JVVZTOExDS0Q5OGRPdDdORURiSDc5TkRjNGppSTJBM2o3bDgzYWRTTDNZZjFIQXZJTWhwTHJteFd2aVk0eF9aU2VkT2xjS3ZTOU5EeXhB?oc=5",
         "contentType": "article"
       }
     ],
     "Local news": [
       {
-        "title": "How live-in care can help Teddington residents stay independent at home",
+        "title": "Teddington RNLI thanks community after various events raise thousands for life-saving rescues",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T17:04:12+00:00",
+        "publishedAt": "2026-11-10T23:16:15+00:00",
         "source": "Teddington Nub News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWWViZDJCa1BDNGRKRTcxOHpPV01NVXg4WGUwYnRUWmJwZFhrM3FpNXMxMlJyZUVMUExXRW40R21iQ3VtRkFnMWJ5WXVzQk13OEd0bzNQRGw2WXRDcUlWSURIdHpyWXd6c01IZlZKYWZOVTNlbkhiQV8xdV9Pam9qX19RV29nTndHX0lReVFOdGJjdjBzUzZNUk1VTlpyUXB1eFBuVmhIREpVTUE3Qk82X01tdUhmdlR2N2VjeW12MGU1bEdnMUNGQg?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQR3VrOERORG9OS3ZSTlVuR0ctNkxWMzhJTXJabXRfczk1bTBaVE13cXdnZTFQTFNPY1R4TEtxTF93OUR0Xzlod2xBbWZvYjlRVkZOSHdENW1uUU1hWlRldTRBSXJJZ2ZVZzV4U3JRQ3pURkw3UDFhYzlUQXVNZ3NiQUx4a2NZWUQ5TnBTYmZIaHpuWllBLWpmcnNzZ05HTGV6Yk1KamtpSUtyRklRWXZqckJDT2Y2Y0lMZjByMGw4VzJPM3dNeEExZWtpSzlUb3phcjJSdXBUU0hseW9k?oc=5",
         "contentType": "article",
         "localPublication": true,
         "familyActivity": false,
@@ -1335,7 +1327,7 @@
         "title": "Interactive Santa Christmas show comes to Teddington to bring festive magic to families",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T13:25:06+00:00",
+        "publishedAt": "2026-11-10T17:04:12+00:00",
         "source": "Teddington Nub News",
         "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaGE2YTJYLWhMMWtJTTA4ZnZ5Q3JXNjlTOTQ1X3F0YlNXT2ExbXBVNWxNSTZRSEx5SHBrb1RHQXh0dENKLWZUY1BwUFk0bEk2ajBhOWFsTjNUS1NMOEt6NURBc1BDckFLb0U0a2I3Z1ZQM0RXdk9zbGhZcE1RczJzSGFIQ0xTTU1VV1RUVjNlaHF6NzRyNHZ1V2VJaE5ISkFDQmVpazZYU3p5TTRBTlF3Mk5keDViSGFCcm00UW9BeHh2ZGo2VG9KT1F1RXpDLUl3Nk5Tanlfc2dvR3Y0Q1E?oc=5",
         "contentType": "article",
@@ -1347,7 +1339,7 @@
         "title": "Surbiton holiday deal covers 24 night adventure through India and Bhutan",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T13:18:13+00:00",
+        "publishedAt": "2026-11-10T16:32:34+00:00",
         "source": "Kingston Nub News",
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRzBoZkl4R1NDSWI3TnVab1NrWC1fMWdVV1Nqd2hid0VieDV2ckJrSHVFeXd3dE9DbDE3ZlAyMHNLbVozbDNlX1lZS3Q2S0dXOUlFeWg5S0U4VHNIaUd1WFQwdno5RWlOamF5V19MU2J5OWRjVU1Kc3Nibk5OSncwMm5OdzRBM1hvdEkwV0ZXM1J5MDFCU0VVZmpsNTlNeGlfcW82bjJ5TG0zaDV0M0FZZXJ5ZU1QOTBLVklOXzFFV3hrTTZUUURyWmlQMi1SZw?oc=5",
         "contentType": "article",
@@ -1514,21 +1506,48 @@
     ],
     "UK news": [
       {
+        "title": "Duchy tenants may have to buy farms or leave as Prince William plans sell-off",
+        "summary": "A ten-year strategy to raise £500m from the Duchy of Cornwall will see farms sold off across England.",
+        "meta": "Wed 11 Nov",
+        "publishedAt": "2026-11-11T00:35:14+00:00",
+        "source": "BBC News",
+        "url": "https://www.bbc.co.uk/news/articles/cwm242plggldo?at_medium=RSS&at_campaign=rss",
+        "contentType": "article"
+      },
+      {
+        "title": "£5.98m project to restore Scotland’s rainforest and support west coast communities",
+        "summary": "",
+        "meta": "Wed 11 Nov",
+        "publishedAt": "2026-11-11T00:02:16+00:00",
+        "source": "The Herald",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYk5fVy1kTEhSWmJfX1hHQk9nNlNvamRRVFZFNmdET2ZrVS1hMzlGYUlJYmxjMnhFNHZyUndHVkxWQmN0SkFmdGtwRTI1T2x6am5WLVAtZ2EwZE9lTnN0WEQ4NjNaakc5SkkyaC1DMmJhdGlhM3I5RVlPZlNhampJNTJVU2ljWFJNTGtWYUZyeWN5TjBXNjdBZQ?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Celtic Manor wins award after cutting emissions by 43 per cent",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T23:30:00+00:00",
+        "source": "South Wales Argus",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObVBJNmdDME02RmVnaEFYRmQ2U1dqZFFfb25GSlVWdzktcDB3VzlndXp2YVl2cVVGZEtKNXBEdVBUT01XYjZqU05DdHc4TVZWMk03TWo5Rzd0R3dEU3BiT1dpMFhHMUpHSzEyRkRfeXhrZmRFam4zRjg0d0ROVU1PcFQzSEZLLV9GVW40Si1uSlE1SUNkSzJUU3RVX0h1MnB3MlZIUg?oc=5",
+        "contentType": "article"
+      },
+      {
         "title": "Peebles mountain runner shortlisted for British Male Athlete of the Year award",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T19:09:29+00:00",
+        "publishedAt": "2026-11-10T19:09:59+00:00",
         "source": "Border Telegraph",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaGZvbmZfR0pFRElCMlFHMlNIQnY1NEhEajlORFdrQ3RKeDNmNW11c2ZtbTgyVGo3TEV0eFFGc3IyRTRHSmpFanJVTUJBdWJsMGJ4aG1RUkNkOUhvaDNYQnQyNTBYa2dpUldnRFgxRE1fSTQ3eWJNWno4SU1nWjRuUFVueVVDTTRtcXByRkJtNjBoT3NXTTVSWm91UWJ1MWNU?oc=5",
         "contentType": "article"
       },
       {
-        "title": "Wales fans earn Uefa fair play behaviour accolade and 50,000 euro award",
+        "title": "Wales fans earn Uefa fair play behaviour award",
         "summary": "",
         "meta": "Tue 10 Nov",
         "publishedAt": "2026-11-10T18:19:54+00:00",
         "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JSVBLTnFnOGd6SHRrYTdPM0xDQnhCeW9uSWhLbFZvV3AxbUlKRG1uc2daaUR3anl6NGxhZ19tOUpOYzJWS2paX2ktSHFGT0U5MzZDMUNWUGRYZGtJbWQ1X2VZdnpfa3JTOUtr?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HQ1VEYUZRTURNY1BiT011R3FLdk5Zb29kMWJ1RFhZWFIxMWlrbFczN2pLTFh0SjVIM0ZPLWJNcHdINDRqQ0xSaTl4Rm1JYVVodlVBSXItbFlVa3lSeGJKcmdHN1RkeG5t?oc=5",
         "contentType": "article"
       },
       {
@@ -1554,71 +1573,44 @@
         "summary": "",
         "meta": "Tue 10 Nov",
         "publishedAt": "2026-11-10T16:00:23+00:00",
-        "source": "The Argus",
+        "source": "Glasgow Times",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVzkxZXh5OGI1REpOSG4wdWJUQTV6bmZMV3FGenZXaXVxNUkwT3VSakhsZlc5WWllU29nQWVnYURRMEsxTnl3QzZEbGZQU0o5QzI3cVczcGpMSzNfa01oeTkydUN6VEFsNkJteTQyS3ZISzIyOC1wcDFfZFJ1UXFWVHNKU1hWTHZDY1pDTWNsQ18tN24wVFIxWWM2VWZZMGF6V2c?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "Welsh Training Provider Celebrates Achievements of Over 100 Apprentices",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T15:53:02+00:00",
+        "source": "Business News Wales",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPblVfeXFFb3ZZekNEMEJ6dm50SjNsbk5iUTRSdENjRWRuOWlIcEU4VXd5XzBPbUZlSWJVbnRVRmtpSVBRSm1Jcl9iZl9RaWNwZGI4OFZ3ZlVZWjFVcWJYTDVfWkI0cDN5b09iTHU2SGZDdkMyOHhjYjJENXFZS3NwZHJQTndmYmt3MlhYaklLR3VLUDZMWm40QllVWHVqN0J1Y1F0aWdkV3FyR3VCSkh0VA?oc=5",
+        "contentType": "article"
+      },
+      {
+        "title": "WCCC Scoop Central England Prestige Award",
+        "summary": "",
+        "meta": "Tue 10 Nov",
+        "publishedAt": "2026-11-10T15:14:30+00:00",
+        "source": "Worcestershire CCC",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdGZ1emRPdVJiNWxWNEh4a3Q2ekRpY3RJYTBSVVZxQk5aa1lVR1R4T2JQRlM4MkUwbC14UzRHcGZmTkN3RnBtTVdTUDg3NjVOTmV3dmtZUW1wdXd2SXJHdC1EdVdzbTlpQzlsVG1ZU1hFdDhR?oc=5",
         "contentType": "article"
       },
       {
         "title": "Businesses across Britain put beans on the menu as campaign celebrates year of growth",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T14:06:53+00:00",
+        "publishedAt": "2026-11-10T15:00:18+00:00",
         "source": "The Food Foundation",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaWhjS2RueXdZRXh0Y2ZaM2RCRUQxSGNvSW4wUEVOLV9hbkxXcnRvcXJHaGF3QjhxY2QzVEZ3MnJoSThLWFd0d3d4Rnl2cWZXUEpHaTRKal9VWnQ0YWlkb1pkNHJPTE9tM1p5aXB6djg3Nmk2SUFuT0UxTWNYU251ZXpyOXViLWF1djBOX1JHRWN6eTM1LU9RQllaY2lmU1ZITEt4c29zV1RIeTZqVUNoaHJhMjRaTjg?oc=5",
         "contentType": "article"
       },
       {
-        "title": "'I know this is disappointing news' – Award-winning British bike brand set to close",
+        "title": "The Children’s Society Gives Britain’s Teenagers a Voice with 'Save Teenhood' — LBB - LBB",
         "summary": "",
         "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T12:37:01+00:00",
-        "source": "Cycling Weekly",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTDROUTRjNThxUW5VYWZ3dl90TWNTcXVLeTFXSEk5Z21yeVNFOFVieUFvanlJeW1ZcnhGcWpBOHJPcXRDcDQxT3lkazdPaGdRZGRiTkJFNDNROXlBa2EwemdFYVBld2ZuOFFvSVpBUkR2MkEyalBjcmRkLVJQMmNWYy1jM1AybV80NW5QQ0RHSVVvQjVTUm50Zi1ZZmJsUEo3V1NmYVFmTTI4MnFPQ3RWa1I2Vlg?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Restored Llandudno tourist attraction could get new information signs",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T10:51:09+00:00",
-        "source": "Herald.Wales",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXhoOHFZX1lCOTJ3Z1RLOGZyRjQ5SmtZeWFoZTlrUFBmQ2xiNGRxTXdOQkpXZTRacTNUNklvRDBQbjVDVEViZlhOUnduQWxkaFJXNi1DcnFGNGc1RTNyME01blctX0lIaEJCRVUyS2ZpUi14dEhZTGp5cVc5d2FWZ1prMnBEYWktVWhJVzZSbmxTdm5qLWV5NXFmd0NkbnRmZmVDdll3?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Cardiff Capital Region backs ten creative and digital innovation projects",
-        "summary": "",
-        "meta": "Tue 10 Nov",
-        "publishedAt": "2026-11-10T06:47:59+00:00",
-        "source": "Wales 247",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeV8wZzN0V3Q1Vi1rWU1yVk1LbFI2VWZKY19JenlZQzd6TVhGcDlYNFVmdGNQc05VTnFTUWcwdzhiQm85OEpPeHNZdkQxS1Z0elNVYVZXakVreW9xVTZGTHdiMGlsV2Y2TVdVeG44TlpaN0xFM2czX0NQeGtwOHJlcnlEVVNvdW9jOG5QcTM0ZkNuTHBBb1hSYXdadm1UVHN1NVE?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Pontymoile Canal Basin Halloween event hailed a success by volunteers",
-        "summary": "",
-        "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T23:30:00+00:00",
-        "source": "South Wales Argus",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUGlTU1F3S3ZkRGV5bDZxQmIxdmdKR0JQR3ZldzQ1STNiaExKREpVTndzTzR3ZnpQUHNyZFo1cnRkMGJ0eEhZcnZUZloySWNNd1ZRWVUxeG1PYmt1N3B2UzhUYkkxb3Y3MUZUSXBqN1hWSGphXzNpNHVEcXNrdmVxWXF6emMyWWRxSzZmalFqTzBIM2w5dW5NT1JPTmVYN2FlTC1qT3I2cTNUZw?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "Lake Wales Downtown Project Wins Statewide Award",
-        "summary": "",
-        "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T23:24:38+00:00",
-        "source": "LakeWalesNews.net",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSnBOR1NQdTVrdjhranZ1UW5xVmx4RG15cnZWZkFpTVN2eWxuSkgtb01ZZmx1Zzl1RkNtXzJkV1czczJMY1BWcTdKaURTWmlqWUJNSGo1NG1ncDMzQVhrRGF0ODZ4eVI5cWFwMDFINFA4OG1mWDNJcXpWVExwSG56Z1o5czdxeUxwdVdZZVVJQ2xxOS0yT0xoWXNYZGY2cERLZER0RG53OXkzY2NXTGZr?oc=5",
-        "contentType": "article"
-      },
-      {
-        "title": "British charity rescues seven tigers from Central American circus after eight-year battle",
-        "summary": "",
-        "meta": "Mon 9 Nov",
-        "publishedAt": "2026-11-09T20:46:42+00:00",
-        "source": "Daily Mail",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY3ktWXFiYmszZmROMS1FVnNyUUl0MThnaDY4Q2FQWVJvMjlpS282eVRyYjlZUTMweGdKVUNIS1ZkQjNDc2lBR0hmcmVWMnZITDlheTZHNm9uRXFidWxjVkJ4SEhlZkFfbFRHNGxHNUJNZUJDUFdFdXN6SFhjb0JnM1JNWGN6ak1mT3pSQ3NQbWdqaGdZU1ZhcDVOa2ZTd00xTFRFVGswNXhnbW5oSThNWDNDQdIBuAFBVV95cUxPU3VId2VaczJfMy1BZmlXTXd2LVU4VzhQZlVUS1hpMjhTVDdHV0xwRTlPandNQzBlRWdLRGRzOENVempKemotbGg4VTFtbl9zOFNhWDlsRmU3SXUxTDNsX2M2bHVwRDJ0SmcxeTVpU3NFbi1fMzREUGtlLW1KellNRTdsTXEtdGMwY29WeHFoeG5GbVlTQkZKd1FzSU5tcmw4SHQya3JlRHB0RTk2MFNtU0RLZE1VRlA5?oc=5",
+        "publishedAt": "2026-11-10T14:23:07+00:00",
+        "source": "Little Black Book",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHMmhqaHNjX2tUTnUzem44QnBMUXJVelkzSjUtTy00MkthbXFOdXJXS25RYzlub0xWUDNNU0c3X1dpN3hKRVhYUi1hdFAxVDJCeTkwWnd0R0tGZUNvUUJma254eThMajY3M0s1Mm1aNkY?oc=5",
         "contentType": "article"
       }
     ],
@@ -1644,7 +1636,7 @@
         "venue": "bentalls-kingston",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-11-10",
+        "verifiedAt": "2026-11-11",
         "saleHeadline": "Bentalls Autumn Promotions Now On",
         "saleDate": "October & November 2026",
         "discount": "Up to 30% off",
@@ -1671,35 +1663,37 @@
         "venue": "landmark",
         "kind": "event",
         "contentType": "activity",
-        "verifiedAt": "2026-11-10"
+        "verifiedAt": "2026-11-11"
       }
     ]
   },
   "watchAlternatives": [
     {
-      "title": "Scam Interceptors",
-      "summary": "A difficult day in the hub as the team fight scams on three fronts, utilising every tool at their disposal to stop the scammers in their tracks.",
-      "meta": "BBC iPlayer · Mon 16 Nov, 6am",
+      "title": "Return to Paradise",
+      "summary": "Lights, camera, murder. The anniversary screening of Dolphin Cove cult horror film Blood Wave goes off with a literal bang when one of its key creatives is killed during the iconic gunshot…",
+      "meta": "BBC iPlayer · Available since Fri 6 Nov",
       "source": "BBC iPlayer",
       "channel": "BBC iPlayer",
-      "releaseDate": "2026-11-16",
-      "releaseDateLabel": "Mon 16 Nov, 6am",
-      "url": "https://www.bbc.co.uk/programmes/m00164f1",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/402/1007155.jpg",
-      "artworkAlt": "Scam Interceptors programme artwork",
+      "releaseDate": "2026-11-06",
+      "releaseDateLabel": "Available since Fri 6 Nov",
+      "url": "https://www.bbc.co.uk/programmes/m0023h9b",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/649/1624209.jpg",
+      "artworkAlt": "Return to Paradise programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-11-16",
-      "showId": 60960,
-      "episodeId": 3804603,
+      "airdate": "2026-11-06",
+      "showId": 72575,
+      "episodeId": 3803982,
       "contentType": "tv-pick",
-      "programmeType": "Documentary",
+      "programmeType": "Scripted",
       "genres": [
-        "Crime"
+        "Drama",
+        "Crime",
+        "Mystery"
       ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 552.4
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 513.9
     },
     {
       "title": "Unreported World",
@@ -1721,17 +1715,17 @@
       "programmeType": "Documentary",
       "genres": [],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 483.0
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 475.0
     },
     {
       "title": "Shetland",
       "summary": "When human remains are found in a car dredged from the sea, Calder and Tosh must find the troubled owner who fled the Isles nine years ago.",
-      "meta": "BBC One · Thu 12 Nov, 9pm",
+      "meta": "BBC One · Tomorrow, 9pm",
       "source": "BBC One",
       "channel": "BBC One",
       "releaseDate": "2026-11-12",
-      "releaseDateLabel": "Thu 12 Nov, 9pm",
+      "releaseDateLabel": "Tomorrow, 9pm",
       "url": "http://www.bbc.co.uk/programmes/p01s711r",
       "badge": "Crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/649/1624219.jpg",
@@ -1748,31 +1742,8 @@
         "Mystery"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 443.0
-    },
-    {
-      "title": "Panorama",
-      "summary": "The BBC's climate editor, Justin Rowlatt, investigates the impact of the changing climate on our weather.",
-      "meta": "BBC One · Available since yesterday",
-      "source": "BBC One",
-      "channel": "BBC One",
-      "releaseDate": "2026-11-09",
-      "releaseDateLabel": "Available since yesterday",
-      "url": "http://www.bbc.co.uk/programmes/b006t14n",
-      "badge": "Documentary",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
-      "artworkAlt": "Panorama programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-11-09",
-      "showId": 8534,
-      "episodeId": 3803382,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 440.6
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 451.0
     },
     {
       "title": "Honey",
@@ -1784,7 +1755,7 @@
       "releaseDateLabel": "Sat 14 Nov, 6am",
       "url": "https://www.bbc.co.uk/programmes/m002zlmp",
       "badge": "Thriller",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/647/1619656.jpg",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/650/1626960.jpg",
       "artworkAlt": "Honey programme artwork",
       "artworkSource": "TVMaze",
       "airdate": "2026-11-14",
@@ -1798,17 +1769,40 @@
         "Espionage"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 432.8
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 440.8
+    },
+    {
+      "title": "Panorama",
+      "summary": "The BBC's climate editor, Justin Rowlatt, investigates the impact of the changing climate on our weather.",
+      "meta": "BBC One · Available since Mon 9 Nov",
+      "source": "BBC One",
+      "channel": "BBC One",
+      "releaseDate": "2026-11-09",
+      "releaseDateLabel": "Available since Mon 9 Nov",
+      "url": "http://www.bbc.co.uk/programmes/b006t14n",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/219/549380.jpg",
+      "artworkAlt": "Panorama programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-11-09",
+      "showId": 8534,
+      "episodeId": 3803382,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 432.6
     },
     {
       "title": "Forensics: Murder Scene",
       "summary": "In Porthcawl, South Wales, the frozen body of an elderly woman has been discovered in a large family chest freezer. Detectives have arrested her son and begin an investigation to discover…",
-      "meta": "Channel 5 · Today, 9:45pm",
+      "meta": "Channel 5 · Available since yesterday",
       "source": "Channel 5",
       "channel": "Channel 5",
       "releaseDate": "2026-11-10",
-      "releaseDateLabel": "Today, 9:45pm",
+      "releaseDateLabel": "Available since yesterday",
       "url": "https://www.channel5.com/show/forensics-murder-scene/",
       "badge": "True crime",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/530/1327140.jpg",
@@ -1823,8 +1817,8 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 413.3
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 401.3
     },
     {
       "title": "Black Doves",
@@ -1850,56 +1844,8 @@
         "Espionage"
       ],
       "interestLane": "dark-scripted",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 389.0
-    },
-    {
-      "title": "Green Eyed Killers",
-      "summary": "True crime documentary revealing what happens when jealousy turns deadly.",
-      "meta": "Crime & Investigation · Available since Tue 3 Nov",
-      "source": "Crime & Investigation",
-      "channel": "Crime & Investigation",
-      "releaseDate": "2026-11-03",
-      "releaseDateLabel": "Available since Tue 3 Nov",
-      "url": "https://www.crimeandinvestigation.co.uk/shows/green-eyed-killers",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/628/1571444.jpg",
-      "artworkAlt": "Green Eyed Killers programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-11-03",
-      "showId": 54822,
-      "episodeId": 3803409,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [
-        "Crime"
-      ],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 380.7
-    },
-    {
-      "title": "The Golden State Killer: Unmasking a Monster",
-      "summary": "A terrifying pattern of crimes reveals the evolution of a calculated serial killer, raising questions over whether he ever truly stopped.",
-      "meta": "Sky Crime · Available since Tue 3 Nov",
-      "source": "Sky Crime",
-      "channel": "Sky Crime",
-      "releaseDate": "2026-11-03",
-      "releaseDateLabel": "Available since Tue 3 Nov",
-      "url": "https://www.tvmaze.com/episodes/3803458/the-golden-state-killer-unmasking-a-monster-1x04-episode-4",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/649/1623808.jpg",
-      "artworkAlt": "The Golden State Killer: Unmasking a Monster programme artwork",
-      "artworkSource": "TVMaze",
-      "airdate": "2026-11-03",
-      "showId": 95336,
-      "episodeId": 3803458,
-      "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 363.1
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 381.0
     },
     {
       "title": "The Incident Room",
@@ -1923,40 +1869,44 @@
         "Crime"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 361.2
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 353.2
     },
     {
-      "title": "UK Forensic Breakthroughs",
-      "summary": "The story of a fatal stabbing outside a Gloucester nightclub, which lead detectives into gang culture, where forensic linguistics deciphered coded conversations.",
-      "meta": "TRUE CRIME · Available since Tue 3 Nov",
-      "source": "TRUE CRIME",
-      "channel": "TRUE CRIME",
-      "releaseDate": "2026-11-03",
-      "releaseDateLabel": "Available since Tue 3 Nov",
-      "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
-      "badge": "True crime",
-      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1616100.jpg",
-      "artworkAlt": "UK Forensic Breakthroughs programme artwork",
+      "title": "Dexter: Resurrection",
+      "summary": "Dexter closes in on a ruthless killer terrorizing the city, but a fleeting clue is all he has to go on; as Harrison settles into his new role at NYPD Homicide, mounting pressure, old…",
+      "meta": "Paramount+ · New fri 13 nov",
+      "source": "Paramount+",
+      "channel": "Paramount+",
+      "releaseDate": "2026-11-13",
+      "releaseDateLabel": "New fri 13 nov",
+      "url": "https://www.paramountplus.com/shows/dexter-resurrection/",
+      "badge": "Crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/577/1443219.jpg",
+      "artworkAlt": "Dexter: Resurrection programme artwork",
       "artworkSource": "TVMaze",
-      "airdate": "2026-11-03",
-      "showId": 94755,
-      "episodeId": 3790228,
+      "airdate": "2026-11-13",
+      "showId": 78665,
+      "episodeId": 3786606,
       "contentType": "tv-pick",
-      "programmeType": "Documentary",
-      "genres": [],
-      "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 357.6
+      "programmeType": "Scripted",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "interestLane": "dark-scripted",
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 342.0
     },
     {
       "title": "Britain's X Files",
       "summary": "Journalist Tim Tate combs through previously top-secret government files which disclose the details of extensive military, spy agency and police investigations into the paranormal.",
-      "meta": "Sky History · Today, 10pm",
+      "meta": "Sky History · Available since yesterday",
       "source": "Sky History",
       "channel": "Sky History",
       "releaseDate": "2026-11-10",
-      "releaseDateLabel": "Today, 10pm",
+      "releaseDateLabel": "Available since yesterday",
       "url": "https://www.history.co.uk/shows/britains-x-files",
       "badge": "Documentary",
       "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/615/1538059.jpg",
@@ -1972,12 +1922,58 @@
         "History"
       ],
       "interestLane": "dark-documentary",
-      "generatedDate": "2026-11-10",
-      "preferenceScore": 344.8
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 332.8
+    },
+    {
+      "title": "UK Forensic Breakthroughs",
+      "summary": "Inconsistencies at a shooting scene in Greater Manchester raise suspicions, and analysis of forensic ballistics reveals the hidden story behind a seemingly straightforward tragedy.",
+      "meta": "TRUE CRIME · Tue 17 Nov, 10pm",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-11-17",
+      "releaseDateLabel": "Tue 17 Nov, 10pm",
+      "url": "https://www.truecrime-tv.co.uk/shows.php?title=uk+forensic+breakthroughs",
+      "badge": "True crime",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/646/1616100.jpg",
+      "artworkAlt": "UK Forensic Breakthroughs programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-11-17",
+      "showId": 94755,
+      "episodeId": 3804721,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 325.6
+    },
+    {
+      "title": "Britain's Countryside Killers",
+      "summary": "The story of a hammer attack in Chillenden which killed Lin and Megan Russell. Michael Stone was convicted twice, though evidence remains disputed.",
+      "meta": "TRUE CRIME · Available since Thu 5 Nov",
+      "source": "TRUE CRIME",
+      "channel": "TRUE CRIME",
+      "releaseDate": "2026-11-05",
+      "releaseDateLabel": "Available since Thu 5 Nov",
+      "url": "https://www.tvmaze.com/episodes/3791785/britains-countryside-killers-3x07-horror-in-the-hedgerows",
+      "badge": "Documentary",
+      "artwork": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489804.jpg",
+      "artworkAlt": "Britain's Countryside Killers programme artwork",
+      "artworkSource": "TVMaze",
+      "airdate": "2026-11-05",
+      "showId": 82837,
+      "episodeId": 3791785,
+      "contentType": "tv-pick",
+      "programmeType": "Documentary",
+      "genres": [],
+      "interestLane": "dark-documentary",
+      "generatedDate": "2026-11-11",
+      "preferenceScore": 324.7
     }
   ],
   "refreshStatus": {
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "degraded": false,
     "carriedForward": {},
     "toppedUpSections": {},
