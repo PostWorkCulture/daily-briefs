@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -180,6 +181,26 @@ class WorldFactTests(unittest.TestCase):
                 refresh.FACT_CATALOG = original_catalog
                 refresh.FACT_HISTORY = original_history
                 refresh.NOW = original_now
+
+
+class WorldFactImageCacheTests(unittest.TestCase):
+    def test_failed_download_removes_previous_days_image(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            stale = folder / "world-fact.webp"
+            stale.write_bytes(b"yesterday's photo")
+            item = fact("missing-image")
+            item["image"] = "https://commons.wikimedia.org/wiki/Special:Redirect/file/Missing.jpg?width=2400"
+
+            def boom(*args, **kwargs):
+                raise refresh.requests.HTTPError("404 Not Found")
+
+            with patch.object(refresh, "SCENERY_IMAGE_DIR", folder), \
+                    patch.object(refresh.requests, "get", boom), \
+                    patch.object(refresh, "warn", lambda *a, **k: None):
+                refresh.cache_world_fact_image(item)
+            self.assertFalse(stale.exists())
+            self.assertNotIn("localImage", item)
 
 
 if __name__ == "__main__":

@@ -1,3 +1,18 @@
+## 12 November 2026: Around the world showed the wrong photo; 5 wild facts added
+
+- **Problem (found in the daily check)**: since 6 November every Around the world card has shown the Skellig Michael photo from 5 November. The Commons files named for 6–12 November (Valencia Fallas, Namur stilts, Día de Muertos, Qeswachaka, Qoyllur Rit'i, Kumbh Mela, Kalbelia) do not exist. When the download failed, `cache_world_fact_image()` kept the previous `assets/scenery/world-fact.webp` without a warning.
+- **`scripts/refresh.py`**: a failed fact-image download now deletes the stale cached photo and raises a `::warning`. The card can show no photo, but never one of a different place. New test `WorldFactImageCacheTests` in `tests/test_world_facts.py`.
+- **Catalogue audit (Commons API, 12 Nov)**: 74 of the 98 unused facts point at Commons files that do not exist, and 11 more are smaller than 2,200 × 1,000. Most came in with the 1 October "expand fact reserve through 2027" commit. These entries are unchanged and need verified images (or retiring) before they are selected; Pete to decide.
+- **`morocco-tbourida-equestrian-charge`** (next in the wild queue): the missing image was replaced with `L'art de Tbourida (Fantasia ) Marocaine.jpg` (Houssain tork · CC BY-SA 4.0, 5,568 × 3,712), and the fact text and location were rewritten to match the UNESCO ICH page (15–25 riders, collective round of blanks, sixteenth century).
+- **Facts: add 5 wild facts** (each source opened; each Commons image checked as existing, freely licensed and at least 2,200 × 1,000):
+  - `chile-chinchorro-oldest-mummies` (UNESCO decision 7967; WeHaKa, CC BY-SA 4.0)
+  - `tristan-da-cunha-most-remote-inhabited-island` (Guinness World Records; michael clarke stuff, CC BY-SA 2.0)
+  - `russia-oymyakon-coldest-inhabited-village` (Guinness World Records; Ilya Varlamov, CC BY-SA 4.0)
+  - `ethiopia-lalibela-rock-hewn-churches` (UNESCO WHC 18; Bernard Gagnon, CC BY-SA 3.0)
+  - `papua-new-guinea-840-languages` (Guinness World Records; Kahunapule Michael Johnson, CC BY-SA 2.0)
+- **Wild reserve**: 1 → 6 unused (97 human-first unused overall).
+- **Validation**: 197/197 tests; `validate_brief.py` passes.
+
 ## 8 November 2026: Calendar shows every event again
 
 - **Problem (Pete)**: the calendar was missing entries. Three causes: (1) since the local Windows runner took over on 2 November it had no `GOOGLE_CALENDAR_ICS_URL` (only GitHub Actions had the secret), so every run silently republished the 2 November calendar; Parents Evening (19 Nov), Christmas Show (8 Dec) and later edits never appeared. (2) Recurring events were never expanded: Google's iCal feed stores a weekly event once with an RRULE, so the weekly school pickups (Footy, Playball, Crafts, Choir) and most "Kids" weekends were dropped. (3) Only the primary calendar was read; the Kids and CC calendars were ignored.

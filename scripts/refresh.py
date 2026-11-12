@@ -365,9 +365,12 @@ def cache_world_fact_image(fact: dict) -> None:
         response.raise_for_status()
         image = ImageOps.exif_transpose(Image.open(BytesIO(response.content))).convert("RGB")
         image.save(output, "WEBP", quality=85, method=6)
-    except Exception:
-        if not output.is_file():
-            return
+    except Exception as exc:
+        # Never pair today's fact with yesterday's photo: drop the stale cache
+        # so the card shows no image rather than the wrong place.
+        output.unlink(missing_ok=True)
+        warn("World fact image", f"{fact.get('id')}: image could not be cached ({exc}); no photo published")
+        return
     if output.is_file():
         digest = hashlib.sha256(output.read_bytes()).hexdigest()[:12]
         fact["localImage"] = f"assets/scenery/world-fact.webp?v={digest}"
