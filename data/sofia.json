@@ -19,14 +19,14 @@
     "localImage": "assets/scenery/world-fact.webp?v=f6a77e163615"
   },
   "weather": {
-    "temp": "5°",
+    "temp": "1°",
     "summary": "Clear",
     "condition": "Clear",
-    "currentRainChance": 4,
+    "currentRainChance": 50,
     "daily": [
       {
         "date": "2026-11-13",
-        "high": 7,
+        "high": 2,
         "low": -3,
         "summary": "Sunny",
         "condition": "Sunny",
@@ -36,7 +36,7 @@
       {
         "date": "2026-11-14",
         "high": 9,
-        "low": 2,
+        "low": 3,
         "summary": "Sunny",
         "condition": "Sunny",
         "rainChance": 4,
@@ -48,16 +48,16 @@
         "low": 3,
         "summary": "Forecast",
         "condition": "Forecast",
-        "rainChance": 90,
+        "rainChance": 80,
         "source": "Met Office"
       },
       {
         "date": "2026-11-16",
         "high": 7,
         "low": 3,
-        "summary": "Sunny intervals",
-        "condition": "Sunny intervals",
-        "rainChance": 80,
+        "summary": "Light rain",
+        "condition": "Light rain",
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
@@ -66,13 +66,13 @@
         "low": 3,
         "summary": "Light rain",
         "condition": "Light rain",
-        "rainChance": 80,
+        "rainChance": 90,
         "source": "Met Office"
       },
       {
         "date": "2026-11-18",
         "high": 8,
-        "low": 1,
+        "low": 0,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
         "rainChance": 40,
@@ -81,10 +81,10 @@
       {
         "date": "2026-11-19",
         "high": 7,
-        "low": 0,
+        "low": -1,
         "summary": "Sunny intervals",
         "condition": "Sunny intervals",
-        "rainChance": 10,
+        "rainChance": 20,
         "source": "Met Office"
       }
     ],
